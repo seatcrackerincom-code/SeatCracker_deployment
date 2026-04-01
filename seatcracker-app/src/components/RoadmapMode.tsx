@@ -283,23 +283,20 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
      RENDER: MAP (Level Journey)
   ──────────────────────────────────────────── */
   if (screen.kind === "map") {
-    // Generate curved path data
     const nodes = [...roadmap].reverse();
     const generatePath = () => {
       if (nodes.length < 2) return "";
       let d = "";
-      const nodeSpacing = 280; // matches .levelBlock height
+      const nodeSpacing = 280;
       const width = typeof window !== "undefined" ? Math.min(window.innerWidth, 600) : 600;
       const xLeft = width * 0.25;
       const xRight = width * 0.75;
 
       nodes.forEach((_, i) => {
-        const y = i * nodeSpacing + 140; // center of block
+        const y = i * nodeSpacing + 140;
         const x = (nodes.length - 1 - i) % 2 === 0 ? xRight : xLeft;
-        
-        if (i === 0) {
-          d += `M ${x} ${y}`;
-        } else {
+        if (i === 0) d += `M ${x} ${y}`;
+        else {
           const prevY = (i - 1) * nodeSpacing + 140;
           const prevX = (nodes.length - 1 - (i - 1)) % 2 === 0 ? xRight : xLeft;
           const cpY = (y + prevY) / 2;
@@ -314,7 +311,6 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
         <div className={styles.spaceBg} />
         <div className={styles.bgOverlay} />
 
-        {/* Top Bar (Exact Match to Image) */}
         <div className={styles.roadmapTopBar}>
           <button className={styles.headerBackBtn} onClick={onBack} id="roadmap-top-back">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -325,122 +321,54 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
           <h1 className={styles.courseTitle}>{course || "Engineering"}</h1>
           <button className={styles.settingsBtn}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="12" cy="12" r="3" />
-              <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+              <circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
             </svg>
           </button>
         </div>
 
-        {/* Top Progress Section */}
-        <div className={styles.roadmapProgressHeader}>
-          <div className={styles.progressTopRow}>
-            <span className={styles.daysLeft}>Days Left: <span className={styles.highlight}>{totalDays - completedDays.length}</span></span>
-          </div>
-          <div className={styles.mainProgressBar}>
-            <motion.div 
-              className={styles.mainProgressFill} 
-              initial={{ width: 0 }}
-              animate={{ width: `${completedPct}%` }}
-            />
-          </div>
-          <span className={styles.progressLabel}>
-            {completedDays.length}/{totalDays} days completed : {completedPct}%
-          </span>
-        </div>
-
         <div className={styles.pathSection}>
           <div className={styles.pathInner} ref={pathRef}>
-            {/* SVG Background Path */}
             <svg className={styles.svgPathContainer} preserveAspectRatio="none">
-              <defs>
-                <filter id="glow">
-                  <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
-                  <feMerge>
-                    <feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/>
-                  </feMerge>
-                </filter>
-              </defs>
-              <path 
-                d={generatePath()} 
-                className={styles.roadmapPathLine}
-                filter="url(#glow)"
-              />
-
-              {[...Array(nodes.length * 4)].map((_, i) => (
-                <circle key={i} r="2.5" className={styles.pathParticle}>
-                  <animateMotion 
-                    dur={`${8 + Math.random() * 8}s`} 
-                    repeatCount="indefinite" 
-                    path={generatePath()} 
-                    rotate="auto"
-                    begin={`-${Math.random() * 20}s`}
-                  />
-                </circle>
-              ))}
+              <defs><filter id="glow"><feGaussianBlur stdDeviation="3.5" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+              <path d={generatePath()} className={styles.roadmapPathLine} filter="url(#glow)" />
             </svg>
 
-            {nodes.map((dayData, idx) => {
+            {nodes.map((dayData) => {
               const state = getDayState(dayData.day);
               const isLeft = (dayData.day) % 2 !== 0; 
               const isChar = dayData.day === currentDay;
 
               return (
-                <div key={dayData.day} className={styles.levelBlock}>
+                <div key={dayData.day} className={styles.levelBlock} id={`level-node-${dayData.day}`}>
                   <div className={`${styles.stepRow} ${isLeft ? styles.alignLeft : styles.alignRight}`}>
                     <div
                       className={`${styles.dayNode} ${styles[state]}`}
                       onClick={() => state !== "locked" && setScreen({ kind: "day", dayNum: dayData.day })}
-                      id={`level-node-${dayData.day}`}
                     >
-                      <span className={styles.nodeLabel}>Day {dayData.day}</span>
+                      <span className={styles.nodeLabel}>Level {dayData.day}</span>
                       <span className={styles.nodeMeta}>{dayData.tasks.length} topics</span>
-
                       {isChar && (
-                        <motion.div
-                          layoutId="charAvatarAnim"
-                          className={styles.characterAvatar}
-                          initial={false}
-                          transition={{ type: "spring", stiffness: 100, damping: 20 }}
-                        >
+                        <div className={styles.characterAvatar}>
                           <img src="/character-avatar.png" alt="Explorer" />
-                        </motion.div>
+                        </div>
                       )}
-
                       <div className={styles.nodeIcon}>
                         {state === "completed" ? "✓" : state === "locked" ? (
-                          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFD700" strokeWidth="2.5">
-                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-                            <path d="M7 11V7a5 5 0 0110 0v4" />
-                          </svg>
+                          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFD700" strokeWidth="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0110 0v4" /></svg>
                         ) : null}
                       </div>
 
                       <div className={styles.tagRow}>
-                        {state === "completed" ? (
-                          dayData.tasks.slice(0, 3).map((t, ti) => {
-                            const sub = t.subject.toLowerCase();
-                            const tagClass = sub.includes("math") ? styles.compMath 
-                                           : sub.includes("phys") ? styles.compPhys 
-                                           : sub.includes("bot") ? styles.compBot
-                                           : sub.includes("zoo") ? styles.compZoo
-                                           : styles.compChem;
-                            return (
-                              <span key={ti} className={`${styles.topicPill} ${tagClass}`}>
-                                {t.topic}
-                              </span>
-                            );
-                          })
-                        ) : (
-                          (course === "Engineering" ? ["Math", "Phys", "Chem"] : ["Bot", "Zoo", "Phys", "Chem"]).map(s => {
-                            const sc = s.toLowerCase();
-                            const tagClass = sc.includes("math") ? styles.tagMath 
-                                           : sc.includes("phys") ? styles.tagPhys 
-                                           : sc.includes("bot") ? styles.tagBot
-                                           : sc.includes("zoo") ? styles.tagZoo
-                                           : styles.tagChem;
-                            return <span key={s} className={`${styles.topicPill} ${tagClass}`}>{s}</span>;
-                          })
-                        )}
+                        {dayData.tasks.slice(0, 3).map((t, ti) => {
+                          const sub = t.subject.toLowerCase();
+                          const isDone = state === "completed";
+                          const tagClass = sub.includes("math") ? (isDone ? styles.compMath : styles.tagMath)
+                                         : sub.includes("phys") ? (isDone ? styles.compPhys : styles.tagPhys)
+                                         : sub.includes("bot")  ? (isDone ? styles.compBot  : styles.tagBot)
+                                         : sub.includes("zoo")  ? (isDone ? styles.compZoo  : styles.tagZoo)
+                                         : (isDone ? styles.compChem : styles.tagChem);
+                          return <span key={ti} className={`${styles.topicPill} ${tagClass}`}>{t.topic.split(" + ")[0]}</span>;
+                        })}
                       </div>
                     </div>
                   </div>
@@ -450,41 +378,31 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
           </div>
         </div>
 
-        {/* Celebration popup */}
         {celebrating !== null && (
           <div className={styles.celebOverlay}>
             <div className={styles.celebCard}>
               <span className={styles.celebEmoji}>🎉</span>
               <h2 className={styles.celebTitle}>Level {celebrating} Completed!</h2>
-              <p className={styles.celebSub}>
-                You're on fire! 🔥 Keep your momentum — Level {celebrating + 1} is now unlocked.
-              </p>
-              <button
-                className={styles.celebBtn}
-                onClick={() => { setCelebrating(null); }}
-                id="celeb-continue-btn"
-              >
-                Continue Journey →
-              </button>
+              <p className={styles.celebSub}>You're on fire! 🔥 Keep your momentum — Level {celebrating + 1} is now unlocked.</p>
+              <button className={styles.celebBtn} onClick={() => setCelebrating(null)}>Continue Journey →</button>
             </div>
           </div>
         )}
 
-        {/* Confetti */}
         {confettis.length > 0 && (
           <div className={styles.confettiWrap}>
             {confettis.map(c => (
-              <div
-                key={c.id}
-                className={styles.confettiPiece}
-                style={{
-                  left: `${c.x}%`,
-                  top: 0,
-                  backgroundColor: c.color,
-                  width: c.size,
-                  height: c.size,
-                  animationDelay: `${c.delay}s`,
-                }}
+              <div 
+                key={c.id} 
+                className={styles.confettiPiece} 
+                style={{ 
+                  left: `${c.x}%`, 
+                  top: 0, 
+                  backgroundColor: c.color, 
+                  width: c.size, 
+                  height: c.size, 
+                  animationDelay: `${c.delay}s` 
+                }} 
               />
             ))}
           </div>
