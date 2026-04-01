@@ -5,7 +5,7 @@ import styles from "./PracticeArena.module.css";
 import { saveProgress, fetchProgress, type UserProgress } from "../lib/supabase";
 import ExamPractice from "./ExamPractice";
 
-const USER_ID = "guest_user_1";
+
 
 interface Chapter {
   chapter: string;
@@ -34,6 +34,7 @@ interface TopicFormulas {
 }
 
 interface Props {
+  userId: string;
   exam: string;
   course: string;
   onBack: () => void;
@@ -48,7 +49,7 @@ const SUBJECT_MAP: Record<string, string[]> = {
 
 type View = "home" | "topic";
 
-export default function PracticeArena({ exam, course, onBack, onGoToRoadmap }: Props) {
+export default function PracticeArena({ userId, exam, course, onBack, onGoToRoadmap }: Props) {
   const [mounted, setMounted] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [data, setData] = useState<SubjectData[]>([]);
@@ -88,8 +89,8 @@ export default function PracticeArena({ exam, course, onBack, onGoToRoadmap }: P
     ).then((res) => { setData(res); setLoading(false); })
      .catch(() => setLoading(false));
 
-    fetchProgress(USER_ID).then(setAllProgress);
-  }, [exam, course]);
+    fetchProgress(userId).then(setAllProgress);
+  }, [exam, course, userId]);
 
   useEffect(() => {
     if (!selectedTopic) {
@@ -354,6 +355,7 @@ export default function PracticeArena({ exam, course, onBack, onGoToRoadmap }: P
           {/* Exam mode — renders on top as full-screen overlay */}
           {examMode && selectedTopic && (
             <ExamPractice
+              userId={userId}
               exam={exam}
               course={course}
               onBack={() => setExamMode(false)}
@@ -361,14 +363,8 @@ export default function PracticeArena({ exam, course, onBack, onGoToRoadmap }: P
                 subject: selectedTopic.subject,
                 topic: selectedTopic.chapter.chapter,
               }}
-              onExamComplete={(correct, total) => {
-                // ExamPractice handles its own saveProgress internally now
-                setAllProgress(prev => {
-                  const p = [...prev];
-                  const idx = p.findIndex(x => x.topic === selectedTopic?.chapter.chapter);
-                  if (idx >= 0) p[idx] = { ...p[idx], completed: true };
-                  return p;
-                });
+              onExamComplete={() => {
+                fetchProgress(userId).then(setAllProgress);
               }}
             />
           )}

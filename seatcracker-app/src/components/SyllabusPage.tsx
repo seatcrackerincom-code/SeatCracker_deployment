@@ -19,6 +19,7 @@ interface SubjectData {
 }
 
 interface Props {
+  userId: string;
   exam: string;
   course: string;
   onBack: () => void;
@@ -46,7 +47,7 @@ function priorityBg(p?: string) {
   return "rgba(110,231,183,0.12)";
 }
 
-export default function SyllabusPage({ exam, course, onBack, onRestart, onStartPractice }: Props) {
+export default function SyllabusPage({ userId, exam, course, onBack, onRestart, onStartPractice }: Props) {
   const [data, setData] = useState<SubjectData[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");

@@ -32,6 +32,7 @@ interface RoadmapDay {
 }
 
 interface Props {
+  userId: string;
   exam: string;
   course: string;
   onBack: () => void;
@@ -183,7 +184,7 @@ function generateManualRoadmap(
 }
 
 /* ─── Main Component ─── */
-export default function RoadmapPage({ exam, course, onBack, onStartRoadmapMode }: Props) {
+export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadmapMode }: Props) {
   const subjects = SUBJECT_MAP[course] || [];
   const totalDays = calcStudyDays(exam);
   const examLabel = exam === "AP" ? "AP EAPCET" : "TS EAMCET";

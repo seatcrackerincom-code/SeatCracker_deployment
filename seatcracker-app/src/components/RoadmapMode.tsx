@@ -32,6 +32,7 @@ interface RoadmapDay {
 }
 
 interface Props {
+  userId: string;
   exam: string;
   course: string;
   roadmap: RoadmapDay[];
@@ -68,7 +69,7 @@ function getMotivation(day: number) {
   return MOTIVATIONS[day % MOTIVATIONS.length];
 }
 
-export default function RoadmapMode({ exam, course, roadmap, onBack }: Props) {
+export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: Props) {
   const [screen, setScreen]            = useState<Screen>({ kind: "map" });
   const [currentDay, setCurrentDay]    = useState<number>(1);
   const [completedDays, setCompletedDays] = useState<number[]>([]);
@@ -342,7 +343,7 @@ export default function RoadmapMode({ exam, course, roadmap, onBack }: Props) {
                 className={styles.roadmapPathLine}
                 filter="url(#glow)"
               />
-              {/* Floating particles on path */}
+
               {[...Array(nodes.length * 4)].map((_, i) => (
                 <circle key={i} r="2.5" className={styles.pathParticle}>
                   <animateMotion 
@@ -659,6 +660,7 @@ export default function RoadmapMode({ exam, course, roadmap, onBack }: Props) {
   if (examMode) {
     return (
       <ExamPractice
+        userId={userId}
         exam={exam}
         course={course}
         onBack={() => setExamMode(false)}

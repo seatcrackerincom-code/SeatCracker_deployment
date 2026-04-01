@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import styles from "./ExamPractice.module.css";
 import { saveProgress, fetchProgress, type UserProgress } from "../lib/supabase";
 
-const USER_ID = "guest_user_1";
+
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 interface RawQuestion {
@@ -40,6 +40,7 @@ interface SubjectData {
 }
 
 interface Props {
+  userId: string;
   exam: string;
   course: string;
   onBack: () => void;
@@ -101,7 +102,7 @@ function getQState(status: QuestionStatus): QState {
 }
 
 // ─── Main Component ───────────────────────────────────────────────────────────
-export default function ExamPractice({ exam, course, onBack, initialTopic, onExamComplete }: Props) {
+export default function ExamPractice({ userId, exam, course, onBack, initialTopic, onExamComplete }: Props) {
   const [screen, setScreen] = useState<Screen>("setup");
   const [syllabusData, setSyllabusData] = useState<SubjectData[]>([]);
   const [syllabusLoading, setSyllabusLoading] = useState(true);
@@ -163,7 +164,7 @@ export default function ExamPractice({ exam, course, onBack, initialTopic, onExa
 
   // Load user progress to prevent repeating questions
   useEffect(() => {
-    fetchProgress(USER_ID).then(setAllProgress).catch(console.error);
+    fetchProgress(userId).then(setAllProgress).catch(console.error);
   }, []);
 
   // Hide global header when in exam mode
@@ -314,7 +315,7 @@ export default function ExamPractice({ exam, course, onBack, initialTopic, onExa
     
     // Save to Supabase
     saveProgress({
-      user_id: USER_ID,
+      user_id: userId,
       topic: selectedTopic,
       subject: selectedSubject,
       accuracy: Math.round((correct / questions.length) * 100),
@@ -324,7 +325,7 @@ export default function ExamPractice({ exam, course, onBack, initialTopic, onExa
       attempts: newAttempts,
       last_attempt_at: new Date().toISOString(),
     })
-      .then(() => fetchProgress(USER_ID).then(setAllProgress))
+      .then(() => fetchProgress(userId).then(setAllProgress))
       .catch(() => {});
 
     // Notify parent if embedded

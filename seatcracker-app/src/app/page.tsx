@@ -52,6 +52,7 @@ export default function Home() {
 
   // Access state
   const [access, setAccess] = useState<AccessState | null>(null);
+  const [guestId, setGuestId] = useState<string>("");
 
   // ── Init ──────────────────────────────────────────────────
   useEffect(() => {
@@ -71,6 +72,14 @@ export default function Home() {
     if (savedRoadmap) {
       try { setRoadmapData(JSON.parse(savedRoadmap)); } catch {}
     }
+
+    // Restore/Gen Guest ID
+    let gId = localStorage.getItem("sc_guest_id");
+    if (!gId) {
+      gId = "guest_" + Math.random().toString(36).substring(2, 10);
+      localStorage.setItem("sc_guest_id", gId);
+    }
+    setGuestId(gId);
 
     // Firebase auth listener
     const unsub = onAuthChange(async (user) => {
@@ -101,7 +110,7 @@ export default function Home() {
     });
 
     return () => unsub();
-  }, []);
+  }, [exam, course]);
 
   // ── Handlers ─────────────────────────────────────────────
 
@@ -185,6 +194,8 @@ export default function Home() {
     go(10);
   };
 
+  const effectiveUserId = authUser?.email || guestId;
+
   if (!mounted || !authChecked) return null;
 
   return (
@@ -196,7 +207,7 @@ export default function Home() {
       {/* Step 1: Motivation */}
       {step === 1 && <MotivationScreen onNext={() => go(2)} />}
 
-      {/* Step 2: Entrance Test Selection (Choose EAMCET, GATE, etc.) */}
+      {/* Step 2: Entrance Test Selection */}
       {step === 2 && (
         <EntranceTestSelect 
           currentTest={testCategory} 
@@ -214,7 +225,7 @@ export default function Home() {
         />
       )}
 
-      {/* Step 4: Course Selection (Engineering, etc.) */}
+      {/* Step 4: Course Selection */}
       {step === 4 && (
         <CourseSelect 
           currentCourse={course} 
@@ -223,10 +234,10 @@ export default function Home() {
         />
       )}
 
-      {/* Step 5: Access Gate (Trial / Paywall) */}
+      {/* Step 5: Access Gate */}
       {step === 5 && (
         <AccessGate
-          userId={authUser?.uid}
+          userId={effectiveUserId}
           isExpired={access?.status === "expired"}
           onAccessGranted={handleAccessGranted}
           onBack={() => go(4)}
@@ -239,6 +250,7 @@ export default function Home() {
       {/* Step 7: Syllabus Page */}
       {step === 7 && (
         <SyllabusPage
+          userId={effectiveUserId}
           exam={exam}
           course={course}
           onBack={() => go(6)}
@@ -250,6 +262,7 @@ export default function Home() {
       {/* Step 8: Roadmap Config Page */}
       {step === 8 && (
         <RoadmapPage
+          userId={effectiveUserId}
           exam={exam}
           course={course}
           onBack={() => go(6)}
@@ -258,20 +271,20 @@ export default function Home() {
       )}
 
       {/* Step 9: Practice Arena */}
-      {step === 8 || step === 9 ? (
-        step === 9 && (
-          <PracticeArena
-            exam={exam}
-            course={course}
-            onBack={() => go(6)}
-            onGoToRoadmap={() => go(8)}
-          />
-        )
-      ) : null}
+      {step === 9 && (
+        <PracticeArena
+          userId={effectiveUserId}
+          exam={exam}
+          course={course}
+          onBack={() => go(6)}
+          onGoToRoadmap={() => go(8)}
+        />
+      )}
 
       {/* Step 10: Roadmap Execution Mode */}
       {step === 10 && (
         <RoadmapMode
+          userId={effectiveUserId}
           exam={exam}
           course={course}
           roadmap={roadmapData}
