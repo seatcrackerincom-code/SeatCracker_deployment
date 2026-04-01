@@ -258,6 +258,28 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
   };
 
   /* ────────────────────────────────────────────
+     RENDER: EXAM MODE (full-screen ExamPractice overlay)
+  ──────────────────────────────────────────── */
+  if (examMode) {
+    return (
+      <ExamPractice
+        userId={userId}
+        exam={exam}
+        course={course}
+        onBack={() => setExamMode(false)}
+        initialTopic={{ subject: examSubject, topic: examTopic }}
+        onExamComplete={(correct) => {
+          // Always mark topic done on attempt completion
+          if (examDayNum > 0) {
+            markTopicDone(examDayNum, examTopic);
+          }
+          setExamMode(false);
+        }}
+      />
+    );
+  }
+
+  /* ────────────────────────────────────────────
      RENDER: MAP (Level Journey)
   ──────────────────────────────────────────── */
   if (screen.kind === "map") {
@@ -621,7 +643,10 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
             )}
           </div>
 
-          <button className={styles.youtubeBtn}>
+          <button 
+            className={styles.youtubeBtn}
+            onClick={() => window.open(`https://www.youtube.com/results?search_query=${encodeURIComponent(screen.subject + " " + screen.topic + " one shot")}`, '_blank')}
+          >
              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
              Watch on YouTube
           </button>
@@ -631,8 +656,6 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
               <p className={styles.aiLabel}>🤖 AI Teacher Check</p>
               <p className={styles.aiSub}>Test your understanding with a real EAMCET exam.</p>
             </div>
-
-
 
             <button
               className={styles.startTestBtn}
@@ -651,28 +674,6 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
           </button>
         </div>
       </div>
-    );
-  }
-
-  /* ────────────────────────────────────────────
-     RENDER: EXAM MODE (full-screen ExamPractice overlay)
-  ──────────────────────────────────────────── */
-  if (examMode) {
-    return (
-      <ExamPractice
-        userId={userId}
-        exam={exam}
-        course={course}
-        onBack={() => setExamMode(false)}
-        initialTopic={{ subject: examSubject, topic: examTopic }}
-        onExamComplete={(correct) => {
-          // Always mark topic done on attempt completion since threshold is removed
-          if (examDayNum > 0) {
-            markTopicDone(examDayNum, examTopic);
-          }
-          setExamMode(false);
-        }}
-      />
     );
   }
 
