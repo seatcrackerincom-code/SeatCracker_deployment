@@ -1,0 +1,712 @@
+{
+  "topic_id": 39,
+  "topic_name": "TRIPLE PRODUCT OF VECTOR'S",
+  "weightage": 1,
+  "priority": "Low",
+  "subtopics": [
+    "Scalar Triple Product",
+    "Vector Triple Product"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "The scalar triple product (STP) of three vectors a, b, c is defined as ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a · (b × c)",
+        "B": "a × (b × c)",
+        "C": "a · (b · c)",
+        "D": "a × (b · c)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "The scalar triple product a · (b × c) is often denoted by the notation ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[a b c]",
+        "B": "(a, b, c)",
+        "C": "|a b c|",
+        "D": "{a b c}"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "Geometrically, the absolute value of the scalar triple product |[a b c]| represents the ______ of the parallelepiped having a, b, c as coterminous edges.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Volume",
+        "B": "Surface area",
+        "C": "Diagonal length",
+        "D": "Base area"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "If vectors are given in component form a = a₁i + a₂j + a₃k, b = b₁i + b₂j + b₃k, c = c₁i + c₂j + c₃k, then [a b c] is precisely the ______ of a 3x3 matrix whose rows are the components of a, b, and c.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Determinant",
+        "B": "Trace",
+        "C": "Rank",
+        "D": "Inverse"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "Because of determinant properties, cyclic permutation of the vectors in STP ______ its value.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Does not change, so [a b c] = [b c a] = [c a b]",
+        "B": "Changes its sign",
+        "C": "Inverts",
+        "D": "Zeros"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "Swapping any two adjacent vectors in the STP ______ its value.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Changes its sign, so [a b c] = -[b a c]",
+        "B": "Does not change",
+        "C": "Inverts",
+        "D": "Zeros"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "If any two vectors in the STP are equal or parallel, then the STP is equal to ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Their dot product",
+        "D": "Infinity"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "The diagram show three vectors originating from a single point lying on the same plane. The STP [a b c] determines if they are coplanar. Three vectors are coplanar if and only if their STP is ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Three vectors a, b, c lying completely flat in one plane, forming a volume. The volume of the 3D shape is visibly zero.",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Non-zero",
+        "D": "Negative"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "The position of dot and cross in STP can be interchanged without changing the value: a · (b × c) = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(a × b) · c",
+        "B": "(a · b) × c",
+        "C": "a × (b × c)",
+        "D": "a · (b · c)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "The volume of a tetrahedron with coterminous edges a, b, c is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/6) |[a b c]|",
+        "B": "(1/3) |[a b c]|",
+        "C": "(1/2) |[a b c]|",
+        "D": "|[a b c]|"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "Consider four points A, B, C, D with position vectors a, b, c, d. The volume of the tetrahedron ABCD is (1/6)[(b-a) (c-a) (d-a)]. If the four points are coplanar, this volume is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "(1/6)",
+        "D": "Cannot be determined"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "Value of [i j k] is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "-1",
+        "D": "i"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "Value of [i k j] is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "0",
+        "D": "k"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "What happens if a vector is multiplied by a scalar k in the STP: [ka b c]?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "k [a b c]",
+        "B": "k² [a b c]",
+        "C": "k³ [a b c]",
+        "D": "[a b c]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "The distributive property holds for STP: [a+d b c] = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[a b c] + [d b c]",
+        "B": "[a d c] + [b d c]",
+        "C": "[a b c] * [d b c]",
+        "D": "[a+b+c d]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "The vector triple product (VTP) of three vectors a, b, c is defined as ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a × (b × c)",
+        "B": "a · (b × c)",
+        "C": "a × (b · c)",
+        "D": "(a · b) c"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "The resulting object from a vector triple product a × (b × c) is a ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Vector",
+        "B": "Scalar",
+        "C": "Tensor",
+        "D": "Matrix"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "Geometrically, the vector a × (b × c) is perpendicular to a and lies entirely within the ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Plane containing b and c",
+        "B": "Plane containing a and b",
+        "C": "Plane containing a and c",
+        "D": "Origin"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "Because a × (b × c) lies in the plane of b and c, it can be expressed as a linear combination ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x b + y c (for some scalars x and y)",
+        "B": "x a + y b",
+        "C": "a + b + c",
+        "D": "x (b × c)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "The expansion rule for vector triple product (often called BAC-CAB identity) is a × (b × c) = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(a · c)b - (a · b)c",
+        "B": "(a · b)c - (a · c)b",
+        "C": "(b · c)a - (a · c)b",
+        "D": "(a · b)c + (a · c)b"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "However, the VTP is NOT associative. That means a × (b × c) is generally ______ (a × b) × c.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Not Equal to",
+        "B": "Equal to",
+        "C": "Negative of",
+        "D": "Twice"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "The expansion for (a × b) × c is obtained by reversing the cross product (introducing a minus sign): - c × (a × b) = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(a · c)b - (b · c)a",
+        "B": "(a · b)c - (a · c)b",
+        "C": "(b · c)a - (a · c)b",
+        "D": "(a · c)a - (b · c)b"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "Therefore, (a × b) × c lies in the plane of ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a and b",
+        "B": "b and c",
+        "C": "a and c",
+        "D": "none of these"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "A fundamental identity relating VTP variants is a × (b × c) + b × (c × a) + c × (a × b) = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0 (zero vector)",
+        "B": "1",
+        "C": "a + b + c",
+        "D": "[a b c]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "The relation [a × b, b × c, c × a] represents the scalar triple product of the cross products. It is equal to ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[a b c]²",
+        "B": "[a b c]",
+        "C": "0",
+        "D": "2[a b c]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "If three vectors are coplanar, what happens to their cross products reciprocal vectors a×b, b×c, c×a?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "They are collinear (parallel)",
+        "B": "They form a tetrahedron",
+        "C": "They are perpendicular",
+        "D": "They act as basis"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "The scalar product of four vectors: (a × b) · (c × d) is equal to an expression involving dot products defined as a determinant. It is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(a · c)(b · d) - (a · d)(b · c)",
+        "B": "(a · b)(c · d)",
+        "C": "(a · d)(b · c) - (a · c)(b · d)",
+        "D": "[a b c d]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "The vector product of four vectors: (a × b) × (c × d). Let p = (a × b). Then p × (c × d) = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[a b d]c - [a b c]d",
+        "B": "[c d b]a - [c d a]b",
+        "C": "(a · c) d - (b · d) c",
+        "D": "Both A and B are distinct correct forms resulting from expansion"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "If we set (a × b) × (c × d) = 0 and (a × b) ≠ 0 and (c × d) ≠ 0. The geometric interpretation is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "The planes containing (a,b) and (c,d) are parallel",
+        "B": "The planes are perpendicular",
+        "C": "The vectors are coplanar",
+        "D": "The vectors form a tetrahedron"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "What is the result of [a+b b+c c+a]?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2[a b c]",
+        "B": "[a b c]",
+        "C": "0",
+        "D": "3[a b c]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "What is the result of [a-b b-c c-a]?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "[a b c]",
+        "C": "-[a b c]",
+        "D": "2[a b c]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "A system of three non-coplanar vectors a, b, c and another system a', b', c' form a reciprocal system if a · a' = 1, a · b' = 0, etc. The reciprocal vector a' is given by ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(b × c) / [a b c]",
+        "B": "(b × a) / [a b c]",
+        "C": "(a × b) / [a b c]",
+        "D": "(c × a) / [a b c]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "Reciprocal vector b' is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(c × a) / [a b c]",
+        "B": "(a × c) / [a b c]",
+        "C": "(c × b) / [a b c]",
+        "D": "(a × b) / [a b c]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "The STP of reciprocal vectors [a' b' c'] is related to the original basis by ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / [a b c]",
+        "B": "[a b c]",
+        "C": "[a b c]²",
+        "D": "-[a b c]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "The vectors a = i - 2j + 3k, b = -2i + 3j - 4k, c = i - 3j + 5k are coplanar if their STP is 0. Their STP evaluates to ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0 (They are coplanar)",
+        "B": "1",
+        "C": "-1",
+        "D": "24"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "From the definition of VTP (BAC-CAB), i × (j × k) = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0 (zero vector)",
+        "B": "i",
+        "C": "j",
+        "D": "k"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "But i × (i × j) using BAC-CAB = (i · j)i - (i · i)j. Since i·j=0, i·i=1, it evaluates to ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-j",
+        "B": "j",
+        "C": "-i",
+        "D": "k"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "Vector identity: (a × b)² = |a|² |b|² - (a · b)². This is known as ______ identity.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Lagrange's",
+        "B": "Euler's",
+        "C": "Cauchy-Schwarz",
+        "D": "Grassmann's"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "If a, b, c are unit vectors and a × (b × c) = (1/2)b. The angle between a and b is ______ and a and c is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "90° and 60° (because (a·c)=1/2 and (a·b)=0)",
+        "B": "60° and 90°",
+        "C": "45° and 45°",
+        "D": "0° and 90°"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "Volume of parallelepiped with edges a+b, b+c, c+a is ______ times the volume of the original a, b, c parallelepiped.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "1/2",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "Volume of parallelepiped with edges a×b, b×c, c×a is ______ the volume of original.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Square of ([a b c]²)",
+        "B": "Equal to",
+        "C": "Double",
+        "D": "Volume is 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "The diagram show a plane containing vectors b and c, and vector a outside. Projection of a off the plane dictates the ______ of the parallelepiped, thus forming its STP value via Base * [that].",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Vector a forming an angle with the normal of plane(b, c), dropping a perpendicular height h.",
+      "options": {
+        "A": "Height",
+        "B": "Base",
+        "C": "Width",
+        "D": "Angle"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "Any vector r in 3D space can be expressed using three non-coplanar basis vectors a, b, c as r = x a + y b + z c. The coefficients x, y, z can be found using STP. For instance x = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[r b c] / [a b c]",
+        "B": "[r a c] / [a b c]",
+        "C": "[r b a] / [a b c]",
+        "D": "(r · a) / |a|²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "Similarly, y = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[r c a] / [a b c]  (Wait: it must follow cyclical order, [a r c]/[a b c])",
+        "B": "Both A and [a r c]/[a b c] are geometrically equivalent representations",
+        "C": "[r b c]/[a b c]",
+        "D": "[r a b]/[a b c]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "Given 4 points A, B, C, D in space. A necessary and sufficient condition for them to be coplanar is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[AB AC AD] = 0",
+        "B": "AB × AC = 0",
+        "C": "AB · CD = 0",
+        "D": "AB + BC + CD = -DA"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "If a, b, c are mutually orthogonal unit vectors right-handed system, then [a b c] = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "-1",
+        "D": "i"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "If the system is left-handed mutually orthogonal unit vectors, then [a b c] = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "0",
+        "D": "i"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "Can VTP be used to find a vector perpendicular to a but in the plane of a and b?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Yes, compute a × (b × a)",
+        "B": "No, you must use STP",
+        "C": "Yes, compute a × b",
+        "D": "No, compute a · b"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "Evaluate a × (b × a).",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(a · a)b - (a · b)a",
+        "B": "(a · b)a - (a · a)b",
+        "C": "0",
+        "D": "a"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "In rigid body dynamics, angular momentum L of a point particle rotating around origin with velocity v = ω × r is L = m(r × v) = m(r × (ω × r)). Expanding this using VTP leads to ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "m[(r·r)ω - (r·ω)r] (which connects to the moment of inertia tensor)",
+        "B": "m(r·v)ω",
+        "C": "m(ω·ω)r",
+        "D": "0"
+      },
+      "answer": "A"
+    }
+  ]
+}

@@ -1,0 +1,713 @@
+{
+  "topic_id": 12,
+  "topic_name": "PERMUTATIONS & COMBINATIONS",
+  "weightage": 3,
+  "priority": "High",
+  "subtopics": [
+    "Fundamental Counting Principle",
+    "Permutations (with/without repetition)",
+    "Combinations, Multinomials"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "The number of ways to arrange 'n' distinct objects in a row is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n!",
+        "B": "n²",
+        "C": "2ⁿ",
+        "D": "n"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "The number of ways of selecting 'r' objects from 'n' distinct objects is denoted by:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ⁿCᵣ",
+        "B": "ⁿPᵣ",
+        "C": "n!",
+        "D": "r!"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "The relationship between ⁿPᵣ and ⁿCᵣ is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ⁿPᵣ = r! * ⁿCᵣ",
+        "B": "ⁿCᵣ = r! * ⁿPᵣ",
+        "C": "ⁿPᵣ = ⁿCᵣ",
+        "D": "ⁿPᵣ = n! * ⁿCᵣ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "The diagram show 5 different colored balls. The number of ways to pick any 2 is:",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A set of 5 distinct balls (Red, Blue, Green, Yellow, Black).",
+      "options": {
+        "A": "10",
+        "B": "20",
+        "C": "5",
+        "D": "120"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "The value of ⁿC₀ + ⁿC₁ + ... + ⁿCₙ is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2ⁿ",
+        "B": "n²",
+        "C": "n!",
+        "D": "2n"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "The number of permutations of 'n' objects where 'p' are alike of one kind, 'q' are alike of another kind is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n! / (p! q!)",
+        "B": "n! * (p! q!)",
+        "C": "(p+q)! / n!",
+        "D": "nᵖ qᵏ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "In how many ways can 5 people be seated around a circular table?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "24",
+        "B": "120",
+        "C": "60",
+        "D": "5"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "The number of diagonals in a polygon of 'n' sides is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n(n-3)/2",
+        "B": "ⁿC₂",
+        "C": "n(n-1)/2",
+        "D": "n² - n"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "How many 3-digit numbers can be formed using digits 1, 2, 3, 4, 5 without repetition?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "60",
+        "B": "125",
+        "C": "10",
+        "D": "15"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "The diagram show a grid of 3x3 squares. The number of rectangles (including squares) is:",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A square grid with 3 horizontal lines and 3 vertical lines (excluding boundary) creating 16 intersection points total or 3x3 small squares.",
+      "options": {
+        "A": "36",
+        "B": "9",
+        "C": "16",
+        "D": "100"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "If ⁿCₓ = ⁿCᵧ, then either x = y or ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x + y = n",
+        "B": "x - y = n",
+        "C": "xy = n",
+        "D": "x + y = 2n"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "The number of ways of distributing 'n' identical items among 'r' persons such that each may get any number is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ⁿ⁺ʳ⁻¹Cᵣ⁻¹",
+        "B": "ⁿCᵣ",
+        "C": "ʳCₙ",
+        "D": "nʳ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "The number of circular permutations of 'n' different things is (n-1)! if clockwise and anti-clockwise are ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Different",
+        "B": "Same",
+        "C": "Zero",
+        "D": "Infinite"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "The diagram show 4 letters A, B, C, D and 4 envelopes. The number of ways to put them such that none goes in the right envelope is called ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Four letters and four envelopes labeled matchingly, with arrows showing incorrect pairings.",
+      "options": {
+        "A": "Derangement",
+        "B": "Permutation",
+        "C": "Combination",
+        "D": "Selection"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "Find the number of ways to arrange the letters of 'APPLE'.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "60",
+        "B": "120",
+        "C": "24",
+        "D": "10"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "The sum of all 4-digit numbers formed by 1, 2, 3, 4 without repetition is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "66660",
+        "B": "24000",
+        "C": "11110",
+        "D": "44440"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "How many ways to select 3 vowels from the 5 English vowels?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "10",
+        "B": "60",
+        "C": "20",
+        "D": "5"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "The diagram show a set of 10 points on a plane. The number of lines that can be drawn is:",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A group of 10 dots randomly scattered, no three are collinear.",
+      "options": {
+        "A": "45",
+        "B": "100",
+        "C": "90",
+        "D": "10"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "ⁿCᵣ + ⁿCᵣ₋₁ = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ⁿ⁺¹Cᵣ",
+        "B": "ⁿ⁺¹Cᵣ₊₁",
+        "C": "ⁿCᵣ₊₁",
+        "D": "2ⁿCᵣ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "A box contains 5 red and 4 blue balls. In how many ways can 3 balls be drawn such that at least 2 are red?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "50",
+        "B": "40",
+        "C": "84",
+        "D": "20"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "The number of ways 'n' things can be divided into two groups of 'p' and 'q' things (n=p+q) is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n! / (p! q!)",
+        "B": "n! / p!",
+        "C": "(p+q)! / 2",
+        "D": "ⁿCₚ * ⁿCᵩ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "How many 5-letter words can be formed using letters of 'MISSISSIPPI'?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Complex Calculation",
+        "B": "11! / (4! 4! 2!)",
+        "C": "5⁵",
+        "D": "5000"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 23,
+      "question": "The diagram show a Pascal's Triangle. Each entry is the ______ of the two entries above it.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A triangular array of numbers starting with 1 at the apex.",
+      "options": {
+        "A": "Sum",
+        "B": "Product",
+        "C": "Difference",
+        "D": "Average"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "The coefficient of x^r in (1+x)^n is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ⁿCᵣ",
+        "B": "ⁿPᵣ",
+        "C": "n!",
+        "D": "r!"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "In how many ways can 10 distinct toys be given to 3 children such that one gets 5, another 3 and the third 2?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2520",
+        "B": "10!",
+        "C": "120",
+        "D": "30"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "The number of ways to choose a committee of 4 from 6 men and 4 women such that it contains 2 men and 2 women is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "90",
+        "B": "210",
+        "C": "24",
+        "D": "120"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "The diagram show a circular necklace with 6 different beads. The number of arrangements is:",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A circle with 6 distinct colored beads arranged along the perimeter.",
+      "options": {
+        "A": "60",
+        "B": "120",
+        "C": "720",
+        "D": "30"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "ⁿPₙ = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n!",
+        "B": "1",
+        "C": "n",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "ⁿP₀ = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "n",
+        "C": "0",
+        "D": "Undefined"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "The diagram show a hand shake between two people. In a group of 'n' people, total handshakes are:",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Two people shaking hands.",
+      "options": {
+        "A": "ⁿC₂",
+        "B": "ⁿP₂",
+        "C": "n",
+        "D": "2n"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "How many ways to arrange letters of 'MATHEMATICS'?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "11! / (2! 2! 2!)",
+        "B": "11!",
+        "C": "11! / 3!",
+        "D": "11! / 8"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "The rank of the word 'TOUGH' in dictionary is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "89",
+        "B": "120",
+        "C": "45",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "How many triangles can be formed from 12 points, 5 of which are collinear?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "210",
+        "B": "220",
+        "C": "110",
+        "D": "100"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "The diagram show 5 distinct flags. Number of signals that can be made using 2 flags is:",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Five different colored flags hanging on a line.",
+      "options": {
+        "A": "20",
+        "B": "10",
+        "C": "25",
+        "D": "120"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "If ⁿPᵣ = 720 and ⁿCᵣ = 120, find r.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "2",
+        "D": "5"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "The number of subsets of a set with 'n' elements is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2ⁿ",
+        "B": "n²",
+        "C": "ⁿC₂",
+        "D": "n!"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "The diagram show a circular table with 10 chairs. In how many ways can two特定 individuals sit next to each other?",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A round table with 10 seats correctly spaced.",
+      "options": {
+        "A": "2 * 8!",
+        "B": "9!",
+        "C": "10!",
+        "D": "2 * 9!"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "How many divisors are there for number 360?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "24",
+        "B": "12",
+        "C": "36",
+        "D": "10"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "The number of ways 'n' distinct objects can be put in 'r' distinct boxes is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "rⁿ",
+        "B": "nʳ",
+        "C": "ⁿPᵣ",
+        "D": "ⁿCᵣ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "The diagram show an arrangement of 3 identical Red balls and 2 identical Blue balls. Total arrangements:",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Five balls in a row: RRRBB.",
+      "options": {
+        "A": "10",
+        "B": "120",
+        "C": "24",
+        "D": "5"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "The number of ways of choosing 'r' items from 'n' distinct items with repetition allowed is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ⁿ⁺ʳ⁻¹Cᵣ",
+        "B": "nʳ",
+        "C": "ⁿPᵣ",
+        "D": "ⁿCᵣ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "Find the number of ways to pick a team of 11 from 15 players.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1365",
+        "B": "1500",
+        "C": "15!",
+        "D": "455"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "The diagram show a set of 5 distinct non-parallel lines. The maximum number of points of intersection is:",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Five straight lines crossing each other in various points.",
+      "options": {
+        "A": "10",
+        "B": "25",
+        "C": "20",
+        "D": "5"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "Multinomial theorem helps find coefficients in expansion like (x1 + x2 + ... + xm)ⁿ. The general term coefficient is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n! / (n1! n2! ... nm!)",
+        "B": "ⁿCₘ",
+        "C": "n!",
+        "D": "mⁿ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "How many ways to distribute 10 different cakes to 2 orphans?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1024",
+        "B": "20",
+        "C": "100",
+        "D": "45"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "In how many ways can 12 members be divided into 3 groups of 4 each?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "12! / (3! (4!)³)",
+        "B": "12! / (4!)³",
+        "C": "3! / 4!",
+        "D": "12³"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "The diagram show a 'Tree Diagram' for selecting path A or B then 1 or 2. Total outcomes are found by ______ the branches.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A hierarchical flowchart starting with one point splitting into two, then each splitting into two again.",
+      "options": {
+        "A": "Multiplying",
+        "B": "Adding",
+        "C": "Dividing",
+        "D": "Subtracting"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "The value of 0! is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "Undefined",
+        "D": "Infinity"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "Number of ways to select at least one item from 'n' distinct items is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2ⁿ - 1",
+        "B": "2ⁿ",
+        "C": "n",
+        "D": "ⁿC₁"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "How many odd numbers less than 1000 can be formed using digits 0, 1, 2, 3, 4, 5 without repetition?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Complex Calculation (Case based)",
+        "B": "120",
+        "C": "60",
+        "D": "30"
+      },
+      "answer": "A"
+    }
+  ]
+}

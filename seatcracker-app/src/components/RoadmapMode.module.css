@@ -1,0 +1,671 @@
+/* ───────────────────────────────────────────
+   ROADMAP MODE — Gamified Zigzag Path
+─────────────────────────────────────────── */
+
+/* ── Wrapper with Space Background ── */
+.wrapper {
+  min-height: 100vh;
+  background: #05011a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+  font-family: inherit;
+}
+
+.spaceBg {
+  position: fixed;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.2) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(168, 85, 247, 0.2) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(30, 10, 80, 0.3) 0%, transparent 60%),
+    #030112;
+  z-index: 0;
+}
+
+.spaceBg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.bgOverlay {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(3, 1, 18, 0.8) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ── Roadmap Top Bar ── */
+.roadmapTopBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: rgba(3, 1, 18, 0.4);
+  backdrop-filter: blur(12px);
+  z-index: 1100;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.headerBackBtn {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #fff;
+  padding: 6px 14px 6px 8px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.headerBackBtn:hover {
+  background: rgba(255,255,255,0.15);
+  transform: translateX(-2px);
+}
+
+.courseTitle {
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.settingsBtn {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.settingsBtn:hover {
+  background: rgba(255,255,255,0.15);
+  transform: rotate(45deg);
+}
+
+/* ── Roadmap Progress Header ── */
+.roadmapProgressHeader {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  z-index: 1000;
+  text-align: center;
+  pointer-events: none;
+}
+
+.daysLeft {
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 8px;
+  display: block;
+  letter-spacing: 0.5px;
+}
+
+.highlight {
+  color: #a78bfa;
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+}
+
+.mainProgressBar {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.mainProgressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.8);
+  border-radius: 20px;
+}
+
+.progressLabel {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  margin-top: 10px;
+  display: block;
+  font-weight: 600;
+}
+
+/* ── Path Section ── */
+.pathSection {
+  flex: 1;
+  padding: 160px 0 200px;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}
+
+.pathInner {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ── Curved Path SVG ── */
+.svgPathContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  overflow: visible;
+}
+
+.roadmapPathLine {
+  fill: none;
+  stroke: rgba(0, 242, 255, 0.5); /* Cyan glow */
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 0 20;
+  filter: drop-shadow(0 0 10px rgba(0, 242, 255, 0.8));
+}
+
+.pathParticle {
+  fill: #fff;
+  filter: drop-shadow(0 0 5px #fff);
+}
+
+/* ── Level Blocks ── */
+.levelBlock {
+  height: 280px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.stepRow {
+  width: 100%;
+  display: flex;
+  padding: 0 50px;
+}
+
+.alignLeft { justify-content: flex-start; }
+.alignRight { justify-content: flex-end; }
+
+/* ── Node Design (Candy Crush High Polish) ── */
+.dayNode {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.1), transparent);
+  border: none;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.dayNode:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+
+.dayNode.completed {
+  background: radial-gradient(circle at 35% 35%, #9d7dfb, #7c3aed);
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.6),
+    0 0 40px rgba(124, 58, 237, 0.4),
+    inset 0 4px 12px rgba(255,255,255,0.5),
+    inset -4px -8px 12px rgba(0,0,0,0.3);
+}
+
+.dayNode.current {
+  background: radial-gradient(circle at 35% 35%, #8e94f2, #4f46e5);
+  box-shadow: 
+    0 20px 45px rgba(0, 0, 0, 0.7),
+    0 0 50px rgba(99, 102, 241, 0.6),
+    inset 0 6px 18px rgba(255,255,255,0.6),
+    inset -6px -10px 18px rgba(0,0,0,0.4);
+  transform: scale(1.1);
+}
+
+.dayNode.locked {
+  background-color: rgba(30, 30, 50, 0.8);
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.6);
+  opacity: 0.8;
+}
+
+.nodeLabel {
+  position: absolute;
+  top: -35px;
+  width: 140px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.9);
+}
+
+.nodeMeta {
+  position: absolute;
+  top: -12px;
+  font-size: 11px;
+  color: rgba(255,255,255,0.5);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nodeIcon {
+  font-size: 32px;
+}
+
+.characterAvatar {
+  position: absolute;
+  bottom: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85px;
+  height: 85px;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.characterAvatar::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 8px;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.6) 0%, transparent 80%);
+  z-index: -1;
+  filter: blur(2px);
+}
+
+.characterAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ── Content Tags ── */
+.tagRow {
+  position: absolute;
+  bottom: -35px;
+  display: flex;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.topicPill {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 800;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.topicPill.completed {
+  background: rgba(34, 197, 94, 0.2);
+  border-color: rgba(34, 197, 94, 0.5);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+/* Specific Subject Colors */
+.tagMath { background: #facc15; border-color: #fef08a; color: #000; font-weight: 900; }
+.tagPhys { background: #8b5cf6; border-color: #ddd6fe; color: #fff; }
+.tagChem { background: #22c55e; border-color: #bbf7d0; color: #fff; }
+
+/* Custom subject colors for completed state */
+.compMath { background: #eab308; border-color: #fde047; color: #000; font-weight: 900; }
+.compPhys { background: #7c3aed; border-color: #c4b5fd; color: #fff; }
+.compChem { background: #16a34a; border-color: #86efac; color: #fff; }
+
+/* ── Views (Day, Topic, Test, Result) ── */
+.dayView, .topicView, .testView, .resultViewOuter {
+  min-height: 100vh;
+  background: #05011a;
+  z-index: 2000;
+  position: relative;
+}
+
+.dayViewBar, .topicViewBar, .testViewBar {
+  background: rgba(10, 5, 30, 0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.dayViewTitle, .topicViewName, .testTitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+}
+
+.backBtn {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.backBtn:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.dayViewContent, .topicViewContent, .testContent {
+  padding: 24px 20px 100px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.subjectSection {
+  margin-bottom: 30px;
+}
+
+.subjectName {
+  font-size: 12px;
+  font-weight: 900;
+  color: #8b5cf6;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.topicCardBtn {
+  width: 100%;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.topicCardBtn:hover {
+  background: rgba(255,255,255,0.06);
+  border-color: #6366f1;
+}
+
+.topicCardName {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.completeBtn {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgba(168, 85, 247, 0.4);
+}
+
+.completeBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* ── Result UI ── */
+.statGridResult {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 30px 0;
+}
+
+.statBoxResult {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.statBoxResult span {
+  display: block;
+  font-size: 24px;
+  font-weight: 800;
+  color: #6366f1;
+  margin-bottom: 4px;
+}
+
+.statBoxResult label {
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+}
+
+/* ── Practice Area Additions (For Topic View) ── */
+.topicViewExam {
+  font-size: 12px;
+  font-weight: 900;
+  color: #8b5cf6;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 4px;
+}
+
+.priBadge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.priBadge.high   { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.2); }
+.priBadge.medium { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.2); }
+.priBadge.low    { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.2); }
+
+.theoryCard, .formulaCard, .aiCard {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.theoryCard h3, .formulaCard h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #a78bfa;
+  margin-bottom: 16px;
+}
+
+.theoryCard p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.subtopicList {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+}
+
+.subtopicList li {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.subtopicList li::before {
+  content: "•";
+  color: #6366f1;
+  font-size: 20px;
+}
+
+.formulaGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.formulaItem {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.formulaItem code {
+  display: block;
+  font-family: monospace;
+  font-size: 16px;
+  color: #818cf8;
+  margin-bottom: 6px;
+}
+
+.formulaItem span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.youtubeBtn {
+  width: 100%;
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 24px;
+  transition: transform 0.2s;
+}
+
+.youtubeBtn:hover {
+  transform: scale(1.02);
+  background: #cc0000;
+}
+
+.aiCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.aiLabel {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.aiSub {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.startTestBtn {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.markDoneBtn {
+  width: 100%;
+  padding: 18px;
+  border-radius: 16px;
+  border: 2px solid #22c55e;
+  background: transparent;
+  color: #22c55e;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.markDoneBtn:hover {
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.markDoneBtn.alreadyDone {
+  background: rgba(34, 197, 94, 0.2);
+  cursor: default;
+}

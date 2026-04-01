@@ -1,0 +1,714 @@
+{
+  "topic_id": 31,
+  "topic_name": "STATISTICS",
+  "weightage": 1,
+  "priority": "Low",
+  "subtopics": [
+    "Mean Deviation",
+    "Variance",
+    "Standard Deviation",
+    "Coefficient of Variation"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "The mean of a set of n observations x₁, x₂, ..., x_n is given by x̄ = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/n) Σ x_i",
+        "B": "Σ x_i",
+        "C": "(1/n) Σ (x_i)²",
+        "D": "n / Σ (1/x_i)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "The median of a statistical data refers to the ______ observation when arranged in ascending or descending order.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Middle-most",
+        "B": "Highest",
+        "C": "Lowest",
+        "D": "Most frequent"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "The mode of a statistical data is the value that occurs with the ______ frequency.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Maximum",
+        "B": "Minimum",
+        "C": "Average",
+        "D": "Median"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "The sum of the deviations of observations from their mean is always equal to ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Mean",
+        "D": "Standard Deviation"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "Mean deviation about a central value 'a' is defined as ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/n) Σ |x_i - a|",
+        "B": "(1/n) Σ (x_i - a)",
+        "C": "(1/n) Σ (x_i - a)²",
+        "D": "Σ |x_i - a|"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "Mean deviation is minimum when the central value 'a' is the ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Median",
+        "B": "Mean",
+        "C": "Mode",
+        "D": "Origin"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "The variance of a set of n observations is defined as the mean of the squares of deviations from the ______. denoted by σ².",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Mean",
+        "B": "Median",
+        "C": "Mode",
+        "D": "Origin"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "The diagram show data points scattered around a mean line. Variance is σ² = ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Data points and a central fit line, with distances squared and averaged.",
+      "options": {
+        "A": "(1/n) Σ (x_i - x̄)²",
+        "B": "(1/n) Σ |x_i - x̄|",
+        "C": "Σ |x_i - x̄| / x̄",
+        "D": "(1/n) Σ (x_i)²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "An alternative computing formula for variance is σ² = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/n) Σ (x_i)² - (x̄)²",
+        "B": "(1/n) Σ (x_i - x̄)² - (x̄)²",
+        "C": "x̄² - (1/n) Σ (x_i)²",
+        "D": "Σ (x_i)² / n²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "The standard deviation σ is the positive ______ of the variance.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Square root",
+        "B": "Square",
+        "C": "Cube root",
+        "D": "Inverse"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "If each observation in a data set is increased by a constant k, the new mean is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Old Mean + k",
+        "B": "Old Mean",
+        "C": "Old Mean * k",
+        "D": "Old Mean / k"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "If each observation in a data set is multiplied by a positive constant k, the new mean is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "k * Old Mean",
+        "B": "Old Mean + k",
+        "C": "Old Mean",
+        "D": "(Old Mean) / k"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "If each observation is increased by a constant k, the new variance is ______ the old variance.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Equal to",
+        "B": "k +",
+        "C": "k² *",
+        "D": "k *"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "If each observation is multiplied by a positive constant k, the new variance is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "k² * Old Variance",
+        "B": "k * Old Variance",
+        "C": "Equal to Old Variance",
+        "D": "Old Variance / k²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "Standard deviation is strictly independent of change of ______, but not of scale.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Origin",
+        "B": "Scale",
+        "C": "Axis",
+        "D": "Rotation"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "The diagram show two curves A and B representing data. B is flatter indicating a larger ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Two bell curves with the same mean but B is wider and shorter.",
+      "options": {
+        "A": "Standard Deviation / Variance",
+        "B": "Mean",
+        "C": "Median",
+        "D": "Size"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "The coefficient of variation (C.V.) is a relative measure of dispersion defined as ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(σ / x̄) * 100",
+        "B": "(x̄ / σ) * 100",
+        "C": "σ / x̄",
+        "D": "x̄ / σ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "A data set with a smaller Coefficient of Variation is said to be more ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Consistent",
+        "B": "Variable",
+        "C": "Dispersed",
+        "D": "Spaced out"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "The sum of squared deviations from a point 'a' is minimum when 'a' is the ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Mean",
+        "B": "Median",
+        "C": "Mode",
+        "D": "Origin"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "For a continuous frequency distribution, the assumed mean method uses step deviation d_i = (x_i - A)/h to calculate the mean as x̄ = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "A + h [(Σ f_i d_i) / (Σ f_i)]",
+        "B": "A + [(Σ f_i d_i) / (Σ f_i)]",
+        "C": "A - h [(Σ f_i d_i) / (Σ f_i)]",
+        "D": "h [(Σ f_i d_i) / (Σ f_i)]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "If observations are x₁, x₂, ..., x_n and their frequencies are f₁, f₂, ..., f_n respectively, the variance is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/N) Σ f_i(x_i - x̄)² where N = Σ f_i",
+        "B": "Σ f_i(x_i - x̄)²",
+        "C": "(1/n) Σ (x_i - x̄)²",
+        "D": "(1/N²) Σ f_i(x_i - x̄)²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "Mean of the first n natural numbers is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(n+1) / 2",
+        "B": "n(n+1) / 2",
+        "C": "n/2",
+        "D": "n(n-1) / 2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "The variance of the first n natural numbers is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(n² - 1) / 12",
+        "B": "(n² + 1) / 12",
+        "C": "(n² - 1) / 6",
+        "D": "n(n+1)/12"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "The standard deviation of first n natural numbers is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√((n² - 1) / 12)",
+        "B": "(n - 1) / 12",
+        "C": "√((n² - 1) / 6)",
+        "D": "(n² - 1) / 2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "Let observations x₁, x₂, ..., x_n have variance σ_x². A linear transformation y_i = a x_i + b gives variance σ_y² = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a² σ_x²",
+        "B": "a σ_x² + b",
+        "C": "a² σ_x² + b²",
+        "D": "|a| σ_x²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "The combined mean x̄_c of two groups with sizes n₁, n₂ and means x̄₁, x̄₂ respectively is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(n₁x̄₁ + n₂x̄₂) / (n₁ + n₂)",
+        "B": "(x̄₁ + x̄₂) / 2",
+        "C": "(n₁ + n₂) / (x̄₁ + x̄₂)",
+        "D": "x̄₁ x̄₂"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "The combined variance formula incorporates the individual variances σ₁², σ₂² and the deviations from the combined mean d₁ = x̄₁ - x̄_c, d₂ = x̄₂ - x̄_c as σ_c² = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[(n₁(σ₁²+d₁²) + n₂(σ₂²+d₂²))] / (n₁+n₂)",
+        "B": "(n₁σ₁² + n₂σ₂²) / (n₁+n₂)",
+        "C": "(σ₁² + σ₂²) / 2",
+        "D": "(d₁² + d₂²) / 2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "For a symmetrical distribution (like normal distribution), the relation between Mean, Median, and Mode is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Mean = Median = Mode",
+        "B": "Mean > Median > Mode",
+        "C": "Mean = 2 Median - Mode",
+        "D": "Mode = 3 Median - 2 Mean"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "For a moderately skewed distribution, Karl Pearson's empirical relationship is Mode = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3 Median - 2 Mean",
+        "B": "3 Mean - 2 Median",
+        "C": "2 Median - 3 Mean",
+        "D": "(Mean + Median)/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "The empirical relationship roughly holds: Mean Deviation ≈ ______ * Standard Deviation.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4/5",
+        "B": "5/4",
+        "C": "2/3",
+        "D": "3/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "Quartile deviation roughly equals ______ * Standard Deviation.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2/3",
+        "B": "3/4",
+        "C": "4/5",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "The diagram show a box plot. The range (Q3 - Q1) is called the ______ Range.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A box plot showing whiskers and a quartiles box with Q1, Q2(median), and Q3.",
+      "options": {
+        "A": "Interquartile",
+        "B": "Full",
+        "C": "Median",
+        "D": "Percentile"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "Standard Deviation is preferred over Mean Deviation because it is amenable to ______ treatment.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Algebraic",
+        "B": "Geometric",
+        "C": "Graphical",
+        "D": "Topological"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "If sum of 10 observations is 150 and sum of squares of observations is 2500, then the variance is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "25",
+        "B": "50",
+        "C": "100",
+        "D": "15"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "For two numbers a and b, the standard deviation is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|a - b| / 2",
+        "B": "(a + b)/2",
+        "C": "|a - b|",
+        "D": "√(ab)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "For a constant c, the variance of n identical observations (c, c, ..., c) is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "c",
+        "C": "c²",
+        "D": "n"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "The diagram show a frequency curve skewed to the right. Here Mean ______ Median > Mode.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A distribution with a long tail stretching to the right positive axis.",
+      "options": {
+        "A": ">",
+        "B": "<",
+        "C": "=",
+        "D": "≤"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "Skewness of a distribution essentially measures its ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Asymmetry",
+        "B": "Peakedness",
+        "C": "Dispersion",
+        "D": "Central tendency"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "Kurtosis fundamentally measures the ______ of the probability distribution curve.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Tailedness / Peakedness",
+        "B": "Asymmetry",
+        "C": "Variance",
+        "D": "Mean"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "A normal distribution is Mesokurtic. Its kurtosis (excess) is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0 (or full kurtosis 3)",
+        "B": "1",
+        "C": "Negative",
+        "D": "Infinity"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "Mean of a geometric progression 1, 2, 4, 8... up to n terms is a geometric sum divided by n. The geometric mean of x₁, x₂... x_n is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(x₁ * x₂ * ... * x_n)^(1/n)",
+        "B": "(Σ x_i)/n",
+        "C": "n / Σ(1/x_i)",
+        "D": "x_n / n"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "The Harmonic Mean (HM) of n observations is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n / Σ(1/x_i)",
+        "B": "(Σ x_i)/n",
+        "C": "(x₁ * x₂ * ... * x_n)^(1/n)",
+        "D": "1 / Σ(x_i)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "Between AM (Arithmetic), GM (Geometric), and HM (Harmonic) for unequal positive observations, the relation is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "AM > GM > HM",
+        "B": "AM < GM < HM",
+        "C": "HM > AM > GM",
+        "D": "GM > AM > HM"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "For two numbers a and b, AM × HM is equal to ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(GM)²",
+        "B": "GM",
+        "C": "AM + HM",
+        "D": "a / b"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "The second central moment μ₂ is defined as (1/n) Σ(x_i - x̄)². It is synonymous with ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Variance",
+        "B": "Mean",
+        "C": "Standard Deviation",
+        "D": "Skewness"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "The first central moment μ₁ is always equal to ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Mean",
+        "D": "Variance"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "Coefficient of Range for data with maximum L and minimum S is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(L - S) / (L + S)",
+        "B": "L - S",
+        "C": "(L + S) / (L - S)",
+        "D": "L / S"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "The diagram show an ogive (cumulative frequency curve). The median can be graphically found by locating the abscissa corresponding to the cumulative frequency ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "An S-shaped cumulative frequency curve plotted, showing the y-axis (Cumulative Freq) intersecting N/2 and mapping to the x-axis.",
+      "options": {
+        "A": "N/2",
+        "B": "N",
+        "C": "N/4",
+        "D": "3N/4"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "Lower Quartile Q1 corresponds to cumulative frequency ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "N/4",
+        "B": "N/2",
+        "C": "3N/4",
+        "D": "N"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "Mean absolute error or average deviation is least when the deviations are taken from the ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Median",
+        "B": "Mean",
+        "C": "Mode",
+        "D": "Geometric Mean"
+      },
+      "answer": "A"
+    }
+  ]
+}

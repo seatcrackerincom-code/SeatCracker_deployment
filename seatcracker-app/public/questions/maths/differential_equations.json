@@ -1,0 +1,713 @@
+{
+  "topic_id": 8,
+  "topic_name": "DIFFERENTIAL EQUATIONS",
+  "weightage": 3,
+  "priority": "High",
+  "subtopics": [
+    "Order, Degree & Formulation",
+    "Variable Separable & Homogeneous",
+    "Linear & Exact Equations"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "The order of a differential equation is the order of the ______ derivative appearing in it.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Highest",
+        "B": "Lowest",
+        "C": "First",
+        "D": "Second"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "The degree of a differential equation is the power of the highest order derivative when expressed as a ______ in derivatives.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Polynomial",
+        "B": "Fraction",
+        "C": "Logarithm",
+        "D": "Exponential"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "What is the order of the differential equation d²y/dx² + (dy/dx)³ = x?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "1",
+        "D": "4"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "What is the degree of the differential equation d²y/dx² + (dy/dx)³ = x?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "3",
+        "C": "2",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "The degree of differential equation sin(dy/dx) = y is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Not defined",
+        "B": "1",
+        "C": "0",
+        "D": "Infinite"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "To form a differential equation from y = cx + c², we differentiate it ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Once",
+        "B": "Twice",
+        "C": "Thrice",
+        "D": "Zero times"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "The order of differential equation whose general solution has 'n' arbitrary constants is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n",
+        "B": "n+1",
+        "C": "n-1",
+        "D": "2n"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "The differential equation of the family of lines y = mx + c (where m, c are arbitrary) has order:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "0",
+        "D": "3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "The general solution of dy/dx = f(x) is y = ______ + C.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∫ f(x) dx",
+        "B": "f'(x)",
+        "C": "f(x)²",
+        "D": "1 / f(x)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "In Variable Separable form f(x)dx = g(y)dy, the solution is obtained by ______ both sides.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Integrating",
+        "B": "Differentiating",
+        "C": "Squaring",
+        "D": "Taking Logarithms of"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "The solution of dy/dx = -x/y implies ydy = -xdx, which integrates to y²/2 = -x²/2 + C, or x² + y² = 2C. This family represents ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Circles centered at origin",
+        "B": "Parabolas",
+        "C": "Straight lines",
+        "D": "Hyperbolas"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "The diagram show a family of curves. If the tangential slope dy/dx = y/x, the curves satisfy xdy - ydx = 0, which are ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Multiple straight lines passing through the origin.",
+      "options": {
+        "A": "Lines through origin",
+        "B": "Circles passing origin",
+        "C": "Parabolas",
+        "D": "Ellipses"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "For a Homogeneous Differential Equation dy/dx = f(y/x), we substitute y = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "vx",
+        "B": "x/v",
+        "C": "u+v",
+        "D": "v²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "If we substitute y=vx, then dy/dx becomes ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "v + x(dv/dx)",
+        "B": "dv/dx",
+        "C": "x(dv/dx)",
+        "D": "v(dx/dv)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "A differential equation is Linear of first order if it is of the form dy/dx + Py = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Q",
+        "B": "Pxy",
+        "C": "Qy²",
+        "D": "0 always"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "For the linear differential equation dy/dx + Py = Q, the Integrating Factor (IF) is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^(∫P dx)",
+        "B": "e^(∫Q dx)",
+        "C": "∫P dx",
+        "D": "e^(Px)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "The general solution of dy/dx + Py = Q is y * (IF) = ______ + C.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∫ Q * (IF) dx",
+        "B": "Q",
+        "C": "P",
+        "D": "∫ P * (IF) dx"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "If the equation is dx/dy + P₁x = Q₁, the integrating factor is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^(∫P₁ dy)",
+        "B": "e^(∫P₁ dx)",
+        "C": "e^(∫Q₁ dx)",
+        "D": "∫P₁ dx"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "The diagram show the slope field for dy/dx = x+y. The solution curves follow the ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A field of small tangent vectors (slope field) with lines showing the flow of the solution.",
+      "options": {
+        "A": "Tangents/Slopes",
+        "B": "Normals",
+        "C": "Axes",
+        "D": "Asymptotes"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "The integrating factor of dy/dx - (1/x)y = x² is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/x",
+        "B": "x",
+        "C": "e^x",
+        "D": "-ln x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "An equation Mdx + Ndy = 0 is Exact if ∂M/∂y is equal to ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∂N/∂x",
+        "B": "-∂N/∂x",
+        "C": "∂M/∂x",
+        "D": "N"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "The solution of an exact differential equation Mdx + Ndy = 0 is ∫M dx (treating y as constant) + ∫(terms in N without x) dy = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "C",
+        "B": "0",
+        "C": "x+y",
+        "D": "xy"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "If Mdx + Ndy = 0 is not exact, but (∂M/∂y - ∂N/∂x)/N is a function of x alone, say f(x), then IF is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^(∫f(x) dx)",
+        "B": "e^(∫f(y) dy)",
+        "C": "f(x)",
+        "D": "∫M dx"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "Bernoulli's equation is of the form dy/dx + Py = Qyⁿ. We divide by yⁿ and substitute ______ to make it linear.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y^(1-n) = v",
+        "B": "y^n = v",
+        "C": "x = v",
+        "D": "log y = v"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "The orthogonal trajectories of a family of curves intersect them at ______ angles.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Right (90°)",
+        "B": "Acute (45°)",
+        "C": "Obtuse",
+        "D": "Zero (0°)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "The diagram show a family of concentric circles x²+y²=C² and their orthogonal trajectories, which are ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Concentric circles around the origin intersected by straight lines radiating out from the origin.",
+      "options": {
+        "A": "Straight lines through origin",
+        "B": "Other circles",
+        "C": "Parabolas",
+        "D": "Hyperbolas"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "To find orthogonal trajectories, we replace dy/dx with ______ in the differential equation.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-dx/dy",
+        "B": "dx/dy",
+        "C": "-dy/dx",
+        "D": "1/(dy/dx)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "The differential equation of the family of concentric circles x² + y² = a² is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x + y(dy/dx) = 0",
+        "B": "x - y(dy/dx) = 0",
+        "C": "y + x(dy/dx) = 0",
+        "D": "(dy/dx)² + 1 = 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "Replacing dy/dx with -dx/dy in x + y(dy/dx) = 0 gives x - y(dx/dy) = 0, which corresponds to the solution ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y = cx",
+        "B": "xy = c",
+        "C": "y² = cx",
+        "D": "x² - y² = c"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "The solution of dy/dx = e^{x+y} can be found by separating variables giving e^{-y}dy = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^x dx",
+        "B": "e^{-x} dx",
+        "C": "dx",
+        "D": "xe^x dx"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "The diagram show exponential growth or decay. The equation dy/dt = ky models _____ if k>0.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "An exponentially increasing curve plotted against time t.",
+      "options": {
+        "A": "Growth",
+        "B": "Decay",
+        "C": "Oscillation",
+        "D": "Equilibrium"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "Newton's Law of Cooling dT/dt = -k(T - Tm) is an example of a ______ differential equation.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Linear First Order",
+        "B": "Second Order",
+        "C": "Non-linear Exact",
+        "D": "Bernoulli"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "The general solution of dy/dx = (y/x)² is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x/y = -ln|x| + C",
+        "B": "y = x ln|x| + C",
+        "C": "y/x = ln|x| + C",
+        "D": "x² = y² + C"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "In polar coordinates, for orthogonal trajectories, we replace dr/dθ with ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-r² (dθ/dr)",
+        "B": "-dθ/dr",
+        "C": "r (dθ/dr)",
+        "D": "-1 / (dr/dθ)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "The equation (x²-yx²)dy + (y²+xy²)dx = 0 can be written as variables separable by writing dx/x² + dy/y² = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "dx/x - dy/y",
+        "B": "0",
+        "C": "x dx",
+        "D": "y dy"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "The integrating factor of x log x (dy/dx) + y = 2/x is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "log x",
+        "B": "x",
+        "C": "x log x",
+        "D": "1/x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "A function f(x,y) is homogeneous of degree n if f(λx, λy) = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "λⁿ f(x,y)",
+        "B": "λ f(x,y)",
+        "C": "n f(x,y)",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "The diagram show a logistic growth curve obeying dP/dt = rP(1 - P/K). This differential equation is ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "An S-shaped curve leveling off at a carrying capacity K.",
+      "options": {
+        "A": "Non-linear",
+        "B": "Linear",
+        "C": "Homogeneous",
+        "D": "Exact"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "The differential equation of all non-vertical lines in a plane is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "d²y/dx² = 0",
+        "B": "dy/dx = 0",
+        "C": "d³y/dx³ = 0",
+        "D": "dy/dx = x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "The differential equation representing the family of parabolas having vertex at origin and axis along positive direction of x-axis is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y² = 2xy (dy/dx)",
+        "B": "y² = 4a(dy/dx)",
+        "C": "y = 2xy'",
+        "D": "x² = 2y (dy/dx)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "The form dy/dx = f(ax+by+c) can be solved by substituting ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ax+by+c = v",
+        "B": "y/x = v",
+        "C": "x/y = v",
+        "D": "ax = v"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "For Radioactive decay N(t) = N₀ e^{-λt}, the differential equation is dN/dt = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-λN",
+        "B": "λN",
+        "C": "N/λ",
+        "D": "-λt"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "The exact differential expression (x dy - y dx) / x² is equal to:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "d(y/x)",
+        "B": "d(x/y)",
+        "C": "d(xy)",
+        "D": "d(log xy)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "The exact differential expression x dx + y dy is equal to:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/2) d(x² + y²)",
+        "B": "d(xy)",
+        "C": "d(x+y)",
+        "D": "d(x/y)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "A Singular Solution is a solution that ______ be obtained from the general solution by choosing a value for the arbitrary constant.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Cannot",
+        "B": "Can always",
+        "C": "Is always zero and can",
+        "D": "Usually can"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "The diagram show an envelope of a family of curves. The curve that touches each member of a family of curves is the geometric interpretation of the ______ solution.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Multiple lines or curves all tangentially touching a single overarching boundary curve (envelope).",
+      "options": {
+        "A": "Singular",
+        "B": "General",
+        "C": "Particular",
+        "D": "Trivial"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "Clairaut's equation is of the form y = px + f(p), where p = dy/dx. Its general solution is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y = cx + f(c)",
+        "B": "y = x + f(p)",
+        "C": "x = cy + f(c)",
+        "D": "y = c²x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "The equation y dx - x dy + ln x dx = 0 is a ______ equation after dividing by x.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Linear",
+        "B": "Exact",
+        "C": "Homogeneous",
+        "D": "Separable"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 49,
+      "question": "If x dy/dx = y(log y - log x + 1), it is a ______ form after substitution y=vx.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Homogeneous",
+        "B": "Linear",
+        "C": "Exact",
+        "D": "Isotropic"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "The solution to dy/dx = 1 + x + y + xy is found by writing RHS as (1+x)(1+y), which makes it ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Variable Separable",
+        "B": "Linear",
+        "C": "Homogeneous",
+        "D": "Exact"
+      },
+      "answer": "A"
+    }
+  ]
+}

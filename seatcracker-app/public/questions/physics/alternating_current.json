@@ -1,0 +1,713 @@
+{
+  "topic_id": 15,
+  "topic_name": "ALTERNATING CURRENT",
+  "weightage": 1,
+  "priority": "Low",
+  "subtopics": [
+    "RMS Values, Phasors",
+    "LCR Circuits, Resonance",
+    "Power in AC Circuits"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "An alternating current (AC) is one which:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Changes magnitude but not direction",
+        "B": "Changes both magnitude and direction periodically",
+        "C": "Remains constant",
+        "D": "Flows only in one direction"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 2,
+      "question": "The time period (T) of an AC with frequency 'f' is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "T = f",
+        "B": "T = 1/f",
+        "C": "T = 2πf",
+        "D": "T = f/2π"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 3,
+      "question": "Standard house power in India is 220V, 50Hz. Here 220V refers to:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Peak voltage",
+        "B": "RMS voltage",
+        "C": "Average voltage",
+        "D": "Minimum voltage"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 4,
+      "question": "Relation between peak current (I₀) and RMS current (I_rms) for a sinusoidal AC is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "I_rms = I₀",
+        "B": "I_rms = I₀ / √2",
+        "C": "I_rms = I₀ / 2",
+        "D": "I_rms = 2I₀ / π"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 5,
+      "question": "Average value of AC over a full cycle is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "I₀ / √2",
+        "B": "Zero",
+        "C": "2I₀ / π",
+        "D": "I₀"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 6,
+      "question": "Inductive reactance (XL) of an inductor L in an AC circuit of frequency f is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2πfL",
+        "B": "1 / (2πfL)",
+        "C": "L / (2πf)",
+        "D": "2πf / L"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "Capacitive reactance (XC) of a capacitor C is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2πfC",
+        "B": "1 / (2πfC)",
+        "C": "C / (2πf)",
+        "D": "2πf / C"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 8,
+      "question": "In a purely resistive circuit, the phase difference between V and I is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/2",
+        "B": "Zero",
+        "C": "π",
+        "D": "-π/2"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 9,
+      "question": "In a purely inductive circuit, current ______ the voltage by ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Leads, π/2",
+        "B": "Lags, π/2",
+        "C": "Leads, π",
+        "D": "Lags, π"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 10,
+      "question": "In a purely capacitive circuit, current ______ the voltage by ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Lags, π/2",
+        "B": "Leads, π/2",
+        "C": "Leads, π",
+        "D": "Lags, π"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 11,
+      "question": "The diagram show a phasor. In an LCR circuit, impedance Z is:",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A right-angled triangle (impedance triangle) with R on the base and (XL - XC) on the perpendicular.",
+      "options": {
+        "A": "R + XL + XC",
+        "B": "√[R² + (XL - XC)²]",
+        "C": "R² + XL² + XC²",
+        "D": "R / (XL - XC)"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 12,
+      "question": "Resonance in an LCR circuit occurs when:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "XL > XC",
+        "B": "XL = XC",
+        "C": "XL < XC",
+        "D": "R = 0"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 13,
+      "question": "The resonant frequency (fᵣ) of an LCR circuit is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / √(LC)",
+        "B": "1 / (2π√(LC))",
+        "C": "2π√(LC)",
+        "D": "√(LC) / 2π"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 14,
+      "question": "At resonance, the impedance of an LCR circuit is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Maximum",
+        "B": "Minimum (equal to R)",
+        "C": "Zero",
+        "D": "Infinite"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 15,
+      "question": "Power factor of an AC circuit is defined as:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sin φ",
+        "B": "cos φ",
+        "C": "tan φ",
+        "D": "cot φ"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 16,
+      "question": "In an LCR circuit, power factor cos φ is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Z / R",
+        "B": "R / Z",
+        "C": "XL / Z",
+        "D": "XC / R"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 17,
+      "question": "At resonance, the power factor of LCR circuit is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Zero",
+        "B": "One",
+        "C": "0.5",
+        "D": "Infinite"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 18,
+      "question": "Wattless current is the component of current for which phase difference with voltage is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Zero",
+        "B": "π/2",
+        "C": "π",
+        "D": "π/4"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 19,
+      "question": "The Q-factor (Quality factor) of an LCR circuit measures its ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Resistivity",
+        "B": "Sharpness of resonance",
+        "C": "Power consumption",
+        "D": "Capacity"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 20,
+      "question": "The diagram show a transformer. It works on the principle of:",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A transformer with primary and secondary coils wrapped around an iron core.",
+      "options": {
+        "A": "Self induction",
+        "B": "Mutual induction",
+        "C": "Eddy currents",
+        "D": "Ohm's law"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 21,
+      "question": "A step-up transformer increases ______ and decreases ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Current, Voltage",
+        "B": "Voltage, Current",
+        "C": "Frequency, Power",
+        "D": "Resistance, Current"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 22,
+      "question": "Transformer ratio (k) is defined as:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Np / Ns",
+        "B": "Ns / Np",
+        "C": "Ip / Is",
+        "D": "Both B and C"
+      },
+      "answer": "D"
+    },
+    {
+      "id": 23,
+      "question": "The loss of energy in the core of transformer due to changing magnetic field is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Copper loss",
+        "B": "Hysteresis loss",
+        "C": "Flux leakage",
+        "D": "Radiation loss"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 24,
+      "question": "Eddy currents in transformer cores are minimized by using:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Solid core",
+        "B": "Laminated core",
+        "C": "Copper core",
+        "D": "Vacuum"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 25,
+      "question": "AC can be measured by ______ instruments.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Moving coil",
+        "B": "Hot wire",
+        "C": "Chemical",
+        "D": "Magnetic compass"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 26,
+      "question": "The diagram show an L-C loop. Energy oscillates between:",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A circuit with a charged capacitor and an inductor connected in parallel.",
+      "options": {
+        "A": "Resistor and Battery",
+        "B": "Magnetic (L) and Electric (C) fields",
+        "C": "Thermal and Kinetic",
+        "D": "Nucleus and Electrons"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 27,
+      "question": "Frequency of LC oscillations is ω = :",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(LC)",
+        "B": "1 / √(LC)",
+        "C": "L/C",
+        "D": "C/L"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 28,
+      "question": "A capacitor blocks ______ but allows ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "AC, DC",
+        "B": "DC, AC",
+        "C": "High freq, Low freq",
+        "D": "Current, Voltage"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 29,
+      "question": "Average power dissipated in a purely inductive circuit is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "V_rms * I_rms",
+        "B": "Zero",
+        "C": "1/2 LI²",
+        "D": "V²/R"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 30,
+      "question": "The diagram show a voltage vs time graph. If it is standard AC, the wave is:",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A sinusoidal wave plot showing peaks and troughs over time.",
+      "options": {
+        "A": "Square wave",
+        "B": "Sine wave",
+        "C": "Sawtooth wave",
+        "D": "Constant"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 31,
+      "question": "Choke coil is an inductor used to reduce current in AC with small ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Inductance",
+        "B": "Power loss",
+        "C": "Voltage",
+        "D": "Frequency"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 32,
+      "question": "Skin effect in AC leads to more current flow on the ______ of the conductor.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Core",
+        "B": "Surface",
+        "C": "Edges only",
+        "D": "Evenly throughout"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 33,
+      "question": "Transformer ratio Ns/Np > 1 indicates it is a ______ transformer.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Step-down",
+        "B": "Step-up",
+        "C": "Isolation",
+        "D": "DC"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 34,
+      "question": "In resonant circuit, bandwidth is defined as ω2 - ω1 where power becomes ______ of Pmax.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Double",
+        "B": "Half",
+        "C": "Zero",
+        "D": "Equal"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 35,
+      "question": "Phasors are ______ vectors used to represent sinusoidally varying quantities.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Stationary",
+        "B": "Rotating",
+        "C": "Diverging",
+        "D": "Unit"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 36,
+      "question": "Real power P in AC is given by:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "V_rms * I_rms",
+        "B": "V_rms * I_rms * cos φ",
+        "C": "V_peak * I_peak",
+        "D": "V²/R"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 37,
+      "question": "Dimensional formula for RC is same as that of ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Frequency",
+        "B": "Time",
+        "C": "Velocity",
+        "D": "Mass"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 38,
+      "question": "Dimensional formula for L/R is same as that of ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Mass",
+        "B": "Time",
+        "C": "Charge",
+        "D": "Energy"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 39,
+      "question": "In a pure inductor, the instantaneous power oscillates with frequency ______ that of voltage.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Same as",
+        "B": "Twice",
+        "C": "Half",
+        "D": "Four times"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 40,
+      "question": "The diagram show a V vs I plot for a resistor. Impedance Z for AC will be:",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "V-I linear graph representing Ohm's law.",
+      "options": {
+        "A": "Frequency dependent",
+        "B": "Constant R",
+        "C": "Zero",
+        "D": "Infinite"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 41,
+      "question": "A capacitor of 10 μF is connected to 220V, 50Hz. Its reactance is about:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "318 Ω",
+        "B": "3.18 kΩ",
+        "C": "500 Ω",
+        "D": "Zero"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "Unit of Impedance is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Farad",
+        "B": "Ohm",
+        "C": "Henry",
+        "D": "Tesla"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 43,
+      "question": "Small current in household appliances even when 'off' (due to capacitors) is called:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Main current",
+        "B": "Leakage current",
+        "C": "Resonant current",
+        "D": "Peak current"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 44,
+      "question": "For a DC circuit, XC is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Zero",
+        "B": "Infinite",
+        "C": "1",
+        "D": "Dependent on R"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 45,
+      "question": "For a DC circuit, XL is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Zero",
+        "B": "Infinite",
+        "C": "Constant",
+        "D": "Variable"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "Transmission of power over long distances is better with AC because it allows ______ transformation.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Current",
+        "B": "Voltage",
+        "C": "Frequency",
+        "D": "Mass"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 47,
+      "question": "The phase difference of voltage across L and C in a series LCR circuit is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Zero",
+        "B": "π",
+        "C": "π/2",
+        "D": "π/4"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 48,
+      "question": "In a series LCR circuit, resonance current is independent of L and C. (True/False)",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "False",
+        "B": "True (depends only on V and R)",
+        "C": "Only at low T",
+        "D": "Only for superconductors"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 49,
+      "question": "Apparent power S in AC is given by:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "V_rms * I_rms",
+        "B": "V_peak * I_peak",
+        "C": "Average power",
+        "D": "Wattless power"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "Standard AC frequency in USA is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "50 Hz",
+        "B": "60 Hz",
+        "C": "100 Hz",
+        "D": "Zero"
+      },
+      "answer": "B"
+    }
+  ]
+}
