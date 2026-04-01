@@ -209,13 +209,25 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  // Load from localStorage on mount
+  // Load from localStorage on mount (with Course-Awareness fix)
   useEffect(() => {
     const saved = localStorage.getItem("sc_roadmap");
     if (saved) {
-      try { setRoadmap(JSON.parse(saved)); } catch { /* ignore */ }
+      try { 
+        const parsed = JSON.parse(saved) as RoadmapDay[];
+        // Safety check: If current course is NOT Engineering, but roadmap contains Maths, clear it.
+        const isNotEng = course !== "Engineering";
+        const hasMaths = parsed.some(d => d.tasks.some(t => t.subject === "Mathematics"));
+        
+        if (isNotEng && hasMaths) {
+          localStorage.removeItem("sc_roadmap");
+          setRoadmap(null);
+        } else {
+          setRoadmap(parsed);
+        }
+      } catch { /* ignore */ }
     }
-  }, []);
+  }, [course]);
 
   // Fetch syllabus for manual mode
   useEffect(() => {

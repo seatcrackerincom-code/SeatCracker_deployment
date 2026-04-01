@@ -10,12 +10,11 @@ Generate a JSON object containing a 'roadmap' key which maps to an array of day 
 STRICT RULES:
 
 1. SUBJECT DISTRIBUTION & DAILY STRUCTURE:
-If Engineering (MPC): Create EXACTLY 4 tasks per day.
-Order and ratios: Mathematics (33.3% time), Physics (25% time), Chemistry (25% time), Mathematics (16.7% time).
-Total Maths = 50%.
+If Course = 'Engineering': Create EXACTLY 4 tasks per day.
+Order and ratios: Mathematics (33.3% time), Physics (25% time), Chemistry (25% time), Mathematics (16.7% time). Total Maths = 50% (MPC).
 
-If Agriculture / Pharmacy (BiPC): Create EXACTLY 4 tasks per day.
-Order and ratios: Botany (25%), Zoology (25%), Physics (25%), Chemistry (25%).
+If Course = 'Agriculture' or 'Pharmacy': Create EXACTLY 4 tasks per day.
+Order and ratios: Botany (25%), Zoology (25%), Physics (25%), Chemistry (25%). This is the BiPC stream (No Mathematics).
 
 2. TOPIC HANDLING:
 * Pick incomplete topics sequentially from the provided syllabus list

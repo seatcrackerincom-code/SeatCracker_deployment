@@ -418,9 +418,12 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
                       <div className={styles.tagRow}>
                         {state === "completed" ? (
                           dayData.tasks.slice(0, 3).map((t, ti) => {
-                            const isMath = t.subject.toLowerCase().includes("math");
-                            const isPhys = t.subject.toLowerCase().includes("phys");
-                            const tagClass = isMath ? styles.compMath : isPhys ? styles.compPhys : styles.compChem;
+                            const sub = t.subject.toLowerCase();
+                            const tagClass = sub.includes("math") ? styles.compMath 
+                                           : sub.includes("phys") ? styles.compPhys 
+                                           : sub.includes("bot") ? styles.compBot
+                                           : sub.includes("zoo") ? styles.compZoo
+                                           : styles.compChem;
                             return (
                               <span key={ti} className={`${styles.topicPill} ${tagClass}`}>
                                 {t.topic}
@@ -428,9 +431,13 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
                             );
                           })
                         ) : (
-                          ["Math", "Phys", "Chem"].map(s => {
+                          (course === "Engineering" ? ["Math", "Phys", "Chem"] : ["Bot", "Zoo", "Phys", "Chem"]).map(s => {
                             const sc = s.toLowerCase();
-                            const tagClass = sc.includes("math") ? styles.tagMath : sc.includes("phys") ? styles.tagPhys : styles.tagChem;
+                            const tagClass = sc.includes("math") ? styles.tagMath 
+                                           : sc.includes("phys") ? styles.tagPhys 
+                                           : sc.includes("bot") ? styles.tagBot
+                                           : sc.includes("zoo") ? styles.tagZoo
+                                           : styles.tagChem;
                             return <span key={s} className={`${styles.topicPill} ${tagClass}`}>{s}</span>;
                           })
                         )}
