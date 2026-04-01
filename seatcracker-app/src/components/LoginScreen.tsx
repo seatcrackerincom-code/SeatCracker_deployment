@@ -107,7 +107,7 @@ export default function LoginScreen({ onSuccess }: Props) {
       >
         {/* Brand */}
         <div className={styles.brand}>
-          <div className={styles.logoRing}>🙏</div>
+          <div className={styles.logoRing}>✊</div>
           <div className={styles.appName}>SeatCracker</div>
           <div className={styles.tagline}>Crack Your EAMCET. Own Your Seat.</div>
         </div>
@@ -141,10 +141,10 @@ export default function LoginScreen({ onSuccess }: Props) {
                     <div className={styles.spinner} />
                   ) : (
                     <svg className={styles.googleIcon} viewBox="0 0 48 48">
-                      <path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.3 9 3.4l6.7-6.7C35.8 2.4 30.2 0 24 0 14.6 0 6.5 5.6 2.6 13.8l7.8 6C12.3 13.7 17.7 9.5 24 9.5z"/>
-                      <path fill="#4285F4" d="M46.5 24.5c0-1.7-.1-3.3-.4-4.9H24v9.3h12.7c-.6 3-2.3 5.5-4.9 7.2l7.7 6C43.9 38.2 46.5 31.8 46.5 24.5z"/>
-                      <path fill="#FBBC05" d="M10.4 28.2C9.8 26.5 9.5 24.8 9.5 23s.4-3.5 1-5.1l-7.8-6C1 15 0 19 0 23s1 8 2.6 11.2l7.8-6z"/>
-                      <path fill="#34A853" d="M24 46c6.2 0 11.4-2 15.2-5.5l-7.7-6c-2.1 1.4-4.7 2.3-7.5 2.3-6.3 0-11.7-4.2-13.6-9.9l-7.8 6C6.5 40.4 14.6 46 24 46z"/>
+                      <path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.3 9 3.4l6.7-6.7C35.8 2.4 30.2 0 24 0 14.6 0 6.5 5.6 2.6 13.8l7.8 6C12.3 13.7 17.7 9.5 24 9.5z" />
+                      <path fill="#4285F4" d="M46.5 24.5c0-1.7-.1-3.3-.4-4.9H24v9.3h12.7c-.6 3-2.3 5.5-4.9 7.2l7.7 6C43.9 38.2 46.5 31.8 46.5 24.5z" />
+                      <path fill="#FBBC05" d="M10.4 28.2C9.8 26.5 9.5 24.8 9.5 23s.4-3.5 1-5.1l-7.8-6C1 15 0 19 0 23s1 8 2.6 11.2l7.8-6z" />
+                      <path fill="#34A853" d="M24 46c6.2 0 11.4-2 15.2-5.5l-7.7-6c-2.1 1.4-4.7 2.3-7.5 2.3-6.3 0-11.7-4.2-13.6-9.9l-7.8 6C6.5 40.4 14.6 46 24 46z" />
                     </svg>
                   )}
                   {!firebaseReady ? "Set up Firebase to enable Google login" : "Continue with Google"}
@@ -187,7 +187,7 @@ export default function LoginScreen({ onSuccess }: Props) {
                 <h3 className={styles.formTitle}>
                   {isSignUp ? "Create an Account" : "Welcome Back"}
                 </h3>
-                
+
                 <input
                   className={styles.phoneInput}
                   type="email"
@@ -196,7 +196,7 @@ export default function LoginScreen({ onSuccess }: Props) {
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
-                
+
                 <input
                   className={styles.phoneInput}
                   type="password"
@@ -207,7 +207,7 @@ export default function LoginScreen({ onSuccess }: Props) {
                 />
 
                 {error && <div className={styles.error}>{error}</div>}
-                
+
                 {resetSent && <div className={styles.success}>Reset email sent! Check your inbox.</div>}
 
                 <button
@@ -219,9 +219,9 @@ export default function LoginScreen({ onSuccess }: Props) {
                 </button>
 
                 {!isSignUp && (
-                  <button 
-                    type="button" 
-                    className={styles.forgotPass} 
+                  <button
+                    type="button"
+                    className={styles.forgotPass}
                     onClick={handleReset}
                   >
                     Forgot Password?
