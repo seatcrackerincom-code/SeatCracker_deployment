@@ -1,0 +1,713 @@
+{
+  "topic_id": 16,
+  "topic_name": "FUNCTIONS",
+  "weightage": 3,
+  "priority": "High",
+  "subtopics": [
+    "Types of Functions (1-1, onto, inverse)",
+    "Domain and Range",
+    "Composite Functions"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "A function f: A -> B is said to be ______ if different elements in A have different images in B.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "One-one (Injective)",
+        "B": "Onto (Surjective)",
+        "C": "Constant",
+        "D": "Identity"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "A function f: A -> B is said to be ______ if every element in B is the image of at least one element in A.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Onto (Surjective)",
+        "B": "One-one (Injective)",
+        "C": "Many-one",
+        "D": "Into"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "A function that is both one-one and onto is called ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Bijective",
+        "B": "Injective",
+        "C": "Surjective",
+        "D": "Composite"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "The diagram show a mapping where two elements from the domain point to the same element in the co-domain. This is a ______ function.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Two ovals A and B, with arrows from multiple points in A meeting at a single point in B.",
+      "options": {
+        "A": "Many-one",
+        "B": "One-one",
+        "C": "Onto",
+        "D": "Inverse"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "The set of all possible inputs for which the function is defined is called the ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Domain",
+        "B": "Range",
+        "C": "Co-domain",
+        "D": "Image"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "The set of all actual output values of a function is called the ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Range",
+        "B": "Domain",
+        "C": "Co-domain",
+        "D": "Pre-image"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "The domain of the function f(x) = 1/√(x-1) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1, ∞)",
+        "B": "[1, ∞)",
+        "C": "R",
+        "D": "(-∞, 1)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "The diagram show the graph of y = |x|. The range of this function is ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A 'V' shaped graph starting from (0,0) and going upwards.",
+      "options": {
+        "A": "[0, ∞)",
+        "B": "(-∞, ∞)",
+        "C": "(0, ∞)",
+        "D": "[-1, 1]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "If f(x) = x² and g(x) = x + 1, then (f o g)(x) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(x + 1)²",
+        "B": "x² + 1",
+        "C": "x² + x + 1",
+        "D": "2x + 1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "The diagram show a function f and its reflection y=x. The reflection is the ______ function.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A graph showing a curve y=f(x), the line y=x, and another curve symmetric to f(x) across that line.",
+      "options": {
+        "A": "Inverse",
+        "B": "Composite",
+        "C": "Reciprocal",
+        "D": "Derivative"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "A function f(x) is even if f(-x) = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "f(x)",
+        "B": "-f(x)",
+        "C": "0",
+        "D": "1/f(x)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "A function f(x) is odd if f(-x) = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-f(x)",
+        "B": "f(x)",
+        "C": "Constant",
+        "D": "|f(x)|"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "The diagram show a graph symmetric about the y-axis. This represents an ______ function.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A parabola y=x² which looks exactly the same on the left and right of the vertical axis.",
+      "options": {
+        "A": "Even",
+        "B": "Odd",
+        "C": "Periodical",
+        "D": "Increasing"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "The diagram show a graph symmetric about the origin. This represents an ______ function.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A graph of y=x³ which looks inverted when rotated 180 degrees about the origin.",
+      "options": {
+        "A": "Odd",
+        "B": "Even",
+        "C": "Decreasing",
+        "D": "Exponential"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "The range of the function f(x) = sin x is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[-1, 1]",
+        "B": "(-1, 1)",
+        "C": "R",
+        "D": "[0, 1]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "If f(x) = 2x + 3, find f⁻¹(x).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(x-3) / 2",
+        "B": "(x+3) / 2",
+        "C": "2x - 3",
+        "D": "1 / (2x+3)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "A function y = f(x) is said to be periodic if f(x + T) = ______ for some T > 0.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "f(x)",
+        "B": "T",
+        "C": "0",
+        "D": "f(T)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "The period of the function f(x) = tan x is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π",
+        "B": "2π",
+        "C": "π/2",
+        "D": "Infinity"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "The diagram show the graph of the Greatest Integer Function [x]. It looks like a ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A 'staircase' graph with jumps at every integer x.",
+      "options": {
+        "A": "Step function",
+        "B": "Linear function",
+        "C": "Hyperbola",
+        "D": "Circle"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "The inverse of a function exists if and only if the function is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Bijective",
+        "B": "Injective",
+        "C": "Surjective",
+        "D": "Continuous"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "Find the range of f(x) = x² + 1 for real x.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[1, ∞)",
+        "B": "(0, ∞)",
+        "C": "R",
+        "D": "[0, ∞)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "The diagram show three sets X, Y, Z and mappings f: X->Y and g: Y->Z. The mapping from X to Z is ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Three circles in a row with arrows g o f across the whole span.",
+      "options": {
+        "A": "g o f",
+        "B": "f o g",
+        "C": "f + g",
+        "D": "f / g"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "If f(x) is a linear function ax + b, its graph is a ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Straight line",
+        "B": "Parabola",
+        "C": "Circle",
+        "D": "Point"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "The domain of log(x) is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(0, ∞)",
+        "B": "[0, ∞)",
+        "C": "R",
+        "D": "(-∞, 0)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "Which of the following is an identity function?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "f(x) = x",
+        "B": "f(x) = 1",
+        "C": "f(x) = 0",
+        "D": "f(x) = x²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "The diagram show a 'Vertical Line Test'. If a vertical line crosses the graph at more than one point, it is ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A circle with a vertical line intersecting it twice.",
+      "options": {
+        "A": "Not a function",
+        "B": "A function",
+        "C": "One-one function",
+        "D": "Onto function"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "The value of f(x) = [x] at x = 2.5 is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "2.5",
+        "D": "0.5"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "If f: R -> R is defined by f(x) = cos x, find its range.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[-1, 1]",
+        "B": "R",
+        "C": "[0, 1]",
+        "D": "(-∞, ∞)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "The signum function sgn(x) is 1 for x > 0 and ______ for x < 0.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "Undefined"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "The diagram show a graph that 'looks like' log x. As x approaches zero from right, y goes to ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A log graph plunging towards -infinity at the y-axis.",
+      "options": {
+        "A": "-Infinity",
+        "B": "0",
+        "C": "Infinity",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "If f(x) = x/(x-1), its domain is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "R - {1}",
+        "B": "R",
+        "C": "(1, ∞)",
+        "D": "{1}"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "A function whose range consists of only one element is a ______ function.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Constant",
+        "B": "Identity",
+        "C": "One-one",
+        "D": "Null"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "The diagram show two functions meeting at a point (x, y). This point satisfies ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Two curves f(x) and g(x) intersecting at a single dot.",
+      "options": {
+        "A": "f(x) = g(x)",
+        "B": "f(x) + g(x) = 0",
+        "C": "f(x) * g(x) = 1",
+        "D": "x = 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "The function f(x) = e^x is always ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Positive",
+        "B": "Negative",
+        "C": "Zero",
+        "D": "Oscillating"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "Find (g o f)(x) if f(x) = log x and g(x) = e^x.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x",
+        "B": "log(e^x)",
+        "C": "e^(log x)",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "The horizontal line test is used to check if a function is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "One-one (Injective)",
+        "B": "Onto (Surjective)",
+        "C": "Continuous",
+        "D": "Periodic"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "The diagram show a 'Many-to-One' mapping. For each output there could be ______ input(s).",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Mapping from {a, b} to {1} where both a and b map to 1.",
+      "options": {
+        "A": "Multiple",
+        "B": "Only one",
+        "C": "Zero",
+        "D": "Infinite"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "Which of the following is an odd function?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sin x",
+        "B": "cos x",
+        "C": "x²",
+        "D": "e^x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "Which of the following is an even function?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos x",
+        "B": "sin x",
+        "C": "tan x",
+        "D": "x³"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "The diagram show y = x and y = -x. The first is increasing, the second is ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Two lines through origin with positive and negative slopes.",
+      "options": {
+        "A": "Decreasing",
+        "B": "Increasing",
+        "C": "Stationary",
+        "D": "Constant"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "Find domain of f(x) = √(25 - x²).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[-5, 5]",
+        "B": "(-5, 5)",
+        "C": "R",
+        "D": "[0, 5]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "The inverse of f(x) = log(x) is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^x",
+        "B": "1 / log x",
+        "C": "10^x",
+        "D": "x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "The diagram show a circle x² + y² = 1. Is this a function y = f(x)?",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A unit circle centered at the origin.",
+      "options": {
+        "A": "No",
+        "B": "Yes",
+        "C": "Only for positive x",
+        "D": "Only for positive y"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "A function whose graph is a horizontal line has a slope of ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Infinity",
+        "D": "Undefined"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "Period of f(x) = sin(2x) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π",
+        "B": "2π",
+        "C": "4π",
+        "D": "π/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "The domain of f(x) = sec x is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "R - {(2n+1)π/2}",
+        "B": "R",
+        "C": "[-1, 1]",
+        "D": "(-π/2, π/2)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "The diagram show an arrow from set A to set B but one element in A has no arrow. Is this a function from A to B?",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Two sets with mapping arrows, but element 'z' in domain set has no outward arrow.",
+      "options": {
+        "A": "No",
+        "B": "Yes",
+        "C": "Depends on B",
+        "D": "Maybe"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "A function that repeats its values at regular intervals is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Periodic",
+        "B": "Linear",
+        "C": "Polynomial",
+        "D": "Cubic"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "Range of f(x) = 1/x is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "R - {0}",
+        "B": "R",
+        "C": "(0, ∞)",
+        "D": "{0}"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "The function f(x) = x³ - x is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Odd",
+        "B": "Even",
+        "C": "Constant",
+        "D": "Neither"
+      },
+      "answer": "A"
+    }
+  ]
+}

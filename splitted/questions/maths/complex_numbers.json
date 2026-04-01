@@ -1,0 +1,714 @@
+{
+  "topic_id": 6,
+  "topic_name": "COMPLEX NUMBERS",
+  "weightage": 3,
+  "priority": "High",
+  "subtopics": [
+    "Algebra of Complex Numbers",
+    "Modulus & Argument",
+    "De Moivre's Theorem",
+    "Roots of Unity & Locus"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "A complex number is defined as z = a + ib, where i is equal to:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(-1)",
+        "B": "-1",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "If z = a + ib, the real part Re(z) and imaginary part Im(z) are respectively:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a and b",
+        "B": "a and ib",
+        "C": "b and a",
+        "D": "ia and b"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "The diagram show the Argand plane. A complex number z = x + iy is represented by a point with coordinates:",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A 2D coordinate system with Real Axis (x) and Imaginary Axis (y), showcasing point z.",
+      "options": {
+        "A": "(x, y)",
+        "B": "(y, x)",
+        "C": "(x, iy)",
+        "D": "(ix, iy)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "The conjugate of a complex number z = a + ib is z̄ = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a - ib",
+        "B": "-a + ib",
+        "C": "-a - ib",
+        "D": "b + ia"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "The diagram show a complex number z and its conjugate z̄ on the Argand plane. They are symmetric with respect to the ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Points (a,b) and (a,-b) plotted on the complex plane.",
+      "options": {
+        "A": "Real axis",
+        "B": "Imaginary axis",
+        "C": "Origin",
+        "D": "Line y=x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "The product of a complex number z and its conjugate z̄ is equal to:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|z|²",
+        "B": "z²",
+        "C": "2Re(z)",
+        "D": "2Im(z)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "The modulus of z = a + ib, denoted by |z|, is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(a² + b²)",
+        "B": "a² + b²",
+        "C": "a + b",
+        "D": "√(a² - b²)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "The diagram show a vector representing z = x + iy. The modulus |z| corresponds to the ______ of the vector from the origin.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Vector from origin (0,0) to point (x,y) with its length labeled as modulus |z|.",
+      "options": {
+        "A": "Length",
+        "B": "Angle",
+        "C": "Projection",
+        "D": "Slope"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "If z₁ and z₂ are complex numbers, then |z₁z₂| is equal to:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|z₁||z₂|",
+        "B": "|z₁| + |z₂|",
+        "C": "|z₁| - |z₂|",
+        "D": "|z₁|/|z₂|"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "Triangle Inequality states that |z₁ + z₂| is ______ |z₁| + |z₂|.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "≤",
+        "B": "≥",
+        "C": "=",
+        "D": "<"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "The diagram show addition of complex numbers by the parallelogram law. The diagonal represents z₁ + z₂. By the Triangle Inequality, the length of the diagonal is ______ the sum of the other two sides.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A parallelogram formed by vectors z1 and z2, with diagonal z1+z2.",
+      "options": {
+        "A": "Less than or equal to",
+        "B": "Greater than",
+        "C": "Exactly equal to",
+        "D": "Always related to"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "The argument of z = x + iy, denoted as arg(z), is the angle θ such that:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "tan θ = y/x",
+        "B": "cos θ = y/x",
+        "C": "sin θ = x/y",
+        "D": "tan θ = x/y"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "The principal value of the argument, Arg(z), lies in the interval:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(-π, π]",
+        "B": "[0, 2π)",
+        "C": "[-π/2, π/2]",
+        "D": "(0, π)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "The diagram show a complex number in the third quadrant. Its principal argument is usually written as ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Vector in Q3, emphasizing the negative angle drawn from the positive real axis.",
+      "options": {
+        "A": "-π + α",
+        "B": "π + α",
+        "C": "π - α",
+        "D": "-α"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "The polar form of a complex number z is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "r(cos θ + i sin θ)",
+        "B": "r(sin θ + i cos θ)",
+        "C": "r cos θ",
+        "D": "r sin θ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "Euler's formula states that e^{iθ} is equal to:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos θ + i sin θ",
+        "B": "cos θ - i sin θ",
+        "C": "sin θ + i cos θ",
+        "D": "e^θ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "The inverse of z, denoted as z⁻¹, can be written as:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "z̄ / |z|²",
+        "B": "z / |z|²",
+        "C": "|z|² / z̄",
+        "D": "1 / z̄"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "The diagram show division of two complex numbers z₁ and z₂ in polar form. The argument of the quotient is ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Two vectors with angles θ1 and θ2. The resulting vector's angle represents their difference.",
+      "options": {
+        "A": "arg(z₁) - arg(z₂)",
+        "B": "arg(z₁) + arg(z₂)",
+        "C": "arg(z₁)/arg(z₂)",
+        "D": "arg(z₁) * arg(z₂)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "If z = r(cos θ + i sin θ), then zⁿ represents De Moivre's Theorem. It is equal to:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "rⁿ(cos nθ + i sin nθ)",
+        "B": "rⁿ(cos θ + i sin θ)ⁿ",
+        "C": "nr(cos θ + i sin θ)",
+        "D": "r(cos nθ + i sin nθ)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "De Moivre's theorem holds for n being a ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Rational number",
+        "B": "Integer only",
+        "C": "Positive integer only",
+        "D": "Complex number only"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "The equation z³ = 1 has roots 1, ω, and ω². The value of 1 + ω + ω² is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "3",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "The diagram show the cube roots of unity plotted on the Argand plane. They form an ______ triangle.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Three points on a unit circle separated by 120 degrees, forming a triangle.",
+      "options": {
+        "A": "Equilateral",
+        "B": "Isosceles",
+        "C": "Right-angled",
+        "D": "Scalene"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "The complex cube roots of unity, ω and ω², satisfy ω³ = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "0",
+        "D": "i"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "For nth roots of unity, the roots lie on a ______ of radius 1.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Circle",
+        "B": "Parabola",
+        "C": "Straight Line",
+        "D": "Hyperbola"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "The sum of the nth roots of unity is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "n",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "The product of the nth roots of unity is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(-1)^(n-1)",
+        "B": "(-1)^n",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "The diagram show a locus defined by |z - z₀| = r. This represents a ______ with center z₀ and radius r.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A circle on the complex plane with its center at z0 and radius r marked.",
+      "options": {
+        "A": "Circle",
+        "B": "Straight Line",
+        "C": "Parabola",
+        "D": "Ellipse"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "The locus of z satisfying |z - a| = |z - b| is the ______ of the segment joining a and b.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Perpendicular Bisector",
+        "B": "Circle",
+        "C": "Line segment",
+        "D": "Parabola"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "The value of i^n + i^(n+1) + i^(n+2) + i^(n+3) for any integer n is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "i",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "The complex number (1+i) / (1-i) simplifies to:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "i",
+        "B": "-i",
+        "C": "1",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "The diagram show points z₁, z₂, z₃ forming an equilateral triangle. Then z₁² + z₂² + z₃² = ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "An equilateral triangle with vertices at complex coordinate points z1, z2, z3.",
+      "options": {
+        "A": "z₁z₂ + z₂z₃ + z₃z₁",
+        "B": "0",
+        "C": "(z₁ + z₂ + z₃)²",
+        "D": "3z₁z₂z₃"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "If |z₁ + z₂| = |z₁ - z₂|, then the difference of arguments of z₁ and z₂ is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/2",
+        "B": "π",
+        "C": "0",
+        "D": "π/4"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "If arg((z - a) / (z - b)) = π/2, the locus of z is a ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Circle",
+        "B": "Straight line",
+        "C": "Parabola",
+        "D": "Hyperbola"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "The diagram show a vector rotated by an angle θ. Multiplying z by e^{iθ} results in an anticlockwise rotation of ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A vector z is shown being rotated counter-clockwise by an angle theta to form a new vector.",
+      "options": {
+        "A": "θ radians",
+        "B": "90 degrees",
+        "C": "π radians",
+        "D": "180 degrees"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "If a, b, c are real and x + iy is a root of az² + bz + c = 0, then another root is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x - iy",
+        "B": "-x + iy",
+        "C": "-x - iy",
+        "D": "x + y"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "Logarithm of a complex number z = re^{iθ} is log(z) = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "log r + iθ",
+        "B": "log r - iθ",
+        "C": "r log θ",
+        "D": "e^{rθ}"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "The value of i^i is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^{-π/2}",
+        "B": "e^{π/2}",
+        "C": "1",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "The diagram show an ellipse as a locus in the complex plane. The equation is |z - z₁| + |z - z₂| = 2a, where 2a > |z₁ - z₂|. z₁ and z₂ are the ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "An ellipse mapping the fixed distance sum from two interior points z1 and z2.",
+      "options": {
+        "A": "Foci",
+        "B": "Vertices",
+        "C": "Directrices",
+        "D": "Axes"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "The minimum value of |z - z₁| + |z - z₂| is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|z₁ - z₂|",
+        "B": "|z₁| + |z₂|",
+        "C": "0",
+        "D": "|z₁| - |z₂|"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "If |z₁| = |z₂| = 1 and z₁ + z₂ = √3, then the argument of z₁/z₂ can be:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/3",
+        "B": "π/6",
+        "C": "π/2",
+        "D": "π/4"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "The roots of the equation zⁿ - 1 = 0 form a GP with common ratio:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^{i2π/n}",
+        "B": "e^{inπ}",
+        "C": "1",
+        "D": "n"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "The diagram show a hyperbola locus: ||z - z₁| - |z - z₂|| = 2a. This defines a hyperbola provided 2a is ______ |z₁ - z₂|.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A hyperbola outlining a region where the absolute focal radius difference is constant.",
+      "options": {
+        "A": "Less than",
+        "B": "Greater than",
+        "C": "Equal to",
+        "D": "Twice"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "If ω is a complex cube root of unity, then (1-ω+ω²)³ is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-8",
+        "B": "8",
+        "C": "0",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "Any complex number analytic function f(z) = u + iv satisfies the ______ equations.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Cauchy-Riemann",
+        "B": "Laplace",
+        "C": "Navier-Stokes",
+        "D": "Euler-Lagrange"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "The amplitude of z = 0 is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Not defined",
+        "B": "0",
+        "C": "π/2",
+        "D": "π"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "The diagram show the mapping w = e^z. Lines parallel to the x-axis in the z-plane map onto ______ in the w-plane.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A horizontal line in the z-plane being transformed into a ray from origin in the w-plane.",
+      "options": {
+        "A": "Rays from origin",
+        "B": "Circles",
+        "C": "Spirals",
+        "D": "Parallel lines"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "If z + 1/z = 2 cosθ, then zⁿ + 1/zⁿ is equal to:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2 cos(nθ)",
+        "B": "2 i sin(nθ)",
+        "C": "cos(nθ)",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "The equation |z - 1|² + |z + 1|² = 4 represents a locus which is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Circle |z| = 1",
+        "B": "Straight Line",
+        "C": "Ellipse",
+        "D": "Point"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "The diagram show inversion in a circle. In the complex plane, inversion with respect to the unit circle is the mapping w = ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A point z outside a unit circle being mapped to a point w inside the circle such that |z||w| = 1.",
+      "options": {
+        "A": "1 / z̄",
+        "B": "1 / z",
+        "C": "-z",
+        "D": "z̄"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "Conformal mapping using complex functions preserves both the angle and its ______ between two intersecting curves.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Sense/Orientation",
+        "B": "Length/Magnitude",
+        "C": "Curvature",
+        "D": "Area"
+      },
+      "answer": "A"
+    }
+  ]
+}

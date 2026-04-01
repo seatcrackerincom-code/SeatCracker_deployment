@@ -1,0 +1,4517 @@
+[
+  {
+    "topic": "AREAS",
+    "id": 1,
+    "question": "The diagram show an area bounded by the curve y=f(x), the x-axis, and the ordinates x=a and x=b. This area is algebraically given by the ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A continuously positive curve f(x) over [a,b] with vertical bounds, shading the enclosed region.",
+    "options": {
+      "A": "Definite integral ∫ from a to b of f(x) dx",
+      "B": "Indefinite integral of f(x) dx",
+      "C": "Derivative f'(x) from a to b",
+      "D": "Sum f(a) + f(b)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS",
+    "id": 6,
+    "question": "The diagram show two intersecting parabolas. Finding the area enclosed by them requires first setting f(x) = g(x) to find ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Two parabolas opening towards each other, creating a finite bounded leaf-shaped region.",
+    "options": {
+      "A": "The Points of Intersection (integration limits)",
+      "B": "The x-axis",
+      "C": "The origin",
+      "D": "The vertex"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS",
+    "id": 12,
+    "question": "The diagram show a sine wave. The area of one complete arch of the sine curve y = sin x (from 0 to π) is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "First positive lobe of the sine curve from 0 to Pi.",
+    "options": {
+      "A": "2 sq units",
+      "B": "1 sq unit",
+      "C": "π sq units",
+      "D": "π/2 sq units"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS",
+    "id": 19,
+    "question": "The diagram show an inverse function. The area bounded by the curve y=ln x, the y-axis, and y=a, y=b, is evaluated using the integral ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Logarithmic curve shaded between two y-values to the y-axis.",
+    "options": {
+      "A": "∫ from a to b e^y dy",
+      "B": "∫ from a to b ln y dy",
+      "C": "∫ from e^a to e^b ln x dx",
+      "D": "Both A and C are geometrically valid equivalent areas"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS",
+    "id": 30,
+    "question": "The diagram show a rectangle bounding an integrated curve f(x). The area bounded by continuous f(x), tangent at maximum point, and ordinates represents the complement integral ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Curve bounded by a rectangular box defined by endpoints.",
+    "options": {
+      "A": "∫ from f(a) to f(b) f⁻¹(y) dy",
+      "B": "∫ from a to b f(x) dx",
+      "C": "Zero",
+      "D": "f(b) - f(a)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS",
+    "id": 41,
+    "question": "The diagram show an improper curve y=1/x² mapped from x=1 to infinity. Its area is finite and equal to ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Curve 1/x2 approaching the x-axis stretching infinitely.",
+    "options": {
+      "A": "1",
+      "B": "∞",
+      "C": "0",
+      "D": "π"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS UNDER CURVES",
+    "id": 4,
+    "question": "The diagram shows an area below the x-axis. Evaluating ∫_a^b y dx here gives a ______ value.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Curve completely below the x-axis from x=a to x=b.",
+    "options": {
+      "A": "Negative",
+      "B": "Positive",
+      "C": "Zero",
+      "D": "Undefined"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS UNDER CURVES",
+    "id": 6,
+    "question": "The diagram shows two curves y=f(x) and y=g(x) intersecting at a and b, with f(x) ≥ g(x). The area between them is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Two curves intersecting at a and b, forming an enclosed region.",
+    "options": {
+      "A": "∫_a^b (f(x) - g(x)) dx",
+      "B": "∫_a^b (f(x) + g(x)) dx",
+      "C": "∫_a^b f(x)g(x) dx",
+      "D": "∫_a^b g(x) dx / f(x)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS UNDER CURVES",
+    "id": 10,
+    "question": "The diagram shows the area bounded by y²=4ax and its latus rectum. It equals ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Parabola y²=4ax with vertical line x=a (latus rectum) and vertex at origin.",
+    "options": {
+      "A": "8a²/3",
+      "B": "4a²/3",
+      "C": "2a²/3",
+      "D": "8a²"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS UNDER CURVES",
+    "id": 14,
+    "question": "The diagram shows the area between y²=4ax and x²=4ay. It equals ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Two intersecting parabolas opening upwards and rightwards enclosing a region.",
+    "options": {
+      "A": "16a²/3",
+      "B": "8a²/3",
+      "C": "4a²/3",
+      "D": "16a²"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS UNDER CURVES",
+    "id": 17,
+    "question": "The diagram shows area under y=1/x from x=1 to x=a. It represents ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Hyperbola y=1/x in first quadrant, area selected from x=1 to x=a.",
+    "options": {
+      "A": "ln a",
+      "B": "1/a - 1",
+      "C": "a-1",
+      "D": "e^a"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS UNDER CURVES",
+    "id": 20,
+    "question": "The diagram shows the region between y=x² and y=|x|. Its area is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Parabola y=x² and V-shape y=|x| forming two symmetric enclosed regions.",
+    "options": {
+      "A": "1/3",
+      "B": "1/6",
+      "C": "2/3",
+      "D": "1/2"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS UNDER CURVES",
+    "id": 22,
+    "question": "The diagram shows a rectangle inscribed in the region |x| + |y| = 1. The maximum area is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Square |x|+|y|=1 rotated by 45 degrees, with a rectangle inside.",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "1/2",
+      "D": "1/4"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS UNDER CURVES",
+    "id": 26,
+    "question": "The diagram shows the area bounded by the asteroid x^{2/3} + y^{2/3} = a^{2/3}. The total area is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Star-shaped asteroid curve enclosed within all four quadrants.",
+    "options": {
+      "A": "3πa²/8",
+      "B": "πa²/8",
+      "C": "3πa²",
+      "D": "πa²"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS UNDER CURVES",
+    "id": 28,
+    "question": "The diagram shows area between y=sin x and y=cos x from x=0 to x=π/2. It equals ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Sine and cosine waves intersecting, enclosing two regions from 0 to π/2.",
+    "options": {
+      "A": "2√2 - 2",
+      "B": "√2 - 1",
+      "C": "2",
+      "D": "0"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS UNDER CURVES",
+    "id": 30,
+    "question": "The diagram shows area of triangle formed by tangent to y=1/x and the axes. This area is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Tangent line to curve y=1/x forming a right triangle with coordinate axes.",
+    "options": {
+      "A": "A constant (2)",
+      "B": "Dependent on point",
+      "C": "0",
+      "D": "Infinity"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS UNDER CURVES",
+    "id": 36,
+    "question": "The diagram shows area under y=log_a x. It is evaluated using ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Graph of logarithm with area shaded to the x-axis.",
+    "options": {
+      "A": "Integration by parts",
+      "B": "Standard formula",
+      "C": "Substitution",
+      "D": "Partial fractions"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS UNDER CURVES",
+    "id": 40,
+    "question": "The diagram shows the area bounded by y=sec²x and y=0 from x=0 to x=π/4. This area is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Graph of sec²x with area shaded from x=0 to π/4.",
+    "options": {
+      "A": "1",
+      "B": "√2",
+      "C": "π/4",
+      "D": "1/2"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS UNDER CURVES",
+    "id": 44,
+    "question": "The diagram shows a region defined by y ≥ x² and x²+y² ≤ 2. The area is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Circle overlapping with parabola, intersecting at (-1,1) and (1,1).",
+    "options": {
+      "A": "π/2 + 1/3",
+      "B": "π - 1/3",
+      "C": "π/2 - 1/3",
+      "D": "π/4 + 1/3"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "AREAS UNDER CURVES",
+    "id": 47,
+    "question": "The diagram shows the area between y=tan x and y=cot x in the first quadrant up to intersection. It is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Intersection of tan and cot curves in quadrant 1.",
+    "options": {
+      "A": "(1/2)ln 2",
+      "B": "ln 2",
+      "C": "1",
+      "D": "π/4"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "BINOMIAL THEOREM",
+    "id": 4,
+    "question": "The diagram show Pascal's Triangle. The values in the nth row are the ______ of (x+y)ⁿ.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A triangular array of numbers: 1; 1,1; 1,2,1; 1,3,3,1...",
+    "options": {
+      "A": "Binomial coefficients",
+      "B": "Powers",
+      "C": "Roots",
+      "D": "Indices"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "BINOMIAL THEOREM",
+    "id": 9,
+    "question": "The diagram show the expansion of (1+x)ⁿ. The coefficient of xʳ is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Expansion sequence 1 + nx + n(n-1)/2 x² + ...",
+    "options": {
+      "A": "ⁿCᵣ",
+      "B": "r!",
+      "C": "n!",
+      "D": "1"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "BINOMIAL THEOREM",
+    "id": 14,
+    "question": "The diagram show a binomial distribution. The height of the bars follow the ratios of ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A bar chart where heights are proportional to binomial coefficients.",
+    "options": {
+      "A": "Binomial coefficients",
+      "B": "Arithmetic progression",
+      "C": "Geometric progression",
+      "D": "Random values"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "BINOMIAL THEOREM",
+    "id": 18,
+    "question": "The diagram show the expansion of (x + a)³ = x³ + 3ax² + 3a²x + a³. The coefficients 1, 3, 3, 1 come from ______ triangle.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Mathematical formula for (x+a) cubed.",
+    "options": {
+      "A": "Pascal's",
+      "B": "Euler's",
+      "C": "Newton's",
+      "D": "Gauss's"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "BINOMIAL THEOREM",
+    "id": 23,
+    "question": "The diagram show two binomial coefficients ⁿCᵣ and ⁿCₙ₋ᵣ. They are always ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Highlighting the symmetry in Pascal's triangle rows.",
+    "options": {
+      "A": "Equal",
+      "B": "Reciprocals",
+      "C": "Negative of each other",
+      "D": "Unrelated"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "BINOMIAL THEOREM",
+    "id": 26,
+    "question": "The diagram show a binomial term ⁿCᵣ xʳ yⁿ⁻ʳ. The r here is called the ______ of the term.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Generic term from binomial expansion.",
+    "options": {
+      "A": "Index or parameter",
+      "B": "Power",
+      "C": "Base",
+      "D": "Root"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "BINOMIAL THEOREM",
+    "id": 30,
+    "question": "The diagram show a curve of (1+x)ⁿ for large n. It approximates a ______ distribution.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A bell-shaped curve matching binomial bars.",
+    "options": {
+      "A": "Normal (Gaussian)",
+      "B": "Exponential",
+      "C": "Uniform",
+      "D": "Poisson"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "BINOMIAL THEOREM",
+    "id": 33,
+    "question": "The diagram show the symmetry of Pascal's triangle. Row 4 is 1, 4, 6, 4, 1. Row 5 will have ______ terms.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "First 5 rows of Pascal's triangle.",
+    "options": {
+      "A": "6",
+      "B": "5",
+      "C": "4",
+      "D": "10"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "BINOMIAL THEOREM",
+    "id": 37,
+    "question": "The diagram show a grid for calculating multivariable binomials. This is called ______ theorem.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Generic (x1+x2...+xm)ⁿ expansion representation.",
+    "options": {
+      "A": "Multinomial",
+      "B": "Polynomial",
+      "C": "Exponential",
+      "D": "Pythagorean"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "BINOMIAL THEOREM",
+    "id": 40,
+    "question": "The diagram show the symmetry of binomial expansion graph. The peak occurs at the ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A bell curve over the x-axis, peak at x=n/2.",
+    "options": {
+      "A": "Middle",
+      "B": "Ends",
+      "C": "Origin",
+      "D": "None"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "BINOMIAL THEOREM",
+    "id": 43,
+    "question": "The diagram show a binomial expansion with large negative power. The series is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Series like 1 - x + x² - x³ ...",
+    "options": {
+      "A": "Convergent for |x|<1",
+      "B": "Divergent always",
+      "C": "Finite",
+      "D": "Rational"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "BINOMIAL THEOREM",
+    "id": 47,
+    "question": "The diagram show a binomial identity. The sum Σ Cᵣ² is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Identity Σ(ⁿCᵣ)² written nicely.",
+    "options": {
+      "A": "²ⁿCₙ",
+      "B": "2ⁿ",
+      "C": "ⁿCₙ",
+      "D": "n!"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "CIRCLES",
+    "id": 4,
+    "question": "The diagram show a circle passing through the origin. For such a circle, the constant 'c' in the general equation is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A circle in the Cartesian plane specifically passing through (0,0).",
+    "options": {
+      "A": "0",
+      "B": "Positive",
+      "C": "Negative",
+      "D": "Equal to radius"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "CIRCLES",
+    "id": 8,
+    "question": "The diagram show a line just touching a circle. This line is called a ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A circle and a straight line that intersects it at exactly one point.",
+    "options": {
+      "A": "Tangent",
+      "B": "Secant",
+      "C": "Chord",
+      "D": "Diameter"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "CIRCLES",
+    "id": 12,
+    "question": "The diagram show two circles touching each other externally. The distance between their centers is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Two circles of radii r1 and r2 meeting at a single point on the outside.",
+    "options": {
+      "A": "r₁ + r₂",
+      "B": "|r₁ - r₂|",
+      "C": "√(r₁² + r₂²)",
+      "D": "0"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "CIRCLES",
+    "id": 15,
+    "question": "The diagram show a 'Pole' and 'Polar'. If P is the pole, the line of contact of tangents from P is the ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A point P outside a circle, two tangents drawn from it, and a line connecting the two points of tangency.",
+    "options": {
+      "A": "Polar",
+      "B": "Normal",
+      "C": "Diameter",
+      "D": "Directrix"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "CIRCLES",
+    "id": 18,
+    "question": "The diagram show a circle centered at (3, 4) touching the x-axis. Its radius is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A circle in the first quadrant which just grazes the horizontal axis.",
+    "options": {
+      "A": "4",
+      "B": "3",
+      "C": "5",
+      "D": "7"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "CIRCLES",
+    "id": 21,
+    "question": "The diagram show orthogonal circles. The angle of intersection between them is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Two circles intersecting such that their tangents at the intersection point are perpendicular.",
+    "options": {
+      "A": "90°",
+      "B": "0°",
+      "C": "45°",
+      "D": "180°"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "CIRCLES",
+    "id": 25,
+    "question": "The diagram show a 'Radical Axis'. For any point on this axis, the lengths of tangents to the two circles are ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A line between two non-intersecting circles with tangent lines drawn from a point on the axis to both circles.",
+    "options": {
+      "A": "Equal",
+      "B": "Unequal",
+      "C": "Zero",
+      "D": "Reciprocal"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "CIRCLES",
+    "id": 28,
+    "question": "The diagram show a circle and a point P. If P lies on the circle, its power is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A point P sitting exactly on the circumference of a circle.",
+    "options": {
+      "A": "0",
+      "B": "Positive",
+      "C": "Negative",
+      "D": "Radius²"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "CIRCLES",
+    "id": 31,
+    "question": "The diagram show a circle and three points A, B, C inside, on, and outside. Point C has ______ power.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Point A inside, B on, and C far outside the circle.",
+    "options": {
+      "A": "Positive",
+      "B": "Negative",
+      "C": "Zero",
+      "D": "Infinity"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "CIRCLES",
+    "id": 33,
+    "question": "The diagram show tangent lines from P. The angle between them is tan⁻¹ of ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Point P outside, two tangents PT1 and PT2 making an angle θ.",
+    "options": {
+      "A": "2RL / (L² - R²)",
+      "B": "R / L",
+      "C": "L / R",
+      "D": "R² / L²"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "CIRCLES",
+    "id": 36,
+    "question": "The diagram show a 'Circle System'. The equation S + λL = 0 represents circles passing through ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A fixed circle S and a line L intersecting it, with several other circles drawn through the intersection points.",
+    "options": {
+      "A": "Points of intersection of S and L",
+      "B": "Center of S",
+      "C": "Origin",
+      "D": "Tangents of S"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "CIRCLES",
+    "id": 39,
+    "question": "The diagram show two circles with one common tangent. This happens if they ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "One circle inside another, touching it at a single point (Internally tangent).",
+    "options": {
+      "A": "Touch internally",
+      "B": "Touch externally",
+      "C": "Intersect",
+      "D": "Are disjoint"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "CIRCLES",
+    "id": 41,
+    "question": "The diagram show a 'Circle through three points'. To find its center, we intersect the ______ of the chords.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A triangle inscribed in a circle, with perpendicular bisectors of sides meeting at the center.",
+    "options": {
+      "A": "Perpendicular bisectors",
+      "B": "Medians",
+      "C": "Angle bisectors",
+      "D": "Altitudes"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "CIRCLES",
+    "id": 44,
+    "question": "The diagram show a line passing through the center. This line is always a ______ to the circle.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A straight line that goes through the midpoint of the circle.",
+    "options": {
+      "A": "Normal",
+      "B": "Tangent",
+      "C": "Directrix",
+      "D": "Asymptote"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "CIRCLES",
+    "id": 47,
+    "question": "The diagram show a 'Director Circle'. It is the locus of intersection of ______ tangents.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A circle and its outer concentric circle, with two perpendicular tangents meeting on the outer one.",
+    "options": {
+      "A": "Perpendicular",
+      "B": "Parallel",
+      "C": "Equal length",
+      "D": "Three"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "COMPLEX NUMBERS",
+    "id": 3,
+    "question": "The diagram show the Argand plane. A complex number z = x + iy is represented by a point with coordinates:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A 2D coordinate system with Real Axis (x) and Imaginary Axis (y), showcasing point z.",
+    "options": {
+      "A": "(x, y)",
+      "B": "(y, x)",
+      "C": "(x, iy)",
+      "D": "(ix, iy)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "COMPLEX NUMBERS",
+    "id": 5,
+    "question": "The diagram show a complex number z and its conjugate z̄ on the Argand plane. They are symmetric with respect to the ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Points (a,b) and (a,-b) plotted on the complex plane.",
+    "options": {
+      "A": "Real axis",
+      "B": "Imaginary axis",
+      "C": "Origin",
+      "D": "Line y=x"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "COMPLEX NUMBERS",
+    "id": 8,
+    "question": "The diagram show a vector representing z = x + iy. The modulus |z| corresponds to the ______ of the vector from the origin.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Vector from origin (0,0) to point (x,y) with its length labeled as modulus |z|.",
+    "options": {
+      "A": "Length",
+      "B": "Angle",
+      "C": "Projection",
+      "D": "Slope"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "COMPLEX NUMBERS",
+    "id": 11,
+    "question": "The diagram show addition of complex numbers by the parallelogram law. The diagonal represents z₁ + z₂. By the Triangle Inequality, the length of the diagonal is ______ the sum of the other two sides.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A parallelogram formed by vectors z1 and z2, with diagonal z1+z2.",
+    "options": {
+      "A": "Less than or equal to",
+      "B": "Greater than",
+      "C": "Exactly equal to",
+      "D": "Always related to"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "COMPLEX NUMBERS",
+    "id": 14,
+    "question": "The diagram show a complex number in the third quadrant. Its principal argument is usually written as ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Vector in Q3, emphasizing the negative angle drawn from the positive real axis.",
+    "options": {
+      "A": "-π + α",
+      "B": "π + α",
+      "C": "π - α",
+      "D": "-α"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "COMPLEX NUMBERS",
+    "id": 18,
+    "question": "The diagram show division of two complex numbers z₁ and z₂ in polar form. The argument of the quotient is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Two vectors with angles θ1 and θ2. The resulting vector's angle represents their difference.",
+    "options": {
+      "A": "arg(z₁) - arg(z₂)",
+      "B": "arg(z₁) + arg(z₂)",
+      "C": "arg(z₁)/arg(z₂)",
+      "D": "arg(z₁) * arg(z₂)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "COMPLEX NUMBERS",
+    "id": 22,
+    "question": "The diagram show the cube roots of unity plotted on the Argand plane. They form an ______ triangle.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Three points on a unit circle separated by 120 degrees, forming a triangle.",
+    "options": {
+      "A": "Equilateral",
+      "B": "Isosceles",
+      "C": "Right-angled",
+      "D": "Scalene"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "COMPLEX NUMBERS",
+    "id": 27,
+    "question": "The diagram show a locus defined by |z - z₀| = r. This represents a ______ with center z₀ and radius r.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A circle on the complex plane with its center at z0 and radius r marked.",
+    "options": {
+      "A": "Circle",
+      "B": "Straight Line",
+      "C": "Parabola",
+      "D": "Ellipse"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "COMPLEX NUMBERS",
+    "id": 31,
+    "question": "The diagram show points z₁, z₂, z₃ forming an equilateral triangle. Then z₁² + z₂² + z₃² = ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "An equilateral triangle with vertices at complex coordinate points z1, z2, z3.",
+    "options": {
+      "A": "z₁z₂ + z₂z₃ + z₃z₁",
+      "B": "0",
+      "C": "(z₁ + z₂ + z₃)²",
+      "D": "3z₁z₂z₃"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "COMPLEX NUMBERS",
+    "id": 34,
+    "question": "The diagram show a vector rotated by an angle θ. Multiplying z by e^{iθ} results in an anticlockwise rotation of ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A vector z is shown being rotated counter-clockwise by an angle theta to form a new vector.",
+    "options": {
+      "A": "θ radians",
+      "B": "90 degrees",
+      "C": "π radians",
+      "D": "180 degrees"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "COMPLEX NUMBERS",
+    "id": 38,
+    "question": "The diagram show an ellipse as a locus in the complex plane. The equation is |z - z₁| + |z - z₂| = 2a, where 2a > |z₁ - z₂|. z₁ and z₂ are the ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "An ellipse mapping the fixed distance sum from two interior points z1 and z2.",
+    "options": {
+      "A": "Foci",
+      "B": "Vertices",
+      "C": "Directrices",
+      "D": "Axes"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "COMPLEX NUMBERS",
+    "id": 42,
+    "question": "The diagram show a hyperbola locus: ||z - z₁| - |z - z₂|| = 2a. This defines a hyperbola provided 2a is ______ |z₁ - z₂|.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A hyperbola outlining a region where the absolute focal radius difference is constant.",
+    "options": {
+      "A": "Less than",
+      "B": "Greater than",
+      "C": "Equal to",
+      "D": "Twice"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "COMPLEX NUMBERS",
+    "id": 46,
+    "question": "The diagram show the mapping w = e^z. Lines parallel to the x-axis in the z-plane map onto ______ in the w-plane.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A horizontal line in the z-plane being transformed into a ray from origin in the w-plane.",
+    "options": {
+      "A": "Rays from origin",
+      "B": "Circles",
+      "C": "Spirals",
+      "D": "Parallel lines"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "COMPLEX NUMBERS",
+    "id": 49,
+    "question": "The diagram show inversion in a circle. In the complex plane, inversion with respect to the unit circle is the mapping w = ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A point z outside a unit circle being mapped to a point w inside the circle such that |z||w| = 1.",
+    "options": {
+      "A": "1 / z̄",
+      "B": "1 / z",
+      "C": "-z",
+      "D": "z̄"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DC S AND DR S",
+    "id": 13,
+    "question": "The diagram show a position vector r. The coordinates of a point P at a distance r from origin on a line with DCs (l, m, n) are ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Vector r drawn from origin to P, emphasizing the unit vector and scalar scaling.",
+    "options": {
+      "A": "(lr, mr, nr)",
+      "B": "(r/l, r/m, r/n)",
+      "C": "(l+r, m+r, n+r)",
+      "D": "√(l²r² + m²r² + n²r²)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DC S AND DR S",
+    "id": 31,
+    "question": "The diagram show a line passing through the Origin. If its DC's are (l,m,n) and it's reflected in the xy-plane, the new DC's are ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A line extending in the first octant, and its mirror image extending downwards symmetrically.",
+    "options": {
+      "A": "(l, m, -n)",
+      "B": "(-l, -m, n)",
+      "C": "(l, -m, -n)",
+      "D": "(n, m, l)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DE MOIVRE S THEOREM",
+    "id": 15,
+    "question": "The diagram show a unit circle. The n distinct roots of zⁿ = 1 lie on the unit circle in the complex plane and form a regular ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Complex plane with a unit circle and n points equally spaced out along its perimeter starting at (1,0).",
+    "options": {
+      "A": "Polygon of n sides",
+      "B": "Polyhedron",
+      "C": "Ellipse",
+      "D": "Spiral"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIAL EQUATIONS",
+    "id": 12,
+    "question": "The diagram show a family of curves. If the tangential slope dy/dx = y/x, the curves satisfy xdy - ydx = 0, which are ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Multiple straight lines passing through the origin.",
+    "options": {
+      "A": "Lines through origin",
+      "B": "Circles passing origin",
+      "C": "Parabolas",
+      "D": "Ellipses"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIAL EQUATIONS",
+    "id": 19,
+    "question": "The diagram show the slope field for dy/dx = x+y. The solution curves follow the ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A field of small tangent vectors (slope field) with lines showing the flow of the solution.",
+    "options": {
+      "A": "Tangents/Slopes",
+      "B": "Normals",
+      "C": "Axes",
+      "D": "Asymptotes"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIAL EQUATIONS",
+    "id": 26,
+    "question": "The diagram show a family of concentric circles x²+y²=C² and their orthogonal trajectories, which are ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Concentric circles around the origin intersected by straight lines radiating out from the origin.",
+    "options": {
+      "A": "Straight lines through origin",
+      "B": "Other circles",
+      "C": "Parabolas",
+      "D": "Hyperbolas"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIAL EQUATIONS",
+    "id": 31,
+    "question": "The diagram show exponential growth or decay. The equation dy/dt = ky models _____ if k>0.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "An exponentially increasing curve plotted against time t.",
+    "options": {
+      "A": "Growth",
+      "B": "Decay",
+      "C": "Oscillation",
+      "D": "Equilibrium"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIAL EQUATIONS",
+    "id": 38,
+    "question": "The diagram show a logistic growth curve obeying dP/dt = rP(1 - P/K). This differential equation is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "An S-shaped curve leveling off at a carrying capacity K.",
+    "options": {
+      "A": "Non-linear",
+      "B": "Linear",
+      "C": "Homogeneous",
+      "D": "Exact"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIAL EQUATIONS",
+    "id": 46,
+    "question": "The diagram show an envelope of a family of curves. The curve that touches each member of a family of curves is the geometric interpretation of the ______ solution.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Multiple lines or curves all tangentially touching a single overarching boundary curve (envelope).",
+    "options": {
+      "A": "Singular",
+      "B": "General",
+      "C": "Particular",
+      "D": "Trivial"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIATION",
+    "id": 4,
+    "question": "The diagram show a tangent line at P. Its slope is defined as ______ at that point.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A curve with a tangent line drawn at a point P(x, y).",
+    "options": {
+      "A": "dy/dx",
+      "B": "dx/dy",
+      "C": "y/x",
+      "D": "x + y"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIATION",
+    "id": 9,
+    "question": "The diagram show the function y = |x|. At x = 0, the derivative is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A 'V' shaped graph with the point at the origin (0,0).",
+    "options": {
+      "A": "Undefined",
+      "B": "0",
+      "C": "1",
+      "D": "-1"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIATION",
+    "id": 14,
+    "question": "The diagram show a curve where dy/dx changes from positive to negative. This point is a ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A curve with a local maximum peak.",
+    "options": {
+      "A": "Maximum",
+      "B": "Minimum",
+      "C": "Zero",
+      "D": "Asymptote"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIATION",
+    "id": 18,
+    "question": "The diagram show the graph of y = eˣ. The slope at x = 0 is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "An exponential growth curve passing through (0,1).",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "e",
+      "D": "Infinity"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIATION",
+    "id": 23,
+    "question": "The diagram show a parametric curve x = f(t), y = g(t). The derivative dy/dx is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A curve labeled in terms of parameter t.",
+    "options": {
+      "A": "(dy/dt) / (dx/dt)",
+      "B": "(dx/dt) / (dy/dt)",
+      "C": "dy/dt * dx/dt",
+      "D": "f'(t) + g'(t)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIATION",
+    "id": 27,
+    "question": "The diagram show the slope of y = x² at various points. The slope function is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A parabola with tangent slopes labeled at -2, -1, 0, 1, 2.",
+    "options": {
+      "A": "2x",
+      "B": "x²",
+      "C": "x",
+      "D": "x/2"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIATION",
+    "id": 30,
+    "question": "The diagram show the derivative of a function f(x) is zero at x=c. This point 'c' is called a ______ point.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A graph reaching a plateau where the tangent is horizontal.",
+    "options": {
+      "A": "Critical or Stationary",
+      "B": "Zero",
+      "C": "Infinity",
+      "D": "Constant"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIATION",
+    "id": 34,
+    "question": "The diagram show a 'Step Function'. The derivative is ______ at the jumps.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A staircase graph with horizontal segments and vertical jumps.",
+    "options": {
+      "A": "Undefined",
+      "B": "0",
+      "C": "Infinite",
+      "D": "1"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIATION",
+    "id": 37,
+    "question": "The diagram show the slope of a constant function y = 5. The slope is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A horizontal straight line at y=5.",
+    "options": {
+      "A": "0",
+      "B": "5",
+      "C": "1",
+      "D": "x"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIATION",
+    "id": 40,
+    "question": "The diagram show a 'Cusp'. The derivative at the cusp point is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A graph where two curves meet at a sharp point, both being vertical at the meeting point.",
+    "options": {
+      "A": "Undefined",
+      "B": "0",
+      "C": "Infinite",
+      "D": "2"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIATION",
+    "id": 43,
+    "question": "The diagram show the slope of y = 1/x. For x > 0, the slope is always ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "The graph of a rectangular hyperbola in the first quadrant.",
+    "options": {
+      "A": "Negative",
+      "B": "Positive",
+      "C": "Zero",
+      "D": "Increasing"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DIFFERENTIATION",
+    "id": 47,
+    "question": "The diagram show a 'Leibniz Notation'. The symbol d²y/dx² means ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "The symbol d²y/dx² printed clearly.",
+    "options": {
+      "A": "Second derivative",
+      "B": "Square of derivative",
+      "C": "Derivative square",
+      "D": "Implicit derivative"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DOT PRODUCT VECTORS",
+    "id": 3,
+    "question": "The diagram show an angle θ between vectors a and b. It is calculated by cos θ = ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Vectors a and b originating from a point with angle theta between them.",
+    "options": {
+      "A": "(a . b) / (|a||b|)",
+      "B": "(a × b) / (|a||b|)",
+      "C": "|a||b| / (a . b)",
+      "D": "a . b"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DOT PRODUCT VECTORS",
+    "id": 12,
+    "question": "The diagram shows vector projection. Projection of a on b is a scalar value evaluated as ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A vector a forming an angle with b, with a perpendicular dropped onto b showing the projection shadow.",
+    "options": {
+      "A": "(a . b) / |b|",
+      "B": "(a . b) / |a|",
+      "C": "(a × b) / |b|",
+      "D": "|a| cos θ"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DOT PRODUCT VECTORS",
+    "id": 18,
+    "question": "The diagram show a triangle built from a and b. The triangle inequality states |a + b| ______ |a| + |b|.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Vectors a and b forming two sides of a triangle, with vector sum a+b as the third.",
+    "options": {
+      "A": "≤",
+      "B": "≥",
+      "C": "=",
+      "D": ">"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DOT PRODUCT VECTORS",
+    "id": 24,
+    "question": "The diagram show work being done by force F moving along d. W = F . d. This implies only the component of force strictly acting ______ the displacement does work.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Force vector F and displacement vector d, showing F's parallel component on d.",
+    "options": {
+      "A": "Along",
+      "B": "Perpendicular to",
+      "C": "Opposite to",
+      "D": "Normal to"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DOT PRODUCT VECTORS",
+    "id": 33,
+    "question": "The diagram shows a vector a in 3D making angles α, β, γ with x, y, z axes. cos α = ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Vector in 3D space with the 3 direction angles highlighted.",
+    "options": {
+      "A": "a . i / |a|",
+      "B": "a . i",
+      "C": "a × i",
+      "D": "|a| / a . i"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "DOT PRODUCT VECTORS",
+    "id": 42,
+    "question": "The diagram shows a polygon of vectors closing to origin sum = 0. The dot product of a1 with the rest (-a1) is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Multiple vectors forming a closed loop end-to-end.",
+    "options": {
+      "A": "-|a1|²",
+      "B": "0",
+      "C": "|a1|²",
+      "D": "1"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "ELLIPSE",
+    "id": 5,
+    "question": "The diagram shows an ellipse. The sum of distances from any point on it to the two foci is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Ellipse with two foci F1 and F2 and a point P on the curve.",
+    "options": {
+      "A": "2a",
+      "B": "2b",
+      "C": "a + b",
+      "D": "a"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "ELLIPSE",
+    "id": 14,
+    "question": "The diagram shows focal chord of ellipse. Product of focal distances of point P is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Ellipse with focal radii r1 and r2 from point P.",
+    "options": {
+      "A": "b²(1 - e²cos²θ)",
+      "B": "a²(1 - e²)",
+      "C": "ab",
+      "D": "a²e²"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "ELLIPSE",
+    "id": 18,
+    "question": "The diagram shows orthogonal tangents to ellipse meeting on director circle. Their angle is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Two perpendicular tangent lines from an external point touching the ellipse.",
+    "options": {
+      "A": "90°",
+      "B": "45°",
+      "C": "60°",
+      "D": "0°"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "ELLIPSE",
+    "id": 23,
+    "question": "The diagram shows the ellipse 5x² + 4y² = 20. Its major axis is along ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Ellipse taller than wide, major axis vertical.",
+    "options": {
+      "A": "y-axis",
+      "B": "x-axis",
+      "C": "Line y=x",
+      "D": "Origin"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "ELLIPSE",
+    "id": 26,
+    "question": "The diagram shows ellipse x²/a² + y²/b² = 1. Vertices of major axis are ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Ellipse with vertices labeled on the x-axis.",
+    "options": {
+      "A": "(±a, 0)",
+      "B": "(0, ±b)",
+      "C": "(±b, 0)",
+      "D": "(0, ±a)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "ELLIPSE",
+    "id": 30,
+    "question": "The diagram shows two foci and a point on ellipse. The angle subtended at centre is the ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Ellipse with angle between radii to two foci from point on curve.",
+    "options": {
+      "A": "Eccentric angle",
+      "B": "Focal angle",
+      "C": "Central angle",
+      "D": "Director angle"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "ELLIPSE",
+    "id": 34,
+    "question": "The diagram shows a tangent and normal at point P on ellipse. They are ______ to each other.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Ellipse with a tangent and normal drawn at the same point.",
+    "options": {
+      "A": "Perpendicular",
+      "B": "Parallel",
+      "C": "Equal",
+      "D": "Coincident"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "ELLIPSE",
+    "id": 38,
+    "question": "The diagram shows axes a and b of ellipse. The centre is at ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Ellipse with centre at origin, semi-axes labeled.",
+    "options": {
+      "A": "Origin",
+      "B": "Focus",
+      "C": "Vertex",
+      "D": "Any point"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "ELLIPSE",
+    "id": 42,
+    "question": "The diagram shows equal conjugate diameters of ellipse. They are always ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Two equal conjugate diameters of an ellipse at angle to each other.",
+    "options": {
+      "A": "Inclined at equal angles to major axis",
+      "B": "Perpendicular",
+      "C": "Parallel",
+      "D": "Along axes"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "ELLIPSE",
+    "id": 46,
+    "question": "The diagram shows the ellipse and its auxiliary circle. The auxiliary circle has radius ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Ellipse inscribed in a circle of radius a.",
+    "options": {
+      "A": "a",
+      "B": "b",
+      "C": "(a+b)/2",
+      "D": "√(a²+b²)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "ELLIPSE",
+    "id": 50,
+    "question": "The diagram shows a point P on ellipse. The normal at P bisects the angle ______ between focal radii.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Point P on ellipse with two focal radii and a normal bisecting the external angle.",
+    "options": {
+      "A": "External angle between focal radii",
+      "B": "Internal angle between focal radii",
+      "C": "Angle with x-axis",
+      "D": "Angle with y-axis"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "FUNCTIONS",
+    "id": 4,
+    "question": "The diagram show a mapping where two elements from the domain point to the same element in the co-domain. This is a ______ function.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Two ovals A and B, with arrows from multiple points in A meeting at a single point in B.",
+    "options": {
+      "A": "Many-one",
+      "B": "One-one",
+      "C": "Onto",
+      "D": "Inverse"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "FUNCTIONS",
+    "id": 8,
+    "question": "The diagram show the graph of y = |x|. The range of this function is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A 'V' shaped graph starting from (0,0) and going upwards.",
+    "options": {
+      "A": "[0, ∞)",
+      "B": "(-∞, ∞)",
+      "C": "(0, ∞)",
+      "D": "[-1, 1]"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "FUNCTIONS",
+    "id": 10,
+    "question": "The diagram show a function f and its reflection y=x. The reflection is the ______ function.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A graph showing a curve y=f(x), the line y=x, and another curve symmetric to f(x) across that line.",
+    "options": {
+      "A": "Inverse",
+      "B": "Composite",
+      "C": "Reciprocal",
+      "D": "Derivative"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "FUNCTIONS",
+    "id": 13,
+    "question": "The diagram show a graph symmetric about the y-axis. This represents an ______ function.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A parabola y=x² which looks exactly the same on the left and right of the vertical axis.",
+    "options": {
+      "A": "Even",
+      "B": "Odd",
+      "C": "Periodical",
+      "D": "Increasing"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "FUNCTIONS",
+    "id": 14,
+    "question": "The diagram show a graph symmetric about the origin. This represents an ______ function.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A graph of y=x³ which looks inverted when rotated 180 degrees about the origin.",
+    "options": {
+      "A": "Odd",
+      "B": "Even",
+      "C": "Decreasing",
+      "D": "Exponential"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "FUNCTIONS",
+    "id": 19,
+    "question": "The diagram show the graph of the Greatest Integer Function [x]. It looks like a ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A 'staircase' graph with jumps at every integer x.",
+    "options": {
+      "A": "Step function",
+      "B": "Linear function",
+      "C": "Hyperbola",
+      "D": "Circle"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "FUNCTIONS",
+    "id": 22,
+    "question": "The diagram show three sets X, Y, Z and mappings f: X->Y and g: Y->Z. The mapping from X to Z is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Three circles in a row with arrows g o f across the whole span.",
+    "options": {
+      "A": "g o f",
+      "B": "f o g",
+      "C": "f + g",
+      "D": "f / g"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "FUNCTIONS",
+    "id": 26,
+    "question": "The diagram show a 'Vertical Line Test'. If a vertical line crosses the graph at more than one point, it is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A circle with a vertical line intersecting it twice.",
+    "options": {
+      "A": "Not a function",
+      "B": "A function",
+      "C": "One-one function",
+      "D": "Onto function"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "FUNCTIONS",
+    "id": 30,
+    "question": "The diagram show a graph that 'looks like' log x. As x approaches zero from right, y goes to ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A log graph plunging towards -infinity at the y-axis.",
+    "options": {
+      "A": "-Infinity",
+      "B": "0",
+      "C": "Infinity",
+      "D": "1"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "FUNCTIONS",
+    "id": 33,
+    "question": "The diagram show two functions meeting at a point (x, y). This point satisfies ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Two curves f(x) and g(x) intersecting at a single dot.",
+    "options": {
+      "A": "f(x) = g(x)",
+      "B": "f(x) + g(x) = 0",
+      "C": "f(x) * g(x) = 1",
+      "D": "x = 0"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "FUNCTIONS",
+    "id": 37,
+    "question": "The diagram show a 'Many-to-One' mapping. For each output there could be ______ input(s).",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Mapping from {a, b} to {1} where both a and b map to 1.",
+    "options": {
+      "A": "Multiple",
+      "B": "Only one",
+      "C": "Zero",
+      "D": "Infinite"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "FUNCTIONS",
+    "id": 40,
+    "question": "The diagram show y = x and y = -x. The first is increasing, the second is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Two lines through origin with positive and negative slopes.",
+    "options": {
+      "A": "Decreasing",
+      "B": "Increasing",
+      "C": "Stationary",
+      "D": "Constant"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "FUNCTIONS",
+    "id": 43,
+    "question": "The diagram show a circle x² + y² = 1. Is this a function y = f(x)?",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A unit circle centered at the origin.",
+    "options": {
+      "A": "No",
+      "B": "Yes",
+      "C": "Only for positive x",
+      "D": "Only for positive y"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "FUNCTIONS",
+    "id": 47,
+    "question": "The diagram show an arrow from set A to set B but one element in A has no arrow. Is this a function from A to B?",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Two sets with mapping arrows, but element 'z' in domain set has no outward arrow.",
+    "options": {
+      "A": "No",
+      "B": "Yes",
+      "C": "Depends on B",
+      "D": "Maybe"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLA",
+    "id": 5,
+    "question": "The diagram shows a hyperbola with two branches. The transverse axis connects ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Hyperbola with two branches and vertical transverse axis.",
+    "options": {
+      "A": "The two vertices",
+      "B": "The two foci",
+      "C": "The asymptotes",
+      "D": "The directrices"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLA",
+    "id": 8,
+    "question": "The diagram shows a rectangular hyperbola xy = c². Its asymptotes are ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Rectangular hyperbola in the first and third quadrants with asymptotes as axes.",
+    "options": {
+      "A": "The coordinate axes",
+      "B": "Lines y = ±x",
+      "C": "Lines x = ±c",
+      "D": "Lines y = ±c"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLA",
+    "id": 13,
+    "question": "The diagram shows a hyperbola. The difference of focal radii of any point P is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Hyperbola with two foci and point P on one branch.",
+    "options": {
+      "A": "2a (constant)",
+      "B": "2b",
+      "C": "2ae",
+      "D": "Variable"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLA",
+    "id": 18,
+    "question": "The diagram shows the asymptotes of a hyperbola. The angle between them is 2θ where tan θ = ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Hyperbola with its two asymptotes making angle 2θ at centre.",
+    "options": {
+      "A": "b/a",
+      "B": "a/b",
+      "C": "b²/a²",
+      "D": "a²/b²"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLA",
+    "id": 23,
+    "question": "The diagram shows hyperbola with e > √2. This means it is ______ a rectangular hyperbola.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Hyperbola with wide-open branches.",
+    "options": {
+      "A": "Opening wider than",
+      "B": "Opening narrower than",
+      "C": "Equivalent to",
+      "D": "Inside"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLA",
+    "id": 27,
+    "question": "The diagram shows hyperbola and a chord AB. The midpoint M of AB satisfies the equation T = ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Chord AB of hyperbola with midpoint M.",
+    "options": {
+      "A": "S₁",
+      "B": "S",
+      "C": "T = 0",
+      "D": "0"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLA",
+    "id": 30,
+    "question": "The diagram shows a hyperbola. Its vertices are at ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Hyperbola x²/a² - y²/b² = 1 with vertices labeled on x-axis.",
+    "options": {
+      "A": "(±a, 0)",
+      "B": "(0, ±b)",
+      "C": "(±ae, 0)",
+      "D": "(±c, 0)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLA",
+    "id": 34,
+    "question": "The diagram shows normal to hyperbola at P. It makes equal angles with ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Hyperbola with two foci and a normal from P bisecting the angle between focal radii.",
+    "options": {
+      "A": "The two focal radii",
+      "B": "The asymptotes",
+      "C": "The axes",
+      "D": "The directrices"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLA",
+    "id": 37,
+    "question": "The diagram shows x²-y²=1 (rectangular hyperbola). Its eccentricity is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Rectangular hyperbola symmetric about y=x and y=-x.",
+    "options": {
+      "A": "√2",
+      "B": "1",
+      "C": "2",
+      "D": "√3"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLA",
+    "id": 41,
+    "question": "The diagram shows a point P on hyperbola. Distance from focus minus distance from nearer directrix times e = ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Hyperbola with focus, directrix and point P labeled.",
+    "options": {
+      "A": "0",
+      "B": "a",
+      "C": "b",
+      "D": "e"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLA",
+    "id": 45,
+    "question": "The diagram shows asymptotes y = ±(b/a)x of hyperbola. They are tangents to the hyperbola at ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Hyperbola approaching its asymptotes but never touching.",
+    "options": {
+      "A": "Infinity",
+      "B": "Vertex",
+      "C": "Focus",
+      "D": "Centre"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLA",
+    "id": 48,
+    "question": "The diagram shows two tangents from P meeting hyperbola. The chord of contact lies inside if P is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "External point P with two tangents to hyperbola.",
+    "options": {
+      "A": "Outside both branches",
+      "B": "Between branches",
+      "C": "On the hyperbola",
+      "D": "At focus"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLIC FUNCTIONS",
+    "id": 3,
+    "question": "The diagram shows a curve for y = cosh(x). This curve describes the shape of a hanging chain and is called a ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A U-shaped curve identical to a hanging cable supported at two ends.",
+    "options": {
+      "A": "Catenary",
+      "B": "Parabola",
+      "C": "Hyperbola",
+      "D": "Ellipse"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLIC FUNCTIONS",
+    "id": 12,
+    "question": "The diagram show points parametrised by (x, y) = (cosh t, sinh t). They trace out the right half of a unit ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A hyperbola x2 - y2 = 1 with the right branch highlighted for t spanning real numbers.",
+    "options": {
+      "A": "Hyperbola",
+      "B": "Circle",
+      "C": "Parabola",
+      "D": "Ellipse"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLIC FUNCTIONS",
+    "id": 26,
+    "question": "The diagram show a hyperbolic logarithmic integral. The integral ∫ sinh(x) dx is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A sketch denoting the area under the sinh curve, which mathematically integrates to cosh(x).",
+    "options": {
+      "A": "cosh(x) + C",
+      "B": "-cosh(x) + C",
+      "C": "sinh(x) + C",
+      "D": "tanh(x) + C"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "HYPERBOLIC FUNCTIONS",
+    "id": 41,
+    "question": "The diagram show graphs of e^x, e^{-x}, and cosh(x). The graph of cosh(x) is exactly the ______ of e^x and e^{-x}.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Three curves where cosh(x) runs exactly midway between the exponential bounds e^x and e^-x above the x-axis.",
+    "options": {
+      "A": "Arithmetic mean (average)",
+      "B": "Geometric mean",
+      "C": "Harmonic mean",
+      "D": "Sum"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "LIMITS CONTINUITY",
+    "id": 5,
+    "question": "The diagram show a function with a hole at x=c. This is an example of ______ discontinuity.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A curve with a small open circle (hole) at a specific x-coordinate, but the rest of the curve is smooth.",
+    "options": {
+      "A": "Removable",
+      "B": "Jump",
+      "C": "Infinite",
+      "D": "Continuous"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "LIMITS CONTINUITY",
+    "id": 10,
+    "question": "The diagram show a function with a sudden break where the left and right limits are different. This is a ______ discontinuity.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A graph where a curve ends at one y-value and immediately starts again at a different y-value for the same x-coordinate.",
+    "options": {
+      "A": "Jump",
+      "B": "Removable",
+      "C": "Infinite",
+      "D": "Oscillatory"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "LIMITS CONTINUITY",
+    "id": 14,
+    "question": "The diagram show a function approaching a vertical line x=a. This represents an ______ discontinuity.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Graph of y = 1/(x-a) where the curve goes to infinity as it nears the vertical asymptote x=a.",
+    "options": {
+      "A": "Infinite",
+      "B": "Jump",
+      "C": "Removable",
+      "D": "Point"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "LIMITS CONTINUITY",
+    "id": 18,
+    "question": "The diagram show a sharp corner (cusp) in a continuous graph. At this point, the function is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A 'V' shaped graph (like y=|x|) at the origin.",
+    "options": {
+      "A": "Not differentiable",
+      "B": "Not continuous",
+      "C": "Differentiable",
+      "D": "Zero"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "LIMITS CONTINUITY",
+    "id": 23,
+    "question": "The diagram show a function oscillating between -1 and 1 as x approach 0. This is an example of ______ limit.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Graph of sin(1/x) near x=0, showing infinitely many oscillations.",
+    "options": {
+      "A": "Non-existent (oscillatory)",
+      "B": "Zero",
+      "C": "Infinite",
+      "D": "Finite"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "LIMITS CONTINUITY",
+    "id": 27,
+    "question": "The diagram show a piecewise function. The condition for it to be continuous at the join is that the ______ must be equal.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A graph where two differently defined curves meet at a specific point x=k.",
+    "options": {
+      "A": "Left and right limits",
+      "B": "Slopes",
+      "C": "Derivatives",
+      "D": "Intercepts"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "LIMITS CONTINUITY",
+    "id": 31,
+    "question": "The diagram show the graph of y = |x|/x. What is the limit as x approach 0?",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Graph showing y=1 for x>0 and y=-1 for x<0.",
+    "options": {
+      "A": "Does not exist",
+      "B": "0",
+      "C": "1",
+      "D": "-1"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "LIMITS CONTINUITY",
+    "id": 35,
+    "question": "The diagram show a graph that is continuous but not differentiable at x=0. Which function could it be?",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A 'V'-shaped plot with vertex at (0,0).",
+    "options": {
+      "A": "|x|",
+      "B": "x²",
+      "C": "sin x",
+      "D": "e^x"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "LIMITS CONTINUITY",
+    "id": 39,
+    "question": "The diagram show a jump at x=2. F(x) = {x+1 for x<2, x-1 for x≥2}. What is the right hand limit at x=2?",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Graph jumping from y=3 to y=1 at x=2.",
+    "options": {
+      "A": "1",
+      "B": "3",
+      "C": "2",
+      "D": "Does not exist"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "LIMITS CONTINUITY",
+    "id": 43,
+    "question": "The diagram show a vertical asymptote. This means the limit at that point is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A curve that shoots upwards to infinity as it approaches a vertical dotted line.",
+    "options": {
+      "A": "Infinite (∞ or -∞)",
+      "B": "Zero",
+      "C": "One",
+      "D": "Finite"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "LIMITS CONTINUITY",
+    "id": 47,
+    "question": "The diagram show a parabola. Is it continuous everywhere on its domain R?",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A smooth u-shaped curve extending infinitely in both directions.",
+    "options": {
+      "A": "Yes",
+      "B": "No",
+      "C": "Only at the vertex",
+      "D": "Only for positive x"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "LOCUS",
+    "id": 10,
+    "question": "The diagram show a general conic equation ax² + 2hxy + by² + 2gx + 2fy + c = 0. To remove the xy term, axes must be rotated by θ where tan 2θ = ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A classic conic section inclined relative to axes, shown straightening out.",
+    "options": {
+      "A": "2h / (a - b)",
+      "B": "h / (a - b)",
+      "C": "2h / (a + b)",
+      "D": "(a - b) / 2h"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "LOCUS",
+    "id": 26,
+    "question": "The diagram show a point P moving such that area of triangle PAB is constant for fixed A, B. The locus of P is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A fixed base AB and a moving point P. Two parallel dashed lines showing valid paths.",
+    "options": {
+      "A": "A pair of lines parallel to AB",
+      "B": "A circle",
+      "C": "A single line passing through mid-point",
+      "D": "An ellipse"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MATRICES AND DETERMINANTS",
+    "id": 4,
+    "question": "The diagram show an Identity matrix of order 3. All its diagonal elements are ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A 3x3 matrix with 1s on the main diagonal and 0s elsewhere.",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "-1",
+      "D": "Variable"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MATRICES AND DETERMINANTS",
+    "id": 10,
+    "question": "The diagram show the process of calculating a 2x2 determinant. The formula is ad - ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A 2x2 matrix [[a, b], [c, d]] with arrows showing multiplication of diagonals.",
+    "options": {
+      "A": "bc",
+      "B": "cb",
+      "C": "ac",
+      "D": "bd"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MATRICES AND DETERMINANTS",
+    "id": 14,
+    "question": "The diagram show a system of linear equations in matrix form AX = B. If |A| ≠ 0, the solution is X = ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Illustration showing A times a column vector X equals a column vector B.",
+    "options": {
+      "A": "A⁻¹B",
+      "B": "BA⁻¹",
+      "C": "B/A",
+      "D": "AᵀB"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MATRICES AND DETERMINANTS",
+    "id": 18,
+    "question": "The diagram show a matrix in Row Echelon Form. The number of non-zero rows is the ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A matrix with zeros below the leading 1s of each row.",
+    "options": {
+      "A": "Rank of the matrix",
+      "B": "Determinant",
+      "C": "Trace",
+      "D": "Order"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MATRICES AND DETERMINANTS",
+    "id": 23,
+    "question": "The diagram show the transpose of a matrix. The rows of the original matrix become the ______ of the transpose.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "An arrow showing elements shifting from horizontal rows to vertical columns.",
+    "options": {
+      "A": "Columns",
+      "B": "Diagonals",
+      "C": "Zeroes",
+      "D": "Inverses"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MATRICES AND DETERMINANTS",
+    "id": 27,
+    "question": "The diagram show Sarrus' Rule for a 3x3 determinant. It involves summing products along ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A 3x3 matrix with the first two columns repeated next to it, and lines drawn through diagonals.",
+    "options": {
+      "A": "Diagonals",
+      "B": "Rows",
+      "C": "Columns",
+      "D": "Edges"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MATRICES AND DETERMINANTS",
+    "id": 30,
+    "question": "The diagram show a consistent system of equations. Geometrically, if the equations are 2D lines, they ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Two lines intersecting at a point on a Cartesian plane.",
+    "options": {
+      "A": "Intersect at least at one point",
+      "B": "Are parallel",
+      "C": "Do not exist",
+      "D": "Are perpendicular only"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MATRICES AND DETERMINANTS",
+    "id": 34,
+    "question": "The diagram show a Nilpotent matrix. A matrix A is nilpotent if A^k = ______ for some k.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A matrix that becomes a zero matrix when raised to a certain power.",
+    "options": {
+      "A": "0",
+      "B": "I",
+      "C": "A",
+      "D": "-I"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MATRICES AND DETERMINANTS",
+    "id": 37,
+    "question": "The diagram show an Upper Triangular matrix. All elements ______ the main diagonal are zero.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A square matrix where all entries below the main diagonal are zero.",
+    "options": {
+      "A": "Below",
+      "B": "Above",
+      "C": "On",
+      "D": "Outside"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MATRICES AND DETERMINANTS",
+    "id": 40,
+    "question": "The diagram show the product of a matrix and its inverse. The result is always a/an ______ matrix.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Illustration of A * A⁻¹ yielding a matrix with 1s on diagonal and 0s elsewhere.",
+    "options": {
+      "A": "Identity",
+      "B": "Zero",
+      "C": "Symmetric",
+      "D": "Diagonal"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MATRICES AND DETERMINANTS",
+    "id": 44,
+    "question": "The diagram show a consistent dependent system. The two equations represent ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Two lines lying exactly on top of each other.",
+    "options": {
+      "A": "Coincident lines",
+      "B": "Parallel lines",
+      "C": "Intersecting lines",
+      "D": "Perpendicular lines"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MATRICES AND DETERMINANTS",
+    "id": 47,
+    "question": "The diagram show the expansion of a 3x3 determinant along the first row. It is a ______ sum of cofactors.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Mathematical expression showing a11*C11 + a12*C12 + a13*C13.",
+    "options": {
+      "A": "Weighted",
+      "B": "Simple",
+      "C": "Geometric",
+      "D": "Inverse"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MEAN VALUE THEOREM",
+    "id": 6,
+    "question": "The diagram show a continuous curve that starts and ends at the same y-value. It is smooth with no jumps. By Rolle's theorem, it must have at least one ______ point in between.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A bell-like smooth curve (parabola pointing down) crossing the x-axis at a and b. A dotted horizontal tangent touching the peak c.",
+    "options": {
+      "A": "Turning / peak (local extrema)",
+      "B": "Inflection",
+      "C": "Discontinuous",
+      "D": "Root"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MEAN VALUE THEOREM",
+    "id": 15,
+    "question": "The diagram show a rising curve. The secant line connecting endpoints A and B has slope m. A parallel line forms a tangent at C. Thus the slope of tangent = ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A curve from point A to B. A secant line cuts through the ends. A point C on the curve has a tangent strictly parallel to the secant.",
+    "options": {
+      "A": "Slope of the Secant AB",
+      "B": "0",
+      "C": "y-intercept",
+      "D": "Length of AB"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MEAN VALUE THEOREM",
+    "id": 31,
+    "question": "The diagram show a cubic curve. For a cubic function f(x) = ax³ + bx² + cx + d, applying Rolle's Theorem between any two roots gives a quadratic equation 3ax² + 2bx + c = 0 which confirms it has at least one root between the original roots. This is physically the ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A wavy cubic curve crossing the x-axis at a, b, and c. Turning points distinctly shown between a-b and b-c.",
+    "options": {
+      "A": "Local extremum (Peak or Valley)",
+      "B": "Root",
+      "C": "Inflection point",
+      "D": "Y-intercept"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MEAN VALUE THEOREM",
+    "id": 44,
+    "question": "The diagram show a step function (like floor(x)). Can we apply LMVT on [0, 2]?",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A staircase function jumping integer values. A discontinuity is clearly visible at 1.",
+    "options": {
+      "A": "No, it is discontinuous",
+      "B": "Yes",
+      "C": "Yes, but Rolle's only",
+      "D": "No, it is unbounded"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MULTIPLE AND SUB MULTIPLE ANGLES",
+    "id": 24,
+    "question": "The diagram show a unit circle. The value of tan(θ/2) is the ______ of the line from (-1,0) through the point (cos θ, sin θ) on the circle.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A unit circle with a point P for angle theta, and a line segment from the far left point (-1,0) through P to the y-axis.",
+    "options": {
+      "A": "Slope",
+      "B": "Intercept",
+      "C": "Length",
+      "D": "Curvature"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MULTIPLE AND SUB MULTIPLE ANGLES",
+    "id": 31,
+    "question": "The diagram show a triangle with angles A/2 and B/2. Multiple/Submultiple angle formulas are used to solve for ______ in properties of triangles.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A triangle with bisector lines meeting at the incenter.",
+    "options": {
+      "A": "In-radius and Ex-radii",
+      "B": "Height",
+      "C": "Perimeter",
+      "D": "Coordinates"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "MULTIPLE AND SUB MULTIPLE ANGLES",
+    "id": 43,
+    "question": "The diagram show a wave sin(2x). Compared to sin(x), it has ______ the frequency.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Two sine waves plotted on the same axis; one repeats twice as often as the other.",
+    "options": {
+      "A": "Double",
+      "B": "Half",
+      "C": "Same",
+      "D": "Triple"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PARABOLA",
+    "id": 4,
+    "question": "The diagram show a parabola opening rightward. Its axis of symmetry is the ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A rightward-opening parabola with its axis of symmetry marked as the x-axis.",
+    "options": {
+      "A": "x-axis",
+      "B": "y-axis",
+      "C": "Line y = x",
+      "D": "Line y = -x"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PARABOLA",
+    "id": 8,
+    "question": "The diagram show the focal distance of point P on y²=4ax. The focal distance is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A parabola with a horizontal line (directrix) and lines showing the distance from P to the focus and to the directrix.",
+    "options": {
+      "A": "x₁ + a",
+      "B": "x₁ - a",
+      "C": "y₁ + a",
+      "D": "√(x₁² + y₁²)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PARABOLA",
+    "id": 12,
+    "question": "The diagram show a normal to the parabola. It cuts the axis at G. The subnormal NG is always equal to ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A parabola with a normal line from point P meeting the axis at G, and a vertical segment from P to the axis labeled N and G.",
+    "options": {
+      "A": "2a",
+      "B": "a",
+      "C": "4a",
+      "D": "0"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PARABOLA",
+    "id": 15,
+    "question": "The diagram show a focal chord of parabola y²=4ax. The locus of the midpoints of all focal chords is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Multiple focal chords drawn from focus, with their midpoints connected by a curve.",
+    "options": {
+      "A": "y² = 2a(x - a)",
+      "B": "y² = 4a(x - a)",
+      "C": "y² = a(x - 2a)",
+      "D": "y² = 8ax"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PARABOLA",
+    "id": 18,
+    "question": "The diagram show a parabola x²=4ay opening upward. Its focus is at ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "An upward-opening parabola with its focus marked above the vertex.",
+    "options": {
+      "A": "(0, a)",
+      "B": "(a, 0)",
+      "C": "(0, -a)",
+      "D": "(0, 0)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PARABOLA",
+    "id": 23,
+    "question": "The diagram show two tangents from an external point P to a parabola. They are always ______ to each other.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Point P outside parabola y²=4ax with two tangent lines touching the curve.",
+    "options": {
+      "A": "Neither parallel nor perpendicular in general",
+      "B": "Always perpendicular",
+      "C": "Always parallel",
+      "D": "Always equal length"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PARABOLA",
+    "id": 26,
+    "question": "The diagram show the latus rectum of y²=4ax as a chord. Its endpoints are ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "The parabola y²=4ax with the latus rectum as a vertical chord through the focus.",
+    "options": {
+      "A": "(a, 2a) and (a, -2a)",
+      "B": "(2a, a) and (2a, -a)",
+      "C": "(a, a) and (-a, a)",
+      "D": "(0, 2a) and (0, -2a)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PARABOLA",
+    "id": 29,
+    "question": "The diagram show the axis of parabola y² = 4ax. It is the line ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A parabola opening to the right with its central symmetry axis labeled.",
+    "options": {
+      "A": "y = 0",
+      "B": "x = 0",
+      "C": "y = x",
+      "D": "x = a"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PARABOLA",
+    "id": 32,
+    "question": "The diagram show a reflective property: rays parallel to axis reflect through the ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Parallel horizontal rays hitting the parabolic surface and all reflecting to converge at the focus.",
+    "options": {
+      "A": "Focus",
+      "B": "Vertex",
+      "C": "Directrix",
+      "D": "Latus rectum"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PARABOLA",
+    "id": 36,
+    "question": "The diagram show two parabolas y²=4ax and x²=4ay. They intersect at ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Two parabolas drawn on the same axes, intersecting at two points.",
+    "options": {
+      "A": "(0,0) and (4a, 4a)",
+      "B": "(a, a) and (-a, -a)",
+      "C": "(0,0) and (a, a)",
+      "D": "(2a, 2a) and the origin"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PARABOLA",
+    "id": 39,
+    "question": "The diagram show the parabola y²=12x. Its focus and latus rectum length are ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Parabola y²=12x with focus and latus rectum marked.",
+    "options": {
+      "A": "Focus (3,0), LR = 12",
+      "B": "Focus (0,3), LR = 12",
+      "C": "Focus (3,0), LR = 6",
+      "D": "Focus (6,0), LR = 12"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PARABOLA",
+    "id": 42,
+    "question": "The diagram show the foot of the perpendicular from the focus S to the tangent at P. This foot lies on the ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Focus S, tangent line at P, and the perpendicular from S to tangent with foot T.",
+    "options": {
+      "A": "Tangent at the vertex (y-axis)",
+      "B": "Directrix",
+      "C": "Latus rectum",
+      "D": "Axis"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PARABOLA",
+    "id": 45,
+    "question": "The diagram show the parabola y=x². Its vertex is at ______ and opens ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A standard upward-opening parabola on the coordinate plane.",
+    "options": {
+      "A": "(0,0), upward",
+      "B": "(0,0), downward",
+      "C": "(1,0), upward",
+      "D": "(0,1), upward"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PARABOLA",
+    "id": 47,
+    "question": "The diagram show the normal to y²=4ax at P passing through another point Q on the parabola. The chord PQ is called a ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Parabola with normal at P intersecting the curve again at Q.",
+    "options": {
+      "A": "Normal chord",
+      "B": "Focal chord",
+      "C": "Latus rectum",
+      "D": "Diameter"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PARTIAL FRACTIONS",
+    "id": 32,
+    "question": "The diagram show a fraction decomposed. 2x / (x² - 1) is equal to 1/(x-1) + 1/(x+1). Adding these gives (x+1+x-1)/(x²-1) = 2x/(x²-1). This confirms partial fraction is the reverse operation of ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Fractions A/B and C/D being added using common denominator to form (AD+BC)/BD.",
+    "options": {
+      "A": "Adding algebraic fractions",
+      "B": "Differentiating functions",
+      "C": "Multiplying polynomials",
+      "D": "Integrating logarithms"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PERMUTATIONS COMBINATIONS",
+    "id": 4,
+    "question": "The diagram show 5 different colored balls. The number of ways to pick any 2 is:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A set of 5 distinct balls (Red, Blue, Green, Yellow, Black).",
+    "options": {
+      "A": "10",
+      "B": "20",
+      "C": "5",
+      "D": "120"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PERMUTATIONS COMBINATIONS",
+    "id": 10,
+    "question": "The diagram show a grid of 3x3 squares. The number of rectangles (including squares) is:",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A square grid with 3 horizontal lines and 3 vertical lines (excluding boundary) creating 16 intersection points total or 3x3 small squares.",
+    "options": {
+      "A": "36",
+      "B": "9",
+      "C": "16",
+      "D": "100"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PERMUTATIONS COMBINATIONS",
+    "id": 14,
+    "question": "The diagram show 4 letters A, B, C, D and 4 envelopes. The number of ways to put them such that none goes in the right envelope is called ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Four letters and four envelopes labeled matchingly, with arrows showing incorrect pairings.",
+    "options": {
+      "A": "Derangement",
+      "B": "Permutation",
+      "C": "Combination",
+      "D": "Selection"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PERMUTATIONS COMBINATIONS",
+    "id": 18,
+    "question": "The diagram show a set of 10 points on a plane. The number of lines that can be drawn is:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A group of 10 dots randomly scattered, no three are collinear.",
+    "options": {
+      "A": "45",
+      "B": "100",
+      "C": "90",
+      "D": "10"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PERMUTATIONS COMBINATIONS",
+    "id": 23,
+    "question": "The diagram show a Pascal's Triangle. Each entry is the ______ of the two entries above it.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A triangular array of numbers starting with 1 at the apex.",
+    "options": {
+      "A": "Sum",
+      "B": "Product",
+      "C": "Difference",
+      "D": "Average"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PERMUTATIONS COMBINATIONS",
+    "id": 27,
+    "question": "The diagram show a circular necklace with 6 different beads. The number of arrangements is:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A circle with 6 distinct colored beads arranged along the perimeter.",
+    "options": {
+      "A": "60",
+      "B": "120",
+      "C": "720",
+      "D": "30"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PERMUTATIONS COMBINATIONS",
+    "id": 30,
+    "question": "The diagram show a hand shake between two people. In a group of 'n' people, total handshakes are:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Two people shaking hands.",
+    "options": {
+      "A": "ⁿC₂",
+      "B": "ⁿP₂",
+      "C": "n",
+      "D": "2n"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PERMUTATIONS COMBINATIONS",
+    "id": 34,
+    "question": "The diagram show 5 distinct flags. Number of signals that can be made using 2 flags is:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Five different colored flags hanging on a line.",
+    "options": {
+      "A": "20",
+      "B": "10",
+      "C": "25",
+      "D": "120"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PERMUTATIONS COMBINATIONS",
+    "id": 37,
+    "question": "The diagram show a circular table with 10 chairs. In how many ways can two特定 individuals sit next to each other?",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A round table with 10 seats correctly spaced.",
+    "options": {
+      "A": "2 * 8!",
+      "B": "9!",
+      "C": "10!",
+      "D": "2 * 9!"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PERMUTATIONS COMBINATIONS",
+    "id": 40,
+    "question": "The diagram show an arrangement of 3 identical Red balls and 2 identical Blue balls. Total arrangements:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Five balls in a row: RRRBB.",
+    "options": {
+      "A": "10",
+      "B": "120",
+      "C": "24",
+      "D": "5"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PERMUTATIONS COMBINATIONS",
+    "id": 43,
+    "question": "The diagram show a set of 5 distinct non-parallel lines. The maximum number of points of intersection is:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Five straight lines crossing each other in various points.",
+    "options": {
+      "A": "10",
+      "B": "25",
+      "C": "20",
+      "D": "5"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PERMUTATIONS COMBINATIONS",
+    "id": 47,
+    "question": "The diagram show a 'Tree Diagram' for selecting path A or B then 1 or 2. Total outcomes are found by ______ the branches.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A hierarchical flowchart starting with one point splitting into two, then each splitting into two again.",
+    "options": {
+      "A": "Multiplying",
+      "B": "Adding",
+      "C": "Dividing",
+      "D": "Subtracting"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PLANE",
+    "id": 3,
+    "question": "The diagram show a plane with normal vector n. The equation of plane passing through point a with normal n is (r - a) . n = ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A plane containing point a, with a perpendicular normal vector n.",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "|n|",
+      "D": "|a|"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PLANE",
+    "id": 15,
+    "question": "The diagram shows a line and a plane. The angle φ between a line (parallel to vector b) and a plane (normal n) is given by sin φ = ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A line intersecting a plane, with the normal to the plane and angle between line and plane marked.",
+    "options": {
+      "A": "|b . n| / (|b||n|)",
+      "B": "|b × n| / (|b||n|)",
+      "C": "(b . n)",
+      "D": "|b + n|"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PLANE",
+    "id": 24,
+    "question": "The diagram shows a tetrahedron formed by the coordinate planes and a plane with intercepts a,b,c. Its volume is V = ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A tetrahedron formed in the first octant, bounded by x=0, y=0, z=0, and a plane x/a + y/b + z/c = 1.",
+    "options": {
+      "A": "(1/6) abc",
+      "B": "(1/3) abc",
+      "C": "(1/2) abc",
+      "D": "abc"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PLANE",
+    "id": 34,
+    "question": "The diagram show a plane parallel to the z-axis. Its equation will not contain the variable ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A plane extending infinitely along the z-axis, intersecting the xy-plane in a line.",
+    "options": {
+      "A": "z",
+      "B": "x",
+      "C": "y",
+      "D": "Normal"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PLANE",
+    "id": 40,
+    "question": "The diagram show three mutually perpendicular coordinate planes. They divide space into ______ octants.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "The xy, yz, and xz planes intersecting at the origin, showing 8 regions.",
+    "options": {
+      "A": "8",
+      "B": "4",
+      "C": "6",
+      "D": "12"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PLANE",
+    "id": 47,
+    "question": "The diagram shows a variable plane at a constant distance p from the origin meeting axes in A, B, C. The locus of centroid of tetrahedron OABC is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A variable plane intersecting the axes, forming a tetrahedron with the origin O.",
+    "options": {
+      "A": "x⁻² + y⁻² + z⁻² = 16p⁻²",
+      "B": "x² + y² + z² = p²",
+      "C": "x + y + z = p",
+      "D": "xyz = p³"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 3,
+    "question": "The diagram show a sample space S and an event A. The probability P(A) is the ratio of area of A to area of ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A rectangle labeled S containing a circle labeled A.",
+    "options": {
+      "A": "S",
+      "B": "A'",
+      "C": "A ∩ S",
+      "D": "1"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 6,
+    "question": "The diagram show two intersecting sets A and B. The region representing A ∩ B is the ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Venn diagram with two overlapping circles labeled A and B.",
+    "options": {
+      "A": "Overlapping part",
+      "B": "Only A",
+      "C": "Only B",
+      "D": "Outside both"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 9,
+    "question": "The diagram show a fair six-sided die. The probability of rolling an even number is:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A 3D drawing of a cube with dots representing 1 to 6 on its faces.",
+    "options": {
+      "A": "1/2",
+      "B": "1/3",
+      "C": "1/6",
+      "D": "2/3"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 12,
+    "question": "The diagram show a probability tree. The sum of probabilities of branches from a single node is always ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A tree diagram starting from one node and splitting into multiple branches labeled with probabilities p1, p2, etc.",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "0.5",
+      "D": "Variable"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 15,
+    "question": "The diagram show the Probability Mass Function (PMF) of a discrete random variable. The sum of all h(x) values is:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A bar graph showing probabilities for different values of X.",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "Infinite",
+      "D": "The mean"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 18,
+    "question": "The diagram show a binomial distribution. It is characterized by the number of trials n and the probability of ______ p.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A histogram showing the probabilities of successes in n independent trials.",
+    "options": {
+      "A": "Success",
+      "B": "Failure",
+      "C": "Error",
+      "D": "Trial"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 21,
+    "question": "The diagram show a normal distribution curve. The area under the curve between μ-σ and μ+σ is approximately ______%.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A bell curve with the central region shaded within one standard deviation of the mean.",
+    "options": {
+      "A": "68",
+      "B": "95",
+      "C": "99.7",
+      "D": "50"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 24,
+    "question": "The diagram show a deck of cards. The probability of drawing a red ace is:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "An illustration of the 52 playing cards grouped by suits.",
+    "options": {
+      "A": "2/52",
+      "B": "4/52",
+      "C": "26/52",
+      "D": "1/52"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 27,
+    "question": "The diagram show a Venn diagram of three sets A, B, and C. The central region where all three overlap is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Three overlapping circles representing sets A, B, and C.",
+    "options": {
+      "A": "A ∩ B ∩ C",
+      "B": "A ∪ B ∪ C",
+      "C": "A ∩ B",
+      "D": "(A ∪ B) ∩ C"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 30,
+    "question": "The diagram show the Cumulative Distribution Function (CDF) F(x). The value of F(x) as x approaches infinity is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A step function or smooth curve that starts near 0 and levels off at a height.",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "0.5",
+      "D": "Infinite"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 33,
+    "question": "The diagram show a dartboard. Assuming uniform landing, the probability of hitting a region is proportional to its ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A circular target with concentric rings.",
+    "options": {
+      "A": "Area",
+      "B": "Radius",
+      "C": "Circumference",
+      "D": "Mass"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 36,
+    "question": "The diagram show a spinner with 8 equal sectors. The probability of the spinner stopping on a prime number (from 1-8) is:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A circle divided into 8 numbered slices (1 to 8) with an arrow points at one slice.",
+    "options": {
+      "A": "4/8",
+      "B": "3/8",
+      "C": "5/8",
+      "D": "1/2"
+    },
+    "answer": "D"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 39,
+    "question": "The diagram show the probability distribution of X = Number of heads in 2 tosses. The value at X=1 is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A bar chart with values at X=0, 1, 2.",
+    "options": {
+      "A": "0.5",
+      "B": "0.25",
+      "C": "1.0",
+      "D": "0.75"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 42,
+    "question": "The diagram show a skewed distribution. If the tail is on the right, it is ______ skewed.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A frequency curve that is not symmetric, tapering off towards the high values.",
+    "options": {
+      "A": "Positively",
+      "B": "Negatively",
+      "C": "Normally",
+      "D": "Uniformly"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 45,
+    "question": "The diagram show any arbitrary distribution. Chebyshev's inequality gives a lower bound for the probability within k standard deviations of the ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "An uneven distribution with the range [μ - kσ, μ + kσ] marked.",
+    "options": {
+      "A": "Mean",
+      "B": "Median",
+      "C": "Mode",
+      "D": "Origin"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROBABILITY",
+    "id": 48,
+    "question": "The diagram show a Markov Chain with states 0 and 1. The transition probabilities sum to 1 for each ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A state-transition diagram with directed arrows and probabilities.",
+    "options": {
+      "A": "State/Row",
+      "B": "Column",
+      "C": "Diagonal",
+      "D": "Total"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROPERTIES OF TRIANGLES",
+    "id": 2,
+    "question": "The diagram show a triangle inscribed in a circle. The radius R of this circle is called the ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A triangle with all three vertices touching a circumscribed circle of radius R.",
+    "options": {
+      "A": "Circumradius",
+      "B": "Inradius",
+      "C": "Exradius",
+      "D": "Diameter"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROPERTIES OF TRIANGLES",
+    "id": 6,
+    "question": "The diagram show a triangle with a perpendicular dropped from vertex A to side BC. This projection helps derive the ______ Rule.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Triangle ABC with an altitude drawn from A to BC, splitting side a into two segments.",
+    "options": {
+      "A": "Projection",
+      "B": "Sine",
+      "C": "Tangent",
+      "D": "Half-angle"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROPERTIES OF TRIANGLES",
+    "id": 15,
+    "question": "The diagram show a triangle ABC with area denoted by Δ. Heron's formula for Δ is:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A general triangle with sides a, b, c, emphasizing its area Δ enclosed inside.",
+    "options": {
+      "A": "√(s(s-a)(s-b)(s-c))",
+      "B": "s(s-a)(s-b)(s-c)",
+      "C": "(abc) / 4R",
+      "D": "rs"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROPERTIES OF TRIANGLES",
+    "id": 18,
+    "question": "The diagram show an incircle of a triangle. The radius of this circle is the ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A triangle with a circle inscribed inside, touching all three sides, with radius labeled r.",
+    "options": {
+      "A": "Inradius (r)",
+      "B": "Circumradius (R)",
+      "C": "Exradius (r1)",
+      "D": "Centroid"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROPERTIES OF TRIANGLES",
+    "id": 22,
+    "question": "The diagram show an excircle opposite to vertex A. Its radius is denoted by ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A triangle with side BC extended. A circle tangent to BC and the extensions of AB and AC is drawn outside.",
+    "options": {
+      "A": "r₁",
+      "B": "r₂",
+      "C": "r₃",
+      "D": "R"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROPERTIES OF TRIANGLES",
+    "id": 28,
+    "question": "The diagram show a triangle with its incircle and three excircles. The sum r₁ + r₂ + r₃ - r involves the product 4R. The formula is r₁ + r₂ + r₃ - r = ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A triangle showing one incircle inside and three excircles on the outside tangents.",
+    "options": {
+      "A": "4R",
+      "B": "2R",
+      "C": "R",
+      "D": "0"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROPERTIES OF TRIANGLES",
+    "id": 35,
+    "question": "The diagram show a pedal triangle formed by the feet of the altitudes. Its angles are:",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "An acute triangle ABC with a smaller triangle DEF inside formed by connecting the bases of the altitudes from A, B, C.",
+    "options": {
+      "A": "180°-2A, 180°-2B, 180°-2C",
+      "B": "A, B, C",
+      "C": "90°-A, 90°-B, 90°-C",
+      "D": "180°-A, 180°-B, 180°-C"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROPERTIES OF TRIANGLES",
+    "id": 42,
+    "question": "The diagram show an excenter I₁ opposite to A. The distance AI₁ is:",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A line segment from vertex A to the center of the excircle opposite to A (I1).",
+    "options": {
+      "A": "r₁ / sin(A/2)",
+      "B": "r / sin(A/2)",
+      "C": "r₁ / cos(A/2)",
+      "D": "R / sin(A/2)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "PROPERTIES OF TRIANGLES",
+    "id": 47,
+    "question": "The diagram show an isosceles triangle where AB = AC. The angle opposite to these sides implies:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "An isosceles triangle with tick marks on two sides indicating they are equal length.",
+    "options": {
+      "A": "Angle B = Angle C",
+      "B": "Angle A = 90°",
+      "C": "Angle A = Angle B",
+      "D": "Side BC is the hypotenuse"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "QUADRATIC EQUATIONS AND EXPRESSIONS",
+    "id": 4,
+    "question": "The diagram show the graph of a quadratic equation that does not intersect the x-axis. This means D is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A parabola opening upwards with its vertex strictly above the x-axis.",
+    "options": {
+      "A": "Less than 0",
+      "B": "Greater than 0",
+      "C": "Equal to 0",
+      "D": "Infinity"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "QUADRATIC EQUATIONS AND EXPRESSIONS",
+    "id": 8,
+    "question": "The diagram show a parabola touching the x-axis at exactly one point. The roots are ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A parabola with its vertex resting on the x-axis.",
+    "options": {
+      "A": "Real and equal",
+      "B": "Real and distinct",
+      "C": "No real roots",
+      "D": "Complex"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "QUADRATIC EQUATIONS AND EXPRESSIONS",
+    "id": 10,
+    "question": "The diagram show a parabola opening downwards. This implies the coefficient 'a' is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "An 'n'-shaped parabola.",
+    "options": {
+      "A": "Negative",
+      "B": "Positive",
+      "C": "Zero",
+      "D": "1"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "QUADRATIC EQUATIONS AND EXPRESSIONS",
+    "id": 14,
+    "question": "The diagram show the region satisfying x² - 4x + 3 < 0. The interval is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A parabola crossing x=1 and x=3, with the section below the x-axis highlighted.",
+    "options": {
+      "A": "(1, 3)",
+      "B": "[1, 3]",
+      "C": "(-∞, 1) U (3, ∞)",
+      "D": "[0, 4]"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "QUADRATIC EQUATIONS AND EXPRESSIONS",
+    "id": 18,
+    "question": "The diagram show a parabola with vertex at (h, k). The equation in vertex form is y = ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A parabola with its minimum point labeled as (h, k).",
+    "options": {
+      "A": "a(x - h)² + k",
+      "B": "a(x + h)² + k",
+      "C": "ax² + k",
+      "D": "a(x - k)² + h"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "QUADRATIC EQUATIONS AND EXPRESSIONS",
+    "id": 23,
+    "question": "The diagram show the graph of f(x) = x² + 2x + 1. The root is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A parabola touching the x-axis precisely at x = -1.",
+    "options": {
+      "A": "-1",
+      "B": "1",
+      "C": "0",
+      "D": "2"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "QUADRATIC EQUATIONS AND EXPRESSIONS",
+    "id": 27,
+    "question": "The diagram show a parabola and its axis of symmetry. The equation of this axis is x = ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A vertical dotted line passing through the vertex of a parabola.",
+    "options": {
+      "A": "-b / 2a",
+      "B": "b / 2a",
+      "C": "0",
+      "D": "h + k"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "QUADRATIC EQUATIONS AND EXPRESSIONS",
+    "id": 30,
+    "question": "The diagram show the region where ax² + bx + c > 0 when a > 0. These are the regions ______ roots.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A parabola opening up with roots x1 and x2, where the parts outside the interval [x1, x2] are shaded.",
+    "options": {
+      "A": "Outside the",
+      "B": "Between the",
+      "C": "Above the",
+      "D": "Equal to"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "QUADRATIC EQUATIONS AND EXPRESSIONS",
+    "id": 34,
+    "question": "The diagram show a 'U' shape and an 'n' shape. These are graphs of ______ functions.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Two graphs, one opening upwards and one opening downwards.",
+    "options": {
+      "A": "Quadratic",
+      "B": "Linear",
+      "C": "Cubic",
+      "D": "Exponential"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "QUADRATIC EQUATIONS AND EXPRESSIONS",
+    "id": 37,
+    "question": "The diagram show a parabola with high eccentricity. Actually, all parabolas have eccentricity e = ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A sketch of a single parabola.",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "Less than 1",
+      "D": "Greater than 1"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "QUADRATIC EQUATIONS AND EXPRESSIONS",
+    "id": 40,
+    "question": "The diagram show a transformation of x² into (x-2)². The graph shifts ______ units to the right.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Two parabolas y=x² and y=(x-2)², with an arrow indicating the horizontal shift.",
+    "options": {
+      "A": "2",
+      "B": "-2",
+      "C": "0",
+      "D": "4"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "QUADRATIC EQUATIONS AND EXPRESSIONS",
+    "id": 43,
+    "question": "The diagram show a parabola symmetric about y-axis. This means its equation is of form y = ax² + ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A parabola whose vertical axis of symmetry is exactly the y-axis.",
+    "options": {
+      "A": "c",
+      "B": "bx",
+      "C": "bx + c",
+      "D": "x"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "QUADRATIC EQUATIONS AND EXPRESSIONS",
+    "id": 47,
+    "question": "The diagram show the graph of y = |x² - 1|. It has ______ sharp turns.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A graph of a parabola that has been reflected upwards where it was below the x-axis, creating two 'corner' points.",
+    "options": {
+      "A": "2",
+      "B": "0",
+      "C": "1",
+      "D": "Infinity"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "RANDOM VARIABLES AND PROBABILITY DISTRIBUTION",
+    "id": 4,
+    "question": "The diagram show a probability histogram. The total area of all bars equals ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A bar chart where x-axis represents values of X and y-axis represents P(X).",
+    "options": {
+      "A": "1",
+      "B": "100",
+      "C": "0",
+      "D": "0.5"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "RANDOM VARIABLES AND PROBABILITY DISTRIBUTION",
+    "id": 9,
+    "question": "The diagram show a bell-shaped curve. This is characteristic of a ______ distribution.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A normal distribution curve showing symmetry about the mean.",
+    "options": {
+      "A": "Normal",
+      "B": "Poisson",
+      "C": "Binomial",
+      "D": "Uniform"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "RANDOM VARIABLES AND PROBABILITY DISTRIBUTION",
+    "id": 14,
+    "question": "The diagram show the probability P(X=k) for a Poisson variable. The formula is P(X=k) = ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Mathematical formula involving exponential e, λ and k factorials.",
+    "options": {
+      "A": "(e⁻λ λᵏ) / k!",
+      "B": "(eλ λᵏ) / k!",
+      "C": "(λᵏ) / k!",
+      "D": "e⁻λ"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "RANDOM VARIABLES AND PROBABILITY DISTRIBUTION",
+    "id": 18,
+    "question": "The diagram show a set of values {0, 1, 2, 3} with probabilities {k, 2k, 3k, 4k}. The value of k is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A table mapping X to P(X) with unknown k.",
+    "options": {
+      "A": "0.1",
+      "B": "1",
+      "C": "0.5",
+      "D": "0.2"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "RANDOM VARIABLES AND PROBABILITY DISTRIBUTION",
+    "id": 23,
+    "question": "The diagram show a right-skewed distribution. The Mean is ______ than the Median.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A distribution curve with a long tail on the right side.",
+    "options": {
+      "A": "Greater",
+      "B": "Smaller",
+      "C": "Equal",
+      "D": "Double"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "RANDOM VARIABLES AND PROBABILITY DISTRIBUTION",
+    "id": 26,
+    "question": "The diagram show the graph of F(x), which is a non-decreasing ______ function.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A step-like graph that starts at 0 and ends at 1 on y-axis.",
+    "options": {
+      "A": "Step",
+      "B": "Oscillating",
+      "C": "Linear",
+      "D": "Decreasing"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "RANDOM VARIABLES AND PROBABILITY DISTRIBUTION",
+    "id": 30,
+    "question": "The diagram show a Poisson process (e.g. phone calls). They are ______ events in time.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A timeline with randomly placed dots representing event occurrences.",
+    "options": {
+      "A": "Independently occurring",
+      "B": "Regularly occurring",
+      "C": "Dependent",
+      "D": "Zero"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "RANDOM VARIABLES AND PROBABILITY DISTRIBUTION",
+    "id": 33,
+    "question": "The diagram show a discrete distribution table. To find Var(X), we need Σ xi² P(xi) which is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A table with X column {1, 2} and P(X) column {0.5, 0.5}.",
+    "options": {
+      "A": "2.5",
+      "B": "1.5",
+      "C": "3",
+      "D": "2"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "RANDOM VARIABLES AND PROBABILITY DISTRIBUTION",
+    "id": 37,
+    "question": "The diagram show a probability tree for two coin flips. The sum of leaf probabilities is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A tree diagram splitting into 4 final outcomes HH, HT, TH, TT.",
+    "options": {
+      "A": "1",
+      "B": "4",
+      "C": "0.25",
+      "D": "0.5"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "RANDOM VARIABLES AND PROBABILITY DISTRIBUTION",
+    "id": 40,
+    "question": "The diagram show a 'Skewed' bar chart. The mean is pulled towards the ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A bar chart where small X values have very high bars and large X values have very short bars.",
+    "options": {
+      "A": "Tail",
+      "B": "Peak",
+      "C": "Origin",
+      "D": "Middle"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "RANDOM VARIABLES AND PROBABILITY DISTRIBUTION",
+    "id": 43,
+    "question": "The diagram show a 'Box Plot'. The line in the box represents the ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A box and whisker plot with a vertical line inside the central box.",
+    "options": {
+      "A": "Median",
+      "B": "Mean",
+      "C": "Mode",
+      "D": "Range"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "RANDOM VARIABLES AND PROBABILITY DISTRIBUTION",
+    "id": 47,
+    "question": "The diagram show two distributions A and B. A is more 'Spread' than B. Variance(A) is ______ Variance(B).",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Two normal curves, one wide and flat, one tall and narrow.",
+    "options": {
+      "A": "Greater than",
+      "B": "Less than",
+      "C": "Equal to",
+      "D": "Zero"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STATISTICS",
+    "id": 8,
+    "question": "The diagram show data points scattered around a mean line. Variance is σ² = ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Data points and a central fit line, with distances squared and averaged.",
+    "options": {
+      "A": "(1/n) Σ (x_i - x̄)²",
+      "B": "(1/n) Σ |x_i - x̄|",
+      "C": "Σ |x_i - x̄| / x̄",
+      "D": "(1/n) Σ (x_i)²"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STATISTICS",
+    "id": 16,
+    "question": "The diagram show two curves A and B representing data. B is flatter indicating a larger ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Two bell curves with the same mean but B is wider and shorter.",
+    "options": {
+      "A": "Standard Deviation / Variance",
+      "B": "Mean",
+      "C": "Median",
+      "D": "Size"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STATISTICS",
+    "id": 32,
+    "question": "The diagram show a box plot. The range (Q3 - Q1) is called the ______ Range.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A box plot showing whiskers and a quartiles box with Q1, Q2(median), and Q3.",
+    "options": {
+      "A": "Interquartile",
+      "B": "Full",
+      "C": "Median",
+      "D": "Percentile"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STATISTICS",
+    "id": 37,
+    "question": "The diagram show a frequency curve skewed to the right. Here Mean ______ Median > Mode.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A distribution with a long tail stretching to the right positive axis.",
+    "options": {
+      "A": ">",
+      "B": "<",
+      "C": "=",
+      "D": "≤"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STATISTICS",
+    "id": 48,
+    "question": "The diagram show an ogive (cumulative frequency curve). The median can be graphically found by locating the abscissa corresponding to the cumulative frequency ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "An S-shaped cumulative frequency curve plotted, showing the y-axis (Cumulative Freq) intersecting N/2 and mapping to the x-axis.",
+    "options": {
+      "A": "N/2",
+      "B": "N",
+      "C": "N/4",
+      "D": "3N/4"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STRAIGHT LINES",
+    "id": 5,
+    "question": "The diagram show a line with positive slope. As x increases, y ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A line going upwards from left to right.",
+    "options": {
+      "A": "Increases",
+      "B": "Decreases",
+      "C": "Stays constant",
+      "D": "Goes to zero"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STRAIGHT LINES",
+    "id": 10,
+    "question": "The diagram show a line with x-intercept 'a' and y-intercept 'b'. Its equation is x/a + y/b = ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A line crossing the x-axis at (a,0) and the y-axis at (0,b).",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "a+b",
+      "D": "ab"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STRAIGHT LINES",
+    "id": 14,
+    "question": "The diagram show two parallel lines ax + by + c1 = 0 and ax + by + c2 = 0. The distance between them is:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Two straight lines that never meet, separated by a constant gap.",
+    "options": {
+      "A": "|c1 - c2| / √(a² + b²)",
+      "B": "|c1 + c2| / √(a² + b²)",
+      "C": "|c1 - c2|",
+      "D": "√(a² + b²)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STRAIGHT LINES",
+    "id": 18,
+    "question": "The diagram show a line forming an angle θ with the positive x-axis. The slope 'm' is equal to:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A line crossing the x-axis with an angle θ marked counter-clockwise from the positive x-direction.",
+    "options": {
+      "A": "tan θ",
+      "B": "sin θ",
+      "C": "cos θ",
+      "D": "cot θ"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STRAIGHT LINES",
+    "id": 21,
+    "question": "The diagram show a family of lines passing through the intersection of two lines L1=0 and L2=0. The equation of any such line is:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Multiple lines crossing at a single common point.",
+    "options": {
+      "A": "L1 + λ L2 = 0",
+      "B": "L1 * L2 = 0",
+      "C": "L1 - L2 = 0",
+      "D": "L1 = L2"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STRAIGHT LINES",
+    "id": 24,
+    "question": "The diagram show the reflection of a point P(x, y) in the line y = x. The image is:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A point (a,b) reflected across the line y=x to become (b,a).",
+    "options": {
+      "A": "(y, x)",
+      "B": "(-x, -y)",
+      "C": "(-y, -x)",
+      "D": "(x, -y)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STRAIGHT LINES",
+    "id": 27,
+    "question": "The diagram show a line inclined at 135° to the positive x-axis. Its slope is:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A line going downwards from left to right with an obtuse angle with the positive x-axis.",
+    "options": {
+      "A": "-1",
+      "B": "1",
+      "C": "0",
+      "D": "Undefined"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STRAIGHT LINES",
+    "id": 30,
+    "question": "The diagram show an angle bisector of two lines. Points on the bisector are ______ from both lines.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A line splitting the angle between two other lines into two equal parts.",
+    "options": {
+      "A": "Equidistant",
+      "B": "At different distances",
+      "C": "On the origin",
+      "D": "Infinity"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STRAIGHT LINES",
+    "id": 34,
+    "question": "The diagram show a line with intercept '3' on y-axis and slope '2'. Its equation is:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A line crossing (0,3) with a steepness of 2 units up for 1 unit right.",
+    "options": {
+      "A": "y = 2x + 3",
+      "B": "y = 3x + 2",
+      "C": "x = 2y + 3",
+      "D": "y = 2x - 3"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STRAIGHT LINES",
+    "id": 37,
+    "question": "The diagram show three lines intersecting at a single point. These lines are called ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Three different lines all passing through the same point.",
+    "options": {
+      "A": "Concurrent",
+      "B": "Parallel",
+      "C": "Perpendicular",
+      "D": "Coincident"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STRAIGHT LINES",
+    "id": 40,
+    "question": "The diagram show a line and a point. The shortest distance is along the ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A point P and a line L, with a right-angle symbol showing the perpendicular distance.",
+    "options": {
+      "A": "Perpendicular",
+      "B": "Horizontal",
+      "C": "Vertical",
+      "D": "Slope"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STRAIGHT LINES",
+    "id": 44,
+    "question": "The diagram show a line with intercepts a=b. Its slope is:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A line crossing the axes at (k,0) and (0,k).",
+    "options": {
+      "A": "-1",
+      "B": "1",
+      "C": "0",
+      "D": "Undefined"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "STRAIGHT LINES",
+    "id": 47,
+    "question": "The diagram show a square. The product of slopes of its diagonals is:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A square with both diagonals drawn intersecting at the center.",
+    "options": {
+      "A": "-1",
+      "B": "1",
+      "C": "0",
+      "D": "2"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "SYSTEM OF CIRCLES",
+    "id": 2,
+    "question": "The diagram show two intersecting circles with centers C1, C2 and radii r1, r2. The angle θ between them satisfies cos θ = ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Two circles intersecting at point P. Triangle C1-P-C2 is formed with sides r1, r2, and d (distance between centers).",
+    "options": {
+      "A": "(r₁² + r₂² - d²) / (2 r₁ r₂)",
+      "B": "(d² - r₁² - r₂²) / (2 r₁ r₂)",
+      "C": "(r₁ + r₂)² / d²",
+      "D": "d² / (r₁² + r₂²)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "SYSTEM OF CIRCLES",
+    "id": 37,
+    "question": "The diagram show a circle and a secant line L=0. S + λL = 0 defines circles passing through the ______ of S=0 and L=0.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A circle cut by a secant line at two places, A and B. Multiple circles drawn passing exactly through A and B.",
+    "options": {
+      "A": "Points of intersection",
+      "B": "Centers",
+      "C": "Limits",
+      "D": "Foci"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TANGENTS AND NORMALS",
+    "id": 4,
+    "question": "The diagram show a curve and a line touching it at a single point. This line is the ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A curve with a straight line making contact at exactly one point P(x,y).",
+    "options": {
+      "A": "Tangent",
+      "B": "Normal",
+      "C": "Secant",
+      "D": "Chord"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TANGENTS AND NORMALS",
+    "id": 5,
+    "question": "The diagram show a line perpendicular to the tangent at the point of contact. This line is the ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A curve, a tangent line, and a second line through the same point P making a 90-degree angle with the tangent.",
+    "options": {
+      "A": "Normal",
+      "B": "Tangent",
+      "C": "Asymptote",
+      "D": "Diameter"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TANGENTS AND NORMALS",
+    "id": 10,
+    "question": "The diagram show two curves intersecting. The angle ψ is given by tan ψ = ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Two intersecting curves with their tangent lines drawn, showing an angle ψ between the tangents.",
+    "options": {
+      "A": "|(m1 - m2) / (1 + m1m2)|",
+      "B": "|m1 + m2|",
+      "C": "m1 * m2",
+      "D": "0"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TANGENTS AND NORMALS",
+    "id": 14,
+    "question": "The diagram show the sub-tangent of a curve. Its length is given by ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A curve, a tangent, and its projection on the x-axis representing the sub-tangent.",
+    "options": {
+      "A": "|y / m|",
+      "B": "|y * m|",
+      "C": "|y / √(1+m²)|",
+      "D": "x"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TANGENTS AND NORMALS",
+    "id": 16,
+    "question": "The diagram show the sub-normal of a curve. Its length is given by ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A curve, a normal line, and its projection on the x-axis representing the sub-normal.",
+    "options": {
+      "A": "|y * m|",
+      "B": "|y / m|",
+      "C": "y²",
+      "D": "x"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TANGENTS AND NORMALS",
+    "id": 18,
+    "question": "The diagram show a curve with a vertical tangent. The derivative dy/dx at this point is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A curve that becomes infinitely steep at a specific point x.",
+    "options": {
+      "A": "Infinite",
+      "B": "0",
+      "C": "1",
+      "D": "Finite"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TANGENTS AND NORMALS",
+    "id": 23,
+    "question": "The diagram show an angle θ that the tangent at (x, y) makes with positive x-axis. Then m = ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A curve and its tangent line making an angle θ with the horizontal axis.",
+    "options": {
+      "A": "tan θ",
+      "B": "sin θ",
+      "C": "cos θ",
+      "D": "cot θ"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TANGENTS AND NORMALS",
+    "id": 27,
+    "question": "The diagram show a curve and two parallel tangents. At these points, the derivative dy/dx must be ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A curve with two separate tangent lines that are parallel to each other.",
+    "options": {
+      "A": "Equal",
+      "B": "Zero",
+      "C": "Opposite in sign",
+      "D": "Reciprocal"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TANGENTS AND NORMALS",
+    "id": 30,
+    "question": "The diagram show a curve and its tangent. The tangent from a point (h, k) outside satisfies ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A point outside a parabola with two tangents drawn to the curve.",
+    "options": {
+      "A": "The quadratic in 'm' from y-mx=c",
+      "B": "y=mx+c",
+      "C": "x=0",
+      "D": "y=0"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TANGENTS AND NORMALS",
+    "id": 34,
+    "question": "The diagram show a curve where the tangent is vertical. This occurs when dx/dy = ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A curve that is 'falling' vertically at one point.",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "Infinity",
+      "D": "-1"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TANGENTS AND NORMALS",
+    "id": 37,
+    "question": "The diagram show two orthogonal curves. Their tangents are ______ to each other.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Two curves crossing with a small square symbol at the intersection, showing their tangents meet at 90 degrees.",
+    "options": {
+      "A": "Perpendicular",
+      "B": "Parallel",
+      "C": "Coincident",
+      "D": "Identical"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TANGENTS AND NORMALS",
+    "id": 40,
+    "question": "The diagram show a tangent line. The length of the intercept it makes on x-axis is given by x - ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A tangent line at P(x,y) crossing the x-axis at a point T.",
+    "options": {
+      "A": "y / (dy/dx)",
+      "B": "y * (dy/dx)",
+      "C": "y",
+      "D": "x"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TANGENTS AND NORMALS",
+    "id": 43,
+    "question": "The diagram show a curve and its normal at P. The normal makes an angle φ with x-axis. Then tan φ = ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A curve, a normal line, and an angle φ with the horizontal.",
+    "options": {
+      "A": "-1/m",
+      "B": "m",
+      "C": "1/m",
+      "D": "0"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TANGENTS AND NORMALS",
+    "id": 46,
+    "question": "The diagram show a curve segment. The length of normal is ______ in term of y and y'.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Illustration of the length segment between the point on curve and the x-axis along the normal line.",
+    "options": {
+      "A": "|y| √(1 + y'²)",
+      "B": "|y/y'|",
+      "C": "|y'| √(1 + y²)",
+      "D": "y"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TANGENTS AND NORMALS",
+    "id": 49,
+    "question": "The diagram show a curve with sub-tangent equal to abcissa (x). The curve is an ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A curve where the sub-tangent OT equals the x-coordinate of P.",
+    "options": {
+      "A": "Exponential or line",
+      "B": "Parabola",
+      "C": "Circle",
+      "D": "Logarithm"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 3,
+    "question": "The diagram show a unit circle. The value of sin(150°) is:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A unit circle with an angle of 150 degrees marked in the second quadrant, showing the y-coordinate.",
+    "options": {
+      "A": "1/2",
+      "B": "√3/2",
+      "C": "-1/2",
+      "D": "-√3/2"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 6,
+    "question": "The diagram show a right-angled triangle. If sinθ = 3/5, then cosθ is:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A right triangle with opposite side 3 and hypotenuse 5.",
+    "options": {
+      "A": "4/5",
+      "B": "3/4",
+      "C": "5/4",
+      "D": "1"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 9,
+    "question": "The diagram show the graph of y = sin x. At x = π/2, the value is:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A sine wave graph from 0 to 2π, highlighting the point (π/2, 1).",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "-1",
+      "D": "0.5"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 12,
+    "question": "The diagram show a triangle with sides a, b, c. The area of the triangle is:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A triangle with sides a, b and included angle C.",
+    "options": {
+      "A": "1/2 ab sinC",
+      "B": "1/2 ab cosC",
+      "C": "ab sinC",
+      "D": "1/2 bc sinA"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 15,
+    "question": "The diagram show the unit circle with an angle θ. The coordinates of the point on the circle are:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A unit circle with a point P corresponding to angle θ.",
+    "options": {
+      "A": "(cosθ, sinθ)",
+      "B": "(sinθ, cosθ)",
+      "C": "(tanθ, 1)",
+      "D": "(1, tanθ)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 18,
+    "question": "The diagram show a sector of a circle. The length of the arc is:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A sector with radius r and central angle θ in radians.",
+    "options": {
+      "A": "rθ",
+      "B": "1/2 r²θ",
+      "C": "2πr",
+      "D": "πr²"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 21,
+    "question": "The diagram show the graph of y = cos x. The period of the function is:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "A cosine wave graph labels the distance between successive peaks.",
+    "options": {
+      "A": "2π",
+      "B": "π",
+      "C": "π/2",
+      "D": "4π"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 24,
+    "question": "The diagram show a point P(x, y) on the coordinate plane. The distance to the origin is 1. Under rotation θ, the new x-coordinate is:",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A coordinate system showing a point rotated by an angle θ.",
+    "options": {
+      "A": "x cosθ - y sinθ",
+      "B": "x sinθ + y cosθ",
+      "C": "x cosθ + y sinθ",
+      "D": "y cosθ - x sinθ"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 27,
+    "question": "The diagram show the projection of a vector onto another. This involves which trigonometric ratio?",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Two vectors A and B with angle θ, showing the shadow of A on B.",
+    "options": {
+      "A": "Cosine",
+      "B": "Sine",
+      "C": "Tangent",
+      "D": "Secant"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 30,
+    "question": "The diagram show a saw-tooth wave. Which trigonometric series can represent this?",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A periodic saw-tooth waveform graph.",
+    "options": {
+      "A": "Fourier series",
+      "B": "Taylor series",
+      "C": "Binomial series",
+      "D": "Arithmetic progression"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 33,
+    "question": "The diagram show a unit circle with multiple angles. The value of tan(225°) is:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Unit circle with 225 degrees in the 3rd quadrant.",
+    "options": {
+      "A": "1",
+      "B": "-1",
+      "C": "0",
+      "D": "undefined"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 35,
+    "question": "The diagram show the polar coordinate system. A point is (r, θ). The cartesian x is:",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Polar grid with a point (r, θ).",
+    "options": {
+      "A": "r cosθ",
+      "B": "r sinθ",
+      "C": "r/cosθ",
+      "D": "r/sinθ"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 38,
+    "question": "The diagram show the graph of y = tan x. The vertical asymptotes are at x =:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A tangent function graph showing vertical lines where the curve goes to infinity.",
+    "options": {
+      "A": "(2n+1)π/2",
+      "B": "nπ",
+      "C": "2nπ",
+      "D": "(2n+1)π"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 40,
+    "question": "The diagram show the Lissajous figures. These are formed by the combination of two ______ signals.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Complex closed curves on an oscilloscope screen.",
+    "options": {
+      "A": "Sinusoidal",
+      "B": "Square",
+      "C": "Linear",
+      "D": "Random"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 43,
+    "question": "The diagram show a circular path with radius R. An object moves from point A to B spanning angle θ. The displacement is:",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A circle with points A and B, and a chord connecting them.",
+    "options": {
+      "A": "2R sin(θ/2)",
+      "B": "Rθ",
+      "C": "R sinθ",
+      "D": "2R cos(θ/2)"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 46,
+    "question": "The diagram show a vector field. The field F = (sin y, sin x) is:",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A plot of vectors on a grid representing a force field.",
+    "options": {
+      "A": "Conservative",
+      "B": "Solenoidal",
+      "C": "Rotational",
+      "D": "Uniform"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "id": 49,
+    "question": "The diagram show a triangle on a sphere. The sum of the angles is:",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A sphere with a triangle formed by three great circles.",
+    "options": {
+      "A": "> 180°",
+      "B": "= 180°",
+      "C": "< 180°",
+      "D": "= 360°"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIPLE PRODUCT OF VECTOR S",
+    "id": 8,
+    "question": "The diagram show three vectors originating from a single point lying on the same plane. The STP [a b c] determines if they are coplanar. Three vectors are coplanar if and only if their STP is ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Three vectors a, b, c lying completely flat in one plane, forming a volume. The volume of the 3D shape is visibly zero.",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "Non-zero",
+      "D": "Negative"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "TRIPLE PRODUCT OF VECTOR S",
+    "id": 42,
+    "question": "The diagram show a plane containing vectors b and c, and vector a outside. Projection of a off the plane dictates the ______ of the parallelepiped, thus forming its STP value via Base * [that].",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Vector a forming an angle with the normal of plane(b, c), dropping a perpendicular height h.",
+    "options": {
+      "A": "Height",
+      "B": "Base",
+      "C": "Width",
+      "D": "Angle"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "VECTORS",
+    "id": 6,
+    "question": "The diagram shows triangle ABC with vectors a, b, c along the sides in order. The sum a + b + c = ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Triangle ABC with vectors a, b, c forming a closed loop along the perimeter.",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "2a",
+      "D": "2b"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "VECTORS",
+    "id": 18,
+    "question": "The diagram shows projection of a on b. The vector projection of a along b is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Vector a projected onto vector b forming a right-angled triangle.",
+    "options": {
+      "A": "((a.b)/|b|²)*b",
+      "B": "((a.b)/|a|)*b",
+      "C": "((a.b)/|b|)*a",
+      "D": "(a.b)*b"
+    },
+    "answer": "A"
+  },
+  {
+    "topic": "VECTORS",
+    "id": 46,
+    "question": "The diagram shows a force vector doing work. Work done W = ______.",
+    "difficulty": "easy",
+    "hasDiagram": true,
+    "diagram_description": "Force vector F applied on an object, causing displacement d.",
+    "options": {
+      "A": "F . d",
+      "B": "F × d",
+      "C": "|F||d|",
+      "D": "F+d"
+    },
+    "answer": "A"
+  }
+]

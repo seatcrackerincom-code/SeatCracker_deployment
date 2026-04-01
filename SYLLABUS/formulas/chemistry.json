@@ -1,0 +1,255 @@
+[
+  {
+    "topic_id": 1,
+    "topic_name": "THERMODYNAMICS",
+    "formulas": [
+      { "subtopic": "Internal Energy", "description": "1st Law of Thermodynamics", "equation": "ΔU = q + w" },
+      { "subtopic": "Enthalpy", "description": "Heat at constant pressure", "equation": "ΔH = ΔU + PΔV = ΔU + Δn_g RT" },
+      { "subtopic": "Entropy", "description": "Measure of randomness", "equation": "ΔS = q_rev / T" },
+      { "subtopic": "Gibbs Free Energy", "description": "Spontaneity criterion", "equation": "ΔG = ΔH - TΔS" }
+    ]
+  },
+  {
+    "topic_id": 2,
+    "topic_name": "CHEMICAL KINETICS & ELECTRO CHEMISTRY",
+    "formulas": [
+      { "subtopic": "Rate Law", "description": "Dependence on concentration", "equation": "Rate = k [A]^x [B]^y" },
+      { "subtopic": "Arrhenius Equation", "description": "Temperature dependence", "equation": "k = A * e^(-Ea / RT)" },
+      { "subtopic": "Nernst Equation", "description": "Non-standard cell potential", "equation": "E_cell = E°_cell - (0.059/n) logQ" },
+      { "subtopic": "Faraday's 1st Law", "description": "Mass of substance deposited", "equation": "w = Z I t" }
+    ]
+  },
+  {
+    "topic_id": 3,
+    "topic_name": "STATES OF MATTER",
+    "formulas": [
+      { "subtopic": "Ideal Gas Equation", "description": "State transition Eq.", "equation": "PV = nRT" },
+      { "subtopic": "Dalton's Law", "description": "Partial pressures", "equation": "P_total = Σ P_i" },
+      { "subtopic": "Graham's Law", "description": "Rate of diffusion", "equation": "r₁/r₂ = √(M₂/M₁)" },
+      { "subtopic": "van der Waals Eq.", "description": "Real gas corrections", "equation": "[P + a(n/V)²][V - nb] = nRT" }
+    ]
+  },
+  {
+    "topic_id": 4,
+    "topic_name": "BIOMOLECULES",
+    "formulas": [
+      { "subtopic": "Sugars", "description": "General formula for carbohydrates", "equation": "C_n(H₂O)_m" },
+      { "subtopic": "Amino Acids", "description": "Zwitterion behavior", "equation": "R-CH(NH₃⁺)COO⁻" }
+    ]
+  },
+  {
+    "topic_id": 5,
+    "topic_name": "CHEMICAL EQUILIBRIUM & IONIC EQUILIBRIUM",
+    "formulas": [
+      { "subtopic": "Equilibrium Constant", "description": "Relation between Kp and Kc", "equation": "K_p = K_c (RT)^Δn_g" },
+      { "subtopic": "pH", "description": "Hydrogen ion concentration", "equation": "pH = -log[H⁺]" },
+      { "subtopic": "Henderson Equation", "description": "pH of acidic buffer", "equation": "pH = pKa + log([Salt]/[Acid])" },
+      { "subtopic": "Solubility Product", "description": "Ksp for AgCl type", "equation": "K_sp = [Ag⁺][Cl⁻]" }
+    ]
+  },
+  {
+    "topic_id": 6,
+    "topic_name": "SOLUTIONS",
+    "formulas": [
+      { "subtopic": "Molarity", "description": "Concentration per Liter", "equation": "M = n / V_L" },
+      { "subtopic": "Raoult's Law", "description": "Vapor pressure lowering", "equation": "(P° - P)/P° = χ_solute" },
+      { "subtopic": "Elevation of Boiling Point", "description": "Colligative property 1", "equation": "ΔT_b = i * K_b * m" },
+      { "subtopic": "Osmotic Pressure", "description": "Colligative property 2", "equation": "π = iCRT" }
+    ]
+  },
+  {
+    "topic_id": 7,
+    "topic_name": "ATOMIC STRUCTURE",
+    "formulas": [
+      { "subtopic": "de-Broglie λ", "description": "Matter wave relation", "equation": "λ = h/mv = h/p" },
+      { "subtopic": "Heisenberg Principle", "description": "Uncertainty in x and p", "equation": "Δx * Δp ≥ h / (4π)" },
+      { "subtopic": "Schrodinger Eq.", "description": "Wave function Hamiltonian", "equation": "Hψ = Eψ" },
+      { "subtopic": "Energy (Bohr)", "description": "En of H-like species", "equation": "E_n = -2.18x10⁻¹⁸ (Z²/n²) J/atom" }
+    ]
+  },
+  {
+    "topic_id": 8,
+    "topic_name": "HALO ALKANES & HALO ARENES",
+    "formulas": [
+      { "subtopic": "SN2 Rate", "description": "Bimolecular substitution", "equation": "Rate = k [RX][Nu⁻]" },
+      { "subtopic": "SN1 Rate", "description": "Unimolecular substitution", "equation": "Rate = k [RX]" }
+    ]
+  },
+  {
+    "topic_id": 9,
+    "topic_name": "SURFACE CHEMISTRY",
+    "formulas": [
+      { "subtopic": "Freundlich Isotherm", "description": "Adsorption formula", "equation": "x/m = k P^(1/n)" },
+      { "subtopic": "Gold Number", "description": "Protective colloid strength", "equation": "Protective power ∝ 1/Gold Number" }
+    ]
+  },
+  {
+    "topic_id": 10,
+    "topic_name": "CHEMICAL BONDING",
+    "formulas": [
+      { "subtopic": "Formal Charge", "description": "Charge on an atom in molecule", "equation": "FC = V - L - B/2" },
+      { "subtopic": "Dipole Moment", "description": "Measure of polarity", "equation": "μ = q * d" },
+      { "subtopic": "Bond Order", "description": "MOT calculation", "equation": "BO = 1/2 (N_b - N_a)" }
+    ]
+  },
+  {
+    "topic_id": 11,
+    "topic_name": "14TH GROUP (CARBON FAMILY)",
+    "formulas": [
+      { "subtopic": "General Configuration", "description": "Valence shell", "equation": "ns² np²" }
+    ]
+  },
+  {
+    "topic_id": 12,
+    "topic_name": "CLASSIFICATION OF ELEMENTS AND PERIODIC TABLE",
+    "formulas": [
+      { "subtopic": "Screening Constant", "description": "Effective charge", "equation": "Z_eff = Z - σ" }
+    ]
+  },
+  {
+    "topic_id": 13,
+    "topic_name": "D & F BLOCK ELEMENTS",
+    "formulas": [
+      { "subtopic": "Spin-only formula", "description": "Magnetic moment", "equation": "μ = √[n(n+2)] B.M." }
+    ]
+  },
+  {
+    "topic_id": 14,
+    "topic_name": "CO-ORDINATION COMPOUNDS",
+    "formulas": [
+      { "subtopic": "EAN", "description": "Effective Atomic Number", "equation": "EAN = Z - (Oxidation State) + 2(Coord. Num)" }
+    ]
+  },
+  {
+    "topic_id": 15,
+    "topic_name": "ORGANIC COMPOUND CONTAINING C, H, O",
+    "formulas": [
+      { "subtopic": "Alcohols General", "description": "Saturation formula", "equation": "C_n H_(2n+1) OH" }
+    ]
+  },
+  {
+    "topic_id": 16,
+    "topic_name": "CARBONYL COMPOUNDS",
+    "formulas": [
+      { "subtopic": "Aldehydes/Ketones", "description": "General formula", "equation": "C_n H_2n O" }
+    ]
+  },
+  {
+    "topic_id": 17,
+    "topic_name": "CARBOXYLIC ACIDS AND DERIVATIONS",
+    "formulas": [
+      { "subtopic": "Acids General", "description": "Saturated carboxylic acid", "equation": "C_n H_2n O₂" }
+    ]
+  },
+  {
+    "topic_id": 18,
+    "topic_name": "HYDRO CARBONS",
+    "formulas": [
+      { "subtopic": "Alkanes", "description": "Saturated hydrocarbons", "equation": "C_n H_(2n+2)" },
+      { "subtopic": "Alkenes", "description": "Unsaturated with double bond", "equation": "C_n H_2n" },
+      { "subtopic": "Alkynes", "description": "Unsaturated with triple bond", "equation": "C_n H_(2n-2)" }
+    ]
+  },
+  {
+    "topic_id": 19,
+    "topic_name": "ORGANIC COMPOUND CONTAINING NITROGEN",
+    "formulas": [
+      { "subtopic": "Amines (1°)", "description": "Primary amine", "equation": "R-NH₂" }
+    ]
+  },
+  {
+    "topic_id": 20,
+    "topic_name": "POLYMERS",
+    "formulas": [
+      { "subtopic": "Polymerization", "description": "Monomer to Polymer", "equation": "n[Monomer] -> [Polymer]_n" }
+    ]
+  },
+  {
+    "topic_id": 21,
+    "topic_name": "PRINCIPLES OF EXTRACTIVE METALLURGY",
+    "formulas": [
+      { "subtopic": "Ellingham Diagram", "description": "Stability of oxides", "equation": "ΔG = ΔH - TΔS" }
+    ]
+  },
+  {
+    "topic_id": 22,
+    "topic_name": "S-BLOCK ELEMENTS",
+    "formulas": [
+      { "subtopic": "Alkali Metals", "description": "General valence shell", "equation": "ns¹" },
+      { "subtopic": "Alkaline Earth", "description": "General valence shell", "equation": "ns²" }
+    ]
+  },
+  {
+    "topic_id": 23,
+    "topic_name": "STOICHIOMETRY",
+    "formulas": [
+      { "subtopic": "Mole Concept", "description": "Relation with mass", "equation": "n = mass / Molar mass" },
+      { "subtopic": "Empirical Formula", "description": "Mass ratio of elements", "equation": "n_i = %W_i / At_Mass_i" },
+      { "subtopic": "Oxidation State", "description": "Charge balance", "equation": "Σ (Oxid. State) = Total Charge" }
+    ]
+  },
+  {
+    "topic_id": 24,
+    "topic_name": "GENREL ORGANIC CHEMISTRY [GOC]",
+    "formulas": [
+      { "subtopic": "Degree of Unsaturation", "description": "Double bond equivalents", "equation": "DBE = C + 1 - (H+X-N)/2" }
+    ]
+  },
+  {
+    "topic_id": 25,
+    "topic_name": "CHEMISTRY IN EVERYDAY LIFE",
+    "formulas": [
+      { "subtopic": "Saponification", "description": "Soap formation", "equation": "Ester + Alkali -> Alcohol + Soap" }
+    ]
+  },
+  {
+    "topic_id": 26,
+    "topic_name": "HYDROGEN AND ITS COMPOUNDS",
+    "formulas": [
+      { "subtopic": "Water Hardness", "description": "PPM equivalent", "equation": "PPM = (mg/L)" }
+    ]
+  },
+  {
+    "topic_id": 27,
+    "topic_name": "13TH GROUP [BORON FAMILY]",
+    "formulas": [
+      { "subtopic": "Configuration", "description": "Valence shell", "equation": "ns² np¹" }
+    ]
+  },
+  {
+    "topic_id": 28,
+    "topic_name": "SOLID STATE",
+    "formulas": [
+      { "subtopic": "Density of Unit Cell", "description": "Mass per volume", "equation": "ρ = (Z * M) / (a³ * N_A)" },
+      { "subtopic": "Bragg's Law", "description": "Diffraction condition", "equation": "nλ = 2d sinθ" }
+    ]
+  },
+  {
+    "topic_id": 29,
+    "topic_name": "16TH GROUP",
+    "formulas": [
+      { "subtopic": "Configuration", "description": "Chalcogens", "equation": "ns² np⁴" }
+    ]
+  },
+  {
+    "topic_id": 30,
+    "topic_name": "17TH GROUP",
+    "formulas": [
+      { "subtopic": "Configuration", "description": "Halogens", "equation": "ns² np⁵" }
+    ]
+  },
+  {
+    "topic_id": 31,
+    "topic_name": "18TH GROUP",
+    "formulas": [
+      { "subtopic": "Configuration", "description": "Noble gases", "equation": "ns² np⁶" }
+    ]
+  },
+  {
+    "topic_id": 32,
+    "topic_name": "BENZENE (AROMATIC HYDRO CARBON)",
+    "formulas": [
+      { "subtopic": "Stability", "description": "Huckel's Rule", "equation": "4n + 2 π electrons" }
+    ]
+  }
+]
