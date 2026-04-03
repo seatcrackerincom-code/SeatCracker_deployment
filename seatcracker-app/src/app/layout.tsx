@@ -5,9 +5,14 @@ export const metadata: Metadata = {
   title: "SeatCracker — Crack Your Entrance Exam",
   description: "Your personalised EAMCET/EAPCET syllabus companion. Track chapters, prioritise topics, and crack your seat.",
   keywords: "EAMCET, EAPCET, AP, TS, engineering, agriculture, pharmacy, syllabus, entrance exam",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "SeatCracker",
     description: "Your seat is waiting. Start now.",
+    images: ["/logo.png"],
     type: "website",
   },
 };
