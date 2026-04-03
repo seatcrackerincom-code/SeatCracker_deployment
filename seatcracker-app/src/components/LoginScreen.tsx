@@ -107,7 +107,9 @@ export default function LoginScreen({ onSuccess }: Props) {
       >
         {/* Brand */}
         <div className={styles.brand}>
-          <div className={styles.logoRing}>✊</div>
+          <div className={styles.logoRing}>
+            <img src="/logo.png" alt="SeatCracker Logo" className={styles.logoIcon} />
+          </div>
           <div className={styles.appName}>SeatCracker</div>
           <div className={styles.tagline}>Crack Your EAMCET. Own Your Seat.</div>
         </div>
