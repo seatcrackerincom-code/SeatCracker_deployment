@@ -1,48 +1,11 @@
 {
   "subject": "Zoology",
-  "stream": "BiPC (Agriculture / Pharmacy)",
-  "exam": "AP EAPCET / TS EAMCET",
-  "total_chapters": 18,
-  "priority_summary": {
-    "High": {
-      "count": 11,
-      "chapters": [
-        "Animal Kingdom (Classification)",
-        "Digestion & Absorption",
-        "Breathing & Exchange of Gases",
-        "Body Fluids & Circulation",
-        "Excretory Products & Elimination",
-        "Neural Control & Coordination",
-        "Chemical Coordination & Integration",
-        "Human Reproduction",
-        "Genetics & Heredity (Zoology)",
-        "Human Health & Disease",
-        "Biotechnology & Applications (Zoology)"
-      ]
-    },
-    "Medium": {
-      "count": 4,
-      "chapters": [
-        "Structural Organisation in Animals",
-        "Locomotion & Movement",
-        "Evolution",
-        "Applied Biology"
-      ]
-    },
-    "Low": {
-      "count": 3,
-      "chapters": [
-        "Reproductive Health",
-        "Organisms & Populations (Zoology)",
-        "Biomolecules (Zoology angle)"
-      ]
-    }
-  },
   "chapters": [
     {
-      "topic_id": 1,
       "chapter": "Animal Kingdom (Classification)",
-      "ap_questions": 3,
+      "topic_slug": "animal_kingdom",
+      "ap": 3,
+      "ts": 3,
       "priority": "High",
       "subtopics": [
         "Basis of Classification (symmetry, coelom, segmentation)",
@@ -52,9 +15,10 @@
       ]
     },
     {
-      "topic_id": 2,
       "chapter": "Structural Organisation in Animals",
-      "ap_questions": 2,
+      "topic_slug": "structural_organisation_in_animals",
+      "ap": 2,
+      "ts": 2,
       "priority": "Medium",
       "subtopics": [
         "Epithelial, Connective, Muscle, Nervous Tissue",
@@ -63,9 +27,10 @@
       ]
     },
     {
-      "topic_id": 3,
       "chapter": "Digestion & Absorption",
-      "ap_questions": 3,
+      "topic_slug": "digestion_absorption",
+      "ap": 3,
+      "ts": 3,
       "priority": "High",
       "subtopics": [
         "Human Digestive System (structure)",
@@ -75,9 +40,10 @@
       ]
     },
     {
-      "topic_id": 4,
       "chapter": "Breathing & Exchange of Gases",
-      "ap_questions": 2,
+      "topic_slug": "breathing_exchange_of_gases",
+      "ap": 2,
+      "ts": 2,
       "priority": "High",
       "subtopics": [
         "Human Respiratory System",
@@ -87,9 +53,10 @@
       ]
     },
     {
-      "topic_id": 5,
       "chapter": "Body Fluids & Circulation",
-      "ap_questions": 3,
+      "topic_slug": "body_fluids_circulation",
+      "ap": 3,
+      "ts": 3,
       "priority": "High",
       "subtopics": [
         "Blood (composition, blood groups, clotting)",
@@ -100,9 +67,10 @@
       ]
     },
     {
-      "topic_id": 6,
       "chapter": "Excretory Products & Elimination",
-      "ap_questions": 2,
+      "topic_slug": "excretory_products_elimination",
+      "ap": 2,
+      "ts": 2,
       "priority": "High",
       "subtopics": [
         "Human Excretory System",
@@ -112,9 +80,10 @@
       ]
     },
     {
-      "topic_id": 7,
       "chapter": "Locomotion & Movement",
-      "ap_questions": 2,
+      "topic_slug": "locomotion_movement",
+      "ap": 2,
+      "ts": 2,
       "priority": "Medium",
       "subtopics": [
         "Types of Movement (amoeboid, ciliary, muscular)",
@@ -124,9 +93,10 @@
       ]
     },
     {
-      "topic_id": 8,
       "chapter": "Neural Control & Coordination",
-      "ap_questions": 3,
+      "topic_slug": "neural_control_coordination",
+      "ap": 3,
+      "ts": 3,
       "priority": "High",
       "subtopics": [
         "Neuron Structure, Types",
@@ -137,9 +107,10 @@
       ]
     },
     {
-      "topic_id": 9,
       "chapter": "Chemical Coordination & Integration",
-      "ap_questions": 2,
+      "topic_slug": "chemical_coordination_integration",
+      "ap": 2,
+      "ts": 2,
       "priority": "High",
       "subtopics": [
         "Endocrine Glands & Hormones",
@@ -149,9 +120,10 @@
       ]
     },
     {
-      "topic_id": 10,
       "chapter": "Human Reproduction",
-      "ap_questions": 3,
+      "topic_slug": "human_reproduction",
+      "ap": 3,
+      "ts": 3,
       "priority": "High",
       "subtopics": [
         "Male Reproductive System",
@@ -162,9 +134,10 @@
       ]
     },
     {
-      "topic_id": 11,
       "chapter": "Reproductive Health",
-      "ap_questions": 1,
+      "topic_slug": "reproductive_health",
+      "ap": 1,
+      "ts": 1,
       "priority": "Low",
       "subtopics": [
         "Contraceptive Methods",
@@ -173,9 +146,10 @@
       ]
     },
     {
-      "topic_id": 12,
       "chapter": "Genetics & Heredity (Zoology)",
-      "ap_questions": 3,
+      "topic_slug": "genetics_heredity",
+      "ap": 3,
+      "ts": 3,
       "priority": "High",
       "subtopics": [
         "Chromosomal Theory of Inheritance",
@@ -185,9 +159,10 @@
       ]
     },
     {
-      "topic_id": 13,
       "chapter": "Evolution",
-      "ap_questions": 2,
+      "topic_slug": "evolution",
+      "ap": 2,
+      "ts": 2,
       "priority": "Medium",
       "subtopics": [
         "Origin & Evolution of Life",
@@ -196,9 +171,10 @@
       ]
     },
     {
-      "topic_id": 14,
       "chapter": "Human Health & Disease",
-      "ap_questions": 3,
+      "topic_slug": "human_health_disease",
+      "ap": 3,
+      "ts": 3,
       "priority": "High",
       "subtopics": [
         "Innate & Acquired Immunity",
@@ -209,21 +185,23 @@
       ]
     },
     {
-      "topic_id": 15,
       "chapter": "Biotechnology & Applications (Zoology)",
-      "ap_questions": 2,
+      "topic_slug": "biotechnology_applications",
+      "ap": 2,
+      "ts": 2,
       "priority": "High",
       "subtopics": [
-        "Genetically GM Organisms",
+        "Genetically Modified Organisms",
         "Gene Therapy, Insulin Production",
         "Transgenic Animals",
         "ELISA, DNA Fingerprinting"
       ]
     },
     {
-      "topic_id": 16,
       "chapter": "Organisms & Populations (Zoology)",
-      "ap_questions": 1,
+      "topic_slug": "organisms_populations",
+      "ap": 1,
+      "ts": 1,
       "priority": "Low",
       "subtopics": [
         "Population Interactions (predation, competition, mutualism)",
@@ -231,9 +209,10 @@
       ]
     },
     {
-      "topic_id": 17,
       "chapter": "Applied Biology",
-      "ap_questions": 2,
+      "topic_slug": "applied_biology",
+      "ap": 2,
+      "ts": 2,
       "priority": "Medium",
       "subtopics": [
         "Animal Husbandry (cattle, poultry, fisheries)",
@@ -242,9 +221,10 @@
       ]
     },
     {
-      "topic_id": 18,
       "chapter": "Biomolecules (Zoology angle)",
-      "ap_questions": 1,
+      "topic_slug": "biomolecules",
+      "ap": 1,
+      "ts": 1,
       "priority": "Low",
       "subtopics": [
         "Protein Structure (primary to quaternary)",

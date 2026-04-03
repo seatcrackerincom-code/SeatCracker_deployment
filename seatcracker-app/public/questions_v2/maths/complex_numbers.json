@@ -1,0 +1,1214 @@
+{
+  "topic_id": 6,
+  "topic_name": "COMPLEX NUMBERS",
+  "weightage": 3,
+  "priority": "High",
+  "subtopics": [
+    "Algebra of Complex Numbers",
+    "Modulus & Argument",
+    "De Moivre's Theorem",
+    "Roots of Unity & Locus"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "A complex number is defined as z = a + ib, where i is equal to:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(-1)",
+        "B": "-1",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "If z = a + ib, the real part Re(z) and imaginary part Im(z) are respectively:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a and b",
+        "B": "a and ib",
+        "C": "b and a",
+        "D": "ia and b"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 3,
+      "question": "The conjugate of a complex number z = a + ib is z̄ = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a - ib",
+        "B": "-a + ib",
+        "C": "-a - ib",
+        "D": "b + ia"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 4,
+      "question": "The product of a complex number z and its conjugate z̄ is equal to:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|z|²",
+        "B": "z²",
+        "C": "2Re(z)",
+        "D": "2Im(z)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 5,
+      "question": "The modulus of z = a + ib, denoted by |z|, is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(a² + b²)",
+        "B": "a² + b²",
+        "C": "a + b",
+        "D": "√(a² - b²)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 6,
+      "question": "If z₁ and z₂ are complex numbers, then |z₁z₂| is equal to:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|z₁||z₂|",
+        "B": "|z₁| + |z₂|",
+        "C": "|z₁| - |z₂|",
+        "D": "|z₁|/|z₂|"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 7,
+      "question": "Triangle Inequality states that |z₁ + z₂| is ______ |z₁| + |z₂|.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "≤",
+        "B": "≥",
+        "C": "=",
+        "D": "<"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 8,
+      "question": "The argument of z = x + iy, denoted as arg(z), is the angle θ such that:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "tan θ = y/x",
+        "B": "cos θ = y/x",
+        "C": "sin θ = x/y",
+        "D": "tan θ = x/y"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 9,
+      "question": "The principal value of the argument, Arg(z), lies in the interval:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(-π, π]",
+        "B": "[0, 2π)",
+        "C": "[-π/2, π/2]",
+        "D": "(0, π)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 10,
+      "question": "The polar form of a complex number z is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "r(cos θ + i sin θ)",
+        "B": "r(sin θ + i cos θ)",
+        "C": "r cos θ",
+        "D": "r sin θ"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 11,
+      "question": "Euler's formula states that e^{iθ} is equal to:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos θ + i sin θ",
+        "B": "cos θ - i sin θ",
+        "C": "sin θ + i cos θ",
+        "D": "e^θ"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 12,
+      "question": "The inverse of z, denoted as z⁻¹, can be written as:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "z̄ / |z|²",
+        "B": "z / |z|²",
+        "C": "|z|² / z̄",
+        "D": "1 / z̄"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 13,
+      "question": "If z = r(cos θ + i sin θ), then zⁿ represents De Moivre's Theorem. It is equal to:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "rⁿ(cos nθ + i sin nθ)",
+        "B": "rⁿ(cos θ + i sin θ)ⁿ",
+        "C": "nr(cos θ + i sin θ)",
+        "D": "r(cos nθ + i sin nθ)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 14,
+      "question": "De Moivre's theorem holds for n being a ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Rational number",
+        "B": "Integer only",
+        "C": "Positive integer only",
+        "D": "Complex number only"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 15,
+      "question": "The equation z³ = 1 has roots 1, ω, and ω². The value of 1 + ω + ω² is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "3",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 16,
+      "question": "The complex cube roots of unity, ω and ω², satisfy ω³ = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "0",
+        "D": "i"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 17,
+      "question": "For nth roots of unity, the roots lie on a ______ of radius 1.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Circle",
+        "B": "Parabola",
+        "C": "Straight Line",
+        "D": "Hyperbola"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 18,
+      "question": "The sum of the nth roots of unity is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "n",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 19,
+      "question": "The product of the nth roots of unity is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(-1)^(n-1)",
+        "B": "(-1)^n",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 20,
+      "question": "The locus of z satisfying |z - a| = |z - b| is the ______ of the segment joining a and b.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Perpendicular Bisector",
+        "B": "Circle",
+        "C": "Line segment",
+        "D": "Parabola"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 21,
+      "question": "The value of i^n + i^(n+1) + i^(n+2) + i^(n+3) for any integer n is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "i",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 22,
+      "question": "The complex number (1+i) / (1-i) simplifies to:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "i",
+        "B": "-i",
+        "C": "1",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 23,
+      "question": "If |z₁ + z₂| = |z₁ - z₂|, then the difference of arguments of z₁ and z₂ is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/2",
+        "B": "π",
+        "C": "0",
+        "D": "π/4"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 24,
+      "question": "If arg((z - a) / (z - b)) = π/2, the locus of z is a ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Circle",
+        "B": "Straight line",
+        "C": "Parabola",
+        "D": "Hyperbola"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 25,
+      "question": "If a, b, c are real and x + iy is a root of az² + bz + c = 0, then another root is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x - iy",
+        "B": "-x + iy",
+        "C": "-x - iy",
+        "D": "x + y"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 26,
+      "question": "Logarithm of a complex number z = re^{iθ} is log(z) = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "log r + iθ",
+        "B": "log r - iθ",
+        "C": "r log θ",
+        "D": "e^{rθ}"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 27,
+      "question": "The value of i^i is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^{-π/2}",
+        "B": "e^{π/2}",
+        "C": "1",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 28,
+      "question": "The minimum value of |z - z₁| + |z - z₂| is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|z₁ - z₂|",
+        "B": "|z₁| + |z₂|",
+        "C": "0",
+        "D": "|z₁| - |z₂|"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 29,
+      "question": "If |z₁| = |z₂| = 1 and z₁ + z₂ = √3, then the argument of z₁/z₂ can be:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/3",
+        "B": "π/6",
+        "C": "π/2",
+        "D": "π/4"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "The roots of the equation zⁿ - 1 = 0 form a GP with common ratio:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^{i2π/n}",
+        "B": "e^{inπ}",
+        "C": "1",
+        "D": "n"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 31,
+      "question": "If ω is a complex cube root of unity, then (1-ω+ω²)³ is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-8",
+        "B": "8",
+        "C": "0",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Any complex number analytic function f(z) = u + iv satisfies the ______ equations.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Cauchy-Riemann",
+        "B": "Laplace",
+        "C": "Navier-Stokes",
+        "D": "Euler-Lagrange"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "The amplitude of z = 0 is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Not defined",
+        "B": "0",
+        "C": "π/2",
+        "D": "π"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "If z + 1/z = 2 cosθ, then zⁿ + 1/zⁿ is equal to:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2 cos(nθ)",
+        "B": "2 i sin(nθ)",
+        "C": "cos(nθ)",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "The equation |z - 1|² + |z + 1|² = 4 represents a locus which is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Circle |z| = 1",
+        "B": "Straight Line",
+        "C": "Ellipse",
+        "D": "Point"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "If arg(z) > 0, then arg(-z) is equal to:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "arg(z) - π",
+        "B": "arg(z) + π",
+        "C": "π - arg(z)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "The value of (√3 + i)¹² + (√3 - i)¹² is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2¹³",
+        "B": "2¹²",
+        "C": "0",
+        "D": "2"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 38,
+      "question": "If (1 + i/1 - i)ᵐ = 1, then the least positive integral value of m is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4",
+        "B": "2",
+        "C": "8",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 39,
+      "question": "The modulus of [ (2+i)(3+i) ] / [ (4+i) ] is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(50/17)",
+        "B": "50/17",
+        "C": "√(30/17)",
+        "D": "5"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 40,
+      "question": "The principal argument of the complex number z = (1+i√3) / (√3+i) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/6",
+        "B": "π/3",
+        "C": "π/2",
+        "D": "π/4"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 41,
+      "question": "If ω is a complex cube root of unity, then the value of (1 + ω - ω²)⁷ is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-128ω²",
+        "B": "128ω²",
+        "C": "128",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 42,
+      "question": "The roots of the equation (z-1)ⁿ = zⁿ are ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Collinear",
+        "B": "Vertices of a regular polygon",
+        "C": "Concyclic",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 43,
+      "question": "The value of Σ ᵣ₌₁¹⁰ (sin 2πr/11 + i cos 2πr/11) is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-i",
+        "B": "i",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 44,
+      "question": "If |z-4| < |z-2|, its solution is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Re(z) > 3",
+        "B": "Re(z) < 3",
+        "C": "Im(z) > 3",
+        "D": "Re(z) > 2"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 45,
+      "question": "The amplitude of [ (1+i√3) / (1-i√3) ] is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2π/3",
+        "B": "π/3",
+        "C": "π",
+        "D": "π/2"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 46,
+      "question": "The area of the triangle on the Argand plane formed by complex numbers z, iz and z+iz is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/2 |z|²",
+        "B": "|z|²",
+        "C": "√2 |z|²",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 47,
+      "question": "If z = x + iy lies in the third quadrant, then z̄ / z also lies in the third quadrant if ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y > x",
+        "B": "x > y",
+        "C": "x = y",
+        "D": "Never"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 48,
+      "question": "If x + iy = √( (a+ib) / (c+id) ), then (x²+y²)² = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(a²+b²) / (c²+d²)",
+        "B": "√( (a²+b²) / (c²+d²) )",
+        "C": "(a²+b²)² / (c²+d²)²",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 49,
+      "question": "Find the square root of 7 + 24i.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "±(4 + 3i)",
+        "B": "±(3 + 4i)",
+        "C": "±(3 - 4i)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 50,
+      "question": "The value of ( (-1 + i√3) / 2 )³ⁿ + ( (-1 - i√3) / 2 )³ⁿ is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "0",
+        "C": "-1",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 51,
+      "question": "If 1, ω, ω² are the cube roots of unity, then (1-ω+ω²)(1-ω²+ω⁴)(1-ω⁴+ω⁸)... to 2n factors is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2²ⁿ",
+        "B": "2ⁿ",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 52,
+      "question": "If |z-1|/|z+1| = 1, the locus of z is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Imaginary axis",
+        "B": "Real axis",
+        "C": "Unit circle",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "The minimum value of |z| + |z-1| is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "1/2",
+        "D": "2"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Find the value of Re(z²) if z = x + iy.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x² - y²",
+        "B": "x² + y²",
+        "C": "2xy",
+        "D": "x - y"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "If arg(z) = θ, then arg(z̄) is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-θ",
+        "B": "θ",
+        "C": "π - θ",
+        "D": "π/2 - θ"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "The complex number z such that |z-1| = |z+1| = |z-i| is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1 + i",
+        "C": "i",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "If z is a purely imaginary number, then z + z̄ is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "2z",
+        "C": "2i Im(z)",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "What is the multiplicative inverse of 3 + 4i?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3/25 - 4/25 i",
+        "B": "3/25 + 4/25 i",
+        "C": "3 - 4i",
+        "D": "1/3 + 1/4 i"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "The distance between z₁ and z₂ in the Argand plane is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|z₁ - z₂|",
+        "B": "|z₁ + z₂|",
+        "C": "|z₁| - |z₂|",
+        "D": "√(|z₁|² + |z₂|²)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "If z = cos θ + i sin θ, then (1+z)/(1-z) is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "i cot(θ/2)",
+        "B": "i tan(θ/2)",
+        "C": "cot(θ/2)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Find the value of (1+i)⁴.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-4",
+        "B": "4",
+        "C": "4i",
+        "D": "-4i"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "If |z| = 1, then (1+z)/(1+z̄) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "z",
+        "B": "z̄",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "The square root of i is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "±(1+i)/√2",
+        "B": "±(1-i)/√2",
+        "C": "i",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "If z₁ = 1+2i and z₂ = 3+5i, then Re(z₁z₂) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-7",
+        "B": "13",
+        "C": "11",
+        "D": "3"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "The locus of points z satisfying arg(z) = π/4 is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Ray y = x, x > 0",
+        "B": "Line y = x",
+        "C": "Circle",
+        "D": "Parabola"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Find the value of i¹⁹.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-i",
+        "B": "i",
+        "C": "1",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "If |z-2i| = |z+2i|, the locus of z is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Real axis",
+        "B": "Imaginary axis",
+        "C": "Line y = 2",
+        "D": "Circle"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Simplified value of ω¹⁰ + ω²⁰ is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "0",
+        "D": "ω"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "The amplitude of -1 - i√3 is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-2π/3",
+        "B": "2π/3",
+        "C": "π/3",
+        "D": "-π/3"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "If |z₁ + z₂|² = |z₁|² + |z₂|², then z₁/z₂ is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Purely imaginary",
+        "B": "Purely real",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "Find the largest value of |z| if |z - 4/z| = 2.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√5 + 1",
+        "B": "√5 - 1",
+        "C": "√3 + 1",
+        "D": "2"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "If z is a complex number such that z̄ = -z, then ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "z is purely imaginary",
+        "B": "z is purely real",
+        "C": "z = 0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 73,
+      "question": "The value of arg(i) + arg(-i) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "π",
+        "C": "π/2",
+        "D": "2π"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "The roots of unity ω and ω² are roots of ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x² + x + 1 = 0",
+        "B": "x² - x + 1 = 0",
+        "C": "x² + 1 = 0",
+        "D": "x² - 1 = 0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "Coefficient of xⁿ in (1+x+x²+... ) is always associated with binomial expansion of ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1-x)⁻¹",
+        "B": "(1+x)⁻¹",
+        "C": "(1-x)⁻²",
+        "D": "(1+x)⁻²"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 76,
+      "question": "What is the argument of -5?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π",
+        "B": "0",
+        "C": "π/2",
+        "D": "-π"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 77,
+      "question": "Find the value of (1+ω)(1+ω²)(1+ω⁴)(1+ω⁸).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "ω",
+        "D": "3"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 78,
+      "question": "The locus of z satisfying Re(z²) = 0 is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Line y = ±x",
+        "B": "Circle",
+        "C": "Parabola",
+        "D": "Hyperbola"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 79,
+      "question": "Which of the following is purely real?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1+i)² - 2i",
+        "B": "(1+i)²",
+        "C": "i",
+        "D": "1+i"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 80,
+      "question": "If |z-3+2i| = 4, the locus of z is a circle with center ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(3, -2)",
+        "B": "(-3, 2)",
+        "C": "(3, 2)",
+        "D": "(4, 0)"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
+}

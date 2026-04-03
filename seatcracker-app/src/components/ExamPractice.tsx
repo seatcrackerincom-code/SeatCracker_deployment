@@ -176,12 +176,17 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
 
 
   // ─── Start Exam (with explicit params — used by autoStart) ─────────────────
-  const startExamWith = useCallback(async (subject: string, topic: string, count: number) => {
+  const startExamWith = useCallback(async (subject: string, topic: string) => {
     if (!subject || !topic) return;
     setExamLoading(true);
     setExamError("");
     setSelectedSubject(subject);
     setSelectedTopic(topic);
+
+    // Get current attempt number
+    const progress = allProgress.find(p => p.topic === topic);
+    const attemptNum = (progress?.attempts || 0) + 1;
+    const count = 20; // Standardized to 20 bits per attempt
     setQuestionCount(count);
 
     try {
@@ -194,7 +199,8 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
       };
       const folderName = subjectFolderMap[subject] || subject.toLowerCase();
       const topicSlug = topic.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
-      const res = await fetch(`/questions/${folderName}/${topicSlug}.json`);
+      // UPDATE: Pointing to the new Gold Standard V2 questions
+      const res = await fetch(`/questions_v2/${folderName}/${topicSlug}.json`);
 
       let pool: Question[] = [];
       let priorityMultiplier = 1.0;
@@ -217,34 +223,36 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
           return { ...q, difficulty: parsedDiff, originalIndex: i };
         });
       } else {
-        pool = Array.from({ length: 50 }, (_, i) => ({
-          question: `${topic} — Sample Question ${i + 1}: Add real JSON data to /questions/${subject}/${topicSlug}.json`,
-          difficulty: (["Easy", "Medium", "Hard"] as const)[i % 3],
-          hasDiagram: false,
-          diagram_description: "",
-          options: { A: "Option A", B: "Option B", C: "Option C", D: "Option D" },
-          answer: "A" as const,
-          originalIndex: i,
-        }));
+        // Fallback or Error
+        setExamError("Question bank for this topic is being synchronized. Please try again in a moment.");
+        setExamLoading(false);
+        return;
       }
 
-      // Filter out seen questions
-      const progress = allProgress.find(p => p.topic === topic);
-      const seenIds = progress?.seen_question_ids || [];
-      const unseenPool = pool.filter(q => !seenIds.includes(q.originalIndex));
-
-      // If user has seen too many, reset or provide what's left
-      const practicePool = unseenPool.length >= count ? unseenPool : pool; // Fallback to full pool if not enough unseen
-
-      const shuffled = shuffleArray(practicePool);
+      // Randomly pick 20 bits as requested
+      const shuffled = shuffleArray(pool);
       const selected = shuffled.slice(0, Math.min(count, shuffled.length));
       
-      const targetMins = selected.reduce((acc, q) => acc + (DIFFICULTY_MINUTES[q.difficulty] || 1.0), 0) * priorityMultiplier;
+      // Timer Logic
+      // Attempt 1 & 2: 23 mins (20 + 3 buffer)
+      // Attempt 3+: Faster based on previous performance
+      let targetMins = 23; 
+      if (attemptNum >= 3) {
+        // If they finished attempt 2 in 18 mins, set target to 18 or 15 mins.
+        targetMins = 15; 
+      }
 
       setQuestions(selected);
       setStatuses(selected.map(() => ({ selectedOption: null, isAnswered: false, isMarkedForReview: false })));
       setCurrentIdx(0);
-      setElapsedSeconds(0);
+      
+      // Timer initial state
+      if (attemptNum === 1) {
+        setElapsedSeconds(0); // Count up
+      } else {
+        setElapsedSeconds(Math.round(targetMins * 60)); // Count down from target
+      }
+      
       setTargetSeconds(Math.round(targetMins * 60));
       setExamStarted(false);
       setScreen("exam");
@@ -253,7 +261,7 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
       setTimeout(() => {
         if (examRef.current?.requestFullscreen) examRef.current.requestFullscreen().catch(() => {});
       }, 300);
-    } catch {
+    } catch (e) {
       setExamError("Failed to load questions. Please try again.");
       setExamLoading(false);
     }
@@ -261,16 +269,24 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
 
   // ─── Start Exam (from setup screen using current state) ─────────────────────
   const startExam = useCallback(async () => {
-    await startExamWith(selectedSubject, selectedTopic, questionCount);
-  }, [selectedSubject, selectedTopic, questionCount, startExamWith]);
+    await startExamWith(selectedSubject, selectedTopic);
+  }, [selectedSubject, selectedTopic, startExamWith]);
 
   // ─── Timer ─────────────────────────────────────────────────────────────────
   useEffect(() => {
     if (screen === "exam" && examStarted) {
-      timerRef.current = setInterval(() => setElapsedSeconds(e => e + 1), 1000);
+      const progress = allProgress.find(p => p.topic === selectedTopic);
+      const attemptNum = (progress?.attempts || 0) + 1;
+
+      timerRef.current = setInterval(() => {
+        setElapsedSeconds(prev => {
+          if (attemptNum === 1) return prev + 1; // Count up
+          return Math.max(0, prev - 1); // Count down
+        });
+      }, 1000);
     }
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
-  }, [screen, examStarted]);
+  }, [screen, examStarted, allProgress, selectedTopic]);
 
   useEffect(() => {
     if (screen === "exam" && !examStarted && questions.length > 0) {
@@ -304,14 +320,20 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
     if (timerRef.current) clearInterval(timerRef.current);
     if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
     
+    // Attempt Logic again for calculation
+    const currentProgress = allProgress.find(p => p.topic === selectedTopic);
+    const attemptNum = (currentProgress?.attempts || 0) + 1;
+    
+    // For Count-down (Attempt 2+), the actual time taken is Target - Remaining
+    const actualElapsed = attemptNum === 1 ? elapsedSeconds : (targetSeconds - elapsedSeconds);
+
     const correct = statuses.filter((s, i) => s.isAnswered && s.selectedOption === questions[i]?.answer).length;
     const currentSeenIds = questions.filter((_, i) => statuses[i].isAnswered).map(q => q.originalIndex);
     
     // Merge with existing progress for this topic
-    const existingProgress = allProgress.find(p => p.topic === selectedTopic);
-    const prevSeenIds = existingProgress?.seen_question_ids || [];
+    const prevSeenIds = currentProgress?.seen_question_ids || [];
     const mergedSeenIds = Array.from(new Set([...prevSeenIds, ...currentSeenIds]));
-    const newAttempts = (existingProgress?.attempts || 0) + 1;
+    const newAttempts = attemptNum;
     
     // Save to Supabase
     saveProgress({
@@ -319,7 +341,7 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
       topic: selectedTopic,
       subject: selectedSubject,
       accuracy: Math.round((correct / questions.length) * 100),
-      avg_time: elapsedSeconds > 0 ? Number((elapsedSeconds / questions.length).toFixed(1)) : 0,
+      avg_time: actualElapsed > 0 ? Number((actualElapsed / questions.length).toFixed(1)) : 0,
       completed: true,
       seen_question_ids: mergedSeenIds,
       attempts: newAttempts,
@@ -329,9 +351,9 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
       .catch(() => {});
 
     // Notify parent if embedded
-    onExamComplete?.(correct, questions.length, elapsedSeconds, currentSeenIds);
+    onExamComplete?.(correct, questions.length, actualElapsed, currentSeenIds);
     setScreen("result");
-  }, [statuses, questions, onExamComplete, elapsedSeconds, selectedSubject, selectedTopic, allProgress]);
+  }, [statuses, questions, onExamComplete, elapsedSeconds, targetSeconds, selectedSubject, selectedTopic, allProgress, userId]);
 
 
   const retryExam = useCallback(() => {
@@ -460,7 +482,7 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                         </div>
                       </div>
                       <div style={{ fontSize: "13px", color: "var(--text-muted)", padding: "10px", background: "var(--bg-card2)", borderRadius: "8px", border: "1px dashed var(--border)" }}>
-                        💡 <strong>Instructions:</strong> 15 bits = 3 attempts, 25 bits = 2 attempts. More bits coming in 2 days.
+                        💡 <strong>Gold Standard 2.0:</strong> Each attempt picks 20 random bits from the 80-bit pool. Complete 4 attempts to master this topic!
                       </div>
                     </div>
                   );
@@ -666,18 +688,36 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
           </div>
         </div>
 
-        {/* Double timer */}
-        <div className={styles.timerSection}>
-          <div className={styles.timerBox} data-over={elapsedSeconds > targetSeconds}>
-            <span className={styles.timerLabel}>Actual</span>
-            <span className={styles.timerVal}>{fmt(elapsedSeconds)}</span>
-          </div>
-          <div className={styles.timerDivider} />
-          <div className={styles.timerBox}>
-            <span className={styles.timerLabel}>Target</span>
-            <span className={styles.timerVal}>{fmt(targetSeconds)}</span>
-          </div>
-        </div>
+        {/* Double timer or Countdown */}
+        {(() => {
+          const progress = allProgress.find(p => p.topic === selectedTopic);
+          const attemptNum = (progress?.attempts || 0) + 1;
+          
+          if (attemptNum === 1) {
+            return (
+              <div className={styles.timerSection}>
+                <div className={styles.timerBox} data-over={elapsedSeconds > targetSeconds}>
+                  <span className={styles.timerLabel}>Actual</span>
+                  <span className={styles.timerVal}>{fmt(elapsedSeconds)}</span>
+                </div>
+                <div className={styles.timerDivider} />
+                <div className={styles.timerBox}>
+                  <span className={styles.timerLabel}>Target</span>
+                  <span className={styles.timerVal}>{fmt(targetSeconds)}</span>
+                </div>
+              </div>
+            );
+          } else {
+            return (
+              <div className={styles.timerSection}>
+                <div className={styles.timerBox} data-over={elapsedSeconds === 0}>
+                  <span className={styles.timerLabel}>Remaining</span>
+                  <span className={styles.timerVal}>{fmt(elapsedSeconds)}</span>
+                </div>
+              </div>
+            );
+          }
+        })()}
 
         {/* Progress bar */}
         <div className={styles.timerProgressWrap}>

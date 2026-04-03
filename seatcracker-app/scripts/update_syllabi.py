@@ -1,0 +1,66 @@
+import json
+import os
+
+syllabus_31 = {
+  "subject": "Physics",
+  "stream": "MPC + BiPC (Both Streams)",
+  "exam": "AP EAPCET / TS EAMCET",
+  "total_chapters": 31,
+  "priority_summary": {
+    "High": { "count": 12, "chapters": ["THERMODYNAMICS", "SYSTEM OF PARTICLES AND ROTATORY MOTION", "MOVING CHARGES AND MAGNETISM", "WORK POWER ENERGY", "OSCILLATIONS", "SEMI CONDUCTORS", "CURRENT ELECTRICITY", "ELECTROSTATIC POTENTIAL AND CAPACITANCE", "FRICTION (NEWTONS LAWS OF MOTION)", "ATOMIC PHYSICS", "ELECTRIC CHARGES AND FIELDS", "THERMAL PROPERTIES - I AND II"] },
+    "Medium": { "count": 12, "chapters": ["KINETIC THEORY OF GASES", "MOTION IN A STRAIGHT LINE", "ALTERNATING CURRENT", "ELECTRO MAGNETIC WAVES", "GRAVITATION", "MECHANICAL PROPERTIES OF FLUIDS", "NUCLEAR PHYSICS", "RAY OPTICS", "UNITS AND MEASUREMENTS", "WAVE OPTICS", "COMMUNICATION SYSTEM", "ELECTRO MAGNETIC INDUCTION"] },
+    "Low": { "count": 7, "chapters": ["MECHANICAL PROPERTIES OF SOLIDS", "WAVE MOTION", "MAGNETISM & MATTER", "MOTION IN A PLANE", "DUAL NATURE OF RADIATION & MATTER", "VECTORS", "COLLISIONS"] }
+  },
+  "chapters": [
+    { "topic_id": 1, "chapter": "THERMODYNAMICS", "priority": "High" },
+    { "topic_id": 2, "chapter": "SYSTEM OF PARTICLES AND ROTATORY MOTION", "priority": "High" },
+    { "topic_id": 3, "chapter": "MOVING CHARGES AND MAGNETISM", "priority": "High" },
+    { "topic_id": 4, "chapter": "WORK POWER ENERGY", "priority": "High" },
+    { "topic_id": 5, "chapter": "OSCILLATIONS", "priority": "High" },
+    { "topic_id": 6, "chapter": "SEMI CONDUCTORS", "priority": "High" },
+    { "topic_id": 7, "chapter": "CURRENT ELECTRICITY", "priority": "High" },
+    { "topic_id": 8, "chapter": "ELECTROSTATIC POTENTIAL AND CAPACITANCE", "priority": "High" },
+    { "topic_id": 9, "chapter": "FRICTION (NEWTONS LAWS OF MOTION)", "priority": "High" },
+    { "topic_id": 10, "chapter": "ATOMIC PHYSICS", "priority": "High" },
+    { "topic_id": 11, "chapter": "ELECTRIC CHARGES AND FIELDS", "priority": "High" },
+    { "topic_id": 12, "chapter": "THERMAL PROPERTIES - I AND II", "priority": "High" },
+    { "topic_id": 13, "chapter": "KINETIC THEORY OF GASES", "priority": "Medium" },
+    { "topic_id": 14, "chapter": "MOTION IN A STRAIGHT LINE", "priority": "Medium" },
+    { "topic_id": 15, "chapter": "ALTERNATING CURRENT", "priority": "Medium" },
+    { "topic_id": 16, "chapter": "ELECTRO MAGNETIC WAVES", "priority": "Medium" },
+    { "topic_id": 17, "chapter": "GRAVITATION", "priority": "Medium" },
+    { "topic_id": 18, "chapter": "MECHANICAL PROPERTIES OF FLUIDS", "priority": "Medium" },
+    { "topic_id": 19, "chapter": "NUCLEAR PHYSICS", "priority": "Medium" },
+    { "topic_id": 20, "chapter": "RAY OPTICS", "priority": "Medium" },
+    { "topic_id": 21, "chapter": "UNITS AND MEASUREMENTS", "priority": "Medium" },
+    { "topic_id": 22, "chapter": "WAVE OPTICS", "priority": "Medium" },
+    { "topic_id": 23, "chapter": "COMMUNICATION SYSTEM", "priority": "Medium" },
+    { "topic_id": 24, "chapter": "ELECTRO MAGNETIC INDUCTION", "priority": "Medium" },
+    { "topic_id": 25, "chapter": "MECHANICAL PROPERTIES OF SOLIDS", "priority": "Low" },
+    { "topic_id": 26, "chapter": "WAVE MOTION", "priority": "Low" },
+    { "topic_id": 27, "chapter": "MAGNETISM & MATTER", "priority": "Low" },
+    { "topic_id": 28, "chapter": "MOTION IN A PLANE", "priority": "Low" },
+    { "topic_id": 29, "chapter": "DUAL NATURE OF RADIATION & MATTER", "priority": "Low" },
+    { "topic_id": 30, "chapter": "VECTORS", "priority": "Low" },
+    { "topic_id": 31, "chapter": "COLLISIONS", "priority": "Low" }
+  ]
+}
+
+targets = [
+    "public/SYLLABUS/AP/Agriculture/Physics/Physics.json",
+    "public/SYLLABUS/AP/Engineering/Physics/Physics.json",
+    "public/SYLLABUS/AP/Pharmacy/Physics/Physics.json",
+    "public/SYLLABUS/questions/physics.json",
+    "public/SYLLABUS/TS/Agriculture/Physics/Physics.json",
+    "public/SYLLABUS/TS/Engineering/Physics/Physics.json",
+    "public/SYLLABUS/TS/Pharmacy/Physics/Physics.json"
+]
+
+for t in targets:
+    try:
+        os.makedirs(os.path.dirname(t), exist_ok=True)
+        with open(t, 'w', encoding='utf-8') as f:
+            json.dump(syllabus_31, f, indent=2)
+        print(f"Updated: {t}")
+    except Exception as e:
+        print(f"Failed: {t} - {str(e)}")

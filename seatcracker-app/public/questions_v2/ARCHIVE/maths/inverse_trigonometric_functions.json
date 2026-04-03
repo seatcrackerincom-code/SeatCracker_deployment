@@ -1,0 +1,1214 @@
+{
+  "topic_id": 38,
+  "topic_name": "INVERSE TRIGONOMETRIC FUNCTIONS",
+  "weightage": 2,
+  "priority": "Medium",
+  "subtopics": [
+    "Principal Value Branches",
+    "Properties of Inverse Trig Functions",
+    "Trigonometric Substitutions",
+    "Equations involving Inverse Trig Functions"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "The principal value branch of sin⁻¹x is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[-π/2, π/2]",
+        "B": "[0, π]",
+        "C": "(-π/2, π/2)",
+        "D": "[0, 2π]"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "The principal value branch of cos⁻¹x is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[0, π]",
+        "B": "[-π/2, π/2]",
+        "C": "(0, π)",
+        "D": "[0, 2π]"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 3,
+      "question": "The principal value branch of tan⁻¹x is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(-π/2, π/2)",
+        "B": "[-π/2, π/2]",
+        "C": "[0, π]",
+        "D": "(0, π)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 4,
+      "question": "The domain of sec⁻¹x is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "R - (-1, 1)",
+        "B": "[-1, 1]",
+        "C": "R",
+        "D": "(0, π)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 5,
+      "question": "sin⁻¹x + cos⁻¹x = ______ for x ∈ [-1, 1].",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/2",
+        "B": "π",
+        "C": "0",
+        "D": "2π"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 6,
+      "question": "tan⁻¹x + cot⁻¹x = ______ for x ∈ R.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/2",
+        "B": "π",
+        "C": "0",
+        "D": "2π"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 7,
+      "question": "sec⁻¹x + cosec⁻¹x = ______ for |x| ≥ 1.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/2",
+        "B": "π",
+        "C": "0",
+        "D": "2π"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 8,
+      "question": "Find the principal value of sin⁻¹(1/2).",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/6",
+        "B": "π/3",
+        "C": "π/4",
+        "D": "π/2"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 9,
+      "question": "Find the principal value of cos⁻¹(-1/2).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2π/3",
+        "B": "π/3",
+        "C": "5π/6",
+        "D": "π/6"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 10,
+      "question": "tan⁻¹(1) + cos⁻¹(-1/2) + sin⁻¹(-1/2) = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3π/4",
+        "B": "π/2",
+        "C": "π",
+        "D": "5π/4"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 11,
+      "question": "The value of sin(tan⁻¹ x) for |x| < 1 is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x / √(1+x²)",
+        "B": "1 / √(1+x²)",
+        "C": "x / √(1-x²)",
+        "D": "√(1+x²) / x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 12,
+      "question": "tan⁻¹x + tan⁻¹y = tan⁻¹[(x+y)/(1-xy)] if xy < ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "0",
+        "D": "π"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 13,
+      "question": "2 tan⁻¹x = sin⁻¹[2x / (1+x²)] for |x| ≤ ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "1/2",
+        "D": "π/4"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 14,
+      "question": "Principal value of sin⁻¹(sin 2π/3) is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/3",
+        "B": "2π/3",
+        "C": "-π/3",
+        "D": "5π/6"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 15,
+      "question": "Principal value of cos⁻¹(cos 7π/6) is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "5π/6",
+        "B": "7π/6",
+        "C": "π/6",
+        "D": "-π/6"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 16,
+      "question": "Evaluate tan(cos⁻¹ 4/5 + tan⁻¹ 2/3).",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "17/6",
+        "B": "6/17",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 17,
+      "question": "Values of x satisfying sin⁻¹(1-x) - 2 sin⁻¹ x = π/2.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1/2",
+        "C": "0, 1/2",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 18,
+      "question": "Domain of f(x) = sin⁻¹(2x - 3) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[1, 2]",
+        "B": "[0, 3]",
+        "C": "[-1, 1]",
+        "D": "[2, 3]"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 19,
+      "question": "The value of cot(tan⁻¹ a + cot⁻¹ a) is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Undefined",
+        "D": "π/2"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 20,
+      "question": "Find x if tan⁻¹(x-1)/(x-2) + tan⁻¹(x+1)/(x+2) = π/4.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "±1/√2",
+        "B": "±1",
+        "C": "0",
+        "D": "±2"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 21,
+      "question": "tan⁻¹(x/y) - tan⁻¹[(x-y)/(x+y)] = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "3π/4",
+        "D": "π"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 22,
+      "question": "If sin(sin⁻¹ 1/5 + cos⁻¹ x) = 1, then x = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/5",
+        "B": "4/5",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 23,
+      "question": "cos⁻¹(1-x²)/(1+x²) = 2 tan⁻¹x for x ≥ 0.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 24,
+      "question": "Simplest form of tan⁻¹[cos x / (1 - sin x)] is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/4 + x/2",
+        "B": "π/4 - x/2",
+        "C": "x/2",
+        "D": "π/2 + x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 25,
+      "question": "Range of f(x) = 2 sin⁻¹x + cos⁻¹x is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[0, π]",
+        "B": "[-π/2, π/2]",
+        "C": "[π/2, 3π/2]",
+        "D": "R"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 26,
+      "question": "Which of the following is the principal value of cosec⁻¹(2)?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/6",
+        "B": "π/3",
+        "C": "π/4",
+        "D": "5π/6"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 27,
+      "question": "Find the value of cos⁻¹(cos 13π/6).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/6",
+        "B": "13π/6",
+        "C": "7π/6",
+        "D": "5π/6"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 28,
+      "question": "The value of tan⁻¹(√3) - cot⁻¹(-√3) is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-π/2",
+        "B": "0",
+        "C": "π/2",
+        "D": "π"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 29,
+      "question": "tan⁻¹(x) + tan⁻¹(1/x) = π/2 for x > 0.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "If tan⁻¹ x + tan⁻¹ y + tan⁻¹ z = π/2, then xy + yz + zx = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "xyz",
+        "D": "x+y+z"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 31,
+      "question": "If tan⁻¹ x + tan⁻¹ y + tan⁻¹ z = π, then x + y + z = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "xyz",
+        "B": "1",
+        "C": "0",
+        "D": "xy+yz+zx"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "The value of sin⁻¹(sin 10) is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3π - 10",
+        "B": "10 - 3π",
+        "C": "10",
+        "D": "4π - 10"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Solve for x: sin(sin⁻¹ 1/5 + cos⁻¹ x) = 1.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/5",
+        "B": "4/5",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "cot⁻¹(x) = tan⁻¹(1/x) only for x ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x > 0",
+        "B": "x < 0",
+        "C": "all x",
+        "D": "x = 1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Find principal value of tan⁻¹(-1).",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-π/4",
+        "B": "3π/4",
+        "C": "π/4",
+        "D": "7π/4"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Find principal value of sin⁻¹(-1/2).",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-π/6",
+        "B": "11π/6",
+        "C": "π/6",
+        "D": "5π/6"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 37,
+      "question": "Value of tan⁻¹(√3) - sec⁻¹(-2) is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-π/3",
+        "B": "π/3",
+        "C": "0",
+        "D": "π/2"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 38,
+      "question": "Solve tan⁻¹ 2x + tan⁻¹ 3x = π/4.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/6",
+        "B": "-1",
+        "C": "1/6, -1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 39,
+      "question": "Value of sin(tan⁻¹ x) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x / √(1+x²)",
+        "B": "1 / √(1+x²)",
+        "C": "x / √(1-x²)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 40,
+      "question": "Principal value of sin⁻¹[sin(3π/5)] is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2π/5",
+        "B": "3π/5",
+        "C": "-2π/5",
+        "D": "π/5"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 41,
+      "question": "If cos⁻¹x + cos⁻¹y + cos⁻¹z = 3π, find xy + yz + zx.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3",
+        "B": "1",
+        "C": "-3",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 42,
+      "question": "Value of tan[ (1/2) cos⁻¹(2/3) ] is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/√5",
+        "B": "√5",
+        "C": "1/5",
+        "D": "5"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 43,
+      "question": "Number of solutions of tan⁻¹√(x(x+1)) + sin⁻¹√(x²+x+1) = π/2.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2 (x=0, -1)",
+        "B": "1",
+        "C": "0",
+        "D": "Infinite"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 44,
+      "question": "Domain of f(x) = √(sin⁻¹x) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[0, 1]",
+        "B": "[-1, 1]",
+        "C": "(0, 1]",
+        "D": "R"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 45,
+      "question": "2 sin⁻¹(4/5) = sin⁻¹(X). Value of X is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "24/25",
+        "B": "12/25",
+        "C": "7/25",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 46,
+      "question": "The value of sin⁻¹(cos π/3) is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/6",
+        "B": "π/3",
+        "C": "π/2",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 47,
+      "question": "tan⁻¹(x) + tan⁻¹(y) = π + tan⁻¹[(x+y)/(1-xy)] if x, y > 0 and xy ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "> 1",
+        "B": "< 1",
+        "C": "= 1",
+        "D": "= 0"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 48,
+      "question": "If codomain is principal value branch, is sin⁻¹x an odd function?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Maybe",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 49,
+      "question": "Value of cos(2 sin⁻¹ x) is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 - 2x²",
+        "B": "2x² - 1",
+        "C": "√(1-x²)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 50,
+      "question": "Finding x: 2 tan⁻¹(cos x) = tan⁻¹(2 cosec x).",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "π/3",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 51,
+      "question": "Principal value of cos⁻¹(1/2) is π/3.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Principal value of tan⁻¹(-√3) is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-π/3",
+        "B": "2π/3",
+        "C": "π/3",
+        "D": "5π/3"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Value of tan⁻¹(√3) - sec⁻¹(-2) + cosec⁻¹(2/√3).",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "π/3",
+        "C": "2π/3",
+        "D": "π"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Range of cot⁻¹x is (0, π).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Range of sec⁻¹x is [0, π] - {π/2}.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "cos⁻¹(-x) = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π - cos⁻¹x",
+        "B": "cos⁻¹x",
+        "C": "-cos⁻¹x",
+        "D": "π/2 - cos⁻¹x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "sin⁻¹(-x) = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-sin⁻¹x",
+        "B": "π - sin⁻¹x",
+        "C": "sin⁻¹x",
+        "D": "π/2 - sin⁻¹x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "2 tan⁻¹x = tan⁻¹[2x / (1-x²)] for |x| < 1.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Principal value of sin⁻¹(sin 2π/3) is π/3.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Evaluate sin⁻¹[cos(sin⁻¹ x) + sin(cos⁻¹ x)]. (Actually not a standard simplification). Replaced: evaluate sin(cos⁻¹ 3/5).",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4/5",
+        "B": "3/5",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Simplest form of tan⁻¹[√(1-cos x)/(1+cos x)] is x/2.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "If x > 0, y > 0 and xy > 1, then tan⁻¹x + tan⁻¹y = π + tan⁻¹[(x+y)/(1-xy)].",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Domain of f(x) = sin⁻¹(x) + cos(x) is [-1, 1].",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "The value of 2 tan⁻¹(1/3) + tan⁻¹(1/7) is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "π/8",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "tan⁻¹(x) - tan⁻¹(y) = tan⁻¹[(x-y)/(1+xy)] for xy > -1.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Value of sin⁻¹(4/5) + sin⁻¹(5/13) is sin⁻¹(63/65).",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Value of cos⁻¹(4/5) + cos⁻¹(12/13) is cos⁻¹(33/65).",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "tan⁻¹(1/2) + tan⁻¹(1/3) = π/4.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Solve for x: tan⁻¹ 2x + tan⁻¹ 3x = 3π/4 (No, π/4 gives 1/6. 3π/4 gives no real sol?). Replaced with: 2 tan⁻¹ 1/2 = ?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "tan⁻¹(4/3)",
+        "B": "tan⁻¹(3/4)",
+        "C": "π/2",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "Principal value of cosec⁻¹(-√2) is -π/4.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "If tan⁻¹ x + tan⁻¹ y + tan⁻¹ z = π/2, then xy+yz+zx=1.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Simplest form of cos⁻¹[cos x + sin x / √2].",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x - π/4",
+        "B": "x + π/4",
+        "C": "π/4 - x",
+        "D": "None"
+      },
+      "answer": "C",
+      "pyq": false
+    },
+    {
+      "id": 73,
+      "question": "Value of sin[π/3 - sin⁻¹(-1/2)] is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "1/2",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "tan⁻¹(tan x) = x only if x ∈ (-π/2, π/2).",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "cos⁻¹(cos x) = x only if x ∈ [0, π].",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 76,
+      "question": "Domain of f(x) = sin⁻¹(x) + cos⁻¹(x) + tan⁻¹(x) is [-1, 1].",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 77,
+      "question": "If x < 0, sin⁻¹x + cos⁻¹x = π/2.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 78,
+      "question": "If sin⁻¹x = y, then y ∈ [-π/2, π/2].",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 79,
+      "question": "Maximum value of (sin⁻¹x)² + (cos⁻¹x)² is 5π²/4.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True (at x=-1)",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 80,
+      "question": "tan⁻¹(1/7) + tan⁻¹(1/13) = tan⁻¹(2/9).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
+}

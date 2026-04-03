@@ -113,10 +113,10 @@
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  padding: 16px 14px;
+  padding: 12px 10px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
 }
 
 .card {
@@ -360,10 +360,10 @@
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  padding: 16px 14px 60px;
+  padding: 12px 10px 80px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 .roadmapMeta {
@@ -537,15 +537,22 @@
   .dayHeader { padding: 13px 18px; }
 }
 
-@media (min-width: 768px) {
-  .configPanel { max-width: 680px; }
-  .roadmapSection { max-width: 680px; }
-  .pageTitle { font-size: 20px; }
-  .card { padding: 20px 22px; }
-  .taskSubject { min-width: 68px; font-size: 11px; }
-  .taskTopic { font-size: 14px; }
-  .taskTime { font-size: 12px; }
-  .dayLabel { font-size: 15px; }
-  .dayStat { font-size: 11px; }
-  .topicGrid { max-height: 300px; }
+@media (max-width: 479px) {
+  .pageTitle { font-size: 15px; }
+  .examBadge { font-size: 9px; padding: 2px 8px; }
+  .infoChip { font-size: 10px; padding: 3px 8px; }
+  .card { padding: 12px; }
+  .cardTitle { font-size: 11px; margin-bottom: 8px; }
+  .hoursValue { font-size: 24px; min-width: 36px; }
+  .hoursLabel { font-size: 11px; }
+  .hoursBtn { width: 38px; height: 38px; font-size: 18px; }
+  .priorityLabel { font-size: 11px; padding: 3px 10px; }
+  .modeBtn { min-height: 75px; font-size: 12px; }
+  .modeEmoji { font-size: 20px; }
+  .modeDesc { display: none; } /* Hide descriptions on very small screens to save space */
+  .generateBtn { font-size: 14px; min-height: 48px; }
+  .dayLabel { font-size: 13px; }
+  .dayStat { font-size: 9px; }
+  .taskTopic { font-size: 12px; }
+  .taskTime { font-size: 10px; }
 }

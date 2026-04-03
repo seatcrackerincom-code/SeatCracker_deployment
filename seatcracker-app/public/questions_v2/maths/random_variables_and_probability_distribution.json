@@ -1,0 +1,713 @@
+{
+  "topic_id": 18,
+  "topic_name": "RANDOM VARIABLES AND PROBABILITY DISTRIBUTION",
+  "weightage": 3,
+  "priority": "High",
+  "subtopics": [
+    "Discrete Random Variables & Probability Mass Function",
+    "Binomial & Poisson Distribution",
+    "Mean and Variance"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "A random variable that can take only isolated values is called ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Discrete",
+        "B": "Continuous",
+        "C": "Constant",
+        "D": "Complex"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "The sum of all probabilities in a probability distribution table must be ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "0.5",
+        "D": "Infinite"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "The Mean (Expected Value) E(X) of a discrete random variable is given by ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Σ xi P(xi)",
+        "B": "Σ P(xi)",
+        "C": "Σ xi² P(xi)",
+        "D": "Max(xi)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "The diagram show a probability histogram. The total area of all bars equals ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A bar chart where x-axis represents values of X and y-axis represents P(X).",
+      "options": {
+        "A": "1",
+        "B": "100",
+        "C": "0",
+        "D": "0.5"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "Variance Var(X) is defined as E(X²) - ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[E(X)]²",
+        "B": "E(X)",
+        "C": "Σ P(xi)",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "The Standard Deviation is the ______ of the variance.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Positive square root",
+        "B": "Square",
+        "C": "Reciprocal",
+        "D": "Absolute value"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "In Binomial distribution B(n, p), the Mean is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "np",
+        "B": "npq",
+        "C": "√npq",
+        "D": "n/p"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "In Binomial distribution B(n, p), the Variance is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "npq",
+        "B": "np",
+        "C": "n",
+        "D": "p/q"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "The diagram show a bell-shaped curve. This is characteristic of a ______ distribution.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A normal distribution curve showing symmetry about the mean.",
+      "options": {
+        "A": "Normal",
+        "B": "Poisson",
+        "C": "Binomial",
+        "D": "Uniform"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "Poisson distribution is used when 'n' is very large and 'p' is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Very small",
+        "B": "Very large",
+        "C": "0.5",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "In Poisson distribution with parameter λ, the Mean and Variance are ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Both equal to λ",
+        "B": "λ and λ²",
+        "C": "λ and √λ",
+        "D": "1 and λ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "The probability of 'r' successes in n trials for a Binomial variable is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ⁿCᵣ pʳ qⁿ⁻ʳ",
+        "B": "ⁿPᵣ pʳ qⁿ⁻ʳ",
+        "C": "pʳ qⁿ⁻ʳ",
+        "D": "ⁿCᵣ pⁿ⁻ʳ qʳ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "If E(X) = 5 and E(Y) = 3, then E(X + Y) is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "8",
+        "B": "2",
+        "C": "15",
+        "D": "4"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "The diagram show the probability P(X=k) for a Poisson variable. The formula is P(X=k) = ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Mathematical formula involving exponential e, λ and k factorials.",
+      "options": {
+        "A": "(e⁻λ λᵏ) / k!",
+        "B": "(eλ λᵏ) / k!",
+        "C": "(λᵏ) / k!",
+        "D": "e⁻λ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "If Var(X) = 4, then Var(3X) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "36",
+        "B": "12",
+        "C": "4",
+        "D": "16"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "Bernoulli trials have exactly ______ possible outcomes.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2 (Success/Failure)",
+        "B": "1",
+        "C": "Infinite",
+        "D": "3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "A die is tossed 6 times. Getting a 6 is a success. This follows a ______ distribution.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Binomial",
+        "B": "Poisson",
+        "C": "Uniform",
+        "D": "Normal"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "The diagram show a set of values {0, 1, 2, 3} with probabilities {k, 2k, 3k, 4k}. The value of k is ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A table mapping X to P(X) with unknown k.",
+      "options": {
+        "A": "0.1",
+        "B": "1",
+        "C": "0.5",
+        "D": "0.2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "E(c) where c is a constant is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "c",
+        "B": "0",
+        "C": "1",
+        "D": "c²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "Var(c) where c is a constant is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "c",
+        "C": "c²",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "If X and Y are independent random variables, then Var(X + Y) = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Var(X) + Var(Y)",
+        "B": "Var(X) - Var(Y)",
+        "C": "Var(X) * Var(Y)",
+        "D": "√(Var(X) + Var(Y))"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "Find the Mean of a random variable with P(x) = {1/6, 2/6, 3/6} for x={1, 2, 3}.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2.33",
+        "B": "2",
+        "C": "1.5",
+        "D": "3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "The diagram show a right-skewed distribution. The Mean is ______ than the Median.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A distribution curve with a long tail on the right side.",
+      "options": {
+        "A": "Greater",
+        "B": "Smaller",
+        "C": "Equal",
+        "D": "Double"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "Maximum value for p in Binomial distribution for maximum variance is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0.5",
+        "B": "1",
+        "C": "0",
+        "D": "0.25"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "Cumulative Distribution Function F(x) is defined as P(X ______ x).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "≤",
+        "B": ">",
+        "C": "=",
+        "D": "≠"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "The diagram show the graph of F(x), which is a non-decreasing ______ function.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A step-like graph that starts at 0 and ends at 1 on y-axis.",
+      "options": {
+        "A": "Step",
+        "B": "Oscillating",
+        "C": "Linear",
+        "D": "Decreasing"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "If n=10 and p=0.4 in a binomial distribution, Mean is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "2.4",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "If Mean = 4 and Variance = 3 in Binomial distribution, find n.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "16",
+        "B": "12",
+        "C": "20",
+        "D": "8"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "The parameter λ in Poisson distribution is the ______ number of events in an interval.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Average",
+        "B": "Total",
+        "C": "Maximum",
+        "D": "Minimum"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "The diagram show a Poisson process (e.g. phone calls). They are ______ events in time.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A timeline with randomly placed dots representing event occurrences.",
+      "options": {
+        "A": "Independently occurring",
+        "B": "Regularly occurring",
+        "C": "Dependent",
+        "D": "Zero"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "Mean of a constant 'a' times X is E(aX) = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a E(X)",
+        "B": "E(X)",
+        "C": "a + E(X)",
+        "D": "a² E(X)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "The probability P(X > 0) for a Poisson variable with λ=1 is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 - e⁻¹",
+        "B": "e⁻¹",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "The diagram show a discrete distribution table. To find Var(X), we need Σ xi² P(xi) which is ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A table with X column {1, 2} and P(X) column {0.5, 0.5}.",
+      "options": {
+        "A": "2.5",
+        "B": "1.5",
+        "C": "3",
+        "D": "2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "A fair coin the flipped 3 times. X is number of heads. P(X=2) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3/8",
+        "B": "1/8",
+        "C": "1/2",
+        "D": "1/4"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "Property: E(X - μ) = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "μ",
+        "C": "σ",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "The mode of a Poisson distribution with parameter λ (where λ is not integer) is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[λ]",
+        "B": "λ",
+        "C": "[λ] + 1",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "The diagram show a probability tree for two coin flips. The sum of leaf probabilities is ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A tree diagram splitting into 4 final outcomes HH, HT, TH, TT.",
+      "options": {
+        "A": "1",
+        "B": "4",
+        "C": "0.25",
+        "D": "0.5"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "In a binomial distribution, if n=8 and p=1/2, the most likely value of X is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4",
+        "B": "8",
+        "C": "0",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "If X is a random variable, E(X²) is always ______ [E(X)]².",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Greater than or equal to",
+        "B": "Less than",
+        "C": "Equal to",
+        "D": "Negative of"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "The diagram show a 'Skewed' bar chart. The mean is pulled towards the ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A bar chart where small X values have very high bars and large X values have very short bars.",
+      "options": {
+        "A": "Tail",
+        "B": "Peak",
+        "C": "Origin",
+        "D": "Middle"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "Coefficient of variation is (SD / Mean) * 100. It measures ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Relative dispersion",
+        "B": "Absolute error",
+        "C": "Mean height",
+        "D": "Probability"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "If λ=4 for a Poisson distribution, SD is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "16",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "The diagram show a 'Box Plot'. The line in the box represents the ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A box and whisker plot with a vertical line inside the central box.",
+      "options": {
+        "A": "Median",
+        "B": "Mean",
+        "C": "Mode",
+        "D": "Range"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "Moment generating function helps find ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Moments (Mean, Variance etc.)",
+        "B": "Roots",
+        "C": "Integrals",
+        "D": "Limits"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "E(ax + b) = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a E(x) + b",
+        "B": "a E(x)",
+        "C": "E(x) + b",
+        "D": "ab E(x)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "In Binomial distribution, Mean is always ______ than Variance.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Greater",
+        "B": "Smaller",
+        "C": "Equal",
+        "D": "Half"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "The diagram show two distributions A and B. A is more 'Spread' than B. Variance(A) is ______ Variance(B).",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Two normal curves, one wide and flat, one tall and narrow.",
+      "options": {
+        "A": "Greater than",
+        "B": "Less than",
+        "C": "Equal to",
+        "D": "Zero"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "If p=0.01 and n=100, the Poisson parameter λ is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0.01",
+        "C": "100",
+        "D": "10"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "A random variable X has Mean 10 and SD 2. The value of E(X²) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "104",
+        "B": "102",
+        "C": "100",
+        "D": "400"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "The probability that a Poisson variable X with λ=2 takes value 0 is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e⁻²",
+        "B": "2 e⁻²",
+        "C": "1/2",
+        "D": "0"
+      },
+      "answer": "A"
+    }
+  ]
+}

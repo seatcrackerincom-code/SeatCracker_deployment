@@ -217,7 +217,7 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
                             >
                               <span className={styles.topicDot} data-p={ch.priority?.toLowerCase() || "low"} />
                               <span className={styles.topicLabel}>{ch.chapter}</span>
-                              {prog && prog.attempts ? (
+                              {prog && prog.attempts && prog.attempts >= 2 ? (
                                 <span className={styles.doneCheck} style={{ width: "16px", height: "16px", borderRadius: "50%", background: "#10b981", color: "white", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "10px", marginLeft: "auto", flexShrink: 0 }}>✓</span>
                               ) : (
                                 <span className={styles.todoCheck} style={{ width: "14px", height: "14px", borderRadius: "50%", border: "2px solid var(--border)", marginLeft: "auto", flexShrink: 0 }} />
@@ -344,7 +344,11 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
                     id="start-exam-btn"
                     onClick={() => setExamMode(true)}
                   >
-                    Attempt Test →
+                    {(() => {
+                      const p = allProgress.find(p => p.topic === selectedTopic.chapter.chapter);
+                      const attempt = (p?.attempts || 0) + 1;
+                      return `Attempt ${attempt} →`;
+                    })()}
                   </button>
                 </div>
               </div>
