@@ -2,85 +2,635 @@
   "subject": "Botany",
   "topic": "Molecular Basis of Inheritance",
   "questions": [
-    { "id": 1, "question": "The most abundant genetic material in the biosphere is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "DNA", "B": "RNA", "C": "Proteins", "D": "Lipids" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "DNA is a long polymer of ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Deoxyribonucleotides", "B": "Ribonucleotides", "C": "Amino acids", "D": "Sugars" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Who proposed the double helix model for the structure of DNA in 1953?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "James Watson and Francis Crick", "B": "Wilkins and Franklin", "C": "Griffith", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Chargaff\u2019s rule states that for a double stranded DNA ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "[A+G] = [T+C]", "B": "[A] = [G]", "C": "[T] = [C]", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "The spacing between two base pairs in DNA is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "0.34 nm", "B": "3.4 nm", "C": "2 nm", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "One full turn of the helical strand in B-DNA contains ______ base pairs.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "10", "B": "11", "C": "12", "D": "20" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "The core of a nucleosome contains ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Histone octamer (2 of H2A, H2B, H3, H4)", "B": "H1 histone", "C": "Non-histone", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "The number of base pairs of DNA helix wrapped around a nucleosome is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "200", "B": "100", "C": "400", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Griffith observed transformation in ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Streptococcus pneumoniae", "B": "E. coli", "C": "Bacteriophage", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "The biochemical nature of 'transforming principle' was determined by ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Avery, MacLeod and McCarty", "B": "Hershey and Chase", "C": "Griffith", "D": "Watson" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Unleashing DNA as genetic material? yes. Hershey and Chase used ______ to prove DNA is the genetic material.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Bacteriophages labeled with 35S and 32P", "B": "Yeast", "C": "Frogs", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "Meselson and Stahl used ______ to prove semiconservative DNA replication.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "15N (Heavy isotope of Nitrogen)", "B": "14C", "C": "32P", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "Semiconservative replication in Vicia faba was proved using radioactive thymidine by ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Taylor and colleagues", "B": "Mendel", "C": "Morgan", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "In E. coli, DNA replication requires which main enzyme?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "DNA-dependent DNA Polymerase", "B": "RNA Polymerase", "C": "Ligase", "D": "Helicase" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Direction of DNA polymerisation is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "5' to 3'", "B": "3' to 5'", "C": "Bidirectional", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Okazaki fragments are formed on the ______ strand.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lagging", "B": "Leading", "C": "Both", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "Segments of DNA which are joined by DNA ligase are ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Okazaki fragments", "B": "Introns", "C": "Exons", "D": "Codons" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Process of copying genetic information from one strand of DNA into RNA is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Transcription", "B": "Translation", "C": "Replication", "D": "Transformation" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "The DNA strand that has the polarity 3' to 5' and acts as template for RNA is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Template strand", "B": "Coding strand", "C": "Sense strand", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "The sequence of nitrogenous bases in coding strand is same as mRNA except ______ is replaced by ______ in RNA.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Thymine, Uracil", "B": "Uracil, Thymine", "C": "Adenine, Guanine", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "Transcription unit contains Promoter, Structural gene and ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Terminator", "B": "Primer", "C": "Operon", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Sequence of mRNA transcript from coding strand 5'-ATGCAT-3' is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "5'-AUGCAU-3'", "B": "3'-UACGUA-5'", "C": "5'-UACGUA-3'", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Inducer of Lac Operon is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lactose (or Allolactose)", "B": "Glucose", "C": "Proteins", "D": "DNA" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Structural genes of Lac Operon are ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "z, y, a", "B": "i, p, o", "C": "x, y, z", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "Gene 'z' in Lac Operon codes for ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Beta-galactosidase", "B": "Permease", "C": "Transacetylase", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Total number of codons is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "64", "B": "20", "C": "46", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Which of the following is an Initiation Codon?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "AUG (methionine)", "B": "UAA", "C": "UAG", "D": "UGA" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Stop codons (Nonsense codons) are ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "UAA, UAG, UGA", "B": "AUG", "C": "UUU", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "RNA is preferred for storage of genetic information? no. DNA is more stable.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": true },
-    { "id": 30, "question": "RNA world hypothesis suggests that ______ was the first genetic material.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "RNA", "B": "DNA", "C": "Protein", "D": "Lipid" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "The promoter and terminator of a transcription unit are located at ______ ends of the structural gene.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "5' and 3' (with respect to coding strand)", "B": "3' and 5'", "C": "Both 5'", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Splicing involves removal of ______ and joining of ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Introns, Exons", "B": "Exons, Introns", "C": "RNA, DNA", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Capping of hnRNA involves addition of ______ to the 5' end.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Methyl guanosine triphosphate", "B": "Adenylate residues", "C": "Phosphates", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Tailing (Poly-A tail) occurs at the ______ end of hnRNA.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "3' end", "B": "5' end", "C": "Both", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Genetic code is degenerate because ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Many amino acids are coded by more than one codon", "B": "One codon codes for many amino acids", "C": "It is universal", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Adaptor molecule for translation is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "tRNA", "B": "mRNA", "C": "rRNA", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "The process of translation occurs in the ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ribosome (Cytoplasm)", "B": "Nucleus", "C": "Mitochondria", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Release factor? yes. it binds to stop codon to terminate translation.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Regulation of lac operon by repressor is ______ regulation.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Negative", "B": "Positive", "C": "Neutral", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Human Genome Project (HGP) was launched in ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1990", "B": "2000", "C": "1980", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "Number of genes in humans is estimated to be ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "30,000", "B": "80,000", "C": "10,000", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "DNA Fingerprinting uses ______ DNA.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Satellite / Repetitive (VNTRs)", "B": "Coding", "C": "Exonic", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Father of DNA Fingerprinting? yes. Alec Jeffreys.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Satellite DNA? yes. it shows high degree of polymorphism.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Central Dogma flow? Replaced: DNA -> RNA -> Protein.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Retroviruses show reverse transcription (RNA -> DNA).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Leading strand is synthesized continuously.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Lagging strand is synthesized discontinuously.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Histones are basic proteins rich in Arginine and ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lysine", "B": "Glycine", "C": "Alanine", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Euchromatin is transcriptionally active and stains ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lightly", "B": "Darkly", "C": "Not at all", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Heterochromatin is transcriptionally inactive and stains ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Darkly", "B": "Lightly", "C": "Both", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Transformation? yes. DNA from dead S-strain transformed live R-strain into smooth virulent strain.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Radioactive sulfur (35S) was used to label ______ in Hershey-Chase experiment.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Proteins (specifically Cysteine/Methionine)", "B": "DNA", "C": "RNA", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Radioactive phosphorus (32P) labels ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "DNA", "B": "Proteins", "C": "Lipids", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Process of charging tRNA is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Aminoacylation", "B": "Transcription", "C": "Replication", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Rho factor? yes. it is required for termination of transcription in prokaryotes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Sigma factor? yes. it is required for initiation of transcription in prokaryotes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Exons? yes. they are the coding sequences in split genes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Introns? yes. they are the non-coding sequences removed during splicing.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Clover leaf structure of tRNA was proposed by ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Holley", "B": "Watson", "C": "Crick", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "The actual structure of tRNA is compact molecule like 'Inverted L'.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Peptidyl transferase catalyzes ______ bond formation.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Peptide", "B": "Glycosidic", "C": "Ester", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "UTR (untranslated regions) are present on ______ for efficient translation.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "mRNA", "B": "DNA", "C": "tRNA", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Apolactase? no. structural gene 'y' codes for Permease.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 65, "question": "Structural gene 'a' codes for Transacetylase.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "EST (Expressed Sequence Tags) identify genes expressed as ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "RNA", "B": "DNA", "C": "Proteins", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Sequence annotation involves sequencing the whole genome and later assigning functions.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "YAC and BAC are used as ______ in HGP.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Vectors", "B": "Enzymes", "C": "Hosts", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Smallest chromosome in human genome is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Chromosome Y (231 genes)", "B": "Chromosome 1", "C": "Chromosome X", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Largest chromosome in human genome is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Chromosome 1 (2968 genes)", "B": "Y", "C": "X", "D": "21" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "SNP (Single Nucleotide Polymorphism)? yes. they occur at 1.4 million locations in humans.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "VNTR? yes. it stands for Variable Number Tandem Repeats.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Southern Blotting is used in DNA fingerprinting.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Polymorphism? yes. variation in DNA sequence at genetic level.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Wobble hypothesis? yes. it reduces the number of tRNAs needed.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Gyrase? yes. it is a type of topoisomerase that relieves supercoiling in DNA.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Ribonucleoside triphosphates serve as substrate for transcription? no. ribonucleoside triphosphates for RNA, deoxy for DNA.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Termination? yes. in transcription it occurs when RNA polymerase reaches terminator region.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Lac Operon is active only in presence of lactose and absence of glucose.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "DNA packaging? yes. it allows 2 meters of DNA to fit into a tiny nucleus.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 28,
+      "question": "The promoter and terminator of a transcription unit are located at ______ ends of the structural gene.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "5' and 3' (with respect to coding strand)",
+        "B": "3' and 5'",
+        "C": "Both 5'",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 29,
+      "question": "Splicing involves removal of ______ and joining of ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Introns, Exons",
+        "B": "Exons, Introns",
+        "C": "RNA, DNA",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "Capping of hnRNA involves addition of ______ to the 5' end.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Methyl guanosine triphosphate",
+        "B": "Adenylate residues",
+        "C": "Phosphates",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 31,
+      "question": "Tailing (Poly-A tail) occurs at the ______ end of hnRNA.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3' end",
+        "B": "5' end",
+        "C": "Both",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Genetic code is degenerate because ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Many amino acids are coded by more than one codon",
+        "B": "One codon codes for many amino acids",
+        "C": "It is universal",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Adaptor molecule for translation is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "tRNA",
+        "B": "mRNA",
+        "C": "rRNA",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Release factor? yes. it binds to stop codon to terminate translation.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Regulation of lac operon by repressor is ______ regulation.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Negative",
+        "B": "Positive",
+        "C": "Neutral",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Number of genes in humans is estimated to be ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "30,000",
+        "B": "80,000",
+        "C": "10,000",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "DNA Fingerprinting uses ______ DNA.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Satellite / Repetitive (VNTRs)",
+        "B": "Coding",
+        "C": "Exonic",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "Father of DNA Fingerprinting? yes. Alec Jeffreys.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "Satellite DNA? yes. it shows high degree of polymorphism.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Retroviruses show reverse transcription (RNA -> DNA).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Histones are basic proteins rich in Arginine and ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Lysine",
+        "B": "Glycine",
+        "C": "Alanine",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Euchromatin is transcriptionally active and stains ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Lightly",
+        "B": "Darkly",
+        "C": "Not at all",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Heterochromatin is transcriptionally inactive and stains ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Darkly",
+        "B": "Lightly",
+        "C": "Both",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "Transformation? yes. DNA from dead S-strain transformed live R-strain into smooth virulent strain.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Radioactive sulfur (35S) was used to label ______ in Hershey-Chase experiment.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Proteins (specifically Cysteine/Methionine)",
+        "B": "DNA",
+        "C": "RNA",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Radioactive phosphorus (32P) labels ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "DNA",
+        "B": "Proteins",
+        "C": "Lipids",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Process of charging tRNA is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Aminoacylation",
+        "B": "Transcription",
+        "C": "Replication",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Rho factor? yes. it is required for termination of transcription in prokaryotes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Sigma factor? yes. it is required for initiation of transcription in prokaryotes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Exons? yes. they are the coding sequences in split genes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Introns? yes. they are the non-coding sequences removed during splicing.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Clover leaf structure of tRNA was proposed by ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Holley",
+        "B": "Watson",
+        "C": "Crick",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "The actual structure of tRNA is compact molecule like 'Inverted L'.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Peptidyl transferase catalyzes ______ bond formation.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Peptide",
+        "B": "Glycosidic",
+        "C": "Ester",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "UTR (untranslated regions) are present on ______ for efficient translation.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "mRNA",
+        "B": "DNA",
+        "C": "tRNA",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Apolactase? no. structural gene 'y' codes for Permease.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Structural gene 'a' codes for Transacetylase.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "EST (Expressed Sequence Tags) identify genes expressed as ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "RNA",
+        "B": "DNA",
+        "C": "Proteins",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Sequence annotation involves sequencing the whole genome and later assigning functions.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "YAC and BAC are used as ______ in HGP.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Vectors",
+        "B": "Enzymes",
+        "C": "Hosts",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Smallest chromosome in human genome is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Chromosome Y (231 genes)",
+        "B": "Chromosome 1",
+        "C": "Chromosome X",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Largest chromosome in human genome is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Chromosome 1 (2968 genes)",
+        "B": "Y",
+        "C": "X",
+        "D": "21"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "SNP (Single Nucleotide Polymorphism)? yes. they occur at 1.4 million locations in humans.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "Southern Blotting is used in DNA fingerprinting.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "Polymorphism? yes. variation in DNA sequence at genetic level.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Wobble hypothesis? yes. it reduces the number of tRNAs needed.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 73,
+      "question": "Gyrase? yes. it is a type of topoisomerase that relieves supercoiling in DNA.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "Ribonucleoside triphosphates serve as substrate for transcription? no. ribonucleoside triphosphates for RNA, deoxy for DNA.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 76,
+      "question": "Lac Operon is active only in presence of lactose and absence of glucose.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

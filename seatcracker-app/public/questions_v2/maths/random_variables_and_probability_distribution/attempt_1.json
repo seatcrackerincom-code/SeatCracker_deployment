@@ -1,0 +1,294 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Variance of Binomial distribution B(n,p) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "npq",
+        "B": "np",
+        "C": "np²",
+        "D": "nq"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 2,
+      "question": "If Var(X) = 4, then Var(3X) is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "36",
+        "B": "12",
+        "C": "4",
+        "D": "16"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "Maximum value for p in Binomial distribution for maximum variance is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0.5",
+        "B": "1",
+        "C": "0",
+        "D": "0.25"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "In Poisson distribution with parameter λ, the Mean and Variance are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Both equal to λ",
+        "B": "λ and λ²",
+        "C": "λ and √λ",
+        "D": "1 and λ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "Variance Var(X) is defined as E(X²) - ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[E(X)]²",
+        "B": "E(X)",
+        "C": "Σ P(xi)",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "For Poisson distribution P(X=x)=e^(−λ)·λˣ/x!, E(X) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "λ",
+        "B": "λ²",
+        "C": "1/λ",
+        "D": "√λ"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 7,
+      "question": "If X ~ B(n,p), E(X) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "np",
+        "B": "np(1−p)",
+        "C": "n/p",
+        "D": "p/n"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 8,
+      "question": "If Mean = 4 and Variance = 3 in Binomial distribution, find n.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "16",
+        "B": "12",
+        "C": "20",
+        "D": "8"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "The diagram show the probability P(X=k) for a Poisson variable. The formula is P(X=k) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": true,
+      "diagram_description": "Mathematical formula involving exponential e, λ and k factorials.",
+      "options": {
+        "A": "(e⁻λ λᵏ) / k!",
+        "B": "(eλ λᵏ) / k!",
+        "C": "(λᵏ) / k!",
+        "D": "e⁻λ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "If X and Y are independent random variables, then Var(X + Y) = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Var(X) + Var(Y)",
+        "B": "Var(X) - Var(Y)",
+        "C": "Var(X) * Var(Y)",
+        "D": "√(Var(X) + Var(Y))"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "Poisson distribution is used when 'n' is very large and 'p' is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Very small",
+        "B": "Very large",
+        "C": "0.5",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "The diagram show the graph of F(x), which is a non-decreasing ______ function.",
+      "difficulty": "Medium",
+      "hasDiagram": true,
+      "diagram_description": "A step-like graph that starts at 0 and ends at 1 on y-axis.",
+      "options": {
+        "A": "Step",
+        "B": "Oscillating",
+        "C": "Linear",
+        "D": "Decreasing"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "The diagram show a set of values {0, 1, 2, 3} with probabilities {k, 2k, 3k, 4k}. The value of k is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": true,
+      "diagram_description": "A table mapping X to P(X) with unknown k.",
+      "options": {
+        "A": "0.1",
+        "B": "1",
+        "C": "0.5",
+        "D": "0.2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "The probability of 'r' successes in n trials for a Binomial variable is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ⁿCᵣ pʳ qⁿ⁻ʳ",
+        "B": "ⁿPᵣ pʳ qⁿ⁻ʳ",
+        "C": "pʳ qⁿ⁻ʳ",
+        "D": "ⁿCᵣ pⁿ⁻ʳ qʳ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "The diagram show a right-skewed distribution. The Mean is ______ than the Median.",
+      "difficulty": "Hard",
+      "hasDiagram": true,
+      "diagram_description": "A distribution curve with a long tail on the right side.",
+      "options": {
+        "A": "Greater",
+        "B": "Smaller",
+        "C": "Equal",
+        "D": "Double"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "Find the Mean of a random variable with P(x) = {1/6, 2/6, 3/6} for x={1, 2, 3}.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2.33",
+        "B": "2",
+        "C": "1.5",
+        "D": "3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "Cumulative Distribution Function F(x) is defined as P(X ______ x).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "≤",
+        "B": ">",
+        "C": "=",
+        "D": "≠"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "If X ~ N(μ,σ²), then P(X≤μ) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0.5",
+        "B": "0",
+        "C": "1",
+        "D": "depends on σ"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 19,
+      "question": "The diagram show a bell-shaped curve. This is characteristic of a ______ distribution.",
+      "difficulty": "Medium",
+      "hasDiagram": true,
+      "diagram_description": "A normal distribution curve showing symmetry about the mean.",
+      "options": {
+        "A": "Normal",
+        "B": "Poisson",
+        "C": "Binomial",
+        "D": "Uniform"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "E(aX+b) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "aE(X)+b",
+        "B": "aE(X)",
+        "C": "E(X)+b",
+        "D": "a²E(X)+b"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    }
+  ]
+}

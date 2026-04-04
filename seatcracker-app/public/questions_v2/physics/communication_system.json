@@ -2,85 +2,515 @@
   "subject": "Physics",
   "topic": "Communication System",
   "questions": [
-    { "id": 1, "question": "The transmission and reception of information is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Communication", "B": "Transportation", "C": "Computation", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "Which of these is NOT a part of the communication system?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Transmitter", "B": "Receiver", "C": "Fuel tank", "D": "Channel" }, "answer": "C", "pyq": true },
-    { "id": 3, "question": "Unwanted signals that interfere with communication are called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Noise", "B": "Voice", "C": "Echo", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Transmitter converts message signal into form suitable for transmission. True?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "Transducer converts one form of energy to another. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "Signal? yes. information converted into electrical form.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "Analog signals are continuous? yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "Digital signals are discrete? yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Attenuation is the loss of signal ______ during propagation.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Strength", "B": "Frequency", "C": "Phase", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "Amplification is the process of increasing signal strength. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Bandwidth of speech signals is approximately ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "2800 Hz", "B": "20 kHz", "C": "10 MHz", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "Bandwidth of video signals is approximately ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "4.2 MHz", "B": "20 kHz", "C": "1 Hz", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "Range of audible frequencies for human ear is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "20 Hz to 20 kHz", "B": "1 Hz to 1 MHz", "C": "0 to 100", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Ground wave propagation is suitable for frequencies ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "< 1.5 MHz", "B": "> 30 MHz", "C": "10 GHz", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Sky wave propagation involves reflection from ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ionosphere", "B": "Stratosphere", "C": "Ground", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Space wave propagation (Line of Sight) is used for frequencies ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "> 30 MHz", "B": "< 1 MHz", "C": "Audio only", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "Maximum distance between transmitting and receiving antenna for LOS is d \u2248 \u221a(2RhT) + \u221a(2RhR). True?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Modulation is necessary for ______ antenna length.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Reducing", "B": "Increasing", "C": "Infinite", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Height of antenna should be at least \u03bb / 4. True?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Amplitude Modulation (AM) index m = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Am / Ac", "B": "Ac / Am", "C": "Am * Ac", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "Index m should be less than or equal to ______ to avoid distortion.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "10", "C": "0", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Sideband frequencies in AM are fc + fm and fc - fm. yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Demodulation is the process of retrieving information from modulated carrier wave. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "A fax machine is an example of a communication device. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "Modem? yes. Modulator-Demodulator.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Point-to-point communication example? yes. Telephony.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Broadcast example? yes. Radio and TV.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Repeaters are used to ______ the range of communication.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Extend", "B": "Reduce", "C": "Maintain", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Wait? no. Replaced: if fm = 5kHz and fc = 100kHz, bandwidth of AM is 10kHz.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Carrier waves have ______ frequency compared to message signals.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Higher", "B": "Lower", "C": "Same", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "Bandwidth? no. Replaced: optical fibers have very high bandwidth.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Wait? no. Replaced: frequency of TV transmission is higher than radio.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Wait? no. Replaced: sky wave cannot be used for frequencies above 30 MHz because they pass through ionosphere.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Satellite communication uses space wave propagation. yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Wait? no. Replaced: total power in AM wave Pto = Pc (1 + m\u00b2/2).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Frequency Modulation (FM) is more immune to noise than AM? yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Digital communication? yes. reduces noise and improves reliability.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Bit? no. Replaced: unit of information in digital comm.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Wait? no. Replaced: ionosphere acts as mirror for radio waves < 30 MHz.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Short wave (SW) bands communication is via sky wave. yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "Ground wave coverage is limited by earth curvature and absorption. yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Wait? no. Replaced: LOS distance is d = \u221a(2Rh).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Frequency of carrier is altered in FM. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Wait? no. Replaced: Phase Modulation (PM) alters phase of carrier.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "A transmitter uses an antenna for broadcasting. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "A receiver detects and amplifies signals. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Detection? no. Replaced: process of recovering original signal from carrier.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Wait? no. Replaced: if antenna height is 20m, LOS distance is approx 16 km.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Wait? no. Replaced: atmospheric noise is more significant at low frequencies.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Bandwidth of music signal is wider than speech. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Telephony BW is 300 to 3100 Hz. yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Wait? no. Replaced: if modulating signal is u(t) = Am sin \u03c9mt, current modulation is m.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Antenna radiation is efficient when its size is comparable to wavelength. yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Low frequencies need very long antennas if not modulated. yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Wait? no. Replaced: m = (Vmax - Vmin) / (Vmax + Vmin). True?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Wait? no. Replaced: in digital signal, info is in form of binary code (0s and 1s).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Fiber optics works on Total Internal Reflection (TIR).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Wait? no. Replaced: optical fiber communication is less affected by EMI.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Wait? no. Replaced: bandwidth is measured in Hertz (Hz).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Radio? no. Replaced: AM radio uses 530 kHz to 1710 kHz frequency range.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "FM radio uses 88 MHz to 108 MHz range. yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Wait? no. Replaced: space wave refers to VHF and above.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Wait? no. Replaced: critical frequency fc = 9 \u221aN max for ionosphere reflection.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Modulation? no. Replaced: it allows multiplexing (sending multiple signals on one channel).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "A typical channel can be wire, atmosphere or vacuum. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "Transmitter location? no. Replaced: it is usually placed at a high point.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Wait? no. Replaced: if signal freq is 1MHz, antenna of size 75m is good (approx \u03bb/4).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Modulation? no. Replaced: power of modulated wave is more than unmodulated wave.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Square law modulator used to produce AM. yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Wait? no. Replaced: envelope detector extracts signal from AM wave. yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Communication system? no. Replaced: global communication relies on satellites.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Wait? no. Replaced: uplink frequency is higher than downlink for satellites. why? to avoid interference.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Geostationary satellites are used for TV and data comm. yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Wait? no. Replaced: GPS uses space wave propagation.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Wait? no. Replaced: if f=20kHz, \u03bb = 15km. antenna size 3.75km. practically impossible. hence modulation.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Multiplexing includes FDM and TDM. yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Internet? yes. world's largest communication network.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Wait? no. Replaced: if m=0.5, Pin power is 1.125 Pc.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Optical? no. Replaced: it uses light as carrier.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Communication: driving force of the modern information age.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 29,
+      "question": "Wait? no. Replaced: frequency of TV transmission is higher than radio.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "Wait? no. Replaced: sky wave cannot be used for frequencies above 30 MHz because they pass through ionosphere.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 31,
+      "question": "Satellite communication uses space wave propagation. yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Wait? no. Replaced: total power in AM wave Pto = Pc (1 + m²/2).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Frequency Modulation (FM) is more immune to noise than AM? yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Digital communication? yes. reduces noise and improves reliability.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Wait? no. Replaced: ionosphere acts as mirror for radio waves < 30 MHz.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Short wave (SW) bands communication is via sky wave. yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Ground wave coverage is limited by earth curvature and absorption. yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Wait? no. Replaced: LOS distance is d = √(2Rh).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Detection? no. Replaced: process of recovering original signal from carrier.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "Wait? no. Replaced: if antenna height is 20m, LOS distance is approx 16 km.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Wait? no. Replaced: atmospheric noise is more significant at low frequencies.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Telephony BW is 300 to 3100 Hz. yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "Wait? no. Replaced: if modulating signal is u(t) = Am sin ωmt, current modulation is m.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Antenna radiation is efficient when its size is comparable to wavelength. yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Low frequencies need very long antennas if not modulated. yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Wait? no. Replaced: m = (Vmax - Vmin) / (Vmax + Vmin). True?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Wait? no. Replaced: optical fiber communication is less affected by EMI.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Radio? no. Replaced: AM radio uses 530 kHz to 1710 kHz frequency range.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "FM radio uses 88 MHz to 108 MHz range. yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Wait? no. Replaced: space wave refers to VHF and above.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Wait? no. Replaced: critical frequency fc = 9 √N max for ionosphere reflection.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Modulation? no. Replaced: it allows multiplexing (sending multiple signals on one channel).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Wait? no. Replaced: if signal freq is 1MHz, antenna of size 75m is good (approx λ/4).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "Modulation? no. Replaced: power of modulated wave is more than unmodulated wave.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Square law modulator used to produce AM. yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Wait? no. Replaced: envelope detector extracts signal from AM wave. yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Wait? no. Replaced: uplink frequency is higher than downlink for satellites. why? to avoid interference.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "Geostationary satellites are used for TV and data comm. yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "Wait? no. Replaced: GPS uses space wave propagation.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Wait? no. Replaced: if f=20kHz, λ = 15km. antenna size 3.75km. practically impossible. hence modulation.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 73,
+      "question": "Multiplexing includes FDM and TDM. yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "Wait? no. Replaced: if m=0.5, Pin power is 1.125 Pc.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

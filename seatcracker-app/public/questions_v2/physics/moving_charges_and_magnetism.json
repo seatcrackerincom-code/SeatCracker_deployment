@@ -2,84 +2,485 @@
   "subject": "Physics",
   "topic": "Moving Charges and Magnetism",
   "questions": [
-    { "id": 1, "question": "The magnetic force on a charge q moving with velocity v in a magnetic field B is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "q(v x B)", "B": "q(v . B)", "C": "v(q x B)", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "Magnetic field is measured in units of ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Tesla", "B": "Weber", "C": "Watt", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "A charge q moves perpendicular to a uniform magnetic field B. Its path is a ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Circle", "B": "Helix", "C": "Straight line", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "The radius of the circular path of a charge q in a magnetic field B is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "mv/qB", "B": "qB/mv", "C": "mvB/q", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "The frequency of revolution of a charge in a magnetic field is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "qB/2\u03c0m", "B": "2\u03c0m/qB", "C": "qB/m", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "A cyclotron is used to accelerate ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive ions", "B": "Electrons", "C": "Neutrons", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "The Biot-Savart Law gives the magnetic field due to a ______ element.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Current", "B": "Charge", "C": "Mass", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "Magnetic field at the centre of a circular loop of radius R carrying current I is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u03bc0 I / 2R", "B": "\u03bc0 I / 2\u03c0R", "C": "\u03bc0 I / 4R", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Ampere\u2019s Circuital Law states \u222e B . dl = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u03bc0 I", "B": "\u03bc0 / I", "C": "0", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "The magnetic field inside a long solenoid carrying current I is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u03bc0 nI", "B": "\u03bc0 I / 2\u03c0r", "C": "0", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Force per unit length between two parallel current-carrying wires separated by distance d is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u03bc0 I1 I2 / 2\u03c0d", "B": "\u03bc0 I1 I2 / 2d", "C": "\u03bc0 / I1 I2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "If currents in two parallel wires flow in the same direction, they ______ each other.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Attract", "B": "Repel", "C": "Rotate", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "Torque on a current loop in a magnetic field is \u03c4 = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "m x B", "B": "m . B", "C": "B x m", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "The magnetic dipole moment of a current loop is M = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "NIA", "B": "NI/A", "C": "A/NI", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Moving coil galvanometer works on the principle of ______ on a current loop.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Torque", "B": "Force", "C": "Heat", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Current sensitivity of a galvanometer is increased by ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increasing NAB", "B": "Increasing spring constant k", "C": "Decreasing area A", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "A galvanometer is converted into an ammeter by connecting a ______ in parallel.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Low resistance (Shunt)", "B": "High resistance", "C": "Capacitor", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "A galvanometer is converted into a voltmeter by connecting a ______ in series.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "High resistance", "B": "Low resistance", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Magnetic field due to a straight infinite wire at distance r is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u03bc0 I / 2\u03c0r", "B": "\u03bc0 I / 2r", "C": "0", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Force on a current-carrying wire in a magnetic field is F = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "BIL sin \u03b8", "B": "BIL cos \u03b8", "C": "B/IL", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "Lorentz Force formula is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "q(E + v x B)", "B": "qE + vB", "C": "q(v x B)", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Magnetic field at a point on the axis of a circular current loop of radius R at distance x is proportional to ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1 / (R\u00b2 + x\u00b2)^(3/2)", "B": "1 / (R + x)\u00b2", "C": "1 / x\u00b2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "In a velocity selector, the condition for a charge to pass undeflected is v = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "E/B", "B": "B/E", "C": "E x B", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "The magnetic moment of a revolving electron is called ______ magneton.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Bohr", "B": "Mendel", "C": "Coulomb", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "Bohr magneton value is approximately ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "9.27 x 10^-24 A m\u00b2", "B": "1.6 x 10^-19", "C": "6.6 x 10^-34", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "If distance between two parallel wires is doubled, the force per unit length becomes ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Half", "B": "Double", "C": "Quadrupled", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Work done by magnetic force on a moving charge is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Always Zero", "B": "qvB", "C": "1/2 mv\u00b2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "A toroid is an endless ______ bent into a circle.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Solenoid", "B": "Wire", "C": "Capacitor", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Magnetic field inside the core of a toroid is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u03bc0 nI", "B": "0", "C": "\u03bc0 I / 2r", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Direction of magnetic force is perpendicular to both velocity and magnetic field.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "Lorentz? yes. Replaced: Electric force does work but magnetic force does not on a charge.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Helical path? yes. when velocity is not perpendicular to magnetic field.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Pitch of helical path is p = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "v(parallel) * T", "B": "v * T", "C": "R * T", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Cyclotron frequency does not depend on ______ of the particle.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Speed / Radius", "B": "Charge", "C": "Magnetic field", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Permeability of free space \u03bc0 is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "4\u03c0 x 10^-7 T m / A", "B": "8.85 x 10^-12", "C": "1.25", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Right hand thumb rule? yes. for direction of magnetic field due to current.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Right hand palm rule? yes. for direction of magnetic force.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Biot-Savart law is analogous to ______ law in electrostatics.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Coulomb's Law", "B": "Gauss Law", "C": "Ohm's Law", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Amperian loop? yes. used in Ampere's Law.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "A solenoid's magnetic field is nearly uniform inside.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Two anti-parallel currents ______ each other.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Repel", "B": "Attract", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Torque is maximum when loop plane is ______ to magnetic field lines.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Parallel", "B": "Perpendicular", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Torque is zero when loop plane is ______ to magnetic field lines.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Perpendicular", "B": "Parallel", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Potential energy of magnetic dipole U = - m . B.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Radial magnetic field is produced in galvanometer using ______ poles.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Concave", "B": "Convex", "C": "Flat", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Soft iron core in galvanometer increases ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Magnetic field / Sensitivity", "B": "Weight", "C": "Heat", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Voltage sensitivity? no. Replaced: it is current sensitivity divided by resistance.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Galvanometer resistance is G. Ammeter resistance is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "GS / (G+S)", "B": "G+S", "C": "S", "D": "G" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Ideal ammeter has ______ resistance.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero", "B": "Infinite", "C": "Low", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Ideal voltmeter has ______ resistance.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Infinite", "B": "Zero", "C": "High", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Gyromagnetic ratio is given by ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "e / 2m", "B": "2m / e", "C": "e / m", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Magneton? no. Replaced: Bohr magneton is the smallest magnetic moment in atom.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "A solenoid of length L, turns N and current I. Field at ends is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1/2 \u03bc0 nI", "B": "\u03bc0 nI", "C": "2 \u03bc0 nI", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Magnetic fields obey superposition principle.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Magnetic field lines form continuous closed loops.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Isolated magnetic poles (monopoles) do not exist.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Tesla is N / (A m).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Magnetic permeability of iron is much higher than vacuum.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Fleming's Left Hand Rule? yes. for direction of magnetic force.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Magnetic force is zero if v is parallel to B.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Kinetic energy of a charge in a magnetic field is constant.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Cyclotron frequency? no. Replaced: time period T = 2\u03c0m / qB.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Maximum kinetic energy in cyclotron Kmax = q\u00b2 B\u00b2 R\u00b2 / 2m.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "Biot-Savart? no. Replaced: Magnetic field is perpendicular to r and dl.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "At large distance x >> R, circular loop field follows inverse cube law.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Magnetic field lines are most crowded inside a solenoid? yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "1 Ampere? no. Replaced: defined as the current producing 2x10^-7 N/m force between two infinite wires.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Torque is \u03c4 = NIAB sin \u03b8.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Stable equilibrium of loop? no. when \u03b8 = 0 (m parallel to B).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Unstable equilibrium of loop? no. when \u03b8 = 180.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Deflection \u03c6 in galvanometer is proportional to current I.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Increasing NAB increases sensitivity.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Shunt? no. Replaced: Shunt resistance should be very low.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Voltmeter is always connected in parallel.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Ammeter is always connected in series.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Unit of magnetic moment is A m\u00b2.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Magnet? no. Replaced: A current loop behaves as a magnetic dipole.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Tesla? no. Replaced: 1 Tesla = 10^4 Gauss.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Ampere? no. Replaced: Standard unit of current is Ampere.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 29,
+      "question": "Lorentz? yes. Replaced: Electric force does work but magnetic force does not on a charge.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "Helical path? yes. when velocity is not perpendicular to magnetic field.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 31,
+      "question": "Pitch of helical path is p = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "v(parallel) * T",
+        "B": "v * T",
+        "C": "R * T",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Cyclotron frequency does not depend on ______ of the particle.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Speed / Radius",
+        "B": "Charge",
+        "C": "Magnetic field",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Permeability of free space μ0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4π x 10^-7 T m / A",
+        "B": "8.85 x 10^-12",
+        "C": "1.25",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Right hand palm rule? yes. for direction of magnetic force.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Biot-Savart law is analogous to ______ law in electrostatics.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Coulomb's Law",
+        "B": "Gauss Law",
+        "C": "Ohm's Law",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Two anti-parallel currents ______ each other.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Repel",
+        "B": "Attract",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "Torque is maximum when loop plane is ______ to magnetic field lines.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Parallel",
+        "B": "Perpendicular",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "Torque is zero when loop plane is ______ to magnetic field lines.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Perpendicular",
+        "B": "Parallel",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Potential energy of magnetic dipole U = - m . B.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Radial magnetic field is produced in galvanometer using ______ poles.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Concave",
+        "B": "Convex",
+        "C": "Flat",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Soft iron core in galvanometer increases ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Magnetic field / Sensitivity",
+        "B": "Weight",
+        "C": "Heat",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "Voltage sensitivity? no. Replaced: it is current sensitivity divided by resistance.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Galvanometer resistance is G. Ammeter resistance is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "GS / (G+S)",
+        "B": "G+S",
+        "C": "S",
+        "D": "G"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "Gyromagnetic ratio is given by ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e / 2m",
+        "B": "2m / e",
+        "C": "e / m",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Magneton? no. Replaced: Bohr magneton is the smallest magnetic moment in atom.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "A solenoid of length L, turns N and current I. Field at ends is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/2 μ0 nI",
+        "B": "μ0 nI",
+        "C": "2 μ0 nI",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Tesla is N / (A m).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Kinetic energy of a charge in a magnetic field is constant.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Cyclotron frequency? no. Replaced: time period T = 2πm / qB.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Maximum kinetic energy in cyclotron Kmax = q² B² R² / 2m.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Biot-Savart? no. Replaced: Magnetic field is perpendicular to r and dl.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "At large distance x >> R, circular loop field follows inverse cube law.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "1 Ampere? no. Replaced: defined as the current producing 2x10^-7 N/m force between two infinite wires.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Torque is τ = NIAB sin θ.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Stable equilibrium of loop? no. when θ = 0 (m parallel to B).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Unstable equilibrium of loop? no. when θ = 180.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Deflection φ in galvanometer is proportional to current I.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "Increasing NAB increases sensitivity.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "Unit of magnetic moment is A m².",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 76,
+      "question": "Tesla? no. Replaced: 1 Tesla = 10^4 Gauss.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

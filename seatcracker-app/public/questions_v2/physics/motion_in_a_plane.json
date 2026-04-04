@@ -2,85 +2,470 @@
   "subject": "Physics",
   "topic": "Motion in a Plane",
   "questions": [
-    { "id": 1, "question": "A quantity having both magnitude and direction is a ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Vector", "B": "Scalar", "C": "Tensor", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "Position vector of a point (x, y) in a plane is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "x i + y j", "B": "x i - y j", "C": "x y", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Triangle law for vector addition: R = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "A + B", "B": "A - B", "C": "A x B", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Magnitude of resultant of two vectors A and B at angle \u03b8 is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u221a(A\u00b2 + B\u00b2 + 2AB cos \u03b8)", "B": "A + B", "C": "A - B", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "For a projectile, the horizontal component of velocity is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Constant", "B": "Increasing", "C": "Decreasing", "D": "Zero" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "For a projectile, the vertical component of velocity at max height is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero", "B": "u sin \u03b8", "C": "u cos \u03b8", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "Equation of trajectory of a projectile: y = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "x tan \u03b8 - g x\u00b2 / (2 u\u00b2 cos\u00b2 \u03b8)", "B": "x tan \u03b8", "C": "x sin \u03b8", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "Time of flight of a projectile: T = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "2 u sin \u03b8 / g", "B": "u sin \u03b8 / g", "C": "u cos \u03b8 / g", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Horizontal Range of a projectile: R = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "u\u00b2 sin 2\u03b8 / g", "B": "u sin \u03b8 / g", "C": "u\u00b2 cos \u03b8 / g", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "Maximum height of a projectile: H = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "u\u00b2 sin\u00b2 \u03b8 / 2g", "B": "u\u00b2 sin 2\u03b8 / g", "C": "u / 2g", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "For maximum range, the angle of projection \u03b8 should be ______ degrees.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "45", "B": "90", "C": "30", "D": "60" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "At max range, Rmax = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "u\u00b2 / g", "B": "u\u00b2 / 2g", "C": "2u\u00b2 / g", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "Angle for same horizontal range: \u03b8 and ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "90 - \u03b8", "B": "180 - \u03b8", "C": "45 - \u03b8", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Velocity at max height is u cos \u03b8. its kinetic energy is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "K0 cos\u00b2 \u03b8", "B": "K0 sin\u00b2 \u03b8", "C": "K0", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "A body is in uniform circular motion. its speed is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Constant", "B": "Variable", "C": "Zero", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "In uniform circular motion, direction of acceleration is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Towards center", "B": "Tangential", "C": "Away from center", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "Magnitude of centripetal acceleration ac = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "v\u00b2 / R", "B": "v R", "C": "R / v", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Centripetal acceleration? yes. ac = \u03c9\u00b2 R. True?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Centripetal force Fc = m v\u00b2 / R. True?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Angular speed \u03c9 = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "v / R", "B": "v R", "C": "R / v", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "Time period T of circular motion is T = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "2\u03c0 R / v", "B": "2\u03c0 / \u03c9", "C": "Both", "D": "None" }, "answer": "C", "pyq": true },
-    { "id": 22, "question": "Frequency f = 1 / T. True?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "For a projectile, the angle of velocity with horizontal at time t is tan \u03b1 = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "(u sin \u03b8 - gt) / (u cos \u03b8)", "B": "u sin \u03b8", "C": "gt", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Horizontal range R and max height H are related as R tan \u03b8 = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "4 H", "B": "H", "C": "2 H", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "If R = H, the angle of projection is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "tan-1(4)", "B": "45", "C": "60", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Vector subtraction? yes. A - B = A + (-B).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Magnitude of A - B is \u221a(A\u00b2 + B\u00b2 - 2AB cos \u03b8). True?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Unit? no. Replaced: unit vector has magnitude 1.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Orthogonal unit vectors are i, j, k. True?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Centripetal acceleration direction? yes. always towards the center.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "Projectile? no. Replaced: its path is a parabola.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "A body is dropped from an airplane moving horizontally. path from plane? yes. straight line (vertical).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Path from ground? yes. parabola.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Resultant? no. Replaced: R is maximum when \u03b8 = 0.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "R is minimum when \u03b8 = 180.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Range? no. Replaced: horizontal range depends on initial velocity and angle.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "If angle of projection is 45, the range is 4 times max height? yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Projectiles? no. Replaced: total energy of projectile remains constant (no air resistance).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Angular speed of earth around its axis is 7.27 x 10^-5 rad/s.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Speed of tip of clock's min hand is \u03c0 R / 1800 m/s.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "Acceleration in uniform circular motion at any point? yes. directed to center.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Projectile? no. Replaced: if u is velocity and \u03b8 is angle, velocity v at time t is \u221a(u\u00b2 + g\u00b2t\u00b2 - 2ugt sin \u03b8).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Vector? no. Replaced: sum of two vectors A+B is commutative.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Vector sum is associative.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Wait? no. Replaced: dot product of two vectors is commutative.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Cross product is anti-commutative (A x B = - B x A).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "A body is rotating in a vertical circle. tension is maximum at bottom.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Tension is minimum at top.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Circular? no. Replaced: if it covers equal angles in equal times, \u03c9 is constant.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Relative? no. Replaced: rain appears to fall from front of man moving forward? yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Resultant? no. Replaced: if vectors are perpendicular, R = \u221a(A\u00b2 + B\u00b2).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Wait? no. Replaced: angle between A and B is \u03b1 = tan-1(B sin \u03b8 / (A + B cos \u03b8)).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Projectile height? no. Replaced: time of descent = time of ascent.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Wait? no. Replaced: horizontal range is zero for \u03b8 = 90.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Maximum height is zero for \u03b8 = 0.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Centripetal? no. Replaced: it is necessary for circular motion.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Static? no. Replaced: friction force acts as centripetal force for car on curve.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Maximum speed on a turn (vmax) = \u221a(\u03bc R g).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Unit? no. Replaced: radian is unit of angle.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Wait? no. Replaced: 1 rad = 57.3 degrees.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Angular speed? no. Replaced: for earth, it is 2\u03c0 / (24 * 3600).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Centripetal acceleration magnitude? yes. it is constant for uniform circular motion.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Centripetal acceleration vector? no. it changes direction constantly.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 64, "question": "Centripetal force does zero work? yes (force perp to displacement).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "A particle moves with uniform speed v in a circle of radius r. change in velocity after half cycle? yes. 2v.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "Average acceleration in the above half cycle is 2 v\u00b2 / (\u03c0 r).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Angular displacement \u03b8? yes. \u03b8 = l / r.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Radial acceleration is another name for centripetal acceleration.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Tangential acceleration is present in non-uniform circular motion.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Projectile? no. Replaced: if projected from ground, velocity on hitting ground equals initial velocity magnitude.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Projectiles launched at angles \u03b8 and 90-\u03b8 have same range? yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Wait? no. Replaced: horizontal displacement in time t is x = u cos \u03b8 * t.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Vertical displacement in time t is y = u sin \u03b8 * t - 1/2 g t\u00b2.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Wait? no. Replaced: if u = 10 m/s and \u03b8 = 30, range is around 8.8 m.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Max height? no. Replaced: for \u03b8 = 90, H = u\u00b2 / 2g. this is free fall up motion.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Resolution? yes. A = Ax i + Ay j.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Magnitude? yes. |A| = \u221a(Ax\u00b2 + Ay\u00b2).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Slope? no. Replaced: direction of A is \u03b1 = tan-1(Ay / Ax).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Acceleration due to gravity is a vector directed downwards.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Motion in a plane is also called 2D motion.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 29,
+      "question": "A body is dropped from an airplane moving horizontally. path from plane? yes. straight line (vertical).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "Path from ground? yes. parabola.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "If angle of projection is 45, the range is 4 times max height? yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Projectiles? no. Replaced: total energy of projectile remains constant (no air resistance).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Angular speed of earth around its axis is 7.27 x 10^-5 rad/s.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Speed of tip of clock's min hand is π R / 1800 m/s.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Acceleration in uniform circular motion at any point? yes. directed to center.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Projectile? no. Replaced: if u is velocity and θ is angle, velocity v at time t is √(u² + g²t² - 2ugt sin θ).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "Wait? no. Replaced: dot product of two vectors is commutative.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "Cross product is anti-commutative (A x B = - B x A).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "A body is rotating in a vertical circle. tension is maximum at bottom.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Tension is minimum at top.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "Relative? no. Replaced: rain appears to fall from front of man moving forward? yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Wait? no. Replaced: angle between A and B is α = tan-1(B sin θ / (A + B cos θ)).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Static? no. Replaced: friction force acts as centripetal force for car on curve.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Maximum speed on a turn (vmax) = √(μ R g).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Wait? no. Replaced: 1 rad = 57.3 degrees.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Angular speed? no. Replaced: for earth, it is 2π / (24 * 3600).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Centripetal acceleration magnitude? yes. it is constant for uniform circular motion.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Centripetal acceleration vector? no. it changes direction constantly.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "Centripetal force does zero work? yes (force perp to displacement).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "A particle moves with uniform speed v in a circle of radius r. change in velocity after half cycle? yes. 2v.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Average acceleration in the above half cycle is 2 v² / (π r).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Radial acceleration is another name for centripetal acceleration.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Tangential acceleration is present in non-uniform circular motion.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Projectile? no. Replaced: if projected from ground, velocity on hitting ground equals initial velocity magnitude.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "Projectiles launched at angles θ and 90-θ have same range? yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Vertical displacement in time t is y = u sin θ * t - 1/2 g t².",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Wait? no. Replaced: if u = 10 m/s and θ = 30, range is around 8.8 m.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Max height? no. Replaced: for θ = 90, H = u² / 2g. this is free fall up motion.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "Slope? no. Replaced: direction of A is α = tan-1(Ay / Ax).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

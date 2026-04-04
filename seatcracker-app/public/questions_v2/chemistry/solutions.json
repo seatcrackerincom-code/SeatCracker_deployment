@@ -2,85 +2,470 @@
   "subject": "Chemistry",
   "topic": "Solutions",
   "questions": [
-    { "id": 1, "question": "A homogenous mixture of two or more substances is called a ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Suspension", "B": "Colloid", "C": "Solution", "D": "Emulsion" }, "answer": "C", "pyq": true },
-    { "id": 2, "question": "In a binary solution, the component present in larger quantity is ______ and smaller quantity is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Solute, Solvent", "B": "Solvent, Solute", "C": "Colloid, Water", "D": "Acid, Base" }, "answer": "B", "pyq": true },
-    { "id": 3, "question": "The number of moles of solute dissolved in 1 litre of solution is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Molarity (M)", "B": "Molality (m)", "C": "Mole fraction", "D": "Normality" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "The number of moles of solute per kilogram (kg) of solvent is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Molarity", "B": "Molality (m)", "C": "ppm", "D": "Mole fraction" }, "answer": "B", "pyq": true },
-    { "id": 5, "question": "Which concentration term is independent of temperature?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Molarity", "B": "Molality", "C": "Normality", "D": "Formality" }, "answer": "B", "pyq": true },
-    { "id": 6, "question": "The sum of mole fractions of all components in a solution is always ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "0", "B": "1", "C": "100", "D": "Variable" }, "answer": "B", "pyq": true },
-    { "id": 7, "question": "Henry's Law states that at constant temperature, the solubility of a gas in a liquid is directly proportional to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Temperature", "B": "Partial pressure of gas", "C": "Volume", "D": "Density" }, "answer": "B", "pyq": true },
-    { "id": 8, "question": "Solubility of gases in liquids ______ with increase in temperature.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increases", "B": "Decreases", "C": "Constant", "D": "Zeroes" }, "answer": "B", "pyq": true },
-    { "id": 9, "question": "According to Raoult's Law, for a solution of volatile liquids, the partial vapor pressure of each component is proportional to its ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Mass", "B": "Mole fraction", "C": "Volume", "D": "Density" }, "answer": "B", "pyq": true },
-    { "id": 10, "question": "A solution which obeys Raoult's Law over the entire range of concentration is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ideal solution", "B": "Non-ideal solution", "C": "Buffer", "D": "Colloid" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "For an ideal solution, \u0394H_mix and \u0394V_mix are respectively ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "0, 0", "B": ">0, >0", "C": "<0, <0", "D": "1, 1" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "Non-ideal solutions show positive deviation when A-B interactions are ______ than A-A or B-B interactions.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Stronger", "B": "Weaker (resulting in higher vapor pressure)", "C": "Equal", "D": "Zero" }, "answer": "B", "pyq": true },
-    { "id": 13, "question": "Mixture of Ethanol and Acetone shows ______ deviation from Raoult's Law.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive", "B": "Negative", "C": "No", "D": "Neutral" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Mixture of Chloroform and Acetone shows ______ deviation due to H-bonding.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive", "B": "Negative", "C": "No", "D": "Vapor" }, "answer": "B", "pyq": true },
-    { "id": 15, "question": "Azeotropes are binary mixtures having the same composition in ______ and ______ phase.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Liquid, Vapor", "B": "Solid, Liquid", "C": "Gas, Solid", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Colligative properties depend only on the ______ of solute particles.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Nature", "B": "Number (Concentration)", "C": "Shape", "D": "Color" }, "answer": "B", "pyq": true },
-    { "id": 17, "question": "Relative lowering of vapor pressure (\u0394P / Po) is equal to ______ of the solute.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Molarity", "B": "Mole fraction (\u03c72)", "C": "Mass", "D": "Density" }, "answer": "B", "pyq": true },
-    { "id": 18, "question": "Elevation of Boiling Point (\u0394Tb) is given by \u0394Tb = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Kb \u00d7 m", "B": "Kf \u00d7 m", "C": "Kb / m", "D": "m / Kb" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Depression of Freezing Point (\u0394Tf) is given by \u0394Tf = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Kb \u00d7 m", "B": "Kf \u00d7 m", "C": "m / Kf", "D": "Zero" }, "answer": "B", "pyq": true },
-    { "id": 20, "question": "Osmotic pressure (\u03c0) is given by the equation \u03c0 = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "CRT", "B": "MRT", "C": "nRT / V", "D": "All of these" }, "answer": "D", "pyq": true },
-    { "id": 21, "question": "Solutions having the same osmotic pressure at the same temperature are called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Isotonic", "B": "Hypertonic", "C": "Hypotonic", "D": "Saturated" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Reverse Osmosis (RO) occurs when pressure ______ than osmotic pressure is applied to the solution side.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Higher", "B": "Lower", "C": "Equal", "D": "Zero" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Van't Hoff factor (i) = observed colligative property / ______ colligative property.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Calculated", "B": "Inverse", "C": "True", "D": "Mass" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "For a strong electrolyte like NaCl, assuming 100% dissociation, the Van't Hoff factor (i) is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "2", "C": "3", "D": "0.5" }, "answer": "B", "pyq": true },
-    { "id": 25, "question": "For association (like Acetic acid in Benzene), the Van't Hoff factor (i) is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Greater than 1", "B": "Less than 1", "C": "Equal to 1", "D": "Zero" }, "answer": "B", "pyq": true },
-    { "id": 26, "question": "Which of the following has the highest boiling point?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1M NaCl", "B": "1M Urea", "C": "1M BaCl2 (highest i value)", "D": "1M Glucose" }, "answer": "C", "pyq": true },
-    { "id": 27, "question": "Which of the following has the lowest freezing point?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1m AlCl3 (i=4)", "B": "1m NaCl", "C": "Pure water", "D": "1m Glucose" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Formula to calculate molar mass from elevation in boiling point is M2 = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "(Kb \u00d7 w2 \u00d7 1000) / (\u0394Tb \u00d7 w1)", "B": "\u0394Tb / Kb", "C": "w1 \u00d7 Kb", "D": "m \u00d7 w2" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Minimum boiling azeotrope is formed by solutions showing ______ deviation from Raoult's Law.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "High Positive", "B": "High Negative", "C": "No", "D": "Neutral" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Maximum boiling azeotrope is formed by solutions showing ______ deviation.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "High Positive", "B": "High Negative", "C": "No", "D": "Constant" }, "answer": "B", "pyq": true },
-    { "id": 31, "question": "Density of water is 1 g/mL. The molarity of pure water is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "55.5 M", "B": "18 M", "C": "1 M", "D": "100 M" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Units of Kb (Ebullioscopic constant) are ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "K kg mol^-1", "B": "mol kg^-1", "C": "K/m", "D": "Both A and C" }, "answer": "D", "pyq": false },
-    { "id": 33, "question": "The constant Kf is also called ______ constant.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Cryoscopic", "B": "Ebullioscopic", "C": "Raoult's", "D": "Henry's" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Normal saline solution (0.9% NaCl) is ______ to human blood.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Isotonic", "B": "Hypertonic", "C": "Hypotonic", "D": "Inert" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Movement of solvent through a semipermeable membrane is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Diffusion", "B": "Osmosis", "0": "Dilution", "D": "Effusion" }, "answer": "B", "pyq": false },
-    { "id": 36, "question": "Abnormal molecular mass is observed when solute undergoes association or dissociation.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Van't Hoff factor (i) = (1 + (n-1)\u03b1) for ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Dissociation (\u03b1 = deg of diss)", "B": "Association", "C": "Solidification", "D": "Gas laws" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Ethylene glycol is used as ______ in car radiators.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Antifreeze (lowers freezing point)", "B": "Fuel", "C": "Lubricant", "D": "Cleaning agent" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Which concentration term changes with temperature?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Molarity", "B": "Mole fraction", "C": "Mass percentage", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Ideal gas law? No. Replaced: Solubilities of solids in liquids generally ______ with increase in temperature.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increase", "B": "Decrease", "C": "Independent", "D": "Fluctuate" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "Beckmann's thermometer is used to measure ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Small change in temperature (\u0394T)", "B": "Absolute temperature", "C": "Density", "D": "Pressure" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Saturated solution is one where ______ solute can be dissolved at that temp.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "More", "B": "No more", "C": "Exactly 1g", "D": "Infinite" }, "answer": "B", "pyq": false },
-    { "id": 43, "question": "Mole fraction of solute in 1 molal aqueous solution is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "0.0177", "B": "0.5", "C": "0.05", "D": "1" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Benzene and Toluene form an ______ solution.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ideal", "B": "Non-ideal", "C": "Azeotropic", "D": "Saturated" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Which law relates the concentration of a gas in solution to its partial pressure?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Raoult's Law", "B": "Henry's Law", "C": "Faraday's Law", "D": "Dalton's Law" }, "answer": "B", "pyq": false },
-    { "id": 46, "question": "Effect of pressure on solubility of solids in liquids? pressure has ______ effect.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Significant", "B": "Negligible (solids/liquids are incompressible)", "C": "Direct", "D": "Inverse" }, "answer": "B", "pyq": false },
-    { "id": 47, "question": "Vapor pressure of a solution of non-volatile solute is ______ than pure solvent.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Higher", "B": "Lower", "C": "Equal", "D": "Double" }, "answer": "B", "pyq": false },
-    { "id": 48, "question": "Boiling point of a solution containing non-volatile solute is ______ than pure solvent.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Higher", "B": "Lower", "C": "Equal", "D": "Zero" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Is osmotic pressure a colligative property?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Yes", "B": "No", "C": "Depends", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Desalination of sea water is done by ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Osmosis", "B": "Reverse Osmosis", "C": "Filtration", "D": "Evaporation" }, "answer": "B", "pyq": false },
-    { "id": 51, "question": "Cryoscopic constant depends on the nature of the ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Solute", "B": "Solvent", "C": "Atmosphere", "D": "Vessel" }, "answer": "B", "pyq": false },
-    { "id": 52, "question": "Molar mass of benzoic acid in benzene is found to be roughly 244 instead of 122. This is due to ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Dissociation", "B": "Association (dimer formation)", "C": "Reaction", "D": "Impurity" }, "answer": "B", "pyq": false },
-    { "id": 53, "question": "Number of components in a ternary solution is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "2", "B": "3", "C": "4", "D": "1" }, "answer": "B", "pyq": false },
-    { "id": 54, "question": "Solid solutions can be of ______ and ______ types.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Substitutional, Interstitial", "B": "Gas, Liquid", "C": "Ideal, Non-ideal", "D": "Transparent, Opaque" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Air is a ______ solution of gases.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Liquid in gas", "B": "Gas in gas", "C": "Solid in gas", "D": "Pure gas" }, "answer": "B", "pyq": false },
-    { "id": 56, "question": "Concentration in ppm (parts per million) = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "(Mass of component / Total mass) \u00d7 10^2", "B": "(Mass of component / Total mass) \u00d7 10^6", "C": "Mass / Volume", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 57, "question": "Vapor pressure of a liquid increases with ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Surface area", "B": "Temperature", "C": "Volume", "D": "Pressure level" }, "answer": "B", "pyq": false },
-    { "id": 58, "question": "Boiling point of a liquid is the temperature at which its vapor pressure equals ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Internal pressure", "B": "Atmospheric pressure (1 atm)", "C": "0", "D": "100 Pa" }, "answer": "B", "pyq": false },
-    { "id": 59, "question": "Non-ideal solutions with large negative deviation form ______ azeotrope.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Maximum boiling", "B": "Minimum boiling", "C": "No", "D": "Gaseous" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Non-ideal solutions with large positive deviation form ______ azeotrope.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Maximum boiling", "B": "Minimum boiling", "C": "Liquid", "D": "Pure" }, "answer": "B", "pyq": false },
-    { "id": 61, "question": "Elevation of boiling point is used to determine molar mass of ______ solutes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Volatile", "B": "Non-volatile", "C": "Gaseous", "D": "Liquid" }, "answer": "B", "pyq": false },
-    { "id": 62, "question": "Van't Hoff factor for K4[Fe(CN)6] assuming 100% dissociation is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "4", "B": "5", "C": "6", "D": "2" }, "answer": "B", "pyq": false },
-    { "id": 63, "question": "Isotonic solutions have same ______ concentration.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Molar", "B": "Mass", "C": "Percentage", "D": "Valency" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Osmotic pressure is a more accurate method for molar mass of biomolecules because ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Measured at room temp", "B": "Large magnitude for small concentration", "C": "Both A and B", "D": "None" }, "answer": "C", "pyq": false },
-    { "id": 65, "question": "Plasmolysis occurs when a plant cell is placed in ______ solution.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Hypotonic", "B": "Hypertonic (shrinking)", "C": "Isotonic", "D": "Water" }, "answer": "B", "pyq": false },
-    { "id": 66, "question": "Hemolysis (bursting) occurs when blood cell is placed in ______ solution.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Hypotonic", "B": "Hypertonic", "C": "Isotonic", "D": "Saline" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Scuba divers use He-O2-N2 mixture to avoid ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Bends (Nitrogen toxicity)", "B": "Drowning", "C": "Pressure rise", "D": "Cold" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Anoxia in high altitude climbers is due to ______ partial pressure of Oxygen.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "High", "B": "Low", "C": "Normal", "D": "Zero" }, "answer": "B", "pyq": false },
-    { "id": 69, "question": "Solway? No. Replaced: Solubility of gas in liquid is an ______ process.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Exothermic", "B": "Endothermic", "C": "Isothermal", "D": "Isobaric" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Vapor pressure of solvent over solution is lower than pure solvent. Why?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Solute molecules occupy surface area", "B": "Solute evaporates faster", "C": "Density decreases", "D": "Pressure increases" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Which of the following is not a colligative property?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Vapor pressure", "B": "Lowering of vapor pressure", "C": "Osmotic pressure", "D": "Elevation in boiling point" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Ideal solution: A-B interactions = (A-A + B-B) average.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Azeotropes can be separated by fractional distillation.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False (they distill at same temp)", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 74, "question": "Value of Kb for water is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "0.52 K kg/mol", "B": "1.86 K kg/mol", "C": "100 K kg/mol", "D": "0.1" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Value of Kf for water is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "0.52", "B": "1.86 K kg/mol", "C": "0.1", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 76, "question": "Isosmotic solutions with different compositions? Yes. Replaced: 1M Glucose and 1M Urea are isotonic.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Osmosis is a spontaneous process.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "0": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Lowering of vapor pressure is an intensive property? No. Replaced: Molar mass can be abnormally high or low.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Ebullioscopy is the study of ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "BP elevation", "B": "FP depression", "C": "Osmosis", "D": "Viscosity" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Cryoscopy is the study of ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "BP elevation", "B": "FP depression", "C": "Density", "0": "Entropy" }, "answer": "B", "pyq": false }
+    {
+      "id": 27,
+      "question": "Density of water is 1 g/mL. The molarity of pure water is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "55.5 M",
+        "B": "18 M",
+        "C": "1 M",
+        "D": "100 M"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Van't Hoff factor (i) = (1 + (n-1)α) for ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Dissociation (α = deg of diss)",
+        "B": "Association",
+        "C": "Solidification",
+        "D": "Gas laws"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Ethylene glycol is used as ______ in car radiators.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Antifreeze (lowers freezing point)",
+        "B": "Fuel",
+        "C": "Lubricant",
+        "D": "Cleaning agent"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Which concentration term changes with temperature?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Molarity",
+        "B": "Mole fraction",
+        "C": "Mass percentage",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Beckmann's thermometer is used to measure ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Small change in temperature (ΔT)",
+        "B": "Absolute temperature",
+        "C": "Density",
+        "D": "Pressure"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Mole fraction of solute in 1 molal aqueous solution is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0.0177",
+        "B": "0.5",
+        "C": "0.05",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Benzene and Toluene form an ______ solution.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Ideal",
+        "B": "Non-ideal",
+        "C": "Azeotropic",
+        "D": "Saturated"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "Effect of pressure on solubility of solids in liquids? pressure has ______ effect.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Significant",
+        "B": "Negligible (solids/liquids are incompressible)",
+        "C": "Direct",
+        "D": "Inverse"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Vapor pressure of a solution of non-volatile solute is ______ than pure solvent.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Higher",
+        "B": "Lower",
+        "C": "Equal",
+        "D": "Double"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Boiling point of a solution containing non-volatile solute is ______ than pure solvent.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Higher",
+        "B": "Lower",
+        "C": "Equal",
+        "D": "Zero"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Cryoscopic constant depends on the nature of the ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Solute",
+        "B": "Solvent",
+        "C": "Atmosphere",
+        "D": "Vessel"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Molar mass of benzoic acid in benzene is found to be roughly 244 instead of 122. This is due to ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Dissociation",
+        "B": "Association (dimer formation)",
+        "C": "Reaction",
+        "D": "Impurity"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "Solid solutions can be of ______ and ______ types.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Substitutional, Interstitial",
+        "B": "Gas, Liquid",
+        "C": "Ideal, Non-ideal",
+        "D": "Transparent, Opaque"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Concentration in ppm (parts per million) = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(Mass of component / Total mass) × 10^2",
+        "B": "(Mass of component / Total mass) × 10^6",
+        "C": "Mass / Volume",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Non-ideal solutions with large negative deviation form ______ azeotrope.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Maximum boiling",
+        "B": "Minimum boiling",
+        "C": "No",
+        "D": "Gaseous"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Non-ideal solutions with large positive deviation form ______ azeotrope.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Maximum boiling",
+        "B": "Minimum boiling",
+        "C": "Liquid",
+        "D": "Pure"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Elevation of boiling point is used to determine molar mass of ______ solutes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Volatile",
+        "B": "Non-volatile",
+        "C": "Gaseous",
+        "D": "Liquid"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Van't Hoff factor for K4[Fe(CN)6] assuming 100% dissociation is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "2"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Isotonic solutions have same ______ concentration.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Molar",
+        "B": "Mass",
+        "C": "Percentage",
+        "D": "Valency"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "Osmotic pressure is a more accurate method for molar mass of biomolecules because ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Measured at room temp",
+        "B": "Large magnitude for small concentration",
+        "C": "Both A and B",
+        "D": "None"
+      },
+      "answer": "C",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Plasmolysis occurs when a plant cell is placed in ______ solution.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Hypotonic",
+        "B": "Hypertonic (shrinking)",
+        "C": "Isotonic",
+        "D": "Water"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Hemolysis (bursting) occurs when blood cell is placed in ______ solution.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Hypotonic",
+        "B": "Hypertonic",
+        "C": "Isotonic",
+        "D": "Saline"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Scuba divers use He-O2-N2 mixture to avoid ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Bends (Nitrogen toxicity)",
+        "B": "Drowning",
+        "C": "Pressure rise",
+        "D": "Cold"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Anoxia in high altitude climbers is due to ______ partial pressure of Oxygen.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "High",
+        "B": "Low",
+        "C": "Normal",
+        "D": "Zero"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Solway? No. Replaced: Solubility of gas in liquid is an ______ process.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Exothermic",
+        "B": "Endothermic",
+        "C": "Isothermal",
+        "D": "Isobaric"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Vapor pressure of solvent over solution is lower than pure solvent. Why?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Solute molecules occupy surface area",
+        "B": "Solute evaporates faster",
+        "C": "Density decreases",
+        "D": "Pressure increases"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Ideal solution: A-B interactions = (A-A + B-B) average.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Azeotropes can be separated by fractional distillation.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False (they distill at same temp)",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Value of Kb for water is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0.52 K kg/mol",
+        "B": "1.86 K kg/mol",
+        "C": "100 K kg/mol",
+        "D": "0.1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Value of Kf for water is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0.52",
+        "B": "1.86 K kg/mol",
+        "C": "0.1",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "Lowering of vapor pressure is an intensive property? No. Replaced: Molar mass can be abnormally high or low.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

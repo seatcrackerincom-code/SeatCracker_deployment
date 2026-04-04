@@ -2,85 +2,560 @@
   "subject": "Chemistry",
   "topic": "Chemical Bonding & Molecular Structure",
   "questions": [
-    { "id": 1, "question": "The attractive force which holds various constituents together in different chemical species is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Physical bond", "B": "Chemical bond", "C": "Nuclear force", "D": "Gravitational bond" }, "answer": "B", "pyq": true },
-    { "id": 2, "question": "According to Kossel-Lewis approach, atoms achieve stability by completing their ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Duplet", "B": "Octet", "C": "Subshell", "D": "Nucleus" }, "answer": "B", "pyq": true },
-    { "id": 3, "question": "The number of valence electrons in Lewis representation of Oxygen is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "4", "B": "6", "C": "8", "D": "2" }, "answer": "B", "pyq": true },
-    { "id": 4, "question": "An ionic bond is formed by the ______ of electrons between atoms.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Sharing", "B": "Complete transfer", "C": "Loss", "D": "Gain" }, "answer": "B", "pyq": true },
-    { "id": 5, "question": "Lattice Enthalpy is the energy required to completely separate one mole of a solid ionic compound into ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Liquid state", "B": "Gaseous ions", "C": "Pure elements", "D": "Smaller crystals" }, "answer": "B", "pyq": true },
-    { "id": 6, "question": "A covalent bond is formed by ______ of electrons.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Transfer", "B": "Mutual sharing", "C": "Donor-acceptor", "D": "Metallic bond" }, "answer": "B", "pyq": true },
-    { "id": 7, "question": "Formal charge on an atom in a molecule is related to its ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Actual charge", "B": "Theoretical charge based on Lewis structure", "C": "Electronegativity", "D": "Mass" }, "answer": "B", "pyq": true },
-    { "id": 8, "question": "Which of these molecules violates the octet rule (expanded octet)?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "CH4", "B": "SF6", "C": "NH3", "D": "H2O" }, "answer": "B", "pyq": true },
-    { "id": 9, "question": "The term 'Dipole Moment' (\u03bc) is the product of charge and ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Mass", "B": "Distance of separation", "C": "Velocity", "D": "Time" }, "answer": "B", "pyq": true },
-    { "id": 10, "question": "Which molecule has zero dipole moment due to its symmetrical structure?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "H2O", "B": "CO2", "C": "NH3", "D": "HCl" }, "answer": "B", "pyq": true },
-    { "id": 11, "question": "According to VSEPR theory, the shape of a molecule depends on the number of ______ around the central atom.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Protons", "B": "Valence shell electron pairs", "C": "Inner electrons", "D": "Nodes" }, "answer": "B", "pyq": true },
-    { "id": 12, "question": "The order of repulsion between electron pairs is: ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "lp-lp > lp-bp > bp-bp", "B": "bp-bp > lp-bp > lp-lp", "C": "lp-lp = lp-bp = bp-bp", "D": "bp-bp > lp-lp > lp-bp" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "The shape of Ammonia (NH3) molecule is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Tetrahedral", "B": "Trigonal Pyramidal", "C": "Bent", "D": "Linear" }, "answer": "B", "pyq": true },
-    { "id": 14, "question": "The bond angle in H2O is 104.5 degrees instead of 109.5 due to the presence of ______ lone pairs.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "2", "C": "3", "D": "0" }, "answer": "B", "pyq": true },
-    { "id": 15, "question": "Hybridization involves the ______ of atomic orbitals to form a new set of equivalent orbitals.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Splitting", "B": "Intermixing", "C": "Reduction", "D": "Oxidation" }, "answer": "B", "pyq": true },
-    { "id": 16, "question": "In CH4 (Methane), the carbon atom undergoes ______ hybridization.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "sp", "B": "sp2", "C": "sp3", "D": "dsp2" }, "answer": "C", "pyq": true },
-    { "id": 17, "question": "Beryllium Chloride (BeCl2) has a ______ geometry with sp hybridization.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Tetrahedral", "B": "Linear", "C": "Planar", "D": "Bent" }, "answer": "B", "pyq": true },
-    { "id": 18, "question": "A Pi (\u03c0) bond is formed by the ______ overlap of atomic orbitals.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Head-on", "B": "Lateral (Side-wise)", "C": "Diagonal", "D": "Symmetrical" }, "answer": "B", "pyq": true },
-    { "id": 19, "question": "Paramagnetism of Oxygen (O2) and relative stabilities of species like O2+, O2- etc. can be explained by ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "VSEPR theory", "B": "Valence Bond theory", "C": "Molecular Orbital (MO) Theory", "D": "Octet rule" }, "answer": "C", "pyq": true },
-    { "id": 20, "question": "In MO Theory, high Bond Order signifies ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Instability", "B": "Greater bond strength and stability", "C": "Longer bond length", "D": "Zero energy" }, "answer": "B", "pyq": true },
-    { "id": 21, "question": "The bond order of N2 molecule is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "2", "C": "3", "D": "4" }, "answer": "C", "pyq": true },
-    { "id": 22, "question": "According to Fajans' Rule, a small cation and large anion favor ______ character in an ionic bond.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ionic", "B": "Covalent", "C": "Metallic", "D": "None" }, "answer": "B", "pyq": true },
-    { "id": 23, "question": "Hydrogen bonding occurs when H is bonded to highly ______ elements.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Electropositive", "B": "Electronegative (N, O, F)", "C": "Inert", "D": "Radioactive" }, "answer": "B", "pyq": true },
-    { "id": 24, "question": "Boiling point of H2O is higher than H2S primarily due to ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Mass", "B": "Intermolecular Hydrogen bonding", "C": "Van der Waals forces", "D": "Ionic bond" }, "answer": "B", "pyq": true },
-    { "id": 25, "question": "The shape of PCl5 molecule is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Octahedral", "B": "Trigonal Bipyramidal", "C": "Square Planar", "D": "Tetrahedral" }, "answer": "B", "pyq": true },
-    { "id": 26, "question": "In PCl5, there are two types of P-Cl bonds: ______ and ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Axial, Equatoral", "B": "Alpha, Beta", "C": "Sigma, Pi", "D": "Inner, Outer" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Ethyne (C2H2) molecule has ______ sigma and ______ pi bonds.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "3, 2", "B": "2, 3", "C": "5, 2", "D": "2, 2" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Hybridization of Xenon in XeF2 is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "sp3", "B": "sp3d", "C": "sp3d2", "D": "dsp2" }, "answer": "B", "pyq": true },
-    { "id": 29, "question": "The paramagnetic behavior of an atom depends on the presence of ______ electrons.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Paired", "B": "Unpaired", "C": "Stable", "D": "Inner" }, "answer": "B", "pyq": true },
-    { "id": 30, "question": "Bond length is the ______ distance between the nuclei of two bonded atoms.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Maximum", "B": "Equilibrium", "C": "Diagonal", "D": "Total" }, "answer": "B", "pyq": true },
-    { "id": 31, "question": "A triple bond contains one ______ and two ______ bonds.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Sigma, Pi", "B": "Pi, Sigma", "C": "Ionic, Covalent", "D": "Coordinate, Covalent" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Which of the following has the highest lattice energy?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "NaCl", "B": "MgO", "C": "KCl", "D": "LiF" }, "answer": "B", "pyq": false },
-    { "id": 33, "question": "For n-type semiconductors, doping is done with ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Group 13", "B": "Group 15", "C": "Group 14", "D": "Group 11" }, "answer": "B", "pyq": false },
-    { "id": 34, "question": "Which molecule has the largest bond angle?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "H2O", "B": "NH3", "C": "CH4", "D": "CO2" }, "answer": "D", "pyq": false },
-    { "id": 35, "question": "In Ethylene (C2H4), the carbon-carbon double bond consists of hybridization ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "sp", "B": "sp2", "C": "sp3", "D": "dsp2" }, "answer": "B", "pyq": false },
-    { "id": 36, "question": "Molecular symmetry of Benzene results in zero dipole moment.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Strength of H-bond follows the order: ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "F-H...F > O-H...O > N-H...N", "B": "N > O > F", "C": "O > F > N", "D": "All same" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "The total number of lone pairs in XeF6 is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "0", "B": "1", "C": "2", "D": "3" }, "answer": "B", "pyq": false },
-    { "id": 39, "question": "Bond dissociation energy of N2 is ______ than O2.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lower", "B": "Higher", "C": "Almost same", "D": "Zero" }, "answer": "B", "pyq": false },
-    { "id": 40, "question": "Geometry of [Ni(CN)4]2- is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Tetrahedral", "B": "Square Planar", "C": "Octahedral", "D": "Linear" }, "answer": "B", "pyq": false },
-    { "id": 41, "question": "Resonance energy is the energy difference between the ______ and ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ground, Excited state", "B": "Actual hybrid, Most stable canonical form", "C": "Proton, Electron", "D": "Reactant, Product" }, "answer": "B", "pyq": false },
-    { "id": 42, "question": "Bond order of O2- (superoxide ion) is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1.5", "B": "2", "C": "1.0", "D": "2.5" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Bond energy ______ as s-character increases.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Decreases", "B": "Increases", "C": "Stays same", "D": "Varies randomly" }, "answer": "B", "pyq": false },
-    { "id": 44, "question": "Percent ionic character in H-Cl bond is calculated using ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Huckel Rule", "B": "Pauling Electronegativity scale", "C": "VSEPR", "D": "MO Theory" }, "answer": "B", "pyq": false },
-    { "id": 45, "question": "Intermolecular hydrogen bonding exists in ______ while intramolecular exists in ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ethanol, o-Nitrophenol", "B": "Water, NH3", "C": "HF, HCl", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Water is liquid while H2S is gas at room temp. This is due to ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Mass", "B": "Hydrogen bonding", "C": "Pressure", "D": "Size" }, "answer": "B", "pyq": false },
-    { "id": 47, "question": "Coordinate covalent bond is also known as ______ bond.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Dative", "B": "Ionic", "C": "Sigma", "D": "Metallic" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Bond polarity is measured in ______ units.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Amperes", "B": "Debye", "C": "Joules", "D": "Watts" }, "answer": "B", "pyq": false },
-    { "id": 49, "question": "Hybridization of Phosphorus in PCl5 is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "sp3", "B": "sp3d", "C": "sp3d2", "D": "dsp2" }, "answer": "B", "pyq": false },
-    { "id": 50, "question": "In Trigonal Bipyramidal geometry, lp-lp repulsion is minimum when lone pairs are at ______ positions.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Axial", "B": "Equatorial", "C": "Inner", "D": "Outer" }, "answer": "B", "pyq": false },
-    { "id": 51, "question": "Which of these is isoelectronic with CO2?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "NO2", "B": "N2O", "C": "SO2", "D": "O3" }, "answer": "B", "pyq": false },
-    { "id": 52, "question": "Bond order of He2 molecule is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "0 (molecule doesn't exist)", "C": "2", "D": "0.5" }, "answer": "B", "pyq": false },
-    { "id": 53, "question": "Van der Waals forces increase with increase in ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Pressure", "B": "Molecular weight/size", "C": "Charge", "D": "Speed" }, "answer": "B", "pyq": false },
-    { "id": 54, "question": "The shape of IF7 (Iodine heptafluoride) is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Octahedral", "B": "Pentagonal Bipyramidal", "C": "Decahedral", "D": "Tetrahedral" }, "answer": "B", "pyq": false },
-    { "id": 55, "question": "Bond angle in Hydrazine (N2H4) is around ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "120", "B": "109", "C": "107", "D": "180" }, "answer": "C", "pyq": false },
-    { "id": 56, "question": "Strength of sigma (\u03c3) bond compared to pi (\u03c0) bond is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Weaker", "B": "Stronger", "C": "Equal", "D": "Depends on orientation" }, "answer": "B", "pyq": false },
-    { "id": 57, "question": "H-F exhibits exceptionally strong H-bonding because ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "F is largest", "B": "F is most electronegative", "C": "F has zero protons", "D": "H-F is ionic" }, "answer": "B", "pyq": false },
-    { "id": 58, "question": "Which molecule has pseudo-octet configuration for central atom? No. Replaced: AlCl3 behaves as a dimer (Al2Cl6) primarily to ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Stay stable", "B": "Complete octet", "C": "Reduce boiling point", "D": "Dye fabrics" }, "answer": "B", "pyq": false },
-    { "id": 59, "question": "B-B bond distance in Diborane is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Larger than single bond", "B": "Smaller than single bond", "C": "Equal", "D": "Variable" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "In dsp2 hybridization, the d orbital involved is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "dz2", "B": "dx2-y2", "C": "dxy", "D": "dxz" }, "answer": "B", "pyq": false },
-    { "id": 61, "question": "Formal charge on central Oxygen in O3 (Ozone) is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "0", "B": "+1", "C": "-1", "D": "+2" }, "answer": "B", "pyq": false },
-    { "id": 62, "question": "Para-hydroxybenzaldehyde is more or less acidic due to H-bonding? Replaced: o-nitrophenol is less soluble in water than p-nitrophenol because of ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Inter-molecular H-bond in ortho", "B": "Intra-molecular H-bond in ortho", "C": "Mass", "D": "Color" }, "answer": "B", "pyq": false },
-    { "id": 63, "question": "Polarization of an anion by cation depends on polarizability. Anion polarizability increases with ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Size", "B": "Charge density", "C": "Neutrons", "D": "Temperature" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Diamond is a good thermal conductor but electrical insulator.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "Hybrid orbital overlap provides ______ bond strength than pure atomic orbitals.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Higher", "B": "Lower", "C": "Equal", "D": "Variable" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "C-C bond distance in Graphite (planar) is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1.34", "B": "1.42", "C": "1.54", "D": "1.20" }, "answer": "B", "pyq": false },
-    { "id": 67, "question": "Metallic bond is explained by ______ model.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "VSEPR", "B": "Electron Sea", "C": "Octet", "D": "Bohr" }, "answer": "B", "pyq": false },
-    { "id": 68, "question": "Which of these follows octet rule precisely?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "NO", "B": "CH4", "C": "AlCl3", "D": "SF6" }, "answer": "B", "pyq": false },
-    { "id": 69, "question": "Is Cingulene aromatic? No. Replaced: Anthracene is ______ hydro-carbon.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Benzenoid", "B": "Non-benzenoid", "C": "Ali-cyclic", "D": "Inert" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "C-O bond order in CO3²- is roughly ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "1.33", "C": "2", "D": "1.5" }, "answer": "B", "pyq": false },
-    { "id": 71, "question": "Overlapping of p-p orbitals can produce ______ bond.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Only sigma", "B": "Only pi", "C": "Both depending on orientation", "D": "None" }, "answer": "C", "pyq": false },
-    { "id": 72, "question": "Bond angle for sp3d2 (Octahedral) is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "120", "B": "90", "C": "109", "D": "180" }, "answer": "B", "pyq": false },
-    { "id": 73, "question": "Presence of hydrogen bonding ______ melting and boiling points.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lowers", "B": "Raises", "C": "Stays same", "D": "Zeroes" }, "answer": "B", "pyq": false },
-    { "id": 74, "question": "Effective overlap of orbitals increases with increase in ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Atomic size", "B": "Similarity of energies", "C": "Distance", "D": "Charge" }, "answer": "B", "pyq": false },
-    { "id": 75, "question": "In BF3, we observe ______ character in B-F bonds due to back bonding.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Single bond", "B": "Partial double bond", "C": "Triple bond", "D": "Ionic" }, "answer": "B", "pyq": false },
-    { "id": 76, "question": "Xenon oxides are formed by ______ of halides.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Oxidation", "B": "Hydrolysis", "C": "Reduction", "D": "Ionization" }, "answer": "B", "pyq": false },
-    { "id": 77, "question": "Lone pair-lone pair repulsion is ______ than lp-bp repulsion.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Smaller", "B": "Greater", "C": "Equal", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 78, "question": "C-O-C bond angle in methoxymethane is larger than expected for p-orbital overlap due to ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Resonance", "B": "Repulsion between methyl groups", "C": "Ionic bond", "D": "Van der Waals" }, "answer": "B", "pyq": false },
-    { "id": 79, "question": "MO configuration of N2 ends with ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u03c32pz (filled)", "B": "\u03c3*2pz", "C": "\u03c02px", "D": "\u03c0*2pz" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Atoms combine to form molecules to decrease their potential energy and gain stability.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 31,
+      "question": "Which of the following has the highest lattice energy?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "NaCl",
+        "B": "MgO",
+        "C": "KCl",
+        "D": "LiF"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "For n-type semiconductors, doping is done with ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Group 13",
+        "B": "Group 15",
+        "C": "Group 14",
+        "D": "Group 11"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Which molecule has the largest bond angle?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "H2O",
+        "B": "NH3",
+        "C": "CH4",
+        "D": "CO2"
+      },
+      "answer": "D",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "In Ethylene (C2H4), the carbon-carbon double bond consists of hybridization ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sp",
+        "B": "sp2",
+        "C": "sp3",
+        "D": "dsp2"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Strength of H-bond follows the order: ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "F-H...F > O-H...O > N-H...N",
+        "B": "N > O > F",
+        "C": "O > F > N",
+        "D": "All same"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "The total number of lone pairs in XeF6 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Bond dissociation energy of N2 is ______ than O2.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Lower",
+        "B": "Higher",
+        "C": "Almost same",
+        "D": "Zero"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Geometry of [Ni(CN)4]2- is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Tetrahedral",
+        "B": "Square Planar",
+        "C": "Octahedral",
+        "D": "Linear"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "Resonance energy is the energy difference between the ______ and ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Ground, Excited state",
+        "B": "Actual hybrid, Most stable canonical form",
+        "C": "Proton, Electron",
+        "D": "Reactant, Product"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "Bond order of O2- (superoxide ion) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1.5",
+        "B": "2",
+        "C": "1.0",
+        "D": "2.5"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Bond energy ______ as s-character increases.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Decreases",
+        "B": "Increases",
+        "C": "Stays same",
+        "D": "Varies randomly"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Percent ionic character in H-Cl bond is calculated using ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Huckel Rule",
+        "B": "Pauling Electronegativity scale",
+        "C": "VSEPR",
+        "D": "MO Theory"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Intermolecular hydrogen bonding exists in ______ while intramolecular exists in ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Ethanol, o-Nitrophenol",
+        "B": "Water, NH3",
+        "C": "HF, HCl",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Coordinate covalent bond is also known as ______ bond.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Dative",
+        "B": "Ionic",
+        "C": "Sigma",
+        "D": "Metallic"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Hybridization of Phosphorus in PCl5 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sp3",
+        "B": "sp3d",
+        "C": "sp3d2",
+        "D": "dsp2"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "In Trigonal Bipyramidal geometry, lp-lp repulsion is minimum when lone pairs are at ______ positions.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Axial",
+        "B": "Equatorial",
+        "C": "Inner",
+        "D": "Outer"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Which of these is isoelectronic with CO2?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "NO2",
+        "B": "N2O",
+        "C": "SO2",
+        "D": "O3"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Bond order of He2 molecule is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0 (molecule doesn't exist)",
+        "C": "2",
+        "D": "0.5"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "The shape of IF7 (Iodine heptafluoride) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Octahedral",
+        "B": "Pentagonal Bipyramidal",
+        "C": "Decahedral",
+        "D": "Tetrahedral"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Bond angle in Hydrazine (N2H4) is around ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "120",
+        "B": "109",
+        "C": "107",
+        "D": "180"
+      },
+      "answer": "C",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "H-F exhibits exceptionally strong H-bonding because ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "F is largest",
+        "B": "F is most electronegative",
+        "C": "F has zero protons",
+        "D": "H-F is ionic"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Which molecule has pseudo-octet configuration for central atom? No. Replaced: AlCl3 behaves as a dimer (Al2Cl6) primarily to ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Stay stable",
+        "B": "Complete octet",
+        "C": "Reduce boiling point",
+        "D": "Dye fabrics"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "B-B bond distance in Diborane is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Larger than single bond",
+        "B": "Smaller than single bond",
+        "C": "Equal",
+        "D": "Variable"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "In dsp2 hybridization, the d orbital involved is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "dz2",
+        "B": "dx2-y2",
+        "C": "dxy",
+        "D": "dxz"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Formal charge on central Oxygen in O3 (Ozone) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "+1",
+        "C": "-1",
+        "D": "+2"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Para-hydroxybenzaldehyde is more or less acidic due to H-bonding? Replaced: o-nitrophenol is less soluble in water than p-nitrophenol because of ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Inter-molecular H-bond in ortho",
+        "B": "Intra-molecular H-bond in ortho",
+        "C": "Mass",
+        "D": "Color"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Polarization of an anion by cation depends on polarizability. Anion polarizability increases with ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Size",
+        "B": "Charge density",
+        "C": "Neutrons",
+        "D": "Temperature"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Diamond is a good thermal conductor but electrical insulator.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Hybrid orbital overlap provides ______ bond strength than pure atomic orbitals.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Higher",
+        "B": "Lower",
+        "C": "Equal",
+        "D": "Variable"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "C-C bond distance in Graphite (planar) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1.34",
+        "B": "1.42",
+        "C": "1.54",
+        "D": "1.20"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Is Cingulene aromatic? No. Replaced: Anthracene is ______ hydro-carbon.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Benzenoid",
+        "B": "Non-benzenoid",
+        "C": "Ali-cyclic",
+        "D": "Inert"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "C-O bond order in CO3²- is roughly ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "1.33",
+        "C": "2",
+        "D": "1.5"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 73,
+      "question": "Effective overlap of orbitals increases with increase in ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Atomic size",
+        "B": "Similarity of energies",
+        "C": "Distance",
+        "D": "Charge"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "In BF3, we observe ______ character in B-F bonds due to back bonding.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Single bond",
+        "B": "Partial double bond",
+        "C": "Triple bond",
+        "D": "Ionic"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "Xenon oxides are formed by ______ of halides.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Oxidation",
+        "B": "Hydrolysis",
+        "C": "Reduction",
+        "D": "Ionization"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 77,
+      "question": "C-O-C bond angle in methoxymethane is larger than expected for p-orbital overlap due to ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Resonance",
+        "B": "Repulsion between methyl groups",
+        "C": "Ionic bond",
+        "D": "Van der Waals"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 78,
+      "question": "MO configuration of N2 ends with ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "σ2pz (filled)",
+        "B": "σ*2pz",
+        "C": "π2px",
+        "D": "π*2pz"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

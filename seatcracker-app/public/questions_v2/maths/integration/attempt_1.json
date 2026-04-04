@@ -1,0 +1,309 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "∫ sec x dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ln|sec x + tan x| + C",
+        "B": "ln|sec x - tan x| + C",
+        "C": "ln|tan x| + C",
+        "D": "sec x tan x + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "∫ 1/(x² − 4) dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/4)ln|(x−2)/(x+2)| + C",
+        "B": "(1/2)ln|(x−2)/(x+2)| + C",
+        "C": "ln|x²−4| + C",
+        "D": "(1/4)ln|(x+2)/(x−2)| + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 3,
+      "question": "∫ √(a² - x²) dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x/2 √(a²-x²) + a²/2 sin⁻¹(x/a) + C",
+        "B": "x √(a²-x²) + a² sin⁻¹(x/a) + C",
+        "C": "x/2 √(a²-x²) - a²/2 sin⁻¹(x) + C",
+        "D": "(1/2) sin⁻¹(x/a) + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 4,
+      "question": "∫ dx / √(x² - a²) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ln|x + √(x²-a²)| + C",
+        "B": "(1/a) sec⁻¹(x/a) + C",
+        "C": "sin⁻¹(x/a) + C",
+        "D": "(1/2a) ln|(x-a)/(x+a)| + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 5,
+      "question": "∫ dx / (x² - a²) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/2a) ln|(x-a)/(x+a)| + C",
+        "B": "(1/2a) ln|(a-x)/(a+x)| + C",
+        "C": "(1/a) tan⁻¹(x/a) + C",
+        "D": "sin⁻¹(x/a) + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 6,
+      "question": "∫ dx / (x² + a²) = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/a) tan⁻¹(x/a) + C",
+        "B": "tan⁻¹(x/a) + C",
+        "C": "(1/2a) ln|(x² + a²)| + C",
+        "D": "ln|x + √(x²+a²)| + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 7,
+      "question": "∫ cosec x dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ln|cosec x - cot x| + C",
+        "B": "ln|cosec x + cot x| + C",
+        "C": "ln|sin x| + C",
+        "D": "-cosec x cot x + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 8,
+      "question": "∫ dx / √(a² - x²) = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sin⁻¹(x/a) + C",
+        "B": "(1/a) sin⁻¹(x/a) + C",
+        "C": "ln|x + √(a²-x²)| + C",
+        "D": "cos⁻¹(x/a) + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 9,
+      "question": "∫ √(x² - a²) dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x/2 √(x²-a²) - a²/2 ln|x + √(x²-a²)| + C",
+        "B": "x/2 √(x²-a²) + a²/2 ln|x + √(x²-a²)| + C",
+        "C": "x √(x²-a²) - a² ln|x| + C",
+        "D": "1/2 sec⁻¹(x/a) + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 10,
+      "question": "∫ eˣ(sin x + cos x) dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "eˣ sin x + C",
+        "B": "eˣ cos x + C",
+        "C": "eˣ(sin x − cos x) + C",
+        "D": "2eˣ sin x + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 11,
+      "question": "∫ e^x [f(x) + f'(x)] dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^x f(x) + C",
+        "B": "e^x f'(x) + C",
+        "C": "f(x)/e^x + C",
+        "D": "e^x + f(x) + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 12,
+      "question": "∫ cot x dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ln|sin x| + C",
+        "B": "-ln|cosec x| + C",
+        "C": "-cosec²x + C",
+        "D": "ln|cos x| + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 13,
+      "question": "Integration by parts formula: ∫ u dv = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "uv - ∫ v du",
+        "B": "u + v - ∫ uv dx",
+        "C": "uv + ∫ v du",
+        "D": "u'v - uv'"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 14,
+      "question": "∫ dx / √(x² + a²) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ln|x + √(x²+a²)| + C",
+        "B": "(1/a) tan⁻¹(x/a) + C",
+        "C": "sinh⁻¹(x/a) + C",
+        "D": "Both A and C are correct functionally"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 15,
+      "question": "∫ dx / (a² - x²) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/2a) ln|(a+x)/(a-x)| + C",
+        "B": "(1/2a) ln|(x-a)/(x+a)| + C",
+        "C": "(1/a) tan⁻¹(x/a) + C",
+        "D": "cos⁻¹(x/a) + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 16,
+      "question": "∫ tan x dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ln|sec x| + C",
+        "B": "ln|sin x| + C",
+        "C": "sec²x + C",
+        "D": "ln|cos x| + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 17,
+      "question": "∫ a^x dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a^x / ln a + C",
+        "B": "a^x ln a + C",
+        "C": "ax^(a-1) + C",
+        "D": "a^(x+1)/(x+1) + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 18,
+      "question": "∫ sin³x dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "−cos x + cos³x/3 + C",
+        "B": "cos x − cos³x/3 + C",
+        "C": "−cos³x/3 + C",
+        "D": "−3cos x + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 19,
+      "question": "∫ x · eˣ dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "eˣ(x + 1) + C",
+        "B": "eˣ(x − 1) + C",
+        "C": "x²eˣ/2 + C",
+        "D": "eˣ + C"
+      },
+      "answer": "B",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 20,
+      "question": "∫ x/(1 + x²) dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ln(1+x²) + C",
+        "B": "(1/2)ln(1+x²) + C",
+        "C": "arctan x + C",
+        "D": "x²/2 + C"
+      },
+      "answer": "B",
+      "pyq": true,
+      "tag": "pyq"
+    }
+  ]
+}

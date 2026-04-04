@@ -2,84 +2,425 @@
   "subject": "Physics",
   "topic": "Atomic Physics",
   "questions": [
-    { "id": 1, "question": "In Rutherford\u2019s alpha-particle scattering experiment, most particles passed straight through. this shows ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Most of the atom is empty space", "B": "Nucleus is positive", "C": "Electrons are far", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "The size of the nucleus is of the order of ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "10^-15 m", "B": "10^-10 m", "C": "10^-8 m", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "The fraction of alpha particles scattered at angles more than 90 degrees is very ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Small", "B": "Large", "C": "Zero", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Angle of scattering \u03b8 depends on the impact parameter b by ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "b \u221d cot(\u03b8/2)", "B": "b \u221d tan(\u03b8/2)", "C": "b \u221d sin(\u03b8)", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "Bohr\u2019s first postulate states that electrons revolve in ______ orbits.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Stationary", "B": "Elliptical", "C": "Random", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "Angular momentum of an electron in a stationary orbit is quantized as L = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "n h / 2\u03c0", "B": "h / n", "C": "n\u00b2 h", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "Radius of Bohr orbit rn \u221d ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "n\u00b2 / Z", "B": "n / Z", "C": "Z / n", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "Velocity of electron in nth orbit vn \u221d ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Z / n", "B": "n / Z", "C": "n\u00b2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Total energy En of electron in nth orbit is proportional to ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "- Z\u00b2 / n\u00b2", "B": "n\u00b2", "C": "Z/n", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "Ionization energy of Hydrogen atom in ground state is ______ eV.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "13.6", "B": "3.4", "C": "1.5", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "The spectral series of Hydrogen in the ultraviolet region is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lyman series", "B": "Balmer series", "C": "Paschen series", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "The spectral series of Hydrogen in the visible region is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Balmer series", "B": "Lyman series", "C": "Pfund series", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "Rydberg constant R is approximately ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1.097 x 10^7 m^-1", "B": "6.63 x 10^-34", "C": "3 x 10^8", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "The shortest wavelength in Lyman series corresponds to n = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Infinity to 1", "B": "2 to 1", "C": "3 to 1", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Characteristic X-rays occur due to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Inner shell electron transitions", "B": "Surface collisions", "C": "Slowing down of electrons", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Continuous X-rays (Bremsstrahlung) occur due to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Deceleration of fast electrons in target", "B": "Atomic excitation", "C": "Nuclear decay", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "Moseley\u2019s Law relates X-ray frequency f to atomic number Z by \u221af = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "a(Z - b)", "B": "a Z\u00b2", "C": "a / Z", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Maximum frequency found in X-ray spectrum depends on ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Accelerating voltage V", "B": "Target material", "C": "Temp", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Distance of closest approach d0 = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "2 k Z e\u00b2 / K", "B": "k Z e\u00b2 / r", "C": "Zero", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Impact parameter zero means scattering angle is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "180 (Head on)", "B": "90", "C": "0", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "The de Broglie wavelength associated with an electron in Bohr orbit must satisfy 2\u03c0rn = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "n \u03bb", "B": "\u03bb / n", "C": "n\u00b2 \u03bb", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Atomic mass unit (amu) is equal to ______ kg.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1.66 x 10^-27", "B": "9.1 x 10^-31", "C": "1.6 x 10^-19", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Paschen, Brackett and Pfund series lie in the ______ region.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Infrared", "B": "Visible", "C": "UV", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Transition from n=3 to n=2 in Hydrogen produces ______ line of Balmer series.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "H-alpha", "B": "H-beta", "C": "H-gamma", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "Transition from n=4 to n=2 produces ______ line of Balmer series.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "H-beta", "B": "H-alpha", "C": "H-delta", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Minimum wavelength in continuous X-ray spectrum \u03bbmin = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "hc / eV", "B": "eV / hc", "C": "h / mc", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "The radius of Hydrogen atom in ground state is about ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "0.53 A", "B": "1 A", "C": "0.1 A", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Kinetic energy of electron in nth orbit is ______ magnitude of total energy.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Equal to", "B": "Double of", "C": "Half of", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Potential energy of electron in nth orbit is ______ total energy.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Double (with negative sign)", "B": "Equal", "C": "Half", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Excitation potential of first excited state of Hydrogen is ______ volts.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "10.2", "B": "13.6", "C": "1.89", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "Isotopes have same atomic number but different mass number? yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Atoms with same mass number are called ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Isobars", "B": "Isotopes", "C": "Isotones", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Atoms with same number of neutrons are called ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Isotones", "B": "Isobars", "C": "Isotopes", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Thomson model? yes. plum pudding model.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Rutherford? no. Replaced: it could not explain stability of atom.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Frank-Hertz experiment confirmed existence of discrete energy levels.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Energy? no. Replaced: E2 - E1 = hf for transitions.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Magnetic moment of an electron in Bohr orbit \u03bc = n (e h / 4\u03c0m).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Bohr Magneton value is about 9.27 x 10^-24 J/T.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "If Z increases, Bohr radius decreases.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "Energy of level? no. Replaced: for Helium ion (Z=2), ground state energy is ______ eV.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "-54.4", "B": "-13.6", "C": "-27.2", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Energy? no. Replaced: for Lithium ion (Z=3), ground state energy is ______ eV.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "-122.4", "B": "-54.4", "C": "-13.6", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Angular momentum? no. Replaced: is conserved in Bohr orbits.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Emission spectrum? yes. when electrons jump from high to low energy.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Absorption spectrum? yes. when atoms absorb energy and electrons jump to high levels.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "X-rays are electromagnetic waves of very short wavelength.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "X-rays cannot be deflected by electric/magnetic fields because they are neutral.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Wavelength of K-alpha line? yes. shorter than L-alpha.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Number of possible emission lines when electron is in nth state is n(n-1)/2.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Balmer? no. Replaced: only series that can be seen by naked eye.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Paschen? no. Replaced: spectral lines in near infrared.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Brackett? no. Replaced: infrared region.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Pfund? no. Replaced: far infrared region.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Nuclear atom? yes. Rutherford's gold foil experiment concluded mass is in tiny core.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Atomic core radius? no. Replaced: impact parameter is distance from center of nucleus.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Angular momentum? no. Replaced: h / 2\u03c0 is called h-bar.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Total energy? no. Replaced: it is negative, showing electron is bound to nucleus.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "At n = infinity, energy is zero.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Principal quantum number n cannot be zero.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Energy? no. Replaced: E \u221d 1/n\u00b2.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Wait? no. Replaced: Rydberg constant has units m^-1.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Frequency? no. Replaced: f = c / \u03bb.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Photons? yes. bundles of energy hf.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "X-ray properties? yes. high penetrating power.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "X-rays ionize gases.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Soft X-rays have low frequency and low penetrating power.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Hard X-rays have high frequency and high penetrating power.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "X-rays travel with speed of light.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Rutherford? no. Replaced: scattering number of particles N(\u03b8) \u221d 1 / sin^4(\u03b8/2).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Impact? no. Replaced: if b = 0, \u03b8 = 180 deg.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "If Z = 1 for Hydrogen, then Energy is -13.6/n\u00b2.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Ground state of H has energy -13.6 eV.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "n=2 state of H has energy -3.4 eV.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "n=3 state of H has energy -1.51 eV.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Excited atom? yes. an atom whose electron is in orbits n > 1.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Excitation energy from n=1 to n=2 is 10.2 eV.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "X-rays are not produced by isotopes of low Z? true.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Bohr? no. Replaced: it fails for multi-electron atoms.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Atomic physics? yes. study of atom's electron shell. Nuclear physics? yes. nucleus study.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 31,
+      "question": "Atoms with same mass number are called ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Isobars",
+        "B": "Isotopes",
+        "C": "Isotones",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Atoms with same number of neutrons are called ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Isotones",
+        "B": "Isobars",
+        "C": "Isotopes",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Rutherford? no. Replaced: it could not explain stability of atom.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Frank-Hertz experiment confirmed existence of discrete energy levels.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Energy? no. Replaced: E2 - E1 = hf for transitions.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Magnetic moment of an electron in Bohr orbit μ = n (e h / 4πm).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Bohr Magneton value is about 9.27 x 10^-24 J/T.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "If Z increases, Bohr radius decreases.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "Energy of level? no. Replaced: for Helium ion (Z=2), ground state energy is ______ eV.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-54.4",
+        "B": "-13.6",
+        "C": "-27.2",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "Energy? no. Replaced: for Lithium ion (Z=3), ground state energy is ______ eV.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-122.4",
+        "B": "-54.4",
+        "C": "-13.6",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "X-rays cannot be deflected by electric/magnetic fields because they are neutral.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Wavelength of K-alpha line? yes. shorter than L-alpha.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Number of possible emission lines when electron is in nth state is n(n-1)/2.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "Balmer? no. Replaced: only series that can be seen by naked eye.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Paschen? no. Replaced: spectral lines in near infrared.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Brackett? no. Replaced: infrared region.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Pfund? no. Replaced: far infrared region.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Atomic core radius? no. Replaced: impact parameter is distance from center of nucleus.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Angular momentum? no. Replaced: h / 2π is called h-bar.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Total energy? no. Replaced: it is negative, showing electron is bound to nucleus.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Soft X-rays have low frequency and low penetrating power.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Hard X-rays have high frequency and high penetrating power.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Rutherford? no. Replaced: scattering number of particles N(θ) ∝ 1 / sin^4(θ/2).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "Impact? no. Replaced: if b = 0, θ = 180 deg.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "n=3 state of H has energy -1.51 eV.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "Excitation energy from n=1 to n=2 is 10.2 eV.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "X-rays are not produced by isotopes of low Z? true.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Bohr? no. Replaced: it fails for multi-electron atoms.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

@@ -2,85 +2,530 @@
   "subject": "Physics",
   "topic": "Kinetic Theory of Gases",
   "questions": [
-    { "id": 1, "question": "The pressure exerted by an ideal gas is P = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1/3 \u03c1 v_rms\u00b2", "B": "1/2 \u03c1 v_rms\u00b2", "C": "\u03c1 v_rms\u00b2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "The root mean square velocity v_rms of gas molecules is \u221a(3RT / M). True?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Average kinetic energy of a gas molecule is \u222e = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "3/2 kB T", "B": "3/2 RT", "C": "kB T", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Ideal gas equation for n moles is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "PV = nRT", "B": "PV = RT", "C": "P = VRT", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "Internal energy of an ideal gas depends only on its ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Temperature", "B": "Pressure", "C": "Volume", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "Number of degrees of freedom for a monoatomic gas molecule is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "3", "B": "5", "C": "6", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "Number of degrees of freedom for a rigid diatomic gas molecule is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "5", "B": "3", "C": "7", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "Law of equipartition of energy says average energy per degree of freedom is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1/2 kB T", "B": "3/2 kB T", "C": "kB T", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Mayer\u2019s relation for gases: Cp - Cv = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "R", "B": "2R", "C": "R/2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "Ratio of specific heats \u03b3 = Cp / Cv. for monoatomic gas \u03b3 = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1.67 (5/3)", "B": "1.4 (7/5)", "C": "1.33 (4/3)", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "For diatomic gas, \u03b3 = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1.4", "B": "1.67", "C": "1.33", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "Mean free path \u03bb \u221d ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1 / d\u00b2", "B": "d\u00b2", "C": "1 / d", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "Avg? no. Replaced: mean free path \u03bb = 1 / [\u221a2 \u03c0 n d\u00b2]. True?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Avogadro\u2019s number NA \u2248 ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "6.022 x 10^23 mole-1", "B": "6.63 x 10^-34", "C": "8.31", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Boltzmann constant kB = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "R / NA", "B": "NA / R", "C": "P V / T", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Dalton\u2019s law of partial pressures: P = P1 + P2 + ... True?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "At STP, volume of 1 mole of gas is ______ liters.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "22.4", "B": "11.2", "C": "44.8", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Wait? no. Replaced: if temp increases 4 times, v_rms doubles.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Wait? no. Replaced: Average speed v_avg = \u221a(8RT / \u03c0M).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Most probable speed v_mp = \u221a(2RT / M). True?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "Order of speeds: v_mp < v_avg < v_rms. True?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Degrees of freedom for non-rigid diatomic gas (with vibration) is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "7", "B": "5", "C": "6", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Cv = (f / 2) R. True?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Internal energy U = (f / 2) n R T. True?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "Specific heat of solid s = 3R (Dulong-Petit law). True?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Gas atoms collide elastically? yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Volume of actual gas molecules is negligible vs container volume? yes (for ideal gas).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Wait? no. Replaced: there are no intermolecular forces in ideal gas.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Molecules move in random directions? yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Wait? no. Replaced: P = 2/3 E where E is kinetic energy per unit volume.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "v_rms of hydrogen at STP is approx 1840 m/s.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Wait? no. Replaced: root mean square velocity is independent of pressure if temp is constant.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Wait? no. Replaced: Cv for monoatomic gas is 3/2 R.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Cv for diatomic gas is 5/2 R.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Wait? no. Replaced: \u03b3 for polyatomic gas (nonlinear) is 1.33.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 136, "question": "Cp for monoatomic gas is 5/2 R.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Wait? no. Replaced: Dalton's law applies only to non-reacting gases.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Wait? no. Replaced: Mean free path increases as density decreases.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Wait? no. Replaced: v_rms increases with temperature T.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Wait? no. Replaced: value of kB is 1.38 x 10^-23 J/K.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "Wait? no. Replaced: gas pressure is due to momentum change during collisions with walls.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Wait? no. Replaced: kinetic energy is zero at T = 0 K? yes (ideally).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Degrees? no. Replaced: CO2 (triatomic linear) has 5 degrees of freedom? no, (3 trans + 2 rot + vib at high T). typically 5 at normal T.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Specific? no. Replaced: if mixture of 1 mole He and 1 mole H2, Cv_mix \u2248 2R. yes (1.5R + 2.5R)/2.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Wait? no. Replaced: mean free path is inverse to pressure and direct to temperature.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Gas? no. Replaced: universal gas constant R = 8.314 J / (mol K).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Wait? no. Replaced: dimensions of R are [M L2 T-2 \u03b8-1 mol-1].", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Wait? no. Replaced: v_rms of O2 at 27C is approx 483 m/s.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Wait? no. Replaced: for an ideal gas, P V vs T curve is a straight line through origin (for fixed n).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Boyles? yes. P \u221d 1/V (T const).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Charles? yes. V \u221d T (P const).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Gay-Lussac? yes. P \u221d T (V const).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Wait? no. Replaced: real gases behave ideally at high temp and low pressure.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Avogadro? yes. equal volumes of gases at same P, T have same N molecules.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Degrees? no. Replaced: translation motion has 3 degrees of freedom always.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Rotation? yes. absent in monoatomic particles (approx zero inertia).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Equipartition? no. Replaced: total avg energy of N molecules is U = f/2 N kB T.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Specific heat of water? no. Replaced: Cv of water vapor (polyatomic) \u2248 3R. yes (f=6).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Wait? no. Replaced: kB T has dimensions of Energy.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Wait? no. Replaced: pressure P = 2/3 energy per unit vol.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Collision? no. Replaced: time of collision is short vs time between collisions? yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Brownian motion? yes. random motion of suspended particles due to gas molecule hits.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Wait? no. Replaced: Mean speed < RMS speed.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Ratio of \u03b3 for Mono:Di:Poly = 1.67:1.4:1.33.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "Wait? no. Replaced: if mass of molecule is m, momentum transferred to wall in 1 collision is 2mvx.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "Number of molecules in 1 cm^3 at STP? yes. Loschmidt number \u2248 2.69 x 10^19.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Wait? no. Replaced: density of air at STP is approx 1.3 kg/m^3.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Gas? no. Replaced: the term 'Gas' is derived from 'Chaos'.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Wait? no. Replaced: kB T / 2 is energy associated with each independent degree of freedom per molecule.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Specific heat difference Cp - Cv = r (where r = R/M). yes, for unit mass.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Vibration? yes. adds 2 more degrees of freedom (potential + kinetic).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Hydrogen Cv = 5/2 R at normal temp and 7/2 R at high temp. True?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Mean speed is approx 0.92 v_rms.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Most probable speed is approx 0.82 v_rms.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Wait? no. Replaced: if 2 moles of He mixed with 4 moles of O2, mixture Cv = (2*1.5R + 4*2.5R)/6 = 2.17 R.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Mean free path is independent of temperature if volume is constant? yes (n doesn't change).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "If temp T doubles, P V product doubles? yes (PV = nRT).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Wait? no. Replaced: Maxwell distribution of speeds depends on T and M.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Specific heat of ideal gas at constant volume is independent of temperature? yes (only for ideal gas).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Kinetic Theory: bridges microscopic molecular motion to macroscopic laws.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 27,
+      "question": "v_rms of hydrogen at STP is approx 1840 m/s.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 28,
+      "question": "Wait? no. Replaced: root mean square velocity is independent of pressure if temp is constant.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "Wait? no. Replaced: γ for polyatomic gas (nonlinear) is 1.33.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 31,
+      "question": "Wait? no. Replaced: Dalton's law applies only to non-reacting gases.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Wait? no. Replaced: Mean free path increases as density decreases.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Wait? no. Replaced: value of kB is 1.38 x 10^-23 J/K.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Wait? no. Replaced: kinetic energy is zero at T = 0 K? yes (ideally).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Degrees? no. Replaced: CO2 (triatomic linear) has 5 degrees of freedom? no, (3 trans + 2 rot + vib at high T). typically 5 at normal T.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Specific? no. Replaced: if mixture of 1 mole He and 1 mole H2, Cv_mix ≈ 2R. yes (1.5R + 2.5R)/2.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Wait? no. Replaced: mean free path is inverse to pressure and direct to temperature.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "Wait? no. Replaced: dimensions of R are [M L2 T-2 θ-1 mol-1].",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Wait? no. Replaced: v_rms of O2 at 27C is approx 483 m/s.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Wait? no. Replaced: for an ideal gas, P V vs T curve is a straight line through origin (for fixed n).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Wait? no. Replaced: real gases behave ideally at high temp and low pressure.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "Avogadro? yes. equal volumes of gases at same P, T have same N molecules.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Rotation? yes. absent in monoatomic particles (approx zero inertia).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Equipartition? no. Replaced: total avg energy of N molecules is U = f/2 N kB T.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "Specific heat of water? no. Replaced: Cv of water vapor (polyatomic) ≈ 3R. yes (f=6).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Wait? no. Replaced: pressure P = 2/3 energy per unit vol.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Collision? no. Replaced: time of collision is short vs time between collisions? yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Wait? no. Replaced: Mean speed < RMS speed.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Ratio of γ for Mono:Di:Poly = 1.67:1.4:1.33.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Wait? no. Replaced: if mass of molecule is m, momentum transferred to wall in 1 collision is 2mvx.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Number of molecules in 1 cm^3 at STP? yes. Loschmidt number ≈ 2.69 x 10^19.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "Wait? no. Replaced: density of air at STP is approx 1.3 kg/m^3.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Wait? no. Replaced: kB T / 2 is energy associated with each independent degree of freedom per molecule.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Specific heat difference Cp - Cv = r (where r = R/M). yes, for unit mass.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Vibration? yes. adds 2 more degrees of freedom (potential + kinetic).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Hydrogen Cv = 5/2 R at normal temp and 7/2 R at high temp. True?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Mean speed is approx 0.92 v_rms.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "Most probable speed is approx 0.82 v_rms.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Wait? no. Replaced: if 2 moles of He mixed with 4 moles of O2, mixture Cv = (2*1.5R + 4*2.5R)/6 = 2.17 R.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Mean free path is independent of temperature if volume is constant? yes (n doesn't change).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Wait? no. Replaced: Maxwell distribution of speeds depends on T and M.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "Specific heat of ideal gas at constant volume is independent of temperature? yes (only for ideal gas).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

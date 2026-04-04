@@ -1,7 +1,7 @@
 // ─── Global Promo Code Config ───────────────────────────────────────────────
 // Add or remove codes from GLOBAL_PROMO_CODES to manage the promo system.
 
-export type PromoType = "discount" | "unlock" | "resource" | "boost";
+export type PromoType = "discount" | "unlock" | "resource" | "boost" | "lifetime";
 
 export interface PromoConfig {
   type: PromoType;
@@ -35,6 +35,10 @@ export const GLOBAL_PROMO_CODES: Record<string, PromoConfig> = {
     type: "unlock",
     feature: "ai_hints",
     description: "AI Hint mode unlocked for all topics",
+  },
+  SC_ULTIMATE_LIFETIME_ACCESS_CRACKER_MODE_SECURE_2026: {
+    type: "lifetime",
+    description: "LIFETIME ACCESS ACTIVATED. Welcome, Creator.",
   },
 };
 

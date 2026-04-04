@@ -2,85 +2,590 @@
   "subject": "Botany",
   "topic": "Biotechnology: Principles and Processes",
   "questions": [
-    { "id": 1, "question": "Biotechnology deals with techniques of using living organisms or enzymes to produce products useful to humans.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "European Federation of Biotechnology (EFB) defines biotechnology as the integration of ______ and ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Natural science, Organisms", "B": "Physics, Chemistry", "C": "DNA, RNA", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "The two core techniques that enabled modern biotechnology are ______ and ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Genetic engineering, Bioprocess engineering", "B": "Cloning, Sequencing", "C": "PCR, Electrophoresis", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Techniques to alter the chemistry of genetic material (DNA/RNA) is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Genetic engineering", "B": "Biotechnology", "C": "Tissue culture", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "First recombinant DNA was constructed by ______ and ______ in 1972.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Stanley Cohen, Herbert Boyer", "B": "Watson, Crick", "C": "Mendel, Morgan", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "The autonomous replicating circular extra-chromosomal DNA of bacteria is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Plasmid", "B": "Nucleoid", "C": "Mitochondria", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "The first restriction endonuclease discovered is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Hind II", "B": "Eco RI", "C": "Bam HI", "D": "Pst I" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "Restriction enzymes belong to a larger class of enzymes called ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Nucleases", "B": "Ligases", "C": "Polymerases", "D": "Proteases" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Enzymes that remove nucleotides from ends are ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Exonucleases", "B": "Endonucleases", "C": "Ligases", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "Enzymes that cut at specific positions within the DNA are ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Endonucleases", "B": "Exonucleases", "C": "Polymerases", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Each restriction endonuclease recognizes a specific ______ sequence in the DNA.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Palindromic nucleotide", "B": "Random", "C": "Repeated", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "EcoRI cuts the DNA between bases ______ and ______ when sequence GAATTC is present.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "G and A", "B": "A and T", "C": "T and C", "D": "C and G" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "DNA fragments are negatively charged and move towards the ______ in gel electrophoresis.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Anode (+)", "B": "Cathode (-)", "C": "Center", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "The most common matrix used in gel electrophoresis is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Agarose", "B": "Starch", "C": "Cellulose", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Separated DNA fragments can be seen only after staining with ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ethidium Bromide (EtBr)", "B": "Safranin", "C": "Iodine", "D": "Bromophenol blue" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Stained DNA fragments appear as ______ colored bands under UV light.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Bright orange", "B": "Blue", "C": "Red", "D": "Green" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "The process of extracting separated DNA fragments from the gel piece is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Elution", "B": "Illumination", "C": "Injection", "D": "Transformation" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "The sequence in a vector responsible for initiating replication is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "ori (Origin of replication)", "B": "pBR322", "C": "ampR", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Which of the following serves as a selectable marker in pBR322?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Antibiotic resistance genes (ampR, tetR)", "B": "Ori", "C": "EcoRI site", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Cloning vector pBR322 has restriction sites for BamHI and SalI located in the ______ gene.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Tetracycline resistance (tetR)", "B": "Ampicillin (ampR)", "C": "Ori", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "When a foreign gene is inserted at BamHI site of pBR322, the recombinant plasmid loses ______ resistance.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Tetracycline", "B": "Ampicillin", "C": "Both", "D": "Neither" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Insertional inactivation of ______ gene is used as an alternative marker in blue-white screening.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Beta-galactosidase (Lac Z)", "B": "AmpR", "C": "TetR", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "The bacterium used as a 'Natural Genetic Engineer' to deliver genes into plants is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Agrobacterium tumefaciens (Ti plasmid)", "B": "E. coli", "C": "Rhizobium", "D": "Bacillus" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Technique to introduce rDNA directly into the nucleus of animal cells is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Micro-injection", "B": "Biolistics", "C": "Transformation", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "In biolistics (gene gun), plant cells are bombarded with high velocity micro-particles of ______ or ______ coated with DNA.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Gold, Tungsten", "B": "Silver, Iron", "C": "Carbon, Zinc", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Polymerase Chain Reaction (PCR) is used for ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "DNA amplification", "B": "Protein synthesis", "C": "Cell division", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "The thermostable DNA polymerase used in PCR is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Taq polymerase", "B": "DNA Pol III", "C": "RNA Pol", "D": "Ligase" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "The three steps of PCR in correct order are ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Denaturation, Annealing, Extension", "B": "Annealing, Extension, Denaturation", "C": "Extension, Denaturation, Annealing", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Large scale production of recombinant protein is done in vessels called ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Bioreactors", "B": "Autoclaves", "C": "Incubators", "D": "Centrifuges" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "The process which includes separation and purification of product is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Downstream processing", "B": "Upstream processing", "C": "PCR", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "Restriction? No. Replaced: Restrictive enzymes were so named because they restricted the growth of ______ in E. coli.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Bacteriophages", "B": "Fungi", "C": "Yeasts", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "For a sequence to be palindromic, it must read the same in ______ direction.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Forward and backward (5' to 3')", "B": "Up and Down", "C": "Left and Right", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "DNA Ligase forms which type of bond?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Phosphodiester", "B": "Hydrogen", "C": "Peptide", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Competent cells? yes. treat with specific concentration of divalent cation like ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Calcium (Ca2+)", "B": "Sodium", "C": "Iron", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Taq polymerase is isolated from ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Thermus aquaticus", "B": "E. coli", "C": "Yeast", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Continuous culture? yes. it gives higher biomass and product yield.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Chitinase is used to break the cell wall of ______ to extract DNA.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Fungi", "B": "Plants", "C": "Bacteria", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Lysozyme is used to break the cell wall of ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Bacteria", "B": "Plants", "C": "Fungi", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Cellulase is used to break the cell wall of ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Plants", "B": "Bacteria", "C": "Fungi", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Precipitation of DNA is done using chilled ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ethanol", "B": "Water", "C": "Acid", "D": "Base" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "In pBR322, 'p' stands for ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Plasmid", "B": "Protein", "C": "Phage", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "In pBR322, 'BR' stands for ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Bolivar and Rodriguez", "B": "Boyer and Rodriguez", "C": "Bacteria", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "In pBR322, '322' is the ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Designation/Number given by lab", "B": "Size in kb", "C": "Year", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Copy number? yes. the number of copies of a plasmid per cell.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Restriction? yes. HindII was the first one.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "EcoRI origin? Replaced: Escherichia coli RY 13.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Naming of enzymes? yes. First letter is Genus, next two are species.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Roman number in enzyme name? Replaced: It indicates order of isolation from the strain.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "pSC 101? yes. it was the first cloning vector.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Origin of replication regulates copy number.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Kanamycin and Chloramphenicol are also selectable markers.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "ROP gene in pBR322 codes for proteins involved in replication of plasmid.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Disarmed pathogens? yes. they are used as vectors (e.g. Retrovirus in animal cells).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Transformation? yes. uptake of naked DNA by host cell.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "PCR amplification? yes. it can amplify DNA billions of times in few hours.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Sparged stirred-tank bioreactor? yes. it provides better air availability.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Temperature of Denaturation in PCR? Replaced: around 94 degrees Celsius.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Annealing temperature? Replaced: usually between 40-60 degrees Celsius.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Extension temperature? Replaced: ideally 72 degrees Celsius for Taq.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Multiple cloning sites in a single vector? no. it would lead to many fragments and complication.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 61, "question": "Isoschizomers? yes. restriction enzymes with same recognition sequence.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "PST I is from Providencia stuartii.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Selectable marker? yes. it helps to identify and eliminate non-transformants.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Ti plasmid causes crown gall disease in dicots.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "T-DNA? yes. it is the portion of Ti plasmid transferred into plant cell.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "Primers in PCR? yes. they are small chemically synthesized oligonucleotides.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Large scale production? yes. 100-1000 liters capacity bioreactors used.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Bioreactor provides optimal growth conditions like T, pH, O2, substrate.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Agarose? yes. it is a natural polymer extracted from sea weeds.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Resolution in gel? yes. smaller the fragment, farther it moves.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "rRNA and RNase treatment? yes. they are used to get pure DNA.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Spatiation? no. ligation happens between ends of DNA.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Rec? no. recombinant protein is one produced in a heterologous host.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Beta-galactosidase assay? yes. recombinants do not produce color in presence of chromogenic substrate.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Molecular glue? yes. DNA ligase.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Molecular scissors? yes. restriction endonucleases.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "DNA is hydrophobic? no. it is hydrophilic and cannot pass through cell membrane.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 78, "question": "Vector DNA and source DNA should be cut with same restriction enzyme.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "pSC? yes. Boyer and Cohen used it to clone antibiotic resistance gene.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Ethidium bromide? yes. it intercalates between DNA bases.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 31,
+      "question": "Restriction? No. Replaced: Restrictive enzymes were so named because they restricted the growth of ______ in E. coli.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Bacteriophages",
+        "B": "Fungi",
+        "C": "Yeasts",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "DNA Ligase forms which type of bond?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Phosphodiester",
+        "B": "Hydrogen",
+        "C": "Peptide",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Competent cells? yes. treat with specific concentration of divalent cation like ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Calcium (Ca2+)",
+        "B": "Sodium",
+        "C": "Iron",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Taq polymerase is isolated from ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Thermus aquaticus",
+        "B": "E. coli",
+        "C": "Yeast",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Continuous culture? yes. it gives higher biomass and product yield.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Chitinase is used to break the cell wall of ______ to extract DNA.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Fungi",
+        "B": "Plants",
+        "C": "Bacteria",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Lysozyme is used to break the cell wall of ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Bacteria",
+        "B": "Plants",
+        "C": "Fungi",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Cellulase is used to break the cell wall of ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Plants",
+        "B": "Bacteria",
+        "C": "Fungi",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "Precipitation of DNA is done using chilled ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Ethanol",
+        "B": "Water",
+        "C": "Acid",
+        "D": "Base"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "In pBR322, 'BR' stands for ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Bolivar and Rodriguez",
+        "B": "Boyer and Rodriguez",
+        "C": "Bacteria",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Copy number? yes. the number of copies of a plasmid per cell.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "EcoRI origin? Replaced: Escherichia coli RY 13.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "Naming of enzymes? yes. First letter is Genus, next two are species.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Roman number in enzyme name? Replaced: It indicates order of isolation from the strain.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "pSC 101? yes. it was the first cloning vector.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Origin of replication regulates copy number.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "Kanamycin and Chloramphenicol are also selectable markers.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "ROP gene in pBR322 codes for proteins involved in replication of plasmid.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Disarmed pathogens? yes. they are used as vectors (e.g. Retrovirus in animal cells).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Sparged stirred-tank bioreactor? yes. it provides better air availability.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Temperature of Denaturation in PCR? Replaced: around 94 degrees Celsius.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Annealing temperature? Replaced: usually between 40-60 degrees Celsius.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Extension temperature? Replaced: ideally 72 degrees Celsius for Taq.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "Multiple cloning sites in a single vector? no. it would lead to many fragments and complication.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Isoschizomers? yes. restriction enzymes with same recognition sequence.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "PST I is from Providencia stuartii.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Selectable marker? yes. it helps to identify and eliminate non-transformants.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Ti plasmid causes crown gall disease in dicots.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "T-DNA? yes. it is the portion of Ti plasmid transferred into plant cell.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Primers in PCR? yes. they are small chemically synthesized oligonucleotides.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Agarose? yes. it is a natural polymer extracted from sea weeds.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "rRNA and RNase treatment? yes. they are used to get pure DNA.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "Spatiation? no. ligation happens between ends of DNA.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "Rec? no. recombinant protein is one produced in a heterologous host.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Beta-galactosidase assay? yes. recombinants do not produce color in presence of chromogenic substrate.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "DNA is hydrophobic? no. it is hydrophilic and cannot pass through cell membrane.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "Vector DNA and source DNA should be cut with same restriction enzyme.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 76,
+      "question": "pSC? yes. Boyer and Cohen used it to clone antibiotic resistance gene.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 77,
+      "question": "Ethidium bromide? yes. it intercalates between DNA bases.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

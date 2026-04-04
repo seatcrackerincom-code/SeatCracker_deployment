@@ -2,85 +2,545 @@
   "subject": "Physics",
   "topic": "Dual Nature of Radiation & Matter",
   "questions": [
-    { "id": 1, "question": "The emission of electrons from a metal surface when light of suitable frequency falls on it is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Photoelectric effect", "B": "Thermionic emission", "C": "Field emission", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "The minimum energy required to remove an electron from a metal surface is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Work Function (\u03a6)", "B": "Potential Energy", "C": "Kinetic Energy", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Hertz discovery? yes. observed sparkle in spark gap increased with UV light.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Photoelectric current is proportional to the ______ of incident light.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Intensity", "B": "Frequency", "C": "Wavelength", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "Maximum kinetic energy of photoelectrons depends on ______ of incident light.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Frequency", "B": "Intensity", "C": "Area", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "The negative potential at which photoelectric current becomes zero is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Stopping potential", "B": "Cut-off voltage", "C": "Threshold potential", "D": "A and B" }, "answer": "D", "pyq": true },
-    { "id": 7, "question": "Threshold frequency is the ______ frequency for which photoelectric emission occurs.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Minimum", "B": "Maximum", "C": "Zero", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "Einstein\u2019s photoelectric equation is Kmax = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "hf - \u03a6", "B": "hf + \u03a6", "C": "\u03a6 / hf", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Relation between stopping potential V0 and max kinetic energy Kmax is Kmax = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "e V0", "B": "V0 / e", "C": "h V0", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "Work function \u03a6 = h * ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "f0 (threshold frequency)", "B": "c", "C": "f", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Photoelectric effect supports the ______ nature of light.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Particle", "B": "Wave", "C": "Longitudinal", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "A packet of electromagnetic energy is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Photon", "B": "Electron", "C": "Molecule", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "Rest mass of a photon is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero", "B": "1", "C": "Infinite", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Momentum of a photon is p = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "h / \u03bb", "B": "h \u03bb", "C": "mc", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "De Broglie wavelength \u03bb of a particle of mass m moving with velocity v is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "h / (mv)", "B": "mv / h", "C": "hmv", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "The de Broglie wavelength of an electron accelerated through potential V is about ______ A.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "12.27 / \u221aV", "B": "V / 12.27", "C": "1.227 \u221aV", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "Davisson-Germer experiment proved the ______ nature of electrons.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Wave", "B": "Particle", "C": "Magnetic", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "The slope of graph between stopping potential V0 and frequency f is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "h / e", "B": "h", "C": "e / h", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Heisenberg uncertainty principle relates \u0394x and \u0394p by ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u0394x \u0394p \u2265 h / 4\u03c0", "B": "\u0394x \u0394p \u2264 h", "C": "Zero", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Saturation current depends on intensity of light. True?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "Stopping potential is independent of intensity of light. True?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "If frequency of incident light is doubled, stopping potential ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increases more than double", "B": "Doubles", "C": "Remains same", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Units of Planck constant are ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "J s", "B": "J / s", "C": "J m", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Photoelectric effect is an ______ process.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Instantaneous", "B": "Delayed", "C": "Slow", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "The cut-off wavelength \u03bb0 corresponds to f0 by \u03bb0 = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "c / f0", "B": "f0 / c", "C": "c f0", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Work Function of an alkali metal is ______ than that of heavy metals.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Smaller", "B": "Larger", "C": "Same", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Emission? no. Replaced: secondary emission is due to bombardment of fast electrons.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Photocells convert light energy into ______ energy.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Electrical", "B": "Chemical", "C": "Sound", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Planck\u2019s constant value \u2248 6.63 x 10^-34 J s.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Dual nature means things have both particle and wave properties.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "Frequency? no. Replaced: as per Einstein, one photon ejects one electron.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Stopping? no. Replaced: value of V0 for frequency f and work function \u03a6 is (hf - \u03a6)/e.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Threshold frequency f0 of Caesium is around 5 x 10^14 Hz.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Photon? no. Replaced: all photons of same frequency have same energy.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Intensity? no. Replaced: increase in intensity increases number of photons per second.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Photon is electrically neutral.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Effective mass of photon? yes. E/c\u00b2 = hf/c\u00b2.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Wavelength? no. Replaced: de Broglie wavelength for mass m and kinetic energy K is \u03bb = h / \u221a(2mK).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Electron microscope? yes. based on wave nature of electron.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Resolving power of electron microscope is high because \u03bb is small.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "Davisson-Germer? no. Replaced: electron diffraction from Nickel crystal showed wave nature.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Wave? no. Replaced: de Broglie equation \u03bb = h/p shows both particle (p) and wave (\u03bb) properties.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Stopping? no. Replaced: it is a measure of max KE of electrons.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Work Function \u03a6 depends on target material.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Wait? no. Replaced: photon collides with matter, energy and momentum are conserved.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "In photon-electron collision, total number of photons may not be conserved.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Photons travel at speed c in vacuum in all frames.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Max speed? no. Replaced: photoelectric effect works in visible for alkali metals.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "De Broglie wavelength of gas molecule at temp T is \u03bb = h / \u221a(3mkT).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Small particles? no. Replaced: macro bodies have very small \u03bb (wave nature undetectable).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Photoelectric effect? no. Replaced: classical wave theory could not explain threshold frequency.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Threshold? no. Replaced: it depends on target material.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Saturation current doesn't increase with intensity above some point? no. it usually scales with intensity.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Light? no. Replaced: Einstein's photoelectric theory explains photoelectric effect as 1:1 collision.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Electron? no. Replaced: mass of electron is 9.1 x 10^-31 kg.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Proton? no. Replaced: mass of proton is 1.67 x 10^-27 kg.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "De Broglie? no. Replaced: he proposed that matter should also show dual nature.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Wave? no. Replaced: Davisson and Germer used electrons with Energy around 54 eV.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "G.P. Thomson showed diffraction of electrons through thin gold film.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Uncertainty? no. Replaced: it is a fundamental property of quantum systems.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Work Function? no. Replaced: lowest for Cesium, highest for Platinum.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Thermionic emission depends on temperature of filament.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Field emission needs strong electric field (10^8 V/m).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Threshold frequency f0 and stopping potential V0 for frequency f are related as eV0 = h(f - f0).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "Graph of stopping potential vs frequency is a straight line.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "Intercept of V0-f graph on f-axis gives threshold frequency.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Photon? no. Replaced: number of photons from monochromatic source is Energy/hf.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Diffraction? no. Replaced: shows wave nature of light.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Interference? yes. shows wave nature.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Photoelectric effect? yes. shows particle nature.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Compton effect shows particle nature.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Speed of photon? no. Replaced: independent of intensity of radiation.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Energy of photon? no. Replaced: E = 1240 / \u03bb (in eV) if \u03bb is in nm.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Matter? no. Replaced: de Broglie wavelength decreases as momentum increases.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "De Broglie? no. Replaced: for a photon \u03bb = h/p holds true too.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "\u03bb(He) / \u03bb(H) for same potential is around 1/2? no. inversely to \u221aqm.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Wave? no. Replaced: wave packet represents a particle in space.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Heisenberg? no. Replaced: \u0394E \u0394t \u2265 h / 4\u03c0 also exists.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Planck\u2019s quantum of energy is E = h f.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Dual nature: light is wave during propagation and particle during interaction.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 28,
+      "question": "Frequency? no. Replaced: as per Einstein, one photon ejects one electron.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 29,
+      "question": "Stopping? no. Replaced: value of V0 for frequency f and work function Φ is (hf - Φ)/e.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "Threshold frequency f0 of Caesium is around 5 x 10^14 Hz.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Intensity? no. Replaced: increase in intensity increases number of photons per second.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Effective mass of photon? yes. E/c² = hf/c².",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Wavelength? no. Replaced: de Broglie wavelength for mass m and kinetic energy K is λ = h / √(2mK).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Resolving power of electron microscope is high because λ is small.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Davisson-Germer? no. Replaced: electron diffraction from Nickel crystal showed wave nature.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Wave? no. Replaced: de Broglie equation λ = h/p shows both particle (p) and wave (λ) properties.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "Wait? no. Replaced: photon collides with matter, energy and momentum are conserved.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "In photon-electron collision, total number of photons may not be conserved.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Max speed? no. Replaced: photoelectric effect works in visible for alkali metals.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "De Broglie wavelength of gas molecule at temp T is λ = h / √(3mkT).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Small particles? no. Replaced: macro bodies have very small λ (wave nature undetectable).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Photoelectric effect? no. Replaced: classical wave theory could not explain threshold frequency.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "Saturation current doesn't increase with intensity above some point? no. it usually scales with intensity.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Light? no. Replaced: Einstein's photoelectric theory explains photoelectric effect as 1:1 collision.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Wave? no. Replaced: Davisson and Germer used electrons with Energy around 54 eV.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "G.P. Thomson showed diffraction of electrons through thin gold film.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Uncertainty? no. Replaced: it is a fundamental property of quantum systems.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Work Function? no. Replaced: lowest for Cesium, highest for Platinum.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Field emission needs strong electric field (10^8 V/m).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Threshold frequency f0 and stopping potential V0 for frequency f are related as eV0 = h(f - f0).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Graph of stopping potential vs frequency is a straight line.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Intercept of V0-f graph on f-axis gives threshold frequency.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Photon? no. Replaced: number of photons from monochromatic source is Energy/hf.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Diffraction? no. Replaced: shows wave nature of light.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "Interference? yes. shows wave nature.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Photoelectric effect? yes. shows particle nature.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Compton effect shows particle nature.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Energy of photon? no. Replaced: E = 1240 / λ (in eV) if λ is in nm.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "De Broglie? no. Replaced: for a photon λ = h/p holds true too.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "λ(He) / λ(H) for same potential is around 1/2? no. inversely to √qm.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 73,
+      "question": "Wave? no. Replaced: wave packet represents a particle in space.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "Heisenberg? no. Replaced: ΔE Δt ≥ h / 4π also exists.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 76,
+      "question": "Dual nature: light is wave during propagation and particle during interaction.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

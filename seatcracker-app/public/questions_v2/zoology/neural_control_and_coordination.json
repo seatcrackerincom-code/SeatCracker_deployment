@@ -2,85 +2,665 @@
   "subject": "Zoology",
   "topic": "Neural Control and Coordination",
   "questions": [
-    { "id": 1, "question": "The structural and functional unit of the neural system is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Neuron", "B": "Nephron", "C": "Synapse", "D": "Axon" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "Neurons that carry impulses from receptors to CNS are ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Sensory (Afferent)", "B": "Motor (Efferent)", "C": "Mixed", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Neurons that carry impulses from CNS to effectors are ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Motor (Efferent)", "B": "Sensory (Afferent)", "C": "Mixed", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "The space between two neurons where impulse is transmitted is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Synapse", "B": "Axon", "C": "Dendrite", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "Chemicals involved in transmission of impulses at chemical synapses are ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Neurotransmitters", "B": "Hormones", "C": "Enzymes", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "Resting membrane potential is maintained by ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Sodium-Potassium pump", "B": "Diffusion", "C": "Osmosis", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "In a resting neuron, the axonal membrane is more permeable to ______ ions.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Potassium (K+)", "B": "Sodium (Na+)", "C": "Chlorine", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "During depolarization, there is a rapid influx of ______ ions into the neuron.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Sodium (Na+)", "B": "Potassium (K+)", "C": "Calcium", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "The electrical potential difference across the plasma membrane at the site of excitation is ______ potential.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Action", "B": "Resting", "C": "Spike", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "Brain is protected by skull and ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Cranial meninges", "B": "Pleura", "C": "Ribs", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Human brain consists of Forebrain, Midbrain and ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Hindbrain", "B": "Spinal cord", "C": "Medulla", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "Major part of the human brain is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Cerebrum", "B": "Cerebellum", "C": "Thalamus", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "The tract of nerve fibers connecting two cerebral hemispheres is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Corpus callosum", "B": "Thalamus", "C": "Pons", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Temperature, urge for eating and drinking are controlled by ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": { "A": "Hypothalamus", "B": "Thalamus", "C": "Cerebrum", "D": "None" }, "options": { "A": "Hypothalamus", "B": "Thalamus", "C": "Cerebellum", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "The 'master' of endocrine system located in Forebrain is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Hypothalamus", "B": "Pituitary", "C": "Pineal", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "The part of brain that contains centers which control respiration and cardiovascular reflexes is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Medulla oblongata", "B": "Pons", "C": "Cerebrum", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "Cerebellum is associated with ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Balance / Equilibrium of body", "B": "Thinking", "C": "Vision", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Reflex action is controlled by ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Spinal cord", "B": "Brain only", "C": "Lungs", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "In eye, the photo-sensitive compounds are composed of ______ and ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Opsin, Retinal", "B": "Melanin", "C": "Sugar", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Rods contain a purplish-red protein called ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Rhodopsin", "B": "Iodopsin", "C": "Melanin", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "Cones are responsible for daylight (photopic) vision and ______ vision.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Color", "B": "Night", "C": "Black", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "The point of greatest visual acuity in eye is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Fovea centralis", "B": "Blind spot", "C": "Macula lutea", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Blind spot lacks both rods and cones.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Internal ear? yes. it consists of bony labyrinth and membranous labyrinth.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "The coiled portion of the labyrinth is called ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Cochlea", "B": "Vestibule", "C": "Canal", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Organ of Corti is a structure located on the ______ membrane.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Basilar", "B": "Reissner's", "C": "Tectorial", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Hair cells on basilar membrane act as ______ receptors.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Auditory", "B": "Equilibrium", "C": "Both", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Vestibular apparatus is responsible for maintenance of ______ of body and posture.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Balance / Equilibrium", "B": "Hearing", "C": "Vision", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Semicircular canals are part of ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Vestibular apparatus", "B": "Cochlea", "C": "Middle ear", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Unipolar? yes. neuron with cell body and only one axon. example? yes. embryonic stage.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 31, "question": "Multipolar neurons have one axon and two or more dendrites. Found where? yes. Cerebral cortex.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Bipolar neurons? yes. one axon and one dendrite. example? yes. Retina of eye.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Sodium-Potassium pump? yes. it transports three Na+ outwards and two K+ into the cell.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Nodes of Ranvier? yes. gaps between myelin sheaths on axonal membrane.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Saltatory conduction of impulse occurs in ______ fibers.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Myelinated", "B": "Unmyelinated", "C": "Axonal", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Electrical synapses involve gap junctions. impulse transmission is very fast.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Synaptic vesicles contain neurotransmitters.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Dura mater? yes. outermost meninx of brain.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Pia mater? yes. innermost meninx of brain.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Arachnoid? yes. thin middle layer of meninges.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "Somatic neural system? relays impulses from CNS to skeletal muscles.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Autonomic neural system (ANS)? yes. relays impulses from CNS to involuntary organs.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Sympathetic system is part of ANS.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Cerebral cortex? yes. folded layers of cerebrum which contain grey matter.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Presence of more myelin makes the inner part of cerebral hemisphere look white. This is white matter.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Hypothalamus? no. Replaced: The limbic system along with hypothalamus is involved in regulation of sexual behavior and emotions.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Corpora quadrigemina consists of four lobes on dorsal side of ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Midbrain", "B": "Hindbrain", "C": "Forebrain", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Brain stem consists of Midbrain, Pons and ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Medulla", "B": "Cerebellum", "C": "Spinal cord", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Knee-jerk reflex arc? arc involves only two neurons - one sensory and one motor. This is monosynaptic reflex.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Eye layers? Outer: Sclera; Middle: Choroid; Inner: Retina.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Cornea? yes. transparent anterior part of sclera.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Aqueous chamber is between ______ and cornea.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lens", "B": "Vitreous", "C": "Retina", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Vitreous chamber is between lens and ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Retina", "B": "Cornea", "C": "Iris", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Middle ear? yes. it contains three ossicles malleus, incus and stapes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Eustachian tube? yes. it connects the middle ear cavity with pharynx.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Stapes? yes. a bone which is attached to the oval window of the cochlea.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Malleus? attached to the tympanic membrane.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Perilymph? yes. fluid present in bony labyrinth of ear.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Endolymph? yes. fluid present in membranous labyrinth of ear.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Crista ampullaris? yes. dynamic receptor for equilibrium in semicircular canals.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 61, "question": "Macula? yes. receptor for static equilibrium of head.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Impulse? no. Replaced: Synaptic delay occurs at the synapse.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Transmission? yes. electrical synapse is faster than chemical synapse.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Grey matter? yes. it consists of neuron cell bodies.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "White matter? yes. it consists of myelinated axons.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "Thalamus? yes. major coordinating center for sensory and motor signaling.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Neural signals from PNS to muscles? yes. Somatic neural system.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Visceral neural system? yes. part of PNS comprising nerves, fibers and ganglia by which impulses travel from CNS to viscera.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Acetylcholine? yes. example of inhibitory neurotransmitter? No. It is generally excitatory at NMJ.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 70, "question": "Schwann cells? yes. they form myelin sheath around axons.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Impulse? yes. Action potential is a self-propagating electrical signal.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Eardrum? yes. Tympanic membrane.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Lens? yes. transparent, crystalline structure.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Pupil? yes. opening guarded by iris.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Ciliary body? middle eye layer modification.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Scala vestibuli? yes. upper chamber of cochlea.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Scala media? yes. middle chamber of cochlea containing endolymph.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Scala tympani? yes. lower chamber of cochlea.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Refractory period? yes. duration during which neuron cannot respond to fresh stimulus.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Parkinson's disease is due to deficiency of ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Dopamine", "B": "Serotonin", "C": "Thyroxine", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 29,
+      "question": "Unipolar? yes. neuron with cell body and only one axon. example? yes. embryonic stage.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "Multipolar neurons have one axon and two or more dendrites. Found where? yes. Cerebral cortex.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 31,
+      "question": "Bipolar neurons? yes. one axon and one dendrite. example? yes. Retina of eye.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Sodium-Potassium pump? yes. it transports three Na+ outwards and two K+ into the cell.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Nodes of Ranvier? yes. gaps between myelin sheaths on axonal membrane.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Saltatory conduction of impulse occurs in ______ fibers.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Myelinated",
+        "B": "Unmyelinated",
+        "C": "Axonal",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Electrical synapses involve gap junctions. impulse transmission is very fast.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Synaptic vesicles contain neurotransmitters.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Dura mater? yes. outermost meninx of brain.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Pia mater? yes. innermost meninx of brain.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Arachnoid? yes. thin middle layer of meninges.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "Somatic neural system? relays impulses from CNS to skeletal muscles.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "Autonomic neural system (ANS)? yes. relays impulses from CNS to involuntary organs.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Cerebral cortex? yes. folded layers of cerebrum which contain grey matter.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Presence of more myelin makes the inner part of cerebral hemisphere look white. This is white matter.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Hypothalamus? no. Replaced: The limbic system along with hypothalamus is involved in regulation of sexual behavior and emotions.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "Corpora quadrigemina consists of four lobes on dorsal side of ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Midbrain",
+        "B": "Hindbrain",
+        "C": "Forebrain",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Brain stem consists of Midbrain, Pons and ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Medulla",
+        "B": "Cerebellum",
+        "C": "Spinal cord",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Knee-jerk reflex arc? arc involves only two neurons - one sensory and one motor. This is monosynaptic reflex.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Eye layers? Outer: Sclera; Middle: Choroid; Inner: Retina.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Aqueous chamber is between ______ and cornea.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Lens",
+        "B": "Vitreous",
+        "C": "Retina",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Vitreous chamber is between lens and ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Retina",
+        "B": "Cornea",
+        "C": "Iris",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Eustachian tube? yes. it connects the middle ear cavity with pharynx.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Stapes? yes. a bone which is attached to the oval window of the cochlea.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Malleus? attached to the tympanic membrane.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Perilymph? yes. fluid present in bony labyrinth of ear.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Endolymph? yes. fluid present in membranous labyrinth of ear.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "Crista ampullaris? yes. dynamic receptor for equilibrium in semicircular canals.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Macula? yes. receptor for static equilibrium of head.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Impulse? no. Replaced: Synaptic delay occurs at the synapse.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Transmission? yes. electrical synapse is faster than chemical synapse.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Grey matter? yes. it consists of neuron cell bodies.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "White matter? yes. it consists of myelinated axons.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Thalamus? yes. major coordinating center for sensory and motor signaling.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Visceral neural system? yes. part of PNS comprising nerves, fibers and ganglia by which impulses travel from CNS to viscera.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Acetylcholine? yes. example of inhibitory neurotransmitter? No. It is generally excitatory at NMJ.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Schwann cells? yes. they form myelin sheath around axons.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Impulse? yes. Action potential is a self-propagating electrical signal.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Ciliary body? middle eye layer modification.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 73,
+      "question": "Scala vestibuli? yes. upper chamber of cochlea.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "Scala media? yes. middle chamber of cochlea containing endolymph.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "Scala tympani? yes. lower chamber of cochlea.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 76,
+      "question": "Refractory period? yes. duration during which neuron cannot respond to fresh stimulus.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 77,
+      "question": "Parkinson's disease is due to deficiency of ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Dopamine",
+        "B": "Serotonin",
+        "C": "Thyroxine",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

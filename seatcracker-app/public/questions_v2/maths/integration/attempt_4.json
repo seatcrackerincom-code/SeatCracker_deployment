@@ -1,0 +1,324 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "∫ cos x/(1 + sin²x) dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "arctan(sin x) + C",
+        "B": "ln|1 + sin²x| + C",
+        "C": "sin⁻¹(cos x) + C",
+        "D": "arctan(cos x) + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 2,
+      "question": "∫ 1/(x·ln x) dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ln|ln x| + C",
+        "B": "ln x + C",
+        "C": "1/ln x + C",
+        "D": "(ln x)²/2 + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "∫ sec² x dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "tan x + C",
+        "B": "sec x tan x + C",
+        "C": "-cot x + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 3
+    },
+    {
+      "question": "The constant of integration C is added because ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Derivative of constant is zero",
+        "B": "To make it pretty",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 4
+    },
+    {
+      "question": "Integrating by parts: ∫ u dv = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "uv - ∫ v du",
+        "B": "uv + ∫ v du",
+        "C": "∫ u v dx",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 5
+    },
+    {
+      "question": "∫ sqrt(a² - x²) dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "0.5 [x√(a²-x²) + a² sin⁻¹(x/a)] + C",
+        "B": "None",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 6
+    },
+    {
+      "question": "∫ e^ax sin bx dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(e^ax / (a²+b²)) (a sin bx - b cos bx) + C",
+        "B": "None",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 7
+    },
+    {
+      "question": "∫ sin² x dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "x/2 - (sin 2x)/4 + C",
+        "B": "x/2 + (sin 2x)/4 + C",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "question": "∫ tan⁻¹x dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x·tan⁻¹x − (1/2)ln(1+x²) + C",
+        "B": "x·tan⁻¹x + ln(1+x²) + C",
+        "C": "tan⁻¹x/x + C",
+        "D": "x·tan⁻¹x + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "∫ sin³ x dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(1/3) cos³ x - cos x + C",
+        "B": "None",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 10
+    },
+    {
+      "question": "∫ 1 / (x² - a²) dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(1/2a) ln|(x-a)/(x+a)| + C",
+        "B": "None",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 11
+    },
+    {
+      "question": "The integral of x e^x dx is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(x-1)e^x + C",
+        "B": "xe^x + C",
+        "C": "e^x + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 12
+    },
+    {
+      "question": "∫ 1 / (x² + a²) dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(1/a) tan⁻¹(x/a) + C",
+        "B": "tan⁻¹(x/a) + C",
+        "C": "sin⁻¹(x/a) + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 13
+    },
+    {
+      "question": "∫ (dx) / (x² + 2x + 5) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(1/2) tan⁻¹((x+1)/2) + C",
+        "B": "None",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 14
+    },
+    {
+      "id": 15,
+      "question": "∫ (x + sin x)/(1 + cos x) dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x · tan(x/2) + C",
+        "B": "ln|1 + cos x| + C",
+        "C": "x + tan(x/2) + C",
+        "D": "sin x/(1+cos x) + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Substitution for integral ∫ √(a² - x²) dx is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "x = a sin θ",
+        "B": "x = a tan θ",
+        "C": "x = a sec θ",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 16
+    },
+    {
+      "id": 17,
+      "question": "∫ x·sin x dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sin x − x cos x + C",
+        "B": "−sin x + x cos x + C",
+        "C": "cos x − x sin x + C",
+        "D": "x sin x + cos x + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "∫ 1 / √(a² - x²) dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "sin⁻¹(x/a) + C",
+        "B": "cos⁻¹(x/a) + C",
+        "C": "tan⁻¹(x/a) + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 18
+    },
+    {
+      "question": "∫ tan x dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "ln |sec x| + C",
+        "B": "ln |sin x| + C",
+        "C": "sec² x + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 19
+    },
+    {
+      "question": "The integral of 1 / (x log x) dx is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "log(log x) + C",
+        "B": "log x + C",
+        "C": "1/log x + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 20
+    }
+  ]
+}

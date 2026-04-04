@@ -2,85 +2,455 @@
   "subject": "Chemistry",
   "topic": "Redox Reactions & Electrochemistry",
   "questions": [
-    { "id": 1, "question": "The oxidation number of Phosphorus in H3PO4 is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "+3", "B": "+5", "C": "+1", "D": "-3" }, "answer": "B", "pyq": true },
-    { "id": 2, "question": "In the reaction: 2P + 3Cl2 \u2192 2PCl3, Phosphorus is acting as ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Reducing agent", "B": "Oxidizing agent", "C": "Catalyst", "D": "Complexing agent" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "The oxidation number of Sulfur in S8 molecule is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "+6", "B": "0", "C": "+4", "D": "-2" }, "answer": "B", "pyq": true },
-    { "id": 4, "question": "In the titration of KMnO4 against oxalic acid, the oxidation state of Manganese changes from ______ to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "+7 to +2", "B": "+7 to +4", "C": "+4 to +2", "D": "+6 to +2" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "According to the Faraday's first law of electrolysis, the mass (w) of substance deposited is proportional to ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Quantity of electricity (Q)", "B": "Temperature", "C": "Pressure", "D": "Volume" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "The equivalent mass of a substance is given by its atomic mass divided by ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Valency (n-factor)", "B": "Density", "C": "Volume", "D": "Charge" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "Standard Reduction Potential (E\u00b0) of Hydrogen electrode is ______ V.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1.0", "B": "0.0", "C": "-1.0", "D": "0.5" }, "answer": "B", "pyq": true },
-    { "id": 8, "question": "The Nernst equation relates cell potential to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Temperature and concentration", "B": "Pressure and mass", "C": "Volume and charge", "D": "Speed of light" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "The unit of Molar Conductivity (\u039bm) is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "S cm^2 mol^-1", "B": "S cm^-1", "C": "S mol^-1", "D": "ohm^-1 cm^-1" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "Kohlrausch's Law states that at infinite dilution, molar conductivity of an electrolyte is the sum of ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ionic conductivities of cation and anion", "B": "Masses of ions", "C": "Valencies", "D": "Solvent mass" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "A cell produces electricity from a spontaneous chemical reaction. It is called a ______ cell.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Galvanic (Voltaic) cell", "B": "Electrolytic cell", "C": "Storage cell", "D": "Dry cell" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "In a Galvanic cell, oxidation occurs at ______ which is the ______ electrode.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Anode, Negative", "B": "Cathode, Positive", "C": "Anode, Positive", "D": "Cathode, Negative" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "The salt bridge in a Galvanic cell is used to ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Maintain electrical neutrality", "B": "Increase voltage", "C": "Start reaction", "D": "Measure current" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Standard Gibbs free energy change (\u0394G\u00b0) is related to E\u00b0cell by the formula \u0394G\u00b0 = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "-nFE\u00b0cell", "B": "nFE\u00b0cell", "C": "-FE\u00b0cell", "D": "0" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Maximum work derviable from a cell is equal to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Enthalpy change", "B": "Decrease in Gibbs free energy", "C": "Entropy change", "D": "Heat evolved" }, "answer": "B", "pyq": true },
-    { "id": 16, "question": "The charge of one mole of electrons is approximately ______ Coulombs (1 Faraday).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "96500", "B": "6.022 x 10^23", "C": "1.6 x 10^-19", "D": "3.0 x 10^8" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "The electrochemical equivalent (Z) is defined as mass deposited by ______ of electricity.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1 Faraday", "B": "1 Coulomb", "C": "1 Ampere", "D": "1 Mol electrons" }, "answer": "B", "pyq": true },
-    { "id": 18, "question": "In the electrolysis of aqueous CuSO4 using Platinum electrodes, the product at Anode is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Cu", "B": "O2 gas", "C": "H2 gas", "D": "SO2" }, "answer": "B", "pyq": true },
-    { "id": 19, "question": "Which of the following has the highest molar conductivity at infinite dilution?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "NaCl", "B": "KCl", "C": "HCl (due to H+ mobility)", "D": "LiCl" }, "answer": "C", "pyq": true },
-    { "id": 20, "question": "Lead Storage battery is an example of a ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Primary cell", "B": "Secondary cell (rechargable)", "C": "Fuel cell", "D": "Dry cell" }, "answer": "B", "pyq": true },
-    { "id": 21, "question": "Dry cell (Leclanch\u00e9 cell) has a cathode made of ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zinc", "B": "Carbon (Graphite)", "C": "MnO2", "D": "Copper" }, "answer": "B", "pyq": true },
-    { "id": 22, "question": "Mercury cell used in hearing aids and watches gives a ______ voltage during its life.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Varying", "B": "Constant (1.35 V)", "C": "High", "D": "Zero" }, "answer": "B", "pyq": true },
-    { "id": 23, "question": "In a H2-O2 fuel cell, the electrodes are made of porous ______ with a catalyst.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Copper", "B": "Carbon", "C": "Platinum/Palladium", "D": "Zinc" }, "answer": "B", "pyq": true },
-    { "id": 24, "question": "Corrosion is essentially an ______ process.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Electrochemical", "B": "Physical", "C": "Biological", "D": "Thermal" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "Rusting of iron is faster in ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Dry air", "B": "Moist air containing CO2/electrolytes", "C": "Distilled water", "D": "Vacuum" }, "answer": "B", "pyq": true },
-    { "id": 26, "question": "Cathodic protection (Sacrificial protection) of Iron involves coating it with ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "More active metal like Zinc (Galvanization)", "B": "Less active metal like Copper", "C": "Paint", "D": "Inert gas" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Conductivity (\u03ba) ______ with dilution for all electrolytes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increases", "B": "Decreases (as ions/cm3 decreases)", "C": "Stays constant", "D": "Goes to infinity" }, "answer": "B", "pyq": true },
-    { "id": 28, "question": "Molar conductivity (\u039bm) ______ with dilution.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Decreases", "B": "Increases", "C": "Zeroes", "D": "Constant" }, "answer": "B", "pyq": true },
-    { "id": 29, "question": "The slope of \u039bm vs \u221ac graph for a strong electrolyte is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive", "B": "Negative (-A)", "C": "Zero", "D": "Infinite" }, "answer": "B", "pyq": true },
-    { "id": 30, "question": "For weak electrolytes, \u039bm increases ______ near infinite dilution.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Linearly", "B": "Steeply/Exponentially", "C": "Negligibly", "D": "Not at all" }, "answer": "B", "pyq": true },
-    { "id": 31, "question": "Oxidation number of Chromium in K2Cr2O7 is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "+3", "B": "+6", "C": "+7", "D": "0" }, "answer": "B", "pyq": false },
-    { "id": 32, "question": "Balancing of Redox equations by Oxidation Number Method is based on the principle that total increase in O.N. ______ total decrease.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Exceeds", "B": "Equals", "C": "Is less than", "D": "Is zero" }, "answer": "B", "pyq": false },
-    { "id": 33, "question": "In acidic medium, H2O is added to balance Oxygen atoms and ______ to balance Hydrogen.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "OH-", "B": "H+ ions", "C": "H2 gas", "D": "O2" }, "answer": "B", "pyq": false },
-    { "id": 34, "question": "In basic medium, OH- ions are used to balance ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Mass", "B": "Charges and Oxygen preference", "C": "Volume", "D": "Speed" }, "answer": "B", "pyq": false },
-    { "id": 35, "question": "Reaction of Zinc with HCl: Zn + 2HCl \u2192 ZnCl2 + H2. Here, Zn is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Oxidized", "B": "Reduced", "C": "Both", "D": "Neither" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Disproportionation reaction is a reaction where same species is ______ and ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Oxidized, Reduced", "B": "Liquid, Gas", "C": "Solvent, Solute", "D": "Pure, Impure" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Decomposition of H2O2 \u2192 H2O + O2 is a ______ reaction.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Combination", "B": "Disproportionation", "C": "Displacement", "D": "Neutralisation" }, "answer": "B", "pyq": false },
-    { "id": 38, "question": "A cell with E\u00b0cell > 0 is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Spontaneous", "B": "Non-spontaneous", "C": "Equilibrium", "D": "Dead" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Cell efficiency (\u03b7) is given by the ratio ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u0394G/\u0394H", "B": "\u0394H/\u0394G", "C": "W/Q", "D": "V/I" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Electrolysis of brine (aq. NaCl) gives ______ at cathode and ______ at anode.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Na, Cl2", "B": "H2, Cl2", "C": "H2, O2", "D": "Na, O2" }, "answer": "B", "pyq": false },
-    { "id": 41, "question": "The most powerful reducing agent among alkali metals is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Sodium", "B": "Lithium (due to hydration energy)", "C": "Cesium", "D": "Potassium" }, "answer": "B", "pyq": false },
-    { "id": 42, "question": "The most powerful oxidizing agent among halogens is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Chlorine", "B": "Fluorine", "C": "Bromine", "D": "Iodine" }, "answer": "B", "pyq": false },
-    { "id": 43, "question": "Relation between Resistance (R) and Resistivity (\u03c1) is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "R = \u03c1(l/A)", "B": "\u03c1 = R(l/A)", "C": "R = l\u03c1", "D": "A = Rl" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Cell Constant (G*) is equal to the ratio ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "l/A", "B": "A/l", "C": "\u03ba/R", "D": "R/\u03ba" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Kohlrausch Law application: It helps determine ______ for weak electrolytes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u039bm\u00b0 (limiting molar conductivity)", "B": "Degree of dissociation", "C": "Dissociation constant (Ka)", "D": "All of these" }, "answer": "D", "pyq": false },
-    { "id": 46, "question": "If 9.65 Amperes current is passed for 1000 seconds, the charge (Q) passed is ______ C.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "9.65", "B": "9650", "C": "0.1", "D": "96500" }, "answer": "B", "pyq": false },
-    { "id": 47, "question": "Number of Faradays required to reduce 1 mole of Al3+ to Al is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "2", "C": "3", "D": "4" }, "answer": "C", "pyq": false },
-    { "id": 48, "question": "Quantity of electricity needed to reduce 1 mole of MnO4- to Mn2+ is ______ Faradays.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "2", "B": "5", "C": "7", "D": "1" }, "answer": "B", "pyq": false },
-    { "id": 49, "question": "During discharging of Lead-storage battery, PbSO4 is formed and conc. of H2SO4 ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increases", "B": "Decreases", "C": "No change", "D": "Becomes zero" }, "answer": "B", "pyq": false },
-    { "id": 50, "question": "Galvanic cells convert ______ energy into ______ energy.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Chemical, Electrical", "B": "Electrical, Chemical", "C": "Heat, Light", "D": "Mechanical, Sound" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Electrolytic cells use ______ to drive a non-spontaneous reaction.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Chemical energy", "B": "External Electrical source", "C": "Heat", "D": "Pressure" }, "answer": "B", "pyq": false },
-    { "id": 52, "question": "Shelectrochemical? No. Replaced: Daniell cell consists of ______ and ______ half-cells.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zn-Cu", "B": "Ag-Au", "C": "Cu-Ag", "D": "Pt-H2" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Nernst equation at 298K: E = E\u00b0 - (0.0591/n) log ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Q (reaction quotient)", "B": "K (equilibrium constant)", "C": "Mass", "D": "Volume" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "At equilibrium, Ecell = ______ and Q = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "E\u00b0, K", "B": "0, K (equilibrium constant)", "C": "1, 1", "D": "Max, 0" }, "answer": "B", "pyq": false },
-    { "id": 55, "question": "Concentration cells have same electrodes but different ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Temperatures", "B": "Electrolyte concentrations", "C": "Metals", "D": "Masses" }, "answer": "B", "pyq": false },
-    { "id": 56, "question": "Strong electrolytes show ______ dissociation even at high concentrations.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Partial", "B": "Complete", "C": "Zero", "D": "Random" }, "answer": "B", "pyq": false },
-    { "id": 57, "question": "The variation of \u039bm with \u221ac for weak electrolytes (like CH3COOH) follows ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Straight line", "B": "Parabola/Hyperbola-like curve", "C": "Constant line", "D": "Vertical jump" }, "answer": "B", "pyq": false },
-    { "id": 58, "question": "Which of these is used to prevent the discharge of PbSO4 in storage batteries? No. Replaced: In electrolysis of molten NaCl, ______ is obtained at cathode.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "H2", "B": "Na metal", "C": "Cl2", "D": "O2" }, "answer": "B", "pyq": false },
-    { "id": 59, "question": "Reaction: Zn + Cu2+ \u2192 Zn2+ + Cu. Here Cu2+ is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Oxidized", "B": "Reduced (Oxidizing agent)", "C": "Both", "D": "Spectator" }, "answer": "B", "pyq": false },
-    { "id": 60, "question": "E\u00b0 value for Li+/Li is -3.05 V. This indicates Li is a ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Strong oxidant", "B": "Strong reductant", "C": "Noble metal", "D": "Weak reactant" }, "answer": "B", "pyq": false },
-    { "id": 61, "question": "Oxidation state of Oxygen in Peroxides like H2O2 is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "-2", "B": "-1", "C": "0", "D": "+1" }, "answer": "B", "pyq": false },
-    { "id": 62, "question": "Oxidation state of Oxygen in OF2 is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "-2", "B": "+2", "C": "-1", "D": "0" }, "answer": "B", "pyq": false },
-    { "id": 63, "question": "In the Ion-Electron method, we balance ______ by adding electrons.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Mass", "B": "Charge", "C": "Volume", "D": "Speed" }, "answer": "B", "pyq": false },
-    { "id": 64, "question": "Auto-oxidation potential? No. Replaced: Fuel cells have efficiency around ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "10-20%", "B": "70% or more", "C": "100%", "D": "50%" }, "answer": "B", "pyq": false },
-    { "id": 65, "question": "The cell potential E depends on ______ according to EMF series.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Nature of reactants", "B": "Physical state", "C": "Temperature", "D": "All of these" }, "answer": "D", "pyq": false },
-    { "id": 66, "question": "Lithium-ion batteries are primarily used in ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Wall clocks", "B": "Smartphones and EVs", "C": "Old cars", "D": "Calculators only" }, "answer": "B", "pyq": false },
-    { "id": 67, "question": "Hydrogen electrode uses ______ as the conductor.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Copper", "B": "Black Platinum", "C": "Zinc", "D": "Steel" }, "answer": "B", "pyq": false },
-    { "id": 68, "question": "Total mass of substance 'W' = (Z I t). If I=1A, t=1s, then ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "W = Z", "B": "Z = 1", "C": "I = 0", "D": "W = t" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Degree of dissociation (\u03b1) = \u039bm / \u039bm\u00b0.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Primary cells ______ be recharged.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Can", "B": "Cannot", "C": "Sometimes", "D": "Always" }, "answer": "B", "pyq": false },
-    { "id": 71, "question": "Zinc electrode? No. Replaced: In Galvanization, Iron is protected by ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Sn", "B": "Zn", "C": "Cu", "D": "Pb" }, "answer": "B", "pyq": false },
-    { "id": 72, "question": "Standard Cell Potential for Daniell Cell is ______ V.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1.1", "B": "1.5", "C": "0.5", "D": "2.0" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "The flow of electrons in a Daniell cell is from ______ to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zn to Cu", "B": "Cu to Zn", "C": "Solution to metal", "D": "Salt bridge to anode" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Electrode potential when activity of all species is unity is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Absolute potential", "B": "Standard Electrode Potential", "C": "Variable potential", "D": "Zero" }, "answer": "B", "pyq": false },
-    { "id": 75, "question": "IUPAC convention: Half-cells are represented as ______ | ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Metal | Solution", "B": "Solution | Metal", "C": "Anode || Cathode", "D": "Cathode | Anode" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "A salt bridge contains a paste of inert electrolyte like ______ in agar-agar.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "KCl or KNO3", "B": "NaOH", "C": "HCl", "D": "Sugar" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "The sign of Anode in electrolytic cell is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Negative", "B": "Positive (unlike Galvanic)", "C": "Neutral", "D": "Variable" }, "answer": "B", "pyq": false },
-    { "id": 78, "question": "The conductivity of pure water is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "High", "B": "Very low", "C": "Infinite", "D": "Zero (theoretical)" }, "answer": "B", "pyq": false },
-    { "id": 79, "question": "Kohlrausch Law: \u03bb\u00b0 (MgCl2) = ...... ?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u03bb\u00b0(Mg2+) + 2\u03bb\u00b0(Cl-)", "B": "\u03bb\u00b0(Mg+) + \u03bb\u00b0(Cl-)", "C": "2\u03bb\u00b0(Mg2+) + \u03bb\u00b0(Cl-)", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Electrochemical series helps predict the spontaneity of a redox reaction.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 29,
+      "question": "Oxidation number of Chromium in K2Cr2O7 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "+3",
+        "B": "+6",
+        "C": "+7",
+        "D": "0"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "In basic medium, OH- ions are used to balance ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Mass",
+        "B": "Charges and Oxygen preference",
+        "C": "Volume",
+        "D": "Speed"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Disproportionation reaction is a reaction where same species is ______ and ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Oxidized, Reduced",
+        "B": "Liquid, Gas",
+        "C": "Solvent, Solute",
+        "D": "Pure, Impure"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Decomposition of H2O2 → H2O + O2 is a ______ reaction.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Combination",
+        "B": "Disproportionation",
+        "C": "Displacement",
+        "D": "Neutralisation"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "A cell with E°cell > 0 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Spontaneous",
+        "B": "Non-spontaneous",
+        "C": "Equilibrium",
+        "D": "Dead"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Cell efficiency (η) is given by the ratio ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ΔG/ΔH",
+        "B": "ΔH/ΔG",
+        "C": "W/Q",
+        "D": "V/I"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Electrolysis of brine (aq. NaCl) gives ______ at cathode and ______ at anode.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Na, Cl2",
+        "B": "H2, Cl2",
+        "C": "H2, O2",
+        "D": "Na, O2"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "The most powerful reducing agent among alkali metals is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Sodium",
+        "B": "Lithium (due to hydration energy)",
+        "C": "Cesium",
+        "D": "Potassium"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Cell Constant (G*) is equal to the ratio ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "l/A",
+        "B": "A/l",
+        "C": "κ/R",
+        "D": "R/κ"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Kohlrausch Law application: It helps determine ______ for weak electrolytes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Λm° (limiting molar conductivity)",
+        "B": "Degree of dissociation",
+        "C": "Dissociation constant (Ka)",
+        "D": "All of these"
+      },
+      "answer": "D",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "If 9.65 Amperes current is passed for 1000 seconds, the charge (Q) passed is ______ C.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "9.65",
+        "B": "9650",
+        "C": "0.1",
+        "D": "96500"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Quantity of electricity needed to reduce 1 mole of MnO4- to Mn2+ is ______ Faradays.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "5",
+        "C": "7",
+        "D": "1"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "During discharging of Lead-storage battery, PbSO4 is formed and conc. of H2SO4 ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Increases",
+        "B": "Decreases",
+        "C": "No change",
+        "D": "Becomes zero"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Nernst equation at 298K: E = E° - (0.0591/n) log ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Q (reaction quotient)",
+        "B": "K (equilibrium constant)",
+        "C": "Mass",
+        "D": "Volume"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "At equilibrium, Ecell = ______ and Q = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "E°, K",
+        "B": "0, K (equilibrium constant)",
+        "C": "1, 1",
+        "D": "Max, 0"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Concentration cells have same electrodes but different ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Temperatures",
+        "B": "Electrolyte concentrations",
+        "C": "Metals",
+        "D": "Masses"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "The variation of Λm with √c for weak electrolytes (like CH3COOH) follows ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Straight line",
+        "B": "Parabola/Hyperbola-like curve",
+        "C": "Constant line",
+        "D": "Vertical jump"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "E° value for Li+/Li is -3.05 V. This indicates Li is a ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Strong oxidant",
+        "B": "Strong reductant",
+        "C": "Noble metal",
+        "D": "Weak reactant"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Oxidation state of Oxygen in OF2 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-2",
+        "B": "+2",
+        "C": "-1",
+        "D": "0"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Auto-oxidation potential? No. Replaced: Fuel cells have efficiency around ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "10-20%",
+        "B": "70% or more",
+        "C": "100%",
+        "D": "50%"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "The cell potential E depends on ______ according to EMF series.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Nature of reactants",
+        "B": "Physical state",
+        "C": "Temperature",
+        "D": "All of these"
+      },
+      "answer": "D",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "Hydrogen electrode uses ______ as the conductor.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Copper",
+        "B": "Black Platinum",
+        "C": "Zinc",
+        "D": "Steel"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Degree of dissociation (α) = Λm / Λm°.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Standard Cell Potential for Daniell Cell is ______ V.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1.1",
+        "B": "1.5",
+        "C": "0.5",
+        "D": "2.0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "The flow of electrons in a Daniell cell is from ______ to ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Zn to Cu",
+        "B": "Cu to Zn",
+        "C": "Solution to metal",
+        "D": "Salt bridge to anode"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "IUPAC convention: Half-cells are represented as ______ | ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Metal | Solution",
+        "B": "Solution | Metal",
+        "C": "Anode || Cathode",
+        "D": "Cathode | Anode"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 73,
+      "question": "A salt bridge contains a paste of inert electrolyte like ______ in agar-agar.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "KCl or KNO3",
+        "B": "NaOH",
+        "C": "HCl",
+        "D": "Sugar"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "The sign of Anode in electrolytic cell is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Negative",
+        "B": "Positive (unlike Galvanic)",
+        "C": "Neutral",
+        "D": "Variable"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "The conductivity of pure water is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "High",
+        "B": "Very low",
+        "C": "Infinite",
+        "D": "Zero (theoretical)"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 76,
+      "question": "Kohlrausch Law: λ° (MgCl2) = ...... ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "λ°(Mg2+) + 2λ°(Cl-)",
+        "B": "λ°(Mg+) + λ°(Cl-)",
+        "C": "2λ°(Mg2+) + λ°(Cl-)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

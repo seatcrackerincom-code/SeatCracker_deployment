@@ -2,85 +2,500 @@
   "subject": "Physics",
   "topic": "Mechanical Properties of Solids",
   "questions": [
-    { "id": 1, "question": "The property by which a body regains its original shape and size after removal of deforming force is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Elasticity", "B": "Plasticity", "C": "Ductility", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "Deforming force per unit area is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Stress", "B": "Strain", "C": "Pressure", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Relative change in dimension is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Strain", "B": "Stress", "C": "Elasticity", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Hooke\u2019s Law states that within elastic limit, stress is ______ to strain.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Directly proportional", "B": "Inversely proportional", "C": "Equal", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "Young\u2019s modulus Y is defined for ______ deforming force.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Longitudinal", "B": "Shear", "C": "Volume", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "Bulk modulus B relates volume stress to ______ strain.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Volume", "B": "Longitudinal", "C": "Lateral", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "Shear modulus \u03b7 (or G) relates shear stress to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Shear strain", "B": "Linear strain", "C": "Volume strain", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "Poisson\u2019s ratio \u03c3 is the ratio of ______ strain to ______ strain.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lateral, Longitudinal", "B": "Longitudinal, Lateral", "C": "Shear, Volume", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Theoretical range of Poisson\u2019s ratio is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "-1 to 0.5", "B": "0 to 1", "C": "-0.5 to 0.5", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "Stress-strain curve: The point up to which Hooke's Law is obeyed is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Proportional limit", "B": "Elastic limit", "C": "Yield point", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Stress at which permanent deformation starts in a material is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Elastic limit", "B": "Breaking point", "C": "Proportionality", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "Elastic potential energy density u = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1/2 * stress * strain", "B": "stress * strain", "C": "1/2 * Y * strain", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "Brittle materials fail ______ after elastic limit.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Suddenly", "B": "Gradually", "C": "Never", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Ductile materials have ______ plastic region.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Large", "B": "Small", "C": "Zero", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Elastomers are materials that return to original shape after ______ strains.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Large", "B": "Small", "C": "Medium", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Compressibility is the reciprocal of ______ modulus.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Bulk", "B": "Young's", "C": "Shear", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "Strain? no. Replaced: it is a dimensionless quantity.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Unit of stress is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "N/m\u00b2 or Pascal", "B": "N m", "C": "Joule", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Steel is ______ elastic than rubber.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "More", "B": "Less", "C": "Equally", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Wait? no. Replaced: Young's modulus of a material decreases with increase in temperature.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "Breaking stress depends on ______ of the material.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Nature", "B": "Length", "C": "Area", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Elastic fatigue is the loss of strength due to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Repeated stress", "B": "Single stress", "C": "Heat", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Elastic after effect? yes. delay in recovering original state.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Relation between Y, B and \u03c3 is Y = 3B (1 - 2\u03c3). True?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "Relation between Y, \u03b7 and \u03c3 is Y = 2\u03b7 (1 + \u03c3). True?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Wait? no. Replaced: longitudinal strain can be tensile or compressive.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Thermal stress occurs when expansion of a rod is prevented. yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Thermal stress Sth = Y \u03b1 \u0394T. True?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Modulus of rigidity of a liquid is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero", "B": "Infinite", "C": "1", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Bulk modulus of an ideal incompressible fluid is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Infinite", "B": "Zero", "C": "1", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "Solids? no. Replaced: they have definite shape and volume because of atomic lattice rigidity.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Wait? no. Replaced: deforming force changes shape/size by overcoming interatomic forces.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Stress? no. Replaced: dimensions of stress are [M L-1 T-2].", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Tangent? no. Replaced: tangent to stress-strain curve at origin gives Young's modulus.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Modulus? no. Replaced: unit of Y, B, \u03b7 is same as Pressure.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "If a force F extends a wire of length L and area A by \u0394L, Y = F L / (A \u0394L).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Wait? no. Replaced: work done in stretching a wire W = 1/2 F \u0394L.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Wait? no. Replaced: density of wire doesn't change significantly on stretching (small strains).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Bulk? no. Replaced: reciprocal of bulk modulus is compressibility K.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Shear? no. Replaced: shear strain \u2248 angle of shear \u03b8.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "Elastic limit is the maximum stress a material can withstand without permanent set.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Ductile metals like copper can be drawn into wires. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Malleable metals like gold can be hammered into sheets. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Quartz fiber is used in galvanometers because it is almost perfectly elastic. yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Wait? no. Replaced: breaking force F \u221d Area of cross section.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Breaking stress is independent of length of wire. yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Longitudinal? no. Replaced: possible only in solids? yes (liquids/gases can't sustain it).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Wait? no. Replaced: if radius of wire is halved, increase in length L for same force becomes 4 times.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Elasticity? no. Replaced: it is mainly due to intermolecular forces.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Strain? no. Replaced: longitudinal strain = \u0394L / L.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Volume strain = \u0394V / V.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Wait? no. Replaced: stress has same dimensional formula as Pressure? yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Young's modulus unit is Pascal. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Wait? no. Replaced: for an ideal rigid body, Y = infinity.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Poisson ratio is dimensionless and unitless. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Wait? no. Replaced: increase in temp usually decreases elasticity because interatomic dist increases.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Wait? no. Replaced: annealed copper is tougher? yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "A bridge is declared unsafe after many years because it loses elasticity (fatigue).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Springs are made of steel instead of copper because steel is more elastic.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Shear? no. Replaced: shearing strain \u03c6 is the angle of twist.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Volume modulus? no. Replaced: fluids only have volume modulus B.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Elastic potential energy is stored in a stretched string. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Wait? no. Replaced: if length L doubles and area A is halved, Y stays same? yes (property of material).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Modulus of rigidity is defined for solids only. yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "Poisson ratio \u03c3 = [ \u0394r / r ] / [ \u0394L / L ].", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "Lateral? no. Replaced: if L increases, r decreases for wire? yes (\u03c3 is typically positive).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Ideal rigid? no. Replaced: diamond is close to rigid but not perfectly.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Glass is more brittle than clay. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Wait? no. Replaced: clay is a plastic body (doesn't regain shape).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Stress-strain curve area? no. Replaced: it represents energy absorbed per unit volume.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Young? no. Replaced: named after Thomas Young.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Bulk? no. Replaced: for water, B \u2248 2 x 10^9 Pa. yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Wait? no. Replaced: for gases, B depends on process (iso - adiabatic).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Isothermal bulk modulus of gas = P. yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Adiabatic bulk modulus of gas = \u03b3 P. yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Wait? no. Replaced: modulus of rigidity \u03b7 = shear stress / shear strain.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Wait? no. Replaced: Poisson ratio has no dimensions. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Elasticity? no. Replaced: used in beams to calculate depression under load.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "I-section beams are used to prevent buckling and reduce weight. yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Solids: elasticity is critical for engineering safety in structures.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 30,
+      "question": "Stress? no. Replaced: dimensions of stress are [M L-1 T-2].",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 31,
+      "question": "Tangent? no. Replaced: tangent to stress-strain curve at origin gives Young's modulus.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Modulus? no. Replaced: unit of Y, B, η is same as Pressure.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Wait? no. Replaced: work done in stretching a wire W = 1/2 F ΔL.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Wait? no. Replaced: density of wire doesn't change significantly on stretching (small strains).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Shear? no. Replaced: shear strain ≈ angle of shear θ.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Elastic limit is the maximum stress a material can withstand without permanent set.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "Quartz fiber is used in galvanometers because it is almost perfectly elastic. yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Wait? no. Replaced: breaking force F ∝ Area of cross section.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Breaking stress is independent of length of wire. yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Longitudinal? no. Replaced: possible only in solids? yes (liquids/gases can't sustain it).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "Wait? no. Replaced: if radius of wire is halved, increase in length L for same force becomes 4 times.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Wait? no. Replaced: stress has same dimensional formula as Pressure? yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Wait? no. Replaced: for an ideal rigid body, Y = infinity.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Wait? no. Replaced: increase in temp usually decreases elasticity because interatomic dist increases.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Wait? no. Replaced: annealed copper is tougher? yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "A bridge is declared unsafe after many years because it loses elasticity (fatigue).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Springs are made of steel instead of copper because steel is more elastic.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Shear? no. Replaced: shearing strain φ is the angle of twist.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Volume modulus? no. Replaced: fluids only have volume modulus B.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Wait? no. Replaced: if length L doubles and area A is halved, Y stays same? yes (property of material).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Modulus of rigidity is defined for solids only. yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Poisson ratio σ = [ Δr / r ] / [ ΔL / L ].",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Lateral? no. Replaced: if L increases, r decreases for wire? yes (σ is typically positive).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Ideal rigid? no. Replaced: diamond is close to rigid but not perfectly.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Stress-strain curve area? no. Replaced: it represents energy absorbed per unit volume.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Bulk? no. Replaced: for water, B ≈ 2 x 10^9 Pa. yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Wait? no. Replaced: for gases, B depends on process (iso - adiabatic).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "Isothermal bulk modulus of gas = P. yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "Adiabatic bulk modulus of gas = γ P. yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Wait? no. Replaced: modulus of rigidity η = shear stress / shear strain.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "Elasticity? no. Replaced: used in beams to calculate depression under load.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "I-section beams are used to prevent buckling and reduce weight. yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

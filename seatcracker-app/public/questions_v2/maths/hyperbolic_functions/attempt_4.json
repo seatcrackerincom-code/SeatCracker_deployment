@@ -1,0 +1,324 @@
+{
+  "questions": [
+    {
+      "question": "The value of (cosh x + sinh x)ⁿ is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "cosh nx + sinh nx",
+        "B": "cosh nx - sinh nx",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 1
+    },
+    {
+      "question": "cosh(ix) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "cos x",
+        "B": "i cos x",
+        "C": "sinh x",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 2
+    },
+    {
+      "question": "If cosh x = 5/4, then sinh x = ______ (x > 0).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "3/4",
+        "B": "4/5",
+        "C": "3/5",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 3
+    },
+    {
+      "question": "cosh 2x in terms of cosh x is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2 cosh² x - 1",
+        "B": "2 cosh² x + 1",
+        "C": "cosh² x + 1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 4
+    },
+    {
+      "question": "The value of tanh⁻¹ x is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1/2 ln((1+x)/(1-x))",
+        "B": "ln(1+x)",
+        "C": "1/2 ln(1-x)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "question": "d/dx(cosh⁻¹x) = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/√(x²−1)",
+        "B": "1/√(1−x²)",
+        "C": "−1/√(x²−1)",
+        "D": "1/(x√(x²−1))"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 7,
+      "question": "The relation between circular and hyperbolic functions: sin(ix) = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "i·sinh x",
+        "B": "sinh(ix)",
+        "C": "i·sin x",
+        "D": "cosh x"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 8,
+      "question": "cosh x + sinh x = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "eˣ",
+        "B": "e⁻ˣ",
+        "C": "2eˣ",
+        "D": "2cosh x"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The period of hyperbolic functions is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "None (non-periodic)",
+        "B": "2π",
+        "C": "i 2π",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 9
+    },
+    {
+      "question": "The domain of cosh x is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(-∞, ∞)",
+        "B": "[1, ∞)",
+        "C": "(0, ∞)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 10
+    },
+    {
+      "question": "tanh x in terms of e is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(e^x - e^-x) / (e^x + e^-x)",
+        "B": "e^x + e^-x",
+        "C": "e^x - e^-x",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 11
+    },
+    {
+      "question": "sinh x + sinh y = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2 sinh((x+y)/2) cosh((x-y)/2)",
+        "B": "2 cosh((x+y)/2) sinh((x-y)/2)",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 12
+    },
+    {
+      "question": "sinh(x-y) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "sinh x cosh y - cosh x sinh y",
+        "B": "sinh x cosh y + cosh x sinh y",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 13
+    },
+    {
+      "question": "cosh⁻¹ x = ______ (x ≥ 1).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "ln(x + √(x² - 1))",
+        "B": "ln(x - √(x² - 1))",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 14
+    },
+    {
+      "id": 15,
+      "question": "coth²x − cosech²x = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "−1",
+        "C": "0",
+        "D": "coth x"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 16,
+      "question": "The value of sinh(x) when x = 0 is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "−1",
+        "D": "∞"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "sech² x + tanh² x = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 17
+    },
+    {
+      "question": "sinh(ix) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "i sin x",
+        "B": "sin(ix)",
+        "C": "cos x",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 18
+    },
+    {
+      "question": "If tanh x = 1/2, then e²x = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "3",
+        "B": "2",
+        "C": "log 3",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 19
+    },
+    {
+      "question": "The range of cosh x is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "[1, ∞)",
+        "B": "(-∞, ∞)",
+        "C": "(0, 1)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 20
+    }
+  ]
+}

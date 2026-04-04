@@ -1,0 +1,309 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "∫ sec²x · tan x dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sec²x/2 + C",
+        "B": "tan²x/2 + C",
+        "C": "sec x tan x + C",
+        "D": "Both A and B"
+      },
+      "answer": "D",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 2,
+      "question": "For integrals involving √(a² + x²), substitution x = ______ is useful.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a tan θ or a cot θ",
+        "B": "a sin θ",
+        "C": "a sec θ",
+        "D": "a cos θ"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 3,
+      "question": "To integrate tan^m x * sec^n x dx when n is an even integer, substitute u = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "tan x",
+        "B": "sec x",
+        "C": "sin x",
+        "D": "cos x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 4,
+      "question": "To integrate sin^m x * cos^n x dx when m is an odd integer, substitute u = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos x",
+        "B": "sin x",
+        "C": "tan x",
+        "D": "sec x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 5,
+      "question": "Reduction formula for ∫ sin^n x dx involves ∫ sin^{n-2} x dx. It is connected by I_n = -sin^{n-1}x cos x / n + ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(n-1)/n I_{n-2}",
+        "B": "n/(n-1) I_{n-2}",
+        "C": "(n-1) I_{n-2}",
+        "D": "1/n I_{n-2}"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 6,
+      "question": "∫ √(x² + a²) dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x/2 √(x²+a²) + a²/2 ln|x + √(x²+a²)| + C",
+        "B": "x/2 √(x²+a²) - a²/2 ln|x + √(x²+a²)| + C",
+        "C": "x/2 √(x²+a²) + a²/2 tan⁻¹(x/a) + C",
+        "D": "(1/2) tan⁻¹(x/a) + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 7,
+      "question": "∫ 1/(sin x · cos x) dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ln|tan x| + C",
+        "B": "ln|sec x| + C",
+        "C": "2ln|tan x| + C",
+        "D": "ln|sin 2x| + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 8,
+      "question": "For unrepeated quadratic factor (ax²+bx+c), partial fraction form is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(Ax+B)/(ax²+bx+c)",
+        "B": "A/(ax²+bx+c)",
+        "C": "(Ax+B)/(ax+b)",
+        "D": "A/ax² + B/bx + C/c"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 9,
+      "question": "∫ f'(x) / √(f(x)) dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2√(f(x)) + C",
+        "B": "√(f(x)) + C",
+        "C": "ln|f(x)| + C",
+        "D": "-1/(2√(f(x))) + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 10,
+      "question": "For integrals involving √(a² - x²), substitution x = ______ is useful.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a sin θ or a cos θ",
+        "B": "a tan θ",
+        "C": "a sec θ",
+        "D": "a e^θ"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 11,
+      "question": "For integrals involving √(x² - a²), substitution x = ______ is useful.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a sec θ",
+        "B": "a sin θ",
+        "C": "a tan θ",
+        "D": "a cos θ"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 12,
+      "question": "∫ √(1 − cos 2x) dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "−√2 cos x + C",
+        "B": "√2 cos x + C",
+        "C": "−√2 sin x + C",
+        "D": "2sin x + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 13,
+      "question": "∫ cos⁴x dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3x/8 + sin 2x/4 + sin 4x/32 + C",
+        "B": "x/2 + sin 4x/8 + C",
+        "C": "3x/8 − sin 2x/4 + sin 4x/32 + C",
+        "D": "3x/8 + sin 4x/32 + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 14,
+      "question": "∫ e^(ax) cos(bx) dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^(ax)/(a²+b²) [a cos(bx) + b sin(bx)] + C",
+        "B": "e^(ax)/(a²+b²) [b cos(bx) + a sin(bx)] + C",
+        "C": "e^(ax)/(a+b) cos(bx) + C",
+        "D": "-e^(ax)/(a²+b²) [a cos bx - b sin bx] + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 15,
+      "question": "∫ f'(x)/f(x) dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ln|f(x)| + C",
+        "B": "f(x) + C",
+        "C": "e^f(x) + C",
+        "D": "1/f(x) + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 16,
+      "question": "∫ e^(ax) sin(bx) dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^(ax)/(a²+b²) [a sin(bx) - b cos(bx)] + C",
+        "B": "e^(ax)/(a²+b²) [b sin(bx) - a cos(bx)] + C",
+        "C": "e^(ax)/(a-b) sin(bx) + C",
+        "D": "e^(ax)/(ab) [a cos bx - b sin bx] + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 17,
+      "question": "In partial fractions, for a repeated linear factor (x-a)², we use ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "A/(x-a) + B/(x-a)²",
+        "B": "(Ax+B)/(x-a)²",
+        "C": "A/(x-a)²",
+        "D": "A/(x-a) + Bx/(x-a)²"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 18,
+      "question": "∫ ln x dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x ln x - x + C",
+        "B": "1/x + C",
+        "C": "(ln x)²/2 + C",
+        "D": "x/ln x + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 19,
+      "question": "∫ x²/(1 + x⁶) dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/3)arctan(x³) + C",
+        "B": "arctan(x³) + C",
+        "C": "(1/6)arctan(x³) + C",
+        "D": "ln(1+x⁶) + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 20,
+      "question": "To evaluate ∫ 1 / (a sin x + b cos x) dx, generally we substitute t = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "tan(x/2)",
+        "B": "sin x",
+        "C": "cos x",
+        "D": "tan x"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
+}

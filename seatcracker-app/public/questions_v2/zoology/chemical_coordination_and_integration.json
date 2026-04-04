@@ -2,85 +2,635 @@
   "subject": "Zoology",
   "topic": "Chemical Coordination and Integration",
   "questions": [
-    { "id": 1, "question": "Hormones are non-nutrient chemicals produced in trace amounts that act as ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Intercellular messengers", "B": "Enzymes", "C": "Nutrients", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "The endocrine part of the brain that integrates neural and endocrine systems is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Hypothalamus", "B": "Thalamus", "C": "Pituitary", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Hormones from hypothalamus that stimulate secretion of pituitary hormones are ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Releasing hormones", "B": "Inhibiting hormones", "C": "Both", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "GnRH (Gonadotropin Releasing Hormone) stimulates pituitary to release ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Gonadotropins (FSH/LH)", "B": "Growth hormone", "C": "Prolactin", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "Somatostatin from hypothalamus ______ the release of growth hormone from pituitary.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Inhibits", "B": "Stimulates", "C": "Stops", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "The pituitary gland is located in a bony cavity called ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Sella tursica", "B": "Cranium", "C": "Orbit", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "Gigantism is caused by over-secretion of ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Growth Hormone (GH)", "B": "Thyroxine", "C": "Insulin", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "In adults, over-secretion of GH can lead to severe disfigurement known as ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Acromegaly", "B": "Gigantism", "C": "Dwarfism", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Prolactin (PRL) regulates growth of ______ and formation of milk.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Mammary glands", "B": "Thyroid", "C": "Gonads", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "Hormones stored and released by posterior pituitary are ______ and ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Oxytocin, Vasopressin", "B": "FSH, LH", "C": "TSH, GH", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Oxytocin acts on the ______ muscles and stimulates their contraction.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Smooth (Uterine)", "B": "Skeletal", "C": "Cardiac", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "Vasopressin (ADH) mainly acts at the ______ and stimulates reabsorption of water.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Kidney (Tubules)", "B": "Heart", "C": "Liver", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "Melatonin is secreted by ______ gland.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Pineal", "B": "Pituitary", "C": "Thyroid", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Thyroid gland is composed of follicles and ______ tissues.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Stromal", "B": "Nervous", "C": "Muscle", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Iodine is essential for the normal rate of hormone synthesis in the ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Thyroid", "B": "Adrenal", "C": "Pancreas", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Hypothyroidism during pregnancy can cause ______ in the child.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Cretinism (Stunted growth/Mental retardation)", "B": "Gigantism", "C": "Obesity", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "Thyroxine play an important role in the regulation of basal ______ rate.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Metabolic (BMR)", "B": "Cardiac", "C": "Respiratory", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "The hormone that regulates blood calcium levels by lowering it is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Thyrocalcitonin (TCT)", "B": "PTH", "C": "Thyroxine", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Parathyroid Hormone (PTH) ______ the Ca2+ levels in the blood.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increases (Hypercalcemic)", "B": "Decreases", "C": "Does not change", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Thymus gland is responsible for the ______ of T-lymphocytes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Differentiation / Maturation", "B": "Destruction", "C": "Excretion", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "Adrenaline and Noradrenaline are commonly called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Emergency hormones (Catecholamines)", "B": "Steroids", "C": "Vitamins", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Adrenal cortex secretes many hormones commonly called ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Corticoids", "B": "Androgens", "C": "Catecholamines", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Main glucocorticoid in humans is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Cortisol", "B": "Aldosterone", "C": "Testosterone", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Main mineralocorticoid in our body is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Aldosterone", "B": "Cortisol", "C": "Insulin", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "The hyperglycemic hormone secreted by alpha cells of pancreas is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Glucagon", "B": "Insulin", "C": "Cortisol", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "The hypoglycemic hormone secreted by beta cells of pancreas is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Insulin", "B": "Glucagon", "C": "Adrenaline", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Prolonged hyperglycemia leads to ______ disease.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Diabetes mellitus", "B": "Diabetes insipidus", "C": "Goitre", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Androgens (Testosterone) are produced by ______ cells in the testes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Leydig / Interstitial", "B": "Sertoli", "C": "Germ cells", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Estrogens are mainly synthesized and secreted by growing ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ovarian follicles", "B": "Corpus luteum", "C": "Uterus", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "The hormone that maintains pregnancy is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Progesterone", "B": "Estrogen", "C": "LH", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "ANF? yes. peptide hormone from heart atrial wall which decreases blood pressure.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Erythropoietin is a hormone from juxtaglomerular cells of kidney that stimulates ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Erythropoiesis (RBC formation)", "B": "Digestion", "C": "Growth", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Second messengers in hormone action include ______ and ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "cAMP, IP3, Ca2+", "B": "Steroids", "C": "DNA", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Hormones which interact with intracellular receptors are ______ and ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Steroids, Thyroid hormones", "B": "Protein hormones", "C": "Both", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Cortisol? yes. it is involved in gluconeogenesis and has anti-inflammatory properties.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Dwarfism is due to deficiency of growth hormone.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "LH stimulates ovulation in females.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "FSH stimulates growth and development of ovarian follicles.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Pineal gland? yes. it is located on the dorsal side of the forebrain.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Graves' disease is hyperthyroidism often characterized by protrusion of eye balls.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "PTH stimulates reabsorption of Ca2+ by renal tubules.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Thymus is quite large at birth but gradually degenerates in old age.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Catecholamines stimulate breakdown of ______ resulting in increased glucose in blood.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Glycogen", "B": "Proteins", "C": "Fats", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Aldosterone acts on ______ part of nephron and stimulates reabsorption of Na+.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Distal", "B": "Proximal", "C": "Henle's", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Addison's disease is due to under-secretion of ______ hormones.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Adrenal cortex", "B": "Thyroid", "C": "Pituitary", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Glucagon acts on liver cells (hepatocytes) and stimulates ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Glycogenolysis", "B": "Glycogenesis", "C": "Lipogenesis", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Insulin enhances ______ uptake and utilization by cells.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Glucose", "B": "Fat", "C": "Hormone", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Corpus luteum secretes mainly ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Progesterone", "B": "Estrogen", "C": "Prolactin", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Progesterone stimulates formation of ______ and milk secretion in mammary glands.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Alveoli", "B": "Follicles", "C": "Germ cells", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Gastro-intestinal tract secretes Gaston, Secretin, CCK and ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "GIP (Gastric Inhibitory Peptide)", "B": "ADH", "C": "Insulin", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Hormone receptors? yes. they are located only on target tissues.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Hormones which interact with membrane receptors normally do not enter the target cell.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Intracellular receptors usually regulate gene expression by the interaction of hormone-receptor complex with the ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Genome / DNA", "B": "Ribosome", "C": "Enzyme", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "ADH? no. Replaced: Deficiency of ADH causes a disease called Diabetes Insipidus.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Pineal gland? no. Replaced: Melatonin also influences metabolism, pigmentation and menstrual cycle.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Thyroid follicles? yes. they consist of follicular cells enclosing a cavity.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Simple goitre is due to deficiency of ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Iodine", "B": "Calcium", "C": "Sodium", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "PTH is essential for maintainance of blood calcium levels along with TCT.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Thymosins? yes. they play a major role in differentiation of T-lymphocytes (Cell-mediated immunity).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Adrenaline increases heart rate and alertness.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Vasodilation? no. Adrenaline causes vasoconstriction in most of skin blood vessels? yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Glucocorticoids? no. Replaced: Cortisol is the main glucocorticoid in our body.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Adrenal androgens play a role in growth of axial, pubic and facial hair during puberty.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Diabetes mellitus? yes. characterized by loss of glucose through urine and formation of ketone bodies.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "Leydig cells? yes. they secrete testosterone.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "Testosterone? yes. it stimulates male secondary sexual characters.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Estrogen? yes. it stimulates female secondary sexual characters.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Secretin? yes. acts on exocrine pancreas and stimulates secretion of water and bicarbonates.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "CCK acts on both pancreas and gallbladder.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Hormones which are amino-acid derivatives? yes. Epinephrine.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Small amount of thyroxine? no. T3 is more active than T4.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Thyroid hormones contain ______ percent of iodine.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "65", "B": "10", "C": "90", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "TCT is a ______ hormone.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Peptide", "B": "Steroid", "C": "Lipid", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "PTH? yes. hypercalcemic hormone.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Emergency hormones are also called flight or fight hormones.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Mineralocorticoids regulate water and electrolyte balance.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Cortisol stimulates RBC production.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Glucagon reduces cellular glucose uptake? yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Insulin is a ______ hormone.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Peptide", "B": "Steroid", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Hormones? no. Replaced: Prostaglandins are local hormones.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 31,
+      "question": "ANF? yes. peptide hormone from heart atrial wall which decreases blood pressure.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Erythropoietin is a hormone from juxtaglomerular cells of kidney that stimulates ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Erythropoiesis (RBC formation)",
+        "B": "Digestion",
+        "C": "Growth",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Second messengers in hormone action include ______ and ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cAMP, IP3, Ca2+",
+        "B": "Steroids",
+        "C": "DNA",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Hormones which interact with intracellular receptors are ______ and ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Steroids, Thyroid hormones",
+        "B": "Protein hormones",
+        "C": "Both",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Cortisol? yes. it is involved in gluconeogenesis and has anti-inflammatory properties.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "LH stimulates ovulation in females.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "FSH stimulates growth and development of ovarian follicles.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Pineal gland? yes. it is located on the dorsal side of the forebrain.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "Graves' disease is hyperthyroidism often characterized by protrusion of eye balls.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "PTH stimulates reabsorption of Ca2+ by renal tubules.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Thymus is quite large at birth but gradually degenerates in old age.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Catecholamines stimulate breakdown of ______ resulting in increased glucose in blood.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Glycogen",
+        "B": "Proteins",
+        "C": "Fats",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Aldosterone acts on ______ part of nephron and stimulates reabsorption of Na+.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Distal",
+        "B": "Proximal",
+        "C": "Henle's",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "Addison's disease is due to under-secretion of ______ hormones.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Adrenal cortex",
+        "B": "Thyroid",
+        "C": "Pituitary",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Glucagon acts on liver cells (hepatocytes) and stimulates ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Glycogenolysis",
+        "B": "Glycogenesis",
+        "C": "Lipogenesis",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Insulin enhances ______ uptake and utilization by cells.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Glucose",
+        "B": "Fat",
+        "C": "Hormone",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Corpus luteum secretes mainly ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Progesterone",
+        "B": "Estrogen",
+        "C": "Prolactin",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "Progesterone stimulates formation of ______ and milk secretion in mammary glands.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Alveoli",
+        "B": "Follicles",
+        "C": "Germ cells",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Gastro-intestinal tract secretes Gaston, Secretin, CCK and ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "GIP (Gastric Inhibitory Peptide)",
+        "B": "ADH",
+        "C": "Insulin",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Hormones which interact with membrane receptors normally do not enter the target cell.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Intracellular receptors usually regulate gene expression by the interaction of hormone-receptor complex with the ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Genome / DNA",
+        "B": "Ribosome",
+        "C": "Enzyme",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "ADH? no. Replaced: Deficiency of ADH causes a disease called Diabetes Insipidus.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Pineal gland? no. Replaced: Melatonin also influences metabolism, pigmentation and menstrual cycle.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Thyroid follicles? yes. they consist of follicular cells enclosing a cavity.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "PTH is essential for maintainance of blood calcium levels along with TCT.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Thymosins? yes. they play a major role in differentiation of T-lymphocytes (Cell-mediated immunity).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Vasodilation? no. Adrenaline causes vasoconstriction in most of skin blood vessels? yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Glucocorticoids? no. Replaced: Cortisol is the main glucocorticoid in our body.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Adrenal androgens play a role in growth of axial, pubic and facial hair during puberty.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Diabetes mellitus? yes. characterized by loss of glucose through urine and formation of ketone bodies.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Estrogen? yes. it stimulates female secondary sexual characters.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Secretin? yes. acts on exocrine pancreas and stimulates secretion of water and bicarbonates.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "CCK acts on both pancreas and gallbladder.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "Hormones which are amino-acid derivatives? yes. Epinephrine.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "Small amount of thyroxine? no. T3 is more active than T4.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Thyroid hormones contain ______ percent of iodine.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "65",
+        "B": "10",
+        "C": "90",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 73,
+      "question": "TCT is a ______ hormone.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Peptide",
+        "B": "Steroid",
+        "C": "Lipid",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "Mineralocorticoids regulate water and electrolyte balance.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 76,
+      "question": "Cortisol stimulates RBC production.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 77,
+      "question": "Glucagon reduces cellular glucose uptake? yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 78,
+      "question": "Insulin is a ______ hormone.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Peptide",
+        "B": "Steroid",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 79,
+      "question": "Hormones? no. Replaced: Prostaglandins are local hormones.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

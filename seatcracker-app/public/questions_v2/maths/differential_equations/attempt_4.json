@@ -1,0 +1,321 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "dy/dx = (x−y)/(x+y) is a ______ equation?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "homogeneous",
+        "B": "linear",
+        "C": "Bernoulli",
+        "D": "exact"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The integrating factor of dy/dx + Py = Q is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "e^∫P dx",
+        "B": "e^∫Q dx",
+        "C": "∫P dx",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "question": "The differential equation of y = ae^(3x) + be^(−2x) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "d²y/dx² − dy/dx − 6y = 0",
+        "B": "d²y/dx² + dy/dx − 6y = 0",
+        "C": "d²y/dx² − 5dy/dx + 6y = 0",
+        "D": "d²y/dx² + 5dy/dx + 6y = 0"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The general solution of d²y/dx² + y = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "y = A cos x + B sin x",
+        "B": "y = e^x",
+        "C": "y = x",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 4
+    },
+    {
+      "question": "The order of the differential equation d²y/dx² + (dy/dx)³ + y = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 5
+    },
+    {
+      "question": "Substitution for homogeneous equation dy/dx = f(y/x) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "y = vx",
+        "B": "x = vy",
+        "C": "y = v+x",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 6
+    },
+    {
+      "question": "Solution of dy/dx = y/x is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "y = cx",
+        "B": "y = c/x",
+        "C": "x² + y² = c",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 7
+    },
+    {
+      "question": "The degree of the differential equation (d²y/dx²)² + (dy/dx)³ = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "question": "Integrating factor of dy/dx + y cot x = 2 cos x is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sin x",
+        "B": "cos x",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 10,
+      "question": "The equation (2xy − y²)dx + (2xy − x²)dy = 0 is exact if?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "always exact",
+        "B": "never exact",
+        "C": "exact only when y = x",
+        "D": "exact with IF = 1/(xy)²"
+      },
+      "answer": "B",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "An equation of the form Mdx + Ndy = 0 is exact if ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "∂M/∂y = ∂N/∂x",
+        "B": "∂M/∂x = ∂N/∂y",
+        "C": "M=N",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 11
+    },
+    {
+      "id": 12,
+      "question": "Solving dy/dx = (y-x)/(y+x) uses y=vx.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 13,
+      "question": "The particular solution of dy/dx + 2y = 4x, y(0)=1 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2x − 1 + 2e^(−2x)",
+        "B": "2x + 1 − 2e^(−2x)",
+        "C": "2x − 1 + e^(−2x)",
+        "D": "2x − 1 + 2e^(2x)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The solution of dy/dx = e^{x-y} + x² e⁻ʸ is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "e^y = e^x + x³/3 + C",
+        "B": "y = x + C",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 14
+    },
+    {
+      "question": "The differential equation of all circles passing through the origin and having centers on the x-axis is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "y² - x² = 2xy dy/dx",
+        "B": "x² + y² = c",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 15
+    },
+    {
+      "id": 16,
+      "question": "If y = e^(−x)(A cos x + B sin x), then d²y/dx² + 2dy/dx + 2y = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "−1",
+        "D": "2y"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The order of differential equation of family of parabolas y² = 4ax is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 17
+    },
+    {
+      "id": 18,
+      "question": "Solution of (dy/dx)² = x is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y = ±(2/3)x^(3/2) + C",
+        "B": "y = x²",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The singular solution of a differential equation represents ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Envelope of family of curves",
+        "B": "One member of family",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 19
+    },
+    {
+      "question": "Solution of dy/dx + y/x = x² is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "xy = x⁴/4 + C",
+        "B": "y = x³/3 + C",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 20
+    }
+  ]
+}

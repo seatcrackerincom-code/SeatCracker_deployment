@@ -45,7 +45,7 @@ export default function AccessGate({ userId, isExpired, onAccessGranted, onBack 
   const finalPrice = calcFinalPrice(discount);
 
   // ── Promo Code ─────────────────────────────────────────
-  const handlePromo = () => {
+  const handlePromo = async () => {
     const { valid, data, error } = validatePromoCode(promoCode);
     if (!valid || !data) {
       setPromoFeedback({ msg: error ?? "Invalid code.", ok: false });
@@ -55,6 +55,11 @@ export default function AccessGate({ userId, isExpired, onAccessGranted, onBack 
       setDiscount(data.value);
       applyDiscountLocally(data.value);
       setPromoFeedback({ msg: `${data.value}% discount applied! 🎉`, ok: true });
+    } else if (data.type === "lifetime") {
+      setPromoFeedback({ msg: "LIFETIME ACTIVATION IN PROGRESS...", ok: true });
+      await activatePremium(userId);
+      setSuccess(true);
+      setTimeout(() => onAccessGranted(), 2000);
     } else {
       setPromoFeedback({ msg: "This code doesn't give a price discount.", ok: false });
     }

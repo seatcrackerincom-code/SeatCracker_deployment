@@ -2,85 +2,635 @@
   "subject": "Zoology",
   "topic": "Evolution",
   "questions": [
-    { "id": 1, "question": "The study of history of life forms on earth is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Evolutionary Biology", "B": "Ecology", "C": "Physiology", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "The Big Bang Theory attempts to explain the origin of ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Universe", "B": "Earth", "C": "Life", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Earth was formed about ______ billion years ago.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "4.5", "B": "20", "C": "1.0", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Life appeared on earth about ______ billion years ago.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "4", "B": "4.5", "C": "20", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "Oparin and Haldane proposed that the first form of life could have come from pre-existing ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Non-living organic molecules (RNA, Protein)", "B": "Dust", "C": "Water", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "S.L. Miller created electric discharge in a closed flask containing ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "CH4, NH3, H2 and Water Vapour", "B": "O2, CO2", "C": "N2, Ar", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "In Miller's experiment, the temperature of the flask was ______ degrees Celsius.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "800", "B": "100", "C": "1000", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "Miller observed the formation of ______ in his experiment.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Amino acids", "B": "Nucleic acids", "C": "Polysaccharides", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "The first non-cellular forms of life could have originated ______ billion years back.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "3", "B": "1", "C": "4.5", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "The first cellular forms of life did not possibly originate till about ______ million years ago.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "2000", "B": "500", "C": "100", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "The theory of ______ states that life comes only from pre-existing life.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Biogenesis", "B": "Spontaneous generation", "C": "Evolution", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "Louis Pasteur used 'swan-necked flask' to disprove the theory of ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Spontaneous generation (Abiogenesis)", "B": "Biogenesis", "C": "Natural selection", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "Palaeontological evidence for evolution is provided by ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Fossils", "B": "DNA", "C": "Tissues", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Homology indicates ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Common ancestry", "B": "Common function", "C": "Both", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Examples of homology include ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Forelimbs of Whale, Bat, Cheetah and Human", "B": "Wings of Butterfly and Bird", "C": "Eye of Octopus and Cat", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Homology is based on ______ evolution.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Divergent", "B": "Convergent", "C": "Parallel", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "Analogy is based on ______ evolution.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Convergent", "B": "Divergent", "C": "Both", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Examples of analogy include ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Wings of butterfly and birds", "B": "Thorns of Bougainvillea and Tendrils of Cucurbita", "C": "Flippers of Penguin and Dolphin", "D": "A and C" }, "answer": "D", "pyq": true },
-    { "id": 19, "question": "Adaptive radiation? yes. process of evolution of different species in a given geographical area starting from a point.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Classic example of adaptive radiation is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Darwin's Finches", "B": "Australian Marsupials", "C": "Placental mammals", "D": "All of these" }, "answer": "D", "pyq": true },
-    { "id": 21, "question": "Natural selection is the mechanism of evolution proposed by ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Charles Darwin", "B": "Lamarck", "C": "Mendel", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Who also reached similar conclusions as Darwin around the same time?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Alfred Wallace (Malay Archipelago)", "B": "Lamarck", "C": "De Vries", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "According to Lamarck, evolution of life occurred by the ______ of organs.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Use and Disuse", "B": "Mutation", "C": "Natural selection", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Hugo de Vries proposed the theory of ______ based on evening primrose.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Mutation", "B": "Natural selection", "C": "Biogenesis", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "Mutation? yes. it is large, random and directionless change.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Hardy-Weinberg equilibrium is represented by equation ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "p\u00b2 + 2pq + q\u00b2 = 1", "B": "p + q = 1", "C": "A and B", "D": "None" }, "answer": "C", "pyq": true },
-    { "id": 27, "question": "Factors affecting Hardy-Weinberg equilibrium include Gene flow, Genetic drift, Mutation and ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Natural selection", "B": "Reproduction", "C": "Feeding", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Founder effect is observed in ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Genetic drift", "B": "Mutation", "C": "Recombination", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "In natural selection, when more individuals acquire peripheral character value at both ends of distribution curve, it is ______ selection.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Disruptive", "B": "Stabilizing", "C": "Directional", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "The first mammal-like primates to appear were ______ and ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Dryopithecus, Ramapithecus", "B": "Homo habilis", "C": "Neanderthals", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "Dryopithecus was more ______-like while Ramapithecus was more ______-like.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ape, Man", "B": "Man, Ape", "C": "Fish, Frog", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Australopithecines lived in East African grasslands. They hunted with stone weapons but mostly ate ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Fruit", "B": "Meat", "C": "Insects", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "First human-like being, the hominid, was ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Homo habilis", "B": "Homo erectus", "C": "Homo sapiens", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Brain capacity of Homo habilis was ______ cc.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "650 - 800", "B": "900", "C": "1400", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Brain capacity of Homo erectus (Java man) was ______ cc.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "900", "B": "600", "C": "1600", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Neanderthal man had a brain size of ______ cc.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1400", "B": "900", "C": "500", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Homo sapiens (Modern man) arose in ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Africa", "B": "Asia", "C": "Europe", "D": "America" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Agriculture came around ______ years back.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "10,000", "B": "18,000", "C": "75,000", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Cave art developed about ______ years ago.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "18,000", "B": "10,000", "C": "40,000", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Industrial melanism in England is example of ______ selection.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Directional", "B": "Stabilizing", "C": "Disruptive", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "White winged moth population decreased in industrial areas because they were easily spotted by ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Predator birds", "B": "Humans", "C": "Bats", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Chemical evolution? yes. formation of diverse organic molecules from inorganic constituents.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Universe is ______ billion years old.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "20", "B": "4.5", "C": "10", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Coacervates? yes. colloid particles formed in the primitive ocean.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Embryological support for evolution was specialized by ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ernst Haeckel", "B": "Karl Ernst von Baer", "C": "Darwin", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Who showed that embryos never pass through the adult stages of other animals?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Karl Ernst von Baer", "B": "Ernst Haeckel", "C": "Darwin", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Divergent evolution? yes. different structures evolving for different functions from a common ancestor.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Convergent evolution? yes. different ancestors evolving to similar functions due to similar environment.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Sweet potato and potato are example of ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Analogy", "B": "Homology", "C": "Both", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Pangaea? yes. the giant single land mass.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Natural selection is based on certain observations which are factual. yes. limited natural resources and overproduction.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "The essence of Darwinian theory about evolution is ______ selection.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Natural", "B": "Artificial", "C": "Mutation", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Branching descent is a key concept of Darwinian theory.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Saltation? yes. single step large mutation.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Hardy-Weinberg equilibrium? yes. Allelic frequencies in a population are stable and constant from generation to generation.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Gene flow? yes. addition or deletion of genes from population due to migration.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Genetic drift? yes. change in gene frequency by chance in small populations.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Stabilizing selection? yes. more individuals acquire mean character value.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "First organisms to invade land were ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Plants", "B": "Animals", "C": "Fish", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Coelacanth? yes. lobe-finned fish which evolved into first amphibians.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Reptiles laid thick-shelled eggs which do not dry up in sun.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Tyrannosaurus rex was about ______ feet in height and had huge dagger-like teeth.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "20", "B": "50", "C": "100", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "First mammals were like shrews.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Marsupials of Australia survived because of lack of competition from ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Placental mammals", "B": "Reptiles", "C": "Birds", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "Continental drift? yes. separation of continents leads to isolation of species.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "The cranial capacity of modern man is about ______ cc.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1300 - 1500", "B": "900", "C": "500", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Pre-historic cave art existed 18,000 years ago.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Ramapithecus existed about ______ million years ago.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "15", "B": "2", "C": "50", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Homo erectus probably ate meat.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Neanderthals lived in central ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Europe and Asia", "B": "Africa", "C": "Australia", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Spontaneous generation? no. theory that life came from rotting and decaying matter.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 72, "question": "Darwin traveled on ship named ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "H.M.S. Beagle", "B": "Titanic", "C": "Victory", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Theory of Panspermia? yes. spores of life came from other planets.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Malthus? yes. His essay on population influenced Darwin.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Connecting link between reptiles and birds is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Archaeopteryx", "B": "Ornithorhynchus", "C": "Echidna", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Vestigial organs? yes. non-functional organs in current organisms. example? yes. Nictitating membrane.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Artificial selection? yes. humans select desirable traits in plants/animals.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Genetic drift is more significant in large populations? no. in small populations.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 79, "question": "Fitness? yes. reproductive fitness (ability to leave more progeny).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Homo sapiens arose in Africa and moved across continents.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 30,
+      "question": "Dryopithecus was more ______-like while Ramapithecus was more ______-like.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Ape, Man",
+        "B": "Man, Ape",
+        "C": "Fish, Frog",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 31,
+      "question": "Australopithecines lived in East African grasslands. They hunted with stone weapons but mostly ate ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Fruit",
+        "B": "Meat",
+        "C": "Insects",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "First human-like being, the hominid, was ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Homo habilis",
+        "B": "Homo erectus",
+        "C": "Homo sapiens",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Brain capacity of Homo habilis was ______ cc.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "650 - 800",
+        "B": "900",
+        "C": "1400",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Brain capacity of Homo erectus (Java man) was ______ cc.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "900",
+        "B": "600",
+        "C": "1600",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Neanderthal man had a brain size of ______ cc.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1400",
+        "B": "900",
+        "C": "500",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Homo sapiens (Modern man) arose in ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Africa",
+        "B": "Asia",
+        "C": "Europe",
+        "D": "America"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Agriculture came around ______ years back.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "10,000",
+        "B": "18,000",
+        "C": "75,000",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Cave art developed about ______ years ago.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "18,000",
+        "B": "10,000",
+        "C": "40,000",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Industrial melanism in England is example of ______ selection.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Directional",
+        "B": "Stabilizing",
+        "C": "Disruptive",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "Chemical evolution? yes. formation of diverse organic molecules from inorganic constituents.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Universe is ______ billion years old.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "20",
+        "B": "4.5",
+        "C": "10",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Coacervates? yes. colloid particles formed in the primitive ocean.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Embryological support for evolution was specialized by ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Ernst Haeckel",
+        "B": "Karl Ernst von Baer",
+        "C": "Darwin",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "Who showed that embryos never pass through the adult stages of other animals?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Karl Ernst von Baer",
+        "B": "Ernst Haeckel",
+        "C": "Darwin",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Divergent evolution? yes. different structures evolving for different functions from a common ancestor.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Convergent evolution? yes. different ancestors evolving to similar functions due to similar environment.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Sweet potato and potato are example of ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Analogy",
+        "B": "Homology",
+        "C": "Both",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Natural selection is based on certain observations which are factual. yes. limited natural resources and overproduction.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Branching descent is a key concept of Darwinian theory.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Saltation? yes. single step large mutation.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Hardy-Weinberg equilibrium? yes. Allelic frequencies in a population are stable and constant from generation to generation.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Gene flow? yes. addition or deletion of genes from population due to migration.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Genetic drift? yes. change in gene frequency by chance in small populations.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Stabilizing selection? yes. more individuals acquire mean character value.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "First organisms to invade land were ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Plants",
+        "B": "Animals",
+        "C": "Fish",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Coelacanth? yes. lobe-finned fish which evolved into first amphibians.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Reptiles laid thick-shelled eggs which do not dry up in sun.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Tyrannosaurus rex was about ______ feet in height and had huge dagger-like teeth.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "20",
+        "B": "50",
+        "C": "100",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "First mammals were like shrews.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Marsupials of Australia survived because of lack of competition from ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Placental mammals",
+        "B": "Reptiles",
+        "C": "Birds",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Continental drift? yes. separation of continents leads to isolation of species.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "The cranial capacity of modern man is about ______ cc.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1300 - 1500",
+        "B": "900",
+        "C": "500",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Pre-historic cave art existed 18,000 years ago.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Ramapithecus existed about ______ million years ago.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "15",
+        "B": "2",
+        "C": "50",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Homo erectus probably ate meat.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Neanderthals lived in central ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Europe and Asia",
+        "B": "Africa",
+        "C": "Australia",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 73,
+      "question": "Malthus? yes. His essay on population influenced Darwin.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "Connecting link between reptiles and birds is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Archaeopteryx",
+        "B": "Ornithorhynchus",
+        "C": "Echidna",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "Vestigial organs? yes. non-functional organs in current organisms. example? yes. Nictitating membrane.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 77,
+      "question": "Genetic drift is more significant in large populations? no. in small populations.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 78,
+      "question": "Fitness? yes. reproductive fitness (ability to leave more progeny).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

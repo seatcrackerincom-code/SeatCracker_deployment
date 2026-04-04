@@ -1,0 +1,309 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Definite integral as limit of a sum: lim(n→∞) 1/n ∑_{r=1}^n f(r/n) = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∫_0^1 f(x) dx",
+        "B": "∫_1^n f(x) dx",
+        "C": "∫_0^∞ f(x) dx",
+        "D": "f(1) - f(0)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "∫_0^{π/2} sin²x dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 3,
+      "question": "If f(2a-x) = -f(x), then ∫_0^{2a} f(x) dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "2∫_0^a f(x) dx",
+        "C": "-2∫_0^a f(x) dx",
+        "D": "2a"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 4,
+      "question": "∫_a^b f(x) dx = ∫_a^c f(x) dx + ∫_c^b f(x) dx is valid for ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Any real c",
+        "B": "Only c between a and b",
+        "C": "Only positive c",
+        "D": "c = 0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 5,
+      "question": "∫_0^{π/2} dx / (1 + tan^n x) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "nπ/4",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 6,
+      "question": "Property: ∫_a^b f(x) dx = ∫_a^b f(a+b-x) dx.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "Only if f is even",
+        "D": "Only if b > a"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 7,
+      "question": "| ∫_a^b f(x) dx | ______ ∫_a^b |f(x)| dx.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "≤",
+        "B": "≥",
+        "C": "=",
+        "D": "<"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 8,
+      "question": "∫_0^{2a} f(x) dx = ∫_0^a [f(x) + f(2a-x)] dx. If f(2a-x) = f(x), then integral is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2∫_0^a f(x) dx",
+        "B": "0",
+        "C": "∫_0^a f(x) dx",
+        "D": "a f(a)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 9,
+      "question": "∫₀^1 x/(1+x²) dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/2)ln 2",
+        "B": "ln 2",
+        "C": "π/4",
+        "D": "1/2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 10,
+      "question": "∫_0^{π/2} [ √sin x / (√sin x + √cos x) ] dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 11,
+      "question": "∫₀^(π/2) sin²x dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "1/2",
+        "D": "π"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 12,
+      "question": "∫₋π^π sin³x cos²x dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "2π",
+        "C": "π",
+        "D": "4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 13,
+      "question": "∫₀^π x·sin x dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π",
+        "B": "2π",
+        "C": "π/2",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 14,
+      "question": "∫_0^{π/2} [ f(sin x) / (f(sin x) + f(cos x)) ] dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "0",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 15,
+      "question": "Leibniz rule: d/dx [ ∫_g(x)^h(x) f(t) dt ] = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "f(h(x))h'(x) - f(g(x))g'(x)",
+        "B": "f'(h(x)) - f'(g(x))",
+        "C": "f(x)[h(x)-g(x)]",
+        "D": "f(x)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 16,
+      "question": "For periodic function f(x) with period T, ∫_0^{nT} f(x) dx = ______ (n is integer).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n ∫_0^T f(x) dx",
+        "B": "∫_0^T f(x) dx",
+        "C": "0",
+        "D": "nT ∫_0^1 f(x) dx"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 17,
+      "question": "If f(x) is periodic with period T, then ∫_a^{a+T} f(x) dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∫_0^T f(x) dx",
+        "B": "T ∫_0^a f(x) dx",
+        "C": "0",
+        "D": "aT"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 18,
+      "question": "∫_0^{π/2} cos²x dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 19,
+      "question": "∫₀^(π/2) log(tan x) dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "π/2",
+        "C": "−π/2",
+        "D": "π"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 20,
+      "question": "∫_0^{π/2} log(sin x) dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-(π/2) log 2",
+        "B": "(π/2) log 2",
+        "C": "-π log 2",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
+}

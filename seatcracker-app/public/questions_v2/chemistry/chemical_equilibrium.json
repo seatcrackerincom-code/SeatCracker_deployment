@@ -2,85 +2,440 @@
   "subject": "Chemistry",
   "topic": "Chemical Equilibrium",
   "questions": [
-    { "id": 1, "question": "A reaction that proceeds in both forward and backward directions is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Irreversible", "B": "Reversible", "C": "Unimolecular", "D": "Static" }, "answer": "B", "pyq": true },
-    { "id": 2, "question": "Chemical equilibrium is ______ in nature.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Static", "B": "Dynamic", "C": "Thermal", "D": "Inert" }, "answer": "B", "pyq": true },
-    { "id": 3, "question": "At equilibrium, the rate of forward reaction is ______ the rate of backward reaction.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Greater than", "B": "Equal to", "C": "Less than", "D": "Zero" }, "answer": "B", "pyq": true },
-    { "id": 4, "question": "The Law of Mass Action was proposed by ______ and ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Guldberg, Waage", "B": "Le Chatelier, Braun", "C": "Lewis, Bronsted", "D": "Boyle, Charles" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "The relation between Kp and Kc is Kp = Kc (RT)^\u0394n. Here \u0394n is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Sum of moles of products - reactants", "B": "Sum of moles of gaseous products - gaseous reactants", "C": "Number of atoms", "D": "Final mass - initial mass" }, "answer": "B", "pyq": true },
-    { "id": 6, "question": "Kp will be equal to Kc for a reaction when \u0394n is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive", "B": "Zero", "C": "Negative", "D": "1" }, "answer": "B", "pyq": true },
-    { "id": 7, "question": "Le Chatelier's Principle states that a system at equilibrium will ______ any change imposed on it.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Enhance", "B": "Oppose/Shift to neutralize", "C": "Ignore", "D": "Stop" }, "answer": "B", "pyq": true },
-    { "id": 8, "question": "In an exothermic reaction, increasing temperature shifts the equilibrium to the ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Forward direction", "B": "Backward direction", "C": "No shift", "D": "Random" }, "answer": "B", "pyq": true },
-    { "id": 9, "question": "Increasing pressure in a gaseous reaction shifts the equilibrium towards the side with ______ number of moles.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "More", "B": "Lesser", "C": "Equal", "D": "Zero" }, "answer": "B", "pyq": true },
-    { "id": 10, "question": "Addition of an inert gas at constant volume to an equilibrium mixture results in ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Forward shift", "B": "Backward shift", "C": "No shift in equilibrium", "D": "Pressure drop" }, "answer": "C", "pyq": true },
-    { "id": 11, "question": "Addition of an inert gas at constant pressure to an equilibrium mixture shifts it to the side with ______ moles.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "More", "B": "Lesser", "C": "Constant", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "According to Arrhenius, an acid is a substance that produces ______ in water.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "OH- ions", "B": "H+ ions", "C": "Electrons", "D": "Neutrons" }, "answer": "B", "pyq": true },
-    { "id": 13, "question": "Bronsted-Lowry acid is defined as a ______ donor.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Proton (H+)", "B": "Electron pair", "C": "OH-", "D": "Neutron" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Lewis acid is an ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Electron pair donor", "B": "Electron pair acceptor", "C": "Proton donor", "D": "Proton acceptor" }, "answer": "B", "pyq": true },
-    { "id": 15, "question": "The conjugate base of HSO4- is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "H2SO4", "B": "SO4^2-", "C": "H+", "D": "OH-" }, "answer": "B", "pyq": true },
-    { "id": 16, "question": "Ionic product of water (Kw) at 298 K is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "10^-14", "B": "10^-7", "C": "10^14", "D": "1" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "pH of a solution with [H+] = 10^-3 M is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "3", "B": "11", "C": "-3", "D": "7" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "pH + pOH = ______ at 25 degrees Celsius.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "7", "B": "14", "C": "0", "D": "1" }, "answer": "B", "pyq": true },
-    { "id": 19, "question": "A solution that resists change in pH upon addition of small amounts of acid or base is called a ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Standard solution", "B": "Buffer solution", "C": "Normal solution", "D": "Colloid" }, "answer": "B", "pyq": true },
-    { "id": 20, "question": "Henderson-Hasselbalch equation for an acidic buffer is pH = ...... ?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "pKa + log([Salt]/[Acid])", "B": "pKa - log([Salt]/[Acid])", "C": "pKb + log([Salt]/[Base])", "D": "pHo + log(C)" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "Solubility product (Ksp) of AgCl is expressed as ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "[Ag+][Cl-]", "B": "[Ag+] + [Cl-]", "C": "[AgCl] / [Ag+]", "D": "[Ag+]^2" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "For a sparingly soluble salt AB2, if solubility is 's', then Ksp = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "s^2", "B": "4s^3", "C": "27s^4", "D": "s^3" }, "answer": "B", "pyq": true },
-    { "id": 23, "question": "Precipitation occurs only if Ionic Product (Q) ______ Ksp.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Is less than", "B": "Exceeds (>)", "C": "Equals", "D": "Is zero" }, "answer": "B", "pyq": true },
-    { "id": 24, "question": "Common ion effect ______ the solubility of a sparingly soluble salt.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increases", "B": "Decreases", "C": "Maintain", "D": "Double" }, "answer": "B", "pyq": true },
-    { "id": 25, "question": "Which of the following is a neutral salt?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "NH4Cl", "B": "CH3COONa", "C": "NaCl", "D": "Na2CO3" }, "answer": "C", "pyq": true },
-    { "id": 26, "question": "Salt of a weak acid and strong base undergoes ______ hydrolysis, making the solution ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Anionic, Basic", "B": "Cationic, Acidic", "C": "Both, Neutral", "D": "No, Inert" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "The degree of dissociation of a weak electrolyte increases with ______ according to Ostwald's Dilution Law.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increase in concentration", "B": "Decrease in concentration (Dilution)", "C": "Temperature decrease", "D": "Mass increase" }, "answer": "B", "pyq": true },
-    { "id": 28, "question": "pH of 0.001 M NaOH is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "3", "B": "11", "C": "14", "D": "7" }, "answer": "B", "pyq": true },
-    { "id": 29, "question": "Blood pH is maintained around 7.4 by ______ buffer system.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Bicarbonate/Carbonic acid", "B": "Phosphate", "C": "Ammonia", "D": "Acetate" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "In the reaction N2(g) + 3H2(g) \u21cc 2NH3(g) + Heat, the favorable conditions for high yield of ammonia are ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "High pressure, Low temperature", "B": "Low pressure, High temperature", "C": "High pressure, High temperature", "D": "Low pressure, Low temperature" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "For the reaction H2 + I2 \u21cc 2HI, equilibrium constant Kc is 50. If the volume of container is doubled, Kc is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "100", "B": "50 (Kc depends ONLY on temperature)", "C": "25", "D": "Zero" }, "answer": "B", "pyq": false },
-    { "id": 32, "question": "Equilibrium constant for reverse reaction is the ______ of K for forward reaction.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Double", "B": "Reciprocal (1/K)", "C": "Negative", "D": "Square" }, "answer": "B", "pyq": false },
-    { "id": 33, "question": "Which of these is not influenced by a catalyst?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Rate of reaction", "B": "Equilibrium state/constant", "C": "Activation energy", "D": "Path of reaction" }, "answer": "B", "pyq": false },
-    { "id": 34, "question": "Active mass is defined as molar concentration.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Reaction Quotient (Q) at any time t is equal to K at equilibrium.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "pH of 10^-8 M HCl is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "8", "B": "Slightly less than 7 (auto-ionization of water)", "C": "7", "D": "6" }, "answer": "B", "pyq": false },
-    { "id": 37, "question": "Amphoteric substances can act as both ______ and ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Solid, Liquid", "B": "Acid, Base", "C": "Proton, Neutron", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 38, "question": "BF3 is a Lewis ______ because it has an ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Acid, Octet deficiency", "B": "Base, Lone pair", "C": "Acid, Proton", "D": "Base, Electron" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "pKa = -log Ka. A strong acid has ______ Ka and ______ pKa.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Large, Small", "B": "Small, Large", "C": "Large, Large", "D": "Small, Small" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Hydrolysis constant (Kh) for salt of strong acid and weak base is Kh = Kw / ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ka", "B": "Kb", "C": "c", "D": "pH" }, "answer": "B", "pyq": false },
-    { "id": 41, "question": "In the reaction: PCl5 \u21cc PCl3 + Cl2, increasing volume ______ yield of PCl3.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increases", "B": "Decreases", "C": "Not change", "D": "Zeroes" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Heterogeneous equilibrium involves species in ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Same phase", "B": "Different phases", "C": "Vacuum", "D": "Liquid only" }, "answer": "B", "pyq": false },
-    { "id": 43, "question": "For a pure solid or liquid, the active mass is taken as ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Molar mass", "B": "Unity (1)", "C": "Density", "D": "Zero" }, "answer": "B", "pyq": false },
-    { "id": 44, "question": "Degree of hydrolysis (h) is related to Kh as h = \u221a(Kh/c).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Buffer capacity is maximum when ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "[Salt] = [Acid]", "B": "[Salt] > [Acid]", "C": "[Acid] = 1M", "D": "pH = 7" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "The pH range of Methyl Orange is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "3.1 - 4.4", "B": "8.3 - 10", "C": "6 - 8", "D": "1 - 2" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Phenolphthalein is suitable for titration between ______ and ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Strong Acid, Strong Base", "B": "Weak Acid, Strong Base", "C": "Strong Acid, Weak Base", "D": "Both A and B" }, "answer": "D", "pyq": false },
-    { "id": 48, "question": "Is NH4OH a strong or weak base?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Strong", "B": "Weak", "C": "Neutral", "D": "Acid" }, "answer": "B", "pyq": false },
-    { "id": 49, "question": "Kw increases with increase in temperature.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "A substance with Ka = 10^-5 is a ______ acid.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Strong", "B": "Weak", "C": "Mineral", "D": "Super" }, "answer": "B", "pyq": false },
-    { "id": 51, "question": "Ionic equilibrium deals with equilibrium involving ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Molecules", "B": "Ions", "C": "Isotopes", "D": "Protons only" }, "answer": "B", "pyq": false },
-    { "id": 52, "question": "For polyprotic acids (like H3PO4), Ka1 ______ Ka2 ______ Ka3.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "> , >", "B": "< , <", "C": "=", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Which of these is a protonic acid according to Bronsted? NH3? No. Replaced: Conjugate base of NH4+ is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "NH3", "B": "NH2-", "C": "NH5+", "D": "H+" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "A salt AB splits as A+ and B-. If Ksp = 10^-10, solubility S is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "10^-5 M", "B": "10^-10 M", "C": "10^-20 M", "D": "0.1 M" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Addition of HCl to saturated NaCl solution precipitates NaCl. Why?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Common Ion Effect (Cl-)", "B": "HCl is stronger", "C": "Density", "D": "Temperature spike" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "The value of \u0394G\u00b0 for a reaction at equilibrium with K=1 is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive", "B": "Negative", "C": "Zero", "D": "Infinity" }, "answer": "C", "pyq": false },
-    { "id": 57, "question": "Dissociation of water is ______ process.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Exothermic", "B": "Endothermic", "C": "Isothermal", "D": "Isobaric" }, "answer": "B", "pyq": false },
-    { "id": 58, "question": "Ostwald's dilution law is not applicable to ______ electrolytes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Weak", "B": "Strong (due to complete dissociation)", "C": "Gaseous", "D": "Organic" }, "answer": "B", "pyq": false },
-    { "id": 59, "question": "Unit of Kc for H2 + I2 \u21cc 2HI is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "mol/L", "B": "(mol/L)^-1", "C": "Dimensionless", "D": "L/mol" }, "answer": "C", "pyq": false },
-    { "id": 60, "question": "Partial pressure of a gas is related to total pressure by ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Mole fraction", "B": "Mass", "C": "Volume", "D": "Density" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Solubility product constant (Ksp) depends only on ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Volume", "B": "Temperature", "C": "Concentration", "D": "Precipitate mass" }, "answer": "B", "pyq": false },
-    { "id": 62, "question": "pH of standard basic buffer consists of ______ and ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Weak base, its salt with strong acid", "B": "Strong base, weak acid", "C": "Two salts", "D": "Pure water" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Acidity of Aqueous solutions is measured on the scale of 0 to 14 by ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Kelvin", "B": "pH", "C": "Celsius", "D": "Nernst" }, "answer": "B", "pyq": false },
-    { "id": 64, "question": "Reaction: CO + H2O \u21cc CO2 + H2. Addition of catalyst ______ the time to reach equilibrium.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increases", "B": "Decreases", "C": "Doubles", "D": "Does not affect" }, "answer": "B", "pyq": false },
-    { "id": 65, "question": "Relation between Gibbs energy (\u0394G) and Reaction Quotient (Q) is \u0394G = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u0394G\u00b0 + RT ln Q", "B": "\u0394G\u00b0 - RT ln Q", "C": "RT ln Q", "D": "0" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "Strong acids have weak conjugate bases.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Ionic product of water Kw = [H+][OH-]. At 90 deg C, Kw is ______ than 10^-14.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Smaller", "B": "Larger", "C": "Same", "D": "Zero" }, "answer": "B", "pyq": false },
-    { "id": 68, "question": "Effect of volume on the reaction H2 + Cl2 \u21cc 2HCl is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Forward shift", "B": "Backward shift", "C": "No change (\u0394n = 0)", "D": "Explosion" }, "answer": "C", "pyq": false },
-    { "id": 69, "question": "Degree of dissociation decreases in presence of common ion. This is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Octet rule", "B": "Common ion effect", "C": "Hund's rule", "D": "Lewis theory" }, "answer": "B", "pyq": false },
-    { "id": 70, "question": "Is AlCl3 a Lewis acid?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Yes", "B": "No", "C": "Amphoteric", "D": "Base" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Buffer range is usually pH = pKa +/- ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "7", "C": "14", "D": "0" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "At constant T, equilibrium constant K for a reaction is fixed.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Which indicator is used for titration of weak base with strong acid?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Phenolphthalein", "B": "Methyl Orange", "C": "Starch", "D": "KMnO4" }, "answer": "B", "pyq": false },
-    { "id": 74, "question": "Water is a/an ______ solvent.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Aprotic", "B": "Amphiprotic (both donor and acceptor)", "C": "Inert", "D": "Basic" }, "answer": "B", "pyq": false },
-    { "id": 75, "question": "Solubility of PbCl2 in 0.1M NaCl solution is ______ than in pure water.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Higher", "B": "Lower", "C": "Same", "D": "Infinite" }, "answer": "B", "pyq": false },
-    { "id": 76, "question": "Dissociation of weak acid HA: HA \u21cc H+ + A-. Ka = ...... ?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "[H+][A-] / [HA]", "B": "[HA] / [H+][A-]", "C": "[H+] + [A-]", "D": "[HA]^2" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Reaction PCl5 \u21cc PCl3 + Cl2 is carried out in a closed vessel. Addition of PCl5 shifts it ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Forward", "B": "Backward", "C": "No change", "D": "Zero" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Human saliva pH is roughly ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "6.8", "C": "10", "D": "14" }, "answer": "B", "pyq": false },
-    { "id": 79, "question": "Law of Chemical Equilibrium was derived from the law of mass action.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Dynamic equilibrium means microscopic reactions stop but macroscopic properties stay same.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False (reactions continue at equal rates)", "C": "None", "D": "None" }, "answer": "B", "pyq": false }
+    {
+      "id": 26,
+      "question": "For the reaction H2 + I2 ⇌ 2HI, equilibrium constant Kc is 50. If the volume of container is doubled, Kc is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "100",
+        "B": "50 (Kc depends ONLY on temperature)",
+        "C": "25",
+        "D": "Zero"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "pH of 10^-8 M HCl is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "8",
+        "B": "Slightly less than 7 (auto-ionization of water)",
+        "C": "7",
+        "D": "6"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "BF3 is a Lewis ______ because it has an ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Acid, Octet deficiency",
+        "B": "Base, Lone pair",
+        "C": "Acid, Proton",
+        "D": "Base, Electron"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "pKa = -log Ka. A strong acid has ______ Ka and ______ pKa.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Large, Small",
+        "B": "Small, Large",
+        "C": "Large, Large",
+        "D": "Small, Small"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Hydrolysis constant (Kh) for salt of strong acid and weak base is Kh = Kw / ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Ka",
+        "B": "Kb",
+        "C": "c",
+        "D": "pH"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "In the reaction: PCl5 ⇌ PCl3 + Cl2, increasing volume ______ yield of PCl3.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Increases",
+        "B": "Decreases",
+        "C": "Not change",
+        "D": "Zeroes"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "For a pure solid or liquid, the active mass is taken as ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Molar mass",
+        "B": "Unity (1)",
+        "C": "Density",
+        "D": "Zero"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Degree of hydrolysis (h) is related to Kh as h = √(Kh/c).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Buffer capacity is maximum when ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[Salt] = [Acid]",
+        "B": "[Salt] > [Acid]",
+        "C": "[Acid] = 1M",
+        "D": "pH = 7"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "The pH range of Methyl Orange is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3.1 - 4.4",
+        "B": "8.3 - 10",
+        "C": "6 - 8",
+        "D": "1 - 2"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "Phenolphthalein is suitable for titration between ______ and ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Strong Acid, Strong Base",
+        "B": "Weak Acid, Strong Base",
+        "C": "Strong Acid, Weak Base",
+        "D": "Both A and B"
+      },
+      "answer": "D",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Kw increases with increase in temperature.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "A substance with Ka = 10^-5 is a ______ acid.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Strong",
+        "B": "Weak",
+        "C": "Mineral",
+        "D": "Super"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "For polyprotic acids (like H3PO4), Ka1 ______ Ka2 ______ Ka3.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "> , >",
+        "B": "< , <",
+        "C": "=",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "A salt AB splits as A+ and B-. If Ksp = 10^-10, solubility S is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "10^-5 M",
+        "B": "10^-10 M",
+        "C": "10^-20 M",
+        "D": "0.1 M"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Addition of HCl to saturated NaCl solution precipitates NaCl. Why?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Common Ion Effect (Cl-)",
+        "B": "HCl is stronger",
+        "C": "Density",
+        "D": "Temperature spike"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "The value of ΔG° for a reaction at equilibrium with K=1 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Positive",
+        "B": "Negative",
+        "C": "Zero",
+        "D": "Infinity"
+      },
+      "answer": "C",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Dissociation of water is ______ process.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Exothermic",
+        "B": "Endothermic",
+        "C": "Isothermal",
+        "D": "Isobaric"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Ostwald's dilution law is not applicable to ______ electrolytes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Weak",
+        "B": "Strong (due to complete dissociation)",
+        "C": "Gaseous",
+        "D": "Organic"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Unit of Kc for H2 + I2 ⇌ 2HI is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "mol/L",
+        "B": "(mol/L)^-1",
+        "C": "Dimensionless",
+        "D": "L/mol"
+      },
+      "answer": "C",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Solubility product constant (Ksp) depends only on ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Volume",
+        "B": "Temperature",
+        "C": "Concentration",
+        "D": "Precipitate mass"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "pH of standard basic buffer consists of ______ and ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Weak base, its salt with strong acid",
+        "B": "Strong base, weak acid",
+        "C": "Two salts",
+        "D": "Pure water"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "Relation between Gibbs energy (ΔG) and Reaction Quotient (Q) is ΔG = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ΔG° + RT ln Q",
+        "B": "ΔG° - RT ln Q",
+        "C": "RT ln Q",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Ionic product of water Kw = [H+][OH-]. At 90 deg C, Kw is ______ than 10^-14.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Smaller",
+        "B": "Larger",
+        "C": "Same",
+        "D": "Zero"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Effect of volume on the reaction H2 + Cl2 ⇌ 2HCl is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Forward shift",
+        "B": "Backward shift",
+        "C": "No change (Δn = 0)",
+        "D": "Explosion"
+      },
+      "answer": "C",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Buffer range is usually pH = pKa +/- ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "7",
+        "C": "14",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "Which indicator is used for titration of weak base with strong acid?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Phenolphthalein",
+        "B": "Methyl Orange",
+        "C": "Starch",
+        "D": "KMnO4"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Solubility of PbCl2 in 0.1M NaCl solution is ______ than in pure water.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Higher",
+        "B": "Lower",
+        "C": "Same",
+        "D": "Infinite"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "Dynamic equilibrium means microscopic reactions stop but macroscopic properties stay same.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False (reactions continue at equal rates)",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    }
   ]
 }

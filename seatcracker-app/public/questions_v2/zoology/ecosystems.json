@@ -2,85 +2,650 @@
   "subject": "Zoology",
   "topic": "Ecosystems",
   "questions": [
-    { "id": 1, "question": "The functional unit of nature where living organisms interact among themselves and with surroundings is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ecosystem", "B": "Biome", "C": "Community", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "Ponds, lakes, wetlands and rivers are examples of ______ ecosystems.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Aquatic", "B": "Terrestrial", "C": "Man-made", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Forests, grasslands and deserts are examples of ______ ecosystems.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Terrestrial", "B": "Aquatic", "C": "Artificial", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Total amount of organic matter produced by plants during photosynthesis is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "GPP (Gross Primary Productivity)", "B": "NPP", "C": "Secondary Productivity", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "NPP (Net Primary Productivity) = GPP minus ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Respiration (R)", "B": "Consumption", "C": "Decomposition", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "Rate of formation of new organic matter by consumers is ______ productivity.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Secondary", "B": "Primary", "C": "Tertiary", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "Decomposers like earthworms help in ______ of detritus.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Fragmentation", "B": "Leaching", "C": "Mineralization", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "Humification leads to the accumulation of a dark-colored amorphous substance called ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Humus", "B": "Grit", "C": "Salt", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Humus is highly resistant to microbial action and undergoes decomposition at ______ rate.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Extremely slow", "B": "Fast", "C": "High", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "The percentage of incident solar radiation that plants can capture as PAR is about ______ percent.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "2 - 10", "B": "50", "C": "100", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "The primary consumers are ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Herbivores", "B": "Carnivores", "C": "Omnivores", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "An example of Grazing Food Chain (GFC) is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Grass \u2192 Goat \u2192 Man", "B": "Dead leaves \u2192 Fungus", "C": "Both", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "10% Law of energy transfer was given by ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lindeman", "B": "Darwin", "C": "Mendel", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Which ecological pyramid is 'Always Upright' and can never be inverted?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Pyramid of Energy", "B": "Pyramid of Number", "C": "Pyramid of Biomass", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Pyramid of biomass in sea is generally ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Inverted (Fish > Phytoplankton)", "B": "Upright", "C": "Spindle-shaped", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Ecological succession on a bare rock is ______ succession.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Primary", "B": "Secondary", "C": "Both", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "Species that invade a bare area are ______ species.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Pioneer", "B": "Seral", "C": "Climax", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Climax community is in equilibrium with the ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Environment", "B": "Pioneer species", "C": "Soil", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Edward Wilson popularized the term ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Biodiversity", "B": "Energy", "C": "Niche", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Biodiversity is highest in which of these biomes?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Tropical Rainforest (Amazon)", "B": "Desert", "C": "Tundra", "D": "Temperate Forest" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "The Species-Area relationship was popularized by ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Alexander von Humboldt", "B": "Darwin", "C": "Wallace", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "The main cause of biodiversity loss is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Habitat loss and fragmentation", "B": "Over-exploitation", "C": "Alien species", "D": "Co-extinction" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Introduction of Nile perch into Lake Victoria led to extinction of ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Cichlid fish", "B": "Catfish", "C": "Frogs", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Alien species Lantana and Water Hyacinth (Eichhornia) are a threat to our ______ species.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Indigenous / Native", "B": "Global", "C": "Extinct", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "Biodiversity hotspots are regions with high ______ and high endemism.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Species richness", "B": "Temperature", "C": "Pollution", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Conservation of species in their natural habitat is ______ conservation.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "In-situ", "B": "Ex-situ", "C": "Static", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Conservation of species in zoos or seed banks is ______ conservation.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ex-situ", "B": "In-situ", "C": "Both", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "There are ______ biodiversity hotspots in the world.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "34", "B": "100", "C": "10", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Sacred groves are an example of ______ conservation.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "In-situ", "B": "Ex-situ", "C": "Global", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "National Parks and Wildlife Sanctuaries are part of ______ conservation.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "In-situ", "B": "Ex-situ", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "Detritus? yes. dead plant and animal remains including fecal matter.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Leaching? yes. water soluble inorganic nutrients go down into soil.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Mineralization? yes. humus is further degraded by some microbes to release inorganic nutrients.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Warm and moist environment favors decomposition.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Primary productivity of oceans is only ______ billion tons out of total 170 billion tons.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "55", "B": "115", "C": "170", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Secondary consumers are usually ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Carnivores", "B": "Herbivores", "C": "Primary", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Food web? yes. interconnected food chains in an ecosystem.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Detritus Food Chain (DFC) begins with dead organic matter.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Standing crop? yes. mass of living material at a particular time in each trophic level.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Standing state? yes. amount of nutrients present in the soil at any given time.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "Hydrarch succession? yes. starts in a water body.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Xerarch succession? yes. starts in dry areas like bare rock.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Primary succession is faster than secondary? no. it is much slower.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 44, "question": "Secondary succession starts in areas where natural biotic communities have been destroyed.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Seral stages are intermediate stages in ecological succession.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Phosphorus cycle is a sedimentary cycle.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Carbon cycle is a gaseous cycle.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Main reservoir of phosphorus is in ______ rocks.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Sedimentary", "B": "Igneous", "C": "Metamorphic", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Price tagging for ecosystem services was given by ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Robert Costanza", "B": "Edward Wilson", "C": "Mendel", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Genetic diversity? yes. diversity at the genetic level within a species.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Rauwolfia vomitoria shows genetic variation in potency and concentration of reserpine.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "India has more than ______ genetically different strains of rice.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "50,000", "B": "10", "C": "1,000", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Ecological diversity? yes. example? yes. Mangroves, Corals, Wet lands in India.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Tropics have more species diversity than temperate regions. Why? yes. stable environment and more solar energy.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Amazonian rainforest in South America is the host to greatest biodiversity on earth.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Rivet Popper hypothesis? yes. Paul Ehrlich proposed it to explain importance of species diversity.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Red List is maintained by ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "IUCN", "B": "WHO", "C": "UNESCO", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Dodo, Quagga and Thylacine are recently ______ species.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Extinct", "B": "Endangered", "C": "Common", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "The three biodiversity hotspots of India are Western Ghats-Sri Lanka, Indo-Burma and ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Himalaya", "B": "Everest", "C": "Andaman", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Biosphere reserves in India are ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "14", "B": "100", "C": "5", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Wildlife Sanctuaries in India are ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "448", "B": "10", "C": "90", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "National Parks in India are ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "90", "B": "14", "C": "448", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Cryopreservation? yes. seed/gamete preservation at very low temperatures (-196 C).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Earth Summit (1992) for biodiversity conservation was held in ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Rio de Janeiro", "B": "Kyoto", "C": "London", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "World Summit (2002) was held in ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Johannesburg", "B": "New York", "C": "Paris", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "The 'Evil Quartet'? yes. the four major causes of biodiversity loss.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Fragmentation of habitat? yes. when large areas are broken into small fragments due to human activity.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Steller's sea cow became extinct due to over-exploitation.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Co-extinction occurs when a species becomes extinct and the species ______ on it also perish.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Dependent", "B": "Opposed", "C": "Independent", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Species richness? yes. number of species per unit area.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Log-log? no. Replaced: The value of 'Z' in species-area relationship is 0.1 to 0.2 mostly.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "For very large areas like entire continents, 'Z' value is between ______ and ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "0.6 to 1.2", "B": "0.1 to 0.2", "C": "5 to 10", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Broadly utilitarian argument for biodiversity includes pollination and aesthetic pleasure.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Narrowly utilitarian argument includes medicinal drugs, food and fiber.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Bioprospecting? yes. exploring molecular, genetic and species level diversity for products of economic importance.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Secondary productivity? no. Replaced: Energy flow in ecosystem is unidirectional.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Energy at 1st trophic level is always maximum? yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Pyramid of number in a single large tree hosting small birds can be ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Inverted", "B": "Upright", "C": "Spindle", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Stratification? yes. vertical distribution of different species occupying different levels in an ecosystem.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Primary productivity of entire biosphere is ______ billion tons.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "170", "B": "55", "C": "200", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 31,
+      "question": "Leaching? yes. water soluble inorganic nutrients go down into soil.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Mineralization? yes. humus is further degraded by some microbes to release inorganic nutrients.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Warm and moist environment favors decomposition.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Primary productivity of oceans is only ______ billion tons out of total 170 billion tons.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "55",
+        "B": "115",
+        "C": "170",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Secondary consumers are usually ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Carnivores",
+        "B": "Herbivores",
+        "C": "Primary",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Standing crop? yes. mass of living material at a particular time in each trophic level.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Standing state? yes. amount of nutrients present in the soil at any given time.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "Hydrarch succession? yes. starts in a water body.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "Xerarch succession? yes. starts in dry areas like bare rock.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Primary succession is faster than secondary? no. it is much slower.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Secondary succession starts in areas where natural biotic communities have been destroyed.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Seral stages are intermediate stages in ecological succession.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "Phosphorus cycle is a sedimentary cycle.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Carbon cycle is a gaseous cycle.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Main reservoir of phosphorus is in ______ rocks.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Sedimentary",
+        "B": "Igneous",
+        "C": "Metamorphic",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Price tagging for ecosystem services was given by ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Robert Costanza",
+        "B": "Edward Wilson",
+        "C": "Mendel",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Rauwolfia vomitoria shows genetic variation in potency and concentration of reserpine.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "India has more than ______ genetically different strains of rice.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "50,000",
+        "B": "10",
+        "C": "1,000",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Ecological diversity? yes. example? yes. Mangroves, Corals, Wet lands in India.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Tropics have more species diversity than temperate regions. Why? yes. stable environment and more solar energy.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Rivet Popper hypothesis? yes. Paul Ehrlich proposed it to explain importance of species diversity.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Red List is maintained by ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "IUCN",
+        "B": "WHO",
+        "C": "UNESCO",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Dodo, Quagga and Thylacine are recently ______ species.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Extinct",
+        "B": "Endangered",
+        "C": "Common",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "The three biodiversity hotspots of India are Western Ghats-Sri Lanka, Indo-Burma and ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Himalaya",
+        "B": "Everest",
+        "C": "Andaman",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Biosphere reserves in India are ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "14",
+        "B": "100",
+        "C": "5",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Wildlife Sanctuaries in India are ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "448",
+        "B": "10",
+        "C": "90",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "National Parks in India are ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "90",
+        "B": "14",
+        "C": "448",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Cryopreservation? yes. seed/gamete preservation at very low temperatures (-196 C).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Earth Summit (1992) for biodiversity conservation was held in ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Rio de Janeiro",
+        "B": "Kyoto",
+        "C": "London",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "World Summit (2002) was held in ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Johannesburg",
+        "B": "New York",
+        "C": "Paris",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "The 'Evil Quartet'? yes. the four major causes of biodiversity loss.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Fragmentation of habitat? yes. when large areas are broken into small fragments due to human activity.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Steller's sea cow became extinct due to over-exploitation.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Co-extinction occurs when a species becomes extinct and the species ______ on it also perish.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Dependent",
+        "B": "Opposed",
+        "C": "Independent",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "Log-log? no. Replaced: The value of 'Z' in species-area relationship is 0.1 to 0.2 mostly.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "For very large areas like entire continents, 'Z' value is between ______ and ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0.6 to 1.2",
+        "B": "0.1 to 0.2",
+        "C": "5 to 10",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Broadly utilitarian argument for biodiversity includes pollination and aesthetic pleasure.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 73,
+      "question": "Narrowly utilitarian argument includes medicinal drugs, food and fiber.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "Bioprospecting? yes. exploring molecular, genetic and species level diversity for products of economic importance.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "Secondary productivity? no. Replaced: Energy flow in ecosystem is unidirectional.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 77,
+      "question": "Pyramid of number in a single large tree hosting small birds can be ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Inverted",
+        "B": "Upright",
+        "C": "Spindle",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 78,
+      "question": "Stratification? yes. vertical distribution of different species occupying different levels in an ecosystem.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 79,
+      "question": "Primary productivity of entire biosphere is ______ billion tons.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "170",
+        "B": "55",
+        "C": "200",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

@@ -2,85 +2,530 @@
   "subject": "Chemistry",
   "topic": "Solid State",
   "questions": [
-    { "id": 1, "question": "Which of the following is an amorphous solid?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Diamond", "B": "Quartz glass", "C": "Graphite", "D": "NaCl" }, "answer": "B", "pyq": true },
-    { "id": 2, "question": "Crystalline solids follow ______ order while amorphous solids follow ______ order.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Long-range, Short-range", "B": "Short-range, Long-range", "C": "No, Long-range", "D": "Constant, Variable" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Which of the following is also called a 'pseudo-solid' or 'super cooled liquid'?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Glass", "B": "Copper", "C": "Ice", "D": "Diamond" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "The total number of Bravais lattices in three dimensions is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "7", "B": "14", "C": "21", "D": "32" }, "answer": "B", "pyq": true },
-    { "id": 5, "question": "The number of atoms (Z) per unit cell in a simple cubic lattice (SCC) is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "2", "C": "4", "D": "8" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "The number of atoms (Z) per unit cell in a body-centered cubic lattice (BCC) is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "2", "C": "4", "D": "8" }, "answer": "B", "pyq": true },
-    { "id": 7, "question": "The number of atoms (Z) per unit cell in a face-centered cubic lattice (FCC) is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "2", "C": "4", "D": "8" }, "answer": "C", "pyq": true },
-    { "id": 8, "question": "Coordination number of an atom in HCP (Hexagonal Close Packing) is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "6", "B": "8", "C": "12", "D": "4" }, "answer": "C", "pyq": true },
-    { "id": 9, "question": "Packing efficiency of a simple cubic unit cell is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "52.4%", "B": "68%", "C": "74%", "D": "100%" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "Packing efficiency of a BCC unit cell is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "52.4%", "B": "68%", "C": "74%", "D": "32%" }, "answer": "B", "pyq": true },
-    { "id": 11, "question": "Packing efficiency of FCC and HCP lattices is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "52.4%", "B": "68%", "C": "74%", "D": "26%" }, "answer": "C", "pyq": true },
-    { "id": 12, "question": "The density of a unit cell (d) is calculated using the formula d = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Z.M / a^3.NA", "B": "a^3.NA / Z.M", "C": "M / Z.a", "D": "Z / a.M" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "Schottky defect is shown by ionic solids when ______ number of cations and anions are missing from their lattice sites.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Equal", "B": "Unequal", "C": "Only cations", "D": "Only anions" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Frenkel defect arises when an ion is displaced from its lattice site to an ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Interstitial site", "B": "Outer shell", "C": "Surface", "D": "Anode" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Which of the following compounds exhibits both Schottky and Frenkel defects?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "NaCl", "B": "AgBr", "C": "ZnS", "D": "AgCl" }, "answer": "B", "pyq": true },
-    { "id": 16, "question": "The density of a solid ______ due to Schottky defect.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increases", "B": "Decreases", "C": "Stays same", "D": "Zero" }, "answer": "B", "pyq": true },
-    { "id": 17, "question": "The density of a solid ______ due to Frenkel defect.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increases", "B": "Decreases", "C": "Stays same", "D": "Zero" }, "answer": "C", "pyq": true },
-    { "id": 18, "question": "Metal excess defect due to anionic vacancies results in the formation of ______ which impart color to crystals.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Valence band", "B": "F-centers (Farbe centers)", "C": "Nodes", "D": "Holes" }, "answer": "B", "pyq": true },
-    { "id": 19, "question": "Zinc oxide (ZnO) turns yellow on heating due to ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Metal excess defect (loss of O2)", "B": "Schottky defect", "C": "Frenkel defect", "D": "Radioactivity" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Semiconductors like Silicon doped with group 15 elements (like P, As) result in ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "p-type semiconductor", "B": "n-type semiconductor (extra electron)", "C": "Insulator", "D": "Superconductor" }, "answer": "B", "pyq": true },
-    { "id": 21, "question": "Silicon doped with group 13 elements (like B, Al) result in ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "n-type", "B": "p-type (electron hole)", "C": "Conductor", "D": "Ferromagnetic" }, "answer": "B", "pyq": true },
-    { "id": 22, "question": "Paramagnetic substances are those which are ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Attracted weakly by magnetic field", "B": "Repelled strongly", "C": "Repelled weakly", "D": "Not affected" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Ferromagnetic substances like Iron can be ______ permanently.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Demagnetized", "B": "Magnetized", "C": "Liquefied", "D": "Vaporized" }, "answer": "B", "pyq": true },
-    { "id": 24, "question": "The relationship between corner atom radius (r) and side length (a) in SCC is r = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "a/2", "B": "a\u221a3 / 4", "C": "a / 2\u221a2", "D": "a" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "The relationship between r and a in BCC is r = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "a/2", "B": "a\u221a3 / 4", "C": "a / 2\u221a2", "D": "a\u221a2 / 4" }, "answer": "B", "pyq": true },
-    { "id": 26, "question": "The relationship between r and a in FCC is r = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "a/2", "B": "a\u221a2 / 4 (or a / 2\u221a2)", "C": "a\u221a3 / 4", "D": "a/4" }, "answer": "B", "pyq": true },
-    { "id": 27, "question": "Inter-axial angles for Cubic system are \u03b1 = \u03b2 = \u03b3 = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "90 degrees", "B": "120 degrees", "C": "Variable", "D": "0" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "For a Triclinic system, the relation between sides and angles is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "a=b=c, \u03b1=\u03b2=\u03b3=90", "B": "a\u2260b\u2260c, \u03b1\u2260\u03b2\u2260\u03b3\u226090", "C": "a=b\u2260c, \u03b1=\u03b2=\u03b3=90", "D": "None" }, "answer": "B", "pyq": true },
-    { "id": 29, "question": "Which crystal system is most symmetrical?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Cubic", "B": "Triclinic", "C": "Monoclinic", "D": "Tetragonal" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Which crystal system is most asymmetrical?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Cubic", "B": "Triclinic", "C": "Hexagonal", "D": "Orthorhombic" }, "answer": "B", "pyq": true },
-    { "id": 31, "question": "Number of unit cells in 58.5g of NaCl is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "6.022 x 10^23", "B": "1.5 x 10^23 (Since FCC for Na+ and Cl-)", "C": "3.0 x 10^23", "D": "1" }, "answer": "B", "pyq": false },
-    { "id": 32, "question": "The void present in an octahedral site is surrounded by ______ spheres.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "4", "B": "6", "C": "8", "D": "12" }, "answer": "B", "pyq": false },
-    { "id": 33, "question": "The void present in a tetrahedral site is surrounded by ______ spheres.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "4", "B": "6", "C": "3", "D": "2" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "If n spheres are present in CCP, then number of octahedral voids is ______ and tetrahedral voids is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "n, 2n", "B": "2n, n", "C": "n, n", "D": "2n, 2n" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Bragg's equation for X-ray diffraction is n\u03bb = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "2d sin \u03b8", "B": "d sin \u03b8", "C": "2d tan \u03b8", "D": "\u03bb / d" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "In BCC, the coordination number is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "6", "B": "8", "C": "12", "D": "4" }, "answer": "B", "pyq": false },
-    { "id": 37, "question": "In FCC, the coordination number is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "8", "B": "12", "C": "6", "D": "4" }, "answer": "B", "pyq": false },
-    { "id": 38, "question": "Number of Bravais lattices in Orthorhombic system is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "2", "C": "3", "D": "4 (Simple, BCC, FCC, Edge-centered)" }, "answer": "D", "pyq": false },
-    { "id": 39, "question": "Which of the following describes the Schottky defect in CsCl?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Missing Cs+ and Cl- pairs", "B": "Extra ions", "C": "Interstitial H+", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Ferroelectric substances show alignment of domains in ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Opposite directions", "B": "Parallel direction", "C": "Random direction", "D": "Circular" }, "answer": "B", "pyq": false },
-    { "id": 41, "question": "Piezoelectric effect is the generation of ______ when mechanical stress is applied.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Heat", "B": "Electricity", "C": "Light", "D": "Magnetism" }, "answer": "B", "pyq": false },
-    { "id": 42, "question": "Superconductors have ______ resistance at very low temperatures.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "High", "B": "Zero", "C": "Infinite", "D": "Measurable" }, "answer": "B", "pyq": false },
-    { "id": 43, "question": "Radius ratio rule: If r+/r- = 0.225 - 0.414, the coordination number is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "3", "B": "4", "C": "6", "D": "8" }, "answer": "B", "pyq": false },
-    { "id": 44, "question": "Radius ratio rule: If r+/r- = 0.414 - 0.732, the coordination number is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "4", "B": "6", "C": "8", "D": "12" }, "answer": "B", "pyq": false },
-    { "id": 45, "question": "Packing efficiency of HCP is 74%. Void space is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "26%", "B": "48%", "C": "32%", "D": "50%" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "A unit cell of NaCl contains ______ Na+ ions and ______ Cl- ions.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1, 1", "B": "4, 4", "C": "14, 13", "D": "2, 2" }, "answer": "B", "pyq": false },
-    { "id": 47, "question": "Which crystal defect increases the electrical conductivity of a solid?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Schottky", "B": "Frenkel", "C": "Impurity defect (doping)", "D": "None" }, "answer": "C", "pyq": false },
-    { "id": 48, "question": "An example of Molecular Solid is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ice", "B": "Iron", "C": "Diamond", "D": "Salt" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "In a crystal lattice, atoms are held together by ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Weak interaction", "B": "Strong attraction", "C": "Random chance", "D": "Gravity" }, "answer": "B", "pyq": false },
-    { "id": 50, "question": "Schottky defect is more common in compounds where radii of cation and anion are ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Very different", "B": "Almost same", "C": "Large", "D": "Small" }, "answer": "B", "pyq": false },
-    { "id": 51, "question": "Frenkel defect is more common when cation and anion radii are ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Similar", "B": "Differ significantly (cation usually smaller)", "C": "Equal", "D": "Zero" }, "answer": "B", "pyq": false },
-    { "id": 52, "question": "1,2-dimeth...? No. Replaced: The color of NaCl (yellow) when heated in sodium vapor is due to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "F-centers", "B": "Oxidation", "C": "Impurity", "D": "Mass increase" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Unit cells with atoms at corners and face centers are ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "SCC", "B": "BCC", "C": "FCC", "D": "ECC" }, "answer": "C", "pyq": false },
-    { "id": 54, "question": "The total volume occupied by atoms in an FCC unit cell is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "4 \u00d7 (4/3 \u03c0 r^3)", "B": "2 \u00d7 (4/3 \u03c0 r^3)", "C": "1 \u00d7 (4/3 \u03c0 r^3)", "D": "0" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Which of the following is a 13-15 group semiconductor combination?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "GaAs", "B": "ZnS", "C": "CdS", "D": "NaCl" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Which of the following is a 12-16 group semiconductor combination?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "InSb", "B": "ZnS", "C": "Si", "D": "Ge" }, "answer": "B", "pyq": false },
-    { "id": 57, "question": "Paramagnetism of O2 solid? No. Replaced: VO, VO2 and TiO2 show ______ behavior depending on temperature.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Insulating to metallic", "B": "Liquid to solid", "C": "None", "D": "Color change" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Diamagnetic substances are ______ in a magnetic field.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Weakly attracted", "B": "Weakly repelled", "C": "Not affected", "D": "Magnetized permanently" }, "answer": "B", "pyq": false },
-    { "id": 59, "question": "Anti-ferromagnetism is shown when magnetic moments are aligned ______ in equal numbers.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Parallel", "B": "Anti-parallel", "C": "Randomly", "D": "Horizontally" }, "answer": "B", "pyq": false },
-    { "id": 60, "question": "Ferrimagnetism is shown when magnetic moments are aligned anti-parallel in ______ numbers.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Equal", "B": "Unequal (net magnetic moment exists)", "C": "Zero", "D": "All parallel" }, "answer": "B", "pyq": false },
-    { "id": 61, "question": "For a cubic crystal, d(hkl) = a / \u221a(h^2 + k^2 + l^2).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Space lattice is an infinite array of points.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Amorphous solids are isotropic in nature.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False (they are anisotropic)", "0": "Sometimes", "D": "Gases" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Crystalline solids are anisotropic.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "Neither", "D": "Both" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "Isotropic means physical properties are ______ in all directions.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Different", "B": "Same", "C": "Random", "D": "Zero" }, "answer": "B", "pyq": false },
-    { "id": 66, "question": "Cleavage of crystalline solid gives ______ surfaces.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Irregular", "B": "Smooth and plain", "C": "Rough", "D": "Circular" }, "answer": "B", "pyq": false },
-    { "id": 67, "question": "Lattice energy ______ as the distance between ions increases.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increases", "B": "Decreases", "C": "Stays same", "D": "Double" }, "answer": "B", "pyq": false },
-    { "id": 68, "question": "Total number of tetrahedral voids in one unit cell of FCC is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "4", "B": "8", "C": "12", "D": "0" }, "answer": "B", "pyq": false },
-    { "id": 69, "question": "Total number of octahedral voids in one unit cell of FCC is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "4 (1 at body center, 3 from edges)", "B": "8", "C": "1", "D": "12" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Density formula d = ZM / a^3.NA. NA is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "6.022 x 10^23", "B": "1.6 x 10^-19", "C": "96500", "D": "8.314" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Molecular solids like CO2 (Dry Ice) are held by ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Covalent bonds", "B": "London forces / Dispersion forces", "C": "Ionic bonds", "D": "Hydrogen bonds" }, "answer": "B", "pyq": false },
-    { "id": 72, "question": "Diamond is a network covalent solid.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Metallic solids have high electrical conductivity due to ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Fixed ions", "B": "Mobile electrons", "C": "Mass", "D": "Color" }, "answer": "B", "pyq": false },
-    { "id": 74, "question": "Ionic solids are conductors in ______ state but insulators in ______ state.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Solid, Molten", "B": "Molten/Aqueous, Solid", "C": "Always, Never", "D": "Never, Always" }, "answer": "B", "pyq": false },
-    { "id": 75, "question": "Structure of NaCl is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "FCC", "B": "BCC", "C": "SCC", "D": "HCP" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Structure of CsCl is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "BCC (Body centered cubic type)", "B": "FCC", "C": "SCC", "D": "Hexagonal" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "In Wurtzite (ZnS), sulfide ions form ______ lattice.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "FCC", "B": "BCC", "C": "HCP", "D": "SCC" }, "answer": "C", "pyq": false },
-    { "id": 78, "question": "In Zinc blende (ZnS), sulfide ions form ______ lattice.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "FCC (CCP)", "B": "HCP", "C": "BCC", "D": "Simple" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Thermal stability of crystals depends on ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lattice Enthalpy", "B": "Mass", "C": "Color", "0": "Volume" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "The science of crystals is called Crystallography.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 31,
+      "question": "Number of unit cells in 58.5g of NaCl is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "6.022 x 10^23",
+        "B": "1.5 x 10^23 (Since FCC for Na+ and Cl-)",
+        "C": "3.0 x 10^23",
+        "D": "1"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "The void present in an octahedral site is surrounded by ______ spheres.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "8",
+        "D": "12"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "The void present in a tetrahedral site is surrounded by ______ spheres.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "3",
+        "D": "2"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "If n spheres are present in CCP, then number of octahedral voids is ______ and tetrahedral voids is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n, 2n",
+        "B": "2n, n",
+        "C": "n, n",
+        "D": "2n, 2n"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Bragg's equation for X-ray diffraction is nλ = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2d sin θ",
+        "B": "d sin θ",
+        "C": "2d tan θ",
+        "D": "λ / d"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Number of Bravais lattices in Orthorhombic system is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4 (Simple, BCC, FCC, Edge-centered)"
+      },
+      "answer": "D",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Which of the following describes the Schottky defect in CsCl?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Missing Cs+ and Cl- pairs",
+        "B": "Extra ions",
+        "C": "Interstitial H+",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "Ferroelectric substances show alignment of domains in ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Opposite directions",
+        "B": "Parallel direction",
+        "C": "Random direction",
+        "D": "Circular"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Radius ratio rule: If r+/r- = 0.225 - 0.414, the coordination number is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "6",
+        "D": "8"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Radius ratio rule: If r+/r- = 0.414 - 0.732, the coordination number is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "8",
+        "D": "12"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "A unit cell of NaCl contains ______ Na+ ions and ______ Cl- ions.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1, 1",
+        "B": "4, 4",
+        "C": "14, 13",
+        "D": "2, 2"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Which crystal defect increases the electrical conductivity of a solid?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Schottky",
+        "B": "Frenkel",
+        "C": "Impurity defect (doping)",
+        "D": "None"
+      },
+      "answer": "C",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Schottky defect is more common in compounds where radii of cation and anion are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Very different",
+        "B": "Almost same",
+        "C": "Large",
+        "D": "Small"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Frenkel defect is more common when cation and anion radii are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Similar",
+        "B": "Differ significantly (cation usually smaller)",
+        "C": "Equal",
+        "D": "Zero"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "1,2-dimeth...? No. Replaced: The color of NaCl (yellow) when heated in sodium vapor is due to ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "F-centers",
+        "B": "Oxidation",
+        "C": "Impurity",
+        "D": "Mass increase"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "The total volume occupied by atoms in an FCC unit cell is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4 × (4/3 π r^3)",
+        "B": "2 × (4/3 π r^3)",
+        "C": "1 × (4/3 π r^3)",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Which of the following is a 13-15 group semiconductor combination?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "GaAs",
+        "B": "ZnS",
+        "C": "CdS",
+        "D": "NaCl"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Which of the following is a 12-16 group semiconductor combination?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "InSb",
+        "B": "ZnS",
+        "C": "Si",
+        "D": "Ge"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Paramagnetism of O2 solid? No. Replaced: VO, VO2 and TiO2 show ______ behavior depending on temperature.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Insulating to metallic",
+        "B": "Liquid to solid",
+        "C": "None",
+        "D": "Color change"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Anti-ferromagnetism is shown when magnetic moments are aligned ______ in equal numbers.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Parallel",
+        "B": "Anti-parallel",
+        "C": "Randomly",
+        "D": "Horizontally"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Ferrimagnetism is shown when magnetic moments are aligned anti-parallel in ______ numbers.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Equal",
+        "B": "Unequal (net magnetic moment exists)",
+        "C": "Zero",
+        "D": "All parallel"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "For a cubic crystal, d(hkl) = a / √(h^2 + k^2 + l^2).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Amorphous solids are isotropic in nature.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "0": "Sometimes",
+        "A": "True",
+        "B": "False (they are anisotropic)",
+        "D": "Gases"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Crystalline solids are anisotropic.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "Neither",
+        "D": "Both"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "Isotropic means physical properties are ______ in all directions.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Different",
+        "B": "Same",
+        "C": "Random",
+        "D": "Zero"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Lattice energy ______ as the distance between ions increases.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Increases",
+        "B": "Decreases",
+        "C": "Stays same",
+        "D": "Double"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Total number of tetrahedral voids in one unit cell of FCC is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4",
+        "B": "8",
+        "C": "12",
+        "D": "0"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Total number of octahedral voids in one unit cell of FCC is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4 (1 at body center, 3 from edges)",
+        "B": "8",
+        "C": "1",
+        "D": "12"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "Molecular solids like CO2 (Dry Ice) are held by ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Covalent bonds",
+        "B": "London forces / Dispersion forces",
+        "C": "Ionic bonds",
+        "D": "Hydrogen bonds"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "Ionic solids are conductors in ______ state but insulators in ______ state.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Solid, Molten",
+        "B": "Molten/Aqueous, Solid",
+        "C": "Always, Never",
+        "D": "Never, Always"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "Structure of NaCl is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "FCC",
+        "B": "BCC",
+        "C": "SCC",
+        "D": "HCP"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 76,
+      "question": "Structure of CsCl is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "BCC (Body centered cubic type)",
+        "B": "FCC",
+        "C": "SCC",
+        "D": "Hexagonal"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 77,
+      "question": "In Wurtzite (ZnS), sulfide ions form ______ lattice.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "FCC",
+        "B": "BCC",
+        "C": "HCP",
+        "D": "SCC"
+      },
+      "answer": "C",
+      "pyq": false
+    },
+    {
+      "id": 78,
+      "question": "In Zinc blende (ZnS), sulfide ions form ______ lattice.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "FCC (CCP)",
+        "B": "HCP",
+        "C": "BCC",
+        "D": "Simple"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 79,
+      "question": "Thermal stability of crystals depends on ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "0": "Volume",
+        "A": "Lattice Enthalpy",
+        "B": "Mass",
+        "C": "Color"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

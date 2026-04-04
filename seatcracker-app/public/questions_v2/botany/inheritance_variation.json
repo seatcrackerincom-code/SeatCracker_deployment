@@ -2,85 +2,543 @@
   "subject": "Botany",
   "topic": "Principles of Inheritance and Variation",
   "questions": [
-    { "id": 1, "question": "The transmission of characters from parents to offspring is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Heredity", "B": "Variation", "C": "Growth", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "The degree by which progeny differ from their parents is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Variation", "B": "Heredity", "C": "Cloning", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Who is known as the Father of Genetics?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Gregor Mendel", "B": "T.H. Morgan", "C": "Darwin", "D": "Lamarck" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Mendel worked on the Garden Pea (Pisum sativum) for ______ years.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "7 (1856-1863)", "B": "10", "C": "5", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "How many pairs of contrasting traits did Mendel choose in Garden Peas?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "7", "B": "14", "C": "4", "D": "12" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "The genotype of a tall plant that is heterozygous is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Tt", "B": "TT", "C": "tt", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "The cross between individuals differing in only one trait is a ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Monohybrid cross", "B": "Dihybrid cross", "C": "Test cross", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "The phenotypic ratio of a Mendelian monohybrid cross in F2 generation is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "3:1", "B": "1:2:1", "C": "9:3:3:1", "D": "1:1" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "The genotypic ratio of a Mendelian monohybrid cross in F2 generation is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1:2:1", "B": "3:1", "C": "9:3:3:1", "D": "1:1" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "A cross used to determine the genotype of an organism showing dominant phenotype is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Test cross", "B": "Back cross", "C": "Dihybrid cross", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Law of Segregation is also called the Law of ______ of gametes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Purity", "B": "Dominance", "C": "Variation", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "Incomplete dominance is seen in ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Snapdragon (Antirrhinum)", "B": "Pea", "C": "Human blood", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "The phenotypic and genotypic ratios are identical (1:2:1) in cases of ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Incomplete dominance", "B": "Co-dominance", "C": "Both A and B", "D": "None" }, "answer": "C", "pyq": true },
-    { "id": 14, "question": "ABO blood grouping is an example of ______ and ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Co-dominance, Multiple Alleles", "B": "Incomplete dominance", "C": "Pleiotropy", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Number of genotypes possible for ABO blood groups in humans is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "6", "B": "4", "C": "3", "D": "8" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "The cross between Tt and tt gives a progeny ratio of ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1:1", "B": "3:1", "C": "2:1", "D": "1:2:1" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "Inheritance of two separate pairs of characters is a ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Dihybrid cross", "B": "Monohybrid", "C": "Test cross", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Mendelian Dihybrid F2 phenotypic ratio is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "9:3:3:1", "B": "1:1:1:1", "C": "3:1", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "The chromosomal theory of inheritance was proposed by ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Sutton and Boveri", "B": "Watson and Crick", "C": "Mendel", "D": "Darwin" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Who experimentally verified the chromosomal theory of inheritance using Drosophila?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Thomas Hunt Morgan", "B": "Mendel", "C": "Punnett", "D": "Sturtevant" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "Physical association of genes on a chromosome is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Linkage", "B": "Recombination", "C": "Segregation", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Mapping of gene positions on chromosomes was first done by ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Alfred Sturtevant", "B": "Morgan", "C": "Bridges", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Recombination frequency between two genes increases if search ______ increases.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Distance", "B": "Size", "C": "Weight", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Sex determination in Grasshopper is ______ type.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "XO", "B": "XY", "C": "ZW", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "In birds, the female chromosome constitution is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "ZW", "B": "ZZ", "C": "XX", "D": "XY" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "A sudden heritable change in the genetic material of a cell is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Mutation", "B": "Variation", "C": "Evolution", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Sickle cell anemia is caused by ______ mutation.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Point (Substitution of Glu by Val)", "B": "Frameshift", "C": "Deletion", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Pedigree analysis is used to trace inheritance of ______ in humans.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Traits / Disorders", "B": "History", "C": "Diet", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Down\u2019s syndrome is caused by ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Trisomy of 21st chromosome", "B": "Monosomy of X", "C": "XXY", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Turner\u2019s syndrome genotype is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "45, XO", "B": "47, XXY", "C": "47, XYY", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "Hemophilia is a sex-linked ______ disorder.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Recessive", "B": "Dominant", "C": "Autosomal", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Phenylketonuria (PKU) is an inborn error of metabolism inherited as an ______ trait.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Autosomal recessive", "B": "X-linked", "C": "Dominant", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "The number of linkages groups in human males is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "24 (22 autosomal + X + Y)", "B": "23", "C": "46", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Crossing over leads to recombination between genes on ______ chromosomes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Homologous", "B": "Non-homologous", "D": "Sex", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Haplodiploidy is seen in ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Honey bees", "B": "Birds", "D": "Grasshoppers", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "An example of a polygenic trait in humans is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Skin color / Height", "B": "Blood group", "C": "Color blindness", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Failure of cytokinesis after telophase results in ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Polyploidy", "B": "Aneuploidy", "C": "Mutation", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Klinefelter\u2019s syndrome genotype is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "47, XXY", "B": "45, XO", "C": "47, 21+", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Gynaecomastia is a feature of ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Klinefelter\u2019s Syndrome", "B": "Turner\u2019s", "C": "Down\u2019s", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Thalassemia is an inheritance of ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Reduced synthesis of globin chain (Autosomal Recessive)", "B": "Point mutation", "C": "Trisomy", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "Punnett square? yes. it was developed by British geneticist R.C. Punnett.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Alleles? yes. they are alternative forms of a gene.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "True breeding line? yes. it is one that has undergone continuous self pollination.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Dominant factor? yes. it is expressed in both homozygous and heterozygous state.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Recessive factor? yes. it is expressed only in homozygous state.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Pleiotropy? yes. it is where a single gene can exhibit multiple phenotypic expressions.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Starch grain size in pea? yes. it shows incomplete dominance.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Independent Assortment? yes. genes for different traits segregate independently of each other.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Re-discovery of Mendel? yes. in 1900 by de Vries, Correns and von Tschermak.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Linkage? yes. it is the tendency of genes to stay together during inheritance.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Henking? yes. he discovered the X-body in fireflies.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Father of Drosophila genetics? yes. Morgan.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Mutation? no. Lamarck proposed inheritance of acquired characters.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 54, "question": "X-linked recessive? yes. color blindness is an example.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Hemophilia A is due to deficiency of factor VIII.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Phenylalanine hydroxylase deficiency causes PKU.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Alpha-thalassemia genes are on 16th chromosome.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Beta-thalassemia genes are on 11th chromosome.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Broad palm with single palm crease is a sign of Down's syndrome.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Sterile females? yes. seen in Turner's syndrome.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Tall stature with feminine features in males? yes. seen in Klinefelter's.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Genetics? yes. it is the branch of biology that deals with variation and inheritance.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Gregor Mendel published his work in 1865.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Reciprocal cross? yes. where the source of male and female gametes is swapped.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "Chromosomes? yes. they were visualized using staining under microscope in 1900s.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "Linkage? Morgan found it while studying white-eyed fruit flies.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Criss-cross inheritance? yes. seen in X-linked traits.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Frame shift mutation? yes. it occurs due to insertion/deletion of bases.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Sickle cell RBCs? yes. they become elongated and curved under low O2.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Myotonic dystrophy? yes. it is an autosomal dominant disorder.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Trisomy? yes. it means 2n+1 configuration.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Monosomy? yes. it means 2n-1 configuration.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Aneuploidy results from non-disjunction of chromosomes during division.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Dihybrid cross test cross ratio for linked genes deviates from 1:1:1:1.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Recombination frequency is always <= 50%.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Queen Victoria was a carrier of hemophilia.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Male heterogamety is seen in XY and XO sex determination.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Female heterogamety is seen in ZW sex determination.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Autosomal traits? yes. they affect males and females equally.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Genetics? yes. term given by William Bateson.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 29,
+      "question": "Hemophilia is a sex-linked ______ disorder.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Recessive",
+        "B": "Dominant",
+        "C": "Autosomal",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "Phenylketonuria (PKU) is an inborn error of metabolism inherited as an ______ trait.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Autosomal recessive",
+        "B": "X-linked",
+        "C": "Dominant",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 31,
+      "question": "The number of linkages groups in human males is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "24 (22 autosomal + X + Y)",
+        "B": "23",
+        "C": "46",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Crossing over leads to recombination between genes on ______ chromosomes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Homologous",
+        "B": "Non-homologous",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Haplodiploidy is seen in ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Honey bees",
+        "B": "Birds",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "An example of a polygenic trait in humans is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Skin color / Height",
+        "B": "Blood group",
+        "C": "Color blindness",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Failure of cytokinesis after telophase results in ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Polyploidy",
+        "B": "Aneuploidy",
+        "C": "Mutation",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Klinefelter’s syndrome genotype is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "47, XXY",
+        "B": "45, XO",
+        "C": "47, 21+",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Gynaecomastia is a feature of ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Klinefelter’s Syndrome",
+        "B": "Turner’s",
+        "C": "Down’s",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Thalassemia is an inheritance of ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Reduced synthesis of globin chain (Autosomal Recessive)",
+        "B": "Point mutation",
+        "C": "Trisomy",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "True breeding line? yes. it is one that has undergone continuous self pollination.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Pleiotropy? yes. it is where a single gene can exhibit multiple phenotypic expressions.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "Starch grain size in pea? yes. it shows incomplete dominance.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Independent Assortment? yes. genes for different traits segregate independently of each other.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Re-discovery of Mendel? yes. in 1900 by de Vries, Correns and von Tschermak.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "Henking? yes. he discovered the X-body in fireflies.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Mutation? no. Lamarck proposed inheritance of acquired characters.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Hemophilia A is due to deficiency of factor VIII.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Phenylalanine hydroxylase deficiency causes PKU.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Alpha-thalassemia genes are on 16th chromosome.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Beta-thalassemia genes are on 11th chromosome.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Broad palm with single palm crease is a sign of Down's syndrome.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "Sterile females? yes. seen in Turner's syndrome.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Tall stature with feminine features in males? yes. seen in Klinefelter's.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Gregor Mendel published his work in 1865.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Reciprocal cross? yes. where the source of male and female gametes is swapped.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Linkage? Morgan found it while studying white-eyed fruit flies.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "Criss-cross inheritance? yes. seen in X-linked traits.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Frame shift mutation? yes. it occurs due to insertion/deletion of bases.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Myotonic dystrophy? yes. it is an autosomal dominant disorder.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "Aneuploidy results from non-disjunction of chromosomes during division.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Dihybrid cross test cross ratio for linked genes deviates from 1:1:1:1.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 73,
+      "question": "Recombination frequency is always <= 50%.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "Male heterogamety is seen in XY and XO sex determination.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 76,
+      "question": "Female heterogamety is seen in ZW sex determination.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 78,
+      "question": "Genetics? yes. term given by William Bateson.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

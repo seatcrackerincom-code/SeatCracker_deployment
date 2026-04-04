@@ -2,85 +2,485 @@
   "subject": "Physics",
   "topic": "Electromagnetic Induction",
   "questions": [
-    { "id": 1, "question": "Magnetic flux \u03a6 passing through area A perpendicular to field B is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "B \u22c5 A", "B": "B / A", "C": "A / B", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "The SI unit of magnetic flux is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Weber (Wb)", "B": "Tesla (T)", "C": "Henry (H)", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Faraday\u2019s First Law? yes. whenever flux changes, emf is induced.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Induced emf e = - d\u03a6 / dt. the negative sign represents ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lenz's Law", "B": "Coulomb's Law", "C": "Gauss's Law", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "Lenz\u2019s Law is a consequence of conservation of ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Energy", "B": "Momentum", "C": "Charge", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "Motional emf e in a rod of length l moving with velocity v in field B is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "B v l", "B": "v l / B", "C": "B / v l", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "Eddy currents are produced when ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "A bulk piece of metal is placed in changing magnetic field", "B": "Steady current flows", "C": "In vacuum", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "Eddy currents can be reduced by ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Laminating the core", "B": "Heating", "C": "Using thicker wires", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Self induction constant L? yes. \u03a6 = L I.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "SI unit of self inductance is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Henry (H)", "B": "Farad", "C": "Ohm", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Self induced emf e = - L (dI / dt). True?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "Mutual inductance M relates flux \u03a62 to current I1 as ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u03a62 = M I1", "B": "\u03a61 = M I2", "C": "Both", "D": "None" }, "answer": "C", "pyq": true },
-    { "id": 13, "question": "Self inductance of a long solenoid L = \u03bc0 n\u00b2 A l. True?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Energy stored in an inductor of inductance L with current I is U = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1/2 L I\u00b2", "B": "L I\u00b2", "C": "1/2 L I", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Inductor opposes change in ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Current", "B": "Voltage", "C": "Resistance", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Transformer works on the principle of ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Mutual induction", "B": "Self induction", "C": "Eddy currents", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "AC generator works on the principle of ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Electromagnetic Induction", "B": "Photoelectric effect", "C": "Mutual induction", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Flux? no. Replaced: magnetic flux is a scalar quantity.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Dimensional formula of Henry is [M L2 T-2 A-2].", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "If a coil has 100 turns and flux through each turn changes by 0.1 Wb in 0.1s, induced emf is ______ volts.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "100", "B": "10", "C": "1", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "Magnetic energy density uB = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "B\u00b2 / (2 \u03bc0)", "B": "\u03bc0 B\u00b2", "C": "B / \u03bc0", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Relative permeability \u03bcR = 1 + \u03c7. True?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Coupling coefficient k = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "M / \u221a(L1 L2)", "B": "M \u221a(L1 L2)", "C": "L1 / L2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Coefficient of self induction is also called electric inertia. True?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "Induction furnace uses ______ for heating.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Eddy currents", "B": "Resistance", "C": "Convection", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Magnetic braking in trains uses ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Eddy currents", "B": "Friction", "C": "Hydraulics", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Wait? no. Replaced: if current increases in a coil, induced emf is in opposite direction.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Inductance? no. Replaced: mutual inductance of two coils is same whether measured from 1 to 2 or 2 to 1 (Reciprocity).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Back emf in a motor is due to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Electromagnetic Induction", "B": "Friction", "C": "Heat", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Wait? no. Replaced: coil rotating in magnetic field produces sinusoidal emf.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "Magnetic flux? no. Replaced: Weber = Tesla meter square.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Wait? no. Replaced: 1 Henry = 1 Weber / 1 Ampere.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Induced current I = e / R = (-1/R) d\u03a6/dt.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Total induced charge q = \u0394\u03a6 / R (independent of time taken).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "If a magnet falls through a copper tube, its acceleration is less than g? yes (due to eddy currents opposition).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Wait? no. Replaced: motional emf is zero if velocity is parallel to field lines.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Wait? no. Replaced: L depends on geometry and core material.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Wait? no. Replaced: mutual inductance M is max when two coils are wound on same core.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Choke coil uses principle of self induction. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Wait? no. Replaced: self inductance is the property of a single coil.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "Mutual inductance property of two coils.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Lenz? no. Replaced: it gives the direction of induced current.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Wait? no. Replaced: magnetic flux is max when \u03b8 = 0 (perpendicular area).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Magnetic flux is zero when \u03b8 = 90 (tangential area).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Wait? no. Replaced: Faraday's law gives the magnitude of induced emf.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Inductance? no. Replaced: L = \u03bc0 \u03bcR n\u00b2 V.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Energy? no. Replaced: stored in magnetic field of inductor.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Inductor is an energy storing device. yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Wait? no. Replaced: inductor behaves as open circuit in DC steady state? no (short circuit after long time).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 50, "question": "Inductor opposes sudden changes in current.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "If flux \u03a6 = 2t\u00b2 + 4t + 5, emf at t=1s is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "8", "B": "11", "C": "4", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Self inductance of coil of 500 turns and 0.05 Wb flux for 2A current? yes. L = 500 * 0.05 / 2 = 12.5 H.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Inductance? no. Replaced: it is analogous to mass in mechanics.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Magnetic flux? no. Replaced: flux \u03a6 = |B| |A| cos \u03b8.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Eddy currents? no. Replaced: they produce heat (Joules heating).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Lenz? no. Replaced: emf e = - d\u03a6/dt. negative sign is vital.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "If flux increases, emf is negative. if flux decreases, emf is positive. True?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Wait? no. Replaced: motional emf is also called induced emf.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "AC generator? yes. uses mechanical work to rotate coil to change flux.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Maximum emf in AC generator E0 = N B A \u03c9. True?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Frequency? no. Replaced: induced emf is sinusoidal in time.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "If L=2H, current changes from 4A to 0 in 0.1s. e = 2 * (4-0)/0.1 = 80V.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Wait? no. Replaced: mutual inductance unit is Henry.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Mutual? no. Replaced: if distance between coils increases, M decreases.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "Coupling? yes. max k = 1 when all flux of one coil linked to other.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "Eddy? no. Replaced: used in speedometer and dead-beat galvanometer.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Wait? no. Replaced: current in inductor starts from 0 and increases exponentially in RL circuit.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Time constant? yes. \u03c4 = L / R.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Energy? no. Replaced: stored as magnetic potential energy.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "A loop moves in a uniform magnetic field. emf is induced only if area linked changes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Spark? yes. seen when switch of circuit with high inductance is opened.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Wait? no. Replaced: coils of resistance boxes are double wound to make L zero.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Electromagnetic damping? yes. based on eddy currents.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Wait? no. Replaced: Faraday's experiment showed that relative motion is enough for induction.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Wait? no. Replaced: magnetic flux is a dot product.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Dimensions of Flux [M L2 T-2 A-1].", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Mutual inductance M = \u03bc0 n1 n2 A l. True?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Lenz law obeys conservation of energy? yes. work done in overcoming opposition is energy.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Ideal inductor has zero resistance.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "EMI: foundation of modern electrical power systems.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 32,
+      "question": "Induced current I = e / R = (-1/R) dΦ/dt.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Total induced charge q = ΔΦ / R (independent of time taken).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "If a magnet falls through a copper tube, its acceleration is less than g? yes (due to eddy currents opposition).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Wait? no. Replaced: L depends on geometry and core material.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Wait? no. Replaced: mutual inductance M is max when two coils are wound on same core.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Wait? no. Replaced: magnetic flux is max when θ = 0 (perpendicular area).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Magnetic flux is zero when θ = 90 (tangential area).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "Inductance? no. Replaced: L = μ0 μR n² V.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Energy? no. Replaced: stored in magnetic field of inductor.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Wait? no. Replaced: inductor behaves as open circuit in DC steady state? no (short circuit after long time).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "Inductor opposes sudden changes in current.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "If flux Φ = 2t² + 4t + 5, emf at t=1s is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "8",
+        "B": "11",
+        "C": "4",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Self inductance of coil of 500 turns and 0.05 Wb flux for 2A current? yes. L = 500 * 0.05 / 2 = 12.5 H.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Inductance? no. Replaced: it is analogous to mass in mechanics.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "If flux increases, emf is negative. if flux decreases, emf is positive. True?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "AC generator? yes. uses mechanical work to rotate coil to change flux.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Maximum emf in AC generator E0 = N B A ω. True?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Frequency? no. Replaced: induced emf is sinusoidal in time.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "If L=2H, current changes from 4A to 0 in 0.1s. e = 2 * (4-0)/0.1 = 80V.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Mutual? no. Replaced: if distance between coils increases, M decreases.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Coupling? yes. max k = 1 when all flux of one coil linked to other.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "Eddy? no. Replaced: used in speedometer and dead-beat galvanometer.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Wait? no. Replaced: current in inductor starts from 0 and increases exponentially in RL circuit.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Time constant? yes. τ = L / R.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Energy? no. Replaced: stored as magnetic potential energy.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "A loop moves in a uniform magnetic field. emf is induced only if area linked changes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "Spark? yes. seen when switch of circuit with high inductance is opened.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "Wait? no. Replaced: coils of resistance boxes are double wound to make L zero.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Electromagnetic damping? yes. based on eddy currents.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "Dimensions of Flux [M L2 T-2 A-1].",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 76,
+      "question": "Mutual inductance M = μ0 n1 n2 A l. True?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 77,
+      "question": "Lenz law obeys conservation of energy? yes. work done in overcoming opposition is energy.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

@@ -2,85 +2,470 @@
   "subject": "Chemistry",
   "topic": "Chemical Thermodynamics",
   "questions": [
-    { "id": 1, "question": "A system which can neither exchange matter nor energy with the surroundings is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Open system", "B": "Closed system", "C": "Isolated system", "D": "Adiabatic system" }, "answer": "C", "pyq": true },
-    { "id": 2, "question": "State functions are properties whose values depend only on the ______ and ______ states of the system.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Initial, Final", "B": "Intermediate, Final", "C": "Physical, Chemical", "D": "Solid, Liquid" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Which of the following is an intensive property?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Mass", "B": "Volume", "C": "Temperature", "D": "Internal Energy" }, "answer": "C", "pyq": true },
-    { "id": 4, "question": "In an adiabatic process, the system is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Thermally insulated (q = 0)", "B": "At constant pressure", "C": "At constant volume", "D": "Exchanging mass" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "First Law of Thermodynamics is a statement of the law of ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Conservation of Mass", "B": "Conservation of Energy", "C": "Conservation of Momentum", "D": "Increasing Entropy" }, "answer": "B", "pyq": true },
-    { "id": 6, "question": "The mathematical form of First Law for a closed system is \u0394U = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "q + w", "B": "q - w", "C": "w - q", "D": "q \u00d7 w" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "Internal energy (U) of an ideal gas is a function of ______ only.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Pressure", "B": "Volume", "C": "Temperature", "D": "Density" }, "answer": "C", "pyq": true },
-    { "id": 8, "question": "At constant volume, the heat change (qv) is equal to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Enthalpy change (\u0394H)", "B": "Internal energy change (\u0394U)", "C": "Gibbs energy change (\u0394G)", "D": "Entropy change (\u0394S)" }, "answer": "B", "pyq": true },
-    { "id": 9, "question": "At constant pressure, the heat change (qp) is equal to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u0394U", "B": "\u0394H", "C": "\u0394G", "D": "P\u0394V" }, "answer": "B", "pyq": true },
-    { "id": 10, "question": "The relationship between \u0394H and \u0394U for a gaseous reaction is \u0394H = ...... ?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u0394U + \u0394ngRT", "B": "\u0394U - \u0394ngRT", "C": "\u0394U + P\u0394V", "D": "Both A and C" }, "answer": "D", "pyq": true },
-    { "id": 11, "question": "Hess's Law of Constant Heat Summation is based on the fact that Enthalpy is a ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Path function", "B": "State function", "C": "Extensive property", "D": "Intensive property" }, "answer": "B", "pyq": true },
-    { "id": 12, "question": "Spontaneity of a process at constant pressure and temperature is determined by ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Enthalpy (\u0394H)", "B": "Entropy (\u0394S)", "C": "Gibbs Free Energy (\u0394G)", "D": "Work Done (w)" }, "answer": "C", "pyq": true },
-    { "id": 13, "question": "A process is always spontaneous regardless of temperature if ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u0394H < 0, \u0394S > 0", "B": "\u0394H > 0, \u0394S < 0", "C": "\u0394H < 0, \u0394S < 0", "D": "\u0394H > 0, \u0394S > 0" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "At equilibrium, the change in Gibbs free energy (\u0394G) is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive", "B": "Negative", "C": "Zero", "D": "Minimum" }, "answer": "C", "pyq": true },
-    { "id": 15, "question": "The criteria for spontaneity in an isolated system is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u0394S (system) > 0", "B": "\u0394H = 0", "C": "\u0394G < 0", "D": "\u0394U > 0" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Which of the following processes involves an increase in entropy?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Freezing of water", "B": "Melting of ice", "C": "Condensation of steam", "D": "Hess's process" }, "answer": "B", "pyq": true },
-    { "id": 17, "question": "The entropy of a perfectly crystalline substance at absolute zero (0 K) is taken as zero. This is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "First Law", "B": "Second Law", "C": "Third Law", "D": "Zeroth Law" }, "answer": "C", "pyq": true },
-    { "id": 18, "question": "For an isothermal expansion of an ideal gas into a vacuum (Free expansion), w = 0 and q = 0. Therefore \u0394U is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive", "B": "Negative", "C": "Zero", "D": "Infinite" }, "answer": "C", "pyq": true },
-    { "id": 19, "question": "The magnitude of work done in a reversible expansion is ______ than in an irreversible expansion for the same change in state.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Larger", "B": "Smaller", "C": "Equal", "D": "Zero" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "One calorie (cal) is approximately ______ Joules (J).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1.0", "B": "4.184", "C": "9.8", "D": "8.314" }, "answer": "B", "pyq": true },
-    { "id": 21, "question": "The standard state of a substance is its most stable form at ______ bar pressure.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "10", "C": "0.1", "D": "100" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Heat of formation (\u0394Hf\u00b0) of any element in its standard state is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive", "B": "Zero", "C": "Negative", "D": "Variable" }, "answer": "B", "pyq": true },
-    { "id": 23, "question": "Enthalpy of neutralization for a strong acid and strong base is approximately ______ kJ/mol.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "-57.1", "B": "-13.6", "C": "0", "D": "+57.1" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Entropy change for phase transition (fusion) is calculated by \u0394Sfus = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u0394Hfus / Tfus", "B": "Tfus / \u0394Hfus", "C": "\u0394Hfus \u00d7 Tfus", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "Bond dissociation energy is always ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive (Endothermic)", "B": "Negative (Exothermic)", "C": "Zero", "D": "Neutral" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Heat of combustion (\u0394Hc) is always ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive", "B": "Negative (Exothermic)", "C": "Zero", "D": "Variable" }, "answer": "B", "pyq": true },
-    { "id": 27, "question": "Expansion of work done by system on surrounds is taken with ______ sign in chemistry.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive", "B": "Negative (-P\u0394V)", "C": "Zero", "D": "None" }, "answer": "B", "pyq": true },
-    { "id": 28, "question": "Pressure-volume work is given by W = ......?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "-P_ext \u0394V", "B": "P/V", "C": "P \u00d7 m", "D": "V \u0394P" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "According to Joule-Thomson effect, when a real gas expands adiabatically into vacuum, its temperature ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increases", "B": "Decreases (Cooling effect)", "C": "Stays same", "D": "Goes to absolute zero" }, "answer": "B", "pyq": true },
-    { "id": 30, "question": "A refrigerator is a heat engine working in reverse. Its performance is measured by ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Efficiency", "B": "Coefficient of performance (COP)", "C": "Enthalpy", "D": "Pressure" }, "answer": "B", "pyq": true },
-    { "id": 31, "question": "Maximum entropy corresponds to ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Perfect crystal", "B": "Gas", "C": "Liquid", "D": "Solid" }, "answer": "B", "pyq": false },
-    { "id": 32, "question": "Work done in isothermal reversible expansion of n moles of ideal gas is W = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "-2.303 nRT log(V2/V1)", "B": "-nRT ln(V1/V2)", "C": "-P\u0394V", "D": "Zero" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "The molar heat capacity at constant pressure (Cp) and constant volume (Cv) are related by ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Cp - Cv = R", "B": "Cv - Cp = R", "C": "Cp/Cv = R", "D": "Cp + Cv = R" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "For a monoatomic gas (like He), the ratio Cp/Cv is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1.4", "B": "1.67", "C": "1.33", "D": "1.0" }, "answer": "B", "pyq": false },
-    { "id": 35, "question": "Hess's law states that Enthalpy change is the same whether the reaction occurs in one step or multi steps.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Heat of atomization (\u0394Ha\u00b0) is the enthalpy change for ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Breaking all bonds in one mole to form atoms", "B": "Burning one mole", "C": "Dissolving in water", "D": "Melting" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Enthalpy of hydration is always ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive", "B": "Negative (Exothermic)", "C": "Zero", "D": "Neutral" }, "answer": "B", "pyq": false },
-    { "id": 38, "question": "Standard enthalpy of a reaction (\u0394Hr\u00b0) = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u03a3\u0394Hf\u00b0(products) - \u03a3\u0394Hf\u00b0(reactants)", "B": "\u03a3\u0394Hf\u00b0(reactants) - \u03a3\u0394Hf\u00b0(products)", "C": "Product", "D": "Average" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Born-Haber cycle is used to determine ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lattice energy of ionic solids", "B": "Atomic mass", "C": "Bond length", "D": "Density" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "In the Gibbs energy equation: \u0394G = \u0394H - T\u0394S. If \u0394H is positive and \u0394S is positive, the process becomes spontaneous at ______ temperature.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Low", "B": "High", "C": "Any", "D": "Never" }, "answer": "B", "pyq": false },
-    { "id": 41, "question": "A reaction with \u0394G > 0 is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Endergonic (Non-spontaneous)", "B": "Exergonic (Spontaneous)", "C": "Rapid", "D": "Equilibrium" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Clausius inequality is expressed as ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "dS \u2265 dq/T", "B": "dq \u2265 dS/T", "C": "dH = dU + PdV", "D": "G = H - TS" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Extensive properties depend on ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Size/Amount of matter", "B": "Nature of matter", "C": "Container", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Thermochemical equations must include ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Physical states of reactants/products", "B": "\u0394H value", "C": "Stoichiometric coefficients", "D": "All of these" }, "answer": "D", "pyq": false },
-    { "id": 45, "question": "Heat capacity is the amount of heat required to raise the temperature of ______ by 1K.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1 gram", "B": "System", "C": "1 mole", "D": "Surroundings" }, "answer": "B", "pyq": false },
-    { "id": 46, "question": "Specific heat capacity is heat required to raise temperature of ______ by 1K.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1 gram", "B": "1 kg", "C": "1 mole", "D": "Atom" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "The relationship between \u0394G and the equilibrium constant K is \u0394G\u00b0 = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "-RT ln K", "B": "RT ln K", "C": "RT log K", "D": "-RT log K" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "When solid ammonium chloride is dissolved in water, the temperature ______ indicating an endothermic process.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increases", "B": "Decreases", "C": "Stays same", "D": "Boils" }, "answer": "B", "pyq": false },
-    { "id": 49, "question": "All natural (spontaneous) processes are irreversible in nature.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "\u0394H is positive and \u0394S is negative. The process is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Spontaneous at high T", "B": "Always non-spontaneous", "C": "Spontaneous at low T", "D": "Equilibrium" }, "answer": "B", "pyq": false },
-    { "id": 51, "question": "Enthalpy is defined as H = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "U + PV", "B": "U - PV", "C": "G + TS", "D": "G - TS" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Entropy of mixing (gases) is always ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive", "B": "Negative", "C": "Zero", "D": "Variable" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Work is a ______ function.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "State", "B": "Path", "C": "Zero", "D": "Constant" }, "answer": "B", "pyq": false },
-    { "id": 54, "question": "Heat capacity at constant pressure is ______ than at constant volume.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Greater (Cp > Cv)", "B": "Smaller", "C": "Equal", "D": "0" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "During neutralization of 1M HCl with 1M NaOH, the system temperature rises.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Enthalpy of sublimation (\u0394Hsub) = ...... ?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u0394Hfus + \u0394Hvap", "B": "\u0394Hfus - \u0394Hvap", "C": "\u0394Hvap / \u0394Hfus", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Bomb calorimeter is used to measure ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Heat change at constant pressure", "B": "Heat change at constant volume (\u0394U)", "C": "Atomic mass", "D": "Pressure" }, "answer": "B", "pyq": false },
-    { "id": 58, "question": "Trouton's rule relates Enthalpy of vaporization to ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Boiling point", "B": "Electronegativity", "C": "Mass", "D": "Volume" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Acyclic molecules? No. Replaced: Intensive properties are independent of amount of system.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Unit of Entropy is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "J", "B": "J/K or J K^-1", "C": "J/mol", "D": "bar" }, "answer": "B", "pyq": false },
-    { "id": 61, "question": "Standard molar entropy of Hydrogen gas is higher than Oxygen gas at STP.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 62, "question": "Total energy of the universe is constant while total entropy is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Decreasing", "B": "Increasing", "C": "Constant", "D": "Zero" }, "answer": "B", "pyq": false },
-    { "id": 63, "question": "Kirchhoff's equation relates \u0394H change to ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Temperature", "B": "Pressure", "C": "Volume", "D": "Electrons" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "If \u0394ng = 0 for a reaction, then ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u0394H = \u0394U", "B": "\u0394H > \u0394U", "C": "\u0394H < \u0394U", "D": "\u0394H + \u0394U = 0" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "In exothermic reaction, the temperature of surroundings ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Decreases", "B": "Increases", "C": "Constant", "D": "Drops to 0" }, "answer": "B", "pyq": false },
-    { "id": 66, "question": "Internal energy is an extensive property.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Gibbs free energy change \u0394G is related to non-expansion work by \u0394G = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "W_max - P\u0394V", "B": "W_total", "C": "-W_useful", "0": "Heat" }, "answer": "C", "pyq": false },
-    { "id": 68, "question": "Which of these gases has the highest molar heat capacity?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "He", "B": "N2", "C": "CO2", "D": "CH4 (more atoms/degrees of freedom)" }, "answer": "D", "pyq": false },
-    { "id": 69, "question": "Absolute zero cannot be reached. This is a consequence of ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "2nd Law", "B": "3rd Law", "C": "1st Law", "D": "0 Law" }, "answer": "B", "pyq": false },
-    { "id": 70, "question": "Efficiency of a Carnot engine working between 27 and 127 Celsius is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "25%", "B": "75%", "C": "33%", "D": "50%" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Enthalpy of hydration of anhydrous CuSO4 is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Exothermic (-ve)", "B": "Endothermic (+ve)", "C": "Zero", "D": "Inert" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Heat of atomization for Diamond is higher than Graphite. This means Diamond is ______ thermodynamically stable than graphite.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "More", "B": "Less (higher enthalpy)", "C": "Equal", "D": "Depends on pressure" }, "answer": "B", "pyq": false },
-    { "id": 73, "question": "A reaction with large equilibrium constant K will have a large ______ \u0394G\u00b0.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive", "B": "Negative", "C": "Zero", "D": "Average" }, "answer": "B", "pyq": false },
-    { "id": 74, "question": "Expansion of ideal gas into vacuum? No. Replaced: During isothermal compression, heat is ______ by the system.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Absorbed", "B": "Evolved (given out)", "C": "Zeroed", "D": "Gained" }, "answer": "B", "pyq": false },
-    { "id": 75, "question": "Work done is a path function.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Joule-Thomson coefficient for an ideal gas is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Positive", "B": "Negative", "C": "Zero", "D": "Infinite" }, "answer": "C", "pyq": false },
-    { "id": 77, "question": "For a cyclic process, \u03a3dq = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u0394U", "B": "\u03a3dw", "C": "Zero", "D": "Infinity" }, "answer": "B", "pyq": false },
-    { "id": 78, "question": "Spontaneity is the tendency of a system to move towards state of ______ Gibbs energy.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Maximum", "B": "Minimum", "C": "Average", "D": "No" }, "answer": "B", "pyq": false },
-    { "id": 79, "question": "Pressure is an intensive property.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Thermodynamics deals with macroscopic properties, not microscopic states of single molecules.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 31,
+      "question": "Work done in isothermal reversible expansion of n moles of ideal gas is W = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-2.303 nRT log(V2/V1)",
+        "B": "-nRT ln(V1/V2)",
+        "C": "-PΔV",
+        "D": "Zero"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "The molar heat capacity at constant pressure (Cp) and constant volume (Cv) are related by ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Cp - Cv = R",
+        "B": "Cv - Cp = R",
+        "C": "Cp/Cv = R",
+        "D": "Cp + Cv = R"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "For a monoatomic gas (like He), the ratio Cp/Cv is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1.4",
+        "B": "1.67",
+        "C": "1.33",
+        "D": "1.0"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Heat of atomization (ΔHa°) is the enthalpy change for ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Breaking all bonds in one mole to form atoms",
+        "B": "Burning one mole",
+        "C": "Dissolving in water",
+        "D": "Melting"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Enthalpy of hydration is always ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Positive",
+        "B": "Negative (Exothermic)",
+        "C": "Zero",
+        "D": "Neutral"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Born-Haber cycle is used to determine ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Lattice energy of ionic solids",
+        "B": "Atomic mass",
+        "C": "Bond length",
+        "D": "Density"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "In the Gibbs energy equation: ΔG = ΔH - TΔS. If ΔH is positive and ΔS is positive, the process becomes spontaneous at ______ temperature.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Low",
+        "B": "High",
+        "C": "Any",
+        "D": "Never"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "A reaction with ΔG > 0 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Endergonic (Non-spontaneous)",
+        "B": "Exergonic (Spontaneous)",
+        "C": "Rapid",
+        "D": "Equilibrium"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "Clausius inequality is expressed as ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "dS ≥ dq/T",
+        "B": "dq ≥ dS/T",
+        "C": "dH = dU + PdV",
+        "D": "G = H - TS"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "The relationship between ΔG and the equilibrium constant K is ΔG° = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-RT ln K",
+        "B": "RT ln K",
+        "C": "RT log K",
+        "D": "-RT log K"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "When solid ammonium chloride is dissolved in water, the temperature ______ indicating an endothermic process.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Increases",
+        "B": "Decreases",
+        "C": "Stays same",
+        "D": "Boils"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "All natural (spontaneous) processes are irreversible in nature.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "ΔH is positive and ΔS is negative. The process is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Spontaneous at high T",
+        "B": "Always non-spontaneous",
+        "C": "Spontaneous at low T",
+        "D": "Equilibrium"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Entropy of mixing (gases) is always ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Positive",
+        "B": "Negative",
+        "C": "Zero",
+        "D": "Variable"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Heat capacity at constant pressure is ______ than at constant volume.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Greater (Cp > Cv)",
+        "B": "Smaller",
+        "C": "Equal",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Enthalpy of sublimation (ΔHsub) = ...... ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ΔHfus + ΔHvap",
+        "B": "ΔHfus - ΔHvap",
+        "C": "ΔHvap / ΔHfus",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Bomb calorimeter is used to measure ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Heat change at constant pressure",
+        "B": "Heat change at constant volume (ΔU)",
+        "C": "Atomic mass",
+        "D": "Pressure"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Trouton's rule relates Enthalpy of vaporization to ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Boiling point",
+        "B": "Electronegativity",
+        "C": "Mass",
+        "D": "Volume"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Standard molar entropy of Hydrogen gas is higher than Oxygen gas at STP.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "Total energy of the universe is constant while total entropy is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Decreasing",
+        "B": "Increasing",
+        "C": "Constant",
+        "D": "Zero"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Kirchhoff's equation relates ΔH change to ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Temperature",
+        "B": "Pressure",
+        "C": "Volume",
+        "D": "Electrons"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Gibbs free energy change ΔG is related to non-expansion work by ΔG = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "0": "Heat",
+        "A": "W_max - PΔV",
+        "B": "W_total",
+        "C": "-W_useful"
+      },
+      "answer": "C",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Which of these gases has the highest molar heat capacity?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "He",
+        "B": "N2",
+        "C": "CO2",
+        "D": "CH4 (more atoms/degrees of freedom)"
+      },
+      "answer": "D",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "Absolute zero cannot be reached. This is a consequence of ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2nd Law",
+        "B": "3rd Law",
+        "C": "1st Law",
+        "D": "0 Law"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Efficiency of a Carnot engine working between 27 and 127 Celsius is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "25%",
+        "B": "75%",
+        "C": "33%",
+        "D": "50%"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Enthalpy of hydration of anhydrous CuSO4 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Exothermic (-ve)",
+        "B": "Endothermic (+ve)",
+        "C": "Zero",
+        "D": "Inert"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Heat of atomization for Diamond is higher than Graphite. This means Diamond is ______ thermodynamically stable than graphite.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "More",
+        "B": "Less (higher enthalpy)",
+        "C": "Equal",
+        "D": "Depends on pressure"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "A reaction with large equilibrium constant K will have a large ______ ΔG°.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Positive",
+        "B": "Negative",
+        "C": "Zero",
+        "D": "Average"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "Expansion of ideal gas into vacuum? No. Replaced: During isothermal compression, heat is ______ by the system.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Absorbed",
+        "B": "Evolved (given out)",
+        "C": "Zeroed",
+        "D": "Gained"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "Joule-Thomson coefficient for an ideal gas is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Positive",
+        "B": "Negative",
+        "C": "Zero",
+        "D": "Infinite"
+      },
+      "answer": "C",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "For a cyclic process, Σdq = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ΔU",
+        "B": "Σdw",
+        "C": "Zero",
+        "D": "Infinity"
+      },
+      "answer": "B",
+      "pyq": false
+    }
   ]
 }

@@ -9,7 +9,8 @@ import { saveProgress, fetchProgress, type UserProgress } from "../lib/supabase"
 // ─── Types ───────────────────────────────────────────────────────────────────
 interface RawQuestion {
   question: string;
-  difficulty: "Easy" | "Medium" | "Hard";
+  difficulty: "Medium" | "Hard";
+  pyq?: boolean;
   hasDiagram: boolean;
   diagram_description: string;
   options: { A: string; B: string; C: string; D: string };
@@ -50,7 +51,7 @@ interface Props {
   onExamComplete?: (correct: number, total: number, elapsed: number, seenIds: number[]) => void;
 }
 
-type Screen = "setup" | "exam" | "result";
+type Screen = "setup" | "exam" | "confirmation" | "result";
 
 const SUBJECT_MAP: Record<string, string[]> = {
   Engineering: ["Mathematics", "Physics", "Chemistry"],
@@ -110,7 +111,8 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
   // Setup state
   const [selectedSubject, setSelectedSubject] = useState(initialTopic?.subject ?? "");
   const [selectedTopic, setSelectedTopic] = useState(initialTopic?.topic ?? "");
-  const [questionCount, setQuestionCount] = useState<number>(15);
+  const [selectedAttempt, setSelectedAttempt] = useState<number>(1);
+  const [questionCount, setQuestionCount] = useState<number>(20);
 
   const [allProgress, setAllProgress] = useState<UserProgress[]>([]);
 
@@ -120,6 +122,7 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
   const [statuses, setStatuses] = useState<QuestionStatus[]>([]);
   const [examLoading, setExamLoading] = useState(false);
   const [examError, setExamError] = useState("");
+  const [maxAttempts, setMaxAttempts] = useState(4);
 
   // Timer state
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
@@ -132,6 +135,12 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
 
   // Palette drawer (mobile)
   const [paletteOpen, setPaletteOpen] = useState(false);
+
+  // Camera & Confirmation
+  const [capturedImage, setCapturedImage] = useState<string | null>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [cameraError, setCameraError] = useState<string | null>(null);
 
   // Load syllabus for subject/topic picker
   useEffect(() => {
@@ -165,7 +174,15 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
   // Load user progress to prevent repeating questions
   useEffect(() => {
     fetchProgress(userId).then(setAllProgress).catch(console.error);
-  }, []);
+  }, [userId]);
+
+  // Auto-select the next available attempt
+  useEffect(() => {
+    if (!selectedTopic) return;
+    const progress = allProgress.find(p => p.topic === selectedTopic);
+    const nextAttempt = Math.min((progress?.attempts || 0) + 1, 4);
+    setSelectedAttempt(nextAttempt);
+  }, [selectedTopic, allProgress]);
 
   // Hide global header when in exam mode
   useEffect(() => {
@@ -186,7 +203,7 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
     // Get current attempt number
     const progress = allProgress.find(p => p.topic === topic);
     const attemptNum = (progress?.attempts || 0) + 1;
-    const count = 20; // Standardized to 20 bits per attempt
+    const count = 20; 
     setQuestionCount(count);
 
     try {
@@ -199,73 +216,71 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
       };
       const folderName = subjectFolderMap[subject] || subject.toLowerCase();
       const topicSlug = topic.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
-      // UPDATE: Pointing to the new Gold Standard V2 questions
-      const res = await fetch(`/questions_v2/${folderName}/${topicSlug}.json`);
-
-      let pool: Question[] = [];
-      let priorityMultiplier = 1.0;
+      
+      // Use the new folder-based attempt structure for Maths
+      const fetchPath = folderName === "maths" 
+        ? `/questions_v2/${folderName}/${topicSlug}/attempt_${selectedAttempt}.json`
+        : `/questions_v2/${folderName}/${topicSlug}.json`;
+        
+      const res = await fetch(fetchPath);
 
       if (res.ok) {
         const raw = await res.json();
         const qsArray = Array.isArray(raw) ? raw : (raw.questions || []);
         
-        // Extract priority if available
-        const priorityScore = (raw.priority || qsArray[0]?.priority || "Medium") as string;
-        priorityMultiplier = PRIORITY_MULTIPLIER[priorityScore] || 1.0;
+        let selected = qsArray;
 
-        pool = qsArray.map((q: any, i: number) => {
-          let parsedDiff = "Medium";
-          if (typeof q.difficulty === 'string') {
-            const lower = q.difficulty.toLowerCase();
-            if (lower === 'easy') parsedDiff = "Easy";
-            else if (lower === 'hard') parsedDiff = "Hard";
+        // If it's NOT a restructured topic (non-maths), we still use the old splitting logic
+        if (folderName !== "maths") {
+          const i = attemptNum - 1;
+          const hardPool = qsArray.filter((q: any) => q.difficulty?.toLowerCase() === 'hard');
+          const mediumPool = qsArray.filter((q: any) => q.difficulty?.toLowerCase() === 'medium' && !q.pyq);
+          const pyqPool = qsArray.filter((q: any) => q.pyq === true);
+          
+          const selectedHard = hardPool.slice(i * 10, (i + 1) * 10);
+          const selectedMedium = mediumPool.slice(i * 5, (i + 1) * 5);
+          const selectedPYQ = pyqPool.slice(i * 5, (i + 1) * 5);
+          selected = [...selectedHard, ...selectedMedium, ...selectedPYQ];
+          
+          if (selected.length < 20 && qsArray.length > 0) {
+            const usedIds = new Set(selected.map((q: any) => q.id || q.question));
+            const remainingPool = qsArray.filter((q: any) => !usedIds.has(q.id || q.question));
+            selected = [...selected, ...remainingPool.slice(0, 20 - selected.length)];
           }
-          return { ...q, difficulty: parsedDiff, originalIndex: i };
-        });
+        }
+
+        const finalSet = shuffleArray(selected).map((q: any, idx: number) => ({
+          ...q,
+          difficulty: q.difficulty === 'hard' ? 'Hard' : q.difficulty === 'medium' ? 'Medium' : q.difficulty || 'Hard',
+          originalIndex: q.originalIndex ?? idx
+        })) as Question[];
+
+        setQuestions(finalSet);
+        setStatuses(finalSet.map(() => ({ selectedOption: null, isAnswered: false, isMarkedForReview: false })));
+        setCurrentIdx(0);
+        
+        // Timer Logic (Requirement: 15 mins for Attempt 3+)
+        let targetMins = 23; 
+        if (attemptNum >= 3) targetMins = 15; 
+
+        setElapsedSeconds(attemptNum === 1 ? 0 : Math.round(targetMins * 60)); 
+        setTargetSeconds(Math.round(targetMins * 60));
+        setExamStarted(false);
+        setScreen("exam");
+        setExamLoading(false);
+
+        setTimeout(() => {
+          if (examRef.current?.requestFullscreen) examRef.current.requestFullscreen().catch(() => {});
+        }, 300);
       } else {
-        // Fallback or Error
         setExamError("Question bank for this topic is being synchronized. Please try again in a moment.");
         setExamLoading(false);
-        return;
       }
-
-      // Randomly pick 20 bits as requested
-      const shuffled = shuffleArray(pool);
-      const selected = shuffled.slice(0, Math.min(count, shuffled.length));
-      
-      // Timer Logic
-      // Attempt 1 & 2: 23 mins (20 + 3 buffer)
-      // Attempt 3+: Faster based on previous performance
-      let targetMins = 23; 
-      if (attemptNum >= 3) {
-        // If they finished attempt 2 in 18 mins, set target to 18 or 15 mins.
-        targetMins = 15; 
-      }
-
-      setQuestions(selected);
-      setStatuses(selected.map(() => ({ selectedOption: null, isAnswered: false, isMarkedForReview: false })));
-      setCurrentIdx(0);
-      
-      // Timer initial state
-      if (attemptNum === 1) {
-        setElapsedSeconds(0); // Count up
-      } else {
-        setElapsedSeconds(Math.round(targetMins * 60)); // Count down from target
-      }
-      
-      setTargetSeconds(Math.round(targetMins * 60));
-      setExamStarted(false);
-      setScreen("exam");
-      setExamLoading(false);
-
-      setTimeout(() => {
-        if (examRef.current?.requestFullscreen) examRef.current.requestFullscreen().catch(() => {});
-      }, 300);
     } catch (e) {
       setExamError("Failed to load questions. Please try again.");
       setExamLoading(false);
     }
-  }, [allProgress]);
+  }, [allProgress, selectedAttempt]);
 
   // ─── Start Exam (from setup screen using current state) ─────────────────────
   const startExam = useCallback(async () => {
@@ -316,9 +331,60 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
     setPaletteOpen(false);
   }, []);
 
+  // ─── Camera Logic ─────────────────────────────────────────────────────────
+  const startCamera = async () => {
+    try {
+      setCameraError(null);
+      const stream = await navigator.mediaDevices.getUserMedia({ 
+        video: { facingMode: "user" } 
+      });
+      if (videoRef.current) {
+        videoRef.current.srcObject = stream;
+      }
+    } catch (err) {
+      console.error("Camera access error:", err);
+      setCameraError("Camera access denied or unavailable. Please ensure you have granted permission.");
+    }
+  };
+
+  const stopCamera = () => {
+    if (videoRef.current && videoRef.current.srcObject) {
+      const stream = videoRef.current.srcObject as MediaStream;
+      stream.getTracks().forEach(track => track.stop());
+      videoRef.current.srcObject = null;
+    }
+  };
+
+  const takePhoto = () => {
+    if (videoRef.current && canvasRef.current) {
+      const video = videoRef.current;
+      const canvas = canvasRef.current;
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      const ctx = canvas.getContext("2d");
+      if (ctx) {
+        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+        const data = canvas.toDataURL("image/png");
+        setCapturedImage(data);
+        stopCamera();
+      }
+    }
+  };
+
+  const resetPhoto = () => {
+    setCapturedImage(null);
+    startCamera();
+  };
+
   const submitExam = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
     if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+    setScreen("confirmation");
+    startCamera();
+  }, []);
+
+  const performFinalSubmit = useCallback(() => {
+    stopCamera();
     
     // Attempt Logic again for calculation
     const currentProgress = allProgress.find(p => p.topic === selectedTopic);
@@ -420,22 +486,43 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
             ) : (
               <>
 
-                {/* Question count */}
+                {/* Attempt Selection */}
                 <div className={styles.formGroup}>
-                  <label className={styles.formLabel}>🔢 Number of Questions</label>
-                  <div style={{ display: "flex", alignItems: "center", gap: "10px", marginTop: "8px" }}>
-                    <button
-                      id="exam-count-minus"
-                      className={styles.countBtn}
-                      onClick={() => setQuestionCount(c => Math.max(15, c - 1))}
-                    >−</button>
-                    <span style={{ fontSize: "1.2rem", fontWeight: "700", color: "var(--text)" }}>{questionCount}</span>
-                    <button
-                      id="exam-count-plus"
-                      className={styles.countBtn}
-                      onClick={() => setQuestionCount(c => Math.min(25, c + 1))}
-                    >+</button>
-                    <span style={{ marginLeft: "6px", color: "var(--text-muted)", fontSize: "0.9rem" }}>Available unseen</span>
+                  <label className={styles.formLabel}>🚀 Select Attempt Batch</label>
+                  <div className={styles.attemptGrid}>
+                    {[1, 2, 3, 4].map((n) => {
+                      const p = allProgress.find(p => p.topic === selectedTopic);
+                      const completedCount = p?.attempts || 0;
+                      const isUnlocked = n === 1 || n <= (completedCount + 1);
+                      const isCompleted = n <= completedCount;
+                      const isNewUnlock = n === (completedCount + 1);
+
+                      return (
+                        <div
+                          key={n}
+                          className={`
+                            ${styles.attemptCard} 
+                            ${!isUnlocked ? styles.locked : ""} 
+                            ${selectedAttempt === n ? styles.attemptSelected : ""}
+                            ${isNewUnlock ? styles.unlockedNew : ""}
+                          `}
+                          onClick={() => isUnlocked && setSelectedAttempt(n)}
+                        >
+                          <div className={styles.attemptHeader}>
+                            <span className={styles.attemptNum}>Batch {n}</span>
+                            {!isUnlocked && (
+                              <svg className={styles.lockIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                              </svg>
+                            )}
+                            {isCompleted && <span className={styles.completedBadge}>DONE</span>}
+                          </div>
+                          <span className={styles.attemptTitle}>Attempt {n}</span>
+                          <span className={styles.attemptSub}>20 Questions</span>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
 
@@ -482,7 +569,7 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                         </div>
                       </div>
                       <div style={{ fontSize: "13px", color: "var(--text-muted)", padding: "10px", background: "var(--bg-card2)", borderRadius: "8px", border: "1px dashed var(--border)" }}>
-                        💡 <strong>Gold Standard 2.0:</strong> Each attempt picks 20 random bits from the 80-bit pool. Complete 4 attempts to master this topic!
+                        💡 <strong>Gold Standard 2.0:</strong> This topic has <strong>{maxAttempts}</strong> high-quality fixed attempts (10H/5M/5P). Complete all to master this chapter!
                       </div>
                     </div>
                   );
@@ -511,6 +598,79 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
     );
   }
 
+  // ─── Render: Confirmation ──────────────────────────────────────────────────
+  if (screen === "confirmation") {
+    const answeredCount = statuses.filter(s => s.isAnswered).length;
+    const unansweredCount = statuses.filter(s => !s.isAnswered).length;
+    const markedCount = statuses.filter(s => s.isMarkedForReview).length;
+
+    return (
+      <div className={styles.setupOverlay}>
+        <div className={styles.setupCard} style={{ maxWidth: "600px" }}>
+          <div className={styles.header}>
+            <div className={styles.emoji}>📝</div>
+            <div className={styles.title}>Submit Confirmation</div>
+            <div className={styles.subtitle}>Review your attempts and verify your work</div>
+          </div>
+
+          <div className={styles.statsSummaryGrid}>
+            <div className={styles.statSummaryItem}>
+              <span className={styles.statSummaryVal} style={{ color: "#10b981" }}>{answeredCount}</span>
+              <span className={styles.statSummaryLbl}>Attempted</span>
+            </div>
+            <div className={styles.statSummaryItem}>
+              <span className={styles.statSummaryVal} style={{ color: "#ef4444" }}>{unansweredCount}</span>
+              <span className={styles.statSummaryLbl}>Not Attempted</span>
+            </div>
+            <div className={styles.statSummaryItem}>
+              <span className={styles.statSummaryVal} style={{ color: "#6366f1" }}>{markedCount}</span>
+              <span className={styles.statSummaryLbl}>Marked</span>
+            </div>
+          </div>
+
+          <div className={styles.cameraSection}>
+            <h3 className={styles.cameraTitle}>📸 Verification Photo</h3>
+            <p className={styles.cameraDesc}>Please take a clear photo of your practice rough work papers. (Laptop/Mobile camera)</p>
+            
+            <div className={styles.cameraViewport}>
+              {!capturedImage ? (
+                <>
+                  <video 
+                    ref={videoRef} 
+                    autoPlay 
+                    playsInline 
+                    className={styles.cameraVideo}
+                  />
+                  {cameraError && <div className={styles.cameraError}>{cameraError}</div>}
+                  <button className={styles.captureBtn} onClick={takePhoto}>Capture Photo</button>
+                </>
+              ) : (
+                <>
+                  <img src={capturedImage} alt="Captured work" className={styles.capturedImg} />
+                  <button className={styles.retakeBtn} onClick={resetPhoto}>🔄 Retake Photo</button>
+                </>
+              )}
+              <canvas ref={canvasRef} style={{ display: "none" }} />
+            </div>
+          </div>
+
+          <div className={styles.confirmActions}>
+            <button className={styles.confirmBackBtn} onClick={() => { stopCamera(); setScreen("exam"); }}>
+              ← Back to Questions
+            </button>
+            <button 
+              className={styles.finalSubmitBtn} 
+              onClick={performFinalSubmit}
+              disabled={!capturedImage && !cameraError}
+            >
+              ✅ Final Submit & See Results
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // ─── Render: Result ────────────────────────────────────────────────────────
   if (screen === "result") {
     const scorePercent = Math.round((correctCount / questions.length) * 100);
@@ -532,7 +692,11 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
             <h1 className={styles.resultTitle}>Exam Complete!</h1>
             <p className={styles.resultTopic}>{selectedTopic} — {selectedSubject}</p>
             <p className={styles.performanceMsg}>{performanceMsg}</p>
-            <p className={styles.previousAttemptHint}>Your attempt has been saved. Try again with fresh questions! 🔥</p>
+            {((allProgress.find(p => p.topic === selectedTopic)?.attempts || 0) + 1) >= maxAttempts ? (
+              <p className={styles.previousAttemptHint} style={{ color: "#10b981", fontWeight: "700" }}>🏆 Topic Mastered! You have completed all {maxAttempts} unique batches. 🔥</p>
+            ) : (
+              <p className={styles.previousAttemptHint}>Your attempt has been saved. Start Attempt {(allProgress.find(p => p.topic === selectedTopic)?.attempts || 0) + 1} / {maxAttempts} 🔥</p>
+            )}
           </div>
 
           {/* ── Attempt Logged Banner ── */}
@@ -684,7 +848,10 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
         <div className={styles.examTopLeft}>
           <div className={styles.examInfo}>
             <span className={styles.examBadge}>{exam} EAMCET</span>
-            <span className={styles.topicBadge}>{selectedTopic}</span>
+            <span className={styles.topicBadge}>Attempt {(() => {
+              const p = allProgress.find(p => p.topic === selectedTopic);
+              return (p?.attempts || 0) + 1;
+            })()} / {maxAttempts}</span>
           </div>
         </div>
 
@@ -770,9 +937,8 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
           <div className={styles.questionCard}>
             <div className={styles.questionMeta}>
               <span className={styles.qNumber}>Question {currentIdx + 1}</span>
-              <span className={styles.diffBadge} data-diff={currentQ.difficulty.toLowerCase()}>
-                {currentQ.difficulty}
-              </span>
+              <span className={styles.diffBadge} data-diff={currentQ.difficulty.toLowerCase()}>{currentQ.difficulty}</span>
+              {currentQ.pyq && <span className={styles.pyqBadge}>PYQ</span>}
             </div>
             <p className={styles.questionText}>{currentQ.question}</p>
           </div>

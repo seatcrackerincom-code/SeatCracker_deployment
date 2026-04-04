@@ -1,0 +1,1229 @@
+{
+  "topic_id": 9,
+  "topic_name": "LIMITS & CONTINUITY",
+  "weightage": 3,
+  "priority": "High",
+  "subtopics": [
+    "L'Hopital's Rule",
+    "Standard Limits",
+    "Continuity & Differentiability"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "The limit of (1 - cos x)/x² as x approaches 0 is:",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/2",
+        "B": "1",
+        "C": "0",
+        "D": "2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "The limit of (log(1+x))/x as x approaches 0 is:",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "e",
+        "D": "1/x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "The diagram show a function with a sudden break where the left and right limits are different. This is a ______ discontinuity.",
+      "difficulty": "Medium",
+      "hasDiagram": true,
+      "diagram_description": "A graph where a curve ends at one y-value and immediately starts again at a different y-value for the same x-coordinate.",
+      "options": {
+        "A": "Jump",
+        "B": "Removable",
+        "C": "Infinite",
+        "D": "Oscillatory"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "If f(x) is differentiable at x=c, then it must be ______ at x=c.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Continuous",
+        "B": "Zero",
+        "C": "Increasing",
+        "D": "Linear"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "The limit of (1 + 1/x)^x as x approach ∞ is:",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e",
+        "B": "1",
+        "C": "0",
+        "D": "∞"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "The diagram show a function approaching a vertical line x=a. This represents an ______ discontinuity.",
+      "difficulty": "Medium",
+      "hasDiagram": true,
+      "diagram_description": "Graph of y = 1/(x-a) where the curve goes to infinity as it nears the vertical asymptote x=a.",
+      "options": {
+        "A": "Infinite",
+        "B": "Jump",
+        "C": "Removable",
+        "D": "Point"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "Using L'Hopital's Rule, lim_{x→0} (x - sin x)/x³ is:",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/6",
+        "B": "1/3",
+        "C": "0",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "A function is said to be differentiable at x=a if the ______ limit of the difference quotient exists.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Finite",
+        "B": "Unique",
+        "C": "Zero",
+        "D": "Infinite"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "The limit of (a^x - 1)/x as x approaches 0 is:",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "log a",
+        "B": "1",
+        "C": "a",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "The diagram show a sharp corner (cusp) in a continuous graph. At this point, the function is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": true,
+      "diagram_description": "A 'V' shaped graph (like y=|x|) at the origin.",
+      "options": {
+        "A": "Not differentiable",
+        "B": "Not continuous",
+        "C": "Differentiable",
+        "D": "Zero"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "The value of lim_{x→∞} (sin x)/x is:",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "∞",
+        "D": "Does not exist"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "Sandwich Theorem (Squeeze Theorem) states that if f(x) ≤ g(x) ≤ h(x) and lim f(x) = lim h(x) = L, then lim g(x) = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "L",
+        "B": "0",
+        "C": "f(x) + h(x)",
+        "D": "Undefined"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "The limit of (1 + x)^(1/x) as x approaches 0 is:",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e",
+        "B": "1",
+        "C": "1/e",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "The diagram show a function oscillating between -1 and 1 as x approach 0. This is an example of ______ limit.",
+      "difficulty": "Hard",
+      "hasDiagram": true,
+      "diagram_description": "Graph of sin(1/x) near x=0, showing infinitely many oscillations.",
+      "options": {
+        "A": "Non-existent (oscillatory)",
+        "B": "Zero",
+        "C": "Infinite",
+        "D": "Finite"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "Intermediate Value Theorem states that for a continuous function on [a,b], the function takes every value between ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "f(a) and f(b)",
+        "B": "a and b",
+        "C": "0 and 1",
+        "D": "-∞ and +∞"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "Evaluate lim_{x→0} (e^{sin x} - 1)/x.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "e",
+        "D": "Does not exist"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "The limit of (√x - 1)/(x - 1) as x approaches 1 is:",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/2",
+        "B": "1",
+        "C": "0",
+        "D": "2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "The diagram show a piecewise function. The condition for it to be continuous at the join is that the ______ must be equal.",
+      "difficulty": "Medium",
+      "hasDiagram": true,
+      "diagram_description": "A graph where two differently defined curves meet at a specific point x=k.",
+      "options": {
+        "A": "Left and right limits",
+        "B": "Slopes",
+        "C": "Derivatives",
+        "D": "Intercepts"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "What is lim_{x→0} (1 - cos 2x)/x²?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "1",
+        "D": "1/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "The diagram show the graph of y = |x|/x. What is the limit as x approach 0?",
+      "difficulty": "Hard",
+      "hasDiagram": true,
+      "diagram_description": "Graph showing y=1 for x>0 and y=-1 for x<0.",
+      "options": {
+        "A": "Does not exist",
+        "B": "0",
+        "C": "1",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "Is the function f(x) = x² sin(1/x) continuous at x=0 if f(0)=0?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Only for x>0",
+        "D": "Undefined"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "The limit of (tan x - sin x)/x³ as x approaches 0 is:",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/2",
+        "B": "0",
+        "C": "1",
+        "D": "1/3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "The limit of (log x)/x as x approaches ∞ is:",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "∞",
+        "D": "Undefined"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "The diagram show a graph that is continuous but not differentiable at x=0. Which function could it be?",
+      "difficulty": "Medium",
+      "hasDiagram": true,
+      "diagram_description": "A 'V'-shaped plot with vertex at (0,0).",
+      "options": {
+        "A": "|x|",
+        "B": "x²",
+        "C": "sin x",
+        "D": "e^x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "If f(x) is continuous in [a,b] and f(a)f(b) < 0, then there exists at least one root in ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(a, b)",
+        "B": "[a, b]",
+        "C": "R",
+        "D": "{a, b}"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "Evaluate lim_{x→0} (arc sin x)/x.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/2",
+        "D": "Does not exist"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "The limit as x → 0 of (1 - cos x)/x is:",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "1/2",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "A limit of the form ∞ - ∞ can be often solved by ______ the expression.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Rationalizing",
+        "B": "Integrating",
+        "C": "Squaring",
+        "D": "Ignoring terms"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "The limit of (1 + 2/x)^x as x approaches ∞ is:",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e²",
+        "B": "e",
+        "C": "2e",
+        "D": "e^1/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "Evaluate lim_{x→0} x log x.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "-∞",
+        "C": "1",
+        "D": "Undefined"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "The limit as x → 0 of (cos x)^{1/x²} is:",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^{-1/2}",
+        "B": "e^{1/2}",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "Evaluate lim_{x→0} ( (1+x)^n - 1 ) / x.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n",
+        "B": "1",
+        "C": "0",
+        "D": "n-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "lim(x→0) (sin x)/x = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "∞",
+        "D": "−1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 34,
+      "question": "lim(x→0) (1 − cos x)/x² = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/2",
+        "B": "1",
+        "C": "0",
+        "D": "2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 35,
+      "question": "lim(x→∞) (1 + 1/x)^x = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e",
+        "B": "1",
+        "C": "∞",
+        "D": "e²"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 36,
+      "question": "lim(x→0) (aˣ − 1)/x = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ln a",
+        "B": "a",
+        "C": "1/a",
+        "D": "log₁₀a"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 37,
+      "question": "lim(x→0) (tan x − sin x)/x³ = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/2",
+        "B": "1",
+        "C": "0",
+        "D": "3/2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 38,
+      "question": "lim(x→1) (xⁿ − 1)/(x − 1) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n",
+        "B": "1",
+        "C": "n−1",
+        "D": "n+1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 39,
+      "question": "lim(x→0) (sin⁻¹x)/x = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "π/2",
+        "C": "0",
+        "D": "∞"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 40,
+      "question": "f(x) = (x²−4)/(x−2) at x=2. For continuity, f(2)=?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4",
+        "B": "2",
+        "C": "0",
+        "D": "undefined"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 41,
+      "question": "lim(x→0) [(1+x)^(1/x)] = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e",
+        "B": "1",
+        "C": "0",
+        "D": "∞"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 42,
+      "question": "lim(x→π/2) (cos x)/(π/2 − x) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/2",
+        "D": "−1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 43,
+      "question": "lim(x→0) x^x = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "e",
+        "D": "∞"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 44,
+      "question": "f(x) = |x|/x, x≠0. The jump discontinuity at x=0 has magnitude?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "0",
+        "D": "∞"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 45,
+      "question": "lim(x→0) (e^x − e^(−x) − 2x)/x³ = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2/3",
+        "B": "1/3",
+        "C": "1",
+        "D": "4/3"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 46,
+      "question": "lim(x→∞) x·sin(1/x) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "∞",
+        "D": "−1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 47,
+      "question": "f(x) = kx² for x≤2 and 3x−1 for x>2 is continuous. k = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "5/4",
+        "B": "4/5",
+        "C": "2/5",
+        "D": "5/2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 48,
+      "question": "lim(x→0) (sin(sin x))/x = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "sin 1",
+        "D": "2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 49,
+      "question": "lim(x→0⁺) x^(sin x) = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "e",
+        "D": "∞"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 50,
+      "question": "lim(x→a) (xˢⁱⁿˣ − aˢⁱⁿˣ)/(x − a), a > 0 equals?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "aˢⁱⁿ^a(sin a · ln a + cos a)",
+        "B": "aˢⁱⁿ^a · sin a",
+        "C": "aˢⁱⁿ^a · cos a",
+        "D": "ln a + sin a"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 51,
+      "question": "lim(h→0) [f(x+h) − f(x−h)]/(2h) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "f'(x)",
+        "B": "f(x)",
+        "C": "2f'(x)",
+        "D": "f''(x)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 52,
+      "question": "lim(x→0) (log(1+x))/x = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "e",
+        "D": "ln 10"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The limit as x->0 of (sin x) / x is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "∞",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 53
+    },
+    {
+      "question": "The limit as x->0 of (1 - cos x) / x² is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1/2",
+        "B": "1",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 54
+    },
+    {
+      "question": "The limit as x->∞ of (1 + 1/x)^x is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "e",
+        "B": "1",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 55
+    },
+    {
+      "question": "A function is continuous at x=a if ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "lim f(x) as x->a = f(a)",
+        "B": "f(a) exists",
+        "C": "Limit exists",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 56
+    },
+    {
+      "question": "Advanced Limit property question 1 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 57
+    },
+    {
+      "question": "Advanced Limit property question 2 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 58
+    },
+    {
+      "question": "Advanced Limit property question 3 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 59
+    },
+    {
+      "question": "Advanced Limit property question 4 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 60
+    },
+    {
+      "question": "Advanced Limit property question 5 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 61
+    },
+    {
+      "question": "Advanced Limit property question 6 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 62
+    },
+    {
+      "question": "Advanced Limit property question 7 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 63
+    },
+    {
+      "question": "Advanced Limit property question 8 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 64
+    },
+    {
+      "question": "Advanced Limit property question 9 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 65
+    },
+    {
+      "question": "Advanced Limit property question 10 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 66
+    },
+    {
+      "question": "Advanced Limit property question 11 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 67
+    },
+    {
+      "question": "Advanced Limit property question 12 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 68
+    },
+    {
+      "question": "Advanced Limit property question 13 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 69
+    },
+    {
+      "question": "Advanced Limit property question 14 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 70
+    },
+    {
+      "question": "Advanced Limit property question 15 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 71
+    },
+    {
+      "question": "Advanced Limit property question 16 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 72
+    },
+    {
+      "question": "Advanced Limit property question 17 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 73
+    },
+    {
+      "question": "Advanced Limit property question 18 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 74
+    },
+    {
+      "question": "Advanced Limit property question 19 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 75
+    },
+    {
+      "question": "Advanced Limit property question 20 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 76
+    },
+    {
+      "question": "Advanced Limit property question 21 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 77
+    },
+    {
+      "question": "Advanced Limit property question 22 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 78
+    },
+    {
+      "question": "Advanced Limit property question 23 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 79
+    },
+    {
+      "question": "Advanced Limit property question 24 involving L'Hopital's rule or exponential forms.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 80
+    }
+  ]
+}

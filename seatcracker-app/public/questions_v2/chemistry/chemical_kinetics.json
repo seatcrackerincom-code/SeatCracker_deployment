@@ -2,85 +2,560 @@
   "subject": "Chemistry",
   "topic": "Chemical Kinetics",
   "questions": [
-    { "id": 1, "question": "The branch of chemistry which deals with the rate of chemical reactions is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Thermodynamics", "B": "Chemical Kinetics", "C": "Electrochemistry", "D": "Stereochemistry" }, "answer": "B", "pyq": true },
-    { "id": 2, "question": "Average rate of reaction is given by \u0394c / \u0394t. The unit of rate of reaction is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "mol L^-1 s^-1", "B": "mol s", "C": "L mol^-1 s^-1", "D": "mol L s" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "For a reaction A + B \u2192 Products, the rate law is: Rate = k[A]^1 [B]^2. The overall order of reaction is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "2", "C": "3", "D": "0" }, "answer": "C", "pyq": true },
-    { "id": 4, "question": "Molecularity of a reaction is defined as the number of reacting species taking part in an ______ step.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Complex", "B": "Elementary", "C": "Fastest", "D": "Final" }, "answer": "B", "pyq": true },
-    { "id": 5, "question": "Which of the following can be a fraction?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Order of reaction", "B": "Molecularity", "C": "Both", "D": "Neither" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "Unit of rate constant (k) for a zero order reaction is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "s^-1", "B": "mol L^-1 s^-1", "C": "L mol^-1 s^-1", "D": "mol L^-1" }, "answer": "B", "pyq": true },
-    { "id": 7, "question": "Unit of rate constant (k) for a first order reaction is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "s^-1", "B": "mol L^-1 s^-1", "C": "L mol^-1 s^-1", "D": "mol L" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "For a zero order reaction, the integrated rate equation is [R] = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "-kt + [Ro]", "B": "kt - [Ro]", "C": "[Ro] / kt", "D": "log kt" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Half-life of a first order reaction is ______ of initial concentration.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Dependent", "B": "Independent", "C": "Directly proportional", "D": "Inversely proportional" }, "answer": "B", "pyq": true },
-    { "id": 10, "question": "Half-life of a first order reaction is calculated by t1/2 = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "0.693 / k", "B": "k / 0.693", "C": "[Ro] / 2k", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Half-life of a zero order reaction is given by t1/2 = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "0.693 / k", "B": "[Ro] / 2k", "C": "2k / [Ro]", "D": "1 / k[Ro]" }, "answer": "B", "pyq": true },
-    { "id": 12, "question": "Arrhenius equation is expressed as k = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "A e^(-Ea/RT)", "B": "A e^(Ea/RT)", "C": "Ea e^(-RT/A)", "D": "log A" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "With increase in temperature by 10 degrees, the rate constant of a reaction generally ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Doubles", "B": "Decreases", "C": "Halves", "D": "Stays same" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "The minimum extra energy required by reactant molecules to form an activated complex is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Threshold energy", "B": "Activation energy (Ea)", "C": "Potential energy", "D": "Kinetic energy" }, "answer": "B", "pyq": true },
-    { "id": 15, "question": "Threshold energy = Potential energy + ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Activation energy", "B": "Heat of reaction", "C": "Binding energy", "D": "Work" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "A catalyst increases the rate of reaction by ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lowering Activation Energy", "B": "Increasing Activation Energy", "C": "Increasing threshold", "D": "Changing \u0394H" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "Collision frequency is the number of collisions per ______ per ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Second, Unit volume", "B": "Gram, Second", "C": "Mole, Litre", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Effective collisions must satisfy two criteria: Energy factor and ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Orientation factor (P)", "B": "Volume factor", "C": "Density factor", "D": "Mass" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Pseudo first order reaction is a reaction which is not first order actually but behaves like one under certain conditions.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Hydrolysis of Cane sugar (inversion) is an example of ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero order", "B": "Pseudo first order", "C": "Second order", "D": "Third order" }, "answer": "B", "pyq": true },
-    { "id": 21, "question": "Decomposition of HI on Gold surface is an example of ______ reaction.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "First order", "B": "Second order", "C": "Zero order", "D": "Third order" }, "answer": "C", "pyq": true },
-    { "id": 22, "question": "Integrated rate law for first order: k = (2.303 / t) log ([Ro] / [R]).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "The plot of log k vs 1/T is a straight line with slope ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "-Ea / 2.303 R", "B": "Ea / R", "C": "A / RT", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "For a first order reaction, if concentration of reactant is doubled, the half-life period ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Doubles", "B": "Remains same", "C": "Halves", "D": "Triples" }, "answer": "B", "pyq": true },
-    { "id": 25, "question": "Unit of rate constant (k) for a second order reaction is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "L mol^-1 s^-1", "B": "s^-1", "C": "mol L^-1 s^-1", "D": "L^2 mol^-2 s^-1" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Molecularity can never be zero or a fraction.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Elementary reactions occur in ______ step while complex reactions occur in ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Single, Multiple", "B": "Multiple, Single", "C": "Fast, Slow", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "For a complex reaction, the overall rate is determined by the ______ step.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Fastest", "B": "Slowest (Rate Determining Step)", "C": "Intermediate", "D": "Initial" }, "answer": "B", "pyq": true },
-    { "id": 29, "question": "A substance that inhibits the rate of reaction is called a ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Promoter", "B": "Inhibitor / Negative Catalyst", "C": "Co-agent", "D": "Buffer" }, "answer": "B", "pyq": true },
-    { "id": 30, "question": "A first order reaction takes 40 min for 30% decomposition. Calculate t1/2 approximately.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "77.7 min", "B": "40 min", "C": "10 min", "D": "120 min" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "Which of the following increases with temperature for a reaction?", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Activation Energy", "B": "Rate Constant (k)", "C": "Molecularity", "D": "Entropy of liquid" }, "answer": "B", "pyq": false },
-    { "id": 32, "question": "The time required for 99% completion of first order reaction is ______ times its half-life.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "2", "B": "6.64", "C": "10", "D": "3.32" }, "answer": "B", "pyq": false },
-    { "id": 33, "question": "The time required for 90% completion of first order reaction is ______ times its half-life.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "3.32", "B": "2", "C": "10", "D": "1" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Rate = k[A]^x[B]^y. If x=1, y=0, doubling [B] ______ the rate.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Doubles", "B": "Increases 4 times", "C": "Does not change", "D": "Halves" }, "answer": "C", "pyq": false },
-    { "id": 35, "question": "Instantaneous rate is measured at a specific moment of time.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "0": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "The reaction 2N2O5 \u2192 4NO2 + O2 is ______ order.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero", "B": "First", "C": "Second", "D": "Complex" }, "answer": "B", "pyq": false },
-    { "id": 37, "question": "Which of the following is true for zero order reaction?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Rate is constant", "B": "Half life depends on initial concentration", "C": "Both A and B", "D": "None" }, "answer": "C", "pyq": false },
-    { "id": 38, "question": "Rate of reaction ______ as concentration of reactant decreases.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increases", "B": "Decreases", "C": "Remains same", "D": "Varies exponentially" }, "answer": "B", "pyq": false },
-    { "id": 39, "question": "Radioactive decay is a ______ process.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero order", "B": "First order", "C": "Second order", "D": "Non-kinetic" }, "answer": "B", "pyq": false },
-    { "id": 40, "question": "Pre-exponential factor (A) in Arrhenius equation is also called ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Activation factor", "B": "Frequency factor", "C": "Rate parameter", "D": "Threshold" }, "answer": "B", "pyq": false },
-    { "id": 41, "question": "For an endothermic reaction, Activation energy for forward reaction is ______ than backward reaction.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Greater", "B": "Lesser", "C": "Equal", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "The species formed between reactants and products which has short life and high energy is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Catalyst", "B": "Activated complex", "C": "Product", "D": "Substrate" }, "answer": "B", "pyq": false },
-    { "id": 43, "question": "Collision theory is primarily applicable to ______ reactions.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Gaseous bimolecular", "B": "Solid trimolecular", "C": "Liquid polymolecular", "D": "Metabolic" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "1,3-buta...? No. Replaced: Photochemical reactions (H2 + Cl2 \u2192 2HCl in light) are ______ order.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero", "B": "First", "C": "Second", "D": "Variable" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "The rate constant of a reaction is 2 x 10^-2 s^-1. The order is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero", "B": "First (based on units s^-1)", "C": "Second", "D": "Third" }, "answer": "B", "pyq": false },
-    { "id": 46, "question": "Relation for t1/2 of n-th order reaction: t1/2 \u221d 1 / [Ro]^(n-1).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "A catalyst does not shift the equilibrium position.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Acid catalyzed hydrolysis of ester is ______ order.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "First", "B": "Pseudo first order", "C": "Second", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 49, "question": "Order of reaction can be determined experimentally only.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Rate constant 'k' increases with increase in temperature.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Slope of plot [R] vs t for zero order is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "k", "B": "-k", "C": "Ea / R", "D": "A" }, "answer": "B", "pyq": false },
-    { "id": 52, "question": "Slope of plot ln[R] vs t for first order is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "k", "B": "-k", "C": "2.303 / k", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 53, "question": "Initial rate method is used to find order of reaction.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Energy profile diagram: Peak corresponds to ______ state.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Transition state / Activated complex", "B": "Intermediate", "C": "Reactant", "D": "Product" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "The Arrhenius factor (A) has the same units as ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Rate Constant (k)", "B": "Activation Energy", "C": "Temperature", "D": "Rate" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Collision frequency (Z) is ______ to temperature.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Directly proportional to \u221aT", "B": "Inversely proportional", "C": "No relation", "D": "Constant" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Number of effective collisions is much smaller than total collisions.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Unit of rate constant (k) for third order reaction is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "L^2 mol^-2 s^-1", "B": "L mol^-1 s^-1", "C": "s^-1", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Integrated rate law for decomposition of gaseous N2O5? Replaced: For 1st order, concentration [R] = [Ro] e^(-kt).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Integrated rate equation for n-th order? Replaced: k = [1 / (n-1)t] * [1/[R]^(n-1) - 1/[Ro]^(n-1)].", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "The rate constant of a reaction at 300K is k. At 310K, it is 2k. \u0394H is ______ than Ea.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Greater", "B": "Lesser", "C": "No direct rule", "D": "Equal" }, "answer": "C", "pyq": false },
-    { "id": 62, "question": "Shelf life of medicines is determined by kinetic studies.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Slowest step is the rate determining step.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "A substance with high Activation Energy is ______ at room temperature.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Stable / Unreactive", "B": "Highly reactive", "C": "Gaseous", "D": "Liquid" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "Integrated equation for decomposition of NH3 on Pt at high pressure: Rate = k. This is zero order because surface is saturated.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "Unit of rate of disappearance of reactant is same as unit of rate of appearance of product.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Effect of pressure on rate of gaseous reaction? doubling P ______ rate for zero order.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Doubles", "B": "Remains same", "C": "Quadruples", "D": "Halves" }, "answer": "B", "pyq": false },
-    { "id": 68, "question": "Doubling P doubles concentration. For 1st order, rate ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Doubles", "B": "Constant", "C": "Halves", "D": "Drops" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Integrated equation for decomposition of H2O2 is first order.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Kinetics depends on the path of reaction.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "For a reaction A \u2192 B, [A] decreases linearly with time. The order is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero", "B": "First", "C": "Second", "D": "Exponential" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "For a reaction A \u2192 B, log[A] decreases linearly with time. The order is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero", "B": "First", "C": "Second", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 73, "question": "Initial concentration [Ro] = 1M, k = 0.01 s^-1 (1st order). t1/2 = ......?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "69.3 s", "B": "100 s", "C": "50 s", "D": "0.693 s" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "For First order reaction, time for 75% completion is ______ times t1/2.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "2", "B": "1.5", "C": "3", "D": "4" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "For First order reaction, time for 87.5% completion is ______ times t1/2.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "2", "B": "3", "C": "4", "D": "5" }, "answer": "B", "pyq": false },
-    { "id": 76, "question": "For First order reaction, time for 93.75% completion is ______ times t1/2.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "2", "B": "3", "C": "4", "D": "5" }, "answer": "C", "pyq": false },
-    { "id": 77, "question": "A catalyst lowers the energy of activation for ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Forward reaction", "B": "Backward reaction", "C": "Both (by equal amount)", "D": "Intermediate only" }, "answer": "C", "pyq": false },
-    { "id": 78, "question": "Ratio of rate constants at two different temperatures is called ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Temperature Coefficient", "B": "Arrhenius factor", "C": "Order", "D": "Van't Hoff factor" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Threshold energy is always higher than Activation Energy.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Kinetics cannot predict the feasibility of a reaction. This is done by ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Thermodynamics", "B": "Physics", "C": "Maths", "0": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 28,
+      "question": "The time required for 99% completion of first order reaction is ______ times its half-life.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "6.64",
+        "C": "10",
+        "D": "3.32"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 29,
+      "question": "The time required for 90% completion of first order reaction is ______ times its half-life.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3.32",
+        "B": "2",
+        "C": "10",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "Rate = k[A]^x[B]^y. If x=1, y=0, doubling [B] ______ the rate.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Doubles",
+        "B": "Increases 4 times",
+        "C": "Does not change",
+        "D": "Halves"
+      },
+      "answer": "C",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "The reaction 2N2O5 → 4NO2 + O2 is ______ order.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Zero",
+        "B": "First",
+        "C": "Second",
+        "D": "Complex"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Which of the following is true for zero order reaction?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Rate is constant",
+        "B": "Half life depends on initial concentration",
+        "C": "Both A and B",
+        "D": "None"
+      },
+      "answer": "C",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Radioactive decay is a ______ process.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Zero order",
+        "B": "First order",
+        "C": "Second order",
+        "D": "Non-kinetic"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Pre-exponential factor (A) in Arrhenius equation is also called ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Activation factor",
+        "B": "Frequency factor",
+        "C": "Rate parameter",
+        "D": "Threshold"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "For an endothermic reaction, Activation energy for forward reaction is ______ than backward reaction.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Greater",
+        "B": "Lesser",
+        "C": "Equal",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "The species formed between reactants and products which has short life and high energy is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Catalyst",
+        "B": "Activated complex",
+        "C": "Product",
+        "D": "Substrate"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Collision theory is primarily applicable to ______ reactions.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Gaseous bimolecular",
+        "B": "Solid trimolecular",
+        "C": "Liquid polymolecular",
+        "D": "Metabolic"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "1,3-buta...? No. Replaced: Photochemical reactions (H2 + Cl2 → 2HCl in light) are ______ order.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Zero",
+        "B": "First",
+        "C": "Second",
+        "D": "Variable"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "The rate constant of a reaction is 2 x 10^-2 s^-1. The order is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Zero",
+        "B": "First (based on units s^-1)",
+        "C": "Second",
+        "D": "Third"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Relation for t1/2 of n-th order reaction: t1/2 ∝ 1 / [Ro]^(n-1).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Acid catalyzed hydrolysis of ester is ______ order.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "First",
+        "B": "Pseudo first order",
+        "C": "Second",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Slope of plot [R] vs t for zero order is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "k",
+        "B": "-k",
+        "C": "Ea / R",
+        "D": "A"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Slope of plot ln[R] vs t for first order is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "k",
+        "B": "-k",
+        "C": "2.303 / k",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "Initial rate method is used to find order of reaction.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "The Arrhenius factor (A) has the same units as ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Rate Constant (k)",
+        "B": "Activation Energy",
+        "C": "Temperature",
+        "D": "Rate"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Collision frequency (Z) is ______ to temperature.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Directly proportional to √T",
+        "B": "Inversely proportional",
+        "C": "No relation",
+        "D": "Constant"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Number of effective collisions is much smaller than total collisions.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Unit of rate constant (k) for third order reaction is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "L^2 mol^-2 s^-1",
+        "B": "L mol^-1 s^-1",
+        "C": "s^-1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Integrated rate law for decomposition of gaseous N2O5? Replaced: For 1st order, concentration [R] = [Ro] e^(-kt).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Integrated rate equation for n-th order? Replaced: k = [1 / (n-1)t] * [1/[R]^(n-1) - 1/[Ro]^(n-1)].",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "The rate constant of a reaction at 300K is k. At 310K, it is 2k. ΔH is ______ than Ea.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Greater",
+        "B": "Lesser",
+        "C": "No direct rule",
+        "D": "Equal"
+      },
+      "answer": "C",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "A substance with high Activation Energy is ______ at room temperature.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Stable / Unreactive",
+        "B": "Highly reactive",
+        "C": "Gaseous",
+        "D": "Liquid"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Integrated equation for decomposition of NH3 on Pt at high pressure: Rate = k. This is zero order because surface is saturated.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Effect of pressure on rate of gaseous reaction? doubling P ______ rate for zero order.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Doubles",
+        "B": "Remains same",
+        "C": "Quadruples",
+        "D": "Halves"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Doubling P doubles concentration. For 1st order, rate ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Doubles",
+        "B": "Constant",
+        "C": "Halves",
+        "D": "Drops"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "Integrated equation for decomposition of H2O2 is first order.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Kinetics depends on the path of reaction.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "For a reaction A → B, [A] decreases linearly with time. The order is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Zero",
+        "B": "First",
+        "C": "Second",
+        "D": "Exponential"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "For a reaction A → B, log[A] decreases linearly with time. The order is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Zero",
+        "B": "First",
+        "C": "Second",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Initial concentration [Ro] = 1M, k = 0.01 s^-1 (1st order). t1/2 = ......?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "69.3 s",
+        "B": "100 s",
+        "C": "50 s",
+        "D": "0.693 s"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "For First order reaction, time for 75% completion is ______ times t1/2.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "1.5",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "For First order reaction, time for 87.5% completion is ______ times t1/2.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "For First order reaction, time for 93.75% completion is ______ times t1/2.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "answer": "C",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "Ratio of rate constants at two different temperatures is called ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Temperature Coefficient",
+        "B": "Arrhenius factor",
+        "C": "Order",
+        "D": "Van't Hoff factor"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

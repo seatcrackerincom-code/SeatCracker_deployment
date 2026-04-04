@@ -1,0 +1,312 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "∫ [ dx / (x ln x) ] = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ln|ln x| + C",
+        "B": "(ln x)² / 2 + C",
+        "C": "1/x + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "∫ [ tan⁴x ] dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/3) tan³x - tan x + x + C",
+        "B": "(1/3) tan³x + tan x - x + C",
+        "C": "tan³x + x + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 3,
+      "question": "∫ [ sec⁴x ] dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "tan x + (1/3) tan³x + C",
+        "B": "tan x - (1/3) tan³x + C",
+        "C": "sec²x + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 4,
+      "question": "∫ [ sin³x ] dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/3) cos³x - cos x + C",
+        "B": "cos x - (1/3) cos³x + C",
+        "C": "-(3/4) cos x + (1/12) cos 3x + C",
+        "D": "A and C are both correct representations"
+      },
+      "answer": "D",
+      "pyq": false
+    },
+    {
+      "id": 5,
+      "question": "∫ sin x · sin 2x dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "−(2/3)cos³x + C",
+        "B": "(2/3)cos³x + C",
+        "C": "−cos x·cos 2x + C",
+        "D": "sin³x/3 + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 6,
+      "question": "∫ x^m (1-x)^n dx refers to Beta function, but indefinite integration form relies on ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Successive parts/reduction",
+        "B": "ILATE strictly",
+        "C": "Trig substitution directly",
+        "D": "Logarithmic diff"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 7,
+      "question": "∫ x/√(1 − x⁴) dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/2)arcsin(x²) + C",
+        "B": "arcsin(x²) + C",
+        "C": "(1/2)arctan(x²) + C",
+        "D": "arcsin(x) + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 8,
+      "question": "∫ [ (x + 3) / (x + 1)¹/² ] dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(2/3)(x+1)³/² + 4(x+1)¹/² + C",
+        "B": "(2/3)(x+1)³/² - 4(x+1)¹/² + C",
+        "C": "√(x+1) + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The integral of 1 / (1 + cos x) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "tan(x/2) + C",
+        "B": "cot(x/2) + C",
+        "C": "sec(x/2) + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "question": "∫ [ cos³x sin x ] dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-(1/4) cos⁴x + C",
+        "B": "(1/4) cos⁴x + C",
+        "C": "-(1/4) sin⁴x + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The integral of log x dx is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "x log x - x + C",
+        "B": "log x + C",
+        "C": "x log x + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 11
+    },
+    {
+      "question": "∫ e^x (sin x + cos x) dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "e^x sin x + C",
+        "B": "e^x cos x + C",
+        "C": "e^x tan x + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 12
+    },
+    {
+      "id": 13,
+      "question": "The substitution x = a sin²θ is suitable for the integral ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∫ √((a-x)/x) dx",
+        "B": "∫ √(a²-x²) dx",
+        "C": "∫ 1/(a²+x²) dx",
+        "D": "∫ 1/√(x-a) dx"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 14,
+      "question": "∫ eˣ(1/x − 1/x²) dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "eˣ/x + C",
+        "B": "−eˣ/x + C",
+        "C": "eˣ(1/x²) + C",
+        "D": "eˣ·ln x + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 15,
+      "question": "∫ [ dx / (5 + 4 cos x) ] = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(2/3) tan⁻¹((1/3) tan(x/2)) + C",
+        "B": "(2/3) tan⁻¹(3 tan(x/2)) + C",
+        "C": "ln|5 + 4 cos x| + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 16,
+      "question": "∫ 1/(1 + √x) dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2√x − 2ln(1+√x) + C",
+        "B": "2√x + 2ln(1+√x) + C",
+        "C": "ln(1+√x) + C",
+        "D": "√x − ln(1+√x) + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 17,
+      "question": "∫ (log x)² dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x[(log x)² − 2 log x + 2] + C",
+        "B": "x(log x)² + C",
+        "C": "2 log x/x + C",
+        "D": "x(log x)² − 2x log x + C"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 18,
+      "question": "Find ∫ [ (x² + 1) / (x⁴ + 1) ] dx.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/√2) tan⁻¹((x - 1/x)/√2) + C",
+        "B": "(1/√2) tan⁻¹((x + 1/x)/√2) + C",
+        "C": "tan⁻¹(x²) + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 19,
+      "question": "∫ [ x cos x ] dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x sin x + cos x + C",
+        "B": "x sin x - cos x + C",
+        "C": "sin x + C",
+        "D": "x² cos x + C"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 20,
+      "question": "The value of ∫ [ dx / (x² + 2x + 2) ] is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "tan⁻¹(x+1) + C",
+        "B": "tan⁻¹(x) + C",
+        "C": "ln|x² + 2x + 2| + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
+}

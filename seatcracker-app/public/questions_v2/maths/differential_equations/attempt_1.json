@@ -1,0 +1,309 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "If we substitute y=vx, then dy/dx becomes ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "v + x(dv/dx)",
+        "B": "dv/dx",
+        "C": "x(dv/dx)",
+        "D": "v(dx/dv)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "For a Homogeneous Differential Equation dy/dx = f(y/x), we substitute y = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "vx",
+        "B": "x/v",
+        "C": "u+v",
+        "D": "v²"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 3,
+      "question": "An equation Mdx + Ndy = 0 is Exact if ∂M/∂y is equal to ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∂N/∂x",
+        "B": "-∂N/∂x",
+        "C": "∂M/∂x",
+        "D": "N"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 4,
+      "question": "Bernoulli's equation dy/dx + Py = Qyⁿ is solved by substituting ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y^(1-n) = v",
+        "B": "y^n = v",
+        "C": "x = v",
+        "D": "log y = v"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 5,
+      "question": "If (∂M/∂y - ∂N/∂x)/N = f(x), then integrating factor is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^(∫f(x) dx)",
+        "B": "e^(∫f(y) dy)",
+        "C": "f(x)",
+        "D": "∫M dx"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 6,
+      "question": "The degree of d²y/dx² = √(1 + (dy/dx)²) is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 7,
+      "question": "The general solution of dy/dx + Py = Q is y * (IF) = ______ + C.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∫ Q * (IF) dx",
+        "B": "Q",
+        "C": "P",
+        "D": "∫ P * (IF) dx"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 8,
+      "question": "The solution of an exact differential equation Mdx + Ndy = 0 involves ∫M dx (treating y as constant).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "Only if integrable",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 9,
+      "question": "Solution of dy/dx = y/x is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y = cx",
+        "B": "y = c/x",
+        "C": "y = x + c",
+        "D": "y = cx²"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 10,
+      "question": "The degree of differential equation sin(dy/dx) = y is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Not defined",
+        "B": "1",
+        "C": "0",
+        "D": "Infinite"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 11,
+      "question": "The integrating factor of dy/dx + y·cot x = 2cos x is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sin x",
+        "B": "cos x",
+        "C": "tan x",
+        "D": "cot x"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 12,
+      "question": "For the linear differential equation dy/dx + Py = Q, the Integrating Factor (IF) is:",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^(∫P dx)",
+        "B": "e^(∫Q dx)",
+        "C": "∫P dx",
+        "D": "e^(Px)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 13,
+      "question": "The differential equation of the family of lines y = mx + c (where m, c are arbitrary) has order:",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "0",
+        "D": "3"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 14,
+      "question": "Order and degree of (d²y/dx²)³ + (dy/dx)² + y = 0 is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(2, 3)",
+        "B": "(3, 2)",
+        "C": "(2, 2)",
+        "D": "(3, 3)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 15,
+      "question": "The solution of dy/dx = -x/y implies ydy = -xdx, which integrates to x² + y² = 2C. This family represents ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Circles centered at origin",
+        "B": "Parabolas",
+        "C": "Straight lines",
+        "D": "Hyperbolas"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 16,
+      "question": "dy/dx = e^(x+y), general solution is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^x + e^(−y) = c",
+        "B": "e^x − e^y = c",
+        "C": "e^(x−y) = c",
+        "D": "e^x + e^y = c"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 17,
+      "question": "The order of differential equation whose general solution has 'n' arbitrary constants is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n",
+        "B": "n+1",
+        "C": "n-1",
+        "D": "2n"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 18,
+      "question": "The integrating factor of dy/dx - (1/x)y = x² is:",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/x",
+        "B": "x",
+        "C": "e^x",
+        "D": "-ln x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 19,
+      "question": "If the tangential slope dy/dx = y/x, the curves satisfy xdy - ydx = 0, which are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Lines through origin",
+        "B": "Circles passing origin",
+        "C": "Parabolas",
+        "D": "Ellipses"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 20,
+      "question": "If the equation is dx/dy + P₁x = Q₁, the integrating factor is:",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^(∫P₁ dy)",
+        "B": "e^(∫P₁ dx)",
+        "C": "e^(∫Q₁ dx)",
+        "D": "∫P₁ dx"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
+}

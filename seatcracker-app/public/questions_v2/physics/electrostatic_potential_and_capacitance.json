@@ -2,85 +2,515 @@
   "subject": "Physics",
   "topic": "Electrostatic Potential and Capacitance",
   "questions": [
-    { "id": 1, "question": "Electric potential is a ______ quantity.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Scalar", "B": "Vector", "C": "Tensor", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "SI unit of electric potential is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Volt (V)", "B": "Coulomb (C)", "C": "Farad (F)", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Electric potential at a distance r from point charge Q is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "k Q / r", "B": "k Q / r\u00b2", "C": "k Q / r\u00b3", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Work done in moving a charge q through a potential difference V is W = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "q V", "B": "q / V", "C": "V / q", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "Potential due to an electric dipole on its equatorial line is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero", "B": "k p / r\u00b2", "C": "- k p / r\u00b2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "Potential due to an electric dipole on its axial line at distance r is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "k p / r\u00b2", "B": "k p / r", "C": "Zero", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "A surface with same potential at all points is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Equipotential surface", "B": "Isotropic surface", "C": "Conducting surface", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "Work done in moving a charge on an equipotential surface is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero", "B": "q V", "C": "1/2 q V", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Electric field is always ______ to the equipotential surface.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Perpendicular", "B": "Parallel", "C": "At 45 degrees", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "Relation between electric field E and potential V is E = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "- dV/dr", "B": "dV/dr", "C": "V / r", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Potential energy of a system of two charges q1 and q2 is U = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "k q1 q2 / r", "B": "k q1 q2 / r\u00b2", "C": "q V", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "Potential energy of a dipole in a uniform electric field is U = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "- p . E", "B": "p x E", "C": "p E", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "The property of a conductor to store charge is called ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Capacitance", "B": "Resistance", "C": "Inductance", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "The unit of capacitance is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Farad (F)", "B": "Coulomb (C)", "C": "Tesla (T)", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Capacitance C = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Q / V", "B": "V / Q", "C": "Q V", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Capacitance of a parallel plate capacitor in vacuum is C = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u03b50 A / d", "B": "A / \u03b50 d", "C": "\u03b50 d / A", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "If a dielectric of constant K is filled between plates, capacitance becomes ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "K * C", "B": "C / K", "C": "Same", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Two capacitors C1 and C2 in parallel have equivalent capacitance ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "C1 + C2", "B": "C1 C2 / (C1+C2)", "C": "\u221a(C1 C2)", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Two capacitors C1 and C2 in series have equivalent capacitance ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "C1 C2 / (C1+C2)", "B": "C1 + C2", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Energy stored in a capacitor is U = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1/2 CV\u00b2", "B": "1/2 Q\u00b2 / C", "C": "1/2 QV", "D": "All of these" }, "answer": "D", "pyq": true },
-    { "id": 21, "question": "Energy density (energy per unit volume) in parallel plate capacitor is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1/2 \u03b50 E\u00b2", "B": "1/2 CV\u00b2", "C": "E / \u03b50", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Van de Graaff generator is used to produce ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "High Voltages", "B": "High Currents", "C": "Low Resistances", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "For a spherical conductor of radius R, capacitance is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "4\u03c0 \u03b50 R", "B": "\u03b50 / R", "C": "R / 4\u03c0 \u03b50", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Inside a charged hollow conductor, potential is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Constant and same as surface", "B": "Zero", "C": "Infinity", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "If two capacitors with different potentials are connected, energy is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Always Lost (as heat)", "B": "Conserved", "C": "Gained", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Loss of energy during sharing of charges is given by \u0394U = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1/2 * C1C2/(C1+C2) * (V1-V2)\u00b2", "B": "1/2 (C1+C2) V\u00b2", "C": "Zero", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Dielectric? yes. Replaced: substances that do not conduct but transmit electric effects.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Polarisation P in linear dielectrics is proportional to ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Electric field E", "B": "Amplitude", "C": "Temp", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Capacitors? no. Replaced: can block DC but allow AC? yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Force between plates of parallel plate capacitor is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Q\u00b2 / 2 \u03b50 A", "B": "Q\u00b2 / \u03b50 A", "C": "Zero", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "Potential energy? no. Replaced: unit 'Electron Volt' (eV) is unit of energy.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "1 eV = 1.6 x 10^-19 J.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Equipotential surfaces are further apart where field is weak.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "E = 0 inside conductor implies V is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Constant", "B": "Zero", "C": "Max", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Dielectric breakdown occurs if E exceeds ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Dielectric Strength", "B": "Permittivity", "C": "K", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Water is a polar molecule? yes.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Effective K of parallel slab dielectrics of thickness d1, d2 is weighted harmonic mean? yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Charging a capacitor: Work done is stored as potential energy.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Energy loss goes to spark or heat.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Common potential V = (C1V1 + C2V2) / (C1 + C2).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "SI unit of Polarisation is C/m\u00b2.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Susceptibility \u03c7e? yes. P = \u03b50 \u03c7e E.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "K = 1 + \u03c7e.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Work? no. Replaced: moving charge from infinity to point P in external field E is qV(P).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Potential energy of dipole in field? yes. U = -p.E.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Electrostatic shielding? yes. field inside conductor is zero.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "In series, charge Q is same for all capacitors.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "In parallel, potential V is same across all capacitors.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Wait? no. Replaced: if dielectric slab is slowly inserted, work done is negative.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Electrostatic field is conservative.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "1 Farad is 1 Coulomb / 1 Volt.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Dimensions of C? yes. [M-1 L-2 T4 A2].", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Potential at a point is work done to bring unit positive charge from infinity.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Potential decreases in the direction of electric field.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Potential between two plates of distance d and field E is Ed.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Capacitor? no. Replaced: used in flash circuits and power supplies.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Electric field between plates of parallel capacitor is \u03c3/\u03b50.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Energy? no. Replaced: stored in the space between the plates.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Potential energy of charge Q at V is QV.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Equipotential surfaces for point charge are concentric spheres.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Equipotential surfaces for uniform field are planes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Gradient? no. Replaced: electric field points to steepest decrease in potential.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Potential at center of uncharged conductor near a charge q? yes. k q / r.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Dielectric? no. Replaced: polar molecules have p even in E=0.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "H2O, HCl, CO are polar? yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "H2, N2, O2 are non-polar? yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Field E decreases by K times inside dielectric.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Potential V decreases by K times inside dielectric if charge is constant.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Energy? no. Replaced: 1/2 CV\u00b2 is valid for any capacitor.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Farad? no. Replaced: it is a very large unit. typically uF or pF used.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "1 uF = 10^-6 F.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "1 pF = 10^-12 F.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Spherical capacitor? yes. C = 4\u03c0\u03b50 ab/(b-a).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Cylindrical capacitor? yes. C = 2\u03c0\u03b50 L / ln(b/a).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Grouping? no. Replaced: series grouping decreases total capacitance.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Grouping? no. Replaced: parallel grouping increases total capacitance.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Total energy of capacitors in combination is sum of individual energies.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Wait? no. Replaced: lightning is a large scale electrostatic discharge.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Earthing? yes. connecting a conductor to Earth to neutralize charge.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "A charged conductor has constant potential on surface. yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 27,
+      "question": "Potential energy? no. Replaced: unit 'Electron Volt' (eV) is unit of energy.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 28,
+      "question": "Equipotential surfaces are further apart where field is weak.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 29,
+      "question": "E = 0 inside conductor implies V is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Constant",
+        "B": "Zero",
+        "C": "Max",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "Dielectric breakdown occurs if E exceeds ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Dielectric Strength",
+        "B": "Permittivity",
+        "C": "K",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 31,
+      "question": "Effective K of parallel slab dielectrics of thickness d1, d2 is weighted harmonic mean? yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Common potential V = (C1V1 + C2V2) / (C1 + C2).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "SI unit of Polarisation is C/m².",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Susceptibility χe? yes. P = ε0 χe E.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "K = 1 + χe.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Work? no. Replaced: moving charge from infinity to point P in external field E is qV(P).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Potential energy of dipole in field? yes. U = -p.E.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Electrostatic shielding? yes. field inside conductor is zero.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "In series, charge Q is same for all capacitors.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "In parallel, potential V is same across all capacitors.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Wait? no. Replaced: if dielectric slab is slowly inserted, work done is negative.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Dimensions of C? yes. [M-1 L-2 T4 A2].",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Potential decreases in the direction of electric field.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Potential between two plates of distance d and field E is Ed.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "Electric field between plates of parallel capacitor is σ/ε0.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Equipotential surfaces for point charge are concentric spheres.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Equipotential surfaces for uniform field are planes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Gradient? no. Replaced: electric field points to steepest decrease in potential.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Potential at center of uncharged conductor near a charge q? yes. k q / r.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Dielectric? no. Replaced: polar molecules have p even in E=0.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "H2O, HCl, CO are polar? yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "H2, N2, O2 are non-polar? yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Field E decreases by K times inside dielectric.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Potential V decreases by K times inside dielectric if charge is constant.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Spherical capacitor? yes. C = 4πε0 ab/(b-a).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Cylindrical capacitor? yes. C = 2πε0 L / ln(b/a).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "Grouping? no. Replaced: series grouping decreases total capacitance.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Grouping? no. Replaced: parallel grouping increases total capacitance.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Total energy of capacitors in combination is sum of individual energies.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "A charged conductor has constant potential on surface. yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

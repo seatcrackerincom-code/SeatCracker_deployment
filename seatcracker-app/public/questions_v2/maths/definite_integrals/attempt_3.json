@@ -1,0 +1,311 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "∫₀^{π/2} [ sin⁸x ] dx = ______ (using Wallis).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "35π / 256",
+        "B": "7π / 128",
+        "C": "35 / 128",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "The value of ∫_0^1 x(1-x)^99 dx is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / (100 * 101)",
+        "B": "1/100",
+        "C": "1/101",
+        "D": "1/99"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 3,
+      "question": "∫₀^{π} [ sin³x ] dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4/3",
+        "B": "2/3",
+        "C": "0",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "∫₀¹ x(1-x)ⁿ dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1 / ((n+1)(n+2))",
+        "B": "1 / (n+1)²",
+        "C": "n!",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "question": "The property ∫₀^{2a} f(x) dx = 0 if f(2a-x) = -f(x) is primarily for ______ symmetry.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Rotational",
+        "B": "Reflection",
+        "C": "Translational",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 6,
+      "question": "∫₀^π (x · sin x)/(1 + cos²x) dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π²/4",
+        "B": "π/4",
+        "C": "π²/2",
+        "D": "π/2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 7,
+      "question": "∫₀^π x/(1 + sin x) dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π",
+        "B": "π²/2",
+        "C": "π/2",
+        "D": "2π"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 8,
+      "question": "For a continuous function f, ∫ₐᵇ f(x) dx + ∫ₚᵠ f(x) dx where [a,b] and [p,q] are adjacent is equivalent to ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∫ₐᵠ f(x) dx if b=p",
+        "B": "∫ₐᵇ⁺ᵠ f(x) dx",
+        "C": "2∫ f(x) dx",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 9,
+      "question": "Consider f(x) = ∫₀ˣ cos(t²) dt. Then f'(√π/2) is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/√2",
+        "B": "1/2",
+        "C": "0",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 10,
+      "question": "The limit lim_{n→∞} ∑_{r=1}ⁿ [ r³ / (r⁴ + n⁴) ] is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/4) ln 2",
+        "B": "ln 2",
+        "C": "1/2",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 11,
+      "question": "∫_0^π x sin x / (1 + cos²x) dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π²/4",
+        "B": "π/4",
+        "C": "π²/2",
+        "D": "π/2"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 12,
+      "question": "∫₀^(4a) √x/√(x) + √(4a−x) dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2a",
+        "B": "a",
+        "C": "4a",
+        "D": "3a"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 13,
+      "question": "∫₀^(π/4) sec⁴x dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4/3",
+        "B": "2/3",
+        "C": "1",
+        "D": "5/3"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The value of ∫₀ᶿ sin x dx / (sin x + cos x) from 0 to π/2 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "π / 4",
+        "B": "π / 2",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 14
+    },
+    {
+      "id": 15,
+      "question": "∫₀^{π/2} [ √tan x / (√tan x + √cot x) ] dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 16,
+      "question": "∫₀^∞ e^(−x²) dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√π/2",
+        "B": "√π",
+        "C": "π/2",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 17,
+      "question": "∫₀¹ [ x² (1-x) ] dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/12",
+        "B": "1/6",
+        "C": "1/4",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 18,
+      "question": "Derivative of ∫_0^x e^{t^2} dt with respect to x is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^{x^2}",
+        "B": "2x e^{x^2}",
+        "C": "e^x",
+        "D": "e^{2x}"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 19,
+      "question": "∫_0^a f(x) dx = ∫_0^a f(a-x) dx. This is applicable to sin x over [0, π/2] to get ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∫_0^π/2 cos x dx",
+        "B": "∫_0^π/2 sin x dx",
+        "C": "0",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 20,
+      "question": "∫₀^{π/4} tan x dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/2) ln 2",
+        "B": "ln 2",
+        "C": "1",
+        "D": "π/4"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Derivative of sec x is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sec x tan x",
+        "B": "sec² x",
+        "C": "tan x",
+        "D": "cosec x cot x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "Derivative of cosec x is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-cosec x cot x",
+        "B": "-cosec² x",
+        "C": "cosec x tan x",
+        "D": "cot² x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 3,
+      "question": "Find dy/dx if y = sin(x²).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2x cos(x²)",
+        "B": "cos(x²)",
+        "C": "2x sin(x²)",
+        "D": "2 cos x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 4,
+      "question": "Derivative of sin⁻¹ x is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / √(1 - x²)",
+        "B": "-1 / √(1 - x²)",
+        "C": "1 / (1 + x²)",
+        "D": "cos⁻¹ x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 5,
+      "question": "According to the product rule, d/dx [u(x)v(x)] = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "u v' + v u'",
+        "B": "u' v'",
+        "C": "u v' - v u'",
+        "D": "(u v' + v u') / v²"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 6,
+      "question": "Derivative of sin(cos x) is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-sin x cos(cos x)",
+        "B": "cos x cos(cos x)",
+        "C": "sin x sin(cos x)",
+        "D": "-cos x sin(sin x)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 7,
+      "question": "The derivative of log(log x) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / (x log x)",
+        "B": "1 / (log x)",
+        "C": "1 / x²",
+        "D": "log(1/x)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 8,
+      "question": "According to the quotient rule, d/dx [u/v] = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(v u' - u v') / v²",
+        "B": "(u v' - v u') / v²",
+        "C": "u' / v'",
+        "D": "u' v' / v²"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 9,
+      "question": "If y = xˣ, then dy/dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "xˣ(1 + ln x)",
+        "B": "x·xˣ⁻¹",
+        "C": "xˣ ln x",
+        "D": "xˣ/x"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 10,
+      "question": "d/dx [sin(x²)] = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2x cos(x²)",
+        "B": "cos(x²)",
+        "C": "2x sin(x²)",
+        "D": "cos(2x)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 11,
+      "question": "If x = a·cos³t, y = a·sin³t, then dy/dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "−tan t",
+        "B": "tan t",
+        "C": "−cot t",
+        "D": "cot t"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 12,
+      "question": "If x² + y² = a², then dy/dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-x/y",
+        "B": "x/y",
+        "C": "-y/x",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 13,
+      "question": "The derivative of cot x is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-cosec² x",
+        "B": "sec² x",
+        "C": "-cosec x cot x",
+        "D": "-tan x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 14,
+      "question": "The Chain Rule state d/dx [f(g(x))] = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "f'(g(x)) * g'(x)",
+        "B": "f'(x) * g'(x)",
+        "C": "f(g'(x))",
+        "D": "f'(g'(x))"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 15,
+      "question": "Derivative of aˣ is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "aˣ log a",
+        "B": "x aˣ⁻¹",
+        "C": "aˣ / log a",
+        "D": "aˣ"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 16,
+      "question": "If y = log(sin x), then dy/dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cot x",
+        "B": "tan x",
+        "C": "1 / sin x",
+        "D": "cos x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 17,
+      "question": "Derivative of tan⁻¹ x is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / (1 + x²)",
+        "B": "1 / √(1 - x²)",
+        "C": "sec² x",
+        "D": "cot⁻¹ x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 18,
+      "question": "If y = xˣ, then dy/dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "xˣ (1 + log x)",
+        "B": "x xˣ⁻¹",
+        "C": "xˣ log x",
+        "D": "x² log x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 19,
+      "question": "d/dx [tan⁻¹(x/√(1−x²))] = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/√(1−x²)",
+        "B": "x/(1−x²)",
+        "C": "1/(1+x²)",
+        "D": "√(1−x²)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 20,
+      "question": "d/dx [log(sin x)] = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cot x",
+        "B": "cos x",
+        "C": "−cot x",
+        "D": "tan x"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    }
+  ]
+}

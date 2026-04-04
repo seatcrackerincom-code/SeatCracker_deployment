@@ -2,85 +2,515 @@
   "subject": "Physics",
   "topic": "Ray Optics",
   "questions": [
-    { "id": 1, "question": "Reflection? yes. incident, reflected rays and normal lie in same plane.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "Angle of incidence i is ______ to angle of reflection r.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Equal", "B": "Greater", "C": "Less", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Mirror formula: 1/v + 1/u = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1/f", "B": "f", "C": "2/f", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Radius of curvature R is ______ times the focal length f.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Two", "B": "Half", "C": "Same", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "Magnification m for a mirror is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "-v / u", "B": "v / u", "C": "h / h\u2019", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "Snell\u2019s Law relates indices n1, n2 to angles i, r by ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "n1 sin i = n2 sin r", "B": "n1 cos i = n2 cos r", "C": "n1 / i = n2 / r", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "Real depth H and apparent depth h are related by refractive index n = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "H / h", "B": "h / H", "C": "H + h", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "Total Internal Reflection (TIR) occurs when light goes from ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Denser to Rarer medium", "B": "Rarer to Denser", "C": "Same medium", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "The critical angle ic is related to n by sin ic = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1 / n", "B": "n", "C": "n\u00b2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "Sparkling of diamond is primarily due to ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Total Internal Reflection", "B": "Refraction", "C": "Dispersion", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Optical fibers work on the principle of ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "TIR", "B": "Interference", "C": "Diffraction", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "Lens Maker\u2019s Formula: 1/f = (n - 1) * ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "(1/R1 - 1/R2)", "B": "(1/R1 + 1/R2)", "C": "R1 R2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "Thin lens formula is 1/v - 1/u = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1/f", "B": "-1/f", "C": "f", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Magnification m for a lens is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "v / u", "B": "-v / u", "C": "u / v", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Power of a lens P = ______ (in meters).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1 / f", "B": "f", "C": "-f", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Units of power of lens are ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Dioptre (D)", "B": "Meter", "C": "Watt", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "Equivalent focal length of two thin lenses in contact is 1/F = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1/f1 + 1/f2", "B": "f1 + f2", "C": "f1 - f2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Refraction through prism: A + D = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "i + e", "B": "i - e", "C": "r1 + r2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Refractive index n of prism at minimum deviation Dm is n = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "sin((A+Dm)/2) / sin(A/2)", "B": "sin(A/2) / sin(A+Dm)", "C": "tan A", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Dispersion of light? yes. splitting of white light into constituent colors.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "Which color has the maximum refractive index in glass?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Violet", "B": "Red", "C": "Yellow", "D": "Green" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Angle of minimum deviation for violet is ______ than that for red.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Greater", "B": "Smaller", "C": "Same", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Normal shift d = H * ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "(1 - 1/n)", "B": "1/n", "C": "(n - 1)", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Mirage is a result of ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Total Internal Reflection", "B": "Interference", "C": "Diffraction", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "Formation of rainbow is due to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Dispersion and Internal Reflection", "B": "Refraction only", "C": "Only TIR", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Magnifying power of simple microscope (at D) is M = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1 + D/f", "B": "D/f", "C": "f/D", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Magnifying power of compound microscope is roughly m0 * me.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Astronomical telescope magnifying power m = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "fo / fe", "B": "fe / fo", "C": "fo + fe", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "For a telescope, fo should be ______ to increase power.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Large", "B": "Small", "C": "Same", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Objective lens in microscope should have ______ focal length.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Small", "B": "Large", "C": "Zero", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "Shadow? no. Replaced: light travels in straight line is basis for Ray Optics.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Spherical mirrors: focal length is half of radius.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "A concave mirror forms real image of object at infinity at ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Focus", "B": "Pole", "C": "Center of curvature", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "If object is at center of curvature of concave mirror, image is at ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Center of curvature", "B": "Focus", "C": "Pole", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Convex mirrors always form ______ and virtual images.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Diminished", "B": "Enlarged", "C": "Inverted", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Wait? no. Replaced: light bends towards normal when goes from air to glass.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Critical angle for glass (n=1.5) is approx 42 degrees.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Optical fibers use cladding with ______ refractive index than core.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lower", "B": "Higher", "C": "Same", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Power sum P = P1 + P2.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Prism? no. Replaced: red light travels faster in glass than violet.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "Scattering of light? yes. red sky at sunset is due to scattering.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Rayleigh scattering intensity I \u221d ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1 / \u03bb^4", "B": "\u03bb^4", "C": "1 / \u03bb", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Blue color of sky is due to shorter \u03bb being scattered more.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Clouds appear white because large particles scatter all colors equally.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Refining? no. Replaced: for thin prism, deviation D = (n - 1) A.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "A lens of refractive index n1 in a liquid of refractive index n2: focal length changes? yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "If n1 = n2, the lens becomes invisible.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "If n2 > n1, a convex lens behaves as a ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Concave lens (Divergent)", "B": "More convex", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Angular magnification? yes. for telescope, it is ratio of angle subtended by object and image.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Lens? no. Replaced: biconvex lens radius R1, R2. focal length 1/f = (n-1)(1/R1 + 1/R2) with signs.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Focal length of plane mirror is infinite.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Focal length of plane glass plate is infinite.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Normal? no. Replaced: refractive index of vacuum is 1.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Cauchy\u2019s formula: n = A + B/\u03bb\u00b2.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Rainbow formation: primary rainbow undergoes one TIR.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Secondary rainbow undergoes two TIR.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Visual? no. Replaced: distance of distinct vision D approx 25cm.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Newton\u2019s formula for lens x1 x2 = f\u00b2.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "A lens formula? no. Replaced: sign convention for distance measured in direction of light is positive.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Concave? no. Replaced: it is used as shaving mirror for enlarged image.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Convex? no. Replaced: it is used as rear view mirror due to wide field of view.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Refractive index unit-less.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Mirage? yes. result of continuous refraction and finally TIR in heated air layers.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Telescope? no. Replaced: focal length of objective is large and eyepiece is small.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "In compound microscope both objective and eyepiece have small focal lengths.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "Resolving? no. Replaced: limit of resolution for eye is 1 minute.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Magnification of telescope in normal adjustment is fo/fe.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Length of telescope in normal adjustment L = fo + fe.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Displacement? no. Replaced: image distance decreases when u increases for convex lens? yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "If focal length of lens is 20cm, power is 5 D.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "If two lenses +5D and -3D are in contact, net power is +2D.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Combination of convex lens and concave lens of same focal length works as plane plate.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Reflection? yes. mirror doesn't disperse light. all colors follow same path.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Refraction disperses white light into spectrum.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Atmosphere refraction causes twinkling of stars.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Advanced sunrise and delayed sunset occur due to atmospheric refraction.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Optical? no. Replaced: total internal reflection depends only on refractive indices.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Numerical Aperture (NA) of optical fiber is related to light gathering power.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Spherical aberration can be reduced by using parabolic mirrors.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Chromatic aberration is absent in mirrors.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 31,
+      "question": "A concave mirror forms real image of object at infinity at ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Focus",
+        "B": "Pole",
+        "C": "Center of curvature",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "If object is at center of curvature of concave mirror, image is at ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Center of curvature",
+        "B": "Focus",
+        "C": "Pole",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Wait? no. Replaced: light bends towards normal when goes from air to glass.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Critical angle for glass (n=1.5) is approx 42 degrees.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Optical fibers use cladding with ______ refractive index than core.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Lower",
+        "B": "Higher",
+        "C": "Same",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Prism? no. Replaced: red light travels faster in glass than violet.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Rayleigh scattering intensity I ∝ ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / λ^4",
+        "B": "λ^4",
+        "C": "1 / λ",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "Clouds appear white because large particles scatter all colors equally.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Refining? no. Replaced: for thin prism, deviation D = (n - 1) A.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "A lens of refractive index n1 in a liquid of refractive index n2: focal length changes? yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "If n1 = n2, the lens becomes invisible.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "If n2 > n1, a convex lens behaves as a ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Concave lens (Divergent)",
+        "B": "More convex",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Angular magnification? yes. for telescope, it is ratio of angle subtended by object and image.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Lens? no. Replaced: biconvex lens radius R1, R2. focal length 1/f = (n-1)(1/R1 + 1/R2) with signs.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Cauchy’s formula: n = A + B/λ².",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Rainbow formation: primary rainbow undergoes one TIR.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Secondary rainbow undergoes two TIR.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Newton’s formula for lens x1 x2 = f².",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "A lens formula? no. Replaced: sign convention for distance measured in direction of light is positive.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Mirage? yes. result of continuous refraction and finally TIR in heated air layers.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Telescope? no. Replaced: focal length of objective is large and eyepiece is small.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "In compound microscope both objective and eyepiece have small focal lengths.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Resolving? no. Replaced: limit of resolution for eye is 1 minute.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Magnification of telescope in normal adjustment is fo/fe.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Length of telescope in normal adjustment L = fo + fe.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "Displacement? no. Replaced: image distance decreases when u increases for convex lens? yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "If two lenses +5D and -3D are in contact, net power is +2D.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Combination of convex lens and concave lens of same focal length works as plane plate.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Reflection? yes. mirror doesn't disperse light. all colors follow same path.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Advanced sunrise and delayed sunset occur due to atmospheric refraction.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 73,
+      "question": "Optical? no. Replaced: total internal reflection depends only on refractive indices.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "Numerical Aperture (NA) of optical fiber is related to light gathering power.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "Spherical aberration can be reduced by using parabolic mirrors.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 76,
+      "question": "Chromatic aberration is absent in mirrors.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

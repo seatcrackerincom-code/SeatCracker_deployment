@@ -1,0 +1,299 @@
+{
+  "questions": [
+    {
+      "question": "Area between y = sin x and x-axis for x ∈ [0, π] is?",
+      "difficulty": "medium",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "π",
+        "D": "0"
+      },
+      "answer": "A",
+      "tag": "pyq",
+      "pyq": true,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "question": "If the curve y = f(x) crosses the x-axis at x = c (a < c < b), to find the total area, the integral must be broken into ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|∫ from a to c f(x)dx| + |∫ from c to b f(x)dx|",
+        "B": "∫ from a to b f(x)dx directly",
+        "C": "∫ from a to b |f(x)|dx",
+        "D": "Both A and C are correct formulations"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 3,
+      "question": "The area bounded by y = x² and the line y = mx is calculated by ∫ (mx - x²) dx from x=0 to x=m. The result is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "m³ / 6",
+        "B": "m² / 2",
+        "C": "m³ / 3",
+        "D": "m² / 6"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Area of ellipse x²/a² + y²/b² = 1 is?",
+      "difficulty": "medium",
+      "options": {
+        "A": "πab",
+        "B": "π(a+b)",
+        "C": "πa²b",
+        "D": "2πab"
+      },
+      "answer": "A",
+      "tag": "pyq",
+      "pyq": true,
+      "id": 4
+    },
+    {
+      "id": 5,
+      "question": "The area enclosed by one arch of the cycloid x = a(θ - sin θ), y = a(1 - cos θ) and the x-axis is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3πa²",
+        "B": "2πa²",
+        "C": "πa²",
+        "D": "4πa²"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 6,
+      "question": "Area of region bound by y = cos x and y = sin x from x = 0 to x = π/4 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√2 - 1",
+        "B": "√2 + 1",
+        "C": "2",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 7,
+      "question": "The area of the region bounded by an ellipse x²/a² + y²/b² = 1 is given by ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "πab",
+        "B": "πa²b²",
+        "C": "π(a+b)",
+        "D": "4ab"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Area bounded by y = x² and y = x is?",
+      "difficulty": "medium",
+      "options": {
+        "A": "1/6",
+        "B": "1/3",
+        "C": "1/2",
+        "D": "1/4"
+      },
+      "answer": "A",
+      "tag": "pyq",
+      "pyq": true,
+      "id": 8
+    },
+    {
+      "id": 9,
+      "question": "If limits of integration are specified implicitly by absolute value functions like |x| + |y| = 1, the curve encloses a shape of a ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Square (diamond)",
+        "B": "Circle",
+        "C": "Ellipse",
+        "D": "Hyperbola"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 10,
+      "question": "The area enclosed by the astroid x^(2/3) + y^(2/3) = a^(2/3) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3πa² / 8",
+        "B": "πa² / 8",
+        "C": "3πa²",
+        "D": "a²"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 11,
+      "question": "The integral ∫ from 0 to a of √(a² - x²) dx geometrically represents ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Area of a quarter circle of radius a (πa²/4)",
+        "B": "Area of a semicircle",
+        "C": "Area of a full circle",
+        "D": "Volume of a sphere"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 12,
+      "question": "The area enclosed by the parabola y² = 4ax and its latus rectum (x = a) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "8a² / 3",
+        "B": "4a² / 3",
+        "C": "2a² / 3",
+        "D": "a² / 3"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Area bounded by y = eˣ, y = e⁻ˣ and x = 1 is?",
+      "difficulty": "hard",
+      "options": {
+        "A": "e + 1/e − 2",
+        "B": "e − 1/e",
+        "C": "e + 1/e",
+        "D": "e − 2 + 1/e"
+      },
+      "answer": "A",
+      "tag": "pyq",
+      "pyq": true,
+      "id": 13
+    },
+    {
+      "question": "Area enclosed by circle x²+y²=a² is?",
+      "difficulty": "medium",
+      "options": {
+        "A": "πa²",
+        "B": "2πa",
+        "C": "4πa²",
+        "D": "πa²/2"
+      },
+      "answer": "A",
+      "tag": "pyq",
+      "pyq": true,
+      "id": 14
+    },
+    {
+      "id": 15,
+      "question": "The area bounded by a curve x = g(y), the y-axis, and abscissae y = c and y = d is given by ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∫ from c to d g(y) dy",
+        "B": "∫ from c to d g(x) dx",
+        "C": "∫ from c to d g'(y) dy",
+        "D": "g(d) - g(c)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 16,
+      "question": "The integral ∫ from 0 to a of (b/a)√(a² - x²) dx geometrically represents ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Area of one quadrant of an ellipse (πab/4)",
+        "B": "Area of a triangle",
+        "C": "Area of a parabola sector",
+        "D": "Area of full ellipse"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 17,
+      "question": "The area enclosed by the graph |x| + |y| = a is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2a²",
+        "B": "4a²",
+        "C": "a²",
+        "D": "a² / 2"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 18,
+      "question": "The area enclosed between parabolas y² = 4ax and x² = 4by is mathematically calculated as ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "16ab / 3",
+        "B": "8ab / 3",
+        "C": "4ab / 3",
+        "D": "ab"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 19,
+      "question": "To find the area between two curves y = f(x) and y = g(x) where f(x) ≥ g(x) from x=a to x=b, the integral is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∫ from a to b [f(x) - g(x)] dx",
+        "B": "∫ from a to b [f(x) + g(x)] dx",
+        "C": "∫ from a to b [f(x) * g(x)] dx",
+        "D": "∫ from a to b [f(x) / g(x)] dx"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 20,
+      "question": "If f(x) ≤ 0 for all x in [a, b], then the definite integral ∫ f(x) dx from a to b yields a negative value. The actual geometric area is obtained by ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|∫ f(x) dx| or -∫ f(x) dx",
+        "B": "∫ f(x) dx directly",
+        "C": "Zero",
+        "D": "∫ |x| f(x) dx"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
+}

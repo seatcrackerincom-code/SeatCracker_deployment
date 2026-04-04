@@ -2,85 +2,545 @@
   "subject": "Physics",
   "topic": "Current Electricity",
   "questions": [
-    { "id": 1, "question": "Electric current is a ______ quantity.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Scalar", "B": "Vector", "C": "Tensor", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "The steady flow of 1 Coulomb of charge per second is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1 Ampere", "B": "1 Volt", "C": "1 Ohm", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "Ohm\u2019s Law is V = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "IR", "B": "I/R", "C": "R/I", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Resistance of a conductor is R = \u03c1 L / A. Where \u03c1 is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Resistivity / Specific Resistance", "B": "Conductivity", "C": "Density", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "The drift velocity of electrons in a conductor is proportional to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Electric field (E)", "B": "1/E", "C": "E\u00b2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "Relation between current I and drift velocity vd is I = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "n e A vd", "B": "n e vd", "C": "e A vd", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "The reciprocal of resistance is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Conductance", "B": "Conductivity", "C": "Resistivity", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "SI unit of resistivity is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ohm-meter", "B": "Ohm/meter", "C": "Siemens", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "For metals, resistance ______ with an increase in temperature.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increases", "B": "Decreases", "C": "Remains same", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "For semiconductors, resistance ______ with an increase in temperature.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Decreases", "B": "Increases", "C": "Remains same", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Color code of a resistor with bands Yellow, Violet, Brown, Gold represents ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "470 \u03a9 \u00b1 5%", "B": "47 \u03a9 \u00b1 10%", "C": "4.7 k\u03a9 \u00b1 5%", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "Kirchhoff\u2019s Junction Rule is based on the conservation of ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Charge", "B": "Energy", "C": "Momentum", "D": "Mass" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "Kirchhoff\u2019s Loop Rule is based on the conservation of ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Energy", "B": "Charge", "C": "Mass", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Balanced Wheatstone bridge condition is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "P/Q = R/S", "B": "P+Q = R+S", "C": "PR = QS", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "In a balanced metre bridge, balancing length l from left give R/S = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "l / (100 - l)", "B": "(100 - l) / l", "C": "l / 100", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "A potentiometer is used to measure ______ accurately because it draws no current from the circuit.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "EMF of a cell", "B": "Internal resistance", "C": "Potential difference", "D": "All of these" }, "answer": "D", "pyq": true },
-    { "id": 17, "question": "Comparison of EMFs of two cells using potentiometer gives V1/V2 = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "l1 / l2", "B": "l2 / l1", "C": "l1 + l2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "The internal resistance r of a cell is r = R * ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "(l1/l2) - 1", "B": "(l2/l1) - 1", "C": "l1 + l2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Power dissipated in a resistor R with current I is P = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "I\u00b2R", "B": "V\u00b2/R", "C": "VI", "D": "All of these" }, "answer": "D", "pyq": true },
-    { "id": 20, "question": "Electric heater wire is made of ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Nichrome", "B": "Copper", "C": "Tungsten", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "Bulb filament is made of ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Tungsten", "B": "Nichrome", "C": "Silver", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Drift velocity is of the order of ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "10^-4 m/s", "B": "10^8 m/s", "C": "1 m/s", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Mobile charge carriers in electrolytes are ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ions", "B": "Electrons", "C": "Holes", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Terminal voltage (V) of a cell of EMF E discharging with current I and internal resistance r is V = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "E - Ir", "B": "E + Ir", "C": "E / r", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "During charging of a cell, terminal voltage V = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "E + Ir", "B": "E - Ir", "C": "E / r", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "If n identical cells of EMF E and internal resistance r are in series, net EMF and internal resistance are ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "nE, nr", "B": "E, r/n", "C": "nE, r/n", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "If n identical cells are in parallel, net EMF and resistance are ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "E, r/n", "B": "nE, nr", "C": "nE, r/n", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "For maximum power from a battery, internal resistance r must be ______ external resistance R.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Equal to", "B": "Greater than", "C": "Less than", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Material of potentiometer wire should have ______ resistivity and low temperature coefficient.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "High", "B": "Low", "C": "Moderate", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Potentiometer works on the principle that V \u221d ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "L (length)", "B": "I (current)", "C": "R", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "Conductivity \u03c3 = 1 / \u03c1.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Current density J = I / A.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Microscopic form of Ohm's Law is J = \u03c3 E.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Mobility \u03bc = vd / E.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Temperature coefficient of resistance \u03b1 = (R2-R1) / R1(t2-t1).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Carbon resistors? yes. compact, inexpensive and versatile.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "BB ROY of Great Britain had Very Good Wife. B represents ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Black, Brown, Blue", "B": "Blue only", "C": "Black only", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Third band in code represents the ______ multiplier.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Decimal / Power of 10", "B": "Sum", "C": "Error", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Fourth band code? No band means ______ tolerance.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u00b1 20%", "B": "\u00b1 5%", "C": "\u00b1 10%", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Two resistors R1 and R2 in series have equivalent resistance R1 + R2.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "Two resistors in parallel have equivalent resistance R1 R2 / (R1+R2).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Resistivity? no. Replaced: it depends on nature of material, not on dimensions L or A.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Resistance? no. Replaced: it depends on nature of material AND dimensions L, A.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Superconductivity? yes. resistance becomes zero below a certain temperature.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Wait? no. Replaced: EMF of cell is potential difference when no current is drawn.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Internal resistance is due to the electrolyte inside the cell.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Sign convention: potential increases when going against current in resistor.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Potential drops when going in the direction of current in resistor.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Metre bridge works on the principle of balanced Wheatstone bridge.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Sensitivity of potentiometer is increased by increasing length of wire.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "High sensitivity means low potential gradient.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Potential gradient \u03d5 = V / L.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "The EMF of the driver cell in potentiometer must be greater than EMF of test cell.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Metre bridge? no. Replaced: why is it called Metre bridge? yes. length of wire is 1 metre.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Bridge? no. Replaced: null point occurs when galvanometer shows zero deflection.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "Heating? yes. Heat H = VIt.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "1 Watt = 1 Joule / 1 Second.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "A fuse is a safety device which has ______ melting point.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Low", "B": "High", "C": "Zero", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Resistance of ideal ammeter is zero.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Resistance of ideal voltmeter is infinite.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Ohmic? yes. conductors which obey Ohm's Law.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Non-ohmic? yes. conductors like p-n junction which do not follow straight line V-I graph.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Current density is a vector.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Resistivity of Alloy Manganin is almost independent of temperature.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "Alloys like Manganin and Constantan are used for standard resistors.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "Conductivity SI unit is Ohm^-1 m^-1 or S/m.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Drift? no. Replaced: relaxation time \u03c4 decreases with increase in temperature.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "In series combination, current is same through all resistors.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "In parallel combination, potential difference is same across all resistors.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "If two cells of E1, r1 and E2, r2 are in parallel, net E = (E1r2 + E2r1) / (r1+r2).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Cells in series give maximum current if external R is much greater than internal r.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Cells in parallel give maximum current if internal r is much greater than external R.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Internal resistance? no. Replaced: increases as the cell gets older.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Superconductors? no. Replaced: resistivity of some materials drops to zero at critical temperature.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Drift? no. Replaced: it is very small compared to random thermal speed of electrons.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Kirchhoff? yes. junction rule follows from conservation of charge.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Electromotive Force (EMF) is not a force, it is energy per unit charge.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Thermistor? yes. resistance changes sharply with temperature.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Electrical energy is P x t.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "Ohm-cm is a unit of resistivity.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 28,
+      "question": "Microscopic form of Ohm's Law is J = σ E.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 29,
+      "question": "Mobility μ = vd / E.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "Temperature coefficient of resistance α = (R2-R1) / R1(t2-t1).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "BB ROY of Great Britain had Very Good Wife. B represents ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Black, Brown, Blue",
+        "B": "Blue only",
+        "C": "Black only",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Third band in code represents the ______ multiplier.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Decimal / Power of 10",
+        "B": "Sum",
+        "C": "Error",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Fourth band code? No band means ______ tolerance.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "± 20%",
+        "B": "± 5%",
+        "C": "± 10%",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Two resistors in parallel have equivalent resistance R1 R2 / (R1+R2).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Resistivity? no. Replaced: it depends on nature of material, not on dimensions L or A.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Resistance? no. Replaced: it depends on nature of material AND dimensions L, A.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Superconductivity? yes. resistance becomes zero below a certain temperature.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "Wait? no. Replaced: EMF of cell is potential difference when no current is drawn.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Sign convention: potential increases when going against current in resistor.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Potential drops when going in the direction of current in resistor.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Metre bridge works on the principle of balanced Wheatstone bridge.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "Sensitivity of potentiometer is increased by increasing length of wire.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "High sensitivity means low potential gradient.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Potential gradient ϕ = V / L.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "The EMF of the driver cell in potentiometer must be greater than EMF of test cell.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Heating? yes. Heat H = VIt.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "A fuse is a safety device which has ______ melting point.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Low",
+        "B": "High",
+        "C": "Zero",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Resistance of ideal ammeter is zero.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Resistance of ideal voltmeter is infinite.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Non-ohmic? yes. conductors like p-n junction which do not follow straight line V-I graph.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Current density is a vector.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "Resistivity of Alloy Manganin is almost independent of temperature.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Alloys like Manganin and Constantan are used for standard resistors.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Conductivity SI unit is Ohm^-1 m^-1 or S/m.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Drift? no. Replaced: relaxation time τ decreases with increase in temperature.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "If two cells of E1, r1 and E2, r2 are in parallel, net E = (E1r2 + E2r1) / (r1+r2).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "Cells in series give maximum current if external R is much greater than internal r.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Cells in parallel give maximum current if internal r is much greater than external R.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Internal resistance? no. Replaced: increases as the cell gets older.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Superconductors? no. Replaced: resistivity of some materials drops to zero at critical temperature.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Drift? no. Replaced: it is very small compared to random thermal speed of electrons.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "Electromotive Force (EMF) is not a force, it is energy per unit charge.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Thermistor? yes. resistance changes sharply with temperature.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

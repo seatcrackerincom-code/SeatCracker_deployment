@@ -2,85 +2,515 @@
   "subject": "Physics",
   "topic": "Alternating Current",
   "questions": [
-    { "id": 1, "question": "Alternating Current (AC) is current which changes ______ periodically.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Magnitude and Direction", "B": "Magnitude only", "C": "Direction only", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "Mean value of AC over first half cycle is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "2 I0 / \u03c0", "B": "I0 / \u221a2", "C": "I0", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "RMS value of AC is related to peak value I0 by Irms = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "I0 / \u221a2", "B": "I0 / 2", "C": "I0 \u221a2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "The phase difference between voltage and current across a pure resistor is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero", "B": "\u03c0 / 2", "C": "\u03c0", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "In a pure inductor, current ______ voltage by \u03c0/2.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Lags", "B": "Leads", "C": "In phase", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "In a pure capacitor, current ______ voltage by \u03c0/2.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Leads", "B": "Lags", "C": "In phase", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "Inductive reactance XL = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u03c9 L", "B": "1 / (\u03c9 L)", "C": "L / \u03c9", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "Capacitive reactance XC = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1 / (\u03c9 C)", "B": "\u03c9 C", "C": "C / \u03c9", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Impedance of LCR series circuit Z = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u221a[R\u00b2 + (XL - XC)\u00b2]", "B": "R + XL + XC", "C": "R - XL", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "Resonance occurs in LCR circuit when ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "XL = XC", "B": "XL = R", "C": "XC = R", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Resonant frequency fr = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1 / [2\u03c0 \u221a(LC)]", "B": "\u221a(LC) / 2\u03c0", "C": "L / C", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "Average power dissipated in LCR circuit Pav = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Vrms Irms cos \u03d5", "B": "Vrms Irms", "C": "I0\u00b2 R", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "Power factor of LCR circuit cos \u03d5 = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "R / Z", "B": "XL / Z", "C": "Z / R", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "At resonance, the power factor is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "1", "B": "0", "C": "0.5", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "A wattless current flows in a circuit if it is purely ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Inductive or Capacitive", "B": "Resistive", "C": "Mixed", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "The quality factor of LCR circuit Q = ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "(1 / R) * \u221a(L / C)", "B": "\u221a(L / C)", "C": "R / \u03c9L", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "L-C oscillations: energy is exchanged between ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Inductor and Capacitor", "B": "Resistor and Battery", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Frequency of L-C oscillations is f = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1 / [2\u03c0 \u221a(LC)]", "B": "\u221a(LC)", "C": "Inductive freq", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "Transformers convert AC from one voltage to another by using ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Mutual induction", "B": "Self induction", "C": "Rotation", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "Turns ratio in transformer: Vs / Vp = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Ns / Np", "B": "Np / Ns", "C": "Ip / Is", "D": "A and C" }, "answer": "D", "pyq": true },
-    { "id": 21, "question": "Efficiency of transformer \u03b7 = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Output Power / Input Power", "B": "Input / Output", "C": "Power loss", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Losses in transformer? yes. copper loss, iron loss, hysteresis loss.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Step-up transformer increases ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Voltage", "B": "Current", "C": "Power", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "Step-down transformer reduces ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Voltage", "B": "Frequency", "C": "Waveform", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "Wait? no. Replaced: transformer doesn't work on DC.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Phasor? yes. a rotating vector representing AC magnitude and phase.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Average value of AC over complete cycle is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero", "B": "I0", "C": "I0 / 2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "AC can be measured by ______ instruments.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Hot wire", "B": "Moving coil", "C": "Electrolytic", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "Moving coil meters show zero for AC because average is zero. True?", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Capacitor blocks DC. why? yes. because XC = infinity for f=0.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "AC frequency in India is 50 Hz.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Angular frequency \u03c9 = 2 \u03c0 f.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Wait? no. Replaced: impedance of pure resistor is resistance R.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Wait? no. Replaced: if f increases, XL increases.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Wait? no. Replaced: if f increases, XC decreases.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Power? no. Replaced: purely inductive circuit consumes no power.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Purely capacitive circuit consumes no power.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Wait? no. Replaced: resonant frequency is independent of R.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Sharpness of resonance? yes. increases with smaller R.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Bandwidth? yes. \u0394\u03c9 = R / L.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "RMS? no. Replaced: value indicated by domestic voltmeter (220V) is Vrms.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Peak? no. Replaced: peak voltage of 220V AC is about 311V.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 43, "question": "Skin effect? yes. AC flows on surface of conductor at high frequencies.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Transformer? no. Replaced: it works on principle of electromagnetic induction.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Iron core? yes. reduces leakage of magnetic flux.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "Laminated core? yes. to reduce eddy current loss.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Hysteresis loss? yes. occurs due to repeated magnetization.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Copper loss? yes. heat production in windings (I\u00b2R).", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "If transformer is 100% efficient, Pin = Pout.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Reactance? no. Replaced: unit of XL and XC is Ohm.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Wait? no. Replaced: current leads in RC and lags in RL.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Phasor diagrams help in adding AC components.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Wait? no. Replaced: average power is consumed only by Resistor.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Power factor range is 0 to 1.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Wait? no. Replaced: choke coil has high L and low R.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "In series LCR circuit, voltage across L and C are in opposite phase.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Wait? no. Replaced: if XL = XC, net voltage is voltage across R.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Quality factor depends on L/C ratio.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Parallel resonance circuit? yes. used as rejector circuit.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Wait? no. Replaced: in parallel resonance, impedance is maximum.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Ideal transformer has no iron or copper losses.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "Wait? no. Replaced: at very high f, XL behaves as open circuit and XC as short.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Wait? no. Replaced: RMS value is effective DC equivalent for heating.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Wait? no. Replaced: 220V AC is more dangerous than 220V DC because peak is higher.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "Capacitor? no. Replaced: capacitive reactance is infinite for zero frequency.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "Wait? no. Replaced: inductive reactance is zero for zero frequency.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 67, "question": "Mean value over whole cycle? yes. always zero for symmetrical wave.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "Wait? no. Replaced: average of sin\u00b2(\u03c9t) over cycle is 1/2.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "If AC is purely inductive, it can't be registered by domestic energy meter? yes if it was ideal.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Wattless current has phase difference of 90 degrees with voltage.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Wait? no. Replaced: Transformer oil is used for insulation and cooling.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Iron core in transformer is made of soft iron? yes (low hysteresis loss).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Auto-transformer uses a single winding. yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "Step up? no. Replaced: in step up, Is < Ip.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "Wait? no. Replaced: transformer doesn't change frequency.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Wait? no. Replaced: current in pure capacitor leads voltage.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Wait? no. Replaced: Z of RC circuit is \u221a(R\u00b2 + XC\u00b2).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "Wait? no. Replaced: Z of RL circuit is \u221a(R\u00b2 + XL\u00b2).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "Resonance? no. Replaced: at resonance, current is maximum for series LCR.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 80, "question": "AC: power transmission is easier with AC than DC using transformers.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 34,
+      "question": "Wait? no. Replaced: if f increases, XL increases.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Wait? no. Replaced: if f increases, XC decreases.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Power? no. Replaced: purely inductive circuit consumes no power.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 37,
+      "question": "Purely capacitive circuit consumes no power.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Wait? no. Replaced: resonant frequency is independent of R.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Sharpness of resonance? yes. increases with smaller R.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "Bandwidth? yes. Δω = R / L.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "RMS? no. Replaced: value indicated by domestic voltmeter (220V) is Vrms.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Peak? no. Replaced: peak voltage of 220V AC is about 311V.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Skin effect? yes. AC flows on surface of conductor at high frequencies.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "Laminated core? yes. to reduce eddy current loss.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Hysteresis loss? yes. occurs due to repeated magnetization.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Wait? no. Replaced: current leads in RC and lags in RL.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Wait? no. Replaced: average power is consumed only by Resistor.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Power factor range is 0 to 1.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Wait? no. Replaced: choke coil has high L and low R.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "In series LCR circuit, voltage across L and C are in opposite phase.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Wait? no. Replaced: if XL = XC, net voltage is voltage across R.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "Quality factor depends on L/C ratio.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "Parallel resonance circuit? yes. used as rejector circuit.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Wait? no. Replaced: in parallel resonance, impedance is maximum.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Wait? no. Replaced: at very high f, XL behaves as open circuit and XC as short.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "Wait? no. Replaced: RMS value is effective DC equivalent for heating.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "Wait? no. Replaced: 220V AC is more dangerous than 220V DC because peak is higher.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Wait? no. Replaced: average of sin²(ωt) over cycle is 1/2.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "If AC is purely inductive, it can't be registered by domestic energy meter? yes if it was ideal.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "Wattless current has phase difference of 90 degrees with voltage.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Iron core in transformer is made of soft iron? yes (low hysteresis loss).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 73,
+      "question": "Auto-transformer uses a single winding. yes.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "Step up? no. Replaced: in step up, Is < Ip.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 76,
+      "question": "Wait? no. Replaced: current in pure capacitor leads voltage.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 77,
+      "question": "Wait? no. Replaced: Z of RC circuit is √(R² + XC²).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 78,
+      "question": "Wait? no. Replaced: Z of RL circuit is √(R² + XL²).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 79,
+      "question": "Resonance? no. Replaced: at resonance, current is maximum for series LCR.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }

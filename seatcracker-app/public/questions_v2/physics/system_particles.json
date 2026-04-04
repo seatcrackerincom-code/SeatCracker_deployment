@@ -2,85 +2,605 @@
   "subject": "Physics",
   "topic": "System of Particles and Rotatory Motion",
   "questions": [
-    { "id": 1, "question": "The centre of mass of a system of particles does not depend on ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Internal forces", "B": "Masses of particles", "C": "Positions of particles", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 2, "question": "Two particles of mass 1 kg and 2 kg are located at positions (1,2) and (-1,3). The coordinates of centre of mass are ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "(-1/3, 8/3)", "B": "(1/3, 8/3)", "C": "(0, 5/2)", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 3, "question": "The motion of the centre of mass of a system is affected only by ______ forces.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "External", "B": "Internal", "C": "Magnetic", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 4, "question": "Vector product of two vectors A and B is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "AB sin\u03b8", "B": "AB cos\u03b8", "C": "AB tan\u03b8", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 5, "question": "The cross product of two parallel vectors is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero vector", "B": "Unit vector", "C": "Infinite", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 6, "question": "If force F acts on a particle at position r from the axis, the torque \u03c4 is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "r x F", "B": "r . F", "C": "F x r", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 7, "question": "The rate of change of angular momentum of a particle is equal to ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Torque", "B": "Force", "C": "Impulse", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 8, "question": "Angular momentum L is given by ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "r x p", "B": "r . p", "C": "p x r", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 9, "question": "Angular momentum is conserved if net ______ torque is zero.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "External", "B": "Internal", "C": "Total", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 10, "question": "The moment of inertia of a rigid body depends on ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Mass distribution / axis of rotation", "B": "Angular velocity", "C": "Torque", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 11, "question": "Moment of inertia (I) is also known as ______ inertia.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Rotational", "B": "Translational", "C": "Static", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 12, "question": "Moment of inertia of a ring of mass M and radius R about its central axis is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "MR\u00b2", "B": "1/2 MR\u00b2", "C": "2/5 MR\u00b2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 13, "question": "Moment of inertia of a disc about its central axis is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "1/2 MR\u00b2", "B": "MR\u00b2", "C": "2/3 MR\u00b2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 14, "question": "Theorem of perpendicular axes is applicable only to ______ bodies.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Planar (2D)", "B": "Spherical", "C": "Cylindrical", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 15, "question": "Theorem of parallel axes states I = Icm + ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Md\u00b2", "B": "Mv\u00b2", "C": "MR", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 16, "question": "Radius of gyration (k) is defined as ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u221a(I/M)", "B": "I/M", "C": "\u221a(M/I)", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 17, "question": "For pure rolling, the velocity of the point of contact in contact with the ground is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Zero", "B": "v", "C": "2v", "D": "\u03c9R" }, "answer": "A", "pyq": true },
-    { "id": 18, "question": "Total kinetic energy of a rolling body is sum of translational and ______ kinetic energies.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Rotational", "B": "Vibrational", "C": "Static", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 19, "question": "If a cylinder rolls down an inclined plane without slipping, its acceleration is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "(2/3) g sin\u03b8", "B": "g sin\u03b8", "C": "(1/2) g sin\u03b8", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 20, "question": "A solid sphere and a hollow sphere of same mass and radius roll down an inclined plane. Which one reaches the bottom first?", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Solid sphere (Lower MI)", "B": "Hollow sphere", "C": "Both together", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 21, "question": "Angular momentum of a body moving in a circle is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "mvr", "B": "mv/r", "C": "mr\u00b2v", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 22, "question": "Torque is a ______ quantity.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Vector", "B": "Scalar", "C": "Tensor", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 23, "question": "Unit of angular momentum is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "kg m\u00b2 s-1", "B": "kg m s-1", "C": "J s-2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 24, "question": "A dancer on ice-skates brings her hands closer to body to ______ angular velocity.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Increase (MI decreases)", "B": "Decrease", "C": "Maintain", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 25, "question": "Equation of rotational motion \u03c4 = I\u03b1 is analogous to Newton's second law ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "F = ma", "B": "p = mv", "C": "Work = Fd", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 26, "question": "Work done in rotational motion is W = ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "\u222b \u03c4 d\u03b8", "B": "\u03c4 \u03b8", "C": "\u03c4 / \u03b8", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 27, "question": "Relation between linear velocity v and angular velocity \u03c9 is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "v = \u03c9 x r", "B": "v = \u03c9 r", "C": "v = r / \u03c9", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 28, "question": "Centre of mass of a symmetrical body lies at its ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Geometrical centre", "B": "Boundary", "C": "Corner", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 29, "question": "If r is the vector from origin to point P, and F is the force, then Torque about origin is \u03c4 = ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "r x F", "B": "F x r", "C": "r . F", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 30, "question": "Moment of inertia of a thin rod of length L about an axis through its centre and perpendicular to length is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "ML\u00b2 / 12", "B": "ML\u00b2 / 3", "C": "ML\u00b2 / 2", "D": "None" }, "answer": "A", "pyq": true },
-    { "id": 31, "question": "CM? yes. Replaced: The center of mass of a system of particles follows a trajectory as if all mass was concentrated there.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 32, "question": "Moment of inertia of a solid cylinder of mass M and radius R about its own axis is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "MR\u00b2 / 2", "B": "MR\u00b2", "C": "MR\u00b2 / 4", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 33, "question": "Moment of inertia of a hollow cylinder of mass M and radius R about its own axis is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "MR\u00b2", "B": "MR\u00b2 / 2", "C": "2 MR\u00b2 / 3", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 34, "question": "Angular momentum is a ______ vector.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Axial", "B": "Polar", "C": "Zero", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 35, "question": "Ratio of rotational KE to total KE for a rolling disc is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "1/3", "B": "1/2", "C": "2/3", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 36, "question": "Ratio of rotational KE to total KE for a rolling solid sphere is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "2/7", "B": "2/5", "C": "5/7", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 37, "question": "Moment of inertia of a solid sphere about its diameter is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "2/5 MR\u00b2", "B": "2/3 MR\u00b2", "C": "MR\u00b2 / 2", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 38, "question": "Moment of inertia of a hollow sphere about its diameter is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "2/3 MR\u00b2", "B": "2/5 MR\u00b2", "C": "MR\u00b2", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 39, "question": "Equilibrium? yes. a rigid body is in mechanical equilibrium if both its linear and angular momentum are constant.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 40, "question": "Translational equilibrium? no. Replaced: net external force must be zero.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 41, "question": "Rotational equilibrium? no. Replaced: net external torque must be zero.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 42, "question": "Position of CM depends locally on frame of reference? no. it is a physical point.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 43, "question": "CM of Earth-Moon system lies ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Inside Earth", "B": "In space", "C": "Inside Moon", "D": "At center of Earth" }, "answer": "A", "pyq": false },
-    { "id": 44, "question": "Torque is zero if force and position vector are in same line.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 45, "question": "Couple? yes. two equal and opposite forces acting along different lines of action on a body.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 46, "question": "A couple produces ______ motion without translation.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "Purely rotational", "B": "Translational", "C": "Vibrational", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 47, "question": "Principle of Moments? yes. For a lever, load x load-arm = effort x effort-arm.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 48, "question": "Lever? yes. simplest machine based on rotational equilibrium.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 49, "question": "Mechanical advantage (MA) of a lever is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Effort arm / Load arm", "B": "Load arm / Effort arm", "C": "Effort / Load", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 50, "question": "Dimensions of torque are same as that of ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Work / Energy", "B": "Power", "C": "Force", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 51, "question": "Unit of rotational power is ______.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "Watt", "B": "Joule", "C": "Newton", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 52, "question": "Rotational power P = \u03c4 \u03c9.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 53, "question": "Angular acceleration \u03b1 = d\u03c9 / dt.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 54, "question": "Relation between linear acceleration 'a' and angular acceleration '\u03b1' is a = R\u03b1.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 55, "question": "Moment of inertia? no. Replaced: Moment of inertia is not always scalar in 3D? yes (tensor).", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 56, "question": "If a body is rotating with constant angular velocity, net torque must be zero.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 57, "question": "Radius of gyration of a disc about its central axis is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "R / \u221a2", "B": "R / 2", "C": "R", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 58, "question": "Radius of gyration of a ring about its central axis is ______.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "R", "B": "R / \u221a2", "C": "R / 2", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 59, "question": "Rolling? no. Replaced: Friction is essential to start pure rolling from rest by a force.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 60, "question": "Static friction? no. Replaced: Work done by static friction in pure rolling is zero.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 61, "question": "Angular momentum L = I \u03c9.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 62, "question": "If MI decreases, angular velocity must increase for constant L.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 63, "question": "Planets in solar system conserve angular momentum? yes.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 64, "question": "Relation between torque and angular momentum \u03c4 = dL/dt.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 65, "question": "Vector products? no. Replaced: vector product is anti-commutative (A x B = - B x A).", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 66, "question": "If two identical discs roll down, larger one reaches first? no. mass/radius cancel out in acceleration.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 67, "question": "Rigid body? yes. an ideal body with perfectly definite and unchanging shape.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 68, "question": "CM of a triangle? centroid.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 69, "question": "Kinematics of rotation: \u03c9 = \u03c90 + \u03b1t.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 70, "question": "Kinematics of rotation: \u03b8 = \u03c90t + 1/2 \u03b1t\u00b2.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 71, "question": "Moment of momentum is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Angular momentum", "B": "Torque", "C": "Force", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 72, "question": "Moment of force is ______.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "Torque", "B": "Impulse", "C": "Momentum", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 73, "question": "Precession? no. Replaced: gyro-motion is not in EAMCET focus? yes.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 74, "question": "SI unit of MI is kg m\u00b2.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 75, "question": "MI of a thin spherical shell is 2/3 MR\u00b2.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 76, "question": "Angular momentum direction is given by right hand thumb rule.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 77, "question": "Internal forces cannot change the total linear momentum of system.", "difficulty": "medium", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 78, "question": "A body is in translation if all parts move same distance in same time.", "difficulty": "easy", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "A", "pyq": false },
-    { "id": 79, "question": "If net external torque is zero, angular velocity is always constant? no. I can change.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "True", "B": "False", "C": "None", "D": "None" }, "answer": "B", "pyq": false },
-    { "id": 80, "question": "Centre of mass of a rod of length L with linear density \u03bb = kx is at distance ______ from x=0.", "difficulty": "hard", "hasDiagram": false, "diagram_description": "", "options": { "A": "2/3 L", "B": "1/2 L", "C": "3/4 L", "D": "None" }, "answer": "A", "pyq": false }
+    {
+      "id": 29,
+      "question": "CM? yes. Replaced: The center of mass of a system of particles follows a trajectory as if all mass was concentrated there.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "Moment of inertia of a solid cylinder of mass M and radius R about its own axis is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "MR² / 2",
+        "B": "MR²",
+        "C": "MR² / 4",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 31,
+      "question": "Moment of inertia of a hollow cylinder of mass M and radius R about its own axis is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "MR²",
+        "B": "MR² / 2",
+        "C": "2 MR² / 3",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Angular momentum is a ______ vector.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Axial",
+        "B": "Polar",
+        "C": "Zero",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Ratio of rotational KE to total KE for a rolling disc is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/3",
+        "B": "1/2",
+        "C": "2/3",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "Ratio of rotational KE to total KE for a rolling solid sphere is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2/7",
+        "B": "2/5",
+        "C": "5/7",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 35,
+      "question": "Moment of inertia of a solid sphere about its diameter is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2/5 MR²",
+        "B": "2/3 MR²",
+        "C": "MR² / 2",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "Moment of inertia of a hollow sphere about its diameter is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2/3 MR²",
+        "B": "2/5 MR²",
+        "C": "MR²",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Translational equilibrium? no. Replaced: net external force must be zero.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Rotational equilibrium? no. Replaced: net external torque must be zero.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "Position of CM depends locally on frame of reference? no. it is a physical point.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 41,
+      "question": "CM of Earth-Moon system lies ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Inside Earth",
+        "B": "In space",
+        "C": "Inside Moon",
+        "D": "At center of Earth"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "Torque is zero if force and position vector are in same line.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Couple? yes. two equal and opposite forces acting along different lines of action on a body.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "A couple produces ______ motion without translation.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Purely rotational",
+        "B": "Translational",
+        "C": "Vibrational",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "Principle of Moments? yes. For a lever, load x load-arm = effort x effort-arm.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "Mechanical advantage (MA) of a lever is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Effort arm / Load arm",
+        "B": "Load arm / Effort arm",
+        "C": "Effort / Load",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Dimensions of torque are same as that of ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Work / Energy",
+        "B": "Power",
+        "C": "Force",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Rotational power P = τ ω.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Relation between linear acceleration 'a' and angular acceleration 'α' is a = Rα.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Moment of inertia? no. Replaced: Moment of inertia is not always scalar in 3D? yes (tensor).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "If a body is rotating with constant angular velocity, net torque must be zero.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Radius of gyration of a disc about its central axis is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "R / √2",
+        "B": "R / 2",
+        "C": "R",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Radius of gyration of a ring about its central axis is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "R",
+        "B": "R / √2",
+        "C": "R / 2",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Rolling? no. Replaced: Friction is essential to start pure rolling from rest by a force.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "Static friction? no. Replaced: Work done by static friction in pure rolling is zero.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "Angular momentum L = I ω.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "If MI decreases, angular velocity must increase for constant L.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Planets in solar system conserve angular momentum? yes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 61,
+      "question": "Relation between torque and angular momentum τ = dL/dt.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Vector products? no. Replaced: vector product is anti-commutative (A x B = - B x A).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "If two identical discs roll down, larger one reaches first? no. mass/radius cancel out in acceleration.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "Moment of momentum is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Angular momentum",
+        "B": "Torque",
+        "C": "Force",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Moment of force is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Torque",
+        "B": "Impulse",
+        "C": "Momentum",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Precession? no. Replaced: gyro-motion is not in EAMCET focus? yes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "MI of a thin spherical shell is 2/3 MR².",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "Angular momentum direction is given by right hand thumb rule.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Internal forces cannot change the total linear momentum of system.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "If net external torque is zero, angular velocity is always constant? no. I can change.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 75,
+      "question": "Centre of mass of a rod of length L with linear density λ = kx is at distance ______ from x=0.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2/3 L",
+        "B": "1/2 L",
+        "C": "3/4 L",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
   ]
 }
