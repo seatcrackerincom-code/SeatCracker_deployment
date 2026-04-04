@@ -217,8 +217,9 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
       const folderName = subjectFolderMap[subject] || subject.toLowerCase();
       const topicSlug = topic.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
       
-      // Use the new folder-based attempt structure for Maths
-      const fetchPath = folderName === "maths" 
+      // Use the new folder-based attempt structure for all modernized subjects
+      const isRestructured = ["Mathematics", "Physics", "Chemistry", "Botany", "Zoology"].includes(subject);
+      const fetchPath = isRestructured 
         ? `/questions_v2/${folderName}/${topicSlug}/attempt_${selectedAttempt}.json`
         : `/questions_v2/${folderName}/${topicSlug}.json`;
         
@@ -230,8 +231,8 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
         
         let selected = qsArray;
 
-        // If it's NOT a restructured topic (non-maths), we still use the old splitting logic
-        if (folderName !== "maths") {
+        // legacy slicing no longer needed for restructured folders as they are already partitioned
+        if (!isRestructured) {
           const i = attemptNum - 1;
           const hardPool = qsArray.filter((q: any) => q.difficulty?.toLowerCase() === 'hard');
           const mediumPool = qsArray.filter((q: any) => q.difficulty?.toLowerCase() === 'medium' && !q.pyq);
