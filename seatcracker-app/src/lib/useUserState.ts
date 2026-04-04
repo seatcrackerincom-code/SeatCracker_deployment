@@ -74,6 +74,10 @@ export function useUserState() {
       applied_codes: [...user.applied_codes, clean],
     };
 
+    if (data.type === "lifetime") {
+      next.discount_percentage = 100;
+    }
+
     if (data.type === "discount" && data.value !== undefined) {
       // Allow stacking only up to 100%
       next.discount_percentage = Math.min(100, next.discount_percentage + data.value);

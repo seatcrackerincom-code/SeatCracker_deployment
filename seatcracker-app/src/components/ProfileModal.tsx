@@ -90,6 +90,7 @@ export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser
     unlock: "#6366f1",
     resource: "#10b981",
     boost: "#ec4899",
+    lifetime: "#8b5cf6",
   };
 
   // ── Render ────────────────────────────────────────────────
@@ -331,7 +332,13 @@ export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                   {user.applied_codes.map(c => {
                     const promoData = GLOBAL_PROMO_CODES[c];
-                    const color = promoData ? { discount: "#f59e0b", unlock: "#6366f1", resource: "#10b981", boost: "#ec4899" }[promoData.type] : "#6b7280";
+                    const color = promoData ? { 
+                      discount: "#f59e0b", 
+                      unlock: "#6366f1", 
+                      resource: "#10b981", 
+                      boost: "#ec4899",
+                      lifetime: "#8b5cf6"
+                    }[promoData.type] : "#6b7280";
                     return (
                       <span
                         key={c}
