@@ -85,6 +85,12 @@ export default function AccessGate({ userId, isExpired, onAccessGranted, onBack 
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ amount: finalPrice, userId }),
       });
+
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.error || "Failed to create order");
+      }
+
       const { orderId, key } = await res.json();
 
       // 2. Open Razorpay modal

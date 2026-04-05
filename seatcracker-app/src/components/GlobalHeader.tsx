@@ -33,85 +33,40 @@ export default function GlobalHeader() {
   const isPremium = access?.status === "premium";
 
   return (
-    <>
-      <div
-        id="sc-global-header"
-        style={{
-          position: "fixed", top: "16px", right: "16px", zIndex: 1000,
-          display: "flex", gap: "12px", alignItems: "center",
-          background: "rgba(10, 5, 25, 0.4)", backdropFilter: "blur(12px)",
-          padding: "6px 12px", borderRadius: "100px", border: "1px solid rgba(255,255,255,0.1)",
-        }}
-      >
-        <ThemeToggle />
-
-        {/* Avatar button with optional badge */}
-        <div style={{ position: "relative" }}>
-          <button
-            id="sc-profile-btn"
-            onClick={() => setProfileOpen(true)}
-            style={{
-              width: "36px", height: "36px", borderRadius: "50%",
-              background: isPremium
-                ? "linear-gradient(135deg, #f59e0b, #f97316)"
-                : "linear-gradient(135deg, #6366f1, #a855f7)",
-              padding: "2px", border: "none", cursor: "pointer",
-              transition: "transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
-            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
-            title={authUser?.displayName ?? (authUser?.phoneNumber ?? "Guest")}
-          >
-            {authUser?.photoURL ? (
-              <img
-                src={authUser.photoURL}
-                style={{ width: "100%", height: "100%", borderRadius: "50%", objectFit: "cover" }}
-                alt="User"
-              />
-            ) : (
-              <img
-                src="/character-avatar.png"
-                style={{ width: "100%", height: "100%", borderRadius: "50%", objectFit: "cover" }}
-                alt="User"
-              />
-            )}
-          </button>
-
-          {/* Days-left badge */}
-          {trialBadge && (
-            <div style={{
-              position: "absolute", top: "-4px", right: "-4px",
-              background: "#ef4444", color: "#fff",
-              fontSize: "9px", fontWeight: "800",
-              padding: "2px 5px", borderRadius: "999px",
-              border: "1.5px solid rgba(10,5,25,0.8)",
-              lineHeight: 1,
-            }}>
-              {trialBadge}
-            </div>
-          )}
-
-          {/* Premium crown */}
-          {isPremium && (
-            <div style={{
-              position: "absolute", top: "-6px", right: "-4px",
-              fontSize: "14px", lineHeight: 1,
-            }}>
-              👑
-            </div>
-          )}
+    <header
+      id="sc-global-header"
+      style={{
+        position: "fixed", top: "0", left: "0", right: "0", zIndex: 1000,
+        display: "flex", justifyContent: "space-between", alignItems: "center",
+        padding: "16px 24px",
+        background: "rgba(2, 6, 23, 0.6)",
+        backdropFilter: "blur(12px)",
+        borderBottom: "1px solid rgba(255, 255, 255, 0.05)",
+      }}
+    >
+      <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+        {/* Glassmorphic Logo Ring */}
+        <div style={{
+          width: "36px", height: "36px", borderRadius: "50%",
+          background: "rgba(255, 255, 255, 0.03)",
+          display: "flex", alignItems: "center", justifyContent: "center",
+          border: "1px solid rgba(255, 255, 255, 0.12)",
+          backdropFilter: "blur(4px)", overflow: "hidden", padding: "4px",
+          boxShadow: "inset 0 0 10px rgba(255, 255, 255, 0.05), 0 4px 12px rgba(0, 0, 0, 0.2)",
+        }}>
+          <img src="/logo.png" style={{ width: "100%", height: "100%", objectFit: "contain" }} alt="Logo" />
         </div>
+        <span style={{
+          fontSize: "16px", fontWeight: "700", letterSpacing: "0.05em",
+          color: "#fff", textTransform: "lowercase", opacity: 0.9,
+        }}>
+          seatcracker.com
+        </span>
       </div>
 
-      <ProfileModal
-        isOpen={profileOpen}
-        onClose={() => setProfileOpen(false)}
-        accuracy={90}
-        pace="2.5"
-        authUser={authUser}
-        access={access}
-        onSignOut={handleSignOut}
-      />
-    </>
+      <div style={{ display: "flex", gap: "10px" }}>
+        {/* Right side empty as per request to remove theme/profile */}
+      </div>
+    </header>
   );
 }

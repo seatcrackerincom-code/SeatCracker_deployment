@@ -61,17 +61,17 @@
   margin-bottom: 32px;
 }
 .logoRing {
-  width: 72px; height: 72px;
+  width: 84px; height: 84px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.03);
   display: flex; align-items: center; justify-content: center;
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   overflow: hidden;
-  padding: 10px;
+  padding: 12px;
   box-shadow: 
-    inset 0 0 16px rgba(255, 255, 255, 0.05),
-    0 12px 40px rgba(0, 0, 0, 0.4);
+    inset 0 0 20px rgba(255, 255, 255, 0.05),
+    0 16px 48px rgba(0, 0, 0, 0.4);
 }
 
 .logoIcon {
@@ -85,13 +85,14 @@
 }
 .appName {
   font-size: 24px;
-  font-weight: 900;
+  font-weight: 700;
   color: #ffffff;
   background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 0.1em;
+  text-transform: lowercase;
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -266,16 +267,11 @@
 }
 .toggleBtn:hover { color: #818cf8; text-decoration: underline; }
 
-/* Divider */
-.divider {
-  display: flex; align-items: center; gap: 12px;
-  margin-bottom: 20px;
-}
-.dividerLine { flex: 1; height: 1px; background: rgba(255,255,255,0.08); }
+/* .divider and .dividerLine removed */
 .dividerText { font-size: 12px; color: rgba(255,255,255,0.3); }
 
-/* Guest */
-.guestBtn {
+/* Back button style */
+.backBtn {
   width: 100%; padding: 12px;
   background: none;
   border: 1px dashed rgba(255,255,255,0.12);
@@ -285,7 +281,7 @@
   transition: all 0.2s;
   margin-bottom: 20px;
 }
-.guestBtn:hover { border-color: rgba(99,102,241,0.3); color: rgba(255,255,255,0.6); }
+.backBtn:hover { border-color: rgba(99,102,241,0.3); color: rgba(255,255,255,0.6); }
 
 /* Footer note */
 .footerNote {

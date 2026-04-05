@@ -33,8 +33,8 @@ export async function POST(req: NextRequest) {
       body: JSON.stringify({
         amount: amountPaise,
         currency: "INR",
-        receipt: `sc_${userId ?? "guest"}_${Date.now()}`,
-        notes: { userId: userId ?? "guest", product: "EAMCET_ACCESS" },
+        receipt: `sc_${userId || "guest"}_${Date.now()}`,
+        notes: { userId: userId || "guest", product: "EAMCET_ACCESS" },
       }),
     });
 

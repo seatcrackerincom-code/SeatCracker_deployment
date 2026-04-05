@@ -111,7 +111,7 @@ export default function LoginScreen({ onSuccess }: Props) {
             <img src="/logo.png" alt="SeatCracker Logo" className={styles.logoIcon} />
           </div>
           <div className={styles.appName}>
-            SEATCRACKER.COM
+            seatcracker.com
           </div>
           <div className={styles.tagline}>Crack Your EAMCET. Own Your Seat.</div>
         </div>
@@ -156,17 +156,6 @@ export default function LoginScreen({ onSuccess }: Props) {
               </div>
 
               {error && <div className={styles.error}>{error}</div>}
-
-              <div className={styles.divider}>
-                <div className={styles.dividerLine} />
-                <span className={styles.dividerText}>or</span>
-                <div className={styles.dividerLine} />
-              </div>
-
-              {/* Guest */}
-              <button className={styles.guestBtn} onClick={() => onSuccess(null)}>
-                Continue as Guest (trial starts automatically)
-              </button>
             </motion.div>
           )}
 
@@ -236,7 +225,7 @@ export default function LoginScreen({ onSuccess }: Props) {
 
                 <button
                   type="button"
-                  className={styles.guestBtn}
+                  className={styles.backBtn}
                   style={{ marginBottom: 0, marginTop: 10 }}
                   onClick={() => { setPhase("choice"); setError(""); }}
                 >

@@ -53,7 +53,6 @@ export default function Home() {
 
   // Access state
   const [access, setAccess] = useState<AccessState | null>(null);
-  const [guestId, setGuestId] = useState<string>("");
 
   // ── Init ──────────────────────────────────────────────────
   useEffect(() => {
@@ -74,13 +73,7 @@ export default function Home() {
       try { setRoadmapData(JSON.parse(savedRoadmap)); } catch {}
     }
 
-    // Restore/Gen Guest ID
-    let gId = localStorage.getItem("sc_guest_id");
-    if (!gId) {
-      gId = "guest_" + Math.random().toString(36).substring(2, 10);
-      localStorage.setItem("sc_guest_id", gId);
-    }
-    setGuestId(gId);
+
 
     // Firebase auth listener
     const unsub = onAuthChange(async (user) => {
@@ -91,8 +84,8 @@ export default function Home() {
       const state = await getAccessState(uid);
       setAccess(state);
 
-      // If user already logged in and has access, restore their step
-      if (user || localStorage.getItem("sc_guest_active")) {
+      // If user is logged in and has access, restore their step
+      if (user) {
         if (state.status === "premium" || state.status === "trial") {
           const savedStepStr = localStorage.getItem("sc_step");
           const savedStep = savedStepStr ? parseInt(savedStepStr) as Step : 1;
@@ -116,8 +109,8 @@ export default function Home() {
   // ── Handlers ─────────────────────────────────────────────
 
   const handleLoginSuccess = async (user: User | null) => {
+    if (!user) return; // Should not happen as guest btn is removed
     setAuthUser(user);
-    if (!user) localStorage.setItem("sc_guest_active", "1");
     
     const uid = user?.uid;
     const state = await getAccessState(uid);
@@ -177,7 +170,7 @@ export default function Home() {
   };
 
   const handleRestart = () => {
-    ["sc_test_category", "sc_exam", "sc_course", "sc_step", "sc_roadmap", "sc_mode", "sc_guest_active"].forEach(k =>
+    ["sc_test_category", "sc_exam", "sc_course", "sc_step", "sc_roadmap", "sc_mode"].forEach(k =>
       localStorage.removeItem(k)
     );
     setTestCategory("EAMCET"); setExam(""); setCourse(""); setMode(""); setRoadmapData([]);
@@ -195,7 +188,7 @@ export default function Home() {
     go(10);
   };
 
-  const effectiveUserId = authUser?.email || guestId;
+  const effectiveUserId = authUser?.uid || "sc_user";
 
   if (!mounted || !authChecked) return null;
 
