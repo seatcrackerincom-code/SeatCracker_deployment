@@ -80,7 +80,7 @@ export default function AccessGate({ userId, isExpired, onAccessGranted, onBack 
     setPayLoading(true);
     try {
       // 1. Create order on server
-      const res = await fetch("/api/payment", {
+      const res = await fetch("/api/create-order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ amount: finalPrice, userId }),
@@ -91,13 +91,13 @@ export default function AccessGate({ userId, isExpired, onAccessGranted, onBack 
         throw new Error(errorData.error || "Failed to create order");
       }
 
-      const { orderId, key } = await res.json();
+      const { orderId, key, amount, currency } = await res.json();
 
       // 2. Open Razorpay modal
       const rzp = new window.Razorpay({
         key,
-        amount: finalPrice * 100,
-        currency: "INR",
+        amount,
+        currency,
         name: "SeatCracker",
         description: "EAMCET Full Access",
         order_id: orderId,
@@ -111,7 +111,6 @@ export default function AccessGate({ userId, isExpired, onAccessGranted, onBack 
           const verifyResult = await verifyRes.json();
           if (verifyResult.success) {
             setSuccess(true);
-            // Access is now premium on the server, so just refresh and redirect
             setTimeout(() => onAccessGranted(), 1600);
           }
         },
@@ -119,9 +118,9 @@ export default function AccessGate({ userId, isExpired, onAccessGranted, onBack 
         theme: { color: "#6366f1" },
       });
       rzp.open();
-    } catch (err) {
+    } catch (err: any) {
       console.error("Payment error:", err);
-      alert("Payment setup failed. Please try again.");
+      alert(err.message || "Payment setup failed. Please try again.");
     }
     setPayLoading(false);
   };
