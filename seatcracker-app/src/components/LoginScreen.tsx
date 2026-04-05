@@ -111,7 +111,7 @@ export default function LoginScreen({ onSuccess }: Props) {
             <img src="/logo.png" alt="SeatCracker Logo" className={styles.logoIcon} />
           </div>
           <div className={styles.appName}>
-            <span className={styles.mirrored}>S</span>EATCRACKER.COM<span className={styles.mirrored}>R</span>
+            SEATCRACKER.COM
           </div>
           <div className={styles.tagline}>Crack Your EAMCET. Own Your Seat.</div>
         </div>

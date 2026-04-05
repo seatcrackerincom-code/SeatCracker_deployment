@@ -28,7 +28,7 @@ export default function IntroPage({ onStart }: Props) {
             <img src="/logo.png" alt="SeatCracker Logo" className={styles.logoIcon} />
           </div>
           <h1 className={styles.logoTitle}>
-            <span className={styles.mirrored}>S</span>EATCRACKER.COM<span className={styles.mirrored}>R</span>
+            SEATCRACKER.COM
           </h1>
         </div>
       </header>
