@@ -14,10 +14,11 @@ export interface AccessState {
   isPremium: boolean;
   purchaseDate: string | null;
   discountPercentage: number;
+  productId?: string | null;
 }
 
 const TRIAL_DAYS = 3;
-const BASE_PRICE = 199;
+const BASE_PRICE = 5;
 const LS_KEY = "sc_access";
 
 // ─── Local helpers ────────────────────────────────────────
@@ -125,6 +126,7 @@ export async function getAccessState(userId?: string): Promise<AccessState> {
         trialStartDate: (remote.trial_start_date as string) ?? raw.trialStartDate,
         purchaseDate: (remote.purchase_date as string) ?? raw.purchaseDate,
         discountPercentage: (remote.discount_percentage as number) ?? raw.discountPercentage ?? 0,
+        productId: (remote.product_id as string) ?? raw.productId ?? null,
       };
       // Sync back to localStorage
       saveLocal(raw);

@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import styles from "./ExamPractice.module.css";
 import { saveProgress, fetchProgress, type UserProgress } from "../lib/supabase";
+import { getBaseTime, getAttemptTargetTime } from "../utils/timer_mapping";
 
 
 
@@ -59,16 +60,17 @@ const SUBJECT_MAP: Record<string, string[]> = {
   Pharmacy: ["Botany", "Zoology", "Physics", "Chemistry"],
 };
 
-const DIFFICULTY_MINUTES: Record<string, number> = {
-  Easy: 1.0,
-  Medium: 1.5,
-  Hard: 2.0,
-};
-
 const PRIORITY_MULTIPLIER: Record<string, number> = {
   High: 1.2,
   Medium: 1.0,
   Low: 0.8,
+};
+
+const ATTEMPT_MODES: Record<number, { label: string; tag: string; color: string }> = {
+  1: { label: "Learning Mode", tag: "It's Learning Time! 📖", color: "#3b82f6" },
+  2: { label: "Controlled Mode", tag: "It's Controlled Mode ⏱️", color: "#f59e0b" },
+  3: { label: "Speed Training", tag: "It's Speed Training ⚡", color: "#8b5cf6" },
+  4: { label: "Exam Mode 💀", tag: "It's Exam Mode 💀", color: "#ef4444" },
 };
 
 // ─── Utility ─────────────────────────────────────────────────────────────────
@@ -260,12 +262,12 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
         setStatuses(finalSet.map(() => ({ selectedOption: null, isAnswered: false, isMarkedForReview: false })));
         setCurrentIdx(0);
         
-        // Timer Logic (Requirement: 15 mins for Attempt 3+)
-        let targetMins = 23; 
-        if (attemptNum >= 3) targetMins = 15; 
+        // Timer Logic: EAMCET Optimization Engine
+        const base = getBaseTime(subject, topic);
+        const target = getAttemptTargetTime(base, attemptNum);
 
-        setElapsedSeconds(attemptNum === 1 ? 0 : Math.round(targetMins * 60)); 
-        setTargetSeconds(Math.round(targetMins * 60));
+        setElapsedSeconds(attemptNum === 1 ? 0 : target); 
+        setTargetSeconds(target);
         setExamStarted(false);
         setScreen("exam");
         setExamLoading(false);
@@ -296,8 +298,20 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
 
       timerRef.current = setInterval(() => {
         setElapsedSeconds(prev => {
-          if (attemptNum === 1) return prev + 1; // Count up
-          return Math.max(0, prev - 1); // Count down
+          if (attemptNum === 1) {
+            return prev + 1; // Count up
+          }
+          
+          const next = prev - 1;
+          if (next <= 0) {
+            if (timerRef.current) clearInterval(timerRef.current);
+            // Auto-submit for Attempt 2, 3, 4
+            if (attemptNum >= 2) {
+              performFinalSubmit();
+            }
+            return 0;
+          }
+          return next; // Count down
         });
       }, 1000);
     }
@@ -548,29 +562,28 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
 
                 {/* Info row */}
                 {(() => {
-                  const currentChapter = subData?.chapters.find(c => c.chapter === selectedTopic);
-                  const priority = currentChapter?.priority || "Medium";
-                  const multiplier = PRIORITY_MULTIPLIER[priority] || 1.0;
-                  const estimatedMins = Math.round(questionCount * 1.5 * multiplier);
+                  const base = getBaseTime(selectedSubject, selectedTopic);
+                  const target = getAttemptTargetTime(base, selectedAttempt);
+                  const modeText = ATTEMPT_MODES[selectedAttempt]?.label || "Practice Mode";
 
                   return (
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                       <div className={styles.examInfoRow}>
-                        <div className={styles.examInfoItem} style={{ background: priority === 'High' ? 'rgba(239,68,68,0.1)' : 'var(--bg-card2)' }}>
-                          <span className={styles.examInfoIcon}>⏱</span>
-                          <span>~{estimatedMins} mins target</span>
+                        <div className={styles.examInfoItem} style={{ background: selectedAttempt === 4 ? 'rgba(239,68,68,0.1)' : 'var(--bg-card2)', border: selectedAttempt === 4 ? '1px solid rgba(239,68,68,0.2)' : '1px solid var(--border)' }}>
+                          <span className={styles.examInfoIcon}>{selectedAttempt === 4 ? '💀' : '⏱'}</span>
+                          <span style={{ fontWeight: "700" }}>{modeText}</span>
+                        </div>
+                        <div className={styles.examInfoItem}>
+                          <span className={styles.examInfoIcon}>🎯</span>
+                          <span><strong>Target:</strong> {fmt(target)}</span>
                         </div>
                         <div className={styles.examInfoItem}>
                           <span className={styles.examInfoIcon}>📝</span>
                           <span>{questionCount} MCQs</span>
                         </div>
-                        <div className={styles.examInfoItem}>
-                          <span className={styles.examInfoIcon}>🏆</span>
-                          <span>1 mark each</span>
-                        </div>
                       </div>
-                      <div style={{ fontSize: "13px", color: "var(--text-muted)", padding: "10px", background: "var(--bg-card2)", borderRadius: "8px", border: "1px dashed var(--border)" }}>
-                        💡 <strong>Gold Standard 2.0:</strong> This topic has <strong>{maxAttempts}</strong> high-quality fixed attempts (10H/5M/5P). Complete all to master this chapter!
+                      <div style={{ fontSize: "14px", color: "var(--accent)", padding: "12px", background: "rgba(99, 102, 241, 0.05)", borderRadius: "8px", border: "1px dashed var(--accent)", textAlign: "center", fontWeight: "600" }}>
+                        💡 This topic needs <strong>{Math.floor(target / 60)} min {target % 60 > 0 ? `${target % 60} sec` : ""}</strong> target to solve.
                       </div>
                     </div>
                   );
@@ -693,11 +706,17 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
             <h1 className={styles.resultTitle}>Exam Complete!</h1>
             <p className={styles.resultTopic}>{selectedTopic} — {selectedSubject}</p>
             <p className={styles.performanceMsg}>{performanceMsg}</p>
-            {((allProgress.find(p => p.topic === selectedTopic)?.attempts || 0) + 1) >= maxAttempts ? (
-              <p className={styles.previousAttemptHint} style={{ color: "#10b981", fontWeight: "700" }}>🏆 Topic Mastered! You have completed all {maxAttempts} unique batches. 🔥</p>
-            ) : (
-              <p className={styles.previousAttemptHint}>Your attempt has been saved. Start Attempt {(allProgress.find(p => p.topic === selectedTopic)?.attempts || 0) + 1} / {maxAttempts} 🔥</p>
-            )}
+            {(() => {
+              const p = allProgress.find(p => p.topic === selectedTopic);
+              const completedCount = p?.attempts || 0;
+              const nextAttempt = completedCount + 1;
+              const nextModeName = ATTEMPT_MODES[nextAttempt]?.label || "Practice";
+              
+              if (completedCount >= maxAttempts) {
+                return <p className={styles.previousAttemptHint} style={{ color: "#10b981", fontWeight: "700" }}>🏆 Topic Mastered! You have completed all {maxAttempts} unique batches. 🔥</p>;
+              }
+              return <p className={styles.previousAttemptHint}>Your attempt has been saved. 🚀 **Next:** Start Attempt {nextAttempt}: **{nextModeName}** 🔥</p>;
+            })()}
           </div>
 
           {/* ── Attempt Logged Banner ── */}
@@ -849,10 +868,16 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
         <div className={styles.examTopLeft}>
           <div className={styles.examInfo}>
             <span className={styles.examBadge}>{exam} EAMCET</span>
-            <span className={styles.topicBadge}>Attempt {(() => {
+            {(() => {
               const p = allProgress.find(p => p.topic === selectedTopic);
-              return (p?.attempts || 0) + 1;
-            })()} / {maxAttempts}</span>
+              const attemptNum = (p?.attempts || 0) + 1;
+              const mode = ATTEMPT_MODES[attemptNum] || ATTEMPT_MODES[1];
+              return (
+                <div className={styles.modeTag} style={{ backgroundColor: mode.color }}>
+                  {mode.tag}
+                </div>
+              );
+            })()}
           </div>
         </div>
 
@@ -1007,9 +1032,14 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
               </button>
             ) : (
               (() => {
-                const timeUp = elapsedSeconds >= targetSeconds;
+                const progress = allProgress.find(p => p.topic === selectedTopic);
+                const attemptNum = (progress?.attempts || 0) + 1;
+                
+                const timeUp = attemptNum === 1 ? elapsedSeconds >= targetSeconds : elapsedSeconds <= 0;
                 const allAnswered = answeredCount === questions.length;
-                const canSubmit = timeUp || allAnswered;
+                
+                // For Attempt 1: always enabled. For 2,3,4: only if all answered or time up.
+                const canSubmit = attemptNum === 1 || timeUp || allAnswered;
 
                 return (
                   <button
@@ -1017,9 +1047,11 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                     className={`${styles.navBtn} ${styles.submitBtn}`}
                     disabled={!canSubmit}
                     onClick={() => {
-                      if (!timeUp && allAnswered) {
-                        const timeLeft = targetSeconds - elapsedSeconds;
-                        const msg = `You still have ${fmt(timeLeft)} remaining.\n\nAre you sure you want to submit the exam early?`;
+                      if (attemptNum === 1 || (!timeUp && allAnswered)) {
+                        const timeLeft = attemptNum === 1 ? (targetSeconds - elapsedSeconds) : elapsedSeconds;
+                        const msg = attemptNum === 1 
+                          ? `You completed ${answeredCount}/${questions.length} questions.\n\nAre you sure you want to submit?`
+                          : `You still have ${fmt(timeLeft)} remaining.\n\nAre you sure you want to submit the exam early?`;
                         if (!window.confirm(msg)) return;
                       }
                       submitExam();
@@ -1089,13 +1121,25 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
             </div>
 
             {/* Submit */}
-            <button
-              id="palette-submit-btn"
-              className={styles.paletteSubmitBtn}
-              onClick={submitExam}
-            >
-              Submit Exam
-            </button>
+            {(() => {
+              const progress = allProgress.find(p => p.topic === selectedTopic);
+              const attemptNum = (progress?.attempts || 0) + 1;
+              const timeUp = attemptNum === 1 ? elapsedSeconds >= targetSeconds : elapsedSeconds <= 0;
+              const allAnswered = answeredCount === questions.length;
+              const canSubmit = attemptNum === 1 || timeUp || allAnswered;
+
+              return (
+                <button
+                  id="palette-submit-btn"
+                  className={styles.paletteSubmitBtn}
+                  onClick={canSubmit ? submitExam : undefined}
+                  disabled={!canSubmit}
+                  style={{ opacity: canSubmit ? 1 : 0.5, cursor: canSubmit ? 'pointer' : 'not-allowed' }}
+                >
+                  {canSubmit ? "Submit Exam" : "Finish it to Submit"}
+                </button>
+              );
+            })()}
           </div>
         </aside>
       </div>

@@ -102,10 +102,10 @@ export default function AccessGate({ userId, isExpired, onAccessGranted, onBack 
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ ...response, userId }),
           });
-          const verify = await verifyRes.json();
-          if (verify.success) {
-            await activatePremium(userId);
+          const verifyResult = await verifyRes.json();
+          if (verifyResult.success) {
             setSuccess(true);
+            // Access is now premium on the server, so just refresh and redirect
             setTimeout(() => onAccessGranted(), 1600);
           }
         },

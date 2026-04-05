@@ -12,6 +12,7 @@ import PracticeArena from "../components/PracticeArena";
 import RoadmapMode from "../components/RoadmapMode";
 import LoginScreen from "../components/LoginScreen";
 import AccessGate from "../components/AccessGate";
+import IntroPage from "../components/IntroPage";
 import { onAuthChange, signOut, type User } from "../lib/firebase";
 import {
   getAccessStateSync,
@@ -33,10 +34,10 @@ import {
  * 9: PracticeArena (Practice Test Flow)
  * 10: RoadmapMode (Roadmap Execution Flow)
  */
-type Step = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+type Step = -1 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
 
 export default function Home() {
-  const [step, setStep] = useState<Step>(0);
+  const [step, setStep] = useState<Step>(-1);
   const [testCategory, setTestCategory] = useState(""); // e.g., "EAMCET"
   const [exam, setExam] = useState("");                  // e.g., "AP" or "TS"
   const [course, setCourse] = useState("");              // e.g., "Engineering"
@@ -200,6 +201,9 @@ export default function Home() {
 
   return (
     <main style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+
+      {/* Step -1: Intro Page */}
+      {step === -1 && <IntroPage onStart={() => go(0)} />}
 
       {/* Step 0: Login */}
       {step === 0 && <LoginScreen onSuccess={handleLoginSuccess} />}

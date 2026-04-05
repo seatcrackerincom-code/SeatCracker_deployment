@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import styles from "./PracticeArena.module.css";
 import { saveProgress, fetchProgress, type UserProgress } from "../lib/supabase";
 import ExamPractice from "./ExamPractice";
+import { getBaseTime, getAttemptTargetTime } from "../utils/timer_mapping";
 
 
 
@@ -147,6 +148,7 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
 
   // ───── Render helpers ─────
   const fmt = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+  const fmtMin = (s: number) => `${Math.floor(s / 60)} min`;
 
   const CircleProgress = ({ pct, label, color }: { pct: number; label: string; color: string }) => {
     const r = 36; const circ = 2 * Math.PI * r;
@@ -347,7 +349,15 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
                     {(() => {
                       const p = allProgress.find(p => p.topic === selectedTopic.chapter.chapter);
                       const attempt = (p?.attempts || 0) + 1;
-                      return `Attempt ${attempt} →`;
+                      const base = getBaseTime(selectedTopic.subject, selectedTopic.chapter.chapter);
+                      const target = getAttemptTargetTime(base, attempt);
+                      const modeName = ["", "Learning", "Controlled", "Speed", "Exam 💀"][attempt] || "Practice";
+                      return (
+                        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
+                          <span style={{ fontSize: "1rem" }}>{modeName} Mode →</span>
+                          <span style={{ fontSize: "0.75rem", opacity: 0.8, fontWeight: "normal" }}>Attempt {attempt} · {Math.floor(target/60)} min</span>
+                        </div>
+                      );
                     })()}
                   </button>
                 </div>

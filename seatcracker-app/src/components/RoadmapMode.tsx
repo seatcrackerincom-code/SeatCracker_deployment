@@ -4,6 +4,8 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { motion } from "framer-motion";
 import styles from "./RoadmapMode.module.css";
 import ExamPractice from "./ExamPractice";
+import { fetchProgress } from "../lib/supabase";
+import { getBaseTime, getAttemptTargetTime } from "../utils/timer_mapping";
 
 /* ─── Types ─── */
 interface RoadmapTask {
@@ -74,6 +76,7 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
   const [currentDay, setCurrentDay]    = useState<number>(1);
   const [completedDays, setCompletedDays] = useState<number[]>([]);
   const [completedTopics, setCompletedTopics] = useState<Set<string>>(new Set());
+  const [allProgress, setAllProgress]       = useState<any[]>([]);
   const [celebrating, setCelebrating]  = useState<number | null>(null); // level number
   const [confettis, setConfettis]      = useState<{ id: number; x: number; color: string; delay: number; size: number }[]>([]);
   const [formulas, setFormulas]        = useState<Formula[]>([]);
@@ -117,7 +120,8 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
       });
     });
     setCompletedTopics(doneSet);
-  }, [roadmap]);
+    fetchProgress(userId).then(setAllProgress);
+  }, [roadmap, userId]);
 
   const totalDays = roadmap.length;
   const completedPct = totalDays > 0 ? Math.round((completedDays.length / totalDays) * 100) : 0;
@@ -273,6 +277,7 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
           if (examDayNum > 0) {
             markTopicDone(examDayNum, examTopic);
           }
+          fetchProgress(userId).then(setAllProgress);
           setExamMode(false);
         }}
       />
@@ -586,7 +591,19 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
               className={styles.startTestBtn}
               onClick={() => startTest(screen.subject, screen.topic, screen.dayNum)}
             >
-              Attempt Test →
+              {(() => {
+                const prog = allProgress.find(p => p.topic === screen.topic);
+                const attempt = (prog?.attempts || 0) + 1;
+                const base = getBaseTime(screen.subject, screen.topic);
+                const target = getAttemptTargetTime(base, attempt);
+                const modeName = ["", "Learning", "Controlled", "Speed", "Exam 💀"][attempt] || "Practice";
+                return (
+                  <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
+                    <span>{modeName} Mode →</span>
+                    <span style={{ fontSize: "0.7rem", opacity: 0.8 }}>Attempt {attempt} · {Math.floor(target/60)} min</span>
+                  </div>
+                );
+              })()}
             </button>
           </div>
 

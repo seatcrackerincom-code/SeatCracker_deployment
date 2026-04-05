@@ -119,7 +119,7 @@ export default function LoginScreen({ onSuccess }: Props) {
           <div className={styles.trialEmoji}>🔥</div>
           <div className={styles.trialText}>
             <strong>3 Days Free Trial</strong>
-            <span>Then ₹199 for lifetime EAMCET access</span>
+            <span>Then ₹199 — Apply <strong>cracker_code</strong> coupons for discounts</span>
           </div>
         </div>
 
