@@ -18,7 +18,7 @@ export interface AccessState {
 }
 
 const TRIAL_DAYS = 3;
-const BASE_PRICE = 5;
+const BASE_PRICE = 199;
 const LS_KEY = "sc_access";
 
 // ─── Local helpers ────────────────────────────────────────
