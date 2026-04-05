@@ -110,17 +110,10 @@ export default function LoginScreen({ onSuccess }: Props) {
           <div className={styles.logoRing}>
             <img src="/logo.png" alt="SeatCracker Logo" className={styles.logoIcon} />
           </div>
-          <div className={styles.appName}>SeatCracker</div>
-          <div className={styles.tagline}>Crack Your EAMCET. Own Your Seat.</div>
-        </div>
-
-        {/* Trial Banner */}
-        <div className={styles.trialBanner}>
-          <div className={styles.trialEmoji}>🔥</div>
-          <div className={styles.trialText}>
-            <strong>3 Days Free Trial</strong>
-            <span>Then ₹199 — Apply <strong>cracker_code</strong> coupons for discounts</span>
+          <div className={styles.appName}>
+            <span className={styles.mirrored}>S</span>EATCRACKE<span className={styles.mirrored}>R</span>
           </div>
+          <div className={styles.tagline}>Crack Your EAMCET. Own Your Seat.</div>
         </div>
 
         <AnimatePresence mode="wait">

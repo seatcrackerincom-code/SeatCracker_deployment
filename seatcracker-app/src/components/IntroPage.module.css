@@ -37,16 +37,23 @@
   gap: 12px;
 }
 
-.penIcon {
+.logoRing {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, #60a5fa, #c084fc);
-  border-radius: 12px;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(96, 165, 250, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  padding: 4px;
+}
+
+.logoIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .logoTitle {
@@ -55,7 +62,15 @@
   letter-spacing: 0.1em;
   background: linear-gradient(to right, #fff, #94a3b8);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.mirrored {
+  display: inline-block;
+  transform: scaleX(-1);
 }
 
 .container {
@@ -92,6 +107,7 @@
 .accent {
   background: linear-gradient(to right, #60a5fa, #c084fc);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

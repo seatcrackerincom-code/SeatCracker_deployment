@@ -24,14 +24,12 @@ export default function IntroPage({ onStart }: Props) {
       {/* Header with Pen Icon */}
       <header className={styles.header}>
         <div className={styles.logoRow}>
-          <div className={styles.penIcon}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="m14.5 3 7.5 7.5-12 12H2.5v-7.5L14.5 3Z" />
-              <path d="m16.5 5 2.5 2.5" />
-              <path d="m5 14.5 4.5 4.5" />
-            </svg>
+          <div className={styles.logoRing}>
+            <img src="/logo.png" alt="SeatCracker Logo" className={styles.logoIcon} />
           </div>
-          <h1 className={styles.logoTitle}>SEATCRACKER</h1>
+          <h1 className={styles.logoTitle}>
+            <span className={styles.mirrored}>S</span>EATCRACKE<span className={styles.mirrored}>R</span>
+          </h1>
         </div>
       </header>
 
@@ -48,13 +46,8 @@ export default function IntroPage({ onStart }: Props) {
             Crack your seat with <span className={styles.accent}>SeatCracker</span>
           </h2>
           <p className={styles.subheadline}>
-            The beast mocktest giver
+            The ultimate mock test experience
           </p>
-
-          <div className={styles.pricingTag}>
-            <span className={styles.fire}>🔥</span>
-            <span>₹199 — Apply **cracker_code** coupons to get discounts.</span>
-          </div>
 
           <button
             id="intro-get-started-btn"

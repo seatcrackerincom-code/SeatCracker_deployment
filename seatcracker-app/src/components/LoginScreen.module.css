@@ -88,6 +88,14 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: -0.03em;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.mirrored {
+  display: inline-block;
+  transform: scaleX(-1);
 }
 .tagline {
   font-size: 13px;
