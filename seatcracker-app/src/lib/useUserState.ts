@@ -12,6 +12,8 @@ export interface UserState {
   applied_codes: string[];
   unlocked_features: string[];
   discount_percentage: number;
+  avgAccuracy: number;
+  avgPace: number;
 }
 
 const DEFAULT_STATE: UserState = {
@@ -22,6 +24,8 @@ const DEFAULT_STATE: UserState = {
   applied_codes: [],
   unlocked_features: [],
   discount_percentage: 0,
+  avgAccuracy: 0,
+  avgPace: 2.5, // Default pace
 };
 
 const LS_KEY = "sc_user_state";

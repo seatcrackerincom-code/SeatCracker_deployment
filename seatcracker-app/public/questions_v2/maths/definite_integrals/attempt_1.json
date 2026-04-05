@@ -304,6 +304,126 @@
       },
       "answer": "A",
       "pyq": false
+    },
+    {
+      "id": "definite_integrals_21",
+      "question": "∫₀^(π/2) sin²x dx = :",
+      "options": {
+        "A": "π/4",
+        "B": "π/4",
+        "C": "1/2",
+        "D": "π/2"
+      },
+      "answer": "A",
+      "difficulty": "hard"
+    },
+    {
+      "id": "definite_integrals_22",
+      "question": "Property: ∫ₐᵇ f(x)dx = ∫ₐᵇ f(a+b-x)dx. Used to simplify:",
+      "options": {
+        "A": "All integrals",
+        "B": "∫₀^(π/2) log(tanx)dx = 0",
+        "C": "Product integrals",
+        "D": "Differentiation"
+      },
+      "answer": "B",
+      "difficulty": "hard"
+    },
+    {
+      "id": "definite_integrals_23",
+      "question": "∫₋ₐᵃ f(x)dx if f is odd:",
+      "options": {
+        "A": "2∫₀ᵃ f(x)dx",
+        "B": "0",
+        "C": "∫₀ᵃ f(x)dx",
+        "D": "∫₋ₐ⁰ f(x)dx"
+      },
+      "answer": "B",
+      "difficulty": "medium"
+    },
+    {
+      "id": "definite_integrals_24",
+      "question": "Fundamental theorem: d/dx[∫ₐˣ f(t)dt] = :",
+      "options": {
+        "A": "∫ₐˣ f'(t)dt",
+        "B": "f(x)",
+        "C": "f(a)",
+        "D": "f(x)-f(a)"
+      },
+      "answer": "B",
+      "difficulty": "medium"
+    },
+    {
+      "id": "definite_integrals_25",
+      "question": "∫₀¹ xⁿ dx = :",
+      "options": {
+        "A": "n",
+        "B": "1/(n+1)",
+        "C": "n+1",
+        "D": "1/n"
+      },
+      "answer": "B",
+      "difficulty": "medium"
+    },
+    {
+      "id": "definite_integrals_26",
+      "question": "Limit of sum definition of definite integral: ∫ₐᵇ f(x)dx = lim(n→∞) Σf(a+rh)·h, h = :",
+      "options": {
+        "A": "a/n",
+        "B": "(b-a)/n",
+        "C": "1/n",
+        "D": "b/n"
+      },
+      "answer": "B",
+      "difficulty": "hard"
+    },
+    {
+      "id": "definite_integrals_27",
+      "question": "∫₀^π sinx dx = :",
+      "options": {
+        "A": "0",
+        "B": "2",
+        "C": "π",
+        "D": "1"
+      },
+      "answer": "B",
+      "difficulty": "medium"
+    },
+    {
+      "id": "definite_integrals_28",
+      "question": "Beta function B(m,n) = ∫₀¹ x^(m-1)(1-x)^(n-1)dx = :",
+      "options": {
+        "A": "m!n!",
+        "B": "Γ(m)Γ(n)/Γ(m+n)",
+        "C": "m+n",
+        "D": "(m-1)!(n-1)!"
+      },
+      "answer": "B",
+      "difficulty": "hard"
+    },
+    {
+      "id": "definite_integrals_29",
+      "question": "∫₀^(2a) f(x)dx = 2∫₀ᵃ f(x)dx when:",
+      "options": {
+        "A": "f is odd",
+        "B": "f(2a-x) = f(x)",
+        "C": "f is increasing",
+        "D": "a>0"
+      },
+      "answer": "B",
+      "difficulty": "hard"
+    },
+    {
+      "id": "definite_integrals_30",
+      "question": "Leibniz rule: d/dx[∫ᵤ⁽ˣ⁾ᵥ⁽ˣ⁾ f(t)dt] = :",
+      "options": {
+        "A": "f(v)",
+        "B": "f(v)·v' - f(u)·u'",
+        "C": "f(x)",
+        "D": "v'-u'"
+      },
+      "answer": "B",
+      "difficulty": "hard"
     }
   ]
 }

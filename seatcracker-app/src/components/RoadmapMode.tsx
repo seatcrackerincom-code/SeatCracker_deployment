@@ -292,7 +292,7 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
     const generatePath = () => {
       if (nodes.length < 2) return "";
       let d = "";
-      const nodeSpacing = 280;
+      const nodeSpacing = 180;
       const width = typeof window !== "undefined" ? Math.min(window.innerWidth, 600) : 600;
       const xLeft = width * 0.25;
       const xRight = width * 0.75;
@@ -324,10 +324,28 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
             Back
           </button>
           <h1 className={styles.courseTitle}>{course || "Engineering"}</h1>
-          <button className={styles.settingsBtn}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
-            </svg>
+          <button
+            className={styles.settingsBtn}
+            onClick={onBack}
+            title="Go Home"
+            style={{
+              width: "42px", height: "42px",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              background: "rgba(255,255,255,0.03)",
+              border: "1px solid rgba(255,255,255,0.1)",
+              borderRadius: "50%",
+              color: "#fff",
+              cursor: "pointer",
+              transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+              fontSize: "1.2rem",
+              boxShadow: "0 8px 32px rgba(0,0,0,0.3)",
+              backdropFilter: "blur(8px)",
+              padding: 0
+            }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.08)"; e.currentTarget.style.transform = "translateY(-2px) scale(1.05)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.2)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.03)"; e.currentTarget.style.transform = "translateY(0) scale(1)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; }}
+          >
+            🏠
           </button>
         </div>
 
@@ -350,7 +368,7 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
                       className={`${styles.dayNode} ${styles[state]}`}
                       onClick={() => state !== "locked" && setScreen({ kind: "day", dayNum: dayData.day })}
                     >
-                      <span className={styles.nodeLabel}>Level {dayData.day}</span>
+                      <span className={styles.nodeLabel}>Day {dayData.day}</span>
                       <span className={styles.nodeMeta}>{dayData.tasks.length} topics</span>
                       {isChar && (
                         <div className={styles.characterAvatar}>
@@ -372,7 +390,7 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
                                          : sub.includes("bot")  ? (isDone ? styles.compBot  : styles.tagBot)
                                          : sub.includes("zoo")  ? (isDone ? styles.compZoo  : styles.tagZoo)
                                          : (isDone ? styles.compChem : styles.tagChem);
-                          return <span key={ti} className={`${styles.topicPill} ${tagClass}`}>{t.topic.split(" + ")[0]}</span>;
+                          return <span key={ti} className={`${styles.topicPill} ${tagClass}`}>{t.subject.slice(0, 4).toUpperCase()}</span>;
                         })}
                       </div>
                     </div>
@@ -387,8 +405,8 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
           <div className={styles.celebOverlay}>
             <div className={styles.celebCard}>
               <span className={styles.celebEmoji}>🎉</span>
-              <h2 className={styles.celebTitle}>Level {celebrating} Completed!</h2>
-              <p className={styles.celebSub}>You're on fire! 🔥 Keep your momentum — Level {celebrating + 1} is now unlocked.</p>
+              <h2 className={styles.celebTitle}>Day {celebrating} Completed!</h2>
+              <p className={styles.celebSub}>You're on fire! 🔥 Keep your momentum — Day {celebrating + 1} is now unlocked.</p>
               <button className={styles.celebBtn} onClick={() => setCelebrating(null)}>Continue Journey →</button>
             </div>
           </div>
@@ -442,7 +460,7 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
             </svg>
             Map
           </button>
-          <h1 className={styles.dayViewTitle}>✨ Level {screen.dayNum}</h1>
+          <h1 className={styles.dayViewTitle}>✨ Day {screen.dayNum}</h1>
           {alreadyCompleted && (
             <span style={{ fontSize: 13, color: "var(--success)", fontWeight: 700 }}>✅ Done</span>
           )}
@@ -516,7 +534,7 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M19 12H5M12 19l-7-7 7-7" />
             </svg>
-            Level {screen.dayNum}
+            Day {screen.dayNum}
           </button>
           <div className={styles.topicViewBarTitle}>
             <div className={styles.topicViewExam}>{screen.subject}</div>

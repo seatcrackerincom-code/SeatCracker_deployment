@@ -4,6 +4,8 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import styles from "./ExamPractice.module.css";
 import { saveProgress, fetchProgress, type UserProgress } from "../lib/supabase";
 import { getBaseTime, getAttemptTargetTime } from "../utils/timer_mapping";
+import { useUserState } from "../lib/useUserState";
+import { calculateGlobalStats } from "../lib/stats_helper";
 
 
 
@@ -52,7 +54,7 @@ interface Props {
   onExamComplete?: (correct: number, total: number, elapsed: number, seenIds: number[]) => void;
 }
 
-type Screen = "setup" | "exam" | "confirmation" | "result";
+type Screen = "setup" | "exam" | "result";
 
 const SUBJECT_MAP: Record<string, string[]> = {
   Engineering: ["Mathematics", "Physics", "Chemistry"],
@@ -67,10 +69,10 @@ const PRIORITY_MULTIPLIER: Record<string, number> = {
 };
 
 const ATTEMPT_MODES: Record<number, { label: string; tag: string; color: string }> = {
-  1: { label: "Learning Mode", tag: "It's Learning Time! 📖", color: "#3b82f6" },
+  1: { label: "Practise Mode", tag: "It's Practise Mode 📖", color: "#3b82f6" },
   2: { label: "Controlled Mode", tag: "It's Controlled Mode ⏱️", color: "#f59e0b" },
   3: { label: "Speed Training", tag: "It's Speed Training ⚡", color: "#8b5cf6" },
-  4: { label: "Exam Mode 💀", tag: "It's Exam Mode 💀", color: "#ef4444" },
+  4: { label: "Exam Mode", tag: "It's Exam Mode", color: "#ef4444" },
 };
 
 // ─── Utility ─────────────────────────────────────────────────────────────────
@@ -103,6 +105,8 @@ function getQState(status: QuestionStatus): QState {
   if (status.isMarkedForReview) return "marked";
   return "unanswered";
 }
+
+
 
 // ─── Main Component ───────────────────────────────────────────────────────────
 export default function ExamPractice({ userId, exam, course, onBack, initialTopic, onExamComplete }: Props) {
@@ -137,12 +141,10 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
 
   // Palette drawer (mobile)
   const [paletteOpen, setPaletteOpen] = useState(false);
+  const [isReviewMode, setIsReviewMode] = useState(false);
 
-  // Camera & Confirmation
-  const [capturedImage, setCapturedImage] = useState<string | null>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [cameraError, setCameraError] = useState<string | null>(null);
+  const { user, saveState } = useUserState();
+
 
   // Load syllabus for subject/topic picker
   useEffect(() => {
@@ -202,10 +204,9 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
     setSelectedSubject(subject);
     setSelectedTopic(topic);
 
-    // Get current attempt number
-    const progress = allProgress.find(p => p.topic === topic);
-    const attemptNum = (progress?.attempts || 0) + 1;
-    const count = 20; 
+    // Batch Logic: Question counts and path selection
+    const attemptNum = selectedAttempt;
+    const count = attemptNum === 1 ? 30 : 20; 
     setQuestionCount(count);
 
     try {
@@ -287,36 +288,30 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
 
   // ─── Start Exam (from setup screen using current state) ─────────────────────
   const startExam = useCallback(async () => {
-    await startExamWith(selectedSubject, selectedTopic);
-  }, [selectedSubject, selectedTopic, startExamWith]);
-
-  // ─── Timer ─────────────────────────────────────────────────────────────────
-  useEffect(() => {
-    if (screen === "exam" && examStarted) {
-      const progress = allProgress.find(p => p.topic === selectedTopic);
-      const attemptNum = (progress?.attempts || 0) + 1;
-
-      timerRef.current = setInterval(() => {
-        setElapsedSeconds(prev => {
-          if (attemptNum === 1) {
-            return prev + 1; // Count up
-          }
-          
-          const next = prev - 1;
-          if (next <= 0) {
-            if (timerRef.current) clearInterval(timerRef.current);
-            // Auto-submit for Attempt 2, 3, 4
-            if (attemptNum >= 2) {
-              performFinalSubmit();
-            }
-            return 0;
-          }
-          return next; // Count down
-        });
-      }, 1000);
+    // Check if selecting an already completed attempt for "Review Mode"
+    const p = allProgress.find(p => p.topic === selectedTopic);
+    const completedCount = p?.attempts || 0;
+    
+    if (selectedAttempt <= completedCount) {
+      // Enter Review Mode instead of a new Exam
+      setIsReviewMode(true);
+      setExamLoading(true);
+      try {
+        await startExamWith(selectedSubject, selectedTopic);
+        setScreen("result"); // Jump straight to result review
+      } finally {
+        setExamLoading(false);
+      }
+    } else {
+      setIsReviewMode(false);
+      await startExamWith(selectedSubject, selectedTopic);
     }
-    return () => { if (timerRef.current) clearInterval(timerRef.current); };
-  }, [screen, examStarted, allProgress, selectedTopic]);
+  }, [selectedSubject, selectedTopic, startExamWith, allProgress, selectedAttempt, setIsReviewMode]);
+
+  const goTo = useCallback((idx: number) => {
+    setCurrentIdx(idx);
+    setPaletteOpen(false);
+  }, []);
 
   useEffect(() => {
     if (screen === "exam" && !examStarted && questions.length > 0) {
@@ -324,7 +319,6 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
     }
   }, [screen, questions.length, examStarted]);
 
-  // ─── Handlers ──────────────────────────────────────────────────────────────
   const selectOption = useCallback((opt: "A" | "B" | "C" | "D") => {
     setStatuses(prev => {
       const next = [...prev];
@@ -341,69 +335,14 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
     });
   }, [currentIdx]);
 
-  const goTo = useCallback((idx: number) => {
-    setCurrentIdx(idx);
-    setPaletteOpen(false);
-  }, []);
-
-  // ─── Camera Logic ─────────────────────────────────────────────────────────
-  const startCamera = async () => {
-    try {
-      setCameraError(null);
-      const stream = await navigator.mediaDevices.getUserMedia({ 
-        video: { facingMode: "user" } 
-      });
-      if (videoRef.current) {
-        videoRef.current.srcObject = stream;
-      }
-    } catch (err) {
-      console.error("Camera access error:", err);
-      setCameraError("Camera access denied or unavailable. Please ensure you have granted permission.");
-    }
-  };
-
-  const stopCamera = () => {
-    if (videoRef.current && videoRef.current.srcObject) {
-      const stream = videoRef.current.srcObject as MediaStream;
-      stream.getTracks().forEach(track => track.stop());
-      videoRef.current.srcObject = null;
-    }
-  };
-
-  const takePhoto = () => {
-    if (videoRef.current && canvasRef.current) {
-      const video = videoRef.current;
-      const canvas = canvasRef.current;
-      canvas.width = video.videoWidth;
-      canvas.height = video.videoHeight;
-      const ctx = canvas.getContext("2d");
-      if (ctx) {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const data = canvas.toDataURL("image/png");
-        setCapturedImage(data);
-        stopCamera();
-      }
-    }
-  };
-
-  const resetPhoto = () => {
-    setCapturedImage(null);
-    startCamera();
-  };
 
   const submitExam = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
     if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
-    setScreen("confirmation");
-    startCamera();
-  }, []);
-
-  const performFinalSubmit = useCallback(() => {
-    stopCamera();
     
-    // Attempt Logic again for calculation
+    // ─── Perform Final Submit Logic ───
     const currentProgress = allProgress.find(p => p.topic === selectedTopic);
-    const attemptNum = (currentProgress?.attempts || 0) + 1;
+    const attemptNum = selectedAttempt;
     
     // For Count-down (Attempt 2+), the actual time taken is Target - Remaining
     const actualElapsed = attemptNum === 1 ? elapsedSeconds : (targetSeconds - elapsedSeconds);
@@ -412,10 +351,10 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
     const currentSeenIds = questions.filter((_, i) => statuses[i].isAnswered).map(q => q.originalIndex);
     
     // Merge with existing progress for this topic
+    // Merge with existing progress for this topic
     const prevSeenIds = currentProgress?.seen_question_ids || [];
     const mergedSeenIds = Array.from(new Set([...prevSeenIds, ...currentSeenIds]));
-    const newAttempts = attemptNum;
-    
+
     // Save to Supabase
     saveProgress({
       user_id: userId,
@@ -425,16 +364,54 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
       avg_time: actualElapsed > 0 ? Number((actualElapsed / questions.length).toFixed(1)) : 0,
       completed: true,
       seen_question_ids: mergedSeenIds,
-      attempts: newAttempts,
+      attempts: attemptNum,
       last_attempt_at: new Date().toISOString(),
     })
-      .then(() => fetchProgress(userId).then(setAllProgress))
+      .then(() => fetchProgress(userId).then(updatedList => {
+        setAllProgress(updatedList);
+        // Sync Global Stats to Profile
+        const stats = calculateGlobalStats(updatedList);
+        saveState({
+          ...user,
+          avgAccuracy: stats.avgAccuracy,
+          avgPace: stats.avgPace,
+          progressPercent: stats.progressPercent
+        });
+      }))
       .catch(() => {});
 
     // Notify parent if embedded
     onExamComplete?.(correct, questions.length, actualElapsed, currentSeenIds);
     setScreen("result");
-  }, [statuses, questions, onExamComplete, elapsedSeconds, targetSeconds, selectedSubject, selectedTopic, allProgress, userId]);
+  }, [timerRef, elapsedSeconds, targetSeconds, allProgress, selectedTopic, selectedAttempt, statuses, questions, userId, selectedSubject, onExamComplete, user, saveState]);
+
+
+  // ─── Timer ─────────────────────────────────────────────────────────────────
+  useEffect(() => {
+    if (screen === "exam" && examStarted) {
+      const attemptNum = selectedAttempt; // Use selected batch for consistent timer logic
+
+      timerRef.current = setInterval(() => {
+        setElapsedSeconds(prev => {
+          if (attemptNum === 1) {
+            return prev + 1; // Count up
+          }
+          
+          const next = prev - 1;
+          if (next <= 0) {
+            if (timerRef.current) clearInterval(timerRef.current);
+            // Auto-submit for Attempt 2, 3, 4
+            if (attemptNum >= 2) {
+              submitExam();
+            }
+            return 0;
+          }
+          return next; // Count down
+        });
+      }, 1000);
+    }
+    return () => { if (timerRef.current) clearInterval(timerRef.current); };
+  }, [screen, examStarted, allProgress, selectedTopic, selectedAttempt, submitExam, targetSeconds]);
 
 
   const retryExam = useCallback(() => {
@@ -503,7 +480,7 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
 
                 {/* Attempt Selection */}
                 <div className={styles.formGroup}>
-                  <label className={styles.formLabel}>🚀 Select Attempt Batch</label>
+                  <label className={styles.formLabel}>Select Attempt Batch</label>
                   <div className={styles.attemptGrid}>
                     {[1, 2, 3, 4].map((n) => {
                       const p = allProgress.find(p => p.topic === selectedTopic);
@@ -534,7 +511,7 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                             {isCompleted && <span className={styles.completedBadge}>DONE</span>}
                           </div>
                           <span className={styles.attemptTitle}>Attempt {n}</span>
-                          <span className={styles.attemptSub}>20 Questions</span>
+                          <span className={styles.attemptSub}>{n === 1 ? "30" : "20"} Questions</span>
                         </div>
                       );
                     })}
@@ -570,7 +547,7 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                       <div className={styles.examInfoRow}>
                         <div className={styles.examInfoItem} style={{ background: selectedAttempt === 4 ? 'rgba(239,68,68,0.1)' : 'var(--bg-card2)', border: selectedAttempt === 4 ? '1px solid rgba(239,68,68,0.2)' : '1px solid var(--border)' }}>
-                          <span className={styles.examInfoIcon}>{selectedAttempt === 4 ? '💀' : '⏱'}</span>
+                          <span className={styles.examInfoIcon}>{selectedAttempt === 4 ? '📝' : '⏱'}</span>
                           <span style={{ fontWeight: "700" }}>{modeText}</span>
                         </div>
                         <div className={styles.examInfoItem}>
@@ -601,7 +578,13 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                   {examLoading ? (
                     <><div className={styles.btnSpinner} /> Loading Questions…</>
                   ) : (
-                    <>🚀 Start Exam</>
+                    <>
+                      {(() => {
+                         const p = allProgress.find(p => p.topic === selectedTopic);
+                         const isDone = selectedAttempt <= (p?.attempts || 0);
+                         return isDone ? "Review Completed Attempt" : "Start Practice Session";
+                      })()}
+                    </>
                   )}
                 </button>
               </>
@@ -612,89 +595,16 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
     );
   }
 
-  // ─── Render: Confirmation ──────────────────────────────────────────────────
-  if (screen === "confirmation") {
-    const answeredCount = statuses.filter(s => s.isAnswered).length;
-    const unansweredCount = statuses.filter(s => !s.isAnswered).length;
-    const markedCount = statuses.filter(s => s.isMarkedForReview).length;
-
-    return (
-      <div className={styles.setupOverlay}>
-        <div className={styles.setupCard} style={{ maxWidth: "600px" }}>
-          <div className={styles.header}>
-            <div className={styles.emoji}>📝</div>
-            <div className={styles.title}>Submit Confirmation</div>
-            <div className={styles.subtitle}>Review your attempts and verify your work</div>
-          </div>
-
-          <div className={styles.statsSummaryGrid}>
-            <div className={styles.statSummaryItem}>
-              <span className={styles.statSummaryVal} style={{ color: "#10b981" }}>{answeredCount}</span>
-              <span className={styles.statSummaryLbl}>Attempted</span>
-            </div>
-            <div className={styles.statSummaryItem}>
-              <span className={styles.statSummaryVal} style={{ color: "#ef4444" }}>{unansweredCount}</span>
-              <span className={styles.statSummaryLbl}>Not Attempted</span>
-            </div>
-            <div className={styles.statSummaryItem}>
-              <span className={styles.statSummaryVal} style={{ color: "#6366f1" }}>{markedCount}</span>
-              <span className={styles.statSummaryLbl}>Marked</span>
-            </div>
-          </div>
-
-          <div className={styles.cameraSection}>
-            <h3 className={styles.cameraTitle}>📸 Verification Photo</h3>
-            <p className={styles.cameraDesc}>Please take a clear photo of your practice rough work papers. (Laptop/Mobile camera)</p>
-            
-            <div className={styles.cameraViewport}>
-              {!capturedImage ? (
-                <>
-                  <video 
-                    ref={videoRef} 
-                    autoPlay 
-                    playsInline 
-                    className={styles.cameraVideo}
-                  />
-                  {cameraError && <div className={styles.cameraError}>{cameraError}</div>}
-                  <button className={styles.captureBtn} onClick={takePhoto}>Capture Photo</button>
-                </>
-              ) : (
-                <>
-                  <img src={capturedImage} alt="Captured work" className={styles.capturedImg} />
-                  <button className={styles.retakeBtn} onClick={resetPhoto}>🔄 Retake Photo</button>
-                </>
-              )}
-              <canvas ref={canvasRef} style={{ display: "none" }} />
-            </div>
-          </div>
-
-          <div className={styles.confirmActions}>
-            <button className={styles.confirmBackBtn} onClick={() => { stopCamera(); setScreen("exam"); }}>
-              ← Back to Questions
-            </button>
-            <button 
-              className={styles.finalSubmitBtn} 
-              onClick={performFinalSubmit}
-              disabled={!capturedImage && !cameraError}
-            >
-              ✅ Final Submit & See Results
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   // ─── Render: Result ────────────────────────────────────────────────────────
   if (screen === "result") {
     const scorePercent = Math.round((correctCount / questions.length) * 100);
 
     let performanceMsg = "";
-    let performanceEmoji = "";
-    if (scorePercent >= 80) { performanceMsg = "Outstanding! You're exam-ready."; performanceEmoji = "🏆"; }
-    else if (scorePercent >= 60) { performanceMsg = "Good attempt! A bit more practice and you'll ace it."; performanceEmoji = "💪"; }
-    else if (scorePercent >= 40) { performanceMsg = "Keep grinding — you're getting there!"; performanceEmoji = "📈"; }
-    else { performanceMsg = "Don't give up! Review the topic and try again."; performanceEmoji = "🔥"; }
+    if (scorePercent >= 80) { performanceMsg = "Outstanding! You're exam-ready."; }
+    else if (scorePercent >= 60) { performanceMsg = "Good attempt! A bit more practice and you'll ace it."; }
+    else if (scorePercent >= 40) { performanceMsg = "Keep grinding — you're getting there!"; }
+    else { performanceMsg = "Don't give up! Review the topic and try again."; }
 
     return (
       <div className={styles.resultScreen}>
@@ -702,7 +612,6 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
         <div className={styles.resultCard}>
           {/* Header */}
           <div className={styles.resultHeader}>
-            <div className={styles.resultEmoji}>{performanceEmoji}</div>
             <h1 className={styles.resultTitle}>Exam Complete!</h1>
             <p className={styles.resultTopic}>{selectedTopic} — {selectedSubject}</p>
             <p className={styles.performanceMsg}>{performanceMsg}</p>
@@ -712,14 +621,13 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
               const nextAttempt = completedCount + 1;
               const nextModeName = ATTEMPT_MODES[nextAttempt]?.label || "Practice";
               
-              if (completedCount >= maxAttempts) {
-                return <p className={styles.previousAttemptHint} style={{ color: "#10b981", fontWeight: "700" }}>🏆 Topic Mastered! You have completed all {maxAttempts} unique batches. 🔥</p>;
+               if (completedCount >= maxAttempts) {
+                return <p className={styles.previousAttemptHint} style={{ color: "#10b981", fontWeight: "700" }}>Topic Mastered! You have completed all {maxAttempts} unique batches. </p>;
               }
-              return <p className={styles.previousAttemptHint}>Your attempt has been saved. 🚀 **Next:** Start Attempt {nextAttempt}: **{nextModeName}** 🔥</p>;
+              return <p className={styles.previousAttemptHint}>Your attempt has been saved. **Next:** Start Attempt {nextAttempt}: **{nextModeName}**</p>;
             })()}
           </div>
 
-          {/* ── Attempt Logged Banner ── */}
           <div className={styles.nextLevelUnlocked} style={{ background: "rgba(16, 185, 129, 0.15)", border: "1px solid rgba(16, 185, 129, 0.3)" }}>
             <span className={styles.nextLevelIcon}>✅</span>
             <div className={styles.nextLevelText}>
@@ -842,14 +750,17 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
           </div>
 
           {/* Actions */}
-          <div className={styles.resultActions}>
-            <button id="exam-retry-btn" className={styles.retryBtn} onClick={retryExam}>
-              🔄 Try Again
-            </button>
-            <button id="exam-back-btn" className={styles.resultBackBtn} onClick={onBack}>
-              ← Back to Practice
-            </button>
-          </div>
+
+
+
+            <div className={styles.resultActions}>
+              <button id="exam-retry-btn" className={styles.retryBtn} onClick={retryExam}>
+                🔄 Try Again
+              </button>
+              <button id="exam-back-btn" className={styles.resultBackBtn} onClick={onBack}>
+                ← Back to Practice
+              </button>
+            </div>
         </div>
       </div>
     );
@@ -1046,16 +957,7 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                     id="exam-submit-btn"
                     className={`${styles.navBtn} ${styles.submitBtn}`}
                     disabled={!canSubmit}
-                    onClick={() => {
-                      if (attemptNum === 1 || (!timeUp && allAnswered)) {
-                        const timeLeft = attemptNum === 1 ? (targetSeconds - elapsedSeconds) : elapsedSeconds;
-                        const msg = attemptNum === 1 
-                          ? `You completed ${answeredCount}/${questions.length} questions.\n\nAre you sure you want to submit?`
-                          : `You still have ${fmt(timeLeft)} remaining.\n\nAre you sure you want to submit the exam early?`;
-                        if (!window.confirm(msg)) return;
-                      }
-                      submitExam();
-                    }}
+                    onClick={submitExam}
                     style={{ opacity: canSubmit ? 1 : 0.4, cursor: canSubmit ? 'pointer' : 'not-allowed' }}
                   >
                     Submit Exam

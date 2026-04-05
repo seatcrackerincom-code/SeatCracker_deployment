@@ -209,7 +209,7 @@ export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser
                   </div>
                 ) : (
                   <button onClick={startEditRank} style={{ background: "rgba(99,102,241,0.15)", border: "none", borderRadius: "6px", padding: "3px 10px", color: "#a5b4fc", cursor: "pointer", fontSize: "13px", fontWeight: "700" }}>
-                    #{user.targetRank.toLocaleString()} ✏️
+                    #{user.targetRank.toLocaleString()}
                   </button>
                 )}
               </div>
@@ -265,7 +265,7 @@ export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser
             {/* ── Promo Code Input ── */}
             <div style={{ background: "rgba(99,102,241,0.06)", borderRadius: "14px", padding: "14px", border: "1px solid rgba(99,102,241,0.15)", marginBottom: "16px" }}>
               <h3 style={{ fontSize: "12px", fontWeight: "700", color: "#a5b4fc", margin: "0 0 10px", textTransform: "uppercase", letterSpacing: "0.05em" }}>
-                🎁 Redeem Promo Code
+                Redeem Promo Code
               </h3>
 
               <div style={{ display: "flex", gap: "8px" }}>
@@ -362,12 +362,12 @@ export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser
               <div style={{ marginTop: "16px" }}>
                 {access.status === "premium" && (
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", padding: "10px 14px", background: "rgba(245,158,11,0.1)", border: "1px solid rgba(245,158,11,0.25)", borderRadius: "12px", fontSize: "12px", fontWeight: "700", color: "#fbbf24" }}>
-                    👑 Premium Member — Lifetime Access
+                    Premium Member — Lifetime Access
                   </div>
                 )}
                 {access.status === "trial" && (
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", padding: "10px 14px", background: "rgba(99,102,241,0.1)", border: "1px solid rgba(99,102,241,0.25)", borderRadius: "12px", fontSize: "12px", fontWeight: "700", color: "#a5b4fc" }}>
-                    🔥 Free Trial — {access.daysLeft} day{access.daysLeft !== 1 ? "s" : ""} left
+                    Free Trial — {access.daysLeft} day{access.daysLeft !== 1 ? "s" : ""} left
                   </div>
                 )}
                 {access.status === "expired" && (
@@ -390,7 +390,7 @@ export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser
                     onMouseEnter={e => e.currentTarget.style.transform = "scale(0.98)"}
                     onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
                   >
-                    🚀 Purchase Course
+                    Purchase Course
                   </button>
                 )}
               </div>

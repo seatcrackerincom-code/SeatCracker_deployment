@@ -5,6 +5,12 @@ import styles from "./PracticeArena.module.css";
 import { saveProgress, fetchProgress, type UserProgress } from "../lib/supabase";
 import ExamPractice from "./ExamPractice";
 import { getBaseTime, getAttemptTargetTime } from "../utils/timer_mapping";
+import { useUserState } from "../lib/useUserState";
+import { calculateGlobalStats } from "../lib/stats_helper";
+import ProfileModal from "./ProfileModal";
+import ThemeToggle from "./ThemeToggle";
+import type { User } from "../lib/firebase";
+import type { AccessState } from "../lib/access";
 
 
 
@@ -40,6 +46,8 @@ interface Props {
   course: string;
   onBack: () => void;
   onGoToRoadmap: () => void;
+  authUser?: User | null;
+  access?: AccessState | null;
 }
 
 const SUBJECT_MAP: Record<string, string[]> = {
@@ -50,7 +58,7 @@ const SUBJECT_MAP: Record<string, string[]> = {
 
 type View = "home" | "topic";
 
-export default function PracticeArena({ userId, exam, course, onBack, onGoToRoadmap }: Props) {
+export default function PracticeArena({ userId, exam, course, onBack, onGoToRoadmap, authUser, access }: Props) {
   const [mounted, setMounted] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [data, setData] = useState<SubjectData[]>([]);
@@ -66,6 +74,10 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
   // Exam mode — replaces old dummy test
   const [examMode, setExamMode] = useState(false);
   const [examCount, setExamCount] = useState<number>(15);
+  const [showPracticeModal, setShowPracticeModal] = useState(false);
+  const [showProfile, setShowProfile] = useState(false);
+
+  const { user, saveState } = useUserState();
 
 
   useEffect(() => {
@@ -256,8 +268,37 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
             </button>
           </div>
           <h1 className={styles.topTitle}>Free Practice</h1>
-          <div style={{ width: 80 }} />
+          {/* Home Button (Premium Circular Style) */}
+          <button
+            onClick={onBack}
+            title="Go Home"
+            style={{
+              width: "42px", height: "42px",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              background: "rgba(255,255,255,0.03)",
+              border: "1px solid rgba(255,255,255,0.1)",
+              borderRadius: "50%",
+              color: "#fff",
+              cursor: "pointer",
+              transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+              fontSize: "1.2rem",
+              boxShadow: "0 8px 32px rgba(0,0,0,0.3)",
+              backdropFilter: "blur(8px)"
+            }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.08)"; e.currentTarget.style.transform = "translateY(-2px) scale(1.05)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.2)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.03)"; e.currentTarget.style.transform = "translateY(0) scale(1)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; }}
+          >
+            🏠
+          </button>
         </header>
+        <ProfileModal
+          isOpen={showProfile}
+          onClose={() => setShowProfile(false)}
+          authUser={authUser}
+          access={access}
+          accuracy={user?.avgAccuracy ?? 0}
+          pace={String(user?.avgPace ?? 2.5)}
+        />
 
         <div className={styles.contentArea}>
           {/* ── HOME VIEW ── */}
@@ -265,13 +306,12 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
             <div className={styles.homeView}>
               {lastProgress && (
                 <div className={styles.dailyFeedback}>
-                  <span className={styles.feedbackEmoji}>🔥</span>
                   <div>
                     <p className={styles.feedbackTitle}>Yesterday&apos;s Performance</p>
                     <p className={styles.feedbackSub}>
                       <strong>{lastProgress.topic}</strong> — Accuracy: <strong>{lastProgress.accuracy}%</strong> · Avg time: <strong>{lastProgress.avg_time}s/q</strong>
                     </p>
-                    <p className={styles.feedbackMotivation}>Keep it up and improve today! 💪</p>
+                    <p className={styles.feedbackMotivation}>Keep it up and improve today! </p>
                   </div>
                 </div>
               )}
@@ -341,24 +381,98 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
 
 
 
-                  <button
-                    className={styles.startTestBtn}
-                    id="start-exam-btn"
-                    onClick={() => setExamMode(true)}
-                  >
-                    {(() => {
+                  {(() => {
                       const p = allProgress.find(p => p.topic === selectedTopic.chapter.chapter);
                       const attempt = (p?.attempts || 0) + 1;
                       const base = getBaseTime(selectedTopic.subject, selectedTopic.chapter.chapter);
                       const target = getAttemptTargetTime(base, attempt);
                       const modeName = ["", "Learning", "Controlled", "Speed", "Exam 💀"][attempt] || "Practice";
                       return (
-                        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
-                          <span style={{ fontSize: "1rem" }}>{modeName} Mode →</span>
-                          <span style={{ fontSize: "0.75rem", opacity: 0.8, fontWeight: "normal" }}>Attempt {attempt} · {Math.floor(target/60)} min</span>
-                        </div>
+                        <button
+                          className={styles.startTestBtn}
+                          id="start-exam-btn"
+                          onClick={() => attempt === 1 ? setShowPracticeModal(true) : setExamMode(true)}
+                        >
+                          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
+                            <span style={{ fontSize: "1rem" }}>{modeName} Mode →</span>
+                            <span style={{ fontSize: "0.75rem", opacity: 0.8, fontWeight: "normal" }}>Attempt {attempt} · {Math.floor(target/60)} min</span>
+                          </div>
+                        </button>
                       );
-                    })()}
+                  })()}
+                </div>
+              </div>
+
+              {/* Personalization & Profile (Premium Layout) */}
+              <div style={{
+                marginTop: "32px",
+                padding: "24px",
+                background: "linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%)",
+                backdropFilter: "blur(20px)",
+                border: "1px solid rgba(255, 255, 255, 0.08)",
+                borderRadius: "28px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "24px",
+                boxShadow: "0 20px 50px rgba(0,0,0,0.2)"
+              }}>
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+                    <div style={{
+                      width: 50, height: 50, borderRadius: "16px",
+                      background: "linear-gradient(135deg, #6c63ff22, #a78bfa22)",
+                      border: "1px solid rgba(139, 92, 246, 0.2)",
+                      display: "flex", alignItems: "center", justifyContent: "center",
+                      color: "var(--accent2)", fontSize: "1.5rem",
+                      boxShadow: "inset 0 0 10px rgba(139, 92, 246, 0.2)"
+                    }}>✨</div>
+                    <div>
+                      <p style={{ margin: 0, fontSize: "16px", fontWeight: "800", color: "#fff", letterSpacing: "0.01em" }}>Personalization</p>
+                      <p style={{ margin: 0, fontSize: "12px", color: "rgba(255,255,255,0.5)", fontWeight: "500" }}>Manage your account and theme</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div style={{ 
+                  display: "grid", 
+                  gridTemplateColumns: "1fr 1fr", 
+                  gap: "12px" 
+                }}>
+                  <div style={{
+                    background: "rgba(255,255,255,0.03)",
+                    border: "1px solid rgba(255,255,255,0.08)",
+                    borderRadius: "16px",
+                    padding: "12px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between"
+                  }}>
+                    <span style={{ fontSize: "13px", fontWeight: "700", color: "rgba(255,255,255,0.7)", marginLeft: "8px" }}>App Theme</span>
+                    <ThemeToggle />
+                  </div>
+                  
+                  <button
+                    onClick={() => setShowProfile(true)}
+                    style={{
+                      background: "linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(167, 139, 250, 0.1) 100%)",
+                      border: "1px solid rgba(139, 92, 246, 0.2)",
+                      color: "#fff",
+                      padding: "16px",
+                      borderRadius: "16px",
+                      fontSize: "14px",
+                      fontWeight: "800",
+                      cursor: "pointer",
+                      transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: "10px"
+                    }}
+                    onMouseEnter={(e) => { e.currentTarget.style.background = "linear-gradient(135deg, rgba(108, 99, 255, 0.2) 0%, rgba(167, 139, 250, 0.2) 100%)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.background = "linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(167, 139, 250, 0.1) 100%)"; e.currentTarget.style.transform = "translateY(0)"; }}
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    My Profile
                   </button>
                 </div>
               </div>
@@ -366,21 +480,137 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
           )}
 
 
+          {/* ── Practice Session Modal (Attempt 1 only) ── */}
+          {showPracticeModal && selectedTopic && (
+            <div style={{
+              position: "fixed", inset: 0, zIndex: 1000,
+              background: "rgba(0,0,0,0.75)",
+              backdropFilter: "blur(12px)",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              padding: "1rem"
+            }}>
+              <div style={{
+                background: "linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%)",
+                border: "1px solid rgba(139,92,246,0.4)",
+                borderRadius: "20px",
+                padding: "2.5rem 2rem",
+                maxWidth: "460px",
+                width: "100%",
+                boxShadow: "0 25px 60px rgba(0,0,0,0.6), 0 0 40px rgba(139,92,246,0.15)",
+                textAlign: "center",
+                animation: "fadeInUp 0.3s ease"
+              }}>
+                {/* AI Avatar */}
+                <div style={{
+                  width: "72px", height: "72px",
+                  background: "linear-gradient(135deg, #7c3aed, #4f46e5)",
+                  borderRadius: "50%",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  fontSize: "2rem", margin: "0 auto 1.25rem",
+                  boxShadow: "0 0 30px rgba(124,58,237,0.5)"
+                }}>🤖</div>
+
+                <p style={{ fontSize: "0.75rem", letterSpacing: "0.15em", color: "#a78bfa", textTransform: "uppercase", marginBottom: "0.5rem", fontWeight: 600 }}>
+                  AI Teacher · {selectedTopic.chapter.chapter}
+                </p>
+                <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#fff", margin: "0 0 1.25rem", lineHeight: 1.3 }}>
+                  This is your Practice Session 🎯
+                </h2>
+
+                {/* Speech bubble */}
+                <div style={{
+                  background: "rgba(255,255,255,0.06)",
+                  border: "1px solid rgba(255,255,255,0.1)",
+                  borderRadius: "14px",
+                  padding: "1.25rem 1.5rem",
+                  marginBottom: "1.75rem",
+                  textAlign: "left"
+                }}>
+                  <p style={{ color: "#e2e8f0", lineHeight: 1.7, margin: 0, fontSize: "0.95rem" }}>
+                    Hey! Before we dive in — <strong style={{ color: "#a78bfa" }}>Attempt 1 is your warm-up</strong>. You have{" "}
+                    <strong style={{ color: "#f59e0b" }}>30 questions</strong>. Take your time, read each question slowly and thoroughly.
+                    No pressure. This is about learning, not speed. 
+                  </p>
+                  <p style={{ color: "#94a3b8", margin: "0.85rem 0 0", fontSize: "0.9rem" }}>
+                    From <strong style={{ color: "#34d399" }}>Attempt 2 onwards</strong>, the real timed mock battles begin — faster, harder, exam-mode. 
+                  </p>
+                </div>
+
+                {/* Checklist */}
+                <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem", marginBottom: "2rem", textAlign: "left" }}>
+                  {[
+                    ["📖", "Read each question at least twice"],
+                    ["🧘", "No rush — take your full time"],
+                    ["❌", "Wrong answers = learning moments"],
+                    ["⚡", "Real mock battle starts at Attempt 2"]
+                  ].map(([icon, text]) => (
+                    <div key={text} style={{ display: "flex", alignItems: "center", gap: "0.75rem", background: "rgba(255,255,255,0.04)", borderRadius: "8px", padding: "0.5rem 0.75rem" }}>
+                      <span style={{ fontSize: "1.1rem" }}>{icon}</span>
+                      <span style={{ color: "#cbd5e1", fontSize: "0.88rem" }}>{text}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Buttons */}
+                <div style={{ display: "flex", gap: "0.75rem" }}>
+                  <button
+                    onClick={() => setShowPracticeModal(false)}
+                    style={{
+                      flex: 1, padding: "0.85rem", borderRadius: "12px",
+                      border: "1px solid rgba(255,255,255,0.15)",
+                      background: "transparent", color: "#94a3b8",
+                      cursor: "pointer", fontSize: "0.9rem",
+                      transition: "all 0.2s"
+                    }}
+                  >
+                    ← Go Back
+                  </button>
+                  <button
+                    onClick={() => { setShowPracticeModal(false); setExamMode(true); }}
+                    style={{
+                      flex: 2, padding: "0.85rem", borderRadius: "12px",
+                      border: "none",
+                      background: "linear-gradient(135deg, #7c3aed, #4f46e5)",
+                      color: "#fff", cursor: "pointer",
+                      fontSize: "1rem", fontWeight: 700,
+                      boxShadow: "0 4px 20px rgba(124,58,237,0.4)",
+                      transition: "all 0.2s"
+                    }}
+                  >
+                    Let&apos;s Go! 
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* Exam mode — renders on top as full-screen overlay */}
           {examMode && selectedTopic && (
-            <ExamPractice
-              userId={userId}
-              exam={exam}
-              course={course}
-              onBack={() => setExamMode(false)}
-              initialTopic={{
-                subject: selectedTopic.subject,
-                topic: selectedTopic.chapter.chapter,
-              }}
-              onExamComplete={() => {
-                fetchProgress(userId).then(setAllProgress);
-              }}
-            />
+            <div className={styles.examOverlay}>
+              <ExamPractice
+                userId={userId}
+                exam={exam}
+                course={course}
+                onBack={() => setExamMode(false)}
+                initialTopic={{
+                  subject: selectedTopic.subject,
+                  topic: selectedTopic.chapter.chapter,
+                }}
+                onExamComplete={() => {
+                  fetchProgress(userId).then(updatedList => {
+                    setAllProgress(updatedList);
+                    // Update global stats
+                    const stats = calculateGlobalStats(updatedList);
+                    saveState({
+                      ...user,
+                      avgAccuracy: stats.avgAccuracy,
+                      avgPace: stats.avgPace,
+                      progressPercent: stats.progressPercent
+                    });
+                  });
+                }}
+              />
+            </div>
           )}
         </div>
       </div>

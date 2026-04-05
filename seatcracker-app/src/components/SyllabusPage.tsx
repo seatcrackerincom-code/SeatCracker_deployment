@@ -137,9 +137,6 @@ export default function SyllabusPage({ userId, exam, course, onBack, onRestart, 
             </svg>
             Back
           </button>
-          <button className={styles.restartBtn} onClick={onRestart} id="syllabus-restart-btn">
-            Change Exam
-          </button>
           {onStartPractice && (
             <button className={styles.restartBtn} onClick={onStartPractice} id="syllabus-practice-btn" style={{ background: "linear-gradient(135deg,#6c63ff,#a78bfa)", color: "#fff", border: "none", fontWeight: 700 }}>
               🎯 Start Practising

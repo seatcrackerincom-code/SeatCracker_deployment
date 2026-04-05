@@ -304,6 +304,126 @@
       },
       "answer": "A",
       "pyq": false
+    },
+    {
+      "id": "differential_equations_21",
+      "question": "Order of DE: d²y/dx² + (dy/dx)³ = x is:",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "0"
+      },
+      "answer": "B",
+      "difficulty": "medium"
+    },
+    {
+      "id": "differential_equations_22",
+      "question": "Degree of DE: [d²y/dx²]² + dy/dx = x is:",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "Undefined (default 1)"
+      },
+      "answer": "B",
+      "difficulty": "hard"
+    },
+    {
+      "id": "differential_equations_23",
+      "question": "Solution of dy/dx = y is:",
+      "options": {
+        "A": "y = x + C",
+        "B": "y = Ce^x",
+        "C": "y = Cx",
+        "D": "y = e^x only"
+      },
+      "answer": "B",
+      "difficulty": "medium"
+    },
+    {
+      "id": "differential_equations_24",
+      "question": "Separable DE: dy/dx = x/y → integrating gives:",
+      "options": {
+        "A": "y = x + C",
+        "B": "y² = x² + C",
+        "C": "y/x = C",
+        "D": "y = x²+C"
+      },
+      "answer": "B",
+      "difficulty": "medium"
+    },
+    {
+      "id": "differential_equations_25",
+      "question": "Integrating factor for dy/dx + Py = Q is:",
+      "options": {
+        "A": "e^Q",
+        "B": "e^(∫P dx)",
+        "C": "e^P",
+        "D": "∫Qdx"
+      },
+      "answer": "B",
+      "difficulty": "medium"
+    },
+    {
+      "id": "differential_equations_26",
+      "question": "General solution contains:",
+      "options": {
+        "A": "No constants",
+        "B": "Arbitrary constants (equal to order of DE)",
+        "C": "One constant always",
+        "D": "Particular values"
+      },
+      "answer": "B",
+      "difficulty": "medium"
+    },
+    {
+      "id": "differential_equations_27",
+      "question": "Homogeneous DE: dy/dx = f(y/x). Substitute y = vx, then:",
+      "options": {
+        "A": "Equation simplifies to v + x·dv/dx = f(v)",
+        "B": "Equation becomes linear",
+        "C": "v is eliminated",
+        "D": "y separates"
+      },
+      "answer": "A",
+      "difficulty": "hard"
+    },
+    {
+      "id": "differential_equations_28",
+      "question": "Newton's law of cooling: dT/dt = -k(T-T₀). Solution:",
+      "options": {
+        "A": "T = T₀ + Ce^(kt)",
+        "B": "T = T₀ + Ce^(-kt)",
+        "C": "T = kt + C",
+        "D": "T = T₀e^(-kt)"
+      },
+      "answer": "B",
+      "difficulty": "hard"
+    },
+    {
+      "id": "differential_equations_29",
+      "question": "Exact DE condition: M dx + N dy = 0 is exact if:",
+      "options": {
+        "A": "∂M/∂x = ∂N/∂y",
+        "B": "∂M/∂y = ∂N/∂x",
+        "C": "M = N",
+        "D": "M + N = 0"
+      },
+      "answer": "B",
+      "difficulty": "hard"
+    },
+    {
+      "id": "differential_equations_30",
+      "question": "Clairaut's equation: y = xy' + f(y') general solution is:",
+      "options": {
+        "A": "A family of parabolas",
+        "B": "Family of straight lines y = cx + f(c)",
+        "C": "Single curve",
+        "D": "Circles"
+      },
+      "answer": "B",
+      "difficulty": "hard"
     }
   ]
 }

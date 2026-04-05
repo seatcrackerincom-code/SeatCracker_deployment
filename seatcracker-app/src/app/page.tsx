@@ -10,6 +10,9 @@ import RoadmapPage from "../components/RoadmapPage";
 import ModeSelect from "../components/ModeSelect";
 import PracticeArena from "../components/PracticeArena";
 import RoadmapMode from "../components/RoadmapMode";
+import RealBattleMode from "../components/RealBattleMode";
+import GlobalHeader from "../components/GlobalHeader";
+import FloatingGear from "../components/FloatingGear";
 import LoginScreen from "../components/LoginScreen";
 import AccessGate from "../components/AccessGate";
 import IntroPage from "../components/IntroPage";
@@ -34,14 +37,14 @@ import {
  * 9: PracticeArena (Practice Test Flow)
  * 10: RoadmapMode (Roadmap Execution Flow)
  */
-type Step = -1 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+type Step = -1 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11;
 
 export default function Home() {
   const [step, setStep] = useState<Step>(-1);
   const [testCategory, setTestCategory] = useState(""); // e.g., "EAMCET"
   const [exam, setExam] = useState("");                  // e.g., "AP" or "TS"
   const [course, setCourse] = useState("");              // e.g., "Engineering"
-  const [mode, setMode] = useState<"practice" | "roadmap" | "">("");
+  const [mode, setMode] = useState<"practice" | "roadmap" | "battle" | "">("");
   const [mounted, setMounted] = useState(false);
   const [roadmapData, setRoadmapData] = useState<
     { day: number; tasks: { subject: string; topic: string; priority: string; time: string }[] }[]
@@ -177,10 +180,12 @@ export default function Home() {
     go(1);
   };
 
-  const handleModeNext = (selectedMode: "practice" | "roadmap") => {
+  const handleModeNext = (selectedMode: "practice" | "roadmap" | "battle") => {
     setMode(selectedMode);
     localStorage.setItem("sc_mode", selectedMode);
-    go(selectedMode === "roadmap" ? 8 : 7);
+    if (selectedMode === "roadmap") go(8);
+    else if (selectedMode === "battle") go(11);
+    else go(7);
   };
 
   const handleStartRoadmapMode = (roadmap: typeof roadmapData) => {
@@ -192,8 +197,19 @@ export default function Home() {
 
   if (!mounted || !authChecked) return null;
 
+  const showGlobalHeader = step >= 0 && step <= 6;
+  const showFloatingGear = step >= 7;
+
   return (
     <main style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+      {showGlobalHeader && <GlobalHeader />}
+      {showFloatingGear && (
+        <FloatingGear 
+          onHome={() => go(6)} 
+          authUser={authUser} 
+          access={access} 
+        />
+      )}
 
       {/* Step -1: Intro Page */}
       {step === -1 && <IntroPage onStart={() => go(0)} />}
@@ -275,6 +291,8 @@ export default function Home() {
           course={course}
           onBack={() => go(6)}
           onGoToRoadmap={() => go(8)}
+          authUser={authUser}
+          access={access}
         />
       )}
 
@@ -286,6 +304,16 @@ export default function Home() {
           course={course}
           roadmap={roadmapData}
           onBack={() => go(8)}
+        />
+      )}
+
+      {/* Step 11: Real Battle Mode */}
+      {step === 11 && (
+        <RealBattleMode
+          userId={effectiveUserId}
+          exam={exam}
+          course={course}
+          onBack={() => go(6)}
         />
       )}
     </main>
