@@ -11,30 +11,10 @@ export interface PromoConfig {
 }
 
 export const GLOBAL_PROMO_CODES: Record<string, PromoConfig> = {
-  SAVE10: {
+  CRACKER_CODE_STYLE_WITH_SHABIHA: {
     type: "discount",
-    value: 10,
-    description: "10% discount on Premium upgrade",
-  },
-  MOCKBOOST: {
-    type: "unlock",
-    feature: "mock_test_pack",
-    description: "Special Mock Test Pack unlocked",
-  },
-  WEEKEND: {
-    type: "resource",
-    feature: "weekend_tests",
-    description: "Weekend Practice Sets unlocked",
-  },
-  XP500: {
-    type: "boost",
-    value: 500,
-    description: "500 XP Boost added to your profile",
-  },
-  CRACKERJACK: {
-    type: "unlock",
-    feature: "ai_hints",
-    description: "AI Hint mode unlocked for all topics",
+    value: 12,
+    description: "12% Exclusive Discount Applied!",
   },
   SC_ULTIMATE_LIFETIME_ACCESS_CRACKER_MODE_SECURE_2026: {
     type: "lifetime",

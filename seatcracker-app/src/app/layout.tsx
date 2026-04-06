@@ -25,6 +25,8 @@ export const viewport: Viewport = {
 
 import { ThemeProvider } from "../components/ThemeProvider";
 import GlobalHeader from "../components/GlobalHeader";
+import CookieBanner from "../components/CookieBanner";
+import GlobalFooter from "../components/GlobalFooter";
 
 export default function RootLayout({
   children,
@@ -36,6 +38,8 @@ export default function RootLayout({
       <body suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
+          <CookieBanner />
+          <GlobalFooter />
         </ThemeProvider>
       </body>
     </html>

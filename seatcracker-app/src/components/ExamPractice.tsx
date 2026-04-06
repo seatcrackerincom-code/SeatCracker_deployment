@@ -518,19 +518,64 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                   </div>
                 </div>
 
-                {/* Last Attempt Info */}
+                {/* All Attempts Table */}
                 {(() => {
                   const p = allProgress.find(p => p.topic === selectedTopic);
-                  if (!p || !p.last_attempt_at) return null;
+                  const completedCount = p?.attempts || 0;
+                  
                   return (
-                    <div style={{ marginTop: "12px", padding: "12px 14px", background: "var(--bg-card2)", borderRadius: "10px", fontSize: "0.85rem", color: "var(--text)", border: "1px solid var(--border)" }}>
-                      <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "4px" }}>
-                        <span>🕒 <strong>Last Attempt:</strong> {new Date(p.last_attempt_at).toLocaleString()}</span>
-                        <span style={{ fontWeight: "600", color: "var(--accent)" }}>Attempt #{p.attempts || 1}</span>
-                      </div>
-                      {p.accuracy !== undefined && (
-                        <div style={{ fontSize: "14px", fontWeight: "700", color: p.accuracy >= 50 ? "#10b981" : "#fca5a5" }}>
-                          🎯 Previous Score: {p.accuracy.toFixed(0)}%
+                    <div style={{ marginTop: "16px", background: "var(--bg-card2)", border: "1px solid var(--border)", borderRadius: "12px", overflow: "hidden" }}>
+                      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.85rem", textAlign: "left" }}>
+                        <thead>
+                          <tr style={{ background: "rgba(255,255,255,0.03)", color: "var(--text-muted)", borderBottom: "1px solid var(--border)" }}>
+                            <th style={{ padding: "12px 14px", fontWeight: "600" }}>Attempt</th>
+                            <th style={{ padding: "12px 14px", fontWeight: "600" }}>Mode</th>
+                            <th style={{ padding: "12px 14px", fontWeight: "600" }}>Target</th>
+                            <th style={{ padding: "12px 14px", fontWeight: "600", textAlign: "right" }}>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {[1, 2, 3, 4].map(n => {
+                            const isCompleted = n <= completedCount;
+                            const isCurrent = n === completedCount;
+                            const isActive = n === selectedAttempt;
+                            
+                            const base = getBaseTime(selectedSubject, selectedTopic);
+                            const target = getAttemptTargetTime(base, n);
+                            const modeText = ATTEMPT_MODES[n]?.label || "Practice";
+                            
+                            return (
+                              <tr key={n} style={{ 
+                                background: isActive ? "rgba(108, 99, 255, 0.1)" : "transparent",
+                                borderBottom: n !== 4 ? "1px solid var(--border)" : "none",
+                                transition: "background 0.2s"
+                              }}>
+                                <td style={{ padding: "12px 14px", color: isActive ? "var(--accent)" : "var(--text)", fontWeight: isActive ? 700 : 500 }}>
+                                  #{n}
+                                </td>
+                                <td style={{ padding: "12px 14px", color: "var(--text)", fontWeight: 500 }}>
+                                  {modeText}
+                                </td>
+                                <td style={{ padding: "12px 14px", color: "var(--text-muted)", fontFamily: "monospace", fontSize: "0.9rem" }}>
+                                  {fmt(target)}
+                                </td>
+                                <td style={{ padding: "12px 14px", textAlign: "right" }}>
+                                  {isCompleted ? (
+                                    <span style={{ color: "#10b981", fontWeight: "700", display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "6px" }}>
+                                      ✅ {isCurrent && p?.accuracy !== undefined ? `(${p.accuracy}%)` : "Done"}
+                                    </span>
+                                  ) : (
+                                    <span style={{ color: "var(--text-muted)", opacity: 0.5, fontWeight: "500" }}>Pending</span>
+                                  )}
+                                </td>
+                              </tr>
+                            );
+                          })}
+                        </tbody>
+                      </table>
+                      {p?.last_attempt_at && (
+                        <div style={{ padding: "8px 14px", fontSize: "0.75rem", color: "var(--text-muted)", borderTop: "1px dashed var(--border)", background: "rgba(255,255,255,0.01)", textAlign: "center" }}>
+                          Last activity: {new Date(p.last_attempt_at).toLocaleString()}
                         </div>
                       )}
                     </div>
@@ -569,24 +614,35 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                 {examError && <div className={styles.examError}>{examError}</div>}
 
                 {/* Start Button */}
-                <button
-                  id="exam-start-btn"
-                  className={styles.startExamBtn}
-                  onClick={startExam}
-                  disabled={!selectedTopic || examLoading}
-                >
-                  {examLoading ? (
-                    <><div className={styles.btnSpinner} /> Loading Questions…</>
-                  ) : (
-                    <>
-                      {(() => {
-                         const p = allProgress.find(p => p.topic === selectedTopic);
-                         const isDone = selectedAttempt <= (p?.attempts || 0);
-                         return isDone ? "Review Completed Attempt" : "Start Practice Session";
-                      })()}
-                    </>
-                  )}
-                </button>
+                {(() => {
+                  const p = allProgress.find(p => p.topic === selectedTopic);
+                  const isDone = selectedAttempt <= (p?.attempts || 0);
+                  const isCurrentModeCompleted = isDone && selectedAttempt === p?.attempts;
+                  
+                  return (
+                    <button
+                      id="exam-start-btn"
+                      className={styles.startExamBtn}
+                      onClick={startExam}
+                      disabled={!selectedTopic || examLoading || isDone}
+                      style={isDone ? { background: "rgba(16, 185, 129, 0.1)", color: "#10b981", border: "1px solid rgba(16, 185, 129, 0.3)", opacity: 1, cursor: "default" } : {}}
+                    >
+                      {examLoading ? (
+                        <><div className={styles.btnSpinner} /> Loading Questions…</>
+                      ) : (
+                        <>
+                          {isDone ? (
+                            isCurrentModeCompleted && p?.accuracy !== undefined 
+                              ? `✅ Completed — Score: ${p.accuracy}%` 
+                              : `✅ Attempt Completed`
+                          ) : (
+                            "Start Practice Session"
+                          )}
+                        </>
+                      )}
+                    </button>
+                  );
+                })()}
               </>
             )}
           </div>

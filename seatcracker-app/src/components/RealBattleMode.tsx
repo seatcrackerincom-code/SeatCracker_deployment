@@ -11,6 +11,33 @@ interface Props {
 }
 
 export default function RealBattleMode({ userId, exam, course, onBack }: Props) {
+  const [timeLeft, setTimeLeft] = useState<{days: number, hours: number, minutes: number, seconds: number} | null>(null);
+
+  useEffect(() => {
+    const targetDate = new Date("2026-04-11T10:00:00+05:30").getTime();
+
+    const updateTimer = () => {
+      const now = Date.now();
+      const difference = targetDate - now;
+
+      if (difference <= 0) {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+        return;
+      }
+
+      setTimeLeft({
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60)
+      });
+    };
+
+    updateTimer();
+    const interval = setInterval(updateTimer, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className={styles.comingSoonWrap}>
       <div className={styles.comingSoonCard}>
@@ -52,19 +79,38 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
         </h1>
         <p className={styles.comingSoonSub}>
           The ultimate 160-question EAMCET simulation is undergoing final calibration. 
-          Expect full deployment in <strong>4-5 days</strong>.
+          <strong>Launching soon on April 11th!</strong>
         </p>
         
         <div className={styles.comingSoonTimer}>
-          <div className={styles.timeUnit}>
-            <span className={styles.timeVal}>04</span>
-            <span className={styles.timeLbl}>DAYS</span>
-          </div>
-          <div className={styles.timeDivider}>:</div>
-          <div className={styles.timeUnit}>
-            <span className={styles.timeVal}>12</span>
-            <span className={styles.timeLbl}>HRS</span>
-          </div>
+          {timeLeft ? (
+            <>
+              <div className={styles.timeUnit}>
+                <span className={styles.timeVal}>{String(timeLeft.days).padStart(2, '0')}</span>
+                <span className={styles.timeLbl}>DAYS</span>
+              </div>
+              <div className={styles.timeDivider}>:</div>
+              <div className={styles.timeUnit}>
+                <span className={styles.timeVal}>{String(timeLeft.hours).padStart(2, '0')}</span>
+                <span className={styles.timeLbl}>HRS</span>
+              </div>
+              <div className={styles.timeDivider}>:</div>
+              <div className={styles.timeUnit}>
+                <span className={styles.timeVal}>{String(timeLeft.minutes).padStart(2, '0')}</span>
+                <span className={styles.timeLbl}>MIN</span>
+              </div>
+              <div className={styles.timeDivider}>:</div>
+              <div className={styles.timeUnit}>
+                <span className={styles.timeVal}>{String(timeLeft.seconds).padStart(2, '0')}</span>
+                <span className={styles.timeLbl}>SEC</span>
+              </div>
+            </>
+          ) : (
+             <div className={styles.timeUnit}>
+                <span className={styles.timeVal}>--</span>
+                <span className={styles.timeLbl}>--</span>
+             </div>
+          )}
         </div>
 
         <div style={{ height: 20 }} />

@@ -88,7 +88,7 @@ export default function ModeSelect({ onNext, onBack }: Props) {
                 Real Battle Mode &nbsp;<span style={{ fontSize: "0.65rem", background: "rgba(239,68,68,0.2)", color: "#fca5a5", padding: "1px 7px", borderRadius: "999px", fontWeight: 700, letterSpacing: "0.08em", verticalAlign: "middle" }}>NEW</span>
               </span>
               <span className={styles.optionDesc}>
-                Full EAMCET simulation — 160 questions, 3 hours. 10 curated Hard &amp; Medium mocks. 2-hour cooldown between mocks to rest and revise.
+                Full EAMCET simulation — 160 questions, 3 hours. 10 curated Hard &amp; Medium mocks. 2-hour cooldown between mocks to rest and revise. (Launching soon)
               </span>
             </div>
             <div className={styles.optionCheck}>

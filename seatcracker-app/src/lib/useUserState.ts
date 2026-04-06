@@ -65,7 +65,11 @@ export function useUserState() {
 
     // Duplicate check
     if (user.applied_codes.includes(clean)) {
-      return { success: false, message: "You have already used this code." };
+      return { success: false, message: "Already used!" };
+    }
+
+    if (user.applied_codes.length > 0) {
+      return { success: false, message: "Only 1 promo code can be used." };
     }
 
     const { valid, data, error } = validatePromoCode(clean);

@@ -117,10 +117,27 @@ export default function PurchaseModal({ isOpen, onClose, userId, discountPercent
                 </div>
               </>
             ) : (
-              <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: "6px" }}>
-                <span style={{ fontSize: "20px", color: "#fff" }}>₹</span>
-                <span style={{ fontSize: "42px", fontWeight: "900", color: "#fff", lineHeight: 1 }}>{BASE_COURSE_PRICE}</span>
-              </div>
+              <>
+                <div style={{ textDecoration: "line-through", color: "rgba(255,255,255,0.4)", fontSize: "18px", marginBottom: "4px" }}>
+                  ₹{BASE_COURSE_PRICE === 199 ? 299 : BASE_COURSE_PRICE + 100}
+                </div>
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: "6px" }}>
+                  <span style={{ fontSize: "20px", color: "#fff" }}>₹</span>
+                  <span style={{ fontSize: "42px", fontWeight: "900", color: "#fff", lineHeight: 1 }}>{BASE_COURSE_PRICE}</span>
+                </div>
+                <div style={{ 
+                  marginTop: "12px", 
+                  color: "#f59e0b", 
+                  fontSize: "13px", 
+                  fontWeight: "700",
+                  background: "rgba(245,158,11,0.1)",
+                  padding: "6px 12px",
+                  borderRadius: "8px",
+                  display: "inline-block"
+                }}>
+                  🎓 Special Student Offer!
+                </div>
+              </>
             )}
           </div>
 

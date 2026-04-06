@@ -267,7 +267,7 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
               Back
             </button>
           </div>
-          <h1 className={styles.topTitle}>Free Practice</h1>
+          <h1 className={styles.topTitle}>Today&apos;s Practise</h1>
           {/* Home Button (Premium Circular Style) */}
           <button
             onClick={onBack}
@@ -374,108 +374,79 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
                 </a>
 
                 <div className={styles.aiTeacherCard}>
-                  <div>
-                    <p className={styles.aiLabel}>🤖 AI Teacher Check</p>
-                    <p className={styles.aiSub}>Test your understanding with a real EAMCET-style exam.</p>
-                  </div>
-
-
-
                   {(() => {
                       const p = allProgress.find(p => p.topic === selectedTopic.chapter.chapter);
                       const attempt = (p?.attempts || 0) + 1;
                       const base = getBaseTime(selectedTopic.subject, selectedTopic.chapter.chapter);
                       const target = getAttemptTargetTime(base, attempt);
                       const modeName = ["", "Learning", "Controlled", "Speed", "Exam 💀"][attempt] || "Practice";
+                      
+                      const titles = [
+                        "", 
+                        "📖 Foundation Phase", 
+                        "⏱️ Precision Training", 
+                        "⚡ Speed Gauntlet", 
+                        "🏆 Final Boss Simulation"
+                      ];
+                      
+                      const subtitles = [
+                        "", 
+                        "Take your time, build raw accuracy without stress.", 
+                        "The clock is ticking. Maintain your edge under pressure.", 
+                        "No time to overthink. Trust your gut and move fast.", 
+                        "This is it. The ultimate, ruthless EAMCET battle."
+                      ];
+
                       return (
-                        <button
-                          className={styles.startTestBtn}
-                          id="start-exam-btn"
-                          onClick={() => attempt === 1 ? setShowPracticeModal(true) : setExamMode(true)}
-                        >
-                          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
-                            <span style={{ fontSize: "1rem" }}>{modeName} Mode →</span>
-                            <span style={{ fontSize: "0.75rem", opacity: 0.8, fontWeight: "normal" }}>Attempt {attempt} · {Math.floor(target/60)} min</span>
+                        <>
+                          <div style={{ flex: 1 }}>
+                            <p className={styles.aiLabel} style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text)' }}>
+                              {titles[attempt] || titles[4]}
+                              <span style={{ 
+                                fontSize: '0.75rem', 
+                                marginLeft: '10px', 
+                                padding: '4px 10px', 
+                                background: 'linear-gradient(135deg, rgba(108, 99, 255, 0.2) 0%, rgba(167, 139, 250, 0.2) 100%)', 
+                                color: 'var(--accent2)', 
+                                border: '1px solid rgba(139, 92, 246, 0.3)',
+                                borderRadius: '100px', 
+                                fontWeight: 700 
+                              }}>
+                                Phase {attempt}/4
+                              </span>
+                            </p>
+                            <p className={styles.aiSub} style={{ marginTop: '8px', fontSize: '0.95rem' }}>
+                              {subtitles[attempt] || subtitles[4]}
+                            </p>
                           </div>
-                        </button>
+
+                          <button
+                            className={styles.startTestBtn}
+                            id="start-exam-btn"
+                            onClick={() => {
+                              if (attempt === 1) {
+                                const hasSeen = localStorage.getItem(`sc_seen_modal_${selectedTopic.subject}`);
+                                if (!hasSeen) {
+                                  setShowPracticeModal(true);
+                                } else {
+                                  setExamMode(true);
+                                }
+                              } else {
+                                setExamMode(true);
+                              }
+                            }}
+                          >
+                            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
+                              <span style={{ fontSize: "1rem" }}>{modeName} Mode →</span>
+                              <span style={{ fontSize: "0.75rem", opacity: 0.8, fontWeight: "normal" }}>Launch Mission · {Math.floor(target/60)} min</span>
+                            </div>
+                          </button>
+                        </>
                       );
                   })()}
                 </div>
               </div>
 
-              {/* Personalization & Profile (Premium Layout) */}
-              <div style={{
-                marginTop: "32px",
-                padding: "24px",
-                background: "linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%)",
-                backdropFilter: "blur(20px)",
-                border: "1px solid rgba(255, 255, 255, 0.08)",
-                borderRadius: "28px",
-                display: "flex",
-                flexDirection: "column",
-                gap: "24px",
-                boxShadow: "0 20px 50px rgba(0,0,0,0.2)"
-              }}>
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                    <div style={{
-                      width: 50, height: 50, borderRadius: "16px",
-                      background: "linear-gradient(135deg, #6c63ff22, #a78bfa22)",
-                      border: "1px solid rgba(139, 92, 246, 0.2)",
-                      display: "flex", alignItems: "center", justifyContent: "center",
-                      color: "var(--accent2)", fontSize: "1.5rem",
-                      boxShadow: "inset 0 0 10px rgba(139, 92, 246, 0.2)"
-                    }}>✨</div>
-                    <div>
-                      <p style={{ margin: 0, fontSize: "16px", fontWeight: "800", color: "#fff", letterSpacing: "0.01em" }}>Personalization</p>
-                      <p style={{ margin: 0, fontSize: "12px", color: "rgba(255,255,255,0.5)", fontWeight: "500" }}>Manage your account and theme</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div style={{ 
-                  display: "grid", 
-                  gridTemplateColumns: "1fr 1fr", 
-                  gap: "12px" 
-                }}>
-                  <div style={{
-                    background: "rgba(255,255,255,0.03)",
-                    border: "1px solid rgba(255,255,255,0.08)",
-                    borderRadius: "16px",
-                    padding: "12px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between"
-                  }}>
-                    <span style={{ fontSize: "13px", fontWeight: "700", color: "rgba(255,255,255,0.7)", marginLeft: "8px" }}>App Theme</span>
-                    <ThemeToggle />
-                  </div>
-                  
-                  <button
-                    onClick={() => setShowProfile(true)}
-                    style={{
-                      background: "linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(167, 139, 250, 0.1) 100%)",
-                      border: "1px solid rgba(139, 92, 246, 0.2)",
-                      color: "#fff",
-                      padding: "16px",
-                      borderRadius: "16px",
-                      fontSize: "14px",
-                      fontWeight: "800",
-                      cursor: "pointer",
-                      transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      gap: "10px"
-                    }}
-                    onMouseEnter={(e) => { e.currentTarget.style.background = "linear-gradient(135deg, rgba(108, 99, 255, 0.2) 0%, rgba(167, 139, 250, 0.2) 100%)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
-                    onMouseLeave={(e) => { e.currentTarget.style.background = "linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(167, 139, 250, 0.1) 100%)"; e.currentTarget.style.transform = "translateY(0)"; }}
-                  >
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                    My Profile
-                  </button>
-                </div>
-              </div>
             </div>
           )}
 
@@ -500,18 +471,18 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
                 textAlign: "center",
                 animation: "fadeInUp 0.3s ease"
               }}>
-                {/* AI Avatar */}
+                {/* Briefing Avatar */}
                 <div style={{
                   width: "72px", height: "72px",
                   background: "linear-gradient(135deg, #7c3aed, #4f46e5)",
                   borderRadius: "50%",
                   display: "flex", alignItems: "center", justifyContent: "center",
-                  fontSize: "2rem", margin: "0 auto 1.25rem",
+                  fontSize: "2.5rem", margin: "0 auto 1.25rem",
                   boxShadow: "0 0 30px rgba(124,58,237,0.5)"
-                }}>🤖</div>
+                }}>🛡️</div>
 
                 <p style={{ fontSize: "0.75rem", letterSpacing: "0.15em", color: "#a78bfa", textTransform: "uppercase", marginBottom: "0.5rem", fontWeight: 600 }}>
-                  AI Teacher · {selectedTopic.chapter.chapter}
+                  Phase 1 Briefing · {selectedTopic.chapter.chapter}
                 </p>
                 <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#fff", margin: "0 0 1.25rem", lineHeight: 1.3 }}>
                   This is your Practice Session 🎯
@@ -566,7 +537,11 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
                     ← Go Back
                   </button>
                   <button
-                    onClick={() => { setShowPracticeModal(false); setExamMode(true); }}
+                    onClick={() => { 
+                      localStorage.setItem(`sc_seen_modal_${selectedTopic.subject}`, "true");
+                      setShowPracticeModal(false); 
+                      setExamMode(true); 
+                    }}
                     style={{
                       flex: 2, padding: "0.85rem", borderRadius: "12px",
                       border: "none",
