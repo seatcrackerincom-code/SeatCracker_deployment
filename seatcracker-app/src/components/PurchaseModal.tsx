@@ -1,9 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { calcFinalPrice, BASE_COURSE_PRICE } from "../lib/access";
+import { useUserState } from "../lib/useUserState";
+
+declare global {
+  interface Window {
+    Razorpay: new (opts: Record<string, unknown>) => { open: () => void };
+  }
+}
 
 interface Props {
   isOpen: boolean;
@@ -14,20 +21,86 @@ interface Props {
 
 export default function PurchaseModal({ isOpen, onClose, userId, discountPercentage }: Props) {
   const [payLoading, setPayLoading] = useState(false);
+  const [promoInput, setPromoInput] = useState("");
+  const [promoFeedback, setPromoFeedback] = useState<{ msg: string; ok: boolean } | null>(null);
+  
+  const { user, applyCode } = useUserState();
 
   if (!isOpen || typeof document === "undefined") return null;
 
-  const finalPrice = calcFinalPrice(discountPercentage);
+  // Use the local user state's discount so the UI updates instantly when applying code!
+  const currentDiscount = Math.max(discountPercentage, user?.discount_percentage || 0);
+
+  const finalPrice = calcFinalPrice(currentDiscount);
   const discountAmount = BASE_COURSE_PRICE - finalPrice;
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const script = document.createElement("script");
+    script.src = "https://checkout.razorpay.com/v1/checkout.js";
+    script.async = true;
+    document.head.appendChild(script);
+    return () => {
+      if (document.head.contains(script)) {
+        document.head.removeChild(script);
+      }
+    };
+  }, [isOpen]);
 
   const handlePayment = async () => {
     setPayLoading(true);
-    // Pause Razorpay actual integration as requested
-    setTimeout(() => {
-      alert(`Razorpay Integration Paused!\n\nThis would normally launch the payment gateway for ₹${finalPrice}.`);
+    try {
+      // 1. Create order on server
+      const res = await fetch("/api/create-order", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ amount: finalPrice, userId: userId || "guest" }),
+      });
+
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.error || "Failed to create order");
+      }
+
+      const { orderId, key, amount, currency } = await res.json();
+
+      // 2. Open Razorpay modal
+      const rzp = new window.Razorpay({
+        key,
+        amount,
+        currency,
+        name: "SeatCracker",
+        description: "EAMCET Full Access",
+        order_id: orderId,
+        handler: async (response: Record<string, string>) => {
+          // 3. Verify on server
+          try {
+            const verifyRes = await fetch("/api/payment/verify", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ ...response, userId: userId || "guest" }),
+            });
+            const verifyResult = await verifyRes.json();
+            if (verifyResult.success) {
+              alert("Payment successful! Welcome to SeatCracker Premium 🎉");
+              window.location.reload();
+            } else {
+              alert("Payment verification failed. Please contact support.");
+            }
+          } catch (e) {
+            alert("Verification error occurred.");
+          }
+        },
+        prefill: { name: "SeatCracker Student" },
+        theme: { color: "#8b5cf6" },
+      });
+      rzp.open();
+    } catch (err: any) {
+      console.error("Payment error:", err);
+      alert(err.message || "Payment setup failed. Please check your connection.");
+    } finally {
       setPayLoading(false);
-      onClose(); // Auto-close just for now
-    }, 1500);
+    }
   };
 
   const modalContent = (
@@ -54,14 +127,14 @@ export default function PurchaseModal({ isOpen, onClose, userId, discountPercent
           transition={{ type: "spring", stiffness: 300, damping: 25 }}
           onClick={(e) => e.stopPropagation()}
           style={{
-            background: "rgba(12, 8, 32, 0.95)",
-            border: "1px solid rgba(255,255,255,0.08)",
+            background: "rgba(28, 20, 8, 0.95)",
+            border: "1px solid rgba(251, 191, 36, 0.2)",
             borderRadius: "24px",
             padding: "32px",
             width: "90%",
             maxWidth: "400px",
             textAlign: "center",
-            boxShadow: "0 32px 64px -12px rgba(0,0,0,0.8), 0 0 0 1px rgba(99,102,241,0.2)",
+            boxShadow: "0 32px 64px -12px rgba(0,0,0,0.8), 0 0 0 1px rgba(245, 158, 11, 0.3)",
           }}
         >
           {/* Close Button */}
@@ -79,8 +152,8 @@ export default function PurchaseModal({ isOpen, onClose, userId, discountPercent
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M18 6L6 18M6 6l12 12" /></svg>
           </button>
 
-          <div style={{ fontSize: "48px", marginBottom: "16px" }}>🚀</div>
-          <h2 style={{ fontSize: "24px", fontWeight: "800", color: "#fff", marginBottom: "8px" }}>
+          <div style={{ fontSize: "56px", marginBottom: "16px", filter: "drop-shadow(0 0 20px rgba(251,191,36,0.5))" }}>👑</div>
+          <h2 style={{ fontSize: "24px", fontWeight: "800", color: "#fbbf24", marginBottom: "8px" }}>
             Unlock Full Access
           </h2>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "14px", marginBottom: "24px", lineHeight: "1.5" }}>
@@ -141,26 +214,82 @@ export default function PurchaseModal({ isOpen, onClose, userId, discountPercent
             )}
           </div>
 
+          {/* Promo Code Input on Payment Screen */}
+          <div style={{ marginBottom: "20px", textAlign: "left" }}>
+            <div style={{ display: "flex", gap: "8px" }}>
+              <input
+                type="text"
+                placeholder="Got a promo code?"
+                value={promoInput}
+                onChange={e => setPromoInput(e.target.value.toUpperCase())}
+                onKeyDown={e => {
+                  if (e.key === "Enter" && promoInput.trim()) {
+                    const res = applyCode(promoInput);
+                    setPromoFeedback({ msg: res.message, ok: res.success });
+                    if (res.success) setPromoInput("");
+                    setTimeout(() => setPromoFeedback(null), 5000);
+                  }
+                }}
+                style={{
+                  flex: 1, padding: "10px 12px",
+                  background: "rgba(255,255,255,0.05)",
+                  border: "1px solid rgba(251,191,36,0.3)",
+                  borderRadius: "10px", color: "#fff",
+                  fontSize: "13px", fontWeight: "600", outline: "none",
+                }}
+              />
+              <button
+                disabled={!promoInput.trim()}
+                onClick={() => {
+                  if (promoInput.trim()) {
+                    const res = applyCode(promoInput);
+                    setPromoFeedback({ msg: res.message, ok: res.success });
+                    if (res.success) setPromoInput("");
+                    setTimeout(() => setPromoFeedback(null), 5000);
+                  }
+                }}
+                style={{
+                  padding: "10px 16px",
+                  background: "linear-gradient(135deg, #f59e0b, #d97706)",
+                  border: "none", borderRadius: "10px",
+                  color: "#fff", fontWeight: "700", fontSize: "12px",
+                  cursor: "pointer", opacity: !promoInput.trim() ? 0.5 : 1,
+                }}
+              >
+                Apply
+              </button>
+            </div>
+            {promoFeedback && (
+              <div style={{
+                marginTop: "8px", fontSize: "12px", fontWeight: "600",
+                color: promoFeedback.ok ? "#34d399" : "#f87171",
+              }}>
+                {promoFeedback.msg}
+              </div>
+            )}
+          </div>
+
           <button
             onClick={handlePayment}
             disabled={payLoading}
             style={{
               width: "100%",
               padding: "16px",
-              background: "linear-gradient(135deg, #6366f1, #a855f7)",
+              background: "linear-gradient(135deg, #f59e0b, #d97706)",
               border: "none",
               borderRadius: "12px",
               color: "#fff",
               fontSize: "16px",
-              fontWeight: "700",
+              fontWeight: "800",
               cursor: payLoading ? "not-allowed" : "pointer",
-              boxShadow: "0 8px 20px -8px rgba(99,102,241,0.6)",
+              boxShadow: "0 8px 20px -8px rgba(245, 158, 11, 0.7)",
               transition: "transform 0.1s, box-shadow 0.1s",
               opacity: payLoading ? 0.7 : 1,
+              letterSpacing: "0.05em",
             }}
             onMouseDown={e => { if (!payLoading) e.currentTarget.style.transform = "scale(0.98)"; }}
-            onMouseUp={e => { if (!payLoading) e.currentTarget.style.transform = "scale(1)"; }}
             onMouseLeave={e => { if (!payLoading) e.currentTarget.style.transform = "scale(1)"; }}
+            onMouseUp={e => { if (!payLoading) e.currentTarget.style.transform = "scale(1)"; }}
           >
             {payLoading ? "Processing..." : `Pay ₹${finalPrice}`}
           </button>

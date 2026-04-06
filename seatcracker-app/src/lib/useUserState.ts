@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { validatePromoCode } from "../lib/promoCodes";
+import { getAccessStateSync } from "./access";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 export interface UserState {
@@ -61,6 +62,11 @@ export function useUserState() {
 
   // Apply a promo code and return a result message
   const applyCode = (input: string): { success: boolean; message: string } => {
+    const access = getAccessStateSync();
+    if (access.isPremium) {
+      return { success: false, message: "Already Purchase Done! No need of offer codes." };
+    }
+
     const clean = input.trim().toUpperCase();
 
     // Duplicate check
@@ -68,18 +74,39 @@ export function useUserState() {
       return { success: false, message: "Already used!" };
     }
 
-    if (user.applied_codes.length > 0) {
-      return { success: false, message: "Only 1 promo code can be used." };
-    }
-
     const { valid, data, error } = validatePromoCode(clean);
     if (!valid || !data) {
       return { success: false, message: error ?? "Invalid code." };
     }
 
+    let nextCodes = [...user.applied_codes];
+    let nextDiscount = user.discount_percentage;
+    let message = `🎉 ${data.description}`;
+
+    // Offer enforcement: Only 1 discount/lifetime code allowed at a time.
+    if (data.type === "discount" || data.type === "lifetime") {
+      const hasExistingOffer = nextCodes.some(c => {
+         const p = validatePromoCode(c).data;
+         return p?.type === "discount" || p?.type === "lifetime";
+      });
+
+      if (hasExistingOffer) {
+         // Auto-replace existing offer
+         nextCodes = nextCodes.filter(c => {
+             const p = validatePromoCode(c).data;
+             return !(p?.type === "discount" || p?.type === "lifetime");
+         });
+         nextDiscount = 0; // Reset so the new one applies cleanly
+         message = `Swapped! ${data.description}`;
+      }
+    }
+
+    nextCodes.push(clean);
+
     const next: UserState = {
       ...user,
-      applied_codes: [...user.applied_codes, clean],
+      applied_codes: nextCodes,
+      discount_percentage: nextDiscount,
     };
 
     if (data.type === "lifetime") {
@@ -87,7 +114,6 @@ export function useUserState() {
     }
 
     if (data.type === "discount" && data.value !== undefined) {
-      // Allow stacking only up to 100%
       next.discount_percentage = Math.min(100, next.discount_percentage + data.value);
     }
     if ((data.type === "unlock" || data.type === "resource") && data.feature) {
@@ -100,7 +126,7 @@ export function useUserState() {
     }
 
     saveState(next);
-    return { success: true, message: `🎉 ${data.description}` };
+    return { success: true, message };
   };
 
   // Utility for components to gate content
