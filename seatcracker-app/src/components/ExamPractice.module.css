@@ -19,10 +19,14 @@
   inset: 0;
   z-index: 2000;
   display: flex;
+  height: 100vh;
+  height: 100dvh;
   align-items: flex-start;
   justify-content: center;
   padding: 60px 16px 40px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
   background: #ffffff !important;
   color: #0f172a !important;
 }
@@ -564,6 +568,8 @@
 .examScreen {
   position: fixed;
   inset: 0;
+  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -732,6 +738,8 @@
 .questionArea {
   flex: 1;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
   padding: 24px 28px;
   display: flex;
   flex-direction: column;
