@@ -9,13 +9,14 @@ import type { AccessState } from "../lib/access";
 
 interface Props {
   onHome: () => void;
+  onLogout: () => void;
   authUser: User | null;
   access: AccessState | null;
 }
 
 type Position = "top-left" | "top-right" | "bottom-left" | "bottom-right";
 
-export default function FloatingGear({ onHome, authUser, access }: Props) {
+export default function FloatingGear({ onHome, onLogout, authUser, access }: Props) {
   const [isOpen, setIsOpen] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
 
@@ -178,6 +179,29 @@ export default function FloatingGear({ onHome, authUser, access }: Props) {
                 <span style={{ fontSize: "1.8rem" }}>👤</span> Profile Account
               </button>
 
+              <button 
+                onClick={() => { setIsOpen(false); onLogout(); }}
+                style={{
+                  padding: "24px 32px",
+                  background: "rgba(239, 68, 68, 0.08)",
+                  border: "1px solid rgba(239, 68, 68, 0.2)",
+                  borderRadius: "20px",
+                  color: "#ef4444",
+                  fontSize: "1.3rem",
+                  fontWeight: 700,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "20px",
+                  cursor: "pointer",
+                  transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
+                  boxShadow: "0 10px 40px rgba(239, 68, 68, 0.1)"
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-4px)"; e.currentTarget.style.background = "rgba(239, 68, 68, 0.12)"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.background = "rgba(239, 68, 68, 0.08)"; }}
+              >
+                <span style={{ fontSize: "1.8rem" }}>🚪</span> Sign Out
+              </button>
+
               <div style={{
                   padding: "24px 32px",
                   background: "var(--card-bg)",
@@ -206,6 +230,7 @@ export default function FloatingGear({ onHome, authUser, access }: Props) {
         onClose={() => setShowProfile(false)} 
         authUser={authUser}
         access={access}
+        onSignOut={onLogout}
         accuracy={0} // Default or fetched from state
         pace="2.5"   // Default
       />

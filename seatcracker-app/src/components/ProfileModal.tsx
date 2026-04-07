@@ -404,23 +404,6 @@ export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser
               </div>
             )}
 
-            {/* ── Sign Out ── */}
-            {onSignOut && (
-              <button
-                onClick={() => { onClose(); onSignOut(); }}
-                style={{
-                  marginTop: "16px", width: "100%", padding: "11px",
-                  background: "none", border: "1px solid rgba(239,68,68,0.2)",
-                  borderRadius: "12px", color: "rgba(239,68,68,0.7)",
-                  fontSize: "13px", fontWeight: "600", cursor: "pointer",
-                  transition: "all 0.2s",
-                }}
-                onMouseEnter={e => { e.currentTarget.style.background = "rgba(239,68,68,0.1)"; e.currentTarget.style.color = "#f87171"; }}
-                onMouseLeave={e => { e.currentTarget.style.background = "none"; e.currentTarget.style.color = "rgba(239,68,68,0.7)"; }}
-              >
-                Sign Out
-              </button>
-            )}
           </motion.div>
         </>
       )}

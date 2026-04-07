@@ -61,12 +61,12 @@ export default function Home() {
   // Access state
   const [access, setAccess] = useState<AccessState | null>(null);
 
-  // ── Init ──────────────────────────────────────────────────
+  // ── Init (Once on mount) ──────────────────────────────────
   useEffect(() => {
     setMounted(true);
     trackAppOpen(); // Firebase: app_open
 
-    // Restore saved progress
+    // Restore saved progress variables (non-step)
     const savedTest = localStorage.getItem("sc_test_category") || "EAMCET";
     const savedExam = localStorage.getItem("sc_exam") || "";
     const savedCourse = localStorage.getItem("sc_course") || "";
@@ -80,10 +80,10 @@ export default function Home() {
     if (savedRoadmap) {
       try { setRoadmapData(JSON.parse(savedRoadmap)); } catch {}
     }
+  }, []);
 
-
-
-    // Firebase auth listener
+  // ── Auth Listener (Once) ──────────────────────────────────
+  useEffect(() => {
     const unsub = onAuthChange(async (user) => {
       setAuthUser(user);
       setAuthChecked(true);
@@ -92,27 +92,29 @@ export default function Home() {
       const state = await getAccessState(uid);
       setAccess(state);
 
-      // If user is logged in and has access, restore their step
-      if (user) {
+      // Only attempt to restore step ONCE during initial boot
+      if (user && step === -1) {
         if (state.status === "premium" || state.status === "trial") {
-          const savedStepStr = localStorage.getItem("sc_step");
-          const savedStep = savedStepStr ? parseInt(savedStepStr) as Step : 1;
+          const sStep = localStorage.getItem("sc_step");
+          const sExam = localStorage.getItem("sc_exam");
+          const sCourse = localStorage.getItem("sc_course");
+          const savedStep = sStep ? (parseInt(sStep) as Step) : 1;
           
-          // Only resume if essential data exists
-          const resumable = savedStep >= 1 && savedStep <= 10 && savedExam && savedCourse;
+          // Only resume if it looks like a finished setup
+          const resumable = savedStep >= 1 && savedStep <= 10 && !!sExam && !!sCourse;
           setStep(resumable ? savedStep : 1);
-          return;
+        } else if (state.status === "expired") {
+          setStep(5);
+        } else {
+          setStep(1);
         }
-        if (state.status === "expired") {
-          setStep(5); // AccessGate showing expired state
-          return;
-        }
+      } else if (!user && step === -1) {
+        setStep(0); // Show login
       }
-      // Default: show login (step 0)
     });
 
     return () => unsub();
-  }, [exam, course]);
+  }, [step]); // Only needs to check step to see if we've initialized yet
 
   // ── Handlers ─────────────────────────────────────────────
 
@@ -187,6 +189,15 @@ export default function Home() {
     go(6); // ModeSelect
   };
 
+  const handleLogout = async () => {
+    await signOut();
+    setAuthUser(null);
+    setAccess(null);
+    setExam(""); 
+    setCourse("");
+    go(0); // Back to login
+  };
+
   const handleRestart = () => {
     ["sc_test_category", "sc_exam", "sc_course", "sc_step", "sc_roadmap", "sc_mode"].forEach(k =>
       localStorage.removeItem(k)
@@ -221,6 +232,7 @@ export default function Home() {
       {showFloatingGear && (
         <FloatingGear 
           onHome={() => go(6)} 
+          onLogout={handleLogout}
           authUser={authUser} 
           access={access} 
         />

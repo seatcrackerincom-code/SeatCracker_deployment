@@ -46,6 +46,14 @@ export async function GET(req: NextRequest) {
       ? payments.reduce((sum, p) => sum + (p.amount || 0), 0)
       : 0;
 
+    // Users joined today
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const { count: usersJoinedToday, error: eToday } = await supabase
+      .from("users")
+      .select("*", { count: "exact", head: true })
+      .gte("created_at", today.toISOString());
+
     // Recent 20 payments
     const { data: recentPayments, error: e4 } = await supabase
       .from("payments")
@@ -56,20 +64,21 @@ export async function GET(req: NextRequest) {
     // Recent 20 users
     const { data: recentUsers, error: e5 } = await supabase
       .from("users")
-      .select("id, is_premium, purchase_date, plan")
-      .order("purchase_date", { ascending: false })
+      .select("id, is_premium, purchase_date, plan, created_at")
+      .order("created_at", { ascending: false })
       .limit(20);
 
-    if (e1 || e2 || e3 || e4 || e5) {
-      console.error("[admin/stats] errors:", { e1, e2, e3, e4, e5 });
+    if (e1 || e2 || e3 || e4 || e5 || eToday) {
+      console.error("[admin/stats] errors:", { e1, e2, e3, e4, e5, eToday });
     }
 
     return NextResponse.json({
-      totalUsers:     totalUsers ?? 0,
-      premiumUsers:   premiumUsers ?? 0,
+      totalUsers:       totalUsers ?? 0,
+      premiumUsers:     premiumUsers ?? 0,
       totalRevenue,
-      recentPayments: recentPayments ?? [],
-      recentUsers:    recentUsers ?? [],
+      usersJoinedToday: usersJoinedToday ?? 0,
+      recentPayments:   recentPayments ?? [],
+      recentUsers:      recentUsers ?? [],
     });
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : "Server error";

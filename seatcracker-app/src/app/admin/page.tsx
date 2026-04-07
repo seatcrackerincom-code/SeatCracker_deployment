@@ -1,14 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { supabase } from "../../lib/supabase";
+import type { RealtimeChannel } from "@supabase/supabase-js";
 
 // ─── Types ────────────────────────────────────────────────
 interface Stats {
-  totalUsers:     number;
-  premiumUsers:   number;
-  totalRevenue:   number;
+  totalUsers:       number;
+  premiumUsers:     number;
+  totalRevenue:     number;
+  usersJoinedToday: number;
   recentPayments: { user_id: string; amount: number; status: string; created_at: string }[];
-  recentUsers:    { id: string; is_premium: boolean; purchase_date: string | null; plan: string | null }[];
+  recentUsers:    { id: string; is_premium: boolean; purchase_date: string | null; plan: string | null; created_at: string }[];
 }
 
 const ADMIN_SECRET = "sc_admin_2024"; // only used client→server; server validates
@@ -18,6 +21,7 @@ export default function AdminDashboard() {
   const [pin,      setPin]      = useState("");
   const [unlocked, setUnlocked] = useState(false);
   const [stats,    setStats]    = useState<Stats | null>(null);
+  const [liveCCU,  setLiveCCU]  = useState(0);
   const [loading,  setLoading]  = useState(false);
   const [error,    setError]    = useState("");
 
@@ -32,12 +36,27 @@ export default function AdminDashboard() {
   useEffect(() => {
     if (!unlocked) return;
     setLoading(true);
+    
+    // ── Real-time CCU ─────────────────────────────────────
+    if (!supabase) return;
+    const channel: RealtimeChannel = supabase.channel("online-users");
+    channel
+      .on("presence", { event: "sync" }, () => {
+        const state = channel.presenceState();
+        setLiveCCU(Object.keys(state).length);
+      })
+      .subscribe();
+
     fetch("/api/admin/stats", {
       headers: { "x-admin-secret": ADMIN_SECRET },
     })
       .then((r) => r.json())
       .then((d) => { setStats(d); setLoading(false); })
       .catch(() => { setError("Failed to load stats."); setLoading(false); });
+
+    return () => {
+      channel.unsubscribe();
+    };
   }, [unlocked]);
 
   // ── Lock screen ───────────────────────────────────────
@@ -87,10 +106,23 @@ export default function AdminDashboard() {
           {/* KPI Cards */}
           <div style={styles.cardRow}>
             <KpiCard
+              icon="🔴"
+              label="Live Now"
+              value={liveCCU}
+              color="#ef4444"
+              isLive
+            />
+            <KpiCard
               icon="👥"
               label="Total Users"
               value={stats.totalUsers}
               color="#6366f1"
+            />
+            <KpiCard
+              icon="✨"
+              label="Joined Today"
+              value={stats.usersJoinedToday}
+              color="#34d399"
             />
             <KpiCard
               icon="⭐"
@@ -201,18 +233,19 @@ export default function AdminDashboard() {
 
 // ─── Sub-components ───────────────────────────────────────
 function KpiCard({
-  icon, label, value, color,
+  icon, label, value, color, isLive
 }: {
   icon: string;
   label: string;
   value: string | number;
   color: string;
+  isLive?: boolean;
 }) {
   return (
     <div style={{ ...styles.kpiCard, borderTop: `3px solid ${color}` }}>
       <div style={{ ...styles.kpiIcon, color }}>{icon}</div>
       <div style={{ ...styles.kpiValue, color }}>{value}</div>
-      <div style={styles.kpiLabel}>{label}</div>
+      <div style={styles.kpiLabel}>{label} {isLive && "●"}</div>
     </div>
   );
 }

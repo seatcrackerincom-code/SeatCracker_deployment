@@ -27,6 +27,7 @@ import { ThemeProvider } from "../components/ThemeProvider";
 import GlobalHeader from "../components/GlobalHeader";
 import CookieBanner from "../components/CookieBanner";
 import GlobalFooter from "../components/GlobalFooter";
+import PresenceTracker from "../components/PresenceTracker";
 
 export default function RootLayout({
   children,
@@ -37,6 +38,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <PresenceTracker />
           {children}
           <CookieBanner />
           <GlobalFooter />

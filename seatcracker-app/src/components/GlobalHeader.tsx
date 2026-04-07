@@ -64,8 +64,8 @@ export default function GlobalHeader() {
         </span>
       </div>
 
-      <div style={{ display: "flex", gap: "10px" }}>
-        {/* Right side empty as per request to remove theme/profile */}
+      <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+        {/* Right side empty: Logout moved to Gear menu */}
       </div>
     </header>
   );
