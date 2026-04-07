@@ -11,8 +11,7 @@ import ModeSelect from "../components/ModeSelect";
 import PracticeArena from "../components/PracticeArena";
 import RoadmapMode from "../components/RoadmapMode";
 import RealBattleMode from "../components/RealBattleMode";
-import GlobalHeader from "../components/GlobalHeader";
-import FloatingGear from "../components/FloatingGear";
+
 import LoginScreen from "../components/LoginScreen";
 import AccessGate from "../components/AccessGate";
 import IntroPage from "../components/IntroPage";
@@ -267,8 +266,7 @@ export default function Home() {
 
   if (!mounted || !authChecked) return null;
 
-  const showGlobalHeader = step >= 0 && step <= 6;
-  const showFloatingGear = step >= 7;
+
 
   return (
     <main style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
@@ -279,34 +277,7 @@ export default function Home() {
         <h3>Mock Tests | Performance Tracking | Smart Practice</h3>
       </div>
 
-      {showGlobalHeader && <GlobalHeader />}
-      
-      {/* Features & Supported Exams Sections (Visible on Home) */}
-      {step === -1 && (
-        <section id="marketing-intro" style={{ display: "none" }}>
-          <article>
-            <h2>Supported Competitive Exams</h2>
-            <p>EAMCET, JEE Main, NEET, GATE, and various State Entrance Tests.</p>
-          </article>
-          <article>
-            <h3>Our Core Features</h3>
-            <ul>
-              <li>Topic-wise Practice: Master every chapter with targeted questions.</li>
-              <li>Mock Exams: Realistic exam simulation with high-quality MCQs.</li>
-              <li>Performance Analytics: Detailed reports on your progress and speed.</li>
-              <li>Speed Training: Improve your accuracy and time management.</li>
-            </ul>
-          </article>
-        </section>
-      )}
-      {showFloatingGear && (
-        <FloatingGear 
-          onHome={() => go(6)} 
-          onLogout={handleLogout}
-          authUser={authUser} 
-          access={access} 
-        />
-      )}
+
 
       {/* Step -1: Intro Page */}
       {step === -1 && <IntroPage onStart={() => go(0)} />}

@@ -41,7 +41,10 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <PresenceTracker />
           <PolicyGuard />
-          {children}
+          <GlobalHeader />
+          <main style={{ paddingTop: "80px", minHeight: "100vh" }}>
+            {children}
+          </main>
           <CookieBanner />
           <GlobalFooter />
         </ThemeProvider>
