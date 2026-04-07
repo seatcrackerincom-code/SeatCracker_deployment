@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import styles from "./RealBattleMode.module.css";
+import { trackExamStarted } from "../lib/analytics";
 
 interface Props {
   userId: string;
@@ -14,6 +15,8 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
   const [timeLeft, setTimeLeft] = useState<{days: number, hours: number, minutes: number, seconds: number} | null>(null);
 
   useEffect(() => {
+    trackExamStarted("real_battle", course); // Firebase: exam_started
+
     const targetDate = new Date("2026-04-11T10:00:00+05:30").getTime();
 
     const updateTimer = () => {
@@ -36,7 +39,7 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
     updateTimer();
     const interval = setInterval(updateTimer, 1000);
     return () => clearInterval(interval);
-  }, []);
+  }, [course]);
 
   return (
     <div className={styles.comingSoonWrap}>

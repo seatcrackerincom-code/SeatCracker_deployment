@@ -11,6 +11,7 @@ import ProfileModal from "./ProfileModal";
 import ThemeToggle from "./ThemeToggle";
 import type { User } from "../lib/firebase";
 import type { AccessState } from "../lib/access";
+import { trackTopicOpened, trackExamStarted, trackExamCompleted } from "../lib/analytics";
 
 
 
@@ -148,6 +149,7 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
     setFormulas([]);
     setExamMode(false); // reset any active exam
     if (window.innerWidth < 768) setSidebarOpen(false);
+    trackTopicOpened(subject, ch.chapter); // Firebase: topic_opened
   };
 
   // ───── Computed ─────
@@ -539,7 +541,8 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
                   <button
                     onClick={() => { 
                       localStorage.setItem(`sc_seen_modal_${selectedTopic.subject}`, "true");
-                      setShowPracticeModal(false); 
+                      setShowPracticeModal(false);
+                      trackExamStarted("practice", course); // Firebase: exam_started
                       setExamMode(true); 
                     }}
                     style={{
@@ -571,7 +574,8 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
                   subject: selectedTopic.subject,
                   topic: selectedTopic.chapter.chapter,
                 }}
-                onExamComplete={() => {
+                onExamComplete={(score?: number, total?: number) => {
+                  trackExamCompleted("practice", score ?? 0, total ?? 0); // Firebase: exam_completed
                   fetchProgress(userId).then(updatedList => {
                     setAllProgress(updatedList);
                     // Update global stats

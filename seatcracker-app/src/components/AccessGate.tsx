@@ -12,6 +12,7 @@ import {
 } from "../lib/access";
 import { validatePromoCode } from "../lib/promoCodes";
 import { applyDiscountLocally } from "../lib/access";
+import { trackUpgradeClicked, trackPremiumPurchase, trackPromoApplied } from "../lib/analytics";
 
 interface Props {
   userId?: string;
@@ -55,9 +56,11 @@ export default function AccessGate({ userId, isExpired, onAccessGranted, onBack 
       setDiscount(data.value);
       applyDiscountLocally(data.value);
       setPromoFeedback({ msg: `${data.value}% discount applied! 🎉`, ok: true });
+      trackPromoApplied(promoCode, data.value); // Firebase: promo_applied
     } else if (data.type === "lifetime") {
       setPromoFeedback({ msg: "LIFETIME ACTIVATION IN PROGRESS...", ok: true });
       await activatePremium(userId);
+      trackPremiumPurchase(0); // Firebase: premium_purchase (promo)
       setSuccess(true);
       setTimeout(() => onAccessGranted(), 2000);
     } else {
@@ -77,6 +80,7 @@ export default function AccessGate({ userId, isExpired, onAccessGranted, onBack 
 
   // ── Razorpay Payment ────────────────────────────────────
   const handlePayment = async () => {
+    trackUpgradeClicked("access_gate"); // Firebase: upgrade_clicked
     setPayLoading(true);
     try {
       // 1. Create order on server
@@ -106,10 +110,11 @@ export default function AccessGate({ userId, isExpired, onAccessGranted, onBack 
           const verifyRes = await fetch("/api/payment/verify", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ ...response, userId }),
+            body: JSON.stringify({ ...response, userId, amount: finalPrice }),
           });
           const verifyResult = await verifyRes.json();
           if (verifyResult.success) {
+            trackPremiumPurchase(finalPrice); // Firebase: premium_purchase
             setSuccess(true);
             setTimeout(() => onAccessGranted(), 1600);
           }

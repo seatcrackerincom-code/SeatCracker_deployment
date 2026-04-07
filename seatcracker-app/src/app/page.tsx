@@ -22,6 +22,10 @@ import {
   getAccessState,
   type AccessState,
 } from "../lib/access";
+import {
+  trackAppOpen,
+  trackLogin,
+} from "../lib/analytics";
 
 /**
  * Step Sequence:
@@ -60,6 +64,7 @@ export default function Home() {
   // ── Init ──────────────────────────────────────────────────
   useEffect(() => {
     setMounted(true);
+    trackAppOpen(); // Firebase: app_open
 
     // Restore saved progress
     const savedTest = localStorage.getItem("sc_test_category") || "EAMCET";
@@ -112,9 +117,19 @@ export default function Home() {
   // ── Handlers ─────────────────────────────────────────────
 
   const handleLoginSuccess = async (user: User | null) => {
-    if (!user) return; // Should not happen as guest btn is removed
+    if (!user) return;
     setAuthUser(user);
-    
+
+    // Firebase Analytics — login event
+    trackLogin("google");
+
+    // Register user in Supabase analytics table (backend, non-blocking)
+    fetch("/api/admin/register-user", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ userId: user.uid }),
+    }).catch(() => {}); // fire-and-forget
+
     const uid = user?.uid;
     const state = await getAccessState(uid);
     setAccess(state);

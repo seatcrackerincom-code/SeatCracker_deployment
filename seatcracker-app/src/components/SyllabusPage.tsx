@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import styles from "./SyllabusPage.module.css";
+import { trackTopicOpened } from "../lib/analytics";
 
 interface Chapter {
   chapter: string;
@@ -84,11 +85,15 @@ export default function SyllabusPage({ userId, exam, course, onBack, onRestart, 
       });
   }, [exam, course]);
 
-  const toggleChapter = (key: string) => {
+  const toggleChapter = (key: string, chapterName: string) => {
     setExpandedChapters((prev) => {
       const next = new Set(prev);
-      if (next.has(key)) next.delete(key);
-      else next.add(key);
+      if (next.has(key)) {
+        next.delete(key);
+      } else {
+        next.add(key);
+        trackTopicOpened(activeSubject, chapterName);
+      }
       return next;
     });
   };
@@ -187,7 +192,7 @@ export default function SyllabusPage({ userId, exam, course, onBack, onRestart, 
             >
               <button
                 className={styles.chapterHeader}
-                onClick={() => hasSubtopics && toggleChapter(key)}
+                onClick={() => hasSubtopics && toggleChapter(key, ch.chapter)}
                 style={{ cursor: hasSubtopics ? "pointer" : "default" }}
                 aria-expanded={isExpanded}
               >

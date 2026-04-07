@@ -43,3 +43,53 @@ export async function fetchProgress(userId: string): Promise<UserProgress[]> {
   if (error) console.error("Supabase fetch error:", error);
   return data || [];
 }
+
+// ─── Users table ──────────────────────────────────────────
+// Schema:
+//   id           text  (firebase uid)  PK
+//   is_premium   boolean
+//   purchase_date timestamp
+//   plan         text
+
+export interface DbUser {
+  id: string;
+  is_premium: boolean;
+  purchase_date: string | null;
+  plan: string | null;
+}
+
+/** Upsert a user record (safe to call on every login). */
+export async function upsertUser(data: DbUser) {
+  if (!supabase) return;
+  const { error } = await supabase.from("users").upsert(data, { onConflict: "id" });
+  if (error) console.error("[supabase] upsertUser error:", error.message);
+}
+
+/** Fetch a single user record. */
+export async function fetchUser(uid: string): Promise<DbUser | null> {
+  if (!supabase) return null;
+  const { data, error } = await supabase.from("users").select("*").eq("id", uid).single();
+  if (error) return null;
+  return data as DbUser;
+}
+
+// ─── Payments table ───────────────────────────────────────
+// Schema:
+//   id          uuid  default gen_random_uuid()  PK
+//   user_id     text
+//   amount      int
+//   status      text  ('success' | 'failed')
+//   created_at  timestamp  default now()
+
+export interface DbPayment {
+  user_id: string;
+  amount: number;
+  status: "success" | "failed";
+}
+
+/** Insert a new payment record. */
+export async function insertPayment(data: DbPayment) {
+  if (!supabase) return;
+  const { error } = await supabase.from("payments").insert(data);
+  if (error) console.error("[supabase] insertPayment error:", error.message);
+}
