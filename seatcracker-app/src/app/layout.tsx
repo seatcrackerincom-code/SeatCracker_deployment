@@ -42,7 +42,7 @@ export default function RootLayout({
           <PresenceTracker />
           <PolicyGuard />
           <GlobalHeader />
-          <main style={{ paddingTop: "80px", minHeight: "100vh" }}>
+          <main style={{ paddingTop: "75px", minHeight: "100vh" }}>
             {children}
           </main>
           <CookieBanner />

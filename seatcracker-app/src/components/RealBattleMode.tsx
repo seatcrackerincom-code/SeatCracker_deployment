@@ -44,37 +44,32 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
   return (
     <div className={styles.comingSoonWrap}>
       <div className={styles.comingSoonCard}>
-        <div className={styles.comingSoonBadge}>
-          Premium Feature
-        </div>
-        <button
+
+        <button 
+          className={styles.backBtn} 
           onClick={onBack}
-          title="Go Home"
           style={{
             position: "absolute",
             top: "24px",
-            right: "24px",
-            width: "42px",
-            height: "42px",
+            left: "24px",
+            background: "rgba(255,255,255,0.05)",
+            border: "1px solid rgba(255,255,255,0.1)",
+            color: "#fff",
+            padding: "8px 16px",
+            borderRadius: "100px",
+            cursor: "pointer",
+            fontSize: "14px",
+            fontWeight: 600,
             display: "flex",
             alignItems: "center",
-            justifyContent: "center",
-            background: "rgba(255,255,255,0.03)",
-            border: "1px solid rgba(255,255,255,0.1)",
-            borderRadius: "50%",
-            color: "#fff",
-            cursor: "pointer",
-            fontSize: "1.2rem",
-            zIndex: 10,
-            boxShadow: "0 8px 32px rgba(0,0,0,0.3)",
-            backdropFilter: "blur(8px)",
-            transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-            padding: 0
+            gap: "8px",
+            zIndex: 10
           }}
-          onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.08)"; e.currentTarget.style.transform = "translateY(-2px) scale(1.05)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.2)"; }}
-          onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.03)"; e.currentTarget.style.transform = "translateY(0) scale(1)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; }}
         >
-          🏠
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Back
         </button>
         <h1 className={styles.comingSoonTitle}>
           Real Battle <br />

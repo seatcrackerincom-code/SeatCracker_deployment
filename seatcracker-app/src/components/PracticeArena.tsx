@@ -270,29 +270,9 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
             </button>
           </div>
           <h1 className={styles.topTitle}>Today&apos;s Practise</h1>
-          {/* Home Button (Premium Circular Style) */}
-          <button
-            onClick={onBack}
-            title="Go Home"
-            style={{
-              width: "42px", height: "42px",
-              display: "flex", alignItems: "center", justifyContent: "center",
-              background: "rgba(255,255,255,0.03)",
-              border: "1px solid rgba(255,255,255,0.1)",
-              borderRadius: "50%",
-              color: "#fff",
-              cursor: "pointer",
-              transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-              fontSize: "1.2rem",
-              boxShadow: "0 8px 32px rgba(0,0,0,0.3)",
-              backdropFilter: "blur(8px)"
-            }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.08)"; e.currentTarget.style.transform = "translateY(-2px) scale(1.05)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.2)"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.03)"; e.currentTarget.style.transform = "translateY(0) scale(1)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; }}
-          >
-            🏠
-          </button>
+
         </header>
+
         <ProfileModal
           isOpen={showProfile}
           onClose={() => setShowProfile(false)}

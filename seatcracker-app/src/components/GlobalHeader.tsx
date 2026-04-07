@@ -127,19 +127,21 @@ export default function GlobalHeader() {
           >
             <h3 style={{ fontSize: "14px", color: "var(--text-muted, #64748b)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "8px" }}>Menu</h3>
             
-            <Link 
-              href="/" 
-              onClick={closeMenu}
+            <button 
+              onClick={() => {
+                localStorage.setItem("sc_step", "6");
+                window.location.href = "/";
+              }}
               style={{
                 display: "flex", alignItems: "center", gap: "12px",
-                padding: "16px", borderRadius: "12px", color: "#fff",
-                textDecoration: "none", fontSize: "16px", fontWeight: 600,
-                background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.05)",
-                transition: "all 0.2s"
+                width: "100%", padding: "16px", borderRadius: "12px", color: "#fff",
+                border: "1px solid rgba(255,255,255,0.05)", background: "rgba(255,255,255,0.03)",
+                fontSize: "16px", fontWeight: 600, cursor: "pointer", transition: "all 0.2s",
+                textAlign: "left"
               }}
             >
               <span>🏠</span> Home
-            </Link>
+            </button>
 
             <button 
               onClick={() => { setProfileOpen(true); closeMenu(); }}
