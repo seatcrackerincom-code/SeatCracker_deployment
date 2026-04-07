@@ -56,6 +56,7 @@ export interface DbUser {
   is_premium: boolean;
   purchase_date: string | null;
   plan: string | null;
+  policies_accepted: boolean;
 }
 
 /** Upsert a user record (safe to call on every login). */
@@ -71,6 +72,13 @@ export async function fetchUser(uid: string): Promise<DbUser | null> {
   const { data, error } = await supabase.from("users").select("*").eq("id", uid).single();
   if (error) return null;
   return data as DbUser;
+}
+
+/** Explicitly update policy acceptance. */
+export async function updatePolicyStatus(uid: string, accepted: boolean) {
+  if (!supabase) return;
+  const { error } = await supabase.from("users").update({ policies_accepted: accepted }).eq("id", uid);
+  if (error) console.error("[supabase] updatePolicyStatus error:", error.message);
 }
 
 // ─── Payments table ───────────────────────────────────────

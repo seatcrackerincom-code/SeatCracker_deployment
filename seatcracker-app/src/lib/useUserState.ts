@@ -3,9 +3,11 @@
 import { useState, useEffect } from "react";
 import { validatePromoCode } from "../lib/promoCodes";
 import { getAccessStateSync } from "./access";
+import { onAuthChange } from "./firebase";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 export interface UserState {
+  uid?: string; // Firebase Auth ID
   name: string;
   targetRank: number;
   progressPercent: number;
@@ -15,6 +17,7 @@ export interface UserState {
   discount_percentage: number;
   avgAccuracy: number;
   avgPace: number;
+  policies_accepted: boolean;
 }
 
 const DEFAULT_STATE: UserState = {
@@ -27,6 +30,7 @@ const DEFAULT_STATE: UserState = {
   discount_percentage: 0,
   avgAccuracy: 0,
   avgPace: 2.5, // Default pace
+  policies_accepted: false,
 };
 
 const LS_KEY = "sc_user_state";
@@ -36,19 +40,35 @@ export function useUserState() {
   const [user, setUser] = useState<UserState>(DEFAULT_STATE);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  // Load from localStorage once on mount
+  // 1. Sync with Firebase Auth
+  useEffect(() => {
+    const unsub = onAuthChange((firebaseUser) => {
+      setUser((prev) => ({
+        ...prev,
+        uid: firebaseUser?.uid || undefined,
+      }));
+    });
+    return () => unsub();
+  }, []);
+
+  // 2. Load from localStorage once on mount
   useEffect(() => {
     try {
       const saved = localStorage.getItem(LS_KEY);
       if (saved) {
         const parsed = JSON.parse(saved) as Partial<UserState>;
-        setUser({ ...DEFAULT_STATE, ...parsed });
+        setUser((prev) => ({ ...prev, ...parsed }));
       }
     } catch {
       // Corrupted data — start fresh
     }
     setIsLoaded(true);
   }, []);
+
+  // Set policy acceptance
+  const setPoliciesAccepted = (accepted: boolean) => {
+    saveState({ ...user, policies_accepted: accepted });
+  };
 
   // Persist any state change
   const saveState = (updated: UserState) => {
@@ -61,9 +81,10 @@ export function useUserState() {
   };
 
   // Apply a promo code and return a result message
-  const applyCode = (input: string): { success: boolean; message: string } => {
+  // allowPremium = true enables code entry even after purchase (for bonus/XP codes)
+  const applyCode = (input: string, allowPremium = false): { success: boolean; message: string } => {
     const access = getAccessStateSync();
-    if (access.isPremium) {
+    if (access.isPremium && !allowPremium) {
       return { success: false, message: "Already Purchase Done! No need of offer codes." };
     }
 
@@ -133,5 +154,5 @@ export function useUserState() {
   const hasFeature = (feature: string) =>
     user.unlocked_features.includes(feature);
 
-  return { user, isLoaded, saveState, applyCode, hasFeature };
+  return { user, isLoaded, saveState, applyCode, hasFeature, setPoliciesAccepted };
 }

@@ -9,17 +9,17 @@ import type { User } from "../lib/firebase";
 import type { AccessState } from "../lib/access";
 import PurchaseModal from "./PurchaseModal";
 
+const AVATAR_LS_KEY = "sc_profile_avatar";
+
 interface Props {
   isOpen: boolean;
   onClose: () => void;
-  accuracy: number;
-  pace: string;
   authUser?: User | null;
   access?: AccessState | null;
   onSignOut?: () => void;
 }
 
-export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser, access, onSignOut }: Props) {
+export default function ProfileModal({ isOpen, onClose, authUser, access, onSignOut }: Props) {
   const { user, isLoaded, saveState, applyCode } = useUserState();
 
   // Local edit state
@@ -27,6 +27,10 @@ export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser
   const [nameInput, setNameInput] = useState("");
   const [editingRank, setEditingRank] = useState(false);
   const [rankInput, setRankInput] = useState("");
+
+  // Profile image state
+  const [profileImage, setProfileImage] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Promo code state
   const [codeInput, setCodeInput] = useState("");
@@ -39,7 +43,35 @@ export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser
 
   useEffect(() => {
     setMounted(true);
+    // Load saved avatar from localStorage
+    try {
+      const saved = localStorage.getItem(AVATAR_LS_KEY);
+      if (saved) setProfileImage(saved);
+    } catch {}
   }, []);
+
+  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    // Resize to max 200x200 before storing to save space
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      const img = new Image();
+      img.onload = () => {
+        const canvas = document.createElement("canvas");
+        const MAX = 200;
+        const scale = Math.min(1, MAX / Math.max(img.width, img.height));
+        canvas.width = img.width * scale;
+        canvas.height = img.height * scale;
+        canvas.getContext("2d")?.drawImage(img, 0, 0, canvas.width, canvas.height);
+        const dataUrl = canvas.toDataURL("image/jpeg", 0.8);
+        setProfileImage(dataUrl);
+        try { localStorage.setItem(AVATAR_LS_KEY, dataUrl); } catch {}
+      };
+      img.src = ev.target?.result as string;
+    };
+    reader.readAsDataURL(file);
+  };
 
   if (!isLoaded || !mounted) return null;
 
@@ -67,24 +99,16 @@ export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser
     if (!codeInput.trim()) return;
     setCodeLoading(true);
     setTimeout(() => {
-      const result = applyCode(codeInput);
+      const result = applyCode(codeInput, true); // true = allow even if premium
       setCodeFeedback({ msg: result.message, ok: result.success });
       if (result.success) setCodeInput("");
       setCodeLoading(false);
       if (timerRef.current) clearTimeout(timerRef.current);
       timerRef.current = setTimeout(() => setCodeFeedback(null), 5000);
-    }, 500); // Tiny simulated delay for polish
+    }, 500);
   };
 
   // ── Helpers ───────────────────────────────────────────────
-  const pct = Math.min(100, Math.max(0, accuracy));
-  const r = 44;
-  const circ = 2 * Math.PI * r;
-  const dashOffset = circ - (pct / 100) * circ;
-  
-  const parsedPace = parseFloat(pace) || 2.5;
-  const bitsPerMin = (1 / parsedPace).toFixed(2);
-
   const typeColors: Record<string, string> = {
     discount: "#f59e0b",
     unlock: "#6366f1",
@@ -92,6 +116,8 @@ export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser
     boost: "#ec4899",
     lifetime: "#8b5cf6",
   };
+
+  const avatarSrc = profileImage || authUser?.photoURL || "/character-avatar.png";
 
   // ── Render ────────────────────────────────────────────────
   const modalContent = (
@@ -150,21 +176,47 @@ export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser
 
             {/* ── Avatar + Name ── */}
             <div style={{ textAlign: "center", marginBottom: "20px" }}>
-              <div style={{
-                width: "60px", height: "60px", borderRadius: "50%",
-                background: access?.status === "premium"
-                  ? "linear-gradient(135deg, #f59e0b, #f97316)"
-                  : "linear-gradient(135deg, #6366f1, #a855f7)",
-                margin: "0 auto 12px",
-                display: "flex", alignItems: "center", justifyContent: "center",
-                border: "2px solid rgba(99,102,241,0.4)",
-                boxShadow: "0 0 20px rgba(99,102,241,0.3)",
-              }}>
-                {authUser?.photoURL ? (
-                  <img src={authUser.photoURL} style={{ width: "100%", height: "100%", borderRadius: "50%", objectFit: "cover" }} alt="Avatar" />
-                ) : (
-                  <img src="/character-avatar.png" style={{ width: "100%", height: "100%", borderRadius: "50%", objectFit: "cover" }} alt="Avatar" />
-                )}
+              {/* Hidden file input */}
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept="image/*"
+                style={{ display: "none" }}
+                onChange={handleImageUpload}
+              />
+              {/* Avatar with upload overlay */}
+              <div
+                onClick={() => fileInputRef.current?.click()}
+                style={{
+                  width: "96px", height: "96px", borderRadius: "50%",
+                  margin: "0 auto 12px", position: "relative", cursor: "pointer",
+                  border: access?.status === "premium"
+                    ? "3px solid #f59e0b"
+                    : "3px solid rgba(99,102,241,0.6)",
+                  boxShadow: access?.status === "premium"
+                    ? "0 0 24px rgba(245,158,11,0.4)"
+                    : "0 0 24px rgba(99,102,241,0.35)",
+                }}
+              >
+                <img
+                  src={avatarSrc}
+                  style={{ width: "100%", height: "100%", borderRadius: "50%", objectFit: "cover" }}
+                  alt="Avatar"
+                />
+                {/* Hover overlay */}
+                <div style={{
+                  position: "absolute", inset: 0, borderRadius: "50%",
+                  background: "rgba(0,0,0,0.55)",
+                  display: "flex", flexDirection: "column",
+                  alignItems: "center", justifyContent: "center",
+                  opacity: 0, transition: "opacity 0.2s",
+                }}
+                  onMouseEnter={e => (e.currentTarget.style.opacity = "1")}
+                  onMouseLeave={e => (e.currentTarget.style.opacity = "0")}
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  <span style={{ fontSize: "10px", color: "#fff", marginTop: "2px", fontWeight: 700 }}>Upload</span>
+                </div>
               </div>
 
               {editingName ? (
@@ -215,36 +267,17 @@ export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser
               </div>
             </div>
 
-            {/* ── Score + XP ── */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginBottom: "16px" }}>
-              {/* Accuracy Circle */}
-              <div style={{ background: "rgba(255,255,255,0.03)", borderRadius: "16px", padding: "12px", border: "1px solid rgba(255,255,255,0.06)", textAlign: "center" }}>
-                <svg width="80" height="80" viewBox="0 0 100 100" style={{ margin: "0 auto", display: "block" }}>
-                  <circle cx="50" cy="50" r={r} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="8" />
-                  <circle cx="50" cy="50" r={r} fill="none" stroke="#6366f1" strokeWidth="8"
-                    strokeDasharray={circ} strokeDashoffset={dashOffset}
-                    strokeLinecap="round" transform="rotate(-90 50 50)"
-                    style={{ transition: "stroke-dashoffset 1.4s cubic-bezier(0.4,0,0.2,1)" }}
-                  />
-                  <text x="50" y="55" textAnchor="middle" fill="#fff" fontSize="16" fontWeight="800">{pct}%</text>
-                </svg>
-                <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.5)", textTransform: "uppercase", letterSpacing: "0.05em" }}>Accuracy</span>
+            {/* ── Discount badge (if any) ── */}
+            {user.discount_percentage > 0 && (
+              <div style={{
+                background: "rgba(245,158,11,0.08)", border: "1px solid rgba(245,158,11,0.2)",
+                borderRadius: "12px", padding: "10px 14px", textAlign: "center", marginBottom: "16px"
+              }}>
+                <span style={{ fontSize: "14px", fontWeight: 800, color: "#fbbf24" }}>
+                  🏷️ {user.discount_percentage}% Discount Active
+                </span>
               </div>
-
-              {/* Bits/Min + Discount */}
-              <div style={{ background: "rgba(255,255,255,0.03)", borderRadius: "16px", padding: "12px", border: "1px solid rgba(255,255,255,0.06)", display: "flex", flexDirection: "column", gap: "8px", justifyContent: "center" }}>
-                <div>
-                  <div style={{ fontSize: "10px", color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "0.05em" }}>Bits / Min</div>
-                  <div style={{ fontSize: "22px", fontWeight: "800", color: "#ec4899", lineHeight: 1.1 }}>{bitsPerMin}</div>
-                </div>
-                {user.discount_percentage > 0 && (
-                  <div>
-                    <div style={{ fontSize: "10px", color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "0.05em" }}>Discount</div>
-                    <div style={{ fontSize: "18px", fontWeight: "800", color: "#f59e0b", lineHeight: 1.1 }}>{user.discount_percentage}% Off</div>
-                  </div>
-                )}
-              </div>
-            </div>
+            )}
 
             {/* ── Overall Progress ── */}
             <div style={{ background: "rgba(255,255,255,0.03)", borderRadius: "14px", padding: "14px", border: "1px solid rgba(255,255,255,0.06)", marginBottom: "16px" }}>
@@ -262,9 +295,8 @@ export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser
               </div>
             </div>
 
-            {/* ── Promo Code Input ── */}
-            {access?.status !== "premium" ? (
-              <div style={{ background: "rgba(99,102,241,0.06)", borderRadius: "14px", padding: "14px", border: "1px solid rgba(99,102,241,0.15)", marginBottom: "16px" }}>
+            {/* ── Promo Code Input (always visible) ── */}
+            <div style={{ background: "rgba(99,102,241,0.06)", borderRadius: "14px", padding: "14px", border: "1px solid rgba(99,102,241,0.15)", marginBottom: "16px" }}>
                 <h3 style={{ fontSize: "12px", fontWeight: "700", color: "#a5b4fc", margin: "0 0 10px", textTransform: "uppercase", letterSpacing: "0.05em" }}>
                   Redeem Promo Code
                 </h3>
@@ -323,13 +355,6 @@ export default function ProfileModal({ isOpen, onClose, accuracy, pace, authUser
                   )}
                 </AnimatePresence>
               </div>
-            ) : (
-              <div style={{ background: "rgba(245,158,11,0.06)", borderRadius: "14px", padding: "14px", border: "1px solid rgba(245,158,11,0.2)", marginBottom: "16px", textAlign: "center" }}>
-                <span style={{ fontSize: "13px", fontWeight: "700", color: "#fbbf24" }}>
-                  ✨ Premium Active. No more codes needed!
-                </span>
-              </div>
-            )}
 
             {/* ── Active Codes ── */}
             {user.applied_codes.length > 0 && (

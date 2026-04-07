@@ -1,12 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 
 export default function GlobalFooter() {
+  const [accepted, setAccepted] = useState(false);
+
   return (
     <footer style={{
       width: "100%",
-      padding: "24px 20px",
+      padding: "48px 20px",
       background: "var(--bg, #0a0a0f)",
       borderTop: "1px solid var(--border, rgba(255,255,255,0.05))",
       marginTop: "auto",
@@ -17,9 +20,10 @@ export default function GlobalFooter() {
         margin: "0 auto",
         display: "flex",
         flexDirection: "column",
-        gap: "16px",
+        gap: "24px",
         alignItems: "center"
       }}>
+        {/* The 4 Legal Links */}
         <div style={{
           display: "flex",
           gap: "24px",
@@ -28,25 +32,38 @@ export default function GlobalFooter() {
           fontSize: "13px",
           fontWeight: 600
         }}>
-          <Link href="/" style={{ color: "var(--text-muted, #94a3b8)", textDecoration: "none", transition: "color 0.2s" }} onMouseEnter={(e) => e.currentTarget.style.color="var(--accent, #a78bfa)"} onMouseLeave={(e) => e.currentTarget.style.color="var(--text-muted, #94a3b8)"}>
-            ← Back to Home
+          <Link href="/about" style={{ color: "var(--text-muted, #94a3b8)", textDecoration: "none" }} onMouseEnter={(e) => e.currentTarget.style.color="var(--accent, #a78bfa)"} onMouseLeave={(e) => e.currentTarget.style.color="var(--text-muted, #94a3b8)"}>
+            About
           </Link>
-          <Link href="/privacy-policy" style={{ color: "var(--text-muted, #94a3b8)", textDecoration: "none", transition: "color 0.2s" }} onMouseEnter={(e) => e.currentTarget.style.color="var(--accent, #a78bfa)"} onMouseLeave={(e) => e.currentTarget.style.color="var(--text-muted, #94a3b8)"}>
+          <Link href="/cookies" style={{ color: "var(--text-muted, #94a3b8)", textDecoration: "none" }} onMouseEnter={(e) => e.currentTarget.style.color="var(--accent, #a78bfa)"} onMouseLeave={(e) => e.currentTarget.style.color="var(--text-muted, #94a3b8)"}>
+            Cookies
+          </Link>
+          <Link href="/privacy-policy" style={{ color: "var(--text-muted, #94a3b8)", textDecoration: "none" }} onMouseEnter={(e) => e.currentTarget.style.color="var(--accent, #a78bfa)"} onMouseLeave={(e) => e.currentTarget.style.color="var(--text-muted, #94a3b8)"}>
             Privacy Policy
           </Link>
-          <Link href="/terms" style={{ color: "var(--text-muted, #94a3b8)", textDecoration: "none", transition: "color 0.2s" }} onMouseEnter={(e) => e.currentTarget.style.color="var(--accent, #a78bfa)"} onMouseLeave={(e) => e.currentTarget.style.color="var(--text-muted, #94a3b8)"}>
+          <Link href="/terms" style={{ color: "var(--text-muted, #94a3b8)", textDecoration: "none" }} onMouseEnter={(e) => e.currentTarget.style.color="var(--accent, #a78bfa)"} onMouseLeave={(e) => e.currentTarget.style.color="var(--text-muted, #94a3b8)"}>
             Terms & Conditions
           </Link>
-          <Link href="/cookies" style={{ color: "var(--text-muted, #94a3b8)", textDecoration: "none", transition: "color 0.2s" }} onMouseEnter={(e) => e.currentTarget.style.color="var(--accent, #a78bfa)"} onMouseLeave={(e) => e.currentTarget.style.color="var(--text-muted, #94a3b8)"}>
-            Cookie Policy
-          </Link>
         </div>
+
+        {/* Legal Links (Already defined above) */}
+
+        {/* Copyright (At the very bottom) */}
         <div style={{
           fontSize: "12px",
-          color: "var(--text-muted, #64748b)",
-          marginTop: "8px"
+          color: "rgba(255,255,255,0.25)",
+          marginTop: "16px",
+          display: "flex",
+          gap: "12px",
+          alignItems: "center",
+          letterSpacing: "0.05em",
+          fontWeight: 500
         }}>
-          © 2026 seatcracker.com. All rights reserved.
+          <span>© 2026 seatcracker.com. All rights reserved.</span>
+          <span style={{ opacity: 0.3 }}>|</span>
+          <Link href="/admin" style={{ color: "rgba(255,255,255,0.15)", textDecoration: "none" }} onMouseEnter={(e) => e.currentTarget.style.color="rgba(255,255,255,0.5)"} onMouseLeave={(e) => e.currentTarget.style.color="rgba(255,255,255,0.15)"}>
+            Admin
+          </Link>
         </div>
       </div>
     </footer>

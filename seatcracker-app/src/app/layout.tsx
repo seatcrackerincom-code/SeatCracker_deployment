@@ -2,16 +2,16 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SeatCracker — Crack Your Entrance Exam",
-  description: "Your personalised EAMCET/EAPCET syllabus companion. Track chapters, prioritise topics, and crack your seat.",
-  keywords: "EAMCET, EAPCET, AP, TS, engineering, agriculture, pharmacy, syllabus, entrance exam",
+  title: "SeatCracker - Competitive Exam Practice Platform | Mock Tests & Performance Tracking",
+  description: "SeatCracker is a smart practice platform for competitive exams like EAMCET, JEE, NEET and more. Practice topic-wise questions, take mock tests, track performance, and improve speed and accuracy.",
+  keywords: "competitive exam practice, mock test platform, exam preparation app, EAMCET practice, JEE mock tests, NEET preparation, online test series, exam performance tracker",
   icons: {
     icon: "/logo.png",
     apple: "/logo.png",
   },
   openGraph: {
-    title: "SeatCracker",
-    description: "Your seat is waiting. Start now.",
+    title: "SeatCracker - Smart Practice for Competitive Exams",
+    description: "Multi-exam mock tests, topic-wise practice, and performance tracking.",
     images: ["/logo.png"],
     type: "website",
   },
@@ -27,6 +27,7 @@ import { ThemeProvider } from "../components/ThemeProvider";
 import GlobalHeader from "../components/GlobalHeader";
 import CookieBanner from "../components/CookieBanner";
 import GlobalFooter from "../components/GlobalFooter";
+import PolicyGuard from "../components/PolicyGuard";
 import PresenceTracker from "../components/PresenceTracker";
 
 export default function RootLayout({
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <PresenceTracker />
+          <PolicyGuard />
           {children}
           <CookieBanner />
           <GlobalFooter />

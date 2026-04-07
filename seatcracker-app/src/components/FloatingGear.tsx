@@ -231,8 +231,6 @@ export default function FloatingGear({ onHome, onLogout, authUser, access }: Pro
         authUser={authUser}
         access={access}
         onSignOut={onLogout}
-        accuracy={0} // Default or fetched from state
-        pace="2.5"   // Default
       />
     </>
   );

@@ -43,10 +43,10 @@ export default function IntroPage({ onStart }: Props) {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h2 className={styles.headline}>
-            Crack your seat with <span className={styles.accent}>SeatCracker</span>
+            SeatCracker - <span className={styles.accent}>Competitive Exam</span> Practice Platform
           </h2>
           <p className={styles.subheadline}>
-            The ultimate mock test experience
+            Smart Practice for EAMCET, JEE, NEET and more. Topic-wise questions, mock tests, and performance analytics.
           </p>
 
           <button
@@ -58,6 +58,19 @@ export default function IntroPage({ onStart }: Props) {
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
+          </button>
+
+          <button 
+            onClick={onStart}
+            style={{
+              display: "flex", alignItems: "center", gap: "12px",
+              padding: "16px", borderRadius: "12px", color: "#fbbf24",
+              border: "1px solid rgba(251,191,36,0.15)", background: "rgba(251,191,36,0.05)",
+              fontSize: "14px", fontWeight: 700, cursor: "pointer", transition: "all 0.2s",
+              textAlign: "left", marginTop: "20px", width: "100%", justifyContent: "center"
+            }}
+          >
+            <span>🎁</span> Redeem Promo Code
           </button>
         </motion.div>
       </div>

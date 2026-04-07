@@ -22,6 +22,7 @@ export default function AdminDashboard() {
   const [unlocked, setUnlocked] = useState(false);
   const [stats,    setStats]    = useState<Stats | null>(null);
   const [liveCCU,  setLiveCCU]  = useState(0);
+  const [activeUsers, setActiveUsers] = useState<any[]>([]);
   const [loading,  setLoading]  = useState(false);
   const [error,    setError]    = useState("");
 
@@ -36,16 +37,19 @@ export default function AdminDashboard() {
   useEffect(() => {
     if (!unlocked) return;
     setLoading(true);
-    
     // ── Real-time CCU ─────────────────────────────────────
-    if (!supabase) return;
-    const channel: RealtimeChannel = supabase.channel("online-users");
-    channel
-      .on("presence", { event: "sync" }, () => {
-        const state = channel.presenceState();
-        setLiveCCU(Object.keys(state).length);
-      })
-      .subscribe();
+    import("../../lib/presence").then(({ subscribeToPresence }) => {
+      const unsub = subscribeToPresence((state) => {
+        const users = Object.entries(state).map(([key, data]: any) => ({
+          uid: key,
+          ...data[0]
+        }));
+        setLiveCCU(users.length);
+        setActiveUsers(users);
+      });
+      // Admin dashboard doesn't unmount cleanly typically, but we should clean up if it does
+      return unsub;
+    });
 
     fetch("/api/admin/stats", {
       headers: { "x-admin-secret": ADMIN_SECRET },
@@ -53,17 +57,22 @@ export default function AdminDashboard() {
       .then((r) => r.json())
       .then((d) => { setStats(d); setLoading(false); })
       .catch(() => { setError("Failed to load stats."); setLoading(false); });
-
-    return () => {
-      channel.unsubscribe();
-    };
   }, [unlocked]);
 
   // ── Lock screen ───────────────────────────────────────
   if (!unlocked) {
     return (
       <div style={styles.lockWrap}>
-        <div style={styles.lockCard}>
+        <div style={{ ...styles.lockCard as object, position: "relative" }}>
+          <button 
+            onClick={() => window.location.href = "/"}
+            style={{ position: "absolute", top: "16px", right: "16px", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "#94a3b8", width: "32px", height: "32px", borderRadius: "8px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "20px", transition: "all 0.2s" }}
+            onMouseOver={(e) => { e.currentTarget.style.background = "rgba(239,68,68,0.2)"; e.currentTarget.style.color = "#ef4444"; e.currentTarget.style.borderColor = "rgba(239,68,68,0.3)"; }}
+            onMouseOut={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.05)"; e.currentTarget.style.color = "#94a3b8"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; }}
+            title="Exit Admin"
+          >
+            ×
+          </button>
           <div style={styles.lockIcon}>🔐</div>
           <h1 style={styles.lockTitle}>SeatCracker Admin</h1>
           <p style={styles.lockSub}>Enter admin password to continue</p>
@@ -225,6 +234,30 @@ export default function AdminDashboard() {
               </tbody>
             </table>
           </Section>
+          
+          {/* Live Monitor */}
+          <Section title="🔴 Live Session Monitor">
+            <div style={styles.liveGrid}>
+              {activeUsers.length === 0 ? (
+                <div style={styles.empty}>No users online right now</div>
+              ) : (
+                activeUsers.map((u, i) => (
+                  <div key={i} style={styles.liveCard}>
+                    <div style={styles.livePulse} />
+                    <div>
+                      <div style={{ fontWeight: 700, color: "#fff" }}>{truncate(u.uid, 20)}</div>
+                      <div style={{ fontSize: "11px", color: "#94a3b8", marginTop: "2px" }}>
+                        Online since {new Date(u.online_at).toLocaleTimeString()}
+                      </div>
+                      <div style={{ fontSize: "10px", color: "#6366f1", marginTop: "4px", opacity: 0.8 }}>
+                        {u.user_agent.split(')')[0].split('(')[1] || "Mobile Device"}
+                      </div>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+          </Section>
         </>
       )}
     </div>
@@ -244,8 +277,17 @@ function KpiCard({
   return (
     <div style={{ ...styles.kpiCard, borderTop: `3px solid ${color}` }}>
       <div style={{ ...styles.kpiIcon, color }}>{icon}</div>
-      <div style={{ ...styles.kpiValue, color }}>{value}</div>
-      <div style={styles.kpiLabel}>{label} {isLive && "●"}</div>
+      <div style={{ ...styles.kpiValue, color }}>
+        {value}
+        {isLive && (
+          <span style={{
+            display: "inline-block", marginLeft: 12, width: 10, height: 10,
+            borderRadius: "50%", background: "#ef4444",
+            boxShadow: "0 0 12px #ef4444", animation: "ping 1.5s infinite"
+          }} />
+        )}
+      </div>
+      <div style={styles.kpiLabel}>{label}</div>
     </div>
   );
 }
@@ -375,4 +417,26 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 12,
     fontWeight: 600,
   },
+  liveGrid: { display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(260px,1fr))", gap: 16 },
+  liveCard: {
+    padding: "16px", background: "rgba(239,68,68,0.03)", borderRadius: 12,
+    border: "1px solid rgba(239,68,68,0.1)", display: "flex", gap: 12, alignItems: "center"
+  },
+  livePulse: {
+    width: 6, height: 6, borderRadius: "50%", background: "#ef4444",
+    boxShadow: "0 0 8px #ef4444"
+  },
 };
+
+// Global Animation
+if (typeof document !== 'undefined') {
+  const style = document.createElement('style');
+  style.innerHTML = `
+    @keyframes ping {
+      0% { transform: scale(1); opacity: 1; }
+      70% { transform: scale(3.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 0; }
+    }
+  `;
+  document.head.appendChild(style);
+}

@@ -3,8 +3,11 @@
 
 import { supabase } from "./supabase";
 import type { RealtimeChannel } from "@supabase/supabase-js";
+import { useEffect, useState } from "react";
 
 let _channel: RealtimeChannel | null = null;
+let _presenceState: any = {};
+const _listeners: Array<(state: any) => void> = [];
 
 /**
  * Starts tracking this user in the 'online-users' channel.
@@ -23,7 +26,8 @@ export async function initPresence(userId: string = "anonymous") {
 
   _channel
     .on("presence", { event: "sync" }, () => {
-      // Internal sync completed
+      _presenceState = _channel!.presenceState();
+      _listeners.forEach((cb) => cb(_presenceState));
     })
     .subscribe(async (status) => {
       if (status === "SUBSCRIBED") {
@@ -37,11 +41,27 @@ export async function initPresence(userId: string = "anonymous") {
   return _channel;
 }
 
+export function subscribeToPresence(cb: (state: any) => void) {
+  _listeners.push(cb);
+  cb(_presenceState); // immediate initial sync
+  return () => {
+    const idx = _listeners.indexOf(cb);
+    if (idx > -1) _listeners.splice(idx, 1);
+  };
+}
+
 /**
- * Returns the current total count of unique active tabs/sessions.
- * Note: Admin should subscribe to 'on(presence)' to get live updates.
+ * Hook to subscribe to live user count from any component.
  */
-export function getLiveCCU(channel: RealtimeChannel): number {
-  const state = channel.presenceState();
-  return Object.keys(state).length;
+export function useLivePresence() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const unsub = subscribeToPresence((state) => {
+      setCount(Object.keys(state).length);
+    });
+    return unsub;
+  }, []);
+
+  return count;
 }

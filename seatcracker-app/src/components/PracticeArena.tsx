@@ -298,8 +298,6 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
           onClose={() => setShowProfile(false)}
           authUser={authUser}
           access={access}
-          accuracy={user?.avgAccuracy ?? 0}
-          pace={String(user?.avgPace ?? 2.5)}
         />
 
         <div className={styles.contentArea}>

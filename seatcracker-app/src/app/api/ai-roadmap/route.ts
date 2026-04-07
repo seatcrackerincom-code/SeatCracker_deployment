@@ -47,9 +47,15 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    const apiKey = process.env.GROQ_API_KEY;
-    if (!apiKey) {
-      return NextResponse.json({ error: "GROQ_API_KEY not configured" }, { status: 500 });
+    const keys = [
+      process.env.GROQ_API_KEY_1,
+      process.env.GROQ_API_KEY_2,
+      process.env.GROQ_API_KEY_3,
+      process.env.GROQ_API_KEY_4
+    ].filter(Boolean);
+
+    if (keys.length === 0) {
+      return NextResponse.json({ error: "Missing GROQ API Keys in env" }, { status: 500 });
     }
 
     const userMessage = `Generate a day-wise roadmap with these inputs:
@@ -64,28 +70,54 @@ Syllabus:
 ${JSON.stringify(syllabus)}
 `;
 
-    const groqRes = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        model: "llama-3.3-70b-versatile",
-        messages: [
-          { role: "system", content: SYSTEM_PROMPT + "\n\nCRITICAL: Return a JSON object with a 'roadmap' key containing the array." },
-          { role: "user", content: userMessage },
-        ],
-        response_format: { type: "json_object" },
-        temperature: 0.2,
-        max_tokens: 8000,
-      }),
-    });
+    let groqRes;
+    let lastError = "";
 
-    if (!groqRes.ok) {
-      const errText = await groqRes.text();
-      console.error("Groq error:", errText);
-      return NextResponse.json({ error: "AI service error. Try again." }, { status: 502 });
+    // FAILOVER LOOP: Try each key sequentially if we hit limits
+    for (let i = 0; i < keys.length; i++) {
+      const apiKey = keys[i];
+      try {
+        groqRes = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${apiKey}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            model: "llama-3.1-8b-instant",
+            messages: [
+              { role: "system", content: SYSTEM_PROMPT + "\n\nCRITICAL: Return a JSON object with a 'roadmap' key containing the array." },
+              { role: "user", content: userMessage },
+            ],
+            response_format: { type: "json_object" },
+            temperature: 0.2,
+            max_tokens: 8000,
+          }),
+        });
+
+        // SUCCESS
+        if (groqRes.ok) break;
+
+        // RETRYABLE ERROR? (Rate limit or server error)
+        if (groqRes.status === 429 || groqRes.status >= 500) {
+          lastError = `Key ${i + 1} failed with status ${groqRes.status}`;
+          console.warn(lastError);
+          continue; 
+        }
+
+        // NON-RETRYABLE ERROR
+        const errText = await groqRes.text();
+        return NextResponse.json({ error: `AI error: ${errText}` }, { status: groqRes.status });
+
+      } catch (err: any) {
+        lastError = `Exception with Key ${i + 1}: ${err.message}`;
+        console.error(lastError);
+        continue;
+      }
+    }
+
+    if (!groqRes || !groqRes.ok) {
+      return NextResponse.json({ error: "All 4 API keys reached limits. Please try again later." }, { status: 502 });
     }
 
     const groqData = await groqRes.json();

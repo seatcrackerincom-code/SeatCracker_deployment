@@ -6,23 +6,28 @@
 -- Tracks every registered user + their premium status.
 -- `id` = Firebase UID (text, not UUID).
 CREATE TABLE IF NOT EXISTS public.users (
-  id            TEXT        PRIMARY KEY,          -- Firebase UID
-  is_premium    BOOLEAN     NOT NULL DEFAULT FALSE,
-  purchase_date TIMESTAMPTZ DEFAULT NULL,
-  plan          TEXT        DEFAULT NULL,         -- e.g. 'EAMCET_FULL_ACCESS'
-  last_step     INT         DEFAULT 1,
-  exam          TEXT        DEFAULT NULL,
-  course        TEXT        DEFAULT NULL,
-  created_at    TIMESTAMPTZ NOT NULL DEFAULT NOW()
+  id                TEXT        PRIMARY KEY,          -- Firebase UID
+  is_premium        BOOLEAN     NOT NULL DEFAULT FALSE,
+  policies_accepted BOOLEAN     NOT NULL DEFAULT FALSE, -- Track legal agreement
+  purchase_date     TIMESTAMPTZ DEFAULT NULL,
+  plan              TEXT        DEFAULT NULL,         -- e.g. 'EAMCET_FULL_ACCESS'
+  last_step         INT         DEFAULT 1,
+  exam              TEXT        DEFAULT NULL,
+  course            TEXT        DEFAULT NULL,
+  created_at        TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
 -- Allow backend (anon key) to read/insert/update this table
 ALTER TABLE public.users ENABLE ROW LEVEL SECURITY;
 
-CREATE POLICY "Service: full access to users"
-  ON public.users
-  USING (true)
-  WITH CHECK (true);
+DO $$ 
+BEGIN
+  IF NOT EXISTS (
+    SELECT 1 FROM pg_policies WHERE policyname = 'Service: full access to users' AND tablename = 'users'
+  ) THEN
+    CREATE POLICY "Service: full access to users" ON public.users USING (true) WITH CHECK (true);
+  END IF;
+END $$;
 
 -- 2. PAYMENTS TABLE
 -- Records every verified Razorpay payment.
@@ -36,10 +41,14 @@ CREATE TABLE IF NOT EXISTS public.payments (
 
 ALTER TABLE public.payments ENABLE ROW LEVEL SECURITY;
 
-CREATE POLICY "Service: full access to payments"
-  ON public.payments
-  USING (true)
-  WITH CHECK (true);
+DO $$ 
+BEGIN
+  IF NOT EXISTS (
+    SELECT 1 FROM pg_policies WHERE policyname = 'Service: full access to payments' AND tablename = 'payments'
+  ) THEN
+    CREATE POLICY "Service: full access to payments" ON public.payments USING (true) WITH CHECK (true);
+  END IF;
+END $$;
 
 -- 3. Indexes for fast lookups
 CREATE INDEX IF NOT EXISTS idx_users_is_premium   ON public.users    (is_premium);

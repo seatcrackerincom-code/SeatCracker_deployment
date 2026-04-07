@@ -272,7 +272,33 @@ export default function Home() {
 
   return (
     <main style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+      {/* SEO Optimized Hidden Headings for Crawlers */}
+      <div style={{ position: "absolute", width: "1px", height: "1px", padding: 0, margin: "-1px", overflow: "hidden", clip: "rect(0,0,0,0)", border: 0 }}>
+        <h1>SeatCracker - Competitive Exam Practice Platform</h1>
+        <h2>Practice for EAMCET, JEE, NEET and more</h2>
+        <h3>Mock Tests | Performance Tracking | Smart Practice</h3>
+      </div>
+
       {showGlobalHeader && <GlobalHeader />}
+      
+      {/* Features & Supported Exams Sections (Visible on Home) */}
+      {step === -1 && (
+        <section id="marketing-intro" style={{ display: "none" }}>
+          <article>
+            <h2>Supported Competitive Exams</h2>
+            <p>EAMCET, JEE Main, NEET, GATE, and various State Entrance Tests.</p>
+          </article>
+          <article>
+            <h3>Our Core Features</h3>
+            <ul>
+              <li>Topic-wise Practice: Master every chapter with targeted questions.</li>
+              <li>Mock Exams: Realistic exam simulation with high-quality MCQs.</li>
+              <li>Performance Analytics: Detailed reports on your progress and speed.</li>
+              <li>Speed Training: Improve your accuracy and time management.</li>
+            </ul>
+          </article>
+        </section>
+      )}
       {showFloatingGear && (
         <FloatingGear 
           onHome={() => go(6)} 
