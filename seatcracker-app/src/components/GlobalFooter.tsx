@@ -41,6 +41,13 @@ export default function GlobalFooter() {
             Cookie Policy
           </Link>
         </div>
+        <div style={{
+          fontSize: "12px",
+          color: "var(--text-muted, #64748b)",
+          marginTop: "8px"
+        }}>
+          © 2026 seatcracker.com. All rights reserved.
+        </div>
       </div>
     </footer>
   );

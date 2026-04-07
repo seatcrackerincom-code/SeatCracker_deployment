@@ -10,6 +10,9 @@ CREATE TABLE IF NOT EXISTS public.users (
   is_premium    BOOLEAN     NOT NULL DEFAULT FALSE,
   purchase_date TIMESTAMPTZ DEFAULT NULL,
   plan          TEXT        DEFAULT NULL,         -- e.g. 'EAMCET_FULL_ACCESS'
+  last_step     INT         DEFAULT 1,
+  exam          TEXT        DEFAULT NULL,
+  course        TEXT        DEFAULT NULL,
   created_at    TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 

@@ -2,428 +2,323 @@
   "questions": [
     {
       "id": 1,
-      "question": "Derivative of sec x is ______.",
+      "question": "If y = (x^2 + 1) / (x^2 - 1), then dy/dx at x = 2 is",
       "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "sec x tan x",
-        "B": "sec² x",
-        "C": "tan x",
-        "D": "cosec x cot x"
+        "A": "-3/5",
+        "B": "3/5",
+        "C": "-1/3",
+        "D": "1/3"
       },
-      "answer": "A",
-      "pyq": false
+      "answer": "B",
+      "pyq": false,
+      "tag": "medium"
     },
     {
       "id": 2,
-      "question": "Derivative of cosec x is ______.",
-      "difficulty": "Medium",
+      "question": "The derivative of (2x + 1) / (3x - 2) is",
+      "difficulty": "Easy",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "-cosec x cot x",
-        "B": "-cosec² x",
-        "C": "cosec x tan x",
-        "D": "cot² x"
+        "A": "(2 * (3x - 2) - (2x + 1) * 3) / (3x - 2)^2",
+        "B": "(2 * (3x - 2) + (2x + 1) * 3) / (3x - 2)^2",
+        "C": "(2 * (3x - 2) - (2x + 1) * 3) / (2x + 1)^2",
+        "D": "(2 * (3x - 2) + (2x + 1) * 3) / (2x + 1)^2"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "easy"
     },
     {
       "id": 3,
-      "question": "Find dy/dx if y = sin(x²).",
+      "question": "If f(x) = |x|, then f'(x) at x = -2 is",
       "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "2x cos(x²)",
-        "B": "cos(x²)",
-        "C": "2x sin(x²)",
-        "D": "2 cos x"
+        "A": "-1",
+        "B": "1",
+        "C": "0",
+        "D": "undefined"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "medium"
     },
     {
       "id": 4,
-      "question": "Derivative of sin⁻¹ x is ______.",
-      "difficulty": "Medium",
+      "question": "If y = x^x, then dy/dx is",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "1 / √(1 - x²)",
-        "B": "-1 / √(1 - x²)",
-        "C": "1 / (1 + x²)",
-        "D": "cos⁻¹ x"
+        "A": "x^x * (1 + ln(x))",
+        "B": "x^x * (1 - ln(x))",
+        "C": "x^x * ln(x)",
+        "D": "x^x / ln(x)"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 5,
-      "question": "According to the product rule, d/dx [u(x)v(x)] = ______.",
-      "difficulty": "Medium",
+      "question": "If f(x) = sin(x) * cos(x), then f'(x) is",
+      "difficulty": "Easy",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "u v' + v u'",
-        "B": "u' v'",
-        "C": "u v' - v u'",
-        "D": "(u v' + v u') / v²"
+        "A": "cos(2x)",
+        "B": "-cos(2x)",
+        "C": "sin(2x)",
+        "D": "-sin(2x)"
       },
-      "answer": "A",
-      "pyq": false
+      "answer": "C",
+      "pyq": false,
+      "tag": "easy"
     },
     {
       "id": 6,
-      "question": "Derivative of sin(cos x) is ______.",
+      "question": "If y = (x + 1) / (x - 1), then dy/dx at x = 0 is",
       "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "-sin x cos(cos x)",
-        "B": "cos x cos(cos x)",
-        "C": "sin x sin(cos x)",
-        "D": "-cos x sin(sin x)"
+        "A": "-1",
+        "B": "1",
+        "C": "-1/2",
+        "D": "1/2"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "medium"
     },
     {
       "id": 7,
-      "question": "The derivative of log(log x) is ______.",
-      "difficulty": "Hard",
+      "question": "The derivative of (x^2 + 1) * (x^2 - 1) is",
+      "difficulty": "Easy",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "1 / (x log x)",
-        "B": "1 / (log x)",
-        "C": "1 / x²",
-        "D": "log(1/x)"
+        "A": "4x^3",
+        "B": "4x",
+        "C": "2x",
+        "D": "4x^2"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "easy"
     },
     {
       "id": 8,
-      "question": "According to the quotient rule, d/dx [u/v] = ______.",
-      "difficulty": "Medium",
+      "question": "If y = e^(2x), then dy/dx is",
+      "difficulty": "Easy",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "(v u' - u v') / v²",
-        "B": "(u v' - v u') / v²",
-        "C": "u' / v'",
-        "D": "u' v' / v²"
+        "A": "2e^(2x)",
+        "B": "e^(2x)",
+        "C": "2e^x",
+        "D": "e^x"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "easy"
     },
     {
       "id": 9,
-      "question": "If y = xˣ, then dy/dx = ?",
+      "question": "If f(x) = x^3 - 2x^2 + x - 1, then f'(x) at x = 1 is",
       "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "xˣ(1 + ln x)",
-        "B": "x·xˣ⁻¹",
-        "C": "xˣ ln x",
-        "D": "xˣ/x"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 10,
-      "question": "d/dx [sin(x²)] = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2x cos(x²)",
-        "B": "cos(x²)",
-        "C": "2x sin(x²)",
-        "D": "cos(2x)"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 11,
-      "question": "If x = a·cos³t, y = a·sin³t, then dy/dx = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "−tan t",
-        "B": "tan t",
-        "C": "−cot t",
-        "D": "cot t"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 12,
-      "question": "If x² + y² = a², then dy/dx = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "-x/y",
-        "B": "x/y",
-        "C": "-y/x",
+        "A": "-2",
+        "B": "-1",
+        "C": "0",
         "D": "1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "medium"
+    },
+    {
+      "id": 10,
+      "question": "If y = sin(x) / cos(x), then dy/dx is",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1 / cos^2(x)",
+        "B": "1 / sin^2(x)",
+        "C": "1 / tan^2(x)",
+        "D": "sec^2(x)"
+      },
+      "answer": "D",
+      "pyq": false,
+      "tag": "medium"
+    },
+    {
+      "id": 11,
+      "question": "If f(x) = |2x - 1|, then f'(x) at x = 1/2 is",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "-2",
+        "B": "2",
+        "C": "0",
+        "D": "undefined"
+      },
+      "answer": "D",
+      "pyq": false,
+      "tag": "medium"
+    },
+    {
+      "id": 12,
+      "question": "If y = (x^2 + 1) * (x - 1), then dy/dx at x = 1 is",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2",
+        "B": "-2",
+        "C": "0",
+        "D": "1"
+      },
+      "answer": "C",
+      "pyq": false,
+      "tag": "medium"
     },
     {
       "id": 13,
-      "question": "The derivative of cot x is ______.",
-      "difficulty": "Medium",
+      "question": "If f(x) = e^x * sin(x), then f'(x) is",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "-cosec² x",
-        "B": "sec² x",
-        "C": "-cosec x cot x",
-        "D": "-tan x"
+        "A": "e^x * (sin(x) + cos(x))",
+        "B": "e^x * (sin(x) - cos(x))",
+        "C": "e^x * sin(x)",
+        "D": "e^x * cos(x)"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 14,
-      "question": "The Chain Rule state d/dx [f(g(x))] = ______.",
-      "difficulty": "Medium",
+      "question": "If y = x^x, then d^2y/dx^2 at x = 1 is",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "f'(g(x)) * g'(x)",
-        "B": "f'(x) * g'(x)",
-        "C": "f(g'(x))",
-        "D": "f'(g'(x))"
+        "A": "1",
+        "B": "2",
+        "C": "0",
+        "D": "undefined"
       },
-      "answer": "A",
-      "pyq": false
+      "answer": "B",
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 15,
-      "question": "Derivative of aˣ is ______.",
+      "question": "If f(x) = (x^2 - 1) / (x^2 + 1), then f'(x) is",
       "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "aˣ log a",
-        "B": "x aˣ⁻¹",
-        "C": "aˣ / log a",
-        "D": "aˣ"
+        "A": "4x / (x^2 + 1)^2",
+        "B": "-4x / (x^2 + 1)^2",
+        "C": "2x / (x^2 + 1)",
+        "D": "-2x / (x^2 + 1)"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "medium"
     },
     {
       "id": 16,
-      "question": "If y = log(sin x), then dy/dx = ______.",
+      "question": "If y = (x + 1) / (x - 1), then d^2y/dx^2 at x = 0 is",
       "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "cot x",
-        "B": "tan x",
-        "C": "1 / sin x",
-        "D": "cos x"
+        "A": "2",
+        "B": "-2",
+        "C": "0",
+        "D": "1"
       },
-      "answer": "A",
-      "pyq": false
+      "answer": "B",
+      "pyq": false,
+      "tag": "medium"
     },
     {
       "id": 17,
-      "question": "Derivative of tan⁻¹ x is ______.",
+      "question": "If f(x) = sin(x) * cos(x), then f''(x) is",
       "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "1 / (1 + x²)",
-        "B": "1 / √(1 - x²)",
-        "C": "sec² x",
-        "D": "cot⁻¹ x"
+        "A": "-2sin(2x)",
+        "B": "2sin(2x)",
+        "C": "-2cos(2x)",
+        "D": "2cos(2x)"
       },
-      "answer": "A",
-      "pyq": false
+      "answer": "C",
+      "pyq": false,
+      "tag": "medium"
     },
     {
       "id": 18,
-      "question": "If y = xˣ, then dy/dx = ______.",
-      "difficulty": "Hard",
+      "question": "If y = e^(x^2), then dy/dx is",
+      "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "xˣ (1 + log x)",
-        "B": "x xˣ⁻¹",
-        "C": "xˣ log x",
-        "D": "x² log x"
+        "A": "2xe^(x^2)",
+        "B": "e^(x^2)",
+        "C": "2e^(x^2)",
+        "D": "x^2 * e^(x^2)"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "medium"
     },
     {
       "id": 19,
-      "question": "d/dx [tan⁻¹(x/√(1−x²))] = ?",
-      "difficulty": "Hard",
+      "question": "If f(x) = (x^2 + 1) * (x - 1), then f'(x) at x = -1 is",
+      "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "1/√(1−x²)",
-        "B": "x/(1−x²)",
-        "C": "1/(1+x²)",
-        "D": "√(1−x²)"
+        "A": "-6",
+        "B": "6",
+        "C": "0",
+        "D": "2"
       },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
+      "answer": "B",
+      "pyq": false,
+      "tag": "medium"
     },
     {
       "id": 20,
-      "question": "d/dx [log(sin x)] = ?",
+      "question": "If y = (x^2 - 1) / (x^2 + 1), then dy/dx at x = 1 is",
       "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "cot x",
-        "B": "cos x",
-        "C": "−cot x",
-        "D": "tan x"
+        "A": "-4/4",
+        "B": "4/4",
+        "C": "-2/2",
+        "D": "0"
       },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": "differentiation_21",
-      "question": "d/dx(xⁿ) = :",
-      "options": {
-        "A": "xⁿ⁻¹",
-        "B": "nxⁿ⁻¹",
-        "C": "nx^n",
-        "D": "n·xⁿ⁺¹"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "differentiation_22",
-      "question": "d/dx(ln x) = :",
-      "options": {
-        "A": "x",
-        "B": "1/x",
-        "C": "ln x/x",
-        "D": "e^x"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "differentiation_23",
-      "question": "Chain rule: d/dx[f(g(x))] = :",
-      "options": {
-        "A": "f'(g(x))",
-        "B": "f'(g(x))·g'(x)",
-        "C": "f'(x)·g'(x)",
-        "D": "f(g'(x))"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "differentiation_24",
-      "question": "d/dx(sin⁻¹x) = :",
-      "options": {
-        "A": "1/(1+x²)",
-        "B": "1/√(1-x²)",
-        "C": "-1/√(1-x²)",
-        "D": "1/(x√(x²-1))"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "differentiation_25",
-      "question": "If y = u·v, then dy/dx (product rule) = :",
-      "options": {
-        "A": "du/dx · dv/dx",
-        "B": "u·dv/dx + v·du/dx",
-        "C": "u·v + du/dx",
-        "D": "(u+v)·du/dx"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "differentiation_26",
-      "question": "Implicit differentiation of x² + y² = r²:",
-      "options": {
-        "A": "dy/dx = x/y",
-        "B": "dy/dx = -x/y",
-        "C": "dy/dx = y/x",
-        "D": "dy/dx = -y/x"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "differentiation_27",
-      "question": "Logarithmic differentiation is used when:",
-      "options": {
-        "A": "Function is periodic",
-        "B": "Function is of form u^v (both functions of x)",
-        "C": "Chain rule fails",
-        "D": "f is constant"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "differentiation_28",
-      "question": "d/dx(eˣ) = :",
-      "options": {
-        "A": "xeˣ⁻¹",
-        "B": "eˣ",
-        "C": "eˣ·x",
-        "D": "ln(x)·eˣ"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "differentiation_29",
-      "question": "Rolle's theorem requires f to be:",
-      "options": {
-        "A": "Differentiable everywhere",
-        "B": "Continuous on [a,b], differentiable on (a,b) and f(a)=f(b)",
-        "C": "Increasing",
-        "D": "Decreasing"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "differentiation_30",
-      "question": "d/dx[tan⁻¹(x/a)] = :",
-      "options": {
-        "A": "a/(x²+a²)",
-        "B": "a/(x²+a²)",
-        "C": "1/(x²+a²)",
-        "D": "x/(x²+a²)"
-      },
-      "answer": "A",
-      "difficulty": "hard"
+      "answer": "D",
+      "pyq": false,
+      "tag": "medium"
     }
   ]
 }

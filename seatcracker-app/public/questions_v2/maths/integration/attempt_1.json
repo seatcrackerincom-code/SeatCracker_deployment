@@ -2,428 +2,323 @@
   "questions": [
     {
       "id": 1,
-      "question": "∫ sec x dx = ______.",
-      "difficulty": "Medium",
+      "question": "Strictly determine the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-1]",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "ln|sec x + tan x| + C",
-        "B": "ln|sec x - tan x| + C",
-        "C": "ln|tan x| + C",
-        "D": "sec x tan x + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 2,
-      "question": "∫ 1/(x² − 4) dx = ?",
-      "difficulty": "Medium",
+      "question": "Strictly calculate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-2]",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "(1/4)ln|(x−2)/(x+2)| + C",
-        "B": "(1/2)ln|(x−2)/(x+2)| + C",
-        "C": "ln|x²−4| + C",
-        "D": "(1/4)ln|(x+2)/(x−2)| + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 3,
-      "question": "∫ √(a² - x²) dx = ______.",
+      "question": "Strictly evaluate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-3]",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "x/2 √(a²-x²) + a²/2 sin⁻¹(x/a) + C",
-        "B": "x √(a²-x²) + a² sin⁻¹(x/a) + C",
-        "C": "x/2 √(a²-x²) - a²/2 sin⁻¹(x) + C",
-        "D": "(1/2) sin⁻¹(x/a) + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": true,
+      "tag": "hard"
     },
     {
       "id": 4,
-      "question": "∫ dx / √(x² - a²) = ______.",
+      "question": "Strictly predict the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-4]",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "ln|x + √(x²-a²)| + C",
-        "B": "(1/a) sec⁻¹(x/a) + C",
-        "C": "sin⁻¹(x/a) + C",
-        "D": "(1/2a) ln|(x-a)/(x+a)| + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 5,
-      "question": "∫ dx / (x² - a²) = ______.",
+      "question": "Strictly synthesize the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-5]",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "(1/2a) ln|(x-a)/(x+a)| + C",
-        "B": "(1/2a) ln|(a-x)/(a+x)| + C",
-        "C": "(1/a) tan⁻¹(x/a) + C",
-        "D": "sin⁻¹(x/a) + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 6,
-      "question": "∫ dx / (x² + a²) = ______.",
-      "difficulty": "Medium",
+      "question": "Strictly differentiate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-6]",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "(1/a) tan⁻¹(x/a) + C",
-        "B": "tan⁻¹(x/a) + C",
-        "C": "(1/2a) ln|(x² + a²)| + C",
-        "D": "ln|x + √(x²+a²)| + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": true,
+      "tag": "hard"
     },
     {
       "id": 7,
-      "question": "∫ cosec x dx = ______.",
-      "difficulty": "Medium",
+      "question": "Strictly contrast the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-7]",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "ln|cosec x - cot x| + C",
-        "B": "ln|cosec x + cot x| + C",
-        "C": "ln|sin x| + C",
-        "D": "-cosec x cot x + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 8,
-      "question": "∫ dx / √(a² - x²) = ______.",
-      "difficulty": "Medium",
+      "question": "Strictly summarize the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-8]",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "sin⁻¹(x/a) + C",
-        "B": "(1/a) sin⁻¹(x/a) + C",
-        "C": "ln|x + √(a²-x²)| + C",
-        "D": "cos⁻¹(x/a) + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 9,
-      "question": "∫ √(x² - a²) dx = ______.",
+      "question": "Strictly analyze the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-9]",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "x/2 √(x²-a²) - a²/2 ln|x + √(x²-a²)| + C",
-        "B": "x/2 √(x²-a²) + a²/2 ln|x + √(x²-a²)| + C",
-        "C": "x √(x²-a²) - a² ln|x| + C",
-        "D": "1/2 sec⁻¹(x/a) + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": true,
+      "tag": "hard"
     },
     {
       "id": 10,
-      "question": "∫ eˣ(sin x + cos x) dx = ?",
-      "difficulty": "Medium",
+      "question": "Strictly identify the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-10]",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "eˣ sin x + C",
-        "B": "eˣ cos x + C",
-        "C": "eˣ(sin x − cos x) + C",
-        "D": "2eˣ sin x + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 11,
-      "question": "∫ e^x [f(x) + f'(x)] dx = ______.",
-      "difficulty": "Medium",
+      "question": "Strictly determine the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-11]",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "e^x f(x) + C",
-        "B": "e^x f'(x) + C",
-        "C": "f(x)/e^x + C",
-        "D": "e^x + f(x) + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 12,
-      "question": "∫ cot x dx = ______.",
-      "difficulty": "Medium",
+      "question": "Strictly calculate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-12]",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "ln|sin x| + C",
-        "B": "-ln|cosec x| + C",
-        "C": "-cosec²x + C",
-        "D": "ln|cos x| + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": true,
+      "tag": "hard"
     },
     {
       "id": 13,
-      "question": "Integration by parts formula: ∫ u dv = ______.",
-      "difficulty": "Medium",
+      "question": "Strictly evaluate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-13]",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "uv - ∫ v du",
-        "B": "u + v - ∫ uv dx",
-        "C": "uv + ∫ v du",
-        "D": "u'v - uv'"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 14,
-      "question": "∫ dx / √(x² + a²) = ______.",
+      "question": "Strictly predict the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-14]",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "ln|x + √(x²+a²)| + C",
-        "B": "(1/a) tan⁻¹(x/a) + C",
-        "C": "sinh⁻¹(x/a) + C",
-        "D": "Both A and C are correct functionally"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 15,
-      "question": "∫ dx / (a² - x²) = ______.",
+      "question": "Strictly synthesize the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-15]",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "(1/2a) ln|(a+x)/(a-x)| + C",
-        "B": "(1/2a) ln|(x-a)/(x+a)| + C",
-        "C": "(1/a) tan⁻¹(x/a) + C",
-        "D": "cos⁻¹(x/a) + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": true,
+      "tag": "hard"
     },
     {
       "id": 16,
-      "question": "∫ tan x dx = ______.",
-      "difficulty": "Medium",
+      "question": "Strictly differentiate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-16]",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "ln|sec x| + C",
-        "B": "ln|sin x| + C",
-        "C": "sec²x + C",
-        "D": "ln|cos x| + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 17,
-      "question": "∫ a^x dx = ______.",
-      "difficulty": "Medium",
+      "question": "Strictly contrast the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-17]",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "a^x / ln a + C",
-        "B": "a^x ln a + C",
-        "C": "ax^(a-1) + C",
-        "D": "a^(x+1)/(x+1) + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 18,
-      "question": "∫ sin³x dx = ?",
-      "difficulty": "Medium",
+      "question": "Strictly summarize the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-18]",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "−cos x + cos³x/3 + C",
-        "B": "cos x − cos³x/3 + C",
-        "C": "−cos³x/3 + C",
-        "D": "−3cos x + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
       "answer": "A",
       "pyq": true,
-      "tag": "pyq"
+      "tag": "hard"
     },
     {
       "id": 19,
-      "question": "∫ x · eˣ dx = ?",
-      "difficulty": "Medium",
+      "question": "Strictly analyze the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-19]",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "eˣ(x + 1) + C",
-        "B": "eˣ(x − 1) + C",
-        "C": "x²eˣ/2 + C",
-        "D": "eˣ + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
-      "answer": "B",
-      "pyq": true,
-      "tag": "pyq"
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 20,
-      "question": "∫ x/(1 + x²) dx = ?",
-      "difficulty": "Medium",
+      "question": "Strictly identify the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-20]",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "ln(1+x²) + C",
-        "B": "(1/2)ln(1+x²) + C",
-        "C": "arctan x + C",
-        "D": "x²/2 + C"
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
       },
-      "answer": "B",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": "integration_21",
-      "question": "∫sin(x)dx = :",
-      "options": {
-        "A": "cos(x)+C",
-        "B": "-cos(x)+C",
-        "C": "sin(x)+C",
-        "D": "tan(x)+C"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "integration_22",
-      "question": "∫1/(1+x²)dx = :",
-      "options": {
-        "A": "ln(1+x²)+C",
-        "B": "tan⁻¹x+C",
-        "C": "sin⁻¹x+C",
-        "D": "sec⁻¹x+C"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "integration_23",
-      "question": "Integration by parts: ∫u dv = :",
-      "options": {
-        "A": "uv+∫v du",
-        "B": "uv-∫v du",
-        "C": "u·v-∫u dv",
-        "D": "∫u dx + ∫v dx"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "integration_24",
-      "question": "∫eˣ(f(x)+f'(x))dx = :",
-      "options": {
-        "A": "eˣf'(x)+C",
-        "B": "eˣf(x)+C",
-        "C": "eˣ+f(x)+C",
-        "D": "f(x)+C"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "integration_25",
-      "question": "∫tan(x)dx = :",
-      "options": {
-        "A": "sec²x+C",
-        "B": "ln|sec x|+C",
-        "C": "-ln|cos x|+C",
-        "D": "Both B and C"
-      },
-      "answer": "D",
-      "difficulty": "medium"
-    },
-    {
-      "id": "integration_26",
-      "question": "Substitution: ∫2x√(x²+1)dx. Let u=x²+1:",
-      "options": {
-        "A": "u³/2 + C",
-        "B": "(2/3)(x²+1)^(3/2)+C",
-        "C": "x²+1+C",
-        "D": "√(x²+1)+C"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "integration_27",
-      "question": "∫x·eˣdx = :",
-      "options": {
-        "A": "x·eˣ+C",
-        "B": "eˣ(x-1)+C",
-        "C": "x²eˣ/2+C",
-        "D": "eˣ/x+C"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "integration_28",
-      "question": "∫dx/√(a²-x²) =:",
-      "options": {
-        "A": "cos⁻¹(x/a)+C",
-        "B": "sin⁻¹(x/a)+C",
-        "C": "tan⁻¹(x/a)+C",
-        "D": "sec⁻¹(x/a)+C"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "integration_29",
-      "question": "Partial fractions: 1/[(x-1)(x+2)] = :",
-      "options": {
-        "A": "1/3[1/(x-1)-1/(x+2)]",
-        "B": "1/3[1/(x-1)-1/(x+2)]",
-        "C": "[A/(x-1)+B/(x+2)]",
-        "D": "B and C both valid representations"
-      },
-      "answer": "D",
-      "difficulty": "hard"
-    },
-    {
-      "id": "integration_30",
-      "question": "∫sec²(x)dx = :",
-      "options": {
-        "A": "2sec(x)tan(x)+C",
-        "B": "tan(x)+C",
-        "C": "sec(x)+C",
-        "D": "sin(x)+C"
-      },
-      "answer": "B",
-      "difficulty": "medium"
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
     }
   ]
 }

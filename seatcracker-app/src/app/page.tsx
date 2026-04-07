@@ -125,33 +125,74 @@ export default function Home() {
     // Firebase Analytics — login event
     trackLogin("google");
 
-    // Register user in Supabase analytics table (backend, non-blocking)
-    fetch("/api/admin/register-user", {
+    // Register/Restore user in Supabase analytics table
+    const res = await fetch("/api/admin/register-user", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userId: user.uid }),
-    }).catch(() => {}); // fire-and-forget
+    });
+    
+    const { ok, state } = await res.json();
+    
+    // Cloud Restore: Use database state if available, else fallback to localStorage
+    if (ok && state) {
+      if (state.exam) {
+        setExam(state.exam);
+        localStorage.setItem("sc_exam", state.exam);
+      }
+      if (state.course) {
+        setCourse(state.course);
+        localStorage.setItem("sc_course", state.course);
+      }
 
+      if (state.last_step >= 1 && state.last_step <= 11) {
+        const uid = user?.uid;
+        const accessState = await getAccessState(uid);
+        setAccess(accessState);
+
+        if (accessState.status === "premium" || accessState.status === "trial") {
+          const resumable = state.last_step >= 1 && !!state.exam && !!state.course;
+          setStep(resumable ? state.last_step : 1);
+        } else if (accessState.status === "expired") {
+          setStep(5);
+        } else {
+          setStep(1);
+        }
+        return;
+      }
+    }
+
+    // Fallback to existing logic if cloud state missing
     const uid = user?.uid;
-    const state = await getAccessState(uid);
-    setAccess(state);
+    const accessState = await getAccessState(uid);
+    setAccess(accessState);
 
-    if (state.status === "premium" || state.status === "trial") {
+    if (accessState.status === "premium" || accessState.status === "trial") {
       const savedStepStr = localStorage.getItem("sc_step");
       const savedStep = savedStepStr ? parseInt(savedStepStr) as Step : 1;
       const resumable = savedStep >= 1 && savedStep <= 10 
         && !!localStorage.getItem("sc_exam") && !!localStorage.getItem("sc_course");
       setStep(resumable ? savedStep : 1);
-    } else if (state.status === "expired") {
+    } else if (accessState.status === "expired") {
       setStep(5);
     } else {
-      setStep(1); // Motivation then through to the entrance test select
+      setStep(1); 
     }
+  };
+
+  const saveCloudProgress = (data: { last_step?: number; exam?: string; course?: string }) => {
+    if (!authUser || authUser.uid === "sc_user") return;
+    fetch("/api/admin/register-user", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ userId: authUser.uid, ...data }),
+    }).catch(() => {}); // fire-and-forget
   };
 
   const go = (s: Step) => {
     setStep(s);
     localStorage.setItem("sc_step", String(s));
+    saveCloudProgress({ last_step: s });
   };
 
   const handleTestCategoryNext = (selected: string) => {
@@ -163,6 +204,7 @@ export default function Home() {
   const handleExamNext = (selected: string) => {
     setExam(selected);
     localStorage.setItem("sc_exam", selected);
+    saveCloudProgress({ exam: selected, last_step: 4 });
     go(4);
   };
 
@@ -176,8 +218,10 @@ export default function Home() {
     setAccess(state);
 
     if (state.status === "premium" || state.status === "trial") {
+      saveCloudProgress({ course: selected, last_step: 6 });
       go(6); // ModeSelect
     } else {
+      saveCloudProgress({ course: selected, last_step: 5 });
       go(5); // AccessGate
     }
   };

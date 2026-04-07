@@ -2,396 +2,90 @@
   "questions": [
     {
       "id": 1,
-      "question": "The nth roots of unity ωₖ = e^(2πik/n), k = 0,1,...,n−1. For n=4, the roots are?",
+      "question": "If z = cosθ + isinθ, then the value of z^5 + z^(-5) is",
       "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "1, i, −1, −i",
-        "B": "1, −1, 1, −1",
-        "C": "i, −i, 1, −1",
-        "D": "1, ω, ω², ω³ with |ω|≠1"
+        "A": "2cos5θ",
+        "B": "2sin5θ",
+        "C": "2cosθ",
+        "D": "2sinθ"
       },
       "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
+      "pyq": false,
+      "tag": "medium"
     },
     {
       "id": 2,
-      "question": "The sum of all n roots of unity is equal to ______ (for n > 1).",
-      "difficulty": "Medium",
+      "question": "The value of (1 + i)^6 using De Moivre's theorem is",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "0",
-        "B": "1",
-        "C": "n",
-        "D": "-1"
+        "A": "-8i",
+        "B": "8i",
+        "C": "8",
+        "D": "-8"
       },
-      "answer": "A",
-      "pyq": false
+      "answer": "D",
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 3,
-      "question": "The n distinct roots of zⁿ = 1 lie on the unit circle in the complex plane and form a regular ______.",
+      "question": "If z = cosθ + isinθ and z^n = cosnθ + isinnθ, then the value of z^3 + z^(-3) is",
       "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "Polygon of n sides",
-        "B": "Polyhedron",
-        "C": "Ellipse",
-        "D": "Spiral"
+        "A": "2cos3θ",
+        "B": "2sin3θ",
+        "C": "2cosθ",
+        "D": "2sinθ"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "medium"
     },
     {
       "id": 4,
-      "question": "1 + ω + ω² = ? where ω = e^(2πi/3)",
-      "difficulty": "Medium",
+      "question": "The argument of (1 + i)^4 is",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "0",
-        "B": "1",
-        "C": "3",
-        "D": "ω"
+        "A": "π/4",
+        "B": "π/2",
+        "C": "π",
+        "D": "3π/4"
       },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
+      "answer": "C",
+      "pyq": false,
+      "tag": "hard"
     },
     {
       "id": 5,
-      "question": "The explicit complex rectangular form of ω (the primitive cube root of unity) is ______.",
+      "question": "If z = cosθ + isinθ, then the value of z^4 + z^(-4) is",
       "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "(-1 + i√3) / 2",
-        "B": "(-1 - i√3) / 2",
-        "C": "(1 + i√3) / 2",
-        "D": "(1 - i√3) / 2"
+        "A": "2cos4θ",
+        "B": "2sin4θ",
+        "C": "2cos2θ",
+        "D": "2sin2θ"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "medium"
     },
     {
       "id": 6,
-      "question": "Value of (1+i)⁸ = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "16",
-        "B": "−16",
-        "C": "16i",
-        "D": "−16i"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 7,
-      "question": "The product of all n roots of unity is equal to ______.",
+      "question": "The value of (cosπ/4 + isinπ/4)^8 is",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(-1)^(n-1)",
-        "B": "1",
-        "C": "-1",
-        "D": "0"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 8,
-      "question": "The roots of unity can be uniquely written as 1, ω, ω², ω³, ..., ω^(n-1), where ω represents the ______ root e^(2πi/n).",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Primitive/First non-real",
-        "B": "Real",
-        "C": "Conjugate",
-        "D": "Infinite"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 9,
-      "question": "The expression ω² is exactly equal to the ______ of ω since their magnitudes are 1.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Complex Conjugate (and also its reciprocal)",
-        "B": "Negative",
-        "C": "Square Root",
-        "D": "Real part"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 10,
-      "question": "To find the q distinct roots of z^(1/q), we apply De Moivre's. The arguments are ______ for k = 0, 1, ..., q-1.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(θ + 2kπ) / q",
-        "B": "q(θ + 2kπ)",
-        "C": "(θ + kπ) / q",
-        "D": "(θ - 2kπ) / q"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 11,
-      "question": "The expression (1 + i)ⁿ can be simplified by converting (1 + i) to polar form as ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "√2 (cos π/4 + i sin π/4)",
-        "B": "2 (cos π/4 + i sin π/4)",
-        "C": "√2 (cos π/2 + i sin π/2)",
-        "D": "(cos π/4 + i sin π/4)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 12,
-      "question": "(cos θ + i sin θ)ⁿ = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "cos nθ + i sin nθ",
-        "B": "cos(θⁿ) + i sin(θⁿ)",
-        "C": "n(cos θ + i sin θ)",
-        "D": "cosⁿθ + i sinⁿθ"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 13,
-      "question": "The polynomial zⁿ + 1 = 0 has solutions z = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "cis((2k+1)π / n) for k=0,1...n-1",
-        "B": "cis(2kπ / n)",
-        "C": "cis(kπ / n)",
-        "D": "cis(nπ)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 14,
-      "question": "Thus, (1 + i)ⁿ expands precisely to ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(√2)ⁿ [cos(nπ/4) + i sin(nπ/4)]",
-        "B": "2ⁿ [cos(nπ/4) + i sin(nπ/4)]",
-        "C": "2^(n/2) [cos(nπ/4) - i sin(nπ/4)]",
-        "D": "cos(nπ/2) + i sin(nπ/2)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 15,
-      "question": "If n is a fraction p/q (where p, q are integers and q > 0), then (cos θ + i sin θ)^(p/q) has ______ distinct values.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "q",
-        "B": "p",
-        "C": "p + q",
-        "D": "Infinite"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 16,
-      "question": "The value of (sin θ + i cos θ)ⁿ is equal to ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "cos n(π/2 - θ) + i sin n(π/2 - θ)",
-        "B": "sin(nθ) + i cos(nθ)",
-        "C": "cos(nθ) - i sin(nθ)",
-        "D": "sin(nθ) - i cos(nθ)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 17,
-      "question": "If x = cos θ + i sin θ, then x + 1/x is equal to ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2 cos θ",
-        "B": "2i sin θ",
-        "C": "2",
-        "D": "0"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 18,
-      "question": "De Moivre's Theorem is heavily used to derive identities by expanding (cos θ + i sin θ)ⁿ using ______ Theorem.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Binomial",
-        "B": "Taylor's",
-        "C": "Maclaurin's",
-        "D": "Pascal's"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 19,
-      "question": "If z = r(cos θ + i sin θ), then zⁿ = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "rⁿ (cos nθ + i sin nθ)",
-        "B": "r (cos nθ + i sin nθ)",
-        "C": "rⁿ (cos θ + i sin θ)",
-        "D": "r (cos θ + i sin θ)ⁿ"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 20,
-      "question": "(cos θ − i sin θ)ⁿ = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "cos nθ − i sin nθ",
-        "B": "cos nθ + i sin nθ",
-        "C": "−cos nθ + i sin nθ",
-        "D": "cos(−nθ) − i sin(−nθ)"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": "de_moivre_s_theorem_21",
-      "question": "(cos30°+isin30°)^6 = :",
-      "options": {
-        "A": "i",
-        "B": "-1",
-        "C": "1",
-        "D": "-i"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "de_moivre_s_theorem_22",
-      "question": "5th roots of unity are 5 complex numbers. Their sum = :",
-      "options": {
-        "A": "5",
-        "B": "0",
-        "C": "1",
-        "D": "e^(2πi/5)"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "de_moivre_s_theorem_23",
-      "question": "(cosθ+isinθ)^(-n) = :",
-      "options": {
-        "A": "cosnθ+isinnθ",
-        "B": "cosnθ-isinnθ",
-        "C": "1/(cosnθ)",
-        "D": "cos(-θ)+isin(-θ)"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "de_moivre_s_theorem_24",
-      "question": "nth roots of complex number z = r·e^(iθ) are:",
-      "options": {
-        "A": "r^(1/n)·e^(iθ/n)",
-        "B": "r^(1/n)·e^(i(θ+2kπ)/n), k=0,1,...,n-1",
-        "C": "r·e^(inθ)",
-        "D": "n different values of r only"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "de_moivre_s_theorem_25",
-      "question": "(1+i)^8 = :",
-      "options": {
-        "A": "4",
-        "B": "16",
-        "C": "8",
-        "D": "2"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "de_moivre_s_theorem_26",
-      "question": "cos(nθ) can be expressed using De Moivre as real part of:",
-      "options": {
-        "A": "(sinθ+icosθ)^n",
-        "B": "(cosθ+isinθ)^n",
-        "C": "e^(nθ)",
-        "D": "e^(-nθ)"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "de_moivre_s_theorem_27",
-      "question": "Primitive nth root of unity: ω = e^(2πi/n). Then ω^n = :",
-      "options": {
-        "A": "ω",
-        "B": "1",
-        "C": "0",
-        "D": "e^(2πi)"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "de_moivre_s_theorem_28",
-      "question": "If z = cos(π/3)+isin(π/3), then z³ = :",
+      "diagram_description": "None",
       "options": {
         "A": "1",
         "B": "-1",
@@ -399,31 +93,232 @@
         "D": "-i"
       },
       "answer": "B",
-      "difficulty": "hard"
+      "pyq": false,
+      "tag": "hard"
     },
     {
-      "id": "de_moivre_s_theorem_29",
-      "question": "Sum of nth roots of unity form vertices of:",
+      "id": 7,
+      "question": "If z = cosθ + isinθ, then the value of z^2 + z^(-2) is",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "None",
       "options": {
-        "A": "Triangle",
-        "B": "Regular n-gon on unit circle",
-        "C": "Ellipse",
-        "D": "Line segment"
+        "A": "2cos2θ",
+        "B": "2sin2θ",
+        "C": "2cosθ",
+        "D": "2sinθ"
       },
-      "answer": "B",
-      "difficulty": "medium"
+      "answer": "A",
+      "pyq": false,
+      "tag": "medium"
     },
     {
-      "id": "de_moivre_s_theorem_30",
-      "question": "(cosθ-isinθ) = :",
+      "id": 8,
+      "question": "The argument of (1 - i)^5 is",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
       "options": {
-        "A": "cos(-θ)+isin(θ)",
-        "B": "cos(-θ)+isin(-θ)",
-        "C": "(cosθ+isinθ)^(-1)",
-        "D": "Both B and C"
+        "A": "-π/4",
+        "B": "-π/2",
+        "C": "-3π/4",
+        "D": "-5π/4"
       },
       "answer": "D",
-      "difficulty": "medium"
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 9,
+      "question": "If z = cosθ + isinθ, then the value of z^6 + z^(-6) is",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2cos6θ",
+        "B": "2sin6θ",
+        "C": "2cos3θ",
+        "D": "2sin3θ"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "medium"
+    },
+    {
+      "id": 10,
+      "question": "The value of (cosπ/6 + isinπ/6)^12 is",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "i",
+        "D": "-i"
+      },
+      "answer": "B",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 11,
+      "question": "If z = cosθ + isinθ, then the value of z^10 + z^(-10) is",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2cos10θ",
+        "B": "2sin10θ",
+        "C": "2cos5θ",
+        "D": "2sin5θ"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "medium"
+    },
+    {
+      "id": 12,
+      "question": "The argument of (1 + i)^3 is",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "π/4",
+        "B": "3π/4",
+        "C": "5π/4",
+        "D": "3π/2"
+      },
+      "answer": "B",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 13,
+      "question": "If z = cosθ + isinθ, then the value of z^8 + z^(-8) is",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2cos8θ",
+        "B": "2sin8θ",
+        "C": "2cos4θ",
+        "D": "2sin4θ"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "medium"
+    },
+    {
+      "id": 14,
+      "question": "The value of (cosπ/3 + isinπ/3)^9 is",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "i",
+        "D": "-i"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 15,
+      "question": "If z = cosθ + isinθ, then the value of z^7 + z^(-7) is",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2cos7θ",
+        "B": "2sin7θ",
+        "C": "2cos3θ",
+        "D": "2sin3θ"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "medium"
+    },
+    {
+      "id": 16,
+      "question": "The argument of (1 - i)^7 is",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "-7π/4",
+        "B": "-3π/4",
+        "C": "-5π/4",
+        "D": "-π/4"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 17,
+      "question": "If z = cosθ + isinθ, then the value of z^9 + z^(-9) is",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2cos9θ",
+        "B": "2sin9θ",
+        "C": "2cos3θ",
+        "D": "2sin3θ"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "medium"
+    },
+    {
+      "id": 18,
+      "question": "The value of (cos2π/3 + isin2π/3)^6 is",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "i",
+        "D": "-i"
+      },
+      "answer": "B",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 19,
+      "question": "If z = cosθ + isinθ, then the value of z^12 + z^(-12) is",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2cos12θ",
+        "B": "2sin12θ",
+        "C": "2cos6θ",
+        "D": "2sin6θ"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "medium"
+    },
+    {
+      "id": 20,
+      "question": "The argument of (1 + i)^9 is",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "9π/4",
+        "B": "5π/4",
+        "C": "7π/4",
+        "D": "3π/4"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
     }
   ]
 }
