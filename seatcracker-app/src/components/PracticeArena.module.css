@@ -637,7 +637,15 @@
 
 /* ── Mobile ── */
 @media (max-width: 767px) {
-  .sidebarOpen { width: 100vw; position: absolute; top: 0; left: 0; height: 100vh; }
+  .sidebarOpen { 
+    width: 100vw; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 100vh;
+    background: var(--bg); /* Solid background on mobile */
+    backdrop-filter: none; /* Disable glass effect for mobile syllabus */
+  }
   .sidebar { position: absolute; }
   .topTitle { font-size: 14px; }
   .contentArea { padding: 16px; }
