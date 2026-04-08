@@ -9,35 +9,48 @@ export default function ContactPage() {
   return (
     <main style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--bg, #0a0a0f)" }}>
       <GlobalHeader />
-      <div style={{ flex: 1, maxWidth: "600px", margin: "60px auto", padding: "0 20px", textAlign: "center" }}>
-        <h1 style={{ fontSize: "2.5rem", fontWeight: 700, marginBottom: "24px", color: "var(--accent, #a78bfa)" }}>
-          Contact Us
-        </h1>
-        <p style={{ fontSize: "1.1rem", marginBottom: "40px", color: "var(--text-muted, #94a3b8)" }}>
-          Have questions or need assistance? Reach out to our dedicated support team.
-        </p>
-        
+      <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", padding: "20px" }}>
         <div style={{ 
-          padding: "32px", 
-          background: "var(--card-bg, rgba(255,255,255,0.05))", 
-          borderRadius: "16px",
-          border: "1px solid var(--border, rgba(255,255,255,0.1))"
+          maxWidth: "500px", 
+          width: "100%",
+          padding: "40px", 
+          background: "rgba(255,255,255,0.03)", 
+          backdropFilter: "blur(12px)",
+          borderRadius: "24px",
+          border: "1px solid rgba(255,255,255,0.08)",
+          textAlign: "center",
+          boxShadow: "0 20px 50px rgba(0,0,0,0.3)"
         }}>
-          <h2 style={{ fontSize: "1.5rem", fontWeight: 600, marginBottom: "12px" }}>Email Support</h2>
-          <p style={{ fontSize: "1.2rem", fontWeight: 700, color: "var(--accent, #a78bfa)" }}>
-            support@seatcracker.com
+          <div style={{ fontSize: "4rem", marginBottom: "20px" }}>🏗️</div>
+          <h1 style={{ fontSize: "2rem", fontWeight: 800, marginBottom: "16px", background: "linear-gradient(135deg, #a78bfa 0%, #6366f1 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+            Currently Under Construction
+          </h1>
+          <p style={{ fontSize: "1.1rem", color: "var(--text-muted, #94a3b8)", lineHeight: 1.6, margin: 0 }}>
+            We're building something special just for you. Our contact systems will be live very soon. Stay tuned!
           </p>
-          <p style={{ marginTop: "24px", fontSize: "0.9rem", color: "var(--text-muted, #94a3b8)" }}>
-            We typically respond within 24-48 business hours.
-          </p>
-        </div>
-
-        <div style={{ marginTop: "40px", fontSize: "1rem" }}>
-          <h3>Corporate Address</h3>
-          <p style={{ color: "var(--text-muted, #94a3b8)", marginTop: "8px" }}>
-            SeatCracker.com - Smart Practice Systems<br />
-            Techno Hub, Hyderabad, India
-          </p>
+          <div style={{ 
+            marginTop: "32px", 
+            height: "4px", 
+            width: "100%", 
+            background: "rgba(255,255,255,0.05)", 
+            borderRadius: "2px", 
+            overflow: "hidden" 
+          }}>
+            <div style={{ 
+              height: "100%", 
+              width: "60%", 
+              background: "linear-gradient(90deg, #6366f1, #a78bfa)", 
+              borderRadius: "2px",
+              boxShadow: "0 0 15px rgba(99, 102, 241, 0.5)",
+              animation: "shimmer 2s infinite ease-in-out"
+            }} />
+          </div>
+          <style>{`
+            @keyframes shimmer {
+              0% { transform: translateX(-100%); }
+              100% { transform: translateX(200%); }
+            }
+          `}</style>
         </div>
       </div>
     </main>

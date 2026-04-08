@@ -437,19 +437,22 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
               position: "fixed", inset: 0, zIndex: 1000,
               background: "rgba(0,0,0,0.75)",
               backdropFilter: "blur(12px)",
-              display: "flex", alignItems: "center", justifyContent: "center",
-              padding: "1rem"
+              display: "flex", alignItems: "flex-start", justifyContent: "center",
+              padding: "1rem", overflowY: "auto",
+              WebkitOverflowScrolling: "touch"
             }}>
               <div style={{
                 background: "linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%)",
                 border: "1px solid rgba(139,92,246,0.4)",
                 borderRadius: "20px",
                 padding: "2.5rem 2rem",
+                paddingBottom: "calc(2.5rem + env(safe-area-inset-bottom))",
                 maxWidth: "460px",
                 width: "100%",
                 boxShadow: "0 25px 60px rgba(0,0,0,0.6), 0 0 40px rgba(139,92,246,0.15)",
                 textAlign: "center",
-                animation: "fadeInUp 0.3s ease"
+                animation: "fadeInUp 0.3s ease",
+                margin: "auto 0"
               }}>
                 {/* Briefing Avatar */}
                 <div style={{

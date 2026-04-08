@@ -6,7 +6,7 @@
   background: var(--bg);
   position: relative;
   overflow: hidden;
-  padding: 32px 0 60px;
+  padding: 32px 0 calc(60px + env(safe-area-inset-bottom));
   animation: fadeUp 0.45s ease both;
 }
 

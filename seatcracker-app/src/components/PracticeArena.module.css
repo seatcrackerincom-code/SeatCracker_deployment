@@ -264,7 +264,7 @@
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-y: contain;
   padding: 24px 20px;
-  padding-bottom: 80px; /* Space for mobile nav */
+  padding-bottom: calc(80px + env(safe-area-inset-bottom)); /* Space for mobile nav + safe area */
 }
 
 /* ── Home ── */
@@ -383,7 +383,13 @@
   font-size: 14px;
   color: var(--accent2);
   font-family: "Courier New", monospace;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 4px;
+  scrollbar-width: thin;
 }
+.formulaItem code::-webkit-scrollbar { height: 4px; }
+.formulaItem code::-webkit-scrollbar-thumb { background: rgba(167, 139, 250, 0.2); border-radius: 4px; }
 .formulaItem span { font-size: 12px; color: var(--text-muted); }
 
 .actionRow {

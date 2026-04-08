@@ -413,7 +413,7 @@
 }
 
 .dayViewContent, .topicViewContent, .testContent {
-  padding: 24px 20px 100px;
+  padding: 24px 20px calc(100px + env(safe-area-inset-bottom));
   max-width: 600px;
   margin: 0 auto;
 }
@@ -596,7 +596,13 @@
   font-size: 16px;
   color: #818cf8;
   margin-bottom: 6px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 4px;
+  scrollbar-width: thin;
 }
+.formulaItem code::-webkit-scrollbar { height: 4px; }
+.formulaItem code::-webkit-scrollbar-thumb { background: rgba(129, 140, 248, 0.2); border-radius: 4px; }
 
 .formulaItem span {
   font-size: 12px;
