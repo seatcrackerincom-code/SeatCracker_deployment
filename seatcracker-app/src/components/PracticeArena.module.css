@@ -2,23 +2,25 @@
    PRACTICE ARENA — Full Layout CSS Module
 ─────────────────────────────────────────── */
 
-/* Root layout: sidebar + main */
 .layout {
   display: flex;
-  height: 100vh;
-  height: 100dvh;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   overflow: hidden;
   background: var(--bg);
   color: var(--text);
   overscroll-behavior: none;
+  z-index: 10;
 }
 
 /* ── Sidebar ── */
 .sidebar {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  height: 100dvh;
+  height: 100%;
   background: var(--bg-card);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
@@ -356,6 +358,7 @@
   color: var(--accent2);
 }
 .theoryCard p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+.formulaCard { padding: 16px; } /* Slightly tighter on mobile */
 
 .subtopicList {
   margin: 12px 0 0 16px;
@@ -367,17 +370,20 @@
 }
 
 .formulaGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
 }
 .formulaItem {
   background: var(--bg-card2);
   border-radius: 8px;
-  padding: 12px;
+  padding: 12px 14px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
+  width: 100%;
+  overflow: hidden; /* Contain the code scroll */
 }
 .formulaItem code {
   font-size: 14px;
@@ -406,8 +412,8 @@
   color: #fff;
   font-weight: 700;
   font-size: 14px;
-  padding: 14px;
-  border-radius: var(--radius);
+  padding: 12px;
+  border-radius: var(--radius-sm);
   text-decoration: none;
   transition: filter 0.2s, transform 0.15s;
 }
@@ -469,7 +475,8 @@
 /* Updated aiTeacherCard flex for count selector */
 .aiTeacherCard {
   flex-wrap: wrap;
-  row-gap: 12px;
+  row-gap: 16px;
+  padding: 16px; /* Slightly tighter mobile padding */
 }
 
 
@@ -637,19 +644,53 @@
 
 /* ── Mobile ── */
 @media (max-width: 767px) {
+  .layout { 
+    position: fixed;
+    top: 75px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+  }
+  .main { 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .topBar {
+    flex-shrink: 0;
+  }
+  .contentArea { 
+    flex: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 16px 14px; 
+    padding-bottom: calc(100px + env(safe-area-inset-bottom));
+  }
   .sidebarOpen { 
     width: 100vw; 
-    position: absolute; 
-    top: 0; 
+    position: fixed; 
+    top: 75px; 
     left: 0; 
-    height: 100vh;
-    background: var(--bg); /* Solid background on mobile */
-    backdrop-filter: none; /* Disable glass effect for mobile syllabus */
+    bottom: 0;
+    background: var(--bg);
+    backdrop-filter: none;
+    z-index: 1100;
   }
-  .sidebar { position: absolute; }
-  .topTitle { font-size: 14px; }
-  .contentArea { padding: 16px; }
+  .sidebar { position: fixed; }
+  .sidebarInner { height: 100%; }
   .statGrid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .aiTeacherCard {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+  }
+  .startTestBtn {
+    width: 100%;
+    padding: 14px;
+  }
 }
 @media (min-width: 768px) {
   .hamburger { display: flex; }

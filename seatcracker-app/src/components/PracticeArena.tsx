@@ -380,17 +380,25 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
                       return (
                         <>
                           <div style={{ flex: 1 }}>
-                            <p className={styles.aiLabel} style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text)' }}>
+                            <p className={styles.aiLabel} style={{ 
+                              fontSize: '1.2rem', 
+                              fontWeight: 800, 
+                              color: 'var(--text)',
+                              display: 'flex',
+                              alignItems: 'baseline',
+                              flexWrap: 'wrap',
+                              gap: '8px'
+                            }}>
                               {titles[attempt] || titles[4]}
                               <span style={{ 
-                                fontSize: '0.75rem', 
-                                marginLeft: '10px', 
+                                fontSize: '0.7rem', 
                                 padding: '4px 10px', 
                                 background: 'linear-gradient(135deg, rgba(108, 99, 255, 0.2) 0%, rgba(167, 139, 250, 0.2) 100%)', 
                                 color: 'var(--accent2)', 
                                 border: '1px solid rgba(139, 92, 246, 0.3)',
                                 borderRadius: '100px', 
-                                fontWeight: 700 
+                                fontWeight: 700,
+                                whiteSpace: 'nowrap'
                               }}>
                                 Phase {attempt}/4
                               </span>
