@@ -190,9 +190,18 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
 
   // Hide global header when in exam mode
   useEffect(() => {
-    document.body.classList.add("exam-active");
-    return () => { document.body.classList.remove("exam-active"); };
-  }, []);
+    // Only apply the exam-writing class when on the 'exam' screen
+    if (screen === "exam") {
+      document.body.classList.add("exam-writing");
+    } else {
+      document.body.classList.remove("exam-writing");
+    }
+    
+    // Always cleanup on unmount
+    return () => { 
+      document.body.classList.remove("exam-writing"); 
+    };
+  }, [screen]);
 
 
 
@@ -272,10 +281,6 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
         setExamStarted(false);
         setScreen("exam");
         setExamLoading(false);
-
-        setTimeout(() => {
-          if (examRef.current?.requestFullscreen) examRef.current.requestFullscreen().catch(() => {});
-        }, 300);
       } else {
         setExamError("Question bank for this topic is being synchronized. Please try again in a moment.");
         setExamLoading(false);
@@ -338,7 +343,6 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
 
   const submitExam = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
-    if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
     
     // ─── Perform Final Submit Logic ───
     const currentProgress = allProgress.find(p => p.topic === selectedTopic);

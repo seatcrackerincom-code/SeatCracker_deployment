@@ -93,3 +93,25 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+/* Exam Mode UI Overrides */
+body.exam-writing #sc-global-header {
+  display: none !important;
+}
+
+body.exam-writing main {
+  padding-top: 0 !important;
+}
+
+body.exam-writing [class*="layout"] {
+  top: 0 !important;
+}
+
+/* Ensure DVH support for mobile browsers (iPhone) */
+@supports (height: 100dvh) {
+  body.exam-writing {
+    height: 100dvh;
+    overflow: hidden;
+  }
+}
+
