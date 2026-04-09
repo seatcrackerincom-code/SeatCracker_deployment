@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     images: ["/logo.png"],
     type: "website",
   },
+  verification: {
+    google: "BxFKr95rVYmyp0mlIJX3VZgxbenA1t6poYrDDgeqVFU",
+  },
 };
 
 export const viewport: Viewport = {
