@@ -193,7 +193,7 @@ export default function PurchaseModal({ isOpen, onClose, userId, discountPercent
           ) : (
             <>
               <div style={{ textDecoration: "line-through", color: "rgba(255,255,255,0.4)", fontSize: "18px", marginBottom: "4px" }}>
-                ₹{BASE_COURSE_PRICE === 199 ? 299 : BASE_COURSE_PRICE + 100}
+                ₹{BASE_COURSE_PRICE === 149 ? 299 : BASE_COURSE_PRICE + 100}
               </div>
               <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: "6px" }}>
                 <span style={{ fontSize: "20px", color: "#fff" }}>₹</span>

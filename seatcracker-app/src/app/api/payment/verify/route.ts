@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
       razorpay_payment_id,
       razorpay_signature,
       userId,
-      amount = 199,
+      amount = 149,
     } = await req.json();
 
     console.log("=== /api/payment/verify ===");

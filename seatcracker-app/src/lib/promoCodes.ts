@@ -16,6 +16,11 @@ export const GLOBAL_PROMO_CODES: Record<string, PromoConfig> = {
     value: 12,
     description: "12% Exclusive Discount Applied!",
   },
+  CRACKER_CODE_AIDS_ALWAYSTOP: {
+    type: "discount",
+    value: 13,
+    description: "13% Exclusive Discount Applied!",
+  },
   SC_ULTIMATE_LIFETIME_ACCESS_CRACKER_MODE_SECURE_2026: {
     type: "lifetime",
     description: "LIFETIME ACCESS ACTIVATED. Welcome, Creator.",

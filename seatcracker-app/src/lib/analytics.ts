@@ -54,7 +54,7 @@ export const trackUpgradeClicked = (source: string) =>
   track("upgrade_clicked", { source });
 
 /** Fired after a verified payment — authoritative purchase event. */
-export const trackPremiumPurchase = (amountINR: number = 199) =>
+export const trackPremiumPurchase = (amountINR: number = 149) =>
   track("premium_purchase", {
     value: amountINR,
     currency: "INR",

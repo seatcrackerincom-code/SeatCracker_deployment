@@ -30,7 +30,7 @@ export default function TermsPage() {
             <h2 style={{ fontSize: "1.5rem", fontWeight: 700, color: "var(--text, #fff)", marginBottom: "12px" }}>3. Payment Terms</h2>
             <p>SeatCracker offers premium access requiring payment.</p>
             <ul style={{ paddingLeft: "24px", marginTop: "12px", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <li><strong>Pricing:</strong> Premium access unlocks the complete roadmap and Real Battle Mode for ₹199.</li>
+              <li><strong>Pricing:</strong> Premium access unlocks the complete roadmap and Real Battle Mode for ₹149.</li>
               <li><strong>Refund Policy:</strong> Since digital access is granted instantly upon purchase, we operate a strict <strong>no refund</strong> policy except under explicit technical failures where the service is not rendered.</li>
             </ul>
           </section>
