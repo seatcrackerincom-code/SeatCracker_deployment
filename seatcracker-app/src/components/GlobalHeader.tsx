@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
 import ProfileModal from "./ProfileModal";
 import Link from "next/link";
+import ShareButton from "./ShareButton";
 import { onAuthChange, signOut, type User } from "../lib/firebase";
 import { getAccessStateSync, type AccessState } from "../lib/access";
 import { useLivePresence } from "../lib/presence";
@@ -103,6 +104,7 @@ export default function GlobalHeader() {
 
         <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
           {/* Right side empty: Logout moved to Sidebar */}
+          <ShareButton />
           <ThemeToggle />
         </div>
       </header>
