@@ -67,6 +67,25 @@ export default function Home() {
   useEffect(() => {
     setMounted(true);
     trackAppOpen(); // Firebase: app_open
+
+    // Push an initial history entry so the first swipe-back is caught
+    history.replaceState({ step: -1 }, "");
+
+    // Handle Android/iOS swipe-back & browser back button
+    const handlePopState = (e: PopStateEvent) => {
+      const prevStep = e.state?.step ?? -1;
+      // Prevent going below step 0 (login)
+      if (prevStep >= 0) {
+        setStep(prevStep as Step);
+      } else {
+        // Push state again so they can't accidentally exit the app
+        history.pushState({ step: 0 }, "");
+        setStep(0);
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
   }, []);
 
   // ── Auth Listener (Once) ──────────────────────────────────
@@ -196,6 +215,8 @@ export default function Home() {
     setStep(s);
     localStorage.setItem(getPK("sc_step"), String(s));
     saveCloudProgress({ last_step: s });
+    // Push history so browser/Android back button navigates within the app
+    history.pushState({ step: s }, "");
   };
 
   const handleTestCategoryNext = (selected: string) => {
