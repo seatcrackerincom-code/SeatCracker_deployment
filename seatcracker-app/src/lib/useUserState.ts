@@ -33,48 +33,58 @@ const DEFAULT_STATE: UserState = {
   policies_accepted: false,
 };
 
-const LS_KEY = "sc_user_state";
+const getLSKey = (uid?: string) => uid ? `sc_user_state_${uid}` : "sc_user_state";
 
 // ─── Hook ────────────────────────────────────────────────────────────────────
 export function useUserState() {
   const [user, setUser] = useState<UserState>(DEFAULT_STATE);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [currentUid, setCurrentUid] = useState<string | undefined>();
 
   // 1. Sync with Firebase Auth
   useEffect(() => {
     const unsub = onAuthChange((firebaseUser) => {
+      const uid = firebaseUser?.uid || undefined;
+      setCurrentUid(uid);
       setUser((prev) => ({
         ...prev,
-        uid: firebaseUser?.uid || undefined,
+        uid: uid,
       }));
     });
     return () => unsub();
   }, []);
 
-  // 2. Load from localStorage once on mount
+  // 2. Load from localStorage whenever UID changes
   useEffect(() => {
+    const key = getLSKey(currentUid);
     try {
-      const saved = localStorage.getItem(LS_KEY);
+      const saved = localStorage.getItem(key);
       if (saved) {
         const parsed = JSON.parse(saved) as Partial<UserState>;
-        setUser((prev) => ({ ...prev, ...parsed }));
+        setUser((prev) => ({ ...prev, ...parsed, uid: currentUid }));
+      } else {
+        // No saved state for this user — reset to default
+        setUser({ ...DEFAULT_STATE, uid: currentUid });
       }
     } catch {
-      // Corrupted data — start fresh
+      setUser({ ...DEFAULT_STATE, uid: currentUid });
     }
     setIsLoaded(true);
-  }, []);
+  }, [currentUid]);
 
   // Set policy acceptance
   const setPoliciesAccepted = (accepted: boolean) => {
-    saveState({ ...user, policies_accepted: accepted });
+    const next = { ...user, policies_accepted: accepted };
+    saveState(next);
   };
 
   // Persist any state change
   const saveState = (updated: UserState) => {
     setUser(updated);
+    if (typeof window === "undefined") return;
     try {
-      localStorage.setItem(LS_KEY, JSON.stringify(updated));
+      const key = getLSKey(currentUid);
+      localStorage.setItem(key, JSON.stringify(updated));
     } catch {
       // Storage full — ignore
     }

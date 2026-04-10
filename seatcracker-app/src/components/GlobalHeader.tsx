@@ -19,7 +19,7 @@ export default function GlobalHeader() {
   useEffect(() => {
     const unsub = onAuthChange((user) => {
       setAuthUser(user);
-      setAccess(getAccessStateSync());
+      setAccess(getAccessStateSync(user?.uid));
     });
     return () => unsub();
   }, []);
@@ -219,17 +219,30 @@ export default function GlobalHeader() {
               </div>
 
               {authUser ? (
-                <button 
-                  onClick={handleSignOut}
-                  style={{
-                    width: "100%", padding: "14px", borderRadius: "12px",
-                    background: "rgba(239, 68, 68, 0.1)", color: "#ef4444",
-                    border: "1px solid rgba(239, 68, 68, 0.2)", cursor: "pointer",
-                    fontWeight: 700, fontSize: "14px"
-                  }}
-                >
-                  Logout Account
-                </button>
+                <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                  <div style={{
+                    padding: "10px 14px", borderRadius: "10px",
+                    background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.05)",
+                    fontSize: "13px", color: "var(--text-muted, #64748b)",
+                    display: "flex", alignItems: "center", gap: "8px", overflow: "hidden"
+                  }}>
+                    <span>📧</span>
+                    <span style={{ textOverflow: "ellipsis", overflow: "hidden", whiteSpace: "nowrap" }}>
+                      {authUser.email}
+                    </span>
+                  </div>
+                  <button 
+                    onClick={handleSignOut}
+                    style={{
+                      width: "100%", padding: "14px", borderRadius: "12px",
+                      background: "rgba(239, 68, 68, 0.1)", color: "#ef4444",
+                      border: "1px solid rgba(239, 68, 68, 0.2)", cursor: "pointer",
+                      fontWeight: 700, fontSize: "14px"
+                    }}
+                  >
+                    Logout Account
+                  </button>
+                </div>
               ) : (
                 <p style={{ fontSize: "12px", color: "var(--text-muted, #64748b)", textAlign: "center" }}>
                   Not signed in

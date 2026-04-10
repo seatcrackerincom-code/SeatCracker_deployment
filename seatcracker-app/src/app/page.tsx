@@ -57,6 +57,9 @@ export default function Home() {
   const [authUser, setAuthUser] = useState<User | null>(null);
   const [authChecked, setAuthChecked] = useState(false);
 
+  // Helper for keyed storage
+  const getPK = (key: string) => authUser?.uid ? `${key}_${authUser.uid}` : key;
+
   // Access state
   const [access, setAccess] = useState<AccessState | null>(null);
 
@@ -64,21 +67,6 @@ export default function Home() {
   useEffect(() => {
     setMounted(true);
     trackAppOpen(); // Firebase: app_open
-
-    // Restore saved progress variables (non-step)
-    const savedTest = localStorage.getItem("sc_test_category") || "EAMCET";
-    const savedExam = localStorage.getItem("sc_exam") || "";
-    const savedCourse = localStorage.getItem("sc_course") || "";
-    const savedMode = localStorage.getItem("sc_mode") as "practice" | "roadmap" | null;
-    const savedRoadmap = localStorage.getItem("sc_roadmap");
-
-    if (savedTest) setTestCategory(savedTest);
-    if (savedExam) setExam(savedExam);
-    if (savedCourse) setCourse(savedCourse);
-    if (savedMode) setMode(savedMode);
-    if (savedRoadmap) {
-      try { setRoadmapData(JSON.parse(savedRoadmap)); } catch {}
-    }
   }, []);
 
   // ── Auth Listener (Once) ──────────────────────────────────
@@ -91,12 +79,28 @@ export default function Home() {
       const state = await getAccessState(uid);
       setAccess(state);
 
+      // Reload local state variables for this specific user
+      const pk = (k: string) => uid ? `${k}_${uid}` : k;
+      const savedTest = localStorage.getItem(pk("sc_test_category")) || "EAMCET";
+      const savedExam = localStorage.getItem(pk("sc_exam")) || "";
+      const savedCourse = localStorage.getItem(pk("sc_course")) || "";
+      const savedMode = localStorage.getItem(pk("sc_mode")) as "practice" | "roadmap" | null;
+      const savedRoadmap = localStorage.getItem(pk("sc_roadmap"));
+
+      setTestCategory(savedTest);
+      setExam(savedExam);
+      setCourse(savedCourse);
+      if (savedMode) setMode(savedMode);
+      if (savedRoadmap) {
+        try { setRoadmapData(JSON.parse(savedRoadmap)); } catch {}
+      }
+
       // Only attempt to restore step ONCE during initial boot
       if (user && step === -1) {
         if (state.status === "premium" || state.status === "trial") {
-          const sStep = localStorage.getItem("sc_step");
-          const sExam = localStorage.getItem("sc_exam");
-          const sCourse = localStorage.getItem("sc_course");
+          const sStep = localStorage.getItem(pk("sc_step"));
+          const sExam = localStorage.getItem(pk("sc_exam"));
+          const sCourse = localStorage.getItem(pk("sc_course"));
           const savedStep = sStep ? (parseInt(sStep) as Step) : 1;
           
           // Only resume if it looks like a finished setup
@@ -137,11 +141,11 @@ export default function Home() {
     if (ok && state) {
       if (state.exam) {
         setExam(state.exam);
-        localStorage.setItem("sc_exam", state.exam);
+        localStorage.setItem(getPK("sc_exam"), state.exam);
       }
       if (state.course) {
         setCourse(state.course);
-        localStorage.setItem("sc_course", state.course);
+        localStorage.setItem(getPK("sc_course"), state.course);
       }
 
       if (state.last_step >= 1 && state.last_step <= 11) {
@@ -167,10 +171,10 @@ export default function Home() {
     setAccess(accessState);
 
     if (accessState.status === "premium" || accessState.status === "trial") {
-      const savedStepStr = localStorage.getItem("sc_step");
+      const savedStepStr = localStorage.getItem(getPK("sc_step"));
       const savedStep = savedStepStr ? parseInt(savedStepStr) as Step : 1;
       const resumable = savedStep >= 1 && savedStep <= 10 
-        && !!localStorage.getItem("sc_exam") && !!localStorage.getItem("sc_course");
+        && !!localStorage.getItem(getPK("sc_exam")) && !!localStorage.getItem(getPK("sc_course"));
       setStep(resumable ? savedStep : 1);
     } else if (accessState.status === "expired") {
       setStep(5);
@@ -190,26 +194,26 @@ export default function Home() {
 
   const go = (s: Step) => {
     setStep(s);
-    localStorage.setItem("sc_step", String(s));
+    localStorage.setItem(getPK("sc_step"), String(s));
     saveCloudProgress({ last_step: s });
   };
 
   const handleTestCategoryNext = (selected: string) => {
     setTestCategory(selected);
-    localStorage.setItem("sc_test_category", selected);
+    localStorage.setItem(getPK("sc_test_category"), selected);
     go(3);
   };
 
   const handleExamNext = (selected: string) => {
     setExam(selected);
-    localStorage.setItem("sc_exam", selected);
+    localStorage.setItem(getPK("sc_exam"), selected);
     saveCloudProgress({ exam: selected, last_step: 4 });
     go(4);
   };
 
   const handleCourseNext = async (selected: string) => {
     setCourse(selected);
-    localStorage.setItem("sc_course", selected);
+    localStorage.setItem(getPK("sc_course"), selected);
 
     // Check access before letting them proceed
     const uid = authUser?.uid;
@@ -243,7 +247,7 @@ export default function Home() {
 
   const handleRestart = () => {
     ["sc_test_category", "sc_exam", "sc_course", "sc_step", "sc_roadmap", "sc_mode"].forEach(k =>
-      localStorage.removeItem(k)
+      localStorage.removeItem(getPK(k))
     );
     setTestCategory("EAMCET"); setExam(""); setCourse(""); setMode(""); setRoadmapData([]);
     go(1);
@@ -251,7 +255,7 @@ export default function Home() {
 
   const handleModeNext = (selectedMode: "practice" | "roadmap" | "battle") => {
     setMode(selectedMode);
-    localStorage.setItem("sc_mode", selectedMode);
+    localStorage.setItem(getPK("sc_mode"), selectedMode);
     if (selectedMode === "roadmap") go(8);
     else if (selectedMode === "battle") go(11);
     else go(7);

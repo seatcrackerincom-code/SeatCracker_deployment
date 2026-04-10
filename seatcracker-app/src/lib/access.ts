@@ -19,24 +19,26 @@ export interface AccessState {
 
 const TRIAL_DAYS = 3;
 const BASE_PRICE = 149;
-const LS_KEY = "sc_access";
+const getLSKey = (uid?: string) => uid ? `sc_access_${uid}` : "sc_access";
 
 // ─── Local helpers ────────────────────────────────────────
-function loadLocal(): Partial<AccessState> {
+function loadLocal(userId?: string): Partial<AccessState> {
   if (typeof window === "undefined") return {};
   try {
-    const raw = localStorage.getItem(LS_KEY);
+    const key = getLSKey(userId);
+    const raw = localStorage.getItem(key);
     return raw ? JSON.parse(raw) : {};
   } catch {
     return {};
   }
 }
 
-function saveLocal(data: Partial<AccessState>) {
+function saveLocal(data: Partial<AccessState>, userId?: string) {
   if (typeof window === "undefined") return;
   try {
-    const existing = loadLocal();
-    localStorage.setItem(LS_KEY, JSON.stringify({ ...existing, ...data }));
+    const key = getLSKey(userId);
+    const existing = loadLocal(userId);
+    localStorage.setItem(key, JSON.stringify({ ...existing, ...data }));
   } catch {}
 }
 
@@ -113,7 +115,7 @@ export function computeAccessState(raw: Partial<AccessState>): AccessState {
 
 /** Get current access state. Pass userId for Supabase sync. */
 export async function getAccessState(userId?: string): Promise<AccessState> {
-  let raw = loadLocal();
+  let raw = loadLocal(userId);
 
   // Merge Supabase data if available
   if (userId && supabase) {
@@ -129,7 +131,7 @@ export async function getAccessState(userId?: string): Promise<AccessState> {
         productId: (remote.product_id as string) ?? raw.productId ?? null,
       };
       // Sync back to localStorage
-      saveLocal(raw);
+      saveLocal(raw, userId);
     }
   }
 
@@ -137,8 +139,8 @@ export async function getAccessState(userId?: string): Promise<AccessState> {
 }
 
 /** Synchronous local-only check — use for instant UI decisions. */
-export function getAccessStateSync(): AccessState {
-  const raw = loadLocal();
+export function getAccessStateSync(userId?: string): AccessState {
+  const raw = loadLocal(userId);
   return computeAccessState(raw);
 }
 
@@ -152,7 +154,7 @@ export async function activateTrial(userId?: string): Promise<AccessState> {
     trialEndDate: end.toISOString(),
     isPremium: false,
   };
-  saveLocal(data);
+  saveLocal(data, userId);
 
   if (userId) {
     await saveToSupabase(userId, {
@@ -162,7 +164,7 @@ export async function activateTrial(userId?: string): Promise<AccessState> {
     });
   }
 
-  return computeAccessState({ ...loadLocal(), ...data });
+  return computeAccessState({ ...loadLocal(userId), ...data });
 }
 
 /** Activate premium (post payment). */
@@ -171,7 +173,7 @@ export async function activatePremium(userId?: string): Promise<AccessState> {
     isPremium: true,
     purchaseDate: new Date().toISOString(),
   };
-  saveLocal(data);
+  saveLocal(data, userId);
 
   if (userId) {
     await saveToSupabase(userId, {
@@ -180,12 +182,12 @@ export async function activatePremium(userId?: string): Promise<AccessState> {
     });
   }
 
-  return computeAccessState({ ...loadLocal(), ...data });
+  return computeAccessState({ ...loadLocal(userId), ...data });
 }
 
 /** Apply discount from promo code. */
-export function applyDiscountLocally(discountPct: number) {
-  saveLocal({ discountPercentage: discountPct });
+export function applyDiscountLocally(discountPct: number, userId?: string) {
+  saveLocal({ discountPercentage: discountPct }, userId);
 }
 
 /** Calculate final price after discount. */
