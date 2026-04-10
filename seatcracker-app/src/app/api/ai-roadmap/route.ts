@@ -2,41 +2,14 @@ import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "nodejs";
 
-const SYSTEM_PROMPT = `You are an expert EAMCET preparation planner.
-
-Generate a JSON object containing a 'roadmap' key which maps to an array of day objects.
-
----
-STRICT RULES:
-
-1. SUBJECT DISTRIBUTION & DAILY STRUCTURE:
-If Course = 'Engineering': Create EXACTLY 4 tasks per day.
-Order and ratios: Mathematics (33.3% time), Physics (25% time), Chemistry (25% time), Mathematics (16.7% time). Total Maths = 50% (MPC).
-
-If Course = 'Agriculture' or 'Pharmacy': Create EXACTLY 4 tasks per day.
-Order and ratios: Botany (25%), Zoology (25%), Physics (25%), Chemistry (25%). This is the BiPC stream (No Mathematics).
-
-2. TOPIC HANDLING:
-* Pick incomplete topics sequentially from the provided syllabus list
-* Group small topics if needed using " + "
-* NEVER assign >2h to a single task slot
-
-3. COMPLETED TOPICS (CRITICAL):
-You will receive a list of completed_topics strings ("Subject::Topic").
-Remove these from the main scheduling pool.
-Instead, create a special Day 0 object before Day 1:
-{
-  "day": 0,
-  "tasks": [
-    { "subject": "Subject", "topic": "Topic Name", "priority": "High/Med/Low", "time": "0h (Done)", "completed": true }
-  ]
-}
-
-4. STRATEGY EXECUTION:
-* If Strategy = 'good_score', prioritize High and Medium yield topics heavily. Skip Low priority topics entirely if the time available is insufficient.
-* If Strategy = 'full', cram everything in, but respect the daily sequence.
-
-5. FORMAT RESPONSE STRICTLY IN JSON matching the rules above.`;
+const SYSTEM_PROMPT = `Expert EAMCET planner. Output JSON: {"roadmap": [Day0, Day1, ...]}.
+RULES:
+1. Engineering (MPC): 4 tasks/day. Order: Math(33% time), Phys(25%), Chem(25%), Math(17%).
+2. Ag/Pharmacy (BiPC): 4 tasks/day. Order: Botany(25%), Zoo(25%), Phys(25%), Chem(25%).
+3. Assign incomplete topics from Syllabus. Max 2h/task. Group small topics with " + ".
+4. Day 0: Include ALL 'Completed Topics' with time:"0h (Done)", completed:true.
+5. Strategy 'good_score': Heavy priority on High/Med; skip Low if time insufficient. 'full': include all.
+6. Generate EXACTLY total_days in the array.`;
 
 export async function POST(req: NextRequest) {
   try {
@@ -91,17 +64,19 @@ ${JSON.stringify(syllabus)}
             ],
             response_format: { type: "json_object" },
             temperature: 0.2,
-            max_tokens: 8000,
+            max_tokens: 4000,
           }),
         });
 
         // SUCCESS
         if (groqRes.ok) break;
 
-        // RETRYABLE ERROR? (Rate limit or server error)
-        if (groqRes.status === 429 || groqRes.status >= 500) {
-          lastError = `Key ${i + 1} failed with status ${groqRes.status}`;
+        // RETRYABLE ERROR? (Rate limit, size error on this tier, or server error)
+        if (groqRes.status === 429 || groqRes.status === 400 || groqRes.status >= 500) {
+          const errBody = await groqRes.json().catch(() => ({}));
+          lastError = `Key ${i + 1} failed (${groqRes.status}): ${errBody.error?.message || "Unknown"}`;
           console.warn(lastError);
+          // Only retry if it's a rate/size limit or server error
           continue; 
         }
 

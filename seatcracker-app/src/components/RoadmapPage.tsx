@@ -340,7 +340,11 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
         const fullTopics: Array<{ subject: string; topic: string; priority: string }> = [];
         data.forEach(sd => {
           sd.chapters.forEach(ch => {
-            fullTopics.push({ subject: sd.subject, topic: ch.chapter, priority: ch.priority || "Low" });
+            const key = `${sd.subject}::${ch.chapter}`;
+            // ONLY send incomplete topics to the AI to keep prompt size under Groq TPM limits
+            if (!completedTopics.has(key)) {
+              fullTopics.push({ subject: sd.subject, topic: ch.chapter, priority: ch.priority || "Low" });
+            }
           });
         });
 

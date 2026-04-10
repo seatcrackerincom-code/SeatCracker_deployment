@@ -143,8 +143,6 @@ export default function Home() {
         } else {
           setStep(1);
         }
-      } else if (!user && step === -1) {
-        setStep(0); // Show login
       }
     });
 
@@ -275,7 +273,7 @@ export default function Home() {
     setAccess(null);
     setExam(""); 
     setCourse("");
-    go(0); // Back to login
+    go(-1); // Back to Intro
   };
 
   const handleRestart = () => {
