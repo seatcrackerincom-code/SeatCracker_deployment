@@ -124,7 +124,11 @@ export default function GlobalHeader() {
               position: "fixed", top: 0, left: 0, bottom: 0, width: "280px",
               background: "rgba(10, 10, 15, 0.95)", borderRight: "1px solid rgba(255,255,255,0.1)",
               padding: "80px 24px 24px", display: "flex", flexDirection: "column", gap: "12px",
-              boxShadow: "20px 0 50px rgba(0,0,0,0.5)"
+              boxShadow: "20px 0 50px rgba(0,0,0,0.5)",
+              overflowY: "auto",
+              msOverflowStyle: "none",
+              scrollbarWidth: "none",
+              WebkitOverflowScrolling: "touch"
             }}
           >
             <h3 style={{ fontSize: "14px", color: "var(--text-muted, #64748b)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "8px" }}>Menu</h3>

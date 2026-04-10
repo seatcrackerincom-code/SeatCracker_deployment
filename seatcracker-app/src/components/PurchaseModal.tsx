@@ -166,38 +166,42 @@ export default function PurchaseModal({ isOpen, onClose, userId, discountPercent
           borderRadius: "16px", 
           padding: "20px", 
           marginBottom: "24px",
-          border: currentDiscount > 0 ? "1px dashed rgba(16,185,129,0.4)" : "1px solid rgba(255,255,255,0.05)"
+          border: currentDiscount > 0 ? "1px dashed rgba(251, 191, 36, 0.4)" : "1px solid rgba(255,255,255,0.05)"
         }}>
+          {/* Market Price (Always Struck Out) */}
+          <div style={{ textDecoration: "line-through", color: "rgba(255,255,255,0.3)", fontSize: "16px", marginBottom: "2px" }}>
+            ₹299
+          </div>
+
           {currentDiscount > 0 ? (
             <>
+              {/* Standard Offer Price (Struck Out when promo applied) */}
               <div style={{ textDecoration: "line-through", color: "rgba(255,255,255,0.4)", fontSize: "18px", marginBottom: "4px" }}>
-                ₹{BASE_COURSE_PRICE}
+                ₹149
               </div>
               <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: "6px" }}>
                 <span style={{ fontSize: "20px", color: "#fff" }}>₹</span>
-                <span style={{ fontSize: "42px", fontWeight: "900", color: "#fff", lineHeight: 1 }}>{finalPrice}</span>
+                <span style={{ fontSize: "52px", fontWeight: "900", color: "#fff", lineHeight: 1 }}>{finalPrice}</span>
               </div>
               <div style={{ 
                 marginTop: "12px", 
-                color: "#34d399", 
+                color: "#fbbf24", 
                 fontSize: "13px", 
                 fontWeight: "700",
-                background: "rgba(16,185,129,0.1)",
-                padding: "6px 12px",
-                borderRadius: "8px",
-                display: "inline-block"
+                background: "rgba(251,191,36,0.1)",
+                padding: "8px 16px",
+                borderRadius: "100px",
+                display: "inline-block",
+                border: "1px solid rgba(251,191,36,0.2)"
               }}>
-                🎉 You got {currentDiscount}% discount! (Save ₹{discountAmount})
+                🎓 Student Special Offer + {user.applied_codes[user.applied_codes.length - 1] || "OFFER"}
               </div>
             </>
           ) : (
             <>
-              <div style={{ textDecoration: "line-through", color: "rgba(255,255,255,0.4)", fontSize: "18px", marginBottom: "4px" }}>
-                ₹{BASE_COURSE_PRICE === 149 ? 299 : BASE_COURSE_PRICE + 100}
-              </div>
               <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: "6px" }}>
                 <span style={{ fontSize: "20px", color: "#fff" }}>₹</span>
-                <span style={{ fontSize: "42px", fontWeight: "900", color: "#fff", lineHeight: 1 }}>{BASE_COURSE_PRICE}</span>
+                <span style={{ fontSize: "52px", fontWeight: "900", color: "#fff", lineHeight: 1 }}>149</span>
               </div>
               <div style={{ 
                 marginTop: "12px", 
@@ -205,11 +209,12 @@ export default function PurchaseModal({ isOpen, onClose, userId, discountPercent
                 fontSize: "13px", 
                 fontWeight: "700",
                 background: "rgba(245,158,11,0.1)",
-                padding: "6px 12px",
-                borderRadius: "8px",
-                display: "inline-block"
+                padding: "8px 16px",
+                borderRadius: "100px",
+                display: "inline-block",
+                border: "1px solid rgba(245,158,11,0.2)"
               }}>
-                🎓 Special Student Offer!
+                🎓 Student Special Offer
               </div>
             </>
           )}
