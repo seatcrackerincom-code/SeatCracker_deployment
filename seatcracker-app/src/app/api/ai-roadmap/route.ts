@@ -61,7 +61,7 @@ export async function POST(req: NextRequest) {
     const userMessage = `Generate a day-wise roadmap with these inputs:
 Course: ${course}
 Strategy: ${strategy === 'good_score' ? 'Good Score (Drop low priority if tight time)' : 'Full Syllabus'}
-Total days: ${total_days}
+Total days: ${total_days} (CRITICAL: YOU MUST GENERATE EXACTLY ${total_days} DAYS IN THE ARRAY. DO NOT STOP EARLY!)
 Daily study hours: ${daily_hours}
 Priority order: ${JSON.stringify(priority_order)}
 Completed Topics: ${JSON.stringify(completed_topics || [])}
@@ -91,7 +91,7 @@ ${JSON.stringify(syllabus)}
             ],
             response_format: { type: "json_object" },
             temperature: 0.2,
-            max_tokens: 2000,
+            max_tokens: 8000,
           }),
         });
 
