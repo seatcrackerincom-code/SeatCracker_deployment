@@ -68,6 +68,19 @@ export default function IntroPage({ onStart }: Props) {
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </button>
+
+          <button 
+            onClick={onStart}
+            style={{
+              display: "flex", alignItems: "center", gap: "12px",
+              padding: "16px", borderRadius: "12px", color: "#fbbf24",
+              border: "1px solid rgba(251,191,36,0.15)", background: "rgba(251,191,36,0.05)",
+              fontSize: "14px", fontWeight: 700, cursor: "pointer", transition: "all 0.2s",
+              textAlign: "left", marginTop: "20px", width: "100%", justifyContent: "center"
+            }}
+          >
+            <span>🎁</span> Redeem Promo Code
+          </button>
         </motion.div>
       </div>
 
