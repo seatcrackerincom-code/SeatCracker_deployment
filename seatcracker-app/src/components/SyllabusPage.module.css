@@ -41,11 +41,12 @@
 
 /* Wrapper */
 .wrapper {
-  min-height: 100vh;
   background: var(--bg);
   display: flex;
   flex-direction: column;
   animation: fadeUp 0.4s ease both;
+  /* Fill viewport below the fixed global header */
+  min-height: calc(100vh - 75px);
 }
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(14px); }
@@ -199,7 +200,8 @@
   background: var(--bg-card);
   border-bottom: 1px solid var(--border);
   position: sticky;
-  top: 0;
+  /* Stick just below the fixed global header (75px) */
+  top: 75px;
   z-index: 10;
   max-width: 680px;
   width: 100%;
@@ -254,7 +256,7 @@
 /* Chapter list */
 .chapterList {
   flex: 1;
-  padding: 20px 20px 40px;
+  padding: 20px 20px 120px;
   display: flex;
   flex-direction: column;
   gap: 10px;
