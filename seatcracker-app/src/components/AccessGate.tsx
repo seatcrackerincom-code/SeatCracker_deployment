@@ -185,15 +185,29 @@ export default function AccessGate({ userId, isExpired, onAccessGranted, onBack 
         {/* Price */}
         <div className={styles.priceSection}>
           <div className={styles.priceRow}>
-            {discount > 0 && (
-              <div className={styles.originalPrice}>₹{BASE_COURSE_PRICE}</div>
+            {/* Market Price — always struck out */}
+            <div className={styles.originalPrice}>₹299</div>
+            {discount > 0 ? (
+              <>
+                {/* Student offer also struck out when promo applied */}
+                <div className={styles.originalPrice} style={{ fontSize: "18px" }}>₹{BASE_COURSE_PRICE}</div>
+                <div className={styles.finalPrice}>
+                  <span className={styles.rupee}>₹</span>
+                  {finalPrice}
+                </div>
+              </>
+            ) : (
+              <div className={styles.finalPrice}>
+                <span className={styles.rupee}>₹</span>
+                {BASE_COURSE_PRICE}
+              </div>
             )}
-            <div className={styles.finalPrice}>
-              <span className={styles.rupee}>₹</span>
-              {finalPrice}
-            </div>
           </div>
-          <div className={styles.perLabel}>One-time payment · Lifetime access</div>
+          <div className={styles.perLabel}>
+            {discount > 0
+              ? `🎓 Student Special Offer + Promo — Save ₹${299 - finalPrice}`
+              : "🎓 Student Special Offer · One-time · Lifetime Access"}
+          </div>
           {discount > 0 && (
             <div className={styles.discountBadge}>
               ✅ {discount}% promo discount applied — Save ₹{BASE_COURSE_PRICE - finalPrice}

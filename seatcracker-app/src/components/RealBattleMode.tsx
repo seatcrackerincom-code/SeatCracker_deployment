@@ -17,7 +17,7 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
   useEffect(() => {
     trackExamStarted("real_battle", course); // Firebase: exam_started
 
-    const targetDate = new Date("2026-04-11T10:00:00+05:30").getTime();
+    const targetDate = new Date("2026-04-16T10:00:00+05:30").getTime();
 
     const updateTimer = () => {
       const now = Date.now();
@@ -77,7 +77,7 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
         </h1>
         <p className={styles.comingSoonSub}>
           The ultimate 160-question EAMCET simulation is undergoing final calibration. 
-          <strong>Launching soon on April 11th!</strong>
+          <strong>Launching soon on April 16th!</strong>
         </p>
         
         <div className={styles.comingSoonTimer}>

@@ -49,6 +49,15 @@ export default function IntroPage({ onStart }: Props) {
             Smart Practice for EAMCET, JEE, NEET and more. Topic-wise questions, mock tests, and performance analytics.
           </p>
 
+          <div className={styles.pricingTag}>
+            <span className={styles.fire}>🔥</span>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span style={{ textDecoration: "line-through", color: "rgba(255,255,255,0.4)" }}>₹299</span>
+              <span style={{ color: "#fff", fontWeight: "800", fontSize: "1.1em" }}>₹149</span>
+            </div>
+            <span>Student Special Offer!</span>
+          </div>
+
           <button
             id="intro-get-started-btn"
             className={styles.ctaBtn}
@@ -58,19 +67,6 @@ export default function IntroPage({ onStart }: Props) {
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
-          </button>
-
-          <button 
-            onClick={onStart}
-            style={{
-              display: "flex", alignItems: "center", gap: "12px",
-              padding: "16px", borderRadius: "12px", color: "#fbbf24",
-              border: "1px solid rgba(251,191,36,0.15)", background: "rgba(251,191,36,0.05)",
-              fontSize: "14px", fontWeight: 700, cursor: "pointer", transition: "all 0.2s",
-              textAlign: "left", marginTop: "20px", width: "100%", justifyContent: "center"
-            }}
-          >
-            <span>🎁</span> Redeem Promo Code
           </button>
         </motion.div>
       </div>

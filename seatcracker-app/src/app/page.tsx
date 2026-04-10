@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import MotivationScreen from "../components/MotivationScreen";
 import EntranceTestSelect from "../components/EntranceTestSelect";
 import ExamSelect from "../components/ExamSelect"; // This is now 'State Select'
@@ -62,23 +62,25 @@ export default function Home() {
 
   // Access state
   const [access, setAccess] = useState<AccessState | null>(null);
+  // Ref to skip history push when popstate is firing (avoid loops)
+  const isHandlingPopState = useRef(false);
 
   // ── Init (Once on mount) ──────────────────────────────────
   useEffect(() => {
     setMounted(true);
     trackAppOpen(); // Firebase: app_open
 
-    // Push an initial history entry so the first swipe-back is caught
+    // Seed history with current state
     history.replaceState({ step: -1 }, "");
 
     // Handle Android/iOS swipe-back & browser back button
     const handlePopState = (e: PopStateEvent) => {
-      const prevStep = e.state?.step ?? -1;
-      // Prevent going below step 0 (login)
+      const prevStep = (e.state?.step ?? -1) as Step;
+      isHandlingPopState.current = true;
       if (prevStep >= 0) {
-        setStep(prevStep as Step);
+        setStep(prevStep);
       } else {
-        // Push state again so they can't accidentally exit the app
+        // At step 0 already — re-push so they stay in app
         history.pushState({ step: 0 }, "");
         setStep(0);
       }
@@ -87,6 +89,17 @@ export default function Home() {
     window.addEventListener("popstate", handlePopState);
     return () => window.removeEventListener("popstate", handlePopState);
   }, []);
+
+  // ── Push history on every step change ──────────────────────
+  useEffect(() => {
+    if (step === -1) return; // skip initial uninitialised state
+    if (isHandlingPopState.current) {
+      // This change came FROM popstate — don't push again
+      isHandlingPopState.current = false;
+      return;
+    }
+    history.pushState({ step }, "");
+  }, [step]);
 
   // ── Auth Listener (Once) ──────────────────────────────────
   useEffect(() => {
@@ -215,8 +228,7 @@ export default function Home() {
     setStep(s);
     localStorage.setItem(getPK("sc_step"), String(s));
     saveCloudProgress({ last_step: s });
-    // Push history so browser/Android back button navigates within the app
-    history.pushState({ step: s }, "");
+    // Note: history.pushState is handled by the step useEffect above
   };
 
   const handleTestCategoryNext = (selected: string) => {
