@@ -9,7 +9,7 @@ RULES:
 3. Assign incomplete topics from Syllabus. Max 2h/task. Group small topics with " + ".
 4. Day 0: Include ALL 'Completed Topics' with time:"0h (Done)", completed:true.
 5. Strategy 'good_score': Heavy priority on High/Med; skip Low if time insufficient. 'full': include all.
-6. Generate EXACTLY total_days in the array.`;
+6. Generate EXACTLY total_days in the array. If you run out of syllabus topics, pad remaining days with topic "Practise high, med, low priority questions" under subject "Practice".`;
 
 export async function POST(req: NextRequest) {
   try {

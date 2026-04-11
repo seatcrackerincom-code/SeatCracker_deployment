@@ -175,7 +175,14 @@ function generateManualRoadmap(
       }
     }
 
-    if (!scheduledAnything) break;
+    if (!scheduledAnything) {
+      tasks.push({
+        subject: "Practice",
+        topic: "Practise high, med, low priority questions",
+        priority: "High",
+        time: `${dailyHours}h`
+      });
+    }
     if (tasks.length > 0) roadmap.push({ day, tasks });
   }
 

@@ -49,14 +49,6 @@ export default function IntroPage({ onStart }: Props) {
             Smart Practice for EAMCET, JEE, NEET and more. Topic-wise questions, mock tests, and performance analytics.
           </p>
 
-          <div className={styles.pricingTag}>
-            <span className={styles.fire}>🔥</span>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <span style={{ textDecoration: "line-through", color: "rgba(255,255,255,0.4)" }}>₹299</span>
-              <span style={{ color: "#fff", fontWeight: "800", fontSize: "1.1em" }}>₹149</span>
-            </div>
-            <span>Student Special Offer!</span>
-          </div>
 
           <button
             id="intro-get-started-btn"
