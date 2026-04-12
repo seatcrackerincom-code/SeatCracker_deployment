@@ -124,7 +124,13 @@ export default function Home() {
       setCourse(savedCourse);
       if (savedMode) setMode(savedMode);
       if (savedRoadmap) {
-        try { setRoadmapData(JSON.parse(savedRoadmap)); } catch {}
+        try { 
+          const parsed = JSON.parse(savedRoadmap);
+          if (Array.isArray(parsed)) setRoadmapData(parsed);
+        } catch (err) {
+          console.error("Roadmap parse error:", err);
+          localStorage.removeItem(pk("sc_roadmap"));
+        }
       }
 
       // Only attempt to restore step ONCE during initial boot
@@ -165,7 +171,8 @@ export default function Home() {
       body: JSON.stringify({ userId: user.uid }),
     });
     
-    const { ok, state } = await res.json();
+    const json = await res.json().catch(() => ({}));
+    const { ok, state } = json;
     
     // Cloud Restore: Use database state if available, else fallback to localStorage
     if (ok && state) {
@@ -178,14 +185,14 @@ export default function Home() {
         localStorage.setItem(getPK("sc_course"), state.course);
       }
 
-      if (state.last_step >= 1 && state.last_step <= 11) {
+      if (state.last_step !== undefined && state.last_step >= 1 && state.last_step <= 11) {
         const uid = user?.uid;
         const accessState = await getAccessState(uid);
         setAccess(accessState);
 
         if (accessState.status === "premium" || accessState.status === "trial") {
           const resumable = state.last_step >= 1 && !!state.exam && !!state.course;
-          setStep(resumable ? state.last_step : 1);
+          setStep(resumable ? state.last_step as Step : 1);
         } else if (accessState.status === "expired") {
           setStep(5);
         } else {

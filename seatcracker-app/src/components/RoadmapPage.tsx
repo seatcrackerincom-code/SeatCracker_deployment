@@ -134,44 +134,19 @@ function generateManualRoadmap(
 
     for (let slot = 0; slot < dailySubjects.length; slot++) {
       const subject = dailySubjects[slot];
-      const pool = bySubject[subject];
-      let pIdx = pointers[subject];
+      const pool = bySubject[subject] || [];
+      const pIdx = pointers[subject] || 0;
       
-      let ratio = ratios[subject] || (1 / subjects.length);
-      if (isEngineering && subject === "Mathematics") {
-         ratio = slot === 0 ? 0.333 : 0.167; // split the 50% into roughly 2h and 1h
-      }
-
-      const minutesForSubject = Math.round(totalMinPerDay * ratio);
-      
-      const topicsToTake = Math.max(1, Math.ceil(minutesForSubject / 120));
-      const timePerTopic = Math.round(minutesForSubject / topicsToTake);
-      
-      let topicNames: string[] = [];
-      let priority = "Low";
-      
-      for(let i = 0; i < topicsToTake; i++) {
-        if (pIdx < pool.length) {
-          topicNames.push(pool[pIdx].topic);
-          priority = pool[pIdx].priority;
-          pIdx++;
-          scheduledAnything = true;
-        }
-      }
-      
-      if (topicNames.length > 0) {
-        pointers[subject] = pIdx;
-        const totalTimeForThisChunk = timePerTopic * topicNames.length;
-        const h = Math.floor(totalTimeForThisChunk / 60);
-        const m = totalTimeForThisChunk % 60;
-        const timeStr = h > 0 && m > 0 ? `${h}h ${m}m` : h > 0 ? `${h}h` : `${m}m`;
-        
+      if (pIdx < pool.length) {
+        const topic = pool[pIdx];
         tasks.push({
           subject: subject,
-          topic: topicNames.join(" + "),
-          priority: priority,
-          time: timeStr
+          topic: topic.topic,
+          priority: topic.priority,
+          time: "2h"
         });
+        pointers[subject] = pIdx + 1;
+        scheduledAnything = true;
       }
     }
 
@@ -705,6 +680,24 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
       {/* Roadmap Display */}
       {roadmap && !loading && (
         <div className={styles.roadmapSection}>
+          {/* Maintenance Notice */}
+          <div style={{
+            background: "rgba(239, 68, 68, 0.1)",
+            border: "1px solid rgba(239, 68, 68, 0.2)",
+            borderRadius: "12px",
+            padding: "24px",
+            textAlign: "center",
+            marginBottom: "24px",
+            color: "#f87171"
+          }}>
+            <h3 style={{ margin: "0 0 8px 0", color: "#ef4444" }}>⚠️ Roadmap Maintenance</h3>
+            <p style={{ margin: 0, fontSize: "14px", lineHeight: "1.6" }}>
+              Please, we are sorry—this roadmap generator got a sync bug. 
+              We are fixing this right now; it will be fully available from 14th April. 
+              You can continue your preparation using our **Practice Mode** for individual topics.
+            </p>
+          </div>
+
           {/* START PREPARING CTA */}
           <div style={{
             background: "linear-gradient(135deg, #6c63ff, #a78bfa)",

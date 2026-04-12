@@ -680,7 +680,8 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
 
   // ─── Render: Result ────────────────────────────────────────────────────────
   if (screen === "result") {
-    const scorePercent = Math.round((correctCount / questions.length) * 100);
+    const correctCount = statuses.filter((s, i) => s.isAnswered && s.selectedOption === questions[i]?.answer).length;
+    const scorePercent = questions.length > 0 ? Math.round((correctCount / questions.length) * 100) : 0;
 
     let performanceMsg = "";
     if (scorePercent >= 80) { performanceMsg = "Outstanding! You're exam-ready. Batch Cleared! 🏆"; }
