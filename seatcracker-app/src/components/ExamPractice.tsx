@@ -696,6 +696,17 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
             </div>
           </div>
 
+          <div className={styles.diagramNotice}>
+            <span className={styles.diagramNoticeIcon}>🖼️</span>
+            <div className={styles.diagramNoticeText}>
+              <span className={styles.diagramNoticeTitle}>Diagram Questions Update</span>
+              <span className={styles.diagramNoticeSub}>
+                Diagram questions will likely be included starting from <strong>Attempt 5 on 24th April</strong>. 
+                In <strong>Real Battle mode</strong>, actual diagram questions will be part of the full 160-question EAMCET pattern. Stay tuned!
+              </span>
+            </div>
+          </div>
+
           {/* Score circle */}
           <div className={styles.scoreCircleWrap}>
             <svg className={styles.scoreCircle} viewBox="0 0 120 120">
