@@ -1,0 +1,177 @@
+================================================================
+   SEATCRACKER — SUPABASE SETUP GUIDE
+   Free Practice System — Database Integration
+================================================================
+
+WHAT THIS DOES:
+  Saves each user's test results (accuracy, time, topic) in
+  a cloud database so progress persists across devices.
+
+================================================================
+STEP 1: Create a Supabase Account + Project
+================================================================
+
+  1. Go to  https://supabase.com
+  2. Click "Start your project" → Sign in with GitHub
+  3. Click "New Project"
+  4. Choose your org, give it a name (e.g. "seatcracker")
+  5. Set a strong database password (save it!)
+  6. Choose a region closest to India (e.g. Southeast Asia)
+  7. Click "Create new project" — wait ~2 minutes
+
+================================================================
+STEP 2: Create the user_progress Table
+================================================================
+
+  In your Supabase dashboard:
+    → Click "Table Editor" in the left sidebar
+    → Click "New Table"
+    → Name it:  user_progress
+    → Disable "Enable Row Level Security" for now (can enable later)
+    → Add the following columns:
+
+  COLUMN NAME     TYPE          DEFAULT      NOTES
+  ─────────────   ──────────    ─────────    ─────────────────────
+  id              uuid          gen_random_uuid()   Primary Key ✓
+  user_id         text          —            Required
+  topic           text          —            Required
+  subject         text          —            Required
+  accuracy        int4          0            0–100
+  avg_time        int4          0            Seconds per question
+  completed       bool          false        —
+  created_at      timestamptz   now()        Auto-filled
+
+  → Click "Save" to create the table.
+
+----------------------------------------------------------------
+  ALTERNATIVELY: Use the SQL Editor
+    → Click "SQL Editor" in the left sidebar
+    → Click "New Query"
+    → Paste and run this:
+
+  CREATE TABLE user_progress (
+    id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id text NOT NULL,
+    topic text NOT NULL,
+    subject text NOT NULL,
+    accuracy integer DEFAULT 0,
+    avg_time integer DEFAULT 0,
+    completed boolean DEFAULT false,
+    created_at timestamptz DEFAULT now(),
+    UNIQUE (user_id, topic)
+  );
+
+================================================================
+STEP 3: Get Your API Keys
+================================================================
+
+  In your Supabase dashboard:
+    → Click "Settings" (gear icon, bottom left)
+    → Click "API" in the sidebar
+
+  You need TWO values:
+
+    1. Project URL       →  Found at the top, looks like:
+                            https://xyzxyzxyz.supabase.co
+
+    2. Anon/Public Key  →  Found under "Project API Keys",
+                            the "anon" / "public" key.
+                            (NOT the service_role key)
+
+================================================================
+STEP 4: Add Keys to .env.local
+================================================================
+
+  Open the file:
+    seatcracker-app/.env.local
+
+  Add these two lines (replace placeholders with real values):
+
+    NEXT_PUBLIC_SUPABASE_URL=https://your-project-id.supabase.co
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key-here
+
+  IMPORTANT: Do NOT share or commit this file to GitHub.
+             The .gitignore already excludes .env.local.
+
+================================================================
+STEP 5: Install the Supabase Client Library
+================================================================
+
+  Open a terminal in your project folder and run:
+
+    npm install @supabase/supabase-js
+
+  (The file src/lib/supabase.ts is already written and ready.
+   It will activate automatically once the env vars are set.)
+
+================================================================
+STEP 6: Restart the Dev Server
+================================================================
+
+  Stop the server (Ctrl+C) and restart:
+
+    npm run dev
+
+  → Open http://localhost:3000
+  → Go to Free Practice → Select a topic → Start Test → Submit
+  → Check Supabase "Table Editor" → "user_progress"
+  → You should see a new row with your test results!
+
+================================================================
+STEP 7: (Optional) Enable Row Level Security
+================================================================
+
+  For production, turn on RLS so users can only see their own data:
+
+  Run in SQL Editor:
+
+    ALTER TABLE user_progress ENABLE ROW LEVEL SECURITY;
+
+    CREATE POLICY "Users can read own progress"
+    ON user_progress FOR SELECT
+    USING (user_id = current_user);
+
+    CREATE POLICY "Users can insert own progress"
+    ON user_progress FOR INSERT
+    WITH CHECK (user_id = current_user);
+
+  NOTE: This requires proper auth (Supabase Auth / JWT).
+        For the current "guest_user_1" setup, keep RLS OFF.
+
+================================================================
+TROUBLESHOOTING
+================================================================
+
+  ❌ "Invalid API key":
+     → Double-check you copied the "anon" key (not service_role)
+     → Make sure there are no extra spaces/quotes in .env.local
+     → Restart the dev server after editing .env.local
+
+  ❌ "Table not found":
+     → Make sure the table is named exactly:  user_progress
+     → Check you ran the CREATE TABLE in the right project
+
+  ❌ Data not showing up:
+     → Check browser console for errors
+     → Verify NEXT_PUBLIC_ prefix is on both env vars
+
+================================================================
+CURRENT USER_ID
+================================================================
+
+  Right now all progress is saved under:  guest_user_1
+
+  When you add a login system later, replace USER_ID in:
+    src/components/PracticeArena.tsx  (top of file, line ~7)
+
+  with the actual authenticated user's ID from Supabase Auth.
+
+================================================================
+FILES CREATED / MODIFIED
+================================================================
+
+  src/lib/supabase.ts          ← Supabase client (stub, auto-activates)
+  src/components/PracticeArena.tsx  ← Calls saveProgress() & fetchProgress()
+  .env.local                   ← Add your keys HERE
+
+================================================================
