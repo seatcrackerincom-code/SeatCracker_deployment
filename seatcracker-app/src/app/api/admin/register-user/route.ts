@@ -3,7 +3,7 @@
 // 2. Saves/Updates user's persistent progress (step, exam, course)
 // 3. Returns the saved state for session resume
 
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 
 export const runtime = "nodejs";
@@ -11,7 +11,7 @@ export const runtime = "nodejs";
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
-export async function POST(req: NextRequest) {
+export async function POST(req: Request) {
   try {
     const { userId, last_step, exam, course } = await req.json();
 
