@@ -537,6 +537,9 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                 {(() => {
                   const p = allProgress.find(p => p.topic === selectedTopic);
                   const completedCount = p?.attempts || 0;
+                  const latestScore = p?.accuracy ?? 0;
+                  const isCurrentPassed = latestScore >= 60 || p?.accuracy === undefined;
+                  const maxPassedBatch = isCurrentPassed ? completedCount : completedCount - 1;
                   
                   return (
                     <div style={{ marginTop: "16px", background: "var(--bg-card2)", border: "1px solid var(--border)", borderRadius: "12px", overflow: "hidden" }}>
@@ -552,7 +555,6 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                         <tbody>
                           {[1, 2, 3, 4].map(n => {
                             const isCompleted = n <= completedCount;
-                            const isCurrent = n === completedCount;
                             const isActive = n === selectedAttempt;
                             
                             const base = getBaseTime(selectedSubject, selectedTopic);
@@ -581,7 +583,7 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                                     </span>
                                   ) : n === completedCount && !isCurrentPassed ? (
                                     <span style={{ color: "#ef4444", fontWeight: "700", display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "6px" }}>
-                                      ⚠️ Reattempt ({p.accuracy}%)
+                                      ⚠️ Reattempt ({p?.accuracy || 0}%)
                                     </span>
                                   ) : (
                                     <span style={{ color: "var(--text-muted)", opacity: 0.5, fontWeight: "500" }}>

@@ -39,7 +39,7 @@ export default function PolicyGuard() {
         setIsSyncing(false);
       });
     }
-  }, [authUser, isLoaded]);
+  }, [authUser, isLoaded, setPoliciesAccepted]);
 
   // Don't show modal if we haven't synced with DB yet or if user is guest
   if (!authUser || isSyncing || !isLoaded) return null;
