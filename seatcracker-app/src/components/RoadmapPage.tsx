@@ -214,6 +214,7 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
   // Roadmap state
   const [roadmap, setRoadmap] = useState<RoadmapDay[] | null>(null);
   const [loading, setLoading] = useState(false);
+  const [loadingChapters, setLoadingChapters] = useState(false);
   const [error, setError] = useState("");
 
   // Load from localStorage on mount (with Course-Awareness fix)
@@ -239,6 +240,7 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
   // Fetch syllabus for manual mode
   useEffect(() => {
     if (mode !== "manual" || syllabusData.length > 0) return;
+    setLoadingChapters(true);
     Promise.all(
       subjects.map(async (subject) => {
         const url = `/SYLLABUS/${exam}/${course}/${subject}/${subject}.json`;
@@ -248,7 +250,12 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
         const chapters: Chapter[] = Array.isArray(json) ? json : json.chapters;
         return { subject, chapters };
       })
-    ).then(setSyllabusData).catch(() => {});
+    ).then(data => {
+      setSyllabusData(data);
+      setLoadingChapters(false);
+    }).catch(() => {
+      setLoadingChapters(false);
+    });
   }, [mode, exam, course, subjects, syllabusData.length]);
 
   // Priority reorder
@@ -310,18 +317,25 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
   }, [mode, syllabusData, selectedTopics, subjects]);
 
   // For smart mode, we need syllabus loaded first
-  const ensureSyllabus = (): Promise<SubjectData[]> => {
-    if (syllabusData.length > 0) return Promise.resolve(syllabusData);
-    return Promise.all(
-      subjects.map(async (subject) => {
-        const url = `/SYLLABUS/${exam}/${course}/${subject}/${subject}.json`;
-        const res = await fetch(url);
-        if (!res.ok) return { subject, chapters: [] };
-        const json = await res.json();
-        const chapters: Chapter[] = Array.isArray(json) ? json : json.chapters;
-        return { subject, chapters };
-      })
-    ).then(data => { setSyllabusData(data); return data; });
+  const ensureSyllabus = async (): Promise<SubjectData[]> => {
+    if (syllabusData.length > 0) return syllabusData;
+    setLoadingChapters(true);
+    try {
+      const data = await Promise.all(
+        subjects.map(async (subject) => {
+          const url = `/SYLLABUS/${exam}/${course}/${subject}/${subject}.json`;
+          const res = await fetch(url);
+          if (!res.ok) return { subject, chapters: [] };
+          const json = await res.json();
+          const chapters: Chapter[] = Array.isArray(json) ? json : json.chapters;
+          return { subject, chapters };
+        })
+      );
+      setSyllabusData(data);
+      return data;
+    } finally {
+      setLoadingChapters(false);
+    }
   };
 
   const handleGenerate = async () => {
@@ -355,11 +369,17 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
           });
         });
 
+        if (fullTopics.length === 0) {
+          setError("All topics are marked as completed! Try unmarking some to generate a new roadmap.");
+          setLoading(false);
+          return;
+        }
+
         const res = await fetch("/api/ai-roadmap", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            syllabus: fullTopics,
+            syllabus: fullTopics.slice(0, 150), // Cap at 150 topics to prevent prompt overflow
             total_days: totalDays,
             daily_hours: dailyHours,
             priority_order: priorityOrder,
@@ -558,8 +578,13 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
           {/* Completed Topics Selector */}
           <div className={styles.card} onClick={() => { if (syllabusData.length === 0) ensureSyllabus() }}>
             <p className={styles.cardTitle}>✅ Already Completed Topics <span style={{ fontSize: "10px", fontWeight: 400, textTransform: "none", marginLeft: 4 }}>(Optional)</span></p>
-            {syllabusData.length === 0 ? (
-               <button onClick={ensureSyllabus} style={{ background: "var(--bg-card)", color: "var(--text-light)", padding: "12px", borderRadius: "8px", border: "1px solid var(--border)", cursor: "pointer", width: "100%" }}>Load Chapters...</button>
+            {loadingChapters ? (
+              <div className={styles.setupLoading} style={{ padding: "12px", border: "1px solid var(--border)", borderRadius: "8px" }}>
+                <div className={styles.spinner} style={{ width: "16px", height: "16px" }} />
+                <span style={{ fontSize: "11px" }}>Loading syllabus...</span>
+              </div>
+            ) : syllabusData.length === 0 ? (
+               <button onClick={ensureSyllabus} style={{ background: "var(--bg-card)", color: "var(--accent)", padding: "12px", borderRadius: "8px", border: "1px solid var(--border)", cursor: "pointer", width: "100%", fontWeight: 600 }}>Load Chapters to Mark Completion...</button>
             ) : (
               <>
                 <div className={styles.subjectTabs}>
