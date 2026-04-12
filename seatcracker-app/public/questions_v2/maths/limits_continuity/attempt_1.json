@@ -1,414 +1,454 @@
 {
-  "questions": [
-    {
-      "id": 1,
-      "question": "The diagram show a function approaching a vertical line x=a. This represents an ______ discontinuity.",
-      "difficulty": "Medium",
-      "hasDiagram": true,
-      "diagram_description": "Graph of y = 1/(x-a) where the curve goes to infinity as it nears the vertical asymptote x=a.",
-      "options": {
-        "A": "Infinite",
-        "B": "Jump",
-        "C": "Removable",
-        "D": "Point"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 2,
-      "question": "lim(x→0) (1 − cos x)/x² = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1/2",
-        "B": "1",
-        "C": "0",
-        "D": "2"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 3,
-      "question": "The limit of (1 + 1/x)^x as x approach ∞ is:",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "e",
-        "B": "1",
-        "C": "0",
-        "D": "∞"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 4,
-      "question": "Intermediate Value Theorem states that for a continuous function on [a,b], the function takes every value between ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "f(a) and f(b)",
-        "B": "a and b",
-        "C": "0 and 1",
-        "D": "-∞ and +∞"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 5,
-      "question": "lim(x→∞) (1 + 1/x)^x = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "e",
-        "B": "1",
-        "C": "∞",
-        "D": "e²"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 6,
-      "question": "The diagram show a sharp corner (cusp) in a continuous graph. At this point, the function is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": true,
-      "diagram_description": "A 'V' shaped graph (like y=|x|) at the origin.",
-      "options": {
-        "A": "Not differentiable",
-        "B": "Not continuous",
-        "C": "Differentiable",
-        "D": "Zero"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 7,
-      "question": "lim(x→0) (tan x − sin x)/x³ = ?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1/2",
-        "B": "1",
-        "C": "0",
-        "D": "3/2"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 8,
-      "question": "The limit of (a^x - 1)/x as x approaches 0 is:",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "log a",
-        "B": "1",
-        "C": "a",
-        "D": "0"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 9,
-      "question": "Sandwich Theorem (Squeeze Theorem) states that if f(x) ≤ g(x) ≤ h(x) and lim f(x) = lim h(x) = L, then lim g(x) = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "L",
-        "B": "0",
-        "C": "f(x) + h(x)",
-        "D": "Undefined"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 10,
-      "question": "Using L'Hopital's Rule, lim_{x→0} (x - sin x)/x³ is:",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1/6",
-        "B": "1/3",
-        "C": "0",
-        "D": "1"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 11,
-      "question": "lim(x→0) (aˣ − 1)/x = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "ln a",
-        "B": "a",
-        "C": "1/a",
-        "D": "log₁₀a"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 12,
-      "question": "If f(x) is differentiable at x=c, then it must be ______ at x=c.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Continuous",
-        "B": "Zero",
-        "C": "Increasing",
-        "D": "Linear"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 13,
-      "question": "The limit of (1 - cos x)/x² as x approaches 0 is:",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1/2",
-        "B": "1",
-        "C": "0",
-        "D": "2"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 14,
-      "question": "The limit of (1 + x)^(1/x) as x approaches 0 is:",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "e",
-        "B": "1",
-        "C": "1/e",
-        "D": "0"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 15,
-      "question": "The diagram show a function oscillating between -1 and 1 as x approach 0. This is an example of ______ limit.",
-      "difficulty": "Hard",
-      "hasDiagram": true,
-      "diagram_description": "Graph of sin(1/x) near x=0, showing infinitely many oscillations.",
-      "options": {
-        "A": "Non-existent (oscillatory)",
-        "B": "Zero",
-        "C": "Infinite",
-        "D": "Finite"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 16,
-      "question": "The value of lim_{x→∞} (sin x)/x is:",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "0",
-        "B": "1",
-        "C": "∞",
-        "D": "Does not exist"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 17,
-      "question": "The diagram show a function with a sudden break where the left and right limits are different. This is a ______ discontinuity.",
-      "difficulty": "Medium",
-      "hasDiagram": true,
-      "diagram_description": "A graph where a curve ends at one y-value and immediately starts again at a different y-value for the same x-coordinate.",
-      "options": {
-        "A": "Jump",
-        "B": "Removable",
-        "C": "Infinite",
-        "D": "Oscillatory"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 18,
-      "question": "A function is said to be differentiable at x=a if the ______ limit of the difference quotient exists.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Finite",
-        "B": "Unique",
-        "C": "Zero",
-        "D": "Infinite"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 19,
-      "question": "The limit of (log(1+x))/x as x approaches 0 is:",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1",
-        "B": "0",
-        "C": "e",
-        "D": "1/x"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 20,
-      "question": "lim(x→0) (sin x)/x = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1",
-        "B": "0",
-        "C": "∞",
-        "D": "−1"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": "limits_continuity_21",
-      "question": "lim(x→0) sinx/x = :",
-      "options": {
-        "A": "0",
-        "B": "1",
-        "C": "∞",
-        "D": "sin(0)"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "limits_continuity_22",
-      "question": "L'Hôpital's rule applies for forms like:",
-      "options": {
-        "A": "0×∞",
-        "B": "0/0 and ∞/∞",
-        "C": "∞-∞",
-        "D": "All of the above"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "limits_continuity_23",
-      "question": "lim(x→0) (eˣ-1)/x = :",
-      "options": {
-        "A": "0",
-        "B": "1",
-        "C": "e",
-        "D": "∞"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "limits_continuity_24",
-      "question": "f(x) is continuous at x=a if:",
-      "options": {
-        "A": "f(a) exists only",
-        "B": "lim f(x) = f(a) as x→a",
-        "C": "f is differentiable at a",
-        "D": "f(a) = 0"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "limits_continuity_25",
-      "question": "lim(x→∞) (1+1/x)^x = :",
-      "options": {
-        "A": "1",
-        "B": "e",
-        "C": "∞",
-        "D": "0"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "limits_continuity_26",
-      "question": "Sandwich theorem: if g(x) ≤ f(x) ≤ h(x) and lim g = lim h = L, then lim f = :",
-      "options": {
-        "A": "0",
-        "B": "L",
-        "C": "g(x)",
-        "D": "h(x)"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "limits_continuity_27",
-      "question": "lim(x→0) tanx/x = :",
-      "options": {
-        "A": "0",
-        "B": "1",
-        "C": "∞",
-        "D": "cos(0)"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "limits_continuity_28",
-      "question": "Removable discontinuity: limit exists but:",
-      "options": {
-        "A": "f is not differentiable",
-        "B": "Limit ≠ f(a) or f(a) undefined",
-        "C": "Left limit ≠ right limit",
-        "D": "Function oscillates"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "limits_continuity_29",
-      "question": "Left-hand limit of |x|/x as x→0⁻ :",
-      "options": {
-        "A": "1",
-        "B": "-1",
-        "C": "0",
-        "D": "∞"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "limits_continuity_30",
-      "question": "lim(x→0) (1-cosx)/x² = :",
-      "options": {
-        "A": "0",
-        "B": "1/2",
-        "C": "1",
-        "D": "2"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    }
-  ]
+    "questions": [
+        {
+            "question": "Calculate lim_{x -> infinity} ((x+5)/(x-4))^x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "e^{9}",
+                "B": "e^{1}",
+                "C": "e^{20}",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+            "solution": "((x+5)/(x-4) - 1)*x = (x+5-x+4)/(x-4) * x = (9x)/(x-4). Limit is 9. So answer is e^{9}.",
+            "id": 1
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{9x} - e^{1x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8",
+                "B": "10",
+                "C": "-8",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{1x} (e^{8x} - 1) / (8x) * (8) = 8.",
+            "id": 2
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{5x} - e^{1x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4",
+                "B": "6",
+                "C": "-4",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{1x} (e^{4x} - 1) / (4x) * (4) = 4.",
+            "id": 3
+        },
+        {
+            "question": "Evaluate lim_{x -> 1} (x^{3} - 1) / (x^{5} - 1).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3/5",
+                "B": "5/3",
+                "C": "15",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use standard limit formula or L'Hopital's rule.",
+            "solution": "Applying L'Hopital's Rule yields (3x^(2)) / (5x^(4)). At x=1, this is 3/5.",
+            "id": 4
+        },
+        {
+            "question": "Determine lim_{x -> 0} (sin(5x) - sin(2x)) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3",
+                "B": "7",
+                "C": "-3",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use lim_{x->0} sin(kx)/x = k.",
+            "solution": "We can split the limit as lim_{x->0} sin(5x)/x - lim_{x->0} sin(2x)/x = 5 - 2 = 3.",
+            "id": 5
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{12x} - e^{8x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4",
+                "B": "20",
+                "C": "-4",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{8x} (e^{4x} - 1) / (4x) * (4) = 4.",
+            "id": 6
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{12x} - e^{3x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "9",
+                "B": "15",
+                "C": "-9",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{3x} (e^{9x} - 1) / (9x) * (9) = 9.",
+            "id": 7
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{9x} - e^{8x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1",
+                "B": "17",
+                "C": "-1",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{8x} (e^{1x} - 1) / (1x) * (1) = 1.",
+            "id": 8
+        },
+        {
+            "question": "Evaluate lim_{x -> 1} (x^{3} - 1) / (x^{4} - 1).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3/4",
+                "B": "4/3",
+                "C": "12",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use standard limit formula or L'Hopital's rule.",
+            "solution": "Applying L'Hopital's Rule yields (3x^(2)) / (4x^(3)). At x=1, this is 3/4.",
+            "id": 9
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{8x} - e^{6x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2",
+                "B": "14",
+                "C": "-2",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{6x} (e^{2x} - 1) / (2x) * (2) = 2.",
+            "id": 10
+        },
+        {
+            "question": "Calculate lim_{x -> infinity} ((x+6)/(x-7))^x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "e^{13}",
+                "B": "e^{-1}",
+                "C": "e^{42}",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+            "solution": "((x+6)/(x-7) - 1)*x = (x+6-x+7)/(x-7) * x = (13x)/(x-7). Limit is 13. So answer is e^{13}.",
+            "id": 11
+        },
+        {
+            "question": "Evaluate lim_{x -> 1} (x^{8} - 1) / (x^{4} - 1).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8/4",
+                "B": "4/8",
+                "C": "32",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use standard limit formula or L'Hopital's rule.",
+            "solution": "Applying L'Hopital's Rule yields (8x^(7)) / (4x^(3)). At x=1, this is 8/4.",
+            "id": 12
+        },
+        {
+            "question": "Calculate lim_{x -> infinity} ((x+2)/(x-1))^x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "e^{3}",
+                "B": "e^{1}",
+                "C": "e^{2}",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+            "solution": "((x+2)/(x-1) - 1)*x = (x+2-x+1)/(x-1) * x = (3x)/(x-1). Limit is 3. So answer is e^{3}.",
+            "id": 13
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{8x} - e^{2x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6",
+                "B": "10",
+                "C": "-6",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{2x} (e^{6x} - 1) / (6x) * (6) = 6.",
+            "id": 14
+        },
+        {
+            "question": "Calculate lim_{x -> infinity} ((x+3)/(x-6))^x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "e^{9}",
+                "B": "e^{-3}",
+                "C": "e^{18}",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+            "solution": "((x+3)/(x-6) - 1)*x = (x+3-x+6)/(x-6) * x = (9x)/(x-6). Limit is 9. So answer is e^{9}.",
+            "id": 15
+        },
+        {
+            "question": "Determine lim_{x -> 0} (sin(11x) - sin(7x)) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4",
+                "B": "18",
+                "C": "-4",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use lim_{x->0} sin(kx)/x = k.",
+            "solution": "We can split the limit as lim_{x->0} sin(11x)/x - lim_{x->0} sin(7x)/x = 11 - 7 = 4.",
+            "id": 16
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{5x} - e^{3x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2",
+                "B": "8",
+                "C": "-2",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{3x} (e^{2x} - 1) / (2x) * (2) = 2.",
+            "id": 17
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{5x} - e^{2x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3",
+                "B": "7",
+                "C": "-3",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{2x} (e^{3x} - 1) / (3x) * (3) = 3.",
+            "id": 18
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{8x} - e^{3x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5",
+                "B": "11",
+                "C": "-5",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{3x} (e^{5x} - 1) / (5x) * (5) = 5.",
+            "id": 19
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{12x} - e^{1x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "11",
+                "B": "13",
+                "C": "-11",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{1x} (e^{11x} - 1) / (11x) * (11) = 11.",
+            "id": 20
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{12x} - e^{5x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7",
+                "B": "17",
+                "C": "-7",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{5x} (e^{7x} - 1) / (7x) * (7) = 7.",
+            "id": 21
+        },
+        {
+            "question": "Determine lim_{x -> 0} (sin(13x) - sin(9x)) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4",
+                "B": "22",
+                "C": "-4",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use lim_{x->0} sin(kx)/x = k.",
+            "solution": "We can split the limit as lim_{x->0} sin(13x)/x - lim_{x->0} sin(9x)/x = 13 - 9 = 4.",
+            "id": 22
+        },
+        {
+            "question": "Calculate lim_{x -> infinity} ((x+4)/(x-2))^x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "e^{6}",
+                "B": "e^{2}",
+                "C": "e^{8}",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+            "solution": "((x+4)/(x-2) - 1)*x = (x+4-x+2)/(x-2) * x = (6x)/(x-2). Limit is 6. So answer is e^{6}.",
+            "id": 23
+        },
+        {
+            "question": "Evaluate lim_{x -> 1} (x^{8} - 1) / (x^{5} - 1).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8/5",
+                "B": "5/8",
+                "C": "40",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use standard limit formula or L'Hopital's rule.",
+            "solution": "Applying L'Hopital's Rule yields (8x^(7)) / (5x^(4)). At x=1, this is 8/5.",
+            "id": 24
+        },
+        {
+            "question": "Calculate lim_{x -> infinity} ((x+2)/(x-5))^x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "e^{7}",
+                "B": "e^{-3}",
+                "C": "e^{10}",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+            "solution": "((x+2)/(x-5) - 1)*x = (x+2-x+5)/(x-5) * x = (7x)/(x-5). Limit is 7. So answer is e^{7}.",
+            "id": 25
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{11x} - e^{6x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5",
+                "B": "17",
+                "C": "-5",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{6x} (e^{5x} - 1) / (5x) * (5) = 5.",
+            "id": 26
+        },
+        {
+            "question": "Evaluate lim_{x -> 1} (x^{2} - 1) / (x^{5} - 1).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2/5",
+                "B": "5/2",
+                "C": "10",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use standard limit formula or L'Hopital's rule.",
+            "solution": "Applying L'Hopital's Rule yields (2x^(1)) / (5x^(4)). At x=1, this is 2/5.",
+            "id": 27
+        },
+        {
+            "question": "Calculate lim_{x -> infinity} ((x+5)/(x-7))^x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "e^{12}",
+                "B": "e^{-2}",
+                "C": "e^{35}",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+            "solution": "((x+5)/(x-7) - 1)*x = (x+5-x+7)/(x-7) * x = (12x)/(x-7). Limit is 12. So answer is e^{12}.",
+            "id": 28
+        },
+        {
+            "question": "Calculate lim_{x -> infinity} ((x+7)/(x-6))^x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "e^{13}",
+                "B": "e^{1}",
+                "C": "e^{42}",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+            "solution": "((x+7)/(x-6) - 1)*x = (x+7-x+6)/(x-6) * x = (13x)/(x-6). Limit is 13. So answer is e^{13}.",
+            "id": 29
+        },
+        {
+            "question": "Evaluate lim_{x -> 1} (x^{6} - 1) / (x^{8} - 1).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6/8",
+                "B": "8/6",
+                "C": "48",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use standard limit formula or L'Hopital's rule.",
+            "solution": "Applying L'Hopital's Rule yields (6x^(5)) / (8x^(7)). At x=1, this is 6/8.",
+            "id": 30
+        }
+    ]
 }
