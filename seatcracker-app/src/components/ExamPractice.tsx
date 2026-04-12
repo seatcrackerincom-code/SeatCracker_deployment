@@ -492,15 +492,16 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                     {[1, 2, 3, 4].map((n) => {
                        const p = allProgress.find(p => p.topic === selectedTopic);
                        const completedCount = p?.attempts || 0;
-                       
-                       // A batch is "passed" only if it's within the completedCount range
-                       const isActuallyPassed = n <= completedCount;
                        const latestScore = p?.accuracy ?? 0;
-                       const isCurrentFailed = n === (completedCount + 1) && latestScore < 60 && p?.accuracy !== undefined;
+                       const isCurrentPassed = latestScore >= 60 || p?.accuracy === undefined;
+                       
+                       // The highest batch actually cleared with 60%+
+                       const maxPassedBatch = isCurrentPassed ? completedCount : completedCount - 1;
 
-                       const isUnlocked = n === 1 || n <= (completedCount + 1);
-                       const isCompleted = isActuallyPassed && !isCurrentFailed;
-                       const isNewUnlock = n === (completedCount + 1);
+                       const isUnlocked = n === 1 || n <= (maxPassedBatch + 1);
+                       const isCompleted = n <= maxPassedBatch;
+                       const isNewUnlock = n === (maxPassedBatch + 1);
+                       const needsReattempt = n === completedCount && !isCurrentPassed;
 
                       return (
                         <div
@@ -522,6 +523,7 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                               </svg>
                             )}
                             {isCompleted && <span className={styles.completedBadge}>DONE</span>}
+                            {needsReattempt && <span className={styles.completedBadge} style={{ background: "#ef4444" }}>RETRY</span>}
                           </div>
                           <span className={styles.attemptTitle}>Attempt {n}</span>
                           <span className={styles.attemptSub}>{n === 1 ? "30" : "20"} Questions</span>
@@ -573,18 +575,18 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                                   {fmt(target)}
                                 </td>
                                 <td style={{ padding: "12px 14px", textAlign: "right" }}>
-                                  {isCompleted ? (
+                                  {n <= maxPassedBatch ? (
                                     <span style={{ color: "#10b981", fontWeight: "700", display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "6px" }}>
                                       ✅ {p?.accuracy !== undefined ? `(${p.accuracy}%)` : "Passed"}
                                     </span>
+                                  ) : n === completedCount && !isCurrentPassed ? (
+                                    <span style={{ color: "#ef4444", fontWeight: "700", display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "6px" }}>
+                                      ⚠️ Reattempt ({p.accuracy}%)
+                                    </span>
                                   ) : (
-                                    n === (completedCount + 1) && p?.accuracy !== undefined && p.accuracy < 60 ? (
-                                      <span style={{ color: "#ef4444", fontWeight: "700", display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "6px" }}>
-                                        ⚠️ Reattempt ({p.accuracy}%)
-                                      </span>
-                                    ) : (
-                                      <span style={{ color: "var(--text-muted)", opacity: 0.5, fontWeight: "500" }}>Locked</span>
-                                    )
+                                    <span style={{ color: "var(--text-muted)", opacity: 0.5, fontWeight: "500" }}>
+                                      {n === maxPassedBatch + 1 ? "Pending" : "Locked"}
+                                    </span>
                                   )}
                                 </td>
                               </tr>
@@ -637,12 +639,11 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                   const p = allProgress.find(p => p.topic === selectedTopic);
                   const completedCount = p?.attempts || 0;
                   const latestScore = p?.accuracy ?? 0;
+                  const isCurrentPassed = latestScore >= 60 || p?.accuracy === undefined;
+                  const maxPassedBatch = isCurrentPassed ? completedCount : completedCount - 1;
                   
-                  // A batch is fully "Done" only if it's passed with 60%
-                  const isDone = selectedAttempt <= completedCount;
-                  
-                  // Special case: if this is the current batch and they failed it, they MUST reattempt
-                  const needsReattempt = selectedAttempt === (completedCount + 1) && latestScore < 60 && p?.accuracy !== undefined;
+                  const isDone = selectedAttempt <= maxPassedBatch;
+                  const needsReattempt = selectedAttempt === completedCount && !isCurrentPassed;
                   
                   return (
                     <button
