@@ -490,11 +490,17 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                   <label className={styles.formLabel}>Select Attempt Batch</label>
                   <div className={styles.attemptGrid}>
                     {[1, 2, 3, 4].map((n) => {
-                      const p = allProgress.find(p => p.topic === selectedTopic);
-                      const completedCount = p?.attempts || 0;
-                      const isUnlocked = n === 1 || n <= (completedCount + 1);
-                      const isCompleted = n <= completedCount;
-                      const isNewUnlock = n === (completedCount + 1);
+                       const p = allProgress.find(p => p.topic === selectedTopic);
+                       const completedCount = p?.attempts || 0;
+                       
+                       // A batch is "passed" only if it's within the completedCount range
+                       const isActuallyPassed = n <= completedCount;
+                       const latestScore = p?.accuracy ?? 0;
+                       const isCurrentFailed = n === (completedCount + 1) && latestScore < 60 && p?.accuracy !== undefined;
+
+                       const isUnlocked = n === 1 || n <= (completedCount + 1);
+                       const isCompleted = isActuallyPassed && !isCurrentFailed;
+                       const isNewUnlock = n === (completedCount + 1);
 
                       return (
                         <div
@@ -629,25 +635,31 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                 {/* Start Button */}
                 {(() => {
                   const p = allProgress.find(p => p.topic === selectedTopic);
-                  const isDone = selectedAttempt <= (p?.attempts || 0);
-                  const isCurrentModeCompleted = isDone && selectedAttempt === p?.attempts;
+                  const completedCount = p?.attempts || 0;
+                  const latestScore = p?.accuracy ?? 0;
+                  
+                  // A batch is fully "Done" only if it's passed with 60%
+                  const isDone = selectedAttempt <= completedCount;
+                  
+                  // Special case: if this is the current batch and they failed it, they MUST reattempt
+                  const needsReattempt = selectedAttempt === (completedCount + 1) && latestScore < 60 && p?.accuracy !== undefined;
                   
                   return (
                     <button
                       id="exam-start-btn"
                       className={styles.startExamBtn}
                       onClick={startExam}
-                      disabled={!selectedTopic || examLoading || isDone}
-                      style={isDone ? { background: "rgba(16, 185, 129, 0.1)", color: "#10b981", border: "1px solid rgba(16, 185, 129, 0.3)", opacity: 1, cursor: "default" } : {}}
+                      disabled={!selectedTopic || examLoading || (isDone && !needsReattempt)}
+                      style={isDone && !needsReattempt ? { background: "rgba(16, 185, 129, 0.1)", color: "#10b981", border: "1px solid rgba(16, 185, 129, 0.3)", opacity: 1, cursor: "default" } : {}}
                     >
                       {examLoading ? (
                         <><div className={styles.btnSpinner} /> Loading Questions…</>
                       ) : (
                         <>
-                          {isDone ? (
-                            isCurrentModeCompleted && p?.accuracy !== undefined 
-                              ? `✅ Completed — Score: ${p.accuracy}%` 
-                              : `✅ Attempt Completed`
+                          {needsReattempt ? (
+                            `🚀 Reattempt Batch ${selectedAttempt} (${latestScore}%)`
+                          ) : isDone ? (
+                            `✅ Completed — Score: ${latestScore}%` 
                           ) : (
                             "Start Practice Session"
                           )}
