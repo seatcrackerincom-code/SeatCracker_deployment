@@ -358,16 +358,20 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
     const prevSeenIds = currentProgress?.seen_question_ids || [];
     const mergedSeenIds = Array.from(new Set([...prevSeenIds, ...currentSeenIds]));
 
+    const accuracyResult = Math.round((correct / questions.length) * 100);
+    const hasPassed = accuracyResult >= 60;
+
     // Save to Supabase
     saveProgress({
       user_id: userId,
       topic: selectedTopic,
       subject: selectedSubject,
-      accuracy: Math.round((correct / questions.length) * 100),
+      accuracy: accuracyResult,
       avg_time: actualElapsed > 0 ? Number((actualElapsed / questions.length).toFixed(1)) : 0,
       completed: true,
       seen_question_ids: mergedSeenIds,
-      attempts: attemptNum,
+      // Only increment attempts if they pass the current batch
+      attempts: hasPassed ? Math.max(currentProgress?.attempts || 0, attemptNum) : (currentProgress?.attempts || 0),
       last_attempt_at: new Date().toISOString(),
     })
       .then(() => fetchProgress(userId).then(updatedList => {
@@ -565,10 +569,16 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                                 <td style={{ padding: "12px 14px", textAlign: "right" }}>
                                   {isCompleted ? (
                                     <span style={{ color: "#10b981", fontWeight: "700", display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "6px" }}>
-                                      ✅ {isCurrent && p?.accuracy !== undefined ? `(${p.accuracy}%)` : "Done"}
+                                      ✅ {p?.accuracy !== undefined ? `(${p.accuracy}%)` : "Passed"}
                                     </span>
                                   ) : (
-                                    <span style={{ color: "var(--text-muted)", opacity: 0.5, fontWeight: "500" }}>Pending</span>
+                                    n === (completedCount + 1) && p?.accuracy !== undefined && p.accuracy < 60 ? (
+                                      <span style={{ color: "#ef4444", fontWeight: "700", display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "6px" }}>
+                                        ⚠️ Reattempt ({p.accuracy}%)
+                                      </span>
+                                    ) : (
+                                      <span style={{ color: "var(--text-muted)", opacity: 0.5, fontWeight: "500" }}>Locked</span>
+                                    )
                                   )}
                                 </td>
                               </tr>
@@ -660,10 +670,10 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
     const scorePercent = Math.round((correctCount / questions.length) * 100);
 
     let performanceMsg = "";
-    if (scorePercent >= 80) { performanceMsg = "Outstanding! You're exam-ready."; }
-    else if (scorePercent >= 60) { performanceMsg = "Good attempt! A bit more practice and you'll ace it."; }
-    else if (scorePercent >= 40) { performanceMsg = "Keep grinding — you're getting there!"; }
-    else { performanceMsg = "Don't give up! Review the topic and try again."; }
+    if (scorePercent >= 80) { performanceMsg = "Outstanding! You're exam-ready. Batch Cleared! 🏆"; }
+    else if (scorePercent >= 60) { performanceMsg = "Good attempt! You passed this batch. 🎯"; }
+    else if (scorePercent >= 40) { performanceMsg = "Keep grinding — you need 60% to unlock the next batch! 💪"; }
+    else { performanceMsg = "Don't give up! Aim for 60% to master this topic. 🔥"; }
 
     return (
       <div className={styles.resultScreen}>
@@ -683,7 +693,11 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
                if (completedCount >= maxAttempts) {
                 return <p className={styles.previousAttemptHint} style={{ color: "#10b981", fontWeight: "700" }}>Topic Mastered! You have completed all {maxAttempts} unique batches. </p>;
               }
-              return <p className={styles.previousAttemptHint}>Your attempt has been saved. **Next:** Start Attempt {nextAttempt}: **{nextModeName}**</p>;
+              if (scorePercent >= 60) {
+                return <p className={styles.previousAttemptHint}>Batch {selectedAttempt} Passed! **Next:** Start Attempt {nextAttempt}: **{nextModeName}**</p>;
+              } else {
+                return <p className={styles.previousAttemptHint} style={{ color: "#ef4444" }}>Score below 60%. Please reattempt Batch {selectedAttempt} before moving to Batch {nextAttempt}.</p>;
+              }
             })()}
           </div>
 
@@ -824,11 +838,29 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
 
 
             <div className={styles.resultActions}>
-              <button id="exam-retry-btn" className={styles.retryBtn} onClick={retryExam}>
-                🔄 Try Again
-              </button>
+              {scorePercent < 60 ? (
+                <button 
+                  id="exam-reattempt-btn" 
+                  className={styles.retryBtn} 
+                  style={{ background: "linear-gradient(135deg, #ef4444, #f87171)", boxShadow: "0 4px 15px rgba(239, 68, 68, 0.4)" }} 
+                  onClick={() => {
+                    setScreen("setup");
+                    setQuestions([]);
+                    setStatuses([]);
+                    setElapsedSeconds(0);
+                    // Re-trigger start with same settings
+                    startExam();
+                  }}
+                >
+                  🚀 Reattempt Batch {selectedAttempt}
+                </button>
+              ) : (
+                <button id="exam-retry-btn" className={styles.retryBtn} onClick={retryExam}>
+                  🔄 Try Another Batch
+                </button>
+              )}
               <button id="exam-back-btn" className={styles.resultBackBtn} onClick={onBack}>
-                ← Back to Practice
+                ← Back to Arena
               </button>
             </div>
         </div>
