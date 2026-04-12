@@ -355,7 +355,6 @@ export default function ExamPractice({ userId, exam, course, onBack, initialTopi
     const currentSeenIds = questions.filter((_, i) => statuses[i].isAnswered).map(q => q.originalIndex);
     
     // Merge with existing progress for this topic
-    // Merge with existing progress for this topic
     const prevSeenIds = currentProgress?.seen_question_ids || [];
     const mergedSeenIds = Array.from(new Set([...prevSeenIds, ...currentSeenIds]));
 
