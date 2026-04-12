@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 export const runtime = "nodejs";
 
@@ -11,7 +11,7 @@ RULES:
 5. Strategy 'good_score': Heavy priority on High/Med; skip Low if time insufficient. 'full': include all.
 6. Generate EXACTLY total_days in the array. If you run out of syllabus topics, pad remaining days with topic "Practise high, med, low priority questions" under subject "Practice".`;
 
-export async function POST(req: NextRequest) {
+export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { syllabus, total_days, daily_hours, priority_order, course, strategy, completed_topics } = body;

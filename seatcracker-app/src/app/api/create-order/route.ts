@@ -1,11 +1,11 @@
 // POST /api/create-order
 // Creates a Razorpay order using the REST API directly (no SDK, no compatibility issues).
 
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 export const runtime = "nodejs";
 
-export async function POST(req: NextRequest) {
+export async function POST(req: Request) {
   const KEY_ID = process.env.RAZORPAY_KEY_ID;
   const KEY_SECRET = process.env.RAZORPAY_KEY_SECRET;
 

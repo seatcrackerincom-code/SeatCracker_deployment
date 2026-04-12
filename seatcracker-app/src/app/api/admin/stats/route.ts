@@ -2,7 +2,7 @@
 // Returns aggregate platform metrics: total users, premium users, total revenue.
 // Protected by ADMIN_SECRET header — never expose this key client-side.
 
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 
 export const runtime = "nodejs";
@@ -11,7 +11,7 @@ const SUPABASE_URL    = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const SUPABASE_KEY    = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 const ADMIN_SECRET    = process.env.ADMIN_SECRET || "sc_admin_2024";
 
-export async function GET(req: NextRequest) {
+export async function GET(req: Request) {
   // ── Auth guard ────────────────────────────────────────
   const secret = req.headers.get("x-admin-secret");
   if (secret !== ADMIN_SECRET) {

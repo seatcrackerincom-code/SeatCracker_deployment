@@ -5,7 +5,7 @@
 // 4. Inserts into `payments` table (revenue tracking)
 // Backend-only — never trust the frontend for premium activation.
 
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import crypto from "crypto";
 import { createClient } from "@supabase/supabase-js";
 
@@ -15,7 +15,7 @@ const KEY_SECRET  = process.env.RAZORPAY_KEY_SECRET!;
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
-export async function POST(req: NextRequest) {
+export async function POST(req: Request) {
   try {
     const {
       razorpay_order_id,
