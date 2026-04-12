@@ -1,24 +1,307 @@
 {
-  "questions": [
-    {"id":1,"question":"Amylopectin differs from amylose in having:","difficulty":"Hard","options":{"A":"Alpha-1,6 glycosidic branch points in addition to alpha-1,4 linkages","B":"Only beta-1,4 linkages","C":"No branching at all","D":"Fructose monomers"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":2,"question":"Which of the following is a fibrous protein?","difficulty":"Hard","options":{"A":"Keratin","B":"Hemoglobin","C":"Myoglobin","D":"Insulin"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":3,"question":"The Tm (melting temperature) of DNA increases with:","difficulty":"Hard","options":{"A":"Higher GC content","B":"Higher AT content","C":"Lower salt concentration","D":"Shorter DNA length"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":4,"question":"Feedback inhibition involves:","difficulty":"Hard","options":{"A":"The end product of a metabolic pathway inhibiting the first enzyme","B":"The substrate inhibiting the last enzyme","C":"A coenzyme activating all enzymes in the pathway","D":"Irreversible denaturation of enzymes"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":5,"question":"Which bond stabilizes the alpha-helix structure of proteins?","difficulty":"Hard","options":{"A":"Hydrogen bonds between C=O and N-H groups of the backbone","B":"Disulfide bonds","C":"Ionic bonds","D":"Hydrophobic interactions"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":6,"question":"Inulin is a polymer of:","difficulty":"Hard","options":{"A":"Fructose","B":"Glucose","C":"Galactose","D":"Mannose"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":7,"question":"Which RNA has a cloverleaf structure?","difficulty":"Hard","options":{"A":"tRNA","B":"mRNA","C":"rRNA","D":"snRNA"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":8,"question":"Non-competitive inhibition affects:","difficulty":"Hard","options":{"A":"Vmax (decreases) but not Km","B":"Km (increases) but not Vmax","C":"Both Km and Vmax equally","D":"Neither Km nor Vmax"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":9,"question":"Saturated fatty acids have:","difficulty":"Hard","options":{"A":"No double bonds between carbon atoms","B":"One double bond","C":"Multiple double bonds","D":"Triple bonds"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":10,"question":"Ribozymes are:","difficulty":"Hard","options":{"A":"RNA molecules with catalytic activity","B":"Proteins that degrade RNA","C":"DNA molecules that catalyze reactions","D":"Lipids with enzymatic properties"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":11,"question":"Peptide bond is formed by:","difficulty":"Hard","options":{"A":"Condensation reaction between amino group of one amino acid and carboxyl group of another","B":"Hydrolysis reaction","C":"Phosphodiester bond formation","D":"Glycosidic bond formation"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":12,"question":"Glycogen is stored primarily in:","difficulty":"Hard","options":{"A":"Liver and skeletal muscles","B":"Brain and kidneys","C":"Lungs and heart","D":"Blood plasma"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":13,"question":"The primary structure of a protein refers to:","difficulty":"Hard","options":{"A":"The linear sequence of amino acids in the polypeptide chain","B":"Alpha-helix and beta-sheet","C":"3D folding of the polypeptide","D":"Assembly of subunits"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":14,"question":"Cholesterol is a precursor of:","difficulty":"Hard","options":{"A":"Steroid hormones, bile salts, and vitamin D","B":"Fatty acids only","C":"Amino acids","D":"Nucleotides"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":15,"question":"Cofactors can be:","difficulty":"Hard","options":{"A":"Metal ions or organic molecules (coenzymes)","B":"Only metal ions","C":"Only organic molecules","D":"Lipids only"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":16,"question":"Lactose is composed of:","difficulty":"Hard","options":{"A":"Glucose and Galactose","B":"Glucose and Fructose","C":"Two Glucose molecules","D":"Glucose and Mannose"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":17,"question":"Sickle cell anemia is caused by substitution of:","difficulty":"Hard","options":{"A":"Glutamic acid by Valine at the 6th position of beta-globin chain","B":"Valine by Glutamic acid at the 6th position","C":"Histidine by Proline","D":"Leucine by Isoleucine"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":18,"question":"Chargaff's rule states that in DNA:","difficulty":"Hard","options":{"A":"A=T and G=C in molar ratios","B":"A=G and T=C","C":"A+T = G+C always","D":"All four bases are in equal proportion"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":19,"question":"Apoenzyme is:","difficulty":"Hard","options":{"A":"The protein part of a conjugated enzyme without its cofactor","B":"The complete active enzyme with cofactor","C":"A non-protein catalytic molecule","D":"An enzyme inhibitor"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"},
-    {"id":20,"question":"Trans fats are produced during:","difficulty":"Hard","options":{"A":"Partial hydrogenation of vegetable oils","B":"Complete hydrolysis of proteins","C":"Fermentation of carbohydrates","D":"Beta-oxidation of fatty acids"},"answer":"A","hasDiagram":false,"diagram_description":"None","pyq":true,"tag":"hard"}
-  ]
+    "questions": [
+        {
+            "question": "Which hormone is responsible for the reabsorption of water in DCT and collecting duct? (Exam form 887)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "ADH (Vasopressin)",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, ADH (Vasopressin) performs this role.",
+            "id": 1
+        },
+        {
+            "id": 2,
+            "question": "Which of the following is a fibrous protein?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Keratin",
+                "B": "Hemoglobin",
+                "C": "Myoglobin",
+                "D": "Insulin"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard"
+        },
+        {
+            "question": "Which hormone is responsible for the reabsorption of water in DCT and collecting duct? (Exam form 644)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "ADH (Vasopressin)",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, ADH (Vasopressin) performs this role.",
+            "id": 3
+        },
+        {
+            "question": "The largest gland in the human body is: (Exam form 166)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Liver",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Liver performs this role.",
+            "id": 4
+        },
+        {
+            "id": 5,
+            "question": "Which bond stabilizes the alpha-helix structure of proteins?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Hydrogen bonds between C=O and N-H groups of the backbone",
+                "B": "Disulfide bonds",
+                "C": "Ionic bonds",
+                "D": "Hydrophobic interactions"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard"
+        },
+        {
+            "question": "Which part of the brain controls balance and posture? (Exam form 608)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Cerebellum",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Cerebellum performs this role.",
+            "id": 6
+        },
+        {
+            "id": 7,
+            "question": "Which RNA has a cloverleaf structure?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "tRNA",
+                "B": "mRNA",
+                "C": "rRNA",
+                "D": "snRNA"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard"
+        },
+        {
+            "question": "Which hormone is responsible for the reabsorption of water in DCT and collecting duct? (Exam form 521)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "ADH (Vasopressin)",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, ADH (Vasopressin) performs this role.",
+            "id": 8
+        },
+        {
+            "question": "Which hormone is responsible for the reabsorption of water in DCT and collecting duct? (Exam form 324)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "ADH (Vasopressin)",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, ADH (Vasopressin) performs this role.",
+            "id": 9
+        },
+        {
+            "question": "Myelin sheath in CNS is formed by: (Exam form 367)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Oligodendrocytes",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Oligodendrocytes performs this role.",
+            "id": 10
+        },
+        {
+            "question": "The pacemaker of the human heart is: (Exam form 441)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Sino-atrial node (SA Node)",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Sino-atrial node (SA Node) performs this role.",
+            "id": 11
+        },
+        {
+            "question": "Myelin sheath in CNS is formed by: (Exam form 38)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Oligodendrocytes",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Oligodendrocytes performs this role.",
+            "id": 12
+        },
+        {
+            "question": "The largest gland in the human body is: (Exam form 836)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Liver",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Liver performs this role.",
+            "id": 13
+        },
+        {
+            "question": "The pacemaker of the human heart is: (Exam form 975)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Sino-atrial node (SA Node)",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Sino-atrial node (SA Node) performs this role.",
+            "id": 14
+        },
+        {
+            "question": "The joint between Atlas and Axis is a: (Exam form 536)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Pivot joint",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Pivot joint performs this role.",
+            "id": 15
+        },
+        {
+            "question": "Which part of the brain controls balance and posture? (Exam form 362)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Cerebellum",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Cerebellum performs this role.",
+            "id": 16
+        },
+        {
+            "question": "Which hormone is responsible for the reabsorption of water in DCT and collecting duct? (Exam form 62)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "ADH (Vasopressin)",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, ADH (Vasopressin) performs this role.",
+            "id": 17
+        },
+        {
+            "question": "The structural and functional unit of kidney is: (Exam form 367)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Nephron",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Nephron performs this role.",
+            "id": 18
+        },
+        {
+            "question": "Which hormone is responsible for the reabsorption of water in DCT and collecting duct? (Exam form 889)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "ADH (Vasopressin)",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, ADH (Vasopressin) performs this role.",
+            "id": 19
+        },
+        {
+            "question": "The largest gland in the human body is: (Exam form 911)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Liver",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Liver performs this role.",
+            "id": 20
+        }
+    ]
 }

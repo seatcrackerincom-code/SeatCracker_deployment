@@ -1,429 +1,459 @@
 {
-  "questions": [
-    {
-      "id": 1,
-      "question": "A fair die is thrown twice. P(sum=7 | first die shows 3) = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1/6",
-        "B": "1/3",
-        "C": "1/2",
-        "D": "1/4"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 2,
-      "question": "If a card is drawn from a pack of 52, the probability that it is a king or a club is:",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "16/52",
-        "B": "17/52",
-        "C": "13/52",
-        "D": "4/52"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 3,
-      "question": "The mean of a Binomial distribution B(n, p) is:",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "np",
-        "B": "npq",
-        "C": "√npq",
-        "D": "n/p"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 4,
-      "question": "A bag has 3 red, 4 white, 5 blue balls. 3 balls drawn at random. P(1R,1W,1B) = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "3/11",
-        "B": "4/11",
-        "C": "6/11",
-        "D": "2/11"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 5,
-      "question": "If P(A ∩ B) = P(A)P(B), then A and B are independent. Does this imply A and B are mutually exclusive?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "No",
-        "B": "Yes",
-        "C": "Only if P(A)=0",
-        "D": "Only if P(B)=1"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 6,
-      "question": "Bayes' Theorem relates P(A|B) to P(B|A) and is used to update ______ probabilities.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Prior",
-        "B": "Posterior",
-        "C": "Joint",
-        "D": "Marginal"
-      },
-      "answer": "B",
-      "pyq": false
-    },
-    {
-      "id": 7,
-      "question": "If P(A∩B)=1/6, P(A∪B)=1/3, P(B')=1/2, then P(A)=?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1/6",
-        "B": "1/3",
-        "C": "1/2",
-        "D": "2/3"
-      },
-      "answer": "B",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 8,
-      "question": "The odds in favor of an event with probability p are:",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "p / (1-p)",
-        "B": "(1-p) / p",
-        "C": "p",
-        "D": "1/p"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 9,
-      "question": "The parameter λ of a Poisson distribution represents both the ______ and the ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Mean, Variance",
-        "B": "Mean, Mode",
-        "C": "Variance, SD",
-        "D": "Sum, Product"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 10,
-      "question": "Poisson distribution is a limiting case of Binomial distribution when n is ______ and p is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Large, Small",
-        "B": "Small, Large",
-        "C": "Large, Large",
-        "D": "Small, Small"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 11,
-      "question": "If A and B are independent events with P(A)=0.3 and P(B)=0.4, then P(A∪B)=?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "0.58",
-        "B": "0.7",
-        "C": "0.12",
-        "D": "0.70"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 12,
-      "question": "If A and B are independent events, then P(A' ∩ B') is equal to:",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "P(A')P(B')",
-        "B": "1 - P(A ∪ B)",
-        "C": "P(A) + P(B)",
-        "D": "Both A and B"
-      },
-      "answer": "D",
-      "pyq": false
-    },
-    {
-      "id": 13,
-      "question": "The expectation E(X) of a random variable X is also known as its ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Mean",
-        "B": "Variance",
-        "C": "Standard Deviation",
-        "D": "Median"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 14,
-      "question": "For any two events A and B, P(A ∪ B) is equal to:",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "P(A) + P(B) - P(A ∩ B)",
-        "B": "P(A) + P(B)",
-        "C": "P(A)P(B)",
-        "D": "P(A) - P(B)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 15,
-      "question": "If P(A|B) = P(A), then events A and B are ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Independent",
-        "B": "Mutually Exclusive",
-        "C": "Dependent",
-        "D": "Exhaustive"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 16,
-      "question": "Variance Var(X) is defined as:",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "E(X²) - [E(X)]²",
-        "B": "E(X²) + [E(X)]²",
-        "C": "E(X - μ)",
-        "D": "√(E(X))"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 17,
-      "question": "If P(A) = 1/2 and P(B) = 1/3, and A and B are independent, then P(A ∩ B) is:",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1/6",
-        "B": "5/6",
-        "C": "1/5",
-        "D": "1"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 18,
-      "question": "P(A)=0.4, P(B)=0.5, P(A∪B)=0.7. Then P(A/B)=?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2/5",
-        "B": "3/5",
-        "C": "2/7",
-        "D": "4/7"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 19,
-      "question": "Conditional probability of A given B is denoted as P(A|B) and is equal to:",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "P(A ∩ B) / P(B)",
-        "B": "P(A ∩ B) / P(A)",
-        "C": "P(A) / P(B)",
-        "D": "P(B) / P(A)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 20,
-      "question": "The probability of getting a sum of 7 when two dice are thrown is:",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "6/36",
-        "B": "1/36",
-        "C": "2/36",
-        "D": "12/36"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": "probability_21",
-      "question": "P(A∪B) = P(A)+P(B)-P(A∩B). For mutually exclusive events:",
-      "options": {
-        "A": "P(A∪B)=P(A)·P(B)",
-        "B": "P(A∩B)=0",
-        "C": "P(A)+P(B)=1",
-        "D": "P(A)=P(B)"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "probability_22",
-      "question": "P(A|B) = :",
-      "options": {
-        "A": "P(A∩B)+P(B)",
-        "B": "P(A∩B)/P(B)",
-        "C": "P(A)/P(B)",
-        "D": "P(A)·P(B)"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "probability_23",
-      "question": "Independent events: P(A∩B) = :",
-      "options": {
-        "A": "P(A)+P(B)",
-        "B": "P(A)·P(B)",
-        "C": "0",
-        "D": "P(A|B)"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "probability_24",
-      "question": "Bayes' theorem: P(A|B) = P(B|A)·P(A)/P(B). Used in:",
-      "options": {
-        "A": "Geometric probability",
-        "B": "Prior to posterior probability revision",
-        "C": "Expected value",
-        "D": "Variance calculation"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "probability_25",
-      "question": "Probability of getting exactly r heads in n coin tosses: P(X=r) = :",
-      "options": {
-        "A": "nCr·(1/2)^n",
-        "B": "nCr·(1/2)^r·(1/2)^(n-r) = nCr/2^n",
-        "C": "r/n",
-        "D": "1/nCr"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "probability_26",
-      "question": "For a fair die, P(even number) = :",
-      "options": {
-        "A": "1/3",
-        "B": "1/2",
-        "C": "2/3",
-        "D": "1/6"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "probability_27",
-      "question": "Classical probability assumes:",
-      "options": {
-        "A": "Unequal outcomes",
-        "B": "Equally likely outcomes",
-        "C": "Infinite sample space",
-        "D": "Dependent events"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "probability_28",
-      "question": "Variance = E(X²) - [E(X)]². For binomial B(n,p):",
-      "options": {
-        "A": "np",
-        "B": "npq (where q=1-p)",
-        "C": "p(1-p)",
-        "D": "n²p"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "probability_29",
-      "question": "Complement rule: P(A') = :",
-      "options": {
-        "A": "P(A)",
-        "B": "1-P(A)",
-        "C": "P(A)/2",
-        "D": "0"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "probability_30",
-      "question": "If P(A)=0.4, P(B)=0.3, A and B independent: P(A∩B) = :",
-      "options": {
-        "A": "0.7",
-        "B": "0.12",
-        "C": "0.1",
-        "D": "0.7"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    }
-  ]
+    "questions": [
+        {
+            "id": 1,
+            "question": "A fair die is thrown twice. P(sum=7 | first die shows 3) = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1/6",
+                "B": "1/3",
+                "C": "1/2",
+                "D": "1/4"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(8x) / tan(19x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8/19",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 8/19.",
+            "id": 2
+        },
+        {
+            "question": "If the matrix A is [[7, 13], [0, 4]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "65",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[49, 143], [0, 16]]. Trace is sum of diagonal elements: 49 + 16.",
+            "id": 3
+        },
+        {
+            "id": 4,
+            "question": "A bag has 3 red, 4 white, 5 blue balls. 3 balls drawn at random. P(1R,1W,1B) = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3/11",
+                "B": "4/11",
+                "C": "6/11",
+                "D": "2/11"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 5,
+            "question": "If P(A \u2229 B) = P(A)P(B), then A and B are independent. Does this imply A and B are mutually exclusive?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "No",
+                "B": "Yes",
+                "C": "Only if P(A)=0",
+                "D": "Only if P(B)=1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "Bayes' Theorem relates P(A|B) to P(B|A) and is used to update ______ probabilities.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Prior",
+                "B": "Posterior",
+                "C": "Joint",
+                "D": "Marginal"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "If P(A\u2229B)=1/6, P(A\u222aB)=1/3, P(B')=1/2, then P(A)=?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1/6",
+                "B": "1/3",
+                "C": "1/2",
+                "D": "2/3"
+            },
+            "answer": "B",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^16 * (1-x)^9 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "27",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": 8
+        },
+        {
+            "id": 9,
+            "question": "The parameter \u03bb of a Poisson distribution represents both the ______ and the ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Mean, Variance",
+                "B": "Mean, Mode",
+                "C": "Variance, SD",
+                "D": "Sum, Product"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 10,
+            "question": "Poisson distribution is a limiting case of Binomial distribution when n is ______ and p is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Large, Small",
+                "B": "Small, Large",
+                "C": "Large, Large",
+                "D": "Small, Small"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 11,
+            "question": "If A and B are independent events with P(A)=0.3 and P(B)=0.4, then P(A\u222aB)=?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0.58",
+                "B": "0.7",
+                "C": "0.12",
+                "D": "0.70"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "If the matrix A is [[13, 17], [0, 10]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "269",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[169, 391], [0, 100]]. Trace is sum of diagonal elements: 169 + 100.",
+            "id": 12
+        },
+        {
+            "id": 13,
+            "question": "The expectation E(X) of a random variable X is also known as its ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Mean",
+                "B": "Variance",
+                "C": "Standard Deviation",
+                "D": "Median"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(16x) / tan(16x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "16/16",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 16/16.",
+            "id": 14
+        },
+        {
+            "id": 15,
+            "question": "If P(A|B) = P(A), then events A and B are ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Independent",
+                "B": "Mutually Exclusive",
+                "C": "Dependent",
+                "D": "Exhaustive"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the matrix A is [[14, 9], [0, 1]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "197",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[196, 135], [0, 1]]. Trace is sum of diagonal elements: 196 + 1.",
+            "id": 16
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(8x) / tan(3x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8/3",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 8/3.",
+            "id": 17
+        },
+        {
+            "id": 18,
+            "question": "P(A)=0.4, P(B)=0.5, P(A\u222aB)=0.7. Then P(A/B)=?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2/5",
+                "B": "3/5",
+                "C": "2/7",
+                "D": "4/7"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "If the vectors a = 10i + 18j and b = 2i - j are perpendicular, find the value of 10*2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "18",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 19
+        },
+        {
+            "question": "If the vectors a = 5i + 10j and b = 10i - j are perpendicular, find the value of 5*10.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "10",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 20
+        },
+        {
+            "question": "If the vectors a = 4i + 12j and b = 1i - j are perpendicular, find the value of 4*1.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "12",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "probability_21"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^8 * (1-x)^9 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "19",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "probability_22"
+        },
+        {
+            "question": "If the matrix A is [[14, 4], [0, 10]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "296",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[196, 96], [0, 100]]. Trace is sum of diagonal elements: 196 + 100.",
+            "id": "probability_23"
+        },
+        {
+            "question": "If the matrix A is [[13, 4], [0, 1]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "170",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[169, 56], [0, 1]]. Trace is sum of diagonal elements: 169 + 1.",
+            "id": "probability_24"
+        },
+        {
+            "question": "If the vectors a = 4i + 20j and b = 4i - j are perpendicular, find the value of 4*4.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "20",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "probability_25"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^17 * (1-x)^2 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "21",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "probability_26"
+        },
+        {
+            "question": "If the matrix A is [[15, 8], [0, 5]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "250",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[225, 160], [0, 25]]. Trace is sum of diagonal elements: 225 + 25.",
+            "id": "probability_27"
+        },
+        {
+            "question": "If the matrix A is [[13, 10], [0, 4]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "185",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[169, 170], [0, 16]]. Trace is sum of diagonal elements: 169 + 16.",
+            "id": "probability_28"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^2 * (1-x)^5 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "9",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "probability_29"
+        },
+        {
+            "question": "If the vectors a = 16i + 13j and b = 2i - j are perpendicular, find the value of 16*2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "13",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "probability_30"
+        }
+    ]
 }

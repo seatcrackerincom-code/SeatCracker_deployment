@@ -1,417 +1,442 @@
 {
-  "questions": [
-    {
-      "id": 1,
-      "question": "Sphygmomanometer is used for BP measurement. yes.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "In streamline flow, work done by viscous force:",
-      "difficulty": "hard",
-      "pyq": true,
-      "options": {
-        "A": "Negative (dissipative)",
-        "B": "Zero",
-        "C": "Positive",
-        "D": "Depends on velocity"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "id": 2
-    },
-    {
-      "question": "For a liquid that wets the surface, angle of contact is:",
-      "options": {
-        "A": "Acute",
-        "B": "Obtuse",
-        "C": "90°",
-        "D": "None"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 3
-    },
-    {
-      "question": "Surface tension is defined as force per unit:",
-      "options": {
-        "A": "Length",
-        "B": "Area",
-        "C": "Volume",
-        "D": "None"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 4
-    },
-    {
-      "question": "Hydraulic breaks work on:",
-      "options": {
-        "A": "Pascal's Law",
-        "B": "Bernoulli's",
-        "C": "Stokes Law",
-        "D": "None"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 5
-    },
-    {
-      "id": 6,
-      "question": "Mercury meniscus in glass is convex.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Torricelli's law gives speed of efflux v = ______.",
-      "options": {
-        "A": "√(2gh)",
-        "B": "2gh",
-        "C": "gh",
-        "D": "None"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 7
-    },
-    {
-      "question": "Capillary rise height h is proportional to:",
-      "options": {
-        "A": "1/r",
-        "B": "r",
-        "C": "1/r²",
-        "D": "None"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 8
-    },
-    {
-      "question": "Angle of contact acute for liquids that:",
-      "difficulty": "medium",
-      "pyq": true,
-      "options": {
-        "A": "Wet the solid (like water on glass)",
-        "B": "Don't wet (mercury on glass)",
-        "C": "High surface tension",
-        "D": "Viscous"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "id": 9
-    },
-    {
-      "id": 10,
-      "question": "Wait? no. Replaced: blood pressure higher in feet than in head when standing? yes because of h ρ g.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "U-tube: water (ρ=1000) and oil. Oil column 10cm, water column 8cm. Density of oil:",
-      "difficulty": "hard",
-      "pyq": true,
-      "options": {
-        "A": "800 kg/m³",
-        "B": "1000 kg/m³",
-        "C": "1250 kg/m³",
-        "D": "600 kg/m³"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "id": 11
-    },
-    {
-      "question": "Body floats with 1/3 volume exposed. Density of body:",
-      "difficulty": "medium",
-      "pyq": true,
-      "options": {
-        "A": "(2/3)×1000 kg/m³",
-        "B": "(1/3)×1000 kg/m³",
-        "C": "1000 kg/m³",
-        "D": "3000 kg/m³"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "id": 12
-    },
-    {
-      "question": "Archimedes' principle states buoyant force = ______ of displaced fluid.",
-      "options": {
-        "A": "Weight",
-        "B": "Mass",
-        "C": "Volume",
-        "D": "None"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 13
-    },
-    {
-      "id": 14,
-      "question": "Wait? no. Replaced: terminal velocity doesn't depend on height. yes.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Work done in blowing a soap bubble from R to 2R is:",
-      "options": {
-        "A": "24πR²T",
-        "B": "8πR²T",
-        "C": "None",
-        "D": "12πR²T"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 15
-    },
-    {
-      "question": "Reynolds number determines:",
-      "difficulty": "medium",
-      "pyq": true,
-      "options": {
-        "A": "Whether flow is laminar or turbulent",
-        "B": "Viscosity",
-        "C": "Surface tension",
-        "D": "Pressure"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "id": 16
-    },
-    {
-      "id": 17,
-      "question": "Pressure on concave side of meniscus is always more? yes.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Stokes' Law for viscous force is F = ______.",
-      "options": {
-        "A": "6πηrv",
-        "B": "3πηrv",
-        "C": "πηrv",
-        "D": "None"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 18
-    },
-    {
-      "question": "Magnus effect is related to:",
-      "options": {
-        "A": "Spinning ball in fluid",
-        "B": "Viscous drag",
-        "C": "Surface tension",
-        "D": "None"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 19
-    },
-    {
-      "question": "Excess pressure inside a soap bubble is:",
-      "options": {
-        "A": "4T / R",
-        "B": "2T / R",
-        "C": "T / R",
-        "D": "None"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 20
-    },
-    {
-      "id": "mechanical_properties_of_fluids_21",
-      "question": "Bernoulli's principle: as velocity increases, pressure:",
-      "options": {
-        "A": "Increases",
-        "B": "Decreases",
-        "C": "Remains same",
-        "D": "Becomes zero"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "mechanical_properties_of_fluids_22",
-      "question": "Viscosity of liquid with temperature:",
-      "options": {
-        "A": "Increases",
-        "B": "Decreases",
-        "C": "Remains constant",
-        "D": "First increases then decreases"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "mechanical_properties_of_fluids_23",
-      "question": "Pascal's law: pressure applied to enclosed fluid is transmitted:",
-      "options": {
-        "A": "Only upward",
-        "B": "Equally in all directions",
-        "C": "Only to the walls",
-        "D": "Only downward"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "mechanical_properties_of_fluids_24",
-      "question": "Surface tension has units:",
-      "options": {
-        "A": "N/m²",
-        "B": "N/m",
-        "C": "N·m",
-        "D": "J/m²"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "mechanical_properties_of_fluids_25",
-      "question": "Stoke's law: viscous drag F = 6πηrv. This is for:",
-      "options": {
-        "A": "All shapes",
-        "B": "Spherical bodies in viscous fluid",
-        "C": "Flat plates only",
-        "D": "All fluids"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "mechanical_properties_of_fluids_26",
-      "question": "Capillary rise: h = 2T cosθ / ρgr. Rise increases when:",
-      "options": {
-        "A": "Radius increases",
-        "B": "Radius decreases",
-        "C": "Density increases",
-        "D": "g increases"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "mechanical_properties_of_fluids_27",
-      "question": "Hydraulic lift multiplies force because:",
-      "options": {
-        "A": "Velocity increases",
-        "B": "Same pressure on both pistons, larger area = larger force",
-        "C": "More fluid is added",
-        "D": "Density changes"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "mechanical_properties_of_fluids_28",
-      "question": "Continuity equation: A₁v₁ = A₂v₂ is based on:",
-      "options": {
-        "A": "Energy conservation",
-        "B": "Mass conservation (for incompressible fluid)",
-        "C": "Momentum conservation",
-        "D": "Pressure equilibrium"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "mechanical_properties_of_fluids_29",
-      "question": "Angle of contact > 90° means liquid:",
-      "options": {
-        "A": "Wets the surface (capillary rise)",
-        "B": "Does not wet the surface (capillary depression, e.g., Hg in glass)",
-        "C": "Has zero surface tension",
-        "D": "Is viscous"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    }
-  ]
+    "questions": [
+        {
+            "id": 1,
+            "question": "Sphygmomanometer is used for BP measurement. yes.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 2 m with speed 32 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1536.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 1024 / 2.",
+            "id": 2
+        },
+        {
+            "question": "A car moves at 65 m/s and brakes to stop in 2 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-32.5 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 65)/2.",
+            "id": 3
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 2 m with speed 80 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3200.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 6400 / 2.",
+            "id": 4
+        },
+        {
+            "question": "A car moves at 32 m/s and brakes to stop in 2 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-16.0 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 32)/2.",
+            "id": 5
+        },
+        {
+            "id": 6,
+            "question": "Mercury meniscus in glass is convex.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Torricelli's law gives speed of efflux v = ______.",
+            "options": {
+                "A": "\u221a(2gh)",
+                "B": "2gh",
+                "C": "gh",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 7
+        },
+        {
+            "question": "A car moves at 25 m/s and brakes to stop in 3 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-8.333333333333334 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 25)/3.",
+            "id": 8
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 1 m with speed 12 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "288.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 144 / 1.",
+            "id": 9
+        },
+        {
+            "id": 10,
+            "question": "Wait? no. Replaced: blood pressure higher in feet than in head when standing? yes because of h \u03c1 g.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "A capacitor of 6 microfarads is charged to 43 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5547.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 6 * 1849.",
+            "id": 11
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 5 m with speed 22 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "290.4 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 484 / 5.",
+            "id": 12
+        },
+        {
+            "question": "Archimedes' principle states buoyant force = ______ of displaced fluid.",
+            "options": {
+                "A": "Weight",
+                "B": "Mass",
+                "C": "Volume",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 13
+        },
+        {
+            "id": 14,
+            "question": "Wait? no. Replaced: terminal velocity doesn't depend on height. yes.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 3 m with speed 20 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "533.33 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 400 / 3.",
+            "id": 15
+        },
+        {
+            "question": "A car moves at 41 m/s and brakes to stop in 2 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-20.5 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 41)/2.",
+            "id": 16
+        },
+        {
+            "id": 17,
+            "question": "Pressure on concave side of meniscus is always more? yes.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Stokes' Law for viscous force is F = ______.",
+            "options": {
+                "A": "6\u03c0\u03b7rv",
+                "B": "3\u03c0\u03b7rv",
+                "C": "\u03c0\u03b7rv",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 18
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 3 m with speed 55 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2016.67 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 3025 / 3.",
+            "id": 19
+        },
+        {
+            "question": "A capacitor of 8 microfarads is charged to 13 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "676.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 8 * 169.",
+            "id": 20
+        },
+        {
+            "question": "A capacitor of 1 microfarads is charged to 19 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "180.5 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 1 * 361.",
+            "id": "mechanical_properties_of_fluids_21"
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 5 m with speed 76 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4620.8 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 5776 / 5.",
+            "id": "mechanical_properties_of_fluids_22"
+        },
+        {
+            "question": "A car moves at 48 m/s and brakes to stop in 1 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-48.0 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 48)/1.",
+            "id": "mechanical_properties_of_fluids_23"
+        },
+        {
+            "question": "A capacitor of 2 microfarads is charged to 42 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1764.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 2 * 1764.",
+            "id": "mechanical_properties_of_fluids_24"
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 1 m with speed 38 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7220.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 1444 / 1.",
+            "id": "mechanical_properties_of_fluids_25"
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 1 m with speed 93 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "60543.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 8649 / 1.",
+            "id": "mechanical_properties_of_fluids_26"
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 3 m with speed 89 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "13201.67 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 7921 / 3.",
+            "id": "mechanical_properties_of_fluids_27"
+        },
+        {
+            "question": "A car moves at 45 m/s and brakes to stop in 2 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-22.5 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 45)/2.",
+            "id": "mechanical_properties_of_fluids_28"
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 5 m with speed 10 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "40.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 100 / 5.",
+            "id": "mechanical_properties_of_fluids_29"
+        }
+    ]
 }

@@ -1,413 +1,441 @@
 {
-  "questions": [
-    {
-      "question": "Dimensional formula of Planck's constant h:",
-      "difficulty": "hard",
-      "pyq": true,
-      "options": {
-        "A": "ML²T⁻¹",
-        "B": "ML²T⁻²",
-        "C": "MLT⁻¹",
-        "D": "ML³T⁻²"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "question": "Systematic errors tend to be in ______ direction.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "One (Positive or Negative)",
-        "B": "Both",
-        "C": "Random",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 3,
-      "question": "Dimension of angle is [M0 L0 T0].",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "1 Light Year is approx:",
-      "options": {
-        "A": "9.46 x 10¹⁵ m",
-        "B": "3.08 x 10¹⁶ m",
-        "C": "None",
-        "D": "1.5 x 10¹¹ m"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 4
-    },
-    {
-      "id": 5,
-      "question": "Universal Gas Constant (R) dimensions? yes. [M L2 T-2 K-1 mol-1].",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "If x = a + bt + ct², the unit of c is:",
-      "options": {
-        "A": "m / s²",
-        "B": "m / s",
-        "C": "None",
-        "D": "m"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 6
-    },
-    {
-      "id": 7,
-      "question": "Round off 14.25 to 3 significant figures.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "14.2",
-        "B": "14.3",
-        "C": "14.0",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 8,
-      "question": "Boltzman Constant (k)? yes. Energy / Temperature.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Which pair has the same dimensions?",
-      "options": {
-        "A": "Work and Torque",
-        "B": "Force and Pressure",
-        "C": "None",
-        "D": "Speed and Impulse"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 9
-    },
-    {
-      "question": "P=a³b²/c√d. Relative error in P:",
-      "difficulty": "hard",
-      "pyq": true,
-      "options": {
-        "A": "3Δa/a+2Δb/b+Δc/c+(1/2)Δd/d",
-        "B": "Δa/a+Δb/b+Δc/c+Δd/d",
-        "C": "(Δa/a)³+(Δb/b)²+Δc/c",
-        "D": "3Δa+2Δb+Δc+0.5Δd"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "id": 10
-    },
-    {
-      "question": "Precision means:",
-      "difficulty": "medium",
-      "pyq": true,
-      "options": {
-        "A": "Reproducibility of measurements",
-        "B": "Closeness to true value",
-        "C": "Smallest readable value",
-        "D": "Absolute error"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "id": 11
-    },
-    {
-      "question": "x=a²b/√c. % errors a,b,c are 1%,2%,4%. % error in x:",
-      "difficulty": "hard",
-      "pyq": true,
-      "options": {
-        "A": "6%",
-        "B": "5%",
-        "C": "4%",
-        "D": "8%"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "id": 12
-    },
-    {
-      "question": "The error in measurement of radius of sphere is 2%. Error in volume is:",
-      "options": {
-        "A": "6%",
-        "B": "2%",
-        "C": "4%",
-        "D": "None"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 13
-    },
-    {
-      "question": "Relative error = Absolute error / ______.",
-      "options": {
-        "A": "True value",
-        "B": "Mean value",
-        "C": "Initial value",
-        "D": "None"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 14
-    },
-    {
-      "id": 15,
-      "question": "3.14 + 1.2 is ______ according to significant figure rules.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "4.3",
-        "B": "4.34",
-        "C": "4.30",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 16,
-      "question": "Round off 18.35 to 3 significant figures.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "18.4",
-        "B": "18.3",
-        "C": "18.0",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Dimensional formula for Universal Gravitational Constant G is:",
-      "options": {
-        "A": "[M⁻¹L³T⁻²]",
-        "B": "[ML⁻³T²]",
-        "C": "None",
-        "D": "[MLT⁻²]"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 17
-    },
-    {
-      "id": 18,
-      "question": "Change of units does not change the number of significant figures.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 19,
-      "question": "1 m = 100 cm. The '100' here has infinite significant figures because it is exact.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Significant figures in 0.005700:",
-      "difficulty": "medium",
-      "pyq": true,
-      "options": {
-        "A": "4",
-        "B": "7",
-        "C": "6",
-        "D": "2"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "id": 20
-    },
-    {
-      "id": "units_and_measurements_21",
-      "question": "Dimensional formula of pressure:",
-      "options": {
-        "A": "MLT⁻²",
-        "B": "ML⁻¹T⁻²",
-        "C": "ML²T⁻²",
-        "D": "M⁰LT⁻²"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "units_and_measurements_22",
-      "question": "Significant figures in 0.00305:",
-      "options": {
-        "A": "5",
-        "B": "3",
-        "C": "4",
-        "D": "6"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "units_and_measurements_23",
-      "question": "Systematic error cannot be reduced by:",
-      "options": {
-        "A": "Improving instruments",
-        "B": "Repeating measurements",
-        "C": "Calibrating instruments",
-        "D": "Using better methods"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "units_and_measurements_24",
-      "question": "Dimensional analysis cannot determine:",
-      "options": {
-        "A": "Units of derived quantities",
-        "B": "Dimensionless constants (like 2π)",
-        "C": "Whether equation is dimensionally correct",
-        "D": "Power of variables"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "units_and_measurements_25",
-      "question": "1 light year ≈ :",
-      "options": {
-        "A": "9.46×10¹⁰ m",
-        "B": "9.46×10¹⁵ m",
-        "C": "3.08×10¹⁶ m",
-        "D": "1.5×10¹¹ m"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "units_and_measurements_26",
-      "question": "The 'least count' of a vernier calliper with 10 VC divisions = 9 MSD:",
-      "options": {
-        "A": "0.1 mm",
-        "B": "0.1 mm (if 1 MSD = 1mm)",
-        "C": "1 mm",
-        "D": "0.01 mm"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "units_and_measurements_27",
-      "question": "Dimensions of universal gravitational constant G:",
-      "options": {
-        "A": "M⁻¹L³T⁻²",
-        "B": "M⁻¹L³T⁻²",
-        "C": "ML³T⁻¹",
-        "D": "M⁻¹L²T⁻²"
-      },
-      "answer": "A",
-      "difficulty": "hard"
-    },
-    {
-      "id": "units_and_measurements_28",
-      "question": "Percentage error in volume of sphere (measured r with error δr/r = 2%):",
-      "options": {
-        "A": "2%",
-        "B": "6%",
-        "C": "4%",
-        "D": "8%"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "units_and_measurements_29",
-      "question": "Rounding off 3.645 to 3 significant figures:",
-      "options": {
-        "A": "3.64",
-        "B": "3.65",
-        "C": "3.6",
-        "D": "3.645"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    }
-  ]
+    "questions": [
+        {
+            "question": "A capacitor of 6 microfarads is charged to 63 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "11907.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 6 * 3969.",
+            "id": 1
+        },
+        {
+            "id": 2,
+            "question": "Systematic errors tend to be in ______ direction.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "One (Positive or Negative)",
+                "B": "Both",
+                "C": "Random",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 3,
+            "question": "Dimension of angle is [M0 L0 T0].",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 1 m with speed 41 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "16810.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 1681 / 1.",
+            "id": 4
+        },
+        {
+            "id": 5,
+            "question": "Universal Gas Constant (R) dimensions? yes. [M L2 T-2 K-1 mol-1].",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "A car moves at 80 m/s and brakes to stop in 3 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-26.666666666666668 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 80)/3.",
+            "id": 6
+        },
+        {
+            "question": "A capacitor of 8 microfarads is charged to 44 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7744.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 8 * 1936.",
+            "id": 7
+        },
+        {
+            "id": 8,
+            "question": "Boltzman Constant (k)? yes. Energy / Temperature.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Which pair has the same dimensions?",
+            "options": {
+                "A": "Work and Torque",
+                "B": "Force and Pressure",
+                "C": "None",
+                "D": "Speed and Impulse"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 9
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 4 m with speed 79 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1560.25 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 6241 / 4.",
+            "id": 10
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 1 m with speed 58 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6728.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 3364 / 1.",
+            "id": 11
+        },
+        {
+            "question": "A car moves at 26 m/s and brakes to stop in 1 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-26.0 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 26)/1.",
+            "id": 12
+        },
+        {
+            "question": "A capacitor of 8 microfarads is charged to 18 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1296.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 8 * 324.",
+            "id": 13
+        },
+        {
+            "question": "Relative error = Absolute error / ______.",
+            "options": {
+                "A": "True value",
+                "B": "Mean value",
+                "C": "Initial value",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 14
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 4 m with speed 51 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5202.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 2601 / 4.",
+            "id": 15
+        },
+        {
+            "question": "A capacitor of 10 microfarads is charged to 84 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "35280.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 10 * 7056.",
+            "id": 16
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 1 m with speed 42 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "12348.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 1764 / 1.",
+            "id": 17
+        },
+        {
+            "question": "The resultant of two vectors P and Q is perpendicular to P. If |P| = 5 and |Q| = 13, then |R| =",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "12",
+                "B": "8",
+                "C": "\u221a194",
+                "D": "18"
+            },
+            "answer": "A",
+            "hint": "If R \u22a5 P, then R\u00b2 = Q\u00b2 - P\u00b2.",
+            "solution": "|R|\u00b2 = Q\u00b2 \u2212 P\u00b2 = 169 \u2212 25 = 144. |R| = 12.",
+            "id": 18
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 3 m with speed 20 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1333.33 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 400 / 3.",
+            "id": 19
+        },
+        {
+            "question": "A capacitor of 2 microfarads is charged to 75 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5625.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 2 * 5625.",
+            "id": 20
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 1 m with speed 79 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "31205.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 6241 / 1.",
+            "id": "units_and_measurements_21"
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 5 m with speed 79 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1248.2 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 6241 / 5.",
+            "id": "units_and_measurements_22"
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 5 m with speed 71 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1008.2 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 5041 / 5.",
+            "id": "units_and_measurements_23"
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 3 m with speed 55 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7058.33 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 3025 / 3.",
+            "id": "units_and_measurements_24"
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 3 m with speed 61 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2480.67 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 3721 / 3.",
+            "id": "units_and_measurements_25"
+        },
+        {
+            "question": "A capacitor of 6 microfarads is charged to 84 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "21168.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 6 * 7056.",
+            "id": "units_and_measurements_26"
+        },
+        {
+            "question": "A capacitor of 7 microfarads is charged to 50 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8750.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 7 * 2500.",
+            "id": "units_and_measurements_27"
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 5 m with speed 12 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "57.6 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 144 / 5.",
+            "id": "units_and_measurements_28"
+        },
+        {
+            "question": "A capacitor of 2 microfarads is charged to 25 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "625.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 2 * 625.",
+            "id": "units_and_measurements_29"
+        }
+    ]
 }

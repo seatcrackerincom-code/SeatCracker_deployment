@@ -1,429 +1,459 @@
 {
-  "questions": [
-    {
-      "id": 1,
-      "question": "If A and B are square matrices of the same order, then |AB| = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "|A| * |B|",
-        "B": "|A| + |B|",
-        "C": "|A| / |B|",
-        "D": "0"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 2,
-      "question": "If A = [[1,2],[3,4]], then A⁻¹ = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "[[-2, 1],[3/2, -1/2]]",
-        "B": "[[4,-2],[-3,1]]·(−1/2)",
-        "C": "[[-4,2],[3,-1]]·(1/2)",
-        "D": "[[4,-2],[-3,1]]"
-      },
-      "answer": "C",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 3,
-      "question": "If A is an orthogonal matrix, then AAᵀ = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "I",
-        "B": "0",
-        "C": "A",
-        "D": "A²"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 4,
-      "question": "Rank of matrix [[1,2,3],[2,4,6],[3,6,9]] is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1",
-        "B": "2",
-        "C": "3",
-        "D": "0"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 5,
-      "question": "For any square matrix A, A * adj(A) = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "|A| I",
-        "B": "I",
-        "C": "|A|",
-        "D": "adj(A) A"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 6,
-      "question": "For a square matrix A, A + Aᵀ is always ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Symmetric",
-        "B": "Skew-symmetric",
-        "C": "Identity",
-        "D": "Singular"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 7,
-      "question": "The cofactor of an element a_ij is (-1)^(i+j) times its ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Minor",
-        "B": "Transpose",
-        "C": "Inverse",
-        "D": "Adjoint"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 8,
-      "question": "The rank of a matrix is the ______ order of a non-zero minor.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Highest",
-        "B": "Lowest",
-        "C": "Average",
-        "D": "First"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 9,
-      "question": "|A + B| = |A| + |B| is true for?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Never in general",
-        "B": "Always",
-        "C": "Only diagonal matrices",
-        "D": "Only when AB=0"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 10,
-      "question": "If A is skew-symmetric and n is odd, then |A| = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "0",
-        "B": "1",
-        "C": "|A|²",
-        "D": "Cannot determine"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 11,
-      "question": "If A is a square matrix of order n, then |kA| = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "kⁿ |A|",
-        "B": "k |A|",
-        "C": "nᵏ |A|",
-        "D": "k² |A|"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 12,
-      "question": "In Cramer's Rule, the value of x is given by Δx/Δ. If Δ = 0 and at least one of Δx, Δy, Δz is non-zero, the system has ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "No solution",
-        "B": "Infinite solutions",
-        "C": "Unique solution",
-        "D": "Zero solution"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 13,
-      "question": "If A is a square matrix of order n, then |adj(A)| = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "|A|ⁿ⁻¹",
-        "B": "|A|ⁿ",
-        "C": "|A|",
-        "D": "(n-1)|A|"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 14,
-      "question": "Matrix multiplication is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Associative but generally not commutative",
-        "B": "Commutative",
-        "C": "Neither associative nor commutative",
-        "D": "Always commutative for square matrices"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 15,
-      "question": "Cramer's Rule is used to solve a system of linear equations using ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Determinants",
-        "B": "Inverses",
-        "C": "Transposes",
-        "D": "Adjoints"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 16,
-      "question": "For a non-singular matrix A, the inverse A⁻¹ is given by ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(1/|A|) * adj(A)",
-        "B": "|A| * adj(A)",
-        "C": "adj(A) / |A|ᵀ",
-        "D": "Aᵀ / |A|"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 17,
-      "question": "Which of the following is true for any two square matrices A and B of the same order?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(AB)ᵀ = BᵀAᵀ",
-        "B": "(AB)ᵀ = AᵀBᵀ",
-        "C": "(AB)⁻¹ = A⁻¹B⁻¹",
-        "D": "(A+B)ᵀ = Aᵀ - Bᵀ"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 18,
-      "question": "For a square matrix A, A - Aᵀ is always ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Skew-symmetric",
-        "B": "Symmetric",
-        "C": "Diagonal",
-        "D": "Unitary"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 19,
-      "question": "The adjoint of a matrix is the transpose of the matrix of its ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Cofactors",
-        "B": "Minors",
-        "C": "Elements",
-        "D": "Inverses"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 20,
-      "question": "If A is 3×3 matrix and |A| = 5, then |adj A| = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "25",
-        "B": "125",
-        "C": "5",
-        "D": "625"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": "matrices_and_determinants_21",
-      "question": "If A is n×n matrix, det(kA) = :",
-      "options": {
-        "A": "k·det(A)",
-        "B": "kⁿ·det(A)",
-        "C": "det(A)/k",
-        "D": "n·k·det(A)"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "matrices_and_determinants_22",
-      "question": "A square matrix A is singular if:",
-      "options": {
-        "A": "A is symmetric",
-        "B": "det(A) = 0",
-        "C": "A is diagonal",
-        "D": "A is identity"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "matrices_and_determinants_23",
-      "question": "Inverse of matrix A exists if:",
-      "options": {
-        "A": "A is square",
-        "B": "det(A) ≠ 0 (non-singular)",
-        "C": "A is symmetric",
-        "D": "A has positive entries"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "matrices_and_determinants_24",
-      "question": "Cofactor matrix transposed gives:",
-      "options": {
-        "A": "Inverse",
-        "B": "Adjugate (adjoint) matrix",
-        "C": "Determinant",
-        "D": "Symmetric matrix"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "matrices_and_determinants_25",
-      "question": "Cramer's rule: solution for x = :",
-      "options": {
-        "A": "Dx/D",
-        "B": "D/Dx",
-        "C": "Dx only",
-        "D": "D×Dx"
-      },
-      "answer": "A",
-      "difficulty": "hard"
-    },
-    {
-      "id": "matrices_and_determinants_26",
-      "question": "Property of determinants: swapping two rows:",
-      "options": {
-        "A": "Doubles the det",
-        "B": "Changes sign of det",
-        "C": "Makes det zero",
-        "D": "No change"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "matrices_and_determinants_27",
-      "question": "Rank of matrix = number of:",
-      "options": {
-        "A": "Rows",
-        "B": "Non-zero rows in row-echelon form",
-        "C": "Columns",
-        "D": "Elements"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "matrices_and_determinants_28",
-      "question": "If AB = BA, matrices A and B:",
-      "options": {
-        "A": "Must be identity",
-        "B": "Commute with each other",
-        "C": "Are equal",
-        "D": "Are inverses"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "matrices_and_determinants_29",
-      "question": "Transpose of (AB) = :",
-      "options": {
-        "A": "AᵀBᵀ",
-        "B": "BᵀAᵀ",
-        "C": "(AB)",
-        "D": "AᵀBᵀ only if diagonal"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "matrices_and_determinants_30",
-      "question": "Characteristic equation of matrix A: det(A - λI) = 0. Solutions are:",
-      "options": {
-        "A": "Eigenvectors",
-        "B": "Eigenvalues",
-        "C": "Determinants",
-        "D": "Ranks"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    }
-  ]
+    "questions": [
+        {
+            "id": 1,
+            "question": "If A and B are square matrices of the same order, then |AB| = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "|A| * |B|",
+                "B": "|A| + |B|",
+                "C": "|A| / |B|",
+                "D": "0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 2,
+            "question": "If A = [[1,2],[3,4]], then A\u207b\u00b9 = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "[[-2, 1],[3/2, -1/2]]",
+                "B": "[[4,-2],[-3,1]]\u00b7(\u22121/2)",
+                "C": "[[-4,2],[3,-1]]\u00b7(1/2)",
+                "D": "[[4,-2],[-3,1]]"
+            },
+            "answer": "C",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 3,
+            "question": "If A is an orthogonal matrix, then AA\u1d40 = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "I",
+                "B": "0",
+                "C": "A",
+                "D": "A\u00b2"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 4,
+            "question": "Rank of matrix [[1,2,3],[2,4,6],[3,6,9]] is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "2",
+                "C": "3",
+                "D": "0"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 5,
+            "question": "For any square matrix A, A * adj(A) = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "|A| I",
+                "B": "I",
+                "C": "|A|",
+                "D": "adj(A) A"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "For a square matrix A, A + A\u1d40 is always ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Symmetric",
+                "B": "Skew-symmetric",
+                "C": "Identity",
+                "D": "Singular"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "The cofactor of an element a_ij is (-1)^(i+j) times its ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Minor",
+                "B": "Transpose",
+                "C": "Inverse",
+                "D": "Adjoint"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 8,
+            "question": "The rank of a matrix is the ______ order of a non-zero minor.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Highest",
+                "B": "Lowest",
+                "C": "Average",
+                "D": "First"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 9,
+            "question": "|A + B| = |A| + |B| is true for?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Never in general",
+                "B": "Always",
+                "C": "Only diagonal matrices",
+                "D": "Only when AB=0"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 10,
+            "question": "If A is skew-symmetric and n is odd, then |A| = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "1",
+                "C": "|A|\u00b2",
+                "D": "Cannot determine"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 11,
+            "question": "If A is a square matrix of order n, then |kA| = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "k\u207f |A|",
+                "B": "k |A|",
+                "C": "n\u1d4f |A|",
+                "D": "k\u00b2 |A|"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 12,
+            "question": "In Cramer's Rule, the value of x is given by \u0394x/\u0394. If \u0394 = 0 and at least one of \u0394x, \u0394y, \u0394z is non-zero, the system has ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "No solution",
+                "B": "Infinite solutions",
+                "C": "Unique solution",
+                "D": "Zero solution"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 13,
+            "question": "If A is a square matrix of order n, then |adj(A)| = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "|A|\u207f\u207b\u00b9",
+                "B": "|A|\u207f",
+                "C": "|A|",
+                "D": "(n-1)|A|"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 14,
+            "question": "Matrix multiplication is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Associative but generally not commutative",
+                "B": "Commutative",
+                "C": "Neither associative nor commutative",
+                "D": "Always commutative for square matrices"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 15,
+            "question": "Cramer's Rule is used to solve a system of linear equations using ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Determinants",
+                "B": "Inverses",
+                "C": "Transposes",
+                "D": "Adjoints"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 16,
+            "question": "For a non-singular matrix A, the inverse A\u207b\u00b9 is given by ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(1/|A|) * adj(A)",
+                "B": "|A| * adj(A)",
+                "C": "adj(A) / |A|\u1d40",
+                "D": "A\u1d40 / |A|"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "Which of the following is true for any two square matrices A and B of the same order?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(AB)\u1d40 = B\u1d40A\u1d40",
+                "B": "(AB)\u1d40 = A\u1d40B\u1d40",
+                "C": "(AB)\u207b\u00b9 = A\u207b\u00b9B\u207b\u00b9",
+                "D": "(A+B)\u1d40 = A\u1d40 - B\u1d40"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 7 S's are always together.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "60",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+            "id": 18
+        },
+        {
+            "id": 19,
+            "question": "The adjoint of a matrix is the transpose of the matrix of its ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Cofactors",
+                "B": "Minors",
+                "C": "Elements",
+                "D": "Inverses"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 20,
+            "question": "If A is 3\u00d73 matrix and |A| = 5, then |adj A| = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "25",
+                "B": "125",
+                "C": "5",
+                "D": "625"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "If the vectors a = 14i + 8j and b = 1i - j are perpendicular, find the value of 14*1.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "matrices_and_determinants_21"
+        },
+        {
+            "question": "If the matrix A is [[7, 5], [0, 4]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "65",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[49, 55], [0, 16]]. Trace is sum of diagonal elements: 49 + 16.",
+            "id": "matrices_and_determinants_22"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^16 * (1-x)^5 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "23",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "matrices_and_determinants_23"
+        },
+        {
+            "question": "If the vectors a = 9i + 10j and b = 2i - j are perpendicular, find the value of 9*2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "10",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "matrices_and_determinants_24"
+        },
+        {
+            "question": "If the matrix A is [[6, 6], [0, 2]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "40",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[36, 48], [0, 4]]. Trace is sum of diagonal elements: 36 + 4.",
+            "id": "matrices_and_determinants_25"
+        },
+        {
+            "question": "If the vectors a = 19i + 8j and b = 5i - j are perpendicular, find the value of 19*5.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "matrices_and_determinants_26"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^14 * (1-x)^15 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "31",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "matrices_and_determinants_27"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^4 * (1-x)^10 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "16",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "matrices_and_determinants_28"
+        },
+        {
+            "question": "If the matrix A is [[8, 10], [0, 5]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "89",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[64, 130], [0, 25]]. Trace is sum of diagonal elements: 64 + 25.",
+            "id": "matrices_and_determinants_29"
+        },
+        {
+            "question": "If the matrix A is [[12, 11], [0, 3]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "153",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[144, 165], [0, 9]]. Trace is sum of diagonal elements: 144 + 9.",
+            "id": "matrices_and_determinants_30"
+        }
+    ]
 }

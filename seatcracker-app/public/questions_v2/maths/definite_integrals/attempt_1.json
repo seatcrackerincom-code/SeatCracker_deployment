@@ -1,429 +1,456 @@
 {
-  "questions": [
-    {
-      "id": 1,
-      "question": "Definite integral as limit of a sum: lim(n→∞) 1/n ∑_{r=1}^n f(r/n) = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "∫_0^1 f(x) dx",
-        "B": "∫_1^n f(x) dx",
-        "C": "∫_0^∞ f(x) dx",
-        "D": "f(1) - f(0)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 2,
-      "question": "∫_0^{π/2} sin²x dx = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "π/4",
-        "B": "π/2",
-        "C": "1",
-        "D": "0"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 3,
-      "question": "If f(2a-x) = -f(x), then ∫_0^{2a} f(x) dx = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "0",
-        "B": "2∫_0^a f(x) dx",
-        "C": "-2∫_0^a f(x) dx",
-        "D": "2a"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 4,
-      "question": "∫_a^b f(x) dx = ∫_a^c f(x) dx + ∫_c^b f(x) dx is valid for ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Any real c",
-        "B": "Only c between a and b",
-        "C": "Only positive c",
-        "D": "c = 0"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 5,
-      "question": "∫_0^{π/2} dx / (1 + tan^n x) = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "π/4",
-        "B": "π/2",
-        "C": "nπ/4",
-        "D": "0"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 6,
-      "question": "Property: ∫_a^b f(x) dx = ∫_a^b f(a+b-x) dx.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "Only if f is even",
-        "D": "Only if b > a"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 7,
-      "question": "| ∫_a^b f(x) dx | ______ ∫_a^b |f(x)| dx.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "≤",
-        "B": "≥",
-        "C": "=",
-        "D": "<"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 8,
-      "question": "∫_0^{2a} f(x) dx = ∫_0^a [f(x) + f(2a-x)] dx. If f(2a-x) = f(x), then integral is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2∫_0^a f(x) dx",
-        "B": "0",
-        "C": "∫_0^a f(x) dx",
-        "D": "a f(a)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 9,
-      "question": "∫₀^1 x/(1+x²) dx = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(1/2)ln 2",
-        "B": "ln 2",
-        "C": "π/4",
-        "D": "1/2"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 10,
-      "question": "∫_0^{π/2} [ √sin x / (√sin x + √cos x) ] dx = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "π/4",
-        "B": "π/2",
-        "C": "1",
-        "D": "0"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 11,
-      "question": "∫₀^(π/2) sin²x dx = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "π/4",
-        "B": "π/2",
-        "C": "1/2",
-        "D": "π"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 12,
-      "question": "∫₋π^π sin³x cos²x dx = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "0",
-        "B": "2π",
-        "C": "π",
-        "D": "4"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 13,
-      "question": "∫₀^π x·sin x dx = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "π",
-        "B": "2π",
-        "C": "π/2",
-        "D": "0"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 14,
-      "question": "∫_0^{π/2} [ f(sin x) / (f(sin x) + f(cos x)) ] dx = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "π/4",
-        "B": "π/2",
-        "C": "0",
-        "D": "1"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 15,
-      "question": "Leibniz rule: d/dx [ ∫_g(x)^h(x) f(t) dt ] = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "f(h(x))h'(x) - f(g(x))g'(x)",
-        "B": "f'(h(x)) - f'(g(x))",
-        "C": "f(x)[h(x)-g(x)]",
-        "D": "f(x)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 16,
-      "question": "For periodic function f(x) with period T, ∫_0^{nT} f(x) dx = ______ (n is integer).",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "n ∫_0^T f(x) dx",
-        "B": "∫_0^T f(x) dx",
-        "C": "0",
-        "D": "nT ∫_0^1 f(x) dx"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 17,
-      "question": "If f(x) is periodic with period T, then ∫_a^{a+T} f(x) dx = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "∫_0^T f(x) dx",
-        "B": "T ∫_0^a f(x) dx",
-        "C": "0",
-        "D": "aT"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 18,
-      "question": "∫_0^{π/2} cos²x dx = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "π/4",
-        "B": "π/2",
-        "C": "1",
-        "D": "0"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 19,
-      "question": "∫₀^(π/2) log(tan x) dx = ?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "0",
-        "B": "π/2",
-        "C": "−π/2",
-        "D": "π"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 20,
-      "question": "∫_0^{π/2} log(sin x) dx = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "-(π/2) log 2",
-        "B": "(π/2) log 2",
-        "C": "-π log 2",
-        "D": "0"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": "definite_integrals_21",
-      "question": "∫₀^(π/2) sin²x dx = :",
-      "options": {
-        "A": "π/4",
-        "B": "π/4",
-        "C": "1/2",
-        "D": "π/2"
-      },
-      "answer": "A",
-      "difficulty": "hard"
-    },
-    {
-      "id": "definite_integrals_22",
-      "question": "Property: ∫ₐᵇ f(x)dx = ∫ₐᵇ f(a+b-x)dx. Used to simplify:",
-      "options": {
-        "A": "All integrals",
-        "B": "∫₀^(π/2) log(tanx)dx = 0",
-        "C": "Product integrals",
-        "D": "Differentiation"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "definite_integrals_23",
-      "question": "∫₋ₐᵃ f(x)dx if f is odd:",
-      "options": {
-        "A": "2∫₀ᵃ f(x)dx",
-        "B": "0",
-        "C": "∫₀ᵃ f(x)dx",
-        "D": "∫₋ₐ⁰ f(x)dx"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "definite_integrals_24",
-      "question": "Fundamental theorem: d/dx[∫ₐˣ f(t)dt] = :",
-      "options": {
-        "A": "∫ₐˣ f'(t)dt",
-        "B": "f(x)",
-        "C": "f(a)",
-        "D": "f(x)-f(a)"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "definite_integrals_25",
-      "question": "∫₀¹ xⁿ dx = :",
-      "options": {
-        "A": "n",
-        "B": "1/(n+1)",
-        "C": "n+1",
-        "D": "1/n"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "definite_integrals_26",
-      "question": "Limit of sum definition of definite integral: ∫ₐᵇ f(x)dx = lim(n→∞) Σf(a+rh)·h, h = :",
-      "options": {
-        "A": "a/n",
-        "B": "(b-a)/n",
-        "C": "1/n",
-        "D": "b/n"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "definite_integrals_27",
-      "question": "∫₀^π sinx dx = :",
-      "options": {
-        "A": "0",
-        "B": "2",
-        "C": "π",
-        "D": "1"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "definite_integrals_28",
-      "question": "Beta function B(m,n) = ∫₀¹ x^(m-1)(1-x)^(n-1)dx = :",
-      "options": {
-        "A": "m!n!",
-        "B": "Γ(m)Γ(n)/Γ(m+n)",
-        "C": "m+n",
-        "D": "(m-1)!(n-1)!"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "definite_integrals_29",
-      "question": "∫₀^(2a) f(x)dx = 2∫₀ᵃ f(x)dx when:",
-      "options": {
-        "A": "f is odd",
-        "B": "f(2a-x) = f(x)",
-        "C": "f is increasing",
-        "D": "a>0"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "definite_integrals_30",
-      "question": "Leibniz rule: d/dx[∫ᵤ⁽ˣ⁾ᵥ⁽ˣ⁾ f(t)dt] = :",
-      "options": {
-        "A": "f(v)",
-        "B": "f(v)·v' - f(u)·u'",
-        "C": "f(x)",
-        "D": "v'-u'"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    }
-  ]
+    "questions": [
+        {
+            "id": 1,
+            "question": "Definite integral as limit of a sum: lim(n\u2192\u221e) 1/n \u2211_{r=1}^n f(r/n) = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u222b_0^1 f(x) dx",
+                "B": "\u222b_1^n f(x) dx",
+                "C": "\u222b_0^\u221e f(x) dx",
+                "D": "f(1) - f(0)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(17x) / tan(11x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "17/11",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 17/11.",
+            "id": 2
+        },
+        {
+            "id": 3,
+            "question": "If f(2a-x) = -f(x), then \u222b_0^{2a} f(x) dx = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "2\u222b_0^a f(x) dx",
+                "C": "-2\u222b_0^a f(x) dx",
+                "D": "2a"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 4,
+            "question": "\u222b_a^b f(x) dx = \u222b_a^c f(x) dx + \u222b_c^b f(x) dx is valid for ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Any real c",
+                "B": "Only c between a and b",
+                "C": "Only positive c",
+                "D": "c = 0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the vectors a = 5i + 7j and b = 6i - j are perpendicular, find the value of 5*6.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 5
+        },
+        {
+            "id": 6,
+            "question": "Property: \u222b_a^b f(x) dx = \u222b_a^b f(a+b-x) dx.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "Only if f is even",
+                "D": "Only if b > a"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the vectors a = 3i + 19j and b = 10i - j are perpendicular, find the value of 3*10.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "19",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 7
+        },
+        {
+            "id": 8,
+            "question": "\u222b_0^{2a} f(x) dx = \u222b_0^a [f(x) + f(2a-x)] dx. If f(2a-x) = f(x), then integral is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2\u222b_0^a f(x) dx",
+                "B": "0",
+                "C": "\u222b_0^a f(x) dx",
+                "D": "a f(a)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(20x) / tan(5x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "20/5",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 20/5.",
+            "id": 9
+        },
+        {
+            "question": "If the matrix A is [[6, 4], [0, 1]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "37",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[36, 28], [0, 1]]. Trace is sum of diagonal elements: 36 + 1.",
+            "id": 10
+        },
+        {
+            "question": "If the vectors a = 16i + 12j and b = 6i - j are perpendicular, find the value of 16*6.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "12",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 11
+        },
+        {
+            "id": 12,
+            "question": "\u222b\u208b\u03c0^\u03c0 sin\u00b3x cos\u00b2x dx = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "2\u03c0",
+                "C": "\u03c0",
+                "D": "4"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^11 * (1-x)^18 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "31",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": 13
+        },
+        {
+            "id": 14,
+            "question": "\u222b_0^{\u03c0/2} [ f(sin x) / (f(sin x) + f(cos x)) ] dx = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u03c0/4",
+                "B": "\u03c0/2",
+                "C": "0",
+                "D": "1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 15,
+            "question": "Leibniz rule: d/dx [ \u222b_g(x)^h(x) f(t) dt ] = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "f(h(x))h'(x) - f(g(x))g'(x)",
+                "B": "f'(h(x)) - f'(g(x))",
+                "C": "f(x)[h(x)-g(x)]",
+                "D": "f(x)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 16,
+            "question": "For periodic function f(x) with period T, \u222b_0^{nT} f(x) dx = ______ (n is integer).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "n \u222b_0^T f(x) dx",
+                "B": "\u222b_0^T f(x) dx",
+                "C": "0",
+                "D": "nT \u222b_0^1 f(x) dx"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "If f(x) is periodic with period T, then \u222b_a^{a+T} f(x) dx = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u222b_0^T f(x) dx",
+                "B": "T \u222b_0^a f(x) dx",
+                "C": "0",
+                "D": "aT"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the matrix A is [[15, 15], [0, 3]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "234",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[225, 270], [0, 9]]. Trace is sum of diagonal elements: 225 + 9.",
+            "id": 18
+        },
+        {
+            "id": 19,
+            "question": "\u222b\u2080^(\u03c0/2) log(tan x) dx = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "\u03c0/2",
+                "C": "\u2212\u03c0/2",
+                "D": "\u03c0"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(2x) / tan(18x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2/18",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 2/18.",
+            "id": 20
+        },
+        {
+            "question": "A fair coin is tossed 9 times. What is the probability of getting exactly 7 heads?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "36.0/2^9",
+                "B": "9/2^9",
+                "C": "1/2^9",
+                "D": "72/2^9"
+            },
+            "answer": "A",
+            "hint": "Use Binomial distribution: nCr * (1/2)^r * (1/2)^(n-r)",
+            "solution": "P(X=7) = 9C7 * (1/2)^n = 36.0/2^9.",
+            "id": "definite_integrals_21"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^9 * (1-x)^17 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "28",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "definite_integrals_22"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(11x) / tan(7x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "11/7",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 11/7.",
+            "id": "definite_integrals_23"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^6 * (1-x)^8 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "16",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "definite_integrals_24"
+        },
+        {
+            "question": "Evaluate the integral of sinh(4x) cosh(9x) dx.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Calculated term",
+                "B": "Calculated term",
+                "C": "Calculated term",
+                "D": "Calculated term"
+            },
+            "answer": "A",
+            "hint": "Use the product to sum identities for hyperbolic functions.",
+            "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
+            "id": "definite_integrals_25"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^19 * (1-x)^2 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "23",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "definite_integrals_26"
+        },
+        {
+            "question": "Evaluate the integral of sinh(2x) cosh(8x) dx.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Calculated term",
+                "B": "Calculated term",
+                "C": "Calculated term",
+                "D": "Calculated term"
+            },
+            "answer": "A",
+            "hint": "Use the product to sum identities for hyperbolic functions.",
+            "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
+            "id": "definite_integrals_27"
+        },
+        {
+            "question": "If the vectors a = 20i + 7j and b = 2i - j are perpendicular, find the value of 20*2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "definite_integrals_28"
+        },
+        {
+            "question": "If the matrix A is [[17, 11], [0, 9]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "370",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[289, 286], [0, 81]]. Trace is sum of diagonal elements: 289 + 81.",
+            "id": "definite_integrals_29"
+        },
+        {
+            "question": "If the matrix A is [[20, 10], [0, 10]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "500",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[400, 300], [0, 100]]. Trace is sum of diagonal elements: 400 + 100.",
+            "id": "definite_integrals_30"
+        }
+    ]
 }

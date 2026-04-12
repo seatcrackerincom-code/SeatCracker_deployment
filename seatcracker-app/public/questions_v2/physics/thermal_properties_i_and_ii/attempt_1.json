@@ -1,424 +1,457 @@
 {
-  "questions": [
-    {
-      "id": 1,
-      "question": "Radiation detector? yes. Thermopile / Bolometer.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 2,
-      "question": "Specific heat of ice is 0.5 cal/g C approx.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 3,
-      "question": "Radiation? no. Replaced: wavelength of peak radiation from sun is in visible range.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 4,
-      "question": "Wait? no. Replaced: 1 cal = 4.186 J.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 5,
-      "question": "Sublimation? yes. phase change from solid to gas directly.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 6,
-      "question": "Dew point? yes. temperature at which air becomes saturated with vapor.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 7,
-      "question": "Ratio of α : β : γ for isotropic solid? yes. 1 : 2 : 3.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Copper rod and steel rod same length at 0°C. Temp at which steel 1mm longer (αCu=17×10⁻⁶, αSteel=11×10⁻⁶, L₀=1m):",
-      "difficulty": "hard",
-      "pyq": true,
-      "options": {
-        "A": "167°C",
-        "B": "100°C",
-        "C": "250°C",
-        "D": "91°C"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "id": 8
-    },
-    {
-      "id": 9,
-      "question": "Dimensional formula of thermal conductivity K is [M L T-3 θ-1].",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Ice at 0°C is more effective in cooling than water at 0°C due to:",
-      "options": {
-        "A": "Latent heat",
-        "B": "Specific heat",
-        "C": "None",
-        "D": "Density"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 10
-    },
-    {
-      "question": "Wien's displacement law: λmT =",
-      "difficulty": "medium",
-      "pyq": true,
-      "options": {
-        "A": "Constant",
-        "B": "λm/T=constant",
-        "C": "λm=constant×T",
-        "D": "λmT²=constant"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "id": 11
-    },
-    {
-      "question": "Thermal stress in rod when temperature changes ΔT (E=Young's modulus, α=expansion coeff):",
-      "difficulty": "hard",
-      "pyq": true,
-      "options": {
-        "A": "EαΔT",
-        "B": "αΔT/E",
-        "C": "E/αΔT",
-        "D": "α/EΔT"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "id": 12
-    },
-    {
-      "question": "Rate of heat transfer by radiation proportional to:",
-      "difficulty": "medium",
-      "pyq": true,
-      "options": {
-        "A": "T⁴",
-        "B": "T",
-        "C": "T²",
-        "D": "T³"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "id": 13
-    },
-    {
-      "question": "Heat required to change phase is Q = ______.",
-      "options": {
-        "A": "m L",
-        "B": "m s ΔT",
-        "C": "None",
-        "D": "P t"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 14
-    },
-    {
-      "question": "Heat required to change temperature is Q = ______.",
-      "options": {
-        "A": "m s ΔT",
-        "B": "m L",
-        "C": "None",
-        "D": "C ΔT"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 15
-    },
-    {
-      "id": 16,
-      "question": "Wait? no. Replaced: emissivity for grey body is between 0 and 1.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 17,
-      "question": "Wait? no. Replaced: specific heat of gas depends on the process (isothermal/adiabatic).",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Rate of cooling by Stefan's law proportional to:",
-      "difficulty": "hard",
-      "pyq": true,
-      "options": {
-        "A": "T⁴-T₀⁴",
-        "B": "T-T₀",
-        "C": "T⁴",
-        "D": "T²-T₀²"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "id": 18
-    },
-    {
-      "question": "A perfectly black body absorbs ______ radiation incident on it.",
-      "options": {
-        "A": "All",
-        "B": "Zero",
-        "C": "Only visible",
-        "D": "None"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 19
-    },
-    {
-      "question": "Triple point of water is ______.",
-      "options": {
-        "A": "273.16 K",
-        "B": "273.15 K",
-        "C": "None",
-        "D": "0 K"
-      },
-      "answer": "A",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "pyq": false,
-      "tag": "hard",
-      "difficulty": "hard",
-      "id": 20
-    },
-    {
-      "id": "thermal_properties_i_and_ii_21",
-      "question": "Newton's law of cooling: rate of cooling ∝ :",
-      "options": {
-        "A": "Temperature of body",
-        "B": "Excess temperature over surroundings",
-        "C": "Surface area only",
-        "D": "Mass of body"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "thermal_properties_i_and_ii_22",
-      "question": "Stefan-Boltzmann law: P = σAT⁴. Doubling T changes power by:",
-      "options": {
-        "A": "2×",
-        "B": "16×",
-        "C": "4×",
-        "D": "8×"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "thermal_properties_i_and_ii_23",
-      "question": "Thermal conductivity K: good conductor has K:",
-      "options": {
-        "A": "Low",
-        "B": "High",
-        "C": "Zero",
-        "D": "Negative"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "thermal_properties_i_and_ii_24",
-      "question": "Ideal thermal radiator (black body) absorptivity = :",
-      "options": {
-        "A": "0",
-        "B": "1",
-        "C": "0.5",
-        "D": "Depends on T"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "thermal_properties_i_and_ii_25",
-      "question": "Wien's displacement law: λmax × T = constant means, as T increases, peak wavelength:",
-      "options": {
-        "A": "Increases",
-        "B": "Decreases",
-        "C": "Remains same",
-        "D": "Becomes zero"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "thermal_properties_i_and_ii_26",
-      "question": "Thermal expansion: β = 2α and γ = 3α where α is:",
-      "options": {
-        "A": "Area expansion coefficient",
-        "B": "Linear expansion coefficient",
-        "C": "Volume expansion coefficient",
-        "D": "Linear contraction"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "thermal_properties_i_and_ii_27",
-      "question": "Latent heat of vaporisation > latent heat of fusion because:",
-      "options": {
-        "A": "Evaporation is faster",
-        "B": "More energy needed to separate molecules in gas phase",
-        "C": "Temperature difference is more",
-        "D": "Density changes more"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "thermal_properties_i_and_ii_28",
-      "question": "Heat transfer by radiation doesn't require:",
-      "options": {
-        "A": "Temperature difference",
-        "B": "Material medium",
-        "C": "Energy",
-        "D": "Emission"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "thermal_properties_i_and_ii_29",
-      "question": "Triple point of water is at:",
-      "options": {
-        "A": "0°C, 1 atm",
-        "B": "0.01°C (273.16K), 0.006 atm",
-        "C": "100°C, 1 atm",
-        "D": "4°C, 1 atm"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "thermal_properties_i_and_ii_30",
-      "question": "A thermometer uses alcohol instead of mercury below:",
-      "options": {
-        "A": "0°C",
-        "B": "-39°C (Hg freezes at -39°C; alcohol freezes around -117°C)",
-        "C": "100°C",
-        "D": "-10°C"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    }
-  ]
+    "questions": [
+        {
+            "id": 1,
+            "question": "Radiation detector? yes. Thermopile / Bolometer.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 2,
+            "question": "Specific heat of ice is 0.5 cal/g C approx.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 3,
+            "question": "Radiation? no. Replaced: wavelength of peak radiation from sun is in visible range.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 4,
+            "question": "Wait? no. Replaced: 1 cal = 4.186 J.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "Sublimation? yes. phase change from solid to gas directly.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "Dew point? yes. temperature at which air becomes saturated with vapor.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "Ratio of \u03b1 : \u03b2 : \u03b3 for isotropic solid? yes. 1 : 2 : 3.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 3 m with speed 66 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4356.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 4356 / 3.",
+            "id": 8
+        },
+        {
+            "id": 9,
+            "question": "Dimensional formula of thermal conductivity K is [M L T-3 \u03b8-1].",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 2 m with speed 76 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "20216.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 5776 / 2.",
+            "id": 10
+        },
+        {
+            "question": "Wien's displacement law: \u03bbmT =",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "Constant",
+                "B": "\u03bbm/T=constant",
+                "C": "\u03bbm=constant\u00d7T",
+                "D": "\u03bbmT\u00b2=constant"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "id": 11
+        },
+        {
+            "question": "An object of mass 6 kg is rotating in a circle of radius 3 m with speed 47 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4418.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 6 * 2209 / 3.",
+            "id": 12
+        },
+        {
+            "question": "A car moves at 18 m/s and brakes to stop in 5 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-3.6 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 18)/5.",
+            "id": 13
+        },
+        {
+            "question": "Heat required to change phase is Q = ______.",
+            "options": {
+                "A": "m L",
+                "B": "m s \u0394T",
+                "C": "None",
+                "D": "P t"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 14
+        },
+        {
+            "question": "Heat required to change temperature is Q = ______.",
+            "options": {
+                "A": "m s \u0394T",
+                "B": "m L",
+                "C": "None",
+                "D": "C \u0394T"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 15
+        },
+        {
+            "id": 16,
+            "question": "Wait? no. Replaced: emissivity for grey body is between 0 and 1.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "Wait? no. Replaced: specific heat of gas depends on the process (isothermal/adiabatic).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "A capacitor of 1 microfarads is charged to 15 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "112.5 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 1 * 225.",
+            "id": 18
+        },
+        {
+            "question": "A perfectly black body absorbs ______ radiation incident on it.",
+            "options": {
+                "A": "All",
+                "B": "Zero",
+                "C": "Only visible",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 19
+        },
+        {
+            "question": "Triple point of water is ______.",
+            "options": {
+                "A": "273.16 K",
+                "B": "273.15 K",
+                "C": "None",
+                "D": "0 K"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 20
+        },
+        {
+            "question": "A car moves at 69 m/s and brakes to stop in 4 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-17.25 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 69)/4.",
+            "id": "thermal_properties_i_and_ii_21"
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 3 m with speed 21 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1176.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 441 / 3.",
+            "id": "thermal_properties_i_and_ii_22"
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 4 m with speed 28 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "196.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 784 / 4.",
+            "id": "thermal_properties_i_and_ii_23"
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 5 m with speed 67 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6284.6 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 4489 / 5.",
+            "id": "thermal_properties_i_and_ii_24"
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 3 m with speed 25 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1875.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 625 / 3.",
+            "id": "thermal_properties_i_and_ii_25"
+        },
+        {
+            "question": "A capacitor of 6 microfarads is charged to 15 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "675.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 6 * 225.",
+            "id": "thermal_properties_i_and_ii_26"
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 1 m with speed 92 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "67712.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 8464 / 1.",
+            "id": "thermal_properties_i_and_ii_27"
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 2 m with speed 57 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6498.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 3249 / 2.",
+            "id": "thermal_properties_i_and_ii_28"
+        },
+        {
+            "question": "A capacitor of 8 microfarads is charged to 92 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "33856.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 8 * 8464.",
+            "id": "thermal_properties_i_and_ii_29"
+        },
+        {
+            "question": "A capacitor of 4 microfarads is charged to 59 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6962.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 4 * 3481.",
+            "id": "thermal_properties_i_and_ii_30"
+        }
+    ]
 }

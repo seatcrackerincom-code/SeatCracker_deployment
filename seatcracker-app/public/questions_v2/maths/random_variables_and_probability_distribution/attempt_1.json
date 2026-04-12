@@ -1,414 +1,448 @@
 {
-  "questions": [
-    {
-      "id": 1,
-      "question": "Variance of Binomial distribution B(n,p) is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "npq",
-        "B": "np",
-        "C": "np²",
-        "D": "nq"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 2,
-      "question": "If Var(X) = 4, then Var(3X) is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "36",
-        "B": "12",
-        "C": "4",
-        "D": "16"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 3,
-      "question": "Maximum value for p in Binomial distribution for maximum variance is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "0.5",
-        "B": "1",
-        "C": "0",
-        "D": "0.25"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 4,
-      "question": "In Poisson distribution with parameter λ, the Mean and Variance are ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Both equal to λ",
-        "B": "λ and λ²",
-        "C": "λ and √λ",
-        "D": "1 and λ"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 5,
-      "question": "Variance Var(X) is defined as E(X²) - ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "[E(X)]²",
-        "B": "E(X)",
-        "C": "Σ P(xi)",
-        "D": "1"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 6,
-      "question": "For Poisson distribution P(X=x)=e^(−λ)·λˣ/x!, E(X) = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "λ",
-        "B": "λ²",
-        "C": "1/λ",
-        "D": "√λ"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 7,
-      "question": "If X ~ B(n,p), E(X) = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "np",
-        "B": "np(1−p)",
-        "C": "n/p",
-        "D": "p/n"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 8,
-      "question": "If Mean = 4 and Variance = 3 in Binomial distribution, find n.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "16",
-        "B": "12",
-        "C": "20",
-        "D": "8"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 9,
-      "question": "The diagram show the probability P(X=k) for a Poisson variable. The formula is P(X=k) = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": true,
-      "diagram_description": "Mathematical formula involving exponential e, λ and k factorials.",
-      "options": {
-        "A": "(e⁻λ λᵏ) / k!",
-        "B": "(eλ λᵏ) / k!",
-        "C": "(λᵏ) / k!",
-        "D": "e⁻λ"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 10,
-      "question": "If X and Y are independent random variables, then Var(X + Y) = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Var(X) + Var(Y)",
-        "B": "Var(X) - Var(Y)",
-        "C": "Var(X) * Var(Y)",
-        "D": "√(Var(X) + Var(Y))"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 11,
-      "question": "Poisson distribution is used when 'n' is very large and 'p' is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Very small",
-        "B": "Very large",
-        "C": "0.5",
-        "D": "1"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 12,
-      "question": "The diagram show the graph of F(x), which is a non-decreasing ______ function.",
-      "difficulty": "Medium",
-      "hasDiagram": true,
-      "diagram_description": "A step-like graph that starts at 0 and ends at 1 on y-axis.",
-      "options": {
-        "A": "Step",
-        "B": "Oscillating",
-        "C": "Linear",
-        "D": "Decreasing"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 13,
-      "question": "The diagram show a set of values {0, 1, 2, 3} with probabilities {k, 2k, 3k, 4k}. The value of k is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": true,
-      "diagram_description": "A table mapping X to P(X) with unknown k.",
-      "options": {
-        "A": "0.1",
-        "B": "1",
-        "C": "0.5",
-        "D": "0.2"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 14,
-      "question": "The probability of 'r' successes in n trials for a Binomial variable is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "ⁿCᵣ pʳ qⁿ⁻ʳ",
-        "B": "ⁿPᵣ pʳ qⁿ⁻ʳ",
-        "C": "pʳ qⁿ⁻ʳ",
-        "D": "ⁿCᵣ pⁿ⁻ʳ qʳ"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 15,
-      "question": "The diagram show a right-skewed distribution. The Mean is ______ than the Median.",
-      "difficulty": "Hard",
-      "hasDiagram": true,
-      "diagram_description": "A distribution curve with a long tail on the right side.",
-      "options": {
-        "A": "Greater",
-        "B": "Smaller",
-        "C": "Equal",
-        "D": "Double"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 16,
-      "question": "Find the Mean of a random variable with P(x) = {1/6, 2/6, 3/6} for x={1, 2, 3}.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2.33",
-        "B": "2",
-        "C": "1.5",
-        "D": "3"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 17,
-      "question": "Cumulative Distribution Function F(x) is defined as P(X ______ x).",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "≤",
-        "B": ">",
-        "C": "=",
-        "D": "≠"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 18,
-      "question": "If X ~ N(μ,σ²), then P(X≤μ) = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "0.5",
-        "B": "0",
-        "C": "1",
-        "D": "depends on σ"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 19,
-      "question": "The diagram show a bell-shaped curve. This is characteristic of a ______ distribution.",
-      "difficulty": "Medium",
-      "hasDiagram": true,
-      "diagram_description": "A normal distribution curve showing symmetry about the mean.",
-      "options": {
-        "A": "Normal",
-        "B": "Poisson",
-        "C": "Binomial",
-        "D": "Uniform"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 20,
-      "question": "E(aX+b) = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "aE(X)+b",
-        "B": "aE(X)",
-        "C": "E(X)+b",
-        "D": "a²E(X)+b"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": "random_variables_and_probability_distribution_21",
-      "question": "P(A∪B) = P(A)+P(B)-P(A∩B). For mutually exclusive events:",
-      "options": {
-        "A": "P(A∪B)=P(A)·P(B)",
-        "B": "P(A∩B)=0",
-        "C": "P(A)+P(B)=1",
-        "D": "P(A)=P(B)"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "random_variables_and_probability_distribution_22",
-      "question": "P(A|B) = :",
-      "options": {
-        "A": "P(A∩B)+P(B)",
-        "B": "P(A∩B)/P(B)",
-        "C": "P(A)/P(B)",
-        "D": "P(A)·P(B)"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "random_variables_and_probability_distribution_23",
-      "question": "Independent events: P(A∩B) = :",
-      "options": {
-        "A": "P(A)+P(B)",
-        "B": "P(A)·P(B)",
-        "C": "0",
-        "D": "P(A|B)"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "random_variables_and_probability_distribution_24",
-      "question": "Bayes' theorem: P(A|B) = P(B|A)·P(A)/P(B). Used in:",
-      "options": {
-        "A": "Geometric probability",
-        "B": "Prior to posterior probability revision",
-        "C": "Expected value",
-        "D": "Variance calculation"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "random_variables_and_probability_distribution_25",
-      "question": "Probability of getting exactly r heads in n coin tosses: P(X=r) = :",
-      "options": {
-        "A": "nCr·(1/2)^n",
-        "B": "nCr·(1/2)^r·(1/2)^(n-r) = nCr/2^n",
-        "C": "r/n",
-        "D": "1/nCr"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "random_variables_and_probability_distribution_26",
-      "question": "For a fair die, P(even number) = :",
-      "options": {
-        "A": "1/3",
-        "B": "1/2",
-        "C": "2/3",
-        "D": "1/6"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "random_variables_and_probability_distribution_27",
-      "question": "Classical probability assumes:",
-      "options": {
-        "A": "Unequal outcomes",
-        "B": "Equally likely outcomes",
-        "C": "Infinite sample space",
-        "D": "Dependent events"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "random_variables_and_probability_distribution_28",
-      "question": "Variance = E(X²) - [E(X)]². For binomial B(n,p):",
-      "options": {
-        "A": "np",
-        "B": "npq (where q=1-p)",
-        "C": "p(1-p)",
-        "D": "n²p"
-      },
-      "answer": "B",
-      "difficulty": "hard"
-    },
-    {
-      "id": "random_variables_and_probability_distribution_29",
-      "question": "Complement rule: P(A') = :",
-      "options": {
-        "A": "P(A)",
-        "B": "1-P(A)",
-        "C": "P(A)/2",
-        "D": "0"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    },
-    {
-      "id": "random_variables_and_probability_distribution_30",
-      "question": "If P(A)=0.4, P(B)=0.3, A and B independent: P(A∩B) = :",
-      "options": {
-        "A": "0.7",
-        "B": "0.12",
-        "C": "0.1",
-        "D": "0.7"
-      },
-      "answer": "B",
-      "difficulty": "medium"
-    }
-  ]
+    "questions": [
+        {
+            "id": 1,
+            "question": "Variance of Binomial distribution B(n,p) is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "npq",
+                "B": "np",
+                "C": "np\u00b2",
+                "D": "nq"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 2,
+            "question": "If Var(X) = 4, then Var(3X) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "36",
+                "B": "12",
+                "C": "4",
+                "D": "16"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 3,
+            "question": "Maximum value for p in Binomial distribution for maximum variance is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0.5",
+                "B": "1",
+                "C": "0",
+                "D": "0.25"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 4,
+            "question": "In Poisson distribution with parameter \u03bb, the Mean and Variance are ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Both equal to \u03bb",
+                "B": "\u03bb and \u03bb\u00b2",
+                "C": "\u03bb and \u221a\u03bb",
+                "D": "1 and \u03bb"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 5,
+            "question": "Variance Var(X) is defined as E(X\u00b2) - ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "[E(X)]\u00b2",
+                "B": "E(X)",
+                "C": "\u03a3 P(xi)",
+                "D": "1"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 6,
+            "question": "For Poisson distribution P(X=x)=e^(\u2212\u03bb)\u00b7\u03bb\u02e3/x!, E(X) = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u03bb",
+                "B": "\u03bb\u00b2",
+                "C": "1/\u03bb",
+                "D": "\u221a\u03bb"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 7,
+            "question": "If X ~ B(n,p), E(X) = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "np",
+                "B": "np(1\u2212p)",
+                "C": "n/p",
+                "D": "p/n"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 8,
+            "question": "If Mean = 4 and Variance = 3 in Binomial distribution, find n.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "16",
+                "B": "12",
+                "C": "20",
+                "D": "8"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "If the vectors a = 17i + 19j and b = 2i - j are perpendicular, find the value of 17*2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "19",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 9
+        },
+        {
+            "id": 10,
+            "question": "If X and Y are independent random variables, then Var(X + Y) = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Var(X) + Var(Y)",
+                "B": "Var(X) - Var(Y)",
+                "C": "Var(X) * Var(Y)",
+                "D": "\u221a(Var(X) + Var(Y))"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 11,
+            "question": "Poisson distribution is used when 'n' is very large and 'p' is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Very small",
+                "B": "Very large",
+                "C": "0.5",
+                "D": "1"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(16x) / tan(5x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "16/5",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 16/5.",
+            "id": 12
+        },
+        {
+            "question": "If the matrix A is [[20, 11], [0, 3]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "409",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[400, 253], [0, 9]]. Trace is sum of diagonal elements: 400 + 9.",
+            "id": 13
+        },
+        {
+            "id": 14,
+            "question": "The probability of 'r' successes in n trials for a Binomial variable is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u207fC\u1d63 p\u02b3 q\u207f\u207b\u02b3",
+                "B": "\u207fP\u1d63 p\u02b3 q\u207f\u207b\u02b3",
+                "C": "p\u02b3 q\u207f\u207b\u02b3",
+                "D": "\u207fC\u1d63 p\u207f\u207b\u02b3 q\u02b3"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^4 * (1-x)^5 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "11",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": 15
+        },
+        {
+            "id": 16,
+            "question": "Find the Mean of a random variable with P(x) = {1/6, 2/6, 3/6} for x={1, 2, 3}.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2.33",
+                "B": "2",
+                "C": "1.5",
+                "D": "3"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 17,
+            "question": "Cumulative Distribution Function F(x) is defined as P(X ______ x).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u2264",
+                "B": ">",
+                "C": "=",
+                "D": "\u2260"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 18,
+            "question": "If X ~ N(\u03bc,\u03c3\u00b2), then P(X\u2264\u03bc) = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0.5",
+                "B": "0",
+                "C": "1",
+                "D": "depends on \u03c3"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(9x) / tan(9x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "9/9",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 9/9.",
+            "id": 19
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(4x) / tan(13x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4/13",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 4/13.",
+            "id": 20
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(20x) / tan(6x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "20/6",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 20/6.",
+            "id": "random_variables_and_probability_distribution_21"
+        },
+        {
+            "question": "If the vectors a = 16i + 5j and b = 5i - j are perpendicular, find the value of 16*5.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "random_variables_and_probability_distribution_22"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^9 * (1-x)^5 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "16",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "random_variables_and_probability_distribution_23"
+        },
+        {
+            "question": "If the matrix A is [[6, 15], [0, 3]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "45",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[36, 135], [0, 9]]. Trace is sum of diagonal elements: 36 + 9.",
+            "id": "random_variables_and_probability_distribution_24"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(8x) / tan(2x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8/2",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 8/2.",
+            "id": "random_variables_and_probability_distribution_25"
+        },
+        {
+            "question": "If the matrix A is [[17, 13], [0, 7]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "338",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[289, 312], [0, 49]]. Trace is sum of diagonal elements: 289 + 49.",
+            "id": "random_variables_and_probability_distribution_26"
+        },
+        {
+            "question": "If the matrix A is [[5, 19], [0, 9]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "106",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[25, 266], [0, 81]]. Trace is sum of diagonal elements: 25 + 81.",
+            "id": "random_variables_and_probability_distribution_27"
+        },
+        {
+            "question": "If the vectors a = 7i + 13j and b = 9i - j are perpendicular, find the value of 7*9.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "13",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "random_variables_and_probability_distribution_28"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^19 * (1-x)^11 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "32",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "random_variables_and_probability_distribution_29"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^15 * (1-x)^20 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "37",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "random_variables_and_probability_distribution_30"
+        }
+    ]
 }
