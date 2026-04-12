@@ -1,3 +1,459 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7ddda24087f896eac20111cf2c86f304e255bd5f7629045a99db3db4890f8294
-size 16556
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "To translate axes to remove first-degree terms (x and y) from ax\u00b2 + 2hxy + by\u00b2 + 2gx + 2fy + c = 0, the origin must be shifted to the ______ of the conic.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Center",
+                "B": "Focus",
+                "C": "Vertex",
+                "D": "Directrix"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 2,
+            "question": "Locus of point whose distance from x-axis equals distance from y-axis is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "y = \u00b1x",
+                "B": "xy = 1",
+                "C": "x\u00b2 + y\u00b2 = 1",
+                "D": "x + y = 0"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 3,
+            "question": "Locus of a point from which tangents drawn to a circle are orthogonal is its ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Director circle",
+                "B": "Auxiliary circle",
+                "C": "Radical axis",
+                "D": "Pole"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 4,
+            "question": "The locus of a point such that the absolute difference of its distances from two fixed points is constant (less than distance between points) is a ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Hyperbola",
+                "B": "Ellipse",
+                "C": "Parabola",
+                "D": "Line pair"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "Locus of point P such that PA/PB = k (constant), where A,B are fixed points, is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "a circle (Apollonius circle)",
+                "B": "an ellipse",
+                "C": "a parabola",
+                "D": "a straight line"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 6,
+            "question": "Similarly, the relationship for y is y = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "X sin \u03b8 + Y cos \u03b8",
+                "B": "X sin \u03b8 - Y cos \u03b8",
+                "C": "X cos \u03b8 - Y sin \u03b8",
+                "D": "X cos \u03b8 + Y sin \u03b8"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "If a point on the sliding stick in the previous question is taken which divides it in ratio m:n, its locus is an ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Ellipse",
+                "B": "Circle",
+                "C": "Hyperbola",
+                "D": "Parabola"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 8,
+            "question": "In rotation of axes by an angle \u03b8 without shifting origin, the new coordinates (X, Y) relate to old (x, y) as x = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "X cos \u03b8 - Y sin \u03b8",
+                "B": "X cos \u03b8 + Y sin \u03b8",
+                "C": "X sin \u03b8 + Y cos \u03b8",
+                "D": "X sin \u03b8 - Y cos \u03b8"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 9,
+            "question": "Locus of midpoint of chords of x\u00b2+y\u00b2=r\u00b2 passing through (a,0) is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x\u00b2+y\u00b2=ax",
+                "B": "x\u00b2+y\u00b2=a\u00b2",
+                "C": "2ax+2by=a\u00b2+b\u00b2",
+                "D": "x(x\u2212a)+y\u00b2=0"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 10,
+            "question": "A stick of length L slides with its ends on two mutually perpendicular lines. The locus of its midpoint is a ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Circle",
+                "B": "Ellipse",
+                "C": "Straight Line",
+                "D": "Parabola"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 11,
+            "question": "The locus of a point such that the sum of its distances from two fixed points is constant (greater than distance between points) is an ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Ellipse",
+                "B": "Hyperbola",
+                "C": "Parabola",
+                "D": "Circle"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 12,
+            "question": "In translation of axes without rotation, if origin is shifted to (h, k), the new coordinates (X, Y) are related to old coordinates (x, y) by ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x = X + h, y = Y + k",
+                "B": "X = x + h, Y = y + k",
+                "C": "x = X - h, y = Y - k",
+                "D": "X = h - x, Y = k - y"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 13,
+            "question": "The locus of foot of perpendicular from origin to line x cos \u03b1 + y sin \u03b1 = p as \u03b1 varies is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x\u00b2+y\u00b2=p\u00b2",
+                "B": "x+y=p",
+                "C": "x\u00b2+y\u00b2=1",
+                "D": "x\u00b7cos \u03b1 + y\u00b7sin \u03b1 = 0"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 14,
+            "question": "The locus of a point such that the ratio of its distances from two fixed points is a constant k (k \u2260 1) is a ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Circle (Apollonius circle)",
+                "B": "Straight Line",
+                "C": "Ellipse",
+                "D": "Hyperbola"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 15,
+            "question": "Identify transforming property: In ax\u00b2 + 2hxy + by\u00b2 = 0 rotated by \u03b8, the quantity a + b remains ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Invariant",
+                "B": "Zero",
+                "C": "Doubled",
+                "D": "Negative"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 16,
+            "question": "If equation is f(x, y) = 0 and origin is shifted to (h, k), the transformed equation is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "f(X + h, Y + k) = 0",
+                "B": "f(X - h, Y - k) = 0",
+                "C": "f(X, Y) = 0",
+                "D": "f(x - h, y - k) = 0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "Locus of point equidistant from (2,3) and (4,1) is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x \u2212 y = 1",
+                "B": "x + y = 5",
+                "C": "2x \u2212 2y = 4",
+                "D": "x \u2212 y + 1 = 0"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 18,
+            "question": "If a = b in the conic equation, the angle of rotation required to remove the xy term is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "45\u00b0 or \u03c0/4",
+                "B": "90\u00b0 or \u03c0/2",
+                "C": "0\u00b0",
+                "D": "30\u00b0 or \u03c0/6"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 19,
+            "question": "Center of the conic ax\u00b2 + 2hxy + by\u00b2 + 2gx + 2fy + c = 0 is given by partial derivatives equating to zero: \u2202f/\u2202x = 0 and ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u2202f/\u2202y = 0",
+                "B": "\u2202f/\u2202z = 0",
+                "C": "f(x,y) = 0",
+                "D": "\u2202\u00b2f/\u2202x\u2202y = 0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 20,
+            "question": "If the constant ratio k = 1 in the distance from two fixed points, the locus is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "The perpendicular bisector",
+                "B": "A circle",
+                "C": "A parabola",
+                "D": "The line segment itself"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the vectors a = 8i + 8j and b = 2i - j are perpendicular, find the value of 8*2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "locus_21"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(6x) / tan(10x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6/10",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 6/10.",
+            "id": "locus_22"
+        },
+        {
+            "question": "If the matrix A is [[17, 16], [0, 7]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "338",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[289, 384], [0, 49]]. Trace is sum of diagonal elements: 289 + 49.",
+            "id": "locus_23"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^12 * (1-x)^19 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "33",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "locus_24"
+        },
+        {
+            "question": "If the vectors a = 2i + 3j and b = 5i - j are perpendicular, find the value of 2*5.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "locus_25"
+        },
+        {
+            "question": "If the vectors a = 9i + 11j and b = 2i - j are perpendicular, find the value of 9*2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "11",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "locus_26"
+        },
+        {
+            "question": "If the vectors a = 19i + 14j and b = 6i - j are perpendicular, find the value of 19*6.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "14",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "locus_27"
+        },
+        {
+            "question": "If the matrix A is [[2, 12], [0, 8]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "68",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[4, 120], [0, 64]]. Trace is sum of diagonal elements: 4 + 64.",
+            "id": "locus_28"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^5 * (1-x)^3 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "10",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "locus_29"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(8x) / tan(16x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8/16",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 8/16.",
+            "id": "locus_30"
+        }
+    ]
+}

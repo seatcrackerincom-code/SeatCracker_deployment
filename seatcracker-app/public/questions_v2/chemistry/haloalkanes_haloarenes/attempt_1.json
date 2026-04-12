@@ -1,3 +1,441 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:79c9ea66fa21cf8091249700ebf0557d85f86fd6aa537b8a04c6ffb6fa39de4d
-size 17532
+{
+    "questions": [
+        {
+            "question": "Which of the following undergoes SN1 reaction most readily?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "CH3Cl",
+                "B": "C2H5Cl",
+                "C": "(CH3)3CCl",
+                "D": "(CH3)2CHCl"
+            },
+            "answer": "C",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 1,
+            "tag": "pyq"
+        },
+        {
+            "question": "At 444 K, the equilibrium constant Kp for a reaction is 3. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": 2
+        },
+        {
+            "question": "At 350 K, the equilibrium constant Kp for a reaction is 3. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": 3
+        },
+        {
+            "question": "At 497 K, the equilibrium constant Kp for a reaction is 9. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": 4
+        },
+        {
+            "question": "At 418 K, the equilibrium constant Kp for a reaction is 5. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": 5
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 41\u00b0C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1-chloro-1-methylcyclohexane",
+                "B": "Chlorocyclohexane",
+                "C": "1-chlorohexane",
+                "D": "2-chlorohexane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3\u00b0 > 2\u00b0 > 1\u00b0). Option A forms a highly stable tertiary carbocation.",
+            "id": 6
+        },
+        {
+            "id": 7,
+            "question": "Which of the following is a gem-dihalide?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "CH2Cl-CH2Cl",
+                "B": "CH3-CHCl2",
+                "C": "CH3-CH2Cl",
+                "D": "CH2Cl2"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 8,
+            "question": "SN1 reaction is a ______ step process.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Single",
+                "B": "Two",
+                "C": "Three",
+                "D": "Instant"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 9,
+            "question": "The intermediate formed in SN1 reaction is a ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Carbanion",
+                "B": "Carbocation",
+                "C": "Free radical",
+                "D": "Carbene"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "The rate constant of a reaction is 2.99 x 10^-3 s^-1 at 299 K and 7.81 x 10^-3 s^-1 at 309 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "73.75",
+                "B": "88.5",
+                "C": "59.0",
+                "D": "83.75"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(7.81/2.99) = (Ea/8.314) * (1/299 - 1/309). Solving gives 73.75 kJ/mol.",
+            "id": 10
+        },
+        {
+            "id": 11,
+            "question": "Reactivity of alkyl halides towards SN2 reaction follows the order: ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3\u00b0 > 2\u00b0 > 1\u00b0 > Methyl",
+                "B": "Methyl > 1\u00b0 > 2\u00b0 > 3\u00b0",
+                "C": "2\u00b0 > 1\u00b0 > 3\u00b0",
+                "D": "All same"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 12,
+            "question": "SN1 reactions are favored by ______ solvents.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Non-polar",
+                "B": "Polar protic",
+                "C": "Polar aprotic",
+                "D": "Gaseous"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "29 g of a non-volatile solute (molar mass = 342 g/mol) is dissolved in 750 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.00203",
+                "B": "0.00406",
+                "C": "0.00102",
+                "D": "0.00304"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P\u00b0 - P)/P\u00b0 = X_solute",
+            "solution": "Moles solute = 29/342 = 0.085. Moles water = 750/18 = 41.67. Mole fraction = 0.00203.",
+            "id": 13
+        },
+        {
+            "id": 14,
+            "question": "SN1 reaction of an optically active halide results in ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Retention",
+                "B": "Racemization",
+                "C": "Inversion",
+                "D": "No change"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 15,
+            "question": "In SN2 reaction, the nucleophile attacks from the ______ side of the leaving group.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Same",
+                "B": "Opposite (Back-side)",
+                "C": "Adjacent",
+                "D": "Bottom"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 16,
+            "question": "Alkyl halides react with metallic sodium in dry ether to form alkanes. This is ______ reaction.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Fittig",
+                "B": "Wurtz",
+                "C": "Sandmeyer",
+                "D": "Gattermann"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 17,
+            "question": "Chlorination of Benzene in presence of FeCl3 gives ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Benzyl chloride",
+                "B": "Chlorobenzene",
+                "C": "Hexachlorocyclohexane",
+                "D": "Phenol"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 18,
+            "question": "Haloarenes are less reactive towards nucleophilic substitution than haloalkanes because of ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Resonance effect",
+                "B": "Sp2 hybridization of C",
+                "C": "Instability of phenyl cation",
+                "D": "All of the above"
+            },
+            "answer": "D"
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 53\u00b0C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-chloro-3-ethylpentane",
+                "B": "3-chloropentane",
+                "C": "2-chloropentane",
+                "D": "1-chloropentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3\u00b0 > 2\u00b0 > 1\u00b0). Option A forms a highly stable tertiary carbocation.",
+            "id": 19
+        },
+        {
+            "id": 20,
+            "question": "Chloroform (CHCl3) on oxidation in presence of light forms a poisonous gas called ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Methane",
+                "B": "Phosgene (COCl2)",
+                "C": "Mustard gas",
+                "D": "Tear gas"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.473 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.419",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.473 * 3.",
+            "id": "haloalkanes_haloarenes_21"
+        },
+        {
+            "question": "At 451 K, the equilibrium constant Kp for a reaction is 4. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": "haloalkanes_haloarenes_22"
+        },
+        {
+            "id": "haloalkanes_haloarenes_23",
+            "question": "Which undergoes nucleophilic substitution most readily?",
+            "options": {
+                "A": "C6H5Cl",
+                "B": "CH3Cl",
+                "C": "(CH3)3CCl",
+                "D": "CH2=CHCl"
+            },
+            "answer": "C",
+            "difficulty": "hard"
+        },
+        {
+            "question": "At 404 K, the equilibrium constant Kp for a reaction is 5. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": "haloalkanes_haloarenes_24"
+        },
+        {
+            "question": "The rate constant of a reaction is 2.59 x 10^-3 s^-1 at 298 K and 10.33 x 10^-3 s^-1 at 316 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "60.17",
+                "B": "72.2",
+                "C": "48.14",
+                "D": "70.17"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(10.33/2.59) = (Ea/8.314) * (1/298 - 1/316). Solving gives 60.17 kJ/mol.",
+            "id": "haloalkanes_haloarenes_25"
+        },
+        {
+            "question": "At 365 K, the equilibrium constant Kp for a reaction is 10. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": "haloalkanes_haloarenes_26"
+        },
+        {
+            "question": "At 362 K, the equilibrium constant Kp for a reaction is 10. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": "haloalkanes_haloarenes_27"
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.485 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.455",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.485 * 3.",
+            "id": "haloalkanes_haloarenes_28"
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.424 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.12",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.424 * 5.",
+            "id": "haloalkanes_haloarenes_29"
+        },
+        {
+            "question": "At 393 K, the equilibrium constant Kp for a reaction is 2. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": "haloalkanes_haloarenes_30"
+        }
+    ]
+}

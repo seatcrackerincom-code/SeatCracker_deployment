@@ -1,3 +1,306 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:556114bb431ab40d9674f2bc42824a247e71f4cdfe9452065045ab706c67625c
-size 10486
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "A solid sphere and a hollow sphere of same mass and radius rotate about their diameters. Which has more moment of inertia?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Solid sphere",
+                "B": "Hollow sphere",
+                "C": "Both same",
+                "D": "Depends on material"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "A capacitor of 1 microfarads is charged to 85 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3612.5 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 1 * 7225.",
+            "id": 2
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 4 m with speed 92 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "10580.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 8464 / 4.",
+            "id": 3
+        },
+        {
+            "question": "A capacitor of 2 microfarads is charged to 20 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "400.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 2 * 400.",
+            "id": 4
+        },
+        {
+            "question": "A car moves at 68 m/s and brakes to stop in 5 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-13.6 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 68)/5.",
+            "id": 5
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 3 m with speed 22 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1452.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 484 / 3.",
+            "id": 6
+        },
+        {
+            "question": "A car moves at 53 m/s and brakes to stop in 1 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-53.0 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 53)/1.",
+            "id": 7
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 1 m with speed 57 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "16245.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 3249 / 1.",
+            "id": 8
+        },
+        {
+            "question": "Direction of torque is perpendicular to both ______ and ______.",
+            "options": {
+                "A": "r and F",
+                "B": "v and a",
+                "C": "None",
+                "D": "L and \u03c9"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 9
+        },
+        {
+            "question": "A car moves at 30 m/s and brakes to stop in 2 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-15.0 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 30)/2.",
+            "id": 10
+        },
+        {
+            "question": "Condition for pure rolling is v_cm = ______.",
+            "options": {
+                "A": "\u03c9 R",
+                "B": "\u03c9 / R",
+                "C": "None",
+                "D": "Zero"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 11
+        },
+        {
+            "question": "Rotational kinetic energy K_rot = ______.",
+            "options": {
+                "A": "0.5 I \u03c9\u00b2",
+                "B": "0.5 m v\u00b2",
+                "C": "None",
+                "D": "I \u03c9"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 12
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 5 m with speed 15 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "405.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 225 / 5.",
+            "id": 13
+        },
+        {
+            "id": 14,
+            "question": "What happens to the centre of mass of a system when two particles of different masses move towards each other due to mutual attraction?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "It moves towards the heavier mass",
+                "B": "It moves towards the lighter mass",
+                "C": "It remains stationary",
+                "D": "It moves in a circle"
+            },
+            "answer": "C"
+        },
+        {
+            "question": "Parallel axis theorem states I = ______.",
+            "options": {
+                "A": "I_cm + Md\u00b2",
+                "B": "I_cm - Md\u00b2",
+                "C": "I_cm",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 15
+        },
+        {
+            "question": "Angular momentum L = ______.",
+            "options": {
+                "A": "I \u03c9",
+                "B": "m v",
+                "C": "None",
+                "D": "\u03c4 t"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 16
+        },
+        {
+            "id": 17,
+            "question": "Identify the position of CM for a triangular lamina.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "On any vertex",
+                "B": "Intersection of medians (centroid)",
+                "C": "On mid-point of any side",
+                "D": "Outside the lamina"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "A car moves at 18 m/s and brakes to stop in 2 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-9.0 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 18)/2.",
+            "id": 18
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 5 m with speed 91 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "11593.4 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 8281 / 5.",
+            "id": 19
+        },
+        {
+            "question": "An object of mass 6 kg is rotating in a circle of radius 5 m with speed 95 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "10830.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 6 * 9025 / 5.",
+            "id": 20
+        }
+    ]
+}

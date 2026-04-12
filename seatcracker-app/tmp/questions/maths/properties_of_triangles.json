@@ -1,3 +1,713 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d1867f18308a35a371da980843638d28fae9f01f71428b66c9e127d4f5ad5bb7
-size 20350
+{
+  "topic_id": 7,
+  "topic_name": "PROPERTIES OF TRIANGLES",
+  "weightage": 3,
+  "priority": "High",
+  "subtopics": [
+    "Sine, Cosine and Tangent Rules",
+    "Half-Angle Formulae & Area",
+    "Incircle, Excircles & Radii"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Sine Rule states that for any triangle ABC with sides a, b, c, the ratio a/sinA is equal to:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2R",
+        "B": "R",
+        "C": "4R",
+        "D": "R/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "The diagram show a triangle inscribed in a circle. The radius R of this circle is called the ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A triangle with all three vertices touching a circumscribed circle of radius R.",
+      "options": {
+        "A": "Circumradius",
+        "B": "Inradius",
+        "C": "Exradius",
+        "D": "Diameter"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "According to the Sine Rule, b/sinB = c/sinC = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a/sinA",
+        "B": "a/cosA",
+        "C": "2a",
+        "D": "R"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "The Cosine Rule for side 'a' in triangle ABC is a² = b² + c² - ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2bc cos A",
+        "B": "2bc sin A",
+        "C": "bc cos A",
+        "D": "bc sin A"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "The Cosine Rule can be rewritten to find cos A. cos A is equal to:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(b² + c² - a²) / 2bc",
+        "B": "(a² + b² - c²) / 2ab",
+        "C": "(a² + c² - b²) / 2ac",
+        "D": "(b² + c² - a²) / bc"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "The diagram show a triangle with a perpendicular dropped from vertex A to side BC. This projection helps derive the ______ Rule.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Triangle ABC with an altitude drawn from A to BC, splitting side a into two segments.",
+      "options": {
+        "A": "Projection",
+        "B": "Sine",
+        "C": "Tangent",
+        "D": "Half-angle"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "The Projection Rule states that side 'a' is equal to:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "b cos C + c cos B",
+        "B": "b sin C + c sin B",
+        "C": "a cos B + b cos A",
+        "D": "c cos A + a cos C"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "Napier's Analogy (Tangent Rule) states that tan((B-C)/2) is equal to:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "((b-c)/(b+c)) cot(A/2)",
+        "B": "((b+c)/(b-c)) cot(A/2)",
+        "C": "((b-c)/(b+c)) tan(A/2)",
+        "D": "((c-b)/(b+c)) cot(A/2)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "The sum of the angles of a plane triangle A + B + C is equal to:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "180°",
+        "B": "90°",
+        "C": "360°",
+        "D": "270°"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "In a triangle ABC, sin((A+B)/2) is equal to:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos(C/2)",
+        "B": "sin(C/2)",
+        "C": "cos C",
+        "D": "sin C"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "The semi-perimeter 's' of a triangle with sides a, b, c is defined as:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(a + b + c) / 2",
+        "B": "a + b + c",
+        "C": "(a + b - c) / 2",
+        "D": "(abc) / 2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "The half-angle formula for sin(A/2) is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(((s-b)(s-c)) / bc)",
+        "B": "√((s(s-a)) / bc)",
+        "C": "√(((s-b)(s-c)) / s(s-a))",
+        "D": "√((s(s-b)) / ac)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "The half-angle formula for cos(A/2) is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√((s(s-a)) / bc)",
+        "B": "√(((s-b)(s-c)) / bc)",
+        "C": "√(((s-a)(s-c)) / ac)",
+        "D": "√((s(s-b)) / ac)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "By definition, tan(A/2) is the ratio of sin(A/2) to cos(A/2). It is equal to:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(((s-b)(s-c)) / (s(s-a)))",
+        "B": "√((s(s-a)) / ((s-b)(s-c)))",
+        "C": "√(((s-a)(s-c)) / (s(s-b)))",
+        "D": "√(((s-a)(s-b)) / (s(s-c)))"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "The diagram show a triangle ABC with area denoted by Δ. Heron's formula for Δ is:",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A general triangle with sides a, b, c, emphasizing its area Δ enclosed inside.",
+      "options": {
+        "A": "√(s(s-a)(s-b)(s-c))",
+        "B": "s(s-a)(s-b)(s-c)",
+        "C": "(abc) / 4R",
+        "D": "rs"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "The area of a triangle Δ can also be calculated as:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/2) ab sin C",
+        "B": "ab cos C",
+        "C": "(1/2) ac sin B",
+        "D": "Both A and C"
+      },
+      "answer": "D"
+    },
+    {
+      "id": 17,
+      "question": "Using the circumradius R, the area Δ is equal to:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "abc / 4R",
+        "B": "abc / 2R",
+        "C": "4R / abc",
+        "D": "2R / abc"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "The diagram show an incircle of a triangle. The radius of this circle is the ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A triangle with a circle inscribed inside, touching all three sides, with radius labeled r.",
+      "options": {
+        "A": "Inradius (r)",
+        "B": "Circumradius (R)",
+        "C": "Exradius (r1)",
+        "D": "Centroid"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "The inradius 'r' is related to the area 'Δ' and semi-perimeter 's' as:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "r = Δ / s",
+        "B": "r = s / Δ",
+        "C": "r = Δs",
+        "D": "r = Δ² / s"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "The inradius 'r' can also be expressed in terms of half-angles as:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(s-a) tan(A/2)",
+        "B": "s tan(A/2)",
+        "C": "(s-a) sin(A/2)",
+        "D": "(s-b) cos(B/2)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "Using the circumradius R and half-angles, the inradius r is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4R sin(A/2) sin(B/2) sin(C/2)",
+        "B": "4R cos(A/2) cos(B/2) cos(C/2)",
+        "C": "R sin A sin B sin C",
+        "D": "2R sin(A/2) sin(B/2) sin(C/2)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "The diagram show an excircle opposite to vertex A. Its radius is denoted by ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A triangle with side BC extended. A circle tangent to BC and the extensions of AB and AC is drawn outside.",
+      "options": {
+        "A": "r₁",
+        "B": "r₂",
+        "C": "r₃",
+        "D": "R"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "The exradius r₁ opposite to angle A is equal to:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Δ / (s - a)",
+        "B": "Δ / (s - b)",
+        "C": "Δ / (s - c)",
+        "D": "Δ / s"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "Similarly, the exradius r₂ opposite to angle B is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Δ / (s - b)",
+        "B": "Δ / (s - a)",
+        "C": "Δ / (s - c)",
+        "D": "s / Δ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "In terms of half-angles, r₁ is equal to:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "s tan(A/2)",
+        "B": "(s-b) cot(C/2)",
+        "C": "(s-c) tan(B/2)",
+        "D": "Both A and B can generate valid expressions"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "The relationship 1/r₁ + 1/r₂ + 1/r₃ is equal to:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/r",
+        "B": "1/R",
+        "C": "Δ",
+        "D": "s"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "The area of the triangle Δ can be expressed in terms of the radii as Δ = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(r r₁ r₂ r₃)",
+        "B": "r r₁ r₂ r₃",
+        "C": "r + r₁ + r₂ + r₃",
+        "D": "√(R r₁ r₂ r₃)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "The diagram show a triangle with its incircle and three excircles. The sum r₁ + r₂ + r₃ - r involves the product 4R. The formula is r₁ + r₂ + r₃ - r = ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A triangle showing one incircle inside and three excircles on the outside tangents.",
+      "options": {
+        "A": "4R",
+        "B": "2R",
+        "C": "R",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "In terms of circumradius R and half-angles, r₁ = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4R sin(A/2) cos(B/2) cos(C/2)",
+        "B": "4R cos(A/2) sin(B/2) sin(C/2)",
+        "C": "4R cos(A/2) cos(B/2) cos(C/2)",
+        "D": "4R sin(A/2) sin(B/2) sin(C/2)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "The expression r₁r₂ + r₂r₃ + r₃r₁ is equal to:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "s²",
+        "B": "Δ²",
+        "C": "R²",
+        "D": "r²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "In an equilateral triangle, all three sides are equal (a=b=c). What is the value of angle A, B, and C?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "60°",
+        "B": "90°",
+        "C": "45°",
+        "D": "120°"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "For an equilateral triangle of side 'a', the area Δ is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(√3 / 4) a²",
+        "B": "(√3 / 2) a²",
+        "C": "(1 / 2) a²",
+        "D": "(√3) a²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "For an equilateral triangle, the circumradius R is related to side 'a' as R = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a / √3",
+        "B": "a / 2√3",
+        "C": "a √3",
+        "D": "a / 2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "For an equilateral triangle, the inradius r is ____ of circumradius R.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Half",
+        "B": "Equal",
+        "C": "Double",
+        "D": "One-third"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "The diagram show a pedal triangle formed by the feet of the altitudes. Its angles are:",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "An acute triangle ABC with a smaller triangle DEF inside formed by connecting the bases of the altitudes from A, B, C.",
+      "options": {
+        "A": "180°-2A, 180°-2B, 180°-2C",
+        "B": "A, B, C",
+        "C": "90°-A, 90°-B, 90°-C",
+        "D": "180°-A, 180°-B, 180°-C"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "The circumradius of the pedal triangle of triangle ABC is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "R/2",
+        "B": "R",
+        "C": "2R",
+        "D": "R/4"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "The distance between the circumcenter (O) and the incenter (I) of a triangle is given by Euler's Theorem as d² = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "R² - 2Rr",
+        "B": "R² + 2Rr",
+        "C": "R² - r²",
+        "D": "R² + r²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "The distance between circumcenter (O) and orthocenter (H) is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "R √(1 - 8 cosA cosB cosC)",
+        "B": "R √(1 + 8 cosA cosB cosC)",
+        "C": "R √(1 - cosA cosB cosC)",
+        "D": "2R cosA cosB cosC"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "In a right-angled triangle ABC with right angle at C, the circumradius R is equal to:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "c / 2",
+        "B": "c",
+        "C": "(a+b)/2",
+        "D": "a / 2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "In a right-angled triangle ABC with right angle at C, the inradius r is equal to:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(a + b - c) / 2",
+        "B": "(a + b + c) / 2",
+        "C": "(a - b + c) / 2",
+        "D": "abc / 2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "The value of a cos B + b cos A from the projection rule is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "c",
+        "B": "a",
+        "C": "b",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "The diagram show an excenter I₁ opposite to A. The distance AI₁ is:",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A line segment from vertex A to the center of the excircle opposite to A (I1).",
+      "options": {
+        "A": "r₁ / sin(A/2)",
+        "B": "r / sin(A/2)",
+        "C": "r₁ / cos(A/2)",
+        "D": "R / sin(A/2)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "The radius of the nine-point circle of a triangle is equal to ______ the circumradius.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Half",
+        "B": "Twice",
+        "C": "Equal to",
+        "D": "One-third"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "The orthocenter H, centroid G, and circumcenter O of any triangle are ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Collinear",
+        "B": "Concyclic",
+        "C": "Coincident",
+        "D": "Coplanar but non-collinear"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "The line passing through Orthocenter, Centroid, and Circumcenter is known as the ______ Line.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Euler",
+        "B": "Simson",
+        "C": "Pedal",
+        "D": "Pascal"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "The ratio of lengths HG : GO on the Euler line is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2 : 1",
+        "B": "1 : 2",
+        "C": "1 : 1",
+        "D": "3 : 1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "The diagram show an isosceles triangle where AB = AC. The angle opposite to these sides implies:",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "An isosceles triangle with tick marks on two sides indicating they are equal length.",
+      "options": {
+        "A": "Angle B = Angle C",
+        "B": "Angle A = 90°",
+        "C": "Angle A = Angle B",
+        "D": "Side BC is the hypotenuse"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "In any triangle ABC, the expression a(sin B - sin C) + b(sin C - sin A) + c(sin A - sin B) is equal to:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "abc",
+        "D": "2R"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "If the angles of a triangle are in A.P., then the middle angle is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "60°",
+        "B": "90°",
+        "C": "45°",
+        "D": "30°"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "If the sides of a triangle are 3, 4, and 5, the inradius r is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "1.5",
+        "D": "2.5"
+      },
+      "answer": "A"
+    }
+  ]
+}

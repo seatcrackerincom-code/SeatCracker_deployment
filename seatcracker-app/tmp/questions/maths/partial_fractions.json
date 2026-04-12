@@ -1,3 +1,712 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:940622d2dd344084bf2646d4f8d31e7caaab63ef918729e5b3069e7fa96f41eb
-size 22745
+{
+  "topic_id": 33,
+  "topic_name": "PARTIAL FRACTIONS",
+  "weightage": 1,
+  "priority": "Low",
+  "subtopics": [
+    "Types of Partial Fractions",
+    "Linear, Repeated, Quadratic Factors"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "A rational fraction P(x)/Q(x) where degree of P(x) is strictly less than degree of Q(x) is called a ______ fraction.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Proper",
+        "B": "Improper",
+        "C": "Mixed",
+        "D": "Complex"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "A rational fraction P(x)/Q(x) where degree of P(x) is greater than or equal to degree of Q(x) is an ______ fraction.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Improper",
+        "B": "Proper",
+        "C": "Irreducible",
+        "D": "Decimal"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "An improper fraction must first be converted into a ______ plus a proper fraction using polynomial long division.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Polynomial",
+        "B": "Constant",
+        "C": "Root",
+        "D": "Quotient fraction"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "The process of expressing a given rational polynomial fraction into the sum of simpler fractions is called resolving into ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Partial fractions",
+        "B": "Continued fractions",
+        "C": "Series expansions",
+        "D": "Factors"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "If Q(x) has a non-repeated linear factor (ax + b), the corresponding partial fraction is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "A / (ax + b)",
+        "B": "(Ax + B) / (ax + b)",
+        "C": "1 / (ax + b)",
+        "D": "A / (ax + b)²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "For 1/((x-1)(x-2)), the partial fraction decomposition takes the form ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "A/(x-1) + B/(x-2)",
+        "B": "(Ax+B)/((x-1)(x-2))",
+        "C": "A/(x-1) + Bx/(x-2)",
+        "D": "A/(x-1)² + B/(x-2)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "In the decomposition P(x)/((x-a)(x-b)) = A/(x-a) + B/(x-b), A can be found quickly using the ______ by setting x = a.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Cover-up method (Heaviside)",
+        "B": "Taylor expansion",
+        "C": "Integration by parts",
+        "D": "Binomial Theorem"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "According to Heaviside cover-up method, to find A in A/(x-a), we cover (x-a) in the original fraction and substitute x = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a",
+        "B": "0",
+        "C": "-a",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "If Q(x) has a repeated linear factor (ax + b)^k, it corresponds to a sum of ______ partial fractions.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "k",
+        "B": "k-1",
+        "C": "1",
+        "D": "k+1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "The partial fractions for repeated linear roots 1/(x-a)³ will be: A/(x-a) + B/(x-a)² + ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "C/(x-a)³",
+        "B": "C/(x-a)",
+        "C": "(Cx+D)/(x-a)³",
+        "D": "1/(x-a)³"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "If Q(x) contains a non-repeated irreducible quadratic factor (ax² + bx + c), the corresponding partial fraction is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(Ax + B) / (ax² + bx + c)",
+        "B": "A / (ax² + bx + c)",
+        "C": "(Ax² + B) / (ax² + bx + c)",
+        "D": "A / (ax+b) + B / (cx+d)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "For a rational function like (x² + 1) / (x³ + 1), the first step is to factorize the denominator logic entirely into ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Linear and irreducible quadratic factors over real numbers",
+        "B": "Only linear factors",
+        "C": "Taylor series parts",
+        "D": "Monomials"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "The denominator x³ - 1 factorizes as (x - 1)(x² + x + 1). Here, (x² + x + 1) has ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "No real roots / is irreducible over reals",
+        "B": "Two distinct real roots",
+        "C": "A repeated real root",
+        "D": "Rational roots"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "In the decomposition of x / ((x-1)(x²+1)), the correct form is A/(x-1) + ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(Bx + C)/(x²+1)",
+        "B": "B/(x²+1)",
+        "C": "(B+x)/(x²+1)",
+        "D": "C/(x-1)²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "If the denominator contains a repeated irreducible quadratic factor (ax²+bx+c)², the decomposition includes (Ax+B)/(ax²+bx+c) + ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(Cx+D)/(ax²+bx+c)²",
+        "B": "C/(ax²+bx+c)²",
+        "C": "(Cx²+Dx+E)/(ax²+bx+c)²",
+        "D": "C/(ax²+bx+c)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "When solving for coefficients A, B, C... by equating numerators, a common strategy is to substitute ______ values of x to eliminate terms.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Convenient/Root",
+        "B": "Complex only",
+        "C": "Random strictly negative",
+        "D": "Trigonometric"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "If equating numerators yields an identity true for all x, you can also solve for coefficients by equating the ______ of like powers of x.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Coefficients",
+        "B": "Derivatives",
+        "C": "Integrals",
+        "D": "Exponents"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "To resolve (x³ + 1) / (x² - 1) into partial fractions, the very first step is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Perform long division because it is an improper fraction",
+        "B": "Factor the denominator",
+        "C": "Set it equal to A/(x-1) + B/(x+1)",
+        "D": "Substitute x = 1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "The decomposition of 1 / (x² - a²) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/2a) [1/(x-a) - 1/(x+a)]",
+        "B": "(1/a) [1/(x-a) + 1/(x+a)]",
+        "C": "1/(x-a) - 1/(x+a)",
+        "D": "(1/2a) [1/(x+a) - 1/(x-a)]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "The decomposition of 1 / (a² - x²) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/2a) [1/(a-x) + 1/(a+x)]",
+        "B": "(1/2a) [1/(x-a) - 1/(x+a)]",
+        "C": "1/(a-x) + 1/(a+x)",
+        "D": "1/(a-x) - 1/(a+x)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "Resolving f(x) = (x-1)/((x-2)(x-3)) yields A/(x-2) + B/(x-3). The value of A by cover-up method is (2-1)/(2-3) = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "2",
+        "D": "1/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "In the same f(x) = (x-1)/((x-2)(x-3)), B is found using cover-up with x=3: (3-1)/(3-2) = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "-2",
+        "C": "1/2",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "For 1 / (x(x² + a²)), the partial fractions are A/x + (Bx+C)/(x²+a²). A is evaluated at x=0 as ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/a²",
+        "B": "1/a",
+        "C": "-1/a²",
+        "D": "a²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "In resolving x² / ((x-1)²(x+2)), the highest power factor is (x-1)². For A/(x-1) + B/(x-1)² + C/(x+2), B is calculated directly by cover-up with x=1. What about A?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "It requires taking a derivative or comparing coefficients",
+        "B": "Cover-up method works for A too",
+        "C": "A is always zero",
+        "D": "A = B"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "For an expression f(x)/Q(x), if Q(x) is expanded as xⁿ + ..., the number of unknown partial fraction constants exactly equals the ______ of Q(x).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Degree (n)",
+        "B": "Number of factors",
+        "C": "Leading coefficient",
+        "D": "Constant term"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "If the roots of the denominator are α₁, α₂, ..., α_n, and P(α_i) ≠ 0, and Q(x) = (x-α₁)(x-α₂)...(x-α_n), then the term A_i/(x-α_i) has A_i = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "P(α_i) / Q'(α_i)",
+        "B": "Q(α_i) / P'(α_i)",
+        "C": "P'(α_i) / Q(α_i)",
+        "D": "P(α_i) Q'(α_i)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "The identity A_i = P(α_i) / Q'(α_i) is known as the expansion theorem for partial fractions or ______ rule.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Heaviside's",
+        "B": "L'Hopital's",
+        "C": "Taylor's",
+        "D": "Cramer's"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "Let x² / ((x²+1)(x²+4)). We can substitute y = x² to turn the fraction into ______, making it easier to resolve.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y / ((y+1)(y+4))",
+        "B": "y² / ((y+1)(y+4))",
+        "C": "1 / ((y+1)(y+4))",
+        "D": "y / (y²+5y+4)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "When resolving into partial fractions for finding an integral, (Ax + B) / (ax² + bx + c) is usually further split because the Ax term requires ______, and the B term requires ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Logarithmic substitution, completing the square (arctan)",
+        "B": "Partial fractions again, differentiation",
+        "C": "Sine, Cosine",
+        "D": "Binomial theorem, Taylor series"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "For 1/(x⁴-1), the factorization of the denominator is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(x-1)(x+1)(x²+1)",
+        "B": "(x²-1)(x²+1)²",
+        "C": "(x-1)⁴",
+        "D": "(x-1)²(x+1)²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "For a binomial expansion (1+x)ⁿ where n is a negative integer or fraction, we often use partial fractions if the expression is given as a ______ before expansion.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Rational function",
+        "B": "Polynomial",
+        "C": "Transcendental function",
+        "D": "Differential equation"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "The diagram show a fraction decomposed. 2x / (x² - 1) is equal to 1/(x-1) + 1/(x+1). Adding these gives (x+1+x-1)/(x²-1) = 2x/(x²-1). This confirms partial fraction is the reverse operation of ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Fractions A/B and C/D being added using common denominator to form (AD+BC)/BD.",
+      "options": {
+        "A": "Adding algebraic fractions",
+        "B": "Differentiating functions",
+        "C": "Multiplying polynomials",
+        "D": "Integrating logarithms"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "To integrate ∫ P(x)/Q(x) dx efficiently using elementary functions, the rational function MUST be ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Expressed as partial fractions after polynomial division if improper",
+        "B": "Expanded via Taylor series",
+        "C": "Substituted with trigonometric terms directly",
+        "D": "Integrated by parts repeatedly"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "Consider 1/((x-1)(x-2)...(x-n)). The coefficient of 1/(x-r) is 1 / [(-1)^(n-r) * ______].",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(r-1)! (n-r)!",
+        "B": "r! n!",
+        "C": "(n-1)!",
+        "D": "(n-r)!"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "If denominator has a factor (x - 1)ⁿ, the partial fractions will be sum from k=1 to n of A_k / (x - 1)^k. Only A_n can be simply found by ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Cover-up rule directly (multiply (x-1)ⁿ and put x=1)",
+        "B": "Setting x=0",
+        "C": "Comparing coefficients of highest power",
+        "D": "Integration"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "When Q(x) has complex roots, they occur in ______ pairs if the polynomial has real coefficients.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Conjugate",
+        "B": "Reciprocal",
+        "C": "Negative",
+        "D": "Orthogonal"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "Because complex roots appear in conjugate pairs, the linear partial fractions C/(x-z_1) + C*/(x-z_1*) combine to form a real partial fraction with a ______ denominator.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Quadratic",
+        "B": "Linear",
+        "C": "Cubic",
+        "D": "Constant"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "If degree of P(x) is exactly equal to Q(x), the polynomial division yields a ______ plus a proper fraction.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Constant",
+        "B": "Linear polynomial x",
+        "C": "Zero",
+        "D": "Rational function"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "For (x³+x²)/(x³-x²), polynomial division gives 1 + ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(2x²) / (x³-x²)",
+        "B": "x² / (x³-x²)",
+        "C": "2x² / (x³+x²)",
+        "D": "1 / (x-1)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "Fractions like 1/(x(x+1)(x+2)) often form telescoping series sums in problems. Summing them up algebraically depends completely on the ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Partial fraction decomposition",
+        "B": "Arithmetic Progression formulas",
+        "C": "Geometric Progression limits",
+        "D": "Binomial expansion"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "Let f(x) = (x+2)/(x²-5x+6). The poles (singularities) of this rational function are at x = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2 and 3",
+        "B": "-2 and -3",
+        "C": "2 and -3",
+        "D": "Only 2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "In discrete math, the method of generating functions uses partial fractions extensively to find ______ sequences.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Closed-form formulas for",
+        "B": "Randomly generated",
+        "C": "Roots of",
+        "D": "Derivatives of"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "Laplace Transforms also use Partial Fractions when converting the frequency domain function F(s) back to the ______ domain f(t).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Time",
+        "B": "Spatial",
+        "C": "Complex",
+        "D": "Quantum"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "Decomposition of (x+1) / (x-1)³ requires setting it as A/(x-1) + B/(x-1)² + C/(x-1)³. A simpler method is substituting x-1 = y, giving (y+2) / y³ = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/y² + 2/y³",
+        "B": "1/y + 2/y²",
+        "C": "2/y² + 1/y³",
+        "D": "1/y³"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "When (1/y² + 2/y³) is put back in terms of x, you immediately get the partial fractions without undetermined coefficients. This is substitution method. y = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x - 1",
+        "B": "x + 1",
+        "C": "x",
+        "D": "x²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "Irreducible quadratics like x² + x + 1 have Discriminant Δ ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "< 0",
+        "B": "= 0",
+        "C": "> 0",
+        "D": "≥ 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "Can (Ax + B) / (x² + 4)² be broken down further with real coefficients?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "No, it is already in simplest partial fraction form",
+        "B": "Yes, into linear factors",
+        "C": "Yes, into A/(x²+4) + B/(x²+4)²",
+        "D": "Yes, with purely rational numbers"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "Which theorem fundamentally guarantees that ANY rational function can be decomposed into a sum of proper fractions with linear and irreducible quadratic denominators?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Fundamental Theorem of Algebra",
+        "B": "Remainder Theorem",
+        "C": "Cauchy Integral Theorem",
+        "D": "Weierstrass Approximation Theorem"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "If P(x)/Q(x) is an odd continuous rational function, its partial fraction components will exhibit symmetry such that A_i and -A_i pair with roots ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "c and -c",
+        "B": "c and 1/c",
+        "C": "Conjugate",
+        "D": "Positive"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "The number of equations required to solve the undetermined coefficients is equal to the ______ of the denominator Q(x).",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Degree",
+        "B": "Number of factors",
+        "C": "Coefficient of highest power",
+        "D": "Roots' sum"
+      },
+      "answer": "A"
+    }
+  ]
+}

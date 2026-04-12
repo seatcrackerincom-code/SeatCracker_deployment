@@ -1,3 +1,309 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:65f74fdc721fab376ccc6ec56abed138db17667f6c6b25a78822b7a4f2c1f6e5
-size 10862
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Locus of feet of perpendiculars from focus of a parabola to its tangents is the ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Tangent at the vertex",
+                "B": "Directrix",
+                "C": "Latus Rectum",
+                "D": "Auxiliary Circle"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 2,
+            "question": "Equation xy = c\u00b2 under rotation by 45\u00b0 becomes ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "X\u00b2 - Y\u00b2 = 2c\u00b2",
+                "B": "X\u00b2 + Y\u00b2 = 2c\u00b2",
+                "C": "X + Y = c",
+                "D": "X\u00b2 + Y\u00b2 = c\u00b2"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 3,
+            "question": "If an equation has no linear terms (no x, no y), the origin is exactly at the ______ of symmetry.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Center",
+                "B": "Focus",
+                "C": "Directrix",
+                "D": "Vertex"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 4,
+            "question": "Locus of point P such that PA\u00b2 + PB\u00b2 = constant, for fixed points A and B, is a ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Circle",
+                "B": "Straight line",
+                "C": "Parabola",
+                "D": "Ellipse"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "Rotation by 45\u00b0 transforms the standard rectangular hyperbola xy = c\u00b2 into standard form. The axes become the ______ of the hyperbola.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Principal axes (Transverse & Conjugate)",
+                "B": "Asymptotes",
+                "C": "Directrices",
+                "D": "Latus recta"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "Locus of feet of perpendiculars from foci of an ellipse to its tangents is its ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Auxiliary circle",
+                "B": "Director circle",
+                "C": "Major axis",
+                "D": "Minor axis"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "Locus of the centre of a circle which touches two intersecting lines involves their ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Angle bisectors",
+                "B": "Perpendiculars",
+                "C": "Parallels",
+                "D": "Intersection point only"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 8,
+            "question": "Locus of point P(x,y) such that the slope of PA and PB (A=(1,0), B=(\u22121,0)) multiply to 2 is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "y\u00b2=2(x\u00b2\u22121)",
+                "B": "y\u00b2+2x\u00b2=2",
+                "C": "x\u00b2\u2212y\u00b2=1",
+                "D": "2x\u00b2+y\u00b2=2"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 9,
+            "question": "A variable line passes through (1,2). Locus of foot of perpendicular from origin to this line is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x\u00b2+y\u00b2\u2212x\u22122y=0",
+                "B": "x\u00b2+y\u00b2=5",
+                "C": "x+2y=5",
+                "D": "x\u00b2+y\u00b2+x+2y=0"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(18x) / tan(9x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "18/9",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 18/9.",
+            "id": 10
+        },
+        {
+            "id": 11,
+            "question": "Locus of vertex of right angle inscribed in circle of radius r is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "a circle of radius r/\u221a2",
+                "B": "the same circle",
+                "C": "a circle of radius r\u221a2",
+                "D": "a point"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 12,
+            "question": "Locus of midpoints of parallel chords of slope m to circle x\u00b2+y\u00b2=r\u00b2 is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "a diameter perpendicular to the chords (slope = \u22121/m)",
+                "B": "another circle",
+                "C": "an ellipse",
+                "D": "a chord of contact"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 13,
+            "question": "Locus of the intersection of mutually perpendicular tangents to an ellipse is its ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Director circle",
+                "B": "Auxiliary circle",
+                "C": "Radical axis",
+                "D": "Incircle"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 14,
+            "question": "Locus of point P such that PA\u00b2 + PB\u00b2 = 2c\u00b2, where A=(\u2212a,0) and B=(a,0) is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x\u00b2+y\u00b2=c\u00b2\u2212a\u00b2",
+                "B": "x\u00b2+y\u00b2=c\u00b2+a\u00b2",
+                "C": "x\u00b2+y\u00b2=c\u00b2",
+                "D": "x\u00b2+y\u00b2+a\u00b2=c\u00b2"
+            },
+            "answer": "D",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 15,
+            "question": "In 3D, locus of point equidistant from two fixed points is a ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Plane (perpendicular bisecting plane)",
+                "B": "Line",
+                "C": "Sphere",
+                "D": "Circle"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 16,
+            "question": "In 3D, locus of a point at constant distance from a fixed line is a ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Cylinder",
+                "B": "Plane",
+                "C": "Sphere",
+                "D": "Cone"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "If a line passes through a fixed point (a, b), the locus of the foot of the perpendicular from origin to it is a ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Circle with origin and (a,b) as diameter endpoints",
+                "B": "Straight line",
+                "C": "Point",
+                "D": "Parabola"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 18,
+            "question": "When axes are translated to (h, k), the degree of the equation of a curve ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Remains unchanged",
+                "B": "Increases by 1",
+                "C": "Decreases by 1",
+                "D": "Cannot be predicted"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 19,
+            "question": "Another invariant under rotation for ax\u00b2 + 2hxy + by\u00b2 = 0 is the quantity ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "ab - h\u00b2",
+                "B": "a - b",
+                "C": "a\u00b2 + b\u00b2",
+                "D": "h / (a+b)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 20,
+            "question": "Locus of intersection of mutually perpendicular tangents to a parabola is the ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Directrix",
+                "B": "Axis",
+                "C": "Latus rectum",
+                "D": "Tangent at vertex"
+            },
+            "answer": "A",
+            "pyq": false
+        }
+    ]
+}

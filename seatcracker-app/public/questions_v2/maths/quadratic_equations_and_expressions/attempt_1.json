@@ -1,3 +1,459 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e0d4eb2bd6c8af6cc2f4ac0bb3cccbec3473c9a7fd7ed6706e4318e6803be7dd
-size 15789
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "The roots of equation 2x\u00b2 \u2212 7x + 3 = 0 are?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3 and 1/2",
+                "B": "2 and 3/2",
+                "C": "1 and 3/2",
+                "D": "3/2 and 2"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 2,
+            "question": "Two quadratic equations a1x\u00b2 + b1x + c1 = 0 and a2x\u00b2 + b2x + c2 = 0 have both roots common if ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "a1/a2 = b1/b2 = c1/c2",
+                "B": "a1=a2, b1=b2",
+                "C": "c1=c2",
+                "D": "a1c1 = a2c2"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 3,
+            "question": "The quadratic expression ax\u00b2 + bx + c has same sign as 'a' if D is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Negative",
+                "B": "Positive",
+                "C": "Zero",
+                "D": "Infinity"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 4,
+            "question": "If one root of ax\u00b2 + bx + c = 0 is reciprocal of the other, then ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "a = c",
+                "B": "a = b",
+                "C": "b = c",
+                "D": "a + c = 0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "If roots of x\u00b2 - px + q = 0 differ by unity, then ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "p\u00b2 = 4q + 1",
+                "B": "p\u00b2 = 4q - 1",
+                "C": "q\u00b2 = 4p + 1",
+                "D": "p = q + 1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "For what value of k, the equation x\u00b2 - kx + 4 = 0 has equal roots?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u00b14",
+                "B": "4",
+                "C": "2",
+                "D": "0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "For what k are roots of (k+1)x\u00b2\u22122(k\u22121)x+1=0 equal?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0 or 3",
+                "B": "1 or 3",
+                "C": "0 or \u22121",
+                "D": "3 or \u22121"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 8,
+            "question": "If \u03b1, \u03b2 are roots of ax\u00b2 + bx + c = 0, then 1/\u03b1 + 1/\u03b2 = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-b/c",
+                "B": "-c/b",
+                "C": "b/c",
+                "D": "a/c"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 9,
+            "question": "If \u03b1, \u03b2 are roots of ax\u00b2 + bx + c = 0, find \u03b1/\u03b2 + \u03b2/\u03b1.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(b\u00b2 - 2ac) / ac",
+                "B": "(b\u00b2 + 2ac) / ac",
+                "C": "b\u00b2 / ac",
+                "D": "1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 10,
+            "question": "If \u03b1,\u03b2 are roots of x\u00b2\u22125x+6=0, then \u03b1\u00b2+\u03b2\u00b2 = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "13",
+                "B": "17",
+                "C": "25",
+                "D": "11"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 11,
+            "question": "For the quadratic expression ax\u00b2 + bx + c, the y-coordinate of the vertex is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-D / 4a",
+                "B": "-b / 2a",
+                "C": "D / 4a",
+                "D": "b / 2a"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 12,
+            "question": "The maximum value of the expression -ax\u00b2 + bx + c (a > 0) occurs at x = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "b / 2a",
+                "B": "-b / 2a",
+                "C": "D / 4a",
+                "D": "0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 13,
+            "question": "If one root of x\u00b2+px+q=0 is twice the other, then 2p\u00b2 = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "9q",
+                "B": "4q",
+                "C": "2q",
+                "D": "8q"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 14,
+            "question": "The range of x\u00b2 + x + 1 for real x is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "[3/4, \u221e)",
+                "B": "(0, \u221e)",
+                "C": "R",
+                "D": "[1, \u221e)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 15,
+            "question": "The discriminant of 3x\u00b2\u22127x+2=0 is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "25",
+                "B": "49",
+                "C": "73",
+                "D": "5"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 16,
+            "question": "The roots of ax\u00b2 + bx + c = 0 are rational if a,b,c are rational and D is a ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Perfect Square",
+                "B": "Positive number",
+                "C": "Negative number",
+                "D": "Prime number"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "The condition for common root between a1x\u00b2 + b1x + c1 = 0 and a2x\u00b2 + b2x + c2 = 0 is denoted by a ______ relation.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(c1a2-c2a1)\u00b2 = (a1b2-a2b1)(b1c2-b2c1)",
+                "B": "a1b2 = b1a2",
+                "C": "c1/c2 = a1/a2",
+                "D": "Check discriminants"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 18,
+            "question": "If \u03b1, \u03b2 are roots of x\u00b2 - (p+1)x + q = 0, then (\u03b1+1)(\u03b2+1) = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "q + p + 2",
+                "B": "q - p",
+                "C": "p + q",
+                "D": "1 - q"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 19,
+            "question": "If \u03b1, \u03b2 are roots of ax\u00b2 + bx + c = 0, then the value of \u03b1\u00b2 + \u03b2\u00b2 is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(b\u00b2 - 2ac) / a\u00b2",
+                "B": "b\u00b2 / a\u00b2",
+                "C": "(b\u00b2 + 2ac) / a\u00b2",
+                "D": "c\u00b2/a\u00b2"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 20,
+            "question": "If the roots of ax\u00b2 + bx + c = 0 are equal in magnitude but opposite in sign, then ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "b = 0",
+                "B": "a = 0",
+                "C": "c = 0",
+                "D": "a = c"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^7 * (1-x)^15 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "24",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "quadratic_equations_and_expressions_21"
+        },
+        {
+            "question": "If the vectors a = 9i + 16j and b = 3i - j are perpendicular, find the value of 9*3.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "16",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "quadratic_equations_and_expressions_22"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^15 * (1-x)^17 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "34",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "quadratic_equations_and_expressions_23"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(9x) / tan(17x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "9/17",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 9/17.",
+            "id": "quadratic_equations_and_expressions_24"
+        },
+        {
+            "question": "If the vectors a = 9i + 8j and b = 1i - j are perpendicular, find the value of 9*1.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "quadratic_equations_and_expressions_25"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(12x) / tan(15x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "12/15",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 12/15.",
+            "id": "quadratic_equations_and_expressions_26"
+        },
+        {
+            "question": "If the matrix A is [[16, 2], [0, 3]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "265",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[256, 38], [0, 9]]. Trace is sum of diagonal elements: 256 + 9.",
+            "id": "quadratic_equations_and_expressions_27"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(19x) / tan(13x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "19/13",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 19/13.",
+            "id": "quadratic_equations_and_expressions_28"
+        },
+        {
+            "question": "If the matrix A is [[13, 3], [0, 8]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "233",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[169, 63], [0, 64]]. Trace is sum of diagonal elements: 169 + 64.",
+            "id": "quadratic_equations_and_expressions_29"
+        },
+        {
+            "question": "If the vectors a = 4i + 14j and b = 2i - j are perpendicular, find the value of 4*2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "14",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "quadratic_equations_and_expressions_30"
+        }
+    ]
+}

@@ -1,3 +1,307 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a342006b8c90b3fd3d5a08cd004145a60823ea5b5fe14b9ccf346705d391bbc
-size 16199
+[
+  {
+    "topic_id": 1,
+    "topic_name": "THERMODYNAMICS",
+    "formulas": [
+      { "subtopic": "Zeroth Law", "description": "Thermal equilibrium concept", "equation": "T_A = T_B = T_C" },
+      { "subtopic": "1st Law", "description": "Energy conservation", "equation": "ΔQ = ΔU + ΔW" },
+      { "subtopic": "Work (Isothermal)", "description": "Constant temperature expansion", "equation": "W = nRT ln(V₂/V₁)" },
+      { "subtopic": "Work (Adiabatic)", "description": "No heat exchange expansion", "equation": "W = (P₁V₁ - P₂V₂)/(γ - 1)" },
+      { "subtopic": "Carnot Efficiency", "description": "Heat engine limit", "equation": "η = 1 - (T_L/T_H)" },
+      { "subtopic": "COP Refrigerator", "description": "Cooling performance", "equation": "β = T_L / (T_H - T_L)" }
+    ]
+  },
+  {
+    "topic_id": 2,
+    "topic_name": "SYSTEM OF PARTICLES AND ROTATORY MOTION",
+    "formulas": [
+      { "subtopic": "Centre of Mass", "description": "Position vector of CM", "equation": "R_cm = (Σ m_i r_i) / Σ m_i" },
+      { "subtopic": "Torque", "description": "Moment of force", "equation": "τ = r × F = Iα" },
+      { "subtopic": "Moment of Inertia", "description": "Rotational analogous of mass", "equation": "I = Σ m_i r_i²" },
+      { "subtopic": "Angular Momentum", "description": "Moment of momentum", "equation": "L = r × p = Iω" },
+      { "subtopic": "Rolling KE", "description": "Total kinetic energy", "equation": "K = (1/2)mv² + (1/2)Iω²" }
+    ]
+  },
+  {
+    "topic_id": 3,
+    "topic_name": "MOVING CHARGES AND MAGNETISM",
+    "formulas": [
+      { "subtopic": "Biot-Savart Law", "description": "Differential magnetic field", "equation": "dB = (μ₀/4π) * (I dl sinθ / r²)" },
+      { "subtopic": "Lorentz Force", "description": "Total force on charge", "equation": "F = q(E + v × B)" },
+      { "subtopic": "Ampere's Law", "description": "Magnetic line integral", "equation": "∮ B · dl = μ₀ I_en" },
+      { "subtopic": "Solenoid Field", "description": "Field inside solenoid", "equation": "B = μ₀nI" },
+      { "subtopic": "Cyclotron Radius", "description": "Radius of circular path", "equation": "r = mv / (qB)" }
+    ]
+  },
+  {
+    "topic_id": 4,
+    "topic_name": "WORK POWER ENERGY",
+    "formulas": [
+      { "subtopic": "Work", "description": "Dot product of F and s", "equation": "W = F · s = F s cosθ" },
+      { "subtopic": "Power", "description": "Rate of work", "equation": "P = dW/dt = F · v" },
+      { "subtopic": "Kinetic Energy", "description": "Energy of motion", "equation": "K = (1/2)mv² = p²/(2m)" },
+      { "subtopic": "Potential Energy (Spring)", "description": "Elastic stored energy", "equation": "U = (1/2)kx²" }
+    ]
+  },
+  {
+    "topic_id": 5,
+    "topic_name": "OSCILLATIONS",
+    "formulas": [
+      { "subtopic": "SHM Equations", "description": "Displacement over time", "equation": "x = A sin(ωt + Φ), v = ω√(A² - x²)" },
+      { "subtopic": "Spring Period", "description": "Mass on spring", "equation": "T = 2π√(m/k)" },
+      { "subtopic": "Simple Pendulum", "description": "Point mass on string", "equation": "T = 2π√(L/g)" },
+      { "subtopic": "Restoring Force", "description": "Linear restoring force", "equation": "F = -kx" }
+    ]
+  },
+  {
+    "topic_id": 6,
+    "topic_name": "SEMI CONDUCTORS",
+    "formulas": [
+      { "subtopic": "Mass Action Law", "description": "Carrier concentration product", "equation": "n_e * n_h = n_i²" },
+      { "subtopic": "Diode Ideal Eq", "description": "Current characteristic", "equation": "I = I_s * [exp(eV/ηkT) - 1]" },
+      { "subtopic": "Transistor Gain", "description": "Base/Collector relation", "equation": "β = ΔI_c / ΔI_b" },
+      { "subtopic": "Logic Gates", "description": "Boolean Output (AND, OR, NOT)", "equation": "Y = A.B, Y = A+B, Y = !A" }
+    ]
+  },
+  {
+    "topic_id": 7,
+    "topic_name": "CURRENT ELECTRICITY",
+    "formulas": [
+      { "subtopic": "Ohm's Law", "description": "V-I-R Relation", "equation": "V = IR" },
+      { "subtopic": "Resistance", "description": "Geometry dependence", "equation": "R = ρ L / A" },
+      { "subtopic": "Kirchhoff Junction", "description": "Sum of currents", "equation": "Σ I_in = Σ I_out" },
+      { "subtopic": "Kirchhoff Loop", "description": "Sum of voltages", "equation": "Σ V = 0" },
+      { "subtopic": "Heating Effect", "description": "Joule heating", "equation": "H = I²Rt" }
+    ]
+  },
+  {
+    "topic_id": 8,
+    "topic_name": "ELECTROSTATIC POTENTIAL AND CAPACITANCE",
+    "formulas": [
+      { "subtopic": "Electric Potential", "description": "Energy per charge", "equation": "V = kq/r" },
+      { "subtopic": "Capacitance (Parallel)", "description": "Plate capacitor", "equation": "C = ε₀A/d" },
+      { "subtopic": "Capacitor Energy", "description": "Stored energy", "equation": "U = (1/2)CV² = Q²/(2C)" },
+      { "subtopic": "Combination", "description": "Series/Parallel C", "equation": "1/C_s = Σ 1/C_i, C_p = Σ C_i" }
+    ]
+  },
+  {
+    "topic_id": 9,
+    "topic_name": "FRICTION (NEWTONS LAWS OF MOTION)",
+    "formulas": [
+      { "subtopic": "Forces", "description": "Fundamental Law", "equation": "F_net = ma" },
+      { "subtopic": "Static Friction", "description": "Self-adjusting friction", "equation": "f_s ≤ μ_s N" },
+      { "subtopic": "Kinetic Friction", "description": "Constant sliding friction", "equation": "f_k = μ_k N" },
+      { "subtopic": "Centripetal Force", "description": "Circular motion requirement", "equation": "F_c = mv²/r" }
+    ]
+  },
+  {
+    "topic_id": 10,
+    "topic_name": "ATOMIC PHYSICS",
+    "formulas": [
+      { "subtopic": "Bohr Model", "description": "Angular momentum quant.", "equation": "mvr = nh / (2π)" },
+      { "subtopic": "Energy Levels", "description": "Hydrogen atom energy", "equation": "E_n = -13.6 Z²/n² (eV)" },
+      { "subtopic": "Radius of Orbit", "description": "n-th orbit radius", "equation": "r_n = 0.529 n²/Z (Å)" },
+      { "subtopic": "Photon Energy", "description": "Transition energy", "equation": "E_2 - E_1 = hf = hc/λ" }
+    ]
+  },
+  {
+    "topic_id": 11,
+    "topic_name": "ELECTRIC CHARGES AND FIELDS",
+    "formulas": [
+      { "subtopic": "Coulomb's Law", "description": "Force between charges", "equation": "F = k q₁q₂ / r²" },
+      { "subtopic": "Electric Field", "description": "Force per unit charge", "equation": "E = F/q = kq/r²" },
+      { "subtopic": "Electric Flux", "description": "Field through area", "equation": "Φ = E · A = E A cosθ" },
+      { "subtopic": "Gauss Law", "description": "Flux-charge relation", "equation": "Φ_total = Q_en / ε₀" },
+      { "subtopic": "Dipole Moment", "description": "Charge separation", "equation": "p = q * d" }
+    ]
+  },
+  {
+    "topic_id": 12,
+    "topic_name": "THERMAL PROPERTIES - I AND II",
+    "formulas": [
+      { "subtopic": "Expansion", "description": "Length change", "equation": "ΔL = α L₀ ΔT" },
+      { "subtopic": "Specific Heat", "description": "Energy-temp relation", "equation": "Q = mc ΔT" },
+      { "subtopic": "Latent Heat", "description": "Phase change energy", "equation": "Q = mL" },
+      { "subtopic": "Heat Conductivity", "description": "Rate of conduction", "equation": "dQ/dt = KA (T_H - T_L) / d" }
+    ]
+  },
+  {
+    "topic_id": 13,
+    "topic_name": "KINETIC THEORY OF GASES",
+    "formulas": [
+      { "subtopic": "Gas Law", "description": "Ideal equation", "equation": "PV = nRT" },
+      { "subtopic": "Pressure of Gas", "description": "Molecular collisions", "equation": "P = (1/3) ρ v_rms²" },
+      { "subtopic": "RMS Speed", "description": "Average kinetic speed", "equation": "v_rms = √(3RT/M)" },
+      { "subtopic": "Degrees of Freedom", "description": "Translational, rotational, vibrational", "equation": "f = 3 (mono), 5 (di)" }
+    ]
+  },
+  {
+    "topic_id": 14,
+    "topic_name": "MOTION IN A STRAIGHT LINE",
+    "formulas": [
+      { "subtopic": "Kinematics 1", "description": "Velocity-Time", "equation": "v = u + at" },
+      { "subtopic": "Kinematics 2", "description": "Distance-Time", "equation": "s = ut + (1/2)at²" },
+      { "subtopic": "Kinematics 3", "description": "Velocity-Distance", "equation": "v² - u² = 2as" },
+      { "subtopic": "Displacement (nth s)", "description": "In the n-th second", "equation": "s_n = u + (a/2)(2n-1)" }
+    ]
+  },
+  {
+    "topic_id": 15,
+    "topic_name": "ALTERNATING CURRENT",
+    "formulas": [
+      { "subtopic": "RMS Values", "description": "Average effects", "equation": "I_rms = I₀/√2, V_rms = V₀/√2" },
+      { "subtopic": "Reactance", "description": "Inductive/Capacitive", "equation": "X_L = ωL, X_C = 1/(ωC)" },
+      { "subtopic": "Impedance", "description": "Total resistance in AC", "equation": "Z = √(R² + (X_L - X_C)²)" },
+      { "subtopic": "Resonance", "description": "X_L = X_C condition", "equation": "ω_r = 1/√(LC)" }
+    ]
+  },
+  {
+    "topic_id": 16,
+    "topic_name": "ELECTRO MAGNETIC WAVES",
+    "formulas": [
+      { "subtopic": "EM Wave Speed", "description": "Speed in vacuum", "equation": "c = 1/√(μ₀ε₀)" },
+      { "subtopic": "Field Ratio", "description": "E and B relation", "equation": "E₀ / B₀ = c" },
+      { "subtopic": "Energy Density", "description": "Total stored in fields", "equation": "u = (1/2)ε₀E² + (1/2)B²/μ₀" }
+    ]
+  },
+  {
+    "topic_id": 17,
+    "topic_name": "GRAVITATION",
+    "formulas": [
+      { "subtopic": "Universal Law", "description": "Force between masses", "equation": "F = G M₁M₂ / r²" },
+      { "subtopic": "Gravity (g)", "description": "Acceleration from planet", "equation": "g = GM / R²" },
+      { "subtopic": "Escape Velocity", "description": "Leave planet's gravity", "equation": "v_e = √(2GM/R) = √(2gR)" },
+      { "subtopic": "Orbital Velocity", "description": "Stay in circular orbit", "equation": "v_o = √(GM/R)" },
+      { "subtopic": "Kepler's 3rd Law", "description": "Period-Radius relation", "equation": "T² ∝ R³" }
+    ]
+  },
+  {
+    "topic_id": 18,
+    "topic_name": "MECHANICAL PROPERTIES OF FLUIDS",
+    "formulas": [
+      { "subtopic": "Pressure", "description": "Hydrostatic pressure", "equation": "P = h ρ g" },
+      { "subtopic": "Continuity Eq.", "description": "Fluid flow rate", "equation": "A₁v₁ = A₂v₂" },
+      { "subtopic": "Bernoulli's Eq.", "description": "Conservation of fluid energy", "equation": "P + (1/2)ρv² + ρgh = constant" },
+      { "subtopic": "Stokes' Law", "description": "Viscous drag force", "equation": "F = 6πηrv" }
+    ]
+  },
+  {
+    "topic_id": 19,
+    "topic_name": "NUCLEAR PHYSICS",
+    "formulas": [
+      { "subtopic": "Mass-Energy", "description": "Einstein's relation", "equation": "E = mc²" },
+      { "subtopic": "Nuclear Size", "description": "Radius based on A", "equation": "R = R₀ A^(1/3)" },
+      { "subtopic": "Radioactive Decay", "description": "Activity over time", "equation": "N = N₀ e^(-λt)" },
+      { "subtopic": "Half-Life", "description": "Time for 50% decay", "equation": "T_(1/2) = 0.693 / λ" }
+    ]
+  },
+  {
+    "topic_id": 20,
+    "topic_name": "RAY OPTICS",
+    "formulas": [
+      { "subtopic": "Mirror Formula", "description": "Distance relation", "equation": "1/f = 1/v + 1/u" },
+      { "subtopic": "Snell's Law", "description": "Refraction bending", "equation": "n₁ sinθ₁ = n₂ sinθ₂" },
+      { "subtopic": "Lens Maker's Eq.", "description": "Focal length design", "equation": "1/f = (n-1)[1/R₁ - 1/R₂]" },
+      { "subtopic": "Lens Power", "description": "Converging strength", "equation": "P = 1/f" }
+    ]
+  },
+  {
+    "topic_id": 21,
+    "topic_name": "UNITS AND MEASUREMENTS",
+    "formulas": [
+      { "subtopic": "Error", "description": "Percentage error", "equation": "ΔA/A * 100%" },
+      { "subtopic": "Dimensions", "description": "Mass, Length, Time", "equation": "[M^a L^b T^c]" }
+    ]
+  },
+  {
+    "topic_id": 22,
+    "topic_name": "WAVE OPTICS",
+    "formulas": [
+      { "subtopic": "Young's Slit", "description": "Fringe width", "equation": "β = λD / d" },
+      { "subtopic": "Phase Diff.", "description": "Relation to path diff.", "equation": "ΔΦ = (2π/λ) * Δx" },
+      { "subtopic": "Brewster's Law", "description": "Partial polarization", "equation": "tan(i_p) = n" }
+    ]
+  },
+  {
+    "topic_id": 23,
+    "topic_name": "COMMUNICATION SYSTEM",
+    "formulas": [
+      { "subtopic": "Modulation Index", "description": "Signal/Carrier ratio", "equation": "μ = A_m / A_c" },
+      { "subtopic": "Range of Antenna", "description": "Broadcast distance", "equation": "d = √(2Rh)" }
+    ]
+  },
+  {
+    "topic_id": 24,
+    "topic_name": "ELECTRO MAGNETIC INDUCTION",
+    "formulas": [
+      { "subtopic": "Faraday's Law", "description": "Induced EMF", "equation": "ε = -dΦ/dt" },
+      { "subtopic": "Magnetic Flux", "description": "Field through loop", "equation": "Φ = B · A = BA cosθ" },
+      { "subtopic": "Self Inductance", "description": "EMF in same coil", "equation": "ε = -L di/dt" },
+      { "subtopic": "Motional EMF", "description": "Conductor in B field", "equation": "ε = Blv" }
+    ]
+  },
+  {
+    "topic_id": 25,
+    "topic_name": "MECHANICAL PROPERTIES OF SOLIDS",
+    "formulas": [
+      { "subtopic": "Young's Modulus", "description": "Elasticity longitudinal", "equation": "Y = stress / strain = (F/A) / (ΔL/L)" },
+      { "subtopic": "Bulk Modulus", "description": "Resistance to compression", "equation": "B = -P / (ΔV/V)" },
+      { "subtopic": "Shear Modulus", "description": "Rigidity modulus", "equation": "G = (F/A) / θ" }
+    ]
+  },
+  {
+    "topic_id": 26,
+    "topic_name": "WAVE MOTION",
+    "formulas": [
+      { "subtopic": "Wave Speed", "description": "Relation to f and λ", "equation": "v = f λ" },
+      { "subtopic": "String Speed", "description": "Transverse wave speed", "equation": "v = √(T/μ)" },
+      { "subtopic": "Sound Speed", "description": "Newton-Laplace Eq.", "equation": "v = √(γP/ρ)" }
+    ]
+  },
+  {
+    "topic_id": 27,
+    "topic_name": "MAGNETISM & MATTER",
+    "formulas": [
+      { "subtopic": "Magnetic Moment", "description": "Strength of dipole", "equation": "m = NIA" },
+      { "subtopic": "Earth Field Eq.", "description": "Horizontal/Vertical component", "equation": "B_H = B cosθ, B_V = B sinθ" },
+      { "subtopic": "Magnetic Susceptibility", "description": "Relation to Permeability", "equation": "μ_r = 1 + χ" }
+    ]
+  },
+  {
+    "topic_id": 28,
+    "topic_name": "MOTION IN A PLANE",
+    "formulas": [
+      { "subtopic": "Max Height", "description": "Projectile peak", "equation": "H = u² sin²θ / 2g" },
+      { "subtopic": "Range", "description": "Projectile horizontal", "equation": "R = u² sin2θ / g" },
+      { "subtopic": "Time of Flight", "description": "Total duration", "equation": "T = 2u sinθ / g" },
+      { "subtopic": "Centripetal Acc.", "description": "Angular velocity relation", "equation": "a_c = v²/r = ω²r" }
+    ]
+  },
+  {
+    "topic_id": 29,
+    "topic_name": "DUAL NATURE OF RADIATION & MATTER",
+    "formulas": [
+      { "subtopic": "Photon Energy", "description": "Energy-frequency", "equation": "E = hf" },
+      { "subtopic": "Photoelectric Eq.", "description": "Einstein's eq.", "equation": "hf = Φ₀ + K_max" },
+      { "subtopic": "de-Broglie λ", "description": "Matter wave λ", "equation": "λ = h/p = h/mv" }
+    ]
+  },
+  {
+    "topic_id": 30,
+    "topic_name": "VECTORS",
+    "formulas": [
+      { "subtopic": "Magnitude", "description": "Vector length", "equation": "|A| = √(Aₓ² + A_y² + A_z²)" },
+      { "subtopic": "Dot Product", "description": "Scalar result", "equation": "A · B = AB cosθ" },
+      { "subtopic": "Cross Product", "description": "Vector result", "equation": "A × B = AB sinθ n" }
+    ]
+  },
+  {
+    "topic_id": 31,
+    "topic_name": "COLLISIONS",
+    "formulas": [
+      { "subtopic": "Momentum Cons.", "description": "Initial = Final", "equation": "Σ p_i = Σ p_f" },
+      { "subtopic": "Restitution (e)", "description": "Speed ratio", "equation": "e = (v₂ - v₁) / (u₁ - u₂)" },
+      { "subtopic": "K.E. Loss", "description": "Inelastic collision loss", "equation": "ΔK = (1/2) * (m₁m₂/(m₁+m₂)) * u_rel² (1 - e²)" }
+    ]
+  }
+]

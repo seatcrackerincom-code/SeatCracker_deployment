@@ -1,3 +1,311 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:633a43910d2e1d103eb8c8051fec57d4458f54729ead314b4bbe6d31669c04c1
-size 9897
+{
+    "questions": [
+        {
+            "question": "Equation of motion v\u00b2 = u\u00b2 + ______.",
+            "options": {
+                "A": "2as",
+                "B": "at",
+                "C": "0.5at\u00b2",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 1
+        },
+        {
+            "question": "A body starts from rest. Distance covered in n-th second is s_n = ______.",
+            "options": {
+                "A": "u + 0.5 a (2n-1)",
+                "B": "u + a n",
+                "C": "None",
+                "D": "u + a(2n-1)"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 2
+        },
+        {
+            "question": "A car moves at 40 m/s and brakes to stop in 4 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-10.0 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 40)/4.",
+            "id": 3
+        },
+        {
+            "id": 4,
+            "question": "If x = at\u00b2, acceleration is 2a.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "Inertial frame? yes. frame which is not accelerated.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 2 m with speed 32 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "512.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 1024 / 2.",
+            "id": 6
+        },
+        {
+            "id": 7,
+            "question": "Ratio of s1 : s2 : s3 for free fall in equal times? yes. 1 : 3 : 5.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 8,
+            "question": "Ratio of speeds? no. Replaced: if two bodies are dropped from h1 and h2, ratio of times is \u221a(h1/h2).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "v=3t\u00b2-6t m/s. Particle at rest at t=",
+            "difficulty": "hard",
+            "pyq": true,
+            "options": {
+                "A": "0s and 2s",
+                "B": "1s and 3s",
+                "C": "2s and 3s",
+                "D": "0s only"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "id": 9
+        },
+        {
+            "id": 10,
+            "question": "If a body covers half distance at v1 and half at v2, Vavg = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2 v1 v2 / (v1 + v2)",
+                "B": "(v1+v2) / 2",
+                "C": "v1 v2",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 11,
+            "question": "If displacement x = at\u00b2 + bt + c, velocity at t=0 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "b",
+                "B": "a",
+                "C": "c",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Time of ascent is equal to time of descent in vacuum. True or False?",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "Only for small h",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 12
+        },
+        {
+            "question": "Can a body have zero velocity and non-zero acceleration?",
+            "options": {
+                "A": "Yes (at max height)",
+                "B": "No",
+                "C": "Only in circular motion",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 13
+        },
+        {
+            "question": "Wait? no. Replaced: kinematic equations are valid for ______ acceleration.",
+            "options": {
+                "A": "Constant",
+                "B": "Variable",
+                "C": "Zero only",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 14
+        },
+        {
+            "question": "Equation of motion s = ut + ______.",
+            "options": {
+                "A": "0.5 a t\u00b2",
+                "B": "v t",
+                "C": "a t",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 15
+        },
+        {
+            "question": "A car moves at 85 m/s and brakes to stop in 1 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-85.0 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 85)/1.",
+            "id": 16
+        },
+        {
+            "question": "Is displacement a scalar or vector?",
+            "options": {
+                "A": "Vector",
+                "B": "Scalar",
+                "C": "None",
+                "D": "Depends on reference"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 17
+        },
+        {
+            "question": "An object of mass 6 kg is rotating in a circle of radius 2 m with speed 51 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7803.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 6 * 2601 / 2.",
+            "id": 18
+        },
+        {
+            "question": "A car moves at 13 m/s and brakes to stop in 3 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-4.333333333333333 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 13)/3.",
+            "id": 19
+        },
+        {
+            "question": "Wait? no. Replaced: if velocity is constant, acceleration is ______.",
+            "options": {
+                "A": "Zero",
+                "B": "Constant",
+                "C": "Increasing",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 20
+        }
+    ]
+}

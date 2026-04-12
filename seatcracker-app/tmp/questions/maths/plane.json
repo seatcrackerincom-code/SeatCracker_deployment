@@ -1,3 +1,713 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fbae2493b56ee19ef91da289e20840d9f6628e6119ddd98ba6957184fd7fd3a0
-size 22242
+{
+  "topic_id": 28,
+  "topic_name": "PLANE",
+  "weightage": 1,
+  "priority": "Low",
+  "subtopics": [
+    "Equation of a plane",
+    "Intercept form",
+    "Normal form"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "The general equation of a plane is ax + by + cz + d = 0. Here, (a, b, c) represent the ______ of the plane.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Direction ratios of the normal",
+        "B": "Coordinates of a point on",
+        "C": "Direction cosines of a line in",
+        "D": "Intercepts on axes"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "The equation of the xy-plane is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "z = 0",
+        "B": "x = 0",
+        "C": "y = 0",
+        "D": "x + y = 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "The diagram show a plane with normal vector n. The equation of plane passing through point a with normal n is (r - a) . n = ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A plane containing point a, with a perpendicular normal vector n.",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "|n|",
+        "D": "|a|"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "The normal form of the equation of a plane is lx + my + nz = p, where p represents the ______ from the origin.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Perpendicular distance",
+        "B": "Shortest vector",
+        "C": "Intercept",
+        "D": "Area"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "In the normal form lx + my + nz = p, (l, m, n) represent the ______ of the normal.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Direction cosines",
+        "B": "Direction ratios",
+        "C": "Coordinates",
+        "D": "Tangent values"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "The intercept form of the equation of a plane is x/a + y/b + z/c = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "abc",
+        "D": "p"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "If a plane has intercepts 2, 3, 4 on x, y, z axes respectively, its equation is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "6x + 4y + 3z = 12",
+        "B": "2x + 3y + 4z = 1",
+        "C": "2x + 3y + 4z = 12",
+        "D": "4x + 3y + 2z = 12"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "The equation of a plane passing through three non-collinear points A(x₁,y₁,z₁), B(x₂,y₂,z₂), and C(x₃,y₃,z₃) can be found using a ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Determinant equated to zero",
+        "B": "Cross product being zero",
+        "C": "Matrix product",
+        "D": "Dot product being one"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "The angle θ between two planes a₁x + b₁y + c₁z + d₁ = 0 and a₂x + b₂y + c₂z + d₂ = 0 is given by cos θ = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|a₁a₂ + b₁b₂ + c₁c₂| / (√(a₁²+b₁²+c₁²)√(a₂²+b₂²+c₂²))",
+        "B": "|a₁b₂ - a₂b₁| / (√(a₁²+b₁²)√(a₂²+b₂²))",
+        "C": "(a₁+a₂) + (b₁+b₂) + (c₁+c₂)",
+        "D": "a₁a₂ + b₁b₂ + c₁c₂"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "Two planes are perpendicular if their normal vectors n₁ and n₂ satisfy n₁ . n₂ = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "|n₁||n₂|"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "Two planes a₁x + b₁y + c₁z + d₁ = 0 and a₂x + b₂y + c₂z + d₂ = 0 are parallel if ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a₁/a₂ = b₁/b₂ = c₁/c₂",
+        "B": "a₁a₂ + b₁b₂ + c₁c₂ = 0",
+        "C": "a₁/b₁ = a₂/b₂",
+        "D": "a₁a₂ = b₁b₂ = c₁c₂"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "The perpendicular distance from a point P(x₁, y₁, z₁) to the plane ax + by + cz + d = 0 is given by ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|ax₁ + by₁ + cz₁ + d| / √(a² + b² + c²)",
+        "B": "(ax₁ + by₁ + cz₁ + d) / (a + b + c)",
+        "C": "|ax₁ + by₁ + cz₁| / d",
+        "D": "√(x₁² + y₁² + z₁²) - d"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "The distance between two parallel planes ax + by + cz + d₁ = 0 and ax + by + cz + d₂ = 0 is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|d₁ - d₂| / √(a² + b² + c²)",
+        "B": "|d₁ + d₂| / √(a² + b² + c²)",
+        "C": "|d₁ - d₂| / (a + b + c)",
+        "D": "|d₁d₂| / √(a² + b² + c²)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "The equation of a plane passing through the intersection of two planes P₁=0 and P₂=0 is of the form ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "P₁ + λP₂ = 0",
+        "B": "P₁ - P₂ = 0",
+        "C": "P₁ * P₂ = 0",
+        "D": "P₁ / P₂ = λ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "The diagram shows a line and a plane. The angle φ between a line (parallel to vector b) and a plane (normal n) is given by sin φ = ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A line intersecting a plane, with the normal to the plane and angle between line and plane marked.",
+      "options": {
+        "A": "|b . n| / (|b||n|)",
+        "B": "|b × n| / (|b||n|)",
+        "C": "(b . n)",
+        "D": "|b + n|"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "A line is parallel to a plane if the dot product of the line's direction vector and the plane's normal vector is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "Undefined"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "The coordinate of the foot of the perpendicular from point (x₁, y₁, z₁) to the plane ax + by + cz + d = 0 is found using the fact that the line is ______ to the plane.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Parallel to the normal",
+        "B": "Perpendicular to the normal",
+        "C": "In the plane",
+        "D": "Skew to the plane"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "The image of a point with respect to a plane can be found by extending the perpendicular from the point to the plane by ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Twice the distance",
+        "B": "Half the distance",
+        "C": "The same direction vector",
+        "D": "An arbitrary length"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "The equation of a plane through the origin is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ax + by + cz = 0",
+        "B": "ax + by + cz = 1",
+        "C": "ax + by = c",
+        "D": "x + y + z = d"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "A vector parametric equation of a plane passing through point a and parallel to vectors b and c is r = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a + λb + μc",
+        "B": "a + λ(b × c)",
+        "C": "a + b + c",
+        "D": "λa + μb + νc = 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "For the vector equation r . n = q, if n is a unit normal n̂, then q represents the ______ from origin.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Perpendicular distance",
+        "B": "Area",
+        "C": "Volume",
+        "D": "Angle"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "A plane divides the line segment joining points A(x₁,y₁,z₁) and B(x₂,y₂,z₂) in the ratio - (ax₁+by₁+cz₁+d) / (ax₂+by₂+cz₂+d). If the ratio is negative, the points lie on ______ sides of the plane.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Same",
+        "B": "Opposite",
+        "C": "Perpendicular",
+        "D": "Parallel"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "To find the equation of a plane parallel to ax + by + cz + d = 0, we change ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Only the constant d",
+        "B": "The coefficients a, b, c",
+        "C": "The sign of a, b, c",
+        "D": "x, y, z to x², y², z²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "The diagram shows a tetrahedron formed by the coordinate planes and a plane with intercepts a,b,c. Its volume is V = ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A tetrahedron formed in the first octant, bounded by x=0, y=0, z=0, and a plane x/a + y/b + z/c = 1.",
+      "options": {
+        "A": "(1/6) abc",
+        "B": "(1/3) abc",
+        "C": "(1/2) abc",
+        "D": "abc"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "A plane is uniquely determined if it passes through ______ non-collinear points.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Three",
+        "B": "Two",
+        "C": "Four",
+        "D": "One"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "If a plane passes through the line of intersection of planes P₁=0 and P₂=0 and is perpendicular to a third plane P₃=0, we can find λ by setting the dot product of their ______ to zero.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Normal vectors",
+        "B": "Position vectors",
+        "C": "Direction cosines",
+        "D": "Intercepts"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "The Cartesian equation of a plane passing through (x₁, y₁, z₁) with normal direction ratios (a, b, c) is a(x - x₁) + b(y - y₁) + c(z - z₁) = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "d",
+        "D": "abc"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "Equation of the plane bisecting the angle between two planes a₁x+b₁y+c₁z+d₁=0 and a₂x+b₂y+c₂z+d₂=0 is obtained by equating their ______ from a general point.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Perpendicular distances",
+        "B": "Normal vectors",
+        "C": "Intercepts",
+        "D": "Angles"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "The locus of points equidistant from two intersecting planes consists of two mutually ______ planes.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Perpendicular",
+        "B": "Parallel",
+        "C": "Coincident",
+        "D": "Skew"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "Which of the following describes a family of planes?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "P₁ + kP₂ = 0",
+        "B": "ax + by + cz + d = 0",
+        "C": "x/a + y/b + z/c = 1",
+        "D": "(r - a) . n = 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "If the normal to a plane makes angles α, β, γ with the positive x, y, and z axes, then the direction cosines are (cos α, cos β, cos γ). We know cos²α + cos²β + cos²γ = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "-1",
+        "D": "3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "Equation of a plane passing through a point and containing a line can be formed by realizing the normal is perpendicular to the line's direction and the vector joining the point to ______ on the line.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "A point",
+        "B": "The origin",
+        "C": "The normal",
+        "D": "Another line"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "A line (x-x₁)/l = (y-y₁)/m = (z-z₁)/n lies wholly in the plane ax+by+cz+d=0 if al+bm+cn=0 and ax₁+by₁+cz₁+d = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "d"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "The diagram show a plane parallel to the z-axis. Its equation will not contain the variable ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A plane extending infinitely along the z-axis, intersecting the xy-plane in a line.",
+      "options": {
+        "A": "z",
+        "B": "x",
+        "C": "y",
+        "D": "Normal"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "The plane ax + by = c represents a plane parallel to the ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "z-axis",
+        "B": "x-axis",
+        "C": "y-axis",
+        "D": "xy-plane"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "Any plane passing through the origin can be represented as:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ax + by + cz = 0",
+        "B": "x/a + y/b + z/c = 1",
+        "C": "z = c",
+        "D": "x² + y² = z²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "Given two skew lines, a plane can be passed through one line and ______ to the other.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Parallel",
+        "B": "Perpendicular",
+        "C": "Intersecting",
+        "D": "Coincident"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "The shortest distance between two skew lines is measured along the line which is ______ to both of them.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Perpendicular",
+        "B": "Parallel",
+        "C": "Skew",
+        "D": "Tangent"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "If plane ax+by+cz=0 and line x=y=z intersect, the point of intersection is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(0,0,0)",
+        "B": "(1,1,1)",
+        "C": "(a,b,c)",
+        "D": "No intersection"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "The diagram show three mutually perpendicular coordinate planes. They divide space into ______ octants.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "The xy, yz, and xz planes intersecting at the origin, showing 8 regions.",
+      "options": {
+        "A": "8",
+        "B": "4",
+        "C": "6",
+        "D": "12"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "If a line is perpendicular to a plane, its direction ratios are proportional to the ______ of the plane.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Direction ratios of the normal",
+        "B": "Coordinates of any point",
+        "C": "Intercepts",
+        "D": "Determinant"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "A plane meets axes at A, B, C such that centroid of triangle ABC is (p, q, r). The equation of the plane is:",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x/p + y/q + z/r = 3",
+        "B": "x/p + y/q + z/r = 1",
+        "C": "p/x + q/y + r/z = 3",
+        "D": "px + qy + rz = 3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "To convert ax+by+cz+d=0 to normal form, divide by ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "±√(a²+b²+c²)",
+        "B": "d",
+        "C": "a+b+c",
+        "D": "abc"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "Two non-parallel planes always intersect in a ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Straight line",
+        "B": "Point",
+        "C": "Plane",
+        "D": "Curve"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "Three planes in general intersect at a ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Point",
+        "B": "Line",
+        "C": "Plane",
+        "D": "Curve"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "The direction ratios of the line of intersection of two planes a₁x+b₁y+c₁z+d₁=0 and a₂x+b₂y+c₂z+d₂=0 are proportional to the ______ of their normals.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Cross product",
+        "B": "Dot product",
+        "C": "Sum",
+        "D": "Difference"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "The diagram shows a variable plane at a constant distance p from the origin meeting axes in A, B, C. The locus of centroid of tetrahedron OABC is ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A variable plane intersecting the axes, forming a tetrahedron with the origin O.",
+      "options": {
+        "A": "x⁻² + y⁻² + z⁻² = 16p⁻²",
+        "B": "x² + y² + z² = p²",
+        "C": "x + y + z = p",
+        "D": "xyz = p³"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "Vectors coplanar with a given plane can be expressed as a ______ of two non-collinear vectors in the plane.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Linear combination",
+        "B": "Cross product",
+        "C": "Scalar product",
+        "D": "Projection"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "An equation f(x,y,z)=0 is a plane if it is a ______ equation in x, y, z.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Linear (first degree)",
+        "B": "Quadratic",
+        "C": "Cubic",
+        "D": "Differential"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "The constant term 'd' in ax+by+cz+d=0 determines the plane's ______ but not its orientation.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Distance from origin",
+        "B": "Normal vector",
+        "C": "Direction ratios",
+        "D": "Angle with axes"
+      },
+      "answer": "A"
+    }
+  ]
+}

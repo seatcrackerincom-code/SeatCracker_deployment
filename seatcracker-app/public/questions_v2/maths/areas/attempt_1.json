@@ -1,3 +1,449 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fc3636e82a499376f0fefbf5f0ada18fffa7a2cb4b6ba9ffa873dfcd28e0fd4a
-size 16056
+{
+    "questions": [
+        {
+            "question": "Area between y = sin x and x-axis for x \u2208 [0, \u03c0] is?",
+            "difficulty": "medium",
+            "options": {
+                "A": "2",
+                "B": "1",
+                "C": "\u03c0",
+                "D": "0"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "pyq": true,
+            "id": 1
+        },
+        {
+            "id": 2,
+            "question": "If the curve y = f(x) crosses the x-axis at x = c (a < c < b), to find the total area, the integral must be broken into ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "|\u222b from a to c f(x)dx| + |\u222b from c to b f(x)dx|",
+                "B": "\u222b from a to b f(x)dx directly",
+                "C": "\u222b from a to b |f(x)|dx",
+                "D": "Both A and C are correct formulations"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 3,
+            "question": "The area bounded by y = x\u00b2 and the line y = mx is calculated by \u222b (mx - x\u00b2) dx from x=0 to x=m. The result is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "m\u00b3 / 6",
+                "B": "m\u00b2 / 2",
+                "C": "m\u00b3 / 3",
+                "D": "m\u00b2 / 6"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Area of ellipse x\u00b2/a\u00b2 + y\u00b2/b\u00b2 = 1 is?",
+            "difficulty": "medium",
+            "options": {
+                "A": "\u03c0ab",
+                "B": "\u03c0(a+b)",
+                "C": "\u03c0a\u00b2b",
+                "D": "2\u03c0ab"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "pyq": true,
+            "id": 4
+        },
+        {
+            "id": 5,
+            "question": "The area enclosed by one arch of the cycloid x = a(\u03b8 - sin \u03b8), y = a(1 - cos \u03b8) and the x-axis is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3\u03c0a\u00b2",
+                "B": "2\u03c0a\u00b2",
+                "C": "\u03c0a\u00b2",
+                "D": "4\u03c0a\u00b2"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "Area of region bound by y = cos x and y = sin x from x = 0 to x = \u03c0/4 is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u221a2 - 1",
+                "B": "\u221a2 + 1",
+                "C": "2",
+                "D": "1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "The area of the region bounded by an ellipse x\u00b2/a\u00b2 + y\u00b2/b\u00b2 = 1 is given by ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u03c0ab",
+                "B": "\u03c0a\u00b2b\u00b2",
+                "C": "\u03c0(a+b)",
+                "D": "4ab"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Area bounded by y = x\u00b2 and y = x is?",
+            "difficulty": "medium",
+            "options": {
+                "A": "1/6",
+                "B": "1/3",
+                "C": "1/2",
+                "D": "1/4"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "pyq": true,
+            "id": 8
+        },
+        {
+            "id": 9,
+            "question": "If limits of integration are specified implicitly by absolute value functions like |x| + |y| = 1, the curve encloses a shape of a ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Square (diamond)",
+                "B": "Circle",
+                "C": "Ellipse",
+                "D": "Hyperbola"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 10,
+            "question": "The area enclosed by the astroid x^(2/3) + y^(2/3) = a^(2/3) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3\u03c0a\u00b2 / 8",
+                "B": "\u03c0a\u00b2 / 8",
+                "C": "3\u03c0a\u00b2",
+                "D": "a\u00b2"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 11,
+            "question": "The integral \u222b from 0 to a of \u221a(a\u00b2 - x\u00b2) dx geometrically represents ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Area of a quarter circle of radius a (\u03c0a\u00b2/4)",
+                "B": "Area of a semicircle",
+                "C": "Area of a full circle",
+                "D": "Volume of a sphere"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 12,
+            "question": "The area enclosed by the parabola y\u00b2 = 4ax and its latus rectum (x = a) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "8a\u00b2 / 3",
+                "B": "4a\u00b2 / 3",
+                "C": "2a\u00b2 / 3",
+                "D": "a\u00b2 / 3"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Area bounded by y = e\u02e3, y = e\u207b\u02e3 and x = 1 is?",
+            "difficulty": "hard",
+            "options": {
+                "A": "e + 1/e \u2212 2",
+                "B": "e \u2212 1/e",
+                "C": "e + 1/e",
+                "D": "e \u2212 2 + 1/e"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "pyq": true,
+            "id": 13
+        },
+        {
+            "question": "Area enclosed by circle x\u00b2+y\u00b2=a\u00b2 is?",
+            "difficulty": "medium",
+            "options": {
+                "A": "\u03c0a\u00b2",
+                "B": "2\u03c0a",
+                "C": "4\u03c0a\u00b2",
+                "D": "\u03c0a\u00b2/2"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "pyq": true,
+            "id": 14
+        },
+        {
+            "id": 15,
+            "question": "The area bounded by a curve x = g(y), the y-axis, and abscissae y = c and y = d is given by ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u222b from c to d g(y) dy",
+                "B": "\u222b from c to d g(x) dx",
+                "C": "\u222b from c to d g'(y) dy",
+                "D": "g(d) - g(c)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 16,
+            "question": "The integral \u222b from 0 to a of (b/a)\u221a(a\u00b2 - x\u00b2) dx geometrically represents ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Area of one quadrant of an ellipse (\u03c0ab/4)",
+                "B": "Area of a triangle",
+                "C": "Area of a parabola sector",
+                "D": "Area of full ellipse"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "The area enclosed by the graph |x| + |y| = a is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2a\u00b2",
+                "B": "4a\u00b2",
+                "C": "a\u00b2",
+                "D": "a\u00b2 / 2"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 18,
+            "question": "The area enclosed between parabolas y\u00b2 = 4ax and x\u00b2 = 4by is mathematically calculated as ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "16ab / 3",
+                "B": "8ab / 3",
+                "C": "4ab / 3",
+                "D": "ab"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 19,
+            "question": "To find the area between two curves y = f(x) and y = g(x) where f(x) \u2265 g(x) from x=a to x=b, the integral is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u222b from a to b [f(x) - g(x)] dx",
+                "B": "\u222b from a to b [f(x) + g(x)] dx",
+                "C": "\u222b from a to b [f(x) * g(x)] dx",
+                "D": "\u222b from a to b [f(x) / g(x)] dx"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 20,
+            "question": "If f(x) \u2264 0 for all x in [a, b], then the definite integral \u222b f(x) dx from a to b yields a negative value. The actual geometric area is obtained by ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "|\u222b f(x) dx| or -\u222b f(x) dx",
+                "B": "\u222b f(x) dx directly",
+                "C": "Zero",
+                "D": "\u222b |x| f(x) dx"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the vectors a = 5i + 8j and b = 2i - j are perpendicular, find the value of 5*2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "areas_21"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^7 * (1-x)^12 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "21",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "areas_22"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^13 * (1-x)^19 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "34",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "areas_23"
+        },
+        {
+            "question": "If the vectors a = 18i + 5j and b = 1i - j are perpendicular, find the value of 18*1.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "areas_24"
+        },
+        {
+            "question": "Evaluate the integral from 0 to pi/2 of (sin^2 x) / (sin^2 x + cos^2 x) dx.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "pi/4",
+                "B": "pi/2",
+                "C": "pi/8",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the property: Int(0 to a) f(x) dx = Int(0 to a) f(a-x) dx",
+            "solution": "Let I = Integral. Both numerator become sin^a and cos^a. 2I = Int(1) dx from 0 to pi/2 = pi/2 -> I = pi/4.",
+            "id": "areas_25"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^9 * (1-x)^12 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "23",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "areas_26"
+        },
+        {
+            "question": "If the matrix A is [[5, 20], [0, 7]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "74",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[25, 240], [0, 49]]. Trace is sum of diagonal elements: 25 + 49.",
+            "id": "areas_27"
+        },
+        {
+            "question": "If the matrix A is [[3, 18], [0, 3]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "18",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[9, 108], [0, 9]]. Trace is sum of diagonal elements: 9 + 9.",
+            "id": "areas_28"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(14x) / tan(2x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "14/2",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 14/2.",
+            "id": "areas_29"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(13x) / tan(7x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "13/7",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 13/7.",
+            "id": "areas_30"
+        }
+    ]
+}

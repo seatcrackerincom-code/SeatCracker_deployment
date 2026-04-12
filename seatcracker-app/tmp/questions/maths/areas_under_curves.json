@@ -1,3 +1,712 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27a61d96abca2f0e626077b4062c0955a17e29b6604ca58aed15e11e30fe1362
-size 19567
+{
+  "topic_id": 26,
+  "topic_name": "AREAS UNDER CURVES",
+  "weightage": 3,
+  "priority": "Medium",
+  "subtopics": [
+    "Area bounded by curves",
+    "Area between two curves"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "The area bounded by the curve y=f(x), x-axis, and ordinates x=a, x=b is given by ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∫_a^b |y| dx",
+        "B": "∫_a^b x dy",
+        "C": "dy/dx",
+        "D": "∫_a^b y² dx"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "The area bounded by the curve x=g(y), y-axis, and abscissae y=c, y=d is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∫_c^d |x| dy",
+        "B": "∫_c^d y dx",
+        "C": "dx/dy",
+        "D": "∫_c^d x² dy"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "Area is always a ______ quantity.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Positive",
+        "B": "Negative",
+        "C": "Zero",
+        "D": "Complex"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "The diagram shows an area below the x-axis. Evaluating ∫_a^b y dx here gives a ______ value.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Curve completely below the x-axis from x=a to x=b.",
+      "options": {
+        "A": "Negative",
+        "B": "Positive",
+        "C": "Zero",
+        "D": "Undefined"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "If a curve crosses the x-axis at x=c between a and b, the total area is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|∫_a^c y dx| + |∫_c^b y dx|",
+        "B": "∫_a^b y dx",
+        "C": "∫_a^c y dx - ∫_c^b y dx",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "The diagram shows two curves y=f(x) and y=g(x) intersecting at a and b, with f(x) ≥ g(x). The area between them is ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Two curves intersecting at a and b, forming an enclosed region.",
+      "options": {
+        "A": "∫_a^b (f(x) - g(x)) dx",
+        "B": "∫_a^b (f(x) + g(x)) dx",
+        "C": "∫_a^b f(x)g(x) dx",
+        "D": "∫_a^b g(x) dx / f(x)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "Area of the circle x² + y² = a² using integration is evaluated as 4 * ∫_0^a ______ dx.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(a² - x²)",
+        "B": "x²",
+        "C": "√(x² - a²)",
+        "D": "a²-x²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "Total area of circle x² + y² = a² is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "πa²",
+        "B": "2πa",
+        "C": "(4/3)πa³",
+        "D": "πa²/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "Area of the ellipse x²/a² + y²/b² = 1 is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "πab",
+        "B": "πa²b",
+        "C": "πab²",
+        "D": "(4/3)πab"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "The diagram shows the area bounded by y²=4ax and its latus rectum. It equals ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Parabola y²=4ax with vertical line x=a (latus rectum) and vertex at origin.",
+      "options": {
+        "A": "8a²/3",
+        "B": "4a²/3",
+        "C": "2a²/3",
+        "D": "8a²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "Area of the region bounded by y = sin x and x-axis from x=0 to x=π is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "0",
+        "D": "π"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "Area bounded by y = cos x and x-axis from x=-π/2 to x=π/2 is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "π",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "To find area bounded by two intersecting parabolas y²=4ax and x²=4ay, we first find their ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Points of intersection",
+        "B": "Foci",
+        "C": "Directrices",
+        "D": "Axes"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "The diagram shows the area between y²=4ax and x²=4ay. It equals ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Two intersecting parabolas opening upwards and rightwards enclosing a region.",
+      "options": {
+        "A": "16a²/3",
+        "B": "8a²/3",
+        "C": "4a²/3",
+        "D": "16a²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "Area bounded by y=e^x, y=e^{-x} and the line x=1 is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e + 1/e - 2",
+        "B": "e - 1/e",
+        "C": "e + 1/e",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "Area bounded by y = ln x, x-axis and x=e is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "e",
+        "C": "e-1",
+        "D": "1/e"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "The diagram shows area under y=1/x from x=1 to x=a. It represents ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Hyperbola y=1/x in first quadrant, area selected from x=1 to x=a.",
+      "options": {
+        "A": "ln a",
+        "B": "1/a - 1",
+        "C": "a-1",
+        "D": "e^a"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "Area of the region {(x,y) : x² ≤ y ≤ x} is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/6",
+        "B": "1/3",
+        "C": "1/2",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "Area bounded by the curve y=x³ and the lines y=8, x=0 is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "12",
+        "B": "16",
+        "C": "8",
+        "D": "4"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "The diagram shows the region between y=x² and y=|x|. Its area is ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Parabola y=x² and V-shape y=|x| forming two symmetric enclosed regions.",
+      "options": {
+        "A": "1/3",
+        "B": "1/6",
+        "C": "2/3",
+        "D": "1/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "Area enclosed by the curve |x| + |y| = 1 is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "4",
+        "D": "1/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "The diagram shows a rectangle inscribed in the region |x| + |y| = 1. The maximum area is ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Square |x|+|y|=1 rotated by 45 degrees, with a rectangle inside.",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "1/2",
+        "D": "1/4"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "Area bounded by y=x|x|, x-axis and ordinates x=-1 and x=1 is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2/3",
+        "B": "0",
+        "C": "1/3",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "Area enclosed by the loop of the curve y² = x(x-a)² is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "8a³/15",
+        "B": "4a³/15",
+        "C": "2a³/15",
+        "D": "a³/3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "Area of one arch of the cycloid x=a(θ-sinθ), y=a(1-cosθ) is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3πa²",
+        "B": "2πa²",
+        "C": "πa²",
+        "D": "4πa²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "The diagram shows the area bounded by the asteroid x^{2/3} + y^{2/3} = a^{2/3}. The total area is ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Star-shaped asteroid curve enclosed within all four quadrants.",
+      "options": {
+        "A": "3πa²/8",
+        "B": "πa²/8",
+        "C": "3πa²",
+        "D": "πa²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "Area common to the circles x² + y² = 4 and x² + y² = 4x is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "8π/3 - 2√3",
+        "B": "8π/3 + 2√3",
+        "C": "4π/3 - √3",
+        "D": "4π"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "The diagram shows area between y=sin x and y=cos x from x=0 to x=π/2. It equals ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Sine and cosine waves intersecting, enclosing two regions from 0 to π/2.",
+      "options": {
+        "A": "2√2 - 2",
+        "B": "√2 - 1",
+        "C": "2",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "Area bounded by a parabola y=ax²+bx+c and a straight line is always ______ of the area of circumscribing parallelogram.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2/3",
+        "B": "1/2",
+        "C": "1/3",
+        "D": "3/4"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "The diagram shows area of triangle formed by tangent to y=1/x and the axes. This area is ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Tangent line to curve y=1/x forming a right triangle with coordinate axes.",
+      "options": {
+        "A": "A constant (2)",
+        "B": "Dependent on point",
+        "C": "0",
+        "D": "Infinity"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "Area bounded by y=tan x, x-axis and x=π/4 is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/2)ln 2",
+        "B": "ln 2",
+        "C": "(1/2)ln 3",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "Area of the region bounded by x²=4y and x=4y-2 is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "9/8",
+        "B": "3/8",
+        "C": "5/8",
+        "D": "1/8"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "When finding area, if curve is symmetric about both axes, we can evaluate area in first quadrant and multiply by ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4",
+        "B": "2",
+        "C": "1",
+        "D": "8"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "If ∫_0^a f(x) dx represents area, a scaling of x-axis by k results in area ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Multiplying by k",
+        "B": "Dividing by k",
+        "C": "Remaining same",
+        "D": "Squaring"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "Area bounded by y = sin²x from 0 to π is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/2",
+        "B": "π",
+        "C": "π/4",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "The diagram shows area under y=log_a x. It is evaluated using ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Graph of logarithm with area shaded to the x-axis.",
+      "options": {
+        "A": "Integration by parts",
+        "B": "Standard formula",
+        "C": "Substitution",
+        "D": "Partial fractions"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "Area bounded by curve y=x²-4 and the lines y=0 is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "32/3",
+        "B": "16/3",
+        "C": "8/3",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "The area of the region {(x,y) : y² ≤ 2x and y ≥ 4x-1} is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "9/32",
+        "B": "9/16",
+        "C": "3/8",
+        "D": "5/32"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "Area enclosed by the curves y=sin x and y=cos x in the interval [0, 2π] is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4√2",
+        "B": "2√2",
+        "C": "4",
+        "D": "2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "The diagram shows the area bounded by y=sec²x and y=0 from x=0 to x=π/4. This area is ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Graph of sec²x with area shaded from x=0 to π/4.",
+      "options": {
+        "A": "1",
+        "B": "√2",
+        "C": "π/4",
+        "D": "1/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "Area between two concentric circles of radii R and r (R>r) is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π(R² - r²)",
+        "B": "π(R - r)²",
+        "C": "2π(R - r)",
+        "D": "(π/2)(R² - r²)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "The area of region bounded by x²+y²=1 and |x|+|y|=1 is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π - 2",
+        "B": "π - 1",
+        "C": "2π - 2",
+        "D": "π/2 - 1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "Area bounded by the curve y=e^(-x) and x-axis from x=0 to x=∞ is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "e",
+        "C": "∞",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "The diagram shows a region defined by y ≥ x² and x²+y² ≤ 2. The area is ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Circle overlapping with parabola, intersecting at (-1,1) and (1,1).",
+      "options": {
+        "A": "π/2 + 1/3",
+        "B": "π - 1/3",
+        "C": "π/2 - 1/3",
+        "D": "π/4 + 1/3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "Area bounded by y = x + sin x and its inverse between x=0 and 2π is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "8",
+        "B": "4",
+        "C": "2π",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "The area bounded by curves y = |x| - 1 and y = -|x| + 1 is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "1",
+        "D": "√2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "The diagram shows the area between y=tan x and y=cot x in the first quadrant up to intersection. It is ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Intersection of tan and cot curves in quadrant 1.",
+      "options": {
+        "A": "(1/2)ln 2",
+        "B": "ln 2",
+        "C": "1",
+        "D": "π/4"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "Area under the normal distribution curve y = 1/√(2π) e^{-x²/2} from -∞ to ∞ is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "√π",
+        "C": "2π",
+        "D": "e"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "Area between y = 2 - x² and y = x is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "9/2",
+        "B": "9/4",
+        "C": "3",
+        "D": "27/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "To evaluate the area of sector of a curve in polar coordinates r=f(θ), we use the integral ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/2) ∫ r² dθ",
+        "B": "∫ r dθ",
+        "C": "(1/2) ∫ r dθ",
+        "D": "∫ r² dθ"
+      },
+      "answer": "A"
+    }
+  ]
+}

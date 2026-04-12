@@ -1,3 +1,309 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:55b28b304cfffbb2f6520ad6fcfbf7ae819b6a1ffe4691eddb3fc1f172f186cb
-size 8553
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "If a line's direction ratios are (2, -1, 2), its direction cosines are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(2/3, -1/3, 2/3)",
+        "B": "(2, -1, 2)",
+        "C": "(2/√5, -1/√5, 2/√5)",
+        "D": "(4/9, 1/9, 4/9)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "Sine of the angle θ between two lines with DCs (l₁,m₁,n₁) and (l₂,m₂,n₂) is given by sin θ = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√[Σ (m₁n₂ - m₂n₁)²]",
+        "B": "l₁l₂ + m₁m₂ + n₁n₂",
+        "C": "Σ l₁l₂",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 3,
+      "question": "The components of any position vector OP are exatamente those of the ______ scaled by distance |OP|.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Direction Cosines",
+        "B": "Tangents",
+        "C": "Orthogonal vectors",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 4,
+      "question": "Direction Cosines for a directed line map strictly to ______ tuple.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "One unique",
+        "B": "Two",
+        "C": "Three",
+        "D": "An infinite set"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 5,
+      "question": "The equation of plane passing through (1,0,−2),(3,−1,0),(5,2,1) is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2x−3y−2z=6",
+        "B": "x+y+z=−1",
+        "C": "x−y+2z=3",
+        "D": "2x−y−z=4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 6,
+      "question": "Points A,B,C are collinear if their internal DRs like DRs(AB) and DRs(BC) are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Proportional",
+        "B": "Orthogonal",
+        "C": "Zero",
+        "D": "Equal"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 7,
+      "question": "Direction ratios of the x-axis can be written as (k, 0, 0). Its explicit positive DCs are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1, 0, 0)",
+        "B": "(-1, 0, 0)",
+        "C": "(√2, 0, 0)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 8,
+      "question": "If DC's are (l,m,n) and its reflected in the xy-plane, the new DC's are ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(l, m, -n)",
+        "B": "(-l, -m, n)",
+        "C": "(l, -m, -n)",
+        "D": "(n, m, l)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 9,
+      "question": "The point of intersection of lines (x−1)/2=(y−2)/3=(z−3)/4 and (x−4)/5=(y−1)/2=(z−0)/1 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "no intersection",
+        "B": "(1,2,3)",
+        "C": "(3,5,7)",
+        "D": "(5,7,9)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 10,
+      "question": "If l, m, n are DC's of a line passing through origin, the line traces out a ______ surface if l²+m²=n² is imposed.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Cone",
+        "B": "Sphere",
+        "C": "Cylinder",
+        "D": "Plane"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 11,
+      "question": "Volume of tetrahedron with vertices (0,0,0),(1,0,0),(0,1,0),(0,0,1) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/6",
+        "B": "1/3",
+        "C": "1/2",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 12,
+      "question": "If lines have DRs proportional to (1,2,3) and (-3,0,1), they are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Perpendicular (1*-3 + 2*0 + 3*1 = 0)",
+        "B": "Parallel",
+        "C": "Intersecting at 45°",
+        "D": "Skew lines"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 13,
+      "question": "Sum of squares of direction cosines is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos²α + cos²β + cos²γ = 1",
+        "B": "sin²α + sin²β + sin²γ = 1",
+        "C": "tan²α + tan²β + tan²γ = 1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 14,
+      "question": "Distance between parallel planes 2x+y−2z=3 and 4x+2y−4z=9 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/2",
+        "B": "3/2",
+        "C": "1",
+        "D": "1/3"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 15,
+      "question": "Using double-angle, cos 2α + cos 2β + cos 2γ evaluates to ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "0",
+        "D": "3"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 16,
+      "question": "A line which makes angle 60° with x-axis, 60° with y-axis, will make angle γ with z-axis where γ = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "45° or 135°",
+        "B": "90°",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 17,
+      "question": "If l + m + n = 0 and l² + m² - n² = 0, solving them yields ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Two distinct lines",
+        "B": "A single line",
+        "C": "Three lines",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 18,
+      "question": "Do Direction Ratios define the unique position of a line in 3D?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "No, only orientation/direction",
+        "B": "Yes, completely",
+        "C": "Yes, if unitized",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 19,
+      "question": "Let (l₁, m₁, n₁) and (l₂, m₂, n₂) be DC's of two lines. The DC's of a line mutually perpendicular to both are proportional to ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(m₁n₂ - m₂n₁, n₁l₂ - n₂l₁, l₁m₂ - l₂m₁)",
+        "B": "(l₁l₂, m₁m₂, n₁n₂)",
+        "C": "(l₁+l₂, m₁+m₂, n₁+n₂)",
+        "D": "(l₁/l₂, m₁/m₂, n₁/n₂)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 20,
+      "question": "Direction ratios of line x/2 = (y−1)/3 = (z+2)/4 are?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(2,3,4)",
+        "B": "(2,3,−4)",
+        "C": "(1/2,1/3,1/4)",
+        "D": "(0,1,−2)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    }
+  ]
+}

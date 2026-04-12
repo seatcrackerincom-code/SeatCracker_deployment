@@ -1,3 +1,445 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02a43c795adf11f830a6d358f57c9a76b7757437eed0877e1a07d16d9be00b0f
-size 16004
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Radical axis of x\u00b2+y\u00b2=4 and x\u00b2+y\u00b2\u22124x=0 is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x = 1",
+                "B": "y = 1",
+                "C": "x + y = 1",
+                "D": "4x = 4"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 2,
+            "question": "The simplest form of the equation of a coaxial system is x\u00b2 + y\u00b2 + 2gx + c = 0, where ______ varies and ______ is constant.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "g varies, c is constant",
+                "B": "c varies, g is constant",
+                "C": "Both g and c vary",
+                "D": "Both are zero"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 3,
+            "question": "If a circle cuts three given circles orthogonally, its center is the ______ of the three given circles.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Radical center",
+                "B": "Incenter",
+                "C": "Circumcenter",
+                "D": "Orthocenter"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 4,
+            "question": "If two circles touch each other (internally or externally), the radical axis is the ______ at the point of contact.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Common tangent",
+                "B": "Common normal",
+                "C": "Line of centers",
+                "D": "Director circle locus"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "If the matrix A is [[18, 17], [0, 4]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "340",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[324, 374], [0, 16]]. Trace is sum of diagonal elements: 324 + 16.",
+            "id": 5
+        },
+        {
+            "id": 6,
+            "question": "The radius of the circle which cuts three given circles orthogonally is equal to the length of the ______ from the radical center to any of the circles.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Tangent",
+                "B": "Secant",
+                "C": "Normal",
+                "D": "Chord"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 7,
+            "question": "The centers of all circles forming a coaxial system lie on a ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Straight line",
+                "B": "Circle",
+                "C": "Parabola",
+                "D": "Radical axis"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 8,
+            "question": "The radical axis of two circles is always ______ to the line joining their centers.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Perpendicular",
+                "B": "Parallel",
+                "C": "Coincident",
+                "D": "At 45\u00b0"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 9,
+            "question": "Two circles x\u00b2+y\u00b2+2g\u2081x+c\u2081=0 and x\u00b2+y\u00b2+2g\u2082x+c\u2082=0 cut orthogonally when?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2g\u2081g\u2082+2f\u2081f\u2082=c\u2081+c\u2082",
+                "B": "g\u2081g\u2082=c\u2081c\u2082",
+                "C": "g\u2081+g\u2082=0",
+                "D": "c\u2081=c\u2082"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 10,
+            "question": "If two circles intersect orthogonally, the tangent to one circle at the point of intersection passes through the ______ of the other circle.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Center",
+                "B": "Focus",
+                "C": "Vertex",
+                "D": "Pole"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 11,
+            "question": "If c > 0 in x\u00b2 + y\u00b2 + 2gx + c = 0, the coaxial system is of ______ type. The circles do not intersect.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Non-intersecting",
+                "B": "Intersecting",
+                "C": "Touching at origin",
+                "D": "Concentric"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 12,
+            "question": "The common chord of x\u00b2+y\u00b2=16 and x\u00b2+y\u00b2\u22126x+2=0 is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "6x \u2212 18 = 0 \u2192 x = 3",
+                "B": "6x + 2 = 16",
+                "C": "y = 3",
+                "D": "x + y = 4"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 13,
+            "question": "The condition for two circles x\u00b2 + y\u00b2 + 2gx + 2fy + c = 0 and x\u00b2 + y\u00b2 + 2g'x + 2f'y + c' = 0 to intersect orthogonally is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2gg' + 2ff' = c + c'",
+                "B": "gg' + ff' = c + c'",
+                "C": "2gg' - 2ff' = c - c'",
+                "D": "g\u00b2 + f\u00b2 - c = g'\u00b2 + f'\u00b2 - c'"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 14,
+            "question": "The limiting points of a coaxial system are circles of the system having ______ radius.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Zero (point circles)",
+                "B": "Infinite",
+                "C": "Maximum",
+                "D": "Negative"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 15,
+            "question": "A system of circles is said to be coaxial if every pair of circles in the system has the same ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Radical axis",
+                "B": "Center",
+                "C": "Radius",
+                "D": "Tangent"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 16,
+            "question": "In the standard coaxial system x\u00b2 + y\u00b2 + 2gx + c = 0, the radical axis is the line ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x = 0 (y-axis)",
+                "B": "y = 0 (x-axis)",
+                "C": "x = c",
+                "D": "y = g"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 17,
+            "question": "If two circles intersect at real points, the radical axis is the line containing their ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Common chord",
+                "B": "Centers",
+                "C": "Directrices",
+                "D": "Poles"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 18,
+            "question": "The radical center of three circles is the point where their?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "radical axes meet",
+                "B": "centers meet",
+                "C": "common chords meet",
+                "D": "tangents meet"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 19,
+            "question": "The radical axis of two circles is the locus of points from which tangent lengths to both circles are?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "equal",
+                "B": "perpendicular",
+                "C": "maximum",
+                "D": "proportional"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 20,
+            "question": "If c < 0 in x\u00b2 + y\u00b2 + 2gx + c = 0, the coaxial system is of ______ type.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Intersecting",
+                "B": "Non-intersecting",
+                "C": "Touching",
+                "D": "Orthogonal"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^18 * (1-x)^11 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "31",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "system_of_circles_21"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(14x) / tan(10x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "14/10",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 14/10.",
+            "id": "system_of_circles_22"
+        },
+        {
+            "question": "If the matrix A is [[14, 13], [0, 9]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "277",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[196, 299], [0, 81]]. Trace is sum of diagonal elements: 196 + 81.",
+            "id": "system_of_circles_23"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(3x) / tan(3x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3/3",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 3/3.",
+            "id": "system_of_circles_24"
+        },
+        {
+            "question": "If the matrix A is [[11, 16], [0, 10]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "221",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[121, 336], [0, 100]]. Trace is sum of diagonal elements: 121 + 100.",
+            "id": "system_of_circles_25"
+        },
+        {
+            "question": "If the vectors a = 15i + 19j and b = 6i - j are perpendicular, find the value of 15*6.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "19",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "system_of_circles_26"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^4 * (1-x)^20 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "26",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "system_of_circles_27"
+        },
+        {
+            "question": "If the matrix A is [[11, 17], [0, 2]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "125",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[121, 221], [0, 4]]. Trace is sum of diagonal elements: 121 + 4.",
+            "id": "system_of_circles_28"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^19 * (1-x)^16 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "37",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "system_of_circles_29"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(3x) / tan(8x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3/8",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 3/8.",
+            "id": "system_of_circles_30"
+        }
+    ]
+}

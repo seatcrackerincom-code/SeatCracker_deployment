@@ -1,3 +1,318 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c6037a1bb5563368641e337988a4fa82f87efe75133807d7d0a6d2792b71d16
-size 10374
+{
+    "questions": [
+        {
+            "question": "If the vectors a = 5i + 8j and b = 4i - j are perpendicular, find the value of 5*4.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 1
+        },
+        {
+            "question": "\u222b\u2080\u1dbf cos\u207f x dx from 0 to \u03c0/2 (for n is odd) involves ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Wallis Formula with 1",
+                "B": "\u03c0",
+                "C": "0",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 2
+        },
+        {
+            "question": "\u222b\u2080\u1d4f [x] dx (where k is integer) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "k(k-1)/2",
+                "B": "k\u00b2/2",
+                "C": "k",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 3
+        },
+        {
+            "question": "If f(2a-x) = f(x), then \u222b\u2080\u00b2\u1d43 f(x) dx = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "2 \u222b\u2080\u1d43 f(x) dx",
+                "B": "0",
+                "C": "f(a)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 4
+        },
+        {
+            "question": "If the vectors a = 7i + 8j and b = 9i - j are perpendicular, find the value of 7*9.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 5
+        },
+        {
+            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 9 S's are always together.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "60",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+            "id": 6
+        },
+        {
+            "id": 7,
+            "question": "If \u222b\u2080^a dx/(4+x\u00b2) = \u03c0/8, then a = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2",
+                "B": "4",
+                "C": "1",
+                "D": "\u03c0/4"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "The value of \u222b\u2080\u1d4f x\u00b3 dx / (x\u00b3 + (k-x)\u00b3) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "k / 2",
+                "B": "k",
+                "C": "k / 3",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 8
+        },
+        {
+            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 6 S's are always together.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "60",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+            "id": 9
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(7x) / tan(6x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7/6",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 7/6.",
+            "id": 10
+        },
+        {
+            "question": "\u222b\u2080\u1dbf (f(x) / (f(x) + f(a-x))) dx from 0 to a is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "a / 2",
+                "B": "a",
+                "C": "0",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 11
+        },
+        {
+            "question": "The value of \u222b\u2080\u1dbf sin\u207f x dx from 0 to \u03c0/2 (for n is even) involves ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Wallis Formula with \u03c0/2",
+                "B": "Only integers",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 12
+        },
+        {
+            "question": "The value of \u222b\u2080\u1dbf log(sin x) dx from 0 to \u03c0/2 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "-(\u03c0/2) log 2",
+                "B": "(\u03c0/2) log 2",
+                "C": "0",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 13
+        },
+        {
+            "question": "\u222b\u208b\u2090\u1d43 f(x) dx is 2 \u222b\u2080\u1d43 f(x) dx if f(x) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Even function",
+                "B": "Odd function",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 14
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(13x) / tan(9x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "13/9",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 13/9.",
+            "id": 15
+        },
+        {
+            "question": "The area bounded by y = sin x from 0 to \u03c0 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "2",
+                "B": "1",
+                "C": "0",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 16
+        },
+        {
+            "question": "The value of \u222b\u208b\u2081\u00b9 |x| dx is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "1",
+                "B": "0",
+                "C": "2",
+                "D": "0.5"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 17
+        },
+        {
+            "question": "Definite integral represents ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Area under curve",
+                "B": "Slope of tangent",
+                "C": "Length of arc",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 18
+        },
+        {
+            "question": "The area bounded by y = x\u00b2, x-axis and x = 2 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "8 / 3",
+                "B": "4 / 3",
+                "C": "2",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 19
+        },
+        {
+            "question": "The limit as n->\u221e of \u03a3 (1/n) f(r/n) is equivalent to ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "\u222b\u2080\u00b9 f(x) dx",
+                "B": "Sum from 1 to n",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 20
+        }
+    ]
+}

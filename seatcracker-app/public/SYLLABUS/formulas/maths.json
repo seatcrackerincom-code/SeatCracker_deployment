@@ -1,3 +1,325 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:300e8aef98f3217dc4dcfc91a9972beff8d5a0696ad54da34e0099c6a0e3f335
-size 13302
+[
+  {
+    "topic_id": 1,
+    "topic_name": "TRIGONOMETRY UPTO TRANSFORMATIONS",
+    "formulas": [
+      { "subtopic": "Compound Angles", "description": "Sum/Difference of sin and cos", "equation": "sin(A ± B) = sinA cosB ± cosA sinB, cos(A ± B) = cosA cosB ∓ sinA sinB" },
+      { "subtopic": "Transformations", "description": "Sum to Product", "equation": "sinC + sinD = 2 sin((C+D)/2) cos((C-D)/2)" }
+    ]
+  },
+  {
+    "topic_id": 2,
+    "topic_name": "INTEGRATION",
+    "formulas": [
+      { "subtopic": "Power Rule", "description": "Basic integral", "equation": "∫ xⁿ dx = xⁿ⁺¹/(n+1) + C" },
+      { "subtopic": "Substitution", "description": "U-substitution method", "equation": "∫ f(g(x)) g'(x) dx = ∫ f(u) du" },
+      { "subtopic": "By Parts", "description": "Integral of product", "equation": "∫ uv dx = u ∫ v dx - ∫ [u' ∫ v dx] dx" }
+    ]
+  },
+  {
+    "topic_id": 3,
+    "topic_name": "CIRCLES",
+    "formulas": [
+      { "subtopic": "Standard Eq.", "description": "Centre at origin", "equation": "x² + y² = r²" },
+      { "subtopic": "General Eq.", "description": "Complete form", "equation": "x² + y² + 2gx + 2fy + c = 0" },
+      { "subtopic": "Centre/Radius", "description": "Derived from general", "equation": "C = (-g, -f), r = √(g² + f² - c)" }
+    ]
+  },
+  {
+    "topic_id": 4,
+    "topic_name": "PROBABILITY",
+    "formulas": [
+      { "subtopic": "Axiomatic", "description": "Range of P(A)", "equation": "0 ≤ P(A) ≤ 1" },
+      { "subtopic": "Addition Theorem", "description": "P(A or B)", "equation": "P(A ∪ B) = P(A) + P(B) - P(A ∩ B)" },
+      { "subtopic": "Conditional", "description": "P of A given B", "equation": "P(A|B) = P(A ∩ B) / P(B)" }
+    ]
+  },
+  {
+    "topic_id": 5,
+    "topic_name": "DEFINITE INTEGRALS",
+    "formulas": [
+      { "subtopic": "Newtown-Leibniz", "description": "Fundamental Theorem", "equation": "∫_a^b f(x) dx = F(b) - F(a)" },
+      { "subtopic": "Property", "description": "Reflecting on (a+b-x)", "equation": "∫_a^b f(x) dx = ∫_a^b f(a + b - x) dx" }
+    ]
+  },
+  {
+    "topic_id": 6,
+    "topic_name": "COMPLEX NUMBERS",
+    "formulas": [
+      { "subtopic": "Representation", "description": "Cartesian and Mod-Arg", "equation": "z = x + iy = r(cosθ + i sinθ)" },
+      { "subtopic": "Modulus", "description": "Distance from origin", "equation": "|z| = √(x² + y²)" },
+      { "subtopic": "Argument", "description": "Angle with Re axis", "equation": "θ = tan⁻¹(y/x)" }
+    ]
+  },
+  {
+    "topic_id": 7,
+    "topic_name": "PROPERTIES OF TRIANGLES",
+    "formulas": [
+      { "subtopic": "Sine Rule", "description": "Side-Angle relation", "equation": "a/sinA = b/sinB = c/sinC = 2R" },
+      { "subtopic": "Cosine Rule", "description": "Solving for sides", "equation": "a² = b² + c² - 2bc cosA" },
+      { "subtopic": "Area", "description": "using sine of angle", "equation": "Δ = (1/2)ab sinC" }
+    ]
+  },
+  {
+    "topic_id": 8,
+    "topic_name": "DIFFERENTIAL EQUATIONS",
+    "formulas": [
+      { "subtopic": "Variable Separable", "description": "Method of solution", "equation": "f(y)dy = g(x)dx" },
+      { "subtopic": "Linear DE", "description": "First order form", "equation": "dy/dx + Py = Q, IF = e^(∫Pdx)" }
+    ]
+  },
+  {
+    "topic_id": 9,
+    "topic_name": "LIMITS & CONTINUITY",
+    "formulas": [
+      { "subtopic": "L'Hopital Rule", "description": "Solving 0/0 or ∞/∞", "equation": "lim(f/g) = lim(f'/g')" },
+      { "subtopic": "Standard Limit", "description": "Sinc function", "equation": "lim_{x→0} (sin x / x) = 1" }
+    ]
+  },
+  {
+    "topic_id": 10,
+    "topic_name": "STRAIGHT LINES",
+    "formulas": [
+      { "subtopic": "Slope-Intercept", "description": "Equations of lines 1", "equation": "y = mx + c" },
+      { "subtopic": "Point-Slope", "description": "Equations of lines 2", "equation": "y - y₁ = m(x - x₁)" },
+      { "subtopic": "Perp distance", "description": "Point to line distance", "equation": "d = |ax₁ + by₁ + c| / √(a² + b²)" }
+    ]
+  },
+  {
+    "topic_id": 11,
+    "topic_name": "MATRICES AND DETERMINANTS",
+    "formulas": [
+      { "subtopic": "Determinant (2x2)", "description": "Calculation", "equation": "|A| = ad - bc" },
+      { "subtopic": "Inverse", "description": "Adjoint relation", "equation": "A⁻¹ = (1/|A|) * adj(A)" },
+      { "subtopic": "Cramer's Rule", "description": "Solution for x", "equation": "x = Δ₁ / Δ" }
+    ]
+  },
+  {
+    "topic_id": 12,
+    "topic_name": "PERMUTATIONS & COMBINATIONS",
+    "formulas": [
+      { "subtopic": "Permutation", "description": "Linear arrangement", "equation": "nPr = n! / (n-r)!" },
+      { "subtopic": "Combination", "description": "Selection", "equation": "nCr = n! / [r! (n-r)!]" },
+      { "subtopic": "Relation", "description": "P and C link", "equation": "nPr = nCr * r!" }
+    ]
+  },
+  {
+    "topic_id": 13,
+    "topic_name": "TANGENTS AND NORMALS",
+    "formulas": [
+      { "subtopic": "Tangent Slope", "description": "at (x₁, y₁)", "equation": "m = [dy/dx]_{x₁}" },
+      { "subtopic": "Normal Slope", "description": "Perpendicular to tangent", "equation": "m' = -1 / [dy/dx]_{x₁}" }
+    ]
+  },
+  {
+    "topic_id": 14,
+    "topic_name": "QUADRATIC EQUATIONS AND EXPRESSIONS",
+    "formulas": [
+      { "subtopic": "Roots", "description": "Solution of ax² + bx + c = 0", "equation": "x = [-b ± √(b² - 4ac)] / 2a" },
+      { "subtopic": "Relations", "description": "Sum and Product of roots", "equation": "α + β = -b/a, αβ = c/a" },
+      { "subtopic": "Discriminant", "description": "Nature of roots", "equation": "D = b² - 4ac" }
+    ]
+  },
+  {
+    "topic_id": 15,
+    "topic_name": "DIFFERENTIATION",
+    "formulas": [
+      { "subtopic": "Chain Rule", "description": "Nested function derivative", "equation": "d/dx f(g(x)) = f'(g(x)) * g'(x)" },
+      { "subtopic": "Product Rule", "description": "Multiplied functions", "equation": "(uv)' = u'v + uv'" },
+      { "subtopic": "Quotient Rule", "description": "Divided functions", "equation": "(u/v)' = (u'v - uv') / v²" }
+    ]
+  },
+  {
+    "topic_id": 16,
+    "topic_name": "FUNCTIONS",
+    "formulas": [
+      { "subtopic": "Composition", "description": "Function within function", "equation": "(f ∘ g)(x) = f(g(x))" },
+      { "subtopic": "Inverse", "description": "Reversal mapping", "equation": "f⁻¹(f(x)) = x" }
+    ]
+  },
+  {
+    "topic_id": 17,
+    "topic_name": "BINOMIAL THEOREM",
+    "formulas": [
+      { "subtopic": "Expansion", "description": "Binomial expansion (a+b)ⁿ", "equation": "(a+b)ⁿ = Σ_{r=0}^n nCr a^(n-r) bʳ" },
+      { "subtopic": "General Term", "description": "(r+1)th term", "equation": "T_{r+1} = nCr a^(n-r) bʳ" }
+    ]
+  },
+  {
+    "topic_id": 18,
+    "topic_name": "RANDOM VARIABLES AND PROBABILITY DISTRIBUTION",
+    "formulas": [
+      { "subtopic": "Mean (Expected Value)", "description": "Discrete variable", "equation": "E(X) = Σ x_i P(x_i)" },
+      { "subtopic": "Variance", "description": "Measure of spread", "equation": "Var(X) = E(X²) - [E(X)]²" }
+    ]
+  },
+  {
+    "topic_id": 19,
+    "topic_name": "VECTOR ADDITION",
+    "formulas": [
+      { "subtopic": "Triangle Law", "description": "Resultant vector", "equation": "R = A + B" },
+      { "subtopic": "Magnitude of R", "description": "Resultant length", "equation": "|R| = √(A² + B² + 2AB cosθ)" }
+    ]
+  },
+  {
+    "topic_id": 20,
+    "topic_name": "THEORY OF EQUATIONS",
+    "formulas": [
+      { "subtopic": "Vieta's Formulas", "description": "n-th degree equations roots", "equation": "Σ α_i = -a_{n-1} / a_n" }
+    ]
+  },
+  {
+    "topic_id": 21,
+    "topic_name": "HYPERBOLA",
+    "formulas": [
+      { "subtopic": "Standard Eq.", "description": "Horizontal hyperbola", "equation": "x²/a² - y²/b² = 1" },
+      { "subtopic": "Eccentricity", "description": "Relation of a, b, e", "equation": "e = √(1 + b²/a²)" }
+    ]
+  },
+  {
+    "topic_id": 22,
+    "topic_name": "PAIR OF STRAIGHT LINES",
+    "formulas": [
+      { "subtopic": "Homogeneous Eq.", "description": "Pair through origin", "equation": "ax² + 2hxy + by² = 0" },
+      { "subtopic": "Angle", "description": "between the two lines", "equation": "tanθ = |2√(h² - ab) / (a + b)|" }
+    ]
+  },
+  {
+    "topic_id": 23,
+    "topic_name": "CROSS PRODUCT (VECTORS)",
+    "formulas": [
+      { "subtopic": "Magnitude", "description": "Area of parallelogram", "equation": "|A × B| = AB sinθ" },
+      { "subtopic": "Direction", "description": "Right hand rule", "equation": "A × B = |A||B| sinθ n" }
+    ]
+  },
+  {
+    "topic_id": 24,
+    "topic_name": "MAXIMA AND MINIMA",
+    "formulas": [
+      { "subtopic": "First Deriv Test", "description": "Stationary points", "equation": "f'(x) = 0" },
+      { "subtopic": "Second Deriv Test", "description": "Checking concavity", "equation": "f''(x) > 0 (Min), f''(x) < 0 (Max)" }
+    ]
+  },
+  {
+    "topic_id": 25,
+    "topic_name": "3D COORDINATE SYSTEM",
+    "formulas": [
+      { "subtopic": "Dist. Formula", "description": "Distance in 3D", "equation": "d = √[(x₂-x₁)² + (y₂-y₁)² + (z₂-z₁)²]" }
+    ]
+  },
+  {
+    "topic_id": 26,
+    "topic_name": "ELLIPSE",
+    "formulas": [
+      { "subtopic": "Standard Eq.", "description": "Horizontal ellipse", "equation": "x²/a² + y²/b² = 1" },
+      { "subtopic": "Eccentricity", "description": "Relation of a, b, e", "equation": "e = √(1 - b²/a²)" }
+    ]
+  },
+  {
+    "topic_id": 27,
+    "topic_name": "PARABOLA",
+    "formulas": [
+      { "subtopic": "Standard Eq.", "description": "Opening right", "equation": "y² = 4ax" },
+      { "subtopic": "Latus Rectum", "description": "Length calculation", "equation": "LR = 4a" }
+    ]
+  },
+  {
+    "topic_id": 28,
+    "topic_name": "PLANE",
+    "formulas": [
+      { "subtopic": "General Eq.", "description": "Eq. of a plane", "equation": "ax + by + cz + d = 0" },
+      { "subtopic": "Normal Form", "description": "using normal vector", "equation": "lx + my + nz = p" }
+    ]
+  },
+  {
+    "topic_id": 29,
+    "topic_name": "DOT PRODUCT (VECTORS)",
+    "formulas": [
+      { "subtopic": "Definition", "description": "Scalar result", "equation": "A · B = AB cosθ" },
+      { "subtopic": "Projection", "description": "of A on B", "equation": "proj = (A · B) / |B|" }
+    ]
+  },
+  {
+    "topic_id": 30,
+    "topic_name": "HYPERBOLIC FUNCTIONS",
+    "formulas": [
+      { "subtopic": "Sinh/Cosh", "description": "Exponential forms", "equation": "sinh x = (eˣ - e⁻ˣ)/2, cosh x = (eˣ + e⁻ˣ)/2" }
+    ]
+  },
+  {
+    "topic_id": 31,
+    "topic_name": "STATISTICS",
+    "formulas": [
+      { "subtopic": "Mean", "description": "Average", "equation": "x̄ = (Σ x_i) / n" },
+      { "subtopic": "SD", "description": "Standard Deviation", "equation": "σ = √[Σ(x_i - x̄)² / n]" }
+    ]
+  },
+  {
+    "topic_id": 32,
+    "topic_name": "LOCUS",
+    "formulas": [
+      { "subtopic": "General", "description": "Path specified by condition", "equation": "f(x, y) = 0" }
+    ]
+  },
+  {
+    "topic_id": 33,
+    "topic_name": "PARTIAL FRACTIONS",
+    "formulas": [
+      { "subtopic": "Linear Factors", "description": "Simple decomposition", "equation": "1/[(x-a)(x-b)] = A/(x-a) + B/(x-b)" }
+    ]
+  },
+  {
+    "topic_id": 34,
+    "topic_name": "AREAS",
+    "formulas": [
+      { "subtopic": "Between Curves", "description": "Integral application", "equation": "Area = ∫_a^b [f(x) - g(x)] dx" }
+    ]
+  },
+  {
+    "topic_id": 35,
+    "topic_name": "SYSTEM OF CIRCLES",
+    "formulas": [
+      { "subtopic": "Radical Axis", "description": "Locus of equal power", "equation": "S - S' = 0" },
+      { "subtopic": "Orthogonality", "description": "Intersection at right angle", "equation": "2g₁g₂ + 2f₁f₂ = c₁ + c₂" }
+    ]
+  },
+  {
+    "topic_id": 36,
+    "topic_name": "MULTIPLE AND SUB MULTIPLE ANGLES",
+    "formulas": [
+      { "subtopic": "Double Angle", "description": "sin/cos 2A", "equation": "sin 2A = 2 sinA cosA, cos 2A = cos²A - sin²A" },
+      { "subtopic": "Triple Angle", "description": "sin/cos 3A", "equation": "sin 3A = 3 sinA - 4 sin³A, cos 3A = 4 cos³A - 3 cosA" }
+    ]
+  },
+  {
+    "topic_id": 37,
+    "topic_name": "DC'S AND DR'S",
+    "formulas": [
+      { "subtopic": "Relation", "description": "Sum of squares", "equation": "l² + m² + n² = 1" },
+      { "subtopic": "From DRs", "description": "Calculating DCs", "equation": "l = a / √(a² + b² + c²)" }
+    ]
+  },
+  {
+    "topic_id": 38,
+    "topic_name": "DE MOIVRE'S THEOREM",
+    "formulas": [
+      { "subtopic": "Main Eq.", "description": "Raising complex to power", "equation": "(cosθ + i sinθ)ⁿ = cos(nθ) + i sin(nθ)" }
+    ]
+  },
+  {
+    "topic_id": 39,
+    "topic_name": "TRIPLE PRODUCT OF VECTOR'S",
+    "formulas": [
+      { "subtopic": "Scalar Triple", "description": "Volume of parallelepiped", "equation": "[A B C] = A · (B × C)" },
+      { "subtopic": "Vector Triple", "description": "BAC-CAB Rule", "equation": "A × (B × C) = B(A · C) - C(A · B)" }
+    ]
+  },
+  {
+    "topic_id": 40,
+    "topic_name": "MEAN VALUE THEOREM",
+    "formulas": [
+      { "subtopic": "Rolle's Theorem", "description": "Tangent parallel to Chord", "equation": "f(a)=f(b) ⇒ ∃c : f'(c)=0" },
+      { "subtopic": "LMVT", "description": "General case", "equation": "f'(c) = [f(b) - f(a)] / (b - a)" }
+    ]
+  }
+]

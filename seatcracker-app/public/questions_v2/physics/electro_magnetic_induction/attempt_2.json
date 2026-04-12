@@ -1,3 +1,300 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef9e899127246edc7f65af36ac907cde8c2b49ef8db368a5bbee1b4d91fc1626
-size 10396
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Self-inductance is also called ______ inertia.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Mechanical",
+                "B": "Electromagnetic",
+                "C": "Thermal",
+                "D": "Gravitational"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 2,
+            "question": "Inductive reactance (X_L) is equal to ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u03c9 L",
+                "B": "1 / (\u03c9 L)",
+                "C": "L / \u03c9",
+                "D": "2\u03c0 f"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 3 m with speed 11 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "80.67 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 121 / 3.",
+            "id": 3
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 3 m with speed 97 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "28227.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 9409 / 3.",
+            "id": 4
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 4 m with speed 20 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1000.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 400 / 4.",
+            "id": 5
+        },
+        {
+            "question": "A capacitor of 7 microfarads is charged to 92 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "29624.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 7 * 8464.",
+            "id": 6
+        },
+        {
+            "id": 7,
+            "question": "Work done in establishing current I in inductor L is stored as ______ energy.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Electric",
+                "B": "Magnetic",
+                "C": "Gravitational",
+                "D": "Dissipated"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 8,
+            "question": "Energy is lost in transformers as heat due to ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Hysteresis",
+                "B": "Flux leakage",
+                "C": "Resistance of windings (I\u00b2R)",
+                "D": "All of the above"
+            },
+            "answer": "D"
+        },
+        {
+            "question": "A car moves at 12 m/s and brakes to stop in 3 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-4.0 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 12)/3.",
+            "id": 9
+        },
+        {
+            "question": "A capacitor of 8 microfarads is charged to 48 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "9216.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 8 * 2304.",
+            "id": 10
+        },
+        {
+            "id": 11,
+            "question": "The emf induced in an AC generator is \u03b5 = \u03b5\u2080 sin(\u03c9t). \u03b5\u2080 depends on ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Number of turns (N)",
+                "B": "Area of coil (A)",
+                "C": "Angular velocity (\u03c9)",
+                "D": "All of the above (NBA\u03c9)"
+            },
+            "answer": "D"
+        },
+        {
+            "question": "Induced charge q is equal to \u0394\u03a6 / ______.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Resistance R",
+                "B": "Time t",
+                "C": "Inductance L",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 12
+        },
+        {
+            "question": "A capacitor of 9 microfarads is charged to 69 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "21424.5 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 9 * 4761.",
+            "id": 13
+        },
+        {
+            "question": "A capacitor of 9 microfarads is charged to 24 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2592.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 9 * 576.",
+            "id": 14
+        },
+        {
+            "question": "A car moves at 36 m/s and brakes to stop in 3 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-12.0 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 36)/3.",
+            "id": 15
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 5 m with speed 18 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "583.2 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 324 / 5.",
+            "id": 16
+        },
+        {
+            "question": "A car moves at 89 m/s and brakes to stop in 5 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-17.8 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 89)/5.",
+            "id": 17
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 1 m with speed 14 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "588.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 196 / 1.",
+            "id": 18
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 3 m with speed 94 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "26508.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 8836 / 3.",
+            "id": 19
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 5 m with speed 60 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5040.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 3600 / 5.",
+            "id": 20
+        }
+    ]
+}

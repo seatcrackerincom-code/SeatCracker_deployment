@@ -1,3 +1,308 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b97b09f7227ee428332598b8a37ae472d35b5542f6705a593c6e31b54b4cb22d
-size 10194
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Similarly, x\u207f + 1/x\u207f is equal to ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2 cos(n\u03b8)",
+                "B": "2i sin(n\u03b8)",
+                "C": "2 cos\u207f\u03b8",
+                "D": "2i sin\u207f\u03b8"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 2,
+            "question": "A complex number raised to an irrational power leads to ______ values.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Infinitely many distinct",
+                "B": "Only one",
+                "C": "None",
+                "D": "Purely real"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 3,
+            "question": "If |z|=1, then z + 1/z is always ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Real",
+                "B": "Imaginary",
+                "C": "Zero",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the matrix A is [[10, 20], [0, 10]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "200",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[100, 400], [0, 100]]. Trace is sum of diagonal elements: 100 + 100.",
+            "id": 4
+        },
+        {
+            "id": 5,
+            "question": "The polar form of -64 is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "64 (cos \u03c0 + i sin \u03c0)",
+                "B": "64 (cos 0 + i sin 0)",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "For example, 2\u00b2 cos\u00b3\u03b8 = 2(cos \u03b8)\u00b3 = (x + 1/x)\u00b3. Expanding it yields cos 3\u03b8 + ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3 cos \u03b8",
+                "B": "3 sin \u03b8",
+                "C": "cos \u03b8",
+                "D": "-cos 3\u03b8"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "These identities are useful in expressing powers like cos\u207f\u03b8 as a series of multiple angles like ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "cos(n\u03b8), cos((n-2)\u03b8)...",
+                "B": "sin(n\u03b8), sin((n-2)\u03b8)...",
+                "C": "sec(n\u03b8)",
+                "D": "tan(n\u03b8)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 8,
+            "question": "cos 5\u03b8 in terms of cos \u03b8 using De Moivre is 16cos\u2075\u03b8 \u2212 ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "16cos\u2075\u03b8\u221220cos\u00b3\u03b8+5cos\u03b8",
+                "B": "16cos\u2075\u03b8+20cos\u00b3\u03b8\u22125cos\u03b8",
+                "C": "10cos\u00b3\u03b8\u22125cos\u03b8",
+                "D": "16cos\u2074\u03b8\u221212cos\u03b8"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "If the vectors a = 6i + 13j and b = 8i - j are perpendicular, find the value of 6*8.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "13",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 9
+        },
+        {
+            "id": 10,
+            "question": "Sum of p-th powers of nth roots of unity (p not divisible by n) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "n",
+                "C": "1",
+                "D": "-1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 11,
+            "question": "Let \u03b1, \u03b2 be roots of x\u00b2 - 2x + 4 = 0. The roots are ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-2\u03c9 and -2\u03c9\u00b2",
+                "B": "\u03c9 and \u03c9\u00b2",
+                "C": "1 and -1",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 12,
+            "question": "If \u03b1 = \u03c0/2, the locus arg(z - z\u2081) / (z - z\u2082) is a ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Semicircle",
+                "B": "Straight Line",
+                "C": "Parabola",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 13,
+            "question": "The principal argument Arg(z) strictly lies in ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(-\u03c0, \u03c0]",
+                "B": "[0, 2\u03c0)",
+                "C": "(-\u03c0/2, \u03c0/2)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 14,
+            "question": "Product of nth roots of unity = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(\u22121)^(n+1)",
+                "B": "1",
+                "C": "0",
+                "D": "n"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 15,
+            "question": "The cube roots of unity \u03c9 satisfy \u03c9\u00b3 = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "0",
+                "C": "\u22121",
+                "D": "\u03c9"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 16,
+            "question": "In polynomial x\u207f - 1 = (x-1)(x-\u03b1\u2081)...(x-\u03b1_{n-1}), the product (1-\u03b1\u2081)(1-\u03b1\u2082)... is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "n",
+                "B": "0",
+                "C": "1",
+                "D": "-1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "If \u03c9 is a primitive nth root of unity, then 1+\u03c9+\u03c9\u00b2+...+\u03c9\u207f\u207b\u00b9 = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "1",
+                "C": "n",
+                "D": "\u03c9"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 18,
+            "question": "Sum of p-th powers of nth roots of unity (p multiple of n) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "n",
+                "B": "0",
+                "C": "1",
+                "D": "p"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 19,
+            "question": "If x = cos \u03b8 + i sin \u03b8, then x - 1/x is equal to ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2i sin \u03b8",
+                "B": "2 cos \u03b8",
+                "C": "2i",
+                "D": "-2 cos \u03b8"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 20,
+            "question": "The continuous locus arg(z - z\u2081) / (z - z\u2082) = \u03b1 represents a ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Circular arc",
+                "B": "Straight line",
+                "C": "Parabola",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        }
+    ]
+}

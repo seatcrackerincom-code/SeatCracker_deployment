@@ -1,3 +1,305 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0beb507d2faf1fc19b8d99032cac43aead49fd08344c9edead3fe354489e9be4
-size 10152
+{
+    "questions": [
+        {
+            "question": "The escape velocity on a planet with mass 7M and radius 4R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.32",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(7/4).",
+            "id": 1
+        },
+        {
+            "question": "The escape velocity on a planet with mass 1M and radius 1R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.0",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(1/1).",
+            "id": 2
+        },
+        {
+            "id": 3,
+            "question": "Wait? no. Replaced: current leads in RC and lags in RL.",
+            "difficulty": "medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "A capacitor of 1 microfarads is charged to 62 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1922.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 1 * 3844.",
+            "id": 4
+        },
+        {
+            "id": 5,
+            "question": "Quality factor depends on L/C ratio.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "Peak? no. Replaced: peak voltage of 220V AC is about 311V.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "Wait? no. Replaced: Z of RL circuit is \u221a(R\u00b2 + XL\u00b2).",
+            "difficulty": "medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 8,
+            "question": "Parallel resonance circuit? yes. used as rejector circuit.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "A car moves at 96 m/s and brakes to stop in 1 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-96.0 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 96)/1.",
+            "id": 9
+        },
+        {
+            "question": "A capacitor of 9 microfarads is charged to 56 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "14112.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 9 * 3136.",
+            "id": 10
+        },
+        {
+            "id": 11,
+            "question": "Wait? no. Replaced: current in pure capacitor leads voltage.",
+            "difficulty": "medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "A car moves at 45 m/s and brakes to stop in 4 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-11.25 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 45)/4.",
+            "id": 12
+        },
+        {
+            "question": "A car moves at 85 m/s and brakes to stop in 4 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-21.25 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 85)/4.",
+            "id": 13
+        },
+        {
+            "question": "In a step-down transformer, the secondary current is ______ the primary current.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Greater than",
+                "B": "Less than",
+                "C": "Equal to",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 14
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 5 m with speed 96 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "18432.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 9216 / 5.",
+            "id": 15
+        },
+        {
+            "question": "The escape velocity on a planet with mass 7M and radius 5R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.18",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(7/5).",
+            "id": 16
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 4 m with speed 58 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8410.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 3364 / 4.",
+            "id": 17
+        },
+        {
+            "question": "The escape velocity on a planet with mass 4M and radius 4R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.0",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(4/4).",
+            "id": 18
+        },
+        {
+            "id": 19,
+            "question": "Wait? no. Replaced: 220V AC is more dangerous than 220V DC because peak is higher.",
+            "difficulty": "medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 20,
+            "question": "Wait? no. Replaced: choke coil has high L and low R.",
+            "difficulty": "medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        }
+    ]
+}

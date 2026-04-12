@@ -1,3 +1,713 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dac409f0e27a6187bbe3386317ee24ed04ddb52d59cbe917d448983114baf94f
-size 20183
+{
+  "topic_id": 29,
+  "topic_name": "DOT PRODUCT (VECTORS)",
+  "weightage": 1,
+  "priority": "Low",
+  "subtopics": [
+    "Scalar product properties",
+    "Angle between vectors",
+    "Projection of vectors"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "The dot product (scalar product) of two vectors a and b is defined as a . b = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|a||b| cos θ",
+        "B": "|a||b| sin θ",
+        "C": "|a×b|",
+        "D": "a + b"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "The result of a dot product between two vectors is a ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Scalar",
+        "B": "Vector",
+        "C": "Matrix",
+        "D": "Tensor"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "The diagram show an angle θ between vectors a and b. It is calculated by cos θ = ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Vectors a and b originating from a point with angle theta between them.",
+      "options": {
+        "A": "(a . b) / (|a||b|)",
+        "B": "(a × b) / (|a||b|)",
+        "C": "|a||b| / (a . b)",
+        "D": "a . b"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "Dot product is commutative. This means a . b = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "b . a",
+        "B": "-(b . a)",
+        "C": "a × b",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "Dot product is distributive over addition: a . (b + c) = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a . b + a . c",
+        "B": "(a + b) . c",
+        "C": "a . (b × c)",
+        "D": "a . b . c"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "The scalar product of a vector with itself is a . a = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|a|²",
+        "B": "0",
+        "C": "2|a|",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "If two non-zero vectors a and b are perpendicular (orthogonal), then a . b = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "|a||b|",
+        "D": "-|a||b|"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "For the standard unit vectors i, j, k along axes, i . i = j . j = k . k = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "i",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "For the standard unit vectors i, j, k, cross-axis dot products like i . j = j . k = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "k"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "If a = a₁i + a₂j + a₃k and b = b₁i + b₂j + b₃k, then a . b = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a₁b₁ + a₂b₂ + a₃b₃",
+        "B": "a₁b₂ + a₂b₁ + a₃b₃",
+        "C": "a₁² + a₂² + a₃²",
+        "D": "a₁b₁ - a₂b₂ - a₃b₃"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "The magnitude of a vector a = x i + y j + z k is |a| = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(x² + y² + z²)",
+        "B": "x + y + z",
+        "C": "x² + y² + z²",
+        "D": "xyz"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "The diagram shows vector projection. Projection of a on b is a scalar value evaluated as ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A vector a forming an angle with b, with a perpendicular dropped onto b showing the projection shadow.",
+      "options": {
+        "A": "(a . b) / |b|",
+        "B": "(a . b) / |a|",
+        "C": "(a × b) / |b|",
+        "D": "|a| cos θ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "The vector projection of a on b is a vector in the direction of b. Its formula is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "((a . b) / |b|²) b",
+        "B": "((a . b) / |a|²) a",
+        "C": "(a . b) b",
+        "D": "(a . b) / |b|"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "If a . b > 0, the angle between the two vectors is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Acute",
+        "B": "Obtuse",
+        "C": "Right (90°)",
+        "D": "Straight (180°)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "If a . b < 0, the angle between the two vectors is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Obtuse",
+        "B": "Acute",
+        "C": "Right",
+        "D": "Zero"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "Cauchy-Schwartz inequality states that |a . b| is ______ |a||b|.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "≤",
+        "B": "≥",
+        "C": "=",
+        "D": "<"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "Equality holds in Cauchy-Schwartz (|a . b| = |a||b|) if and only if a and b are ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Collinear",
+        "B": "Orthogonal",
+        "C": "Equal magnitudes",
+        "D": "Unit vectors"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "The diagram show a triangle built from a and b. The triangle inequality states |a + b| ______ |a| + |b|.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Vectors a and b forming two sides of a triangle, with vector sum a+b as the third.",
+      "options": {
+        "A": "≤",
+        "B": "≥",
+        "C": "=",
+        "D": ">"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "The expression |a + b|² is equal to ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|a|² + |b|² + 2(a . b)",
+        "B": "|a|² + |b|²",
+        "C": "|a|² + |b|² - 2(a . b)",
+        "D": "|a|² + |b|² + |a×b|"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "The expression |a - b|² is equal to ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|a|² + |b|² - 2(a . b)",
+        "B": "|a|² + |b|²",
+        "C": "|a|² - |b|²",
+        "D": "|a|² + |b|² + 2(a . b)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "Parallelogram law relates diagonals and sides: |a + b|² + |a - b|² = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2(|a|² + |b|²)",
+        "B": "|a|² + |b|²",
+        "C": "4(a . b)",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "(a + b) . (a - b) = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|a|² - |b|²",
+        "B": "|a|² + |b|²",
+        "C": "2(a . b)",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "If |a + b| = |a - b|, then a and b must be ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Orthogonal (Perpendicular)",
+        "B": "Collinear",
+        "C": "Equal vectors",
+        "D": "Unit vectors"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "The diagram show work being done by force F moving along d. W = F . d. This implies only the component of force strictly acting ______ the displacement does work.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Force vector F and displacement vector d, showing F's parallel component on d.",
+      "options": {
+        "A": "Along",
+        "B": "Perpendicular to",
+        "C": "Opposite to",
+        "D": "Normal to"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "If a represents velocity and b is another vector, a . a represents the ______ value speed squared.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Scalar",
+        "B": "Vector",
+        "C": "Complex",
+        "D": "Negative"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "If (a + b) and (a - b) are mutually perpendicular, then ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|a| = |b|",
+        "B": "a is perpendicular to b",
+        "C": "a is parallel to b",
+        "D": "a or b is zero"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "Let a,b,c be vectors. Is (a.b)c = a(b.c)?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "No, generally false",
+        "B": "Yes, always true",
+        "C": "True only if coplanar",
+        "D": "True only if orthogonal"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "Dot product of a vector a with itself is positive definite. It is zero if and only if ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a is the zero vector",
+        "B": "a is a purely imaginary vector",
+        "C": "a is normal",
+        "D": "a is a unit vector"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "The direction cosines of a vector a = x i + y j + z k are l,m,n. The relation to the unit vector â is â = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "l i + m j + n k",
+        "B": "x i + y j + z k",
+        "C": "(l/x)i + (m/y)j + (n/z)k",
+        "D": "l + m + n"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "The sum of the squares of direction cosines l² + m² + n² = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "|a|²",
+        "D": "3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "Let a,b,c be unit vectors such that a + b + c = 0. The sum of dot products a.b + b.c + c.a = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-3/2",
+        "B": "0",
+        "C": "3/2",
+        "D": "3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "In 3D geometry, the dot product defines the ______ metric of space.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Euclidean",
+        "B": "Minkowski",
+        "C": "Hermitian",
+        "D": "Projective"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "The diagram shows a vector a in 3D making angles α, β, γ with x, y, z axes. cos α = ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Vector in 3D space with the 3 direction angles highlighted.",
+      "options": {
+        "A": "a . i / |a|",
+        "B": "a . i",
+        "C": "a × i",
+        "D": "|a| / a . i"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "The projection of vector a on the x-axis is equal to its ____ component.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x",
+        "B": "y",
+        "C": "z",
+        "D": "magnitude"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "If a = 2i+3j+4k and b = 3i+2j-k, then a.b = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "6 + 6 - 4 = 8",
+        "B": "12",
+        "C": "0",
+        "D": "-8"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "Let a and b have orthogonal projection p of a on b. Vector a - p is ______ to b.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Orthogonal / Perpendicular",
+        "B": "Parallel",
+        "C": "Antiparallel",
+        "D": "The same direction as"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "A vector c is obtained strictly by rotating b. If c is a unit vector from rotation, cos θ is mathematically c . b if b is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "A unit vector",
+        "B": "Any non-zero vector",
+        "C": "A null vector",
+        "D": "Perpendicular to c"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "The cosine of the angle between two diagonals of a cube is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/3",
+        "B": "2/3",
+        "C": "1/√3",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "If the sum of two unit vectors is a unit vector, then the angle between them is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "120° (2π/3)",
+        "B": "60°",
+        "C": "90°",
+        "D": "180°"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "If the difference between two unit vectors is a unit vector, then the angle between them is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "60° (π/3)",
+        "B": "120°",
+        "C": "90°",
+        "D": "180°"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "If a and b are perpendicular to each other, what is the magnitude of a+b?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(|a|² + |b|²)",
+        "B": "|a| + |b|",
+        "C": "0",
+        "D": "√(|a||b|)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "The diagram shows a polygon of vectors closing to origin sum = 0. The dot product of a1 with the rest (-a1) is ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Multiple vectors forming a closed loop end-to-end.",
+      "options": {
+        "A": "-|a1|²",
+        "B": "0",
+        "C": "|a1|²",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "Equation a . (r - a) = 0 characterizes the points r forming a ______ through a.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Plane perpendicular to 'a'",
+        "B": "Line coincident with 'a'",
+        "C": "Sphere of diameter a",
+        "D": "Paraboloid"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "r . r = c represents a ______ passing through points with distance √c from origin.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Sphere centered at origin",
+        "B": "Plane perpendicular to origin",
+        "C": "Straight Line",
+        "D": "Ellipse"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "In Physics, Power P is the rate of work done. P can be calculated fundamentally by the dot product of Force and ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Velocity",
+        "B": "Acceleration",
+        "C": "Displacement",
+        "D": "Time"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "Electric flux is formulated using a dot product as Φ = E . ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "dA (Area vector)",
+        "B": "dt (Time vector)",
+        "C": "v (Velocity vector)",
+        "D": "F (Force vector)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "The scalar product is invariant under ______ of the coordinate axes.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Rotations",
+        "B": "Scale transformations",
+        "C": "Non-linear warps",
+        "D": "Projections"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "If a vector x satisfies x . a = 0, x . b = 0, x . c = 0 where a,b,c are non-coplanar, then x must be ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "The zero vector",
+        "B": "A vector normal to their plane",
+        "C": "Any unit vector",
+        "D": "A sum vector a+b+c"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "Gram-Schmidt process uses the dot product extensively to ______ a set of vectors.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Orthogonalize",
+        "B": "Normalize only",
+        "C": "Add",
+        "D": "Multiply"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "The property a.(bc) is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Meaningless (dotting a vector with a scalar or vice versa if dot is implicit)",
+        "B": "(a.b)c",
+        "C": "(a.c)b",
+        "D": "a.b + a.c"
+      },
+      "answer": "A"
+    }
+  ]
+}

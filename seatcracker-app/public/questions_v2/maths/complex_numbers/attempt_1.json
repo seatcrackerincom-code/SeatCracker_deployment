@@ -1,3 +1,459 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf402908abb87be1985973c3bc0383e983031c8869743c456a97c8e48818b390
-size 15818
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "If |z| = 1, then (z \u2212 1)/(z + 1) is (z \u2260 \u22121)?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "purely imaginary",
+                "B": "purely real",
+                "C": "has unit modulus",
+                "D": "zero"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 2,
+            "question": "The modulus of (3+4i)/(4\u22123i) is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "5",
+                "C": "7/5",
+                "D": "\u221a2"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(15x) / tan(20x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "15/20",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 15/20.",
+            "id": 3
+        },
+        {
+            "question": "If the matrix A is [[13, 7], [0, 4]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "185",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[169, 119], [0, 16]]. Trace is sum of diagonal elements: 169 + 16.",
+            "id": 4
+        },
+        {
+            "id": 5,
+            "question": "The locus of z satisfying |z - a| = |z - b| is the ______ of the segment joining a and b.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Perpendicular Bisector",
+                "B": "Circle",
+                "C": "Line segment",
+                "D": "Parabola"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(6x) / tan(20x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6/20",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 6/20.",
+            "id": 6
+        },
+        {
+            "question": "If the vectors a = 13i + 2j and b = 3i - j are perpendicular, find the value of 13*3.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 7
+        },
+        {
+            "question": "If the vectors a = 16i + 10j and b = 6i - j are perpendicular, find the value of 16*6.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "10",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 8
+        },
+        {
+            "id": 9,
+            "question": "If z = (1+i)/(1\u2212i), then z\u2074 = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "\u22121",
+                "C": "i",
+                "D": "\u2212i"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 10,
+            "question": "De Moivre's theorem holds for n being a ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Rational number",
+                "B": "Integer only",
+                "C": "Positive integer only",
+                "D": "Complex number only"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the matrix A is [[16, 7], [0, 10]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "356",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[256, 182], [0, 100]]. Trace is sum of diagonal elements: 256 + 100.",
+            "id": 11
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(8x) / tan(9x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8/9",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 8/9.",
+            "id": 12
+        },
+        {
+            "id": 13,
+            "question": "Argument of (1 + i\u221a3) is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u03c0/3",
+                "B": "2\u03c0/3",
+                "C": "\u03c0/6",
+                "D": "5\u03c0/6"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 14,
+            "question": "The square roots of (\u22127 + 24i) are?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u00b1(3 + 4i)",
+                "B": "\u00b1(4 + 3i)",
+                "C": "\u00b1(3 \u2212 4i)",
+                "D": "\u00b1(4 \u2212 3i)"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(10x) / tan(7x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "10/7",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 10/7.",
+            "id": 15
+        },
+        {
+            "id": 16,
+            "question": "For nth roots of unity, the roots lie on a ______ of radius 1.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Circle",
+                "B": "Parabola",
+                "C": "Straight Line",
+                "D": "Hyperbola"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(5x) / tan(13x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5/13",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 5/13.",
+            "id": 17
+        },
+        {
+            "question": "If the vectors a = 6i + 5j and b = 8i - j are perpendicular, find the value of 6*8.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 18
+        },
+        {
+            "id": 19,
+            "question": "Triangle Inequality states that |z\u2081 + z\u2082| is ______ |z\u2081| + |z\u2082|.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u2264",
+                "B": "\u2265",
+                "C": "=",
+                "D": "<"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the matrix A is [[6, 7], [0, 1]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "37",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[36, 49], [0, 1]]. Trace is sum of diagonal elements: 36 + 1.",
+            "id": 20
+        },
+        {
+            "question": "If the matrix A is [[16, 17], [0, 5]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "281",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[256, 357], [0, 25]]. Trace is sum of diagonal elements: 256 + 25.",
+            "id": "complex_numbers_21"
+        },
+        {
+            "question": "If the matrix A is [[20, 5], [0, 9]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "481",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[400, 145], [0, 81]]. Trace is sum of diagonal elements: 400 + 81.",
+            "id": "complex_numbers_22"
+        },
+        {
+            "question": "If the matrix A is [[14, 18], [0, 9]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "277",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[196, 414], [0, 81]]. Trace is sum of diagonal elements: 196 + 81.",
+            "id": "complex_numbers_23"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^4 * (1-x)^4 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "10",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "complex_numbers_24"
+        },
+        {
+            "question": "If the vectors a = 4i + 17j and b = 2i - j are perpendicular, find the value of 4*2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "17",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "complex_numbers_25"
+        },
+        {
+            "question": "If the matrix A is [[18, 19], [0, 1]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "325",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[324, 361], [0, 1]]. Trace is sum of diagonal elements: 324 + 1.",
+            "id": "complex_numbers_26"
+        },
+        {
+            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 19 S's are always together.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "60",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+            "id": "complex_numbers_27"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^10 * (1-x)^9 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "21",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "complex_numbers_28"
+        },
+        {
+            "question": "Evaluate the integral of sinh(5x) cosh(9x) dx.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Calculated term",
+                "B": "Calculated term",
+                "C": "Calculated term",
+                "D": "Calculated term"
+            },
+            "answer": "A",
+            "hint": "Use the product to sum identities for hyperbolic functions.",
+            "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
+            "id": "complex_numbers_29"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^2 * (1-x)^8 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "12",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "complex_numbers_30"
+        }
+    ]
+}

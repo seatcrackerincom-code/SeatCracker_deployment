@@ -1,3 +1,459 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:efbb9b7c474140b2c106230e8581fdf92f8bcfd8c649075770fa75f0ac827a3c
-size 14953
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Derivative of log x base 10 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1 / (x log 10)",
+                "B": "1/x",
+                "C": "(log 10) / x",
+                "D": "10/x"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 2,
+            "question": "If f(x) = log_x (log x), then f'(e) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1/e",
+                "B": "1",
+                "C": "0",
+                "D": "e"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 3,
+            "question": "The derivative of f(x) = |x|\u00b3 at x = 0 is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "Undefined",
+                "C": "1",
+                "D": "3"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the matrix A is [[10, 14], [0, 1]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "101",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[100, 154], [0, 1]]. Trace is sum of diagonal elements: 100 + 1.",
+            "id": 4
+        },
+        {
+            "id": 5,
+            "question": "Logarithmic differentiation is useful when the function is of the form ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "[f(x)]^g(x)",
+                "B": "f(x) + g(x)",
+                "C": "f(x) * g(x)",
+                "D": "Constant"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "d/dx [x^(sin x)] = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x^(sin x)[cos x ln x + sin x/x]",
+                "B": "x^(sin x)\u00b7cos x",
+                "C": "sin x\u00b7x^(sin x\u22121)",
+                "D": "x^(sin x)\u00b7ln x"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^20 * (1-x)^15 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "37",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": 7
+        },
+        {
+            "id": 8,
+            "question": "d\u00b2y/dx\u00b2 at x=0 for y = e^(sin x) is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "e",
+                "C": "0",
+                "D": "2"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 9,
+            "question": "Derivative of f(x) = x|x| at x = 0 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "Undefined",
+                "C": "1",
+                "D": "-1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 10,
+            "question": "If y = sin\u207b\u00b9(2x\u221a(1\u2212x\u00b2)), then dy/dx = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2/\u221a(1\u2212x\u00b2)",
+                "B": "1/\u221a(1\u2212x\u00b2)",
+                "C": "4x/\u221a(1\u2212x\u00b2)",
+                "D": "2x"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 11,
+            "question": "Derivative of sec\u207b\u00b9 x is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1 / (|x|\u221a(x\u00b2 - 1))",
+                "B": "1 / \u221a(1-x\u00b2)",
+                "C": "1 / (1+x\u00b2)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 12,
+            "question": "If x = a cos \u03b8, y = b sin \u03b8, then dy/dx = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-(b/a) cot \u03b8",
+                "B": "(b/a) tan \u03b8",
+                "C": "-(a/b) tan \u03b8",
+                "D": "cot \u03b8"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the vectors a = 15i + 9j and b = 3i - j are perpendicular, find the value of 15*3.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "9",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 13
+        },
+        {
+            "id": 14,
+            "question": "If y = tan\u207b\u00b9[(\u221a(1+x\u00b2)\u22121)/x], then dy/dx = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1/[2(1+x\u00b2)]",
+                "B": "1/(1+x\u00b2)",
+                "C": "x/(1+x\u00b2)",
+                "D": "1/[x\u00b7\u221a(1+x\u00b2)]"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 15,
+            "question": "The derivative of sin x with respect to cos x is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-cot x",
+                "B": "-tan x",
+                "C": "cot x",
+                "D": "tan x"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 16,
+            "question": "Derivative of cosec\u207b\u00b9 x is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-1 / (|x|\u221a(x\u00b2 - 1))",
+                "B": "1 / (|x|\u221a(x\u00b2 - 1))",
+                "C": "-1/\u221a(1-x\u00b2)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "If f(x) = x|x|, then f'(0) = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "1",
+                "C": "\u22121",
+                "D": "does not exist"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "If the vectors a = 18i + 7j and b = 7i - j are perpendicular, find the value of 18*7.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 18
+        },
+        {
+            "id": 19,
+            "question": "Derivative of cot\u207b\u00b9 x is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-1 / (1 + x\u00b2)",
+                "B": "1 / (1 + x\u00b2)",
+                "C": "-1 / \u221a(1 - x\u00b2)",
+                "D": "-cosec\u00b2 x"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 20,
+            "question": "Derivative of cos\u207b\u00b9 x is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-1 / \u221a(1 - x\u00b2)",
+                "B": "1 / \u221a(1 - x\u00b2)",
+                "C": "sin\u207b\u00b9 x",
+                "D": "1 / (1 + x\u00b2)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 21,
+            "question": "If y = e^(a sin\u207b\u00b9 x), then the value of (1 - x\u00b2)y\u2082 - xy\u2081 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "a\u00b2y",
+                "B": "-a\u00b2y",
+                "C": "0",
+                "D": "y"
+            },
+            "answer": "A",
+            "pyq": true
+        },
+        {
+            "id": 22,
+            "question": "The derivative of sin\u207b\u00b9(2x / (1 + x\u00b2)) with respect to cos\u207b\u00b9((1 - x\u00b2) / (1 + x\u00b2)) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "2",
+                "C": "1/2",
+                "D": "0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 23,
+            "question": "If x^y = e^(x - y), then the derivative dy/dx at x = 1 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "1",
+                "C": "e",
+                "D": "-1"
+            },
+            "answer": "A",
+            "pyq": true
+        },
+        {
+            "id": 24,
+            "question": "If y = log_x(log x), then the derivative dy/dx at x = e is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1/e",
+                "B": "e",
+                "C": "0",
+                "D": "1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 25,
+            "question": "If y = \u221a(sin x + \u221a(sin x + \u221a(sin x + ... \u221e))), then dy/dx is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "cos x / (2y - 1)",
+                "B": "sin x / (2y - 1)",
+                "C": "cos x / (2y + 1)",
+                "D": "1 / (2y - 1)"
+            },
+            "answer": "A",
+            "pyq": true
+        },
+        {
+            "id": 26,
+            "question": "The derivative of tan\u207b\u00b9( (\u221a(1 + x\u00b2) - 1) / x ) with respect to tan\u207b\u00b9 x is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1/2",
+                "B": "1",
+                "C": "2",
+                "D": "1/4"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 27,
+            "question": "If x = a(\u03b8 + sin \u03b8) and y = a(1 - cos \u03b8), then d\u00b2y / dx\u00b2 at \u03b8 = \u03c0/2 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1 / a",
+                "B": "a",
+                "C": "1 / (2a)",
+                "D": "2 / a"
+            },
+            "answer": "A",
+            "pyq": true
+        },
+        {
+            "id": 28,
+            "question": "If sin y = x sin(a + y), then dy/dx is equal to ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "sin\u00b2(a + y) / sin a",
+                "B": "sin a / sin\u00b2(a + y)",
+                "C": "sin(a + y) / sin a",
+                "D": "sin\u00b2(a - y) / sin a"
+            },
+            "answer": "A",
+            "pyq": true
+        },
+        {
+            "id": 29,
+            "question": "If y = x^y, then dy/dx is equal to ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "y\u00b2 / (x(1 - y log x))",
+                "B": "y\u00b2 / (x(1 + y log x))",
+                "C": "y / (x(1 - y log x))",
+                "D": "1 / (x(1 - y log x))"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 30,
+            "question": "If f(x) = |cos x|, then the derivative f'(3\u03c0/4) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1 / \u221a2",
+                "B": "-1 / \u221a2",
+                "C": "1",
+                "D": "0"
+            },
+            "answer": "A",
+            "pyq": false
+        }
+    ]
+}

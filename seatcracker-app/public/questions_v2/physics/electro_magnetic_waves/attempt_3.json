@@ -1,3 +1,305 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f3ea8969746b3fd3a73e2a6a55b9ddd84d7120456e1f2f2b8fee5d432a2ee4bf
-size 9941
+{
+    "questions": [
+        {
+            "question": "A capacitor of 6 microfarads is charged to 42 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5292.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 6 * 1764.",
+            "id": 1
+        },
+        {
+            "question": "Which layer of atmosphere absorbs UV rays?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Ozone layer",
+                "B": "Ionosphere",
+                "C": "Exosphere",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 2
+        },
+        {
+            "id": 3,
+            "question": "Wait? no. Replaced: total energy density u = \u03b50 E rms\u00b2 = B rms\u00b2 / \u03bc0.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 4,
+            "question": "Wave front is perpendicular to direction of propagation. yes.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "Maxwell equation for Faraday law is \u222e E \u22c5 dl = - d\u03a6m / dt. True?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "Maxwell equation for Gauss law for electricity is \u222d E \u22c5 dA = q / \u03b50.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The energy of an EM wave is equally divided between ______ and ______ fields.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Electric and Magnetic",
+                "B": "Potential and Kinetic",
+                "C": "None",
+                "D": "Light and Heat"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 7
+        },
+        {
+            "question": "Intensity of EM wave: I=",
+            "difficulty": "hard",
+            "pyq": true,
+            "options": {
+                "A": "(1/2)c\u03b5\u2080E\u2080\u00b2",
+                "B": "c\u03b5\u2080E\u2080\u00b2",
+                "C": "E\u2080\u00b2/2c",
+                "D": "c\u03b5\u2080\u00b2E\u2080"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "id": 8
+        },
+        {
+            "id": 9,
+            "question": "If \u03b5 and \u03bc are medium properties, speed v = 1 / \u221a(\u03bc \u03b5).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "A car moves at 81 m/s and brakes to stop in 4 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-20.25 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 81)/4.",
+            "id": 10
+        },
+        {
+            "id": 11,
+            "question": "Speed of EM waves depends on frequency in material medium (Dispersion).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Microwaves wavelength range 10\u207b\u00b3m to 0.1m. Which EM wave is this?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "Microwaves",
+                "B": "Radio waves",
+                "C": "Infrared",
+                "D": "X-rays"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "id": 12
+        },
+        {
+            "id": 13,
+            "question": "Poynting vector S = (E x B) / \u03bc0. True?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The speed of EM waves in vacuum is c = ______.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1 / \u221a(\u03bc\u2080\u03b5\u2080)",
+                "B": "\u221a(\u03bc\u2080\u03b5\u2080)",
+                "C": "\u03bc\u2080\u03b5\u2080",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 14
+        },
+        {
+            "id": 15,
+            "question": "Microwaves? no. Replaced: matched to rotational frequency of water molecules in food.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 16,
+            "question": "Wait? no. Replaced: radio waves used in FM broadcasting range from 88 to 108 MHz.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "Maxwell equation for Gauss law for magnetism is \u222d B \u22c5 dA = 0.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 1 m with speed 63 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "11907.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 3969 / 1.",
+            "id": 18
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 1 m with speed 47 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4418.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 2209 / 1.",
+            "id": 19
+        },
+        {
+            "question": "A capacitor of 6 microfarads is charged to 64 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "12288.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 6 * 4096.",
+            "id": 20
+        }
+    ]
+}

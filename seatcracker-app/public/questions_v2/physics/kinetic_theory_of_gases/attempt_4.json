@@ -1,3 +1,306 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b4a92a6366f4d991c3d4e2987a0d003f1752831890990f9ffd52d17e7377a691
-size 10147
+{
+    "questions": [
+        {
+            "question": "A car moves at 31 m/s and brakes to stop in 2 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-15.5 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 31)/2.",
+            "id": 1
+        },
+        {
+            "question": "A car moves at 11 m/s and brakes to stop in 2 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-5.5 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 11)/2.",
+            "id": 2
+        },
+        {
+            "id": 3,
+            "question": "Avogadro? yes. equal volumes of gases at same P, T have same N molecules.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 4,
+            "question": "Wait? no. Replaced: kinetic energy is zero at T = 0 K? yes (ideally).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "Wait? no. Replaced: mean free path is inverse to pressure and direct to temperature.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "Wait? no. Replaced: dimensions of R are [M L2 T-2 \u03b8-1 mol-1].",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "Wait? no. Replaced: root mean square velocity is independent of pressure if temp is constant.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "For n moles of gas, U = ______.",
+            "options": {
+                "A": "n f/2 RT",
+                "B": "n RT",
+                "C": "3/2 nRT",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 8
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 1 m with speed 44 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "9680.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 1936 / 1.",
+            "id": 9
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 1 m with speed 79 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "24964.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 6241 / 1.",
+            "id": 10
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 1 m with speed 31 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1922.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 961 / 1.",
+            "id": 11
+        },
+        {
+            "id": 12,
+            "question": "Mean free path is independent of temperature if volume is constant? yes (n doesn't change).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 13,
+            "question": "Wait? no. Replaced: for an ideal gas, P V vs T curve is a straight line through origin (for fixed n).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 14,
+            "question": "Wait? no. Replaced: value of kB is 1.38 x 10^-23 J/K.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "A capacitor of 9 microfarads is charged to 37 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6160.5 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 9 * 1369.",
+            "id": 15
+        },
+        {
+            "question": "A car moves at 97 m/s and brakes to stop in 4 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-24.25 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 97)/4.",
+            "id": 16
+        },
+        {
+            "question": "At what temp is v_rms of gas doubled from its value at 27\u00b0C?",
+            "options": {
+                "A": "927\u00b0C",
+                "B": "600\u00b0C",
+                "C": "300\u00b0C",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 17
+        },
+        {
+            "question": "A car moves at 64 m/s and brakes to stop in 2 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-32.0 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 64)/2.",
+            "id": 18
+        },
+        {
+            "question": "A capacitor of 2 microfarads is charged to 80 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6400.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 2 * 6400.",
+            "id": 19
+        },
+        {
+            "id": 20,
+            "question": "Degrees? no. Replaced: CO2 (triatomic linear) has 5 degrees of freedom? no, (3 trans + 2 rot + vib at high T). typically 5 at normal T.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        }
+    ]
+}

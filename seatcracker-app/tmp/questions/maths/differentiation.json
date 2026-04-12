@@ -1,3 +1,714 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7366ddc54ef9a424c57f8e69f4a09f760a3bb0a741a966f522a47b84baf38cdc
-size 18463
+{
+  "topic_id": 15,
+  "topic_name": "DIFFERENTIATION",
+  "weightage": 3,
+  "priority": "High",
+  "subtopics": [
+    "Standard Derivatives",
+    "Product & Quotient Rules",
+    "Chain Rule",
+    "Implicit & Parametric Differentiation"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "The derivative of xⁿ with respect to x is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "nxⁿ⁻¹",
+        "B": "n xⁿ⁺¹",
+        "C": "xⁿ / n",
+        "D": "xⁿ⁺¹ / (n+1)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "The derivative of sin x with respect to x is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos x",
+        "B": "-cos x",
+        "C": "sin x",
+        "D": "sec² x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "The derivative of cos x with respect to x is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-sin x",
+        "B": "sin x",
+        "C": "cos x",
+        "D": "-cos x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "The diagram show a tangent line at P. Its slope is defined as ______ at that point.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A curve with a tangent line drawn at a point P(x, y).",
+      "options": {
+        "A": "dy/dx",
+        "B": "dx/dy",
+        "C": "y/x",
+        "D": "x + y"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "According to the product rule, d/dx [u(x)v(x)] = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "u v' + v u'",
+        "B": "u' v'",
+        "C": "u v' - v u'",
+        "D": "(u v' + v u') / v²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "According to the quotient rule, d/dx [u/v] = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(v u' - u v') / v²",
+        "B": "(u v' - v u') / v²",
+        "C": "u' / v'",
+        "D": "u' v' / v²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "The derivative of eˣ is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "eˣ",
+        "B": "x eˣ⁻¹",
+        "C": "log e",
+        "D": "1 / eˣ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "The derivative of log x (base e) is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/x",
+        "B": "eˣ",
+        "C": "x",
+        "D": "1 / log x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "The diagram show the function y = |x|. At x = 0, the derivative is ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A 'V' shaped graph with the point at the origin (0,0).",
+      "options": {
+        "A": "Undefined",
+        "B": "0",
+        "C": "1",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "The derivative of tan x is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sec² x",
+        "B": "cosec² x",
+        "C": "sec x tan x",
+        "D": "cot x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "The Chain Rule state d/dx [f(g(x))] = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "f'(g(x)) * g'(x)",
+        "B": "f'(x) * g'(x)",
+        "C": "f(g'(x))",
+        "D": "f'(g'(x))"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "The derivative of a constant is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Constant itself",
+        "D": "x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "Find dy/dx if y = sin(x²).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2x cos(x²)",
+        "B": "cos(x²)",
+        "C": "2x sin(x²)",
+        "D": "2 cos x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "The diagram show a curve where dy/dx changes from positive to negative. This point is a ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A curve with a local maximum peak.",
+      "options": {
+        "A": "Maximum",
+        "B": "Minimum",
+        "C": "Zero",
+        "D": "Asymptote"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "The derivative of cot x is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-cosec² x",
+        "B": "sec² x",
+        "C": "-cosec x cot x",
+        "D": "-tan x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "Derivative of sec x is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sec x tan x",
+        "B": "sec² x",
+        "C": "tan x",
+        "D": "cosec x cot x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "If y = log(sin x), then dy/dx = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cot x",
+        "B": "tan x",
+        "C": "1 / sin x",
+        "D": "cos x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "The diagram show the graph of y = eˣ. The slope at x = 0 is ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "An exponential growth curve passing through (0,1).",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "e",
+        "D": "Infinity"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "Second order derivative of x³ is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "6x",
+        "B": "3x²",
+        "C": "6",
+        "D": "x²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "Derivative of sin⁻¹ x is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / √(1 - x²)",
+        "B": "-1 / √(1 - x²)",
+        "C": "1 / (1 + x²)",
+        "D": "cos⁻¹ x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "Derivative of tan⁻¹ x is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / (1 + x²)",
+        "B": "1 / √(1 - x²)",
+        "C": "sec² x",
+        "D": "cot⁻¹ x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "Derivative of 1/x is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1/x²",
+        "B": "log x",
+        "C": "1/x²",
+        "D": "-1/x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "The diagram show a parametric curve x = f(t), y = g(t). The derivative dy/dx is ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A curve labeled in terms of parameter t.",
+      "options": {
+        "A": "(dy/dt) / (dx/dt)",
+        "B": "(dx/dt) / (dy/dt)",
+        "C": "dy/dt * dx/dt",
+        "D": "f'(t) + g'(t)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "Derivative of √x is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / (2√x)",
+        "B": "√x / 2",
+        "C": "2√x",
+        "D": "x⁻¹/²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "If x² + y² = a², then dy/dx = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-x/y",
+        "B": "x/y",
+        "C": "-y/x",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "Derivative of aˣ is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "aˣ log a",
+        "B": "x aˣ⁻¹",
+        "C": "aˣ / log a",
+        "D": "aˣ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "The diagram show the slope of y = x² at various points. The slope function is ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A parabola with tangent slopes labeled at -2, -1, 0, 1, 2.",
+      "options": {
+        "A": "2x",
+        "B": "x²",
+        "C": "x",
+        "D": "x/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "The derivative of log(log x) is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / (x log x)",
+        "B": "1 / (log x)",
+        "C": "1 / x²",
+        "D": "log(1/x)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "Derivative of cosec x is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-cosec x cot x",
+        "B": "-cosec² x",
+        "C": "cosec x tan x",
+        "D": "cot² x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "The diagram show the derivative of a function f(x) is zero at x=c. This point 'c' is called a ______ point.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A graph reaching a plateau where the tangent is horizontal.",
+      "options": {
+        "A": "Critical or Stationary",
+        "B": "Zero",
+        "C": "Infinity",
+        "D": "Constant"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "Derivative of sin(cos x) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-sin x cos(cos x)",
+        "B": "cos x cos(cos x)",
+        "C": "sin x sin(cos x)",
+        "D": "-cos x sin(sin x)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "If y = xˣ, then dy/dx = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "xˣ (1 + log x)",
+        "B": "x xˣ⁻¹",
+        "C": "xˣ log x",
+        "D": "x² log x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "Logarithmic differentiation is useful when the function is of the form ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[f(x)]^g(x)",
+        "B": "f(x) + g(x)",
+        "C": "f(x) * g(x)",
+        "D": "Constant"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "The diagram show a 'Step Function'. The derivative is ______ at the jumps.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A staircase graph with horizontal segments and vertical jumps.",
+      "options": {
+        "A": "Undefined",
+        "B": "0",
+        "C": "Infinite",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "d/dx [cosh x] = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sinh x",
+        "B": "-sinh x",
+        "C": "cosh x",
+        "D": "sech² x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "d/dx [sinh x] = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cosh x",
+        "B": "-cosh x",
+        "C": "sinh x",
+        "D": "tanh x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "The diagram show the slope of a constant function y = 5. The slope is ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A horizontal straight line at y=5.",
+      "options": {
+        "A": "0",
+        "B": "5",
+        "C": "1",
+        "D": "x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "If y = √(x + √(x + √(x...))), then dy/dx = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / (2y - 1)",
+        "B": "1 / (2y + 1)",
+        "C": "1 / y",
+        "D": "y / x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "Derivative of log x base 10 is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / (x log 10)",
+        "B": "1/x",
+        "C": "(log 10) / x",
+        "D": "10/x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "The diagram show a 'Cusp'. The derivative at the cusp point is ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A graph where two curves meet at a sharp point, both being vertical at the meeting point.",
+      "options": {
+        "A": "Undefined",
+        "B": "0",
+        "C": "Infinite",
+        "D": "2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "The derivative of f(x) = |x|³ at x = 0 is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "Undefined",
+        "C": "1",
+        "D": "3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "If x = a cos θ, y = b sin θ, then dy/dx = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-(b/a) cot θ",
+        "B": "(b/a) tan θ",
+        "C": "-(a/b) tan θ",
+        "D": "cot θ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "The diagram show the slope of y = 1/x. For x > 0, the slope is always ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "The graph of a rectangular hyperbola in the first quadrant.",
+      "options": {
+        "A": "Negative",
+        "B": "Positive",
+        "C": "Zero",
+        "D": "Increasing"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "Derivative of cos⁻¹ x is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1 / √(1 - x²)",
+        "B": "1 / √(1 - x²)",
+        "C": "sin⁻¹ x",
+        "D": "1 / (1 + x²)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "Successive differentiation is the process of finding ______ order derivatives.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Higher",
+        "B": "Lower",
+        "C": "Zero",
+        "D": "Integral"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "d/dx [tan⁻¹(2x / (1-x²))] = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2 / (1 + x²)",
+        "B": "1 / (1 + x²)",
+        "C": "2x / (1 + x²)",
+        "D": "sec² x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "The diagram show a 'Leibniz Notation'. The symbol d²y/dx² means ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "The symbol d²y/dx² printed clearly.",
+      "options": {
+        "A": "Second derivative",
+        "B": "Square of derivative",
+        "C": "Derivative square",
+        "D": "Implicit derivative"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "Derivative of f(x) = x|x| at x = 0 is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "Undefined",
+        "C": "1",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "Derivative of x with respect to x is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "x",
+        "D": "x²/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "Derivative of cot⁻¹ x is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1 / (1 + x²)",
+        "B": "1 / (1 + x²)",
+        "C": "-1 / √(1 - x²)",
+        "D": "-cosec² x"
+      },
+      "answer": "A"
+    }
+  ]
+}

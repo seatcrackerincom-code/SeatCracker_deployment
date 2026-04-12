@@ -1,3 +1,1202 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b24f247fa291e9c084af0aa37afd8fd4ba1c16b75ee19085a05c5222cb038cc0
-size 34938
+[
+  {
+    "id": 43,
+    "question": "Between AM (Arithmetic), GM (Geometric), and HM (Harmonic) for unequal positive observations, the relation is ______.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "AM > GM > HM",
+      "B": "AM < GM < HM",
+      "C": "HM > AM > GM",
+      "D": "GM > AM > HM"
+    },
+    "answer": "A",
+    "_uid": "statistics.json_43"
+  },
+  {
+    "id": 21,
+    "question": "Using the circumradius R and half-angles, the inradius r is:",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "4R sin(A/2) sin(B/2) sin(C/2)",
+      "B": "4R cos(A/2) cos(B/2) cos(C/2)",
+      "C": "R sin A sin B sin C",
+      "D": "2R sin(A/2) sin(B/2) sin(C/2)"
+    },
+    "answer": "A",
+    "_uid": "properties_of_triangles.json_21"
+  },
+  {
+    "id": 49,
+    "question": "The diagram show a curve with sub-tangent equal to abcissa (x). The curve is an ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A curve where the sub-tangent OT equals the x-coordinate of P.",
+    "options": {
+      "A": "Exponential or line",
+      "B": "Parabola",
+      "C": "Circle",
+      "D": "Logarithm"
+    },
+    "answer": "A",
+    "_uid": "tangents_and_normals.json_49"
+  },
+  {
+    "id": 34,
+    "question": "The diagram show a Nilpotent matrix. A matrix A is nilpotent if A^k = ______ for some k.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A matrix that becomes a zero matrix when raised to a certain power.",
+    "options": {
+      "A": "0",
+      "B": "I",
+      "C": "A",
+      "D": "-I"
+    },
+    "answer": "A",
+    "_uid": "matrices_and_determinants.json_34"
+  },
+  {
+    "id": 21,
+    "question": "If f'(x) = 0 for all x in an interval I, the mean value theorem can be used to prove that f(x) is ______ on I.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "A constant function",
+      "B": "An identity function x",
+      "C": "Zero exclusively",
+      "D": "Monomial"
+    },
+    "answer": "A",
+    "_uid": "mean_value_theorem.json_21"
+  },
+  {
+    "id": 48,
+    "question": "By Leibniz rule, d/dx ∫_0^x e^{t^2} dt = ______.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "e^{x^2}",
+      "B": "2x e^{x^2}",
+      "C": "e^x",
+      "D": "e^{2x}"
+    },
+    "answer": "A",
+    "_uid": "definite_integrals.json_48"
+  },
+  {
+    "id": 13,
+    "question": "The length of the tangent at point (x1, y1) on curve y=f(x) is ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "|y1 / m| * √(1 + m²)",
+      "B": "|y1 / m|",
+      "C": "|y1 * m|",
+      "D": "√(1 + m²)"
+    },
+    "answer": "A",
+    "_uid": "tangents_and_normals.json_13"
+  },
+  {
+    "id": 29,
+    "question": "If sinA = 3/5, then sin 2A is ______.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "24/25",
+      "B": "6/5",
+      "C": "9/25",
+      "D": "12/25"
+    },
+    "answer": "A",
+    "_uid": "multiple_and_sub_multiple_angles.json_29"
+  },
+  {
+    "id": 40,
+    "question": "In a right-angled triangle ABC with right angle at C, the inradius r is equal to:",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "(a + b - c) / 2",
+      "B": "(a + b + c) / 2",
+      "C": "(a - b + c) / 2",
+      "D": "abc / 2"
+    },
+    "answer": "A",
+    "_uid": "properties_of_triangles.json_40"
+  },
+  {
+    "id": 47,
+    "question": "The diagram show a square. The product of slopes of its diagonals is:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A square with both diagonals drawn intersecting at the center.",
+    "options": {
+      "A": "-1",
+      "B": "1",
+      "C": "0",
+      "D": "2"
+    },
+    "answer": "A",
+    "_uid": "straight_lines.json_47"
+  },
+  {
+    "id": 4,
+    "question": "If vectors are given in component form a = a₁i + a₂j + a₃k, b = b₁i + b₂j + b₃k, c = c₁i + c₂j + c₃k, then [a b c] is precisely the ______ of a 3x3 matrix whose rows are the components of a, b, and c.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Determinant",
+      "B": "Trace",
+      "C": "Rank",
+      "D": "Inverse"
+    },
+    "answer": "A",
+    "_uid": "triple_product_of_vector_s.json_4"
+  },
+  {
+    "id": 35,
+    "question": "For two numbers a and b, the standard deviation is ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "|a - b| / 2",
+      "B": "(a + b)/2",
+      "C": "|a - b|",
+      "D": "√(ab)"
+    },
+    "answer": "A",
+    "_uid": "statistics.json_35"
+  },
+  {
+    "id": 30,
+    "question": "Are both values (1/√3) and (-1/√3) guaranteed by LMVT? No, LMVT only guarantees 'at least one'. Here we found ______ valid points.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Two",
+      "B": "One",
+      "C": "Zero",
+      "D": "Three"
+    },
+    "answer": "A",
+    "_uid": "mean_value_theorem.json_30"
+  },
+  {
+    "id": 38,
+    "question": "The diagram show a logistic growth curve obeying dP/dt = rP(1 - P/K). This differential equation is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "An S-shaped curve leveling off at a carrying capacity K.",
+    "options": {
+      "A": "Non-linear",
+      "B": "Linear",
+      "C": "Homogeneous",
+      "D": "Exact"
+    },
+    "answer": "A",
+    "_uid": "differential_equations.json_38"
+  },
+  {
+    "id": 42,
+    "question": "Applying LMVT to f(x) = √x on [0, a]. The value c must be ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "a / 4",
+      "B": "a / 2",
+      "C": "a",
+      "D": "0"
+    },
+    "answer": "A",
+    "_uid": "mean_value_theorem.json_42"
+  },
+  {
+    "id": 45,
+    "question": "The identity (1+ω)(1+ω²)(1+ω⁴)(1+ω⁸) for cube roots evaluates by reducing powers. ω⁴=ω, ω⁸=ω². It's equivalent to [(1+ω)(1+ω²)]², which equals ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "1",
+      "B": "-1",
+      "C": "0",
+      "D": "ω"
+    },
+    "answer": "A",
+    "_uid": "de_moivre_s_theorem.json_45"
+  },
+  {
+    "id": 15,
+    "question": "The diagram show the unit circle with an angle θ. The coordinates of the point on the circle are:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A unit circle with a point P corresponding to angle θ.",
+    "options": {
+      "A": "(cosθ, sinθ)",
+      "B": "(sinθ, cosθ)",
+      "C": "(tanθ, 1)",
+      "D": "(1, tanθ)"
+    },
+    "answer": "A",
+    "_uid": "trigonometry_upto_transformations.json_15"
+  },
+  {
+    "id": 49,
+    "question": "The diagram show a triangle on a sphere. The sum of the angles is:",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A sphere with a triangle formed by three great circles.",
+    "options": {
+      "A": "> 180°",
+      "B": "= 180°",
+      "C": "< 180°",
+      "D": "= 360°"
+    },
+    "answer": "A",
+    "_uid": "trigonometry_upto_transformations.json_49"
+  },
+  {
+    "id": 24,
+    "question": "Bernoulli's equation is of the form dy/dx + Py = Qyⁿ. We divide by yⁿ and substitute ______ to make it linear.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "y^(1-n) = v",
+      "B": "y^n = v",
+      "C": "x = v",
+      "D": "log y = v"
+    },
+    "answer": "A",
+    "_uid": "differential_equations.json_24"
+  },
+  {
+    "id": 42,
+    "question": "A plane meets axes at A, B, C such that centroid of triangle ABC is (p, q, r). The equation of the plane is:",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "x/p + y/q + z/r = 3",
+      "B": "x/p + y/q + z/r = 1",
+      "C": "p/x + q/y + r/z = 3",
+      "D": "px + qy + rz = 3"
+    },
+    "answer": "A",
+    "_uid": "plane.json_42"
+  },
+  {
+    "id": 47,
+    "question": "The diagram show the expansion of a 3x3 determinant along the first row. It is a ______ sum of cofactors.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Mathematical expression showing a11*C11 + a12*C12 + a13*C13.",
+    "options": {
+      "A": "Weighted",
+      "B": "Simple",
+      "C": "Geometric",
+      "D": "Inverse"
+    },
+    "answer": "A",
+    "_uid": "matrices_and_determinants.json_47"
+  },
+  {
+    "id": 17,
+    "question": "The coordinate of the foot of the perpendicular from point (x₁, y₁, z₁) to the plane ax + by + cz + d = 0 is found using the fact that the line is ______ to the plane.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Parallel to the normal",
+      "B": "Perpendicular to the normal",
+      "C": "In the plane",
+      "D": "Skew to the plane"
+    },
+    "answer": "A",
+    "_uid": "plane.json_17"
+  },
+  {
+    "id": 49,
+    "question": "Evaluate a × (b × a).",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "(a · a)b - (a · b)a",
+      "B": "(a · b)a - (a · a)b",
+      "C": "0",
+      "D": "a"
+    },
+    "answer": "A",
+    "_uid": "triple_product_of_vector_s.json_49"
+  },
+  {
+    "id": 39,
+    "question": "The Mean Value Theorem for Definite Integrals states there is a c in [a, b] such that ∫ f(x) dx from a to b = ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "f(c) * (b - a)",
+      "B": "f'(c) * (b - a)",
+      "C": "F(c)",
+      "D": "f(b) - f(a)"
+    },
+    "answer": "A",
+    "_uid": "mean_value_theorem.json_39"
+  },
+  {
+    "id": 8,
+    "question": "The diagram show the focal distance of point P on y²=4ax. The focal distance is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A parabola with a horizontal line (directrix) and lines showing the distance from P to the focus and to the directrix.",
+    "options": {
+      "A": "x₁ + a",
+      "B": "x₁ - a",
+      "C": "y₁ + a",
+      "D": "√(x₁² + y₁²)"
+    },
+    "answer": "A",
+    "_uid": "parabola.json_8"
+  },
+  {
+    "id": 44,
+    "question": "The exact differential expression x dx + y dy is equal to:",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "(1/2) d(x² + y²)",
+      "B": "d(xy)",
+      "C": "d(x+y)",
+      "D": "d(x/y)"
+    },
+    "answer": "A",
+    "_uid": "differential_equations.json_44"
+  },
+  {
+    "id": 30,
+    "question": "The empirical relationship roughly holds: Mean Deviation ≈ ______ * Standard Deviation.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "4/5",
+      "B": "5/4",
+      "C": "2/3",
+      "D": "3/2"
+    },
+    "answer": "A",
+    "_uid": "statistics.json_30"
+  },
+  {
+    "id": 43,
+    "question": "Three normals can be drawn from a point to y²=4ax if the point lies ______ the parabola's axis region.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Outside (x > 2a)",
+      "B": "Inside",
+      "C": "On",
+      "D": "At the vertex"
+    },
+    "answer": "A",
+    "_uid": "parabola.json_43"
+  },
+  {
+    "id": 50,
+    "question": "The constant term 'd' in ax+by+cz+d=0 determines the plane's ______ but not its orientation.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Distance from origin",
+      "B": "Normal vector",
+      "C": "Direction ratios",
+      "D": "Angle with axes"
+    },
+    "answer": "A",
+    "_uid": "plane.json_50"
+  },
+  {
+    "id": 18,
+    "question": "The image of a point with respect to a plane can be found by extending the perpendicular from the point to the plane by ______.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Twice the distance",
+      "B": "Half the distance",
+      "C": "The same direction vector",
+      "D": "An arbitrary length"
+    },
+    "answer": "A",
+    "_uid": "plane.json_18"
+  },
+  {
+    "id": 41,
+    "question": "By resolving any position vector OP into components, the components are exactly the ______ scaled by distance |OP|.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Direction Cosines",
+      "B": "Tangents",
+      "C": "Orthogonal vectors",
+      "D": "Unit normals"
+    },
+    "answer": "A",
+    "_uid": "dc_s_and_dr_s.json_41"
+  },
+  {
+    "id": 15,
+    "question": "The diagram show a 'Pole' and 'Polar'. If P is the pole, the line of contact of tangents from P is the ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A point P outside a circle, two tangents drawn from it, and a line connecting the two points of tangency.",
+    "options": {
+      "A": "Polar",
+      "B": "Normal",
+      "C": "Diameter",
+      "D": "Directrix"
+    },
+    "answer": "A",
+    "_uid": "circles.json_15"
+  },
+  {
+    "id": 43,
+    "question": "The radius of the nine-point circle of a triangle is equal to ______ the circumradius.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Half",
+      "B": "Twice",
+      "C": "Equal to",
+      "D": "One-third"
+    },
+    "answer": "A",
+    "_uid": "properties_of_triangles.json_43"
+  },
+  {
+    "id": 41,
+    "question": "Argument of a complex number is periodic. The principal argument Arg(z) strictly lies in ______.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "(-π, π]",
+      "B": "[0, 2π)",
+      "C": "(-π/2, π/2)",
+      "D": "[0, π]"
+    },
+    "answer": "A",
+    "_uid": "de_moivre_s_theorem.json_41"
+  },
+  {
+    "id": 38,
+    "question": "Vector identity: (a × b)² = |a|² |b|² - (a · b)². This is known as ______ identity.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Lagrange's",
+      "B": "Euler's",
+      "C": "Cauchy-Schwarz",
+      "D": "Grassmann's"
+    },
+    "answer": "A",
+    "_uid": "triple_product_of_vector_s.json_38"
+  },
+  {
+    "id": 43,
+    "question": "The exact differential expression (x dy - y dx) / x² is equal to:",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "d(y/x)",
+      "B": "d(x/y)",
+      "C": "d(xy)",
+      "D": "d(log xy)"
+    },
+    "answer": "A",
+    "_uid": "differential_equations.json_43"
+  },
+  {
+    "id": 32,
+    "question": "The diagram show a reflective property: rays parallel to axis reflect through the ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Parallel horizontal rays hitting the parabolic surface and all reflecting to converge at the focus.",
+    "options": {
+      "A": "Focus",
+      "B": "Vertex",
+      "C": "Directrix",
+      "D": "Latus rectum"
+    },
+    "answer": "A",
+    "_uid": "parabola.json_32"
+  },
+  {
+    "id": 37,
+    "question": "The diagram show a grid for calculating multivariable binomials. This is called ______ theorem.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Generic (x1+x2...+xm)ⁿ expansion representation.",
+    "options": {
+      "A": "Multinomial",
+      "B": "Polynomial",
+      "C": "Exponential",
+      "D": "Pythagorean"
+    },
+    "answer": "A",
+    "_uid": "binomial_theorem.json_37"
+  },
+  {
+    "id": 42,
+    "question": "The diagram shows a polygon of vectors closing to origin sum = 0. The dot product of a1 with the rest (-a1) is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Multiple vectors forming a closed loop end-to-end.",
+    "options": {
+      "A": "-|a1|²",
+      "B": "0",
+      "C": "|a1|²",
+      "D": "1"
+    },
+    "answer": "A",
+    "_uid": "dot_product_vectors.json_42"
+  },
+  {
+    "id": 36,
+    "question": "In polynomial xⁿ - 1 = (x-1)(x-α₁)(x-α₂)...(x-α_{n-1}), evaluating at x=1 (after removing x-1) proves that (1-α₁)(1-α₂)... = ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "n",
+      "B": "0",
+      "C": "1",
+      "D": "-1"
+    },
+    "answer": "A",
+    "_uid": "de_moivre_s_theorem.json_36"
+  },
+  {
+    "id": 34,
+    "question": "The value of cot A - tan A is equal to ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "2 cot 2A",
+      "B": "2 tan 2A",
+      "C": "cot 2A",
+      "D": "sin 2A"
+    },
+    "answer": "A",
+    "_uid": "multiple_and_sub_multiple_angles.json_34"
+  },
+  {
+    "id": 18,
+    "question": "The diagram show a set of 10 points on a plane. The number of lines that can be drawn is:",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A group of 10 dots randomly scattered, no three are collinear.",
+    "options": {
+      "A": "45",
+      "B": "100",
+      "C": "90",
+      "D": "10"
+    },
+    "answer": "A",
+    "_uid": "permutations_combinations.json_18"
+  },
+  {
+    "id": 41,
+    "question": "Slope of the tangent to x² + y² = 25 at (3, 4) is ______.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "-3/4",
+      "B": "-4/3",
+      "C": "3/4",
+      "D": "4/3"
+    },
+    "answer": "A",
+    "_uid": "tangents_and_normals.json_41"
+  },
+  {
+    "id": 18,
+    "question": "The value of sin 22.5° (π/8) is ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "√(2 - √2) / 2",
+      "B": "√(2 + √2) / 2",
+      "C": "√2 - 1",
+      "D": "(√3 - 1) / 2√2"
+    },
+    "answer": "A",
+    "_uid": "multiple_and_sub_multiple_angles.json_18"
+  },
+  {
+    "id": 13,
+    "question": "The distance between two parallel planes ax + by + cz + d₁ = 0 and ax + by + cz + d₂ = 0 is ______.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "|d₁ - d₂| / √(a² + b² + c²)",
+      "B": "|d₁ + d₂| / √(a² + b² + c²)",
+      "C": "|d₁ - d₂| / (a + b + c)",
+      "D": "|d₁d₂| / √(a² + b² + c²)"
+    },
+    "answer": "A",
+    "_uid": "plane.json_13"
+  },
+  {
+    "id": 48,
+    "question": "Can VTP be used to find a vector perpendicular to a but in the plane of a and b?",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Yes, compute a × (b × a)",
+      "B": "No, you must use STP",
+      "C": "Yes, compute a × b",
+      "D": "No, compute a · b"
+    },
+    "answer": "A",
+    "_uid": "triple_product_of_vector_s.json_48"
+  },
+  {
+    "id": 36,
+    "question": "The circumradius of the pedal triangle of triangle ABC is:",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "R/2",
+      "B": "R",
+      "C": "2R",
+      "D": "R/4"
+    },
+    "answer": "A",
+    "_uid": "properties_of_triangles.json_36"
+  },
+  {
+    "id": 37,
+    "question": "The diagram show a parabola with high eccentricity. Actually, all parabolas have eccentricity e = ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A sketch of a single parabola.",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "Less than 1",
+      "D": "Greater than 1"
+    },
+    "answer": "A",
+    "_uid": "quadratic_equations_and_expressions.json_37"
+  },
+  {
+    "id": 34,
+    "question": "Because |sin' x| = |cos x| ≤ 1, LMVT readily proves that |sin b - sin a| ≤ ______.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "|b - a|",
+      "B": "1",
+      "C": "|b + a|",
+      "D": "sin(b-a)"
+    },
+    "answer": "A",
+    "_uid": "mean_value_theorem.json_34"
+  },
+  {
+    "id": 42,
+    "question": "The diagram show a hyperbola locus: ||z - z₁| - |z - z₂|| = 2a. This defines a hyperbola provided 2a is ______ |z₁ - z₂|.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A hyperbola outlining a region where the absolute focal radius difference is constant.",
+    "options": {
+      "A": "Less than",
+      "B": "Greater than",
+      "C": "Equal to",
+      "D": "Twice"
+    },
+    "answer": "A",
+    "_uid": "complex_numbers.json_42"
+  },
+  {
+    "id": 41,
+    "question": "The diagram show a 'Circle through three points'. To find its center, we intersect the ______ of the chords.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A triangle inscribed in a circle, with perpendicular bisectors of sides meeting at the center.",
+    "options": {
+      "A": "Perpendicular bisectors",
+      "B": "Medians",
+      "C": "Angle bisectors",
+      "D": "Altitudes"
+    },
+    "answer": "A",
+    "_uid": "circles.json_41"
+  },
+  {
+    "id": 26,
+    "question": "The relationship 1/r₁ + 1/r₂ + 1/r₃ is equal to:",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "1/r",
+      "B": "1/R",
+      "C": "Δ",
+      "D": "s"
+    },
+    "answer": "A",
+    "_uid": "properties_of_triangles.json_26"
+  },
+  {
+    "id": 26,
+    "question": "If three vectors are coplanar, what happens to their cross products reciprocal vectors a×b, b×c, c×a?",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "They are collinear (parallel)",
+      "B": "They form a tetrahedron",
+      "C": "They are perpendicular",
+      "D": "They act as basis"
+    },
+    "answer": "A",
+    "_uid": "triple_product_of_vector_s.json_26"
+  },
+  {
+    "id": 18,
+    "question": "The diagram show a circle centered at (3, 4) touching the x-axis. Its radius is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A circle in the first quadrant which just grazes the horizontal axis.",
+    "options": {
+      "A": "4",
+      "B": "3",
+      "C": "5",
+      "D": "7"
+    },
+    "answer": "A",
+    "_uid": "circles.json_18"
+  },
+  {
+    "id": 8,
+    "question": "The diagram shows a rectangular hyperbola xy = c². Its asymptotes are ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Rectangular hyperbola in the first and third quadrants with asymptotes as axes.",
+    "options": {
+      "A": "The coordinate axes",
+      "B": "Lines y = ±x",
+      "C": "Lines x = ±c",
+      "D": "Lines y = ±c"
+    },
+    "answer": "A",
+    "_uid": "hyperbola.json_8"
+  },
+  {
+    "id": 25,
+    "question": "sin 4A + sin 2A expands as 2 sin 3A cos A using conversion, then sin 3A expands via ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "3 sinA - 4 sin³A",
+      "B": "cos(4A)",
+      "C": "2 sinA cosA",
+      "D": "Compound angles"
+    },
+    "answer": "A",
+    "_uid": "multiple_and_sub_multiple_angles.json_25"
+  },
+  {
+    "id": 39,
+    "question": "The differential equation of all non-vertical lines in a plane is:",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "d²y/dx² = 0",
+      "B": "dy/dx = 0",
+      "C": "d³y/dx³ = 0",
+      "D": "dy/dx = x"
+    },
+    "answer": "A",
+    "_uid": "differential_equations.json_39"
+  },
+  {
+    "id": 50,
+    "question": "∫_0^a f(x) g(x) dx = f(a) ∫_0^a g(x) dx is known as ______ Mean Value Theorem for integrals.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "First",
+      "B": "Second",
+      "C": "Rolle's",
+      "D": "Cauchy's"
+    },
+    "answer": "A",
+    "_uid": "definite_integrals.json_50"
+  },
+  {
+    "id": 37,
+    "question": "Similarly, evaluating the sum of p-th powers of nth roots of unity (where p is an integer not divisible by n) gives ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "0",
+      "B": "n",
+      "C": "1",
+      "D": "-1"
+    },
+    "answer": "A",
+    "_uid": "de_moivre_s_theorem.json_37"
+  },
+  {
+    "id": 29,
+    "question": "The direction cosines of a vector a = x i + y j + z k are l,m,n. The relation to the unit vector â is â = ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "l i + m j + n k",
+      "B": "x i + y j + z k",
+      "C": "(l/x)i + (m/y)j + (n/z)k",
+      "D": "l + m + n"
+    },
+    "answer": "A",
+    "_uid": "dot_product_vectors.json_29"
+  },
+  {
+    "id": 41,
+    "question": "If a line is perpendicular to a plane, its direction ratios are proportional to the ______ of the plane.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Direction ratios of the normal",
+      "B": "Coordinates of any point",
+      "C": "Intercepts",
+      "D": "Determinant"
+    },
+    "answer": "A",
+    "_uid": "plane.json_41"
+  },
+  {
+    "id": 15,
+    "question": "Standard deviation is strictly independent of change of ______, but not of scale.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Origin",
+      "B": "Scale",
+      "C": "Axis",
+      "D": "Rotation"
+    },
+    "answer": "A",
+    "_uid": "statistics.json_15"
+  },
+  {
+    "id": 24,
+    "question": "The standard deviation of first n natural numbers is ______.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "√((n² - 1) / 12)",
+      "B": "(n - 1) / 12",
+      "C": "√((n² - 1) / 6)",
+      "D": "(n² - 1) / 2"
+    },
+    "answer": "A",
+    "_uid": "statistics.json_24"
+  },
+  {
+    "id": 31,
+    "question": "What is the result of [a-b b-c c-a]?",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "0",
+      "B": "[a b c]",
+      "C": "-[a b c]",
+      "D": "2[a b c]"
+    },
+    "answer": "A",
+    "_uid": "triple_product_of_vector_s.json_31"
+  },
+  {
+    "id": 50,
+    "question": "In rigid body dynamics, angular momentum L of a point particle rotating around origin with velocity v = ω × r is L = m(r × v) = m(r × (ω × r)). Expanding this using VTP leads to ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "m[(r·r)ω - (r·ω)r] (which connects to the moment of inertia tensor)",
+      "B": "m(r·v)ω",
+      "C": "m(ω·ω)r",
+      "D": "0"
+    },
+    "answer": "A",
+    "_uid": "triple_product_of_vector_s.json_50"
+  },
+  {
+    "id": 50,
+    "question": "Primitive roots of unity are those ω_k where k and n are ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Coprime (gcd(k,n)=1)",
+      "B": "Multiples of each other",
+      "C": "Both even",
+      "D": "Both odd"
+    },
+    "answer": "A",
+    "_uid": "de_moivre_s_theorem.json_50"
+  },
+  {
+    "id": 33,
+    "question": "The diagram show tangent lines from P. The angle between them is tan⁻¹ of ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Point P outside, two tangents PT1 and PT2 making an angle θ.",
+    "options": {
+      "A": "2RL / (L² - R²)",
+      "B": "R / L",
+      "C": "L / R",
+      "D": "R² / L²"
+    },
+    "answer": "A",
+    "_uid": "circles.json_33"
+  },
+  {
+    "id": 13,
+    "question": "If each observation is increased by a constant k, the new variance is ______ the old variance.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Equal to",
+      "B": "k +",
+      "C": "k² *",
+      "D": "k *"
+    },
+    "answer": "A",
+    "_uid": "statistics.json_13"
+  },
+  {
+    "id": 17,
+    "question": "A point on the curve where the tangent is horizontal is a ______ point.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Stationary (or critical)",
+      "B": "Infection",
+      "C": "Cusp",
+      "D": "Intercept"
+    },
+    "answer": "A",
+    "_uid": "tangents_and_normals.json_17"
+  },
+  {
+    "id": 23,
+    "question": "The diagram shows hyperbola with e > √2. This means it is ______ a rectangular hyperbola.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Hyperbola with wide-open branches.",
+    "options": {
+      "A": "Opening wider than",
+      "B": "Opening narrower than",
+      "C": "Equivalent to",
+      "D": "Inside"
+    },
+    "answer": "A",
+    "_uid": "hyperbola.json_23"
+  },
+  {
+    "id": 14,
+    "question": "Geometrically, LMVT implies that there exists at least one point c on the curve where the tangent is ______.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Parallel to the secant line joining (a, f(a)) and (b, f(b))",
+      "B": "Parallel to the x-axis",
+      "C": "Intersecting the original roots",
+      "D": "Vertical"
+    },
+    "answer": "A",
+    "_uid": "mean_value_theorem.json_14"
+  },
+  {
+    "id": 9,
+    "question": "If two curves intersect orthogonally, the product of their slopes m1, m2 at the point of intersection is ______.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "-1",
+      "B": "0",
+      "C": "1",
+      "D": "Infinity"
+    },
+    "answer": "A",
+    "_uid": "tangents_and_normals.json_9"
+  },
+  {
+    "id": 48,
+    "question": "The diagram show an ogive (cumulative frequency curve). The median can be graphically found by locating the abscissa corresponding to the cumulative frequency ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "An S-shaped cumulative frequency curve plotted, showing the y-axis (Cumulative Freq) intersecting N/2 and mapping to the x-axis.",
+    "options": {
+      "A": "N/2",
+      "B": "N",
+      "C": "N/4",
+      "D": "3N/4"
+    },
+    "answer": "A",
+    "_uid": "statistics.json_48"
+  },
+  {
+    "id": 39,
+    "question": "If the sum of two unit vectors is a unit vector, then the angle between them is ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "120° (2π/3)",
+      "B": "60°",
+      "C": "90°",
+      "D": "180°"
+    },
+    "answer": "A",
+    "_uid": "dot_product_vectors.json_39"
+  },
+  {
+    "id": 41,
+    "question": "Volume of parallelepiped with edges a×b, b×c, c×a is ______ the volume of original.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Square of ([a b c]²)",
+      "B": "Equal to",
+      "C": "Double",
+      "D": "Volume is 0"
+    },
+    "answer": "A",
+    "_uid": "triple_product_of_vector_s.json_41"
+  },
+  {
+    "id": 40,
+    "question": "If tan(A/2) = t, then tanA = ______.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "2t / (1 - t²)",
+      "B": "2t / (1 + t²)",
+      "C": "1 - t²",
+      "D": "2t"
+    },
+    "answer": "A",
+    "_uid": "multiple_and_sub_multiple_angles.json_40"
+  },
+  {
+    "id": 34,
+    "question": "The diagram show a 'Step Function'. The derivative is ______ at the jumps.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A staircase graph with horizontal segments and vertical jumps.",
+    "options": {
+      "A": "Undefined",
+      "B": "0",
+      "C": "Infinite",
+      "D": "1"
+    },
+    "answer": "A",
+    "_uid": "differentiation.json_34"
+  },
+  {
+    "id": 16,
+    "question": "The diagram show the sub-normal of a curve. Its length is given by ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A curve, a normal line, and its projection on the x-axis representing the sub-normal.",
+    "options": {
+      "A": "|y * m|",
+      "B": "|y / m|",
+      "C": "y²",
+      "D": "x"
+    },
+    "answer": "A",
+    "_uid": "tangents_and_normals.json_16"
+  },
+  {
+    "id": 45,
+    "question": "The diagram shows asymptotes y = ±(b/a)x of hyperbola. They are tangents to the hyperbola at ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Hyperbola approaching its asymptotes but never touching.",
+    "options": {
+      "A": "Infinity",
+      "B": "Vertex",
+      "C": "Focus",
+      "D": "Centre"
+    },
+    "answer": "A",
+    "_uid": "hyperbola.json_45"
+  },
+  {
+    "id": 12,
+    "question": "Another expression for tan(A/2) is sinA / (1 + ______).",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "cosA",
+      "B": "sinA",
+      "C": "tanA",
+      "D": "1"
+    },
+    "answer": "A",
+    "_uid": "multiple_and_sub_multiple_angles.json_12"
+  }
+]

@@ -1,3 +1,304 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:33305604422ebb8dbc981fd901d0139b4c9bcf9a91fb7717c0dc3086a5222713
-size 10937
+{
+    "questions": [
+        {
+            "question": "Evaluate lim_{x -> 1} (x^{5} - 1) / (x^{3} - 1).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5/3",
+                "B": "3/5",
+                "C": "15",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use standard limit formula or L'Hopital's rule.",
+            "solution": "Applying L'Hopital's Rule yields (5x^(4)) / (3x^(2)). At x=1, this is 5/3.",
+            "id": 1
+        },
+        {
+            "question": "Determine lim_{x -> 0} (sin(4x) - sin(1x)) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3",
+                "B": "5",
+                "C": "-3",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use lim_{x->0} sin(kx)/x = k.",
+            "solution": "We can split the limit as lim_{x->0} sin(4x)/x - lim_{x->0} sin(1x)/x = 4 - 1 = 3.",
+            "id": 2
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{6x} - e^{2x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4",
+                "B": "8",
+                "C": "-4",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{2x} (e^{4x} - 1) / (4x) * (4) = 4.",
+            "id": 3
+        },
+        {
+            "question": "Determine lim_{x -> 0} (sin(12x) - sin(7x)) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5",
+                "B": "19",
+                "C": "-5",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use lim_{x->0} sin(kx)/x = k.",
+            "solution": "We can split the limit as lim_{x->0} sin(12x)/x - lim_{x->0} sin(7x)/x = 12 - 7 = 5.",
+            "id": 4
+        },
+        {
+            "question": "Calculate lim_{x -> infinity} ((x+1)/(x-6))^x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "e^{7}",
+                "B": "e^{-5}",
+                "C": "e^{6}",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+            "solution": "((x+1)/(x-6) - 1)*x = (x+1-x+6)/(x-6) * x = (7x)/(x-6). Limit is 7. So answer is e^{7}.",
+            "id": 5
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{9x} - e^{4x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5",
+                "B": "13",
+                "C": "-5",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{4x} (e^{5x} - 1) / (5x) * (5) = 5.",
+            "id": 6
+        },
+        {
+            "question": "Determine lim_{x -> 0} (sin(10x) - sin(3x)) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7",
+                "B": "13",
+                "C": "-7",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use lim_{x->0} sin(kx)/x = k.",
+            "solution": "We can split the limit as lim_{x->0} sin(10x)/x - lim_{x->0} sin(3x)/x = 10 - 3 = 7.",
+            "id": 7
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{7x} - e^{6x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1",
+                "B": "13",
+                "C": "-1",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{6x} (e^{1x} - 1) / (1x) * (1) = 1.",
+            "id": 8
+        },
+        {
+            "question": "Calculate lim_{x -> infinity} ((x+2)/(x-3))^x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "e^{5}",
+                "B": "e^{-1}",
+                "C": "e^{6}",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+            "solution": "((x+2)/(x-3) - 1)*x = (x+2-x+3)/(x-3) * x = (5x)/(x-3). Limit is 5. So answer is e^{5}.",
+            "id": 9
+        },
+        {
+            "question": "Determine lim_{x -> 0} (sin(6x) - sin(4x)) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2",
+                "B": "10",
+                "C": "-2",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use lim_{x->0} sin(kx)/x = k.",
+            "solution": "We can split the limit as lim_{x->0} sin(6x)/x - lim_{x->0} sin(4x)/x = 6 - 4 = 2.",
+            "id": 10
+        },
+        {
+            "question": "Calculate lim_{x -> infinity} ((x+5)/(x-1))^x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "e^{6}",
+                "B": "e^{4}",
+                "C": "e^{5}",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+            "solution": "((x+5)/(x-1) - 1)*x = (x+5-x+1)/(x-1) * x = (6x)/(x-1). Limit is 6. So answer is e^{6}.",
+            "id": 11
+        },
+        {
+            "question": "Calculate lim_{x -> infinity} ((x+4)/(x-6))^x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "e^{10}",
+                "B": "e^{-2}",
+                "C": "e^{24}",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+            "solution": "((x+4)/(x-6) - 1)*x = (x+4-x+6)/(x-6) * x = (10x)/(x-6). Limit is 10. So answer is e^{10}.",
+            "id": 12
+        },
+        {
+            "question": "Determine lim_{x -> 0} (sin(9x) - sin(6x)) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3",
+                "B": "15",
+                "C": "-3",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use lim_{x->0} sin(kx)/x = k.",
+            "solution": "We can split the limit as lim_{x->0} sin(9x)/x - lim_{x->0} sin(6x)/x = 9 - 6 = 3.",
+            "id": 13
+        },
+        {
+            "question": "Calculate lim_{x -> infinity} ((x+3)/(x-2))^x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "e^{5}",
+                "B": "e^{1}",
+                "C": "e^{6}",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+            "solution": "((x+3)/(x-2) - 1)*x = (x+3-x+2)/(x-2) * x = (5x)/(x-2). Limit is 5. So answer is e^{5}.",
+            "id": 14
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{11x} - e^{5x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6",
+                "B": "16",
+                "C": "-6",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{5x} (e^{6x} - 1) / (6x) * (6) = 6.",
+            "id": 15
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{7x} - e^{3x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4",
+                "B": "10",
+                "C": "-4",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{3x} (e^{4x} - 1) / (4x) * (4) = 4.",
+            "id": 16
+        },
+        {
+            "question": "Calculate lim_{x -> infinity} ((x+6)/(x-4))^x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "e^{10}",
+                "B": "e^{2}",
+                "C": "e^{24}",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+            "solution": "((x+6)/(x-4) - 1)*x = (x+6-x+4)/(x-4) * x = (10x)/(x-4). Limit is 10. So answer is e^{10}.",
+            "id": 17
+        },
+        {
+            "question": "Evaluate lim_{x -> 0} (e^{12x} - e^{4x}) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8",
+                "B": "16",
+                "C": "-8",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
+            "solution": "lim_{x->0} e^{4x} (e^{8x} - 1) / (8x) * (8) = 8.",
+            "id": 18
+        },
+        {
+            "question": "Determine lim_{x -> 0} (sin(6x) - sin(3x)) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3",
+                "B": "9",
+                "C": "-3",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use lim_{x->0} sin(kx)/x = k.",
+            "solution": "We can split the limit as lim_{x->0} sin(6x)/x - lim_{x->0} sin(3x)/x = 6 - 3 = 3.",
+            "id": 19
+        },
+        {
+            "question": "Calculate lim_{x -> infinity} ((x+5)/(x-6))^x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "e^{11}",
+                "B": "e^{-1}",
+                "C": "e^{30}",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+            "solution": "((x+5)/(x-6) - 1)*x = (x+5-x+6)/(x-6) * x = (11x)/(x-6). Limit is 11. So answer is e^{11}.",
+            "id": 20
+        }
+    ]
+}

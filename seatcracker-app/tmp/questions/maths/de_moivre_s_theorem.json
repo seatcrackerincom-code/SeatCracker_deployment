@@ -1,3 +1,712 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3c4346345525e43704c21a224cf0d2d4c48c93b7e9abc0be32f994652bdb2e62
-size 21123
+{
+  "topic_id": 38,
+  "topic_name": "DE MOIVRE'S THEOREM",
+  "weightage": 1,
+  "priority": "Low",
+  "subtopics": [
+    "De Moivre's Formula",
+    "nth Roots of Unity"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "De Moivre's Theorem states that for any rational number n, one of the values of (cos θ + i sin θ)ⁿ is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos(nθ) + i sin(nθ)",
+        "B": "cos(θⁿ) + i sin(θⁿ)",
+        "C": "n(cos θ + i sin θ)",
+        "D": "cos(nθ²) + i sin(nθ²)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "If n is an integer (positive, negative, or zero), then (cos θ + i sin θ)ⁿ strictly equals ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos(nθ) + i sin(nθ)",
+        "B": "A set of n distinct complex roots",
+        "C": "cos(nθ) - i sin(nθ)",
+        "D": "cos(θ/n) + i sin(θ/n)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "If n is a fraction p/q (where p, q are integers and q > 0), then (cos θ + i sin θ)^(p/q) has ______ distinct values.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "q",
+        "B": "p",
+        "C": "p + q",
+        "D": "Infinite"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "The complex number cis(θ) is a shorthand for ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos θ + i sin θ",
+        "B": "cos θ - i sin θ",
+        "C": "sin θ + i cos θ",
+        "D": "cos θ * i sin θ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "According to Euler's formula, cis(θ) can also be written in exponential form as ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^(iθ)",
+        "B": "e^(-iθ)",
+        "C": "e^θ",
+        "D": "i * e^θ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "Using De Moivre's theorem, [cis(α)] * [cis(β)] = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cis(α + β)",
+        "B": "cis(α - β)",
+        "C": "cis(α * β)",
+        "D": "cis(α / β)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "Using De Moivre's theorem, [cis(α)] / [cis(β)] = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cis(α - β)",
+        "B": "cis(α + β)",
+        "C": "cis(α * β)",
+        "D": "cis(α / β)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "The value of (cis θ)⁻¹ is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos θ - i sin θ  (or cis(-θ))",
+        "B": "sin θ - i cos θ",
+        "C": "-cos θ + i sin θ",
+        "D": "-cos θ - i sin θ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "The value of (cos θ - i sin θ)ⁿ is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos(nθ) - i sin(nθ)",
+        "B": "cos(nθ) + i sin(nθ)",
+        "C": "sin(nθ) - i cos(nθ)",
+        "D": "-cos(nθ) - i sin(nθ)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "If z = r(cos θ + i sin θ), then zⁿ = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "rⁿ (cos nθ + i sin nθ)",
+        "B": "r (cos nθ + i sin nθ)",
+        "C": "rⁿ (cos θ + i sin θ)",
+        "D": "r (cos θ + i sin θ)ⁿ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "De Moivre's Theorem is heavily used to derive identities by expanding (cos θ + i sin θ)ⁿ using ______ Theorem.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Binomial",
+        "B": "Taylor's",
+        "C": "Maclaurin's",
+        "D": "Pascal's"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "Expanding (cos θ + i sin θ)³ and equating real and imaginary parts to cos(3θ) and sin(3θ) yields the ______ angle formulas.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Multiple / Triple",
+        "B": "Inverse",
+        "C": "Hyperbolic",
+        "D": "Logarithmic"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "To find the q distinct roots of z^(1/q), we first write z in polar form as r[cos(θ + 2kπ) + i sin(θ + 2kπ)], and then apply De Moivre's. The angles are ______ for k = 0, 1, ..., q-1.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(θ + 2kπ) / q",
+        "B": "q(θ + 2kπ)",
+        "C": "(θ + kπ) / q",
+        "D": "(θ - 2kπ) / q"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "The nth roots of unity are the solutions to the equation ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "zⁿ = 1  (or zⁿ - 1 = 0)",
+        "B": "zⁿ = 0",
+        "C": "zⁿ = -1",
+        "D": "zⁿ = i"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "The diagram show a unit circle. The n distinct roots of zⁿ = 1 lie on the unit circle in the complex plane and form a regular ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Complex plane with a unit circle and n points equally spaced out along its perimeter starting at (1,0).",
+      "options": {
+        "A": "Polygon of n sides",
+        "B": "Polyhedron",
+        "C": "Ellipse",
+        "D": "Spiral"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "The roots of unity can be uniquely written as 1, ω, ω², ω³, ..., ω^(n-1), where ω represents the ______ root e^(2πi/n).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Primitive/First non-real",
+        "B": "Real",
+        "C": "Conjugate",
+        "D": "Infinite"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "The sum of all n roots of unity is equal to ______ (for n > 1).",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "n",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "The product of all n roots of unity is equal to ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(-1)^(n-1)",
+        "B": "1",
+        "C": "-1",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "For cube roots of unity (n=3), they are usually denoted as 1, ω, and ω². The sum 1 + ω + ω² = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "3",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "The property of the primitive cube root ω is that ω³ = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "-1",
+        "D": "i"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "The explicit complex rectangular form of ω (the primitive cube root of unity) is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(-1 + i√3) / 2",
+        "B": "(-1 - i√3) / 2",
+        "C": "(1 + i√3) / 2",
+        "D": "(1 - i√3) / 2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "The expression ω² is exactly equal to the ______ of ω since their magnitudes are 1.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Complex Conjugate (and also its reciprocal)",
+        "B": "Negative",
+        "C": "Square Root",
+        "D": "Real part"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "The value of (sin θ + i cos θ)ⁿ is equal to ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos n(π/2 - θ) + i sin n(π/2 - θ)",
+        "B": "sin(nθ) + i cos(nθ)",
+        "C": "cos(nθ) - i sin(nθ)",
+        "D": "sin(nθ) - i cos(nθ)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "The expression (1 + i)ⁿ can be simplified by converting (1 + i) to polar form as ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√2 (cos π/4 + i sin π/4)",
+        "B": "2 (cos π/4 + i sin π/4)",
+        "C": "√2 (cos π/2 + i sin π/2)",
+        "D": "(cos π/4 + i sin π/4)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "Thus, (1 + i)ⁿ expands precisely to ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(√2)ⁿ [cos(nπ/4) + i sin(nπ/4)]",
+        "B": "2ⁿ [cos(nπ/4) + i sin(nπ/4)]",
+        "C": "2^(n/2) [cos(nπ/4) - i sin(nπ/4)]",
+        "D": "cos(nπ/2) + i sin(nπ/2)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "De Moivre's Theorem implies that the polynomial zⁿ + 1 = 0 has solutions z = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cis((2k+1)π / n) for k=0,1...n-1",
+        "B": "cis(2kπ / n)",
+        "C": "cis(kπ / n)",
+        "D": "cis(nπ)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "If x = cos θ + i sin θ, then x + 1/x is equal to ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2 cos θ",
+        "B": "2i sin θ",
+        "C": "2",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "If x = cos θ + i sin θ, then x - 1/x is equal to ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2i sin θ",
+        "B": "2 cos θ",
+        "C": "2i",
+        "D": "-2 cos θ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "Similarly, xⁿ + 1/xⁿ is equal to ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2 cos(nθ)",
+        "B": "2i sin(nθ)",
+        "C": "2 cosⁿθ",
+        "D": "2i sinⁿθ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "And xⁿ - 1/xⁿ is equal to ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2i sin(nθ)",
+        "B": "2 cos(nθ)",
+        "C": "-2 cos(nθ)",
+        "D": "2 sin(nθ)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "These identities are useful in expressing powers like cosⁿθ as a series of multiple angles like ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos(nθ), cos((n-2)θ)...",
+        "B": "sin(nθ), sin((n-2)θ)...",
+        "C": "sec(nθ)",
+        "D": "tan(nθ)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "For example, 2² cos³θ = 2(cos θ)³ = (x + 1/x)³. Expanding it yields cos 3θ + ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3 cos θ",
+        "B": "3 sin θ",
+        "C": "cos θ",
+        "D": "-cos 3θ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "A complex number raised to an irrational power leads to ______ values.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Infinitely many distinct continuously tracking",
+        "B": "Only one",
+        "C": "None",
+        "D": "Purely real"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "When raising to integer n, we simply multiply the argument by n. When multiplying complex numbers z₁ = r₁cis(θ₁) and z₂ = r₂cis(θ₂), we multiply the moduli and ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Add the arguments (θ₁ + θ₂)",
+        "B": "Multiply the arguments",
+        "C": "Subtract the arguments",
+        "D": "Average the arguments"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "Let α, β be roots of x² - 2x + 4 = 0. The roots are 1 ± i√3. This is closely related to ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-2ω and -2ω² (where ω is cube root of unity)",
+        "B": "ω and ω²",
+        "C": "1 and -1",
+        "D": "2i and -2i"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "In polynomial xⁿ - 1 = (x-1)(x-α₁)(x-α₂)...(x-α_{n-1}), evaluating at x=1 (after removing x-1) proves that (1-α₁)(1-α₂)... = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n",
+        "B": "0",
+        "C": "1",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "Similarly, evaluating the sum of p-th powers of nth roots of unity (where p is an integer not divisible by n) gives ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "n",
+        "C": "1",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "If p is a multiple of n, the sum of p-th powers of the nth roots of unity is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n",
+        "B": "0",
+        "C": "1",
+        "D": "p"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "The continuous locus arg(z - z₁) / (z - z₂) = α (constant angle) represents a ______ passing through z₁ and z₂.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Circular arc",
+        "B": "Straight line",
+        "C": "Parabola",
+        "D": "Ellipse"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "If α = π/2 or -π/2, the continuous locus arg(z - z₁) / (z - z₂) represents a ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Semicircle (with z₁z₂ as diameter)",
+        "B": "Straight Line",
+        "C": "Parabola",
+        "D": "Full Circle"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "Argument of a complex number is periodic. The principal argument Arg(z) strictly lies in ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(-π, π]",
+        "B": "[0, 2π)",
+        "C": "(-π/2, π/2)",
+        "D": "[0, π]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "If |z|=1, then comparing z = 1/z* yields z + 1/z = 2 Re(z). This confirms x+1/x = 2 cosθ purely geometrically in the ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Unit circle definitions",
+        "B": "Parabola directrix",
+        "C": "Hyperbola focus",
+        "D": "Ellipse parameters"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "To solve z⁶ = -64, we first write -64 as ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "64 (cos π + i sin π)",
+        "B": "64 (cos 0 + i sin 0)",
+        "C": "64 (cos π/2 + i sin π/2)",
+        "D": "-64 cis(0)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "The principal 6th root of -64 is then 2 cis(π/6), which evaluates to ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√3 + i",
+        "B": "-√3 + i",
+        "C": "1 + i√3",
+        "D": "1 - i√3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "The identity (1+ω)(1+ω²)(1+ω⁴)(1+ω⁸) for cube roots evaluates by reducing powers. ω⁴=ω, ω⁸=ω². It's equivalent to [(1+ω)(1+ω²)]², which equals ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "0",
+        "D": "ω"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "Using Euler's identity e^(iπ) + 1 = 0, De Moivre's formula acts as a bridge between ______ and Trigonometry.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Complex Exponentials",
+        "B": "Logarithms",
+        "C": "Rational Functions",
+        "D": "Statistics"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "What happens if De Moivre's formula is applied to fractional power n=1/2 for z=1? It yields z^(1/2) = (cis(0))^(1/2) = cis(0/2) = 1. What determines the second square root -1?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Using the general polar angle 0 + 2π, yielding cis((0+2π)/2) = cis(π) = -1",
+        "B": "Taking the negative sign artificially",
+        "C": "Expanding the logarithm",
+        "D": "Adding i"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "The geometric sum 1 + z + z² + ... + z^(n-1) = (1-zⁿ)/(1-z) allows us to sum cosine and sine series by substituting z = cis θ. The series is called a ______ series.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Trigonometric geometric progression (C + iS method)",
+        "B": "Fourier series",
+        "C": "Taylor series",
+        "D": "Maclaurin polynomial"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "The points representing nth roots of unity lie on a circle |z| = 1 and divide it into n equal sectors, each of angle ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2π / n",
+        "B": "π / n",
+        "C": "2πn",
+        "D": "πn"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "Primitive roots of unity are those ω_k where k and n are ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Coprime (gcd(k,n)=1)",
+        "B": "Multiples of each other",
+        "C": "Both even",
+        "D": "Both odd"
+      },
+      "answer": "A"
+    }
+  ]
+}

@@ -1,3 +1,712 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b1ee550f7d9701d8c6d70abb1b09de2200d1ac51cb3cdb34afe03cb9797d6b1e
-size 23183
+{
+  "topic_id": 40,
+  "topic_name": "MEAN VALUE THEOREM",
+  "weightage": 1,
+  "priority": "Low",
+  "subtopics": [
+    "Rolle's Theorem",
+    "Lagrange's Mean Value Theorem"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "For Rolle's Theorem to be applicable, a function f(x) must first be ______ on the closed interval [a, b].",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Continuous",
+        "B": "Differentiable",
+        "C": "Zero",
+        "D": "Positive"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "The second condition for Rolle's Theorem is that f(x) must be ______ on the open interval (a, b).",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Differentiable",
+        "B": "Positive",
+        "C": "Continuous",
+        "D": "Integrable"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "The third and final condition for Rolle's Theorem is that f(a) must be equal to ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "f(b)",
+        "B": "0",
+        "C": "1",
+        "D": "f'(c)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "If all three conditions are satisfied, Rolle's theorem guarantees the existence of at least one point c in (a, b) such that ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "f'(c) = 0",
+        "B": "f(c) = 0",
+        "C": "f'(c) = f(a)",
+        "D": "f''(c) = 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "Geometrically, f'(c) = 0 implies that at x = c, the tangent to the curve is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Parallel to the x-axis",
+        "B": "Perpendicular to the x-axis",
+        "C": "Intersecting the origin",
+        "D": "Parallel to the y-axis"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "The diagram show a continuous curve that starts and ends at the same y-value. It is smooth with no jumps. By Rolle's theorem, it must have at least one ______ point in between.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A bell-like smooth curve (parabola pointing down) crossing the x-axis at a and b. A dotted horizontal tangent touching the peak c.",
+      "options": {
+        "A": "Turning / peak (local extrema)",
+        "B": "Inflection",
+        "C": "Discontinuous",
+        "D": "Root"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "Does Rolle's Theorem hold for f(x) = |x| on [-1, 1]?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "No, because it is not differentiable at x=0",
+        "B": "Yes, because f(-1) = f(1)",
+        "C": "No, because it is not continuous at x=0",
+        "D": "Yes, f'(0) = 0 exactly"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "Between any two roots of a polynomial f(x) = 0, there must exist at least one root of ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "f'(x) = 0",
+        "B": "f''(x) = 0",
+        "C": "f(x) - 1 = 0",
+        "D": "x = 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "Consider f(x) = x² - 4x + 3 on [1, 3]. Find c guaranteed by Rolle's Theorem.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "3",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "If f(x) is a constant function C on [a, b], then for any point c in (a, b), f'(c) = 0. Does Rolle's Theorem hold?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Yes, it holds everywhere in the interval.",
+        "B": "No, the function must vary.",
+        "C": "No, polynomial must be at least degree 1.",
+        "D": "Only at the endpoints."
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "Find c for f(x) = sin x on [0, π]. f(0) = f(π) = 0. f'(c) = cos c = 0. Therefore c = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/2",
+        "B": "π",
+        "C": "0",
+        "D": "2π"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "Lagrange's Mean Value Theorem (LMVT) relaxes which specific condition of Rolle's Theorem?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "f(a) does not have to equal f(b)",
+        "B": "Continuity on [a, b]",
+        "C": "Differentiability on (a, b)",
+        "D": "The interval must be closed"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "If f(x) is continuous on [a, b] and differentiable on (a, b), LMVT states there exists at least one c in (a, b) where f'(c) = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[f(b) - f(a)] / (b - a)",
+        "B": "f(b) - f(a)",
+        "C": "[f(b) - f(a)] / 2",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "Geometrically, LMVT implies that there exists at least one point c on the curve where the tangent is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Parallel to the secant line joining (a, f(a)) and (b, f(b))",
+        "B": "Parallel to the x-axis",
+        "C": "Intersecting the original roots",
+        "D": "Vertical"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "The diagram show a rising curve. The secant line connecting endpoints A and B has slope m. A parallel line forms a tangent at C. Thus the slope of tangent = ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A curve from point A to B. A secant line cuts through the ends. A point C on the curve has a tangent strictly parallel to the secant.",
+      "options": {
+        "A": "Slope of the Secant AB",
+        "B": "0",
+        "C": "y-intercept",
+        "D": "Length of AB"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "Find c using LMVT for f(x) = x² on [1, 3]. f(1)=1, f(3)=9. Secant slope = (9-1)/(3-1) = 4. f'(c) = 2c = 4. Thus c = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "3",
+        "D": "1.5"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "Is LMVT applicable for f(x) = 1/x on [-1, 1]?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "No, f(x) is discontinuous at x=0",
+        "B": "Yes, c=0 fits the equation",
+        "C": "Yes, because endpoints are distinct",
+        "D": "No, because the endpoints have the same value"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "In LMVT, can there be more than one such point c in the interval (a, b)?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Yes, possibly many",
+        "B": "No, c is unique",
+        "C": "Yes, but they must be at the endpoints",
+        "D": "No, it must be exactly two"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "Rolle's theorem is a special case of LMVT where ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "The secant line is horizontal (f(a) = f(b))",
+        "B": "The interval is infinite",
+        "C": "The function is linear",
+        "D": "c = 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "If f'(x) > 0 for all x in an interval, LMVT implies the function is strictly ______ on that interval.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Increasing",
+        "B": "Decreasing",
+        "C": "Constant",
+        "D": "Oscillating"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "If f'(x) = 0 for all x in an interval I, the mean value theorem can be used to prove that f(x) is ______ on I.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "A constant function",
+        "B": "An identity function x",
+        "C": "Zero exclusively",
+        "D": "Monomial"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "Cauchy's Mean Value Theorem (also generalized mean value theorem) involves two functions f(x) and g(x). It relates their derivatives f'(c)/g'(c) to ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[f(b) - f(a)] / [g(b) - g(a)]",
+        "B": "f(c)/g(c)",
+        "C": "[f(b) + f(a)] / [g(b) + g(a)]",
+        "D": "f'(b)/g'(a)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "In Cauchy's Theorem, what additional condition restricts g(x)?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "g'(x) ≠ 0 on (a, b)",
+        "B": "g(x) must be a polynomial",
+        "C": "f(x) and g(x) must be the same sign",
+        "D": "g(a) = g(b)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "Cauchy's Mean Value Theorem is primarily used to rigorously prove ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "L'Hôpital's Rule",
+        "B": "Fundamental Theorem of Calculus",
+        "C": "Quadratic formula",
+        "D": "Euler's identity"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "Applying LMVT to f(x) = e^x on [0, 1] means there is a c in (0, 1) such that e^c = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e - 1",
+        "B": "e + 1",
+        "C": "e",
+        "D": "(e-1)/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "The value c for e^c = e-1 is c = ln(e-1). Since e ≈ 2.718, e-1 ≈ 1.718. Is ln(1.718) contained in (0, 1)?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Yes, because 1 < 1.718 < e",
+        "B": "No, it is greater than 1",
+        "C": "No, it is negative",
+        "D": "Cannot be evaluated without a calculator"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "If f(x) and g(x) have exactly the same derivative (f'(x) = g'(x)) on an interval, LMVT implies f(x) and g(x) differ by a ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Constant (f(x) = g(x) + c)",
+        "B": "Linear term x",
+        "C": "Scale factor k",
+        "D": "Negative sign"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "This establishes the foundation for Indefinite Integrals always having an arbitrary ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Constant of integration (+ C)",
+        "B": "Upper limit",
+        "C": "Base area",
+        "D": "Differential dx"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "Consider f(x) = x³ on [-1, 1]. The endpoints gives slope (-1). Wait, f(1)=1, f(-1)=-1. Secant slope is (1 - (-1))/(1 - (-1)) = 2/2 = 1. c satisfies 3c² = 1. So c is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "± 1/√3",
+        "B": "1/3",
+        "C": "± √3",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "Are both values (1/√3) and (-1/√3) guaranteed by LMVT? No, LMVT only guarantees 'at least one'. Here we found ______ valid points.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Two",
+        "B": "One",
+        "C": "Zero",
+        "D": "Three"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "The diagram show a cubic curve. For a cubic function f(x) = ax³ + bx² + cx + d, applying Rolle's Theorem between any two roots gives a quadratic equation 3ax² + 2bx + c = 0 which confirms it has at least one root between the original roots. This is physically the ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A wavy cubic curve crossing the x-axis at a, b, and c. Turning points distinctly shown between a-b and b-c.",
+      "options": {
+        "A": "Local extremum (Peak or Valley)",
+        "B": "Root",
+        "C": "Inflection point",
+        "D": "Y-intercept"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "A typical LMVT application: Prove inequality sin x < x for x > 0. Apply LMVT to f(t) = sin t - t on [0, x]. f'(c) = cos c - 1. Since cos c < 1 for c in (0, x), f'(c) is negative, so f(x) is decreasing from f(0)=0. Thus f(x) ______ 0.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "< (less than)",
+        "B": ">",
+        "C": "=",
+        "D": "≥"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "If evaluating an error bounded by LMVT: |f(b) - f(a)| ≤ M |b - a|, M represents the ______ of the derivative f'(x) on the interval.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Supremum (Maximum absolute value)",
+        "B": "Minimum",
+        "C": "Average",
+        "D": "Integral sum"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "Because |sin' x| = |cos x| ≤ 1, LMVT readily proves that |sin b - sin a| ≤ ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|b - a|",
+        "B": "1",
+        "C": "|b + a|",
+        "D": "sin(b-a)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "This property |f(x) - f(y)| ≤ K|x - y| derived by bounds on derivatives is called the ______ condition.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Lipschitz",
+        "B": "Taylor",
+        "C": "Weierstrass",
+        "D": "Cauchy"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "LMVT is generalized by Taylor's Theorem. While LMVT approximates a function with a constant derivative (linear fit), Taylor approximates with a ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Polynomial of degree n (plus error term depending on the (n+1)th derivative)",
+        "B": "Fourier cycle",
+        "C": "Rational polynomial only",
+        "D": "Vector matrix"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "Determine the value of c in LMVT for f(x) = log_e x on [1, e]. f(e)=1, f(1)=0. Secant slope = 1/(e-1). f'(c) = 1/c. Thus c = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e - 1",
+        "B": "e + 1",
+        "C": "e / 2",
+        "D": "1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "Suppose a car travels 100 miles in 2 hours. By LMVT, knowing position as a function of time, what must happen at at least one instant during the trip?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "The speedometer reads exactly 50 mph (the average speed)",
+        "B": "The car stops",
+        "C": "The car accelerates",
+        "D": "The reading exceeds 100 mph"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "The Mean Value Theorem for Definite Integrals states there is a c in [a, b] such that ∫ f(x) dx from a to b = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "f(c) * (b - a)",
+        "B": "f'(c) * (b - a)",
+        "C": "F(c)",
+        "D": "f(b) - f(a)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "In the integral version, f(c) represents the ______ value of the function over the interval [a, b].",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Average (mean)",
+        "B": "Maximum",
+        "C": "Minimum",
+        "D": "Absolute"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "If f(x) = x(x-1)(x-2) defined on [0, 2], find the number of points c where f'(c)=0 guaranteed by Rolle's Theorem.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "At least 2 (between 0-1 and 1-2)",
+        "B": "1",
+        "C": "3",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "Applying LMVT to f(x) = √x on [0, a]. The value c must be ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a / 4",
+        "B": "a / 2",
+        "C": "a",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "Let's check A: f(a) - f(0) = √a. Secant slope = √a / a = 1/√a. f'(c) = 1/(2√c) = 1/√a implies √c = √a / 2, so c = a/4. This is valid because a/4 is in (0, a). Is it guaranteed unique?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Yes, because f'(x) is strictly monotonically decreasing (concave down curve)",
+        "B": "No, there can be multiple",
+        "C": "Yes, all MVT solutions are unique",
+        "D": "No"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "The diagram show a step function (like floor(x)). Can we apply LMVT on [0, 2]?",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A staircase function jumping integer values. A discontinuity is clearly visible at 1.",
+      "options": {
+        "A": "No, it is discontinuous",
+        "B": "Yes",
+        "C": "Yes, but Rolle's only",
+        "D": "No, it is unbounded"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "For f(x) = sin x - sin 2x on [0, π], we check Rolle's Theorem. f(0)=0. f(π) = sin π - sin 2π = 0. Therefore c must be a root of ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos x - 2 cos 2x = 0",
+        "B": "cos x - cos 2x = 0",
+        "C": "-sin x + 2 sin 2x = 0",
+        "D": "sin x - cos x = 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "Darboúx's Theorem generalized the derivative properties, stating that derivatives f'(x) themselves, even if not continuous, still satisfy the ______ Property.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Intermediate Value (they take on all values between f'(a) and f'(b))",
+        "B": "Even functioning",
+        "C": "Periodic",
+        "D": "Bounded"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "Does Darboux's Theorem directly rely fundamentally on LMVT for its proof?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Yes, usually proven via Extreme Value Theorem and Rolle's/LMVT logic",
+        "B": "No, proven purely algebraically",
+        "C": "No, derived from integration only",
+        "D": "Yes, but only for polynomials"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "Using LMVT, one can prove the exact error remainder term when using an nth-order Taylor polynomial. This form of the remainder is called the ______ form.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Lagrange remainder form: f^{(n+1)}(c) (x-a)^{n+1} / (n+1)!",
+        "B": "Cauchy form",
+        "C": "Integral integral",
+        "D": "Differential series"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "If we apply Cauchy's MVT to parametric curves y(t), x(t). The ratio y'(c)/x'(c) is fundamentally the ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Slope dy/dx of the tangent at t=c",
+        "B": "Arc length",
+        "C": "Area",
+        "D": "Velocity vector"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "Hence, Cauchy's MVT on parametric curves guarantees a point where the tangent is parallel to the straight secant line connecting the endpoints, serving as a 2D analogue of ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "LMVT",
+        "B": "Rolle's theorem",
+        "C": "Green's Theorem",
+        "D": "Stokes' Theorem"
+      },
+      "answer": "A"
+    }
+  ]
+}

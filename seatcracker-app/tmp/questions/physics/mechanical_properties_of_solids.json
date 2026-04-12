@@ -1,3 +1,712 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d21faa08e3231dbcee8f2e42bf3fcc035d3b0896bd75d52fcf11a93f854dc66e
-size 19727
+{
+  "topic_id": 25,
+  "topic_name": "MECHANICAL PROPERTIES OF SOLIDS",
+  "weightage": 1,
+  "priority": "Low",
+  "subtopics": [
+    "Stress, Strain, Young's Modulus",
+    "Elastic Moduli"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "Elasticity is the property of a body by virtue of which it tends to regain its original ______ after removal of deforming force.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Color",
+        "B": "Shape and size",
+        "C": "Temperature",
+        "D": "Mass"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 2,
+      "question": "A body that does not show any tendency to regain its original shape is called a ______ body.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Perfectly elastic",
+        "B": "Perfectly plastic",
+        "C": "Rigid",
+        "D": "Fluid"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 3,
+      "question": "The restoring force per unit area is called ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Strain",
+        "B": "Stress",
+        "C": "Pressure",
+        "D": "Modulus"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 4,
+      "question": "The SI unit of stress is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Newton (N)",
+        "B": "Pascal (N/m²)",
+        "C": "Joule",
+        "D": "Watt"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 5,
+      "question": "Strain is defined as the ratio of change in dimension to the ______ dimension.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Final",
+        "B": "Original",
+        "C": "Average",
+        "D": "Square of original"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is dimensionless?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Stress",
+        "B": "Strain",
+        "C": "Young's Modulus",
+        "D": "Pressure"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 7,
+      "question": "The diagram show a wire being stretched. Longitudinal strain is ΔL / ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A wire of length L being pulled by a weight, increasing its length by a small amount ΔL.",
+      "options": {
+        "A": "A",
+        "B": "L",
+        "C": "V",
+        "D": "2L"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 8,
+      "question": "Hooke's Law states that within the elastic limit, stress is ______ to strain.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Inversely proportional",
+        "B": "Directly proportional",
+        "C": "Equal",
+        "D": "Square of"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 9,
+      "question": "The ratio of longitudinal stress to longitudinal strain is called ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Bulk Modulus (B)",
+        "B": "Young's Modulus (Y)",
+        "C": "Shear Modulus (G)",
+        "D": "Poisson's Ratio"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 10,
+      "question": "The diagram show a stressful environment for a block. Tangential stress leads to ______ strain.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A cube with its base fixed and a force applied to the top face, causing it to lean by an angle θ.",
+      "options": {
+        "A": "Longitudinal",
+        "B": "Shearing",
+        "C": "Volume",
+        "D": "Radial"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 11,
+      "question": "Bulk Modulus (B) relates hydraulic stress to ______ strain.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Longitudinal",
+        "B": "Volume (ΔV/V)",
+        "C": "Shear",
+        "D": "Lateral"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 12,
+      "question": "The reciprocal of Bulk Modulus is called ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Elasticity",
+        "B": "Compressibility (k)",
+        "C": "Rigidness",
+        "D": "Stiffness"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 13,
+      "question": "The diagram show a stress-strain curve. The region where the material behaves elastically but stress is not proportional to strain is between ______ and ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A graph of stress vs strain showing Proportional limit (P), Elastic limit (E), Yield point (Y), and Fracture point (F).",
+      "options": {
+        "A": "Origin and P",
+        "B": "P and E",
+        "C": "E and Y",
+        "D": "Y and F"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 14,
+      "question": "Modulus of rigidity (G) is the ratio of ______ stress to ______ strain.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Normal, Volume",
+        "B": "Shearing, Shearing",
+        "C": "Longitudinal, Longitudinal",
+        "D": "Hydraulic, Volume"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 15,
+      "question": "Poisson's ratio is the ratio of lateral strain to ______ strain.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Volume",
+        "B": "Longitudinal",
+        "C": "Shear",
+        "D": "Tangential"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 16,
+      "question": "Elastic potential energy stored per unit volume in a stretched wire is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Stress * Strain",
+        "B": "(1/2) * Stress * Strain",
+        "C": "Y * Strain²",
+        "D": "Stress² / Y"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 17,
+      "question": "Which of these materials is most elastic?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Rubber",
+        "B": "Steel",
+        "C": "Glass",
+        "D": "Copper"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 18,
+      "question": "The diagram show a wire cross-section. If the radius is doubled, the Young's Modulus of the material will ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Circular cross section of a wire with radius r.",
+      "options": {
+        "A": "Double",
+        "B": "Remain same",
+        "C": "Quadruple",
+        "D": "Be halved"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 19,
+      "question": "Shear Modulus is also known as ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Bulk Modulus",
+        "B": "Modulus of Rigidity",
+        "C": "Young's Modulus",
+        "D": "Elastic Force"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 20,
+      "question": "If the temperature of a wire increases, its Young's Modulus usually ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Increases",
+        "B": "Decreases",
+        "C": "Remains constant",
+        "D": "Becomes zero"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 21,
+      "question": "Ductile materials are those that have a ______ plastic region before fracture.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Small",
+        "B": "Large",
+        "C": "Zero",
+        "D": "Negligible"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 22,
+      "question": "Brittle materials break ______ after the elastic limit.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Slowly",
+        "B": "Soon",
+        "C": "Never",
+        "D": "After much stretching"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 23,
+      "question": "The diagram show a girder. Why is the 'I' shape used for beams in construction?",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Cross-section of a steel beam shaped like the letter I.",
+      "options": {
+        "A": "To save material only",
+        "B": "To reduce bending/buckling",
+        "C": "For aesthetic looks",
+        "D": "To increase weight"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 24,
+      "question": "Maximum height of a mountain on Earth is limited by the ______ of rocks.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Density",
+        "B": "Elastic limit (Yield strength)",
+        "C": "Temperature",
+        "D": "Volume"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 25,
+      "question": "Young's Modulus is defined only for ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Gases",
+        "B": "Solids",
+        "C": "Liquids",
+        "D": "Vacuum"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 26,
+      "question": "Fluids (liquids and gases) have ______ Modulus of Rigidity.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Infinite",
+        "B": "Zero",
+        "C": "Small",
+        "D": "Large"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 27,
+      "question": "The diagram show a stress-strain curve for an elastomer (like rubber). Rubber does not have ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A curved plot for rubber showing a large strain for small stress, with no clear proportional segment.",
+      "options": {
+        "A": "Elasticity",
+        "B": "Well-defined proportional region",
+        "C": "Strain",
+        "D": "Breaking point"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 28,
+      "question": "What is the unit of Young's Modulus?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "N m",
+        "B": "N / m²",
+        "C": "N / m",
+        "D": "N m²"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 29,
+      "question": "When a wire is stretched, the work done appears as ______ energy.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Kinetic",
+        "B": "Elastic Potential",
+        "C": "Thermal",
+        "D": "Magnetic"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 30,
+      "question": "Elastic after-effect refers to the ______ in regaining original shape.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Speed",
+        "B": "Delay",
+        "C": "Ease",
+        "D": "Force"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 31,
+      "question": "The bridge is declared unsafe after long use due to elastic ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Fatigue",
+        "B": "Strength",
+        "C": "Failure",
+        "D": "Bending"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "The diagram show internal atomic forces. The inter-atomic force is attractive when r ______ r₀.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Graph of potential energy vs distance between atoms, showing a minimum at r0.",
+      "options": {
+        "A": "<",
+        "B": ">",
+        "C": "=",
+        "D": "Zero"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 33,
+      "question": "A perfectly rigid body has Y = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Zero",
+        "B": "Infinite",
+        "C": "1",
+        "D": "100"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 34,
+      "question": "The ratio of stress to strain is constant for a material within ______ limit.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Plastic",
+        "B": "Elastic",
+        "C": "Breaking",
+        "D": "Atmospheric"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 35,
+      "question": "Thermal stress is produced in a rod when its ______ is prevented while temperature changes.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Vibration",
+        "B": "Expansion/Contraction",
+        "C": "Color change",
+        "D": "Rotation"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 36,
+      "question": "For most materials, Poisson's ratio (σ) lies between ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1 and 0",
+        "B": "0 and 0.5",
+        "C": "1 and 2",
+        "D": "Infinite"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 37,
+      "question": "The diagram show a hollow shaft. A hollow shaft is ______ than a solid shaft of same mass and material.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Cross-sections of a solid cylinder and a hollow cylinder for comparison.",
+      "options": {
+        "A": "Weaker",
+        "B": "Stronger",
+        "C": "Equal",
+        "D": "Heavier"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 38,
+      "question": "If a force F doubles length L of wire, longitudinal strain is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0.5",
+        "B": "1",
+        "C": "2",
+        "D": "Zero"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 39,
+      "question": "Pressure is a form of ______ stress.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Longitudinal",
+        "B": "Hydraulic/Normal",
+        "C": "Shear",
+        "D": "Lateral"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 40,
+      "question": "Steel is used in construction because it has high ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Density",
+        "B": "Young's Modulus",
+        "C": "Refractive Index",
+        "D": "Magnetism"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 41,
+      "question": "The diagram show a wire under tension. Stress = Force / ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A force F pulling on a wire of cross-sectional area A.",
+      "options": {
+        "A": "Length",
+        "B": "Area (A)",
+        "C": "Volume",
+        "D": "Density"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 42,
+      "question": "Bulk Modulus of an incompressible liquid is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Zero",
+        "B": "Infinite",
+        "C": "1",
+        "D": "Negligible"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 43,
+      "question": "Twisting a cylinder involves ______ strain.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Longitudinal",
+        "B": "Shear",
+        "C": "Volume",
+        "D": "Radial"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 44,
+      "question": "Modulus of elasticity depends on ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Applied force",
+        "B": "Nature of material",
+        "C": "Dimensions",
+        "D": "Color"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 45,
+      "question": "The diagram show a breaking wire. Ultimate tensile strength is the maximum ______ a material can withstand.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "The peak of the stress-strain curve just before the material begins to thin down (necking).",
+      "options": {
+        "A": "Strain",
+        "B": "Stress",
+        "C": "Energy",
+        "D": "Volume"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 46,
+      "question": "Shearing strain is measured by the ______ through which a line originally perpendicular to fixed face is turned.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Distance",
+        "B": "Angle (θ)",
+        "C": "Area",
+        "D": "Length"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 47,
+      "question": "Water is ______ elastic than air.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Less",
+        "B": "More",
+        "C": "Equally",
+        "D": "Not"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 48,
+      "question": "Dimensional formula of Young's Modulus is same as that of ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Force",
+        "B": "Pressure",
+        "C": "Work",
+        "D": "Power"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 49,
+      "question": "Compression of a gas at constant temperature is involving its ______ Modulus.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Young's",
+        "B": "Bulk",
+        "C": "Shear",
+        "D": "Rigidity"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 50,
+      "question": "External force trying to change state of body is deforming force. (True/False)",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "Only for solids",
+        "D": "Only for fluids"
+      },
+      "answer": "A"
+    }
+  ]
+}

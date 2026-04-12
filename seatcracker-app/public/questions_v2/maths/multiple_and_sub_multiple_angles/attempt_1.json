@@ -1,3 +1,454 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:805712c888ce45aadeae38d5e7e61f31303c080397bde6af44345894cf90df55
-size 15763
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "In the half-angle formula, sin(A/2) is equal to \u00b1\u221a[(1 - cosA) / 2].",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 2,
+            "question": "The value of cot 22.5\u00b0 (\u03c0/8) is \u221a2 + 1.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 3,
+            "question": "The value of cos 36\u00b0 is (\u221a5 + 1) / 4.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 4,
+            "question": "The maximum value of the expression a cos\u03b8 + b sin\u03b8 is \u221a(a\u00b2 + b\u00b2).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the vectors a = 2i + 17j and b = 8i - j are perpendicular, find the value of 2*8.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "17",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 5
+        },
+        {
+            "id": 6,
+            "question": "The value of sin 18\u00b0 is (\u221a5 - 1) / 4.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^2 * (1-x)^13 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "17",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": 7
+        },
+        {
+            "question": "If the vectors a = 17i + 15j and b = 7i - j are perpendicular, find the value of 17*7.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "15",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 8
+        },
+        {
+            "question": "If the matrix A is [[2, 2], [0, 1]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[4, 6], [0, 1]]. Trace is sum of diagonal elements: 4 + 1.",
+            "id": 9
+        },
+        {
+            "id": 10,
+            "question": "The minimum value of a cos\u03b8 + b sin\u03b8 is -\u221a(a\u00b2 + b\u00b2).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 11,
+            "question": "The value of tan 22.5\u00b0 (\u03c0/8) is \u221a2 - 1.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 12,
+            "question": "In terms of tanA, the formula for sin(2A) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(2 tanA) / (1 + tan\u00b2A)",
+                "B": "(2 tanA) / (1 - tan\u00b2A)",
+                "C": "(1 - tan\u00b2A) / (1 + tan\u00b2A)",
+                "D": "tan(2A)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 13,
+            "question": "The value of cos(3A) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "4 cos\u00b3A - 3 cosA",
+                "B": "3 cosA - 4 cos\u00b3A",
+                "C": "4 cos\u00b3A + 3 cosA",
+                "D": "cos\u00b3A - sin\u00b3A"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 14,
+            "question": "In the half-angle formula, cos(A/2) is equal to \u00b1\u221a[(1 + cosA) / 2].",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 15,
+            "question": "The value of sin(3A) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3 sinA - 4 sin\u00b3A",
+                "B": "4 sin\u00b3A - 3 sinA",
+                "C": "3 sinA + 4 sin\u00b3A",
+                "D": "sin(2A) + sinA"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the vectors a = 15i + 7j and b = 8i - j are perpendicular, find the value of 15*8.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 16
+        },
+        {
+            "question": "If the matrix A is [[20, 12], [0, 8]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "464",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[400, 336], [0, 64]]. Trace is sum of diagonal elements: 400 + 64.",
+            "id": 17
+        },
+        {
+            "id": 18,
+            "question": "The value of tan(A/2) can be expressed as sinA / (1 + cosA).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 19,
+            "question": "In terms of tanA, the formula for cos(2A) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(1 - tan\u00b2A) / (1 + tan\u00b2A)",
+                "B": "(1 + tan\u00b2A) / (1 - tan\u00b2A)",
+                "C": "(2 tanA) / (1 + tan\u00b2A)",
+                "D": "1 - tan\u00b2A"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the vectors a = 4i + 16j and b = 5i - j are perpendicular, find the value of 4*5.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "16",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 20
+        },
+        {
+            "question": "A fair coin is tossed 6 times. What is the probability of getting exactly 4 heads?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "15.0/2^6",
+                "B": "6/2^6",
+                "C": "1/2^6",
+                "D": "30/2^6"
+            },
+            "answer": "A",
+            "hint": "Use Binomial distribution: nCr * (1/2)^r * (1/2)^(n-r)",
+            "solution": "P(X=4) = 6C4 * (1/2)^n = 15.0/2^6.",
+            "id": "multiple_and_sub_multiple_angles_21"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(15x) / tan(15x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "15/15",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 15/15.",
+            "id": "multiple_and_sub_multiple_angles_22"
+        },
+        {
+            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 8 S's are always together.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "60",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+            "id": "multiple_and_sub_multiple_angles_23"
+        },
+        {
+            "question": "If the matrix A is [[19, 10], [0, 6]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "397",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[361, 250], [0, 36]]. Trace is sum of diagonal elements: 361 + 36.",
+            "id": "multiple_and_sub_multiple_angles_24"
+        },
+        {
+            "question": "If the vectors a = 18i + 10j and b = 8i - j are perpendicular, find the value of 18*8.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "10",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "multiple_and_sub_multiple_angles_25"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(17x) / tan(9x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "17/9",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 17/9.",
+            "id": "multiple_and_sub_multiple_angles_26"
+        },
+        {
+            "question": "Evaluate the integral of sinh(2x) cosh(9x) dx.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Calculated term",
+                "B": "Calculated term",
+                "C": "Calculated term",
+                "D": "Calculated term"
+            },
+            "answer": "A",
+            "hint": "Use the product to sum identities for hyperbolic functions.",
+            "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
+            "id": "multiple_and_sub_multiple_angles_27"
+        },
+        {
+            "question": "If the matrix A is [[5, 8], [0, 6]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "61",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[25, 88], [0, 36]]. Trace is sum of diagonal elements: 25 + 36.",
+            "id": "multiple_and_sub_multiple_angles_28"
+        },
+        {
+            "question": "If the matrix A is [[18, 14], [0, 9]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "405",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[324, 378], [0, 81]]. Trace is sum of diagonal elements: 324 + 81.",
+            "id": "multiple_and_sub_multiple_angles_29"
+        },
+        {
+            "question": "If the vectors a = 5i + 2j and b = 1i - j are perpendicular, find the value of 5*1.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "multiple_and_sub_multiple_angles_30"
+        }
+    ]
+}

@@ -1,3 +1,309 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48d5bf5d08f18f9b05e10bcc628494c0f6b28262c35c617727f4bc55339fb5c0
-size 10041
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "The binomial expansion of (x + a)\u207f + (x - a)\u207f has ______ terms if n is even.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "n/2 + 1",
+                "B": "n/2",
+                "C": "n + 1",
+                "D": "2n"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 2,
+            "question": "If n is a positive integer, (\u221a2 + 1)\u2076 + (\u221a2 - 1)\u2076 is a/an ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Integer",
+                "B": "Irrational number",
+                "C": "Complex number",
+                "D": "Fraction"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^7 * (1-x)^17 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "26",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": 3
+        },
+        {
+            "id": 4,
+            "question": "The sum of coefficients in (4x + 3y)\u207f is found by putting x=1 and y=1. It is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "7\u207f",
+                "B": "1\u207f",
+                "C": "4\u207f",
+                "D": "3\u207f"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "What is the degree of (x+1)\u2075 - (x-1)\u2075?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "4",
+                "B": "5",
+                "C": "6",
+                "D": "3"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "Find the constant term in (2x - 1/x)\u2076.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-160",
+                "B": "160",
+                "C": "20",
+                "D": "64"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "Coefficient of x in (1 \u2212 2x)^(\u22121/2) using binomial expansion is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "2",
+                "C": "\u22121",
+                "D": "1/2"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 8,
+            "question": "The greatest term in expansion of (1 + 0.2)\u00b9\u2075 is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "T\u2083",
+                "B": "T\u2084",
+                "C": "T\u2082",
+                "D": "T\u2085"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 9,
+            "question": "The value of (1.02)\u00b9\u2070 approximately (using binomial, first 3 terms) is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1.2189",
+                "B": "1.2",
+                "C": "1.02",
+                "D": "1.21899"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 10,
+            "question": "The value of \u207fC\u2080 + 2 \u207fC\u2081 + 3 \u207fC\u2082 + ... + (n+1) \u207fC\u2099 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(n + 2) 2\u207f\u207b\u00b9",
+                "B": "(n + 1) 2\u207f",
+                "C": "n 2\u207f",
+                "D": "2\u207f"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 11,
+            "question": "What is the 5th term in (x + 2y)\u00b9\u2070?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u00b9\u2070C\u2084 x\u2076 (2y)\u2074",
+                "B": "\u00b9\u2070C\u2085 x\u2075 (2y)\u2075",
+                "C": "\u00b9\u2070C\u2084 x\u2074 (2y)\u2076",
+                "D": "210 x\u2076 y\u2074"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 12,
+            "question": "Sum of coefficients of (2x \u2212 3y)\u00b9\u2070 putting x=y=1 is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u22121",
+                "B": "1",
+                "C": "0",
+                "D": "2\u00b9\u2070"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 13,
+            "question": "The coefficient of x\u207f in (1 - x + x\u00b2 - x\u00b3 ... )\u207b\u00b9 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "n",
+                "C": "(-1)\u207f",
+                "D": "n+1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 14,
+            "question": "Find term independent of x in (x\u00b2 + 1/x)\u00b9\u00b2.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u00b9\u00b2C\u2088",
+                "B": "\u00b9\u00b2C\u2086",
+                "C": "\u00b9\u00b2C\u2084",
+                "D": "1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 15,
+            "question": "Find the middle term in (x + 1/x)\u00b9\u2070.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u00b9\u2070C\u2085",
+                "B": "\u00b9\u2070C\u2086",
+                "C": "\u00b9\u2070C\u2084",
+                "D": "1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 16,
+            "question": "What is the sum of terms in expansion of (a+b)\u207f and (a-b)\u207f?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2(T\u2081 + T\u2083 + T\u2085 ...)",
+                "B": "2(T\u2082 + T\u2084 + T\u2086 ...)",
+                "C": "2\u207f",
+                "D": "0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "If n is a negative integer or fraction, the binomial expansion of (1+x)\u207f has ______ terms.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Infinite",
+                "B": "n+1",
+                "C": "Finite",
+                "D": "Zero"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the vectors a = 2i + 11j and b = 9i - j are perpendicular, find the value of 2*9.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "11",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 18
+        },
+        {
+            "id": 19,
+            "question": "The coefficient of x\u00b3 in (1-2x)\u207b\u00b2 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "32",
+                "B": "8",
+                "C": "-32",
+                "D": "16"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 20,
+            "question": "If coefficients of rth and (r+4)th terms in (1+x)\u00b9\u2078 are equal, then r = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "7",
+                "B": "8",
+                "C": "9",
+                "D": "6"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        }
+    ]
+}

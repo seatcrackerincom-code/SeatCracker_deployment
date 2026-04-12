@@ -1,3 +1,297 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7018a10aff7ce6bbac852f35eb4fd0f1d1d9afb8210821f2ef921aa7fb34bc1
-size 9611
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "The mode of a Poisson distribution with parameter \u03bb (where \u03bb is not integer) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "[\u03bb]",
+                "B": "\u03bb",
+                "C": "[\u03bb] + 1",
+                "D": "0"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 2,
+            "question": "In a binomial distribution, if n=8 and p=1/2, the most likely value of X is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "4",
+                "B": "8",
+                "C": "0",
+                "D": "1"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 3,
+            "question": "Moment generating function helps find ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Moments (Mean, Variance etc.)",
+                "B": "Roots",
+                "C": "Integrals",
+                "D": "Limits"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "If the matrix A is [[13, 11], [0, 6]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "205",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[169, 209], [0, 36]]. Trace is sum of diagonal elements: 169 + 36.",
+            "id": 4
+        },
+        {
+            "id": 5,
+            "question": "The probability that a Poisson variable X with \u03bb=2 takes value 0 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "e\u207b\u00b2",
+                "B": "2 e\u207b\u00b2",
+                "C": "1/2",
+                "D": "0"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 6,
+            "question": "For discrete RV, \u03a3P(X=x\u1d62) = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "0",
+                "C": "E(X)",
+                "D": "n"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(19x) / tan(20x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "19/20",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 19/20.",
+            "id": 7
+        },
+        {
+            "question": "If the vectors a = 8i + 19j and b = 4i - j are perpendicular, find the value of 8*4.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "19",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 8
+        },
+        {
+            "id": 9,
+            "question": "Standard deviation of B(n,p) is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u221a(npq)",
+                "B": "npq",
+                "C": "np",
+                "D": "\u221a(np)"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 10,
+            "question": "Coefficient of variation is (SD / Mean) * 100. It measures ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Relative dispersion",
+                "B": "Absolute error",
+                "C": "Mean height",
+                "D": "Probability"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 11,
+            "question": "The probability P(X > 0) for a Poisson variable with \u03bb=1 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1 - e\u207b\u00b9",
+                "B": "e\u207b\u00b9",
+                "C": "1",
+                "D": "0"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 12,
+            "question": "In Binomial distribution, Mean is always ______ than Variance.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Greater",
+                "B": "Smaller",
+                "C": "Equal",
+                "D": "Half"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 13,
+            "question": "If X takes values 1,2,3 with equal probability, E(X) = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2",
+                "B": "6",
+                "C": "1/3",
+                "D": "3/2"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(18x) / tan(16x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "18/16",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 18/16.",
+            "id": 14
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(16x) / tan(3x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "16/3",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 16/3.",
+            "id": 15
+        },
+        {
+            "id": 16,
+            "question": "If X is a random variable, E(X\u00b2) is always ______ [E(X)]\u00b2.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Greater than or equal to",
+                "B": "Less than",
+                "C": "Equal to",
+                "D": "Negative of"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "If the matrix A is [[15, 11], [0, 1]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "226",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[225, 176], [0, 1]]. Trace is sum of diagonal elements: 225 + 1.",
+            "id": 17
+        },
+        {
+            "id": 18,
+            "question": "A fair coin the flipped 3 times. X is number of heads. P(X=2) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3/8",
+                "B": "1/8",
+                "C": "1/2",
+                "D": "1/4"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(5x) / tan(7x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5/7",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 5/7.",
+            "id": 19
+        },
+        {
+            "id": 20,
+            "question": "A random variable X has Mean 10 and SD 2. The value of E(X\u00b2) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "104",
+                "B": "102",
+                "C": "100",
+                "D": "400"
+            },
+            "answer": "A"
+        }
+    ]
+}

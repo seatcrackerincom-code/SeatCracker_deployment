@@ -1,3 +1,433 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ba0608c78a654864a151ec519bc82f4dbbc2b2d21a8708a52b2ab7dd48e35b62
-size 17039
+{
+    "questions": [
+        {
+            "question": "What volume of O2 at STP is required for complete combustion of 22.4 L of CH4 at STP?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "22.4 L",
+                "B": "44.8 L",
+                "C": "11.2 L",
+                "D": "67.2 L"
+            },
+            "answer": "B",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 1,
+            "tag": "pyq"
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.437 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.933",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.437 * 9.",
+            "id": 2
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.449 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4.041",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.449 * 9.",
+            "id": 3
+        },
+        {
+            "question": "At 488 K, the equilibrium constant Kp for a reaction is 7. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": 4
+        },
+        {
+            "question": "At 439 K, the equilibrium constant Kp for a reaction is 4. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": 5
+        },
+        {
+            "id": 6,
+            "question": "The simplest whole number ratio of atoms of each element in a compound is its ______ formula.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Molecular",
+                "B": "Empirical",
+                "C": "Structural",
+                "D": "Ionic"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "23 g of a non-volatile solute (molar mass = 60 g/mol) is dissolved in 1000 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.00685",
+                "B": "0.0137",
+                "C": "0.00343",
+                "D": "0.01027"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P\u00b0 - P)/P\u00b0 = X_solute",
+            "solution": "Moles solute = 23/60 = 0.383. Moles water = 1000/18 = 55.56. Mole fraction = 0.00685.",
+            "id": 7
+        },
+        {
+            "id": 8,
+            "question": "Molarity (M) is defined as moles of solute per ______ of solution.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Kilogram",
+                "B": "Litre",
+                "C": "Millilitre",
+                "D": "Gram"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "The rate constant of a reaction is 2.83 x 10^-3 s^-1 at 302 K and 7.27 x 10^-3 s^-1 at 312 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "73.91",
+                "B": "88.69",
+                "C": "59.13",
+                "D": "83.91"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(7.27/2.83) = (Ea/8.314) * (1/302 - 1/312). Solving gives 73.91 kJ/mol.",
+            "id": 9
+        },
+        {
+            "id": 10,
+            "question": "Molality (m) is defined as moles of solute per ______ of solvent.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Litre",
+                "B": "Kilogram",
+                "C": "Gram",
+                "D": "Mole"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "29 g of a non-volatile solute (molar mass = 180 g/mol) is dissolved in 500 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.00577",
+                "B": "0.01154",
+                "C": "0.00288",
+                "D": "0.00865"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P\u00b0 - P)/P\u00b0 = X_solute",
+            "solution": "Moles solute = 29/180 = 0.161. Moles water = 500/18 = 27.78. Mole fraction = 0.00577.",
+            "id": 11
+        },
+        {
+            "question": "At 374 K, the equilibrium constant Kp for a reaction is 4. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": 12
+        },
+        {
+            "question": "44 g of a non-volatile solute (molar mass = 342 g/mol) is dissolved in 250 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.00918",
+                "B": "0.01836",
+                "C": "0.00459",
+                "D": "0.01377"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P\u00b0 - P)/P\u00b0 = X_solute",
+            "solution": "Moles solute = 44/342 = 0.129. Moles water = 250/18 = 13.89. Mole fraction = 0.00918.",
+            "id": 13
+        },
+        {
+            "id": 14,
+            "question": "Percentage of Nitrogen in Urea (NH2CONH2) is approximately ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "28%",
+                "B": "46.6%",
+                "C": "60%",
+                "D": "14%"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "The rate constant of a reaction is 2.05 x 10^-3 s^-1 at 305 K and 7.07 x 10^-3 s^-1 at 321 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "62.98",
+                "B": "75.58",
+                "C": "50.38",
+                "D": "72.98"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(7.07/2.05) = (Ea/8.314) * (1/305 - 1/321). Solving gives 62.98 kJ/mol.",
+            "id": 15
+        },
+        {
+            "id": 16,
+            "question": "One a.m.u. (atomic mass unit) is equal to ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Mass of one C-12 atom",
+                "B": "1/12th the mass of one C-12 atom",
+                "C": "Mass of one H atom",
+                "D": "1.66 x 10^-27 mg"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 17,
+            "question": "A solution contains 2 moles of A and 3 moles of B. The mole fraction of A is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0.6",
+                "B": "0.4",
+                "C": "0.5",
+                "D": "1.5"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "The rate constant of a reaction is 2.67 x 10^-3 s^-1 at 304 K and 9.12 x 10^-3 s^-1 at 324 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "50.3",
+                "B": "60.36",
+                "C": "40.24",
+                "D": "60.3"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(9.12/2.67) = (Ea/8.314) * (1/304 - 1/324). Solving gives 50.3 kJ/mol.",
+            "id": 18
+        },
+        {
+            "id": 19,
+            "question": "The molarity of pure water is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1 M",
+                "B": "55.5 M",
+                "C": "18 M",
+                "D": "100 M"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "The rate constant of a reaction is 2.03 x 10^-3 s^-1 at 301 K and 5.44 x 10^-3 s^-1 at 312 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "69.97",
+                "B": "83.96",
+                "C": "55.98",
+                "D": "79.97"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(5.44/2.03) = (Ea/8.314) * (1/301 - 1/312). Solving gives 69.97 kJ/mol.",
+            "id": 20
+        },
+        {
+            "question": "At 448 K, the equilibrium constant Kp for a reaction is 4. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": "stoichiometry_21"
+        },
+        {
+            "question": "The number of moles of solute in 8 Liters of a 0.451 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.608",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.451 * 8.",
+            "id": "stoichiometry_22"
+        },
+        {
+            "question": "At 471 K, the equilibrium constant Kp for a reaction is 5. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": "stoichiometry_23"
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.397 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.191",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.397 * 3.",
+            "id": "stoichiometry_24"
+        },
+        {
+            "question": "At 341 K, the equilibrium constant Kp for a reaction is 9. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": "stoichiometry_25"
+        },
+        {
+            "question": "At 344 K, the equilibrium constant Kp for a reaction is 2. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": "stoichiometry_26"
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.437 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.059",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.437 * 7.",
+            "id": "stoichiometry_27"
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.31 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.79",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.31 * 9.",
+            "id": "stoichiometry_28"
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.356 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.492",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.356 * 7.",
+            "id": "stoichiometry_29"
+        }
+    ]
+}

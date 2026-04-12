@@ -1,3 +1,438 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:605230eba0ba09f53a82d562b446fd696bb945d10e8142370a48661d9a1c6a30
-size 16445
+{
+    "questions": [
+        {
+            "question": "The number of moles of solute in 8 Liters of a 0.354 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.832",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.354 * 8.",
+            "id": 1
+        },
+        {
+            "question": "Which of the following has the smallest atomic radius?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "Li",
+                "B": "Na",
+                "C": "K",
+                "D": "Rb"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 2,
+            "tag": "pyq"
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.471 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.4129999999999998",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.471 * 3.",
+            "id": 3
+        },
+        {
+            "question": "Which period has the maximum number of elements?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "3rd",
+                "B": "4th",
+                "C": "5th",
+                "D": "6th"
+            },
+            "answer": "D",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 4,
+            "tag": "pyq"
+        },
+        {
+            "question": "At 432 K, the equilibrium constant Kp for a reaction is 2. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": 5
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 51\u00b0C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-bromo-3-methylpentane",
+                "B": "2-bromopentane",
+                "C": "1-bromo-3-methylpentane",
+                "D": "1-bromopentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3\u00b0 > 2\u00b0 > 1\u00b0). Option A forms a highly stable tertiary carbocation.",
+            "id": 6
+        },
+        {
+            "id": 7,
+            "question": "The IUPAC name for the element with atomic number 104 is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Unnilseptium",
+                "B": "Unnilquadium",
+                "C": "Unnilpentium",
+                "D": "Unnilhexium"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 65\u00b0C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-bromo-3-methylpentane",
+                "B": "2-bromopentane",
+                "C": "1-bromo-3-methylpentane",
+                "D": "1-bromopentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3\u00b0 > 2\u00b0 > 1\u00b0). Option A forms a highly stable tertiary carbocation.",
+            "id": 8
+        },
+        {
+            "id": 9,
+            "question": "Which of the following has the highest electronegativity?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Oxygen",
+                "B": "Fluorine",
+                "C": "Chlorine",
+                "D": "Nitrogen"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 10,
+            "question": "Electron gain enthalpy of halogens is highly ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Positive",
+                "B": "Negative",
+                "C": "Zero",
+                "D": "Inert"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "17 g of a non-volatile solute (molar mass = 342 g/mol) is dissolved in 1000 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.00089",
+                "B": "0.00178",
+                "C": "0.00044",
+                "D": "0.00133"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P\u00b0 - P)/P\u00b0 = X_solute",
+            "solution": "Moles solute = 17/342 = 0.05. Moles water = 1000/18 = 55.56. Mole fraction = 0.00089.",
+            "id": 11
+        },
+        {
+            "id": 12,
+            "question": "Noble gases have zero or positive electron gain enthalpy because of ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Small size",
+                "B": "Stable Octet (fully filled subshells)",
+                "C": "High mass",
+                "D": "Metallic nature"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 13,
+            "question": "Elements with atomic numbers 58 to 71 are called ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Actinoids",
+                "B": "Lanthanoids",
+                "C": "Halogens",
+                "D": "Alkali metals"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "The rate constant of a reaction is 1.6 x 10^-3 s^-1 at 301 K and 5.92 x 10^-3 s^-1 at 314 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "79.08",
+                "B": "94.9",
+                "C": "63.26",
+                "D": "89.08"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(5.92/1.6) = (Ea/8.314) * (1/301 - 1/314). Solving gives 79.08 kJ/mol.",
+            "id": 14
+        },
+        {
+            "id": 15,
+            "question": "Which of these is an amphoteric oxide?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Na2O",
+                "B": "Al2O3",
+                "C": "Cl2O7",
+                "D": "MgO"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 16,
+            "question": "The second ionization enthalpy is always ______ than the first ionization enthalpy.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Lower",
+                "B": "Higher",
+                "C": "Equal",
+                "D": "Half"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "The rate constant of a reaction is 2.37 x 10^-3 s^-1 at 309 K and 7.16 x 10^-3 s^-1 at 324 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "61.35",
+                "B": "73.62",
+                "C": "49.08",
+                "D": "71.35"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(7.16/2.37) = (Ea/8.314) * (1/309 - 1/324). Solving gives 61.35 kJ/mol.",
+            "id": 17
+        },
+        {
+            "id": 18,
+            "question": "Transuranium elements start after atomic number ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "57",
+                "B": "92 (Uranium)",
+                "C": "89",
+                "D": "100"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 19,
+            "question": "Representative elements belong to ______ blocks.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "d and f",
+                "B": "s and p",
+                "C": "p and d",
+                "D": "s and f"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 24\u00b0C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-bromo-3-methylpentane",
+                "B": "2-bromopentane",
+                "C": "1-bromo-3-methylpentane",
+                "D": "1-bromopentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3\u00b0 > 2\u00b0 > 1\u00b0). Option A forms a highly stable tertiary carbocation.",
+            "id": 20
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.397 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.5730000000000004",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.397 * 9.",
+            "id": "periodic_table_21"
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.43 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.58",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.43 * 6.",
+            "id": "periodic_table_22"
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.409 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.818",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.409 * 2.",
+            "id": "periodic_table_23"
+        },
+        {
+            "id": "periodic_table_24",
+            "question": "Which has smallest ionic radius?",
+            "options": {
+                "A": "Na+",
+                "B": "Mg2+",
+                "C": "Al3+",
+                "D": "Si4+"
+            },
+            "answer": "D",
+            "difficulty": "hard"
+        },
+        {
+            "id": "periodic_table_25",
+            "question": "Anomalous properties of Li are similar to which element?",
+            "options": {
+                "A": "Na",
+                "B": "Mg",
+                "C": "Be",
+                "D": "Ca"
+            },
+            "answer": "B",
+            "difficulty": "medium"
+        },
+        {
+            "question": "At 385 K, the equilibrium constant Kp for a reaction is 7. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": "periodic_table_26"
+        },
+        {
+            "question": "At 425 K, the equilibrium constant Kp for a reaction is 9. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Increases",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
+            "id": "periodic_table_27"
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.45 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.15",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.45 * 7.",
+            "id": "periodic_table_28"
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.465 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.2550000000000003",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.465 * 7.",
+            "id": "periodic_table_29"
+        },
+        {
+            "id": "periodic_table_30",
+            "question": "Which block elements are called inner transition elements?",
+            "options": {
+                "A": "s-block",
+                "B": "p-block",
+                "C": "f-block",
+                "D": "d-block"
+            },
+            "answer": "C",
+            "difficulty": "medium"
+        }
+    ]
+}

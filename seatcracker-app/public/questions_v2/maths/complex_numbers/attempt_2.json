@@ -1,3 +1,308 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5c7cf2d95401312ff97140ae69c6769ad7a9393b842035b0aa7cb8f42daed6e5
-size 10153
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "If z = x + iy and |z+2| = |z\u22122|, then the locus is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "y-axis",
+                "B": "x-axis",
+                "C": "a circle",
+                "D": "a hyperbola"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 2,
+            "question": "If \u03c9 is cube root of unity, then (1+\u03c9\u2212\u03c9\u00b2)\u2077 = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u2212128\u03c9\u00b2",
+                "B": "128\u03c9",
+                "C": "128\u03c9\u00b2",
+                "D": "\u2212128\u03c9"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^19 * (1-x)^14 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "35",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": 3
+        },
+        {
+            "id": 4,
+            "question": "The complex number z such that |z-1| = |z+1| = |z-i| is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "1 + i",
+                "C": "i",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "What is the multiplicative inverse of 3 + 4i?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3/25 - 4/25 i",
+                "B": "3/25 + 4/25 i",
+                "C": "3 - 4i",
+                "D": "1/3 + 1/4 i"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "If arg((z - a) / (z - b)) = \u03c0/2, the locus of z is a ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Circle",
+                "B": "Straight line",
+                "C": "Parabola",
+                "D": "Hyperbola"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the vectors a = 19i + 6j and b = 7i - j are perpendicular, find the value of 19*7.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 7
+        },
+        {
+            "question": "If the matrix A is [[12, 13], [0, 8]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "208",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[144, 260], [0, 64]]. Trace is sum of diagonal elements: 144 + 64.",
+            "id": 8
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(18x) / tan(20x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "18/20",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 18/20.",
+            "id": 9
+        },
+        {
+            "question": "If the matrix A is [[2, 17], [0, 3]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "13",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[4, 85], [0, 9]]. Trace is sum of diagonal elements: 4 + 9.",
+            "id": 10
+        },
+        {
+            "question": "If the matrix A is [[19, 2], [0, 6]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "397",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[361, 50], [0, 36]]. Trace is sum of diagonal elements: 361 + 36.",
+            "id": 11
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(6x) / tan(11x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6/11",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 6/11.",
+            "id": 12
+        },
+        {
+            "id": 13,
+            "question": "Logarithm of a complex number z = re^{i\u03b8} is log(z) = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "log r + i\u03b8",
+                "B": "log r - i\u03b8",
+                "C": "r log \u03b8",
+                "D": "e^{r\u03b8}"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 14,
+            "question": "If z = cos \u03b8 + i sin \u03b8, then (1+z)/(1-z) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "i cot(\u03b8/2)",
+                "B": "i tan(\u03b8/2)",
+                "C": "cot(\u03b8/2)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 15,
+            "question": "The locus of z satisfying |2z \u2212 3i| = 3 is a circle with radius?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3/2",
+                "B": "3",
+                "C": "9/4",
+                "D": "2/3"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 16,
+            "question": "Number of complex numbers z with |z|=1 and z\u00b2 is real is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "4",
+                "B": "2",
+                "C": "6",
+                "D": "8"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "If the vectors a = 4i + 19j and b = 9i - j are perpendicular, find the value of 4*9.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "19",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 17
+        },
+        {
+            "question": "If the matrix A is [[8, 12], [0, 3]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "73",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[64, 132], [0, 9]]. Trace is sum of diagonal elements: 64 + 9.",
+            "id": 18
+        },
+        {
+            "id": 19,
+            "question": "Any complex number analytic function f(z) = u + iv satisfies the ______ equations.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Cauchy-Riemann",
+                "B": "Laplace",
+                "C": "Navier-Stokes",
+                "D": "Euler-Lagrange"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 20,
+            "question": "If |z-1|/|z+1| = 1, the locus of z is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Imaginary axis",
+                "B": "Real axis",
+                "C": "Unit circle",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        }
+    ]
+}

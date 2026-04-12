@@ -1,3 +1,305 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:39a980bca8b831e32b3768b56b856431b4bfb0faa8c5ea02be125b3d8fe471f3
-size 9944
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Oscillations in a tunnel through Earth are SHM? yes.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Two pendulums lengths L and 9L. After how many oscillations of shorter do they swing together again?",
+            "difficulty": "hard",
+            "pyq": true,
+            "options": {
+                "A": "3",
+                "B": "9",
+                "C": "6",
+                "D": "27"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "id": 2
+        },
+        {
+            "id": 3,
+            "question": "If frequency is doubled, energy becomes ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "4 times",
+                "B": "2 times",
+                "C": "Same",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 4,
+            "question": "Energy of SHM is constant? no. for damped ones it decreases.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "Mean position is where potential energy is minimum.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "Two pendulums of lengths L and 4L are released. ratio of frequencies is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2 : 1",
+                "B": "1 : 2",
+                "C": "4 : 1",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 1 m with speed 21 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "882.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 441 / 1.",
+            "id": 7
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 1 m with speed 57 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "32490.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 3249 / 1.",
+            "id": 8
+        },
+        {
+            "id": 9,
+            "question": "Period of a pendulum at center of earth is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Infinite (g=0)",
+                "B": "Zero",
+                "C": "1 s",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 10,
+            "question": "Acceleration in SHM is a = -\u03c9\u00b2x. This means acceleration is ______ to displacement.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Opposite",
+                "B": "Same",
+                "C": "Perpendicular",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 11,
+            "question": "Elasticity? no. Replaced: Restoring force is due to elasticity of system.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Time period of a simple pendulum is T = ______.",
+            "options": {
+                "A": "2\u03c0 \u221a(l/g)",
+                "B": "2\u03c0 \u221a(g/l)",
+                "C": "\u221a(l/g)",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 12
+        },
+        {
+            "question": "A car moves at 97 m/s and brakes to stop in 1 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-97.0 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 97)/1.",
+            "id": 13
+        },
+        {
+            "id": 14,
+            "question": "Time period of physical pendulum T = 2\u03c0 \u221a(I/mgd).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "A car moves at 88 m/s and brakes to stop in 2 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-44.0 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 88)/2.",
+            "id": 15
+        },
+        {
+            "question": "Time period of a spring-mass system is T = ______.",
+            "options": {
+                "A": "2\u03c0 \u221a(m/k)",
+                "B": "2\u03c0 \u221a(k/m)",
+                "C": "None",
+                "D": "\u221a(m/k)"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 16
+        },
+        {
+            "question": "A capacitor of 4 microfarads is charged to 66 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8712.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 4 * 4356.",
+            "id": 17
+        },
+        {
+            "question": "A capacitor of 10 microfarads is charged to 27 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3645.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 10 * 729.",
+            "id": 18
+        },
+        {
+            "question": "A capacitor of 2 microfarads is charged to 60 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3600.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 2 * 3600.",
+            "id": 19
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 5 m with speed 71 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7057.4 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 5041 / 5.",
+            "id": 20
+        }
+    ]
+}

@@ -1,3 +1,713 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f3229f09252ea1c34d0b01e28eced871d0240bf2eaaedbe40d9cb66f9e70ea40
-size 19772
+{
+  "topic_id": 11,
+  "topic_name": "MATRICES AND DETERMINANTS",
+  "weightage": 3,
+  "priority": "High",
+  "subtopics": [
+    "Types of Matrices, Operations",
+    "Determinants (properties, expansion)",
+    "Adjoint, Inverse, Rank, Cramer's Rule"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "A matrix with only one row is called a ______ matrix.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Row",
+        "B": "Column",
+        "C": "Square",
+        "D": "Zero"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "A square matrix A is said to be symmetric if Aᵀ = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "A",
+        "B": "-A",
+        "C": "I",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "A square matrix A is skew-symmetric if Aᵀ = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-A",
+        "B": "A",
+        "C": "I",
+        "D": "A⁻¹"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "The diagram show an Identity matrix of order 3. All its diagonal elements are ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A 3x3 matrix with 1s on the main diagonal and 0s elsewhere.",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "-1",
+        "D": "Variable"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "The determinant of a unit matrix (Identity matrix) of any order is always ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "Order of the matrix",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "If the determinant of a square matrix A is zero (|A| = 0), then A is a ______ matrix.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Singular",
+        "B": "Non-singular",
+        "C": "Invertible",
+        "D": "Orthogonal"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "Matrix multiplication is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Associative but generally not commutative",
+        "B": "Commutative",
+        "C": "Neither associative nor commutative",
+        "D": "Always commutative for square matrices"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "The trace of a square matrix is the ______ of its diagonal elements.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Sum",
+        "B": "Product",
+        "C": "Average",
+        "D": "Maximum"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "If A is a square matrix of order n, then |kA| = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "kⁿ |A|",
+        "B": "k |A|",
+        "C": "nᵏ |A|",
+        "D": "k² |A|"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "The diagram show the process of calculating a 2x2 determinant. The formula is ad - ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A 2x2 matrix [[a, b], [c, d]] with arrows showing multiplication of diagonals.",
+      "options": {
+        "A": "bc",
+        "B": "cb",
+        "C": "ac",
+        "D": "bd"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is true for any two square matrices A and B of the same order?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(AB)ᵀ = BᵀAᵀ",
+        "B": "(AB)ᵀ = AᵀBᵀ",
+        "C": "(AB)⁻¹ = A⁻¹B⁻¹",
+        "D": "(A+B)ᵀ = Aᵀ - Bᵀ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "For a non-singular matrix A, the inverse A⁻¹ is given by ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/|A|) * adj(A)",
+        "B": "|A| * adj(A)",
+        "C": "adj(A) / |A|ᵀ",
+        "D": "Aᵀ / |A|"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "If A is an orthogonal matrix, then AAᵀ = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "I",
+        "B": "0",
+        "C": "A",
+        "D": "A²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "The diagram show a system of linear equations in matrix form AX = B. If |A| ≠ 0, the solution is X = ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Illustration showing A times a column vector X equals a column vector B.",
+      "options": {
+        "A": "A⁻¹B",
+        "B": "BA⁻¹",
+        "C": "B/A",
+        "D": "AᵀB"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "Cramer's Rule is used to solve a system of linear equations using ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Determinants",
+        "B": "Inverses",
+        "C": "Transposes",
+        "D": "Adjoints"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "In Cramer's Rule, the value of x is given by Δx/Δ. If Δ = 0 and at least one of Δx, Δy, Δz is non-zero, the system has ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "No solution",
+        "B": "Infinite solutions",
+        "C": "Unique solution",
+        "D": "Zero solution"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "The rank of a matrix is the ______ order of a non-zero minor.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Highest",
+        "B": "Lowest",
+        "C": "Average",
+        "D": "First"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "The diagram show a matrix in Row Echelon Form. The number of non-zero rows is the ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A matrix with zeros below the leading 1s of each row.",
+      "options": {
+        "A": "Rank of the matrix",
+        "B": "Determinant",
+        "C": "Trace",
+        "D": "Order"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "For any square matrix A, A * adj(A) = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|A| I",
+        "B": "I",
+        "C": "|A|",
+        "D": "adj(A) A"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "If A is a square matrix of order n, then |adj(A)| = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|A|ⁿ⁻¹",
+        "B": "|A|ⁿ",
+        "C": "|A|",
+        "D": "(n-1)|A|"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "Two matrices A and B are conformable for multiplication AB if the number of ______ of A equals the number of rows of B.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Columns",
+        "B": "Rows",
+        "C": "Elements",
+        "D": "Determinants"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "If A is a 2x3 matrix and B is a 3x4 matrix, then the order of AB is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2x4",
+        "B": "3x3",
+        "C": "4x2",
+        "D": "Not defined"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "The diagram show the transpose of a matrix. The rows of the original matrix become the ______ of the transpose.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "An arrow showing elements shifting from horizontal rows to vertical columns.",
+      "options": {
+        "A": "Columns",
+        "B": "Diagonals",
+        "C": "Zeroes",
+        "D": "Inverses"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "question": "For a square matrix A, A + Aᵀ is always ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Symmetric",
+        "B": "Skew-symmetric",
+        "C": "Identity",
+        "D": "Singular"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "For a square matrix A, A - Aᵀ is always ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Skew-symmetric",
+        "B": "Symmetric",
+        "C": "Diagonal",
+        "D": "Unitary"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "A singular matrix does not have an ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Inverse",
+        "B": "Transpose",
+        "C": "Adjoint",
+        "D": "Trace"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "The diagram show Sarrus' Rule for a 3x3 determinant. It involves summing products along ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A 3x3 matrix with the first two columns repeated next to it, and lines drawn through diagonals.",
+      "options": {
+        "A": "Diagonals",
+        "B": "Rows",
+        "C": "Columns",
+        "D": "Edges"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "If two rows (or columns) of a determinant are identical, the value of the determinant is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "Doubled"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "If all elements of a row in a determinant are zero, the determinant is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Infinity",
+        "D": "Undefined"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "The diagram show a consistent system of equations. Geometrically, if the equations are 2D lines, they ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Two lines intersecting at a point on a Cartesian plane.",
+      "options": {
+        "A": "Intersect at least at one point",
+        "B": "Are parallel",
+        "C": "Do not exist",
+        "D": "Are perpendicular only"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "If A and B are square matrices of the same order, then |AB| = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|A| * |B|",
+        "B": "|A| + |B|",
+        "C": "|A| / |B|",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "The cofactor of an element a_ij is (-1)^(i+j) times its ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Minor",
+        "B": "Transpose",
+        "C": "Inverse",
+        "D": "Adjoint"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "The adjoint of a matrix is the transpose of the matrix of its ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Cofactors",
+        "B": "Minors",
+        "C": "Elements",
+        "D": "Inverses"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "The diagram show a Nilpotent matrix. A matrix A is nilpotent if A^k = ______ for some k.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A matrix that becomes a zero matrix when raised to a certain power.",
+      "options": {
+        "A": "0",
+        "B": "I",
+        "C": "A",
+        "D": "-I"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "A matrix A is idempotent if A² = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "A",
+        "B": "I",
+        "C": "0",
+        "D": "-A"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "A matrix A is involutory if A² = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "I",
+        "B": "A",
+        "C": "0",
+        "D": "A⁻¹"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "The diagram show an Upper Triangular matrix. All elements ______ the main diagonal are zero.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A square matrix where all entries below the main diagonal are zero.",
+      "options": {
+        "A": "Below",
+        "B": "Above",
+        "C": "On",
+        "D": "Outside"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "Elementary row transformations do not change the ______ of a matrix.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Rank",
+        "B": "Determinant value",
+        "C": "Elements",
+        "D": "Order"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "If the rank of a 3x3 matrix is 2, then its determinant is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Non-zero",
+        "D": "3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "The diagram show the product of a matrix and its inverse. The result is always a/an ______ matrix.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Illustration of A * A⁻¹ yielding a matrix with 1s on diagonal and 0s elsewhere.",
+      "options": {
+        "A": "Identity",
+        "B": "Zero",
+        "C": "Symmetric",
+        "D": "Diagonal"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "If we interchange two rows of a determinant, its sign ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Changes",
+        "B": "Stays same",
+        "C": "Becomes zero",
+        "D": "Doubles"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "Multiplying a row of a determinant by a constant 'k' results in the determinant being ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Multiplied by k",
+        "B": "Multiplied by kⁿ",
+        "C": "Unchanged",
+        "D": "Zero"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "The trace of AB is the same as the trace of ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "BA",
+        "B": "A+B",
+        "C": "A-B",
+        "D": "AᵀBᵀ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "The diagram show a consistent dependent system. The two equations represent ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Two lines lying exactly on top of each other.",
+      "options": {
+        "A": "Coincident lines",
+        "B": "Parallel lines",
+        "C": "Intersecting lines",
+        "D": "Perpendicular lines"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "What is the inverse of [ [a, b], [c, d] ] if ad-bc = 1?",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[ [d, -b], [-c, a] ]",
+        "B": "[ [a, c], [b, d] ]",
+        "C": "[ [-d, b], [c, -a] ]",
+        "D": "[ [0, 1], [1, 0] ]"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "Every square matrix can be uniquely expressed as the sum of a symmetric and a ______ matrix.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Skew-symmetric",
+        "B": "Identity",
+        "C": "Diagonal",
+        "D": "Orthogonal"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "The diagram show the expansion of a 3x3 determinant along the first row. It is a ______ sum of cofactors.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Mathematical expression showing a11*C11 + a12*C12 + a13*C13.",
+      "options": {
+        "A": "Weighted",
+        "B": "Simple",
+        "C": "Geometric",
+        "D": "Inverse"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "A system of homogeneous linear equations AX = 0 always has a ______ solution.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Trivial (X=0)",
+        "B": "Non-trivial",
+        "C": "Unique non-zero",
+        "D": "No"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "For AX=0 to have a non-trivial solution, |A| must be ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "Non-zero",
+        "C": "1",
+        "D": "Positive"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "The identity matrix for multiplication I satisfies AI = IA = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "A",
+        "B": "I",
+        "C": "0",
+        "D": "A⁻¹"
+      },
+      "answer": "A"
+    }
+  ]
+}

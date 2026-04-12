@@ -1,3 +1,712 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9018c73a5d7bbe0ff17aa692a8f3e6c1d7165c217f3b962024df8103c441250a
-size 19731
+{
+  "topic_id": 10,
+  "topic_name": "STRAIGHT LINES",
+  "weightage": 3,
+  "priority": "High",
+  "subtopics": [
+    "Slope, Intercepts, Equations of lines",
+    "Distance, Angle between lines"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "The slope of a line passing through (x1, y1) and (x2, y2) is given by:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(y2 - y1) / (x2 - x1)",
+        "B": "(x2 - x1) / (y2 - y1)",
+        "C": "(y2 + y1) / (x2 + x1)",
+        "D": "y2 - y1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "The equation of a line in slope-intercept form is y = mx + c, where 'm' is the ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Slope",
+        "B": "y-intercept",
+        "C": "x-intercept",
+        "D": "Origin"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "question": "What is the slope of a horizontal line?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Infinity",
+        "D": "Undefined"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "The slope of a vertical line is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Undefined",
+        "B": "0",
+        "C": "1",
+        "D": "-1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "question": "The diagram show a line with positive slope. As x increases, y ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A line going upwards from left to right.",
+      "options": {
+        "A": "Increases",
+        "B": "Decreases",
+        "C": "Stays constant",
+        "D": "Goes to zero"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "question": "The point-slope form of the equation of a line is y - y1 = ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "m(x - x1)",
+        "B": "m(x + x1)",
+        "C": "x - x1",
+        "D": "m/x"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "Two non-vertical lines are parallel if and only if their slopes are ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Equal",
+        "B": "Negative reciprocals",
+        "C": "Reciprocals",
+        "D": "Opposite in sign"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "question": "Two non-vertical lines are perpendicular if and only if the product of their slopes is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "0",
+        "D": "Infinity"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "The equation of the x-axis is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y = 0",
+        "B": "x = 0",
+        "C": "y = x",
+        "D": "x + y = 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "The diagram show a line with x-intercept 'a' and y-intercept 'b'. Its equation is x/a + y/b = ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A line crossing the x-axis at (a,0) and the y-axis at (0,b).",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "a+b",
+        "D": "ab"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "The distance of a point (x1, y1) from the line ax + by + c = 0 is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|ax1 + by1 + c| / √(a² + b²)",
+        "B": "(ax1 + by1 + c) / (a + b)",
+        "C": "|ax1 + by1 + c|",
+        "D": "√(a² + b²)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "question": "The angle θ between two lines with slopes m1 and m2 is given by tan θ = ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|(m1 - m2) / (1 + m1m2)|",
+        "B": "|(m1 + m2) / (1 - m1m2)|",
+        "C": "|m1 - m2|",
+        "D": "m1m2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "question": "The normal form of a line is x cos α + y sin α = p, where 'p' is the ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Perpendicular distance from origin",
+        "B": "Length of the line",
+        "C": "Intercept",
+        "D": "Slope"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "question": "The diagram show two parallel lines ax + by + c1 = 0 and ax + by + c2 = 0. The distance between them is:",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Two straight lines that never meet, separated by a constant gap.",
+      "options": {
+        "A": "|c1 - c2| / √(a² + b²)",
+        "B": "|c1 + c2| / √(a² + b²)",
+        "C": "|c1 - c2|",
+        "D": "√(a² + b²)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "question": "A line passes through (2, 3) and is parallel to 3x - 4y + 5 = 0. Its equation is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3x - 4y + 6 = 0",
+        "B": "4x + 3y + 6 = 0",
+        "C": "3x + 4y - 18 = 0",
+        "D": "4x - 3y + 1 = 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "question": "The point of intersection of lines x + y = 4 and x - y = 0 is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(2, 2)",
+        "B": "(4, 4)",
+        "C": "(0, 0)",
+        "D": "(1, 3)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "question": "What is the x-intercept of the line 2x + 3y = 6?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3",
+        "B": "2",
+        "C": "6",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "question": "The diagram show a line forming an angle θ with the positive x-axis. The slope 'm' is equal to:",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A line crossing the x-axis with an angle θ marked counter-clockwise from the positive x-direction.",
+      "options": {
+        "A": "tan θ",
+        "B": "sin θ",
+        "C": "cos θ",
+        "D": "cot θ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "Three points (x1, y1), (x2, y2), and (x3, y3) are collinear if the area of the triangle formed by them is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Not defined",
+        "D": "Maximum"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "question": "The general equation of a line is ax + by + c = 0. Its slope is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-a/b",
+        "B": "a/b",
+        "C": "-b/a",
+        "D": "c/a"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "question": "The diagram show a family of lines passing through the intersection of two lines L1=0 and L2=0. The equation of any such line is:",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Multiple lines crossing at a single common point.",
+      "options": {
+        "A": "L1 + λ L2 = 0",
+        "B": "L1 * L2 = 0",
+        "C": "L1 - L2 = 0",
+        "D": "L1 = L2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "The coordinates of the centroid of a triangle with vertices (x1, y1), (x2, y2), (x3, y3) are:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "((x1+x2+x3)/3, (y1+y2+y3)/3)",
+        "B": "((x1+x2)/2, (y1+y2)/2)",
+        "C": "(x1+x2+x3, y1+y2+y3)",
+        "D": "(0, 0)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "The distance between (2, 3) and (5, 7) is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "5",
+        "B": "7",
+        "C": "√(3² + 4²)",
+        "D": "Both A and C"
+      },
+      "answer": "D"
+    },
+    {
+      "id": 24,
+      "question": "The diagram show the reflection of a point P(x, y) in the line y = x. The image is:",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A point (a,b) reflected across the line y=x to become (b,a).",
+      "options": {
+        "A": "(y, x)",
+        "B": "(-x, -y)",
+        "C": "(-y, -x)",
+        "D": "(x, -y)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "question": "The slope of the line perpendicular to 5x - 2y + 3 = 0 is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-2/5",
+        "B": "2/5",
+        "C": "5/2",
+        "D": "-5/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "The foot of the perpendicular from (x1, y1) to ax + by + c = 0 (h, k) satisfies (h-x1)/a = (k-y1)/b = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-(ax1 + by1 + c) / (a² + b²)",
+        "B": "(ax1 + by1 + c) / (a² + b²)",
+        "C": "-(ax1 + by1 + c) / √(a² + b²)",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "question": "The diagram show a line inclined at 135° to the positive x-axis. Its slope is:",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A line going downwards from left to right with an obtuse angle with the positive x-axis.",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "0",
+        "D": "Undefined"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "The intercept form x/a + y/b = 1 implies the line passes through points (a, 0) and ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(0, b)",
+        "B": "(b, 0)",
+        "C": "(0, 0)",
+        "D": "(a, b)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "question": "The area of the triangle formed by lines y=0, x=0 and x+y=k is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "k²/2",
+        "B": "k²",
+        "C": "2k²",
+        "D": "k/2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "question": "The diagram show an angle bisector of two lines. Points on the bisector are ______ from both lines.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "A line splitting the angle between two other lines into two equal parts.",
+      "options": {
+        "A": "Equidistant",
+        "B": "At different distances",
+        "C": "On the origin",
+        "D": "Infinity"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "question": "Two lines L1 and L2 are perpendicular if their slopes m1, m2 satisfy:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "m1m2 = -1",
+        "B": "m1 = m2",
+        "C": "m1m2 = 1",
+        "D": "m1 + m2 = 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "The equation of a line passing through origin is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y = mx",
+        "B": "y = mx + c",
+        "C": "x = a",
+        "D": "y = b"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "question": "What is the slope of the line x + y = 10?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "10",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "question": "The diagram show a line with intercept '3' on y-axis and slope '2'. Its equation is:",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A line crossing (0,3) with a steepness of 2 units up for 1 unit right.",
+      "options": {
+        "A": "y = 2x + 3",
+        "B": "y = 3x + 2",
+        "C": "x = 2y + 3",
+        "D": "y = 2x - 3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "question": "The point of concurrency of medians is called ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Centroid",
+        "B": "Incenter",
+        "C": "Orthocenter",
+        "D": "Circumcenter"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "question": "The point of concurrency of altitudes is called ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Orthocenter",
+        "B": "Centroid",
+        "C": "Incenter",
+        "D": "Circumcenter"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "The diagram show three lines intersecting at a single point. These lines are called ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Three different lines all passing through the same point.",
+      "options": {
+        "A": "Concurrent",
+        "B": "Parallel",
+        "C": "Perpendicular",
+        "D": "Coincident"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "question": "The condition for concurrency of lines a1x+b1y+c1=0, a2x+b2y+c2=0, a3x+b3y+c3=0 is that the determinant of [a b c] must be ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "Any constant"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "The distance of line 3x + 4y = 10 from origin is:",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "10",
+        "C": "5",
+        "D": "2.5"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "question": "The diagram show a line and a point. The shortest distance is along the ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A point P and a line L, with a right-angle symbol showing the perpendicular distance.",
+      "options": {
+        "A": "Perpendicular",
+        "B": "Horizontal",
+        "C": "Vertical",
+        "D": "Slope"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "If lines y = m1x + c1 and y = m2x + c2 are coincident, then ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "m1=m2 and c1=c2",
+        "B": "m1=m2 only",
+        "C": "c1=c2 only",
+        "D": "m1m2 = -1"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "question": "The equation of the line passing through (0,0) and (1,1) is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y = x",
+        "B": "y = -x",
+        "C": "x = 1",
+        "D": "y = 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 43,
+      "question": "The y-intercept of the line x + 2y + 4 = 0 is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-2",
+        "B": "2",
+        "C": "-4",
+        "D": "4"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "question": "The diagram show a line with intercepts a=b. Its slope is:",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A line crossing the axes at (k,0) and (0,k).",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "0",
+        "D": "Undefined"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "question": "The transform of x cos α + y sin α = p to ax + by + c = 0 form involves p = ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|c| / √(a² + b²)",
+        "B": "c / (a + b)",
+        "C": "√(a² + b²)",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "Angle between y = x and y = -x is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "90°",
+        "B": "45°",
+        "C": "0°",
+        "D": "60°"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "question": "The diagram show a square. The product of slopes of its diagonals is:",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A square with both diagonals drawn intersecting at the center.",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "0",
+        "D": "2"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 48,
+      "question": "Parallel lines have equal ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Inclinations",
+        "B": "Intercepts",
+        "C": "Lengths",
+        "D": "Midpoints"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "The equation of a line parallel to y-axis is of the form:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x = constant",
+        "B": "y = constant",
+        "C": "y = x",
+        "D": "x + y = 0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "If the slope of a line is √3, its inclination to the x-axis is:",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "60°",
+        "B": "30°",
+        "C": "45°",
+        "D": "90°"
+      },
+      "answer": "A"
+    }
+  ]
+}

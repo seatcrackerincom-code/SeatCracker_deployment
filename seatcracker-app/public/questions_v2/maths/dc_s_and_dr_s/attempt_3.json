@@ -1,3 +1,313 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:30a8eea5b382bd48255ac994ddc601d0d7050af9bae1fc8fc841f6f3b0918204
-size 8415
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Condition for the line joining (x1,y1,z1) and (x2,y2,z2) to be perpendicular to origin-joining-P(x3,y3,z3) ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x3(x2-x1) + y3(y2-y1) + z3(z2-z1) = 0",
+        "B": "x1x2x3 = 1",
+        "C": "x1+x2+x3=0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "If a line makes angles α, β, γ with axes, then what is the projection of a segment of length d along the x-axis?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "d * cos α",
+        "B": "d * sin α",
+        "C": "d / cos α",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 3,
+      "question": "If a line makes angles α, β, γ with axes, then what is cos²α - sin²β - sin²γ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 4,
+      "question": "The plane through (−1,3,2) perpendicular to planes x+2y+2z=5 and 3x+3y+2z=8 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2x−4y+3z+8=0",
+        "B": "x+2y−3z=0",
+        "C": "2x+4y−3z+8=0",
+        "D": "2x−4y−3z=0"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 5,
+      "question": "Number of lines making angle 45 degrees with both x and y axes is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2 (as n must be zero)",
+        "B": "1",
+        "C": "Infinite",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 6,
+      "question": "The shortest distance between z-axis and line (x−2)/1=(y−3)/2=(z−1)/3 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(4+9)/√(1+4) = √13/√5",
+        "B": "√13/5",
+        "C": "√65/5",
+        "D": "3/√5"
+      },
+      "answer": "B",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 7,
+      "question": "If α, β, γ are angles made with coordinate planes? No, axes. If with planes, sin²α + sin²β + sin²γ = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 8,
+      "question": "Direction ratios of the line y=x, z=0 are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1, 1, 0)",
+        "B": "(1, 0, 0)",
+        "C": "(0, 0, 1)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 9,
+      "question": "The entries of a standard 3D rotation matrix correspond exactly to the ______ of rotated axes.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Direction Cosines",
+        "B": "Direction Ratios",
+        "C": "Eigenvalues",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The direction cosines of a line which is perpendicular to the lines with direction ratios (1,-2,2) and (0,2,1) are ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(-6/7, -1/7, 2/7)",
+        "B": "(2/3, 1/3, 2/3)",
+        "C": "(1, 0, 0)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 10
+    },
+    {
+      "id": 11,
+      "question": "The coordinates of the foot of the perpendicular from (1,0,0) to line joining (0,1,0) and (0,0,1) ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(0, 1/2, 1/2)",
+        "B": "(1/2, 1/2, 0)",
+        "C": "(0, 0, 0)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 12,
+      "question": "The angle between line x/1=y/2=z/3 and plane x+y+z=1 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sin⁻¹(6/√42)",
+        "B": "sin⁻¹(1/√14)",
+        "C": "cos⁻¹(6/√42)",
+        "D": "60°"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 13,
+      "question": "The angle between a line with DCs (l,m,n) and the z-axis is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos⁻¹(n)",
+        "B": "cos⁻¹(l)",
+        "C": "sin⁻¹(n)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 14,
+      "question": "Angle between two lines whose DCs are linked by l+m+n=0 and l²=m²+n² is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "90 degrees",
+        "B": "60 degrees",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 15,
+      "question": "If a line has direction cosines l,m,n then l²+m²+n² = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "√3",
+        "D": "3"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The direction ratios of the line joining (1,2,3) and (4,5,6) are ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(3, 3, 3)",
+        "B": "(1, 1, 1)",
+        "C": "(9, 9, 9)",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false,
+      "tag": "hard",
+      "id": 16
+    },
+    {
+      "id": 17,
+      "question": "A line makes angles α, β, γ, δ with four diagonals of a cube. Then cos²α + cos²β + cos²γ + cos²δ = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4/3",
+        "B": "1",
+        "C": "2",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If a line makes angles α, β, γ with the coordinate axes, then cos 2α + cos 2β + cos 2γ = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "-2",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 18
+    },
+    {
+      "question": "If the direction cosines of two lines are given by l + m + n = 0 and l² + m² - n² = 0, then the angle between them is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/2",
+        "B": "π/3",
+        "C": "π/6",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false,
+      "tag": "hard",
+      "id": 19
+    },
+    {
+      "id": 20,
+      "question": "The reflection of point (1,3,4) in the plane 2x−y+z=0 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(−3, 5, 2)",
+        "B": "(1,3,−4)",
+        "C": "(−1,3,4)",
+        "D": "(3,1,−4)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    }
+  ]
+}

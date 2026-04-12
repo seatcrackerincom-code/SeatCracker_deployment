@@ -1,3 +1,456 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc569a6c8caa3ff79175187b563ec1145f0330d7ac8cc476b7a0e9fc808cb184
-size 15617
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Mean speed is approx 0.92 v_rms.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 4 m with speed 36 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2268.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 1296 / 4.",
+            "id": 2
+        },
+        {
+            "id": 3,
+            "question": "Wait? no. Replaced: Dalton's law applies only to non-reacting gases.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 4 m with speed 60 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6300.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 3600 / 4.",
+            "id": 4
+        },
+        {
+            "question": "A car moves at 49 m/s and brakes to stop in 3 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-16.333333333333332 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 49)/3.",
+            "id": 5
+        },
+        {
+            "id": 6,
+            "question": "Wait? no. Replaced: if mass of molecule is m, momentum transferred to wall in 1 collision is 2mvx.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "Rotation? yes. absent in monoatomic particles (approx zero inertia).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Real gases behave like ideal gases at ______ pressure and ______ temperature.",
+            "options": {
+                "A": "Low, High",
+                "B": "High, Low",
+                "C": "Low, Low",
+                "D": "High, High"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 8
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 2 m with speed 36 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3240.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 1296 / 2.",
+            "id": 9
+        },
+        {
+            "question": "A capacitor of 6 microfarads is charged to 22 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1452.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 6 * 484.",
+            "id": 10
+        },
+        {
+            "question": "Dalton's Law states P_total = ______ of partial pressures.",
+            "options": {
+                "A": "Sum",
+                "B": "Product",
+                "C": "Average",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 11
+        },
+        {
+            "id": 12,
+            "question": "Wait? no. Replaced: v_rms of O2 at 27C is approx 483 m/s.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 13,
+            "question": "Specific heat of water? no. Replaced: Cv of water vapor (polyatomic) \u2248 3R. yes (f=6).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 14,
+            "question": "Specific heat difference Cp - Cv = r (where r = R/M). yes, for unit mass.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "A capacitor of 2 microfarads is charged to 77 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5929.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 2 * 5929.",
+            "id": 15
+        },
+        {
+            "question": "A car moves at 91 m/s and brakes to stop in 2 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-45.5 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 91)/2.",
+            "id": 16
+        },
+        {
+            "id": 17,
+            "question": "Vibration? yes. adds 2 more degrees of freedom (potential + kinetic).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 18,
+            "question": "Wait? no. Replaced: Mean free path increases as density decreases.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 1 m with speed 43 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "12943.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 1849 / 1.",
+            "id": 19
+        },
+        {
+            "id": 20,
+            "question": "Wait? no. Replaced: Maxwell distribution of speeds depends on T and M.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "A car moves at 33 m/s and brakes to stop in 5 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-6.6 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 33)/5.",
+            "id": "kinetic_theory_of_gases_21"
+        },
+        {
+            "question": "A capacitor of 10 microfarads is charged to 51 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "13005.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 10 * 2601.",
+            "id": "kinetic_theory_of_gases_22"
+        },
+        {
+            "question": "A car moves at 24 m/s and brakes to stop in 2 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-12.0 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 24)/2.",
+            "id": "kinetic_theory_of_gases_23"
+        },
+        {
+            "question": "A capacitor of 8 microfarads is charged to 47 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8836.0 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 8 * 2209.",
+            "id": "kinetic_theory_of_gases_24"
+        },
+        {
+            "question": "A capacitor of 5 microfarads is charged to 19 volts. The energy stored is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "902.5 microJoules",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "E = 1/2 CV^2 = 0.5 * 5 * 361.",
+            "id": "kinetic_theory_of_gases_25"
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 4 m with speed 67 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2244.5 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 4489 / 4.",
+            "id": "kinetic_theory_of_gases_26"
+        },
+        {
+            "question": "A car moves at 46 m/s and brakes to stop in 4 seconds. The acceleration is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "-11.5 m/s^2",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "a = (v_f - v_i)/t = (0 - 46)/4.",
+            "id": "kinetic_theory_of_gases_27"
+        },
+        {
+            "question": "The escape velocity on a planet with mass 8M and radius 2R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.0",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(8/2).",
+            "id": "kinetic_theory_of_gases_28"
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 4 m with speed 75 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2812.5 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 5625 / 4.",
+            "id": "kinetic_theory_of_gases_29"
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 2 m with speed 88 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "15488.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 7744 / 2.",
+            "id": "kinetic_theory_of_gases_30"
+        }
+    ]
+}

@@ -1,3 +1,714 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f5f55a1695afb6cd8508db0d0b11c239762f6adf6ff544890e562c05f9fe0bbe
-size 19474
+{
+  "topic_id": 23,
+  "topic_name": "STOICHIOMETRY",
+  "weightage": 4,
+  "priority": "High",
+  "subtopics": [
+    "Mole concept, Molar mass",
+    "Percentage composition, Empirical and Molecular formula",
+    "Stoichiometric calculations, Limiting reagent",
+    "Concentration terms (Molarity, Molality, Normality)"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "One mole of any substance contains ______ particles.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "6.022 x 10^22",
+        "B": "6.022 x 10^23",
+        "C": "3.011 x 10^23",
+        "D": "1.602 x 10^-19"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 2,
+      "question": "The mass of one mole of a substance in grams is its ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Atomic mass",
+        "B": "Molar mass",
+        "C": "Molecular mass",
+        "D": "Formula mass"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 3,
+      "question": "The diagram show Volume of 1 mole gas at STP. It is ______ litres.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A balloon labeled '1 mole of Gas' with its volume indicated.",
+      "options": {
+        "A": "11.2",
+        "B": "22.4",
+        "C": "44.8",
+        "D": "2.24"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 4,
+      "question": "Number of moles is calculated as ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Mass / Volume",
+        "B": "Given Mass / Molar Mass",
+        "C": "Molar Mass / Given Mass",
+        "D": "Density x Volume"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 5,
+      "question": "The diagram show Law of Conservation of Mass. Total mass of reactants ______ total mass of products.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "A balanced scale with chemicals on both sides.",
+      "options": {
+        "A": "Is less than",
+        "B": "Equals",
+        "C": "Is more than",
+        "D": "Is zero"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 6,
+      "question": "The simplest whole number ratio of atoms of each element in a compound is its ______ formula.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Molecular",
+        "B": "Empirical",
+        "C": "Structural",
+        "D": "Ionic"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 7,
+      "question": "The diagram show Molecular formula of Benzene. Its empirical formula is ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "C6H6 structure.",
+      "options": {
+        "A": "C2H2",
+        "B": "CH",
+        "C": "C3H3",
+        "D": "C6H6"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 8,
+      "question": "Molarity (M) is defined as moles of solute per ______ of solution.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Kilogram",
+        "B": "Litre",
+        "C": "Millilitre",
+        "D": "Gram"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 9,
+      "question": "The diagram show a Limiting Reagent problem. The reagent which gets ______ first is the limiting reagent.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A reaction where one reactant remains while the other is exhausted.",
+      "options": {
+        "A": "Produced",
+        "B": "Consumed",
+        "C": "Evaporated",
+        "D": "Diluted"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 10,
+      "question": "Molality (m) is defined as moles of solute per ______ of solvent.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Litre",
+        "B": "Kilogram",
+        "C": "Gram",
+        "D": "Mole"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 11,
+      "question": "The diagram show Molarity and Temperature relationship. Molarity ______ with increase in temperature.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Graph showing volume expansion and its effect on concentration.",
+      "options": {
+        "A": "Increases",
+        "B": "Decreases (due to volume expansion)",
+        "C": "Stays same",
+        "D": "Doubles"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 12,
+      "question": "Which of the following concentration terms is independent of temperature?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Molarity",
+        "B": "Molality and Mole fraction",
+        "C": "Normality",
+        "D": "V/V %"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 13,
+      "question": "The diagram show Stoichiometric coefficients. In aA + bB -> cC, the ratio of moles of A to B is ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A balanced chemical equation.",
+      "options": {
+        "A": "1:1",
+        "B": "a:b",
+        "C": "c:a",
+        "D": "b:c"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 14,
+      "question": "Percentage of Nitrogen in Urea (NH2CONH2) is approximately ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "28%",
+        "B": "46.6%",
+        "C": "60%",
+        "D": "14%"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 15,
+      "question": "The diagram show Normality calculation. Normality (N) = Molarity (M) x ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Relation N = M * n-factor.",
+      "options": {
+        "A": "Density",
+        "B": "n-factor (Valency factor)",
+        "C": "Molar mass",
+        "D": "Volume"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 16,
+      "question": "One a.m.u. (atomic mass unit) is equal to ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Mass of one C-12 atom",
+        "B": "1/12th the mass of one C-12 atom",
+        "C": "Mass of one H atom",
+        "D": "1.66 x 10^-27 mg"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 17,
+      "question": "A solution contains 2 moles of A and 3 moles of B. The mole fraction of A is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0.6",
+        "B": "0.4",
+        "C": "0.5",
+        "D": "1.5"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 18,
+      "question": "The diagram show Law of Multiple Proportions. It was proposed by ______.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Table showing CO and CO2 formations.",
+      "options": {
+        "A": "Lavoisier",
+        "B": "Dalton",
+        "C": "Proust",
+        "D": "Avogadro"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 19,
+      "question": "According to Gay Lussac's law, gases combine in a simple ______ ratio by volume.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Complex",
+        "B": "Whole number",
+        "C": "Random",
+        "D": "Square"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 20,
+      "question": "The diagram show Avogadro's Hypothesis. Equal volumes of all gases contain equal ______ at same T and P.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Three containers of different gases having the same volume and number of particles.",
+      "options": {
+        "A": "Mass",
+        "B": "Number of molecules",
+        "C": "Density",
+        "D": "Energy"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 21,
+      "question": "The molarity of pure water is ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 M",
+        "B": "55.5 M",
+        "C": "18 M",
+        "D": "100 M"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 22,
+      "question": "The diagram show n-factor for H2SO4. Its n-factor is ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "Acid giving off 2 protons.",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "98"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 23,
+      "question": "Empirical formula of Glucose (C6H12O6) is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "CHO",
+        "B": "CH2O",
+        "C": "C6H12O6",
+        "D": "C2H4O2"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 24,
+      "question": "The diagram show Mass Percentage. Formula is (Mass of element / ______ ) x 100.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Composition of a compound chart.",
+      "options": {
+        "A": "Sum of all atoms",
+        "B": "Molar mass of compound",
+        "C": "Volume of solution",
+        "D": "100"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 25,
+      "question": "10 grams of CaCO3 on heating gives ______ grams of CO2.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "10",
+        "B": "4.4",
+        "C": "5.6",
+        "D": "44"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 26,
+      "question": "Equivalent weight of Oxygen is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "16",
+        "B": "8",
+        "C": "32",
+        "D": "1"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 27,
+      "question": "The diagram show Law of Definite Proportions. It states a compound always contains exactly the same ______ of elements.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Comparison of water from different sources.",
+      "options": {
+        "A": "Volume",
+        "B": "Proportion by mass",
+        "C": "Color",
+        "D": "State"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 28,
+      "question": "Molecular mass = 2 x ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Atomic mass",
+        "B": "Vapor density",
+        "C": "Mass number",
+        "D": "Density"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 29,
+      "question": "The diagram show titration and M1V1 = M2V2. This is the ______ equation.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "A burette and flask setup for neutralization.",
+      "options": {
+        "A": "Gas",
+        "B": "Dilution / Molarity",
+        "C": "Ideal",
+        "D": "Rate"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 30,
+      "question": "Percentage of oxygen in H2O is about ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "11.1%",
+        "B": "88.9%",
+        "C": "50%",
+        "D": "10%"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 31,
+      "question": "The diagram show PPM (Parts Per Million). It is used for ______ concentrations.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Water pollution measurement graphic.",
+      "options": {
+        "A": "Very high",
+        "B": "Very dilute (trace amounts)",
+        "C": "Saturated",
+        "D": "Solid"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 32,
+      "question": "Valency of Al in Al2O3 is ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "3",
+        "C": "2",
+        "D": "0"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 33,
+      "question": "Ratio of rates of diffusion of gases depends on the square root of their ______.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Masses",
+        "B": "Inverse of Molar masses (Graham's Law)",
+        "C": "Volumes",
+        "D": "Pressures"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 1,
+      "question": "Gram atomic mass of Calcium is ______ grams.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "20",
+        "B": "40",
+        "C": "60",
+        "D": "10"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 35,
+      "question": "The diagram show reaction stoichiometry. 1 mole of N2 reacts with ______ moles of H2 to give 2 moles NH3.",
+      "difficulty": "medium",
+      "hasDiagram": true,
+      "diagram_description": "Haber's process balanced equation.",
+      "options": {
+        "A": "1",
+        "B": "3",
+        "C": "2",
+        "D": "4"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 36,
+      "question": "Which contains maximum number of molecules?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1g of H2",
+        "B": "2g of H2 (since 1 mole H2 = 2g)",
+        "C": "10g of O2",
+        "D": "20g of CO2"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 37,
+      "question": "Number of atoms in 4 grams of Helium is ______.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "Avogadro number (NA)",
+        "C": "2 NA",
+        "D": "4 NA"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 38,
+      "question": "The diagram show a Volumetric Flask. It is used to prepare ______ solutions.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Standard glassware with a calibration mark on the neck.",
+      "options": {
+        "A": "Crude",
+        "B": "Standard (known molarity)",
+        "C": "Boiling",
+        "D": "Dirty"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 39,
+      "question": "Density of water is 1 g/mL. What is the mass of 1 mole of water?",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 g",
+        "B": "18 g",
+        "C": "100 g",
+        "D": "1000 g"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 40,
+      "question": "Molecular mass of H2SO4 is ______ u.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "49",
+        "B": "98",
+        "C": "100",
+        "D": "32"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 41,
+      "question": "The diagram show limiting reactant in Pancake making. If you have 10 eggs but only 1 cup flour (req 2 cups), the limiting reactant is ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Analogy using kitchen ingredients.",
+      "options": {
+        "A": "Eggs",
+        "B": "Flour",
+        "C": "Pancakes",
+        "D": "Water"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 42,
+      "question": "Percentage by mass = ______ / ______ x 100.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Vol solute / Vol sol",
+        "B": "Mass solute / Mass sol",
+        "C": "Moles solute / Volume",
+        "D": "NA / Total"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 43,
+      "question": "The diagram show structure of Hydrated salt CuSO4.5H2O. Mass percentage of water is about ______.",
+      "difficulty": "hard",
+      "hasDiagram": true,
+      "diagram_description": "CuSO4 complex with water molecules.",
+      "options": {
+        "A": "10%",
+        "B": "36%",
+        "C": "50%",
+        "D": "5%"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 44,
+      "question": "Mole fraction sum (X1 + X2 + ...) is always ______.",
+      "difficulty": "easy",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "100",
+        "D": "NA"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 45,
+      "question": "The diagram show oxidation of glucose (C6H12O6 + 6O2 -> 6CO2 + 6H2O). Molar mass of glucose is ______.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Cellular respiration equation.",
+      "options": {
+        "A": "100 g",
+        "B": "180 g",
+        "C": "90 g",
+        "D": "342 g"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 46,
+      "question": "Normal saline solution is ______% NaCl by mass.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "5%",
+        "B": "0.9%",
+        "C": "10%",
+        "D": "0.1%"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 47,
+      "question": "Number of hydrogen atoms in 1 mole of H2O is ______ NA.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "0.5"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 48,
+      "question": "The diagram show a Weighting machine. 1 milligram = ______ grams.",
+      "difficulty": "easy",
+      "hasDiagram": true,
+      "diagram_description": "Digital balance reading.",
+      "options": {
+        "A": "10^-1",
+        "B": "10^-3",
+        "C": "10^-6",
+        "D": "10^3"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 49,
+      "question": "Volume of 44g of CO2 at STP is ______ Litres.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "11.2",
+        "B": "22.4",
+        "C": "44.8",
+        "D": "1"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 50,
+      "question": "Molecular weight is ______ property.",
+      "difficulty": "medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Extensive",
+        "B": "Intensive (per mole)",
+        "C": "Chemical",
+        "D": "Variable"
+      },
+      "answer": "B"
+    }
+  ]
+}

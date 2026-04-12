@@ -1,3 +1,602 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c51c95f93a267d19299aee6e92bf2a9275624f7df2a857d0bb82153847bb5fc3
-size 16521
+[
+  {
+    "id": 8,
+    "question": "For a first-order reaction, half-life is ______ of initial concentration.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Proportional",
+      "B": "Independent",
+      "C": "Inversely proportional",
+      "D": "Squared"
+    },
+    "answer": "B",
+    "_uid": "chemical_kinetics_electro_chemistry.json_8"
+  },
+  {
+    "id": 31,
+    "question": "Internal energy of an ideal gas depends only on ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Pressure",
+      "B": "Temperature",
+      "C": "Volume",
+      "D": "Molecular size"
+    },
+    "answer": "B",
+    "_uid": "thermodynamics.json_31"
+  },
+  {
+    "id": 27,
+    "question": "Corrosion of iron is an ______ process.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Electrostatic",
+      "B": "Electrochemical",
+      "C": "Non-redox",
+      "D": "Physical"
+    },
+    "answer": "B",
+    "_uid": "chemical_kinetics_electro_chemistry.json_27"
+  },
+  {
+    "id": 35,
+    "question": "The diagram show splitting of d-orbitals. This explains the ______ of complexes.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Five d-orbitals splitting into two sets: t2g and eg.",
+    "options": {
+      "A": "Mass",
+      "B": "Color and Geometry",
+      "C": "Radioactivity",
+      "D": "Hardness"
+    },
+    "answer": "B",
+    "_uid": "d_f_block_elements.json_35"
+  },
+  {
+    "id": 24,
+    "question": "The diagram show S2 molecule. It is ______ in nature, similar to O2.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Vapor phase sulfur at high temp.",
+    "options": {
+      "A": "Diamagnetic",
+      "B": "Paramagnetic",
+      "C": "Red",
+      "D": "Insulating"
+    },
+    "answer": "B",
+    "_uid": "16th_group.json_24"
+  },
+  {
+    "id": 50,
+    "question": "Actinoids show greater range of oxidation states than Lanthanoids because of ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Larger size",
+      "B": "Comparable energies of 5f, 6d and 7s levels",
+      "C": "Higher mass",
+      "D": "Presence of more neutrons"
+    },
+    "answer": "B",
+    "_uid": "d_f_block_elements.json_50"
+  },
+  {
+    "id": 9,
+    "question": "The diagram show Nitration of Benzene. The nitrating mixture is ______.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "Benzene reacting with a mixture of two concentrated acids.",
+    "options": {
+      "A": "HCl + HNO3",
+      "B": "Conc. HNO3 + Conc. H2SO4",
+      "C": "H2SO4 + HCl",
+      "D": "HNO3 + CH3COOH"
+    },
+    "answer": "B",
+    "_uid": "benzene_aromatic_hydro_carbon.json_9"
+  },
+  {
+    "id": 20,
+    "question": "Ethers are relatively ______ towards chemical reagents.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Highly reactive",
+      "B": "Inert (Less reactive)",
+      "C": "Explosive",
+      "D": "Acidic"
+    },
+    "answer": "B",
+    "_uid": "organic_compound_containing_c_h_o.json_20"
+  },
+  {
+    "id": 49,
+    "question": "Keratin in hair and nails is a ______ protein.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Globular",
+      "B": "Fibrous",
+      "C": "Sweet",
+      "D": "Soluble"
+    },
+    "answer": "B",
+    "_uid": "biomolecules.json_49"
+  },
+  {
+    "id": 36,
+    "question": "The diagram show Cumene process. It is used to prepare ______ and ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Cumene (Isopropylbenzene) oxidizing followed by hydrolysis.",
+    "options": {
+      "A": "Aniline, Acetone",
+      "B": "Phenol, Acetone",
+      "C": "Benzene, Ethanol",
+      "D": "Ether, Water"
+    },
+    "answer": "B",
+    "_uid": "organic_compound_containing_c_h_o.json_36"
+  },
+  {
+    "id": 41,
+    "question": "Elements with atomic numbers 72 to 80 belong to ______ series.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "3d",
+      "B": "5d",
+      "C": "4d",
+      "D": "4f"
+    },
+    "answer": "B",
+    "_uid": "d_f_block_elements.json_41"
+  },
+  {
+    "id": 6,
+    "question": "The diagram show Hydroboration-Oxidation of propene. It yields ______ as the major product.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Propene reacting with BH3 followed by H2O2/OH- to form an alcohol.",
+    "options": {
+      "A": "Propan-2-ol",
+      "B": "Propan-1-ol (Anti-Markovnikov)",
+      "C": "Propane",
+      "D": "Acetone"
+    },
+    "answer": "B",
+    "_uid": "organic_compound_containing_c_h_o.json_6"
+  },
+  {
+    "id": 23,
+    "question": "The diagram show Mechanism of Chlorination. The catalyst AlCl3 generates ______ electrophile.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Formation of Cl+ cation.",
+    "options": {
+      "A": "Cl-",
+      "B": "Cl+ (Chloronium ion)",
+      "C": "Cl radical",
+      "D": "Cl2"
+    },
+    "answer": "B",
+    "_uid": "benzene_aromatic_hydro_carbon.json_23"
+  },
+  {
+    "id": 45,
+    "question": "The diagram show a piston moving out. Work done by the system is ______ in chemistry sign convention.",
+    "difficulty": "medium",
+    "hasDiagram": true,
+    "diagram_description": "A cylinder with gas expanding and moving a piston upwards.",
+    "options": {
+      "A": "Positive",
+      "B": "Negative",
+      "C": "Zero",
+      "D": "Max"
+    },
+    "answer": "B",
+    "_uid": "thermodynamics.json_45"
+  },
+  {
+    "id": 45,
+    "question": "Which of these does not exist?",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "SiCl4",
+      "B": "[SiF6]2-",
+      "C": "[CCl6]2-",
+      "D": "PbCl4"
+    },
+    "answer": "C",
+    "_uid": "14th_group_carbon_family.json_45"
+  },
+  {
+    "id": 50,
+    "question": "An example of a 13-15 compound semiconductor is ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "ZnS",
+      "B": "GaAs",
+      "C": "NaCl",
+      "D": "MgO"
+    },
+    "answer": "B",
+    "_uid": "solid_state.json_50"
+  },
+  {
+    "id": 25,
+    "question": "The diagram show a bomb calorimeter. It is used to measure ΔU at constant ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A heavy steel vessel submerged in water, with ignition wires and a thermometer.",
+    "options": {
+      "A": "Pressure",
+      "B": "Volume",
+      "C": "Temperature",
+      "D": "Mass"
+    },
+    "answer": "B",
+    "_uid": "thermodynamics.json_25"
+  },
+  {
+    "id": 40,
+    "question": "Bleaching powder is produced by passing Chlorine over ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Quick lime",
+      "B": "Dry slaked lime [Ca(OH)2]",
+      "C": "Limestone",
+      "D": "Baking soda"
+    },
+    "answer": "B",
+    "_uid": "s_block_elements.json_40"
+  },
+  {
+    "id": 20,
+    "question": "Ebulioscopic constant (Kb) depends on the nature of the ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Solute",
+      "B": "Solvent",
+      "C": "Container",
+      "D": "Thermometer"
+    },
+    "answer": "B",
+    "_uid": "solutions.json_20"
+  },
+  {
+    "id": 20,
+    "question": "The diagram show Bragg's Law. The equation is ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "X-ray diffraction from crystal planes.",
+    "options": {
+      "A": "E = mc^2",
+      "B": "nλ = 2d sinθ",
+      "C": "PV = nRT",
+      "D": "F = ma"
+    },
+    "answer": "B",
+    "_uid": "solid_state.json_20"
+  },
+  {
+    "id": 44,
+    "question": "SF4 has a ______ shape due to one lone pair.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "T-shape",
+      "B": "See-saw",
+      "C": "Tetrahedral",
+      "D": "Planar"
+    },
+    "answer": "B",
+    "_uid": "16th_group.json_44"
+  },
+  {
+    "id": 44,
+    "question": "Permanganate ion in alkali medium is reduced to ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Mn+2",
+      "B": "MnO4 -2 (Manganate)",
+      "C": "MnO2",
+      "D": "Mn"
+    },
+    "answer": "B",
+    "_uid": "d_f_block_elements.json_44"
+  },
+  {
+    "id": 50,
+    "question": "Hard-Soft Acid-Base (HSAB) principle helps predict ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Mass",
+      "B": "Complex stability",
+      "C": "State",
+      "D": "Color"
+    },
+    "answer": "B",
+    "_uid": "co_ordination_compounds.json_50"
+  },
+  {
+    "id": 9,
+    "question": "Hybridization of carbon in Ethyne (C2H2) is ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "sp3",
+      "B": "sp",
+      "C": "sp2",
+      "D": "dsp2"
+    },
+    "answer": "B",
+    "_uid": "chemical_bonding.json_9"
+  },
+  {
+    "id": 47,
+    "question": "Bond length in D-D is ______ that in H-H.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Much larger",
+      "B": "Almost same",
+      "C": "Much smaller",
+      "D": "Double"
+    },
+    "answer": "B",
+    "_uid": "hydrogen_and_its_compounds.json_47"
+  },
+  {
+    "id": 35,
+    "question": "A specific sequence of three nucleotides on mRNA is called a ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Mutant",
+      "B": "Codon",
+      "C": "Replicant",
+      "D": "Gene"
+    },
+    "answer": "B",
+    "_uid": "biomolecules.json_35"
+  },
+  {
+    "id": 18,
+    "question": "Molecules like CO2 and BF3 have zero dipole moment because of their ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Polarity",
+      "B": "Symmetrical geometry",
+      "C": "Mass",
+      "D": "Charge"
+    },
+    "answer": "B",
+    "_uid": "chemical_bonding.json_18"
+  },
+  {
+    "id": 47,
+    "question": "Cis isomer of [Co(en)2Cl2]+ is ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Optically inactive",
+      "B": "Optically active",
+      "C": "Colorless",
+      "D": "Unstable"
+    },
+    "answer": "B",
+    "_uid": "co_ordination_compounds.json_47"
+  },
+  {
+    "id": 25,
+    "question": "The diagram show a plot of molar conductivity vs √C for strong and weak electrolytes. Weak electrolytes show a ______ increase at low concentrations.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A graph with Λm on y-axis and √C on x-axis; one curve is almost linear (KCl), and another shoots up near the y-axis (CH3COOH).",
+    "options": {
+      "A": "Linear",
+      "B": "Sharp/Rapid",
+      "C": "Negligible",
+      "D": "Negative"
+    },
+    "answer": "B",
+    "_uid": "chemical_kinetics_electro_chemistry.json_25"
+  },
+  {
+    "id": 8,
+    "question": "The diagram show Cellulose structure. It is a straight chain polymer of ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A chain of glucose units connected by β-1,4-glycosidic linkages.",
+    "options": {
+      "A": "α-D-Glucose",
+      "B": "β-D-Glucose",
+      "C": "Maltose",
+      "D": "Lactose"
+    },
+    "answer": "B",
+    "_uid": "biomolecules.json_8"
+  },
+  {
+    "id": 29,
+    "question": "The diagram show basicity of hydroxides. Mobility of alkali metal ions in water follows the order ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Chart showing Li+ < Na+ < K+ < Rb+ < Cs+.",
+    "options": {
+      "A": "Li+ > Na+ > K+",
+      "B": "Cs+ > Rb+ > K+ > Na+ > Li+",
+      "C": "All same",
+      "D": "Random"
+    },
+    "answer": "B",
+    "_uid": "s_block_elements.json_29"
+  },
+  {
+    "id": 23,
+    "question": "Entropy of the universe is constantly ______.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Decreasing",
+      "B": "Increasing",
+      "C": "Stable",
+      "D": "Fluctuating"
+    },
+    "answer": "B",
+    "_uid": "thermodynamics.json_23"
+  },
+  {
+    "id": 14,
+    "question": "Heisenberg's Uncertainty Principle states that it's impossible to simultaneously determine ______ and ______ of an electron.",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Mass, Charge",
+      "B": "Position, Momentum",
+      "C": "Color, Spin",
+      "D": "Shape, Energy"
+    },
+    "answer": "B",
+    "_uid": "atomic_structure.json_14"
+  },
+  {
+    "id": 11,
+    "question": "The total number of electrons in Diborane used for bonding is ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "14",
+      "B": "12",
+      "C": "10",
+      "D": "16"
+    },
+    "answer": "B",
+    "_uid": "13th_group_boron_family.json_11"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is an intensive property?",
+    "difficulty": "medium",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Internal energy",
+      "B": "Temperature",
+      "C": "Enthalpy",
+      "D": "Volume"
+    },
+    "answer": "B",
+    "_uid": "thermodynamics.json_4"
+  },
+  {
+    "id": 49,
+    "question": "The diagram show oxidation state graph of 3d series. Stability of +2 increases from Sc to ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "A graph showing +2 state becoming more common as we move right towards Cu and Zn.",
+    "options": {
+      "A": "Mn",
+      "B": "Zn",
+      "C": "Ti",
+      "D": "V"
+    },
+    "answer": "B",
+    "_uid": "d_f_block_elements.json_49"
+  },
+  {
+    "id": 20,
+    "question": "Dead burnt plaster is ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "CaSO4.1/2 H2O",
+      "B": "Anhydrous CaSO4",
+      "C": "CaSO4.2H2O",
+      "D": "CaO"
+    },
+    "answer": "B",
+    "_uid": "s_block_elements.json_20"
+  },
+  {
+    "id": 38,
+    "question": "The diagram show Metamerism. It is due to different ______ on either side of a functional group.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Comparison of Ethoxyethane and Methoxypropane.",
+    "options": {
+      "A": "H atoms",
+      "B": "Alkyl groups",
+      "C": "Charge",
+      "D": "Mass number"
+    },
+    "answer": "B",
+    "_uid": "genrel_organic_chemistry_goc.json_38"
+  },
+  {
+    "id": 20,
+    "question": "The diagram show Tailings of Mercury. It is a test for ______.",
+    "difficulty": "hard",
+    "hasDiagram": true,
+    "diagram_description": "Mercury losing its meniscus and sticking to glass in presence of a gas.",
+    "options": {
+      "A": "O2",
+      "B": "O3",
+      "C": "SO2",
+      "D": "Cl2"
+    },
+    "answer": "B",
+    "_uid": "16th_group.json_20"
+  },
+  {
+    "id": 27,
+    "question": "The thermodynamic stability of allotropes of carbon follows: ______.",
+    "difficulty": "hard",
+    "hasDiagram": false,
+    "diagram_description": "",
+    "options": {
+      "A": "Diamond > Graphite",
+      "B": "Graphite > Diamond",
+      "C": "Fullerene > Graphite",
+      "D": "Diamond = Graphite"
+    },
+    "answer": "B",
+    "_uid": "14th_group_carbon_family.json_27"
+  }
+]
