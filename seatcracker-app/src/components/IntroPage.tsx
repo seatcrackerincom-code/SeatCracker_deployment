@@ -62,7 +62,6 @@ export default function IntroPage({ onStart }: Props) {
           </button>
 
         </motion.div>
-        </motion.div>
       </div>
 
       {/* Scroll indicator */}
