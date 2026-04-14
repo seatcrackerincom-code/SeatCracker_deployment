@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import styles from "./RealBattleMode.module.css";
 import { generateDummyBattleQuestions, type BattleQuestion } from "../lib/battle_logic";
+import { saveProgress } from "../lib/supabase";
 
 type BattleState = "LOGIN" | "PROFILE" | "INSTRUCTIONS" | "EXAM" | "RESULT";
 
@@ -49,7 +50,7 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
       setSecondsLeft(prev => {
         if (prev <= 0) {
           clearInterval(timer);
-          setState("RESULT");
+          handleSubmit();
           return 0;
         }
         return prev - 1;
@@ -59,10 +60,9 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
   }, [state]);
 
   const fmtTime = (s: number) => {
-    const h = Math.floor(s / 3600);
-    const m = Math.floor((s % 3600) / 60);
+    const m = Math.floor(s / 60);
     const sec = s % 60;
-    return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(sec).padStart(2, '0')}`;
+    return `${m}:${String(sec).padStart(2, '0')}`;
   };
 
   // Handlers
@@ -101,6 +101,24 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
       [questions[currentIdx].id]: { ...prev[questions[currentIdx].id], selected: null, answered: false }
     }));
   };
+
+  const handleSubmit = useCallback(() => {
+    const correct = questions.filter(q => statuses[q.id].selected === q.answer).length;
+    const accuracy = Math.round((correct / questions.length) * 100);
+    const timeTaken = (180 * 60) - secondsLeft;
+
+    saveProgress({
+      user_id: userId,
+      topic: "Full Mock Battle",
+      subject: "Mixed",
+      accuracy: accuracy,
+      avg_time: Number((timeTaken / questions.length).toFixed(1)),
+      completed: true,
+      last_attempt_at: new Date().toISOString()
+    }).catch(console.error);
+
+    setState("RESULT");
+  }, [questions, statuses, secondsLeft, userId]);
 
   // Render Screens
   if (state === "LOGIN") {
@@ -287,7 +305,7 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
            <div className={styles.footerRight}>
              <button className={styles.navBtn} onClick={() => currentIdx > 0 && setCurrentIdx(currentIdx - 1)}>Back</button>
              <button className={`${styles.navBtn} ${styles.saveBtn}`} onClick={saveAndNext}>Save & Next</button>
-             <button className={styles.navBtn} style={{background: '#1e3a5f', color: '#fff'}} onClick={() => setState("RESULT")}>Submit</button>
+             <button className={styles.navBtn} style={{background: '#1e3a5f', color: '#fff'}} onClick={handleSubmit}>Submit</button>
            </div>
         </div>
       </div>
