@@ -18,8 +18,8 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
     seconds: 0
   });
 
-  // Target Date: April 17, 2026, 10:00 AM
-  const targetDate = new Date("April 17, 2026 10:00:00").getTime();
+  // Target Date: April 16, 2026, 4:00 PM (16:00:00)
+  const targetDate = new Date("April 16, 2026 16:00:00").getTime();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -46,7 +46,7 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
       <div className={styles.countdownHeader}>
         <h1 className={styles.countdownTitle}>Real Battle Mode</h1>
         <p className={styles.countdownTitleSub}>
-          The ultimate {course} {exam} simulation platform is launching soon.
+          Preparing UI Interface, Collecting PYQs. Stay Tuned
         </p>
       </div>
 
@@ -70,8 +70,8 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
       </div>
 
       <div style={{ maxWidth: '600px', margin: '0 auto 40px', color: '#94a3b8', fontSize: '0.9rem', lineHeight: '1.6' }}>
-        Real Battle Mode will feature industrial-grade simulations of the actual EAMCET exam interface, 
-        with verified PYQs and real-time performance analytics. Get ready to experience the official atmosphere.
+        The official release is set for April 16th evening. We are currently finalizing the industrial-grade UI and 
+        verifying the 160-question PYQ banks for a seamless exam-day experience.
       </div>
 
       <button className={styles.backBtn} onClick={onBack}>

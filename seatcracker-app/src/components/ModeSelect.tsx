@@ -50,22 +50,6 @@ export default function ModeSelect({ onNext, onBack }: Props) {
             </div>
           </button>
 
-          <button
-            id="mode-roadmap"
-            className={styles.optionCard}
-            onClick={() => onNext("roadmap")}
-          >
-            <span className={styles.optionIcon}>🗺️</span>
-            <div className={styles.optionText}>
-              <span className={styles.optionLabel}>Roadmap Mode (AI / Manual)</span>
-              <span className={styles.optionDesc}>Get a structured day-by-day study plan. Each topic includes a full exam test with real questions.</span>
-            </div>
-            <div className={styles.optionCheck}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="9 18 15 12 9 6"></polyline>
-              </svg>
-            </div>
-          </button>
 
           {/* ── Real Battle Mode ── */}
           <button
