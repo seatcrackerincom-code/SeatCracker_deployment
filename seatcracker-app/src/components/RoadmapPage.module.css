@@ -165,6 +165,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 .hoursBtn:hover, .hoursBtn:active { border-color: var(--accent); background: var(--accent-glow); }
+.hoursBtn > * { pointer-events: none; }
 .hoursValue {
   font-size: 30px;
   font-weight: 800;

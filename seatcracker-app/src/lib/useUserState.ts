@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { validatePromoCode } from "../lib/promoCodes";
 import { getAccessStateSync } from "./access";
 import { onAuthChange } from "./firebase";
@@ -72,14 +72,8 @@ export function useUserState() {
     setIsLoaded(true);
   }, [currentUid]);
 
-  // Set policy acceptance
-  const setPoliciesAccepted = (accepted: boolean) => {
-    const next = { ...user, policies_accepted: accepted };
-    saveState(next);
-  };
-
   // Persist any state change
-  const saveState = (updated: UserState) => {
+  const saveState = useCallback((updated: UserState) => {
     setUser(updated);
     if (typeof window === "undefined") return;
     try {
@@ -88,7 +82,13 @@ export function useUserState() {
     } catch {
       // Storage full — ignore
     }
-  };
+  }, [currentUid]);
+
+  // Set policy acceptance
+  const setPoliciesAccepted = useCallback((accepted: boolean) => {
+    const next = { ...user, policies_accepted: accepted };
+    saveState(next);
+  }, [user, saveState]);
 
   // Apply a promo code and return a result message
   // allowPremium = true enables code entry even after purchase (for bonus/XP codes)

@@ -27,13 +27,18 @@ export default function PolicyGuard() {
   // Sync with Supabase on Auth Change
   useEffect(() => {
     if (authUser && isLoaded) {
+      if (appUser.policies_accepted) {
+        setShowModal(false);
+        setIsSyncing(false);
+        return;
+      }
+
       setIsSyncing(true);
       fetchUser(authUser.uid).then((dbUser) => {
         if (dbUser) {
           setPoliciesAccepted(dbUser.policies_accepted);
           setShowModal(!dbUser.policies_accepted);
         } else {
-          // New user or legacy user without DB record yet
           setShowModal(true);
         }
         setIsSyncing(false);

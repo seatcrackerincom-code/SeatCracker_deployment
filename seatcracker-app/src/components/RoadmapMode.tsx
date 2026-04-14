@@ -53,11 +53,6 @@ type Screen =
 /* ─── Confetti colours ─── */
 const CONFETTI_COLORS = ["#6c63ff", "#a78bfa", "#f59e0b", "#10b981", "#f87171", "#fbbf24", "#60a5fa"];
 
-/* ─── Helpers ─── */
-const LS_KEY_CURRENT    = "sc_rm_current_day";
-const LS_KEY_COMPLETED  = "sc_rm_completed_days";
-const LS_KEY_TOPIC_DONE = (day: number, topic: string) => `sc_rm_td_${day}_${topic.replace(/\s+/g, "_")}`;
-
 function fmtTime(s: number) {
   return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 }
@@ -81,6 +76,11 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
   const [confettis, setConfettis]      = useState<{ id: number; x: number; color: string; delay: number; size: number }[]>([]);
   const [formulas, setFormulas]        = useState<Formula[]>([]);
   const [loadingFormulas, setLoadingFormulas] = useState(false);
+
+  const getPK = (key: string) => userId ? `${key}_${userId}` : key;
+  const LS_KEY_CURRENT    = getPK("sc_rm_current_day");
+  const LS_KEY_COMPLETED  = getPK("sc_rm_completed_days");
+  const LS_KEY_TOPIC_DONE = (subject: string, topic: string) => getPK(`sc_topic_done_${subject.replace(/\s+/g, "_")}_${topic.replace(/\s+/g, "_")}`);
 
   /* exam state — replaces dummy MCQ test */
   const [examMode, setExamMode]       = useState(false);
@@ -111,17 +111,35 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
     const doneSet = new Set<string>();
     roadmap.forEach(d => {
       d.tasks.forEach(t => {
-        if (t.completed || localStorage.getItem(LS_KEY_TOPIC_DONE(d.day, t.topic)) === "1") {
-          doneSet.add(`${d.day}::${t.topic}`);
+        if (t.completed || localStorage.getItem(LS_KEY_TOPIC_DONE(t.subject, t.topic)) === "1") {
+          doneSet.add(`${t.subject}::${t.topic}`);
           if (t.completed) {
-            localStorage.setItem(LS_KEY_TOPIC_DONE(d.day, t.topic), "1");
+            localStorage.setItem(LS_KEY_TOPIC_DONE(t.subject, t.topic), "1");
           }
         }
       });
     });
     setCompletedTopics(doneSet);
-    fetchProgress(userId).then(setAllProgress);
   }, [roadmap, userId]);
+
+  useEffect(() => {
+    if (!userId) return;
+    fetchProgress(userId).then(setAllProgress).catch(() => {});
+  }, [userId]);
+
+  // Sync Supabase progress into completedTopics Set
+  useEffect(() => {
+    if (allProgress.length === 0) return;
+    setCompletedTopics(prev => {
+      const next = new Set(prev);
+      allProgress.forEach(p => {
+        if (p.attempts && p.attempts >= 1) {
+          next.add(`${p.subject}::${p.topic}`);
+        }
+      });
+      return next;
+    });
+  }, [allProgress]);
 
   const totalDays = roadmap.length;
   const completedPct = totalDays > 0 ? Math.round((completedDays.length / totalDays) * 100) : 0;
@@ -153,17 +171,26 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
 
   /* ── Topic completion ── */
   const markTopicDone = (dayNum: number, topic: string) => {
-    const key = `${dayNum}::${topic}`;
+    // Find subject for this topic in the roadmap
+    const dayData = roadmap.find(d => d.day === dayNum);
+    const task = dayData?.tasks.find(t => t.topic.includes(topic));
+    const subject = task?.subject || "general";
+
+    const key = `${subject}::${topic}`;
     setCompletedTopics(prev => {
       const next = new Set(prev);
       next.add(key);
       return next;
     });
-    localStorage.setItem(LS_KEY_TOPIC_DONE(dayNum, topic), "1");
+    localStorage.setItem(LS_KEY_TOPIC_DONE(subject, topic), "1");
   };
 
-  const isTopicDone = (dayNum: number, topic: string) =>
-    completedTopics.has(`${dayNum}::${topic}`);
+  const isTopicDone = (dayNum: number, topic: string) => {
+    const dayData = roadmap.find(d => d.day === dayNum);
+    const task = dayData?.tasks.find(t => t.topic.includes(topic));
+    const subject = task?.subject || "general";
+    return completedTopics.has(`${subject}::${topic}`);
+  };
 
   /* ── Check if all topics in a level are done ── */
   const isDayReadyToComplete = (dayNum: number) => {
@@ -448,28 +475,41 @@ export default function RoadmapMode({ userId, exam, course, roadmap, onBack }: P
           {Object.entries(bySubject).map(([subject, topics]) => (
             <div key={subject} className={styles.subjectSection}>
               <div className={styles.subjectName}>{subject}</div>
-              {topics.map(({ topic, priority }) => {
+              {topics.map(({ topic, priority }, idx) => {
                 const done = isTopicDone(screen.dayNum, topic);
+                // Sequential logic: A topic is locked if it's not done AND the previous topic in the list is also not done.
+                // Basically: only the first 'not done' topic is clickable.
+                const prevTopic = idx > 0 ? topics[idx - 1] : null;
+                const prevDone = prevTopic ? isTopicDone(screen.dayNum, prevTopic.topic) : true;
+                const locked = !done && !prevDone;
+
                 return (
                   <button
                     key={topic}
-                    className={`${styles.topicCardBtn} ${done ? styles.topicDone : ""}`}
-                    onClick={() =>
+                    className={`${styles.topicCardBtn} ${done ? styles.topicDone : ""} ${locked ? styles.topicLocked : ""}`}
+                    onClick={() => {
+                      if (locked) return;
                       setScreen({
                         kind: "topic",
                         dayNum: screen.dayNum,
                         subject,
                         topic,
                         priority,
-                      })
-                    }
+                      });
+                    }}
                     id={`topic-btn-${topic.replace(/\s+/g, "-").toLowerCase()}`}
                   >
                     <span className={`${styles.topicDot} ${priority.toLowerCase()}`} />
                     <span className={styles.topicCardName}>{topic}</span>
                     <div className={styles.topicCardRight}>
-                      <span className={`${styles.topicPriBadge} ${priority.toLowerCase()}`}>{priority}</span>
-                      {done && <span className={styles.topicDoneCheck}>✓</span>}
+                      {locked ? (
+                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0110 0v4" /></svg>
+                      ) : (
+                        <>
+                          <span className={`${styles.topicPriBadge} ${priority.toLowerCase()}`}>{priority}</span>
+                          {done && <span className={styles.topicDoneCheck}>✓</span>}
+                        </>
+                      )}
                     </div>
                   </button>
                 );

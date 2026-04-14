@@ -134,9 +134,28 @@ export default function GlobalHeader() {
             <h3 style={{ fontSize: "14px", color: "var(--text-muted, #64748b)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "8px" }}>Menu</h3>
             
             <button 
-              onClick={() => {
-                localStorage.setItem("sc_step", "6");
-                window.location.href = "/";
+              onClick={async () => {
+                try {
+                  const uid = authUser?.uid;
+                  const pk = uid ? `sc_step_${uid}` : "sc_step";
+                  localStorage.setItem(pk, "6");
+                  localStorage.setItem("sc_step", "6");
+                  
+                  if (uid && uid !== "sc_user") {
+                    await fetch("/api/admin/register-user", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify({ userId: uid, last_step: 6 })
+                    });
+                  }
+                } catch(e) {}
+                
+                if (window.location.pathname === "/") {
+                  window.dispatchEvent(new CustomEvent("sc_navigate", { detail: { step: 6 } }));
+                  setIsMenuOpen(false);
+                } else {
+                  window.location.href = "/";
+                }
               }}
               style={{
                 display: "flex", alignItems: "center", gap: "12px",

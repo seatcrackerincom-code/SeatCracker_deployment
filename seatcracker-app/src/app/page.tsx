@@ -236,6 +236,17 @@ export default function Home() {
     // Note: history.pushState is handled by the step useEffect above
   };
 
+  useEffect(() => {
+    const handleForceNav = (e: any) => {
+      if (typeof e.detail?.step === "number") {
+        go(e.detail.step);
+      }
+    };
+    window.addEventListener("sc_navigate", handleForceNav);
+    return () => window.removeEventListener("sc_navigate", handleForceNav);
+  });
+
+
   const handleTestCategoryNext = (selected: string) => {
     setTestCategory(selected);
     localStorage.setItem(getPK("sc_test_category"), selected);

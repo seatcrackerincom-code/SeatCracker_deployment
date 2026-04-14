@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import styles from "./RoadmapPage.module.css";
+import { fetchProgress } from "../lib/supabase";
 
 /* ─── Types ─── */
 interface Chapter {
@@ -127,41 +128,41 @@ function generateManualRoadmap(
 
   for (let day = 1; day <= totalDays; day++) {
     const tasks: RoadmapTask[] = [];
-    let scheduledAnything = false;
+    
+    // Determine daily pattern
+    // MPC: [Math, Math, Physics, Chemistry]
+    // BiPC: [Botany, Zoology, Physics, Chemistry]
+    const slots = isEngineering 
+      ? ["Mathematics", "Mathematics", "Physics", "Chemistry"]
+      : ["Botany", "Zoology", "Physics", "Chemistry"];
 
-    // Optional: Add Mathematics at the beginning AND end for Engineering to enforce 4 topics
-    const dailySubjects = isEngineering ? ["Mathematics", "Physics", "Chemistry", "Mathematics"] : subjects;
-
-    for (let slot = 0; slot < dailySubjects.length; slot++) {
-      const subject = dailySubjects[slot];
+    slots.forEach(subject => {
       const pool = bySubject[subject] || [];
-      const pIdx = pointers[subject] || 0;
+      const ptr = pointers[subject] || 0;
       
-      if (pIdx < pool.length) {
-        const topic = pool[pIdx];
+      if (ptr < pool.length) {
+        const t = pool[ptr];
         tasks.push({
           subject: subject,
-          topic: topic.topic,
-          priority: topic.priority,
-          time: "2h"
+          topic: t.topic,
+          priority: t.priority,
+          time: "1.5h"
         });
-        pointers[subject] = pIdx + 1;
-        scheduledAnything = true;
+        pointers[subject] = ptr + 1;
+      } else {
+        // Filler for that subject slot
+        tasks.push({
+          subject: subject,
+          topic: "Practise high/med/low priority questions",
+          priority: "High",
+          time: "1.5h"
+        });
       }
-    }
+    });
 
-    if (!scheduledAnything) {
-      tasks.push({
-        subject: "Practice",
-        topic: "Practise high, med, low priority questions",
-        priority: "High",
-        time: `${dailyHours}h`
-      });
-    }
-    if (tasks.length > 0) roadmap.push({ day, tasks });
+    roadmap.push({ day, tasks });
   }
 
-  // Shift days up if day 0 exists just as visual help (we'll render Day 0 as "Already Completed")
   return roadmap;
 }
 
@@ -175,6 +176,10 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
   const [dailyHours, setDailyHours] = useState(6);
   const [priorityOrder, setPriorityOrder] = useState<string[]>(["High", "Medium", "Low"]);
   const [mode, setMode] = useState<"smart" | "manual">("smart");
+
+  // Helper for user-specific keys
+  const getPK = (key: string) => userId ? `${key}_${userId}` : key;
+  const LS_KEY_TOPIC_DONE = (subject: string, topic: string) => getPK(`sc_topic_done_${subject.replace(/\s+/g, "_")}_${topic.replace(/\s+/g, "_")}`);
   
   // New States
   const [strategy, setStrategy] = useState<"full" | "good_score">("full");
@@ -194,7 +199,7 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
 
   // Load from localStorage on mount (with Course-Awareness fix)
   useEffect(() => {
-    const saved = localStorage.getItem("sc_roadmap");
+    const saved = localStorage.getItem(getPK("sc_roadmap"));
     if (saved) {
       try { 
         const parsed = JSON.parse(saved) as RoadmapDay[];
@@ -203,14 +208,47 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
         const hasMaths = parsed.some(d => d.tasks.some(t => t.subject === "Mathematics"));
         
         if (isNotEng && hasMaths) {
-          localStorage.removeItem("sc_roadmap");
+          localStorage.removeItem(getPK("sc_roadmap"));
           setRoadmap(null);
         } else {
           setRoadmap(parsed);
         }
       } catch { /* ignore */ }
     }
-  }, [course]);
+  }, [course, userId]); // added userId to dependency
+
+  // Load completed topics from localStorage + Supabase on mount
+  useEffect(() => {
+    if (syllabusData.length === 0) return;
+    
+    const doneSet = new Set<string>();
+    
+    // 1. Load from LocalStorage (fast feedback)
+    syllabusData.forEach(sd => {
+      sd.chapters.forEach(ch => {
+        if (localStorage.getItem(LS_KEY_TOPIC_DONE(sd.subject, ch.chapter)) === "1") {
+          doneSet.add(`${sd.subject}::${ch.chapter}`);
+        }
+      });
+    });
+
+    // 2. Sync from Supabase (Cloud Truth)
+    if (userId) {
+      fetchProgress(userId).then(list => {
+        list.forEach(p => {
+          if (p.attempts && p.attempts >= 1) { // Any attempt counts as progress for roadmap skipping
+            doneSet.add(`${p.subject}::${p.topic}`);
+          }
+        });
+        setCompletedTopics(new Set(doneSet)); // Update with merged results
+      }).catch(() => {
+        // Fallback to just what we have in doneSet from localStorage
+        setCompletedTopics(doneSet);
+      });
+    } else {
+      setCompletedTopics(doneSet);
+    }
+  }, [syllabusData, userId]);
 
   // Fetch syllabus for manual mode
   useEffect(() => {
@@ -253,10 +291,16 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
   };
 
   const toggleCompletedTopic = (key: string) => {
+    const [subject, topic] = key.split("::");
     setCompletedTopics(prev => {
       const next = new Set(prev);
-      if (next.has(key)) next.delete(key);
-      else next.add(key);
+      if (next.has(key)) {
+        next.delete(key);
+        localStorage.removeItem(LS_KEY_TOPIC_DONE(subject, topic));
+      } else {
+        next.add(key);
+        localStorage.setItem(LS_KEY_TOPIC_DONE(subject, topic), "1");
+      }
       return next;
     });
   };
@@ -329,7 +373,7 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
         }
         const result = generateManualRoadmap(topicList, totalDays, dailyHours, priorityOrder, course, completedTopics);
         setRoadmap(result);
-        localStorage.setItem("sc_roadmap", JSON.stringify(result));
+        localStorage.setItem(getPK("sc_roadmap"), JSON.stringify(result));
       } else {
         // Smart mode - call API
         const data = await ensureSyllabus();
@@ -367,7 +411,7 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
         const json = await res.json();
         if (!res.ok) throw new Error(json.error || "AI failed");
         setRoadmap(json.roadmap);
-        localStorage.setItem("sc_roadmap", JSON.stringify(json.roadmap));
+        localStorage.setItem(getPK("sc_roadmap"), JSON.stringify(json.roadmap));
       }
     } catch (e: unknown) {
       setError(e instanceof Error ? e.message : "Something went wrong. Try again.");
@@ -378,7 +422,7 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
 
   const handleReset = () => {
     setRoadmap(null);
-    localStorage.removeItem("sc_roadmap");
+    localStorage.removeItem(getPK("sc_roadmap"));
     setError("");
   };
 
@@ -406,6 +450,7 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
   };
 
   const totalHours = roadmap ? roadmap.reduce((acc, d) => {
+    if (!d.tasks) return acc;
     return acc + d.tasks.reduce((s, t) => {
       const match = t.time.match(/(\d+)h/);
       return s + (match ? parseInt(match[1]) : 0);
@@ -529,26 +574,6 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
             </div>
           )}
 
-          {/* Warning System */}
-          {(() => {
-            const totalSyllabusTopics = subjects.reduce((acc, sub) => acc + (syllabusData.find(d => d.subject === sub)?.chapters.length || 0), 0);
-            const remainingToLearn = totalSyllabusTopics > 0 ? totalSyllabusTopics - completedTopics.size : 0;
-            const requiredHours = remainingToLearn * 1.5; // Approx 1.5h per topic
-            const availableHours = totalDays * dailyHours;
-            
-            if (totalSyllabusTopics > 0 && strategy === "full" && requiredHours > availableHours + 10) {
-              return (
-                <div className={styles.errorState} style={{ background: "rgba(245, 158, 11, 0.15)", border: "1px solid rgba(245, 158, 11, 0.3)" }}>
-                  <p className={styles.errorTitle} style={{ color: "#f59e0b" }}>⚠️ Time Warning: Tight Schedule</p>
-                  <p className={styles.errorMsg} style={{ color: "rgba(255,255,255,0.8)" }}>
-                    You have ~{availableHours} study hours left, but covering the remaining {remainingToLearn} topics requires ~{Math.round(requiredHours)}h. 
-                    Consider switching to <strong>Good Score</strong> strategy or increasing your daily hours!
-                  </p>
-                </div>
-              );
-            }
-            return null;
-          })()}
 
           {/* Completed Topics Selector */}
           <div className={styles.card} onClick={() => { if (syllabusData.length === 0) ensureSyllabus() }}>
@@ -680,23 +705,6 @@ export default function RoadmapPage({ userId, exam, course, onBack, onStartRoadm
       {/* Roadmap Display */}
       {roadmap && !loading && (
         <div className={styles.roadmapSection}>
-          {/* Maintenance Notice */}
-          <div style={{
-            background: "rgba(239, 68, 68, 0.1)",
-            border: "1px solid rgba(239, 68, 68, 0.2)",
-            borderRadius: "12px",
-            padding: "24px",
-            textAlign: "center",
-            marginBottom: "24px",
-            color: "#f87171"
-          }}>
-            <h3 style={{ margin: "0 0 8px 0", color: "#ef4444" }}>⚠️ Roadmap Maintenance</h3>
-            <p style={{ margin: 0, fontSize: "14px", lineHeight: "1.6" }}>
-              Please, we are sorry—this roadmap generator got a sync bug. 
-              We are fixing this right now; it will be fully available from 14th April. 
-              You can continue your preparation using our **Practice Mode** for individual topics.
-            </p>
-          </div>
 
           {/* START PREPARING CTA */}
           <div style={{

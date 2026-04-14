@@ -79,11 +79,12 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
   const [showProfile, setShowProfile] = useState(false);
 
   const { user, saveState } = useUserState();
+  const getPK = (key: string) => userId ? `${key}_${userId}` : key;
 
 
   useEffect(() => {
     setMounted(true);
-    const savedFilter = localStorage.getItem("sc_arena_filter") as "All" | "High" | "Medium" | "Low";
+    const savedFilter = localStorage.getItem(getPK("sc_arena_filter")) as "All" | "High" | "Medium" | "Low";
     if (savedFilter) setFilter(savedFilter);
 
     const subjects = SUBJECT_MAP[course] || [];
@@ -201,7 +202,7 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
             <select
               className={styles.filterSelect}
               value={filter}
-              onChange={e => { setFilter(e.target.value as any); localStorage.setItem("sc_arena_filter", e.target.value); }}
+              onChange={e => { setFilter(e.target.value as any); localStorage.setItem(getPK("sc_arena_filter"), e.target.value); }}
             >
               <option value="All">All Priorities</option>
               <option value="High">🔴 High</option>
@@ -217,8 +218,8 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
               {filteredData.map(item => (
                 <div key={item.subject} className={styles.subjectGroup}>
                   <button className={styles.subjectToggle} onClick={() => toggleSubject(item.subject)}>
-                    <span>{item.subject}</span>
-                    <span className={`${styles.arrow} ${expandedSubjects.has(item.subject) ? styles.arrowDown : ""}`}>▸</span>
+                    <span style={{ pointerEvents: 'none' }}>{item.subject}</span>
+                    <span className={`${styles.arrow} ${expandedSubjects.has(item.subject) ? styles.arrowDown : ""}`} style={{ pointerEvents: 'none' }}>▸</span>
                   </button>
                   {expandedSubjects.has(item.subject) && (
                     <ul className={styles.topicList}>
@@ -231,12 +232,12 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
                               className={`${styles.topicItem} ${isActive ? styles.topicActive : ""}`}
                               onClick={() => openTopic(item.subject, ch)}
                             >
-                              <span className={styles.topicDot} data-p={ch.priority?.toLowerCase() || "low"} />
-                              <span className={styles.topicLabel}>{ch.chapter}</span>
+                              <span className={styles.topicDot} data-p={ch.priority?.toLowerCase() || "low"} style={{ pointerEvents: 'none' }} />
+                              <span className={styles.topicLabel} style={{ pointerEvents: 'none' }}>{ch.chapter}</span>
                               {prog && prog.attempts && prog.attempts >= 2 ? (
-                                <span className={styles.doneCheck} style={{ width: "16px", height: "16px", borderRadius: "50%", background: "#10b981", color: "white", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "10px", marginLeft: "auto", flexShrink: 0 }}>✓</span>
+                                <span className={styles.doneCheck} style={{ width: "16px", height: "16px", borderRadius: "50%", background: "#10b981", color: "white", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "10px", marginLeft: "auto", flexShrink: 0, pointerEvents: 'none' }}>✓</span>
                               ) : (
-                                <span className={styles.todoCheck} style={{ width: "14px", height: "14px", borderRadius: "50%", border: "2px solid var(--border)", marginLeft: "auto", flexShrink: 0 }} />
+                                <span className={styles.todoCheck} style={{ width: "14px", height: "14px", borderRadius: "50%", border: "2px solid var(--border)", marginLeft: "auto", flexShrink: 0, pointerEvents: 'none' }} />
                               )}
                             </button>
                           </li>
@@ -413,7 +414,7 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
                             id="start-exam-btn"
                             onClick={() => {
                               if (attempt === 1) {
-                                const hasSeen = localStorage.getItem(`sc_seen_modal_${selectedTopic.subject}`);
+                                const hasSeen = localStorage.getItem(getPK(`sc_seen_modal_${selectedTopic.subject}`));
                                 if (!hasSeen) {
                                   setShowPracticeModal(true);
                                 } else {
@@ -529,7 +530,7 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
                   </button>
                   <button
                     onClick={() => { 
-                      localStorage.setItem(`sc_seen_modal_${selectedTopic.subject}`, "true");
+                      localStorage.setItem(getPK(`sc_seen_modal_${selectedTopic.subject}`), "true");
                       setShowPracticeModal(false);
                       trackExamStarted("practice", course); // Firebase: exam_started
                       setExamMode(true); 

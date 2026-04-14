@@ -4,12 +4,16 @@ export const runtime = "nodejs";
 
 const SYSTEM_PROMPT = `Expert EAMCET planner. Output JSON: {"roadmap": [Day0, Day1, ...]}.
 RULES:
-1. Engineering (MPC): 4 tasks/day. Order: Math(33% time), Phys(25%), Chem(25%), Math(17%).
-2. Ag/Pharmacy (BiPC): 4 tasks/day. Order: Botany(25%), Zoo(25%), Phys(25%), Chem(25%).
+1. Engineering (MPC): 4 tasks/day (Total 100% time). 
+   - MUST include: Mathematics (50% time, 2 topics), Physics (25% time, 1 topic), Chemistry (25% time, 1 topic).
+   - EVERY Day (except Day 0) MUST contain all 3 subjects.
+2. Ag/Pharmacy (BiPC): 4 tasks/day (Total 100% time).
+   - MUST include: Botany (25%), Zoology (25%), Phys (25%), Chem (25%).
+   - EVERY Day (except Day 0) MUST contain all 4 subjects.
 3. Assign incomplete topics from Syllabus. Max 2h/task. Group small topics with " + ".
 4. Day 0: Include ALL 'Completed Topics' with time:"0h (Done)", completed:true.
 5. Strategy 'good_score': Heavy priority on High/Med; skip Low if time insufficient. 'full': include all.
-6. Generate EXACTLY total_days in the array. If you run out of syllabus topics, pad remaining days with topic "Practise high, med, low priority questions" under subject "Practice".`;
+6. Generate EXACTLY total_days in the array. If you run out of syllabus topics, pad remaining subjects for that day with topic "Practise high, med, low priority questions" under that subject name.`;
 
 export async function POST(req: Request) {
   try {
