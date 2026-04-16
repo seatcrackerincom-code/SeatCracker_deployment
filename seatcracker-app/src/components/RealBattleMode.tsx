@@ -738,9 +738,9 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
   const allStats = getAllStats();
 
   return (
-    <div className={styles.examConsole}>
-      {/* Submit confirmation dialog */}
-      {showSubmitConfirm && (
+      <div className={styles.examConsole}>
+        { /* Submit confirmation dialog * / }
+        {showSubmitConfirm && (
         <div className={styles.submitOverlay}>
           <div className={styles.submitDialog}>
             <p><strong>Are you sure you want to submit the exam?</strong></p>
@@ -753,14 +753,14 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
         </div>
       )}
 
-      {/* ── TOP HEADER ─────────────────────────────────────── */}
+      { /* ── TOP HEADER ─────────────────────────────────────── * / }
       <div className={styles.examHeader}>
         <span className={styles.examTitle}>{examLabel}</span>
         <div className={styles.examHeaderRight}>
           <button className={styles.hBtn}><span className={styles.hBtnIcon}>ℹ</span> Instructions</button>
           <button className={styles.hBtn}><span className={styles.hBtnIcon}>📄</span> Question Paper</button>
         </div>
-        {/* Candidate name + avatar — in header, no overlap */}
+        { /* Candidate name + avatar — in header, no overlap * / }
         <div className={styles.examCandCorner}>
           <span className={styles.examCandName}>{displayName}</span>
           <div className={styles.examCandPhoto}>
@@ -769,7 +769,7 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
         </div>
       </div>
 
-      {/* ── COURSE + TIMER ROW ────────────────────────────── */}
+      { /* ── COURSE + TIMER ROW ────────────────────────────── * / }
       <div className={styles.courseRow}>
         <div className={styles.courseLeft}>
           <span className={styles.navArrow}>◀</span>
@@ -787,7 +787,7 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
         </div>
       </div>
 
-      {/* ── SECTIONS TAB BAR ──────────────────────────────── */}
+      { /* ── SECTIONS TAB BAR ──────────────────────────────── * / }
       <div className={styles.sectionsBar}>
         <span className={styles.sectionsLabel}>Sections</span>
         <span className={styles.sNavArrow}>◀</span>
@@ -810,7 +810,7 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
         <span className={styles.sNavArrow}>▶</span>
       </div>
 
-      {/* ── MAIN BODY ─────────────────────────────────────── */}
+      { /* ── MAIN BODY ─────────────────────────────────────── * / }
       <div className={styles.examBody}>
         {isLoadingMock ? (
           <div className={styles.mockLoading}>
@@ -819,13 +819,13 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
           </div>
         ) : (
           <>
-            {/* ── QUESTION AREA ─── */}
+            { /* ── QUESTION AREA ─── * / }
         <div className={styles.qArea}>
           <div className={styles.qLabel}>Question No. {curIdx + 1}</div>
 
           {curQ && (
             <div className={styles.qScroll}>
-              {/* Watermark */}
+              { /* Watermark * / }
               <div className={styles.watermark} aria-hidden>
                 {Array.from({ length: 20 }).map((_, i) => <span key={i}>4658708054163&nbsp;&nbsp;&nbsp;&nbsp;</span>)}
               </div>
@@ -857,7 +857,7 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
             </div>
           )}
 
-          {/* ── FOOTER ─── */}
+          { /* ── FOOTER ─── * / }
           <div className={styles.qFooter}>
             <div className={styles.qFooterLeft}>
               <button className={styles.fBtnWhite} onClick={() => saveAndMove(4, curIdx + 1)}>Mark for Review &amp; Next</button>
@@ -869,9 +869,9 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
           </div>
         </div>
 
-        {/* ── SIDEBAR ─── */}
+        { /* ── SIDEBAR ─── * / }
         <div className={styles.sidebar}>
-          {/* Status legend — fixed at top */}
+          { /* Status legend — fixed at top * / }
           <div className={styles.statsBox}>
             <div className={styles.statRow}>
               <span className={`${styles.statBadge} ${styles.s2}`}>{answered}</span>
@@ -891,12 +891,12 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
             </div>
           </div>
 
-          {/* Palette section — scrollable independently */}
+          { /* Palette section — scrollable independently * / }
           <div className={styles.paletteSection}>
             <div className={styles.paletteHeader}>{activeTab}</div>
             <div className={styles.paletteSubHeader}>Choose a Question</div>
 
-            {/* Question palette */}
+            { /* Question palette * / }
             <div className={styles.palette}>
               {secQ.map((q, idx) => {
                 const st: QStatus = responses[q.id]?.status ?? 0;
@@ -918,7 +918,7 @@ export default function RealBattleMode({ userId, exam, course, onBack }: Props) 
             </div>
           </div>
 
-          {/* Submit pinned at bottom of sidebar */}
+          { /* Submit pinned at bottom of sidebar * / }
           <div className={styles.sidebarFooter}>
             {secs > 0 ? (
               <button className={styles.sidebarSubmitDisabled} disabled title="Submit will be available when the timer reaches 0">Submit</button>
