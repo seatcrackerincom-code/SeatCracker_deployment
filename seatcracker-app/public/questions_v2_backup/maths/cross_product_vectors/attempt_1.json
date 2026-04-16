@@ -1,0 +1,457 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "[a b c] = [b c a] = [c a b]. Cyclic permutation ______ the value.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Does not change",
+                "B": "Changes the sign of",
+                "C": "Squares",
+                "D": "Makes zero"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 2,
+            "question": "Area of parallelogram with sides a\u20d7 = \u00ee+2\u0135+3k\u0302 and b\u20d7 = 3\u00ee\u22122\u0135+k\u0302 is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "8\u221a2",
+                "B": "4\u221a7",
+                "C": "6\u221a3",
+                "D": "\u221a(64+64)"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "Evaluate the integral from 0 to pi/2 of (sin^5 x) / (sin^5 x + cos^5 x) dx.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "pi/4",
+                "B": "pi/2",
+                "C": "pi/8",
+                "D": "0"
+            },
+            "answer": "A",
+            "hint": "Use the property: Int(0 to a) f(x) dx = Int(0 to a) f(a-x) dx",
+            "solution": "Let I = Integral. Both numerator become sin^a and cos^a. 2I = Int(1) dx from 0 to pi/2 = pi/2 -> I = pi/4.",
+            "id": 3
+        },
+        {
+            "id": 4,
+            "question": "The direction cosines l, m, n of a vector satisfy ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "l\u00b2 + m\u00b2 + n\u00b2 = 1",
+                "B": "l + m + n = 1",
+                "C": "l\u00b2 + m\u00b2 + n\u00b2 = 0",
+                "D": "l + m + n = 0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "a \u00d7 (b \u00d7 c) + b \u00d7 (c \u00d7 a) + c \u00d7 (a \u00d7 b) = ______. (Jacobi Identity)",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "1",
+                "C": "3 [a b c]",
+                "D": "a + b + c"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "If [a b c] = 0, then the vectors a, b, c are ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Coplanar",
+                "B": "Collinear",
+                "C": "Mutually perpendicular",
+                "D": "Equal"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "Lagrange's Identity: |a \u00d7 b|\u00b2 + (a.b)\u00b2 = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "|a|\u00b2 |b|\u00b2",
+                "B": "0",
+                "C": "|a|\u00b2 + |b|\u00b2",
+                "D": "1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 8,
+            "question": "The vector a \u00d7 (b \u00d7 c) is a vector lying in the plane of ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "b and c",
+                "B": "a and b",
+                "C": "a and c",
+                "D": "Perpendicular to a, b, c"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 9,
+            "question": "Unit vector perpendicular to both a and b is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u00b1 (a \u00d7 b) / |a \u00d7 b|",
+                "B": "(a . b) / |a \u00d7 b|",
+                "C": "(a \u00d7 b) / |a . b|",
+                "D": "\u00b1 (a + b) / |a + b|"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 10,
+            "question": "Vector triple product a \u00d7 (b \u00d7 c) = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(a.c)b - (a.b)c",
+                "B": "(a.b)c - (a.c)b",
+                "C": "(b.c)a - (a.b)c",
+                "D": "(a.c)b + (a.b)c"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 11,
+            "question": "The scalar triple product [a b c] changes sign if any two vectors are ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Interchanged",
+                "B": "Added",
+                "C": "Subtracted",
+                "D": "Made orthogonal"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 12,
+            "question": "In scalar triple product, the dot and cross can be interchanged: a.(b\u00d7c) = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(a\u00d7b).c",
+                "B": "a\u00d7(b.c)",
+                "C": "b.(a\u00d7c)",
+                "D": "(a.b)\u00d7c"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 13,
+            "question": "Points A(a), B(b), C(c) are collinear if and only if a\u00d7b + b\u00d7c + c\u00d7a = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "1",
+                "C": "a+b+c",
+                "D": "a.b.c"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the matrix A is [[12, 6], [0, 1]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "145",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[144, 78], [0, 1]]. Trace is sum of diagonal elements: 144 + 1.",
+            "id": 14
+        },
+        {
+            "question": "A fair coin is tossed 7 times. What is the probability of getting exactly 5 heads?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "21.0/2^7",
+                "B": "7/2^7",
+                "C": "1/2^7",
+                "D": "42/2^7"
+            },
+            "answer": "A",
+            "hint": "Use Binomial distribution: nCr * (1/2)^r * (1/2)^(n-r)",
+            "solution": "P(X=5) = 7C5 * (1/2)^n = 21.0/2^7.",
+            "id": 15
+        },
+        {
+            "question": "Evaluate the integral of sinh(5x) cosh(8x) dx.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Calculated term",
+                "B": "Calculated term",
+                "C": "Calculated term",
+                "D": "Calculated term"
+            },
+            "answer": "A",
+            "hint": "Use the product to sum identities for hyperbolic functions.",
+            "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
+            "id": 16
+        },
+        {
+            "id": 17,
+            "question": "If a\u20d7 = 2\u00ee+3\u0135, b\u20d7 = \u00ee+4\u0135, then a\u20d7\u00d7b\u20d7 = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "5k\u0302",
+                "B": "\u22125k\u0302",
+                "C": "11k\u0302",
+                "D": "2\u00ee\u22123\u0135"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 18,
+            "question": "|a\u20d7 \u00d7 b\u20d7| = a\u20d7\u00b7b\u20d7. Angle between a\u20d7 and b\u20d7 is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "45\u00b0",
+                "B": "90\u00b0",
+                "C": "30\u00b0",
+                "D": "60\u00b0"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 19,
+            "question": "The projection of vector a on vector b is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(a.b) / |b|",
+                "B": "(a.b) / |a|",
+                "C": "(a\u00d7b) / |b|",
+                "D": "a.b"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the matrix A is [[9, 5], [0, 4]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "97",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[81, 65], [0, 16]]. Trace is sum of diagonal elements: 81 + 16.",
+            "id": 20
+        },
+        {
+            "question": "If the matrix A is [[4, 17], [0, 6]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "52",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[16, 170], [0, 36]]. Trace is sum of diagonal elements: 16 + 36.",
+            "id": "cross_product_vectors_21"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^3 * (1-x)^16 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "21",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "cross_product_vectors_22"
+        },
+        {
+            "question": "If the matrix A is [[14, 2], [0, 7]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "245",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[196, 42], [0, 49]]. Trace is sum of diagonal elements: 196 + 49.",
+            "id": "cross_product_vectors_23"
+        },
+        {
+            "question": "If the matrix A is [[12, 7], [0, 1]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "145",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[144, 91], [0, 1]]. Trace is sum of diagonal elements: 144 + 1.",
+            "id": "cross_product_vectors_24"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(7x) / tan(11x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7/11",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 7/11.",
+            "id": "cross_product_vectors_25"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(2x) / tan(14x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2/14",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 2/14.",
+            "id": "cross_product_vectors_26"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^5 * (1-x)^16 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "23",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "cross_product_vectors_27"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(19x) / tan(5x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "19/5",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 19/5.",
+            "id": "cross_product_vectors_28"
+        },
+        {
+            "question": "If the matrix A is [[10, 17], [0, 2]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "104",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[100, 204], [0, 4]]. Trace is sum of diagonal elements: 100 + 4.",
+            "id": "cross_product_vectors_29"
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^12 * (1-x)^15 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "29",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": "cross_product_vectors_30"
+        }
+    ]
+}

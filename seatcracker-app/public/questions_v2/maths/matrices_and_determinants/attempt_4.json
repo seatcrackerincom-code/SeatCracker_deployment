@@ -1,324 +1,388 @@
-{
-  "questions": [
-    {
-      "question": "The product of eigenvalues of a matrix is equal to ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Determinant",
-        "B": "Trace",
-        "C": "Rank",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 1
-    },
-    {
-      "question": "The number of symmetric matrices of order 3 with entries from {0, 1} is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "64",
-        "B": "512",
-        "C": "2⁷",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 2
-    },
-    {
-      "question": "If A is a 3x3 matrix and |adj A| = 64, then |A| = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "±8",
-        "B": "64",
-        "C": "4",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 3
-    },
-    {
-      "question": "Sum of eigenvalues of a matrix is equal to ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Trace",
-        "B": "Determinant",
-        "C": "Rank",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 4
-    },
-    {
-      "id": 5,
-      "question": "If A is idempotent (A²=A), eigenvalues of A can only be?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "0 or 1",
-        "B": "0 or −1",
-        "C": "1 or −1",
-        "D": "any real"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "question": "The inverse of a symmetric matrix is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Symmetric",
-        "B": "Skew-symmetric",
-        "C": "Diagonal",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 6
-    },
-    {
-      "question": "If A = [[cosθ, sinθ], [-sinθ, cosθ]], then Aⁿ = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "[[cos nθ, sin nθ], [-sin nθ, cos nθ]]",
-        "B": "[[cosⁿθ, sinⁿθ], [-sinⁿθ, cosⁿθ]]",
-        "C": "I",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 7
-    },
-    {
-      "question": "If A is an orthogonal matrix, then |A| = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "±1",
-        "B": "0",
-        "C": "I",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 8
-    },
-    {
-      "question": "If A is a skew-symmetric matrix of odd order, then |A| = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "0",
-        "B": "1",
-        "C": "-1",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 9
-    },
-    {
-      "question": "The matrix A such that A * [[1, 2], [3, 4]] = [[1, 0], [0, 1]] is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "[[-2, 1], [1.5, -0.5]]",
-        "B": "[[4, -2], [-3, 1]]",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 10
-    },
-    {
-      "question": "A square matrix A is called singular if ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "|A| = 0",
-        "B": "|A| ≠ 0",
-        "C": "A² = I",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 11
-    },
-    {
-      "question": "If A is involuntary, then A² = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "I",
-        "B": "O",
-        "C": "A",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 12
-    },
-    {
-      "question": "If a, b, c are in AP, then the determinant [[x+1, x+2, x+a], [x+2, x+3, x+b], [x+3, x+4, x+c]] is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "0",
-        "B": "1",
-        "C": "x",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 13
-    },
-    {
-      "id": 14,
-      "question": "Minor of element 4 in [[1,2,3],[0,4,5],[1,0,6]] is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1",
-        "B": "3",
-        "C": "−3",
-        "D": "6"
-      },
-      "answer": "B",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "question": "The rank of the matrix [[1,2,3],[2,3,4],[3,4,5]] is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "2",
-        "B": "3",
-        "C": "1",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 15
-    },
-    {
-      "id": 16,
-      "question": "If |A| = 3 for 3×3 matrix A, then |2A| = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "24",
-        "B": "6",
-        "C": "12",
-        "D": "9"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "question": "If A² - A + I = O, then the inverse of A is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "I - A",
-        "B": "A - I",
-        "C": "A",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 17
-    },
-    {
-      "question": "If Trace(A) = 5 and Trace(B) = 3, then Trace(2A + 3B) = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "19",
-        "B": "8",
-        "C": "15",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 18
-    },
-    {
-      "id": 19,
-      "question": "A symmetric matrix satisfies Aᵀ = A. If A = [[a,2],[3,b]], then a,b relate as?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2 = 3, impossible unless adjusted",
-        "B": "a = b only",
-        "C": "a, b arbitrary but the (1,2) and (2,1) entries must match — so the matrix is invalid",
-        "D": "a and b are free, but 2 must equal 3 (impossible)"
-      },
-      "answer": "D",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 20,
-      "question": "Trace of A = [[1,2,3],[0,4,5],[0,0,6]] is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "11",
-        "B": "10",
-        "C": "12",
-        "D": "9"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    }
-  ]
+﻿{
+    "questions":  [
+                      {
+                          "question":  "If A is involuntary, then AÂ² = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "I",
+                                          "B":  "O",
+                                          "C":  "A",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  76
+                      },
+                      {
+                          "question":  "If a, b, c are in AP, then the determinant [[x+1, x+2, x+a], [x+2, x+3, x+b], [x+3, x+4, x+c]] is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "0",
+                                          "B":  "1",
+                                          "C":  "x",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  77
+                      },
+                      {
+                          "id":  78,
+                          "question":  "Minor of element 4 in [[1,2,3],[0,4,5],[1,0,6]] is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "3",
+                                          "C":  "âˆ’3",
+                                          "D":  "6"
+                                      },
+                          "answer":  "B",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "The rank of the matrix [[1,2,3],[2,3,4],[3,4,5]] is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "3",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  79
+                      },
+                      {
+                          "id":  80,
+                          "question":  "If |A| = 3 for 3Ã—3 matrix A, then |2A| = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "24",
+                                          "B":  "6",
+                                          "C":  "12",
+                                          "D":  "9"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "If AÂ² - A + I = O, then the inverse of A is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "I - A",
+                                          "B":  "A - I",
+                                          "C":  "A",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  81
+                      },
+                      {
+                          "question":  "If Trace(A) = 5 and Trace(B) = 3, then Trace(2A + 3B) = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "19",
+                                          "B":  "8",
+                                          "C":  "15",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  82
+                      },
+                      {
+                          "id":  83,
+                          "question":  "A symmetric matrix satisfies Aáµ€ = A. If A = [[a,2],[3,b]], then a,b relate as?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2 = 3, impossible unless adjusted",
+                                          "B":  "a = b only",
+                                          "C":  "a, b arbitrary but the (1,2) and (2,1) entries must match â€” so the matrix is invalid",
+                                          "D":  "a and b are free, but 2 must equal 3 (impossible)"
+                                      },
+                          "answer":  "D",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  84,
+                          "question":  "Trace of A = [[1,2,3],[0,4,5],[0,0,6]] is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "11",
+                                          "B":  "10",
+                                          "C":  "12",
+                                          "D":  "9"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "If the matrix A is [[6, 4], [0, 4]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "52",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[36, 40], [0, 16]]. Trace is sum of diagonal elements: 36 + 16.",
+                          "id":  85
+                      },
+                      {
+                          "question":  "If the matrix A is [[19, 16], [0, 2]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "365",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[361, 336], [0, 4]]. Trace is sum of diagonal elements: 361 + 4.",
+                          "id":  86
+                      },
+                      {
+                          "question":  "If the matrix A is [[13, 19], [0, 7]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "218",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[169, 380], [0, 49]]. Trace is sum of diagonal elements: 169 + 49.",
+                          "id":  87
+                      },
+                      {
+                          "question":  "If the matrix A is [[2, 2], [0, 1]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "5",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[4, 6], [0, 1]]. Trace is sum of diagonal elements: 4 + 1.",
+                          "id":  88
+                      },
+                      {
+                          "question":  "If the matrix A is [[20, 12], [0, 8]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "464",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[400, 336], [0, 64]]. Trace is sum of diagonal elements: 400 + 64.",
+                          "id":  89
+                      },
+                      {
+                          "question":  "If the matrix A is [[19, 10], [0, 6]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "397",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[361, 250], [0, 36]]. Trace is sum of diagonal elements: 361 + 36.",
+                          "id":  90
+                      },
+                      {
+                          "question":  "If the matrix A is [[5, 8], [0, 6]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "61",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[25, 88], [0, 36]]. Trace is sum of diagonal elements: 25 + 36.",
+                          "id":  91
+                      },
+                      {
+                          "question":  "If the matrix A is [[18, 14], [0, 9]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "405",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[324, 378], [0, 81]]. Trace is sum of diagonal elements: 324 + 81.",
+                          "id":  92
+                      },
+                      {
+                          "question":  "If the matrix A is [[12, 4], [0, 9]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "225",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[144, 84], [0, 81]]. Trace is sum of diagonal elements: 144 + 81.",
+                          "id":  93
+                      },
+                      {
+                          "question":  "If the matrix A is [[18, 3], [0, 6]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "360",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[324, 72], [0, 36]]. Trace is sum of diagonal elements: 324 + 36.",
+                          "id":  94
+                      },
+                      {
+                          "question":  "If the matrix A is [[16, 5], [0, 9]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "337",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[256, 125], [0, 81]]. Trace is sum of diagonal elements: 256 + 81.",
+                          "id":  95
+                      },
+                      {
+                          "question":  "If the matrix A is [[18, 10], [0, 8]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "388",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[324, 260], [0, 64]]. Trace is sum of diagonal elements: 324 + 64.",
+                          "id":  96
+                      },
+                      {
+                          "question":  "If the matrix A is [[19, 9], [0, 1]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "362",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[361, 180], [0, 1]]. Trace is sum of diagonal elements: 361 + 1.",
+                          "id":  97
+                      },
+                      {
+                          "question":  "If the matrix A is [[14, 4], [0, 7]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "245",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[196, 84], [0, 49]]. Trace is sum of diagonal elements: 196 + 49.",
+                          "id":  98
+                      },
+                      {
+                          "question":  "If the matrix A is [[5, 17], [0, 8]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "89",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[25, 221], [0, 64]]. Trace is sum of diagonal elements: 25 + 64.",
+                          "id":  99
+                      },
+                      {
+                          "question":  "If the matrix A is [[18, 18], [0, 2]], find the trace of A^2.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "328",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "A^2 = [[324, 360], [0, 4]]. Trace is sum of diagonal elements: 324 + 4.",
+                          "id":  100
+                      }
+                  ]
 }

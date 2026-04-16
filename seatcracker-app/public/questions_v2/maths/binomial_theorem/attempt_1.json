@@ -1,459 +1,387 @@
-{
-    "questions": [
-        {
-            "id": 1,
-            "question": "Middle term in expansion of (x + 1/x)\u00b9\u2070 is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "252",
-                "B": "210",
-                "C": "120",
-                "D": "126"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 2,
-            "question": "Number of terms in the expansion of (x + y + z)\u207f is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(n+1)(n+2) / 2",
-                "B": "n + 3",
-                "C": "3\u207f",
-                "D": "n\u00b2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 3,
-            "question": "The greatest coefficient in the expansion of (1+x)\u207f is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Middle term coefficient",
-                "B": "First term coefficient",
-                "C": "Last term coefficient",
-                "D": "\u207fC\u2081"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 4,
-            "question": "If n is even, the middle term of (x + a)\u207f is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(n/2 + 1)th term",
-                "B": "(n/2)th term",
-                "C": "nth term",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 5,
-            "question": "If (1 + x)\u207f = C\u2080 + C\u2081x + C\u2082x\u00b2 + ... + C\u2099x\u207f, then C\u2080 - C\u2081 + C\u2082 - ... = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0",
-                "B": "2\u207f",
-                "C": "1",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "Coefficient of x\u2074 in expansion of (1 + x + x\u00b2)\u00b3 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "6",
-                "B": "3",
-                "C": "10",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 7,
-            "question": "The sum of coefficients at even places \u207fC\u2080 + \u207fC\u2082 + ... is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2\u207f\u207b\u00b9",
-                "B": "2\u207f",
-                "C": "2\u207f\u207a\u00b9",
-                "D": "n"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^7 * (1-x)^2 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "11",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 8
-        },
-        {
-            "id": 9,
-            "question": "Coefficient of x\u2074 in (1 + x + x\u00b2)\u2075 is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "65",
-                "B": "55",
-                "C": "35",
-                "D": "45"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 10,
-            "question": "Coefficient of x\u2075 in (1+x)\u00b9\u2070 is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "252",
-                "B": "210",
-                "C": "120",
-                "D": "126"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 11,
-            "question": "If n is even, the number of middle terms in (a + b)\u207f is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1",
-                "B": "2",
-                "C": "0",
-                "D": "n/2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 12,
-            "question": "The coefficient of x\u207f in (1+x)\u00b2\u207f is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u00b2\u207fC\u2099",
-                "B": "\u207fC\u2099",
-                "C": "2\u207f",
-                "D": "(2n)!"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 13,
-            "question": "The term independent of x in (x \u2212 1/x)\u2076 is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u221220",
-                "B": "20",
-                "C": "15",
-                "D": "\u221215"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 14,
-            "question": "Finding the term independent of x in (x + 1/x)\u207f involves setting the exponent of x to ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0",
-                "B": "1",
-                "C": "n",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the vectors a = 8i + 13j and b = 9i - j are perpendicular, find the value of 8*9.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "13",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": 15
-        },
-        {
-            "id": 16,
-            "question": "Expansion of (1 - x)\u207b\u00b9 for |x| < 1 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1 + x + x\u00b2 + x\u00b3 + ...",
-                "B": "1 - x + x\u00b2 - x\u00b3 + ...",
-                "C": "1 + x - x\u00b2 + x\u00b3 - ...",
-                "D": "Infinite series"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 17,
-            "question": "If n is odd, the number of middle terms in (a + b)\u207f is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "1",
-                "C": "3",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(11x) / tan(13x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "11/13",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 11/13.",
-            "id": 18
-        },
-        {
-            "id": 19,
-            "question": "If coefficients of rth, (r+1)th, (r+2)th terms are in AP, then n satisfies a ______ equation.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Quadratic",
-                "B": "Linear",
-                "C": "Cubic",
-                "D": "Transcendental"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "Sum of binomial coefficients of (1+x)\u207f is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2\u207f",
-                "B": "n",
-                "C": "2\u207f\u207b\u00b9",
-                "D": "n\u00b2"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(4x) / tan(9x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "4/9",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 4/9.",
-            "id": "binomial_theorem_21"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(18x) / tan(3x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "18/3",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 18/3.",
-            "id": "binomial_theorem_22"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^17 * (1-x)^8 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "27",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "binomial_theorem_23"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^14 * (1-x)^14 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "30",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "binomial_theorem_24"
-        },
-        {
-            "question": "If the vectors a = 12i + 20j and b = 10i - j are perpendicular, find the value of 12*10.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "20",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "binomial_theorem_25"
-        },
-        {
-            "question": "If the vectors a = 15i + 6j and b = 4i - j are perpendicular, find the value of 15*4.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "6",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "binomial_theorem_26"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(9x) / tan(18x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "9/18",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 9/18.",
-            "id": "binomial_theorem_27"
-        },
-        {
-            "question": "If the matrix A is [[9, 7], [0, 4]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "97",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[81, 91], [0, 16]]. Trace is sum of diagonal elements: 81 + 16.",
-            "id": "binomial_theorem_28"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(3x) / tan(7x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "3/7",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 3/7.",
-            "id": "binomial_theorem_29"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^14 * (1-x)^18 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "34",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "binomial_theorem_30"
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  1,
+                          "question":  "Middle term in expansion of (x + 1/x)¹⁰ is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "252",
+                                          "B":  "210",
+                                          "C":  "120",
+                                          "D":  "126"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  2,
+                          "question":  "Number of terms in the expansion of (x + y + z)ⁿ is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(n+1)(n+2) / 2",
+                                          "B":  "n + 3",
+                                          "C":  "3ⁿ",
+                                          "D":  "n²"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  3,
+                          "question":  "The greatest coefficient in the expansion of (1+x)ⁿ is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Middle term coefficient",
+                                          "B":  "First term coefficient",
+                                          "C":  "Last term coefficient",
+                                          "D":  "ⁿC₁"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  4,
+                          "question":  "If n is even, the middle term of (x + a)ⁿ is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(n/2 + 1)th term",
+                                          "B":  "(n/2)th term",
+                                          "C":  "nth term",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  5,
+                          "question":  "If (1 + x)ⁿ = C₀ + C₁x + C₂x² + ... + Cₙxⁿ, then C₀ - C₁ + C₂ - ... = ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "0",
+                                          "B":  "2ⁿ",
+                                          "C":  "1",
+                                          "D":  "-1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  6,
+                          "question":  "Coefficient of x⁴ in expansion of (1 + x + x²)³ is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "6",
+                                          "B":  "3",
+                                          "C":  "10",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  7,
+                          "question":  "The sum of coefficients at even places ⁿC₀ + ⁿC₂ + ... is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2ⁿ⁻¹",
+                                          "B":  "2ⁿ",
+                                          "C":  "2ⁿ⁺¹",
+                                          "D":  "n"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  8,
+                          "question":  "Coefficient of x⁴ in (1 + x + x²)⁵ is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "65",
+                                          "B":  "55",
+                                          "C":  "35",
+                                          "D":  "45"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  9,
+                          "question":  "Coefficient of x⁵ in (1+x)¹⁰ is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "252",
+                                          "B":  "210",
+                                          "C":  "120",
+                                          "D":  "126"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  10,
+                          "question":  "If n is even, the number of middle terms in (a + b)ⁿ is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "2",
+                                          "C":  "0",
+                                          "D":  "n/2"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  11,
+                          "question":  "The coefficient of xⁿ in (1+x)²ⁿ is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "²ⁿCₙ",
+                                          "B":  "ⁿCₙ",
+                                          "C":  "2ⁿ",
+                                          "D":  "(2n)!"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  12,
+                          "question":  "The term independent of x in (x − 1/x)⁶ is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "−20",
+                                          "B":  "20",
+                                          "C":  "15",
+                                          "D":  "−15"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  13,
+                          "question":  "Finding the term independent of x in (x + 1/x)ⁿ involves setting the exponent of x to ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "0",
+                                          "B":  "1",
+                                          "C":  "n",
+                                          "D":  "-1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  14,
+                          "question":  "Expansion of (1 - x)⁻¹ for |x| \u003c 1 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1 + x + x² + x³ + ...",
+                                          "B":  "1 - x + x² - x³ + ...",
+                                          "C":  "1 + x - x² + x³ - ...",
+                                          "D":  "Infinite series"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  15,
+                          "question":  "If n is odd, the number of middle terms in (a + b)ⁿ is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "1",
+                                          "C":  "3",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  16,
+                          "question":  "If coefficients of rth, (r+1)th, (r+2)th terms are in AP, then n satisfies a ______ equation.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Quadratic",
+                                          "B":  "Linear",
+                                          "C":  "Cubic",
+                                          "D":  "Transcendental"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  17,
+                          "question":  "Sum of binomial coefficients of (1+x)ⁿ is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2ⁿ",
+                                          "B":  "n",
+                                          "C":  "2ⁿ⁻¹",
+                                          "D":  "n²"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  18,
+                          "question":  "The binomial expansion of (x + a)ⁿ + (x - a)ⁿ has ______ terms if n is even.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "n/2 + 1",
+                                          "B":  "n/2",
+                                          "C":  "n + 1",
+                                          "D":  "2n"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  19,
+                          "question":  "If n is a positive integer, (√2 + 1)⁶ + (√2 - 1)⁶ is a/an ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Integer",
+                                          "B":  "Irrational number",
+                                          "C":  "Complex number",
+                                          "D":  "Fraction"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  20,
+                          "question":  "The sum of coefficients in (4x + 3y)ⁿ is found by putting x=1 and y=1. It is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "7ⁿ",
+                                          "B":  "1ⁿ",
+                                          "C":  "4ⁿ",
+                                          "D":  "3ⁿ"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  21,
+                          "question":  "What is the degree of (x+1)⁵ - (x-1)⁵?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "4",
+                                          "B":  "5",
+                                          "C":  "6",
+                                          "D":  "3"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  22,
+                          "question":  "Find the constant term in (2x - 1/x)⁶.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "-160",
+                                          "B":  "160",
+                                          "C":  "20",
+                                          "D":  "64"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  23,
+                          "question":  "Coefficient of x in (1 − 2x)^(−1/2) using binomial expansion is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "2",
+                                          "C":  "−1",
+                                          "D":  "1/2"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  24,
+                          "question":  "The greatest term in expansion of (1 + 0.2)¹⁵ is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "T₃",
+                                          "B":  "T₄",
+                                          "C":  "T₂",
+                                          "D":  "T₅"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  25,
+                          "question":  "The value of (1.02)¹⁰ approximately (using binomial, first 3 terms) is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1.2189",
+                                          "B":  "1.2",
+                                          "C":  "1.02",
+                                          "D":  "1.21899"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      }
+                  ]
 }

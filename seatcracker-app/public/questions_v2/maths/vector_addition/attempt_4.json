@@ -1,324 +1,132 @@
-{
-  "questions": [
-    {
-      "question": "If a, b, c are position vectors of A, B, C, then AB = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "b - a",
-        "B": "a - b",
-        "C": "a + b",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 1
-    },
-    {
-      "question": "Resultant of two equal and opposite vectors is ______ vector.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Zero",
-        "B": "Unit",
-        "C": "Same",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 2
-    },
-    {
-      "id": 3,
-      "question": "For vectors a⃗,b⃗,c⃗ with a⃗+b⃗+c⃗=0, if |a⃗|=3,|b⃗|=5,|c⃗|=7, then angle between a⃗ and b⃗ is?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "60°",
-        "B": "90°",
-        "C": "120°",
-        "D": "45°"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 4,
-      "question": "If |a⃗| = 5, |b⃗| = 13, |a⃗−b⃗| = 12, then |a⃗+b⃗| = ?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "13",
-        "B": "5",
-        "C": "12",
-        "D": "√194"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "question": "Centroid of a tetrahedron with vertices a, b, c, d is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "(a+b+c+d)/4",
-        "B": "(a+b+c)/3",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 5
-    },
-    {
-      "question": "The angle between a and -2a is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "180°",
-        "B": "0°",
-        "C": "90°",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 6
-    },
-    {
-      "question": "Direction of i x j is along ______ axis.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "z",
-        "B": "x",
-        "C": "y",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 7
-    },
-    {
-      "id": 8,
-      "question": "The section formula: point dividing PQ (P=p⃗, Q=q⃗) in ratio m:n internally is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(mp⃗+nq⃗)/(m+n)",
-        "B": "(mq⃗+np⃗)/(m+n)",
-        "C": "(p⃗+q⃗)/2",
-        "D": "(mp⃗−nq⃗)/(m−n)"
-      },
-      "answer": "B",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 9,
-      "question": "If a⃗×b⃗ = 0⃗ and a⃗·b⃗ = 0, then?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "at least one is zero vector",
-        "B": "both are unit vectors",
-        "C": "they are perpendicular",
-        "D": "they are parallel"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "question": "Vectors with same magnitude but different directions are ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Not equal",
-        "B": "Equal",
-        "C": "Unit",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 10
-    },
-    {
-      "question": "A vector that can be shifted anywhere without change is a ______ vector.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Free",
-        "B": "Localized",
-        "C": "Unit",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 11
-    },
-    {
-      "question": "Unit vector perpendicular to i and j is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "k",
-        "B": "i+j",
-        "C": "0",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 12
-    },
-    {
-      "question": "If a is a vector and |a| is its magnitude, then a/|a| is a ______ vector.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Unit",
-        "B": "Zero",
-        "C": "Standard",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 13
-    },
-    {
-      "question": "The vector sum of sides of a triangle taken in order is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "0",
-        "B": "1",
-        "C": "Perimeter",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 14
-    },
-    {
-      "question": "Scalar product of a vector with itself is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "|a|²",
-        "B": "0",
-        "C": "|a|",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 15
-    },
-    {
-      "question": "A vector representing the difference of two points is a ______ vector.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Displacement",
-        "B": "Position",
-        "C": "Standard",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 16
-    },
-    {
-      "id": 17,
-      "question": "Component of a⃗ = 2î+3ĵ+k̂ along b⃗ = î+ĵ+k̂ is?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2",
-        "B": "6/√3",
-        "C": "√(4+9+1)",
-        "D": "2√3"
-      },
-      "answer": "D",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "question": "Multiplication of a vector by 0 results in ______ vector.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Zero",
-        "B": "Unit",
-        "C": "Same",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 18
-    },
-    {
-      "question": "Magnitude of resulting vector when adding orthogonal unit vectors i, j, k is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "√3",
-        "B": "3",
-        "C": "1",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 19
-    },
-    {
-      "question": "Vector sum of diagonals of a parallelogram is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "2a",
-        "B": "a + b",
-        "C": "0",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 20
-    }
-  ]
+﻿{
+    "questions":  [
+                      {
+                          "question":  "Unit vector perpendicular to i and j is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "k",
+                                          "B":  "i+j",
+                                          "C":  "0",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  76
+                      },
+                      {
+                          "question":  "If a is a vector and |a| is its magnitude, then a/|a| is a ______ vector.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Unit",
+                                          "B":  "Zero",
+                                          "C":  "Standard",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  77
+                      },
+                      {
+                          "question":  "The vector sum of sides of a triangle taken in order is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "0",
+                                          "B":  "1",
+                                          "C":  "Perimeter",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  78
+                      },
+                      {
+                          "question":  "Scalar product of a vector with itself is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "|a|Â²",
+                                          "B":  "0",
+                                          "C":  "|a|",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  79
+                      },
+                      {
+                          "question":  "A vector representing the difference of two points is a ______ vector.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Displacement",
+                                          "B":  "Position",
+                                          "C":  "Standard",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  80
+                      },
+                      {
+                          "id":  81,
+                          "question":  "Component of aâƒ— = 2Ã®+3Äµ+kÌ‚ along bâƒ— = Ã®+Äµ+kÌ‚ is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "6/âˆš3",
+                                          "C":  "âˆš(4+9+1)",
+                                          "D":  "2âˆš3"
+                                      },
+                          "answer":  "D",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "Multiplication of a vector by 0 results in ______ vector.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Zero",
+                                          "B":  "Unit",
+                                          "C":  "Same",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  82
+                      },
+                      {
+                          "question":  "Vector sum of diagonals of a parallelogram is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "2a",
+                                          "B":  "a + b",
+                                          "C":  "0",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  83
+                      }
+                  ]
 }

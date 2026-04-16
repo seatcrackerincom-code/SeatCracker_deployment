@@ -1,309 +1,389 @@
-{
-    "questions": [
-        {
-            "id": 1,
-            "question": "Locus of feet of perpendiculars from focus of a parabola to its tangents is the ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Tangent at the vertex",
-                "B": "Directrix",
-                "C": "Latus Rectum",
-                "D": "Auxiliary Circle"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 2,
-            "question": "Equation xy = c\u00b2 under rotation by 45\u00b0 becomes ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "X\u00b2 - Y\u00b2 = 2c\u00b2",
-                "B": "X\u00b2 + Y\u00b2 = 2c\u00b2",
-                "C": "X + Y = c",
-                "D": "X\u00b2 + Y\u00b2 = c\u00b2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 3,
-            "question": "If an equation has no linear terms (no x, no y), the origin is exactly at the ______ of symmetry.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Center",
-                "B": "Focus",
-                "C": "Directrix",
-                "D": "Vertex"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 4,
-            "question": "Locus of point P such that PA\u00b2 + PB\u00b2 = constant, for fixed points A and B, is a ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Circle",
-                "B": "Straight line",
-                "C": "Parabola",
-                "D": "Ellipse"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 5,
-            "question": "Rotation by 45\u00b0 transforms the standard rectangular hyperbola xy = c\u00b2 into standard form. The axes become the ______ of the hyperbola.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Principal axes (Transverse & Conjugate)",
-                "B": "Asymptotes",
-                "C": "Directrices",
-                "D": "Latus recta"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "Locus of feet of perpendiculars from foci of an ellipse to its tangents is its ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Auxiliary circle",
-                "B": "Director circle",
-                "C": "Major axis",
-                "D": "Minor axis"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 7,
-            "question": "Locus of the centre of a circle which touches two intersecting lines involves their ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Angle bisectors",
-                "B": "Perpendiculars",
-                "C": "Parallels",
-                "D": "Intersection point only"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 8,
-            "question": "Locus of point P(x,y) such that the slope of PA and PB (A=(1,0), B=(\u22121,0)) multiply to 2 is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "y\u00b2=2(x\u00b2\u22121)",
-                "B": "y\u00b2+2x\u00b2=2",
-                "C": "x\u00b2\u2212y\u00b2=1",
-                "D": "2x\u00b2+y\u00b2=2"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 9,
-            "question": "A variable line passes through (1,2). Locus of foot of perpendicular from origin to this line is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x\u00b2+y\u00b2\u2212x\u22122y=0",
-                "B": "x\u00b2+y\u00b2=5",
-                "C": "x+2y=5",
-                "D": "x\u00b2+y\u00b2+x+2y=0"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(18x) / tan(9x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "18/9",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 18/9.",
-            "id": 10
-        },
-        {
-            "id": 11,
-            "question": "Locus of vertex of right angle inscribed in circle of radius r is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "a circle of radius r/\u221a2",
-                "B": "the same circle",
-                "C": "a circle of radius r\u221a2",
-                "D": "a point"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 12,
-            "question": "Locus of midpoints of parallel chords of slope m to circle x\u00b2+y\u00b2=r\u00b2 is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "a diameter perpendicular to the chords (slope = \u22121/m)",
-                "B": "another circle",
-                "C": "an ellipse",
-                "D": "a chord of contact"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 13,
-            "question": "Locus of the intersection of mutually perpendicular tangents to an ellipse is its ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Director circle",
-                "B": "Auxiliary circle",
-                "C": "Radical axis",
-                "D": "Incircle"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 14,
-            "question": "Locus of point P such that PA\u00b2 + PB\u00b2 = 2c\u00b2, where A=(\u2212a,0) and B=(a,0) is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x\u00b2+y\u00b2=c\u00b2\u2212a\u00b2",
-                "B": "x\u00b2+y\u00b2=c\u00b2+a\u00b2",
-                "C": "x\u00b2+y\u00b2=c\u00b2",
-                "D": "x\u00b2+y\u00b2+a\u00b2=c\u00b2"
-            },
-            "answer": "D",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 15,
-            "question": "In 3D, locus of point equidistant from two fixed points is a ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Plane (perpendicular bisecting plane)",
-                "B": "Line",
-                "C": "Sphere",
-                "D": "Circle"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 16,
-            "question": "In 3D, locus of a point at constant distance from a fixed line is a ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Cylinder",
-                "B": "Plane",
-                "C": "Sphere",
-                "D": "Cone"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 17,
-            "question": "If a line passes through a fixed point (a, b), the locus of the foot of the perpendicular from origin to it is a ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Circle with origin and (a,b) as diameter endpoints",
-                "B": "Straight line",
-                "C": "Point",
-                "D": "Parabola"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 18,
-            "question": "When axes are translated to (h, k), the degree of the equation of a curve ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Remains unchanged",
-                "B": "Increases by 1",
-                "C": "Decreases by 1",
-                "D": "Cannot be predicted"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 19,
-            "question": "Another invariant under rotation for ax\u00b2 + 2hxy + by\u00b2 = 0 is the quantity ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "ab - h\u00b2",
-                "B": "a - b",
-                "C": "a\u00b2 + b\u00b2",
-                "D": "h / (a+b)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "Locus of intersection of mutually perpendicular tangents to a parabola is the ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Directrix",
-                "B": "Axis",
-                "C": "Latus rectum",
-                "D": "Tangent at vertex"
-            },
-            "answer": "A",
-            "pyq": false
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  26,
+                          "question":  "Another invariant under rotation for ax² + 2hxy + by² = 0 is the quantity ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "ab - h²",
+                                          "B":  "a - b",
+                                          "C":  "a² + b²",
+                                          "D":  "h / (a+b)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  27,
+                          "question":  "Locus of point P such that PA = 2PB where A=(0,0), B=(3,0) ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(x-4)Â² + yÂ² = 4 (Circle)",
+                                          "B":  "x = 4",
+                                          "C":  "xÂ² + yÂ² = 9",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  28,
+                          "question":  "Locus of point P which is equidistant from (a+b, a-b) and (a-b, a+b).",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "y = x",
+                                          "B":  "y = -x",
+                                          "C":  "x + y = a",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  29,
+                          "question":  "If origin is shifted to (1,1), transform xÂ² + yÂ² - 2x - 2y + 1 = 0.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "XÂ² + YÂ² = 1",
+                                          "B":  "XÂ² + YÂ² = 2",
+                                          "C":  "X + Y = 1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  30,
+                          "question":  "A rod of length 5 has ends on coordinate axes. Locus of midpoint is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "xÂ²+yÂ²=25/4",
+                                          "B":  "xÂ²+yÂ²=25",
+                                          "C":  "x+y=5",
+                                          "D":  "4xÂ²+4yÂ²=25"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  31,
+                          "question":  "The locus of points from which the angle subtended by a given line segment is 90Â° is a ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Circle (with the segment as diameter)",
+                                          "B":  "Semicircle only",
+                                          "C":  "Parabola",
+                                          "D":  "Straight line"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  32,
+                          "question":  "Locus of the pole of line y = mx + c w.r.t. parabola yÂ²=4ax is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "my = 2a(x + a/mÂ²) â€” a parabola similar to original",
+                                          "B":  "y = mx + c",
+                                          "C":  "x = âˆ’a",
+                                          "D":  "yÂ² = 4ax (same parabola)"
+                                      },
+                          "answer":  "D",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  33,
+                          "question":  "A point moves so that its distance from x-axis is equal to its distance from yz-plane. The locus is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "yÂ² + zÂ² = xÂ²",
+                                          "B":  "y = x",
+                                          "C":  "z = 0",
+                                          "D":  "xÂ² + yÂ² = zÂ²"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  34,
+                          "question":  "Locus of point P such that it form a triangle of area A with (0,0) and (x1,y1).",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "|x y1 - y x1| = 2A (Straight lines)",
+                                          "B":  "Circle",
+                                          "C":  "x + y = A",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  35,
+                          "question":  "Angle between two intersecting curves is invariant under ______ of axes.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Both Translation and Rotation",
+                                          "B":  "Translation only",
+                                          "C":  "Rotation only",
+                                          "D":  "Neither"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  36,
+                          "question":  "Locus of P such that PAÂ²+PBÂ²=2cÂ², A=(âˆ’a,0), B=(a,0) is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "xÂ²+yÂ²=cÂ²âˆ’aÂ²",
+                                          "B":  "xÂ²+yÂ²=cÂ²+aÂ²",
+                                          "C":  "xÂ²+yÂ²=cÂ²",
+                                          "D":  "2xÂ²+2yÂ²=cÂ²+aÂ²"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  37,
+                          "question":  "Identify invariant: (a-b)Â² + 4hÂ² is invariant under rotation? ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Yes",
+                                          "B":  "No",
+                                          "C":  "Only if a=b",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "The locus of a point P such that the sum of the squares of its distances from the points (a,0) and (-a,0) is 2cÂ² is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "xÂ² + yÂ² = cÂ² - aÂ²",
+                                          "B":  "xÂ² + yÂ² = cÂ² + aÂ²",
+                                          "C":  "xÂ² - yÂ² = cÂ²",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  38
+                      },
+                      {
+                          "id":  39,
+                          "question":  "Transformed equation of xy = aÂ² when origin shifts to (a, a) is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "XY + aX + aY = 0",
+                                          "B":  "XY = aÂ²",
+                                          "C":  "X + Y = a",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  40,
+                          "question":  "Locus of vertex of triangle with fixed base and constant angle at vertex ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "A circle",
+                                          "B":  "A parabola",
+                                          "C":  "A line",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  41,
+                          "question":  "Locus of point P such that PAÂ² - PBÂ² = 3 where A=(0,0) and B=(2,0) is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "4x = 7 (Straight line)",
+                                          "B":  "x = 3/2",
+                                          "C":  "y = 0",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  42,
+                          "question":  "Locus of point P such that distance from origin is square of distance from x-axis ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "xÂ² + yÂ² = yâ´",
+                                          "B":  "x + y = 1",
+                                          "C":  "xÂ² = y",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  43,
+                          "question":  "Inclination of line transforms from 45 to 30 after rotation. Find angle of rotation.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "15 degrees",
+                                          "B":  "75 degrees",
+                                          "C":  "0",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  44,
+                          "question":  "Condition to remove xy term in axÂ² + 2hxy + byÂ² + 2gx + 2fy + c = 0 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Rotating axes through Î¸ = 1/2 tanâ»Â¹(2h / (a-b))",
+                                          "B":  "Shifting origin",
+                                          "C":  "h = 0",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "The locus of a point which moves such that its distance from the point (0,0) is twice its distance from the line x = 3 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "3xÂ² - yÂ² - 24x + 36 = 0",
+                                          "B":  "xÂ² + 3yÂ² = 36",
+                                          "C":  "3xÂ² + yÂ² = 36",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  45
+                      },
+                      {
+                          "question":  "The locus of the point of intersection of the lines x/a + y/b = k and x/a - y/b = 1/k is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "xÂ²/aÂ² - yÂ²/bÂ² = 1",
+                                          "B":  "xÂ²/aÂ² + yÂ²/bÂ² = 1",
+                                          "C":  "xy = ab",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  46
+                      },
+                      {
+                          "question":  "The locus of a point which moves so that the difference of its distances from (5,0) and (-5,0) is 8 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "xÂ²/16 - yÂ²/9 = 1",
+                                          "B":  "xÂ²/9 - yÂ²/16 = 1",
+                                          "C":  "xÂ²/25 + yÂ²/16 = 1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  47
+                      },
+                      {
+                          "id":  48,
+                          "question":  "The locus of point z in complex plane with |zâˆ’1|=|z+1| is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "imaginary axis (x=0)",
+                                          "B":  "real axis",
+                                          "C":  "unit circle",
+                                          "D":  "x=1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "The locus of a point which moves such that the square of its distance from the origin is equal to its distance from the line y = 2 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "xÂ² + yÂ² = |y-2|",
+                                          "B":  "xÂ² + yÂ² = y - 2",
+                                          "C":  "xÂ² + yÂ² = 4",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  49
+                      },
+                      {
+                          "question":  "The locus of a point which moves such that the sum of the squares of its distances from the sides of a square is constant is a ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Circle",
+                                          "B":  "Square",
+                                          "C":  "Ellipse",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  50
+                      }
+                  ]
 }

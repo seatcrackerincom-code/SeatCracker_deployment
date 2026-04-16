@@ -1,0 +1,307 @@
+{
+    "questions": [
+        {
+            "question": "If the vectors a = 12i + 5j and b = 9i - j are perpendicular, find the value of 12*9.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 1
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^15 * (1-x)^9 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "26",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": 2
+        },
+        {
+            "question": "If the vectors a = 20i + 13j and b = 1i - j are perpendicular, find the value of 20*1.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "13",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 3
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(18x) / tan(12x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "18/12",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 18/12.",
+            "id": 4
+        },
+        {
+            "id": 5,
+            "question": "\u222b sin x \u00b7 sin 2x dx = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u2212(2/3)cos\u00b3x + C",
+                "B": "(2/3)cos\u00b3x + C",
+                "C": "\u2212cos x\u00b7cos 2x + C",
+                "D": "sin\u00b3x/3 + C"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 6,
+            "question": "\u222b x^m (1-x)^n dx refers to Beta function, but indefinite integration form relies on ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Successive parts/reduction",
+                "B": "ILATE strictly",
+                "C": "Trig substitution directly",
+                "D": "Logarithmic diff"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^10 * (1-x)^17 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "29",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": 7
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(3x) / tan(10x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3/10",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 3/10.",
+            "id": 8
+        },
+        {
+            "question": "The integral of 1 / (1 + cos x) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "tan(x/2) + C",
+                "B": "cot(x/2) + C",
+                "C": "sec(x/2) + C",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 9
+        },
+        {
+            "question": "The value of the integral from 0 to 1 of x^13 * (1-x)^16 dx is given by the Beta function B(m,n). Find m+n.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "31",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
+            "id": 10
+        },
+        {
+            "question": "The integral of log x dx is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "x log x - x + C",
+                "B": "log x + C",
+                "C": "x log x + C",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 11
+        },
+        {
+            "question": "If the matrix A is [[20, 4], [0, 8]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "464",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[400, 112], [0, 64]]. Trace is sum of diagonal elements: 400 + 64.",
+            "id": 12
+        },
+        {
+            "id": 13,
+            "question": "The substitution x = a sin\u00b2\u03b8 is suitable for the integral ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u222b \u221a((a-x)/x) dx",
+                "B": "\u222b \u221a(a\u00b2-x\u00b2) dx",
+                "C": "\u222b 1/(a\u00b2+x\u00b2) dx",
+                "D": "\u222b 1/\u221a(x-a) dx"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the matrix A is [[12, 20], [0, 3]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "153",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[144, 300], [0, 9]]. Trace is sum of diagonal elements: 144 + 9.",
+            "id": 14
+        },
+        {
+            "question": "If the matrix A is [[17, 9], [0, 10]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "389",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[289, 243], [0, 100]]. Trace is sum of diagonal elements: 289 + 100.",
+            "id": 15
+        },
+        {
+            "question": "If the matrix A is [[19, 14], [0, 4]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "377",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[361, 322], [0, 16]]. Trace is sum of diagonal elements: 361 + 16.",
+            "id": 16
+        },
+        {
+            "question": "Evaluate the integral of sinh(3x) cosh(9x) dx.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Calculated term",
+                "B": "Calculated term",
+                "C": "Calculated term",
+                "D": "Calculated term"
+            },
+            "answer": "A",
+            "hint": "Use the product to sum identities for hyperbolic functions.",
+            "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
+            "id": 17
+        },
+        {
+            "question": "If the vectors a = 7i + 20j and b = 4i - j are perpendicular, find the value of 7*4.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "20",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": 18
+        },
+        {
+            "question": "If the matrix A is [[19, 20], [0, 5]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "386",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[361, 480], [0, 25]]. Trace is sum of diagonal elements: 361 + 25.",
+            "id": 19
+        },
+        {
+            "id": 20,
+            "question": "The value of \u222b [ dx / (x\u00b2 + 2x + 2) ] is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "tan\u207b\u00b9(x+1) + C",
+                "B": "tan\u207b\u00b9(x) + C",
+                "C": "ln|x\u00b2 + 2x + 2| + C",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        }
+    ]
+}

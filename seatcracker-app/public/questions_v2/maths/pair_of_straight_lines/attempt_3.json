@@ -1,312 +1,307 @@
-{
-  "questions": [
-    {
-      "id": 1,
-      "question": "The joint equation of lines passing through origin and perpendicular to lines in ax²+2hxy+by²=0 is?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "bx²−2hxy+ay²=0",
-        "B": "ax²−2hxy+by²=0",
-        "C": "bx²+2hxy+ay²=0",
-        "D": "hx²+(a−b)xy−hy²=0"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 2,
-      "question": "The combined equation of coordinate axes is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "xy = 0",
-        "B": "x² + y² = 0",
-        "C": "x + y = 0",
-        "D": "x² − y² = 0"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 3,
-      "question": "Homogenization of curve C with line L = 1 means writing terms of decree 2, 1*L, and c*L².",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 4,
-      "question": "Area of triangle formed by lines x² - 4xy + y² = 0 and x + y = 2.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "√3 / 2? No. Replaced with: 1/√3.",
-        "B": "√3",
-        "C": "2√3",
-        "D": "None"
-      },
-      "answer": "B",
-      "pyq": false
-    },
-    {
-      "id": 5,
-      "question": "Does h=0 and a=b in ax² + 2hxy + by² = 0 represent anything other than origin? No, x²+y²=0 is only (0,0).",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "The angle between the pair of lines x² - 7xy + 12y² = 0 is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "tan⁻¹(1/7)",
-        "B": "tan⁻¹(7/13)",
-        "C": "tan⁻¹(1)",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 6
-    },
-    {
-      "id": 7,
-      "question": "Area of triangle formed by pair of lines ax²+2hxy+by²=0 and line lx+my+n=0 is?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "n²√(h²−ab)/(am²−2hlm+bl²)",
-        "B": "n√(h²−ab)",
-        "C": "n²(h²−ab)/(am²+bl²)",
-        "D": "√(h²−ab)/n"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 8,
-      "question": "Equation of lines through (1,2) and parallel to x² - y² = 0 is (x-1)² - (y-2)² = 0.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 9,
-      "question": "If 2x²+7xy+3y²=0 represents a pair of lines, those lines are?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2y+x=0 and y+3x=0",
-        "B": "x+y=0 and 2x+3y=0",
-        "C": "x−2y=0 and 3x−y=0",
-        "D": "x+2y=0 and x+3y=0"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 10,
-      "question": "Orthocenter of triangle formed by ax² + 2hxy + by² = 0 and lx + my + n = 0 is ( (a+b)l k, (a+b)m k ) for some k? Correct: ( (a+b)l/δ, (a+b)m/δ ).",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "If the lines represented by 6x² + 5xy - 6y² + 32x + 4y + k = 0 are perpendicular, then k = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "-10",
-        "B": "10",
-        "C": "0",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 11
-    },
-    {
-      "id": 12,
-      "question": "Slope of bisectors of ax² + 2hxy + by² = 0 are independent of magnitude of a, b, h but depend on their ratios.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 13,
-      "question": "The product of the perpendiculars from (x₀, y₀) to the lines ax² + 2hxy + by² = 0 is |ax₀² + 2hx₀y₀ + by₀²| / √((a-b)² + 4h²).",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "The combined equation of the lines passing through the origin and perpendicular to the lines represented by ax² + 2hxy + by² = 0 is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "bx² - 2hxy + ay² = 0",
-        "B": "bx² + 2hxy + ay² = 0",
-        "C": "ax² - 2hxy + by² = 0",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 14
-    },
-    {
-      "id": 15,
-      "question": "Angle between 2x² - xy - y² = 0.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "tan⁻¹(3)",
-        "B": "tan⁻¹(1)",
-        "C": "tan⁻¹(2)",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 16,
-      "question": "If h=0, the lines ax² + by² = 0 represent the axes if a, b are opposite? No, x²-y²=0 is y=±x. Axes are xy=0.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "B",
-      "pyq": false
-    },
-    {
-      "id": 17,
-      "question": "If equation ax²+2hxy+by²+2gx+2fy+c=0 represents two parallel lines, then h²=ab and?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "g²=ac and bg²=af²",
-        "B": "f²=bc only",
-        "C": "g=f",
-        "D": "g+f=0"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 18,
-      "question": "Principal bisector is the one that contains the origin if c is positive? No, logic depends on signs.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 19,
-      "question": "Condition for pair of lines to be imaginary is h² < ab.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 20,
-      "question": "The pair of lines ax² + 2hxy + by² = 0 and b x² - 2hxy + a y² = 0 are mutually perpendicular.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True (Slopes m₁, m₂ and -1/m₁, -1/m₂).",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    }
-  ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  51,
+                          "question":  "Condition for pair of lines to be imaginary is hÂ² \u003c ab.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "The centroid of the triangle formed by the lines axÂ² + 2hxy + byÂ² = 0 and lx + my = 1 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "( (bl-hm)/3(amÂ²-2hlm+blÂ²), (am-hl)/3(amÂ²-2hlm+blÂ²) )",
+                                          "B":  "(l/3, m/3)",
+                                          "C":  "(0, 0)",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  52
+                      },
+                      {
+                          "question":  "The point of intersection of the lines represented by xÂ² - xy - 6yÂ² - 7x + 31y - 18 = 0 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(4, 2)",
+                                          "B":  "(2, 4)",
+                                          "C":  "(-1, 3)",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  53
+                      },
+                      {
+                          "question":  "The distance between the parallel lines represented by 4xÂ² + 12xy + 9yÂ² - 6x - 9y + 2 = 0 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1 / âˆš13",
+                                          "B":  "2 / âˆš13",
+                                          "C":  "1 / 13",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  54
+                      },
+                      {
+                          "question":  "If the lines represent a triangle\u0027s height, then the intersection of axÂ² + 2hxy + byÂ² = 0 and y = k is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Origin as a vertex",
+                                          "B":  "Area is kÂ²",
+                                          "C":  "Perpendicularity at origin",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  55
+                      },
+                      {
+                          "id":  56,
+                          "question":  "The condition for lines axÂ²+2hxy+byÂ²=0 to be equally inclined to x-axis is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "h = 0",
+                                          "B":  "a = b",
+                                          "C":  "a + b = 0",
+                                          "D":  "a = 2h"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "If hÂ² = ab, then the lines represented by axÂ² + 2hxy + byÂ² = 0 are ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Coincident",
+                                          "B":  "Perpendicular",
+                                          "C":  "Imaginary",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  57
+                      },
+                      {
+                          "question":  "The pair of lines hxy + gx + fy + c = 0 represents two lines if ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "fg = hc",
+                                          "B":  "fh = gc",
+                                          "C":  "gh = fc",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  58
+                      },
+                      {
+                          "question":  "The condition that one of the lines axÂ² + 2hxy + byÂ² = 0 bisects the angle between the axes is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(a+b)Â² = 4hÂ²",
+                                          "B":  "a+b = 0",
+                                          "C":  "hÂ² = ab",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  59
+                      },
+                      {
+                          "question":  "Angle between the lines represented by (xÂ² + yÂ²) sinÂ²Î± = (x cos Î¸ - y sin Î¸)Â² is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2Î±",
+                                          "B":  "Î±",
+                                          "C":  "Ï€/2",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  60
+                      },
+                      {
+                          "id":  61,
+                          "question":  "The equation xÂ²+2xy+yÂ²+3x+3y+2=0 represents?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "two parallel lines",
+                                          "B":  "a parabola",
+                                          "C":  "two intersecting lines",
+                                          "D":  "a circle"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  62,
+                          "question":  "Homogenizing xÂ²+yÂ²=aÂ² using line lx+my=1 gives the combined equation of?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "pair of lines from origin to intersection points",
+                                          "B":  "the circle itself",
+                                          "C":  "tangent at intersection",
+                                          "D":  "the line lx+my=1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  63,
+                          "question":  "If slopes of lines in axÂ²+2hxy+byÂ²=0 are in ratio 3:4, then 48hÂ² = ?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "49ab",
+                                          "B":  "48ab",
+                                          "C":  "12ab",
+                                          "D":  "16ab"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "If the pair of lines axÂ² + 2hxy + byÂ² + 2gx + 2fy + c = 0 represents two parallel lines, then ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "hÂ² = ab and afÂ² = bgÂ²",
+                                          "B":  "hÂ² = ab and agÂ² = bfÂ²",
+                                          "C":  "hÂ² + ab = 0",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  64
+                      },
+                      {
+                          "question":  "Area of the triangle formed by the lines axÂ² + 2hxy + byÂ² = 0 and lx + my + n = 0 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(nÂ²âˆš(hÂ²-ab)) / |amÂ² - 2hlm + blÂ²|",
+                                          "B":  "nÂ² / |ab|",
+                                          "C":  "hÂ² - ab",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  65
+                      },
+                      {
+                          "question":  "Combined equation of bisectors of angles between axÂ² + 2hxy + byÂ² = 0 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(xÂ² - yÂ²) / (a - b) = xy / h",
+                                          "B":  "(xÂ² + yÂ²) / (a + b) = xy / h",
+                                          "C":  "h(xÂ² - yÂ²) + (a - b)xy = 0",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  66
+                      },
+                      {
+                          "question":  "If the pair of lines xÂ² - 2pxy - yÂ² = 0 and xÂ² - 2qxy - yÂ² = 0 are such that each pair bisects the angle between the other, then ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "pq = -1",
+                                          "B":  "pq = 1",
+                                          "C":  "p + q = 0",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  67
+                      },
+                      {
+                          "question":  "If Î»xÂ² - 10xy + 12yÂ² + 5x - 16y - 3 = 0 represents a pair of lines, then Î» = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "1",
+                                          "C":  "3",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  68
+                      },
+                      {
+                          "id":  69,
+                          "question":  "The lines represented by 3xÂ²+10xy+3yÂ²=0 are?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "x+3y=0 and 3x+y=0",
+                                          "B":  "xâˆ’3y=0 and 3xâˆ’y=0",
+                                          "C":  "x+y=0 and 9x+y=0",
+                                          "D":  "3xâˆ’y=0 and x+3y=0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      }
+                  ]
 }

@@ -1,308 +1,399 @@
-{
-    "questions": [
-        {
-            "id": 1,
-            "question": "Identify vector triple product: (a\u00d7b)\u00d7c is equal to ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(a.c)b - (b.c)a",
-                "B": "(a.c)b - (a.b)c",
-                "C": "a \u00d7 (b\u00d7c)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 2,
-            "question": "Area of triangle with vertices having position vectors a, b, c is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(1/2) |a\u00d7b + b\u00d7c + c\u00d7a|",
-                "B": "(1/2) |(b-a) \u00d7 (c-a)|",
-                "C": "Both A and B",
-                "D": "|a.b + b.c + c.a|"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 3,
-            "question": "Equation of line through two points A(a) and B(b) is r = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "a + \u03bb(b - a)",
-                "B": "b + \u03bb(a + b)",
-                "C": "a + \u03bbb",
-                "D": "(a+b)/2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 4,
-            "question": "Equation of a line passing through point A(a) and parallel to vector b is r = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "a + \u03bbb",
-                "B": "b + \u03bba",
-                "C": "a - \u03bbb",
-                "D": "a \u00d7 b"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 5,
-            "question": "If a\u20d7\u00d7b\u20d7 = b\u20d7\u00d7c\u20d7, then (a\u20d7\u2212c\u20d7) is parallel to?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "b\u20d7",
-                "B": "a\u20d7",
-                "C": "c\u20d7",
-                "D": "a\u20d7+c\u20d7"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 6,
-            "question": "Distance of point (1,2,3) from plane r.(i+j+k) = 1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "5 / \u221a3",
-                "B": "6 / \u221a3",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 7,
-            "question": "Volume of parallelepiped edges i+j, j+k, k+i is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "1",
-                "C": "0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(3x) / tan(19x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "3/19",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 3/19.",
-            "id": 8
-        },
-        {
-            "id": 9,
-            "question": "Projection vector of a on b is: (a.b) / |b|\u00b2 * b. Is this true?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Yes, vector projection",
-                "B": "No, scalar projection",
-                "C": "Only if unit vector",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 10,
-            "question": "Identify vector: Magnitude 5 along vector 3i-4j is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "3i - 4j",
-                "B": "15i - 20j",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 11,
-            "question": "If vectors a, b are unit vectors and a+b is unit vector, find angle between a and b.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "120 degrees",
-                "B": "60 degrees",
-                "C": "90 degrees",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 12,
-            "question": "The moment (torque) of a force F about a point O is denoted by M = ______. (r is position vector of point of application)",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "r \u00d7 F",
-                "B": "F \u00d7 r",
-                "C": "r . F",
-                "D": "|r||F|"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 13,
-            "question": "Line of intersection of two planes is perpendicular to ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Both normals to the planes",
-                "B": "The x-axis",
-                "C": "The origin",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 14,
-            "question": "If a, b, c are mutually perpendicular unit vectors, then [a b c] = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u00b11",
-                "B": "0",
-                "C": "3",
-                "D": "1/3"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 15,
-            "question": "The unit vector perpendicular to both \u00ee+\u0135 and \u0135+k\u0302 is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(\u00ee\u2212\u0135+k\u0302)/\u221a3",
-                "B": "(\u00ee+\u0135+k\u0302)/\u221a3",
-                "C": "(\u00ee\u2212\u0135\u2212k\u0302)/\u221a3",
-                "D": "(\u2212\u00ee+\u0135+k\u0302)/\u221a3"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 16,
-            "question": "Vectors a and b are non-collinear. For any vector r coplanar with a,b, there exist unique scalars x,y such that r = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x a + y b",
-                "B": "x (a\u00d7b)",
-                "C": "x a - y b",
-                "D": "x/a + y/b"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 17,
-            "question": "If [a b c] is negative, the system of vectors is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Left-handed",
-                "B": "Right-handed",
-                "C": "Orthogonal",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 18,
-            "question": "Area of triangle with vertices (1,2,3),(2,3,1),(3,1,2) using cross product = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u221a3",
-                "B": "2\u221a3",
-                "C": "3",
-                "D": "\u221a6"
-            },
-            "answer": "B",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 19,
-            "question": "If |a\u20d7| = 2, |b\u20d7| = 3 and angle between them is 30\u00b0, then |a\u20d7\u00d7b\u20d7| = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "3",
-                "B": "\u221a3",
-                "C": "3\u221a3",
-                "D": "6"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 20,
-            "question": "Condition for three points with position vectors a, b, c to be collinear is that there exist scalars x,y,z not all zero such that xa+yb+zc=0 and ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x + y + z = 0",
-                "B": "xyz = 1",
-                "C": "x = y = z",
-                "D": "x\u00b2 + y\u00b2 + z\u00b2 = 1"
-            },
-            "answer": "A",
-            "pyq": false
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  26,
+                          "question":  "The moment (torque) of a force F about a point O is denoted by M = ______. (r is position vector of point of application)",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "r × F",
+                                          "B":  "F × r",
+                                          "C":  "r . F",
+                                          "D":  "|r||F|"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  27,
+                          "question":  "Vectors a and b are non-collinear. For any vector r coplanar with a,b, there exist unique scalars x,y such that r = ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "x a + y b",
+                                          "B":  "x (a×b)",
+                                          "C":  "x a - y b",
+                                          "D":  "x/a + y/b"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  28,
+                          "question":  "If [a b c] is negative, the system of vectors is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Left-handed",
+                                          "B":  "Right-handed",
+                                          "C":  "Orthogonal",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  29,
+                          "question":  "If |a⃗| = 2, |b⃗| = 3 and angle between them is 30°, then |a⃗×b⃗| = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "3",
+                                          "B":  "√3",
+                                          "C":  "3√3",
+                                          "D":  "6"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  30,
+                          "question":  "Condition for three points with position vectors a, b, c to be collinear is that there exist scalars x,y,z not all zero such that xa+yb+zc=0 and ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "x + y + z = 0",
+                                          "B":  "xyz = 1",
+                                          "C":  "x = y = z",
+                                          "D":  "x² + y² + z² = 1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "The volume of the parallelepiped with coterminous edges i+j, j+k, k+i is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "1",
+                                          "C":  "0",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  31
+                      },
+                      {
+                          "question":  "If a, b, c are non-coplanar, find the value of (a. (b x c)) / ((c x a). b).",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "-1",
+                                          "C":  "0",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  32
+                      },
+                      {
+                          "question":  "If |a x b| = |a||b|, the angle between a and b is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "90°",
+                                          "B":  "0°",
+                                          "C":  "180°",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  33
+                      },
+                      {
+                          "id":  34,
+                          "question":  "If a⃗×b⃗ = c⃗ and b⃗×c⃗ = a⃗, then?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "|b⃗| = 1 and a⃗,b⃗,c⃗ are mutually perpendicular",
+                                          "B":  "a⃗=b⃗=c⃗",
+                                          "C":  "b⃗ is unit vector parallel to a⃗",
+                                          "D":  "a⃗×c⃗=b⃗"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "Find the number of ways to arrange the letters of the word \u0027SUCCESS\u0027 such that the 14 S\u0027s are always together.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "60",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+                          "id":  35
+                      },
+                      {
+                          "question":  "If [a b c] = 2, then [a+b b+c c+a] = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "4",
+                                          "B":  "2",
+                                          "C":  "8",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  36
+                      },
+                      {
+                          "question":  "If a x b = c x d and a x c = b x d, then a-d is parallel to ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "b-c",
+                                          "B":  "b+c",
+                                          "C":  "a+d",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  37
+                      },
+                      {
+                          "question":  "Condition for four points a, b, c, d to be coplanar is [b-a, c-a, d-a] = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "0",
+                                          "B":  "1",
+                                          "C":  "abcd",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  38
+                      },
+                      {
+                          "id":  39,
+                          "question":  "If a⃗ = î+ĵ+k̂ and b⃗ = î, then a⃗×b⃗ = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "−ĵ+k̂",
+                                          "B":  "ĵ−k̂",
+                                          "C":  "ĵ+k̂",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "If i, j, k are unit vectors, i x j = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "k",
+                                          "B":  "-k",
+                                          "C":  "0",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  40
+                      },
+                      {
+                          "id":  41,
+                          "question":  "Torque τ⃗ = r⃗ × F⃗. If r⃗ = î+2ĵ+3k̂ and F⃗ = î+ĵ+k̂, then |τ⃗| = ?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "√6",
+                                          "B":  "√3",
+                                          "C":  "3",
+                                          "D":  "√14"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "Scale of (a x b) x c is called ______ product.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Vector Triple",
+                                          "B":  "Scalar Triple",
+                                          "C":  "Box",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  42
+                      },
+                      {
+                          "question":  "|a x b|² + (a.b)² = ______ (Lagrange\u0027s Identity).",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "|a|² |b|²",
+                                          "B":  "|a+b|²",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  43
+                      },
+                      {
+                          "id":  44,
+                          "question":  "(a⃗×b⃗)·c⃗ = a⃗·(b⃗×c⃗). This is called?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "scalar triple product property",
+                                          "B":  "vector triple product",
+                                          "C":  "Jacobi identity",
+                                          "D":  "distributive law"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "If a, b, c are unit vectors such that a x (b x c) = b/2, the angles between a and b, and a and c are ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "90°, 60°",
+                                          "B":  "60°, 90°",
+                                          "C":  "45°, 45°",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  45
+                      },
+                      {
+                          "question":  "The area of the parallelogram with adjacent sides a = (1,2,3) and b = (4,5,6) is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "√75",
+                                          "B":  "√150",
+                                          "C":  "√300",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  46
+                      },
+                      {
+                          "question":  "The direction of a x b is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Perpendicular to both a and b",
+                                          "B":  "Parallel to a",
+                                          "C":  "In the plane of a and b",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  47
+                      },
+                      {
+                          "id":  48,
+                          "question":  "The volume of parallelepiped with a⃗=î+ĵ, b⃗=ĵ+k̂, c⃗=k̂+î equals?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "1",
+                                          "C":  "0",
+                                          "D":  "4"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  49,
+                          "question":  "If a⃗=2î−3ĵ+k̂ and b⃗=î+4ĵ−2k̂, then (a⃗+b⃗)×(a⃗−b⃗) = ?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2(b⃗×a⃗)",
+                                          "B":  "2(a⃗×b⃗)",
+                                          "C":  "0⃗",
+                                          "D":  "4(a⃗×b⃗)"
+                                      },
+                          "answer":  "B",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "If i, j, k are unit vectors, k x j = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "-i",
+                                          "B":  "i",
+                                          "C":  "0",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  50
+                      }
+                  ]
 }

@@ -1,308 +1,396 @@
-{
-    "questions": [
-        {
-            "id": 1,
-            "question": "If z = x + iy and |z+2| = |z\u22122|, then the locus is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "y-axis",
-                "B": "x-axis",
-                "C": "a circle",
-                "D": "a hyperbola"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 2,
-            "question": "If \u03c9 is cube root of unity, then (1+\u03c9\u2212\u03c9\u00b2)\u2077 = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u2212128\u03c9\u00b2",
-                "B": "128\u03c9",
-                "C": "128\u03c9\u00b2",
-                "D": "\u2212128\u03c9"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^19 * (1-x)^14 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "35",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 3
-        },
-        {
-            "id": 4,
-            "question": "The complex number z such that |z-1| = |z+1| = |z-i| is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0",
-                "B": "1 + i",
-                "C": "i",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 5,
-            "question": "What is the multiplicative inverse of 3 + 4i?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "3/25 - 4/25 i",
-                "B": "3/25 + 4/25 i",
-                "C": "3 - 4i",
-                "D": "1/3 + 1/4 i"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "If arg((z - a) / (z - b)) = \u03c0/2, the locus of z is a ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Circle",
-                "B": "Straight line",
-                "C": "Parabola",
-                "D": "Hyperbola"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the vectors a = 19i + 6j and b = 7i - j are perpendicular, find the value of 19*7.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "6",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": 7
-        },
-        {
-            "question": "If the matrix A is [[12, 13], [0, 8]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "208",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[144, 260], [0, 64]]. Trace is sum of diagonal elements: 144 + 64.",
-            "id": 8
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(18x) / tan(20x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "18/20",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 18/20.",
-            "id": 9
-        },
-        {
-            "question": "If the matrix A is [[2, 17], [0, 3]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "13",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[4, 85], [0, 9]]. Trace is sum of diagonal elements: 4 + 9.",
-            "id": 10
-        },
-        {
-            "question": "If the matrix A is [[19, 2], [0, 6]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "397",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[361, 50], [0, 36]]. Trace is sum of diagonal elements: 361 + 36.",
-            "id": 11
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(6x) / tan(11x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "6/11",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 6/11.",
-            "id": 12
-        },
-        {
-            "id": 13,
-            "question": "Logarithm of a complex number z = re^{i\u03b8} is log(z) = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "log r + i\u03b8",
-                "B": "log r - i\u03b8",
-                "C": "r log \u03b8",
-                "D": "e^{r\u03b8}"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 14,
-            "question": "If z = cos \u03b8 + i sin \u03b8, then (1+z)/(1-z) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "i cot(\u03b8/2)",
-                "B": "i tan(\u03b8/2)",
-                "C": "cot(\u03b8/2)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 15,
-            "question": "The locus of z satisfying |2z \u2212 3i| = 3 is a circle with radius?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "3/2",
-                "B": "3",
-                "C": "9/4",
-                "D": "2/3"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 16,
-            "question": "Number of complex numbers z with |z|=1 and z\u00b2 is real is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "4",
-                "B": "2",
-                "C": "6",
-                "D": "8"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "If the vectors a = 4i + 19j and b = 9i - j are perpendicular, find the value of 4*9.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "19",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": 17
-        },
-        {
-            "question": "If the matrix A is [[8, 12], [0, 3]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "73",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[64, 132], [0, 9]]. Trace is sum of diagonal elements: 64 + 9.",
-            "id": 18
-        },
-        {
-            "id": 19,
-            "question": "Any complex number analytic function f(z) = u + iv satisfies the ______ equations.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Cauchy-Riemann",
-                "B": "Laplace",
-                "C": "Navier-Stokes",
-                "D": "Euler-Lagrange"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "If |z-1|/|z+1| = 1, the locus of z is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Imaginary axis",
-                "B": "Real axis",
-                "C": "Unit circle",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  26,
+                          "question":  "Find the largest value of |z| if |z - 4/z| = 2.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "√5 + 1",
+                                          "B":  "√5 - 1",
+                                          "C":  "√3 + 1",
+                                          "D":  "2"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  27,
+                          "question":  "The locus of points z satisfying arg(z) = π/4 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Ray y = x, x \u003e 0",
+                                          "B":  "Line y = x",
+                                          "C":  "Circle",
+                                          "D":  "Parabola"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  28,
+                          "question":  "If arg(z) = π/4 and |z| = √2, then z = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1+i",
+                                          "B":  "1−i",
+                                          "C":  "i+1/√2",
+                                          "D":  "√2 + i"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  29,
+                          "question":  "The amplitude of -1 - i√3 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "-2π/3",
+                                          "B":  "2π/3",
+                                          "C":  "π/3",
+                                          "D":  "-π/3"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  30,
+                          "question":  "If the area of the triangle on the Argand plane formed by the points z, iz, and z+iz is 50, then |z| is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "10",
+                                          "B":  "5",
+                                          "C":  "√50",
+                                          "D":  "20"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard"
+                      },
+                      {
+                          "id":  31,
+                          "question":  "The conjugate of (2+3i)/(3−4i) is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(6−17i)/25",
+                                          "B":  "(6+17i)/25",
+                                          "C":  "(−6+17i)/25",
+                                          "D":  "(−6−17i)/25"
+                                      },
+                          "answer":  "B",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  32,
+                          "question":  "The locus of z satisfying Re(z²) = 0 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Line y = ±x",
+                                          "B":  "Circle",
+                                          "C":  "Parabola",
+                                          "D":  "Hyperbola"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  33,
+                          "question":  "Coefficient of xⁿ in (1+x+x²+... ) is always associated with binomial expansion of ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(1-x)⁻¹",
+                                          "B":  "(1+x)⁻¹",
+                                          "C":  "(1-x)⁻²",
+                                          "D":  "(1+x)⁻²"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  34,
+                          "question":  "If |z-2i| = |z+2i|, the locus of z is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Real axis",
+                                          "B":  "Imaginary axis",
+                                          "C":  "Line y = 2",
+                                          "D":  "Circle"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  35,
+                          "question":  "The value of arg(i) + arg(-i) is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "0",
+                                          "B":  "π",
+                                          "C":  "π/2",
+                                          "D":  "2π"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  36,
+                          "question":  "Simplified value of ω¹⁰ + ω²⁰ is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "-1",
+                                          "B":  "1",
+                                          "C":  "0",
+                                          "D":  "ω"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  37,
+                          "question":  "The value of i + i² + i³ + ... + i⁴⁰⁰ is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "0",
+                                          "C":  "i",
+                                          "D":  "-1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  38,
+                          "question":  "If |z − 4| \u003c |z − 2|, then Re(z) \u003e ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "3",
+                                          "B":  "2",
+                                          "C":  "4",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  39,
+                          "question":  "If z₁, z₂, z₃ are roots of z³ - 3z² + 3z + 7 = 0, then the centroid of the triangle formed by them is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "0",
+                                          "C":  "i",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard"
+                      },
+                      {
+                          "id":  40,
+                          "question":  "The number of real solutions of the equation |z|² - 2iz + (2i-1) = 0 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "0",
+                                          "C":  "2",
+                                          "D":  "Infinite"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard"
+                      },
+                      {
+                          "id":  41,
+                          "question":  "If ω is a complex cube root of unity, then the value of (1+ω)(1+ω²)(1+ω⁴)(1+ω⁸) is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "0",
+                                          "C":  "ω",
+                                          "D":  "9"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard"
+                      },
+                      {
+                          "id":  42,
+                          "question":  "The number of complex numbers z satisfying |z| = 1 and Re((1-iz)/(1+iz)) = 0 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "1",
+                                          "C":  "0",
+                                          "D":  "Infinite"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard"
+                      },
+                      {
+                          "id":  43,
+                          "question":  "The locus of z satisfying |z-i| + |z+i| = 4 is represented by the equation ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "x²/3 + y²/4 = 1",
+                                          "B":  "x²/4 + y²/3 = 1",
+                                          "C":  "x²/16 + y²/15 = 1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard"
+                      },
+                      {
+                          "id":  44,
+                          "question":  "If z = r·e^(iθ), then |e^(iz)| = ?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "e^(−r sin θ)",
+                                          "B":  "e^(r cos θ)",
+                                          "C":  "1",
+                                          "D":  "e^r"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  45,
+                          "question":  "If |z-1| ≤ 2 and |z-2| ≤ |z-4|, the area of the common region in the complex plane is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2π/3 + √3",
+                                          "B":  "π",
+                                          "C":  "2π",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard"
+                      },
+                      {
+                          "id":  46,
+                          "question":  "If arg(z) \u003c 0, then the value of arg(-z) - arg(z) is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "π",
+                                          "B":  "-π",
+                                          "C":  "π/2",
+                                          "D":  "2π"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard"
+                      },
+                      {
+                          "id":  47,
+                          "question":  "Finding the maximum value of |z| given |z - 3/z| = 2 leads to |z| = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "√3 + 1",
+                                          "B":  "√3 - 1",
+                                          "C":  "2",
+                                          "D":  "√5 + 1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard"
+                      },
+                      {
+                          "id":  48,
+                          "question":  "The sum of the roots of (z+1)ⁿ = (z-1)ⁿ is always ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "0",
+                                          "B":  "n",
+                                          "C":  "n-1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard"
+                      },
+                      {
+                          "id":  49,
+                          "question":  "The value of the sum Σ_{k=1}^{10} (sin(2kπ/11) + i cos(2kπ/11)) is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "-i",
+                                          "B":  "i",
+                                          "C":  "1",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard"
+                      },
+                      {
+                          "id":  50,
+                          "question":  "The principal argument of (−1 − i) is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "−3π/4",
+                                          "B":  "3π/4",
+                                          "C":  "−π/4",
+                                          "D":  "5π/4"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      }
+                  ]
 }

@@ -1,311 +1,384 @@
-{
-    "questions": [
-        {
-            "question": "Equation of motion v\u00b2 = u\u00b2 + ______.",
-            "options": {
-                "A": "2as",
-                "B": "at",
-                "C": "0.5at\u00b2",
-                "D": "None"
-            },
-            "answer": "A",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "pyq": false,
-            "tag": "hard",
-            "difficulty": "hard",
-            "id": 1
-        },
-        {
-            "question": "A body starts from rest. Distance covered in n-th second is s_n = ______.",
-            "options": {
-                "A": "u + 0.5 a (2n-1)",
-                "B": "u + a n",
-                "C": "None",
-                "D": "u + a(2n-1)"
-            },
-            "answer": "A",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "pyq": false,
-            "tag": "hard",
-            "difficulty": "hard",
-            "id": 2
-        },
-        {
-            "question": "A car moves at 40 m/s and brakes to stop in 4 seconds. The acceleration is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "-10.0 m/s^2",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "a = (v_f - v_i)/t = (0 - 40)/4.",
-            "id": 3
-        },
-        {
-            "id": 4,
-            "question": "If x = at\u00b2, acceleration is 2a.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 5,
-            "question": "Inertial frame? yes. frame which is not accelerated.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "An object of mass 1 kg is rotating in a circle of radius 2 m with speed 32 m/s. The centripetal force is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "512.0 N",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "F = mv^2/r = 1 * 1024 / 2.",
-            "id": 6
-        },
-        {
-            "id": 7,
-            "question": "Ratio of s1 : s2 : s3 for free fall in equal times? yes. 1 : 3 : 5.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 8,
-            "question": "Ratio of speeds? no. Replaced: if two bodies are dropped from h1 and h2, ratio of times is \u221a(h1/h2).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "v=3t\u00b2-6t m/s. Particle at rest at t=",
-            "difficulty": "hard",
-            "pyq": true,
-            "options": {
-                "A": "0s and 2s",
-                "B": "1s and 3s",
-                "C": "2s and 3s",
-                "D": "0s only"
-            },
-            "answer": "A",
-            "tag": "pyq",
-            "id": 9
-        },
-        {
-            "id": 10,
-            "question": "If a body covers half distance at v1 and half at v2, Vavg = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2 v1 v2 / (v1 + v2)",
-                "B": "(v1+v2) / 2",
-                "C": "v1 v2",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 11,
-            "question": "If displacement x = at\u00b2 + bt + c, velocity at t=0 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "b",
-                "B": "a",
-                "C": "c",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Time of ascent is equal to time of descent in vacuum. True or False?",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "Only for small h",
-                "D": "None"
-            },
-            "answer": "A",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "pyq": false,
-            "tag": "hard",
-            "difficulty": "hard",
-            "id": 12
-        },
-        {
-            "question": "Can a body have zero velocity and non-zero acceleration?",
-            "options": {
-                "A": "Yes (at max height)",
-                "B": "No",
-                "C": "Only in circular motion",
-                "D": "None"
-            },
-            "answer": "A",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "pyq": false,
-            "tag": "hard",
-            "difficulty": "hard",
-            "id": 13
-        },
-        {
-            "question": "Wait? no. Replaced: kinematic equations are valid for ______ acceleration.",
-            "options": {
-                "A": "Constant",
-                "B": "Variable",
-                "C": "Zero only",
-                "D": "None"
-            },
-            "answer": "A",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "pyq": false,
-            "tag": "hard",
-            "difficulty": "hard",
-            "id": 14
-        },
-        {
-            "question": "Equation of motion s = ut + ______.",
-            "options": {
-                "A": "0.5 a t\u00b2",
-                "B": "v t",
-                "C": "a t",
-                "D": "None"
-            },
-            "answer": "A",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "pyq": false,
-            "tag": "hard",
-            "difficulty": "hard",
-            "id": 15
-        },
-        {
-            "question": "A car moves at 85 m/s and brakes to stop in 1 seconds. The acceleration is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "-85.0 m/s^2",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "a = (v_f - v_i)/t = (0 - 85)/1.",
-            "id": 16
-        },
-        {
-            "question": "Is displacement a scalar or vector?",
-            "options": {
-                "A": "Vector",
-                "B": "Scalar",
-                "C": "None",
-                "D": "Depends on reference"
-            },
-            "answer": "A",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "pyq": false,
-            "tag": "hard",
-            "difficulty": "hard",
-            "id": 17
-        },
-        {
-            "question": "An object of mass 6 kg is rotating in a circle of radius 2 m with speed 51 m/s. The centripetal force is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "7803.0 N",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "F = mv^2/r = 6 * 2601 / 2.",
-            "id": 18
-        },
-        {
-            "question": "A car moves at 13 m/s and brakes to stop in 3 seconds. The acceleration is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "-4.333333333333333 m/s^2",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "a = (v_f - v_i)/t = (0 - 13)/3.",
-            "id": 19
-        },
-        {
-            "question": "Wait? no. Replaced: if velocity is constant, acceleration is ______.",
-            "options": {
-                "A": "Zero",
-                "B": "Constant",
-                "C": "Increasing",
-                "D": "None"
-            },
-            "answer": "A",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "pyq": false,
-            "tag": "hard",
-            "difficulty": "hard",
-            "id": 20
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "question":  "Is displacement a scalar or vector?",
+                          "options":  {
+                                          "A":  "Vector",
+                                          "B":  "Scalar",
+                                          "C":  "None",
+                                          "D":  "Depends on reference"
+                                      },
+                          "answer":  "A",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "difficulty":  "hard",
+                          "id":  26
+                      },
+                      {
+                          "question":  "A car moves at 13 m/s and brakes to stop in 3 seconds. The acceleration is:",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "-4.333333333333333 m/s^2",
+                                          "B":  "10",
+                                          "C":  "5",
+                                          "D":  "20"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use standard physics formulas.",
+                          "solution":  "a = (v_f - v_i)/t = (0 - 13)/3.",
+                          "id":  27
+                      },
+                      {
+                          "question":  "Wait? no. Replaced: if velocity is constant, acceleration is ______.",
+                          "options":  {
+                                          "A":  "Zero",
+                                          "B":  "Constant",
+                                          "C":  "Increasing",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "difficulty":  "hard",
+                          "id":  28
+                      },
+                      {
+                          "id":  29,
+                          "question":  "A body moves 3m North, 4m East. net displacement is ______ m.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "5",
+                                          "B":  "1",
+                                          "C":  "7",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "A car moves at 56 m/s and brakes to stop in 1 seconds. The acceleration is:",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "-56.0 m/s^2",
+                                          "B":  "10",
+                                          "C":  "5",
+                                          "D":  "20"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use standard physics formulas.",
+                          "solution":  "a = (v_f - v_i)/t = (0 - 56)/1.",
+                          "id":  30
+                      },
+                      {
+                          "question":  "Average velocity = Displacement / ______.",
+                          "options":  {
+                                          "A":  "Time",
+                                          "B":  "Distance",
+                                          "C":  "Speed",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "difficulty":  "hard",
+                          "id":  31
+                      },
+                      {
+                          "question":  "Velocity of a body thrown upward is ______ at maximum height.",
+                          "options":  {
+                                          "A":  "Zero",
+                                          "B":  "Maximum",
+                                          "C":  "u/2",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "difficulty":  "hard",
+                          "id":  32
+                      },
+                      {
+                          "id":  33,
+                          "question":  "Wait? no. Replaced: if velocity is constant, average velocity = instantaneous velocity.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "A car moves at 45 m/s and brakes to stop in 5 seconds. The acceleration is:",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "-9.0 m/s^2",
+                                          "B":  "10",
+                                          "C":  "5",
+                                          "D":  "20"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use standard physics formulas.",
+                          "solution":  "a = (v_f - v_i)/t = (0 - 45)/5.",
+                          "id":  34
+                      },
+                      {
+                          "question":  "A car moves at 32 m/s and brakes to stop in 4 seconds. The acceleration is:",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "-8.0 m/s^2",
+                                          "B":  "10",
+                                          "C":  "5",
+                                          "D":  "20"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use standard physics formulas.",
+                          "solution":  "a = (v_f - v_i)/t = (0 - 32)/4.",
+                          "id":  35
+                      },
+                      {
+                          "id":  36,
+                          "question":  "A particle moves from x=2 to x=8 and back to x=5. displacement is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "3",
+                                          "B":  "6",
+                                          "C":  "9",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  37,
+                          "question":  "Distance in the above motion is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "9",
+                                          "B":  "3",
+                                          "C":  "11",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "A car moves at 47 m/s and brakes to stop in 4 seconds. The acceleration is:",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "-11.75 m/s^2",
+                                          "B":  "10",
+                                          "C":  "5",
+                                          "D":  "20"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use standard physics formulas.",
+                          "solution":  "a = (v_f - v_i)/t = (0 - 47)/4.",
+                          "id":  38
+                      },
+                      {
+                          "id":  39,
+                          "question":  "If v vs t graph is a straight line parallel to t-axis, acceleration is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Zero",
+                                          "B":  "Constant",
+                                          "C":  "Infinity",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  40,
+                          "question":  "Relative velocity of two cars moving in same direction with v1 and v2 is |v1 - v2|.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Average speed = Total distance / ______.",
+                          "options":  {
+                                          "A":  "Total time",
+                                          "B":  "Average velocity",
+                                          "C":  "None",
+                                          "D":  "Mass"
+                                      },
+                          "answer":  "A",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "difficulty":  "hard",
+                          "id":  41
+                      },
+                      {
+                          "id":  42,
+                          "question":  "If s ∝ t², acceleration is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Constant",
+                                          "B":  "Increasing",
+                                          "C":  "Zero",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "x=t³-6t²+9t+5. Body at rest at t=",
+                          "difficulty":  "hard",
+                          "pyq":  true,
+                          "options":  {
+                                          "A":  "1s and 3s",
+                                          "B":  "2s and 4s",
+                                          "C":  "0s and 6s",
+                                          "D":  "3s and 6s"
+                                      },
+                          "answer":  "A",
+                          "tag":  "pyq",
+                          "id":  43
+                      },
+                      {
+                          "id":  44,
+                          "question":  "Displacement is path-independent.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  45,
+                          "question":  "Velocity of fall from height H is √(2gH).",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  46,
+                          "question":  "For a body starting from rest, s1 : s2 : s3 in successive equal times is 1 : 3 : 5 (Galileo\u0027s law).",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  47,
+                          "question":  "Kinematics? no. Replaced: time of ascent = time of descent in absence of air resistance.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  48,
+                          "question":  "If s ∝ t², then velocity vs t graph is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Straight line through origin",
+                                          "B":  "Curve",
+                                          "C":  "Horizontal line",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Displacement is the ______ distance between two points.",
+                          "options":  {
+                                          "A":  "Shortest",
+                                          "B":  "Longest",
+                                          "C":  "Total",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "difficulty":  "hard",
+                          "id":  49
+                      },
+                      {
+                          "id":  50,
+                          "question":  "Total? no. Replaced: distance is a path-dependent quantity.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      }
+                  ]
 }

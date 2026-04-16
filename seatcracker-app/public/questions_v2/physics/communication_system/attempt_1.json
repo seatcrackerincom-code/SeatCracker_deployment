@@ -1,441 +1,382 @@
-{
-    "questions": [
-        {
-            "question": "The escape velocity on a planet with mass 6M and radius 1R is how many times the Earth's escape velocity?",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2.45",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(6/1).",
-            "id": 1
-        },
-        {
-            "id": 2,
-            "question": "Geostationary satellites are used for TV and data comm. yes.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "A car moves at 62 m/s and brakes to stop in 5 seconds. The acceleration is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "-12.4 m/s^2",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "a = (v_f - v_i)/t = (0 - 62)/5.",
-            "id": 3
-        },
-        {
-            "id": 4,
-            "question": "Wait? no. Replaced: if antenna height is 20m, LOS distance is approx 16 km.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 5,
-            "question": "Frequency Modulation (FM) is more immune to noise than AM? yes.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "Wait? no. Replaced: if signal freq is 1MHz, antenna of size 75m is good (approx \u03bb/4).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Which of the following is NOT a component of a communication system?",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Transducer",
-                "B": "Transmitter",
-                "C": "Channel",
-                "D": "None"
-            },
-            "answer": "D",
-            "pyq": false,
-            "tag": "hard",
-            "id": 7
-        },
-        {
-            "question": "A capacitor of 2 microfarads is charged to 98 volts. The energy stored is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "9604.0 microJoules",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "E = 1/2 CV^2 = 0.5 * 2 * 9604.",
-            "id": 8
-        },
-        {
-            "question": "Digital signals are transmitted as ______ of binary values.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Pulses",
-                "B": "Waves",
-                "C": "Harmonics",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 9
-        },
-        {
-            "id": 10,
-            "question": "Wait? no. Replaced: optical fiber communication is less affected by EMI.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "An object of mass 4 kg is rotating in a circle of radius 1 m with speed 58 m/s. The centripetal force is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "13456.0 N",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "F = mv^2/r = 4 * 3364 / 1.",
-            "id": 11
-        },
-        {
-            "question": "The escape velocity on a planet with mass 1M and radius 2R is how many times the Earth's escape velocity?",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "0.71",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(1/2).",
-            "id": 12
-        },
-        {
-            "id": 13,
-            "question": "Wait? no. Replaced: sky wave cannot be used for frequencies above 30 MHz because they pass through ionosphere.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "A car moves at 13 m/s and brakes to stop in 4 seconds. The acceleration is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "-3.25 m/s^2",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "a = (v_f - v_i)/t = (0 - 13)/4.",
-            "id": 14
-        },
-        {
-            "id": 15,
-            "question": "Wait? no. Replaced: total power in AM wave Pto = Pc (1 + m\u00b2/2).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 16,
-            "question": "Wait? no. Replaced: if m=0.5, Pin power is 1.125 Pc.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "A car moves at 41 m/s and brakes to stop in 5 seconds. The acceleration is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "-8.2 m/s^2",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "a = (v_f - v_i)/t = (0 - 41)/5.",
-            "id": 17
-        },
-        {
-            "question": "A car moves at 37 m/s and brakes to stop in 3 seconds. The acceleration is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "-12.333333333333334 m/s^2",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "a = (v_f - v_i)/t = (0 - 37)/3.",
-            "id": 18
-        },
-        {
-            "question": "A car moves at 47 m/s and brakes to stop in 2 seconds. The acceleration is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "-23.5 m/s^2",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "a = (v_f - v_i)/t = (0 - 47)/2.",
-            "id": 19
-        },
-        {
-            "question": "An object of mass 9 kg is rotating in a circle of radius 1 m with speed 98 m/s. The centripetal force is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "86436.0 N",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "F = mv^2/r = 9 * 9604 / 1.",
-            "id": 20
-        },
-        {
-            "question": "A capacitor of 10 microfarads is charged to 47 volts. The energy stored is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "11045.0 microJoules",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "E = 1/2 CV^2 = 0.5 * 10 * 2209.",
-            "id": "communication_system_21"
-        },
-        {
-            "question": "The escape velocity on a planet with mass 5M and radius 3R is how many times the Earth's escape velocity?",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "1.29",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(5/3).",
-            "id": "communication_system_22"
-        },
-        {
-            "question": "An object of mass 4 kg is rotating in a circle of radius 5 m with speed 34 m/s. The centripetal force is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "924.8 N",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "F = mv^2/r = 4 * 1156 / 5.",
-            "id": "communication_system_23"
-        },
-        {
-            "question": "An object of mass 7 kg is rotating in a circle of radius 1 m with speed 88 m/s. The centripetal force is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "54208.0 N",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "F = mv^2/r = 7 * 7744 / 1.",
-            "id": "communication_system_24"
-        },
-        {
-            "question": "A car moves at 39 m/s and brakes to stop in 1 seconds. The acceleration is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "-39.0 m/s^2",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "a = (v_f - v_i)/t = (0 - 39)/1.",
-            "id": "communication_system_25"
-        },
-        {
-            "question": "A capacitor of 8 microfarads is charged to 83 volts. The energy stored is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "27556.0 microJoules",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "E = 1/2 CV^2 = 0.5 * 8 * 6889.",
-            "id": "communication_system_26"
-        },
-        {
-            "question": "An object of mass 8 kg is rotating in a circle of radius 2 m with speed 59 m/s. The centripetal force is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "13924.0 N",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "F = mv^2/r = 8 * 3481 / 2.",
-            "id": "communication_system_27"
-        },
-        {
-            "question": "A capacitor of 3 microfarads is charged to 40 volts. The energy stored is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2400.0 microJoules",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "E = 1/2 CV^2 = 0.5 * 3 * 1600.",
-            "id": "communication_system_28"
-        },
-        {
-            "question": "An object of mass 7 kg is rotating in a circle of radius 3 m with speed 80 m/s. The centripetal force is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "14933.33 N",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "F = mv^2/r = 7 * 6400 / 3.",
-            "id": "communication_system_29"
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  1,
+                          "question":  "Wait? no. Replaced: if antenna height is 20m, LOS distance is approx 16 km.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  2,
+                          "question":  "Frequency Modulation (FM) is more immune to noise than AM? yes.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  3,
+                          "question":  "Wait? no. Replaced: if signal freq is 1MHz, antenna of size 75m is good (approx λ/4).",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Which of the following is NOT a component of a communication system?",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Transducer",
+                                          "B":  "Transmitter",
+                                          "C":  "Channel",
+                                          "D":  "None"
+                                      },
+                          "answer":  "D",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  4
+                      },
+                      {
+                          "question":  "Digital signals are transmitted as ______ of binary values.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Pulses",
+                                          "B":  "Waves",
+                                          "C":  "Harmonics",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  5
+                      },
+                      {
+                          "id":  6,
+                          "question":  "Wait? no. Replaced: optical fiber communication is less affected by EMI.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  7,
+                          "question":  "Wait? no. Replaced: sky wave cannot be used for frequencies above 30 MHz because they pass through ionosphere.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  8,
+                          "question":  "Wait? no. Replaced: total power in AM wave Pto = Pc (1 + m²/2).",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  9,
+                          "question":  "Wait? no. Replaced: if m=0.5, Pin power is 1.125 Pc.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  10,
+                          "question":  "Multiplexing includes FDM and TDM. yes.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  11,
+                          "question":  "Ground wave coverage is limited by earth curvature and absorption. yes.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "In pulse code modulation (PCM), signals are ______ into discrete values.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Quantized",
+                                          "B":  "Amplified",
+                                          "C":  "Filtered",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  12
+                      },
+                      {
+                          "id":  13,
+                          "question":  "Digital communication? yes. reduces noise and improves reliability.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  14,
+                          "question":  "Wait? no. Replaced: if modulating signal is u(t) = Am sin ωmt, current modulation is m.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  15,
+                          "question":  "Short wave (SW) bands communication is via sky wave. yes.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  16,
+                          "question":  "Antenna radiation is efficient when its size is comparable to wavelength. yes.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  17,
+                          "question":  "Radio? no. Replaced: AM radio uses 530 kHz to 1710 kHz frequency range.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  18,
+                          "question":  "Wait? no. Replaced: ionosphere acts as mirror for radio waves \u003c 30 MHz.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  19,
+                          "question":  "Wait? no. Replaced: space wave refers to VHF and above.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  20,
+                          "question":  "Modulation? no. Replaced: it allows multiplexing (sending multiple signals on one channel).",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  21,
+                          "question":  "FM radio uses 88 MHz to 108 MHz range. yes.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  22,
+                          "question":  "Wait? no. Replaced: m = (Vmax - Vmin) / (Vmax + Vmin). True?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  23,
+                          "question":  "Wait? no. Replaced: atmospheric noise is more significant at low frequencies.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  24,
+                          "question":  "Wait? no. Replaced: GPS uses space wave propagation.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  25,
+                          "question":  "Square law modulator used to produce AM. yes.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      }
+                  ]
 }

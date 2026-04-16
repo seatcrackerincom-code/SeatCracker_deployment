@@ -1,309 +1,387 @@
-{
-  "questions": [
-    {
-      "id": 1,
-      "question": "For a binomial expansion (1+x)ⁿ where n is a negative integer or fraction, we often use partial fractions if the expression is given as a ______ before expansion.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Rational function",
-        "B": "Polynomial",
-        "C": "Transcendental function",
-        "D": "Differential equation"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 2,
-      "question": "When resolving into partial fractions for finding an integral, (Ax + B) / (ax² + bx + c) is usually further split because the Ax term requires ______, and the B term requires ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Logarithmic substitution, completing the square (arctan)",
-        "B": "Partial fractions again, differentiation",
-        "C": "Sine, Cosine",
-        "D": "Binomial theorem, Taylor series"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 3,
-      "question": "Let x² / ((x²+1)(x²+4)). We can substitute y = x² to turn the fraction into ______, making it easier to resolve.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "y / ((y+1)(y+4))",
-        "B": "y² / ((y+1)(y+4))",
-        "C": "1 / ((y+1)(y+4))",
-        "D": "y / (y²+5y+4)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 4,
-      "question": "For (x³+x²)/(x³-x²), polynomial division gives 1 + ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(2x²) / (x³-x²)",
-        "B": "x² / (x³-x²)",
-        "C": "2x² / (x³+x²)",
-        "D": "1 / (x-1)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 5,
-      "question": "If denominator has a factor (x - 1)ⁿ, the partial fractions will be sum from k=1 to n of A_k / (x - 1)^k. Only A_n can be simply found by ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Cover-up rule directly (multiply (x-1)ⁿ and put x=1)",
-        "B": "Setting x=0",
-        "C": "Comparing coefficients of highest power",
-        "D": "Integration"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 6,
-      "question": "The partial fraction of 1/(x(x+1)) is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1/x − 1/(x+1)",
-        "B": "1/x + 1/(x+1)",
-        "C": "−1/x + 1/(x+1)",
-        "D": "1/(x(x+1))"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 7,
-      "question": "If the roots of the denominator are α₁, α₂, ..., α_n, and P(α_i) ≠ 0, and Q(x) = (x-α₁)(x-α₂)...(x-α_n), then the term A_i/(x-α_i) has A_i = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "P(α_i) / Q'(α_i)",
-        "B": "Q(α_i) / P'(α_i)",
-        "C": "P'(α_i) / Q(α_i)",
-        "D": "P(α_i) Q'(α_i)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 8,
-      "question": "Partial fractions of (3x+1)/((x+1)²) = A/(x+1) + B/(x+1)². B = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "−2",
-        "B": "2",
-        "C": "3",
-        "D": "1"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 9,
-      "question": "Fractions like 1/(x(x+1)(x+2)) often form telescoping series sums in problems. Summing them up algebraically depends completely on the ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Partial fraction decomposition",
-        "B": "Arithmetic Progression formulas",
-        "C": "Geometric Progression limits",
-        "D": "Binomial expansion"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 10,
-      "question": "Because complex roots appear in conjugate pairs, the linear partial fractions C/(x-z_1) + C*/(x-z_1*) combine to form a real partial fraction with a ______ denominator.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Quadratic",
-        "B": "Linear",
-        "C": "Cubic",
-        "D": "Constant"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 11,
-      "question": "To integrate ∫ P(x)/Q(x) dx efficiently using elementary functions, the rational function MUST be ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Expressed as partial fractions after polynomial division if improper",
-        "B": "Expanded via Taylor series",
-        "C": "Substituted with trigonometric terms directly",
-        "D": "Integrated by parts repeatedly"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 12,
-      "question": "Consider 1/((x-1)(x-2)...(x-n)). The coefficient of 1/(x-r) is 1 / [(-1)^(n-r) * ______].",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(r-1)! (n-r)!",
-        "B": "r! n!",
-        "C": "(n-1)!",
-        "D": "(n-r)!"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 13,
-      "question": "If degree of P(x) is exactly equal to Q(x), the polynomial division yields a ______ plus a proper fraction.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Constant",
-        "B": "Linear polynomial x",
-        "C": "Zero",
-        "D": "Rational function"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 14,
-      "question": "For 1/(x⁴-1), the factorization of the denominator is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(x-1)(x+1)(x²+1)",
-        "B": "(x²-1)(x²+1)²",
-        "C": "(x-1)⁴",
-        "D": "(x-1)²(x+1)²"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 15,
-      "question": "The identity A_i = P(α_i) / Q'(α_i) is known as the expansion theorem for partial fractions or ______ rule.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Heaviside's",
-        "B": "L'Hopital's",
-        "C": "Taylor's",
-        "D": "Cramer's"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 16,
-      "question": "If degree of numerator ≥ degree of denominator, first step is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "polynomial long division",
-        "B": "direct partial fraction",
-        "C": "multiply numerator and denominator",
-        "D": "factor numerator"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 17,
-      "question": "For an expression f(x)/Q(x), if Q(x) is expanded as xⁿ + ..., the number of unknown partial fraction constants exactly equals the ______ of Q(x).",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Degree (n)",
-        "B": "Number of factors",
-        "C": "Leading coefficient",
-        "D": "Constant term"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 18,
-      "question": "(x²+1)/((x+1)(x²+x+1)) = A/(x+1) + (Bx+C)/(x²+x+1). Find A.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1",
-        "B": "2",
-        "C": "−1",
-        "D": "1/3"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 19,
-      "question": "When Q(x) has complex roots, they occur in ______ pairs if the polynomial has real coefficients.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Conjugate",
-        "B": "Reciprocal",
-        "C": "Negative",
-        "D": "Orthogonal"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 20,
-      "question": "Partial fraction of x²/((x−1)(x+1)²) has form?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "A/(x−1) + B/(x+1) + C/(x+1)²",
-        "B": "(Ax+B)/(x+1)² + C/(x−1)",
-        "C": "A/(x−1) + B/(x+1)²",
-        "D": "A/(x²−1) + B/(x+1)"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    }
-  ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  26,
+                          "question":  "If the roots of the denominator are Î±â‚, Î±â‚‚, ..., Î±_n, and P(Î±_i) â‰  0, and Q(x) = (x-Î±â‚)(x-Î±â‚‚)...(x-Î±_n), then the term A_i/(x-Î±_i) has A_i = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "P(Î±_i) / Q\u0027(Î±_i)",
+                                          "B":  "Q(Î±_i) / P\u0027(Î±_i)",
+                                          "C":  "P\u0027(Î±_i) / Q(Î±_i)",
+                                          "D":  "P(Î±_i) Q\u0027(Î±_i)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  27,
+                          "question":  "Partial fractions of (3x+1)/((x+1)Â²) = A/(x+1) + B/(x+1)Â². B = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "âˆ’2",
+                                          "B":  "2",
+                                          "C":  "3",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  28,
+                          "question":  "Fractions like 1/(x(x+1)(x+2)) often form telescoping series sums in problems. Summing them up algebraically depends completely on the ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Partial fraction decomposition",
+                                          "B":  "Arithmetic Progression formulas",
+                                          "C":  "Geometric Progression limits",
+                                          "D":  "Binomial expansion"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  29,
+                          "question":  "Because complex roots appear in conjugate pairs, the linear partial fractions C/(x-z_1) + C*/(x-z_1*) combine to form a real partial fraction with a ______ denominator.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Quadratic",
+                                          "B":  "Linear",
+                                          "C":  "Cubic",
+                                          "D":  "Constant"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  30,
+                          "question":  "Consider 1/((x-1)(x-2)...(x-n)). The coefficient of 1/(x-r) is 1 / [(-1)^(n-r) * ______].",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(r-1)! (n-r)!",
+                                          "B":  "r! n!",
+                                          "C":  "(n-1)!",
+                                          "D":  "(n-r)!"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  31,
+                          "question":  "If degree of P(x) is exactly equal to Q(x), the polynomial division yields a ______ plus a proper fraction.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Constant",
+                                          "B":  "Linear polynomial x",
+                                          "C":  "Zero",
+                                          "D":  "Rational function"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  32,
+                          "question":  "For 1/(xâ´-1), the factorization of the denominator is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(x-1)(x+1)(xÂ²+1)",
+                                          "B":  "(xÂ²-1)(xÂ²+1)Â²",
+                                          "C":  "(x-1)â´",
+                                          "D":  "(x-1)Â²(x+1)Â²"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  33,
+                          "question":  "The identity A_i = P(Î±_i) / Q\u0027(Î±_i) is known as the expansion theorem for partial fractions or ______ rule.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Heaviside\u0027s",
+                                          "B":  "L\u0027Hopital\u0027s",
+                                          "C":  "Taylor\u0027s",
+                                          "D":  "Cramer\u0027s"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  34,
+                          "question":  "If degree of numerator â‰¥ degree of denominator, first step is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "polynomial long division",
+                                          "B":  "direct partial fraction",
+                                          "C":  "multiply numerator and denominator",
+                                          "D":  "factor numerator"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  35,
+                          "question":  "For an expression f(x)/Q(x), if Q(x) is expanded as xâ¿ + ..., the number of unknown partial fraction constants exactly equals the ______ of Q(x).",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Degree (n)",
+                                          "B":  "Number of factors",
+                                          "C":  "Leading coefficient",
+                                          "D":  "Constant term"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  36,
+                          "question":  "(xÂ²+1)/((x+1)(xÂ²+x+1)) = A/(x+1) + (Bx+C)/(xÂ²+x+1). Find A.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "2",
+                                          "C":  "âˆ’1",
+                                          "D":  "1/3"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  37,
+                          "question":  "When Q(x) has complex roots, they occur in ______ pairs if the polynomial has real coefficients.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Conjugate",
+                                          "B":  "Reciprocal",
+                                          "C":  "Negative",
+                                          "D":  "Orthogonal"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  38,
+                          "question":  "Partial fraction of xÂ²/((xâˆ’1)(x+1)Â²) has form?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "A/(xâˆ’1) + B/(x+1) + C/(x+1)Â²",
+                                          "B":  "(Ax+B)/(x+1)Â² + C/(xâˆ’1)",
+                                          "C":  "A/(xâˆ’1) + B/(x+1)Â²",
+                                          "D":  "A/(xÂ²âˆ’1) + B/(x+1)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  39,
+                          "question":  "In discrete math, the method of generating functions uses partial fractions extensively to find ______ sequences.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Closed-form formulas for",
+                                          "B":  "Randomly generated",
+                                          "C":  "Roots of",
+                                          "D":  "Derivatives of"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  40,
+                          "question":  "Resolve (xÂ² + 1) / (xâ´ - 1) into partial fractions.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1 / (xÂ² - 1)",
+                                          "B":  "1 / (x-1)(x+1)",
+                                          "C":  "1/2 [1/(x-1) - 1/(x+1)]",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  41,
+                          "question":  "Resolve 1 / (x(xÂ² + 1)) into partial fractions.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1/x - x/(xÂ² + 1)",
+                                          "B":  "1/x + 1/(xÂ² + 1)",
+                                          "C":  "x/(xÂ² + 1)",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  42,
+                          "question":  "The number of undetermined coefficients for 1 / (xÂ² + 1)Â² is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "4",
+                                          "B":  "2",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  43,
+                          "question":  "For (axÂ²+bx+c)/((xâˆ’Î±)(xâˆ’Î²)(xâˆ’Î³)), the partial fraction A at x=Î± is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(aÎ±Â²+bÎ±+c)/((Î±âˆ’Î²)(Î±âˆ’Î³))",
+                                          "B":  "(aÎ±Â²+bÎ±+c)/(Î±âˆ’Î²)",
+                                          "C":  "a/(Î±âˆ’Î²)(Î±âˆ’Î³)",
+                                          "D":  "1/(Î±âˆ’Î²)(Î±âˆ’Î³)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  44,
+                          "question":  "Partial fractions of 2/((xÂ²âˆ’1)) = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1/(xâˆ’1) âˆ’ 1/(x+1)",
+                                          "B":  "1/(xâˆ’1) + 1/(x+1)",
+                                          "C":  "2/(xâˆ’1)(x+1)",
+                                          "D":  "âˆ’1/(xâˆ’1) + 1/(x+1)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  45,
+                          "question":  "The coefficient of 1/(x+2) in partial fractions of (x+1)/((x+2)(x+3)) is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "âˆ’1",
+                                          "B":  "1",
+                                          "C":  "2",
+                                          "D":  "3"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  46,
+                          "question":  "If (xÂ² + 1) / ((x+1)(xÂ²+1)) is resolved, the coefficients are ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "A=1, B=0, C=0",
+                                          "B":  "A=1/2, B=1/2, C=0",
+                                          "C":  "A=1, B=1, C=1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  47,
+                          "question":  "Can (Ax + B) / (xÂ² + 4)Â² be broken down further with real coefficients?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "No, it is already in simplest partial fraction form",
+                                          "B":  "Yes, into linear factors",
+                                          "C":  "Yes, into A/(xÂ²+4) + B/(xÂ²+4)Â²",
+                                          "D":  "Yes, with purely rational numbers"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  48,
+                          "question":  "When (1/yÂ² + 2/yÂ³) is put back in terms of x, you immediately get the partial fractions without undetermined coefficients. This is substitution method. y = ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "x - 1",
+                                          "B":  "x + 1",
+                                          "C":  "x",
+                                          "D":  "xÂ²"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  49,
+                          "question":  "Substitution xÂ² = y can be used to resolve (xÂ²) / (xÂ² + 1)(xÂ² + 2) ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Temporarily for finding coefficients",
+                                          "B":  "Permanently",
+                                          "C":  "Only for improper fractions",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  50,
+                          "question":  "Resolving 1/(xÂ³âˆ’1) into partial fractions. Factors of denominator?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(xâˆ’1)(xÂ²+x+1)",
+                                          "B":  "(xâˆ’1)Â³",
+                                          "C":  "(xâˆ’1)(x+1)Â²",
+                                          "D":  "(xâˆ’1)(x+1)(x+i)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      }
+                  ]
 }

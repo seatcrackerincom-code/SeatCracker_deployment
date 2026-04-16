@@ -1,305 +1,383 @@
-{
-    "questions": [
-        {
-            "question": "The number of moles of solute in 3 Liters of a 0.337 M solution is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "1.0110000000000001",
-                "B": "None",
-                "C": "Decreases",
-                "D": "Stable"
-            },
-            "answer": "A",
-            "hint": "Apply periodic table laws.",
-            "solution": "Moles = Molarity * Volume = 0.337 * 3.",
-            "id": 1
-        },
-        {
-            "question": "The number of moles of solute in 8 Liters of a 0.427 M solution is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "3.416",
-                "B": "None",
-                "C": "Decreases",
-                "D": "Stable"
-            },
-            "answer": "A",
-            "hint": "Apply periodic table laws.",
-            "solution": "Moles = Molarity * Volume = 0.427 * 8.",
-            "id": 2
-        },
-        {
-            "question": "Which of the following graphs is linear for a first-order reaction?",
-            "difficulty": "medium",
-            "pyq": true,
-            "options": {
-                "A": "[A] vs t",
-                "B": "ln[A] vs t",
-                "C": "1/[A] vs t",
-                "D": "[A]\u00b2 vs t"
-            },
-            "answer": "B",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "id": 3,
-            "tag": "pyq"
-        },
-        {
-            "question": "At 469 K, the equilibrium constant Kp for a reaction is 3. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "Increases",
-                "B": "None",
-                "C": "Decreases",
-                "D": "Stable"
-            },
-            "answer": "A",
-            "hint": "Apply periodic table laws.",
-            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
-            "id": 4
-        },
-        {
-            "question": "The number of moles of solute in 5 Liters of a 0.389 M solution is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "1.945",
-                "B": "None",
-                "C": "Decreases",
-                "D": "Stable"
-            },
-            "answer": "A",
-            "hint": "Apply periodic table laws.",
-            "solution": "Moles = Molarity * Volume = 0.389 * 5.",
-            "id": 5
-        },
-        {
-            "id": 6,
-            "question": "Slope of plot ln[R] vs t for first order is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "k",
-                "B": "-k",
-                "C": "2.303 / k",
-                "D": "None"
-            },
-            "answer": "B",
-            "pyq": false
-        },
-        {
-            "id": 7,
-            "question": "Initial rate method is used to find order of reaction.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 8,
-            "question": "The Arrhenius factor (A) has the same units as ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Rate Constant (k)",
-                "B": "Activation Energy",
-                "C": "Temperature",
-                "D": "Rate"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 9,
-            "question": "Collision frequency (Z) is ______ to temperature.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Directly proportional to \u221aT",
-                "B": "Inversely proportional",
-                "C": "No relation",
-                "D": "Constant"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 10,
-            "question": "Number of effective collisions is much smaller than total collisions.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 11,
-            "question": "Unit of rate constant (k) for third order reaction is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "L^2 mol^-2 s^-1",
-                "B": "L mol^-1 s^-1",
-                "C": "s^-1",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 12,
-            "question": "Integrated rate law for decomposition of gaseous N2O5? Replaced: For 1st order, concentration [R] = [Ro] e^(-kt).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 13,
-            "question": "Integrated rate equation for n-th order? Replaced: k = [1 / (n-1)t] * [1/[R]^(n-1) - 1/[Ro]^(n-1)].",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 14,
-            "question": "The rate constant of a reaction at 300K is k. At 310K, it is 2k. \u0394H is ______ than Ea.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Greater",
-                "B": "Lesser",
-                "C": "No direct rule",
-                "D": "Equal"
-            },
-            "answer": "C",
-            "pyq": false
-        },
-        {
-            "id": 15,
-            "question": "A substance with high Activation Energy is ______ at room temperature.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Stable / Unreactive",
-                "B": "Highly reactive",
-                "C": "Gaseous",
-                "D": "Liquid"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 16,
-            "question": "Integrated equation for decomposition of NH3 on Pt at high pressure: Rate = k. This is zero order because surface is saturated.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 17,
-            "question": "Effect of pressure on rate of gaseous reaction? doubling P ______ rate for zero order.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Doubles",
-                "B": "Remains same",
-                "C": "Quadruples",
-                "D": "Halves"
-            },
-            "answer": "B",
-            "pyq": false
-        },
-        {
-            "id": 18,
-            "question": "Doubling P doubles concentration. For 1st order, rate ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Doubles",
-                "B": "Constant",
-                "C": "Halves",
-                "D": "Drops"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 19,
-            "question": "Integrated equation for decomposition of H2O2 is first order.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "Kinetics depends on the path of reaction.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  26,
+                          "question":  "A substance with high Activation Energy is ______ at room temperature.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Stable / Unreactive",
+                                          "B":  "Highly reactive",
+                                          "C":  "Gaseous",
+                                          "D":  "Liquid"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  27,
+                          "question":  "Integrated equation for decomposition of NH3 on Pt at high pressure: Rate = k. This is zero order because surface is saturated.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  28,
+                          "question":  "Effect of pressure on rate of gaseous reaction? doubling P ______ rate for zero order.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Doubles",
+                                          "B":  "Remains same",
+                                          "C":  "Quadruples",
+                                          "D":  "Halves"
+                                      },
+                          "answer":  "B",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  29,
+                          "question":  "Doubling P doubles concentration. For 1st order, rate ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Doubles",
+                                          "B":  "Constant",
+                                          "C":  "Halves",
+                                          "D":  "Drops"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  30,
+                          "question":  "Integrated equation for decomposition of H2O2 is first order.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  31,
+                          "question":  "Kinetics depends on the path of reaction.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "The rate of a reaction doubled when temperature is increased from 27°C to 37°C. What is the activation energy? (R = 8.314 J/mol·K)",
+                          "difficulty":  "hard",
+                          "pyq":  true,
+                          "options":  {
+                                          "A":  "52.89 kJ/mol",
+                                          "B":  "62.32 kJ/mol",
+                                          "C":  "53.6 kJ/mol",
+                                          "D":  "48.2 kJ/mol"
+                                      },
+                          "answer":  "A",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "id":  32,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "Which of the following is NOT a feature of a first-order reaction?",
+                          "difficulty":  "medium",
+                          "pyq":  true,
+                          "options":  {
+                                          "A":  "Half-life is independent of concentration",
+                                          "B":  "Unit of k is s⁻¹",
+                                          "C":  "Half-life is inversely proportional to concentration",
+                                          "D":  "Plot of log[A] vs t is linear"
+                                      },
+                          "answer":  "C",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "id":  33,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  34,
+                          "question":  "For a reaction A → B, [A] decreases linearly with time. The order is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Zero",
+                                          "B":  "First",
+                                          "C":  "Second",
+                                          "D":  "Exponential"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  35,
+                          "question":  "For a reaction A → B, log[A] decreases linearly with time. The order is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Zero",
+                                          "B":  "First",
+                                          "C":  "Second",
+                                          "D":  "None"
+                                      },
+                          "answer":  "B",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  36,
+                          "question":  "Initial concentration [Ro] = 1M, k = 0.01 s^-1 (1st order). t1/2 = ......?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "69.3 s",
+                                          "B":  "100 s",
+                                          "C":  "50 s",
+                                          "D":  "0.693 s"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  37,
+                          "question":  "For First order reaction, time for 75% completion is ______ times t1/2.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "1.5",
+                                          "C":  "3",
+                                          "D":  "4"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  38,
+                          "question":  "For First order reaction, time for 87.5% completion is ______ times t1/2.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "3",
+                                          "C":  "4",
+                                          "D":  "5"
+                                      },
+                          "answer":  "B",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  39,
+                          "question":  "For First order reaction, time for 93.75% completion is ______ times t1/2.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "3",
+                                          "C":  "4",
+                                          "D":  "5"
+                                      },
+                          "answer":  "C",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  40,
+                          "question":  "Ratio of rate constants at two different temperatures is called ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Temperature Coefficient",
+                                          "B":  "Arrhenius factor",
+                                          "C":  "Order",
+                                          "D":  "Van\u0027t Hoff factor"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Half-life of a first order reaction is ______ of initial concentration.",
+                          "difficulty":  "hard",
+                          "options":  {
+                                          "A":  "Independent",
+                                          "B":  "Directly proportional",
+                                          "C":  "Inversely proportional",
+                                          "D":  "Exponentially related"
+                                      },
+                          "answer":  "A",
+                          "id":  41,
+                          "pyq":  false,
+                          "hasDiagram":  false,
+                          "diagram_description":  ""
+                      },
+                      {
+                          "question":  "What is the order of a reaction if its rate constant has the unit of mol⁻² L² s⁻¹?",
+                          "difficulty":  "medium",
+                          "pyq":  true,
+                          "options":  {
+                                          "A":  "First",
+                                          "B":  "Second",
+                                          "C":  "Third",
+                                          "D":  "Zero"
+                                      },
+                          "answer":  "C",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "id":  42,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "The rate constant of a reaction is 1.5 × 10⁻³ mol⁻¹ L s⁻¹. What is the order and unit of rate constant?",
+                          "difficulty":  "medium",
+                          "pyq":  true,
+                          "options":  {
+                                          "A":  "First order, s⁻¹",
+                                          "B":  "Second order, mol⁻¹ L s⁻¹",
+                                          "C":  "Zero order, mol L⁻¹ s⁻¹",
+                                          "D":  "Third order, mol⁻² L² s⁻¹"
+                                      },
+                          "answer":  "B",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "id":  43,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "For a zero order reaction, the plot of [A] vs time is a straight line with slope ______.",
+                          "difficulty":  "hard",
+                          "options":  {
+                                          "A":  "-k",
+                                          "B":  "+k",
+                                          "C":  "1/k",
+                                          "D":  "log k"
+                                      },
+                          "answer":  "A",
+                          "id":  44,
+                          "pyq":  false,
+                          "hasDiagram":  false,
+                          "diagram_description":  ""
+                      },
+                      {
+                          "question":  "The rate constant of a reaction increases 2-3 times for every ______ rise in temperature.",
+                          "difficulty":  "hard",
+                          "options":  {
+                                          "A":  "10 K",
+                                          "B":  "1 K",
+                                          "C":  "100 K",
+                                          "D":  "25 K"
+                                      },
+                          "answer":  "A",
+                          "id":  45,
+                          "pyq":  false,
+                          "hasDiagram":  false,
+                          "diagram_description":  ""
+                      },
+                      {
+                          "question":  "Radioactive decay follows ______ order kinetics.",
+                          "difficulty":  "hard",
+                          "options":  {
+                                          "A":  "First",
+                                          "B":  "Zero",
+                                          "C":  "Second",
+                                          "D":  "Third"
+                                      },
+                          "answer":  "A",
+                          "id":  46,
+                          "pyq":  false,
+                          "hasDiagram":  false,
+                          "diagram_description":  ""
+                      },
+                      {
+                          "question":  "In a multistep reaction, the rate is determined by the ______ step.",
+                          "difficulty":  "hard",
+                          "options":  {
+                                          "A":  "Slowest",
+                                          "B":  "Fastest",
+                                          "C":  "Intermediate",
+                                          "D":  "First"
+                                      },
+                          "answer":  "A",
+                          "id":  47,
+                          "pyq":  false,
+                          "hasDiagram":  false,
+                          "diagram_description":  ""
+                      },
+                      {
+                          "question":  "Inversion of cane sugar is a ______ reaction.",
+                          "difficulty":  "hard",
+                          "options":  {
+                                          "A":  "Pseudo first order",
+                                          "B":  "Second order",
+                                          "C":  "Zero order",
+                                          "D":  "Instantaneous"
+                                      },
+                          "answer":  "A",
+                          "id":  48,
+                          "pyq":  false,
+                          "hasDiagram":  false,
+                          "diagram_description":  ""
+                      },
+                      {
+                          "question":  "Molecularity of a reaction is determined from ______.",
+                          "difficulty":  "hard",
+                          "options":  {
+                                          "A":  "The balanced chemical equation of an elementary step",
+                                          "B":  "Experiments only",
+                                          "C":  "Mechanism",
+                                          "D":  "Rate law"
+                                      },
+                          "answer":  "A",
+                          "id":  49,
+                          "pyq":  false,
+                          "hasDiagram":  false,
+                          "diagram_description":  ""
+                      },
+                      {
+                          "question":  "Ea (acid) \u003e Ea (neutral). Which reaction is faster?",
+                          "difficulty":  "hard",
+                          "options":  {
+                                          "A":  "Neutral",
+                                          "B":  "Acidic",
+                                          "C":  "Both same",
+                                          "D":  "Depends on P"
+                                      },
+                          "answer":  "A",
+                          "id":  50,
+                          "pyq":  false,
+                          "hasDiagram":  false,
+                          "diagram_description":  ""
+                      }
+                  ]
 }

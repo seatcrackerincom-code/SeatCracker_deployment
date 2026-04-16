@@ -1,304 +1,222 @@
-{
-    "questions": [
-        {
-            "id": 1,
-            "question": "The area bounded by the curve y\u00b2 = 4ax and its focal chord x = a is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "8a\u00b2/3 sq units",
-                "B": "4a\u00b2/3 sq units",
-                "C": "2a\u00b2/3 sq units",
-                "D": "a\u00b2 sq units"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 2,
-            "question": "The area bounded by y = e^{-|x|} and the x-axis is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2 sq units",
-                "B": "1 sq unit",
-                "C": "e sq units",
-                "D": "\u221e"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 3,
-            "question": "The area between the curve y = 1/\u221a(1-x\u00b2) and the lines x = 0, x = 1/2 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u03c0/6 sq units",
-                "B": "\u03c0/3 sq units",
-                "C": "\u03c0/4 sq units",
-                "D": "1/2 sq unit"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 4,
-            "question": "Area of the region bounded by y = cos\u00b2x and x-axis from x=0 to x=\u03c0/2 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u03c0/4 sq units",
-                "B": "\u03c0/2 sq units",
-                "C": "1 sq unit",
-                "D": "\u03c0/8 sq units"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 5,
-            "question": "What is the area of the region bounded by y = sin x and y = cos x for x in [0, \u03c0/2]?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2(\u221a2 - 1) sq units",
-                "B": "\u221a2 - 1 sq units",
-                "C": "2\u221a2 sq units",
-                "D": "1 sq unit"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "Find the area common to y\u00b2 = 4x and x\u00b2 = 4y.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "16/3 sq units",
-                "B": "8/3 sq units",
-                "C": "4/3 sq units",
-                "D": "1 sq unit"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 7,
-            "question": "The area bounded by y = x\u2074 and its tangent at (1,1) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "3/2 sq units",
-                "B": "1/2 sq unit",
-                "C": "4/5 sq unit",
-                "D": "None"
-            },
-            "answer": "D",
-            "pyq": false
-        },
-        {
-            "question": "If the vectors a = 3i + 19j and b = 8i - j are perpendicular, find the value of 3*8.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "19",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": 8
-        },
-        {
-            "id": 9,
-            "question": "Area bounded by y = x\u00b2, y = 4 and x = 0 in the first quadrant is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "16/3 sq units",
-                "B": "8/3 sq units",
-                "C": "4/3 sq units",
-                "D": "32/3 sq units"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 10,
-            "question": "If the area bounded by the curve y = kx\u00b2 and the line y = k is 4/3, what is the value of k?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Any positive k",
-                "B": "1",
-                "C": "2",
-                "D": "1/2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(7x) / tan(3x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "7/3",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 7/3.",
-            "id": 11
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(16x) / tan(11x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "16/11",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 16/11.",
-            "id": 12
-        },
-        {
-            "id": 13,
-            "question": "The area bounded by the graph y = [x] from x = 1 to x = 3 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "3 sq units",
-                "B": "2 sq units",
-                "C": "1 sq unit",
-                "D": "4 sq units"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 14,
-            "question": "Determine the area between y\u00b2 = 4x and the line y = 2x.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/3 sq unit",
-                "B": "2/3 sq unit",
-                "C": "1/6 sq unit",
-                "D": "1 sq unit"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 2 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": 15
-        },
-        {
-            "question": "If the matrix A is [[14, 13], [0, 4]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "212",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[196, 234], [0, 16]]. Trace is sum of diagonal elements: 196 + 16.",
-            "id": 16
-        },
-        {
-            "id": 17,
-            "question": "The area between the curve y = tan x, and the lines x = 0, x = \u03c0/3, y = 0 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "log 2",
-                "B": "log 1/2",
-                "C": "\u221a3",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 18,
-            "question": "The region bounded by y = e^x, y = e, and x = 0 has an area of ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1",
-                "B": "e-1",
-                "C": "e",
-                "D": "1/e"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 19,
-            "question": "Find the area of the region bounded by y = |sin x| and the x-axis from 0 to 2\u03c0.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "4 sq units",
-                "B": "2 sq units",
-                "C": "0",
-                "D": "\u03c0 sq units"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "Find the area bounded by the curves y = \u221ax and y = x\u00b3.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "5/12 sq units",
-                "B": "7/12 sq units",
-                "C": "1/4 sq unit",
-                "D": "1/3 sq unit"
-            },
-            "answer": "A",
-            "pyq": false
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "question":  "Area of the region bounded by y = √x and y = x is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1/6",
+                                          "B":  "1/3",
+                                          "C":  "1/2",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  51
+                      },
+                      {
+                          "question":  "Area of region bounded by the curve y = cos x, x-axis, x = 0 and x = 2π is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "4",
+                                          "B":  "2",
+                                          "C":  "0",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  52
+                      },
+                      {
+                          "id":  53,
+                          "question":  "Calculate the area of region bounded by y = 1 - |x| and x-axis.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1 sq unit",
+                                          "B":  "2 sq units",
+                                          "C":  "1/2 sq unit",
+                                          "D":  "4 sq units"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  54,
+                          "question":  "Determine the area bounded by the curve y = x e^{-x} and the x-axis in the interval [0,1].",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1 - 2/e sq units",
+                                          "B":  "1 - 1/e sq units",
+                                          "C":  "2/e sq units",
+                                          "D":  "1/e sq unit"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Find the number of ways to arrange the letters of the word \u0027SUCCESS\u0027 such that the 18 S\u0027s are always together.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "60",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+                          "id":  55
+                      },
+                      {
+                          "id":  56,
+                          "question":  "Determine the area bounded by y = x² and y = x³ for x in [0,1].",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1/12 sq unit",
+                                          "B":  "1/6 sq unit",
+                                          "C":  "1/4 sq unit",
+                                          "D":  "1/3 sq unit"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "The area bounded by the curve y = x³ and x-axis from x = -1 to x = 1 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1/2",
+                                          "B":  "1/4",
+                                          "C":  "1",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  57
+                      },
+                      {
+                          "question":  "Area bounded by the curve y = log x, x-axis and x = 2 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2 ln 2 - 1",
+                                          "B":  "ln 2",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  58
+                      },
+                      {
+                          "question":  "The area of the region bounded by the curve y² = x, line y = 4 and the y-axis is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "64 / 3",
+                                          "B":  "32 / 3",
+                                          "C":  "16 / 3",
+                                          "D":  "8 / 3"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  59
+                      },
+                      {
+                          "id":  60,
+                          "question":  "Find the area bounded by y = sin x and y = cos x for x in [π/4, 5π/4].",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2√2 sq units",
+                                          "B":  "√2 sq units",
+                                          "C":  "4 sq units",
+                                          "D":  "2 sq units"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "The area of the region bounded by x² = 4y, y = 2, y = 4 and the y-axis in the first quadrant is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "8/3 (2√2 - 1)",
+                                          "B":  "4/3 (8 - 2√2)",
+                                          "C":  "8/3 (4 - √2)",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  61
+                      },
+                      {
+                          "question":  "Area bounded by the curve y = sin x between x = 0 and x = π is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "1",
+                                          "C":  "π",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  62
+                      },
+                      {
+                          "question":  "If 5 cosh x + 4 sinh x = 5, then what is the value of e^x?",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "3",
+                                          "B":  "1",
+                                          "C":  "1/3",
+                                          "D":  "5"
+                                      },
+                          "answer":  "B",
+                          "hint":  "Express cosh and sinh in terms of e^x.",
+                          "solution":  "5(e^x + e^-x)/2 + 4(e^x - e^-x)/2 = 5 -\u003e 9e^x + e^-x = 10 -\u003e 9(e^x)^2 - 10(e^x) + 1 = 0 -\u003e e^x = 1 or 1/9. If options have 1, B is correct.",
+                          "id":  63
+                      },
+                      {
+                          "question":  "The area of the region bounded by y = cos x between x = 0 and x = π/2 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "2",
+                                          "C":  "1/2",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  64
+                      }
+                  ]
 }

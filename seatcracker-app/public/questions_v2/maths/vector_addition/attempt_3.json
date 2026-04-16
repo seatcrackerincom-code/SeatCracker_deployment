@@ -1,324 +1,404 @@
-{
-  "questions": [
-    {
-      "question": "Component of a vector along x-axis is its ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "x-component",
-        "B": "Magnitude",
-        "C": "Direction",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 1
-    },
-    {
-      "question": "A vector starting at origin is a ______ vector.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Position",
-        "B": "Free",
-        "C": "Unit",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 2
-    },
-    {
-      "id": 3,
-      "question": "The value of [î,ĵ,k̂] (scalar triple product) = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1",
-        "B": "0",
-        "C": "−1",
-        "D": "√3"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 4,
-      "question": "If a⃗ = î+2ĵ+3k̂ and b⃗ = 3î−2ĵ+k̂, what is angle between them?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "cos⁻¹(5/14)",
-        "B": "cos⁻¹(4/14)",
-        "C": "cos⁻¹(2/7)",
-        "D": "60°"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "question": "The vectors a and -a are ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Collinear",
-        "B": "Orthogonal",
-        "C": "Equal",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 5
-    },
-    {
-      "question": "Resolution of a vector in 3D is a = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "axi + ayj + azk",
-        "B": "ax + ay + az",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 6
-    },
-    {
-      "question": "Sum of two unit vectors can be a unit vector if angle is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "120°",
-        "B": "60°",
-        "C": "0°",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 7
-    },
-    {
-      "question": "If k is a scalar and a is a vector, |ka| = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "|k||a|",
-        "B": "k|a|",
-        "C": "ka",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 8
-    },
-    {
-      "question": "If |a|=1, |b|=1 and |a+b|=1, the angle between a and b is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "120°",
-        "B": "60°",
-        "C": "90°",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 9
-    },
-    {
-      "question": "The angle between two vectors is always in the range ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "[0, π]",
-        "B": "[0, 2π]",
-        "C": "[-π, π]",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 10
-    },
-    {
-      "question": "The displacement vector from (x1,y1,z1) to (x2,y2,z2) is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "(x2-x1)i + (y2-y1)j + (z2-z1)k",
-        "B": "(x1+x2)i",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 11
-    },
-    {
-      "question": "Position vector of centroid of triangle with vertices a, b, c is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "(a+b+c)/3",
-        "B": "a+b+c",
-        "C": "(a+b)/2",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 12
-    },
-    {
-      "question": "Direction ratios of a vector are ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Proportional to its DCs",
-        "B": "Equal to its DCs",
-        "C": "Magnitudes",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 13
-    },
-    {
-      "question": "Two vectors are coplanar if they are ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Parallel to same plane",
-        "B": "Intersecting",
-        "C": "Perpendicular",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 14
-    },
-    {
-      "question": "In a regular hexagon ABCDEF, AB + AC + AD + AE + AF = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "3 AD",
-        "B": "6 AB",
-        "C": "2 AD",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 15
-    },
-    {
-      "question": "Section formula for external division in ratio m:n is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "(mb - na) / (m-n)",
-        "B": "(na - mb) / (m-n)",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 16
-    },
-    {
-      "id": 17,
-      "question": "The angle between vectors 2î+3ĵ and î−2ĵ is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "cos⁻¹(−4/√65)",
-        "B": "cos⁻¹(4/√65)",
-        "C": "90°",
-        "D": "45°"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "question": "Angle between i and -i is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "180°",
-        "B": "0°",
-        "C": "90°",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 18
-    },
-    {
-      "id": 19,
-      "question": "If ABCD is parallelogram with AB⃗ = a⃗ and AD⃗ = b⃗, then AC⃗ = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "a⃗+b⃗",
-        "B": "a⃗−b⃗",
-        "C": "b⃗−a⃗",
-        "D": "2a⃗+b⃗"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 20,
-      "question": "If a⃗ = î−ĵ+2k̂ and b⃗ = 2î+ĵ−k̂, then a⃗+2b⃗ = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "5î+ĵ+0k̂",
-        "B": "5î+ĵ",
-        "C": "3î+2ĵ+k̂",
-        "D": "5î+k̂"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    }
-  ]
+﻿{
+    "questions":  [
+                      {
+                          "question":  "Sum of two unit vectors can be a unit vector if angle is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "120Â°",
+                                          "B":  "60Â°",
+                                          "C":  "0Â°",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  51
+                      },
+                      {
+                          "question":  "If k is a scalar and a is a vector, |ka| = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "|k||a|",
+                                          "B":  "k|a|",
+                                          "C":  "ka",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  52
+                      },
+                      {
+                          "question":  "If |a|=1, |b|=1 and |a+b|=1, the angle between a and b is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "120Â°",
+                                          "B":  "60Â°",
+                                          "C":  "90Â°",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  53
+                      },
+                      {
+                          "question":  "The angle between two vectors is always in the range ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "[0, Ï€]",
+                                          "B":  "[0, 2Ï€]",
+                                          "C":  "[-Ï€, Ï€]",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  54
+                      },
+                      {
+                          "question":  "The displacement vector from (x1,y1,z1) to (x2,y2,z2) is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "(x2-x1)i + (y2-y1)j + (z2-z1)k",
+                                          "B":  "(x1+x2)i",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  55
+                      },
+                      {
+                          "question":  "Position vector of centroid of triangle with vertices a, b, c is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "(a+b+c)/3",
+                                          "B":  "a+b+c",
+                                          "C":  "(a+b)/2",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  56
+                      },
+                      {
+                          "question":  "Direction ratios of a vector are ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Proportional to its DCs",
+                                          "B":  "Equal to its DCs",
+                                          "C":  "Magnitudes",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  57
+                      },
+                      {
+                          "question":  "Two vectors are coplanar if they are ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Parallel to same plane",
+                                          "B":  "Intersecting",
+                                          "C":  "Perpendicular",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  58
+                      },
+                      {
+                          "question":  "In a regular hexagon ABCDEF, AB + AC + AD + AE + AF = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "3 AD",
+                                          "B":  "6 AB",
+                                          "C":  "2 AD",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  59
+                      },
+                      {
+                          "question":  "Section formula for external division in ratio m:n is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "(mb - na) / (m-n)",
+                                          "B":  "(na - mb) / (m-n)",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  60
+                      },
+                      {
+                          "id":  61,
+                          "question":  "The angle between vectors 2Ã®+3Äµ and Ã®âˆ’2Äµ is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "cosâ»Â¹(âˆ’4/âˆš65)",
+                                          "B":  "cosâ»Â¹(4/âˆš65)",
+                                          "C":  "90Â°",
+                                          "D":  "45Â°"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "Angle between i and -i is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "180Â°",
+                                          "B":  "0Â°",
+                                          "C":  "90Â°",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  62
+                      },
+                      {
+                          "id":  63,
+                          "question":  "If ABCD is parallelogram with ABâƒ— = aâƒ— and ADâƒ— = bâƒ—, then ACâƒ— = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "aâƒ—+bâƒ—",
+                                          "B":  "aâƒ—âˆ’bâƒ—",
+                                          "C":  "bâƒ—âˆ’aâƒ—",
+                                          "D":  "2aâƒ—+bâƒ—"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  64,
+                          "question":  "If aâƒ— = Ã®âˆ’Äµ+2kÌ‚ and bâƒ— = 2Ã®+Äµâˆ’kÌ‚, then aâƒ—+2bâƒ— = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "5Ã®+Äµ+0kÌ‚",
+                                          "B":  "5Ã®+Äµ",
+                                          "C":  "3Ã®+2Äµ+kÌ‚",
+                                          "D":  "5Ã®+kÌ‚"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "If a, b, c are position vectors of A, B, C, then AB = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "b - a",
+                                          "B":  "a - b",
+                                          "C":  "a + b",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  65
+                      },
+                      {
+                          "question":  "Resultant of two equal and opposite vectors is ______ vector.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Zero",
+                                          "B":  "Unit",
+                                          "C":  "Same",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  66
+                      },
+                      {
+                          "id":  67,
+                          "question":  "For vectors aâƒ—,bâƒ—,câƒ— with aâƒ—+bâƒ—+câƒ—=0, if |aâƒ—|=3,|bâƒ—|=5,|câƒ—|=7, then angle between aâƒ— and bâƒ— is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "60Â°",
+                                          "B":  "90Â°",
+                                          "C":  "120Â°",
+                                          "D":  "45Â°"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  68,
+                          "question":  "If |aâƒ—| = 5, |bâƒ—| = 13, |aâƒ—âˆ’bâƒ—| = 12, then |aâƒ—+bâƒ—| = ?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "13",
+                                          "B":  "5",
+                                          "C":  "12",
+                                          "D":  "âˆš194"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "Centroid of a tetrahedron with vertices a, b, c, d is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "(a+b+c+d)/4",
+                                          "B":  "(a+b+c)/3",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  69
+                      },
+                      {
+                          "question":  "The angle between a and -2a is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "180Â°",
+                                          "B":  "0Â°",
+                                          "C":  "90Â°",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  70
+                      },
+                      {
+                          "question":  "Direction of i x j is along ______ axis.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "z",
+                                          "B":  "x",
+                                          "C":  "y",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  71
+                      },
+                      {
+                          "id":  72,
+                          "question":  "The section formula: point dividing PQ (P=pâƒ—, Q=qâƒ—) in ratio m:n internally is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(mpâƒ—+nqâƒ—)/(m+n)",
+                                          "B":  "(mqâƒ—+npâƒ—)/(m+n)",
+                                          "C":  "(pâƒ—+qâƒ—)/2",
+                                          "D":  "(mpâƒ—âˆ’nqâƒ—)/(mâˆ’n)"
+                                      },
+                          "answer":  "B",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  73,
+                          "question":  "If aâƒ—Ã—bâƒ— = 0âƒ— and aâƒ—Â·bâƒ— = 0, then?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "at least one is zero vector",
+                                          "B":  "both are unit vectors",
+                                          "C":  "they are perpendicular",
+                                          "D":  "they are parallel"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "Vectors with same magnitude but different directions are ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Not equal",
+                                          "B":  "Equal",
+                                          "C":  "Unit",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  74
+                      },
+                      {
+                          "question":  "A vector that can be shifted anywhere without change is a ______ vector.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Free",
+                                          "B":  "Localized",
+                                          "C":  "Unit",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  75
+                      }
+                  ]
 }

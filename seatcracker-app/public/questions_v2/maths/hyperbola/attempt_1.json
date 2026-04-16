@@ -1,459 +1,386 @@
-{
-    "questions": [
-        {
-            "id": 1,
-            "question": "If (5, b) is on hyperbola x\u00b2/9 \u2212 y\u00b2/16 = 1, then b = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u00b116/3",
-                "B": "\u00b14",
-                "C": "\u00b18",
-                "D": "\u00b14\u221a(7/9)"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "If the vectors a = 6i + 15j and b = 8i - j are perpendicular, find the value of 6*8.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "15",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": 2
-        },
-        {
-            "id": 3,
-            "question": "Tangent to x\u00b2/a\u00b2 - y\u00b2/b\u00b2 = 1 at (x\u2081,y\u2081) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "xx\u2081/a\u00b2 - yy\u2081/b\u00b2 = 1",
-                "B": "xx\u2081/a\u00b2 + yy\u2081/b\u00b2 = 1",
-                "C": "xx\u2081 - yy\u2081 = a\u00b2",
-                "D": "x/x\u2081 - y/y\u2081 = 1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 4,
-            "question": "Length of latus rectum of x\u00b2/a\u00b2 - y\u00b2/b\u00b2 = 1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2b\u00b2/a",
-                "B": "2a\u00b2/b",
-                "C": "b\u00b2/a",
-                "D": "a\u00b2/b"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 5,
-            "question": "The angle between asymptotes of rectangular hyperbola is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "90\u00b0",
-                "B": "45\u00b0",
-                "C": "60\u00b0",
-                "D": "30\u00b0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "For rectangular hyperbola, a = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "b",
-                "B": "2b",
-                "C": "b/2",
-                "D": "b\u00b2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 7,
-            "question": "Normal to x\u00b2/a\u00b2 - y\u00b2/b\u00b2 = 1 at (x\u2081,y\u2081): the slope of normal = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-a\u00b2y\u2081 / (b\u00b2x\u2081)",
-                "B": "b\u00b2x\u2081 / (a\u00b2y\u2081)",
-                "C": "a\u00b2y\u2081 / (b\u00b2x\u2081)",
-                "D": "-b\u00b2x\u2081 / (a\u00b2y\u2081)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 8,
-            "question": "The conjugate hyperbola of x\u00b2/a\u00b2 - y\u00b2/b\u00b2 = 1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "y\u00b2/b\u00b2 - x\u00b2/a\u00b2 = 1",
-                "B": "x\u00b2/a\u00b2 + y\u00b2/b\u00b2 = 1",
-                "C": "x\u00b2/b\u00b2 - y\u00b2/a\u00b2 = 1",
-                "D": "y\u00b2/a\u00b2 + x\u00b2/b\u00b2 = 1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 9,
-            "question": "For hyperbola x\u00b2/4 \u2212 y\u00b2/9 = 1, the directrix is x = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "4/\u221a13",
-                "B": "\u221a13/2",
-                "C": "2\u221a13/13",
-                "D": "13/4"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 10,
-            "question": "Chord of contact from (x\u2081,y\u2081) to x\u00b2/a\u00b2 - y\u00b2/b\u00b2 = 1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "xx\u2081/a\u00b2 - yy\u2081/b\u00b2 = 1",
-                "B": "xx\u2081/a\u00b2 + yy\u2081/b\u00b2 = 1",
-                "C": "x/x\u2081 - y/y\u2081 = 0",
-                "D": "x/x\u2081 = y/y\u2081"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 11,
-            "question": "Foci of hyperbola x\u00b2/25 \u2212 y\u00b2/144 = 1 are at (\u00b1c, 0) where c = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "13",
-                "B": "\u221a169 = 13",
-                "C": "12",
-                "D": "5"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 12,
-            "question": "Tangent to rectangular hyperbola xy = c\u00b2 at (ct, c/t) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x/t + yt = 2c",
-                "B": "xt + y/t = 2c",
-                "C": "x + yt\u00b2 = 2ct",
-                "D": "x/ct + yt/c = 2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 13,
-            "question": "Hyperbola and its conjugate have the ______ asymptotes.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Same",
-                "B": "Opposite",
-                "C": "Perpendicular",
-                "D": "No"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 14,
-            "question": "Equations of asymptotes of x\u00b2/a\u00b2 - y\u00b2/b\u00b2 = 1 are ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "y = \u00b1(b/a)x",
-                "B": "y = \u00b1(a/b)x",
-                "C": "x = \u00b1a",
-                "D": "y = \u00b1b"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 15,
-            "question": "Eccentricity of x\u00b2/9 \u2212 y\u00b2/16 = 1 is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "5/3",
-                "B": "3/5",
-                "C": "4/3",
-                "D": "5/4"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 16,
-            "question": "Parametric equations of rectangular hyperbola xy = c\u00b2 are ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x = ct, y = c/t",
-                "B": "x = c/t, y = ct",
-                "C": "x = c cos\u03b8, y = c sin\u03b8",
-                "D": "x = ct\u00b2, y = 2ct"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 17,
-            "question": "Eccentricity of rectangular hyperbola is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u221a2",
-                "B": "1",
-                "C": "2",
-                "D": "\u221a3"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 18,
-            "question": "The asymptotes of x\u00b2/a\u00b2 \u2212 y\u00b2/b\u00b2 = 1 are?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "y = \u00b1(b/a)x",
-                "B": "y = \u00b1(a/b)x",
-                "C": "x \u00b1 y = 0",
-                "D": "bx \u00b1 ay = ab"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 19,
-            "question": "The director circle of hyperbola x\u00b2/a\u00b2 - y\u00b2/b\u00b2 = 1 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x\u00b2 + y\u00b2 = a\u00b2 - b\u00b2",
-                "B": "x\u00b2 + y\u00b2 = a\u00b2 + b\u00b2",
-                "C": "x\u00b2 - y\u00b2 = a\u00b2",
-                "D": "x\u00b2 + y\u00b2 = 0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "The polar of (x\u2081,y\u2081) w.r.t. x\u00b2/a\u00b2 - y\u00b2/b\u00b2 = 1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "xx\u2081/a\u00b2 - yy\u2081/b\u00b2 = 1",
-                "B": "xx\u2081/a\u00b2 + yy\u2081/b\u00b2 = 0",
-                "C": "x/x\u2081 + y/y\u2081 = 1",
-                "D": "xx\u2081 - yy\u2081 = a\u00b2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the vectors a = 8i + 6j and b = 6i - j are perpendicular, find the value of 8*6.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "6",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "hyperbola_21"
-        },
-        {
-            "question": "If the vectors a = 14i + 11j and b = 10i - j are perpendicular, find the value of 14*10.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "11",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "hyperbola_22"
-        },
-        {
-            "question": "If the matrix A is [[19, 5], [0, 2]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "365",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[361, 105], [0, 4]]. Trace is sum of diagonal elements: 361 + 4.",
-            "id": "hyperbola_23"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(17x) / tan(10x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "17/10",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 17/10.",
-            "id": "hyperbola_24"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^5 * (1-x)^13 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "20",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "hyperbola_25"
-        },
-        {
-            "question": "If the vectors a = 17i + 14j and b = 7i - j are perpendicular, find the value of 17*7.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "14",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "hyperbola_26"
-        },
-        {
-            "question": "If the vectors a = 20i + 16j and b = 4i - j are perpendicular, find the value of 20*4.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "16",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "hyperbola_27"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(4x) / tan(17x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "4/17",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 4/17.",
-            "id": "hyperbola_28"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(10x) / tan(16x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "10/16",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 10/16.",
-            "id": "hyperbola_29"
-        },
-        {
-            "question": "If the vectors a = 19i + 14j and b = 1i - j are perpendicular, find the value of 19*1.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "14",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "hyperbola_30"
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  1,
+                          "question":  "If (5, b) is on hyperbola x²/9 − y²/16 = 1, then b = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "±16/3",
+                                          "B":  "±4",
+                                          "C":  "±8",
+                                          "D":  "±4√(7/9)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  2,
+                          "question":  "Tangent to x²/a² - y²/b² = 1 at (x₁,y₁) is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "xx₁/a² - yy₁/b² = 1",
+                                          "B":  "xx₁/a² + yy₁/b² = 1",
+                                          "C":  "xx₁ - yy₁ = a²",
+                                          "D":  "x/x₁ - y/y₁ = 1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  3,
+                          "question":  "Length of latus rectum of x²/a² - y²/b² = 1 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2b²/a",
+                                          "B":  "2a²/b",
+                                          "C":  "b²/a",
+                                          "D":  "a²/b"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  4,
+                          "question":  "The angle between asymptotes of rectangular hyperbola is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "90°",
+                                          "B":  "45°",
+                                          "C":  "60°",
+                                          "D":  "30°"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  5,
+                          "question":  "For rectangular hyperbola, a = ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "b",
+                                          "B":  "2b",
+                                          "C":  "b/2",
+                                          "D":  "b²"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  6,
+                          "question":  "Normal to x²/a² - y²/b² = 1 at (x₁,y₁): the slope of normal = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "-a²y₁ / (b²x₁)",
+                                          "B":  "b²x₁ / (a²y₁)",
+                                          "C":  "a²y₁ / (b²x₁)",
+                                          "D":  "-b²x₁ / (a²y₁)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  7,
+                          "question":  "The conjugate hyperbola of x²/a² - y²/b² = 1 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "y²/b² - x²/a² = 1",
+                                          "B":  "x²/a² + y²/b² = 1",
+                                          "C":  "x²/b² - y²/a² = 1",
+                                          "D":  "y²/a² + x²/b² = 1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  8,
+                          "question":  "For hyperbola x²/4 − y²/9 = 1, the directrix is x = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "4/√13",
+                                          "B":  "√13/2",
+                                          "C":  "2√13/13",
+                                          "D":  "13/4"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  9,
+                          "question":  "Chord of contact from (x₁,y₁) to x²/a² - y²/b² = 1 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "xx₁/a² - yy₁/b² = 1",
+                                          "B":  "xx₁/a² + yy₁/b² = 1",
+                                          "C":  "x/x₁ - y/y₁ = 0",
+                                          "D":  "x/x₁ = y/y₁"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  10,
+                          "question":  "Foci of hyperbola x²/25 − y²/144 = 1 are at (±c, 0) where c = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "13",
+                                          "B":  "√169 = 13",
+                                          "C":  "12",
+                                          "D":  "5"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  11,
+                          "question":  "Tangent to rectangular hyperbola xy = c² at (ct, c/t) is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "x/t + yt = 2c",
+                                          "B":  "xt + y/t = 2c",
+                                          "C":  "x + yt² = 2ct",
+                                          "D":  "x/ct + yt/c = 2"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  12,
+                          "question":  "Hyperbola and its conjugate have the ______ asymptotes.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Same",
+                                          "B":  "Opposite",
+                                          "C":  "Perpendicular",
+                                          "D":  "No"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  13,
+                          "question":  "Equations of asymptotes of x²/a² - y²/b² = 1 are ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "y = ±(b/a)x",
+                                          "B":  "y = ±(a/b)x",
+                                          "C":  "x = ±a",
+                                          "D":  "y = ±b"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  14,
+                          "question":  "Eccentricity of x²/9 − y²/16 = 1 is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "5/3",
+                                          "B":  "3/5",
+                                          "C":  "4/3",
+                                          "D":  "5/4"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  15,
+                          "question":  "Parametric equations of rectangular hyperbola xy = c² are ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "x = ct, y = c/t",
+                                          "B":  "x = c/t, y = ct",
+                                          "C":  "x = c cosθ, y = c sinθ",
+                                          "D":  "x = ct², y = 2ct"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  16,
+                          "question":  "Eccentricity of rectangular hyperbola is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "√2",
+                                          "B":  "1",
+                                          "C":  "2",
+                                          "D":  "√3"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  17,
+                          "question":  "The asymptotes of x²/a² − y²/b² = 1 are?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "y = ±(b/a)x",
+                                          "B":  "y = ±(a/b)x",
+                                          "C":  "x ± y = 0",
+                                          "D":  "bx ± ay = ab"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  18,
+                          "question":  "The polar of (x₁,y₁) w.r.t. x²/a² - y²/b² = 1 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "xx₁/a² - yy₁/b² = 1",
+                                          "B":  "xx₁/a² + yy₁/b² = 0",
+                                          "C":  "x/x₁ + y/y₁ = 1",
+                                          "D":  "xx₁ - yy₁ = a²"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  19,
+                          "question":  "If normals at four points on hyperbola are concurrent, they are called ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Co-normal points",
+                                          "B":  "Focal points",
+                                          "C":  "Conjugate points",
+                                          "D":  "Concyclic points"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  20,
+                          "question":  "The length of latus rectum of xÂ²/aÂ² âˆ’ yÂ²/bÂ² = 1 is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2bÂ²/a",
+                                          "B":  "2aÂ²/b",
+                                          "C":  "bÂ²/a",
+                                          "D":  "aÂ²/b"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  21,
+                          "question":  "The directrices of xÂ²/aÂ² - yÂ²/bÂ² = 1 are at ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "x = Â±a/e",
+                                          "B":  "x = Â±ae",
+                                          "C":  "y = Â±a/e",
+                                          "D":  "x = Â±b"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  22,
+                          "question":  "If tangent at P on hyperbola meets asymptotes at Q and R, then P is ______ of QR.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Midpoint",
+                                          "B":  "Trisection point",
+                                          "C":  "Endpoint",
+                                          "D":  "Foot of perpendicular"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  23,
+                          "question":  "A hyperbola with same asymptotes as xÂ²/9 - yÂ²/16 = 1 but passing through (3,0) is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "xÂ²/9 - yÂ²/16 = 1",
+                                          "B":  "yÂ²/16 - xÂ²/9 = 1",
+                                          "C":  "xÂ²/9 + yÂ²/16 = 0",
+                                          "D":  "xy = 9"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  24,
+                          "question":  "If the transverse and conjugate axes of a hyperbola are equal, its eccentricity is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "âˆš2",
+                                          "B":  "âˆš3",
+                                          "C":  "2",
+                                          "D":  "âˆš5/2"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  25,
+                          "question":  "The hyperbola and its conjugate together form ______ with common asymptotes.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Conjugate pair",
+                                          "B":  "Circle",
+                                          "C":  "Ellipse",
+                                          "D":  "Parabola"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      }
+                  ]
 }

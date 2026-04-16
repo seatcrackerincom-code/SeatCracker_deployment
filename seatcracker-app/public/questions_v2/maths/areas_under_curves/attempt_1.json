@@ -1,454 +1,379 @@
-{
-    "questions": [
-        {
-            "id": 1,
-            "question": "Area of the region bounded by y = sin x and x-axis from x=0 to x=\u03c0 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "1",
-                "C": "0",
-                "D": "\u03c0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 2,
-            "question": "Area bounded by y=tan x, x-axis and x=\u03c0/4 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(1/2)ln 2",
-                "B": "ln 2",
-                "C": "(1/2)ln 3",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 3,
-            "question": "Area bounded by a parabola y=ax\u00b2+bx+c and a straight line is always ______ of the area of circumscribing parallelogram.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2/3",
-                "B": "1/2",
-                "C": "1/3",
-                "D": "3/4"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 4,
-            "question": "Area bounded by y = cos x and x-axis from x=-\u03c0/2 to x=\u03c0/2 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "1",
-                "C": "\u03c0",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 5,
-            "question": "Area enclosed by the loop of the curve y\u00b2 = x(x-a)\u00b2 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "8a\u00b3/15",
-                "B": "4a\u00b3/15",
-                "C": "2a\u00b3/15",
-                "D": "a\u00b3/3"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "Area common to the circles x\u00b2 + y\u00b2 = 4 and x\u00b2 + y\u00b2 = 4x is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "8\u03c0/3 - 2\u221a3",
-                "B": "8\u03c0/3 + 2\u221a3",
-                "C": "4\u03c0/3 - \u221a3",
-                "D": "4\u03c0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the vectors a = 5i + 3j and b = 4i - j are perpendicular, find the value of 5*4.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "3",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": 7
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 15 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": 8
-        },
-        {
-            "id": 9,
-            "question": "If a curve crosses the x-axis at x=c between a and b, the total area is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "|\u222b_a^c y dx| + |\u222b_c^b y dx|",
-                "B": "\u222b_a^b y dx",
-                "C": "\u222b_a^c y dx - \u222b_c^b y dx",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 10,
-            "question": "Area enclosed by the curve |x| + |y| = 1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "1",
-                "C": "4",
-                "D": "1/2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 11,
-            "question": "Area bounded by the curve y=x\u00b3 and the lines y=8, x=0 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "12",
-                "B": "16",
-                "C": "8",
-                "D": "4"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the matrix A is [[19, 8], [0, 1]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "362",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[361, 160], [0, 1]]. Trace is sum of diagonal elements: 361 + 1.",
-            "id": 12
-        },
-        {
-            "id": 13,
-            "question": "Area bounded by y = ln x, x-axis and x=e is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1",
-                "B": "e",
-                "C": "e-1",
-                "D": "1/e"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 14,
-            "question": "Area bounded by y=x|x|, x-axis and ordinates x=-1 and x=1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2/3",
-                "B": "0",
-                "C": "1/3",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the matrix A is [[5, 20], [0, 1]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "26",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[25, 120], [0, 1]]. Trace is sum of diagonal elements: 25 + 1.",
-            "id": 15
-        },
-        {
-            "id": 16,
-            "question": "Area bounded by y=e^x, y=e^{-x} and the line x=1 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "e + 1/e - 2",
-                "B": "e - 1/e",
-                "C": "e + 1/e",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(12x) / tan(16x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "12/16",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 12/16.",
-            "id": 17
-        },
-        {
-            "id": 18,
-            "question": "Area of one arch of the cycloid x=a(\u03b8-sin\u03b8), y=a(1-cos\u03b8) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "3\u03c0a\u00b2",
-                "B": "2\u03c0a\u00b2",
-                "C": "\u03c0a\u00b2",
-                "D": "4\u03c0a\u00b2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 19,
-            "question": "Area of the region bounded by x\u00b2=4y and x=4y-2 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "9/8",
-                "B": "3/8",
-                "C": "5/8",
-                "D": "1/8"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "Area of the region {(x,y) : x\u00b2 \u2264 y \u2264 x} is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/6",
-                "B": "1/3",
-                "C": "1/2",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the matrix A is [[8, 3], [0, 5]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "89",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[64, 39], [0, 25]]. Trace is sum of diagonal elements: 64 + 25.",
-            "id": "areas_under_curves_21"
-        },
-        {
-            "question": "If the matrix A is [[18, 19], [0, 7]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "373",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[324, 475], [0, 49]]. Trace is sum of diagonal elements: 324 + 49.",
-            "id": "areas_under_curves_22"
-        },
-        {
-            "question": "If the matrix A is [[7, 11], [0, 5]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "74",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[49, 132], [0, 25]]. Trace is sum of diagonal elements: 49 + 25.",
-            "id": "areas_under_curves_23"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(5x) / tan(18x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "5/18",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 5/18.",
-            "id": "areas_under_curves_24"
-        },
-        {
-            "question": "A fair coin is tossed 8 times. What is the probability of getting exactly 6 heads?",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "28.0/2^8",
-                "B": "8/2^8",
-                "C": "1/2^8",
-                "D": "56/2^8"
-            },
-            "answer": "A",
-            "hint": "Use Binomial distribution: nCr * (1/2)^r * (1/2)^(n-r)",
-            "solution": "P(X=6) = 8C6 * (1/2)^n = 28.0/2^8.",
-            "id": "areas_under_curves_25"
-        },
-        {
-            "question": "If the vectors a = 11i + 10j and b = 8i - j are perpendicular, find the value of 11*8.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "10",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "areas_under_curves_26"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^18 * (1-x)^15 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "35",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "areas_under_curves_27"
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 11 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": "areas_under_curves_28"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(11x) / tan(5x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "11/5",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 11/5.",
-            "id": "areas_under_curves_29"
-        },
-        {
-            "question": "If the matrix A is [[9, 7], [0, 5]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "106",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[81, 98], [0, 25]]. Trace is sum of diagonal elements: 81 + 25.",
-            "id": "areas_under_curves_30"
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  1,
+                          "question":  "Area of the region bounded by y = sin x and x-axis from x=0 to x=π is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "1",
+                                          "C":  "0",
+                                          "D":  "π"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  2,
+                          "question":  "Area bounded by y=tan x, x-axis and x=π/4 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(1/2)ln 2",
+                                          "B":  "ln 2",
+                                          "C":  "(1/2)ln 3",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  3,
+                          "question":  "Area bounded by a parabola y=ax²+bx+c and a straight line is always ______ of the area of circumscribing parallelogram.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2/3",
+                                          "B":  "1/2",
+                                          "C":  "1/3",
+                                          "D":  "3/4"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  4,
+                          "question":  "Area bounded by y = cos x and x-axis from x=-π/2 to x=π/2 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "1",
+                                          "C":  "π",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  5,
+                          "question":  "Area enclosed by the loop of the curve y² = x(x-a)² is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "8a³/15",
+                                          "B":  "4a³/15",
+                                          "C":  "2a³/15",
+                                          "D":  "a³/3"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Find the number of ways to arrange the letters of the word \u0027SUCCESS\u0027 such that the 15 S\u0027s are always together.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "60",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+                          "id":  6
+                      },
+                      {
+                          "id":  7,
+                          "question":  "If a curve crosses the x-axis at x=c between a and b, the total area is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "|∫_a^c y dx| + |∫_c^b y dx|",
+                                          "B":  "∫_a^b y dx",
+                                          "C":  "∫_a^c y dx - ∫_c^b y dx",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  8,
+                          "question":  "Area enclosed by the curve |x| + |y| = 1 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "1",
+                                          "C":  "4",
+                                          "D":  "1/2"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  9,
+                          "question":  "Area bounded by the curve y=x³ and the lines y=8, x=0 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "12",
+                                          "B":  "16",
+                                          "C":  "8",
+                                          "D":  "4"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  10,
+                          "question":  "Area bounded by y = ln x, x-axis and x=e is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "e",
+                                          "C":  "e-1",
+                                          "D":  "1/e"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  11,
+                          "question":  "Area bounded by y=x|x|, x-axis and ordinates x=-1 and x=1 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2/3",
+                                          "B":  "0",
+                                          "C":  "1/3",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  12,
+                          "question":  "Area bounded by y=e^x, y=e^{-x} and the line x=1 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "e + 1/e - 2",
+                                          "B":  "e - 1/e",
+                                          "C":  "e + 1/e",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  13,
+                          "question":  "Area of one arch of the cycloid x=a(θ-sinθ), y=a(1-cosθ) is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "3πa²",
+                                          "B":  "2πa²",
+                                          "C":  "πa²",
+                                          "D":  "4πa²"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  14,
+                          "question":  "Area of the region bounded by x²=4y and x=4y-2 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "9/8",
+                                          "B":  "3/8",
+                                          "C":  "5/8",
+                                          "D":  "1/8"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  15,
+                          "question":  "Area of the region {(x,y) : x² ≤ y ≤ x} is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1/6",
+                                          "B":  "1/3",
+                                          "C":  "1/2",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "A fair coin is tossed 8 times. What is the probability of getting exactly 6 heads?",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "28.0/2^8",
+                                          "B":  "8/2^8",
+                                          "C":  "1/2^8",
+                                          "D":  "56/2^8"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use Binomial distribution: nCr * (1/2)^r * (1/2)^(n-r)",
+                          "solution":  "P(X=6) = 8C6 * (1/2)^n = 28.0/2^8.",
+                          "id":  16
+                      },
+                      {
+                          "question":  "Find the number of ways to arrange the letters of the word \u0027SUCCESS\u0027 such that the 11 S\u0027s are always together.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "60",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+                          "id":  17
+                      },
+                      {
+                          "id":  18,
+                          "question":  "If ∫_0^a f(x) dx represents area, a scaling of x-axis by k results in area ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Multiplying by k",
+                                          "B":  "Dividing by k",
+                                          "C":  "Remaining same",
+                                          "D":  "Squaring"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  19,
+                          "question":  "The area bounded by curves y = |x| - 1 and y = -|x| + 1 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "4",
+                                          "C":  "1",
+                                          "D":  "√2"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  20,
+                          "question":  "Calculate the area bounded by the curve y = x³ - x and the x-axis.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1/2 sq unit",
+                                          "B":  "1/4 sq unit",
+                                          "C":  "1 sq unit",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Find the number of ways to arrange the letters of the word \u0027SUCCESS\u0027 such that the 3 S\u0027s are always together.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "60",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+                          "id":  21
+                      },
+                      {
+                          "id":  22,
+                          "question":  "Area bounded by y = x + sin x and its inverse between x=0 and 2π is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "8",
+                                          "B":  "4",
+                                          "C":  "2π",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  23,
+                          "question":  "Area bounded by y = sin²x from 0 to π is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "π/2",
+                                          "B":  "π",
+                                          "C":  "π/4",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  24,
+                          "question":  "The area of the region {(x,y) : y² ≤ 2x and y ≥ 4x-1} is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "9/32",
+                                          "B":  "9/16",
+                                          "C":  "3/8",
+                                          "D":  "5/32"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  25,
+                          "question":  "Given the curve y = f(x), if f(x) is an odd function, the area bounded by the curve, x-axis from -a to a is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2 * ∫_0^a |f(x)| dx",
+                                          "B":  "0",
+                                          "C":  "∫_0^a f(x) dx",
+                                          "D":  "4 * ∫_0^a f(x) dx"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      }
+                  ]
 }

@@ -1,299 +1,372 @@
-{
-  "questions": [
-    {
-      "id": 1,
-      "question": "Area bounded by the loop of y² = x²(a-x) is fundamentally evaluated letting x = a sin²θ. It evaluates to ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "8a² / 15",
-        "B": "4a² / 15",
-        "C": "a² / 15",
-        "D": "15a² / 8"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 2,
-      "question": "Area bounded by the curve y = log_e x, the x-axis, and x=1 to x=2 is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2 ln 2 - 1",
-        "B": "ln 2",
-        "C": "1",
-        "D": "2 ln 2 + 1"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 3,
-      "question": "Area included between the parabola y = 4/3 x² and the line 3x - 2y + 12 = 0 requires bounds x₁=-2 and x₂=3. Area is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "125 / 12",
-        "B": "27 / 12",
-        "C": "15",
-        "D": "125 / 6"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 4,
-      "question": "If a curve is given parametrically x = φ(t), y = ψ(t), the area ∫ y dx is given by ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "∫ ψ(t) * φ'(t) dt",
-        "B": "∫ ψ'(t) * φ(t) dt",
-        "C": "∫ ψ(t) dt",
-        "D": "∫ φ(t) dt"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 5,
-      "question": "Area of the cardioid r = a(1 + cos θ) is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "3πa² / 2",
-        "B": "πa²",
-        "C": "2πa²",
-        "D": "3πa²"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Area bounded by y² = 4x and x = 3 is?",
-      "difficulty": "medium",
-      "options": {
-        "A": "8√3",
-        "B": "4√3",
-        "C": "12",
-        "D": "6√3"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "pyq": true,
-      "id": 6
-    },
-    {
-      "id": 7,
-      "question": "For finding area in polar coordinates r = f(θ) bounded by θ=α and θ=β, the integral is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1/2 ∫ from α to β r² dθ",
-        "B": "∫ from α to β r dθ",
-        "C": "∫ from α to β r² sinθ dθ",
-        "D": "1/2 ∫ from α to β r dθ"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Area enclosed between y = x³ and y = x in [−1,1] is?",
-      "difficulty": "hard",
-      "options": {
-        "A": "1/2",
-        "B": "1",
-        "C": "2",
-        "D": "1/4"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "pyq": true,
-      "id": 8
-    },
-    {
-      "id": 9,
-      "question": "Leibniz's rule for differentiating an integral where the bounds are functions of a parameter is useful for generating ______ formulas.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Envelope and locus area",
-        "B": "Simpson's rule",
-        "C": "Trapezoidal interpolation",
-        "D": "Discrete algebraic sum"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 10,
-      "question": "The area enclosed by the curve xy = c² (rectangular hyperbola) and x=a, x=b is c²(ln b - ln a). This implies the area of hyperbola grows ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Logarithmically",
-        "B": "Exponentially",
-        "C": "Linearly",
-        "D": "Quadratically"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 11,
-      "question": "Area of curve (x/a)^(2/3) + (y/b)^(2/3) = 1 is an affine transformation of the astroid, and equals ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "3πab / 8",
-        "B": "3πa² / 8",
-        "C": "πab",
-        "D": "8ab / 3"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Area between y = x and y = x² from 0 to 1 = ?",
-      "difficulty": "medium",
-      "options": {
-        "A": "1/6",
-        "B": "1/3",
-        "C": "1/2",
-        "D": "1/4"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "pyq": true,
-      "id": 12
-    },
-    {
-      "id": 13,
-      "question": "The area bounded by y = x³ and y = x comprises two symmetrical regions in the first and third quadrants. Total area is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2 * ∫ from 0 to 1 (x - x³) dx = 1/2",
-        "B": "∫ from -1 to 1 (x - x³) dx = 0",
-        "C": "1/4",
-        "D": "1"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 14,
-      "question": "Area of one loop of the lemniscate r² = a² cos 2θ is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "a² / 2",
-        "B": "a²",
-        "C": "πa² / 4",
-        "D": "a² / 4"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Area bounded by y = |x| and y = 1 is?",
-      "difficulty": "medium",
-      "options": {
-        "A": "1",
-        "B": "2",
-        "C": "1/2",
-        "D": "4"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "pyq": true,
-      "id": 15
-    },
-    {
-      "id": 16,
-      "question": "Area of the region containing origin and bounded by lines x=1, x=-1, y=1, and curve y=x²-1.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Area from y=x²-1 to y=1 between x=-1 and 1: ∫(1 - (x²-1))dx = 8/3",
-        "B": "4",
-        "C": "8/3",
-        "D": "Both A and C"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 17,
-      "question": "Area of a polygon with vertices (x₁,y₁), (x₂,y₂)... is obtained by Shoelace Formula. Integrating piecewise linear functions is equivalent to it. Area = 0.5 * |Σ(x_i*y_{i+1} - x_{i+1}*y_i)|. This is an application of ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Green's Theorem",
-        "B": "Stokes' Theorem",
-        "C": "Mean Value Theorem",
-        "D": "Fundamental Theorem of Algebra"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 18,
-      "question": "Area of the circle r = 2a cos θ is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "πa²",
-        "B": "4πa²",
-        "C": "2πa²",
-        "D": "πa²/2"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 19,
-      "question": "When calculating the area between a curve f(x) and its inverse, f⁻¹(x), bounded by [0,1], we can use symmetry across the line y = x and integrate 2*∫ [x - f(x)] dx if ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "f(x) is below y=x on the interval",
-        "B": "f(x) matches f⁻¹(x)",
-        "C": "f(x) has a maximum",
-        "D": "f(x) is discontinuous"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Area of region {(x,y): x²≤y≤|x|} is?",
-      "difficulty": "hard",
-      "options": {
-        "A": "1/3",
-        "B": "2/3",
-        "C": "1/6",
-        "D": "1"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "pyq": true,
-      "id": 20
-    }
-  ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  26,
+                          "question":  "Area of one loop of the lemniscate rÂ² = aÂ² cos 2Î¸ is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "aÂ² / 2",
+                                          "B":  "aÂ²",
+                                          "C":  "Ï€aÂ² / 4",
+                                          "D":  "aÂ² / 4"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Area bounded by y = |x| and y = 1 is?",
+                          "difficulty":  "medium",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "2",
+                                          "C":  "1/2",
+                                          "D":  "4"
+                                      },
+                          "answer":  "A",
+                          "tag":  "pyq",
+                          "pyq":  true,
+                          "id":  27
+                      },
+                      {
+                          "id":  28,
+                          "question":  "Area of the region containing origin and bounded by lines x=1, x=-1, y=1, and curve y=xÂ²-1.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Area from y=xÂ²-1 to y=1 between x=-1 and 1: âˆ«(1 - (xÂ²-1))dx = 8/3",
+                                          "B":  "4",
+                                          "C":  "8/3",
+                                          "D":  "Both A and C"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  29,
+                          "question":  "Area of a polygon with vertices (xâ‚,yâ‚), (xâ‚‚,yâ‚‚)... is obtained by Shoelace Formula. Integrating piecewise linear functions is equivalent to it. Area = 0.5 * |Î£(x_i*y_{i+1} - x_{i+1}*y_i)|. This is an application of ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Green\u0027s Theorem",
+                                          "B":  "Stokes\u0027 Theorem",
+                                          "C":  "Mean Value Theorem",
+                                          "D":  "Fundamental Theorem of Algebra"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Area of region {(x,y): xÂ²â‰¤yâ‰¤|x|} is?",
+                          "difficulty":  "hard",
+                          "options":  {
+                                          "A":  "1/3",
+                                          "B":  "2/3",
+                                          "C":  "1/6",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "tag":  "pyq",
+                          "pyq":  true,
+                          "id":  30
+                      },
+                      {
+                          "id":  31,
+                          "question":  "The area of the triangle formed by the tangent to the curve xy = aÂ² at the point (xâ‚, yâ‚) and the coordinate axes is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2aÂ²",
+                                          "B":  "aÂ²",
+                                          "C":  "aÂ² / 2",
+                                          "D":  "4aÂ²"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  32,
+                          "question":  "The area enclosed between the curve y = log(x + e) and the coordinate axes is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "e",
+                                          "C":  "e - 1",
+                                          "D":  "log e"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  33,
+                          "question":  "The area of the loop of the curve ayÂ² = xÂ²(a - x) is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "8aÂ² / 15",
+                                          "B":  "4aÂ² / 15",
+                                          "C":  "16aÂ² / 15",
+                                          "D":  "aÂ² / 15"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  34,
+                          "question":  "If f(x) is periodic with period T, then âˆ« from a to a+nT f(x)dx = ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "n * âˆ« from 0 to T f(x)dx",
+                                          "B":  "âˆ« from 0 to T f(x)dx",
+                                          "C":  "n * f(T)",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Area of the region bounded by xÂ²+yÂ²â‰¤4, x+yâ‰¥0 is?",
+                          "difficulty":  "hard",
+                          "options":  {
+                                          "A":  "2Ï€",
+                                          "B":  "Ï€",
+                                          "C":  "4Ï€",
+                                          "D":  "Ï€/2"
+                                      },
+                          "answer":  "A",
+                          "tag":  "pyq",
+                          "pyq":  true,
+                          "id":  35
+                      },
+                      {
+                          "id":  36,
+                          "question":  "The area of the region bounded by y = x|x|, x-axis and the ordinates x = -1 and x = 1 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2/3",
+                                          "B":  "1/3",
+                                          "C":  "0",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  37,
+                          "question":  "The \u0027Theorem of Pappus\u0027 links the area of a generating curve A to the volume of revolution it traces, V = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2Ï€ * d * A (where d is centroid distance)",
+                                          "B":  "Ï€ * dÂ² * A",
+                                          "C":  "AÂ²",
+                                          "D":  "d * A"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  38,
+                          "question":  "Area bounded by the exponential y = e^{-|x|}, forming a peak at x=0, across all R.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "1",
+                                          "C":  "e",
+                                          "D":  "âˆž"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Area bounded by y = cos x, x-axis, x=0 and x=2Ï€ is?",
+                          "difficulty":  "medium",
+                          "options":  {
+                                          "A":  "4",
+                                          "B":  "2",
+                                          "C":  "0",
+                                          "D":  "Ï€"
+                                      },
+                          "answer":  "A",
+                          "tag":  "pyq",
+                          "pyq":  true,
+                          "id":  39
+                      },
+                      {
+                          "id":  40,
+                          "question":  "If area bounded by y = axÂ² and x = ayÂ² is 1 (a \u003e 0), then a = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1 / âˆš3",
+                                          "B":  "1/3",
+                                          "C":  "1/âˆš(1/3)",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  41,
+                          "question":  "The area of the region bounded by y = xÂ² + 2, y = x, x = 0 and x = 3 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "21/2",
+                                          "B":  "15/2",
+                                          "C":  "27/2",
+                                          "D":  "9"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Area of region bounded by y = ln x, y = 0, x = 1, x = e is?",
+                          "difficulty":  "hard",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "eâˆ’1",
+                                          "C":  "e",
+                                          "D":  "2"
+                                      },
+                          "answer":  "A",
+                          "tag":  "pyq",
+                          "pyq":  true,
+                          "id":  42
+                      },
+                      {
+                          "id":  43,
+                          "question":  "Given a differentiable function f(x) such that its inverse fâ»Â¹(x) exists, the area âˆ« f(x) dx from a to b plus âˆ« fâ»Â¹(y) dy from f(a) to f(b) is equal to ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "b*f(b) - a*f(a)",
+                                          "B":  "f(b) - f(a)",
+                                          "C":  "b - a",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  44,
+                          "question":  "Area bounded by y = sin |x| and x-axis for x in [-Ï€, Ï€] is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "4",
+                                          "B":  "2",
+                                          "C":  "0",
+                                          "D":  "Ï€"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  45,
+                          "question":  "The Gabriel\u0027s Horn (y=1/x rotated about x from 1 to âˆž) has finite ______ but infinite ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Volume, Surface Area",
+                                          "B":  "Area, Volume",
+                                          "C":  "Surface Area, Volume",
+                                          "D":  "Length, Width"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Area bounded by y = xÂ², y = 2x+3 is?",
+                          "difficulty":  "hard",
+                          "options":  {
+                                          "A":  "32/3",
+                                          "B":  "16/3",
+                                          "C":  "8",
+                                          "D":  "64/3"
+                                      },
+                          "answer":  "A",
+                          "tag":  "pyq",
+                          "pyq":  true,
+                          "id":  46
+                      },
+                      {
+                          "question":  "Using integration, area of triangle with vertices (0,0),(2,0),(0,3) is?",
+                          "difficulty":  "medium",
+                          "options":  {
+                                          "A":  "3",
+                                          "B":  "6",
+                                          "C":  "9/2",
+                                          "D":  "12"
+                                      },
+                          "answer":  "A",
+                          "tag":  "pyq",
+                          "pyq":  true,
+                          "id":  47
+                      },
+                      {
+                          "id":  48,
+                          "question":  "Numerical integration of âˆ« dx / (1 + xÂ²) from 0 to 1 using Simpson\u0027s 1/3 Rule with h = 0.5 gives an approximation of ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "0.7833",
+                                          "B":  "0.7854",
+                                          "C":  "0.7500",
+                                          "D":  "0.8000"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  49,
+                          "question":  "The area bounded by yÂ² = 4x and xÂ² = 4y is divided into three equal parts by the axes and the curve. The area of the middle part is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "16 / 3",
+                                          "B":  "8 / 3",
+                                          "C":  "4 / 3",
+                                          "D":  "32 / 3"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  50,
+                          "question":  "The area bounded by y = tan x, the x-axis, and the line x = Ï€/4 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1/2 log 2",
+                                          "B":  "log âˆš2",
+                                          "C":  "Both A and B",
+                                          "D":  "log 2"
+                                      },
+                          "answer":  "C",
+                          "pyq":  false
+                      }
+                  ]
 }

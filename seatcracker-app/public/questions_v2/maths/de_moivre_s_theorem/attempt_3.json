@@ -1,307 +1,383 @@
-{
-    "questions": [
-        {
-            "id": 1,
-            "question": "Solve z\u00b3 + i = 0 center logic? ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "z = cis(-\u03c0/6 + 2k\u03c0/3)",
-                "B": "z = cis(k\u03c0/3)",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^20 * (1-x)^2 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "24",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 2
-        },
-        {
-            "id": 3,
-            "question": "If z = cos \u03b8 + i sin \u03b8, then z + 1/z = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2 cos \u03b8",
-                "B": "2i sin \u03b8",
-                "C": "2",
-                "D": "cos 2\u03b8 + i sin 2\u03b8"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 4,
-            "question": "Expansion of cos(4\u03b8) using DM involves ______ powers.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "cos\u2074\u03b8, cos\u00b2\u03b8",
-                "B": "cos\u00b3\u03b8, sin\u03b8",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 5,
-            "question": "If z + 1/z = 2 cos 6, then z\u00b9\u2070\u2070 + 1/z\u00b9\u2070\u2070 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2 cos 600",
-                "B": "2 cos 6",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "Principal 6th root of -64 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u221a3 + i",
-                "B": "-\u221a3 + i",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 7,
-            "question": "Summing C + iS method uses series of ______ progression.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Geometric",
-                "B": "Arithmetic",
-                "C": "Harmonic",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 8,
-            "question": "Product of p-th roots of a complex number is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "a * (-1)^(p-1)",
-                "B": "a",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 9,
-            "question": "Primitive roots \u03c9_k satisfy ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "gcd(k, n) = 1",
-                "B": "k/n = integer",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 10,
-            "question": "If \u03b1 is nth root of unity, then 1 + 2\u03b1 + 3\u03b1\u00b2 + ... + n \u03b1\u207f\u207b\u00b9 = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "n / (\u03b1 - 1)",
-                "B": "n",
-                "C": "0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^14 * (1-x)^17 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "33",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 11
-        },
-        {
-            "id": 12,
-            "question": "General polar angle is \u03b8 + ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2k\u03c0",
-                "B": "k\u03c0",
-                "C": "\u03c0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 13,
-            "question": "Using De Moivre, sin 3\u03b8 = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "3sin\u03b8 \u2212 4sin\u00b3\u03b8",
-                "B": "4sin\u00b3\u03b8 \u2212 3sin\u03b8",
-                "C": "3cos\u00b2\u03b8 sin\u03b8 \u2212 sin\u00b3\u03b8",
-                "D": "3sin\u03b8cos\u03b8"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 14,
-            "question": "If n=5, sum of squares of dist between roots of z\u2075=1 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "10",
-                "B": "5",
-                "C": "25",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 15,
-            "question": "Bridge between exponentials and trigonometry is ______ formula.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "De Moivre's",
-                "B": "Taylor's",
-                "C": "Logarithmic",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 16,
-            "question": "Value of (1 + cos \u03b8 + i sin \u03b8)\u207f / (1 + cos \u03b8 - i sin \u03b8)\u207f is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "cos n\u03b8 + i sin n\u03b8",
-                "B": "1",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 17,
-            "question": "If n is even, product of real roots of z\u207f=1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-1",
-                "B": "1",
-                "C": "0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 18,
-            "question": "The value of (cos 72\u00b0 + i sin 72\u00b0)\u2075 = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1",
-                "B": "i",
-                "C": "\u22121",
-                "D": "\u2212i"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "If the vectors a = 19i + 8j and b = 8i - j are perpendicular, find the value of 19*8.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "8",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": 19
-        },
-        {
-            "question": "If the vectors a = 8i + 2j and b = 4i - j are perpendicular, find the value of 8*4.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": 20
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  51,
+                          "question":  "Bridge between exponentials and trigonometry is ______ formula.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "De Moivre\u0027s",
+                                          "B":  "Taylor\u0027s",
+                                          "C":  "Logarithmic",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  52,
+                          "question":  "Value of (1 + cos θ + i sin θ)ⁿ / (1 + cos θ - i sin θ)ⁿ is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "cos nθ + i sin nθ",
+                                          "B":  "1",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  53,
+                          "question":  "If n is even, product of real roots of zⁿ=1 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "-1",
+                                          "B":  "1",
+                                          "C":  "0",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  54,
+                          "question":  "The value of (cos 72° + i sin 72°)⁵ = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "i",
+                                          "C":  "−1",
+                                          "D":  "−i"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "The nth roots of unity are in ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Geometric Progression",
+                                          "B":  "Arithmetic Progression",
+                                          "C":  "Harmonic Progression",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  55
+                      },
+                      {
+                          "question":  "Advanced De Moivre question 2 involving simplification of complex powers.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Option A",
+                                          "B":  "Option B",
+                                          "C":  "Option C",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  56
+                      },
+                      {
+                          "question":  "The sum of nth roots of unity is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "0",
+                                          "B":  "1",
+                                          "C":  "n",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  57
+                      },
+                      {
+                          "id":  58,
+                          "question":  "If Î± is root of DM equation, is 1/Î± also a root? ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Yes (reciprocal property)",
+                                          "B":  "No",
+                                          "C":  "Only for unity",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  59,
+                          "question":  "If Î± = cos(2Ï€/5)+i sin(2Ï€/5), then 1+Î±+Î±Â²+Î±Â³+Î±â´ = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "0",
+                                          "B":  "1",
+                                          "C":  "5",
+                                          "D":  "Î±âµ"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "Advanced De Moivre question 9 involving simplification of complex powers.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Option A",
+                                          "B":  "Option B",
+                                          "C":  "Option C",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  60
+                      },
+                      {
+                          "id":  61,
+                          "question":  "Area of polygon formed by nth roots of unity is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(n/2) sin(2Ï€/n)",
+                                          "B":  "n",
+                                          "C":  "Ï€",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Advanced De Moivre question 4 involving simplification of complex powers.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Option A",
+                                          "B":  "Option B",
+                                          "C":  "Option C",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  62
+                      },
+                      {
+                          "id":  63,
+                          "question":  "The 5th roots of 32 are?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2Â·e^(2Ï€ik/5) for k=0,1,2,3,4",
+                                          "B":  "Â±2, Â±2i, 2i",
+                                          "C":  "2^(1/5) only",
+                                          "D":  "all have modulus 32^(1/5)=2 and arguments 2kÏ€/5"
+                                      },
+                          "answer":  "D",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "Advanced De Moivre question 5 involving simplification of complex powers.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Option A",
+                                          "B":  "Option B",
+                                          "C":  "Option C",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  64
+                      },
+                      {
+                          "id":  65,
+                          "question":  "cos 3Î¸ using De Moivre = ?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "4cosÂ³Î¸ âˆ’ 3cosÎ¸",
+                                          "B":  "3cosÎ¸ âˆ’ 4cosÂ³Î¸",
+                                          "C":  "cosÂ³Î¸ âˆ’ 3cosÎ¸sinÂ²Î¸",
+                                          "D":  "Both A and C"
+                                      },
+                          "answer":  "D",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "The product of nth roots of unity is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "(-1)^{n-1}",
+                                          "B":  "1",
+                                          "C":  "0",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  66
+                      },
+                      {
+                          "id":  67,
+                          "question":  "If Ï‰â¿ = 1 with Ï‰ â‰  1, the product 1Â·Ï‰Â·Ï‰Â²Â·...Â·Ï‰â¿â»Â¹ = ?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(âˆ’1)^(nâˆ’1)",
+                                          "B":  "1",
+                                          "C":  "0",
+                                          "D":  "Ï‰â¿â»Â¹"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "(cos Î¸ + i sin Î¸)â¿ = cos nÎ¸ + i sin nÎ¸ is known as ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "De Moivre\u0027s Theorem",
+                                          "B":  "Euler\u0027s Formula",
+                                          "C":  "Taylor\u0027s Theorem",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  68
+                      },
+                      {
+                          "question":  "Advanced De Moivre question 6 involving simplification of complex powers.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Option A",
+                                          "B":  "Option B",
+                                          "C":  "Option C",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  69
+                      },
+                      {
+                          "question":  "Advanced De Moivre question 1 involving simplification of complex powers.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Option A",
+                                          "B":  "Option B",
+                                          "C":  "Option C",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  70
+                      },
+                      {
+                          "id":  71,
+                          "question":  "Argument of (1+i)/(1âˆ’i)Â³ = ?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Ï€/2",
+                                          "B":  "Ï€",
+                                          "C":  "Ï€/4",
+                                          "D":  "3Ï€/4"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "Advanced De Moivre question 8 involving simplification of complex powers.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Option A",
+                                          "B":  "Option B",
+                                          "C":  "Option C",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  72
+                      },
+                      {
+                          "question":  "Advanced De Moivre question 3 involving simplification of complex powers.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Option A",
+                                          "B":  "Option B",
+                                          "C":  "Option C",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  73
+                      },
+                      {
+                          "question":  "Advanced De Moivre question 7 involving simplification of complex powers.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "Option A",
+                                          "B":  "Option B",
+                                          "C":  "Option C",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  74
+                      }
+                  ]
 }

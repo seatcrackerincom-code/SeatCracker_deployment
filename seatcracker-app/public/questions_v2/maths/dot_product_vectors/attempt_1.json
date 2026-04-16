@@ -1,458 +1,386 @@
-{
-    "questions": [
-        {
-            "id": 1,
-            "question": "If a\u20d7\u00b7b\u20d7 = 0, a\u20d7 \u2260 0\u20d7, b\u20d7 \u2260 0\u20d7, then they are?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "perpendicular",
-                "B": "parallel",
-                "C": "equal",
-                "D": "anti-parallel"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 2,
-            "question": "If a . b > 0, the angle between the two vectors is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Acute",
-                "B": "Obtuse",
-                "C": "Right (90\u00b0)",
-                "D": "Straight (180\u00b0)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 3,
-            "question": "If a = a\u2081i + a\u2082j + a\u2083k and b = b\u2081i + b\u2082j + b\u2083k, then a . b = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "a\u2081b\u2081 + a\u2082b\u2082 + a\u2083b\u2083",
-                "B": "a\u2081b\u2082 + a\u2082b\u2081 + a\u2083b\u2083",
-                "C": "a\u2081\u00b2 + a\u2082\u00b2 + a\u2083\u00b2",
-                "D": "a\u2081b\u2081 - a\u2082b\u2082 - a\u2083b\u2083"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Evaluate the integral of sinh(4x) cosh(8x) dx.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "Calculated term",
-                "B": "Calculated term",
-                "C": "Calculated term",
-                "D": "Calculated term"
-            },
-            "answer": "A",
-            "hint": "Use the product to sum identities for hyperbolic functions.",
-            "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
-            "id": 4
-        },
-        {
-            "id": 5,
-            "question": "cos \u03b8 between (1,2,2) and (2,\u22121,2) = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "4/9",
-                "B": "2/9",
-                "C": "1/3",
-                "D": "8/9"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 6,
-            "question": "Projection of a\u20d7 = \u00ee+2\u0135+3k\u0302 on b\u20d7 = 2\u00ee+3\u0135\u2212k\u0302 = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "5/\u221a14",
-                "B": "\u221a14/5",
-                "C": "14/5",
-                "D": "5"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 7,
-            "question": "The vector projection of a on b is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "((a . b) / |b|\u00b2) b",
-                "B": "((a . b) / |a|\u00b2) a",
-                "C": "(a . b) b",
-                "D": "(a . b) / |b|"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 8,
-            "question": "Work W = F . d. This implies only the force component ______ the displacement does work.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Along",
-                "B": "Perpendicular to",
-                "C": "Opposite to",
-                "D": "Normal to"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 9,
-            "question": "If a\u20d7 = 2\u00ee+3\u0135\u2212k\u0302 and b\u20d7 = \u00ee\u2212\u0135+2k\u0302, then a\u20d7\u00b7b\u20d7 = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u22123",
-                "B": "3",
-                "C": "1",
-                "D": "\u22121"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 10,
-            "question": "If |a + b| = |a - b|, then a and b must be ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Orthogonal (Perpendicular)",
-                "B": "Collinear",
-                "C": "Equal vectors",
-                "D": "Unit vectors"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(4x) / tan(6x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "4/6",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 4/6.",
-            "id": 11
-        },
-        {
-            "id": 12,
-            "question": "Equality holds in Cauchy-Schwartz (|a . b| = |a||b|) if and only if a and b are ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Collinear",
-                "B": "Orthogonal",
-                "C": "Equal magnitudes",
-                "D": "Unit vectors"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^4 * (1-x)^2 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "8",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 13
-        },
-        {
-            "id": 14,
-            "question": "Projection of a on b is a scalar value evaluated as ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(a . b) / |b|",
-                "B": "(a . b) / |a|",
-                "C": "(a \u00d7 b) / |b|",
-                "D": "|a| cos \u03b8"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 15,
-            "question": "The triangle inequality states |a + b| ______ |a| + |b|.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u2264",
-                "B": "\u2265",
-                "C": "=",
-                "D": ">"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 16,
-            "question": "Parallelogram law: |a + b|\u00b2 + |a - b|\u00b2 = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2(|a|\u00b2 + |b|\u00b2)",
-                "B": "|a|\u00b2 + |b|\u00b2",
-                "C": "4(a . b)",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 17,
-            "question": "Cauchy-Schwartz inequality states that |a . b| is ______ |a||b|.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u2264",
-                "B": "\u2265",
-                "C": "=",
-                "D": "<"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 18,
-            "question": "If (a + b) and (a - b) are perpendicular, then ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "|a| = |b|",
-                "B": "a is perpendicular to b",
-                "C": "a is parallel to b",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 19,
-            "question": "The expression |a - b|\u00b2 is equal to ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "|a|\u00b2 + |b|\u00b2 - 2(a . b)",
-                "B": "|a|\u00b2 + |b|\u00b2",
-                "C": "|a|\u00b2 - |b|\u00b2",
-                "D": "|a|\u00b2 + |b|\u00b2 + 2(a . b)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the matrix A is [[3, 14], [0, 10]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "109",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[9, 182], [0, 100]]. Trace is sum of diagonal elements: 9 + 100.",
-            "id": 20
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^7 * (1-x)^11 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "20",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "dot_product_vectors_21"
-        },
-        {
-            "question": "If the vectors a = 18i + 11j and b = 9i - j are perpendicular, find the value of 18*9.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "11",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "dot_product_vectors_22"
-        },
-        {
-            "question": "If the matrix A is [[14, 10], [0, 6]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "232",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[196, 200], [0, 36]]. Trace is sum of diagonal elements: 196 + 36.",
-            "id": "dot_product_vectors_23"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^5 * (1-x)^14 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "21",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "dot_product_vectors_24"
-        },
-        {
-            "question": "If the matrix A is [[16, 19], [0, 6]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "292",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[256, 418], [0, 36]]. Trace is sum of diagonal elements: 256 + 36.",
-            "id": "dot_product_vectors_25"
-        },
-        {
-            "question": "Evaluate the integral from 0 to pi/2 of (sin^3 x) / (sin^3 x + cos^3 x) dx.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "pi/4",
-                "B": "pi/2",
-                "C": "pi/8",
-                "D": "0"
-            },
-            "answer": "A",
-            "hint": "Use the property: Int(0 to a) f(x) dx = Int(0 to a) f(a-x) dx",
-            "solution": "Let I = Integral. Both numerator become sin^a and cos^a. 2I = Int(1) dx from 0 to pi/2 = pi/2 -> I = pi/4.",
-            "id": "dot_product_vectors_26"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(6x) / tan(2x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "6/2",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 6/2.",
-            "id": "dot_product_vectors_27"
-        },
-        {
-            "question": "If the matrix A is [[17, 15], [0, 3]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "298",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[289, 300], [0, 9]]. Trace is sum of diagonal elements: 289 + 9.",
-            "id": "dot_product_vectors_28"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^16 * (1-x)^4 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "22",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "dot_product_vectors_29"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^20 * (1-x)^10 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "32",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "dot_product_vectors_30"
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  1,
+                          "question":  "If a⃗·b⃗ = 0, a⃗ ≠ 0⃗, b⃗ ≠ 0⃗, then they are?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "perpendicular",
+                                          "B":  "parallel",
+                                          "C":  "equal",
+                                          "D":  "anti-parallel"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  2,
+                          "question":  "If a . b \u003e 0, the angle between the two vectors is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Acute",
+                                          "B":  "Obtuse",
+                                          "C":  "Right (90°)",
+                                          "D":  "Straight (180°)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  3,
+                          "question":  "If a = a₁i + a₂j + a₃k and b = b₁i + b₂j + b₃k, then a . b = ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "a₁b₁ + a₂b₂ + a₃b₃",
+                                          "B":  "a₁b₂ + a₂b₁ + a₃b₃",
+                                          "C":  "a₁² + a₂² + a₃²",
+                                          "D":  "a₁b₁ - a₂b₂ - a₃b₃"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  4,
+                          "question":  "cos θ between (1,2,2) and (2,−1,2) = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "4/9",
+                                          "B":  "2/9",
+                                          "C":  "1/3",
+                                          "D":  "8/9"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  5,
+                          "question":  "Projection of a⃗ = î+2ĵ+3k̂ on b⃗ = 2î+3ĵ−k̂ = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "5/√14",
+                                          "B":  "√14/5",
+                                          "C":  "14/5",
+                                          "D":  "5"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  6,
+                          "question":  "The vector projection of a on b is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "((a . b) / |b|²) b",
+                                          "B":  "((a . b) / |a|²) a",
+                                          "C":  "(a . b) b",
+                                          "D":  "(a . b) / |b|"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  7,
+                          "question":  "Work W = F . d. This implies only the force component ______ the displacement does work.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Along",
+                                          "B":  "Perpendicular to",
+                                          "C":  "Opposite to",
+                                          "D":  "Normal to"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  8,
+                          "question":  "If a⃗ = 2î+3ĵ−k̂ and b⃗ = î−ĵ+2k̂, then a⃗·b⃗ = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "−3",
+                                          "B":  "3",
+                                          "C":  "1",
+                                          "D":  "−1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  9,
+                          "question":  "If |a + b| = |a - b|, then a and b must be ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Orthogonal (Perpendicular)",
+                                          "B":  "Collinear",
+                                          "C":  "Equal vectors",
+                                          "D":  "Unit vectors"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  10,
+                          "question":  "Equality holds in Cauchy-Schwartz (|a . b| = |a||b|) if and only if a and b are ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Collinear",
+                                          "B":  "Orthogonal",
+                                          "C":  "Equal magnitudes",
+                                          "D":  "Unit vectors"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  11,
+                          "question":  "Projection of a on b is a scalar value evaluated as ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(a . b) / |b|",
+                                          "B":  "(a . b) / |a|",
+                                          "C":  "(a × b) / |b|",
+                                          "D":  "|a| cos θ"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  12,
+                          "question":  "The triangle inequality states |a + b| ______ |a| + |b|.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "≤",
+                                          "B":  "≥",
+                                          "C":  "=",
+                                          "D":  "\u003e"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  13,
+                          "question":  "Parallelogram law: |a + b|² + |a - b|² = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2(|a|² + |b|²)",
+                                          "B":  "|a|² + |b|²",
+                                          "C":  "4(a . b)",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  14,
+                          "question":  "Cauchy-Schwartz inequality states that |a . b| is ______ |a||b|.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "≤",
+                                          "B":  "≥",
+                                          "C":  "=",
+                                          "D":  "\u003c"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  15,
+                          "question":  "The expression |a - b|² is equal to ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "|a|² + |b|² - 2(a . b)",
+                                          "B":  "|a|² + |b|²",
+                                          "C":  "|a|² - |b|²",
+                                          "D":  "|a|² + |b|² + 2(a . b)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  16,
+                          "question":  "Magnitude of a+b if a ⊥ b is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "√(|a|² + |b|²)",
+                                          "B":  "|a| + |b|",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  17,
+                          "question":  "If |a⃗|=2, |b⃗|=3, a⃗·b⃗=3, then |a⃗−b⃗| = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "√7",
+                                          "B":  "√13",
+                                          "C":  "√5",
+                                          "D":  "√11"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  18,
+                          "question":  "If a = 2i+3j+4k and b = 3i+2j-k, find a.b.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "8",
+                                          "B":  "12",
+                                          "C":  "0",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  19,
+                          "question":  "Work done by force F⃗ = 3î+4ĵ along displacement d⃗ = 4î−3ĵ+k̂ is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "0",
+                                          "B":  "25",
+                                          "C":  "12",
+                                          "D":  "5"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  20,
+                          "question":  "Direction cosines l,m,n of vector a are given by â = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "l i + m j + n k",
+                                          "B":  "x i + y j + z k",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  21,
+                          "question":  "If rotation gives c from b, and they are unit vectors, b.c = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "cos θ",
+                                          "B":  "sin θ",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  22,
+                          "question":  "Is (a.b)c = a(b.c)?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "No, generally false",
+                                          "B":  "Yes, always true",
+                                          "C":  "True only if collinear",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  23,
+                          "question":  "Vector a - proj_b(a) is ______ to b.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Orthogonal",
+                                          "B":  "Parallel",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  24,
+                          "question":  "The value of (î+ĵ+k̂)·(î+ĵ+k̂) = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "3",
+                                          "B":  "1",
+                                          "C":  "0",
+                                          "D":  "√3"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  25,
+                          "question":  "If difference of two unit vectors is a unit vector, angle is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "60°",
+                                          "B":  "120°",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      }
+                  ]
 }

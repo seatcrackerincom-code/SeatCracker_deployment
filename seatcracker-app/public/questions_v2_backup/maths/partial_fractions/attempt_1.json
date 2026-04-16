@@ -1,0 +1,459 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "In resolving x\u00b2 / ((x-1)\u00b2(x+2)), the highest power factor is (x-1)\u00b2. For A/(x-1) + B/(x-1)\u00b2 + C/(x+2), B is calculated directly by cover-up with x=1. What about A?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "It requires taking a derivative or comparing coefficients",
+                "B": "Cover-up method works for A too",
+                "C": "A is always zero",
+                "D": "A = B"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 2,
+            "question": "1/((x\u22121)(x\u22122)(x\u22123)) = A/(x\u22121)+B/(x\u22122)+C/(x\u22123). Then B = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "\u22121",
+                "B": "1",
+                "C": "2",
+                "D": "\u22122"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 3,
+            "question": "Resolve (2x+3)/((x\u22121)(x+2)) into partial fractions. A = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "5/3",
+                "B": "1/3",
+                "C": "2/3",
+                "D": "3/5"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 4,
+            "question": "The partial fractions for repeated linear roots 1/(x-a)\u00b3 will be: A/(x-a) + B/(x-a)\u00b2 + ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "C/(x-a)\u00b3",
+                "B": "C/(x-a)",
+                "C": "(Cx+D)/(x-a)\u00b3",
+                "D": "1/(x-a)\u00b3"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "For 1 / (x(x\u00b2 + a\u00b2)), the partial fractions are A/x + (Bx+C)/(x\u00b2+a\u00b2). A is evaluated at x=0 as ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1/a\u00b2",
+                "B": "1/a",
+                "C": "-1/a\u00b2",
+                "D": "a\u00b2"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "The decomposition of 1 / (x\u00b2 - a\u00b2) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(1/2a) [1/(x-a) - 1/(x+a)]",
+                "B": "(1/a) [1/(x-a) + 1/(x+a)]",
+                "C": "1/(x-a) - 1/(x+a)",
+                "D": "(1/2a) [1/(x+a) - 1/(x-a)]"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "If Q(x) has a repeated linear factor (ax + b)^k, it corresponds to a sum of ______ partial fractions.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "k",
+                "B": "k-1",
+                "C": "1",
+                "D": "k+1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 8,
+            "question": "In the decomposition of x / ((x-1)(x\u00b2+1)), the correct form is A/(x-1) + ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(Bx + C)/(x\u00b2+1)",
+                "B": "B/(x\u00b2+1)",
+                "C": "(B+x)/(x\u00b2+1)",
+                "D": "C/(x-1)\u00b2"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 9,
+            "question": "In the same f(x) = (x-1)/((x-2)(x-3)), B is found using cover-up with x=3: (3-1)/(3-2) = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2",
+                "B": "-2",
+                "C": "1/2",
+                "D": "-1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 10,
+            "question": "Partial fraction form of (x\u00b2+1)/((x+1)\u00b2(x+2)) includes?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "A/(x+1) + B/(x+1)\u00b2 + C/(x+2)",
+                "B": "(Ax+B)/(x+1)\u00b2 + C/(x+2)",
+                "C": "A/(x+1)\u00b2 + B/(x+2)",
+                "D": "A/(x+1) + B/(x+2)"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 11,
+            "question": "To resolve (x\u00b3 + 1) / (x\u00b2 - 1) into partial fractions, the very first step is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Perform long division because it is an improper fraction",
+                "B": "Factor the denominator",
+                "C": "Set it equal to A/(x-1) + B/(x+1)",
+                "D": "Substitute x = 1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 12,
+            "question": "For 1/((x-1)(x-2)), the partial fraction decomposition takes the form ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "A/(x-1) + B/(x-2)",
+                "B": "(Ax+B)/((x-1)(x-2))",
+                "C": "A/(x-1) + Bx/(x-2)",
+                "D": "A/(x-1)\u00b2 + B/(x-2)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 13,
+            "question": "Resolving f(x) = (x-1)/((x-2)(x-3)) yields A/(x-2) + B/(x-3). The value of A by cover-up method is (2-1)/(2-3) = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-1",
+                "B": "1",
+                "C": "2",
+                "D": "1/2"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 14,
+            "question": "For a rational function like (x\u00b2 + 1) / (x\u00b3 + 1), the first step is to factorize the denominator logic entirely into ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Linear and irreducible quadratic factors over real numbers",
+                "B": "Only linear factors",
+                "C": "Taylor series parts",
+                "D": "Monomials"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 15,
+            "question": "Form of partial fractions for (x+1)/((x\u22121)(x+2)) is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "A/(x\u22121) + B/(x+2)",
+                "B": "A/(x\u22121) + B/(x+2)\u00b2",
+                "C": "(Ax+B)/(x\u22121) + C/(x+2)",
+                "D": "A/x + B/(x\u22121)"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 16,
+            "question": "The decomposition of 1 / (a\u00b2 - x\u00b2) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(1/2a) [1/(a-x) + 1/(a+x)]",
+                "B": "(1/2a) [1/(x-a) - 1/(x+a)]",
+                "C": "1/(a-x) + 1/(a+x)",
+                "D": "1/(a-x) - 1/(a+x)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "If Q(x) contains a non-repeated irreducible quadratic factor (ax\u00b2 + bx + c), the corresponding partial fraction is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(Ax + B) / (ax\u00b2 + bx + c)",
+                "B": "A / (ax\u00b2 + bx + c)",
+                "C": "(Ax\u00b2 + B) / (ax\u00b2 + bx + c)",
+                "D": "A / (ax+b) + B / (cx+d)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 18,
+            "question": "For irreducible quadratic in denominator (x\u00b2+1), partial fraction form is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(Ax+B)/(x\u00b2+1)",
+                "B": "A/(x\u00b2+1)",
+                "C": "A/x + B/x\u00b2",
+                "D": "Ax/(x\u00b2+1)"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 19,
+            "question": "In the decomposition P(x)/((x-a)(x-b)) = A/(x-a) + B/(x-b), A can be found quickly using the ______ by setting x = a.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Cover-up method (Heaviside)",
+                "B": "Taylor expansion",
+                "C": "Integration by parts",
+                "D": "Binomial Theorem"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 20,
+            "question": "If the denominator contains a repeated irreducible quadratic factor (ax\u00b2+bx+c)\u00b2, the decomposition includes (Ax+B)/(ax\u00b2+bx+c) + ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(Cx+D)/(ax\u00b2+bx+c)\u00b2",
+                "B": "C/(ax\u00b2+bx+c)\u00b2",
+                "C": "(Cx\u00b2+Dx+E)/(ax\u00b2+bx+c)\u00b2",
+                "D": "C/(ax\u00b2+bx+c)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the vectors a = 4i + 3j and b = 2i - j are perpendicular, find the value of 4*2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "partial_fractions_21"
+        },
+        {
+            "question": "If the matrix A is [[8, 17], [0, 8]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "128",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[64, 272], [0, 64]]. Trace is sum of diagonal elements: 64 + 64.",
+            "id": "partial_fractions_22"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(4x) / tan(12x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4/12",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 4/12.",
+            "id": "partial_fractions_23"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(8x) / tan(13x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8/13",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 8/13.",
+            "id": "partial_fractions_24"
+        },
+        {
+            "question": "If the matrix A is [[16, 19], [0, 5]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "281",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[256, 399], [0, 25]]. Trace is sum of diagonal elements: 256 + 25.",
+            "id": "partial_fractions_25"
+        },
+        {
+            "question": "If the matrix A is [[20, 3], [0, 4]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "416",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[400, 72], [0, 16]]. Trace is sum of diagonal elements: 400 + 16.",
+            "id": "partial_fractions_26"
+        },
+        {
+            "question": "If the vectors a = 17i + 8j and b = 9i - j are perpendicular, find the value of 17*9.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
+            "id": "partial_fractions_27"
+        },
+        {
+            "question": "If the matrix A is [[8, 20], [0, 7]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "113",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[64, 300], [0, 49]]. Trace is sum of diagonal elements: 64 + 49.",
+            "id": "partial_fractions_28"
+        },
+        {
+            "question": "Evaluate the limit as x approaches 0 of (sin(20x) / tan(13x)).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "20/13",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "Using lim x->0 sin(kx)/x = k, we get 20/13.",
+            "id": "partial_fractions_29"
+        },
+        {
+            "question": "If the matrix A is [[19, 6], [0, 6]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "397",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[361, 150], [0, 36]]. Trace is sum of diagonal elements: 361 + 36.",
+            "id": "partial_fractions_30"
+        }
+    ]
+}

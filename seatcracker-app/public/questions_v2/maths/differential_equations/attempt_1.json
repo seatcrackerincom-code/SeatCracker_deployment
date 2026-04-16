@@ -1,459 +1,387 @@
-{
-    "questions": [
-        {
-            "id": 1,
-            "question": "If we substitute y=vx, then dy/dx becomes ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "v + x(dv/dx)",
-                "B": "dv/dx",
-                "C": "x(dv/dx)",
-                "D": "v(dx/dv)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 2,
-            "question": "For a Homogeneous Differential Equation dy/dx = f(y/x), we substitute y = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "vx",
-                "B": "x/v",
-                "C": "u+v",
-                "D": "v\u00b2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 3,
-            "question": "An equation Mdx + Ndy = 0 is Exact if \u2202M/\u2202y is equal to ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u2202N/\u2202x",
-                "B": "-\u2202N/\u2202x",
-                "C": "\u2202M/\u2202x",
-                "D": "N"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 4,
-            "question": "Bernoulli's equation dy/dx + Py = Qy\u207f is solved by substituting ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "y^(1-n) = v",
-                "B": "y^n = v",
-                "C": "x = v",
-                "D": "log y = v"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 5,
-            "question": "If (\u2202M/\u2202y - \u2202N/\u2202x)/N = f(x), then integrating factor is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "e^(\u222bf(x) dx)",
-                "B": "e^(\u222bf(y) dy)",
-                "C": "f(x)",
-                "D": "\u222bM dx"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "The degree of d\u00b2y/dx\u00b2 = \u221a(1 + (dy/dx)\u00b2) is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "1",
-                "C": "3",
-                "D": "4"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 7,
-            "question": "The general solution of dy/dx + Py = Q is y * (IF) = ______ + C.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u222b Q * (IF) dx",
-                "B": "Q",
-                "C": "P",
-                "D": "\u222b P * (IF) dx"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 8,
-            "question": "The solution of an exact differential equation Mdx + Ndy = 0 involves \u222bM dx (treating y as constant).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "Only if integrable",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 9,
-            "question": "Solution of dy/dx = y/x is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "y = cx",
-                "B": "y = c/x",
-                "C": "y = x + c",
-                "D": "y = cx\u00b2"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 10,
-            "question": "The degree of differential equation sin(dy/dx) = y is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Not defined",
-                "B": "1",
-                "C": "0",
-                "D": "Infinite"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 11,
-            "question": "The integrating factor of dy/dx + y\u00b7cot x = 2cos x is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "sin x",
-                "B": "cos x",
-                "C": "tan x",
-                "D": "cot x"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "If the vectors a = 13i + 8j and b = 9i - j are perpendicular, find the value of 13*9.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "8",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": 12
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(15x) / tan(5x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "15/5",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 15/5.",
-            "id": 13
-        },
-        {
-            "id": 14,
-            "question": "Order and degree of (d\u00b2y/dx\u00b2)\u00b3 + (dy/dx)\u00b2 + y = 0 is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(2, 3)",
-                "B": "(3, 2)",
-                "C": "(2, 2)",
-                "D": "(3, 3)"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 15,
-            "question": "The solution of dy/dx = -x/y implies ydy = -xdx, which integrates to x\u00b2 + y\u00b2 = 2C. This family represents ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Circles centered at origin",
-                "B": "Parabolas",
-                "C": "Straight lines",
-                "D": "Hyperbolas"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 16,
-            "question": "dy/dx = e^(x+y), general solution is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "e^x + e^(\u2212y) = c",
-                "B": "e^x \u2212 e^y = c",
-                "C": "e^(x\u2212y) = c",
-                "D": "e^x + e^y = c"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 17,
-            "question": "The order of differential equation whose general solution has 'n' arbitrary constants is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "n",
-                "B": "n+1",
-                "C": "n-1",
-                "D": "2n"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(16x) / tan(9x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "16/9",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 16/9.",
-            "id": 18
-        },
-        {
-            "id": 19,
-            "question": "If the tangential slope dy/dx = y/x, the curves satisfy xdy - ydx = 0, which are ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Lines through origin",
-                "B": "Circles passing origin",
-                "C": "Parabolas",
-                "D": "Ellipses"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the vectors a = 14i + 12j and b = 10i - j are perpendicular, find the value of 14*10.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "12",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": 20
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(9x) / tan(3x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "9/3",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 9/3.",
-            "id": "differential_equations_21"
-        },
-        {
-            "question": "If the vectors a = 9i + 15j and b = 9i - j are perpendicular, find the value of 9*9.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "15",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "differential_equations_22"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^4 * (1-x)^17 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "23",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "differential_equations_23"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^11 * (1-x)^3 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "16",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "differential_equations_24"
-        },
-        {
-            "question": "If the matrix A is [[17, 8], [0, 2]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "293",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[289, 152], [0, 4]]. Trace is sum of diagonal elements: 289 + 4.",
-            "id": "differential_equations_25"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^5 * (1-x)^11 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "18",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "differential_equations_26"
-        },
-        {
-            "question": "If the matrix A is [[6, 19], [0, 2]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "40",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[36, 152], [0, 4]]. Trace is sum of diagonal elements: 36 + 4.",
-            "id": "differential_equations_27"
-        },
-        {
-            "question": "If the matrix A is [[4, 7], [0, 2]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "20",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[16, 42], [0, 4]]. Trace is sum of diagonal elements: 16 + 4.",
-            "id": "differential_equations_28"
-        },
-        {
-            "question": "If the vectors a = 9i + 6j and b = 5i - j are perpendicular, find the value of 9*5.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "6",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "differential_equations_29"
-        },
-        {
-            "question": "If the vectors a = 14i + 10j and b = 2i - j are perpendicular, find the value of 14*2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "10",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "differential_equations_30"
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  1,
+                          "question":  "An equation Mdx + Ndy = 0 is Exact if ∂M/∂y is equal to ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "∂N/∂x",
+                                          "B":  "-∂N/∂x",
+                                          "C":  "∂M/∂x",
+                                          "D":  "N"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  2,
+                          "question":  "If (∂M/∂y - ∂N/∂x)/N = f(x), then integrating factor is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "e^(∫f(x) dx)",
+                                          "B":  "e^(∫f(y) dy)",
+                                          "C":  "f(x)",
+                                          "D":  "∫M dx"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  3,
+                          "question":  "The solution of an exact differential equation Mdx + Ndy = 0 involves ∫M dx (treating y as constant).",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "Only if integrable",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  4,
+                          "question":  "The order of differential equation whose general solution has \u0027n\u0027 arbitrary constants is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "n",
+                                          "B":  "n+1",
+                                          "C":  "n-1",
+                                          "D":  "2n"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  5,
+                          "question":  "Newton\u0027s Law of Cooling is a linear first order equation.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  6,
+                          "question":  "Equation (x²-yx²)dy + (y²+xy²)dx = 0 is variable separable.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  7,
+                          "question":  "The differential equation d²y/dx² = 0 represents ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Straight lines",
+                                          "B":  "Circles",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  8,
+                          "question":  "Family of curves x² + y² = 2ax. Differential equation is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(x²−y²)dy/dx = 2xy",
+                                          "B":  "(x²+y²)dy/dx = 2xy",
+                                          "C":  "x·dy/dx = y + √(x²+y²)",
+                                          "D":  "y·dy/dx = x²+y²"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  9,
+                          "question":  "The equation of curve passing through (1,1) with slope = y/x + x²/y² is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "y = x·e^((x³−1)/3)",
+                                          "B":  "y = e^(x−1)",
+                                          "C":  "y = x + ln x",
+                                          "D":  "y²=x²+ln x"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  10,
+                          "question":  "Logistic growth model is non-linear.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  11,
+                          "question":  "Differential equation of y² = 4ax is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "y = 2xy\u0027",
+                                          "B":  "y = xy\u0027",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  12,
+                          "question":  "Function f(x,y) is homogeneous if f(λx, λy) = λⁿ f(x,y).",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  13,
+                          "question":  "Solution of (x²−y²)dx + 2xy·dy = 0 is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "x² + y² = cx",
+                                          "B":  "x² − y² = cx",
+                                          "C":  "y² = cx − x²",
+                                          "D":  "x(x²+y²) = c"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  14,
+                          "question":  "(1+yÂ²)dx = (tanâ»Â¹y âˆ’ x)dy. Integrating factor is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "e^(tanâ»Â¹y)",
+                                          "B":  "tanâ»Â¹y",
+                                          "C":  "e^y",
+                                          "D":  "1/(1+yÂ²)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  15,
+                          "question":  "Solution of xÂ·sin(y/x)Â·dy = (yÂ·sin(y/x)âˆ’x)dx is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "cos(y/x) = ln|x| + c",
+                                          "B":  "sin(y/x) = ln|x| + c",
+                                          "C":  "cos(y/x) + ln|x| = c",
+                                          "D":  "y/x = e^(câˆ’ln x)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  16,
+                          "question":  "The envelope represents a singular solution.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  17,
+                          "question":  "Clairaut\u0027s form solution is y = cx + f(c).",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  18,
+                          "question":  "The equation y dx - x dy + ln x dx = 0 is exact after divide by x.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  19,
+                          "question":  "Expression x dx + y dy is (1/2) d(xÂ² + yÂ²).",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  20,
+                          "question":  "Can Singular solutions be obtained from general solutions?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "No",
+                                          "B":  "Yes",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  21,
+                          "question":  "Expression (x dy - y dx) / xÂ² is d(y/x).",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  22,
+                          "question":  "Degree of differential equation for ellipses with center at origin is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "2",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  23,
+                          "question":  "The differential equation of y = ae^(3x) + be^(−2x) is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "d²y/dx² − dy/dx − 6y = 0",
+                                          "B":  "d²y/dx² + dy/dx − 6y = 0",
+                                          "C":  "d²y/dx² − 5dy/dx + 6y = 0",
+                                          "D":  "d²y/dx² + 5dy/dx + 6y = 0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "The general solution of d²y/dx² + y = 0 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "options":  {
+                                          "A":  "y = A cos x + B sin x",
+                                          "B":  "y = e^x",
+                                          "C":  "y = x",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false,
+                          "tag":  "hard",
+                          "id":  24
+                      },
+                      {
+                          "id":  25,
+                          "question":  "The equation (2xy − y²)dx + (2xy − x²)dy = 0 is exact if?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "always exact",
+                                          "B":  "never exact",
+                                          "C":  "exact only when y = x",
+                                          "D":  "exact with IF = 1/(xy)²"
+                                      },
+                          "answer":  "B",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      }
+                  ]
 }

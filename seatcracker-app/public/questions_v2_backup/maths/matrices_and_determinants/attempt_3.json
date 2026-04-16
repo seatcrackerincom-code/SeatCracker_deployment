@@ -1,0 +1,314 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "If |A| = k and n is order, then |adj A| = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "k\u207f\u207b\u00b9",
+                "B": "k\u207f",
+                "C": "k",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If A is a 3x3 non-singular matrix such that |A| = 5, then |adj(adj A)| is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "5\u2074",
+                "B": "5\u2079",
+                "C": "5\u00b2",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 2
+        },
+        {
+            "id": 3,
+            "question": "If rank(A) = rank([A|B]) = number of unknowns, the system has ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Unique solution",
+                "B": "Infinite solutions",
+                "C": "No solution",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 4,
+            "question": "Inverse of a non-singular symmetric matrix is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Symmetric",
+                "B": "Skew-symmetric",
+                "C": "Diagonal",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "If A and B are n\u00d7n matrices, then (AB)\u1d40 = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "B\u1d40A\u1d40",
+                "B": "A\u1d40B\u1d40",
+                "C": "AB\u1d40",
+                "D": "A\u1d40B"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "If the matrix A is [[14, 12], [0, 1]], find the trace of A^2.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "197",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Think step by step.",
+            "solution": "A^2 = [[196, 180], [0, 1]]. Trace is sum of diagonal elements: 196 + 1.",
+            "id": 6
+        },
+        {
+            "id": 7,
+            "question": "If A = diag(2, 3, 5), then det(A) = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "30",
+                "B": "10",
+                "C": "15",
+                "D": "6"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 8,
+            "question": "If A = [[cos \u03b8, sin \u03b8],[-sin \u03b8, cos \u03b8]], then A^n = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "[[cos n\u03b8, sin n\u03b8],[-sin n\u03b8, cos n\u03b8]]",
+                "B": "[[cos n\u03b8, -sin n\u03b8],[sin n\u03b8, cos n\u03b8]]",
+                "C": "n\u00b7A",
+                "D": "A"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "If A and B are square matrices of order n such that AB = O and B is non-singular, then A = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "O",
+                "B": "I",
+                "C": "B\u207b\u00b9",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 9
+        },
+        {
+            "id": 10,
+            "question": "The number of non-singular 2\u00d72 matrices over Z\u2082 is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "6",
+                "B": "4",
+                "C": "8",
+                "D": "12"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 11,
+            "question": "The value of determinant | [ [1, a, b+c], [1, b, c+a], [1, c, a+b] ] | is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "abc",
+                "C": "a+b+c",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If the system of equations x + y + z = 6, x + 2y + 3z = 10, x + 2y + \u03bbz = \u03bc has infinite solutions, then ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "\u03bb = 3, \u03bc = 10",
+                "B": "\u03bb \u2260 3",
+                "C": "\u03bb = 3, \u03bc \u2260 10",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 12
+        },
+        {
+            "id": 13,
+            "question": "Adjoint of a symmetric matrix is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Symmetric",
+                "B": "Skew-symmetric",
+                "C": "Diagonal",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 14,
+            "question": "The operation R1 -> R1 + kR2 ______ the value of determinant.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Does not change",
+                "B": "Multiplies by k",
+                "C": "Sets to zero",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 15,
+            "question": "For what value of k does x+2y=3, 5x+ky=15 have infinite solutions?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "10",
+                "B": "2",
+                "C": "5",
+                "D": "6"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 16,
+            "question": "Number of zero rows in row-reduced echelon form gives the ______ of the matrix.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "nullity",
+                "B": "rank",
+                "C": "order",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "Inverse of diagonal matrix diag(a, b, c) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "diag(1/a, 1/b, 1/c)",
+                "B": "diag(a, b, c)",
+                "C": "diag(-a, -b, -c)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The value of a determinant with rows (1, a, a\u00b2), (1, b, b\u00b2), (1, c, c\u00b2) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "(a-b)(b-c)(c-a)",
+                "B": "(a+b)(b+c)(c+a)",
+                "C": "abc",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 18
+        },
+        {
+            "question": "If A is an idempotent matrix, then (I+A)\u207f = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "I + (2\u207f-1)A",
+                "B": "I + nA",
+                "C": "I + A",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 19
+        },
+        {
+            "id": 20,
+            "question": "If rank(A) < r, then all minors of order r are ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Zero",
+                "B": "Non-zero",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        }
+    ]
+}

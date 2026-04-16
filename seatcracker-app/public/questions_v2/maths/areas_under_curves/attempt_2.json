@@ -1,304 +1,379 @@
-{
-    "questions": [
-        {
-            "id": 1,
-            "question": "If \u222b_0^a f(x) dx represents area, a scaling of x-axis by k results in area ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Multiplying by k",
-                "B": "Dividing by k",
-                "C": "Remaining same",
-                "D": "Squaring"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 2,
-            "question": "The area bounded by curves y = |x| - 1 and y = -|x| + 1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "4",
-                "C": "1",
-                "D": "\u221a2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 3,
-            "question": "Calculate the area bounded by the curve y = x\u00b3 - x and the x-axis.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/2 sq unit",
-                "B": "1/4 sq unit",
-                "C": "1 sq unit",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 3 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": 4
-        },
-        {
-            "id": 5,
-            "question": "Area bounded by y = x + sin x and its inverse between x=0 and 2\u03c0 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "8",
-                "B": "4",
-                "C": "2\u03c0",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "To evaluate the area of sector of a curve in polar coordinates r=f(\u03b8), we use the integral ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(1/2) \u222b r\u00b2 d\u03b8",
-                "B": "\u222b r d\u03b8",
-                "C": "(1/2) \u222b r d\u03b8",
-                "D": "\u222b r\u00b2 d\u03b8"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the matrix A is [[7, 3], [0, 1]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "50",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[49, 24], [0, 1]]. Trace is sum of diagonal elements: 49 + 1.",
-            "id": 7
-        },
-        {
-            "id": 8,
-            "question": "Area bounded by y = sin\u00b2x from 0 to \u03c0 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u03c0/2",
-                "B": "\u03c0",
-                "C": "\u03c0/4",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 9,
-            "question": "The area of the region {(x,y) : y\u00b2 \u2264 2x and y \u2265 4x-1} is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "9/32",
-                "B": "9/16",
-                "C": "3/8",
-                "D": "5/32"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 10,
-            "question": "Given the curve y = f(x), if f(x) is an odd function, the area bounded by the curve, x-axis from -a to a is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2 * \u222b_0^a |f(x)| dx",
-                "B": "0",
-                "C": "\u222b_0^a f(x) dx",
-                "D": "4 * \u222b_0^a f(x) dx"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 13 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": 11
-        },
-        {
-            "id": 12,
-            "question": "Area bounded by curve y=x\u00b2-4 and the lines y=0 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "32/3",
-                "B": "16/3",
-                "C": "8/3",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 13,
-            "question": "The area of region bounded by x\u00b2+y\u00b2=1 and |x|+|y|=1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u03c0 - 2",
-                "B": "\u03c0 - 1",
-                "C": "2\u03c0 - 2",
-                "D": "\u03c0/2 - 1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 14,
-            "question": "Area under the normal distribution curve y = 1/\u221a(2\u03c0) e^{-x\u00b2/2} from -\u221e to \u221e is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1",
-                "B": "\u221a\u03c0",
-                "C": "2\u03c0",
-                "D": "e"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(2x) / tan(9x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2/9",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 2/9.",
-            "id": 15
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 17 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": 16
-        },
-        {
-            "id": 17,
-            "question": "Area enclosed by the curves y=sin x and y=cos x in the interval [0, 2\u03c0] is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "4\u221a2",
-                "B": "2\u221a2",
-                "C": "4",
-                "D": "2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 18,
-            "question": "Area bounded by the curve y=e^(-x) and x-axis from x=0 to x=\u221e is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1",
-                "B": "e",
-                "C": "\u221e",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 19,
-            "question": "The area of the region bounded by the curve y = x\u00b2 - 3x + 2 and the x-axis is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/6 sq unit",
-                "B": "1/3 sq unit",
-                "C": "1/2 sq unit",
-                "D": "5/6 sq unit"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "Area between y = 2 - x\u00b2 and y = x is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "9/2",
-                "B": "9/4",
-                "C": "3",
-                "D": "27/2"
-            },
-            "answer": "A",
-            "pyq": false
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "question":  "Find the number of ways to arrange the letters of the word \u0027SUCCESS\u0027 such that the 13 S\u0027s are always together.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "60",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+                          "id":  26
+                      },
+                      {
+                          "id":  27,
+                          "question":  "Area bounded by curve y=x²-4 and the lines y=0 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "32/3",
+                                          "B":  "16/3",
+                                          "C":  "8/3",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  28,
+                          "question":  "The area of region bounded by x²+y²=1 and |x|+|y|=1 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "π - 2",
+                                          "B":  "π - 1",
+                                          "C":  "2π - 2",
+                                          "D":  "π/2 - 1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  29,
+                          "question":  "Area under the normal distribution curve y = 1/√(2π) e^{-x²/2} from -∞ to ∞ is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "√π",
+                                          "C":  "2π",
+                                          "D":  "e"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Find the number of ways to arrange the letters of the word \u0027SUCCESS\u0027 such that the 17 S\u0027s are always together.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "60",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+                          "id":  30
+                      },
+                      {
+                          "id":  31,
+                          "question":  "Area enclosed by the curves y=sin x and y=cos x in the interval [0, 2π] is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "4√2",
+                                          "B":  "2√2",
+                                          "C":  "4",
+                                          "D":  "2"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  32,
+                          "question":  "Area bounded by the curve y=e^(-x) and x-axis from x=0 to x=∞ is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "e",
+                                          "C":  "∞",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  33,
+                          "question":  "The area of the region bounded by the curve y = x² - 3x + 2 and the x-axis is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1/6 sq unit",
+                                          "B":  "1/3 sq unit",
+                                          "C":  "1/2 sq unit",
+                                          "D":  "5/6 sq unit"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  34,
+                          "question":  "Area between y = 2 - x² and y = x is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "9/2",
+                                          "B":  "9/4",
+                                          "C":  "3",
+                                          "D":  "27/2"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  35,
+                          "question":  "The area bounded by the curve y² = 4ax and its focal chord x = a is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "8a²/3 sq units",
+                                          "B":  "4a²/3 sq units",
+                                          "C":  "2a²/3 sq units",
+                                          "D":  "a² sq units"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  36,
+                          "question":  "The area bounded by y = e^{-|x|} and the x-axis is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2 sq units",
+                                          "B":  "1 sq unit",
+                                          "C":  "e sq units",
+                                          "D":  "∞"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  37,
+                          "question":  "The area between the curve y = 1/√(1-x²) and the lines x = 0, x = 1/2 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "π/6 sq units",
+                                          "B":  "π/3 sq units",
+                                          "C":  "π/4 sq units",
+                                          "D":  "1/2 sq unit"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  38,
+                          "question":  "Area of the region bounded by y = cos²x and x-axis from x=0 to x=π/2 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "π/4 sq units",
+                                          "B":  "π/2 sq units",
+                                          "C":  "1 sq unit",
+                                          "D":  "π/8 sq units"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  39,
+                          "question":  "What is the area of the region bounded by y = sin x and y = cos x for x in [0, π/2]?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2(√2 - 1) sq units",
+                                          "B":  "√2 - 1 sq units",
+                                          "C":  "2√2 sq units",
+                                          "D":  "1 sq unit"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  40,
+                          "question":  "Find the area common to y² = 4x and x² = 4y.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "16/3 sq units",
+                                          "B":  "8/3 sq units",
+                                          "C":  "4/3 sq units",
+                                          "D":  "1 sq unit"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  41,
+                          "question":  "The area bounded by y = x⁴ and its tangent at (1,1) is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "3/2 sq units",
+                                          "B":  "1/2 sq unit",
+                                          "C":  "4/5 sq unit",
+                                          "D":  "None"
+                                      },
+                          "answer":  "D",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  42,
+                          "question":  "Area bounded by y = x², y = 4 and x = 0 in the first quadrant is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "16/3 sq units",
+                                          "B":  "8/3 sq units",
+                                          "C":  "4/3 sq units",
+                                          "D":  "32/3 sq units"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  43,
+                          "question":  "If the area bounded by the curve y = kx² and the line y = k is 4/3, what is the value of k?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Any positive k",
+                                          "B":  "1",
+                                          "C":  "2",
+                                          "D":  "1/2"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  44,
+                          "question":  "The area bounded by the graph y = [x] from x = 1 to x = 3 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "3 sq units",
+                                          "B":  "2 sq units",
+                                          "C":  "1 sq unit",
+                                          "D":  "4 sq units"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  45,
+                          "question":  "Determine the area between y² = 4x and the line y = 2x.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1/3 sq unit",
+                                          "B":  "2/3 sq unit",
+                                          "C":  "1/6 sq unit",
+                                          "D":  "1 sq unit"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Find the number of ways to arrange the letters of the word \u0027SUCCESS\u0027 such that the 2 S\u0027s are always together.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "60",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+                          "id":  46
+                      },
+                      {
+                          "id":  47,
+                          "question":  "The area between the curve y = tan x, and the lines x = 0, x = π/3, y = 0 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "log 2",
+                                          "B":  "log 1/2",
+                                          "C":  "√3",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  48,
+                          "question":  "The region bounded by y = e^x, y = e, and x = 0 has an area of ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "e-1",
+                                          "C":  "e",
+                                          "D":  "1/e"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  49,
+                          "question":  "Find the area of the region bounded by y = |sin x| and the x-axis from 0 to 2π.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "4 sq units",
+                                          "B":  "2 sq units",
+                                          "C":  "0",
+                                          "D":  "π sq units"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  50,
+                          "question":  "Find the area bounded by the curves y = √x and y = x³.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "5/12 sq units",
+                                          "B":  "7/12 sq units",
+                                          "C":  "1/4 sq unit",
+                                          "D":  "1/3 sq unit"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      }
+                  ]
 }

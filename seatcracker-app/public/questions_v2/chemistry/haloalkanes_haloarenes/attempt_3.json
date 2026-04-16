@@ -1,296 +1,140 @@
-{
-    "questions": [
-        {
-            "question": "At 341 K, the equilibrium constant Kp for a reaction is 7. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "Increases",
-                "B": "None",
-                "C": "Decreases",
-                "D": "Stable"
-            },
-            "answer": "A",
-            "hint": "Apply periodic table laws.",
-            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
-            "id": 1
-        },
-        {
-            "question": "At 485 K, the equilibrium constant Kp for a reaction is 6. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "Increases",
-                "B": "None",
-                "C": "Decreases",
-                "D": "Stable"
-            },
-            "answer": "A",
-            "hint": "Apply periodic table laws.",
-            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
-            "id": 2
-        },
-        {
-            "question": "Which of the following is used as a refrigerant?",
-            "difficulty": "medium",
-            "pyq": true,
-            "options": {
-                "A": "CCl4",
-                "B": "CHCl3",
-                "C": "CCl2F2 (Freon-12)",
-                "D": "CH2Cl2"
-            },
-            "answer": "C",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "id": 3,
-            "tag": "pyq"
-        },
-        {
-            "question": "At 388 K, the equilibrium constant Kp for a reaction is 5. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "Increases",
-                "B": "None",
-                "C": "Decreases",
-                "D": "Stable"
-            },
-            "answer": "A",
-            "hint": "Apply periodic table laws.",
-            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
-            "id": 4
-        },
-        {
-            "question": "The number of moles of solute in 1 Liters of a 0.345 M solution is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "0.345",
-                "B": "None",
-                "C": "Decreases",
-                "D": "Stable"
-            },
-            "answer": "A",
-            "hint": "Apply periodic table laws.",
-            "solution": "Moles = Molarity * Volume = 0.345 * 1.",
-            "id": 5
-        },
-        {
-            "id": 6,
-            "question": "Reaction of alkyl halide with silver cyanide (AgCN) gives alkyl ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Cyanides",
-                "B": "Isocyanides",
-                "C": "Nitriles",
-                "D": "Amines"
-            },
-            "answer": "B"
-        },
-        {
-            "id": 7,
-            "question": "Optical activity of a compound is measured using a ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Barometer",
-                "B": "Polarimeter",
-                "C": "Spectrometer",
-                "D": "Titrator"
-            },
-            "answer": "B"
-        },
-        {
-            "question": "The rate constant of a reaction is 2.55 x 10^-3 s^-1 at 305 K and 6.9 x 10^-3 s^-1 at 315 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "79.51",
-                "B": "95.41",
-                "C": "63.61",
-                "D": "89.51"
-            },
-            "answer": "A",
-            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-            "solution": "ln(6.9/2.55) = (Ea/8.314) * (1/305 - 1/315). Solving gives 79.51 kJ/mol.",
-            "id": 8
-        },
-        {
-            "id": 9,
-            "question": "Preparation of fluorides using Mercurous fluoride (Hg2F2) is ______ reaction.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Wurtz",
-                "B": "Swarts",
-                "C": "Sandmeyer",
-                "D": "Fittig"
-            },
-            "answer": "B"
-        },
-        {
-            "id": 10,
-            "question": "Substitution of chlorine by OH group in chlorobenzene requires heating at ______ temperature.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Room",
-                "B": "High (about 623 K)",
-                "C": "Freezing",
-                "D": "Boiling water"
-            },
-            "answer": "B"
-        },
-        {
-            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 46\u00b0C)",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2-bromo-2-methylbutane",
-                "B": "2-bromobutane",
-                "C": "1-bromo-2-methylbutane",
-                "D": "1-bromobutane"
-            },
-            "answer": "A",
-            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-            "solution": "SN1 rate depends on carbocation stability (3\u00b0 > 2\u00b0 > 1\u00b0). Option A forms a highly stable tertiary carbocation.",
-            "id": 11
-        },
-        {
-            "id": 12,
-            "question": "Reaction of chlorobenzene with chloral gives ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "BHC",
-                "B": "DDT",
-                "C": "Phenol",
-                "D": "Aniline"
-            },
-            "answer": "B"
-        },
-        {
-            "id": 13,
-            "question": "SN1 mechanism involves formation of a planar ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Carbanion",
-                "B": "Carbocation",
-                "C": "Neutral atom",
-                "D": "Cube"
-            },
-            "answer": "B"
-        },
-        {
-            "id": 14,
-            "question": "Nucleophilic substitution is difficult in haloarenes due to ______ character of C-Cl bond.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Weak",
-                "B": "Partial double bond",
-                "C": "Ionic",
-                "D": "Triple bond"
-            },
-            "answer": "B"
-        },
-        {
-            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 69\u00b0C)",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "tert-butyl bromide",
-                "B": "isopropyl bromide",
-                "C": "ethyl bromide",
-                "D": "methyl bromide"
-            },
-            "answer": "A",
-            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-            "solution": "SN1 rate depends on carbocation stability (3\u00b0 > 2\u00b0 > 1\u00b0). Option A forms a highly stable tertiary carbocation.",
-            "id": 15
-        },
-        {
-            "id": 16,
-            "question": "Density of alkyl halides ______ with increase in atomic mass of halogen.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Decreases",
-                "B": "Increases",
-                "C": "Zeros",
-                "D": "Stays constant"
-            },
-            "answer": "B"
-        },
-        {
-            "id": 17,
-            "question": "Alkyl iodides turn ______ on standing in light.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Blue",
-                "B": "Brown / Dark",
-                "C": "Colorless",
-                "D": "White"
-            },
-            "answer": "B"
-        },
-        {
-            "question": "Which of the following alkyl halides will undergo racemization when reacted with aqueous KOH?",
-            "difficulty": "hard",
-            "pyq": false,
-            "options": {
-                "A": "1-Bromobutane",
-                "B": "2-Bromobutane",
-                "C": "2-Bromo-2-methylpropane",
-                "D": "Bromomethane"
-            },
-            "answer": "B",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "id": 18
-        },
-        {
-            "question": "The correct order of increasing reactivity towards SN1 reaction for the following compounds is: (I) Benzyl chloride, (II) p-Methoxybenzyl chloride, (III) p-Nitrobenzyl chloride.",
-            "difficulty": "hard",
-            "pyq": false,
-            "options": {
-                "A": "I < II < III",
-                "B": "III < I < II",
-                "C": "II < I < III",
-                "D": "III < II < I"
-            },
-            "answer": "B",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "id": 19
-        },
-        {
-            "question": "At 323 K, the equilibrium constant Kp for a reaction is 5. If the temperature is increased, favoring the endothermic direction, what happens to Kp?",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "Increases",
-                "B": "None",
-                "C": "Decreases",
-                "D": "Stable"
-            },
-            "answer": "A",
-            "hint": "Apply periodic table laws.",
-            "solution": "For endothermic reactions, increasing temperature increases the equilibrium constant.",
-            "id": 20
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "question":  "Which of the following is an optically active compound?",
+                          "difficulty":  "hard",
+                          "pyq":  true,
+                          "options":  {
+                                          "A":  "CH2ClBr",
+                                          "B":  "CHCl3",
+                                          "C":  "CHClBrF (with 4 different groups)",
+                                          "D":  "CH2Cl2"
+                                      },
+                          "answer":  "C",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "id":  51,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "question":  "Which of the following compounds is most reactive towards nucleophilic substitution under mild conditions?",
+                          "difficulty":  "hard",
+                          "pyq":  false,
+                          "options":  {
+                                          "A":  "Chlorobenzene",
+                                          "B":  "2,4-Dinitrochlorobenzene",
+                                          "C":  "p-Nitrochlorobenzene",
+                                          "D":  "2,4,6-Trinitrochlorobenzene"
+                                      },
+                          "answer":  "D",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "id":  52
+                      },
+                      {
+                          "question":  "In the mechanism of the Dow process for Phenol synthesis, which intermediate is formed?",
+                          "difficulty":  "hard",
+                          "pyq":  false,
+                          "options":  {
+                                          "A":  "Carbocation",
+                                          "B":  "Carbanion",
+                                          "C":  "Benzyne",
+                                          "D":  "Free radical"
+                                      },
+                          "answer":  "C",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "id":  53
+                      },
+                      {
+                          "question":  "Which of the following will have a meso-isomer?",
+                          "difficulty":  "hard",
+                          "pyq":  false,
+                          "options":  {
+                                          "A":  "2-Chlorobutane",
+                                          "B":  "2,3-Dichlorobutane",
+                                          "C":  "2,3-Dichloropentane",
+                                          "D":  "2-Hydroxypropanoic acid"
+                                      },
+                          "answer":  "B",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "id":  54
+                      },
+                      {
+                          "question":  "Which property of Freon-12 (CF2Cl2) makes it harmful to the environment?",
+                          "difficulty":  "hard",
+                          "pyq":  false,
+                          "options":  {
+                                          "A":  "High toxicity to humans",
+                                          "B":  "Flammability",
+                                          "C":  "Photochemical decomposition releasing chlorine radicals",
+                                          "D":  "Corrosive nature"
+                                      },
+                          "answer":  "C",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "id":  55
+                      },
+                      {
+                          "question":  "What is the absolute configuration of (S)-2-chlorobutane?",
+                          "difficulty":  "hard",
+                          "pyq":  false,
+                          "options":  {
+                                          "A":  "Priority: Cl \u003e C2H5 \u003e CH3 \u003e H; counter-clockwise",
+                                          "B":  "Priority: Cl \u003e CH3 \u003e C2H5 \u003e H; clockwise",
+                                          "C":  "Priority: C2H5 \u003e Cl \u003e CH3 \u003e H; clockwise",
+                                          "D":  "Priority: Cl \u003e C2H5 \u003e CH3 \u003e H; clockwise"
+                                      },
+                          "answer":  "A",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "id":  56
+                      },
+                      {
+                          "question":  "Which of the following is most reactive towards SN2 reaction?",
+                          "difficulty":  "hard",
+                          "pyq":  false,
+                          "options":  {
+                                          "A":  "CH3CH2CH2Br",
+                                          "B":  "CH2=CH-CH2Br (Allylic bromide)",
+                                          "C":  "C6H5Br (Bromobenzene)",
+                                          "D":  "CH3-CHBr-CH3"
+                                      },
+                          "answer":  "B",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "id":  57
+                      },
+                      {
+                          "question":  "Which reagent is used in the Darzens procedure to prepare alkyl chlorides from alcohols?",
+                          "difficulty":  "hard",
+                          "pyq":  false,
+                          "options":  {
+                                          "A":  "PCl3",
+                                          "B":  "PCl5",
+                                          "C":  "SOCl2 (Thionyl chloride)",
+                                          "D":  "HCl/ZnCl2"
+                                      },
+                          "answer":  "C",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "id":  58
+                      },
+                      {
+                          "question":  "Which of the following compounds will give a positive Iodoform test?",
+                          "difficulty":  "hard",
+                          "pyq":  false,
+                          "options":  {
+                                          "A":  "Methanol",
+                                          "B":  "Ethanol",
+                                          "C":  "1-Propanol",
+                                          "D":  "Benzaldehyde"
+                                      },
+                          "answer":  "B",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "id":  59
+                      }
+                  ]
 }

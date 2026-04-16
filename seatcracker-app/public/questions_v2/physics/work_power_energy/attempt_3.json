@@ -1,311 +1,127 @@
-{
-    "questions": [
-        {
-            "id": 1,
-            "question": "Internal energy? no. Replaced: sum of kinetic and potential energies of molecules.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "The potential energy of a particle is given by U = x\u00b3 - 3x. The force acting on the particle is zero at x equal to ______.",
-            "difficulty": "Hard",
-            "options": {
-                "A": "\u00b11",
-                "B": "\u00b1\u221a3",
-                "C": "0",
-                "D": "\u00b12"
-            },
-            "answer": "A",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "pyq": true,
-            "tag": "hard",
-            "id": 2
-        },
-        {
-            "question": "A spring of force constant 800 N/m has an extension of 5 cm. The work done in extending it from 5 cm to 15 cm is ______.",
-            "difficulty": "Medium",
-            "options": {
-                "A": "8 J",
-                "B": "16 J",
-                "C": "4 J",
-                "D": "2 J"
-            },
-            "answer": "A",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "pyq": true,
-            "tag": "hard",
-            "id": 3
-        },
-        {
-            "question": "A capacitor of 2 microfarads is charged to 62 volts. The energy stored is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "3844.0 microJoules",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "E = 1/2 CV^2 = 0.5 * 2 * 3844.",
-            "id": 4
-        },
-        {
-            "id": 5,
-            "question": "Ballistic Pendulum is used to measure ______ of bullet.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Speed",
-                "B": "Mass",
-                "C": "Force",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "A billiard ball moving with a speed of 5 m/s hits an identical ball at rest. If the first ball stops after collision, the coefficient of restitution is ______.",
-            "difficulty": "Medium",
-            "options": {
-                "A": "1",
-                "B": "0.5",
-                "C": "0.1",
-                "D": "Zero"
-            },
-            "answer": "A",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "pyq": true,
-            "tag": "hard",
-            "id": 6
-        },
-        {
-            "question": "An object of mass 7 kg is rotating in a circle of radius 2 m with speed 17 m/s. The centripetal force is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "1011.5 N",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "F = mv^2/r = 7 * 289 / 2.",
-            "id": 7
-        },
-        {
-            "id": 8,
-            "question": "Work can be negative if force and displacement are in opposite direction.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "An object of mass 10 kg is rotating in a circle of radius 2 m with speed 23 m/s. The centripetal force is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2645.0 N",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "F = mv^2/r = 10 * 529 / 2.",
-            "id": 9
-        },
-        {
-            "question": "A car moves at 55 m/s and brakes to stop in 2 seconds. The acceleration is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "-27.5 m/s^2",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "a = (v_f - v_i)/t = (0 - 55)/2.",
-            "id": 10
-        },
-        {
-            "question": "A force F = (4x i + 3y j) N acts on a particle. The work done by this force in moving the particle from origin (0,0) to (2,2) is ______.",
-            "difficulty": "Hard",
-            "options": {
-                "A": "14 J",
-                "B": "7 J",
-                "C": "28 J",
-                "D": "10 J"
-            },
-            "answer": "A",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "pyq": true,
-            "tag": "hard",
-            "id": 11
-        },
-        {
-            "question": "An object of mass 8 kg is rotating in a circle of radius 5 m with speed 49 m/s. The centripetal force is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "3841.6 N",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "F = mv^2/r = 8 * 2401 / 5.",
-            "id": 12
-        },
-        {
-            "id": 13,
-            "question": "Two springs of constants k1 and k2 in series have equivalent constant ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "k1 k2 / (k1+k2)",
-                "B": "k1 + k2",
-                "C": "\u221a(k1 k2)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "A capacitor of 4 microfarads is charged to 10 volts. The energy stored is:",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "200.0 microJoules",
-                "B": "10",
-                "C": "5",
-                "D": "20"
-            },
-            "answer": "A",
-            "hint": "Use standard physics formulas.",
-            "solution": "E = 1/2 CV^2 = 0.5 * 4 * 100.",
-            "id": 14
-        },
-        {
-            "id": 15,
-            "question": "Non-conservative? no. Replaced: Work done by non-conservative force depends on path taken.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "An elevator is designed to lift 1000 kg through 10 floors (40 m) in 20 seconds. The power required is ______ (g = 10 m/s\u00b2, ignore friction).",
-            "difficulty": "Medium",
-            "options": {
-                "A": "20 kW",
-                "B": "40 kW",
-                "C": "10 kW",
-                "D": "5 kW"
-            },
-            "answer": "A",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "pyq": true,
-            "tag": "hard",
-            "id": 16
-        },
-        {
-            "id": 17,
-            "question": "1 kWh is equal to ______ Joules.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "3.6 x 10^6",
-                "B": "1000",
-                "C": "3600",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "A body of mass m is tied to a string and given a horizontal velocity \u221a5gL at the bottom. The tension in the string at the highest point is ______.",
-            "difficulty": "Hard",
-            "options": {
-                "A": "Zero",
-                "B": "mg",
-                "C": "3 mg",
-                "D": "6 mg"
-            },
-            "answer": "A",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "pyq": true,
-            "tag": "hard",
-            "id": 18
-        },
-        {
-            "question": "A machine does 500 J of work in 10 seconds. If its efficiency is 80%, the input power is ______.",
-            "difficulty": "Hard",
-            "options": {
-                "A": "62.5 W",
-                "B": "50 W",
-                "C": "40 W",
-                "D": "100 W"
-            },
-            "answer": "A",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "pyq": true,
-            "tag": "hard",
-            "id": 19
-        },
-        {
-            "id": 20,
-            "question": "If spring is cut into two equal halves, k of each half is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2k",
-                "B": "k/2",
-                "C": "k",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  51,
+                          "question":  "Loss of KE in perfectly inelastic collision is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1/2 * m1 m2 / (m1+m2) * (u1-u2)²",
+                                          "B":  "zero",
+                                          "C":  "maximum",
+                                          "D":  "A and C"
+                                      },
+                          "answer":  "D",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "A body is whirled in a vertical circle of radius R. The minimum speed it must have at the lowest point to just complete the circle is ______.",
+                          "difficulty":  "Medium",
+                          "options":  {
+                                          "A":  "√5gR",
+                                          "B":  "√gR",
+                                          "C":  "√3gR",
+                                          "D":  "√2gR"
+                                      },
+                          "answer":  "A",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "pyq":  true,
+                          "tag":  "hard",
+                          "id":  52
+                      },
+                      {
+                          "id":  53,
+                          "question":  "KiloWatt Hour (kWh) is unit of ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Electrical Energy",
+                                          "B":  "Power",
+                                          "C":  "Current",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  54,
+                          "question":  "A heavy body and light body have same KE. light body has ______ momentum.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Less",
+                                          "B":  "More",
+                                          "C":  "Equal",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "question":  "Two bodies of masses 1 kg and 4 kg have equal kinetic energies. The ratio of their linear momenta is ______.",
+                          "difficulty":  "Medium",
+                          "options":  {
+                                          "A":  "1:2",
+                                          "B":  "2:1",
+                                          "C":  "1:4",
+                                          "D":  "4:1"
+                                      },
+                          "answer":  "A",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "pyq":  true,
+                          "tag":  "hard",
+                          "id":  55
+                      },
+                      {
+                          "question":  "A core of mass 2 kg moving at 10 m/s hits a stationary core of mass 3 kg. If they stick together, their common velocity is ______.",
+                          "difficulty":  "Medium",
+                          "options":  {
+                                          "A":  "4 m/s",
+                                          "B":  "2 m/s",
+                                          "C":  "5 m/s",
+                                          "D":  "10 m/s"
+                                      },
+                          "answer":  "A",
+                          "hasDiagram":  false,
+                          "diagram_description":  "None",
+                          "pyq":  true,
+                          "tag":  "hard",
+                          "id":  56
+                      },
+                      {
+                          "id":  57,
+                          "question":  "Potential energy? no. Replaced: depends on choice of zero potential level.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  58,
+                          "question":  "Coefficient of restitution e = (v2-v1) / (u1-u2).",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "True",
+                                          "B":  "False",
+                                          "C":  "None",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      }
+                  ]
 }

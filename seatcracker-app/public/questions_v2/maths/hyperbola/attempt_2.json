@@ -1,309 +1,385 @@
-{
-  "questions": [
-    {
-      "id": 1,
-      "question": "If normals at four points on hyperbola are concurrent, they are called ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Co-normal points",
-        "B": "Focal points",
-        "C": "Conjugate points",
-        "D": "Concyclic points"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 2,
-      "question": "The product of perpendiculars from any point on hyperbola to asymptotes is?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "a²b²/(a²+b²)",
-        "B": "ab",
-        "C": "a²b²",
-        "D": "(a²−b²)/(a²+b²)"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 3,
-      "question": "The length of latus rectum of x²/a² − y²/b² = 1 is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2b²/a",
-        "B": "2a²/b",
-        "C": "b²/a",
-        "D": "a²/b"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 4,
-      "question": "The directrices of x²/a² - y²/b² = 1 are at ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "x = ±a/e",
-        "B": "x = ±ae",
-        "C": "y = ±a/e",
-        "D": "x = ±b"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 5,
-      "question": "If tangent at P on hyperbola meets asymptotes at Q and R, then P is ______ of QR.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Midpoint",
-        "B": "Trisection point",
-        "C": "Endpoint",
-        "D": "Foot of perpendicular"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 6,
-      "question": "A hyperbola with same asymptotes as x²/9 - y²/16 = 1 but passing through (3,0) is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "x²/9 - y²/16 = 1",
-        "B": "y²/16 - x²/9 = 1",
-        "C": "x²/9 + y²/16 = 0",
-        "D": "xy = 9"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 7,
-      "question": "If the transverse and conjugate axes of a hyperbola are equal, its eccentricity is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "√2",
-        "B": "√3",
-        "C": "2",
-        "D": "√5/2"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 8,
-      "question": "The hyperbola and its conjugate together form ______ with common asymptotes.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Conjugate pair",
-        "B": "Circle",
-        "C": "Ellipse",
-        "D": "Parabola"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 9,
-      "question": "The eccentricity of 9x² - 16y² = 144 is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "5/4",
-        "B": "4/5",
-        "C": "√7/4",
-        "D": "3/4"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 10,
-      "question": "For rectangular hyperbola xy = c², if P is (ct, c/t), normal at P meets curve again at ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(-c/t³, -ct³)",
-        "B": "(ct³, c/t³)",
-        "C": "(-ct, -c/t)",
-        "D": "(c/t, ct)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 11,
-      "question": "Rectangular hyperbola xy = c² has eccentricity?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "√2",
-        "B": "1",
-        "C": "2",
-        "D": "√3"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 12,
-      "question": "Area of triangle formed by asymptotes of x²/a² - y²/b² = 1 with any tangent equals ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "ab",
-        "B": "2ab",
-        "C": "a²b²",
-        "D": "ab/2"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 13,
-      "question": "For conjugate hyperbola, if original has e₁ and conjugate has e₂, then ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1/e₁² + 1/e₂² = 1",
-        "B": "e₁ + e₂ = 1",
-        "C": "e₁e₂ = 1",
-        "D": "e₁ = e₂"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 14,
-      "question": "Product of lengths of perpendiculars from foci on any tangent of x²/a² - y²/b² = 1 is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "b²",
-        "B": "a²",
-        "C": "ab",
-        "D": "a²b²"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 15,
-      "question": "The pair of tangents from (x₁,y₁) to hyperbola is given by SS₁ = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "T²",
-        "B": "T",
-        "C": "S₁",
-        "D": "0"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 16,
-      "question": "Equation of hyperbola with foci at (±5,0) and length of conjugate axis=6 is?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "x²/16 − y²/9 = 1",
-        "B": "x²/9 − y²/16 = 1",
-        "C": "x²/25 − y²/9 = 1",
-        "D": "x²/16 − y²/25 = 1"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 17,
-      "question": "For hyperbola, between any two points, the curve is always ______ the chord joining them.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Away from (convex)",
-        "B": "Closer to",
-        "C": "Coincident with",
-        "D": "Inside"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 18,
-      "question": "Equation of hyperbola with foci (0, ±5) and vertices (0, ±4) is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "y²/16 - x²/9 = 1",
-        "B": "x²/16 - y²/9 = 1",
-        "C": "y²/25 - x²/9 = 1",
-        "D": "x²/9 - y²/16 = 1"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 19,
-      "question": "The locus of midpoints of chords of x²/a² - y²/b² = 1 parallel to y=mx is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "y = (b²/a²m)x",
-        "B": "y = (a²/b²m)x",
-        "C": "y = mx",
-        "D": "y = (m/a²)x"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 20,
-      "question": "Tangent at (sec θ, tan θ) to x² - y² = 1 is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "x secθ - y tanθ = 1",
-        "B": "x tanθ - y secθ = 1",
-        "C": "x cosθ + y sinθ = 1",
-        "D": "x cosθ - y sinθ = 1"
-      },
-      "answer": "A",
-      "pyq": false
-    }
-  ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  26,
+                          "question":  "The eccentricity of 9xÂ² - 16yÂ² = 144 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "5/4",
+                                          "B":  "4/5",
+                                          "C":  "âˆš7/4",
+                                          "D":  "3/4"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  27,
+                          "question":  "For rectangular hyperbola xy = cÂ², if P is (ct, c/t), normal at P meets curve again at ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(-c/tÂ³, -ctÂ³)",
+                                          "B":  "(ctÂ³, c/tÂ³)",
+                                          "C":  "(-ct, -c/t)",
+                                          "D":  "(c/t, ct)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  28,
+                          "question":  "Rectangular hyperbola xy = cÂ² has eccentricity?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "âˆš2",
+                                          "B":  "1",
+                                          "C":  "2",
+                                          "D":  "âˆš3"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  29,
+                          "question":  "Area of triangle formed by asymptotes of xÂ²/aÂ² - yÂ²/bÂ² = 1 with any tangent equals ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "ab",
+                                          "B":  "2ab",
+                                          "C":  "aÂ²bÂ²",
+                                          "D":  "ab/2"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  30,
+                          "question":  "For conjugate hyperbola, if original has eâ‚ and conjugate has eâ‚‚, then ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1/eâ‚Â² + 1/eâ‚‚Â² = 1",
+                                          "B":  "eâ‚ + eâ‚‚ = 1",
+                                          "C":  "eâ‚eâ‚‚ = 1",
+                                          "D":  "eâ‚ = eâ‚‚"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  31,
+                          "question":  "The pair of tangents from (xâ‚,yâ‚) to hyperbola is given by SSâ‚ = ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "TÂ²",
+                                          "B":  "T",
+                                          "C":  "Sâ‚",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  32,
+                          "question":  "Equation of hyperbola with foci at (Â±5,0) and length of conjugate axis=6 is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "xÂ²/16 âˆ’ yÂ²/9 = 1",
+                                          "B":  "xÂ²/9 âˆ’ yÂ²/16 = 1",
+                                          "C":  "xÂ²/25 âˆ’ yÂ²/9 = 1",
+                                          "D":  "xÂ²/16 âˆ’ yÂ²/25 = 1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  33,
+                          "question":  "For hyperbola, between any two points, the curve is always ______ the chord joining them.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Away from (convex)",
+                                          "B":  "Closer to",
+                                          "C":  "Coincident with",
+                                          "D":  "Inside"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  34,
+                          "question":  "Equation of hyperbola with foci (0, Â±5) and vertices (0, Â±4) is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "yÂ²/16 - xÂ²/9 = 1",
+                                          "B":  "xÂ²/16 - yÂ²/9 = 1",
+                                          "C":  "yÂ²/25 - xÂ²/9 = 1",
+                                          "D":  "xÂ²/9 - yÂ²/16 = 1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  35,
+                          "question":  "The locus of midpoints of chords of xÂ²/aÂ² - yÂ²/bÂ² = 1 parallel to y=mx is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "y = (bÂ²/aÂ²m)x",
+                                          "B":  "y = (aÂ²/bÂ²m)x",
+                                          "C":  "y = mx",
+                                          "D":  "y = (m/aÂ²)x"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  36,
+                          "question":  "Tangent at (sec Î¸, tan Î¸) to xÂ² - yÂ² = 1 is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "x secÎ¸ - y tanÎ¸ = 1",
+                                          "B":  "x tanÎ¸ - y secÎ¸ = 1",
+                                          "C":  "x cosÎ¸ + y sinÎ¸ = 1",
+                                          "D":  "x cosÎ¸ - y sinÎ¸ = 1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  37,
+                          "question":  "Property: Product of segments of focal chord divided by 2ae is constant? ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "No",
+                                          "B":  "Yes",
+                                          "C":  "None",
+                                          "D":  "Only for parabola"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  38,
+                          "question":  "The area of rectangle formed by asymptotes and lines x=±a, y=±b is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "4ab",
+                                          "B":  "2ab",
+                                          "C":  "None",
+                                          "D":  "ab"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  39,
+                          "question":  "Condition for lx + my + n = 0 to be tangent is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "a²l² - b²m² = n²",
+                                          "B":  "a²l² + b²m² = n²",
+                                          "C":  "al² - bm² = n²",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  40,
+                          "question":  "Distance between directrices of conjugate hyperbola is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2b/e\u0027",
+                                          "B":  "2ae",
+                                          "C":  "None",
+                                          "D":  "2b"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  41,
+                          "question":  "The chord of contact from (h,k) to hyperbola x²/a²−y²/b²=1 is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "hx/a² − ky/b² = 1",
+                                          "B":  "hx/a² + ky/b² = 1",
+                                          "C":  "hx − ky = 1",
+                                          "D":  "x/h − y/k = 1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  42,
+                          "question":  "Equation of normal at P(x₁,y₁) is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "a²x/x₁ + b²y/y₁ = a² + b²",
+                                          "B":  "ax/x₁ + by/y₁ = 1",
+                                          "C":  "None",
+                                          "D":  "Line"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  43,
+                          "question":  "The combined equation of asymptotes of x²/a² - y²/b² = 1 is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "x²/a² - y²/b² = 0",
+                                          "B":  "x²/a² + y²/b² = 0",
+                                          "C":  "None",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  44,
+                          "question":  "If P is any point on hyperbola, S,S\u0027 are foci then |PS − PS\u0027| = ?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2a",
+                                          "B":  "a",
+                                          "C":  "2b",
+                                          "D":  "b"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  45,
+                          "question":  "Normal to xy = c² at (ct, c/t) meets the curve again at point with parameter ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "-1/t³",
+                                          "B":  "1/t³",
+                                          "C":  "-t³",
+                                          "D":  "t³"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  46,
+                          "question":  "Distance between vertices of conjugate hyperbola is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2b",
+                                          "B":  "2a",
+                                          "C":  "2ae",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  47,
+                          "question":  "Tangent to x²/4 − y²/3 = 1 at (4, 3) is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2x − y = 5",
+                                          "B":  "x − y = 1",
+                                          "C":  "4x − 3y = 7",
+                                          "D":  "2x − y − 5 = 0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  48,
+                          "question":  "Property: Slope of Chord joining P(θ₁) and Q(θ₂) is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(b/a) [sin((θ₁+θ₂)/2) / cos((θ₁-θ₂)/2)]",
+                                          "B":  "tan((θ₁+θ₂)/2)",
+                                          "C":  "None",
+                                          "D":  "b/a"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  49,
+                          "question":  "If e₁, e₂ are eccentricities of hyperbola and its conjugate, then 1/e₁² + 1/e₂² = ?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1",
+                                          "B":  "2",
+                                          "C":  "e₁e₂",
+                                          "D":  "e₁²+e₂²"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  50,
+                          "question":  "The locus of point of intersection of tangents at right angles is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Director circle",
+                                          "B":  "Auxiliary circle",
+                                          "C":  "None",
+                                          "D":  "Directrix"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      }
+                  ]
 }

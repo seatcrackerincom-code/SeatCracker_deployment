@@ -1,304 +1,379 @@
-{
-    "questions": [
-        {
-            "question": "Evaluate lim_{x -> 1} (x^{5} - 1) / (x^{6} - 1).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "5/6",
-                "B": "6/5",
-                "C": "30",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use standard limit formula or L'Hopital's rule.",
-            "solution": "Applying L'Hopital's Rule yields (5x^(4)) / (6x^(5)). At x=1, this is 5/6.",
-            "id": 1
-        },
-        {
-            "question": "Evaluate lim_{x -> 0} (e^{8x} - e^{5x}) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "3",
-                "B": "13",
-                "C": "-3",
-                "D": "0"
-            },
-            "answer": "A",
-            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
-            "solution": "lim_{x->0} e^{5x} (e^{3x} - 1) / (3x) * (3) = 3.",
-            "id": 2
-        },
-        {
-            "question": "Calculate lim_{x -> infinity} ((x+7)/(x-3))^x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "e^{10}",
-                "B": "e^{4}",
-                "C": "e^{21}",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
-            "solution": "((x+7)/(x-3) - 1)*x = (x+7-x+3)/(x-3) * x = (10x)/(x-3). Limit is 10. So answer is e^{10}.",
-            "id": 3
-        },
-        {
-            "question": "Evaluate lim_{x -> 1} (x^{2} - 1) / (x^{4} - 1).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2/4",
-                "B": "4/2",
-                "C": "8",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use standard limit formula or L'Hopital's rule.",
-            "solution": "Applying L'Hopital's Rule yields (2x^(1)) / (4x^(3)). At x=1, this is 2/4.",
-            "id": 4
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(12x) - sin(6x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "6",
-                "B": "18",
-                "C": "-6",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(12x)/x - lim_{x->0} sin(6x)/x = 12 - 6 = 6.",
-            "id": 5
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(9x) - sin(7x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2",
-                "B": "16",
-                "C": "-2",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(9x)/x - lim_{x->0} sin(7x)/x = 9 - 7 = 2.",
-            "id": 6
-        },
-        {
-            "question": "Evaluate lim_{x -> 0} (e^{10x} - e^{6x}) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "4",
-                "B": "16",
-                "C": "-4",
-                "D": "0"
-            },
-            "answer": "A",
-            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
-            "solution": "lim_{x->0} e^{6x} (e^{4x} - 1) / (4x) * (4) = 4.",
-            "id": 7
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(10x) - sin(1x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "9",
-                "B": "11",
-                "C": "-9",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(10x)/x - lim_{x->0} sin(1x)/x = 10 - 1 = 9.",
-            "id": 8
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(9x) - sin(4x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "5",
-                "B": "13",
-                "C": "-5",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(9x)/x - lim_{x->0} sin(4x)/x = 9 - 4 = 5.",
-            "id": 9
-        },
-        {
-            "question": "Evaluate lim_{x -> 0} (e^{11x} - e^{9x}) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2",
-                "B": "20",
-                "C": "-2",
-                "D": "0"
-            },
-            "answer": "A",
-            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
-            "solution": "lim_{x->0} e^{9x} (e^{2x} - 1) / (2x) * (2) = 2.",
-            "id": 10
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(4x) - sin(2x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2",
-                "B": "6",
-                "C": "-2",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(4x)/x - lim_{x->0} sin(2x)/x = 4 - 2 = 2.",
-            "id": 11
-        },
-        {
-            "question": "Evaluate lim_{x -> 0} (e^{7x} - e^{4x}) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "3",
-                "B": "11",
-                "C": "-3",
-                "D": "0"
-            },
-            "answer": "A",
-            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
-            "solution": "lim_{x->0} e^{4x} (e^{3x} - 1) / (3x) * (3) = 3.",
-            "id": 12
-        },
-        {
-            "question": "Evaluate lim_{x -> 0} (e^{10x} - e^{8x}) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2",
-                "B": "18",
-                "C": "-2",
-                "D": "0"
-            },
-            "answer": "A",
-            "hint": "Use the standard limit lim_{x->0} (e^x - 1)/x = 1.",
-            "solution": "lim_{x->0} e^{8x} (e^{2x} - 1) / (2x) * (2) = 2.",
-            "id": 13
-        },
-        {
-            "question": "Calculate lim_{x -> infinity} ((x+1)/(x-5))^x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "e^{6}",
-                "B": "e^{-4}",
-                "C": "e^{5}",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
-            "solution": "((x+1)/(x-5) - 1)*x = (x+1-x+5)/(x-5) * x = (6x)/(x-5). Limit is 6. So answer is e^{6}.",
-            "id": 14
-        },
-        {
-            "question": "Evaluate lim_{x -> 1} (x^{8} - 1) / (x^{2} - 1).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "8/2",
-                "B": "2/8",
-                "C": "16",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use standard limit formula or L'Hopital's rule.",
-            "solution": "Applying L'Hopital's Rule yields (8x^(7)) / (2x^(1)). At x=1, this is 8/2.",
-            "id": 15
-        },
-        {
-            "question": "Calculate lim_{x -> infinity} ((x+3)/(x-1))^x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "e^{4}",
-                "B": "e^{2}",
-                "C": "e^{3}",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
-            "solution": "((x+3)/(x-1) - 1)*x = (x+3-x+1)/(x-1) * x = (4x)/(x-1). Limit is 4. So answer is e^{4}.",
-            "id": 16
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(12x) - sin(8x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "4",
-                "B": "20",
-                "C": "-4",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(12x)/x - lim_{x->0} sin(8x)/x = 12 - 8 = 4.",
-            "id": 17
-        },
-        {
-            "question": "Evaluate lim_{x -> 1} (x^{7} - 1) / (x^{2} - 1).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "7/2",
-                "B": "2/7",
-                "C": "14",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use standard limit formula or L'Hopital's rule.",
-            "solution": "Applying L'Hopital's Rule yields (7x^(6)) / (2x^(1)). At x=1, this is 7/2.",
-            "id": 18
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(5x) - sin(1x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "4",
-                "B": "6",
-                "C": "-4",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(5x)/x - lim_{x->0} sin(1x)/x = 5 - 1 = 4.",
-            "id": 19
-        },
-        {
-            "question": "Evaluate lim_{x -> 1} (x^{3} - 1) / (x^{7} - 1).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "3/7",
-                "B": "7/3",
-                "C": "21",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use standard limit formula or L'Hopital's rule.",
-            "solution": "Applying L'Hopital's Rule yields (3x^(2)) / (7x^(6)). At x=1, this is 3/7.",
-            "id": 20
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "question":  "Determine lim_{x -\u003e 0} (sin(9x) - sin(7x)) / x.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "16",
+                                          "C":  "-2",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use lim_{x-\u003e0} sin(kx)/x = k.",
+                          "solution":  "We can split the limit as lim_{x-\u003e0} sin(9x)/x - lim_{x-\u003e0} sin(7x)/x = 9 - 7 = 2.",
+                          "id":  76
+                      },
+                      {
+                          "question":  "Evaluate lim_{x -\u003e 0} (e^{10x} - e^{6x}) / x.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "4",
+                                          "B":  "16",
+                                          "C":  "-4",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use the standard limit lim_{x-\u003e0} (e^x - 1)/x = 1.",
+                          "solution":  "lim_{x-\u003e0} e^{6x} (e^{4x} - 1) / (4x) * (4) = 4.",
+                          "id":  77
+                      },
+                      {
+                          "question":  "Determine lim_{x -\u003e 0} (sin(10x) - sin(1x)) / x.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "9",
+                                          "B":  "11",
+                                          "C":  "-9",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use lim_{x-\u003e0} sin(kx)/x = k.",
+                          "solution":  "We can split the limit as lim_{x-\u003e0} sin(10x)/x - lim_{x-\u003e0} sin(1x)/x = 10 - 1 = 9.",
+                          "id":  78
+                      },
+                      {
+                          "question":  "Determine lim_{x -\u003e 0} (sin(9x) - sin(4x)) / x.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "5",
+                                          "B":  "13",
+                                          "C":  "-5",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use lim_{x-\u003e0} sin(kx)/x = k.",
+                          "solution":  "We can split the limit as lim_{x-\u003e0} sin(9x)/x - lim_{x-\u003e0} sin(4x)/x = 9 - 4 = 5.",
+                          "id":  79
+                      },
+                      {
+                          "question":  "Evaluate lim_{x -\u003e 0} (e^{11x} - e^{9x}) / x.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "20",
+                                          "C":  "-2",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use the standard limit lim_{x-\u003e0} (e^x - 1)/x = 1.",
+                          "solution":  "lim_{x-\u003e0} e^{9x} (e^{2x} - 1) / (2x) * (2) = 2.",
+                          "id":  80
+                      },
+                      {
+                          "question":  "Determine lim_{x -\u003e 0} (sin(4x) - sin(2x)) / x.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "6",
+                                          "C":  "-2",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use lim_{x-\u003e0} sin(kx)/x = k.",
+                          "solution":  "We can split the limit as lim_{x-\u003e0} sin(4x)/x - lim_{x-\u003e0} sin(2x)/x = 4 - 2 = 2.",
+                          "id":  81
+                      },
+                      {
+                          "question":  "Evaluate lim_{x -\u003e 0} (e^{7x} - e^{4x}) / x.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "3",
+                                          "B":  "11",
+                                          "C":  "-3",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use the standard limit lim_{x-\u003e0} (e^x - 1)/x = 1.",
+                          "solution":  "lim_{x-\u003e0} e^{4x} (e^{3x} - 1) / (3x) * (3) = 3.",
+                          "id":  82
+                      },
+                      {
+                          "question":  "Evaluate lim_{x -\u003e 0} (e^{10x} - e^{8x}) / x.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "18",
+                                          "C":  "-2",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use the standard limit lim_{x-\u003e0} (e^x - 1)/x = 1.",
+                          "solution":  "lim_{x-\u003e0} e^{8x} (e^{2x} - 1) / (2x) * (2) = 2.",
+                          "id":  83
+                      },
+                      {
+                          "question":  "Calculate lim_{x -\u003e infinity} ((x+1)/(x-5))^x.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "e^{6}",
+                                          "B":  "e^{-4}",
+                                          "C":  "e^{5}",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+                          "solution":  "((x+1)/(x-5) - 1)*x = (x+1-x+5)/(x-5) * x = (6x)/(x-5). Limit is 6. So answer is e^{6}.",
+                          "id":  84
+                      },
+                      {
+                          "question":  "Evaluate lim_{x -\u003e 1} (x^{8} - 1) / (x^{2} - 1).",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "8/2",
+                                          "B":  "2/8",
+                                          "C":  "16",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use standard limit formula or L\u0027Hopital\u0027s rule.",
+                          "solution":  "Applying L\u0027Hopital\u0027s Rule yields (8x^(7)) / (2x^(1)). At x=1, this is 8/2.",
+                          "id":  85
+                      },
+                      {
+                          "question":  "Calculate lim_{x -\u003e infinity} ((x+3)/(x-1))^x.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "e^{4}",
+                                          "B":  "e^{2}",
+                                          "C":  "e^{3}",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use the 1^infinity form, rewrite as e^{lim (f(x)-1)g(x)}.",
+                          "solution":  "((x+3)/(x-1) - 1)*x = (x+3-x+1)/(x-1) * x = (4x)/(x-1). Limit is 4. So answer is e^{4}.",
+                          "id":  86
+                      },
+                      {
+                          "question":  "Determine lim_{x -\u003e 0} (sin(12x) - sin(8x)) / x.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "4",
+                                          "B":  "20",
+                                          "C":  "-4",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use lim_{x-\u003e0} sin(kx)/x = k.",
+                          "solution":  "We can split the limit as lim_{x-\u003e0} sin(12x)/x - lim_{x-\u003e0} sin(8x)/x = 12 - 8 = 4.",
+                          "id":  87
+                      },
+                      {
+                          "question":  "Evaluate lim_{x -\u003e 1} (x^{7} - 1) / (x^{2} - 1).",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "7/2",
+                                          "B":  "2/7",
+                                          "C":  "14",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use standard limit formula or L\u0027Hopital\u0027s rule.",
+                          "solution":  "Applying L\u0027Hopital\u0027s Rule yields (7x^(6)) / (2x^(1)). At x=1, this is 7/2.",
+                          "id":  88
+                      },
+                      {
+                          "question":  "Determine lim_{x -\u003e 0} (sin(5x) - sin(1x)) / x.",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "4",
+                                          "B":  "6",
+                                          "C":  "-4",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use lim_{x-\u003e0} sin(kx)/x = k.",
+                          "solution":  "We can split the limit as lim_{x-\u003e0} sin(5x)/x - lim_{x-\u003e0} sin(1x)/x = 5 - 1 = 4.",
+                          "id":  89
+                      },
+                      {
+                          "question":  "Evaluate lim_{x -\u003e 1} (x^{3} - 1) / (x^{7} - 1).",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "3/7",
+                                          "B":  "7/3",
+                                          "C":  "21",
+                                          "D":  "1"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Use standard limit formula or L\u0027Hopital\u0027s rule.",
+                          "solution":  "Applying L\u0027Hopital\u0027s Rule yields (3x^(2)) / (7x^(6)). At x=1, this is 3/7.",
+                          "id":  90
+                      },
+                      {
+                          "question":  "Evaluate the limit as x approaches 0 of (sin(6x) / tan(10x)).",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "6/10",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Using lim x-\u003e0 sin(kx)/x = k, we get 6/10.",
+                          "id":  91
+                      },
+                      {
+                          "question":  "Evaluate the limit as x approaches 0 of (sin(8x) / tan(16x)).",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "8/16",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Using lim x-\u003e0 sin(kx)/x = k, we get 8/16.",
+                          "id":  92
+                      },
+                      {
+                          "question":  "Evaluate the limit as x approaches 0 of (sin(18x) / tan(9x)).",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "18/9",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Using lim x-\u003e0 sin(kx)/x = k, we get 18/9.",
+                          "id":  93
+                      },
+                      {
+                          "question":  "Evaluate the limit as x approaches 0 of (sin(15x) / tan(15x)).",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "15/15",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Using lim x-\u003e0 sin(kx)/x = k, we get 15/15.",
+                          "id":  94
+                      },
+                      {
+                          "question":  "Evaluate the limit as x approaches 0 of (sin(17x) / tan(9x)).",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "17/9",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Using lim x-\u003e0 sin(kx)/x = k, we get 17/9.",
+                          "id":  95
+                      },
+                      {
+                          "question":  "Evaluate the limit as x approaches 0 of (sin(10x) / tan(3x)).",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "10/3",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Using lim x-\u003e0 sin(kx)/x = k, we get 10/3.",
+                          "id":  96
+                      },
+                      {
+                          "question":  "Evaluate the limit as x approaches 0 of (sin(4x) / tan(4x)).",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "4/4",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Using lim x-\u003e0 sin(kx)/x = k, we get 4/4.",
+                          "id":  97
+                      },
+                      {
+                          "question":  "Evaluate the limit as x approaches 0 of (sin(18x) / tan(11x)).",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "18/11",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Using lim x-\u003e0 sin(kx)/x = k, we get 18/11.",
+                          "id":  98
+                      },
+                      {
+                          "question":  "Evaluate the limit as x approaches 0 of (sin(2x) / tan(15x)).",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "2/15",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Using lim x-\u003e0 sin(kx)/x = k, we get 2/15.",
+                          "id":  99
+                      },
+                      {
+                          "question":  "Evaluate the limit as x approaches 0 of (sin(4x) / tan(12x)).",
+                          "difficulty":  "hard",
+                          "hasDiagram":  false,
+                          "options":  {
+                                          "A":  "4/12",
+                                          "B":  "0",
+                                          "C":  "1",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "hint":  "Think step by step.",
+                          "solution":  "Using lim x-\u003e0 sin(kx)/x = k, we get 4/12.",
+                          "id":  100
+                      }
+                  ]
 }

@@ -1,459 +1,384 @@
-{
-    "questions": [
-        {
-            "id": 1,
-            "question": "Direction Cosines of the line joining P and Q are the DRs divided by ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "PQ (The distance between P and Q)",
-                "B": "The distance from origin to P",
-                "C": "|OP| + |OQ|",
-                "D": "(x\u2082-x\u2081) + (y\u2082-y\u2081) + (z\u2082-z\u2081)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 2,
-            "question": "Angle between a face diagonal and main diagonal in a cube is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "arccos(\u221a(2/3))",
-                "B": "arccos(1/3)",
-                "C": "arccos(1/2)",
-                "D": "45\u00b0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 3,
-            "question": "If a line is perpendicular to the xy-plane, its DCs are ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(0, 0, \u00b11)",
-                "B": "(\u00b11, 0, 0)",
-                "C": "(0, \u00b11, 0)",
-                "D": "(1, 1, 0)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 4,
-            "question": "If the angle \u03b1 = 60\u00b0 and \u03b2 = 45\u00b0, what is a possible value for \u03b3?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "60\u00b0 or 120\u00b0",
-                "B": "30\u00b0 or 150\u00b0",
-                "C": "45\u00b0 or 135\u00b0",
-                "D": "90\u00b0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 5,
-            "question": "For lines linking DCs by al+bm+cn=0 and fmn+gnl+hlm=0, lines are perpendicular if ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "f/a + g/b + h/c = 0",
-                "B": "af + bg + ch = 0",
-                "C": "f+g+h = 0",
-                "D": "abc = fgh"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "Equation of plane through (1,2,3) with normal (2,3,\u22121) is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2x+3y\u2212z=5",
-                "B": "2x+3y\u2212z+5=0",
-                "C": "2x\u22123y+z=5",
-                "D": "x+2y+3z=14"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 7,
-            "question": "The angle between planes x+2y+2z=3 and 2x\u2212y+2z=4 is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "cos\u207b\u00b9(2/9)",
-                "B": "cos\u207b\u00b9(4/9)",
-                "C": "60\u00b0",
-                "D": "cos\u207b\u00b9(1/3)"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 8,
-            "question": "A line makes equal angles with the coordinate axes. Its direction cosines are ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u00b1(1/\u221a3, 1/\u221a3, 1/\u221a3)",
-                "B": "(1, 1, 1)",
-                "C": "(1/\u221a2, 1/\u221a2, 0)",
-                "D": "(0, 0, 0)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 9,
-            "question": "If a, b, c are the DRs of a line, the DCs are derived as l = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u00b1 a / \u221a(a\u00b2 + b\u00b2 + c\u00b2)",
-                "B": "a / (a + b + c)",
-                "C": "a\u00b2 / (a\u00b2 + b\u00b2 + c\u00b2)",
-                "D": "\u221a(a\u00b2 + b\u00b2 + c\u00b2) / a"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 10,
-            "question": "Is it possible for a line to have direction angles 45\u00b0, 45\u00b0, and 60\u00b0?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "No, because sum of squares of their cosines is not 1",
-                "B": "Yes, because sum of angles is 150\u00b0",
-                "C": "Yes, their cosines sum to 1",
-                "D": "No, sum of angles must be 180\u00b0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 11,
-            "question": "From the identity l\u00b2 + m\u00b2 + n\u00b2 = 1, substituting sines instead of cosines gives sin\u00b2 \u03b1 + sin\u00b2 \u03b2 + sin\u00b2 \u03b3 = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "1",
-                "C": "3",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 12,
-            "question": "The angle \u03b8 between two lines with direction cosines (l\u2081, m\u2081, n\u2081) and (l\u2082, m\u2082, n\u2082) is given by cos \u03b8 = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "l\u2081l\u2082 + m\u2081m\u2082 + n\u2081n\u2082",
-                "B": "l\u2081m\u2082 + m\u2081n\u2082 + n\u2081l\u2082",
-                "C": "|l\u2081l\u2082 - m\u2081m\u2082 - n\u2081n\u2082|",
-                "D": "l\u2081\u00b2 + l\u2082\u00b2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 13,
-            "question": "Angle between two diagonals of a cube is \u03b8 where cos \u03b8 = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/3",
-                "B": "1/\u221a3",
-                "C": "2/3",
-                "D": "1/2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 14,
-            "question": "If a line passes through two points P(x\u2081, y\u2081, z\u2081) and Q(x\u2082, y\u2082, z\u2082), its Direction Ratios are proportional to ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(x\u2082 - x\u2081), (y\u2082 - y\u2081), (z\u2082 - z\u2081)",
-                "B": "(x\u2082 + x\u2081), (y\u2082 + y\u2081), (z\u2082 + z\u2081)",
-                "C": "(x\u2081 x\u2082), (y\u2081 y\u2082), (z\u2081 z\u2082)",
-                "D": "(x\u2082/x\u2081), (y\u2082/y\u2081), (z\u2082/z\u2081)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 15,
-            "question": "For two strictly parallel lines with direction cosines (l\u2081, m\u2081, n\u2081) and (l\u2082, m\u2082, n\u2082), the condition is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "l\u2081/l\u2082 = m\u2081/m\u2082 = n\u2081/n\u2082",
-                "B": "l\u2081=l\u2082, m\u2081=m\u2082, n\u2081=n\u2082 ONLY",
-                "C": "l\u2081l\u2082 + m\u2081m\u2082 + n\u2081n\u2082 = 0",
-                "D": "l\u2081 + l\u2082 = 0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 16,
-            "question": "The foot of perpendicular from (1,2,3) to x+2y+3z=13 is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(0,0,13/3)",
-                "B": "(1,2,2)",
-                "C": "(2,4,1)",
-                "D": "(0,1,3)"
-            },
-            "answer": "B",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 17,
-            "question": "The distance from origin to plane 2x+3y\u22126z=21 is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "3",
-                "B": "21/7",
-                "C": "7",
-                "D": "21"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 18,
-            "question": "The coordinates of a point P at a distance r from origin on a line with DCs (l, m, n) are ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(lr, mr, nr)",
-                "B": "(r/l, r/m, r/n)",
-                "C": "(l+r, m+r, n+r)",
-                "D": "\u221a(l\u00b2r\u00b2 + m\u00b2r\u00b2 + n\u00b2r\u00b2)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 19,
-            "question": "Direction cosines of line joining (1,2,3) and (4,6,3) are?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(3/5, 4/5, 0)",
-                "B": "(3,4,0)",
-                "C": "(1/5, 4/5, 0)",
-                "D": "(3/\u221a25, 4/\u221a25, 0)"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 20,
-            "question": "The projection of a line segment connecting P(x\u2081,y\u2081,z\u2081) and Q(x\u2082,y\u2082,z\u2082) onto a line with DCs (l, m, n) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "l(x\u2082-x\u2081) + m(y\u2082-y\u2081) + n(z\u2082-z\u2081)",
-                "B": "(x\u2082-x\u2081)\u00b2 + (y\u2082-y\u2081)\u00b2 + (z\u2082-z\u2081)\u00b2",
-                "C": "l(x\u2082) + m(y\u2082) + n(z\u2082)",
-                "D": "l/x + m/y + n/z"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the matrix A is [[9, 4], [0, 4]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "97",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[81, 52], [0, 16]]. Trace is sum of diagonal elements: 81 + 16.",
-            "id": "dc_s_and_dr_s_21"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^8 * (1-x)^18 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "28",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "dc_s_and_dr_s_22"
-        },
-        {
-            "question": "If the vectors a = 20i + 5j and b = 10i - j are perpendicular, find the value of 20*10.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "5",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "dc_s_and_dr_s_23"
-        },
-        {
-            "question": "If the vectors a = 4i + 16j and b = 8i - j are perpendicular, find the value of 4*8.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "16",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "dc_s_and_dr_s_24"
-        },
-        {
-            "question": "If the vectors a = 14i + 7j and b = 6i - j are perpendicular, find the value of 14*6.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "7",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "dc_s_and_dr_s_25"
-        },
-        {
-            "question": "If the matrix A is [[6, 10], [0, 2]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "40",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[36, 80], [0, 4]]. Trace is sum of diagonal elements: 36 + 4.",
-            "id": "dc_s_and_dr_s_26"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(4x) / tan(10x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "4/10",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 4/10.",
-            "id": "dc_s_and_dr_s_27"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(17x) / tan(13x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "17/13",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 17/13.",
-            "id": "dc_s_and_dr_s_28"
-        },
-        {
-            "question": "If the vectors a = 4i + 15j and b = 4i - j are perpendicular, find the value of 4*4.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "15",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "dc_s_and_dr_s_29"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(4x) / tan(16x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "4/16",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 4/16.",
-            "id": "dc_s_and_dr_s_30"
-        }
-    ]
+﻿{
+    "questions":  [
+                      {
+                          "id":  1,
+                          "question":  "Direction Cosines of the line joining P and Q are the DRs divided by ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "PQ (The distance between P and Q)",
+                                          "B":  "The distance from origin to P",
+                                          "C":  "|OP| + |OQ|",
+                                          "D":  "(x₂-x₁) + (y₂-y₁) + (z₂-z₁)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  2,
+                          "question":  "Angle between a face diagonal and main diagonal in a cube is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "arccos(√(2/3))",
+                                          "B":  "arccos(1/3)",
+                                          "C":  "arccos(1/2)",
+                                          "D":  "45°"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  3,
+                          "question":  "If the angle α = 60° and β = 45°, what is a possible value for γ?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "60° or 120°",
+                                          "B":  "30° or 150°",
+                                          "C":  "45° or 135°",
+                                          "D":  "90°"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  4,
+                          "question":  "Equation of plane through (1,2,3) with normal (2,3,−1) is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2x+3y−z=5",
+                                          "B":  "2x+3y−z+5=0",
+                                          "C":  "2x−3y+z=5",
+                                          "D":  "x+2y+3z=14"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  5,
+                          "question":  "The angle between planes x+2y+2z=3 and 2x−y+2z=4 is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "cos⁻¹(2/9)",
+                                          "B":  "cos⁻¹(4/9)",
+                                          "C":  "60°",
+                                          "D":  "cos⁻¹(1/3)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  6,
+                          "question":  "A line makes equal angles with the coordinate axes. Its direction cosines are ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "±(1/√3, 1/√3, 1/√3)",
+                                          "B":  "(1, 1, 1)",
+                                          "C":  "(1/√2, 1/√2, 0)",
+                                          "D":  "(0, 0, 0)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  7,
+                          "question":  "If a, b, c are the DRs of a line, the DCs are derived as l = ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "± a / √(a² + b² + c²)",
+                                          "B":  "a / (a + b + c)",
+                                          "C":  "a² / (a² + b² + c²)",
+                                          "D":  "√(a² + b² + c²) / a"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  8,
+                          "question":  "Is it possible for a line to have direction angles 45°, 45°, and 60°?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "No, because sum of squares of their cosines is not 1",
+                                          "B":  "Yes, because sum of angles is 150°",
+                                          "C":  "Yes, their cosines sum to 1",
+                                          "D":  "No, sum of angles must be 180°"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  9,
+                          "question":  "From the identity l² + m² + n² = 1, substituting sines instead of cosines gives sin² α + sin² β + sin² γ = ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2",
+                                          "B":  "1",
+                                          "C":  "3",
+                                          "D":  "0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  10,
+                          "question":  "The angle θ between two lines with direction cosines (l₁, m₁, n₁) and (l₂, m₂, n₂) is given by cos θ = ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "l₁l₂ + m₁m₂ + n₁n₂",
+                                          "B":  "l₁m₂ + m₁n₂ + n₁l₂",
+                                          "C":  "|l₁l₂ - m₁m₂ - n₁n₂|",
+                                          "D":  "l₁² + l₂²"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  11,
+                          "question":  "Angle between two diagonals of a cube is θ where cos θ = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "1/3",
+                                          "B":  "1/√3",
+                                          "C":  "2/3",
+                                          "D":  "1/2"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  12,
+                          "question":  "If a line passes through two points P(x₁, y₁, z₁) and Q(x₂, y₂, z₂), its Direction Ratios are proportional to ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(x₂ - x₁), (y₂ - y₁), (z₂ - z₁)",
+                                          "B":  "(x₂ + x₁), (y₂ + y₁), (z₂ + z₁)",
+                                          "C":  "(x₁ x₂), (y₁ y₂), (z₁ z₂)",
+                                          "D":  "(x₂/x₁), (y₂/y₁), (z₂/z₁)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  13,
+                          "question":  "For two strictly parallel lines with direction cosines (l₁, m₁, n₁) and (l₂, m₂, n₂), the condition is ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "l₁/l₂ = m₁/m₂ = n₁/n₂",
+                                          "B":  "l₁=l₂, m₁=m₂, n₁=n₂ ONLY",
+                                          "C":  "l₁l₂ + m₁m₂ + n₁n₂ = 0",
+                                          "D":  "l₁ + l₂ = 0"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  14,
+                          "question":  "The distance from origin to plane 2x+3y−6z=21 is?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "3",
+                                          "B":  "21/7",
+                                          "C":  "7",
+                                          "D":  "21"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  15,
+                          "question":  "The coordinates of a point P at a distance r from origin on a line with DCs (l, m, n) are ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(lr, mr, nr)",
+                                          "B":  "(r/l, r/m, r/n)",
+                                          "C":  "(l+r, m+r, n+r)",
+                                          "D":  "√(l²r² + m²r² + n²r²)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  16,
+                          "question":  "Direction cosines of line joining (1,2,3) and (4,6,3) are?",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(3/5, 4/5, 0)",
+                                          "B":  "(3,4,0)",
+                                          "C":  "(1/5, 4/5, 0)",
+                                          "D":  "(3/√25, 4/√25, 0)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  17,
+                          "question":  "The projection of a line segment connecting P(x₁,y₁,z₁) and Q(x₂,y₂,z₂) onto a line with DCs (l, m, n) is ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "l(x₂-x₁) + m(y₂-y₁) + n(z₂-z₁)",
+                                          "B":  "(x₂-x₁)² + (y₂-y₁)² + (z₂-z₁)²",
+                                          "C":  "l(x₂) + m(y₂) + n(z₂)",
+                                          "D":  "l/x + m/y + n/z"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  18,
+                          "question":  "If a line\u0027s direction ratios are (2, -1, 2), its direction cosines are ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(2/3, -1/3, 2/3)",
+                                          "B":  "(2, -1, 2)",
+                                          "C":  "(2/âˆš5, -1/âˆš5, 2/âˆš5)",
+                                          "D":  "(4/9, 1/9, 4/9)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  19,
+                          "question":  "Sine of the angle Î¸ between two lines with DCs (lâ‚,mâ‚,nâ‚) and (lâ‚‚,mâ‚‚,nâ‚‚) is given by sin Î¸ = ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "âˆš[Î£ (mâ‚nâ‚‚ - mâ‚‚nâ‚)Â²]",
+                                          "B":  "lâ‚lâ‚‚ + mâ‚mâ‚‚ + nâ‚nâ‚‚",
+                                          "C":  "Î£ lâ‚lâ‚‚",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  20,
+                          "question":  "The components of any position vector OP are exatamente those of the ______ scaled by distance |OP|.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Direction Cosines",
+                                          "B":  "Tangents",
+                                          "C":  "Orthogonal vectors",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  21,
+                          "question":  "Direction Cosines for a directed line map strictly to ______ tuple.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "One unique",
+                                          "B":  "Two",
+                                          "C":  "Three",
+                                          "D":  "An infinite set"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  22,
+                          "question":  "The equation of plane passing through (1,0,âˆ’2),(3,âˆ’1,0),(5,2,1) is?",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "2xâˆ’3yâˆ’2z=6",
+                                          "B":  "x+y+z=âˆ’1",
+                                          "C":  "xâˆ’y+2z=3",
+                                          "D":  "2xâˆ’yâˆ’z=4"
+                                      },
+                          "answer":  "A",
+                          "pyq":  true,
+                          "tag":  "pyq"
+                      },
+                      {
+                          "id":  23,
+                          "question":  "Points A,B,C are collinear if their internal DRs like DRs(AB) and DRs(BC) are ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "Proportional",
+                                          "B":  "Orthogonal",
+                                          "C":  "Zero",
+                                          "D":  "Equal"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  24,
+                          "question":  "Direction ratios of the x-axis can be written as (k, 0, 0). Its explicit positive DCs are ______.",
+                          "difficulty":  "Medium",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(1, 0, 0)",
+                                          "B":  "(-1, 0, 0)",
+                                          "C":  "(âˆš2, 0, 0)",
+                                          "D":  "None"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      },
+                      {
+                          "id":  25,
+                          "question":  "If DC\u0027s are (l,m,n) and its reflected in the xy-plane, the new DC\u0027s are ______.",
+                          "difficulty":  "Hard",
+                          "hasDiagram":  false,
+                          "diagram_description":  "",
+                          "options":  {
+                                          "A":  "(l, m, -n)",
+                                          "B":  "(-l, -m, n)",
+                                          "C":  "(l, -m, -n)",
+                                          "D":  "(n, m, l)"
+                                      },
+                          "answer":  "A",
+                          "pyq":  false
+                      }
+                  ]
 }
