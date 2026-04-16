@@ -1,335 +1,136 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  26,
-                          "question":  "Isotropic means physical properties are ______ in all directions.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Different",
-                                          "B":  "Same",
-                                          "C":  "Random",
-                                          "D":  "Zero"
-                                      },
-                          "answer":  "B",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  27,
-                          "question":  "Lattice energy ______ as the distance between ions increases.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Increases",
-                                          "B":  "Decreases",
-                                          "C":  "Stays same",
-                                          "D":  "Double"
-                                      },
-                          "answer":  "B",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  28,
-                          "question":  "Total number of tetrahedral voids in one unit cell of FCC is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "4",
-                                          "B":  "8",
-                                          "C":  "12",
-                                          "D":  "0"
-                                      },
-                          "answer":  "B",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  29,
-                          "question":  "Total number of octahedral voids in one unit cell of FCC is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "4 (1 at body center, 3 from edges)",
-                                          "B":  "8",
-                                          "C":  "1",
-                                          "D":  "12"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  30,
-                          "question":  "Molecular solids like CO2 (Dry Ice) are held by ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Covalent bonds",
-                                          "B":  "London forces / Dispersion forces",
-                                          "C":  "Ionic bonds",
-                                          "D":  "Hydrogen bonds"
-                                      },
-                          "answer":  "B",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  31,
-                          "question":  "Ionic solids are conductors in ______ state but insulators in ______ state.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Solid, Molten",
-                                          "B":  "Molten/Aqueous, Solid",
-                                          "C":  "Always, Never",
-                                          "D":  "Never, Always"
-                                      },
-                          "answer":  "B",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 1.16 x 10^-3 s^-1 at 299 K and 3.59 x 10^-3 s^-1 at 315 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "55.29",
-                                          "B":  "66.35",
-                                          "C":  "44.23",
-                                          "D":  "65.29"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(3.59/1.16) = (Ea/8.314) * (1/299 - 1/315). Solving gives 55.29 kJ/mol.",
-                          "id":  32
-                      },
-                      {
-                          "id":  33,
-                          "question":  "Structure of NaCl is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "FCC",
-                                          "B":  "BCC",
-                                          "C":  "SCC",
-                                          "D":  "HCP"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  34,
-                          "question":  "Structure of CsCl is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "BCC (Body centered cubic type)",
-                                          "B":  "FCC",
-                                          "C":  "SCC",
-                                          "D":  "Hexagonal"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  35,
-                          "question":  "In Wurtzite (ZnS), sulfide ions form ______ lattice.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "FCC",
-                                          "B":  "BCC",
-                                          "C":  "HCP",
-                                          "D":  "SCC"
-                                      },
-                          "answer":  "C",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  36,
-                          "question":  "In Zinc blende (ZnS), sulfide ions form ______ lattice.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "FCC (CCP)",
-                                          "B":  "HCP",
-                                          "C":  "BCC",
-                                          "D":  "Simple"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  37,
-                          "question":  "Thermal stability of crystals depends on ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "0":  "Volume",
-                                          "A":  "Lattice Enthalpy",
-                                          "B":  "Mass",
-                                          "C":  "Color"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "F-centers are formed when ______.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Electrons are trapped in anionic vacancies",
-                                          "B":  "Metal deficiency occurs",
-                                          "C":  "Solid is heated in air",
-                                          "D":  "X-rays are passed"
-                                      },
-                          "answer":  "A",
-                          "id":  38,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Frenkel defect is also called ______ defect.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Dislocation",
-                                          "B":  "Point",
-                                          "C":  "Line",
-                                          "D":  "Plane"
-                                      },
-                          "answer":  "A",
-                          "id":  39,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Which crystal system has all axial lengths different and all angles different from 90°?",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Triclinic",
-                                          "B":  "Tetragonal",
-                                          "C":  "Monoclinic",
-                                          "D":  "Orthorhombic"
-                                      },
-                          "answer":  "A",
-                          "id":  40,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Which of the following solids is the hardest?",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "NaCl",
-                                          "B":  "Iron",
-                                          "C":  "Diamond",
-                                          "D":  "SiO2"
-                                      },
-                          "answer":  "C",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  41,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "Bragg\u0027s equation is n*lambda = ______.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "2d sin(theta)",
-                                          "B":  "d sin(theta)",
-                                          "C":  "2d",
-                                          "D":  "h/p"
-                                      },
-                          "answer":  "A",
-                          "id":  42,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Doping of Silicon with Boron gives ______ type semiconductor.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "p-type",
-                                          "B":  "n-type",
-                                          "C":  "Intrinsic",
-                                          "D":  "Metallic"
-                                      },
-                          "answer":  "A",
-                          "id":  43,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "For a crystal, the density rho = ______.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "(Z * M) / (a^3 * NA)",
-                                          "B":  "Z / (a^3 * M)",
-                                          "C":  "M / (Z * a^3)",
-                                          "D":  "a^3 / ZM"
-                                      },
-                          "answer":  "A",
-                          "id":  44,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Unit cell with a=b=c and alpha=beta=gamma=90° is ______.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Cubic",
-                                          "B":  "Rhombic",
-                                          "C":  "Hexagonal",
-                                          "D":  "Triclinic"
-                                      },
-                          "answer":  "A",
-                          "id":  45,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Solid CO2 is a ______ solid.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Molecular",
-                                          "B":  "Ionic",
-                                          "C":  "Covalent",
-                                          "D":  "Metallic"
-                                      },
-                          "answer":  "A",
-                          "id":  46,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Superconductors show zero ______.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Electrical resistance",
-                                          "B":  "Magnetic flux",
-                                          "C":  "Density",
-                                          "D":  "Refractive index"
-                                      },
-                          "answer":  "A",
-                          "id":  47,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 2,
+            "question": "Number of unit cells in 58.5g of NaCl is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "6.022 x 10^23",
+                "B": "1.5 x 10^23 (Since FCC for Na+ and Cl-)",
+                "C": "3.0 x 10^23",
+                "D": "1"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "Ferroelectric substances show alignment of domains in ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Opposite directions",
+                "B": "Parallel direction",
+                "C": "Random direction",
+                "D": "Circular"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 10,
+            "question": "Which solid is anisotropic?",
+            "options": {
+                "A": "Crystalline solid",
+                "B": "Amorphous solid",
+                "C": "Both",
+                "D": "Neither"
+            },
+            "answer": "A",
+            "difficulty": "hard"
+        },
+        {
+            "id": 14,
+            "question": "Paramagnetism of O2 solid? No. Replaced: VO, VO2 and TiO2 show ______ behavior depending on temperature.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Insulating to metallic",
+                "B": "Liquid to solid",
+                "C": "None",
+                "D": "Color change"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 18,
+            "question": "Crystalline solids are anisotropic.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "Neither",
+                "D": "Both"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 22,
+            "question": "Ionic solids are conductors in ______ state but insulators in ______ state.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Solid, Molten",
+                "B": "Molten/Aqueous, Solid",
+                "C": "Always, Never",
+                "D": "Never, Always"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 26,
+            "question": "In Zinc blende (ZnS), sulfide ions form ______ lattice.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "FCC (CCP)",
+                "B": "HCP",
+                "C": "BCC",
+                "D": "Simple"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Which crystal system has all axial lengths different and all angles different from 90°?",
+            "difficulty": "hard",
+            "options": {
+                "A": "Triclinic",
+                "B": "Tetragonal",
+                "C": "Monoclinic",
+                "D": "Orthorhombic"
+            },
+            "answer": "A",
+            "id": 30,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "Solid CO2 is a ______ solid.",
+            "difficulty": "hard",
+            "options": {
+                "A": "Molecular",
+                "B": "Ionic",
+                "C": "Covalent",
+                "D": "Metallic"
+            },
+            "answer": "A",
+            "id": 34,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        }
+    ]
 }

@@ -1,79 +1,136 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "Which element has highest second ionization enthalpy?",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Lithium",
-                                          "B":  "Beryllium",
-                                          "C":  "Sodium",
-                                          "D":  "Magnesium"
-                                      },
-                          "answer":  "A",
-                          "id":  51,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Isoelectronic species order of size: K+, Cl-, S2-, Ca2+",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "S2- \u003e Cl- \u003e K+ \u003e Ca2+",
-                                          "B":  "Ca2+ \u003e K+ \u003e Cl- \u003e S2-",
-                                          "C":  "Cl- \u003e S2- \u003e K+ \u003e Ca2+",
-                                          "D":  "K+ \u003e Ca2+ \u003e Cl- \u003e S2-"
-                                      },
-                          "answer":  "A",
-                          "id":  52,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Oxidation state +1 is most stable for which element in Group 13?",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Thallium (Tl) due to inert pair effect",
-                                          "B":  "Boron",
-                                          "C":  "Aluminum",
-                                          "D":  "Gallium"
-                                      },
-                          "answer":  "A",
-                          "id":  53,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Which of the following is not transition metal?",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Zn",
-                                          "B":  "Fe",
-                                          "C":  "Cu",
-                                          "D":  "Ag"
-                                      },
-                          "answer":  "A",
-                          "id":  54,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Which alkali metal shows unusual properties compared to others in its group?",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Lithium",
-                                          "B":  "Sodium",
-                                          "C":  "Potassium",
-                                          "D":  "Cesium"
-                                      },
-                          "answer":  "A",
-                          "id":  55,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 3,
+            "question": "The IUPAC name for the element with atomic number 104 is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Unnilseptium",
+                "B": "Unnilquadium",
+                "C": "Unnilpentium",
+                "D": "Unnilhexium"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 7,
+            "question": "Transuranium elements start after atomic number ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "57",
+                "B": "92 (Uranium)",
+                "C": "89",
+                "D": "100"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "Which of the following elements belongs to p-block?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "Na",
+                "B": "Mg",
+                "C": "Al",
+                "D": "Ca"
+            },
+            "answer": "C",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 11,
+            "tag": "pyq"
+        },
+        {
+            "id": 15,
+            "question": "Diagonal relationship is due to similar ______ and ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Mass, Density",
+                "B": "Size, Charge/radius ratio",
+                "C": "State, Color",
+                "D": "Name, Symbol"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 19,
+            "question": "The long form of periodic table is based on ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Atomic mass",
+                "B": "Atomic number / Electronic configuration",
+                "C": "Color",
+                "D": "Reactivity"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "Which of the following species is largest in size?",
+            "difficulty": "hard",
+            "options": {
+                "A": "O2-",
+                "B": "F-",
+                "C": "Na+",
+                "D": "Mg2+"
+            },
+            "answer": "A",
+            "id": 23,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "Metalloids are located in which block?",
+            "difficulty": "hard",
+            "options": {
+                "A": "p-block",
+                "B": "s-block",
+                "C": "d-block",
+                "D": "f-block"
+            },
+            "answer": "A",
+            "id": 27,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "The element with Z=114 belongs to which group and period?",
+            "difficulty": "hard",
+            "options": {
+                "A": "Group 14, Period 7",
+                "B": "Group 12, Period 6",
+                "C": "Group 18, Period 7",
+                "D": "Group 10, Period 5"
+            },
+            "answer": "A",
+            "id": 31,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "Oxidation state +1 is most stable for which element in Group 13?",
+            "difficulty": "hard",
+            "options": {
+                "A": "Thallium (Tl) due to inert pair effect",
+                "B": "Boron",
+                "C": "Aluminum",
+                "D": "Gallium"
+            },
+            "answer": "A",
+            "id": 35,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        }
+    ]
 }

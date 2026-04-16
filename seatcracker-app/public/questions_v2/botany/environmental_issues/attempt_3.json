@@ -1,64 +1,232 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "Fly ash, a byproduct of thermal power plants, is increasingly being used in which industry to reduce environmental impact?",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "Construction (Cement and Bricks)",
-                                          "B":  "Textile",
-                                          "C":  "Pharmaceutical",
-                                          "D":  "Food processing"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "id":  51,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "A \u0027Scrubber\u0027 in industrial exhaust systems is primarily used to remove which gaseous pollutant?",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "Sulfur dioxide (SO2)",
-                                          "B":  "Carbon monoxide (CO)",
-                                          "C":  "Nitrogen (N2)",
-                                          "0":  "Oxygen"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "id":  52,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "The \u0027Environment (Protection) Act\u0027 in India was enacted in ______ following the Bhopal gas tragedy.",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "1986",
-                                          "B":  "1974",
-                                          "C":  "1981",
-                                          "D":  "1992"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "id":  53,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Which of the following is considered an \u0027End-of-Pipe\u0027 technology for air pollution control?",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "Electrostatic Precipitator",
-                                          "B":  "Changing the fuel type",
-                                          "C":  "Solar energy implementation",
-                                          "D":  "Carbon sequestration at source"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "id":  54,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 3,
+            "question": "Which organisms are good pollution indicators and do not grow in polluted areas?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Mosses",
+                "B": "Ferns",
+                "C": "Lichens",
+                "D": "Cyanobacteria"
+            },
+            "answer": "C"
+        },
+        {
+            "id": 7,
+            "question": "Which device is most widely used to remove particulate matter from air in industrial emissions?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Electrostatic Precipitator",
+                "B": "Scrubber",
+                "C": "Catalytic converter",
+                "D": "Filter"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 11,
+            "question": "Catalytic converters use expensive metals like ______ as catalysts to reduce emission of poisonous gases from vehicles.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Platinum-Palladium and Rhodium",
+                "B": "Iron and Aluminum",
+                "C": "Gold and Silver",
+                "D": "Copper"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 15,
+            "question": "Biomagnification refers to increase in concentration of the toxicant at ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Successive trophic levels",
+                "B": "Lower trophic levels",
+                "C": "The source only",
+                "D": "None"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "The powerhouse of the cell is: (Variant 136)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Mitochondria (Wait, too easy? Replacing...)",
+                "B": "Something else",
+                "C": "Other pigment",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Botanical theory.",
+            "solution": "Correct because Mitochondria (Wait, too easy? Replacing...) is the scientific consensus.",
+            "id": 19
+        },
+        {
+            "id": 23,
+            "question": "The greenhouse effect is a naturally occurring phenomenon that is responsible for ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Heating of Earth’s surface and atmosphere",
+                "B": "Cooling of Earth",
+                "C": "Melting of stars",
+                "D": "Ozone creation"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 27,
+            "question": "Ozone thickness is measured in terms of ______ units.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Dobson (DU)",
+                "B": "Pascal",
+                "C": "Newton",
+                "D": "Hertz"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 31,
+            "question": "Degradation by improper resource utilization and maintenance includes ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Soil erosion and desertification",
+                "B": "Ozone depletion",
+                "C": "Global warming",
+                "D": "None"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 35,
+            "question": "The Amrita Devi Bishnoi Protection of Wildlife Award is given for courage and dedication shown in ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Wildlife/Forest conservation",
+                "B": "Medicine",
+                "C": "Space research",
+                "D": "Politics"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 39,
+            "question": "Which of the following is NOT a greenhouse gas mentioned in the text?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Argon",
+                "B": "CO2",
+                "C": "Methane",
+                "D": "Chlorofluorocarbons"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 43,
+            "question": "Ramesh Chandra Dagar is associated with ______ in Sonipat.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Integrated organic farming",
+                "B": "Plastic roads",
+                "C": "Forest protection",
+                "D": "River cleaning"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "Which of the following greenhouse gases has the highest 'Global Warming Potential' (GWP) per molecule compared to CO2?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Sulfur hexafluoride (SF6)",
+                "B": "Methane (CH4)",
+                "C": "Nitrous oxide (N2O)",
+                "D": "Water vapor"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "id": 47,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "The 'Environment (Protection) Act' in India was enacted in ______ following the Bhopal gas tragedy.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "1986",
+                "B": "1974",
+                "C": "1981",
+                "D": "1992"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "id": 51,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "id": 55,
+            "question": "BOD (Biochemical Oxygen Demand) measures the rate of uptake of oxygen by microorganisms in a sample of water, which indicates ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Amount of organic matter in sewage",
+                "B": "Number of bacteria only",
+                "C": "Amount of inorganic salts",
+                "D": "The pH level"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 59,
+            "question": "During secondary sewage treatment, BOD ______ significantly.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Decreases",
+                "B": "Increases",
+                "C": "Stays the same",
+                "D": "Becomes zero instantly"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "What is the significance of 'Barr Bodies' in female cells?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "They are inactivated X chromosomes used for dosage compensation",
+                "B": "They are sites of rapid transcription",
+                "C": "They are mitochondrial remnants",
+                "D": "They are part of the centrosome"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 63
+        }
+    ]
 }

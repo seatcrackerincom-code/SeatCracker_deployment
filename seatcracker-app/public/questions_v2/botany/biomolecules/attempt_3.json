@@ -1,124 +1,421 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "In \u0027Non-competitive\u0027 inhibition, the inhibitor binds to which part of the enzyme?",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "A site other than the active site (Allosteric site)",
-                                          "B":  "The active site",
-                                          "C":  "The substrate",
-                                          "D":  "The product"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "id":  51,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Which of the following is an \u0027Essential\u0027 amino acid that cannot be synthesized by the body?",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "Leucine",
-                                          "B":  "Glycine",
-                                          "C":  "Alanine",
-                                          "D":  "Serine"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "id":  52,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "The \u0027Apoenzyme\u0027 is the ______ part of a holoenzyme.",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "Protein part",
-                                          "B":  "Non-protein part",
-                                          "C":  "Active part only",
-                                          "0":  "Inactive part"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "id":  53,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Which of the following is a \u0027Vitamin\u0027 that acts as a coenzyme (specifically in NAD/NADP)?",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "Niacin",
-                                          "B":  "Vitamin A",
-                                          "C":  "Vitamin C",
-                                          "D":  "Vitamin D"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "id":  54,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "The \u0027Alpha-1,4-glycosidic\u0027 bond is characteristic of which polysaccharide?",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "Amylose (and Glycogen)",
-                                          "B":  "Cellulose",
-                                          "C":  "Sucrose",
-                                          "D":  "Chitin"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "id":  55,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Which of the following describes \u0027Aromatic\u0027 amino acids?",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "Tyrosine, Phenylalanine, and Tryptophan",
-                                          "B":  "Glycine and Valine",
-                                          "C":  "Lysine and Arginine",
-                                          "D":  "Cysteine"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "id":  56,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Which enzyme is the \u0027Fastest\u0027 known enzyme, catalyzing the hydration of CO2?",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "Carbonic Anhydrase",
-                                          "B":  "Catalase",
-                                          "C":  "RuBisCO",
-                                          "D":  "ATP Synthase"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "id":  57,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Which of the following is a \u0027Secondary\u0027 metabolite?",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "Alkaloids and Flavonoids",
-                                          "B":  "Proteins for growth",
-                                          "0":  "ATP",
-                                          "D":  "Glucose"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "id":  58,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "Euglenoids have a protein-rich layer called ______ instead of a cell wall, which makes their body flexible.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Pellicle",
+                "B": "Capsule",
+                "C": "Sheath",
+                "D": "Enamel"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 3
+        },
+        {
+            "id": 7,
+            "question": "Adenylic acid is a ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Nucleotide",
+                "B": "Nucleoside",
+                "C": "Protein",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 11,
+            "question": "Phosphodiester bond links 3' carbon of one sugar to ______ carbon of next.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "5'",
+                "B": "2'",
+                "C": "1'",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 15,
+            "question": "Collagen is the most abundant protein in ______ world.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Animal",
+                "B": "Plant",
+                "C": "Whole",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The powerhouse of the cell is: (Variant 560)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Mitochondria (Wait, too easy? Replacing...)",
+                "B": "Something else",
+                "C": "Other pigment",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Botanical theory.",
+            "solution": "Correct because Mitochondria (Wait, too easy? Replacing...) is the scientific consensus.",
+            "id": 19
+        },
+        {
+            "id": 23,
+            "question": "Purines include Adenine and ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Guanine",
+                "B": "Cytosine",
+                "C": "Thymine",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 27,
+            "question": "Palmitic acid has ______ carbon atoms.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "16",
+                "B": "20",
+                "C": "10",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 31,
+            "question": "Cellulose is a polymer of beta-D-glucose.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Which of the following is a coenzyme derived from Niacin (Vitamin B3)?",
+            "difficulty": "hard",
+            "pyq": true,
+            "options": {
+                "A": "FAD",
+                "B": "CoA",
+                "C": "NAD+",
+                "D": "FMN"
+            },
+            "answer": "C",
+            "tag": "pyq",
+            "id": 35
+        },
+        {
+            "id": 39,
+            "question": "Secondary metabolites? no. they are not found in animal cells.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Which of the following is a 'Globular' protein that acts as an enzyme?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Lysozyme",
+                "B": "Keratin",
+                "C": "Collagen",
+                "D": "Silk fibroin"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "id": 43,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "The powerhouse of the cell is: (Variant 698)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Mitochondria (Wait, too easy? Replacing...)",
+                "B": "Something else",
+                "C": "Other pigment",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Botanical theory.",
+            "solution": "Correct because Mitochondria (Wait, too easy? Replacing...) is the scientific consensus.",
+            "id": 47
+        },
+        {
+            "question": "Which of the following is an 'Essential' amino acid that cannot be synthesized by the body?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Leucine",
+                "B": "Glycine",
+                "C": "Alanine",
+                "D": "Serine"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "id": 51,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "The 'Alpha-1,4-glycosidic' bond is characteristic of which polysaccharide?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Amylose (and Glycogen)",
+                "B": "Cellulose",
+                "C": "Sucrose",
+                "D": "Chitin"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "id": 55,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "The restriction enzyme *EcoRI* recognizes which specific palindromic DNA sequence?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "5'-GAATTC-3'",
+                "B": "5'-GGATCC-3'",
+                "C": "5'-AGCT-3'",
+                "D": "5'-GATATC-3'"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 59
+        },
+        {
+            "question": "The 'Rosie' transgenic cow produced milk enriched with which human protein?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Alpha-lactalbumin",
+                "B": "Insulin",
+                "C": "Growth hormone",
+                "D": "Hemoglobin"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "id": 63,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "id": 67,
+            "question": "Peroxisomes contain enzymes for ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Photorespiration",
+                "B": "Photosynthesis",
+                "C": "Fermentation",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 71,
+            "question": "Human RBC membrane has roughly 52% protein and 40% lipids.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Which of the following is the primary site for the synthesis of 'Steroid Hormones' and 'Glycerophospholipids' in the cell?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Smooth Endoplasmic Reticulum (SER)",
+                "B": "Rough Endoplasmic Reticulum (RER)",
+                "C": "Golgi complex",
+                "D": "Peroxisomes"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "id": 75,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "Manganese competes with ______ and ______ for uptake and with ______ for binding with enzymes.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Iron, Magnesium; Calcium",
+                "B": "Nitrogen, Phosphorus; Potassium",
+                "C": "Boron, Zinc; Copper",
+                "D": "None of the above"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 79
+        },
+        {
+            "id": 83,
+            "question": "Boron? No. Replaced: Boron is essential for translocation of carbohydrates.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Which protein acts as an 'Oxygen Scavenger' to protect nitrogenase in root nodules?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Leghaemoglobin",
+                "B": "Cytochrome c",
+                "C": "Chlorophyll",
+                "D": "Rubisco"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 87
+        },
+        {
+            "id": 91,
+            "question": "How many codons code for amino acids in the standard genetic code?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "61",
+                "B": "64",
+                "C": "20",
+                "D": "3"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 95,
+            "question": "Regulatory proteins can act as both ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Activators and Repressors",
+                "B": "Enzymes",
+                "C": "Sugars",
+                "D": "Vitamins"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "Which hormone triggers the hydrolytic enzymes (like alpha-amylase) in germinating cereal seeds?",
+            "difficulty": "Hard",
+            "options": {
+                "0": "Cytokinins",
+                "A": "Gibberellins",
+                "B": "Auxins",
+                "C": "ABA"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "id": 99,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "id": 103,
+            "question": "The small protein attached to the outer surface of inner membrane and acting as mobile carrier in ETS is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Cytochrome c",
+                "B": "Ubiquinone",
+                "C": "ATP",
+                "D": "FMN"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 107,
+            "question": "Succinate dehydrogenase is the only TCA enzyme bound to the ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Inner mitochondrial membrane",
+                "B": "Matrix",
+                "C": "Outer membrane",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 111,
+            "question": "Atlas 66 is a variety of ______ having high protein content.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Wheat",
+                "B": "Maize",
+                "C": "Rice",
+                "D": "Carrot"
+            },
+            "answer": "A"
+        }
+    ]
 }

@@ -1,154 +1,215 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  51,
-                          "question":  "Hybrid orbital overlap provides ______ bond strength than pure atomic orbitals.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Higher",
-                                          "B":  "Lower",
-                                          "C":  "Equal",
-                                          "D":  "Variable"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  52,
-                          "question":  "Effective overlap of orbitals increases with increase in ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Atomic size",
-                                          "B":  "Similarity of energies",
-                                          "C":  "Distance",
-                                          "D":  "Charge"
-                                      },
-                          "answer":  "B",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  53,
-                          "question":  "C-O-C bond angle in methoxymethane is larger than expected for p-orbital overlap due to ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Resonance",
-                                          "B":  "Repulsion between methyl groups",
-                                          "C":  "Ionic bond",
-                                          "D":  "Van der Waals"
-                                      },
-                          "answer":  "B",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Sigma bond is formed by ______ overlapping of orbitals.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Head-on (Axial)",
-                                          "B":  "Sideways (Lateral)",
-                                          "C":  "Random",
-                                          "D":  "No overlap"
-                                      },
-                          "answer":  "A",
-                          "id":  54,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "The shape of PCl5 is ______ and it has ______ hybrid orbitals.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Trigonal bipyramidal, sp3d",
-                                          "B":  "Octahedral, sp3d2",
-                                          "C":  "Tetrahedral, sp3",
-                                          "D":  "Square planar, dsp2"
-                                      },
-                          "answer":  "A",
-                          "id":  55,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "The overlapping of two p-orbitals sideways gives ______ bond.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "pi",
-                                          "B":  "sigma",
-                                          "C":  "delta",
-                                          "D":  "Ionic"
-                                      },
-                          "answer":  "A",
-                          "id":  56,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "id":  57,
-                          "question":  "Outer orbital complexes use ______ d-orbitals for hybridization.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "(n-1)d",
-                                          "B":  "nd",
-                                          "C":  "np",
-                                          "D":  "ns"
-                                      },
-                          "answer":  "B",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  58,
-                          "question":  "Inner orbital complexes use ______ d-orbitals for hybridization.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "nd",
-                                          "B":  "(n-1)d",
-                                          "C":  "f-orbitals",
-                                          "D":  "None"
-                                      },
-                          "answer":  "B",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Which of the following complexes is outer orbital complex?",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "[CoF6]3-",
-                                          "B":  "[Co(NH3)6]3+",
-                                          "C":  "[Fe(CN)6]3-",
-                                          "D":  "[Cr(NH3)6]3+"
-                                      },
-                          "answer":  "A",
-                          "id":  59,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "id":  60,
-                          "question":  "The d-orbitals which are involved in d-d transition are split into ______ and ______ sets in octahedral field.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "t2g, eg",
-                                          "B":  "s, p",
-                                          "C":  "dxy, dxz",
-                                          "D":  "eg, p"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 3,
+            "question": "The energy of H-atom in ground state is -13.6 eV. Its ionization energy is ______.",
+            "difficulty": "medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0 eV",
+                "B": "+13.6 eV",
+                "C": "-13.6 eV",
+                "D": "27.2 eV"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "Moseley's law relates frequency of X-rays to ______.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Mass number",
+                "B": "Atomic number (Z)",
+                "C": "Density",
+                "D": "Neutrons"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 11,
+            "question": "Velocity of electron in nth orbit (vn) is proportional to ______.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "n",
+                "B": "1/n",
+                "C": "n^2",
+                "D": "Z"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 15,
+            "question": "Rydberg constant (R) value is approximately ______.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1.097 x 10^7 m^-1",
+                "B": "6.6 x 10^-34",
+                "C": "3 x 10^8",
+                "D": "1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 19,
+            "question": "Copper (Z=29) has electronic configuration [Ar] 4s1 3d10 to achieve ______ subshell.",
+            "difficulty": "medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Half filled",
+                "B": "Fully filled",
+                "C": "Vacuum",
+                "D": "Excited"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 23,
+            "question": "Orbital with lowest energy among 3d, 4s, 4p is ______.",
+            "difficulty": "medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3d",
+                "B": "4s",
+                "C": "4p",
+                "D": "All same"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 27,
+            "question": "Specific charge (e/m) of cathode rays ______ with nature of gas used.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Changes",
+                "B": "Does not change",
+                "C": "Increases",
+                "D": "Decreases"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 31,
+            "question": "Radius of nucleus is of order ______ m.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "10^-10",
+                "B": "10^-15",
+                "C": "10^-8",
+                "D": "10^-12"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 35,
+            "question": "Radial node for 4d is n-l-1 = 4-2-1 = ______.",
+            "difficulty": "medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "2",
+                "C": "3",
+                "D": "0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Which of the following has the lowest ionization energy?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "B",
+                "B": "C",
+                "C": "N",
+                "D": "O"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 39,
+            "tag": "pyq"
+        },
+        {
+            "question": "Which of the following is not possible?",
+            "difficulty": "hard",
+            "options": {
+                "A": "2d",
+                "B": "2p",
+                "C": "3f",
+                "D": "Both A and C"
+            },
+            "answer": "D",
+            "id": 43,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "id": 47,
+            "question": "Hybrid orbital overlap provides ______ bond strength than pure atomic orbitals.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Higher",
+                "B": "Lower",
+                "C": "Equal",
+                "D": "Variable"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The shape of PCl5 is ______ and it has ______ hybrid orbitals.",
+            "difficulty": "hard",
+            "options": {
+                "A": "Trigonal bipyramidal, sp3d",
+                "B": "Octahedral, sp3d2",
+                "C": "Tetrahedral, sp3",
+                "D": "Square planar, dsp2"
+            },
+            "answer": "A",
+            "id": 51,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "id": 55,
+            "question": "Inner orbital complexes use ______ d-orbitals for hybridization.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "nd",
+                "B": "(n-1)d",
+                "C": "f-orbitals",
+                "D": "None"
+            },
+            "answer": "B",
+            "pyq": false
+        }
+    ]
 }

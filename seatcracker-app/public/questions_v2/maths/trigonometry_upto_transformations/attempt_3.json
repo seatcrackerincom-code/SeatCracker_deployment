@@ -1,0 +1,437 @@
+{
+    "questions": [
+        {
+            "id": 3,
+            "question": "From the identity l² + m² + n² = 1, substituting sines instead of cosines gives sin² α + sin² β + sin² γ = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2",
+                "B": "1",
+                "C": "3",
+                "D": "0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 7,
+            "question": "If f(x) = sin(x) * cos(x), then f'(x) is",
+            "difficulty": "Easy",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "cos(2x)",
+                "B": "-cos(2x)",
+                "C": "sin(2x)",
+                "D": "-sin(2x)"
+            },
+            "answer": "C",
+            "pyq": false,
+            "tag": "easy"
+        },
+        {
+            "id": 11,
+            "question": "If f(x) = log(tan(x/2)), then the value of f'(x) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "cosec x",
+                "B": "sec x",
+                "C": "tan x",
+                "D": "log(sin x)"
+            },
+            "answer": "A",
+            "pyq": true
+        },
+        {
+            "id": 15,
+            "question": "The identity 1 - tanh²(x) is equal to ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "sech²(x)",
+                "B": "-sech²(x)",
+                "C": "cosech²(x)",
+                "D": "coth²(x)"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "Determine lim_{x -> 0} (sin(5x) - sin(2x)) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3",
+                "B": "7",
+                "C": "-3",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use lim_{x->0} sin(kx)/x = k.",
+            "solution": "We can split the limit as lim_{x->0} sin(5x)/x - lim_{x->0} sin(2x)/x = 5 - 2 = 3.",
+            "id": 19
+        },
+        {
+            "question": "Determine lim_{x -> 0} (sin(12x) - sin(4x)) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8",
+                "B": "16",
+                "C": "-8",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use lim_{x->0} sin(kx)/x = k.",
+            "solution": "We can split the limit as lim_{x->0} sin(12x)/x - lim_{x->0} sin(4x)/x = 12 - 4 = 8.",
+            "id": 23
+        },
+        {
+            "question": "Determine lim_{x -> 0} (sin(10x) - sin(4x)) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6",
+                "B": "14",
+                "C": "-6",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use lim_{x->0} sin(kx)/x = k.",
+            "solution": "We can split the limit as lim_{x->0} sin(10x)/x - lim_{x->0} sin(4x)/x = 10 - 4 = 6.",
+            "id": 27
+        },
+        {
+            "question": "Determine lim_{x -> 0} (sin(12x) - sin(7x)) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5",
+                "B": "19",
+                "C": "-5",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use lim_{x->0} sin(kx)/x = k.",
+            "solution": "We can split the limit as lim_{x->0} sin(12x)/x - lim_{x->0} sin(7x)/x = 12 - 7 = 5.",
+            "id": 31
+        },
+        {
+            "question": "Determine lim_{x -> 0} (sin(6x) - sin(3x)) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3",
+                "B": "9",
+                "C": "-3",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use lim_{x->0} sin(kx)/x = k.",
+            "solution": "We can split the limit as lim_{x->0} sin(6x)/x - lim_{x->0} sin(3x)/x = 6 - 3 = 3.",
+            "id": 35
+        },
+        {
+            "question": "Determine lim_{x -> 0} (sin(9x) - sin(4x)) / x.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5",
+                "B": "13",
+                "C": "-5",
+                "D": "1"
+            },
+            "answer": "A",
+            "hint": "Use lim_{x->0} sin(kx)/x = k.",
+            "solution": "We can split the limit as lim_{x->0} sin(9x)/x - lim_{x->0} sin(4x)/x = 9 - 4 = 5.",
+            "id": 39
+        },
+        {
+            "id": 43,
+            "question": "In the half-angle formula, sin(A/2) is equal to ±√[(1 - cosA) / 2].",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 47,
+            "question": "The value of sin(3A) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3 sinA - 4 sin³A",
+                "B": "4 sin³A - 3 sinA",
+                "C": "3 sinA + 4 sin³A",
+                "D": "sin(2A) + sinA"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 51,
+            "question": "sin² A - sin² B = sin(A+B) sin(A-B).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 55,
+            "question": "Value of sin(A/2) in terms of sin A is ______? ambiguous.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Depends on Quadrant",
+                "B": "Unique",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 59,
+            "question": "4cos³A − 3cosA = cos 3A. Then 4cos³(π/9) − 3cos(π/9) = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1/2",
+                "B": "√3/2",
+                "C": "−1/2",
+                "D": "0"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 63,
+            "question": "The Cosine Rule rewritten for cos A is (b² + c² - a²) / 2bc.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 67,
+            "question": "In △ABC, r₁ = s·tan(A/2). If A=60°, s=12, then r₁=?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "4√3",
+                "B": "12/√3",
+                "C": "6√3",
+                "D": "12√3"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "In a ΔABC, tan((A-B)/2) = ______ (Napier's Analogy).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "((a-b)/(a+b)) cot(C/2)",
+                "B": "((a+b)/(a-b)) tan(C/2)",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 71
+        },
+        {
+            "id": 75,
+            "question": "The general solution of sin x + sin 5x = sin 3x is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "nπ or nπ ± π/3",
+                "B": "nπ/2",
+                "C": "nπ ± π/6",
+                "D": "2nπ ± π/3"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 79,
+            "question": "If sin θ + cos θ = √2 cos θ, then tan θ = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "√2 − 1",
+                "B": "√2 + 1",
+                "C": "1",
+                "D": "√2"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 83,
+            "question": "The value of tan 9° − tan 27° − tan 63° + tan 81° = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2",
+                "B": "4",
+                "C": "0",
+                "D": "1"
+            },
+            "answer": "B",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 87,
+            "question": "The period of f(x) = sin(πx/2) + cos(πx/3) is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "6",
+                "B": "12",
+                "C": "4",
+                "D": "3"
+            },
+            "answer": "B",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 91,
+            "question": "If cos θ = −√3/2 and sin θ < 0, then θ = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "7π/6",
+                "B": "5π/6",
+                "C": "4π/3",
+                "D": "2π/3"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "If tan θ = 1/2 and tan φ = 1/3, then θ + φ = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "45°",
+                "B": "60°",
+                "C": "30°",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 95
+        },
+        {
+            "question": "The minimum value of 2 sin²θ + 3 cos²θ is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "2",
+                "B": "3",
+                "C": "5",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 99
+        },
+        {
+            "question": "The value of sin² 5° + sin² 10° + ... + sin² 90° is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "9.5",
+                "B": "9",
+                "C": "10",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 103
+        },
+        {
+            "question": "If A + B + C = 180°, then sin 2A + sin 2B + sin 2C = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "4 sin A sin B sin C",
+                "B": "4 cos A cos B cos C",
+                "C": "1 + 4 sin A sin B sin C",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 107
+        },
+        {
+            "id": 111,
+            "question": "The value of cos²15° − cos²30° + cos²45° − cos²60° + cos²75° = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1/2",
+                "B": "1",
+                "C": "0",
+                "D": "3/2"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        }
+    ]
+}

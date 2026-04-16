@@ -1,164 +1,115 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "Cyclic property of box product: [a b c] = ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "[b c a]",
-                                          "B":  "[b a c]",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  51
-                      },
-                      {
-                          "question":  "If vectors are reciprocal, then a.a\u0027 = ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "1",
-                                          "B":  "0",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  52
-                      },
-                      {
-                          "id":  53,
-                          "question":  "If a⃗⊥b⃗, then |a⃗×b⃗| = ?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "|a⃗||b⃗|",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "|a⃗|+|b⃗|"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "The constant torque τ of a force F acting at point r is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "r x F",
-                                          "B":  "r.F",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  54
-                      },
-                      {
-                          "question":  "If a x b = 0, then a and b are ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "Parallel",
-                                          "B":  "Perpendicular",
-                                          "C":  "Equal",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  55
-                      },
-                      {
-                          "id":  56,
-                          "question":  "The magnitude of (2î+3ĵ+k̂)×(î+ĵ+k̂) is?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "√6",
-                                          "B":  "√14",
-                                          "C":  "3",
-                                          "D":  "√3"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "The box product [a b c] is zero if vectors are ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "Coplanar",
-                                          "B":  "Orthogonal",
-                                          "C":  "Collinear",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  57
-                      },
-                      {
-                          "question":  "The velocity V of a rotating body is V = ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "ω x r",
-                                          "B":  "ω.r",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  58
-                      },
-                      {
-                          "question":  "If a, b, c represent edges of a tetrahedron, its volume is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "1/6 [a b c]",
-                                          "B":  "1/3 [a b c]",
-                                          "C":  "[a b c]",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  59
-                      },
-                      {
-                          "question":  "The area of a triangle with adjacent sides a and b is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "0.5 |a x b|",
-                                          "B":  "|a x b|",
-                                          "C":  "a.b",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  60
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 3,
+            "question": "If a⃗ = 2î+3ĵ, b⃗ = î+4ĵ, then a⃗×b⃗ = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "5k̂",
+                "B": "−5k̂",
+                "C": "11k̂",
+                "D": "2î−3ĵ"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 7,
+            "question": "Line of intersection of two planes is perpendicular to ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Both normals to the planes",
+                "B": "The x-axis",
+                "C": "The origin",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If |a x b| = |a||b|, the angle between a and b is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "90°",
+                "B": "0°",
+                "C": "180°",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 11
+        },
+        {
+            "id": 15,
+            "question": "If a⃗ = î+ĵ+k̂ and b⃗ = î, then a⃗×b⃗ = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "−ĵ+k̂",
+                "B": "ĵ−k̂",
+                "C": "ĵ+k̂",
+                "D": "0"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "The direction of a x b is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Perpendicular to both a and b",
+                "B": "Parallel to a",
+                "C": "In the plane of a and b",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 19
+        },
+        {
+            "id": 23,
+            "question": "If a⃗⊥b⃗, then |a⃗×b⃗| = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "|a⃗||b⃗|",
+                "B": "0",
+                "C": "1",
+                "D": "|a⃗|+|b⃗|"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "The velocity V of a rotating body is V = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "ω x r",
+                "B": "ω.r",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 27
+        }
+    ]
 }

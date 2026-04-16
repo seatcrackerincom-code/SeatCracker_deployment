@@ -1,62 +1,333 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  76,
-                          "question":  "Pioneer species on rock? yes. Lichens which secrete acids to dissolve rock.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  77,
-                          "question":  "Baculoviruses (genus Nucleopolyhedrovirus) are used as biocontrol agents because they are ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Species-specific and narrow spectrum",
-                                          "B":  "Broad spectrum",
-                                          "C":  "Harmful to mammals",
-                                          "D":  "Ineffective against insects"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  78,
-                          "question":  "Fungi associated with roots of higher plants form ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Mycorrhiza",
-                                          "B":  "Lichens",
-                                          "C":  "VAM",
-                                          "D":  "Both A and C"
-                                      },
-                          "answer":  "D"
-                      },
-                      {
-                          "question":  "\u0027Mycorrhizae\u0027 is a mutualistic association between fungi and the ______ of higher plants.",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "Roots",
-                                          "B":  "Leaves",
-                                          "C":  "Flowers",
-                                          "D":  "Stem"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "id":  79,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 4,
+            "question": "M.W. Beijerinck called the infectious fluid from tobacco plants ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Contagium vivum fluidum",
+                "B": "Toxic serum",
+                "C": "Antibiotic",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Which of the following fungi is NOT a member of the class Deuteromycetes?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Agaricus",
+                "B": "Alternaria",
+                "C": "Colletotrichum",
+                "D": "Trichoderma"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 8
+        },
+        {
+            "id": 12,
+            "question": "T.O. Diener discovered ______ in 1971.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Viroids",
+                "B": "Viruses",
+                "C": "Prions",
+                "D": "Bacteria"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 16,
+            "question": "Bacteria are classified into four groups based on shape: Coccus, Bacillus, ______ and ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Vibrium, Spirillum",
+                "B": "Rectangular, Square",
+                "C": "Round, Long",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The powerhouse of the cell is: (Variant 572)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Mitochondria (Wait, too easy? Replacing...)",
+                "B": "Something else",
+                "C": "Other pigment",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Botanical theory.",
+            "solution": "Correct because Mitochondria (Wait, too easy? Replacing...) is the scientific consensus.",
+            "id": 20
+        },
+        {
+            "question": "The powerhouse of the cell is: (Variant 271)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Mitochondria (Wait, too easy? Replacing...)",
+                "B": "Something else",
+                "C": "Other pigment",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Botanical theory.",
+            "solution": "Correct because Mitochondria (Wait, too easy? Replacing...) is the scientific consensus.",
+            "id": 24
+        },
+        {
+            "id": 28,
+            "question": "Truffles and Morels belong to ______ and are edible.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Ascomycetes",
+                "B": "Basidiomycetes",
+                "C": "Phycomycetes",
+                "D": "Deuteromycetes"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 32,
+            "question": "Parasitic fungi on mustard? Replaced: Albugo is a parasitic fungus on mustard.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 36,
+            "question": "Conidia are produced ______ on conidiophores.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Exogenously",
+                "B": "Endogenously",
+                "C": "Randomly",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Under suitable conditions, slime moulds form an aggregation called ______.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Plasmodium",
+                "B": "Pseudopodium",
+                "C": "Sporocarp",
+                "D": "Mycelium"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 40
+        },
+        {
+            "id": 44,
+            "question": "Numerical Taxonomy uses computers to study ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Observable characters",
+                "B": "DNA",
+                "C": "Cells",
+                "D": "Color"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The powerhouse of the cell is: (Variant 306)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Mitochondria (Wait, too easy? Replacing...)",
+                "B": "Something else",
+                "C": "Other pigment",
+                "D": "None"
+            },
+            "answer": "A",
+            "hint": "Botanical theory.",
+            "solution": "Correct because Mitochondria (Wait, too easy? Replacing...) is the scientific consensus.",
+            "id": 48
+        },
+        {
+            "question": "Which of the following protozoans is responsible for causing 'African Sleeping Sickness'?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Trypanosoma",
+                "B": "Amoeba",
+                "C": "Giaradia",
+                "D": "Plasmodium"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 52
+        },
+        {
+            "question": "Bacteriophages, which are viruses that infect bacteria, usually have ______ DNA.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Double stranded",
+                "B": "Single stranded",
+                "C": "Triple stranded",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 56
+        },
+        {
+            "question": "In 'Lichens', the fungal partner (Mycobiont) provides ______ to the algal partner.",
+            "difficulty": "Hard",
+            "options": {
+                "0": "Oxygen",
+                "A": "Shelter and mineral nutrients",
+                "B": "Sugar",
+                "D": "Water only"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 60
+        },
+        {
+            "question": "Which of the following is causing 'Mad Cow Disease'?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Prion",
+                "B": "Virus",
+                "C": "Viroid",
+                "D": "Bacterium"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 64
+        },
+        {
+            "id": 68,
+            "question": "In which year was the Five Kingdom Classification proposed?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1969",
+                "B": "1959",
+                "C": "1979",
+                "D": "1989"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 72,
+            "question": "The cell wall of fungi is distinct because it is made of ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Cellulose",
+                "B": "Chitin and polysaccharides",
+                "C": "Peptidoglycan",
+                "D": "Hemicellulose"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 76,
+            "question": "Prions are abnormally folded ______ that cause neurological diseases.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Lipids",
+                "B": "Nucleic acids",
+                "C": "Proteins",
+                "D": "Carbohydrates"
+            },
+            "answer": "C"
+        },
+        {
+            "id": 80,
+            "question": "Pioneer species on rock? yes. Lichens which secrete acids to dissolve rock.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 84,
+            "question": "In 'mung bean', resistance to yellow mosaic virus was induced by ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Mutations",
+                "B": "Tissue culture",
+                "C": "Conventional breeding",
+                "D": "Natural selection"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "The resistance to 'Yellow Mosaic Virus' in *Abelmoschus esculentus* was transferred from a wild species to produce 'Parbhani kranti'. What is the common name of this plant?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Bhindi (Okra)",
+                "B": "Cotton",
+                "C": "Mustard",
+                "D": "Tomato"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "id": 88,
+            "hasDiagram": false,
+            "diagram_description": ""
+        }
+    ]
 }

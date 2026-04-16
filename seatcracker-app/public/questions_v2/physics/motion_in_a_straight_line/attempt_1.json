@@ -1,389 +1,98 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "If displacement s = t³, acceleration at t=2s is: (s in m)",
-                          "options":  {
-                                          "A":  "12 m/s²",
-                                          "B":  "6 m/s²",
-                                          "C":  "18 m/s²",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  1
-                      },
-                      {
-                          "question":  "Wait? no. Replaced: if velocity decreases, acceleration is ______.",
-                          "options":  {
-                                          "A":  "Negative (Deceleration)",
-                                          "B":  "Positive",
-                                          "C":  "Zero",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  2
-                      },
-                      {
-                          "id":  3,
-                          "question":  "Area under acceleration-time graph gives ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Change in velocity",
-                                          "B":  "Displacement",
-                                          "C":  "Final velocity",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  4,
-                          "question":  "Instantaneous? no. Replaced: speed is the magnitude of instantaneous velocity.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  5,
-                          "question":  "Wait? no. Replaced: if average velocity is zero, it doesn\u0027t mean average speed is zero.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  6,
-                          "question":  "Wait? no. Replaced: speed vs time graph can never have negative slope? yes it can if body slows down. distance vs time graph slope is always positive.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Body dropped from height h takes time t = ______ to hit ground.",
-                          "options":  {
-                                          "A":  "√(2h/g)",
-                                          "B":  "h/g",
-                                          "C":  "2h/g",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  7
-                      },
-                      {
-                          "id":  8,
-                          "question":  "Average speed \u003e= |Average velocity|.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Instantaneous velocity is defined as v = ______.",
-                          "options":  {
-                                          "A":  "dx / dt",
-                                          "B":  "Δx / Δt",
-                                          "C":  "x / t",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  9
-                      },
-                      {
-                          "question":  "A ball is thrown at 10m/s. After 2s, its speed is: (g=10, up is +)",
-                          "options":  {
-                                          "A":  "10 m/s down",
-                                          "B":  "0",
-                                          "C":  "20 m/s down",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  10
-                      },
-                      {
-                          "question":  "Equation of motion v² = u² + ______.",
-                          "options":  {
-                                          "A":  "2as",
-                                          "B":  "at",
-                                          "C":  "0.5at²",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  11
-                      },
-                      {
-                          "question":  "A body starts from rest. Distance covered in n-th second is s_n = ______.",
-                          "options":  {
-                                          "A":  "u + 0.5 a (2n-1)",
-                                          "B":  "u + a n",
-                                          "C":  "None",
-                                          "D":  "u + a(2n-1)"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  12
-                      },
-                      {
-                          "question":  "A car moves at 40 m/s and brakes to stop in 4 seconds. The acceleration is:",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "-10.0 m/s^2",
-                                          "B":  "10",
-                                          "C":  "5",
-                                          "D":  "20"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use standard physics formulas.",
-                          "solution":  "a = (v_f - v_i)/t = (0 - 40)/4.",
-                          "id":  13
-                      },
-                      {
-                          "id":  14,
-                          "question":  "If x = at², acceleration is 2a.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  15,
-                          "question":  "Inertial frame? yes. frame which is not accelerated.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  16,
-                          "question":  "Ratio of s1 : s2 : s3 for free fall in equal times? yes. 1 : 3 : 5.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  17,
-                          "question":  "Ratio of speeds? no. Replaced: if two bodies are dropped from h1 and h2, ratio of times is √(h1/h2).",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "v=3t²-6t m/s. Particle at rest at t=",
-                          "difficulty":  "hard",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "0s and 2s",
-                                          "B":  "1s and 3s",
-                                          "C":  "2s and 3s",
-                                          "D":  "0s only"
-                                      },
-                          "answer":  "A",
-                          "tag":  "pyq",
-                          "id":  18
-                      },
-                      {
-                          "id":  19,
-                          "question":  "If a body covers half distance at v1 and half at v2, Vavg = ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "2 v1 v2 / (v1 + v2)",
-                                          "B":  "(v1+v2) / 2",
-                                          "C":  "v1 v2",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  20,
-                          "question":  "If displacement x = at² + bt + c, velocity at t=0 is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "b",
-                                          "B":  "a",
-                                          "C":  "c",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Time of ascent is equal to time of descent in vacuum. True or False?",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "Only for small h",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  21
-                      },
-                      {
-                          "question":  "Can a body have zero velocity and non-zero acceleration?",
-                          "options":  {
-                                          "A":  "Yes (at max height)",
-                                          "B":  "No",
-                                          "C":  "Only in circular motion",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  22
-                      },
-                      {
-                          "question":  "Wait? no. Replaced: kinematic equations are valid for ______ acceleration.",
-                          "options":  {
-                                          "A":  "Constant",
-                                          "B":  "Variable",
-                                          "C":  "Zero only",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  23
-                      },
-                      {
-                          "question":  "Equation of motion s = ut + ______.",
-                          "options":  {
-                                          "A":  "0.5 a t²",
-                                          "B":  "v t",
-                                          "C":  "a t",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  24
-                      },
-                      {
-                          "question":  "A car moves at 85 m/s and brakes to stop in 1 seconds. The acceleration is:",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "-85.0 m/s^2",
-                                          "B":  "10",
-                                          "C":  "5",
-                                          "D":  "20"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use standard physics formulas.",
-                          "solution":  "a = (v_f - v_i)/t = (0 - 85)/1.",
-                          "id":  25
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Wave intensity decreases with distance for point source? yes. as 1/r².",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "Escape speed is independent of mass of body? yes.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Equation of motion v² = u² + ______.",
+            "options": {
+                "A": "2as",
+                "B": "at",
+                "C": "0.5at²",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 9
+        },
+        {
+            "question": "Equation of motion s = ut + ______.",
+            "options": {
+                "A": "0.5 a t²",
+                "B": "v t",
+                "C": "a t",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 13
+        },
+        {
+            "question": "CM of a uniform solid hemisphere of radius R is at distance ______ from base.",
+            "options": {
+                "A": "3R / 8",
+                "B": "R / 2",
+                "C": "2R / 3",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 17
+        },
+        {
+            "question": "Two points are at a distance of 4m and 9m from a point source of sound. The ratio of the amplitudes of the vibrations at these two points is ______.",
+            "difficulty": "Medium",
+            "options": {
+                "A": "9:4",
+                "B": "3:2",
+                "C": "81:16",
+                "D": "2:3"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": true,
+            "tag": "hard",
+            "id": 21
+        }
+    ]
 }

@@ -1,379 +1,266 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "Evaluate the integral of sinh(4x) cosh(7x) dx.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "Calculated term",
-                                          "B":  "Calculated term",
-                                          "C":  "Calculated term",
-                                          "D":  "Calculated term"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the product to sum identities for hyperbolic functions.",
-                          "solution":  "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
-                          "id":  76
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^11 * (1-x)^4 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "17",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  77
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^6 * (1-x)^12 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "20",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  78
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^18 * (1-x)^7 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "27",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  79
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^2 * (1-x)^14 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "18",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  80
-                      },
-                      {
-                          "id":  81,
-                          "question":  "When resolving into partial fractions for finding an integral, (Ax + B) / (axÂ² + bx + c) is usually further split because the Ax term requires ______, and the B term requires ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Logarithmic substitution, completing the square (arctan)",
-                                          "B":  "Partial fractions again, differentiation",
-                                          "C":  "Sine, Cosine",
-                                          "D":  "Binomial theorem, Taylor series"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  82,
-                          "question":  "To integrate âˆ« P(x)/Q(x) dx efficiently using elementary functions, the rational function MUST be ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Expressed as partial fractions after polynomial division if improper",
-                                          "B":  "Expanded via Taylor series",
-                                          "C":  "Substituted with trigonometric terms directly",
-                                          "D":  "Integrated by parts repeatedly"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^14 * (1-x)^3 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "19",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  83
-                      },
-                      {
-                          "question":  "Evaluate the integral of sinh(2x) cosh(7x) dx.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "Calculated term",
-                                          "B":  "Calculated term",
-                                          "C":  "Calculated term",
-                                          "D":  "Calculated term"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the product to sum identities for hyperbolic functions.",
-                          "solution":  "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
-                          "id":  84
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^5 * (1-x)^19 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "26",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  85
-                      },
-                      {
-                          "question":  "Evaluate the integral of sinh(5x) cosh(6x) dx.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "Calculated term",
-                                          "B":  "Calculated term",
-                                          "C":  "Calculated term",
-                                          "D":  "Calculated term"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the product to sum identities for hyperbolic functions.",
-                          "solution":  "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
-                          "id":  86
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^19 * (1-x)^4 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "25",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  87
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^16 * (1-x)^17 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "35",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  88
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^10 * (1-x)^16 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "28",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  89
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^2 * (1-x)^15 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "19",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  90
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^16 * (1-x)^9 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "27",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  91
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^8 * (1-x)^9 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "19",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  92
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^17 * (1-x)^2 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "21",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  93
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^2 * (1-x)^5 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "9",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  94
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^9 * (1-x)^15 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "26",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  95
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^12 * (1-x)^9 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "23",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  96
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^16 * (1-x)^20 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "38",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  97
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^2 * (1-x)^17 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "21",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  98
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^17 * (1-x)^18 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "37",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  99
-                      },
-                      {
-                          "question":  "The value of the integral from 0 to 1 of x^15 * (1-x)^13 dx is given by the Beta function B(m,n). Find m+n.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "30",
-                                          "B":  "0",
-                                          "C":  "1",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Think step by step.",
-                          "solution":  "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-                          "id":  100
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 4,
+            "question": "If a curve is given parametrically x = φ(t), y = ψ(t), the area ∫ y dx is given by ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "∫ ψ(t) * φ'(t) dt",
+                "B": "∫ ψ'(t) * φ(t) dt",
+                "C": "∫ ψ(t) dt",
+                "D": "∫ φ(t) dt"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 8,
+            "question": "If ∫_0^a f(x) dx represents area, a scaling of x-axis by k results in area ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Multiplying by k",
+                "B": "Dividing by k",
+                "C": "Remaining same",
+                "D": "Squaring"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Evaluate the integral of sinh(4x) cosh(6x) dx.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Calculated term",
+                "B": "Calculated term",
+                "C": "Calculated term",
+                "D": "Calculated term"
+            },
+            "answer": "A",
+            "hint": "Use the product to sum identities for hyperbolic functions.",
+            "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
+            "id": 12
+        },
+        {
+            "id": 16,
+            "question": "∫_0^{2a} f(x) dx = ∫_0^a [f(x) + f(2a-x)] dx. If f(2a-x) = f(x), then integral is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2∫_0^a f(x) dx",
+                "B": "0",
+                "C": "∫_0^a f(x) dx",
+                "D": "a f(a)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 20,
+            "question": "∫₀^(π/2) log(tan x) dx = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "π/2",
+                "C": "−π/2",
+                "D": "π"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 24,
+            "question": "If f is even, ∫_a^b f(x)dx + ∫_{-a}^{-b} f(x)dx = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "2∫_a^b f(x)dx",
+                "C": "-2∫_a^b f(x)dx",
+                "D": "1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 28,
+            "question": "∫₀^{π/2} [ sin⁸x ] dx = ______ (using Wallis).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "35π / 256",
+                "B": "7π / 128",
+                "C": "35 / 128",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Evaluate the integral of sinh(3x) cosh(6x) dx.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Calculated term",
+                "B": "Calculated term",
+                "C": "Calculated term",
+                "D": "Calculated term"
+            },
+            "answer": "A",
+            "hint": "Use the product to sum identities for hyperbolic functions.",
+            "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
+            "id": 32
+        },
+        {
+            "id": 36,
+            "question": "If ∫₀^a dx/(4+x²) = π/8, then a = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2",
+                "B": "4",
+                "C": "1",
+                "D": "π/4"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 40,
+            "question": "An equation Mdx + Ndy = 0 is Exact if ∂M/∂y is equal to ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "∂N/∂x",
+                "B": "-∂N/∂x",
+                "C": "∂M/∂x",
+                "D": "N"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 44,
+            "question": "Solution of x·sin(y/x)·dy = (y·sin(y/x)−x)dx is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "cos(y/x) = ln|x| + c",
+                "B": "sin(y/x) = ln|x| + c",
+                "C": "cos(y/x) + ln|x| = c",
+                "D": "y/x = e^(c−ln x)"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "The general solution of d²y/dx² + y = 0 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "y = A cos x + B sin x",
+                "B": "y = e^x",
+                "C": "y = x",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 48
+        },
+        {
+            "id": 52,
+            "question": "If y = (x + 1) / (x - 1), then d^2y/dx^2 at x = 0 is",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "2",
+                "B": "-2",
+                "C": "0",
+                "D": "1"
+            },
+            "answer": "B",
+            "pyq": false,
+            "tag": "medium"
+        },
+        {
+            "question": "Evaluate the integral of sinh(4x) cosh(8x) dx.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Calculated term",
+                "B": "Calculated term",
+                "C": "Calculated term",
+                "D": "Calculated term"
+            },
+            "answer": "A",
+            "hint": "Use the product to sum identities for hyperbolic functions.",
+            "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
+            "id": 56
+        },
+        {
+            "question": "The integral of 1 / (1 + cos x) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "tan(x/2) + C",
+                "B": "cot(x/2) + C",
+                "C": "sec(x/2) + C",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 60
+        },
+        {
+            "id": 64,
+            "question": "The value of ∫ [ dx / (x² + 2x + 2) ] is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "tan⁻¹(x+1) + C",
+                "B": "tan⁻¹(x) + C",
+                "C": "ln|x² + 2x + 2| + C",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 68,
+            "question": "∫ [A/(x−1) + B/(x+1)] dx if A=2, B=−2 = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2 ln|(x−1)/(x+1)| + C",
+                "B": "2 ln|x²−1| + C",
+                "C": "ln|(x−1)²/(x+1)²| + C",
+                "D": "Both A and C"
+            },
+            "answer": "D",
+            "pyq": true,
+            "tag": "pyq"
+        }
+    ]
 }

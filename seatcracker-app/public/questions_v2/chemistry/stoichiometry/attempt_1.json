@@ -1,371 +1,2748 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "What volume of O2 at STP is required for complete combustion of 22.4 L of CH4 at STP?",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "22.4 L",
-                                          "B":  "44.8 L",
-                                          "C":  "11.2 L",
-                                          "D":  "67.2 L"
-                                      },
-                          "answer":  "B",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  1,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "The number of moles of solute in 9 Liters of a 0.437 M solution is:",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "3.933",
-                                          "B":  "None",
-                                          "C":  "Decreases",
-                                          "D":  "Stable"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Apply periodic table laws.",
-                          "solution":  "Moles = Molarity * Volume = 0.437 * 9.",
-                          "id":  2
-                      },
-                      {
-                          "question":  "The number of moles of solute in 9 Liters of a 0.449 M solution is:",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "4.041",
-                                          "B":  "None",
-                                          "C":  "Decreases",
-                                          "D":  "Stable"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Apply periodic table laws.",
-                          "solution":  "Moles = Molarity * Volume = 0.449 * 9.",
-                          "id":  3
-                      },
-                      {
-                          "id":  4,
-                          "question":  "The simplest whole number ratio of atoms of each element in a compound is its ______ formula.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Molecular",
-                                          "B":  "Empirical",
-                                          "C":  "Structural",
-                                          "D":  "Ionic"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "23 g of a non-volatile solute (molar mass = 60 g/mol) is dissolved in 1000 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.00685",
-                                          "B":  "0.0137",
-                                          "C":  "0.00343",
-                                          "D":  "0.01027"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 23/60 = 0.383. Moles water = 1000/18 = 55.56. Mole fraction = 0.00685.",
-                          "id":  5
-                      },
-                      {
-                          "id":  6,
-                          "question":  "Molarity (M) is defined as moles of solute per ______ of solution.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Kilogram",
-                                          "B":  "Litre",
-                                          "C":  "Millilitre",
-                                          "D":  "Gram"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 2.83 x 10^-3 s^-1 at 302 K and 7.27 x 10^-3 s^-1 at 312 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "73.91",
-                                          "B":  "88.69",
-                                          "C":  "59.13",
-                                          "D":  "83.91"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(7.27/2.83) = (Ea/8.314) * (1/302 - 1/312). Solving gives 73.91 kJ/mol.",
-                          "id":  7
-                      },
-                      {
-                          "id":  8,
-                          "question":  "Molality (m) is defined as moles of solute per ______ of solvent.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Litre",
-                                          "B":  "Kilogram",
-                                          "C":  "Gram",
-                                          "D":  "Mole"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "29 g of a non-volatile solute (molar mass = 180 g/mol) is dissolved in 500 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.00577",
-                                          "B":  "0.01154",
-                                          "C":  "0.00288",
-                                          "D":  "0.00865"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 29/180 = 0.161. Moles water = 500/18 = 27.78. Mole fraction = 0.00577.",
-                          "id":  9
-                      },
-                      {
-                          "question":  "44 g of a non-volatile solute (molar mass = 342 g/mol) is dissolved in 250 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.00918",
-                                          "B":  "0.01836",
-                                          "C":  "0.00459",
-                                          "D":  "0.01377"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 44/342 = 0.129. Moles water = 250/18 = 13.89. Mole fraction = 0.00918.",
-                          "id":  10
-                      },
-                      {
-                          "id":  11,
-                          "question":  "Percentage of Nitrogen in Urea (NH2CONH2) is approximately ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "28%",
-                                          "B":  "46.6%",
-                                          "C":  "60%",
-                                          "D":  "14%"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 2.05 x 10^-3 s^-1 at 305 K and 7.07 x 10^-3 s^-1 at 321 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "62.98",
-                                          "B":  "75.58",
-                                          "C":  "50.38",
-                                          "D":  "72.98"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(7.07/2.05) = (Ea/8.314) * (1/305 - 1/321). Solving gives 62.98 kJ/mol.",
-                          "id":  12
-                      },
-                      {
-                          "id":  13,
-                          "question":  "One a.m.u. (atomic mass unit) is equal to ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Mass of one C-12 atom",
-                                          "B":  "1/12th the mass of one C-12 atom",
-                                          "C":  "Mass of one H atom",
-                                          "D":  "1.66 x 10^-27 mg"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  14,
-                          "question":  "A solution contains 2 moles of A and 3 moles of B. The mole fraction of A is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "0.6",
-                                          "B":  "0.4",
-                                          "C":  "0.5",
-                                          "D":  "1.5"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 2.67 x 10^-3 s^-1 at 304 K and 9.12 x 10^-3 s^-1 at 324 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "50.3",
-                                          "B":  "60.36",
-                                          "C":  "40.24",
-                                          "D":  "60.3"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(9.12/2.67) = (Ea/8.314) * (1/304 - 1/324). Solving gives 50.3 kJ/mol.",
-                          "id":  15
-                      },
-                      {
-                          "id":  16,
-                          "question":  "The molarity of pure water is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "1 M",
-                                          "B":  "55.5 M",
-                                          "C":  "18 M",
-                                          "D":  "100 M"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 2.03 x 10^-3 s^-1 at 301 K and 5.44 x 10^-3 s^-1 at 312 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "69.97",
-                                          "B":  "83.96",
-                                          "C":  "55.98",
-                                          "D":  "79.97"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(5.44/2.03) = (Ea/8.314) * (1/301 - 1/312). Solving gives 69.97 kJ/mol.",
-                          "id":  17
-                      },
-                      {
-                          "question":  "The number of moles of solute in 8 Liters of a 0.451 M solution is:",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "3.608",
-                                          "B":  "None",
-                                          "C":  "Decreases",
-                                          "D":  "Stable"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Apply periodic table laws.",
-                          "solution":  "Moles = Molarity * Volume = 0.451 * 8.",
-                          "id":  18
-                      },
-                      {
-                          "question":  "The number of moles of solute in 3 Liters of a 0.397 M solution is:",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "1.191",
-                                          "B":  "None",
-                                          "C":  "Decreases",
-                                          "D":  "Stable"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Apply periodic table laws.",
-                          "solution":  "Moles = Molarity * Volume = 0.397 * 3.",
-                          "id":  19
-                      },
-                      {
-                          "question":  "The number of moles of solute in 7 Liters of a 0.437 M solution is:",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "3.059",
-                                          "B":  "None",
-                                          "C":  "Decreases",
-                                          "D":  "Stable"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Apply periodic table laws.",
-                          "solution":  "Moles = Molarity * Volume = 0.437 * 7.",
-                          "id":  20
-                      },
-                      {
-                          "question":  "The number of moles of solute in 9 Liters of a 0.31 M solution is:",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "2.79",
-                                          "B":  "None",
-                                          "C":  "Decreases",
-                                          "D":  "Stable"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Apply periodic table laws.",
-                          "solution":  "Moles = Molarity * Volume = 0.31 * 9.",
-                          "id":  21
-                      },
-                      {
-                          "question":  "The number of moles of solute in 7 Liters of a 0.356 M solution is:",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "2.492",
-                                          "B":  "None",
-                                          "C":  "Decreases",
-                                          "D":  "Stable"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Apply periodic table laws.",
-                          "solution":  "Moles = Molarity * Volume = 0.356 * 7.",
-                          "id":  22
-                      },
-                      {
-                          "question":  "The number of moles of solute in 5 Liters of a 0.379 M solution is:",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "1.895",
-                                          "B":  "None",
-                                          "C":  "Decreases",
-                                          "D":  "Stable"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Apply periodic table laws.",
-                          "solution":  "Moles = Molarity * Volume = 0.379 * 5.",
-                          "id":  23
-                      },
-                      {
-                          "id":  24,
-                          "question":  "10 grams of CaCO3 on heating gives ______ grams of CO2.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "10",
-                                          "B":  "4.4",
-                                          "C":  "5.6",
-                                          "D":  "44"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  25,
-                          "question":  "Equivalent weight of Oxygen is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "16",
-                                          "B":  "8",
-                                          "C":  "32",
-                                          "D":  "1"
-                                      },
-                          "answer":  "B"
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "The number of moles of solute in 10 Liters of a 0.484 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4.84",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.484 * 10.",
+            "id": 1
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.445 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.89",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.445 * 2.",
+            "id": 5
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.423 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.961",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.423 * 7.",
+            "id": 9
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.359 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.795",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.359 * 5.",
+            "id": 13
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.309 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.854",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.309 * 6.",
+            "id": 17
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.311 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.866",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.311 * 6.",
+            "id": 21
+        },
+        {
+            "question": "The number of moles of solute in 4 Liters of a 0.425 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.7",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.425 * 4.",
+            "id": 25
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.348 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.696",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.348 * 2.",
+            "id": 29
+        },
+        {
+            "id": 33,
+            "question": "DNA is a ______ charged molecule.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Positively",
+                "B": "Negatively (due to phosphate groups)",
+                "C": "Neutrally",
+                "D": "Variable"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.305 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.61",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.305 * 2.",
+            "id": 37
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.355 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.485",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.355 * 7.",
+            "id": 41
+        },
+        {
+            "question": "The number of moles of solute in 8 Liters of a 0.396 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.168",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.396 * 8.",
+            "id": 45
+        },
+        {
+            "question": "35 g of a non-volatile solute (molar mass = 122 g/mol) is dissolved in 500 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.01022",
+                "B": "0.02044",
+                "C": "0.00511",
+                "D": "0.01533"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P° - P)/P° = X_solute",
+            "solution": "Moles solute = 35/122 = 0.287. Moles water = 500/18 = 27.78. Mole fraction = 0.01022.",
+            "id": 49
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.352 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.464",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.352 * 7.",
+            "id": 53
+        },
+        {
+            "question": "The number of moles of solute in 1 Liters of a 0.494 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.494",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.494 * 1.",
+            "id": 57
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.45 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.7",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.45 * 6.",
+            "id": 61
+        },
+        {
+            "question": "The number of moles of solute in 8 Liters of a 0.373 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.984",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.373 * 8.",
+            "id": 65
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.417 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.502",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.417 * 6.",
+            "id": 69
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.455 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.275",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.455 * 5.",
+            "id": 73
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.497 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.491",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.497 * 3.",
+            "id": 77
+        },
+        {
+            "question": "18 g of a non-volatile solute (molar mass = 180 g/mol) is dissolved in 500 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.00359",
+                "B": "0.00718",
+                "C": "0.00179",
+                "D": "0.00539"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P° - P)/P° = X_solute",
+            "solution": "Moles solute = 18/180 = 0.1. Moles water = 500/18 = 27.78. Mole fraction = 0.00359.",
+            "id": 81
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.484 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4.356",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.484 * 9.",
+            "id": 85
+        },
+        {
+            "question": "The number of moles of solute in 1 Liters of a 0.495 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.495",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.495 * 1.",
+            "id": 89
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.343 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.0580000000000003",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.343 * 6.",
+            "id": 93
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.474 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.948",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.474 * 2.",
+            "id": 97
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.496 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.992",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.496 * 2.",
+            "id": 101
+        },
+        {
+            "question": "The number of moles of solute in 8 Liters of a 0.389 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.112",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.389 * 8.",
+            "id": 105
+        },
+        {
+            "question": "The number of moles of solute in 10 Liters of a 0.348 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.4799999999999995",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.348 * 10.",
+            "id": 109
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.436 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.18",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.436 * 5.",
+            "id": 113
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.328 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.984",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.328 * 3.",
+            "id": 117
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.449 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.694",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.449 * 6.",
+            "id": 121
+        },
+        {
+            "question": "The number of moles of solute in 8 Liters of a 0.305 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.44",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.305 * 8.",
+            "id": 125
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.398 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.796",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.398 * 2.",
+            "id": 129
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.354 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.4779999999999998",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.354 * 7.",
+            "id": 133
+        },
+        {
+            "question": "The number of moles of solute in 8 Liters of a 0.478 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.824",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.478 * 8.",
+            "id": 137
+        },
+        {
+            "question": "The number of moles of solute in 10 Liters of a 0.337 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.37",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.337 * 10.",
+            "id": 141
+        },
+        {
+            "question": "The number of moles of solute in 10 Liters of a 0.498 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4.98",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.498 * 10.",
+            "id": 145
+        },
+        {
+            "question": "The number of moles of solute in 4 Liters of a 0.387 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.548",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.387 * 4.",
+            "id": 149
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.473 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4.257",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.473 * 9.",
+            "id": 153
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.414 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.242",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.414 * 3.",
+            "id": 157
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.46 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.22",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.46 * 7.",
+            "id": 161
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.337 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.674",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.337 * 2.",
+            "id": 165
+        },
+        {
+            "id": 169,
+            "question": "Bond order of He2 molecule is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "0 (molecule doesn't exist)",
+                "C": "2",
+                "D": "0.5"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "question": "According to MOT, what is the bond order for O2 molecule?",
+            "difficulty": "hard",
+            "options": {
+                "A": "2",
+                "B": "1.5",
+                "C": "2.5",
+                "D": "1"
+            },
+            "answer": "A",
+            "id": 173,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "In which of the following molecules does back bonding (pπ-dπ) occur?",
+            "difficulty": "hard",
+            "pyq": true,
+            "options": {
+                "A": "BF3",
+                "B": "SiF4",
+                "C": "CF4",
+                "D": "NF3"
+            },
+            "answer": "B",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 177,
+            "tag": "pyq"
+        },
+        {
+            "question": "The number of moles of solute in 1 Liters of a 0.47 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.47",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.47 * 1.",
+            "id": 181
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.461 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.305",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.461 * 5.",
+            "id": 185
+        },
+        {
+            "question": "The number of moles of solute in 1 Liters of a 0.455 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.455",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.455 * 1.",
+            "id": 189
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.365 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.285",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.365 * 9.",
+            "id": 193
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.308 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.8479999999999999",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.308 * 6.",
+            "id": 197
+        },
+        {
+            "question": "The number of moles of solute in 8 Liters of a 0.406 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.248",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.406 * 8.",
+            "id": 201
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.424 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.816",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.424 * 9.",
+            "id": 205
+        },
+        {
+            "question": "The number of moles of solute in 4 Liters of a 0.479 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.916",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.479 * 4.",
+            "id": 209
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.362 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.724",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.362 * 2.",
+            "id": 213
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.484 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.904",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.484 * 6.",
+            "id": 217
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.451 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.353",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.451 * 3.",
+            "id": 221
+        },
+        {
+            "question": "Molecularity of a reaction is determined from ______.",
+            "difficulty": "hard",
+            "options": {
+                "A": "The balanced chemical equation of an elementary step",
+                "B": "Experiments only",
+                "C": "Mechanism",
+                "D": "Rate law"
+            },
+            "answer": "A",
+            "id": 225,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.305 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.135",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.305 * 7.",
+            "id": 229
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.377 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.6390000000000002",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.377 * 7.",
+            "id": 233
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.301 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.505",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.301 * 5.",
+            "id": 237
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.462 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.3860000000000001",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.462 * 3.",
+            "id": 241
+        },
+        {
+            "question": "The number of moles of solute in 4 Liters of a 0.381 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.524",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.381 * 4.",
+            "id": 245
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.452 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.904",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.452 * 2.",
+            "id": 249
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.34 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.02",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.34 * 3.",
+            "id": 253
+        },
+        {
+            "question": "The number of moles of solute in 10 Liters of a 0.393 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.93",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.393 * 10.",
+            "id": 257
+        },
+        {
+            "question": "In acidic medium, one mole of KMnO4 accepts ______ moles of electrons.",
+            "difficulty": "hard",
+            "options": {
+                "A": "5",
+                "B": "2",
+                "C": "3",
+                "D": "6"
+            },
+            "answer": "A",
+            "id": 261,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.308 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.54",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.308 * 5.",
+            "id": 265
+        },
+        {
+            "question": "The number of moles of solute in 1 Liters of a 0.381 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.381",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.381 * 1.",
+            "id": 269
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.471 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.8259999999999996",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.471 * 6.",
+            "id": 273
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.354 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.708",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.354 * 2.",
+            "id": 277
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.435 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.87",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.435 * 2.",
+            "id": 281
+        },
+        {
+            "question": "The number of moles of solute in 10 Liters of a 0.456 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4.5600000000000005",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.456 * 10.",
+            "id": 285
+        },
+        {
+            "question": "43 g of a non-volatile solute (molar mass = 122 g/mol) is dissolved in 1000 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.0063",
+                "B": "0.0126",
+                "C": "0.00315",
+                "D": "0.00945"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P° - P)/P° = X_solute",
+            "solution": "Moles solute = 43/122 = 0.352. Moles water = 1000/18 = 55.56. Mole fraction = 0.0063.",
+            "id": 289
+        },
+        {
+            "question": "The number of moles of solute in 4 Liters of a 0.337 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.348",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.337 * 4.",
+            "id": 293
+        },
+        {
+            "question": "27 g of a non-volatile solute (molar mass = 122 g/mol) is dissolved in 250 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.01568",
+                "B": "0.03136",
+                "C": "0.00784",
+                "D": "0.02352"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P° - P)/P° = X_solute",
+            "solution": "Moles solute = 27/122 = 0.221. Moles water = 250/18 = 13.89. Mole fraction = 0.01568.",
+            "id": 297
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.318 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.59",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.318 * 5.",
+            "id": 301
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.315 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.63",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.315 * 2.",
+            "id": 305
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.427 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.281",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.427 * 3.",
+            "id": 309
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.333 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.9990000000000001",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.333 * 3.",
+            "id": 313
+        },
+        {
+            "question": "The number of moles of solute in 10 Liters of a 0.485 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4.85",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.485 * 10.",
+            "id": 317
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.322 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.966",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.322 * 3.",
+            "id": 321
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.31 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.55",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.31 * 5.",
+            "id": 325
+        },
+        {
+            "question": "The number of moles of solute in 4 Liters of a 0.339 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.356",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.339 * 4.",
+            "id": 329
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.485 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.455",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.485 * 3.",
+            "id": 333
+        },
+        {
+            "question": "20 g of a non-volatile solute (molar mass = 180 g/mol) is dissolved in 250 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.00794",
+                "B": "0.01588",
+                "C": "0.00397",
+                "D": "0.01191"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P° - P)/P° = X_solute",
+            "solution": "Moles solute = 20/180 = 0.111. Moles water = 250/18 = 13.89. Mole fraction = 0.00794.",
+            "id": 337
+        },
+        {
+            "question": "The number of moles of solute in 10 Liters of a 0.398 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.9800000000000004",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.398 * 10.",
+            "id": 341
+        },
+        {
+            "question": "The number of moles of solute in 1 Liters of a 0.438 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.438",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.438 * 1.",
+            "id": 345
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.339 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.373",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.339 * 7.",
+            "id": 349
+        },
+        {
+            "question": "The number of moles of solute in 4 Liters of a 0.307 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.228",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.307 * 4.",
+            "id": 353
+        },
+        {
+            "question": "41 g of a non-volatile solute (molar mass = 122 g/mol) is dissolved in 250 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.02363",
+                "B": "0.04726",
+                "C": "0.01182",
+                "D": "0.03545"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P° - P)/P° = X_solute",
+            "solution": "Moles solute = 41/122 = 0.336. Moles water = 250/18 = 13.89. Mole fraction = 0.02363.",
+            "id": 357
+        },
+        {
+            "question": "The number of moles of solute in 10 Liters of a 0.384 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.84",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.384 * 10.",
+            "id": 361
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.3 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.6999999999999997",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.3 * 9.",
+            "id": 365
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.311 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.799",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.311 * 9.",
+            "id": 369
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.329 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.645",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.329 * 5.",
+            "id": 373
+        },
+        {
+            "id": 377,
+            "question": "Hydrogen bonded water molecules in Ice are arranged in a ______ shape.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Tetrahedral",
+                "B": "Octahedral",
+                "C": "Planar",
+                "D": "Random"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.469 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.814",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.469 * 6.",
+            "id": 381
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.441 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.882",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.441 * 2.",
+            "id": 385
+        },
+        {
+            "question": "The number of moles of solute in 1 Liters of a 0.425 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.425",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.425 * 1.",
+            "id": 389
+        },
+        {
+            "question": "13 g of a non-volatile solute (molar mass = 122 g/mol) is dissolved in 500 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.00382",
+                "B": "0.00764",
+                "C": "0.00191",
+                "D": "0.00573"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P° - P)/P° = X_solute",
+            "solution": "Moles solute = 13/122 = 0.107. Moles water = 500/18 = 27.78. Mole fraction = 0.00382.",
+            "id": 393
+        },
+        {
+            "question": "12 g of a non-volatile solute (molar mass = 180 g/mol) is dissolved in 250 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.00478",
+                "B": "0.00956",
+                "C": "0.00239",
+                "D": "0.00717"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P° - P)/P° = X_solute",
+            "solution": "Moles solute = 12/180 = 0.067. Moles water = 250/18 = 13.89. Mole fraction = 0.00478.",
+            "id": 397
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.383 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.681",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.383 * 7.",
+            "id": 401
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.436 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.616",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.436 * 6.",
+            "id": 405
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.464 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.3200000000000003",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.464 * 5.",
+            "id": 409
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.313 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.817",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.313 * 9.",
+            "id": 413
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.479 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.8739999999999997",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.479 * 6.",
+            "id": 417
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.412 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.7079999999999997",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.412 * 9.",
+            "id": 421
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.37 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.59",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.37 * 7.",
+            "id": 425
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.495 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.9699999999999998",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.495 * 6.",
+            "id": 429
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.344 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.0959999999999996",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.344 * 9.",
+            "id": 433
+        },
+        {
+            "question": "The number of moles of solute in 1 Liters of a 0.467 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.467",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.467 * 1.",
+            "id": 437
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.417 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.251",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.417 * 3.",
+            "id": 441
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.397 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.382",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.397 * 6.",
+            "id": 445
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.317 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.9020000000000001",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.317 * 6.",
+            "id": 449
+        },
+        {
+            "question": "The number of moles of solute in 10 Liters of a 0.351 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.51",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.351 * 10.",
+            "id": 453
+        },
+        {
+            "question": "31 g of a non-volatile solute (molar mass = 342 g/mol) is dissolved in 250 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.00648",
+                "B": "0.01296",
+                "C": "0.00324",
+                "D": "0.00972"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P° - P)/P° = X_solute",
+            "solution": "Moles solute = 31/342 = 0.091. Moles water = 250/18 = 13.89. Mole fraction = 0.00648.",
+            "id": 457
+        },
+        {
+            "question": "The number of moles of solute in 10 Liters of a 0.41 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4.1",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.41 * 10.",
+            "id": 461
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.395 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.765",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.395 * 7.",
+            "id": 465
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.455 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.91",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.455 * 2.",
+            "id": 469
+        },
+        {
+            "question": "46 g of a non-volatile solute (molar mass = 60 g/mol) is dissolved in 250 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.05231",
+                "B": "0.10462",
+                "C": "0.02616",
+                "D": "0.07847"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P° - P)/P° = X_solute",
+            "solution": "Moles solute = 46/60 = 0.767. Moles water = 250/18 = 13.89. Mole fraction = 0.05231.",
+            "id": 473
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.438 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.942",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.438 * 9.",
+            "id": 477
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.397 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.5730000000000004",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.397 * 9.",
+            "id": 481
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.465 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.2550000000000003",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.465 * 7.",
+            "id": 485
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.4 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.8",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.4 * 2.",
+            "id": 489
+        },
+        {
+            "question": "The number of moles of solute in 10 Liters of a 0.34 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.4000000000000004",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.34 * 10.",
+            "id": 493
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.389 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.167",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.389 * 3.",
+            "id": 497
+        },
+        {
+            "question": "The number of moles of solute in 10 Liters of a 0.343 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.43",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.343 * 10.",
+            "id": 501
+        },
+        {
+            "question": "The number of moles of solute in 4 Liters of a 0.318 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.272",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.318 * 4.",
+            "id": 505
+        },
+        {
+            "question": "The number of moles of solute in 4 Liters of a 0.475 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.9",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.475 * 4.",
+            "id": 509
+        },
+        {
+            "id": 513,
+            "question": "Classification based on molecular forces: Elastomers < Thermoplastics < Fibers < Thermosetting.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The number of moles of solute in 1 Liters of a 0.428 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.428",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.428 * 1.",
+            "id": 517
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.34 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.06",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.34 * 9.",
+            "id": 521
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.314 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.826",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.314 * 9.",
+            "id": 525
+        },
+        {
+            "id": 529,
+            "question": "The molecule AsH3 has a pyramidal geometry. What is the reason for this geometry?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Presence of lone pair on the central atom",
+                "B": "Presence of multiple bonds",
+                "C": "Presence of hydrogen bonds",
+                "D": "Presence of ionic bonds"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "question": "The number of moles of solute in 4 Liters of a 0.331 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.324",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.331 * 4.",
+            "id": 533
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.342 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.394",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.342 * 7.",
+            "id": 537
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.453 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.906",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.453 * 2.",
+            "id": 541
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.46 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.3000000000000003",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.46 * 5.",
+            "id": 545
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.419 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.771",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.419 * 9.",
+            "id": 549
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.359 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.231",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.359 * 9.",
+            "id": 553
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.44 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.08",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.44 * 7.",
+            "id": 557
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.302 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.718",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.302 * 9.",
+            "id": 561
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.467 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.802",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.467 * 6.",
+            "id": 565
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.462 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4.158",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.462 * 9.",
+            "id": 569
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.326 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.6300000000000001",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.326 * 5.",
+            "id": 573
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.414 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.828",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.414 * 2.",
+            "id": 577
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.482 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.3739999999999997",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.482 * 7.",
+            "id": 581
+        },
+        {
+            "id": 585,
+            "question": "The van der Waals equation for 1 mole of a real gas is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(P + a/V)(V - b) = RT",
+                "B": "(P + a/V²)(V - b) = RT",
+                "C": "(P - a/V²)(V + b) = RT",
+                "D": "PV = nRT"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "The number of moles of solute in 4 Liters of a 0.376 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.504",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.376 * 4.",
+            "id": 589
+        },
+        {
+            "question": "The number of moles of solute in 4 Liters of a 0.423 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.692",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.423 * 4.",
+            "id": 593
+        },
+        {
+            "id": 597,
+            "question": "Root mean square speed of a gas molecule is u_rms = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "√(2RT/M)",
+                "B": "√(3RT/M)",
+                "C": "√(8RT/πM)",
+                "D": "3RT/M"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "The number of moles of solute in 4 Liters of a 0.412 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.648",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.412 * 4.",
+            "id": 601
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.372 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.348",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.372 * 9.",
+            "id": 605
+        },
+        {
+            "question": "The number of moles of solute in 8 Liters of a 0.322 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.576",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.322 * 8.",
+            "id": 609
+        },
+        {
+            "question": "The number of moles of solute in 1 Liters of a 0.483 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.483",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.483 * 1.",
+            "id": 613
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.437 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.933",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.437 * 9.",
+            "id": 617
+        },
+        {
+            "question": "29 g of a non-volatile solute (molar mass = 180 g/mol) is dissolved in 500 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.00577",
+                "B": "0.01154",
+                "C": "0.00288",
+                "D": "0.00865"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P° - P)/P° = X_solute",
+            "solution": "Moles solute = 29/180 = 0.161. Moles water = 500/18 = 27.78. Mole fraction = 0.00577.",
+            "id": 621
+        },
+        {
+            "question": "The number of moles of solute in 8 Liters of a 0.451 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3.608",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.451 * 8.",
+            "id": 625
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.356 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.492",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.356 * 7.",
+            "id": 629
+        },
+        {
+            "question": "20 g of a non-volatile solute (molar mass = 60 g/mol) is dissolved in 250 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.02344",
+                "B": "0.04688",
+                "C": "0.01172",
+                "D": "0.03516"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P° - P)/P° = X_solute",
+            "solution": "Moles solute = 20/60 = 0.333. Moles water = 250/18 = 13.89. Mole fraction = 0.02344.",
+            "id": 633
+        },
+        {
+            "question": "46 g of a non-volatile solute (molar mass = 122 g/mol) is dissolved in 750 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.00897",
+                "B": "0.01794",
+                "C": "0.00449",
+                "D": "0.01346"
+            },
+            "answer": "A",
+            "hint": "Use Raoult's law: (P° - P)/P° = X_solute",
+            "solution": "Moles solute = 46/122 = 0.377. Moles water = 750/18 = 41.67. Mole fraction = 0.00897.",
+            "id": 637
+        },
+        {
+            "id": 641,
+            "question": "Number of hydrogen atoms in 1 mole of H2O is ______ NA.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "2",
+                "C": "3",
+                "D": "0.5"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "The number of moles of solute in 1 Liters of a 0.449 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.449",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.449 * 1.",
+            "id": 645
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.334 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.338",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.334 * 7.",
+            "id": 649
+        },
+        {
+            "question": "Molar mass of a gas is double its ______.",
+            "difficulty": "hard",
+            "options": {
+                "A": "Vapor density",
+                "B": "Density",
+                "C": "Atomic mass",
+                "D": "Volume"
+            },
+            "answer": "A",
+            "id": 653,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.444 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.332",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.444 * 3.",
+            "id": 657
+        },
+        {
+            "question": "One amu is equal to ______ g.",
+            "difficulty": "hard",
+            "options": {
+                "A": "1.66 x 10^-24",
+                "B": "1",
+                "C": "12",
+                "D": "6.022 x 10^23"
+            },
+            "answer": "A",
+            "id": 661,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "The number of moles of solute in 10 Liters of a 0.464 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4.640000000000001",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.464 * 10.",
+            "id": 665
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.362 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.81",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.362 * 5.",
+            "id": 669
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.488 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4.3919999999999995",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.488 * 9.",
+            "id": 673
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.375 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.875",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.375 * 5.",
+            "id": 677
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.49 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.47",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.49 * 3.",
+            "id": 681
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.358 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.1479999999999997",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.358 * 6.",
+            "id": 685
+        },
+        {
+            "question": "The number of moles of solute in 9 Liters of a 0.487 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4.383",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.487 * 9.",
+            "id": 689
+        },
+        {
+            "question": "The number of moles of solute in 8 Liters of a 0.327 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.616",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.327 * 8.",
+            "id": 693
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.305 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.83",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.305 * 6.",
+            "id": 697
+        },
+        {
+            "question": "The number of moles of solute in 6 Liters of a 0.349 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.094",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.349 * 6.",
+            "id": 701
+        },
+        {
+            "question": "The number of moles of solute in 7 Liters of a 0.33 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.31",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.33 * 7.",
+            "id": 705
+        },
+        {
+            "question": "The number of moles of solute in 2 Liters of a 0.32 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.64",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.32 * 2.",
+            "id": 709
+        },
+        {
+            "question": "The number of moles of solute in 3 Liters of a 0.416 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.248",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.416 * 3.",
+            "id": 713
+        },
+        {
+            "question": "The number of moles of solute in 4 Liters of a 0.428 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.712",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.428 * 4.",
+            "id": 717
+        },
+        {
+            "question": "The number of moles of solute in 5 Liters of a 0.454 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.27",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.454 * 5.",
+            "id": 721
+        },
+        {
+            "question": "The number of moles of solute in 4 Liters of a 0.42 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.68",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.42 * 4.",
+            "id": 725
+        },
+        {
+            "question": "The number of moles of solute in 10 Liters of a 0.4 M solution is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4.0",
+                "B": "None",
+                "C": "Decreases",
+                "D": "Stable"
+            },
+            "answer": "A",
+            "hint": "Apply periodic table laws.",
+            "solution": "Moles = Molarity * Volume = 0.4 * 10.",
+            "id": 729
+        }
+    ]
 }

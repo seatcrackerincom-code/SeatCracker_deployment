@@ -1,361 +1,106 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "Which of the following reacts with NaHCO3 to give brisk effervescence?",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "Phenol",
-                                          "B":  "Ethanol",
-                                          "C":  "Acetic acid",
-                                          "D":  "Acetaldehyde"
-                                      },
-                          "answer":  "C",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  1,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 43°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "3-chloro-3-ethylpentane",
-                                          "B":  "3-chloropentane",
-                                          "C":  "2-chloropentane",
-                                          "D":  "1-chloropentane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  2
-                      },
-                      {
-                          "id":  3,
-                          "question":  "Hydrolysis of nitriles (cyanides) in acidic medium yields ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Amides",
-                                          "B":  "Carboxylic acids",
-                                          "C":  "Amines",
-                                          "D":  "Alcohols"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "42 g of a non-volatile solute (molar mass = 122 g/mol) is dissolved in 250 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.02419",
-                                          "B":  "0.04838",
-                                          "C":  "0.01209",
-                                          "D":  "0.03628"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 42/122 = 0.344. Moles water = 250/18 = 13.89. Mole fraction = 0.02419.",
-                          "id":  4
-                      },
-                      {
-                          "id":  5,
-                          "question":  "Carboxylic acids have higher boiling points than even alcohols because of ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "London forces",
-                                          "B":  "Formation of stable dimers through H-bonding",
-                                          "C":  "Resonance",
-                                          "D":  "Ionic nature"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 2.0 x 10^-3 s^-1 at 303 K and 5.93 x 10^-3 s^-1 at 316 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "66.55",
-                                          "B":  "79.86",
-                                          "C":  "53.24",
-                                          "D":  "76.55"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(5.93/2.0) = (Ea/8.314) * (1/303 - 1/316). Solving gives 66.55 kJ/mol.",
-                          "id":  6
-                      },
-                      {
-                          "id":  7,
-                          "question":  "Why are carboxylic acids more acidic than phenols?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Larger size",
-                                          "B":  "Resonance stabilization of carboxylate ion (negative charge on two O atoms)",
-                                          "C":  "Present in fruits",
-                                          "D":  "No resonance"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 1.91 x 10^-3 s^-1 at 299 K and 6.25 x 10^-3 s^-1 at 310 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "83.05",
-                                          "B":  "99.66",
-                                          "C":  "66.44",
-                                          "D":  "93.05"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(6.25/1.91) = (Ea/8.314) * (1/299 - 1/310). Solving gives 83.05 kJ/mol.",
-                          "id":  8
-                      },
-                      {
-                          "id":  9,
-                          "question":  "Carboxylic acids on heating with Soda lime (NaOH + CaO) undergo ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Dehydration",
-                                          "B":  "Decarboxylation (removal of CO2)",
-                                          "C":  "Oxidation",
-                                          "D":  "Reduction"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  10,
-                          "question":  "Which derivative of carboxylic acid is the most reactive towards nucleophilic substitution?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Esters",
-                                          "B":  "Acyl halides (RCOCl)",
-                                          "C":  "Amides",
-                                          "D":  "Anhydrides"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 60°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "3-bromo-3-methylpentane",
-                                          "B":  "2-bromopentane",
-                                          "C":  "1-bromo-3-methylpentane",
-                                          "D":  "1-bromopentane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  11
-                      },
-                      {
-                          "id":  12,
-                          "question":  "Aspirin is prepared by acetylation of ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Acetic acid",
-                                          "B":  "Salicylic acid",
-                                          "C":  "Benzoic acid",
-                                          "D":  "Phthalic acid"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 67°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "2-bromo-2-methylbutane",
-                                          "B":  "2-bromobutane",
-                                          "C":  "1-bromo-2-methylbutane",
-                                          "D":  "1-bromobutane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  13
-                      },
-                      {
-                          "id":  14,
-                          "question":  "Saponification is the hydrolysis of ______ with alkali.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Ethers",
-                                          "B":  "Esters (Oils/Fats)",
-                                          "C":  "Amides",
-                                          "D":  "Acids"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  15,
-                          "question":  "Reducing RCOOH with LiAlH4 gives ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Aldehydes",
-                                          "B":  "Primary alcohols",
-                                          "C":  "Alkanes",
-                                          "D":  "Ether"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "15 g of a non-volatile solute (molar mass = 342 g/mol) is dissolved in 1000 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.00079",
-                                          "B":  "0.00158",
-                                          "C":  "0.0004",
-                                          "D":  "0.00119"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 15/342 = 0.044. Moles water = 1000/18 = 55.56. Mole fraction = 0.00079.",
-                          "id":  16
-                      },
-                      {
-                          "id":  17,
-                          "question":  "Fischer esterification requires which catalyst?",
-                          "options":  {
-                                          "A":  "NaOH",
-                                          "B":  "H2SO4",
-                                          "C":  "HCl",
-                                          "D":  "AlCl3"
-                                      },
-                          "answer":  "B",
-                          "difficulty":  "medium"
-                      },
-                      {
-                          "id":  18,
-                          "question":  "Strongest acid among: HCOOH, CH3COOH, CCl3COOH, CHCl2COOH?",
-                          "options":  {
-                                          "A":  "HCOOH",
-                                          "B":  "CH3COOH",
-                                          "C":  "CCl3COOH",
-                                          "D":  "CHCl2COOH"
-                                      },
-                          "answer":  "C",
-                          "difficulty":  "hard"
-                      },
-                      {
-                          "id":  19,
-                          "question":  "Benzoic acid reacts with PCl5 to give ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Benzoyl chloride",
-                                          "B":  "Chlorobenzene",
-                                          "C":  "Benzyl chloride",
-                                          "D":  "Toluene"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  20,
-                          "question":  "Why does RCOOH not give the characteristic reactions of carbonyl group?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Too large",
-                                          "B":  "Carbonyl group is involved in resonance with -OH oxygen",
-                                          "C":  "It is acidic",
-                                          "D":  "It is ionic"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 62°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "3-bromo-3-methylpentane",
-                                          "B":  "2-bromopentane",
-                                          "C":  "1-bromo-3-methylpentane",
-                                          "D":  "1-bromopentane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  21
-                      },
-                      {
-                          "id":  22,
-                          "question":  "Which of these is the strongest acid?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Acetic acid",
-                                          "B":  "Trichloroacetic acid",
-                                          "C":  "Chloroacetic acid",
-                                          "D":  "Formic acid"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  23,
-                          "question":  "Amides are converted to amines with one less carbon using ______ reaction.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Gabriel",
-                                          "B":  "Hofmann bromamide",
-                                          "C":  "Cannizzaro",
-                                          "D":  "Perkin"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 35°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "tert-butyl bromide",
-                                          "B":  "isopropyl bromide",
-                                          "C":  "ethyl bromide",
-                                          "D":  "methyl bromide"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  24
-                      },
-                      {
-                          "id":  25,
-                          "question":  "Reaction of two acid molecules with P2O5 gives an ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Ester",
-                                          "B":  "Acid anhydride",
-                                          "C":  "Amide",
-                                          "D":  "Halide"
-                                      },
-                          "answer":  "B"
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Cl2O7 is the anhydride of ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "HClO",
+                "B": "HClO4",
+                "C": "HClO3",
+                "D": "HClO2"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "Carboxylic acids on heating with Soda lime (NaOH + CaO) undergo ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Dehydration",
+                "B": "Decarboxylation (removal of CO2)",
+                "C": "Oxidation",
+                "D": "Reduction"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 9,
+            "question": "Strongest acid among: HCOOH, CH3COOH, CCl3COOH, CHCl2COOH?",
+            "options": {
+                "A": "HCOOH",
+                "B": "CH3COOH",
+                "C": "CCl3COOH",
+                "D": "CHCl2COOH"
+            },
+            "answer": "C",
+            "difficulty": "hard"
+        },
+        {
+            "id": 13,
+            "question": "Acetamide on hydrolysis with acid gives ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Ethylamine",
+                "B": "Acetic acid",
+                "C": "Methanol",
+                "D": "Urea"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "Which carboxylic acid on dry distillation of calcium salt gives acetone?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "Formic acid",
+                "B": "Acetic acid (calcium acetate → acetone)",
+                "C": "Propionic acid",
+                "D": "Oxalic acid"
+            },
+            "answer": "B",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 17,
+            "tag": "pyq"
+        },
+        {
+            "question": "Which of the following does NOT give HVZ reaction?",
+            "difficulty": "hard",
+            "options": {
+                "A": "CH3COOH",
+                "B": "CH3CH2COOH",
+                "C": "(CH3)3CCOOH",
+                "D": "HCOOH"
+            },
+            "answer": "D",
+            "id": 21,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "Which reagent oxidizes primary alcohol directly to carboxylic acid?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "PCC (pyridinium chlorochromate)",
+                "B": "KMnO4/H⁺ or K2Cr2O7/H2SO4",
+                "C": "MnO2",
+                "D": "O3/Zn"
+            },
+            "answer": "B",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 25,
+            "tag": "pyq"
+        }
+    ]
 }

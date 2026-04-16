@@ -1,386 +1,235 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  1,
-                          "question":  "The latus rectum of the ellipse x²/a² + y²/b² = 1 has length ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "2b²/a",
-                                          "B":  "2a²/b",
-                                          "C":  "b²/a",
-                                          "D":  "2ab"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  2,
-                          "question":  "Latus rectum length of x²/16 + y²/9 = 1 is?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "9/2",
-                                          "B":  "9/4",
-                                          "C":  "8/3",
-                                          "D":  "3/2"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  3,
-                          "question":  "Condition for y = mx + c to be tangent to x²/a² + y²/b² = 1 is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "c² = a²m² + b²",
-                                          "B":  "c² = a²m² - b²",
-                                          "C":  "c = a²m + b²",
-                                          "D":  "c² = b²m² + a²"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  4,
-                          "question":  "Normal to the ellipse at (a cosθ, b sinθ) is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "ax/cosθ - by/sinθ = a² - b²",
-                                          "B":  "ax cosθ + by sinθ = a² - b²",
-                                          "C":  "ax/cosθ + by/sinθ = a²",
-                                          "D":  "ax sinθ - by cosθ = 0"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  5,
-                          "question":  "Length of major axis of x²/25 + y²/9 = 1 is?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "10",
-                                          "B":  "5",
-                                          "C":  "6",
-                                          "D":  "16"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  6,
-                          "question":  "Sum of focal distances from any point on ellipse x²/a²+y²/b²=1 (a\u003eb) equals?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "2a",
-                                          "B":  "2b",
-                                          "C":  "a+b",
-                                          "D":  "2c"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  7,
-                          "question":  "The directrices of the ellipse x²/a² + y²/b² = 1 are ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "x = ±a/e",
-                                          "B":  "x = ±ae",
-                                          "C":  "y = ±a/e",
-                                          "D":  "x = ±a"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  8,
-                          "question":  "The eccentricity of the ellipse 4x² + 9y² = 36 is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "√5/3",
-                                          "B":  "√5/9",
-                                          "C":  "2/3",
-                                          "D":  "1/3"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  9,
-                          "question":  "Chord of contact from external point (x₁,y₁) to ellipse x²/a² + y²/b² = 1 is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "xx₁/a² + yy₁/b² = 1",
-                                          "B":  "xx₁/a² - yy₁/b² = 1",
-                                          "C":  "xx₁ + yy₁ = 1",
-                                          "D":  "x/x₁ + y/y₁ = 1"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  10,
-                          "question":  "Parametric equations of ellipse x²/a² + y²/b² = 1 are ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "x = a cosθ, y = b sinθ",
-                                          "B":  "x = a sinθ, y = b cosθ",
-                                          "C":  "x = a secθ, y = b tanθ",
-                                          "D":  "x = aθ, y = bθ"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  11,
-                          "question":  "Eccentricity of x²/16 + y²/4 = 1 is?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "√3/2",
-                                          "B":  "1/2",
-                                          "C":  "√2/2",
-                                          "D":  "2/√3"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  12,
-                          "question":  "Tangent to ellipse x²/a² + y²/b² = 1 at (x₁,y₁) is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "xx₁/a² + yy₁/b² = 1",
-                                          "B":  "xx₁/b² + yy₁/a² = 1",
-                                          "C":  "xx₁ + yy₁ = a²",
-                                          "D":  "xx₁/a² - yy₁/b² = 1"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  13,
-                          "question":  "Foci of ellipse x²/25 + y²/16 = 1 are at?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "(±3, 0)",
-                                          "B":  "(±4, 0)",
-                                          "C":  "(±5, 0)",
-                                          "D":  "(0, ±3)"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  14,
-                          "question":  "The eccentric angle θ is related to the point on ellipse as x = a cosθ. The point is called ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Eccentric point",
-                                          "B":  "Focus",
-                                          "C":  "Vertex",
-                                          "D":  "Centre"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  15,
-                          "question":  "Polar of point (x₁,y₁) w.r.t. ellipse x²/a² + y²/b² = 1 is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "xx₁/a² + yy₁/b² = 1",
-                                          "B":  "xx₁/a + yy₁/b = 1",
-                                          "C":  "x/x₁ + y/y₁ = 1",
-                                          "D":  "xx₁ + yy₁ = ab"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  16,
-                          "question":  "Conjugate diameters of an ellipse satisfy the condition m₁m₂ = ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "-b²/a²",
-                                          "B":  "b²/a²",
-                                          "C":  "-a²/b²",
-                                          "D":  "a²/b²"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  17,
-                          "question":  "The equation of ellipse with foci (±3,0) and vertices (±5,0) is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "x²/25 + y²/16 = 1",
-                                          "B":  "x²/16 + y²/25 = 1",
-                                          "C":  "x²/9 + y²/25 = 1",
-                                          "D":  "x²/25 + y²/9 = 1"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  18,
-                          "question":  "Equation of ellipse with centre (h,k), major axis 2a along x is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "(x-h)²/a² + (y-k)²/b² = 1",
-                                          "B":  "(x+h)²/a² + (y+k)²/b² = 1",
-                                          "C":  "(x-h)²/b² + (y-k)²/a² = 1",
-                                          "D":  "(x-h)² + (y-k)² = a²"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  19,
-                          "question":  "Tangent to ellipse makes angle α with major axis, then P(α) = ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Point on auxiliary circle",
-                                          "B":  "Focus",
-                                          "C":  "Vertex",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  20,
-                          "question":  "For tangent to ellipse y = mx + c, slope m and intercept c satisfy ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "c² = a²m² + b²",
-                                          "B":  "c = a²m + b",
-                                          "C":  "c² = b²m² - a²",
-                                          "D":  "c² = (a+b)m²"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  21,
-                          "question":  "Tangent at ends of latus rectum of x²/a² + y²/b² = 1 meet at ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Corresponding directrix",
-                                          "B":  "Vertex",
-                                          "C":  "Other focus",
-                                          "D":  "Centre"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  22,
-                          "question":  "Eccentricity of ellipse with minor axis = half major axis is?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "√3/2",
-                                          "B":  "1/2",
-                                          "C":  "√2/2",
-                                          "D":  "1/√3"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  23,
-                          "question":  "For a focal chord of ellipse with semi-latus rectum l, the harmonic mean of segments is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "l",
-                                          "B":  "2l",
-                                          "C":  "b²/a",
-                                          "D":  "a"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  24,
-                          "question":  "If the ellipse x²/a² + y²/b² = 1 passes through (1,2) and (2,1), then a² + b² = ?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "10",
-                                          "B":  "5",
-                                          "C":  "a²b²=a²+b²",
-                                          "D":  "cannot determine"
-                                      },
-                          "answer":  "C",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  25,
-                          "question":  "Tangent to x²/16 + y²/9 = 1 parallel to y = x is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "y = x ± 5",
-                                          "B":  "y = x ± 4",
-                                          "C":  "y = x ± 3",
-                                          "D":  "y = x ± 7"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "Area of ellipse x²/a² + y²/b² = 1 is?",
+            "difficulty": "medium",
+            "options": {
+                "A": "πab",
+                "B": "π(a+b)",
+                "C": "πa²b",
+                "D": "2πab"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "pyq": true,
+            "id": 1
+        },
+        {
+            "id": 5,
+            "question": "The latus rectum of the ellipse x²/a² + y²/b² = 1 has length ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2b²/a",
+                "B": "2a²/b",
+                "C": "b²/a",
+                "D": "2ab"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 9,
+            "question": "The directrices of the ellipse x²/a² + y²/b² = 1 are ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x = ±a/e",
+                "B": "x = ±ae",
+                "C": "y = ±a/e",
+                "D": "x = ±a"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 13,
+            "question": "Eccentricity of x²/16 + y²/4 = 1 is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "√3/2",
+                "B": "1/2",
+                "C": "√2/2",
+                "D": "2/√3"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 17,
+            "question": "The equation of ellipse with foci (±3,0) and vertices (±5,0) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x²/25 + y²/16 = 1",
+                "B": "x²/16 + y²/25 = 1",
+                "C": "x²/9 + y²/25 = 1",
+                "D": "x²/25 + y²/9 = 1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 21,
+            "question": "If the ellipse x²/a² + y²/b² = 1 passes through (1,2) and (2,1), then a² + b² = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "10",
+                "B": "5",
+                "C": "a²b²=a²+b²",
+                "D": "cannot determine"
+            },
+            "answer": "C",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 25,
+            "question": "Equation of chord with midpoint (h,k) for ellipse x²/a² + y²/b² = 1 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "hx/a² + ky/b² = h²/a² + k²/b²",
+                "B": "hx + ky = h² + k²",
+                "C": "x/h + y/k = 1",
+                "D": "hx/b² + ky/a² = 1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 29,
+            "question": "If Major axis is 2b, then e = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "√(1 - a²/b²)",
+                "B": "√(1 - b²/a²)",
+                "C": "a/b",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 33,
+            "question": "Intersection of x²/a² + y²/b² = 1 and x²/b² + y²/a² = 1 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Points on y = ±x",
+                "B": "Foci",
+                "C": "Origin",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 37,
+            "question": "For ellipse b²=a²(1−e²), if e=1/2, a=4, area of ellipse = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "8π√3",
+                "B": "4π√3",
+                "C": "16π/√3",
+                "D": "12π"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "Length of the latus rectum of x²/a² + y²/b² = 1 (a > b) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "2b²/a",
+                "B": "2a²/b",
+                "C": "4b²/a",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 41
+        },
+        {
+            "question": "The coordinates of foci of x²/a² + y²/b² = 1 are ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "(±ae, 0)",
+                "B": "(0, ±be)",
+                "C": "(±a/e, 0)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 45
+        },
+        {
+            "id": 49,
+            "question": "Eccentricity of rectangular hyperbola is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "√2",
+                "B": "1",
+                "C": "2",
+                "D": "√3"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The eccentricity of a rectangular hyperbola is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "√2",
+                "B": "2",
+                "C": "1.5",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 53
+        },
+        {
+            "id": 57,
+            "question": "Length of latus rectum of y² = 4ax is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "4a",
+                "B": "2a",
+                "C": "a",
+                "D": "8a"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        }
+    ]
 }

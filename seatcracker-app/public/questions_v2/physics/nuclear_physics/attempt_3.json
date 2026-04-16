@@ -1,109 +1,51 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  51,
-                          "question":  "Nuclear force has tensor character.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Activity A=λN. Initial activity A₀=",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "λN₀",
-                                          "B":  "N₀/λ",
-                                          "C":  "N₀T₁/₂",
-                                          "D":  "0.693N₀"
-                                      },
-                          "answer":  "A",
-                          "tag":  "pyq",
-                          "id":  52
-                      },
-                      {
-                          "question":  "Radioactive decay law: N = ______.",
-                          "options":  {
-                                          "A":  "N₀ e^(-λt)",
-                                          "B":  "N₀ e^(λt)",
-                                          "C":  "N₀ / t",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  53
-                      },
-                      {
-                          "id":  54,
-                          "question":  "Fission of 1 nucleus of U-235 releases about ______ MeV energy.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "200",
-                                          "B":  "100",
-                                          "C":  "500",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  55,
-                          "question":  "Tokamak? yes. device for magnetic confinement of plasma for fusion.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  56,
-                          "question":  "Fusion? no. Replaced: requires 10^7 K temperature.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  57,
-                          "question":  "Coolant used in reactor to carry away heat is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Water / Molten sodium",
-                                          "B":  "Cadmium",
-                                          "C":  "Graphite",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 3,
+            "question": "Mass defect is always positive for stable nuclei.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Half-life T_1/2 and decay constant λ are related as T_1/2 = ______.",
+            "options": {
+                "A": "0.693 / λ",
+                "B": "λ / 0.693",
+                "C": "None",
+                "D": "1 / λ"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 7
+        },
+        {
+            "question": "Size of nucleus is approximately ______.",
+            "options": {
+                "A": "10⁻¹⁵ m",
+                "B": "10⁻¹⁰ m",
+                "C": "1 micron",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 11
+        }
+    ]
 }

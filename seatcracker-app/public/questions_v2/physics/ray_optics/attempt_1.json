@@ -1,385 +1,51 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  1,
-                          "question":  "Combination of convex lens and concave lens of same focal length works as plane plate.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Wait? no. Replaced: a concave lens behaves as a ______ lens.",
-                          "options":  {
-                                          "A":  "Diverging",
-                                          "B":  "Converging",
-                                          "C":  "None",
-                                          "D":  "Bifocal"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  2
-                      },
-                      {
-                          "id":  3,
-                          "question":  "Wait? no. Replaced: light bends towards normal when goes from air to glass.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Thin prism (small angle A), n. Deviation δ=",
-                          "difficulty":  "hard",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "(n-1)A",
-                                          "B":  "nA",
-                                          "C":  "A/n",
-                                          "D":  "n(n-1)A"
-                                      },
-                          "answer":  "A",
-                          "tag":  "pyq",
-                          "id":  4
-                      },
-                      {
-                          "id":  5,
-                          "question":  "Length of telescope in normal adjustment L = fo + fe.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Scattering of light is proportional to ______.",
-                          "options":  {
-                                          "A":  "1 / λ⁴",
-                                          "B":  "λ²",
-                                          "C":  "1/λ",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  6
-                      },
-                      {
-                          "question":  "Lens maker\u0027s formula is 1/f = ______.",
-                          "options":  {
-                                          "A":  "(n-1)(1/R1 - 1/R2)",
-                                          "B":  "(n+1)(1/R1 + 1/R2)",
-                                          "C":  "n / (1/R1 - 1/R2)",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  7
-                      },
-                      {
-                          "id":  8,
-                          "question":  "A lens of refractive index n1 in a liquid of refractive index n2: focal length changes? yes.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  9,
-                          "question":  "Prism? no. Replaced: red light travels faster in glass than violet.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  10,
-                          "question":  "Rayleigh scattering intensity I ∝ ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "1 / λ^4",
-                                          "B":  "λ^4",
-                                          "C":  "1 / λ",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "The critical angle θ_c for a medium of refractive index n is sinθ_c = ______.",
-                          "options":  {
-                                          "A":  "1 / n",
-                                          "B":  "n",
-                                          "C":  "None",
-                                          "D":  "n - 1"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  11
-                      },
-                      {
-                          "question":  "Refractive index n = c / ______.",
-                          "options":  {
-                                          "A":  "v",
-                                          "B":  "f",
-                                          "C":  "λ",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  12
-                      },
-                      {
-                          "question":  "Primary rainbow is formed due to ______ internal reflection.",
-                          "options":  {
-                                          "A":  "One",
-                                          "B":  "Two",
-                                          "C":  "Zero",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  13
-                      },
-                      {
-                          "id":  14,
-                          "question":  "Newton’s formula for lens x1 x2 = f².",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  15,
-                          "question":  "Telescope? no. Replaced: focal length of objective is large and eyepiece is small.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  16,
-                          "question":  "Dispersion of white light through prism: which colour refracts most?",
-                          "options":  {
-                                          "A":  "Red",
-                                          "B":  "Violet",
-                                          "C":  "Green",
-                                          "D":  "Yellow"
-                                      },
-                          "answer":  "B",
-                          "difficulty":  "medium"
-                      },
-                      {
-                          "question":  "Wait? no. Replaced: secondary rainbow is ______ than primary rainbow.",
-                          "options":  {
-                                          "A":  "Fainter",
-                                          "B":  "Brighter",
-                                          "C":  "Same",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  17
-                      },
-                      {
-                          "id":  18,
-                          "question":  "If two lenses +5D and -3D are in contact, net power is +2D.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  19,
-                          "question":  "Cauchy’s formula: n = A + B/λ².",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  20,
-                          "question":  "Mirage? yes. result of continuous refraction and finally TIR in heated air layers.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  21,
-                          "question":  "Chromatic aberration is absent in mirrors.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Condition for TIR is light must travel from ______ to ______ medium.",
-                          "options":  {
-                                          "A":  "Denser to Rarer",
-                                          "B":  "Rarer to Denser",
-                                          "C":  "None",
-                                          "D":  "Same to Same"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  22
-                      },
-                      {
-                          "question":  "A convex lens behaves as a ______ lens.",
-                          "options":  {
-                                          "A":  "Converging",
-                                          "B":  "Diverging",
-                                          "C":  "None",
-                                          "D":  "Cylindrical"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  23
-                      },
-                      {
-                          "question":  "Magnification of a simple microscope is m = ______.",
-                          "options":  {
-                                          "A":  "1 + D/f",
-                                          "B":  "D/f",
-                                          "C":  "f/D",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  24
-                      },
-                      {
-                          "id":  25,
-                          "question":  "A lens formula? no. Replaced: sign convention for distance measured in direction of light is positive.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "Lens maker's formula is 1/f = ______.",
+            "options": {
+                "A": "(n-1)(1/R1 - 1/R2)",
+                "B": "(n+1)(1/R1 + 1/R2)",
+                "C": "n / (1/R1 - 1/R2)",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 1
+        },
+        {
+            "question": "A convex lens behaves as a ______ lens.",
+            "options": {
+                "A": "Converging",
+                "B": "Diverging",
+                "C": "None",
+                "D": "Cylindrical"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 5
+        },
+        {
+            "id": 9,
+            "question": "If n1 = n2, the lens becomes invisible.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        }
+    ]
 }

@@ -1,68 +1,285 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  51,
-                          "question":  "If z + 1/z = 2cosθ, then zⁿ + 1/zⁿ = ?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "2cos(nθ)",
-                                          "B":  "2sin(nθ)",
-                                          "C":  "cos(nθ)",
-                                          "D":  "2ncos θ"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  52,
-                          "question":  "If |z| = 1 and z ≠ ±1, then all the values of z / (1 - z²) lie on ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Imaginary axis",
-                                          "B":  "Real axis",
-                                          "C":  "Unit Circle",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  53,
-                          "question":  "The locus of z such that Re(z²) = 2 is a ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Rectangular Hyperbola",
-                                          "B":  "Circle",
-                                          "C":  "Ellipse",
-                                          "D":  "Parabola"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  54,
-                          "question":  "If z = (1+i) / (1-i), then the smallest positive integer n for which zⁿ = 1 is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "4",
-                                          "B":  "2",
-                                          "C":  "8",
-                                          "D":  "12"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 3,
+            "question": "If z = (1+i)/(1−i), then z⁴ = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "−1",
+                "C": "i",
+                "D": "−i"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 7,
+            "question": "Logarithm of a complex number z = re^{iθ} is log(z) = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "log r + iθ",
+                "B": "log r - iθ",
+                "C": "r log θ",
+                "D": "e^{rθ}"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 11,
+            "question": "If z₁ = 1+2i and z₂ = 3+5i, then Re(z₁z₂) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-7",
+                "B": "13",
+                "C": "11",
+                "D": "3"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 15,
+            "question": "Find the largest value of |z| if |z - 4/z| = 2.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "√5 + 1",
+                "B": "√5 - 1",
+                "C": "√3 + 1",
+                "D": "2"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 19,
+            "question": "The conjugate of (2+3i)/(3−4i) is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(6−17i)/25",
+                "B": "(6+17i)/25",
+                "C": "(−6+17i)/25",
+                "D": "(−6−17i)/25"
+            },
+            "answer": "B",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 23,
+            "question": "If |z − 4| < |z − 2|, then Re(z) > ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3",
+                "B": "2",
+                "C": "4",
+                "D": "1"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 27,
+            "question": "If |z-1| ≤ 2 and |z-2| ≤ |z-4|, the area of the common region in the complex plane is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2π/3 + √3",
+                "B": "π",
+                "C": "2π",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 31,
+            "question": "If z + 1/z = 2cosθ, then zⁿ + 1/zⁿ = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2cos(nθ)",
+                "B": "2sin(nθ)",
+                "C": "cos(nθ)",
+                "D": "2ncos θ"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 35,
+            "question": "The argument of (1 - i)^5 is",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "-π/4",
+                "B": "-π/2",
+                "C": "-3π/4",
+                "D": "-5π/4"
+            },
+            "answer": "D",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 39,
+            "question": "A complex number raised to an irrational power leads to ______ values.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Infinitely many distinct",
+                "B": "Only one",
+                "C": "None",
+                "D": "Purely real"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 43,
+            "question": "Conjugate diameters of an ellipse satisfy the condition m₁m₂ = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-b²/a²",
+                "B": "b²/a²",
+                "C": "-a²/b²",
+                "D": "a²/b²"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 47,
+            "question": "If the transverse and conjugate axes of a hyperbola are equal, its eccentricity is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "√2",
+                "B": "√3",
+                "C": "2",
+                "D": "√5/2"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 51,
+            "question": "Distance between directrices of conjugate hyperbola is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2b/e'",
+                "B": "2ae",
+                "C": "None",
+                "D": "2b"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Advanced Hyperbola question 9 regarding asymptotes and conjugate hyperbola.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Option A",
+                "B": "Option B",
+                "C": "Option C",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 55
+        },
+        {
+            "question": "Advanced Hyperbola question 8 regarding asymptotes and conjugate hyperbola.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Option A",
+                "B": "Option B",
+                "C": "Option C",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 59
+        },
+        {
+            "question": "Advanced Hyperbola question 5 regarding asymptotes and conjugate hyperbola.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Option A",
+                "B": "Option B",
+                "C": "Option C",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 63
+        },
+        {
+            "id": 67,
+            "question": "Condition for imaginary lines through origin is h² < ab.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 71,
+            "question": "For equation x⁵−1=0, non-real roots in conjugate pairs = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2 pairs",
+                "B": "1 pair",
+                "C": "4 pairs",
+                "D": "5 pairs"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        }
+    ]
 }

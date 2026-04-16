@@ -1,374 +1,135 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  26,
-                          "question":  "Diagonal relationship is due to similar ______ and ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Mass, Density",
-                                          "B":  "Size, Charge/radius ratio",
-                                          "C":  "State, Color",
-                                          "D":  "Name, Symbol"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 1.8 x 10^-3 s^-1 at 306 K and 4.53 x 10^-3 s^-1 at 326 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "38.27",
-                                          "B":  "45.92",
-                                          "C":  "30.62",
-                                          "D":  "48.27"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(4.53/1.8) = (Ea/8.314) * (1/306 - 1/326). Solving gives 38.27 kJ/mol.",
-                          "id":  27
-                      },
-                      {
-                          "id":  28,
-                          "question":  "Chalcogens represent Group ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "15",
-                                          "B":  "16",
-                                          "C":  "17",
-                                          "D":  "14"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 23°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "3-bromo-3-methylpentane",
-                                          "B":  "2-bromopentane",
-                                          "C":  "1-bromo-3-methylpentane",
-                                          "D":  "1-bromopentane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  29
-                      },
-                      {
-                          "id":  30,
-                          "question":  "Screening constant (σ) for valence electron increases down the group. (True/False)",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "Only in s-block",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  31,
-                          "question":  "General configuration of Lanthanoids is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "ns2",
-                                          "B":  "[Xe] 4f1-14 5d0-1 6s2",
-                                          "C":  "[Rn] 5f1-14 6d0-1 7s2",
-                                          "D":  "[Ar] 3d10"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  32,
-                          "question":  "Which set represents \u0027Coinage metals\u0027?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Na, K, Rb",
-                                          "B":  "Cu, Ag, Au",
-                                          "C":  "Fe, Co, Ni",
-                                          "D":  "Zn, Cd, Hg"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  33,
-                          "question":  "IE1 of Nitrogen is higher than IE1 of Oxygen because of ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Small size",
-                                          "B":  "Stable half-filled p-orbital in N",
-                                          "C":  "High EN",
-                                          "D":  "Shielding"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  34,
-                          "question":  "The long form of periodic table is based on ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Atomic mass",
-                                          "B":  "Atomic number / Electronic configuration",
-                                          "C":  "Color",
-                                          "D":  "Reactivity"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  35,
-                          "question":  "Across a period, basic nature of oxides ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Increases",
-                                          "B":  "Decreases",
-                                          "C":  "Stays same",
-                                          "D":  "Oscillates"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "Which of the following shows amphoteric behavior?",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "Na2O",
-                                          "B":  "MgO",
-                                          "C":  "Al2O3",
-                                          "D":  "P2O5"
-                                      },
-                          "answer":  "C",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  36,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 39°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "1-chloro-1-methylcyclohexane",
-                                          "B":  "Chlorocyclohexane",
-                                          "C":  "1-chlorohexane",
-                                          "D":  "2-chlorohexane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  37
-                      },
-                      {
-                          "id":  38,
-                          "question":  "Van der Waals radius is always ______ than Covalent radius for the same element.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Smaller",
-                                          "B":  "Larger",
-                                          "C":  "Equal",
-                                          "D":  "Zero"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "Which of the following elements has the highest electron gain enthalpy (negative)?",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Chlorine (Cl)",
-                                          "B":  "Fluorine (F)",
-                                          "C":  "Oxygen",
-                                          "D":  "Nitrogen"
-                                      },
-                          "answer":  "A",
-                          "id":  39,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Which of the following species is largest in size?",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "O2-",
-                                          "B":  "F-",
-                                          "C":  "Na+",
-                                          "D":  "Mg2+"
-                                      },
-                          "answer":  "A",
-                          "id":  40,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Elements with atomic numbers 19, 37, 55 belong to which group?",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Group 1 (Alkali metals)",
-                                          "B":  "Group 2",
-                                          "C":  "Group 17",
-                                          "D":  "Group 18"
-                                      },
-                          "answer":  "A",
-                          "id":  41,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Which block of elements contains only metals?",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "s, d, f blocks",
-                                          "B":  "p block",
-                                          "C":  "d block only",
-                                          "D":  "f block only"
-                                      },
-                          "answer":  "A",
-                          "id":  42,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Transuranic elements (Z \u003e 92) belong to which series?",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Actinoids",
-                                          "B":  "Lanthanoids",
-                                          "C":  "Transition metals",
-                                          "D":  "Alkaline earth"
-                                      },
-                          "answer":  "A",
-                          "id":  43,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Metalloids are located in which block?",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "p-block",
-                                          "B":  "s-block",
-                                          "C":  "d-block",
-                                          "D":  "f-block"
-                                      },
-                          "answer":  "A",
-                          "id":  44,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Which has the highest second ionization energy?",
-                          "difficulty":  "hard",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "Na",
-                                          "B":  "Mg",
-                                          "C":  "Al",
-                                          "D":  "Si"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  45,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "Screening effect (shielding effect) is maximum for which type of electrons?",
-                          "difficulty":  "hard",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "s electrons shield s electrons",
-                                          "B":  "p electrons",
-                                          "C":  "d electrons shield s electrons better",
-                                          "D":  "s and p electrons shield d electrons less effectively"
-                                      },
-                          "answer":  "D",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  46,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "Which of the following is the correct increasing order of atomic radii?",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "Na \u003c Li \u003c K",
-                                          "B":  "Li \u003c Na \u003c K",
-                                          "C":  "K \u003c Na \u003c Li",
-                                          "D":  "Li \u003c K \u003c Na"
-                                      },
-                          "answer":  "B",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  47,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "The element with Z=114 belongs to which group and period?",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Group 14, Period 7",
-                                          "B":  "Group 12, Period 6",
-                                          "C":  "Group 18, Period 7",
-                                          "D":  "Group 10, Period 5"
-                                      },
-                          "answer":  "A",
-                          "id":  48,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Lanthanoid contraction is observed in elements of ______ series.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "4f",
-                                          "B":  "5f",
-                                          "C":  "3d",
-                                          "D":  "5d"
-                                      },
-                          "answer":  "A",
-                          "id":  49,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Valency of s-block and p-block elements is related to number of ______ electrons.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Valence",
-                                          "B":  "Inner",
-                                          "C":  "d",
-                                          "D":  "All"
-                                      },
-                          "answer":  "A",
-                          "id":  50,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "Which period has the maximum number of elements?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "3rd",
+                "B": "4th",
+                "C": "5th",
+                "D": "6th"
+            },
+            "answer": "D",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 2,
+            "tag": "pyq"
+        },
+        {
+            "id": 6,
+            "question": "The second ionization enthalpy is always ______ than the first ionization enthalpy.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Lower",
+                "B": "Higher",
+                "C": "Equal",
+                "D": "Half"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 10,
+            "question": "Anomalous properties of Li are similar to which element?",
+            "options": {
+                "A": "Na",
+                "B": "Mg",
+                "C": "Be",
+                "D": "Ca"
+            },
+            "answer": "B",
+            "difficulty": "medium"
+        },
+        {
+            "id": 14,
+            "question": "Oxidizing power of elements ______ from left to right in a period.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Decreases",
+                "B": "Increases",
+                "C": "Zeros",
+                "D": "Stays same"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 18,
+            "question": "Which set represents 'Coinage metals'?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Na, K, Rb",
+                "B": "Cu, Ag, Au",
+                "C": "Fe, Co, Ni",
+                "D": "Zn, Cd, Hg"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "Electronegativity ______ across a period and ______ down a group.",
+            "difficulty": "hard",
+            "options": {
+                "A": "Increases, Decreases",
+                "B": "Decreases, Increases",
+                "C": "Increases, Increases",
+                "D": "Decreases, Decreases"
+            },
+            "answer": "A",
+            "id": 22,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "Transuranic elements (Z > 92) belong to which series?",
+            "difficulty": "hard",
+            "options": {
+                "A": "Actinoids",
+                "B": "Lanthanoids",
+                "C": "Transition metals",
+                "D": "Alkaline earth"
+            },
+            "answer": "A",
+            "id": 26,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "Which of the following is the correct increasing order of atomic radii?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "Na < Li < K",
+                "B": "Li < Na < K",
+                "C": "K < Na < Li",
+                "D": "Li < K < Na"
+            },
+            "answer": "B",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 30,
+            "tag": "pyq"
+        },
+        {
+            "question": "Isoelectronic species order of size: K+, Cl-, S2-, Ca2+",
+            "difficulty": "hard",
+            "options": {
+                "A": "S2- > Cl- > K+ > Ca2+",
+                "B": "Ca2+ > K+ > Cl- > S2-",
+                "C": "Cl- > S2- > K+ > Ca2+",
+                "D": "K+ > Ca2+ > Cl- > S2-"
+            },
+            "answer": "A",
+            "id": 34,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        }
+    ]
 }

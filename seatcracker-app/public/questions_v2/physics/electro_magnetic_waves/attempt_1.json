@@ -1,386 +1,128 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "In vacuum, the intensity of EM wave I = ______.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "0.5 c ε₀ E₀²",
-                                          "B":  "c ε₀ E₀²",
-                                          "C":  "0.5 ε₀ E₀²",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  1
-                      },
-                      {
-                          "id":  2,
-                          "question":  "Wavenumber k = 2π / λ. True?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Total energy density of EM wave is u = ______.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "ε₀E²",
-                                          "B":  "0.5 ε₀E²",
-                                          "C":  "μ₀B²",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  3
-                      },
-                      {
-                          "id":  4,
-                          "question":  "Wait? no. Replaced: UV light is used in LASIK eye surgery.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  5,
-                          "question":  "Wave intensity decreases with distance for point source? yes. as 1/r².",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Wait? no. Replaced: Hertz verified the existence of EM waves using ______.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Spark gap oscillator",
-                                          "B":  "Photoelectric effect",
-                                          "C":  "Cathode rays",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  6
-                      },
-                      {
-                          "id":  7,
-                          "question":  "Angular? no. Replaced: E0 / B0 = ω / k = c.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "EM waves exert radiation pressure on surfaces. True or False?",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "Only if absorbed",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  8
-                      },
-                      {
-                          "id":  9,
-                          "question":  "Fingerprints? yes. can be seen using UV rays.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  10,
-                          "question":  "Poynting vector represents energy flow per unit area per unit time. yes.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Which EM wave is used in remote controls?",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Infrared",
-                                          "B":  "Microwaves",
-                                          "C":  "Radio waves",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  11
-                      },
-                      {
-                          "id":  12,
-                          "question":  "Wait? no. Replaced: if E = (3, 0, 0), B must have no x-component? yes.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Which of the following EM waves has the highest frequency?",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Gamma rays",
-                                          "B":  "X-rays",
-                                          "C":  "Ultraviolet",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  13
-                      },
-                      {
-                          "id":  14,
-                          "question":  "Which EM wave has highest frequency?",
-                          "options":  {
-                                          "A":  "X-rays",
-                                          "B":  "Gamma rays",
-                                          "C":  "UV rays",
-                                          "D":  "Microwaves"
-                                      },
-                          "answer":  "B",
-                          "difficulty":  "medium"
-                      },
-                      {
-                          "id":  15,
-                          "question":  "EM wave speed in matter v = c / n (n is refractive index).",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "EM waves are ______ in nature.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Transverse",
-                                          "B":  "Longitudinal",
-                                          "C":  "Stationary",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  16
-                      },
-                      {
-                          "id":  17,
-                          "question":  "EM waves? no. Replaced: polarization exists only for transverse waves? yes, so only EM waves in vacuum (light) are polarizable.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  18,
-                          "question":  "Wait? no. Replaced: Maxwell equations are valid in all inertial frames.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  19,
-                          "question":  "Micro? no. Replaced: frequency ≈ 10^10 Hz.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  20,
-                          "question":  "Gamma? no. Replaced: produced in nuclear reactions.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Wait? no. Replaced: wavelength of gamma rays is ______.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "\u003c 10⁻¹¹ m",
-                                          "B":  "\u003e 1m",
-                                          "C":  "400-700 nm",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  21
-                      },
-                      {
-                          "question":  "Which EM wave is used for sterilization of surgical instruments?",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Ultraviolet",
-                                          "B":  "Infrared",
-                                          "C":  "Microwaves",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  22
-                      },
-                      {
-                          "id":  23,
-                          "question":  "Radio? no. Replaced: used in Cellular phones (UHF).",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Displacement current I_d = ε₀(dΦ_e/dt). True or False?",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "Only in vacuum",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  24
-                      },
-                      {
-                          "id":  25,
-                          "question":  "Order of increasing wavelength: Gamma, X, UV, Visible, IR, Micro, Radio.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Soft X-rays have low frequency and low penetrating power.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "KE_max vs frequency graph slope =",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "h (Planck's constant)",
+                "B": "-φ",
+                "C": "e",
+                "D": "c"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "id": 5
+        },
+        {
+            "question": "Which EM wave is used in remote controls?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Infrared",
+                "B": "Microwaves",
+                "C": "Radio waves",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 9
+        },
+        {
+            "question": "Which layer of atmosphere absorbs UV rays?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Ozone layer",
+                "B": "Ionosphere",
+                "C": "Exosphere",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 13
+        },
+        {
+            "id": 17,
+            "question": "Cyclotron frequency does not depend on ______ of the particle.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Speed / Radius",
+                "B": "Charge",
+                "C": "Magnetic field",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Angular frequency ω = ______.",
+            "options": {
+                "A": "2π f",
+                "B": "f / 2π",
+                "C": "1/f",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 21
+        },
+        {
+            "question": "A whistle emitting a sound of frequency 440 Hz is tied to a string of 1.5 m length and rotated with an angular velocity of 20 rad/s in the horizontal plane. Then the range of frequencies heard by an observer at a large distance is ______ (v = 330 m/s).",
+            "difficulty": "Hard",
+            "options": {
+                "A": "403.3 Hz to 484 Hz",
+                "B": "440 Hz to 484 Hz",
+                "C": "400 Hz to 440 Hz",
+                "D": "380 Hz to 420 Hz"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 25
+        },
+        {
+            "question": "In a sonometer wire, if the tension is increased by 21%, the fundamental frequency increases by 5 Hz. The original frequency was ______.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "50 Hz",
+                "B": "100 Hz",
+                "C": "25 Hz",
+                "D": "200 Hz"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": true,
+            "tag": "hard",
+            "id": 29
+        }
+    ]
 }

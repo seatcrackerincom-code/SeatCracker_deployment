@@ -1,49 +1,168 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "Which of the following ions is a cofactor for the enzyme Enolase in glycolysis?",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "Mg2+",
-                                          "B":  "Mn2+",
-                                          "C":  "Cu2+",
-                                          "D":  "Fe2+"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  51
-                      },
-                      {
-                          "question":  "Which of the following describes the \u0027Amphibolic\u0027 nature of the respiratory pathway?",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "It involves both catabolic and anabolic processes (e.g., breakdown of fuels and synthesis of precursors)",
-                                          "B":  "It only occurs in the presence of light",
-                                          "C":  "It is purely energy-releasing",
-                                          "D":  "It is found only in amphibians"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  52
-                      },
-                      {
-                          "question":  "Which enzyme converts Pyruvic acid to Acetaldehyde in yeast fermentation?",
-                          "difficulty":  "Hard",
-                          "options":  {
-                                          "A":  "Pyruvate Decarboxylase",
-                                          "B":  "Pyruvate Dehydrogenase",
-                                          "C":  "Lactate Dehydrogenase",
-                                          "D":  "Phosphofructokinase"
-                                      },
-                          "answer":  "A",
-                          "tag":  "conceptual",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  53
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "Plants absorb Iron in the form of ferric ions (Fe3+); its main role in electron transport involves being part of ______.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Ferredoxin and Cytochromes",
+                "B": "Chlorophyll ring",
+                "C": "Auxin complex",
+                "D": "Starch grains"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 3
+        },
+        {
+            "question": "Which step of Krebs cycle produces GTP directly?",
+            "difficulty": "hard",
+            "pyq": true,
+            "options": {
+                "A": "Isocitrate to α-ketoglutarate",
+                "B": "Succinyl CoA to succinate",
+                "C": "Succinate to fumarate",
+                "D": "Malate to oxaloacetate"
+            },
+            "answer": "B",
+            "tag": "pyq",
+            "id": 7
+        },
+        {
+            "id": 11,
+            "question": "Complex I of ETS is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "NADH dehydrogenase",
+                "B": "FADH2",
+                "C": "Cytochrome",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 15,
+            "question": "Oxidative decarboxylation occurs during ______ reaction.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Link Reaction (Pyruvate to Acetyl CoA)",
+                "B": "Glycolysis",
+                "C": "Photolysis",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 19,
+            "question": "ATP synthesis in ETS occurs during flow of ______ through F0-F1 particles.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Protons (H+)",
+                "B": "Electrons",
+                "C": "Oxygen",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 23,
+            "question": "Succinate to Fumarate conversion is catalyzed by ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Succinate dehydrogenase",
+                "B": "Citrate synthase",
+                "C": "Enolase",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 27,
+            "question": "Fatty acids enter respiration as ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Acetyl CoA",
+                "B": "Glucose",
+                "C": "PGAL",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 31,
+            "question": "RQ for Succulent plants (like Cactus) at night is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0 (as no CO2 is evolved)",
+                "B": "1",
+                "C": "0.7",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "How many net molecules of ATP are produced during the 'Lysis' and 'Oxidation' phases of Glycolysis per molecule of glucose?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "2 ATP (Net gain)",
+                "B": "4 ATP",
+                "C": "38 ATP",
+                "D": "0 ATP"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 35
+        },
+        {
+            "question": "Which of the following inhibits phosphofructokinase (PFK) and thus regulates glycolysis?",
+            "difficulty": "hard",
+            "pyq": true,
+            "options": {
+                "A": "AMP",
+                "B": "Fructose 2,6-bisphosphate",
+                "C": "High ATP and citrate",
+                "D": "ADP"
+            },
+            "answer": "C",
+            "tag": "pyq",
+            "id": 39
+        },
+        {
+            "question": "Which of the following is the 'First' stable product formed in the Krebs Cycle?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Citric acid (Citrate)",
+                "B": "Oxaloacetic acid (OAA)",
+                "C": "Succinic acid",
+                "D": "Fumaric acid"
+            },
+            "answer": "A",
+            "tag": "conceptual",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 43
+        }
+    ]
 }

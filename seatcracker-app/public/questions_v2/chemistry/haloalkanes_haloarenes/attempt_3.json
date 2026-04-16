@@ -1,140 +1,299 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "Which of the following is an optically active compound?",
-                          "difficulty":  "hard",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "CH2ClBr",
-                                          "B":  "CHCl3",
-                                          "C":  "CHClBrF (with 4 different groups)",
-                                          "D":  "CH2Cl2"
-                                      },
-                          "answer":  "C",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  51,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "Which of the following compounds is most reactive towards nucleophilic substitution under mild conditions?",
-                          "difficulty":  "hard",
-                          "pyq":  false,
-                          "options":  {
-                                          "A":  "Chlorobenzene",
-                                          "B":  "2,4-Dinitrochlorobenzene",
-                                          "C":  "p-Nitrochlorobenzene",
-                                          "D":  "2,4,6-Trinitrochlorobenzene"
-                                      },
-                          "answer":  "D",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  52
-                      },
-                      {
-                          "question":  "In the mechanism of the Dow process for Phenol synthesis, which intermediate is formed?",
-                          "difficulty":  "hard",
-                          "pyq":  false,
-                          "options":  {
-                                          "A":  "Carbocation",
-                                          "B":  "Carbanion",
-                                          "C":  "Benzyne",
-                                          "D":  "Free radical"
-                                      },
-                          "answer":  "C",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  53
-                      },
-                      {
-                          "question":  "Which of the following will have a meso-isomer?",
-                          "difficulty":  "hard",
-                          "pyq":  false,
-                          "options":  {
-                                          "A":  "2-Chlorobutane",
-                                          "B":  "2,3-Dichlorobutane",
-                                          "C":  "2,3-Dichloropentane",
-                                          "D":  "2-Hydroxypropanoic acid"
-                                      },
-                          "answer":  "B",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  54
-                      },
-                      {
-                          "question":  "Which property of Freon-12 (CF2Cl2) makes it harmful to the environment?",
-                          "difficulty":  "hard",
-                          "pyq":  false,
-                          "options":  {
-                                          "A":  "High toxicity to humans",
-                                          "B":  "Flammability",
-                                          "C":  "Photochemical decomposition releasing chlorine radicals",
-                                          "D":  "Corrosive nature"
-                                      },
-                          "answer":  "C",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  55
-                      },
-                      {
-                          "question":  "What is the absolute configuration of (S)-2-chlorobutane?",
-                          "difficulty":  "hard",
-                          "pyq":  false,
-                          "options":  {
-                                          "A":  "Priority: Cl \u003e C2H5 \u003e CH3 \u003e H; counter-clockwise",
-                                          "B":  "Priority: Cl \u003e CH3 \u003e C2H5 \u003e H; clockwise",
-                                          "C":  "Priority: C2H5 \u003e Cl \u003e CH3 \u003e H; clockwise",
-                                          "D":  "Priority: Cl \u003e C2H5 \u003e CH3 \u003e H; clockwise"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  56
-                      },
-                      {
-                          "question":  "Which of the following is most reactive towards SN2 reaction?",
-                          "difficulty":  "hard",
-                          "pyq":  false,
-                          "options":  {
-                                          "A":  "CH3CH2CH2Br",
-                                          "B":  "CH2=CH-CH2Br (Allylic bromide)",
-                                          "C":  "C6H5Br (Bromobenzene)",
-                                          "D":  "CH3-CHBr-CH3"
-                                      },
-                          "answer":  "B",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  57
-                      },
-                      {
-                          "question":  "Which reagent is used in the Darzens procedure to prepare alkyl chlorides from alcohols?",
-                          "difficulty":  "hard",
-                          "pyq":  false,
-                          "options":  {
-                                          "A":  "PCl3",
-                                          "B":  "PCl5",
-                                          "C":  "SOCl2 (Thionyl chloride)",
-                                          "D":  "HCl/ZnCl2"
-                                      },
-                          "answer":  "C",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  58
-                      },
-                      {
-                          "question":  "Which of the following compounds will give a positive Iodoform test?",
-                          "difficulty":  "hard",
-                          "pyq":  false,
-                          "options":  {
-                                          "A":  "Methanol",
-                                          "B":  "Ethanol",
-                                          "C":  "1-Propanol",
-                                          "D":  "Benzaldehyde"
-                                      },
-                          "answer":  "B",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  59
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 30°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-chloro-3-ethylpentane",
+                "B": "3-chloropentane",
+                "C": "2-chloropentane",
+                "D": "1-chloropentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 3
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 43°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-chloro-3-ethylpentane",
+                "B": "3-chloropentane",
+                "C": "2-chloropentane",
+                "D": "1-chloropentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 7
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 35°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "tert-butyl bromide",
+                "B": "isopropyl bromide",
+                "C": "ethyl bromide",
+                "D": "methyl bromide"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 11
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 34°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-bromo-3-methylpentane",
+                "B": "2-bromopentane",
+                "C": "1-bromo-3-methylpentane",
+                "D": "1-bromopentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 15
+        },
+        {
+            "id": 19,
+            "question": "Which of the following is most likely to undergo SN1 reaction?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Methyl Chloride",
+                "B": "Ethyl Chloride",
+                "C": "Benzyl Chloride (due to resonance)",
+                "D": "Vinyl Chloride"
+            },
+            "answer": "C",
+            "pyq": false
+        },
+        {
+            "id": 23,
+            "question": "SN1 reaction is a ______ step process.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Single",
+                "B": "Two",
+                "C": "Three",
+                "D": "Instant"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 27,
+            "question": "SN1 reaction of an optically active halide results in ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Retention",
+                "B": "Racemization",
+                "C": "Inversion",
+                "D": "No change"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 31,
+            "question": "Iodoform test is used to detect the presence of ______ group.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Carboxyl",
+                "B": "Methyl ketone (CH3CO-)",
+                "C": "Ether",
+                "D": "Amine"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 35,
+            "question": "An equimolar mixture of a pair of enantiomers is called a ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Standard mixture",
+                "B": "Racemic mixture",
+                "C": "Meso compound",
+                "D": "Polymer"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 39,
+            "question": "Preparation of fluorides using Mercurous fluoride (Hg2F2) is ______ reaction.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Wurtz",
+                "B": "Swarts",
+                "C": "Sandmeyer",
+                "D": "Fittig"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 43,
+            "question": "Density of alkyl halides ______ with increase in atomic mass of halogen.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Decreases",
+                "B": "Increases",
+                "C": "Zeros",
+                "D": "Stays constant"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "Which among the following is the most stable carbocation?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "CH3⁺",
+                "B": "CH3CH2⁺",
+                "C": "(CH3)2CH⁺",
+                "D": "(CH3)3C⁺"
+            },
+            "answer": "D",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 47,
+            "tag": "pyq"
+        },
+        {
+            "question": "Which property of Freon-12 (CF2Cl2) makes it harmful to the environment?",
+            "difficulty": "hard",
+            "pyq": false,
+            "options": {
+                "A": "High toxicity to humans",
+                "B": "Flammability",
+                "C": "Photochemical decomposition releasing chlorine radicals",
+                "D": "Corrosive nature"
+            },
+            "answer": "C",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 51
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 40°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-chloro-3-ethylpentane",
+                "B": "3-chloropentane",
+                "C": "2-chloropentane",
+                "D": "1-chloropentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 55
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 58°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-chloro-3-ethylpentane",
+                "B": "3-chloropentane",
+                "C": "2-chloropentane",
+                "D": "1-chloropentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 59
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 21°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1-chloro-1-methylcyclohexane",
+                "B": "Chlorocyclohexane",
+                "C": "1-chlorohexane",
+                "D": "2-chlorohexane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 63
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 27°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-bromo-3-methylpentane",
+                "B": "2-bromopentane",
+                "C": "1-bromo-3-methylpentane",
+                "D": "1-bromopentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 67
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 49°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-bromo-3-methylpentane",
+                "B": "2-bromopentane",
+                "C": "1-bromo-3-methylpentane",
+                "D": "1-bromopentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 71
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 20°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-chloro-3-ethylpentane",
+                "B": "3-chloropentane",
+                "C": "2-chloropentane",
+                "D": "1-chloropentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 75
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 59°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-bromo-3-methylpentane",
+                "B": "2-bromopentane",
+                "C": "1-bromo-3-methylpentane",
+                "D": "1-bromopentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 79
+        }
+    ]
 }

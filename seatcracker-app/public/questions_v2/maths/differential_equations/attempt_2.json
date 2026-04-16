@@ -1,52 +1,435 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "An equation of the form Mdx + Ndy = 0 is exact if ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "∂M/∂y = ∂N/∂x",
-                                          "B":  "∂M/∂x = ∂N/∂y",
-                                          "C":  "M=N",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  26
-                      },
-                      {
-                          "question":  "The order of differential equation of family of parabolas y² = 4ax is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "1",
-                                          "B":  "2",
-                                          "C":  "0",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  27
-                      },
-                      {
-                          "question":  "The singular solution of a differential equation represents ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "Envelope of family of curves",
-                                          "B":  "One member of family",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  28
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 2,
+            "question": "Number of lines making angle 45 degrees with both x and y axes is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2 (as n must be zero)",
+                "B": "1",
+                "C": "Infinite",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "If (∂M/∂y - ∂N/∂x)/N = f(x), then integrating factor is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "e^(∫f(x) dx)",
+                "B": "e^(∫f(y) dy)",
+                "C": "f(x)",
+                "D": "∫M dx"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 10,
+            "question": "Solution of dy/dx = y/x is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "y = cx",
+                "B": "y = c/x",
+                "C": "y = x + c",
+                "D": "y = cx²"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 14,
+            "question": "The solution of dy/dx = -x/y implies ydy = -xdx, which integrates to x² + y² = 2C. This family represents ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Circles centered at origin",
+                "B": "Parabolas",
+                "C": "Straight lines",
+                "D": "Hyperbolas"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 18,
+            "question": "Newton's Law of Cooling is a linear first order equation.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 22,
+            "question": "The differential equation d²y/dx² = 0 represents ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Straight lines",
+                "B": "Circles",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 26,
+            "question": "Solution of x·dy/dx + y = x·ln x is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "xy = x²(2 ln x − 1)/4 + c",
+                "B": "y = x ln x + cx",
+                "C": "xy = (x² ln x)/2 + c",
+                "D": "y = ln x + c/x"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 30,
+            "question": "Solution of dy/dx = (y/x) + tan(y/x) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "sin(y/x) = cx",
+                "B": "cos(y/x) = cx",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 34,
+            "question": "The envelope represents a singular solution.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 38,
+            "question": "Can Singular solutions be obtained from general solutions?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "No",
+                "B": "Yes",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The integrating factor of dy/dx + Py = Q is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "e^∫P dx",
+                "B": "e^∫Q dx",
+                "C": "∫P dx",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 42
+        },
+        {
+            "question": "The degree of the differential equation (d²y/dx²)² + (dy/dx)³ = 0 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "2",
+                "B": "3",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 46
+        },
+        {
+            "question": "The solution of dy/dx = e^{x-y} + x² e⁻ʸ is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "e^y = e^x + x³/3 + C",
+                "B": "y = x + C",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 50
+        },
+        {
+            "question": "The singular solution of a differential equation represents ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Envelope of family of curves",
+                "B": "One member of family",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 54
+        },
+        {
+            "id": 58,
+            "question": "If y = e^(2x), then dy/dx is",
+            "difficulty": "Easy",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "2e^(2x)",
+                "B": "e^(2x)",
+                "C": "2e^x",
+                "D": "e^x"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "easy"
+        },
+        {
+            "id": 62,
+            "question": "If y = (x^2 - 1) / (x^2 + 1), then dy/dx at x = 1 is",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "-4/4",
+                "B": "4/4",
+                "C": "-2/2",
+                "D": "0"
+            },
+            "answer": "D",
+            "pyq": false,
+            "tag": "medium"
+        },
+        {
+            "id": 66,
+            "question": "If x^y = e^(x - y), then the derivative dy/dx at x = 1 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0",
+                "B": "1",
+                "C": "e",
+                "D": "-1"
+            },
+            "answer": "A",
+            "pyq": true
+        },
+        {
+            "id": 70,
+            "question": "If y = x^y, then dy/dx is equal to ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "y² / (x(1 - y log x))",
+                "B": "y² / (x(1 + y log x))",
+                "C": "y / (x(1 - y log x))",
+                "D": "1 / (x(1 - y log x))"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 74,
+            "question": "If y = tan⁻¹(sin x / (1+cos x)), then dy/dx is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1/2",
+                "B": "1",
+                "C": "cos x",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 78,
+            "question": "If x = e^t sin t and y = e^t cos t, then the value of dy/dx at t = π is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "-1",
+                "C": "0",
+                "D": "e^π"
+            },
+            "answer": "A",
+            "pyq": true
+        },
+        {
+            "id": 82,
+            "question": "If y = e^(x + e^(x + e^(x + ... ∞))), then dy/dx is equal to ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "y / (1 - y)",
+                "B": "y / (1 + y)",
+                "C": "1 / (1 - y)",
+                "D": "e^x / (1 - y)"
+            },
+            "answer": "A",
+            "pyq": true
+        },
+        {
+            "id": 86,
+            "question": "If y = tan⁻¹((√(1 + x²) + √(1 - x²)) / (√(1 + x²) - √(1 - x²))), then dy/dx is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-x / √(1 - x⁴)",
+                "B": "x / √(1 - x⁴)",
+                "C": "1 / √(1 - x⁴)",
+                "D": "-1 / (1 + x⁴)"
+            },
+            "answer": "A",
+            "pyq": true
+        },
+        {
+            "id": 90,
+            "question": "When axes are translated to (h, k), the degree of the equation of a curve ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Remains unchanged",
+                "B": "Increases by 1",
+                "C": "Decreases by 1",
+                "D": "Cannot be predicted"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 94,
+            "question": "If A is a square matrix of order n, then |adj(A)| = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "|A|ⁿ⁻¹",
+                "B": "|A|ⁿ",
+                "C": "|A|",
+                "D": "(n-1)|A|"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If A and B are square matrices of order n such that AB = O and B is non-singular, then A = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "O",
+                "B": "I",
+                "C": "B⁻¹",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 98
+        },
+        {
+            "id": 102,
+            "question": "The point of intersection of the lines represented by the general second-degree equation is given by ( (hf-bg)/(ab-h²), ______ ).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(gh-af)/(ab-h²)",
+                "B": "(af-gh)/(ab-h²)",
+                "C": "(g-f)/(a-b)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Rank of the word 'RANDOM' in dictionary order is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "614",
+                "B": "615",
+                "C": "613",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 106
+        },
+        {
+            "question": "Roots of a reciprocal equation of fourth degree x⁴ + ax³ + bx² + ax + 1 = 0 can be found by substituting z = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "x + 1/x",
+                "B": "x - 1/x",
+                "C": "x²",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 110
+        }
+    ]
 }

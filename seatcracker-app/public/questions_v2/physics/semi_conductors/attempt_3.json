@@ -1,81 +1,50 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  51,
-                          "question":  "Electromagnetic damping? yes. based on eddy currents.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  52,
-                          "question":  "AC generator? yes. uses mechanical work to rotate coil to change flux.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  53,
-                          "question":  "Wait? no. Replaced: magnetic flux is max when θ = 0 (perpendicular area).",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "A PN junction diode acts as a ______ wave rectifier.",
-                          "options":  {
-                                          "A":  "Half or Full",
-                                          "B":  "Only Half",
-                                          "C":  "None",
-                                          "D":  "Inverse"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  54
-                      },
-                      {
-                          "question":  "Wait? no. Replaced: gate which gives 1 if any input is 1 is ______.",
-                          "options":  {
-                                          "A":  "OR",
-                                          "B":  "AND",
-                                          "C":  "NAND",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  55
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "Intrinsic semiconductor at 0K is an ______.",
+            "options": {
+                "A": "Insulator",
+                "B": "Conductor",
+                "C": "None",
+                "D": "Resistor"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 3
+        },
+        {
+            "question": "Relation between α and β is β = ______.",
+            "options": {
+                "A": "α / (1-α)",
+                "B": "α / (1+α)",
+                "C": "1 / α",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 7
+        },
+        {
+            "question": "Transistor IC=9.8mA, IB=0.2mA, β=",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "49",
+                "B": "50",
+                "C": "48",
+                "D": "0.02"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "id": 11
+        }
+    ]
 }

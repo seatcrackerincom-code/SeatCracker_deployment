@@ -1,388 +1,80 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  1,
-                          "question":  "Radiation detector? yes. Thermopile / Bolometer.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  2,
-                          "question":  "Specific heat of ice is 0.5 cal/g C approx.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  3,
-                          "question":  "Radiation? no. Replaced: wavelength of peak radiation from sun is in visible range.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  4,
-                          "question":  "Wait? no. Replaced: 1 cal = 4.186 J.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  5,
-                          "question":  "Sublimation? yes. phase change from solid to gas directly.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  6,
-                          "question":  "Dew point? yes. temperature at which air becomes saturated with vapor.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  7,
-                          "question":  "Ratio of α : β : γ for isotropic solid? yes. 1 : 2 : 3.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  8,
-                          "question":  "Dimensional formula of thermal conductivity K is [M L T-3 θ-1].",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Wien\u0027s displacement law: λmT =",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "Constant",
-                                          "B":  "λm/T=constant",
-                                          "C":  "λm=constant×T",
-                                          "D":  "λmT²=constant"
-                                      },
-                          "answer":  "A",
-                          "tag":  "pyq",
-                          "id":  9
-                      },
-                      {
-                          "question":  "Heat required to change phase is Q = ______.",
-                          "options":  {
-                                          "A":  "m L",
-                                          "B":  "m s ΔT",
-                                          "C":  "None",
-                                          "D":  "P t"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  10
-                      },
-                      {
-                          "question":  "Heat required to change temperature is Q = ______.",
-                          "options":  {
-                                          "A":  "m s ΔT",
-                                          "B":  "m L",
-                                          "C":  "None",
-                                          "D":  "C ΔT"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  11
-                      },
-                      {
-                          "id":  12,
-                          "question":  "Wait? no. Replaced: emissivity for grey body is between 0 and 1.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  13,
-                          "question":  "Wait? no. Replaced: specific heat of gas depends on the process (isothermal/adiabatic).",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "A perfectly black body absorbs ______ radiation incident on it.",
-                          "options":  {
-                                          "A":  "All",
-                                          "B":  "Zero",
-                                          "C":  "Only visible",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  14
-                      },
-                      {
-                          "question":  "Triple point of water is ______.",
-                          "options":  {
-                                          "A":  "273.16 K",
-                                          "B":  "273.15 K",
-                                          "C":  "None",
-                                          "D":  "0 K"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  15
-                      },
-                      {
-                          "question":  "Wait? no. Replaced: solar constant is approx ______ W/m².",
-                          "options":  {
-                                          "A":  "1360",
-                                          "B":  "1000",
-                                          "C":  "None",
-                                          "D":  "500"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  16
-                      },
-                      {
-                          "id":  17,
-                          "question":  "Ideal? no. Replaced: Ideal gas thermometer is used to measure low temps.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Thermal expansion of solids is due to ______ of potential energy curve.",
-                          "options":  {
-                                          "A":  "Asymmetry",
-                                          "B":  "Symmetry",
-                                          "C":  "None",
-                                          "D":  "Depth"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  18
-                      },
-                      {
-                          "question":  "Linear expansion coefficient α, surface β, and volume γ are related as α : β : γ = ______.",
-                          "options":  {
-                                          "A":  "1 : 2 : 3",
-                                          "B":  "1 : 1 : 1",
-                                          "C":  "1 : 1.5 : 2",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  19
-                      },
-                      {
-                          "question":  "Good absorbers are ______ emitters (Kirchhoff\u0027s law).",
-                          "options":  {
-                                          "A":  "Good",
-                                          "B":  "Poor",
-                                          "C":  "None",
-                                          "D":  "Selective"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  20
-                      },
-                      {
-                          "question":  "Stefan-Boltzmann Law: E = ______.",
-                          "options":  {
-                                          "A":  "σ T⁴",
-                                          "B":  "σ T",
-                                          "C":  "None",
-                                          "D":  "T⁴ / σ"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  21
-                      },
-                      {
-                          "id":  22,
-                          "question":  "Coefficient of real expansion γr = γa + γg (liquid expansion).",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Radiation is the mode of heat transfer that ______ a medium.",
-                          "options":  {
-                                          "A":  "Does not require",
-                                          "B":  "Requires",
-                                          "C":  "None",
-                                          "D":  "Slows down"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  23
-                      },
-                      {
-                          "id":  24,
-                          "question":  "Intensity of radiation at dist r from point source varies as 1/r².",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  25,
-                          "question":  "Calorimetry is based on law of conservation of energy (Heat lost = Heat gained).",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Specific heat difference Cp - Cv = r (where r = R/M). yes, for unit mass.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "Dimensional formula of thermal conductivity K is [M L T-3 θ-1].",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 9,
+            "question": "Intensity of radiation at dist r from point source varies as 1/r².",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 13,
+            "question": "If α = 1 x 10^-5, a 10m rod heated by 100K expands by ______ mm.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "10",
+                "B": "1",
+                "C": "100",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Calorimeter is usually made of copper because it has ______ specific heat.",
+            "options": {
+                "A": "Low",
+                "B": "High",
+                "C": "None",
+                "D": "Variable"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 17
+        }
+    ]
 }

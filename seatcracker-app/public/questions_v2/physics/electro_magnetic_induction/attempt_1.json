@@ -1,366 +1,79 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "Self-inductance is called electrical inertia. True or False?",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "Depends on setup",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  1
-                      },
-                      {
-                          "id":  2,
-                          "question":  "Units of L/R are those of ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Current",
-                                          "B":  "Time",
-                                          "C":  "Frequency",
-                                          "D":  "Capacitance"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  3,
-                          "question":  "Hysteresis loss in a transformer can be minimized by using ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Steel",
-                                          "B":  "Soft Iron",
-                                          "C":  "Aluminum",
-                                          "D":  "Copper"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  4,
-                          "question":  "Lenz\u0027s Law is a consequence of the law of conservation of ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Mass",
-                                          "B":  "Energy",
-                                          "C":  "Charge",
-                                          "D":  "Momentum"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  5,
-                          "question":  "Back EMF in a motor is due to ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Self induction",
-                                          "B":  "Electromagnetic Induction",
-                                          "C":  "Static friction",
-                                          "D":  "Battery leakage"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  6,
-                          "question":  "A choke coil is used to control ______ in an AC circuit with minimal power loss.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Voltage",
-                                          "B":  "Current",
-                                          "C":  "Resistance",
-                                          "D":  "Phase"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  7,
-                          "question":  "Which of these remains constant in an ideal transformer?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Voltage",
-                                          "B":  "Current",
-                                          "C":  "Power",
-                                          "D":  "All of the above"
-                                      },
-                          "answer":  "C"
-                      },
-                      {
-                          "id":  8,
-                          "question":  "Current induced in a loop is Zero if it moves in a ______ magnetic field without changing orientation.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Varying",
-                                          "B":  "Uniform",
-                                          "C":  "Strong",
-                                          "D":  "Oscillating"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  9,
-                          "question":  "Self inductance depends on the ______ of the core.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Conductivity",
-                                          "B":  "Permeability (μ)",
-                                          "C":  "Color",
-                                          "D":  "Mass"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  10,
-                          "question":  "Self-inductance is also called ______ inertia.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Mechanical",
-                                          "B":  "Electromagnetic",
-                                          "C":  "Thermal",
-                                          "D":  "Gravitational"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  11,
-                          "question":  "Inductive reactance (X_L) is equal to ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "ω L",
-                                          "B":  "1 / (ω L)",
-                                          "C":  "L / ω",
-                                          "D":  "2π f"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  12,
-                          "question":  "Work done in establishing current I in inductor L is stored as ______ energy.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Electric",
-                                          "B":  "Magnetic",
-                                          "C":  "Gravitational",
-                                          "D":  "Dissipated"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  13,
-                          "question":  "Energy is lost in transformers as heat due to ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Hysteresis",
-                                          "B":  "Flux leakage",
-                                          "C":  "Resistance of windings (I²R)",
-                                          "D":  "All of the above"
-                                      },
-                          "answer":  "D"
-                      },
-                      {
-                          "id":  14,
-                          "question":  "The emf induced in an AC generator is ε = ε₀ sin(ωt). ε₀ depends on ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Number of turns (N)",
-                                          "B":  "Area of coil (A)",
-                                          "C":  "Angular velocity (ω)",
-                                          "D":  "All of the above (NBAω)"
-                                      },
-                          "answer":  "D"
-                      },
-                      {
-                          "question":  "Induced charge q is equal to ΔΦ / ______.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "Resistance R",
-                                          "B":  "Time t",
-                                          "C":  "Inductance L",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  15
-                      },
-                      {
-                          "question":  "RL circuit time constant τ=L/R. L=2H, R=100Ω. τ=",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "0.02s",
-                                          "B":  "200s",
-                                          "C":  "50s",
-                                          "D":  "0.005s"
-                                      },
-                          "answer":  "A",
-                          "tag":  "pyq",
-                          "id":  16
-                      },
-                      {
-                          "question":  "Back EMF is produced in which of the following?",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "DC Motor",
-                                          "B":  "Resistor",
-                                          "C":  "Battery",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  17
-                      },
-                      {
-                          "question":  "Unit of Mutual Inductance is same as unit of Self Inductance. True or False?",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "Depends on geometry",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  18
-                      },
-                      {
-                          "question":  "In induction furnace, ______ are used to produce heat.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Eddy currents",
-                                          "B":  "X-rays",
-                                          "C":  "Gamma rays",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  19
-                      },
-                      {
-                          "id":  20,
-                          "question":  "The induced emf due to self-induction is given by ε = ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "- L (dI/dt)",
-                                          "B":  "- I (dL/dt)",
-                                          "C":  "- L * I",
-                                          "D":  "L / (dI/dt)"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "question":  "Eddy currents can be used for ______ in trains.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "Magnetic braking",
-                                          "B":  "Acceleration",
-                                          "C":  "Communication",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  21
-                      },
-                      {
-                          "id":  22,
-                          "question":  "Dimensions of magnetic flux are same as ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Induced EMF",
-                                          "B":  "EMF * Time",
-                                          "C":  "Force",
-                                          "D":  "Momentum"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  23,
-                          "question":  "Eddy currents are used in which of the following?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Induction furnace",
-                                          "B":  "Magnetic braking in trains",
-                                          "C":  "Electromagnetic damping",
-                                          "D":  "All of the above"
-                                      },
-                          "answer":  "D"
-                      },
-                      {
-                          "id":  24,
-                          "question":  "To reduce eddy current losses in transformer cores, we use ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Thick solid blocks",
-                                          "B":  "Laminated cores",
-                                          "C":  "Plastic cores",
-                                          "D":  "Vacuum"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  25,
-                          "question":  "Mutual inductance (M) between two coils depends on their ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Separation",
-                                          "B":  "Orientation",
-                                          "C":  "Geometry",
-                                          "D":  "All of the above"
-                                      },
-                          "answer":  "D"
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Laminated core? yes. to reduce eddy current loss.",
+            "difficulty": "medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "Self-inductance is also called ______ inertia.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Mechanical",
+                "B": "Electromagnetic",
+                "C": "Thermal",
+                "D": "Gravitational"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "Eddy currents can be used for ______ in trains.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Magnetic braking",
+                "B": "Acceleration",
+                "C": "Communication",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 9
+        },
+        {
+            "id": 13,
+            "question": "Maxwell equation for Faraday law is ∮ E ⋅ dl = - dΦm / dt. True?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "Spark? yes. seen when switch of circuit with high inductance is opened.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        }
+    ]
 }

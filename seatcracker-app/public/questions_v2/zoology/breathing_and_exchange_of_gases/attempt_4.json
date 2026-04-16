@@ -1,84 +1,413 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  76,
-                          "question":  "A person is experiencing hyperventilation. Which of the following would be an appropriate treatment?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "Administering oxygen",
-                                          "B":  "Administering carbon dioxide",
-                                          "C":  "Decreasing ventilation rate",
-                                          "D":  "Increasing ventilation rate"
-                                      },
-                          "answer":  "C",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  77,
-                          "question":  "What is the term for the amount of oxygen that is actually bound to hemoglobin in the blood?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "Oxygen capacity",
-                                          "B":  "Oxygen saturation",
-                                          "C":  "Oxygen affinity",
-                                          "D":  "Oxygen binding coefficient"
-                                      },
-                          "answer":  "B",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  78,
-                          "question":  "Which of the following is a function of the respiratory system in regulating blood pH?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "Excreting excess hydrogen ions",
-                                          "B":  "Excreting excess bicarbonate ions",
-                                          "C":  "Regulating the amount of carbon dioxide in the blood",
-                                          "D":  "All of the above"
-                                      },
-                          "answer":  "D",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  79,
-                          "question":  "What is the term for the process by which the body regulates the amount of oxygen being delivered to the tissues?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "Oxygen homeostasis",
-                                          "B":  "Carbon dioxide homeostasis",
-                                          "C":  "pH homeostasis",
-                                          "D":  "Blood pressure homeostasis"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  80,
-                          "question":  "Which of the following is a consequence of chronic obstructive pulmonary disease (COPD) on the respiratory system?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "Increased lung compliance",
-                                          "B":  "Decreased lung compliance",
-                                          "C":  "Increased airway resistance",
-                                          "D":  "Decreased airway resistance"
-                                      },
-                          "answer":  "C",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "Hemoglobin shows maximum affinity for: (Exam form 384)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Carbon monoxide",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Carbon monoxide performs this role.",
+            "id": 4
+        },
+        {
+            "question": "Hemoglobin shows maximum affinity for: (Exam form 468)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Carbon monoxide",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Carbon monoxide performs this role.",
+            "id": 8
+        },
+        {
+            "question": "Hemoglobin shows maximum affinity for: (Exam form 326)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Carbon monoxide",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Carbon monoxide performs this role.",
+            "id": 12
+        },
+        {
+            "question": "Hemoglobin shows maximum affinity for: (Exam form 74)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Carbon monoxide",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Carbon monoxide performs this role.",
+            "id": 16
+        },
+        {
+            "question": "Hemoglobin shows maximum affinity for: (Exam form 717)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Carbon monoxide",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Carbon monoxide performs this role.",
+            "id": 20
+        },
+        {
+            "question": "Which cardiovascular structure acts as a temporary bypass to the lungs in the human fetus?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Ductus arteriosus / Foramen ovale",
+                "B": "Pulmonary trunk",
+                "C": "Ligamentum arteriosum",
+                "D": "Hepatic portal vein"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 24
+        },
+        {
+            "id": 28,
+            "question": "Strictly calculate the correct statement regarding Breathing And Exchange Of Gases: Which of the following describes the effect of High pCO2 on the oxygen dissociation curve? [Variant 1-2]",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Right shift (Bohr effect)",
+                "B": "Left shift (Haldane effect)",
+                "C": "No shift",
+                "D": "Upward shift"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 32,
+            "question": "Strictly differentiate the correct statement regarding Breathing And Exchange Of Gases: Which of the following describes the effect of High pCO2 on the oxygen dissociation curve? [Variant 1-6]",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Right shift (Bohr effect)",
+                "B": "Left shift (Haldane effect)",
+                "C": "No shift",
+                "D": "Upward shift"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "hard"
+        },
+        {
+            "id": 36,
+            "question": "Strictly identify the correct statement regarding Breathing And Exchange Of Gases: Which of the following describes the effect of High pCO2 on the oxygen dissociation curve? [Variant 1-10]",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Right shift (Bohr effect)",
+                "B": "Left shift (Haldane effect)",
+                "C": "No shift",
+                "D": "Upward shift"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 40,
+            "question": "Strictly predict the correct statement regarding Breathing And Exchange Of Gases: Which of the following describes the effect of High pCO2 on the oxygen dissociation curve? [Variant 1-14]",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Right shift (Bohr effect)",
+                "B": "Left shift (Haldane effect)",
+                "C": "No shift",
+                "D": "Upward shift"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 44,
+            "question": "Strictly summarize the correct statement regarding Breathing And Exchange Of Gases: Which of the following describes the effect of High pCO2 on the oxygen dissociation curve? [Variant 1-18]",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Right shift (Bohr effect)",
+                "B": "Left shift (Haldane effect)",
+                "C": "No shift",
+                "D": "Upward shift"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "hard"
+        },
+        {
+            "id": 48,
+            "question": "Strictly evaluate the correct statement regarding Breathing And Exchange Of Gases: Which of the following describes the effect of High pCO2 on the oxygen dissociation curve? [Variant 2-2]",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Right shift (Bohr effect)",
+                "B": "Left shift (Haldane effect)",
+                "C": "No shift",
+                "D": "Upward shift"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 52,
+            "question": "Strictly contrast the correct statement regarding Breathing And Exchange Of Gases: Which of the following describes the effect of High pCO2 on the oxygen dissociation curve? [Variant 2-6]",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Right shift (Bohr effect)",
+                "B": "Left shift (Haldane effect)",
+                "C": "No shift",
+                "D": "Upward shift"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "hard"
+        },
+        {
+            "id": 56,
+            "question": "Strictly determine the correct statement regarding Breathing And Exchange Of Gases: Which of the following describes the effect of High pCO2 on the oxygen dissociation curve? [Variant 2-10]",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Right shift (Bohr effect)",
+                "B": "Left shift (Haldane effect)",
+                "C": "No shift",
+                "D": "Upward shift"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 60,
+            "question": "Strictly synthesize the correct statement regarding Breathing And Exchange Of Gases: Which of the following describes the effect of High pCO2 on the oxygen dissociation curve? [Variant 2-14]",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Right shift (Bohr effect)",
+                "B": "Left shift (Haldane effect)",
+                "C": "No shift",
+                "D": "Upward shift"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 64,
+            "question": "Strictly analyze the correct statement regarding Breathing And Exchange Of Gases: Which of the following describes the effect of High pCO2 on the oxygen dissociation curve? [Variant 2-18]",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Right shift (Bohr effect)",
+                "B": "Left shift (Haldane effect)",
+                "C": "No shift",
+                "D": "Upward shift"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "hard"
+        },
+        {
+            "id": 68,
+            "question": "Strictly predict the correct statement regarding Breathing And Exchange Of Gases: Which of the following describes the effect of High pCO2 on the oxygen dissociation curve? [Variant 3-2]",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Right shift (Bohr effect)",
+                "B": "Left shift (Haldane effect)",
+                "C": "No shift",
+                "D": "Upward shift"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 72,
+            "question": "Strictly summarize the correct statement regarding Breathing And Exchange Of Gases: Which of the following describes the effect of High pCO2 on the oxygen dissociation curve? [Variant 3-6]",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Right shift (Bohr effect)",
+                "B": "Left shift (Haldane effect)",
+                "C": "No shift",
+                "D": "Upward shift"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "hard"
+        },
+        {
+            "id": 76,
+            "question": "Strictly calculate the correct statement regarding Breathing And Exchange Of Gases: Which of the following describes the effect of High pCO2 on the oxygen dissociation curve? [Variant 3-10]",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Right shift (Bohr effect)",
+                "B": "Left shift (Haldane effect)",
+                "C": "No shift",
+                "D": "Upward shift"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 80,
+            "question": "Strictly differentiate the correct statement regarding Breathing And Exchange Of Gases: Which of the following describes the effect of High pCO2 on the oxygen dissociation curve? [Variant 3-14]",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Right shift (Bohr effect)",
+                "B": "Left shift (Haldane effect)",
+                "C": "No shift",
+                "D": "Upward shift"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 84,
+            "question": "Strictly identify the correct statement regarding Breathing And Exchange Of Gases: Which of the following describes the effect of High pCO2 on the oxygen dissociation curve? [Variant 3-18]",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Right shift (Bohr effect)",
+                "B": "Left shift (Haldane effect)",
+                "C": "No shift",
+                "D": "Upward shift"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "hard"
+        },
+        {
+            "id": 88,
+            "question": "What is the term for the amount of oxygen that can be carried by a given amount of hemoglobin?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Oxygen capacity",
+                "B": "Oxygen affinity",
+                "C": "Oxygen saturation",
+                "D": "Oxygen binding coefficient"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 92,
+            "question": "What is the primary site of gas exchange in the lungs?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Trachea",
+                "B": "Bronchi",
+                "C": "Bronchioles",
+                "D": "Alveoli"
+            },
+            "answer": "D",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 96,
+            "question": "Which of the following is a consequence of respiratory alkalosis?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Decreased oxygen affinity of hemoglobin",
+                "B": "Increased oxygen affinity of hemoglobin",
+                "C": "Decreased red blood cell count",
+                "D": "Increased red blood cell count"
+            },
+            "answer": "B",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "question": "Hemoglobin shows maximum affinity for: (Exam form 884)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Carbon monoxide",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Carbon monoxide performs this role.",
+            "id": 100
+        },
+        {
+            "question": "Hemoglobin shows maximum affinity for: (Exam form 291)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "Carbon monoxide",
+                "B": "Neuron",
+                "C": "AV Node",
+                "D": "Lung"
+            },
+            "answer": "A",
+            "hint": "Zoology concept.",
+            "solution": "By definition, Carbon monoxide performs this role.",
+            "id": 104
+        }
+    ]
 }

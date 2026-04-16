@@ -1,0 +1,364 @@
+{
+    "questions": [
+        {
+            "question": "The rate constant of a reaction is 1.51 x 10^-3 s^-1 at 310 K and 5.42 x 10^-3 s^-1 at 321 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "96.12",
+                "B": "115.34",
+                "C": "76.9",
+                "D": "106.12"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(5.42/1.51) = (Ea/8.314) * (1/310 - 1/321). Solving gives 96.12 kJ/mol.",
+            "id": 4
+        },
+        {
+            "id": 8,
+            "question": "The catalyst used in H-V-Z reaction is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Ni",
+                "B": "Red Phosphorus",
+                "C": "Iron",
+                "D": "Sodium"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 12,
+            "question": "The time required for 99% completion of first order reaction is ______ times its half-life.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2",
+                "B": "6.64",
+                "C": "10",
+                "D": "3.32"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 16,
+            "question": "Which of the following is true for zero order reaction?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Rate is constant",
+                "B": "Half life depends on initial concentration",
+                "C": "Both A and B",
+                "D": "None"
+            },
+            "answer": "C",
+            "pyq": false
+        },
+        {
+            "id": 20,
+            "question": "The species formed between reactants and products which has short life and high energy is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Catalyst",
+                "B": "Activated complex",
+                "C": "Product",
+                "D": "Substrate"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 24,
+            "question": "Slope of plot [R] vs t for zero order is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "k",
+                "B": "-k",
+                "C": "Ea / R",
+                "D": "A"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "id": 28,
+            "question": "Collision frequency (Z) is ______ to temperature.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Directly proportional to √T",
+                "B": "Inversely proportional",
+                "C": "No relation",
+                "D": "Constant"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 32,
+            "question": "Integrated rate equation for n-th order? Replaced: k = [1 / (n-1)t] * [1/[R]^(n-1) - 1/[Ro]^(n-1)].",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 36,
+            "question": "Effect of pressure on rate of gaseous reaction? doubling P ______ rate for zero order.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Doubles",
+                "B": "Remains same",
+                "C": "Quadruples",
+                "D": "Halves"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "question": "The rate of a reaction doubled when temperature is increased from 27°C to 37°C. What is the activation energy? (R = 8.314 J/mol·K)",
+            "difficulty": "hard",
+            "pyq": true,
+            "options": {
+                "A": "52.89 kJ/mol",
+                "B": "62.32 kJ/mol",
+                "C": "53.6 kJ/mol",
+                "D": "48.2 kJ/mol"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 40,
+            "tag": "pyq"
+        },
+        {
+            "id": 44,
+            "question": "Initial concentration [Ro] = 1M, k = 0.01 s^-1 (1st order). t1/2 = ......?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "69.3 s",
+                "B": "100 s",
+                "C": "50 s",
+                "D": "0.693 s"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 48,
+            "question": "Ratio of rate constants at two different temperatures is called ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Temperature Coefficient",
+                "B": "Arrhenius factor",
+                "C": "Order",
+                "D": "Van't Hoff factor"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "For a zero order reaction, the plot of [A] vs time is a straight line with slope ______.",
+            "difficulty": "hard",
+            "options": {
+                "A": "-k",
+                "B": "+k",
+                "C": "1/k",
+                "D": "log k"
+            },
+            "answer": "A",
+            "id": 52,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "Inversion of cane sugar is a ______ reaction.",
+            "difficulty": "hard",
+            "options": {
+                "A": "Pseudo first order",
+                "B": "Second order",
+                "C": "Zero order",
+                "D": "Instantaneous"
+            },
+            "answer": "A",
+            "id": 56,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "The rate constant of a reaction is 1.23 x 10^-3 s^-1 at 309 K and 3.5 x 10^-3 s^-1 at 328 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "46.38",
+                "B": "55.66",
+                "C": "37.1",
+                "D": "56.38"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(3.5/1.23) = (Ea/8.314) * (1/309 - 1/328). Solving gives 46.38 kJ/mol.",
+            "id": 60
+        },
+        {
+            "question": "The rate constant of a reaction is 1.88 x 10^-3 s^-1 at 298 K and 5.2 x 10^-3 s^-1 at 315 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "46.71",
+                "B": "56.05",
+                "C": "37.37",
+                "D": "56.71"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(5.2/1.88) = (Ea/8.314) * (1/298 - 1/315). Solving gives 46.71 kJ/mol.",
+            "id": 64
+        },
+        {
+            "question": "The rate constant of a reaction is 2.36 x 10^-3 s^-1 at 306 K and 9.19 x 10^-3 s^-1 at 316 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "109.29",
+                "B": "131.15",
+                "C": "87.43",
+                "D": "119.29"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(9.19/2.36) = (Ea/8.314) * (1/306 - 1/316). Solving gives 109.29 kJ/mol.",
+            "id": 68
+        },
+        {
+            "question": "Friedel-Crafts alkylation of Benzene with Methyl chloride uses which catalyst?",
+            "difficulty": "hard",
+            "options": {
+                "A": "Anhydrous AlCl3",
+                "B": "Conc. H2SO4",
+                "C": "Pt",
+                "D": "Ni"
+            },
+            "answer": "A",
+            "id": 72,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "The rate constant of a reaction is 1.78 x 10^-3 s^-1 at 299 K and 6.99 x 10^-3 s^-1 at 318 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "56.91",
+                "B": "68.29",
+                "C": "45.53",
+                "D": "66.91"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(6.99/1.78) = (Ea/8.314) * (1/299 - 1/318). Solving gives 56.91 kJ/mol.",
+            "id": 76
+        },
+        {
+            "question": "The rate constant of a reaction is 2.23 x 10^-3 s^-1 at 301 K and 6.42 x 10^-3 s^-1 at 314 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "63.92",
+                "B": "76.7",
+                "C": "51.14",
+                "D": "73.92"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(6.42/2.23) = (Ea/8.314) * (1/301 - 1/314). Solving gives 63.92 kJ/mol.",
+            "id": 80
+        },
+        {
+            "question": "The rate constant of a reaction is 1.18 x 10^-3 s^-1 at 305 K and 3.59 x 10^-3 s^-1 at 323 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "50.63",
+                "B": "60.76",
+                "C": "40.5",
+                "D": "60.63"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(3.59/1.18) = (Ea/8.314) * (1/305 - 1/323). Solving gives 50.63 kJ/mol.",
+            "id": 84
+        },
+        {
+            "question": "The rate constant of a reaction is 1.76 x 10^-3 s^-1 at 306 K and 4.75 x 10^-3 s^-1 at 325 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "43.21",
+                "B": "51.85",
+                "C": "34.57",
+                "D": "53.21"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(4.75/1.76) = (Ea/8.314) * (1/306 - 1/325). Solving gives 43.21 kJ/mol.",
+            "id": 88
+        },
+        {
+            "question": "The rate constant of a reaction is 2.57 x 10^-3 s^-1 at 298 K and 8.76 x 10^-3 s^-1 at 310 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "78.49",
+                "B": "94.19",
+                "C": "62.79",
+                "D": "88.49"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(8.76/2.57) = (Ea/8.314) * (1/298 - 1/310). Solving gives 78.49 kJ/mol.",
+            "id": 92
+        },
+        {
+            "question": "The rate constant of a reaction is 2.67 x 10^-3 s^-1 at 304 K and 9.12 x 10^-3 s^-1 at 324 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "50.3",
+                "B": "60.36",
+                "C": "40.24",
+                "D": "60.3"
+            },
+            "answer": "A",
+            "hint": "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
+            "solution": "ln(9.12/2.67) = (Ea/8.314) * (1/304 - 1/324). Solving gives 50.3 kJ/mol.",
+            "id": 96
+        }
+    ]
+}

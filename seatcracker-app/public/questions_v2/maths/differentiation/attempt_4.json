@@ -1,390 +1,267 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  76,
-                          "question":  "If f(x) = (x−1)(x−2)(x−3), then f\u0027(x)=0 has roots in?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "(1,2) and (2,3)",
-                                          "B":  "(0,1) and (1,2)",
-                                          "C":  "(1,3) only",
-                                          "D":  "(2,3) only"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "If y = √(sin x + √(sin x + ...)), then dy/dx = ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "cos x / (2y - 1)",
-                                          "B":  "sin x / (2y - 1)",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  77
-                      },
-                      {
-                          "question":  "If y = cos⁻¹((1-x²)/(1+x²)), then dy/dx = ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "2 / (1 + x²)",
-                                          "B":  "-2 / (1 + x²)",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  78
-                      },
-                      {
-                          "question":  "If y = sin(mx), the second derivative d²y/dx² is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "-m² y",
-                                          "B":  "-m y",
-                                          "C":  "m² y",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  79
-                      },
-                      {
-                          "question":  "Leibniz formula is used for ______ derivative of product of two functions.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "nth",
-                                          "B":  "1st",
-                                          "C":  "2nd",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  80
-                      },
-                      {
-                          "id":  81,
-                          "question":  "Derivative of log₁₀(x) is?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "1/(x·ln 10)",
-                                          "B":  "ln x/x",
-                                          "C":  "1/x",
-                                          "D":  "log₁₀e/x"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "If y = log(sec x + tan x), then dy/dx = ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "sec x",
-                                          "B":  "tan x",
-                                          "C":  "sec x + tan x",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  82
-                      },
-                      {
-                          "id":  83,
-                          "question":  "Rolle\u0027s theorem condition not satisfied by f(x) = |x| on [−1,1] because?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "not differentiable at x=0",
-                                          "B":  "not continuous",
-                                          "C":  "f(−1)≠f(1)",
-                                          "D":  "f\u0027(c)≠0"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "The derivative of a^x is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "a^x log a",
-                                          "B":  "x a^{x-1}",
-                                          "C":  "a^x",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  84
-                      },
-                      {
-                          "question":  "The derivative of xⁿ is n x^{n-1} for ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "All real n",
-                                          "B":  "Only integers",
-                                          "C":  "Only positive n",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  85
-                      },
-                      {
-                          "question":  "The nth derivative of log(x+a) is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "(-1)^{n-1} (n-1)! / (x+a)ⁿ",
-                                          "B":  "None",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  86
-                      },
-                      {
-                          "question":  "Derivative of tan⁻¹ x is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "1 / (1 + x²)",
-                                          "B":  "1 / (1 - x²)",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  87
-                      },
-                      {
-                          "id":  88,
-                          "question":  "If f(x) = (x³ + 2x² + 3x + 4)¹⁰, then the value of f\u0027(0) is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "30 · 4⁹",
-                                          "B":  "10 · 4⁹",
-                                          "C":  "3 · 4⁹",
-                                          "D":  "0"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  89,
-                          "question":  "If y = tan⁻¹((√(1 + x²) + √(1 - x²)) / (√(1 + x²) - √(1 - x²))), then dy/dx is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "-x / √(1 - x⁴)",
-                                          "B":  "x / √(1 - x⁴)",
-                                          "C":  "1 / √(1 - x⁴)",
-                                          "D":  "-1 / (1 + x⁴)"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true
-                      },
-                      {
-                          "id":  90,
-                          "question":  "If x = a cos θ, y = a sin θ, then the second derivative d²y / dx² is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "-1 / (a sin³θ)",
-                                          "B":  "-1 / (a cos³θ)",
-                                          "C":  "1 / (a sin³θ)",
-                                          "D":  "0"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true
-                      },
-                      {
-                          "id":  91,
-                          "question":  "If y = e^x cos x, then y\u0027\u0027 - 2y\u0027 + 2y is equal to ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "0",
-                                          "B":  "e^x",
-                                          "C":  "-e^x sin x",
-                                          "D":  "2 cos x"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  92,
-                          "question":  "The derivative of cos⁻¹(4x³ - 3x) with respect to x is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "-3 / √(1 - x²)",
-                                          "B":  "3 / √(1 - x²)",
-                                          "C":  "-1 / √(1 - x²)",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true
-                      },
-                      {
-                          "id":  93,
-                          "question":  "If y = tan⁻¹((3x - x³) / (1 - 3x²)), then the derivative dy/dx is equal to ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "3 / (1 + x²)",
-                                          "B":  "1 / (1 + x²)",
-                                          "C":  "3x / (1 + x²)",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  94,
-                          "question":  "The derivative d/dx [sin⁻¹(x) / √(1 - x²)] is equal to ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "(1 + x sin⁻¹(x) / √(1 - x²)) / (1 - x²)",
-                                          "B":  "1 / (1 - x²)",
-                                          "C":  "sin⁻¹(x) / (1 - x²)",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  95,
-                          "question":  "If f(x) = log(tan(x/2)), then the value of f\u0027(x) is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "cosec x",
-                                          "B":  "sec x",
-                                          "C":  "tan x",
-                                          "D":  "log(sin x)"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true
-                      },
-                      {
-                          "id":  96,
-                          "question":  "If x^y = y^x, then the derivative dy/dx is equal to ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "y(y - x log y) / (x(x - y log x))",
-                                          "B":  "x(x - y log x) / (y(y - x log y))",
-                                          "C":  "y/x",
-                                          "D":  "log y / log x"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true
-                      },
-                      {
-                          "id":  97,
-                          "question":  "The derivative of sin⁻¹(x) with respect to cos⁻¹(√(1 - x²)) is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "1",
-                                          "B":  "-1",
-                                          "C":  "0",
-                                          "D":  "√(1 - x²)"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  98,
-                          "question":  "The derivative of sinh x is?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "cosh x",
-                                          "B":  "−cosh x",
-                                          "C":  "sech²x",
-                                          "D":  "sinh x"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  99,
-                          "question":  "The derivative of tanh⁻¹(x) for |x| \u003c 1 is d/dx[tanh⁻¹(x)] = ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "1 / (1 - x²)",
-                                          "B":  "1 / (x² - 1)",
-                                          "C":  "1 / (1 + x²)",
-                                          "D":  "1 / √(1 - x²)"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  100,
-                          "question":  "The derivative of sinh⁻¹(x) is d/dx[sinh⁻¹(x)] = ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "1 / √(x² + 1)",
-                                          "B":  "1 / √(x² - 1)",
-                                          "C":  "1 / (1 + x²)",
-                                          "D":  "1 / (x² - 1)"
-                                      },
-                          "answer":  "A"
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 4,
+            "question": "If f(x) = |x|, then f'(x) at x = -2 is",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "-1",
+                "B": "1",
+                "C": "0",
+                "D": "undefined"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "medium"
+        },
+        {
+            "id": 8,
+            "question": "If f(x) = (x^2 + 1) * (x - 1), then f'(x) at x = -1 is",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "-6",
+                "B": "6",
+                "C": "0",
+                "D": "2"
+            },
+            "answer": "B",
+            "pyq": false,
+            "tag": "medium"
+        },
+        {
+            "id": 12,
+            "question": "d/dx [x^(sin x)] = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x^(sin x)[cos x ln x + sin x/x]",
+                "B": "x^(sin x)·cos x",
+                "C": "sin x·x^(sin x−1)",
+                "D": "x^(sin x)·ln x"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 16,
+            "question": "Derivative of cosec⁻¹ x is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-1 / (|x|√(x² - 1))",
+                "B": "1 / (|x|√(x² - 1))",
+                "C": "-1/√(1-x²)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 20,
+            "question": "If y = e^(a sin⁻¹ x), then the value of (1 - x²)y₂ - xy₁ is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "a²y",
+                "B": "-a²y",
+                "C": "0",
+                "D": "y"
+            },
+            "answer": "A",
+            "pyq": true
+        },
+        {
+            "id": 24,
+            "question": "The derivative of tan⁻¹( (1+x)/(1-x) ) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1 / (1 + x²)",
+                "B": "2 / (1 + x²)",
+                "C": "1 / (1 - x²)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 28,
+            "question": "If y = xⁿ, then the nth derivative dⁿy/dxⁿ is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "n!",
+                "B": "n",
+                "C": "0",
+                "D": "x"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 32,
+            "question": "Derivative of sin x with respect to cos x is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "−cot x",
+                "B": "cot x",
+                "C": "tan x",
+                "D": "−tan x"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 36,
+            "question": "The derivative of tan⁻¹(x / √(1 - x²)) with respect to sin⁻¹ x is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "0",
+                "C": "x",
+                "D": "1 / √(1 - x²)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Leibniz formula is used for ______ derivative of product of two functions.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "nth",
+                "B": "1st",
+                "C": "2nd",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 40
+        },
+        {
+            "question": "The derivative of xⁿ is n x^{n-1} for ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "All real n",
+                "B": "Only integers",
+                "C": "Only positive n",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 44
+        },
+        {
+            "id": 48,
+            "question": "If x = a cos θ, y = a sin θ, then the second derivative d²y / dx² is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-1 / (a sin³θ)",
+                "B": "-1 / (a cos³θ)",
+                "C": "1 / (a sin³θ)",
+                "D": "0"
+            },
+            "answer": "A",
+            "pyq": true
+        },
+        {
+            "id": 52,
+            "question": "The derivative of sin⁻¹(x) with respect to cos⁻¹(√(1 - x²)) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "-1",
+                "C": "0",
+                "D": "√(1 - x²)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 56,
+            "question": "The derivative of cosh⁻¹(x) for x > 1 is d/dx[cosh⁻¹(x)] = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1 / √(x² - 1)",
+                "B": "1 / √(x² + 1)",
+                "C": "1 / (x² - 1)",
+                "D": "-1 / √(x² - 1)"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "The second derivative test for local minimum states that ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "f'(c)=0 and f''(c)>0",
+                "B": "f'(c)=0 and f''(c)<0",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 60
+        },
+        {
+            "question": "The derivative of a constant is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "0",
+                "B": "1",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 64
+        },
+        {
+            "question": "Second derivative of sin x is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "-sin x",
+                "B": "cos x",
+                "C": "-cos x",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 68
+        }
+    ]
 }

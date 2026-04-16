@@ -1,79 +1,184 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "Solubility of gases in liquids ______ with increase in pressure.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Increases",
-                                          "B":  "Decreases",
-                                          "C":  "Stays constant",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "id":  26,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Semi-permeable membrane allows only ______ molecules to pass through.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Solvent",
-                                          "B":  "Solute",
-                                          "C":  "Both",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "id":  27,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Elevation of boiling point ΔTb = ______.",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Kb . m",
-                                          "B":  "Kf . m",
-                                          "C":  "i Kb m",
-                                          "D":  "Both A and C"
-                                      },
-                          "answer":  "D",
-                          "id":  28,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "For common salt in water, i =",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "2",
-                                          "B":  "1",
-                                          "C":  "3",
-                                          "D":  "0"
-                                      },
-                          "answer":  "A",
-                          "id":  29,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      },
-                      {
-                          "question":  "Which of the following properties is not a colligative property?",
-                          "difficulty":  "hard",
-                          "options":  {
-                                          "A":  "Vapor pressure (only lowering is colligative)",
-                                          "B":  "Elevation in BP",
-                                          "C":  "Osmotic pressure",
-                                          "D":  "Depression in FP"
-                                      },
-                          "answer":  "A",
-                          "id":  30,
-                          "pyq":  false,
-                          "hasDiagram":  false,
-                          "diagram_description":  ""
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "Which of the following pairs of liquids is completely miscible?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "Water and chloroform",
+                "B": "Water and ether",
+                "C": "Ethanol and water",
+                "D": "Benzene and water"
+            },
+            "answer": "C",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 2,
+            "tag": "pyq"
+        },
+        {
+            "id": 6,
+            "question": "Which concentration term changes with temperature?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Molarity",
+                "B": "Mole fraction",
+                "C": "Mass percentage",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 10,
+            "question": "Boiling point of a solution containing non-volatile solute is ______ than pure solvent.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Higher",
+                "B": "Lower",
+                "C": "Equal",
+                "D": "Zero"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 14,
+            "question": "Non-ideal solutions with large negative deviation form ______ azeotrope.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Maximum boiling",
+                "B": "Minimum boiling",
+                "C": "No",
+                "D": "Gaseous"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 18,
+            "question": "Isotonic solutions have same ______ concentration.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Molar",
+                "B": "Mass",
+                "C": "Percentage",
+                "D": "Valency"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 22,
+            "question": "Scuba divers use He-O2-N2 mixture to avoid ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Bends (Nitrogen toxicity)",
+                "B": "Drowning",
+                "C": "Pressure rise",
+                "D": "Cold"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 26,
+            "question": "Ideal solution: A-B interactions = (A-A + B-B) average.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Which of the following electrolyte solutions will have the lowest freezing point?",
+            "difficulty": "hard",
+            "pyq": true,
+            "options": {
+                "A": "0.1 M NaCl",
+                "B": "0.1 M BaCl2",
+                "C": "0.1 M AlCl3",
+                "D": "0.1 M Glucose"
+            },
+            "answer": "C",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 30,
+            "tag": "pyq"
+        },
+        {
+            "question": "Henry's Law constant KH ______ with increase in temperature.",
+            "difficulty": "hard",
+            "options": {
+                "A": "Increases",
+                "B": "Decreases",
+                "C": "Stays constant",
+                "D": "Zeros"
+            },
+            "answer": "A",
+            "id": 34,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "According to Raoult's law, VP of solution P = ______.",
+            "difficulty": "hard",
+            "options": {
+                "A": "P0 . X_solvent",
+                "B": "P0 . X_solute",
+                "C": "P0 / X",
+                "D": "P0 + X"
+            },
+            "answer": "A",
+            "id": 38,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "id": 42,
+            "question": "The boiling point of a liquid is the temperature at which its vapor pressure equals ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Zero",
+                "B": "External (Atmospheric) pressure",
+                "C": "Critical pressure",
+                "D": "100 Pa"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 46,
+            "question": "The molarity of pure water is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1 M",
+                "B": "55.5 M",
+                "C": "18 M",
+                "D": "100 M"
+            },
+            "answer": "B"
+        }
+    ]
 }

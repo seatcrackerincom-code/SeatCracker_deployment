@@ -1,387 +1,437 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  1,
-                          "question":  "An equation Mdx + Ndy = 0 is Exact if ∂M/∂y is equal to ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "∂N/∂x",
-                                          "B":  "-∂N/∂x",
-                                          "C":  "∂M/∂x",
-                                          "D":  "N"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  2,
-                          "question":  "If (∂M/∂y - ∂N/∂x)/N = f(x), then integrating factor is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "e^(∫f(x) dx)",
-                                          "B":  "e^(∫f(y) dy)",
-                                          "C":  "f(x)",
-                                          "D":  "∫M dx"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  3,
-                          "question":  "The solution of an exact differential equation Mdx + Ndy = 0 involves ∫M dx (treating y as constant).",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "Only if integrable",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  4,
-                          "question":  "The order of differential equation whose general solution has \u0027n\u0027 arbitrary constants is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "n",
-                                          "B":  "n+1",
-                                          "C":  "n-1",
-                                          "D":  "2n"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  5,
-                          "question":  "Newton\u0027s Law of Cooling is a linear first order equation.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  6,
-                          "question":  "Equation (x²-yx²)dy + (y²+xy²)dx = 0 is variable separable.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  7,
-                          "question":  "The differential equation d²y/dx² = 0 represents ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Straight lines",
-                                          "B":  "Circles",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  8,
-                          "question":  "Family of curves x² + y² = 2ax. Differential equation is?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "(x²−y²)dy/dx = 2xy",
-                                          "B":  "(x²+y²)dy/dx = 2xy",
-                                          "C":  "x·dy/dx = y + √(x²+y²)",
-                                          "D":  "y·dy/dx = x²+y²"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  9,
-                          "question":  "The equation of curve passing through (1,1) with slope = y/x + x²/y² is?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "y = x·e^((x³−1)/3)",
-                                          "B":  "y = e^(x−1)",
-                                          "C":  "y = x + ln x",
-                                          "D":  "y²=x²+ln x"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  10,
-                          "question":  "Logistic growth model is non-linear.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  11,
-                          "question":  "Differential equation of y² = 4ax is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "y = 2xy\u0027",
-                                          "B":  "y = xy\u0027",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  12,
-                          "question":  "Function f(x,y) is homogeneous if f(λx, λy) = λⁿ f(x,y).",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  13,
-                          "question":  "Solution of (x²−y²)dx + 2xy·dy = 0 is?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "x² + y² = cx",
-                                          "B":  "x² − y² = cx",
-                                          "C":  "y² = cx − x²",
-                                          "D":  "x(x²+y²) = c"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  14,
-                          "question":  "(1+yÂ²)dx = (tanâ»Â¹y âˆ’ x)dy. Integrating factor is?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "e^(tanâ»Â¹y)",
-                                          "B":  "tanâ»Â¹y",
-                                          "C":  "e^y",
-                                          "D":  "1/(1+yÂ²)"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  15,
-                          "question":  "Solution of xÂ·sin(y/x)Â·dy = (yÂ·sin(y/x)âˆ’x)dx is?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "cos(y/x) = ln|x| + c",
-                                          "B":  "sin(y/x) = ln|x| + c",
-                                          "C":  "cos(y/x) + ln|x| = c",
-                                          "D":  "y/x = e^(câˆ’ln x)"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  16,
-                          "question":  "The envelope represents a singular solution.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  17,
-                          "question":  "Clairaut\u0027s form solution is y = cx + f(c).",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  18,
-                          "question":  "The equation y dx - x dy + ln x dx = 0 is exact after divide by x.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  19,
-                          "question":  "Expression x dx + y dy is (1/2) d(xÂ² + yÂ²).",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  20,
-                          "question":  "Can Singular solutions be obtained from general solutions?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "No",
-                                          "B":  "Yes",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  21,
-                          "question":  "Expression (x dy - y dx) / xÂ² is d(y/x).",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  22,
-                          "question":  "Degree of differential equation for ellipses with center at origin is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "1",
-                                          "B":  "2",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  23,
-                          "question":  "The differential equation of y = ae^(3x) + be^(−2x) is?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "d²y/dx² − dy/dx − 6y = 0",
-                                          "B":  "d²y/dx² + dy/dx − 6y = 0",
-                                          "C":  "d²y/dx² − 5dy/dx + 6y = 0",
-                                          "D":  "d²y/dx² + 5dy/dx + 6y = 0"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "The general solution of d²y/dx² + y = 0 is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "y = A cos x + B sin x",
-                                          "B":  "y = e^x",
-                                          "C":  "y = x",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  24
-                      },
-                      {
-                          "id":  25,
-                          "question":  "The equation (2xy − y²)dx + (2xy − x²)dy = 0 is exact if?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "always exact",
-                                          "B":  "never exact",
-                                          "C":  "exact only when y = x",
-                                          "D":  "exact with IF = 1/(xy)²"
-                                      },
-                          "answer":  "B",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "What is the degree of (x+1)⁵ - (x-1)⁵?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "4",
+                "B": "5",
+                "C": "6",
+                "D": "3"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "Bernoulli's equation dy/dx + Py = Qyⁿ is solved by substituting ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "y^(1-n) = v",
+                "B": "y^n = v",
+                "C": "x = v",
+                "D": "log y = v"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 9,
+            "question": "The solution of an exact differential equation Mdx + Ndy = 0 involves ∫M dx (treating y as constant).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "Only if integrable",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 13,
+            "question": "Order and degree of (d²y/dx²)³ + (dy/dx)² + y = 0 is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(2, 3)",
+                "B": "(3, 2)",
+                "C": "(2, 2)",
+                "D": "(3, 3)"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 17,
+            "question": "dy/dx + y·tan x = sec x has solution?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "y·sec x = tan x + c",
+                "B": "y·cos x = sin x + c",
+                "C": "y = sin x + c·cos x",
+                "D": "y·tan x = sec x + c"
+            },
+            "answer": "C",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 21,
+            "question": "The general solution of dy/dx = (y/x)² is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x/y = -ln|x| + C",
+                "B": "y/x = ln|x| + C",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 25,
+            "question": "To find orthogonal trajectories, we replace dy/dx with ______ in the DE.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-dx/dy",
+                "B": "dx/dy",
+                "C": "-dy/dx",
+                "D": "1/(dy/dx)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 29,
+            "question": "The integrating factor of x log x (dy/dx) + y = 2/x is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "log x",
+                "B": "x",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 33,
+            "question": "Find IF of dy/dx + y/ (x ln x) = 1/x.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "ln x",
+                "B": "x",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 37,
+            "question": "d²y/dx² − 5dy/dx + 6y = 0. General solution is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "y = c₁e^(2x) + c₂e^(3x)",
+                "B": "y = c₁e^(5x) + c₂e^(6x)",
+                "C": "y = e^x(c₁ + c₂x)",
+                "D": "y = c₁e^(−2x) + c₂e^(−3x)"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 41,
+            "question": "dy/dx = (x−y)/(x+y) is a ______ equation?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "homogeneous",
+                "B": "linear",
+                "C": "Bernoulli",
+                "D": "exact"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "Substitution for homogeneous equation dy/dx = f(y/x) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "y = vx",
+                "B": "x = vy",
+                "C": "y = v+x",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 45
+        },
+        {
+            "id": 49,
+            "question": "The particular solution of dy/dx + 2y = 4x, y(0)=1 is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2x − 1 + 2e^(−2x)",
+                "B": "2x + 1 − 2e^(−2x)",
+                "C": "2x − 1 + e^(−2x)",
+                "D": "2x − 1 + 2e^(2x)"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 53,
+            "question": "Solution of (dy/dx)² = x is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "y = ±(2/3)x^(3/2) + C",
+                "B": "y = x²",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 57,
+            "question": "If y = (x + 1) / (x - 1), then dy/dx at x = 0 is",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "-1",
+                "B": "1",
+                "C": "-1/2",
+                "D": "1/2"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "medium"
+        },
+        {
+            "id": 61,
+            "question": "If y = e^(x^2), then dy/dx is",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "2xe^(x^2)",
+                "B": "e^(x^2)",
+                "C": "2e^(x^2)",
+                "D": "x^2 * e^(x^2)"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "medium"
+        },
+        {
+            "id": 65,
+            "question": "If y = tan⁻¹[(√(1+x²)−1)/x], then dy/dx = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1/[2(1+x²)]",
+                "B": "1/(1+x²)",
+                "C": "x/(1+x²)",
+                "D": "1/[x·√(1+x²)]"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 69,
+            "question": "If sin y = x sin(a + y), then dy/dx is equal to ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "sin²(a + y) / sin a",
+                "B": "sin a / sin²(a + y)",
+                "C": "sin(a + y) / sin a",
+                "D": "sin²(a - y) / sin a"
+            },
+            "answer": "A",
+            "pyq": true
+        },
+        {
+            "id": 73,
+            "question": "If x = a cos³t, y = a sin³t, then dy/dx at t=π/4 is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-1",
+                "B": "1",
+                "C": "0",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 77,
+            "question": "If y = tan x + sec x, then dy/dx is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "sec x (sec x + tan x)",
+                "B": "sec²x",
+                "C": "tan²x",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 81,
+            "question": "If x^y * y^x = 1, then the derivative dy/dx is equal to ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-(y/x)((x log y + y) / (y log x + x))",
+                "B": "-(x/y)((y log x + x) / (x log y + y))",
+                "C": "(y/x)((x log y - y) / (y log x - x))",
+                "D": "1"
+            },
+            "answer": "A",
+            "pyq": true
+        },
+        {
+            "question": "If y = log(sec x + tan x), then dy/dx = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "sec x",
+                "B": "tan x",
+                "C": "sec x + tan x",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 85
+        },
+        {
+            "id": 89,
+            "question": "To translate axes to remove first-degree terms (x and y) from ax² + 2hxy + by² + 2gx + 2fy + c = 0, the origin must be shifted to the ______ of the conic.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Center",
+                "B": "Focus",
+                "C": "Vertex",
+                "D": "Directrix"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 93,
+            "question": "If A is a square matrix of order n, then |kA| = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "kⁿ |A|",
+                "B": "k |A|",
+                "C": "nᵏ |A|",
+                "D": "k² |A|"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 97,
+            "question": "If |A| = k and n is order, then |adj A| = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "kⁿ⁻¹",
+                "B": "kⁿ",
+                "C": "k",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "If A is a skew-symmetric matrix of odd order, then |A| = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "0",
+                "B": "1",
+                "C": "-1",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 101
+        },
+        {
+            "id": 105,
+            "question": "If degree of numerator ≥ degree of denominator, first step is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "polynomial long division",
+                "B": "direct partial fraction",
+                "C": "multiply numerator and denominator",
+                "D": "factor numerator"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "A polynomial equation of degree n has exactly ______ roots in C.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "n",
+                "B": "n-1",
+                "C": "n+1",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 109
+        }
+    ]
 }

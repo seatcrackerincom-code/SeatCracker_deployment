@@ -1,361 +1,88 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "The rate constant of a reaction is 1.65 x 10^-3 s^-1 at 299 K and 6.15 x 10^-3 s^-1 at 313 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "73.12",
-                                          "B":  "87.74",
-                                          "C":  "58.5",
-                                          "D":  "83.12"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(6.15/1.65) = (Ea/8.314) * (1/299 - 1/313). Solving gives 73.12 kJ/mol.",
-                          "id":  1
-                      },
-                      {
-                          "id":  2,
-                          "question":  "Stephen reaction involves the reduction of ______ to aldehydes.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Esters",
-                                          "B":  "Nitriles (Cyanides)",
-                                          "C":  "Acids",
-                                          "D":  "Amides"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 48°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "2-bromo-2-methylbutane",
-                                          "B":  "2-bromobutane",
-                                          "C":  "1-bromo-2-methylbutane",
-                                          "D":  "1-bromobutane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  3
-                      },
-                      {
-                          "id":  4,
-                          "question":  "Ozonolysis of alkenes followed by reduction with Zn/H2O gives ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Alcohols only",
-                                          "B":  "Aldehydes and Ketones",
-                                          "C":  "Acids",
-                                          "D":  "Alkanes"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  5,
-                          "question":  "The characteristic reaction of carbonyl compounds is ______ addition.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Electrophilic",
-                                          "B":  "Nucleophilic",
-                                          "C":  "Free radical",
-                                          "D":  "Elimination"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "29 g of a non-volatile solute (molar mass = 342 g/mol) is dissolved in 500 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.00304",
-                                          "B":  "0.00608",
-                                          "C":  "0.00152",
-                                          "D":  "0.00456"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 29/342 = 0.085. Moles water = 500/18 = 27.78. Mole fraction = 0.00304.",
-                          "id":  6
-                      },
-                      {
-                          "id":  7,
-                          "question":  "Aldehydes are generally ______ reactive than ketones towards nucleophilic addiction.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Less",
-                                          "B":  "More",
-                                          "C":  "Equally",
-                                          "D":  "Not"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  8,
-                          "question":  "Reaction of an aldehyde with an alcohol in presence of dry HCl gives an ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Acetal",
-                                          "B":  "Hemiacetal / Acetal",
-                                          "C":  "Ether",
-                                          "D":  "Ester"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 38°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "2-bromo-2-methylbutane",
-                                          "B":  "2-bromobutane",
-                                          "C":  "1-bromo-2-methylbutane",
-                                          "D":  "1-bromobutane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  9
-                      },
-                      {
-                          "id":  10,
-                          "question":  "Clemmensen reduction uses ______ to reduce carbonyl to CH2.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "NH2-NH2 / KOH",
-                                          "B":  "Zn-Hg / conc. HCl",
-                                          "C":  "LiAlH4",
-                                          "D":  "NaBH4"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  11,
-                          "question":  "Wolff-Kishner reduction uses ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Zn-Hg / HCl",
-                                          "B":  "Hydrazine (NH2NH2) and KOH in ethylene glycol",
-                                          "C":  "H2 / Ni",
-                                          "D":  "Na / Ethanol"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  12,
-                          "question":  "Haloform reaction (Iodoform test) is given by compounds with ______ group.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "-CHO",
-                                          "B":  "Methyl ketone (CH3CO-)",
-                                          "C":  "-OH",
-                                          "D":  "-OR"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 1.63 x 10^-3 s^-1 at 305 K and 4.61 x 10^-3 s^-1 at 317 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "69.64",
-                                          "B":  "83.57",
-                                          "C":  "55.71",
-                                          "D":  "79.64"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(4.61/1.63) = (Ea/8.314) * (1/305 - 1/317). Solving gives 69.64 kJ/mol.",
-                          "id":  13
-                      },
-                      {
-                          "id":  14,
-                          "question":  "Cannizzaro reaction is shown by aldehydes which ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Have alpha-H",
-                                          "B":  "Do not have alpha-Hydrogen",
-                                          "C":  "Are liquid",
-                                          "D":  "Are acidic"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  15,
-                          "question":  "Which compound gives iodoform test?",
-                          "options":  {
-                                          "A":  "Methanal",
-                                          "B":  "Propan-1-ol",
-                                          "C":  "Ethanal",
-                                          "D":  "Pentanone"
-                                      },
-                          "answer":  "C",
-                          "difficulty":  "medium"
-                      },
-                      {
-                          "question":  "Which test is used to distinguish between acetaldehyde and acetone?",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "Fehling\u0027s test (aldehyde positive, ketone negative)",
-                                          "B":  "2,4-DNP test",
-                                          "C":  "Tollens\u0027 test only",
-                                          "D":  "Both A and C (Fehling\u0027s + Tollens\u0027)"
-                                      },
-                          "answer":  "D",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  16,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  17,
-                          "question":  "Benzaldehyde on Cannizzaro reaction gives ______ and ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Benzene, Water",
-                                          "B":  "Benzyl alcohol, Sodium benzoate",
-                                          "C":  "Benzoic acid, Phenol",
-                                          "D":  "Toluene, Aniline"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  18,
-                          "question":  "Which set of reagents can convert Acetone to Propan-2-ol?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "KMnO4",
-                                          "B":  "NaBH4 or LiAlH4",
-                                          "C":  "Zn / HCl",
-                                          "D":  "Soda lime"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  19,
-                          "question":  "Schiff\u0027s reagent is restored to pink/magenta color by ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Ketones",
-                                          "B":  "Aldehydes",
-                                          "C":  "Ethane",
-                                          "D":  "Acids"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  20,
-                          "question":  "Bakelite is formed by the reaction of Phenol and ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Acetone",
-                                          "B":  "Formaldehyde",
-                                          "C":  "Benzaldehyde",
-                                          "D":  "Ethanal"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 2.1 x 10^-3 s^-1 at 299 K and 7.49 x 10^-3 s^-1 at 311 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "81.93",
-                                          "B":  "98.32",
-                                          "C":  "65.54",
-                                          "D":  "91.93"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(7.49/2.1) = (Ea/8.314) * (1/299 - 1/311). Solving gives 81.93 kJ/mol.",
-                          "id":  21
-                      },
-                      {
-                          "id":  22,
-                          "question":  "Ketones on reaction with Grignard reagent followed by hydrolysis give ______ alcohols.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Primary",
-                                          "B":  "Tertiary",
-                                          "C":  "Secondary",
-                                          "D":  "None"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  23,
-                          "question":  "Paraldehyde is a trimer of ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Formaldehyde",
-                                          "B":  "Acetaldehyde",
-                                          "C":  "Acetone",
-                                          "D":  "Benzaldehyde"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "49 g of a non-volatile solute (molar mass = 122 g/mol) is dissolved in 250 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.02811",
-                                          "B":  "0.05622",
-                                          "C":  "0.01405",
-                                          "D":  "0.04217"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 49/122 = 0.402. Moles water = 250/18 = 13.89. Mole fraction = 0.02811.",
-                          "id":  24
-                      },
-                      {
-                          "id":  25,
-                          "question":  "Which of these will not give Iodoform test?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Acetone",
-                                          "B":  "Benzaldehyde",
-                                          "C":  "Acetaldehyde",
-                                          "D":  "Ethanol"
-                                      },
-                          "answer":  "B"
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Reaction of an aldehyde with an alcohol in presence of dry HCl gives an ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Acetal",
+                "B": "Hemiacetal / Acetal",
+                "C": "Ether",
+                "D": "Ester"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 5,
+            "question": "Cannizzaro reaction is shown by aldehydes which ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Have alpha-H",
+                "B": "Do not have alpha-Hydrogen",
+                "C": "Are liquid",
+                "D": "Are acidic"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 9,
+            "question": "Which set of reagents can convert Acetone to Propan-2-ol?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "KMnO4",
+                "B": "NaBH4 or LiAlH4",
+                "C": "Zn / HCl",
+                "D": "Soda lime"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 13,
+            "question": "Ketones can't be oxidized by Tollen's reagent because they lack ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Carbonyl group",
+                "B": "Hydrogen atom attached to carbonyl carbon",
+                "C": "Alkyl groups",
+                "D": "Double bond"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 17,
+            "question": "Aldol condensation product on heating undergoes ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Hydration",
+                "B": "Dehydration (to form alpha,beta-unsaturated carbonyl)",
+                "C": "Oxidation",
+                "D": "Reduction"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 21,
+            "question": "Fehling's solution A is aqueous ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Sodium hydroxide",
+                "B": "Copper sulfate",
+                "C": "Silver nitrate",
+                "D": "Sulfuric acid"
+            },
+            "answer": "B"
+        }
+    ]
 }

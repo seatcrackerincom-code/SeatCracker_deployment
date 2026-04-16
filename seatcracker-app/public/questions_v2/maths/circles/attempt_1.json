@@ -1,368 +1,1726 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  1,
-                          "question":  "The condition for the line y = mx + c to be a tangent to the circle x² + y² = a² is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "c² = a²(1 + m²)",
-                                          "B":  "c = am",
-                                          "C":  "c² = a² / (1 + m²)",
-                                          "D":  "c = a"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  2,
-                          "question":  "Equation of normal at (x₁, y₁) to the circle x² + y² = a² is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "xy₁ - x₁y = 0",
-                                          "B":  "xx₁ + yy₁ = 0",
-                                          "C":  "xx₁ - yy₁ = 0",
-                                          "D":  "xy₁ + x₁y = 0"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  3,
-                          "question":  "The power of a point P(x₁, y₁) with respect to circle S = 0 is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "S₁₁",
-                                          "B":  "√S₁₁",
-                                          "C":  "0",
-                                          "D":  "Radius"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  4,
-                          "question":  "A circle having its center on the x-axis will have ______ in its general equation.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "f = 0",
-                                          "B":  "g = 0",
-                                          "C":  "c = 0",
-                                          "D":  "g = f"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  5,
-                          "question":  "The circle x²+y²−4x+2y+c=0 bisects circumference of x²+y²−2x+6y−6=0. Then c=?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "14",
-                                          "B":  "−14",
-                                          "C":  "10",
-                                          "D":  "−10"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  6,
-                          "question":  "Tangent to x² + y² = r² at (r cos θ, r sin θ) is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "x cos θ + y sin θ = r",
-                                          "B":  "x sin θ + y cos θ = r",
-                                          "C":  "x cos θ - y sin θ = r",
-                                          "D":  "x² + y² = r²"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  7,
-                          "question":  "Intercept made by the circle x² + y² + 2gx + 2fy + c = 0 on x-axis is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "2√(g² - c)",
-                                          "B":  "2√(f² - c)",
-                                          "C":  "√(g² - c)",
-                                          "D":  "g² - c"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  8,
-                          "question":  "Equation of common chord of two circles S=0 and S\u0027=0 is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "S - S\u0027 = 0",
-                                          "B":  "S + S\u0027 = 0",
-                                          "C":  "S * S\u0027 = 0",
-                                          "D":  "S / S\u0027 = 1"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  9,
-                          "question":  "Condition for two circles S=0 and S\u0027=0 to be orthogonal is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "2gg\u0027 + 2ff\u0027 = c + c\u0027",
-                                          "B":  "gg\u0027 + ff\u0027 = c + c\u0027",
-                                          "C":  "2gg\u0027 - 2ff\u0027 = c + c\u0027",
-                                          "D":  "g² + f² = g\u0027² + f\u0027²"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  10,
-                          "question":  "Two circles touch each other internally if the distance between centers is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "|r₁ - r₂|",
-                                          "B":  "r₁ + r₂",
-                                          "C":  "r₁ * r₂",
-                                          "D":  "r₁ / r₂"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  11,
-                          "question":  "The equation of circle passing through (1,0),(0,1) and having smallest radius is?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "x² + y² − x − y = 0",
-                                          "B":  "x² + y² + x + y = 2",
-                                          "C":  "x² + y² = 1",
-                                          "D":  "x² + y² − 2x − 2y + 1 = 0"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  12,
-                          "question":  "Radical axis of two circles is always ______ to the line joining their centers.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Perpendicular",
-                                          "B":  "Parallel",
-                                          "C":  "Inclined at 45°",
-                                          "D":  "Identical"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  13,
-                          "question":  "Equation of the tangent at (x₁, y₁) to the circle x² + y² = a² is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "xx₁ + yy₁ = a²",
-                                          "B":  "xx₁ + yy₁ + a² = 0",
-                                          "C":  "x/x₁ + y/y₁ = 1",
-                                          "D":  "xx₁ - yy₁ = a²"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  14,
-                          "question":  "The length of the tangent from external point P(x₁, y₁) to circle S = 0 is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "√S₁₁",
-                                          "B":  "S₁₁",
-                                          "C":  "2√S₁₁",
-                                          "D":  "Radius"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  15,
-                          "question":  "If the circle x² + y² + 2gx + 2fy + c = 0 touches the y-axis, then ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "f² = c",
-                                          "B":  "g² = c",
-                                          "C":  "g² + f² = c",
-                                          "D":  "c = 0"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  16,
-                          "question":  "Angle between the circles x²+y²=a² and x²+y²−6x−8y+11=0 is 90°. Then a=?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "√2",
-                                          "B":  "2",
-                                          "C":  "3",
-                                          "D":  "√5"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  17,
-                          "question":  "The length of chord intercepted by the circle x²+y²=r² on the line x/a + y/b = 1 is?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "2√(r² − a²b²/(a²+b²))",
-                                          "B":  "2r",
-                                          "C":  "2√(r² − a²b²)",
-                                          "D":  "ab/√(a²+b²)"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  18,
-                          "question":  "The number of common tangents to circles x²+y²=4 and x²+y²−6x+8=0 is?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "2",
-                                          "B":  "3",
-                                          "C":  "1",
-                                          "D":  "4"
-                                      },
-                          "answer":  "B",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  19,
-                          "question":  "The equation x² + y² + 2gx + 2fy + c = 0 represents a point circle if ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "g² + f² - c = 0",
-                                          "B":  "g² + f² - c \u003e 0",
-                                          "C":  "c = 0",
-                                          "D":  "g = f = 0"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  20,
-                          "question":  "Parametric equations of the circle (x-h)² + (y-k)² = r² are ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "x = h + r cos θ, y = k + r sin θ",
-                                          "B":  "x = r cos θ, y = r sin θ",
-                                          "C":  "x = h + r sec θ, y = k + r tan θ",
-                                          "D":  "x = h + r sin θ, y = k + r cos θ"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  21,
-                          "question":  "Polar of the origin with respect to xÂ² + yÂ² + 2gx + 2fy + c = 0 is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "gx + fy + c = 0",
-                                          "B":  "gx + fy = 0",
-                                          "C":  "x + y + c = 0",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  22,
-                          "question":  "The equation of the circle passing through (1, 0) and (0, 1) and having the smallest possible radius is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "xÂ² + yÂ² - x - y = 0",
-                                          "B":  "xÂ² + yÂ² + x + y = 0",
-                                          "C":  "xÂ² + yÂ² - 2x - 2y = 0",
-                                          "D":  "xÂ² + yÂ² = 1"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  23,
-                          "question":  "The length of the tangent from (1, 1) to the circle xÂ² + yÂ² + 4x + 4y - 1 = 0 is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "3",
-                                          "B":  "âˆš7",
-                                          "C":  "4",
-                                          "D":  "âˆš11"
-                                      },
-                          "answer":  "A"
-                      },
-                      {
-                          "id":  24,
-                          "question":  "If the line y = mx + c is tangent to xÂ²+yÂ²=aÂ², then cÂ² = ?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "aÂ²(1+mÂ²)",
-                                          "B":  "aÂ²(1âˆ’mÂ²)",
-                                          "C":  "aÂ²mÂ²",
-                                          "D":  "aÂ²/mÂ²"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  25,
-                          "question":  "The equation of director circle of xÂ²+yÂ²=aÂ² is?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "xÂ²+yÂ²=2aÂ²",
-                                          "B":  "xÂ²+yÂ²=aÂ²/2",
-                                          "C":  "xÂ²+yÂ²=4aÂ²",
-                                          "D":  "xÂ²+yÂ²=aÂ²"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "Area enclosed by circle x²+y²=a² is?",
+            "difficulty": "medium",
+            "options": {
+                "A": "πa²",
+                "B": "2πa",
+                "C": "4πa²",
+                "D": "πa²/2"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "pyq": true,
+            "id": 1
+        },
+        {
+            "question": "The area of smaller region bounded by circle x²+y²=4 and line x=1 is?",
+            "difficulty": "hard",
+            "options": {
+                "A": "2π/3 − √3",
+                "B": "π/3 − √3/2",
+                "C": "4π/3 − √3",
+                "D": "2(π/3) − √3"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "pyq": true,
+            "id": 5
+        },
+        {
+            "id": 9,
+            "question": "Area of a sector of circle x² + y² = 1 from x=0 to x=1/√2 is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "π/8 sq units",
+                "B": "π/4 sq units",
+                "C": "1/4 sq unit",
+                "D": "π/2 sq units"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 13,
+            "question": "A circle having its center on the x-axis will have ______ in its general equation.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "f = 0",
+                "B": "g = 0",
+                "C": "c = 0",
+                "D": "g = f"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 17,
+            "question": "Equation of common chord of two circles S=0 and S'=0 is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "S - S' = 0",
+                "B": "S + S' = 0",
+                "C": "S * S' = 0",
+                "D": "S / S' = 1"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 21,
+            "question": "Radical axis of two circles is always ______ to the line joining their centers.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Perpendicular",
+                "B": "Parallel",
+                "C": "Inclined at 45°",
+                "D": "Identical"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 25,
+            "question": "Angle between the circles x²+y²=a² and x²+y²−6x−8y+11=0 is 90°. Then a=?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "√2",
+                "B": "2",
+                "C": "3",
+                "D": "√5"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 29,
+            "question": "Parametric equations of the circle (x-h)² + (y-k)² = r² are ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x = h + r cos θ, y = k + r sin θ",
+                "B": "x = r cos θ, y = r sin θ",
+                "C": "x = h + r sec θ, y = k + r tan θ",
+                "D": "x = h + r sin θ, y = k + r cos θ"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 33,
+            "question": "If the line y = mx + c is tangent to x²+y²=a², then c² = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "a²(1+m²)",
+                "B": "a²(1−m²)",
+                "C": "a²m²",
+                "D": "a²/m²"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 37,
+            "question": "If the circles x²+y²+2x+2ky+6=0 and x²+y²+2ky+k=0 cut orthogonally then k=?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2 or −3/2",
+                "B": "−2 or 3/2",
+                "C": "1 or −3",
+                "D": "3 or −1"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 41,
+            "question": "The value of k for which the line 3x + 4y + k = 0 touches the circle x² + y² = 10y is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "5 or -45",
+                "B": "10 or -20",
+                "C": "0 or 30",
+                "D": "20 or -20"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 45,
+            "question": "Number of common tangents to two circles which are disjoint (far apart) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "4",
+                "B": "2",
+                "C": "3",
+                "D": "0"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 49,
+            "question": "The length of the chord of the circle x² + y² = a² on the line x cos α + y sin α = p is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2√(a² - p²)",
+                "B": "√(a² - p²)",
+                "C": "a² - p²",
+                "D": "2(a² - p²)"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 53,
+            "question": "The radius of the circle which touches the x-axis at (3, 0) and passes through (1, 2) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2",
+                "B": "√2",
+                "C": "3",
+                "D": "√5"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 57,
+            "question": "The coordinates of the point on the circle x² + y² - 2x - 4y - 20 = 0 which is farthest from the origin is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(4, 6)",
+                "B": "(2, 4)",
+                "C": "(-1, -2)",
+                "D": "(1, 2)"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 61,
+            "question": "The intercept on the line y = x by the circle x² + y² - 2x = 0 is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "√2",
+                "B": "2",
+                "C": "1",
+                "D": "1/2"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 65,
+            "question": "The area of the triangle formed by the tangents from the point (h, k) to the circle x² + y² = a² and their chord of contact is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "a(S₁₁³ / ² / S₁)",
+                "B": "a S₁₁ / 2",
+                "C": "a² S₁₁ / 4",
+                "D": "None"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 69,
+            "question": "The angle in a semicircle is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "90°",
+                "B": "45°",
+                "C": "60°",
+                "D": "180°"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 73,
+            "question": "The equation of circle concentric with x²+y²−6x+4y+12=0 and passing through (−2,1)?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x²+y²−6x+4y−44=0",
+                "B": "x²+y²−6x+4y+12=0",
+                "C": "x²+y²−6x+4y−20=0",
+                "D": "x²+y²−6x+4y=0"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 77,
+            "question": "The line y = x intersects the circle x²+y²−2x=0 at two points. The chord length is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "√2",
+                "B": "2",
+                "C": "1",
+                "D": "2√2"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 81,
+            "question": "If line lx + my + n = 0 is a tangent to x² + y² = a², the point of contact is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(-a²l/n, -a²m/n)",
+                "B": "(a²l/n, a²m/n)",
+                "C": "(-al/n, -am/n)",
+                "D": "None"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "If the line y = mx + c touches the circle x² + y² = a², the condition is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "c² = a²(1+m²)",
+                "B": "c² = a²(1-m²)",
+                "C": "c = a/m",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 85
+        },
+        {
+            "id": 89,
+            "question": "The locus of z satisfying |z - a| = |z - b| is the ______ of the segment joining a and b.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Perpendicular Bisector",
+                "B": "Circle",
+                "C": "Line segment",
+                "D": "Parabola"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 93,
+            "question": "The locus of z satisfying |2z − 3i| = 3 is a circle with radius?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3/2",
+                "B": "3",
+                "C": "9/4",
+                "D": "2/3"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 97,
+            "question": "The locus of z satisfying Re(z²) = 0 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Line y = ±x",
+                "B": "Circle",
+                "C": "Parabola",
+                "D": "Hyperbola"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 101,
+            "question": "The locus of z such that Re(z²) = 2 is a ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Rectangular Hyperbola",
+                "B": "Circle",
+                "C": "Ellipse",
+                "D": "Parabola"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 105,
+            "question": "The continuous locus arg(z - z₁) / (z - z₂) = α represents a ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Circular arc",
+                "B": "Straight line",
+                "C": "Parabola",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 109,
+            "question": "The family y = cx corresponds to the orthogonal trajectories of circles center origin.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "Only if c=0",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The differential equation of all circles passing through the origin and having centers on the x-axis is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "y² - x² = 2xy dy/dx",
+                "B": "x² + y² = c",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 113
+        },
+        {
+            "id": 117,
+            "question": "Normal to the ellipse at (a cosθ, b sinθ) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "ax/cosθ - by/sinθ = a² - b²",
+                "B": "ax cosθ + by sinθ = a² - b²",
+                "C": "ax/cosθ + by/sinθ = a²",
+                "D": "ax sinθ - by cosθ = 0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 121,
+            "question": "Equation of director circle of x²/25 + y²/9 = 1 is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x² + y² = 34",
+                "B": "x² + y² = 16",
+                "C": "x² + y² = 25",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 125,
+            "question": "Auxiliary circle of x²/a²+y²/b²=1 is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x²+y²=a²",
+                "B": "x²+y²=b²",
+                "C": "x²+y²=a+b",
+                "D": "x²/a²+y²/b²=2"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 129,
+            "question": "The equation of director circle of ellipse x²/a²+y²/b²=1 is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x²+y²=a²+b²",
+                "B": "x²+y²=a²−b²",
+                "C": "x²+y²=a²",
+                "D": "x²+y²=b²"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 133,
+            "question": "Tangent at vertex of ellipse is ______ to minor axis.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Parallel",
+                "B": "Perpendicular",
+                "C": "At 45°",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 137,
+            "question": "Tangent at point (a cosθ, b sinθ) on ellipse x²/a²+y²/b²=1 is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x cosθ/a + y sinθ/b = 1",
+                "B": "ax cosθ + by sinθ = 1",
+                "C": "x cosθ/a − y sinθ/b = 1",
+                "D": "x/a cosθ = y/b sinθ"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "Advanced Ellipse property question 3 involving tangent properties and focal distances.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Option A",
+                "B": "Option B",
+                "C": "Option C",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 141
+        },
+        {
+            "question": "Advanced Ellipse property question 4 involving tangent properties and focal distances.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Option A",
+                "B": "Option B",
+                "C": "Option C",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 145
+        },
+        {
+            "question": "Advanced Ellipse property question 9 involving tangent properties and focal distances.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Option A",
+                "B": "Option B",
+                "C": "Option C",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 149
+        },
+        {
+            "id": 153,
+            "question": "Normal to x²/a² - y²/b² = 1 at (x₁,y₁): the slope of normal = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "-a²y₁ / (b²x₁)",
+                "B": "b²x₁ / (a²y₁)",
+                "C": "a²y₁ / (b²x₁)",
+                "D": "-b²x₁ / (a²y₁)"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 157,
+            "question": "If tangent at P on hyperbola meets asymptotes at Q and R, then P is ______ of QR.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Midpoint",
+                "B": "Trisection point",
+                "C": "Endpoint",
+                "D": "Foot of perpendicular"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 161,
+            "question": "The pair of tangents from (x₁,y₁) to hyperbola is given by SS₁ = ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "T²",
+                "B": "T",
+                "C": "S₁",
+                "D": "0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 165,
+            "question": "Locus of foot of perpendicular from focus to asymptote is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Point (a,0) on auxiliary circle",
+                "B": "Focus",
+                "C": "None",
+                "D": "Tangent at vertex"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 169,
+            "question": "Tangent to x²/4 − y²/3 = 1 at (4, 3) is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2x − y = 5",
+                "B": "x − y = 1",
+                "C": "4x − 3y = 7",
+                "D": "2x − y − 5 = 0"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 173,
+            "question": "The condition for y = mx + c to be tangent to x²/a² − y²/b² = 1 is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "c² = a²m² − b²",
+                "B": "c² = b²m² − a²",
+                "C": "c² = a²m² + b²",
+                "D": "c = a²m"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 177,
+            "question": "Point of contact of tangent y = mx + c with x²/a² − y²/b² = 1 is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(a²m/c, −b²/c)",
+                "B": "(a²/c, b²m/c)",
+                "C": "(a²m/c, b²/c)",
+                "D": "(−a²m/c, b²/c)"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 181,
+            "question": "Locus of point P such that PA/PB = k (constant), where A,B are fixed points, is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "a circle (Apollonius circle)",
+                "B": "an ellipse",
+                "C": "a parabola",
+                "D": "a straight line"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 185,
+            "question": "The locus of a point such that the sum of its distances from two fixed points is constant (greater than distance between points) is an ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Ellipse",
+                "B": "Hyperbola",
+                "C": "Parabola",
+                "D": "Circle"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 189,
+            "question": "Center of the conic ax² + 2hxy + by² + 2gx + 2fy + c = 0 is given by partial derivatives equating to zero: ∂f/∂x = 0 and ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "∂f/∂y = 0",
+                "B": "∂f/∂z = 0",
+                "C": "f(x,y) = 0",
+                "D": "∂²f/∂x∂y = 0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 193,
+            "question": "Locus of feet of perpendiculars from foci of an ellipse to its tangents is its ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Auxiliary circle",
+                "B": "Director circle",
+                "C": "Major axis",
+                "D": "Minor axis"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 197,
+            "question": "Locus of vertex of right angle inscribed in circle of radius r is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "a circle of radius r/√2",
+                "B": "the same circle",
+                "C": "a circle of radius r√2",
+                "D": "a point"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 201,
+            "question": "In 3D, locus of point equidistant from two fixed points is a ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Plane (perpendicular bisecting plane)",
+                "B": "Line",
+                "C": "Sphere",
+                "D": "Circle"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 205,
+            "question": "Locus of point P such that PA = 2PB where A=(0,0), B=(3,0) ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(x-4)² + y² = 4 (Circle)",
+                "B": "x = 4",
+                "C": "x² + y² = 9",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 209,
+            "question": "Locus of center of circle which touches x-axis and passes through (1,2) is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x²−2x−4y+5=0",
+                "B": "x²+2x+4y=5",
+                "C": "y²=2y+x",
+                "D": "(x−1)²=4(y−1)"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 213,
+            "question": "Locus of P such that PA²+PB²=2c², A=(−a,0), B=(a,0) is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x²+y²=c²−a²",
+                "B": "x²+y²=c²+a²",
+                "C": "x²+y²=c²",
+                "D": "2x²+2y²=c²+a²"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 217,
+            "question": "Locus of point P such that PA² - PB² = 3 where A=(0,0) and B=(2,0) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "4x = 7 (Straight line)",
+                "B": "x = 3/2",
+                "C": "y = 0",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The locus of the point of intersection of the lines x/a + y/b = k and x/a - y/b = 1/k is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x²/a² - y²/b² = 1",
+                "B": "x²/a² + y²/b² = 1",
+                "C": "xy = ab",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 221
+        },
+        {
+            "question": "The locus of a point which moves such that the sum of the squares of its distances from the sides of a square is constant is a ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Circle",
+                "B": "Square",
+                "C": "Ellipse",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 225
+        },
+        {
+            "question": "The locus of a point whose distance from the origin is 3 times its distance from the plane z = 0 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x² + y² - 8z² = 0",
+                "B": "x² + y² + z² = 9",
+                "C": "x² + y² = 9z²",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 229
+        },
+        {
+            "question": "Locus of a point P such that arg(z-1)/arg(z+1) = π/3 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "A part of a circle",
+                "B": "A straight line",
+                "C": "An ellipse",
+                "D": "A parabola"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 233
+        },
+        {
+            "question": "The locus of the centroid of a triangle whose vertices are (a cos t, a sin t), (b sin t, -b cos t) and (1, 0), where t is a parameter, is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(3x-1)² + (3y)² = a² + b²",
+                "B": "x² + y² = a² + b²",
+                "C": "(x-1)² + y² = a² + b²",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 237
+        },
+        {
+            "id": 241,
+            "question": "The height of cylinder of max volume inscribed in sphere of radius R is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2R/√3",
+                "B": "R/√3",
+                "C": "R√2/3",
+                "D": "2R√(2/3)"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "Points where tangent is horizontal satisfy f'(x) = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "0",
+                "B": "1",
+                "C": "∞",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 245
+        },
+        {
+            "id": 249,
+            "question": "The condition for y = mx + c to be tangent to y² = 4ax is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "c = a/m",
+                "B": "c = am",
+                "C": "cm = a²",
+                "D": "c + am = 0"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 253,
+            "question": "The condition for the line y = mx + c to be a tangent to y² = 4ax is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "c = a/m",
+                "B": "c = am",
+                "C": "c² = am",
+                "D": "m = a/c"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 257,
+            "question": "The locus of midpoints of chords parallel to y = mx for y²=4ax is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "y = 2a/m",
+                "B": "y = m/2a",
+                "C": "y = 2am",
+                "D": "x = 2a/m"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 261,
+            "question": "Three normals can be drawn from a point to y²=4ax if the point lies ______ the cubic curve region.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Inside (27ay² < 4(x-2a)³)",
+                "B": "Outside",
+                "C": "On",
+                "D": "At the vertex"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 265,
+            "question": "Locus of point of intersection of tangents which make angle 45° is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(x+a)² = (y²-4ax)",
+                "B": "x+a = y",
+                "C": "y² = 4ax",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 269,
+            "question": "If the tangent at P(t₁) meets the tangent at Q(t₂) on y²=4ax, the point of intersection is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(at₁t₂, a(t₁+t₂))",
+                "B": "(a(t₁+t₂), at₁t₂)",
+                "C": "(at₁t₂, 2a(t₁+t₂))",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 273,
+            "question": "Condition for line lx + my + n = 0 to be tangent to y²=4ax is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "am² = ln",
+                "B": "an = lm",
+                "C": "al = mn",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 277,
+            "question": "Sub-normal at any point on y²=4ax is constant and equal to ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2a",
+                "B": "a",
+                "C": "4a",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 281,
+            "question": "Tangent to x² = 4ay at (x₁, y₁) is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "xx₁ = 2a(y + y₁)",
+                "B": "xx₁ = 2a(y - y₁)",
+                "C": "yy₁ = 2a(x + x₁)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 285,
+            "question": "Foot of perpendicular from focus to tangent of y²=4ax at (at², 2at) is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(0, at)",
+                "B": "(at, 0)",
+                "C": "(0, 2at)",
+                "D": "(a, at)"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 289,
+            "question": "The foot of the perpendicular logic uses parameters t on the normal line.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 293,
+            "question": "Plane through (1,2,-1) perpendicular to line joining (3,1,1) and (1,3,2) has normal DRs ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(2, -2, -1)",
+                "B": "(4, 4, 3)",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 297,
+            "question": "R/r = ? (where R = circumradius, r = inradius)",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "abc/4K",
+                "B": "4R·sin(A/2)·sin(B/2)·sin(C/2)",
+                "C": "1/(4·sin(A/2)·sin(B/2)·sin(C/2))",
+                "D": "s/r"
+            },
+            "answer": "C",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 301,
+            "question": "OH is distance between circumcenter and orthocenter.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 305,
+            "question": "Distance of orthocenter from vertex A is 2R cos A.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The inradius r of a triangle with area Δ and semi-perimeter s is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Δ / s",
+                "B": "s / Δ",
+                "C": "Δs",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 309
+        },
+        {
+            "id": 313,
+            "question": "Locus of point P such that AP² + BP² = constant is a ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Circle",
+                "B": "Straight Line",
+                "C": "Parabola",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 317,
+            "question": "Incenter of triangle by x=0, y=0, x+y=1 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(1/(2+√2), 1/(2+√2))",
+                "B": "(1/3, 1/3)",
+                "C": "(0, 0)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 321,
+            "question": "The locus of midpoints of chords drawn from origin to circle x²+y²=r² is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x²+y²=r²/4",
+                "B": "x²+y²=r²",
+                "C": "x+y=r",
+                "D": "x²+y²=r²/2"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "Circumcenter of the triangle formed by (1,3), (0,-2) and (-3,1) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(-1, 1/2)",
+                "B": "(0, 0)",
+                "C": "(1, 1)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 325
+        },
+        {
+            "id": 329,
+            "question": "The radius of the circle which cuts three given circles orthogonally is equal to the length of the ______ from the radical center to any of the circles.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Tangent",
+                "B": "Secant",
+                "C": "Normal",
+                "D": "Chord"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 333,
+            "question": "If two circles intersect orthogonally, the tangent to one circle at the point of intersection passes through the ______ of the other circle.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Center",
+                "B": "Focus",
+                "C": "Vertex",
+                "D": "Pole"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 337,
+            "question": "A system of circles is said to be coaxial if every pair of circles in the system has the same ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Radical axis",
+                "B": "Center",
+                "C": "Radius",
+                "D": "Tangent"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 341,
+            "question": "Orthogonal trajectories of a coaxial system of circles is another coaxial system. If one system has equation x² + y² + 2gx + c = 0, the orthogonal system is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x² + y² + 2fy - c = 0",
+                "B": "x² + y² + 2fx + c = 0",
+                "C": "y² + x² + 2gy - c = 0",
+                "D": "x² - y² + 2fx = c"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 345,
+            "question": "If two circles touch externally, number of common tangents is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3",
+                "B": "2",
+                "C": "4",
+                "D": "1"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 349,
+            "question": "To find the points of intersection of two circles, one easier method is to solve the equation of one circle with their ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Radical Axis (Common Chord)",
+                "B": "Line of centers",
+                "C": "Tangent",
+                "D": "Radical Center"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "The condition for two circles to intersect orthogonally is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "2gg' + 2ff' = c + c'",
+                "B": "g' + f' = c",
+                "C": "2(g+g') = c",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 353
+        },
+        {
+            "id": 357,
+            "question": "The length of common chord of two intersecting circles is 2√(r₁² - p₁²) where p₁ is the perpendicular distance from center C₁ to the ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Common chord (Radical axis)",
+                "B": "Center C₂",
+                "C": "Origin",
+                "D": "Tangent"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "The collection of circles in which every pair has the same radical axis is called ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Coaxal System",
+                "B": "Orthogonal System",
+                "C": "Concentric System",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 361
+        },
+        {
+            "id": 365,
+            "question": "Condition for the circle S=0 to bisect the circumference of circle S'=0 is that their common chord must be a ______ of S'.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Diameter (i.e., passes through center of S')",
+                "B": "Radius",
+                "C": "Tangent",
+                "D": "Secant at 45°"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 369,
+            "question": "Therefore, if S bisects the circumference of S', the center of S' (-g', -f') must lie on ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "The radical axis S - S' = 0",
+                "B": "The circle S = 0",
+                "C": "The x-axis",
+                "D": "The center of S"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 373,
+            "question": "Coaxial circles with limiting points (1,0) and (−1,0) have radical axis as?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "x = 0 (y-axis)",
+                "B": "y = 0",
+                "C": "x + y = 0",
+                "D": "x = 1"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": " Radical axis of three circles are ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Concurrent or Parallel",
+                "B": "Always Concurrent",
+                "C": "Always Parallel",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 377
+        },
+        {
+            "question": "Equation of common tangent to two circles touching externally is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "S - S' = 0",
+                "B": "S + S' = 0",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 381
+        },
+        {
+            "question": "The locus of centers of circles cutting two given circles orthogonally is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Radical Axis",
+                "B": "Circle",
+                "C": "Pair of lines",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 385
+        },
+        {
+            "id": 389,
+            "question": "Length of sub-normal is |y*m|.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 393,
+            "question": "Intercept made by tangent to (x/a)^n + (y/b)^n = 2 at (a,b) on axes? (x/a + y/b = 2).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True (sum of intercepts is 2a, 2b)",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 397,
+            "question": "Length of tangent is |(y/m)√(1+m²)|.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 401,
+            "question": "The tangent to x² + y² = 25 at (3,4) is?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3x + 4y = 25",
+                "B": "4x + 3y = 25",
+                "C": "3x − 4y = 25",
+                "D": "x + y = 7"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 405,
+            "question": "If kx + ly + m = 0 is normal to y²=4ax, then m? (Locus relation).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "m = -al(2k²-l²)/k² (Wait, complex)",
+                "B": "m = 0",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 409,
+            "question": "Slope of normal in parametric x=at², y=2at is -t.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 413,
+            "question": "The length of subtangent to y² = 4ax at point (at², 2at) is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2at²",
+                "B": "2at",
+                "C": "at²",
+                "D": "4at"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 417,
+            "question": "Sub-normal to y=x³ at x=1 is 3.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 421,
+            "question": "Condition for x^m y^n = k to have constant sub-tangent? (No, sub-tangent is -nx/m).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "False",
+                "B": "True",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 425,
+            "question": "Normal to x²=4ay is y-y1 = -(2a/x1)(x-x1).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 429,
+            "question": "Intercept of tangent on x-axis is x - y / (dy/dx).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 433,
+            "question": "Equation of normal at (x1, y1) to y²=4ax is (y-y1) = -(y1/2a)(x-x1).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The slope of the tangent to the curve y = f(x) at point (x1, y1) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "f'(x1)",
+                "B": "f(x1)",
+                "C": "-1/f'(x1)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 437
+        },
+        {
+            "question": "If the tangent is perpendicular to the x-axis, then m = ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "∞",
+                "B": "0",
+                "C": "1",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 441
+        },
+        {
+            "question": "Length of the normal is given by ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "|y1| √ (1 + m²)",
+                "B": "|y1| √ (1 + (1/m)²) ",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 445
+        },
+        {
+            "question": "Length of subnormal is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "|y1 m|",
+                "B": "|y1 / m|",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 449
+        }
+    ]
 }

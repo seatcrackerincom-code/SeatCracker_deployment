@@ -1,368 +1,92 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "Which of the following is an artificial sweetener?",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "Sucrose",
-                                          "B":  "Saccharin",
-                                          "C":  "Glucose",
-                                          "D":  "Fructose"
-                                      },
-                          "answer":  "B",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  1,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "28 g of a non-volatile solute (molar mass = 180 g/mol) is dissolved in 750 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.00372",
-                                          "B":  "0.00744",
-                                          "C":  "0.00186",
-                                          "D":  "0.00558"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 28/180 = 0.156. Moles water = 750/18 = 41.67. Mole fraction = 0.00372.",
-                          "id":  2
-                      },
-                      {
-                          "id":  3,
-                          "question":  "Aspirin also has ______ properties, meaning it prevents blood clotting.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Antibiotic",
-                                          "B":  "Anti-blood clotting (Anti-platelet)",
-                                          "C":  "Toxifying",
-                                          "D":  "Sweetening"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "18 g of a non-volatile solute (molar mass = 180 g/mol) is dissolved in 750 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.00239",
-                                          "B":  "0.00478",
-                                          "C":  "0.0012",
-                                          "D":  "0.00359"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 18/180 = 0.1. Moles water = 750/18 = 41.67. Mole fraction = 0.00239.",
-                          "id":  4
-                      },
-                      {
-                          "question":  "33 g of a non-volatile solute (molar mass = 342 g/mol) is dissolved in 1000 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.00173",
-                                          "B":  "0.00346",
-                                          "C":  "0.00086",
-                                          "D":  "0.0026"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 33/342 = 0.096. Moles water = 1000/18 = 55.56. Mole fraction = 0.00173.",
-                          "id":  5
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 1.75 x 10^-3 s^-1 at 301 K and 5.4 x 10^-3 s^-1 at 318 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "52.75",
-                                          "B":  "63.3",
-                                          "C":  "42.2",
-                                          "D":  "62.75"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(5.4/1.75) = (Ea/8.314) * (1/301 - 1/318). Solving gives 52.75 kJ/mol.",
-                          "id":  6
-                      },
-                      {
-                          "id":  7,
-                          "question":  "Antibiotics which are effective against a wide range of gram-positive and gram-negative bacteria are ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Narrow spectrum",
-                                          "B":  "Broad spectrum",
-                                          "C":  "Limited spectrum",
-                                          "D":  "Non-spectrum"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "43 g of a non-volatile solute (molar mass = 122 g/mol) is dissolved in 1000 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.0063",
-                                          "B":  "0.0126",
-                                          "C":  "0.00315",
-                                          "D":  "0.00945"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 43/122 = 0.352. Moles water = 1000/18 = 55.56. Mole fraction = 0.0063.",
-                          "id":  8
-                      },
-                      {
-                          "id":  9,
-                          "question":  "Birth control pills essentially contain a mixture of synthetic ______ and ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Aspirin and Paracetamol",
-                                          "B":  "Estrogen and Progesterone derivatives",
-                                          "C":  "Insulin and Glucagon",
-                                          "D":  "Soap and Oil"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  10,
-                          "question":  "Aspartame is unstable at ______ temperatures.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Low",
-                                          "B":  "Cooking / High",
-                                          "C":  "Room",
-                                          "D":  "Freezing"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  11,
-                          "question":  "Artificial sweetener stable at cooking temperature and looks like sugar is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Aspartame",
-                                          "B":  "Sucralose",
-                                          "C":  "Alitame",
-                                          "D":  "Saccharin"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 55°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "2-bromo-2-methylbutane",
-                                          "B":  "2-bromobutane",
-                                          "C":  "1-bromo-2-methylbutane",
-                                          "D":  "1-bromobutane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  12
-                      },
-                      {
-                          "id":  13,
-                          "question":  "Soaps don\u0027t work in hard water because they form ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Bubbles",
-                                          "B":  "Insoluble scum (calcium/magnesium soaps)",
-                                          "C":  "Clear solution",
-                                          "D":  "Acid"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 1.23 x 10^-3 s^-1 at 309 K and 3.5 x 10^-3 s^-1 at 328 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "46.38",
-                                          "B":  "55.66",
-                                          "C":  "37.1",
-                                          "D":  "56.38"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(3.5/1.23) = (Ea/8.314) * (1/309 - 1/328). Solving gives 46.38 kJ/mol.",
-                          "id":  14
-                      },
-                      {
-                          "id":  15,
-                          "question":  "Detergents with highly branched hydrocarbon chains are ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Biodegradable",
-                                          "B":  "Non-biodegradable (cause pollution)",
-                                          "C":  "Sweet",
-                                          "D":  "Acidic"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 1.39 x 10^-3 s^-1 at 310 K and 4.84 x 10^-3 s^-1 at 326 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "65.52",
-                                          "B":  "78.62",
-                                          "C":  "52.42",
-                                          "D":  "75.52"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(4.84/1.39) = (Ea/8.314) * (1/310 - 1/326). Solving gives 65.52 kJ/mol.",
-                          "id":  16
-                      },
-                      {
-                          "question":  "12 g of a non-volatile solute (molar mass = 180 g/mol) is dissolved in 750 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.0016",
-                                          "B":  "0.0032",
-                                          "C":  "0.0008",
-                                          "D":  "0.0024"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 12/180 = 0.067. Moles water = 750/18 = 41.67. Mole fraction = 0.0016.",
-                          "id":  17
-                      },
-                      {
-                          "id":  18,
-                          "question":  "Equanil is a drug used as a ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Antacid",
-                                          "B":  "Tranquilizer",
-                                          "C":  "Analgesic",
-                                          "D":  "Dye"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "17 g of a non-volatile solute (molar mass = 122 g/mol) is dissolved in 750 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.00333",
-                                          "B":  "0.00666",
-                                          "C":  "0.00167",
-                                          "D":  "0.005"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 17/122 = 0.139. Moles water = 750/18 = 41.67. Mole fraction = 0.00333.",
-                          "id":  19
-                      },
-                      {
-                          "id":  20,
-                          "question":  "Antacids like Ranitidine and Cimetidine work by blocking ______ receptors.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Sugar",
-                                          "B":  "Histamine",
-                                          "C":  "Pain",
-                                          "D":  "Light"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 34°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "3-bromo-3-methylpentane",
-                                          "B":  "2-bromopentane",
-                                          "C":  "1-bromo-3-methylpentane",
-                                          "D":  "1-bromopentane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  21
-                      },
-                      {
-                          "id":  22,
-                          "question":  "Iproniazid and Phenelzine are ______ drugs used for depression.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Analgesic",
-                                          "B":  "Antidepressant (Tranquilizers)",
-                                          "C":  "Antacid",
-                                          "D":  "Soap"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  23,
-                          "question":  "Barbiturates are ______ inducing drugs.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Energy",
-                                          "B":  "Sleep",
-                                          "C":  "Pain",
-                                          "D":  "Hunger"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  24,
-                          "question":  "Amoxicillin is a synthetic modification of ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Aspirin",
-                                          "B":  "Penicillin",
-                                          "C":  "Saccharin",
-                                          "D":  "Soap"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 1.11 x 10^-3 s^-1 at 309 K and 3.91 x 10^-3 s^-1 at 325 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "65.71",
-                                          "B":  "78.85",
-                                          "C":  "52.57",
-                                          "D":  "75.71"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(3.91/1.11) = (Ea/8.314) * (1/309 - 1/325). Solving gives 65.71 kJ/mol.",
-                          "id":  25
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "Which of the following is an artificial sweetener?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "Sucrose",
+                "B": "Saccharin",
+                "C": "Glucose",
+                "D": "Fructose"
+            },
+            "answer": "B",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 1,
+            "tag": "pyq"
+        },
+        {
+            "id": 5,
+            "question": "Aspartame is unstable at ______ temperatures.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Low",
+                "B": "Cooking / High",
+                "C": "Room",
+                "D": "Freezing"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 9,
+            "question": "Equanil is a drug used as a ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Antacid",
+                "B": "Tranquilizer",
+                "C": "Analgesic",
+                "D": "Dye"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 13,
+            "question": "Alitame is highly ______ and difficult to control sweetness.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Bitter",
+                "B": "Sweet",
+                "C": "Neutral",
+                "D": "Acidic"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "Which of the following is a narrow spectrum antibiotic?",
+            "difficulty": "hard",
+            "options": {
+                "A": "Penicillin G",
+                "B": "Ampicillin",
+                "C": "Amoxycillin",
+                "D": "Chloramphenicol"
+            },
+            "answer": "A",
+            "id": 17,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "Which gas is used for preservation of fruit juices?",
+            "difficulty": "hard",
+            "options": {
+                "A": "SO2",
+                "B": "H2",
+                "C": "O2",
+                "D": "Cl2"
+            },
+            "answer": "A",
+            "id": 21,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        }
+    ]
 }

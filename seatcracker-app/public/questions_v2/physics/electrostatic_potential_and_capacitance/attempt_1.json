@@ -1,385 +1,110 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  1,
-                          "question":  "In parallel, potential V is same across all capacitors.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  2,
-                          "question":  "H2, N2, O2 are non-polar? yes.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "The total capacitance when n identical capacitors are in series is ______ times individual.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "1/n",
-                                          "B":  "n",
-                                          "C":  "n²",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  3
-                      },
-                      {
-                          "id":  4,
-                          "question":  "Potential at center of uncharged conductor near a charge q? yes. k q / r.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Electric field intensity is the ______ of potential gradient.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "Negative",
-                                          "B":  "Positive",
-                                          "C":  "Reciprocal",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  5
-                      },
-                      {
-                          "id":  6,
-                          "question":  "Potential decreases in the direction of electric field.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "A capacitor of 7 microfarads is charged to 26 volts. The energy stored is:",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "2366.0 microJoules",
-                                          "B":  "10",
-                                          "C":  "5",
-                                          "D":  "20"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use standard physics formulas.",
-                          "solution":  "E = 1/2 CV^2 = 0.5 * 7 * 676.",
-                          "id":  7
-                      },
-                      {
-                          "question":  "Is potential inside a hollow charged sphere same as on surface? True or False?",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "Depends on charge",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  8
-                      },
-                      {
-                          "id":  9,
-                          "question":  "A charged conductor has constant potential on surface. yes.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  10,
-                          "question":  "Dielectric? no. Replaced: polar molecules have p even in E=0.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  11,
-                          "question":  "Grouping? no. Replaced: parallel grouping increases total capacitance.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "A capacitor of 10 microfarads is charged to 76 volts. The energy stored is:",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "28880.0 microJoules",
-                                          "B":  "10",
-                                          "C":  "5",
-                                          "D":  "20"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use standard physics formulas.",
-                          "solution":  "E = 1/2 CV^2 = 0.5 * 10 * 5776.",
-                          "id":  12
-                      },
-                      {
-                          "question":  "A capacitor of 7 microfarads is charged to 69 volts. The energy stored is:",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "16663.5 microJoules",
-                                          "B":  "10",
-                                          "C":  "5",
-                                          "D":  "20"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use standard physics formulas.",
-                          "solution":  "E = 1/2 CV^2 = 0.5 * 7 * 4761.",
-                          "id":  13
-                      },
-                      {
-                          "question":  "A capacitor of 1 microfarads is charged to 39 volts. The energy stored is:",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "760.5 microJoules",
-                                          "B":  "10",
-                                          "C":  "5",
-                                          "D":  "20"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use standard physics formulas.",
-                          "solution":  "E = 1/2 CV^2 = 0.5 * 1 * 1521.",
-                          "id":  14
-                      },
-                      {
-                          "id":  15,
-                          "question":  "H2O, HCl, CO are polar? yes.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  16,
-                          "question":  "Potential V decreases by K times inside dielectric if charge is constant.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  17,
-                          "question":  "E = 0 inside conductor implies V is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Constant",
-                                          "B":  "Zero",
-                                          "C":  "Max",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Potential V and field E are related by E = ______.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "-dV/dr",
-                                          "B":  "dV*dr",
-                                          "C":  "V/r",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  18
-                      },
-                      {
-                          "question":  "Electric potential energy of a system of two charges is U = ______.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "k q1 q2 / r",
-                                          "B":  "k q1 q2 / r²",
-                                          "C":  "None",
-                                          "D":  "qV"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  19
-                      },
-                      {
-                          "id":  20,
-                          "question":  "Susceptibility χe? yes. P = ε0 χe E.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  21,
-                          "question":  "Effective K of parallel slab dielectrics of thickness d1, d2 is weighted harmonic mean? yes.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  22,
-                          "question":  "Equipotential surfaces are further apart where field is weak.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Is potential a scalar or vector?",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "Scalar",
-                                          "B":  "Vector",
-                                          "C":  "None",
-                                          "D":  "Depends on field"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "id":  23
-                      },
-                      {
-                          "question":  "A capacitor of 5 microfarads is charged to 74 volts. The energy stored is:",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "13690.0 microJoules",
-                                          "B":  "10",
-                                          "C":  "5",
-                                          "D":  "20"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use standard physics formulas.",
-                          "solution":  "E = 1/2 CV^2 = 0.5 * 5 * 5476.",
-                          "id":  24
-                      },
-                      {
-                          "id":  25,
-                          "question":  "Equipotential surfaces for uniform field are planes.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Potential gradient ϕ = V / L.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "Force in a medium of dielectric constant K is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "F(vacuum) / K",
+                "B": "F(vacuum) * K",
+                "C": "Same",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 9,
+            "question": "E = 0 inside conductor implies V is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Constant",
+                "B": "Zero",
+                "C": "Max",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 13,
+            "question": "Dielectric breakdown occurs if E exceeds ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Dielectric Strength",
+                "B": "Permittivity",
+                "C": "K",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "Vibration? yes. adds 2 more degrees of freedom (potential + kinetic).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 21,
+            "question": "Average potential energy in SHM over one cycle is E/2.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The potential energy of a particle in a conservative force field is given by U = 10 + (x-2)² + (y-3)². The equilibrium position of the particle is ______.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "(2, 3)",
+                "B": "(0, 0)",
+                "C": "(2, -3)",
+                "D": "(-2, -3)"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 25
+        }
+    ]
 }

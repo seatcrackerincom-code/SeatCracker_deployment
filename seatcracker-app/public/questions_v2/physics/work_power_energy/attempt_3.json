@@ -1,127 +1,66 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  51,
-                          "question":  "Loss of KE in perfectly inelastic collision is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "1/2 * m1 m2 / (m1+m2) * (u1-u2)²",
-                                          "B":  "zero",
-                                          "C":  "maximum",
-                                          "D":  "A and C"
-                                      },
-                          "answer":  "D",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "A body is whirled in a vertical circle of radius R. The minimum speed it must have at the lowest point to just complete the circle is ______.",
-                          "difficulty":  "Medium",
-                          "options":  {
-                                          "A":  "√5gR",
-                                          "B":  "√gR",
-                                          "C":  "√3gR",
-                                          "D":  "√2gR"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "pyq":  true,
-                          "tag":  "hard",
-                          "id":  52
-                      },
-                      {
-                          "id":  53,
-                          "question":  "KiloWatt Hour (kWh) is unit of ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Electrical Energy",
-                                          "B":  "Power",
-                                          "C":  "Current",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  54,
-                          "question":  "A heavy body and light body have same KE. light body has ______ momentum.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Less",
-                                          "B":  "More",
-                                          "C":  "Equal",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Two bodies of masses 1 kg and 4 kg have equal kinetic energies. The ratio of their linear momenta is ______.",
-                          "difficulty":  "Medium",
-                          "options":  {
-                                          "A":  "1:2",
-                                          "B":  "2:1",
-                                          "C":  "1:4",
-                                          "D":  "4:1"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "pyq":  true,
-                          "tag":  "hard",
-                          "id":  55
-                      },
-                      {
-                          "question":  "A core of mass 2 kg moving at 10 m/s hits a stationary core of mass 3 kg. If they stick together, their common velocity is ______.",
-                          "difficulty":  "Medium",
-                          "options":  {
-                                          "A":  "4 m/s",
-                                          "B":  "2 m/s",
-                                          "C":  "5 m/s",
-                                          "D":  "10 m/s"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "pyq":  true,
-                          "tag":  "hard",
-                          "id":  56
-                      },
-                      {
-                          "id":  57,
-                          "question":  "Potential energy? no. Replaced: depends on choice of zero potential level.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  58,
-                          "question":  "Coefficient of restitution e = (v2-v1) / (u1-u2).",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "Work done in rotation W = ______.",
+            "options": {
+                "A": "τ θ",
+                "B": "F s",
+                "C": "None",
+                "D": "P t"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 3
+        },
+        {
+            "id": 7,
+            "question": "Rotational power P = τ ω.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "A particle moves from point (1, -2) to (4, 2) in a force field F = (3i + 4j) N. The work done by the force is ______.",
+            "difficulty": "Medium",
+            "options": {
+                "A": "25 J",
+                "B": "7 J",
+                "C": "12 J",
+                "D": "20 J"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 11
+        },
+        {
+            "id": 15,
+            "question": "Coefficient of restitution e = (v2-v1) / (u1-u2).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        }
+    ]
 }

@@ -1,399 +1,207 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  1,
-                          "question":  "If z = cosÎ¸ + isinÎ¸, then the value of z^5 + z^(-5) is",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "2cos5Î¸",
-                                          "B":  "2sin5Î¸",
-                                          "C":  "2cosÎ¸",
-                                          "D":  "2sinÎ¸"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "medium"
-                      },
-                      {
-                          "id":  2,
-                          "question":  "The value of (1 + i)^6 using De Moivre\u0027s theorem is",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "-8i",
-                                          "B":  "8i",
-                                          "C":  "8",
-                                          "D":  "-8"
-                                      },
-                          "answer":  "D",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  3,
-                          "question":  "If z = cosÎ¸ + isinÎ¸ and z^n = cosnÎ¸ + isinnÎ¸, then the value of z^3 + z^(-3) is",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "2cos3Î¸",
-                                          "B":  "2sin3Î¸",
-                                          "C":  "2cosÎ¸",
-                                          "D":  "2sinÎ¸"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "medium"
-                      },
-                      {
-                          "id":  4,
-                          "question":  "The argument of (1 + i)^4 is",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "Ï€/4",
-                                          "B":  "Ï€/2",
-                                          "C":  "Ï€",
-                                          "D":  "3Ï€/4"
-                                      },
-                          "answer":  "C",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  5,
-                          "question":  "If z = cosÎ¸ + isinÎ¸, then the value of z^4 + z^(-4) is",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "2cos4Î¸",
-                                          "B":  "2sin4Î¸",
-                                          "C":  "2cos2Î¸",
-                                          "D":  "2sin2Î¸"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "medium"
-                      },
-                      {
-                          "id":  6,
-                          "question":  "The value of (cosÏ€/4 + isinÏ€/4)^8 is",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "1",
-                                          "B":  "-1",
-                                          "C":  "i",
-                                          "D":  "-i"
-                                      },
-                          "answer":  "B",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  7,
-                          "question":  "If z = cosÎ¸ + isinÎ¸, then the value of z^2 + z^(-2) is",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "2cos2Î¸",
-                                          "B":  "2sin2Î¸",
-                                          "C":  "2cosÎ¸",
-                                          "D":  "2sinÎ¸"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "medium"
-                      },
-                      {
-                          "id":  8,
-                          "question":  "The argument of (1 - i)^5 is",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "-Ï€/4",
-                                          "B":  "-Ï€/2",
-                                          "C":  "-3Ï€/4",
-                                          "D":  "-5Ï€/4"
-                                      },
-                          "answer":  "D",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  9,
-                          "question":  "If z = cosÎ¸ + isinÎ¸, then the value of z^6 + z^(-6) is",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "2cos6Î¸",
-                                          "B":  "2sin6Î¸",
-                                          "C":  "2cos3Î¸",
-                                          "D":  "2sin3Î¸"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "medium"
-                      },
-                      {
-                          "id":  10,
-                          "question":  "The value of (cosÏ€/6 + isinÏ€/6)^12 is",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "1",
-                                          "B":  "-1",
-                                          "C":  "i",
-                                          "D":  "-i"
-                                      },
-                          "answer":  "B",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  11,
-                          "question":  "If z = cosÎ¸ + isinÎ¸, then the value of z^10 + z^(-10) is",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "2cos10Î¸",
-                                          "B":  "2sin10Î¸",
-                                          "C":  "2cos5Î¸",
-                                          "D":  "2sin5Î¸"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "medium"
-                      },
-                      {
-                          "id":  12,
-                          "question":  "The argument of (1 + i)^3 is",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "Ï€/4",
-                                          "B":  "3Ï€/4",
-                                          "C":  "5Ï€/4",
-                                          "D":  "3Ï€/2"
-                                      },
-                          "answer":  "B",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  13,
-                          "question":  "If z = cosÎ¸ + isinÎ¸, then the value of z^8 + z^(-8) is",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "2cos8Î¸",
-                                          "B":  "2sin8Î¸",
-                                          "C":  "2cos4Î¸",
-                                          "D":  "2sin4Î¸"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "medium"
-                      },
-                      {
-                          "id":  14,
-                          "question":  "The value of (cosÏ€/3 + isinÏ€/3)^9 is",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "1",
-                                          "B":  "-1",
-                                          "C":  "i",
-                                          "D":  "-i"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  15,
-                          "question":  "If z = cosÎ¸ + isinÎ¸, then the value of z^7 + z^(-7) is",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "2cos7Î¸",
-                                          "B":  "2sin7Î¸",
-                                          "C":  "2cos3Î¸",
-                                          "D":  "2sin3Î¸"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "medium"
-                      },
-                      {
-                          "id":  16,
-                          "question":  "The argument of (1 - i)^7 is",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "-7Ï€/4",
-                                          "B":  "-3Ï€/4",
-                                          "C":  "-5Ï€/4",
-                                          "D":  "-Ï€/4"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  17,
-                          "question":  "If z = cosÎ¸ + isinÎ¸, then the value of z^9 + z^(-9) is",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "2cos9Î¸",
-                                          "B":  "2sin9Î¸",
-                                          "C":  "2cos3Î¸",
-                                          "D":  "2sin3Î¸"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "medium"
-                      },
-                      {
-                          "id":  18,
-                          "question":  "The value of (cos2Ï€/3 + isin2Ï€/3)^6 is",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "1",
-                                          "B":  "-1",
-                                          "C":  "i",
-                                          "D":  "-i"
-                                      },
-                          "answer":  "B",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  19,
-                          "question":  "If z = cosÎ¸ + isinÎ¸, then the value of z^12 + z^(-12) is",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "2cos12Î¸",
-                                          "B":  "2sin12Î¸",
-                                          "C":  "2cos6Î¸",
-                                          "D":  "2sin6Î¸"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "medium"
-                      },
-                      {
-                          "id":  20,
-                          "question":  "The argument of (1 + i)^9 is",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "None",
-                          "options":  {
-                                          "A":  "9Ï€/4",
-                                          "B":  "5Ï€/4",
-                                          "C":  "7Ï€/4",
-                                          "D":  "3Ï€/4"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false,
-                          "tag":  "hard"
-                      },
-                      {
-                          "id":  21,
-                          "question":  "Similarly, xⁿ + 1/xⁿ is equal to ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "2 cos(nθ)",
-                                          "B":  "2i sin(nθ)",
-                                          "C":  "2 cosⁿθ",
-                                          "D":  "2i sinⁿθ"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  22,
-                          "question":  "A complex number raised to an irrational power leads to ______ values.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Infinitely many distinct",
-                                          "B":  "Only one",
-                                          "C":  "None",
-                                          "D":  "Purely real"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  23,
-                          "question":  "If |z|=1, then z + 1/z is always ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Real",
-                                          "B":  "Imaginary",
-                                          "C":  "Zero",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  24,
-                          "question":  "The polar form of -64 is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "64 (cos π + i sin π)",
-                                          "B":  "64 (cos 0 + i sin 0)",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  25,
-                          "question":  "For example, 2² cos³θ = 2(cos θ)³ = (x + 1/x)³. Expanding it yields cos 3θ + ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "3 cos θ",
-                                          "B":  "3 sin θ",
-                                          "C":  "cos θ",
-                                          "D":  "-cos 3θ"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "De Moivre's theorem holds for n being a ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Rational number",
+                "B": "Integer only",
+                "C": "Positive integer only",
+                "D": "Complex number only"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "The value of (1 + i)^6 using De Moivre's theorem is",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "-8i",
+                "B": "8i",
+                "C": "8",
+                "D": "-8"
+            },
+            "answer": "D",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 9,
+            "question": "If z = cosθ + isinθ, then the value of z^2 + z^(-2) is",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "2cos2θ",
+                "B": "2sin2θ",
+                "C": "2cosθ",
+                "D": "2sinθ"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "medium"
+        },
+        {
+            "id": 13,
+            "question": "If z = cosθ + isinθ, then the value of z^8 + z^(-8) is",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "2cos8θ",
+                "B": "2sin8θ",
+                "C": "2cos4θ",
+                "D": "2sin4θ"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "medium"
+        },
+        {
+            "id": 17,
+            "question": "The value of (cos2π/3 + isin2π/3)^6 is",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "1",
+                "B": "-1",
+                "C": "i",
+                "D": "-i"
+            },
+            "answer": "B",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 21,
+            "question": "The polar form of -64 is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "64 (cos π + i sin π)",
+                "B": "64 (cos 0 + i sin 0)",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 25,
+            "question": "In polynomial xⁿ - 1 = (x-1)(x-α₁)...(x-α_{n-1}), the product (1-α₁)(1-α₂)... is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "n",
+                "B": "0",
+                "C": "1",
+                "D": "-1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 29,
+            "question": "If z + 1/z = 2 cos 6, then z¹⁰⁰ + 1/z¹⁰⁰ is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2 cos 600",
+                "B": "2 cos 6",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 33,
+            "question": "General polar angle is θ + ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "2kπ",
+                "B": "kπ",
+                "C": "π",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 37,
+            "question": "The value of (cos 72° + i sin 72°)⁵ = ?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "i",
+                "C": "−1",
+                "D": "−i"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "Advanced De Moivre question 4 involving simplification of complex powers.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Option A",
+                "B": "Option B",
+                "C": "Option C",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 41
+        },
+        {
+            "question": "(cos θ + i sin θ)ⁿ = cos nθ + i sin nθ is known as ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "De Moivre's Theorem",
+                "B": "Euler's Formula",
+                "C": "Taylor's Theorem",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 45
+        },
+        {
+            "question": "Advanced De Moivre question 3 involving simplification of complex powers.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Option A",
+                "B": "Option B",
+                "C": "Option C",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 49
+        }
+    ]
 }

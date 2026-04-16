@@ -1,383 +1,110 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  1,
-                          "question":  "Systematic errors tend to be in ______ direction.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "One (Positive or Negative)",
-                                          "B":  "Both",
-                                          "C":  "Random",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  2,
-                          "question":  "Dimension of angle is [M0 L0 T0].",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  3,
-                          "question":  "Universal Gas Constant (R) dimensions? yes. [M L2 T-2 K-1 mol-1].",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  4,
-                          "question":  "Boltzman Constant (k)? yes. Energy / Temperature.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Which pair has the same dimensions?",
-                          "options":  {
-                                          "A":  "Work and Torque",
-                                          "B":  "Force and Pressure",
-                                          "C":  "None",
-                                          "D":  "Speed and Impulse"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  5
-                      },
-                      {
-                          "question":  "Relative error = Absolute error / ______.",
-                          "options":  {
-                                          "A":  "True value",
-                                          "B":  "Mean value",
-                                          "C":  "Initial value",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  6
-                      },
-                      {
-                          "question":  "The resultant of two vectors P and Q is perpendicular to P. If |P| = 5 and |Q| = 13, then |R| =",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "12",
-                                          "B":  "8",
-                                          "C":  "√194",
-                                          "D":  "18"
-                                      },
-                          "answer":  "A",
-                          "hint":  "If R ⊥ P, then R² = Q² - P².",
-                          "solution":  "|R|² = Q² − P² = 169 − 25 = 144. |R| = 12.",
-                          "id":  7
-                      },
-                      {
-                          "id":  8,
-                          "question":  "Angular velocity has dimensions of [T-1].",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  9,
-                          "question":  "Leading zeros (zeros to the left of first non-zero digit) are ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Never significant",
-                                          "B":  "Always significant",
-                                          "C":  "Sometimes significant",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Random errors can be minimized by taking ______ of observations.",
-                          "options":  {
-                                          "A":  "Mean",
-                                          "B":  "Sum",
-                                          "C":  "Difference",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  10
-                      },
-                      {
-                          "id":  11,
-                          "question":  "Speed of light in vacuum is exactly 299,792,458 m/s.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  12,
-                          "question":  "Work and Torque have same dimensions.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  13,
-                          "question":  "Distance of stars can be measured by Parallax method.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  14,
-                          "question":  "Vernier calipers: Main scale reading = 2.0 cm. 5th vernier division coincides with a main scale division. If LC = 0.01 cm, reading is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "2.05 cm",
-                                          "B":  "2.5 cm",
-                                          "C":  "2.005 cm",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  15,
-                          "question":  "Specific heat capacity (s) dimensions? yes. [L2 T-2 K-1].",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  16,
-                          "question":  "Random errors can be minimized by taking ______ of large number of observations.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Arithmetic mean",
-                                          "B":  "Sum",
-                                          "C":  "Difference",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  17,
-                          "question":  "Angle? no. Replaced: Angle is dimensionless but has units (radians).",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  18,
-                          "question":  "In Z = A + B, the absolute error ΔZ is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "ΔA + ΔB",
-                                          "B":  "ΔA/A + ΔB/B",
-                                          "C":  "ΔA - ΔB",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Which is dimensionless?",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "Strain",
-                                          "B":  "Stress",
-                                          "C":  "Pressure",
-                                          "D":  "Young\u0027s modulus"
-                                      },
-                          "answer":  "A",
-                          "tag":  "pyq",
-                          "id":  19
-                      },
-                      {
-                          "id":  20,
-                          "question":  "Power dimensions? yes. [M L2 T-3].",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  21,
-                          "question":  "Latent heat (L) dimensions? yes. [L2 T-2].",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Least count of Vernier Calipers is S - V. True/False",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "Only if s=1mm"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  22
-                      },
-                      {
-                          "id":  23,
-                          "question":  "Trailing zeros in a number without a decimal point are ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Not significant",
-                                          "B":  "Significant",
-                                          "C":  "Always",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  24,
-                          "question":  "Refractive index of glass is 1.5. This number is exact? no. it is a measurement.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "True",
-                                          "B":  "False",
-                                          "C":  "None",
-                                          "D":  "None"
-                                      },
-                          "answer":  "B",
-                          "pyq":  false
-                      },
-                      {
-                          "question":  "Which of the following is not a fundamental unit?",
-                          "options":  {
-                                          "A":  "Newton",
-                                          "B":  "Kelvin",
-                                          "C":  "Candela",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "pyq":  false,
-                          "tag":  "hard",
-                          "difficulty":  "hard",
-                          "id":  25
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Dimensions of ε0? yes. [M-1 L-3 T4 A2].",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 5,
+            "question": "Dimensions of k are [M T-2].",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Relative error = Absolute error / ______.",
+            "options": {
+                "A": "True value",
+                "B": "Mean value",
+                "C": "Initial value",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 9
+        },
+        {
+            "id": 13,
+            "question": "Power dimensions? yes. [M L2 T-3].",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 17,
+            "question": "Two physical quantities can be added only if they have same dimensions.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 21,
+            "question": "In Z = AB, the relative error ΔZ/Z is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "ΔA/A + ΔB/B",
+                "B": "ΔA + ΔB",
+                "C": "ΔA/A - ΔB/B",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 25,
+            "question": "Dimensions of power? [M L2 T-3].",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        }
+    ]
 }

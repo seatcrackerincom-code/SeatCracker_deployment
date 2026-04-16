@@ -1,363 +1,149 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "Which of the following has the smallest atomic radius?",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "Li",
-                                          "B":  "Na",
-                                          "C":  "K",
-                                          "D":  "Rb"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  1,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "Which period has the maximum number of elements?",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "3rd",
-                                          "B":  "4th",
-                                          "C":  "5th",
-                                          "D":  "6th"
-                                      },
-                          "answer":  "D",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  2,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 51°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "3-bromo-3-methylpentane",
-                                          "B":  "2-bromopentane",
-                                          "C":  "1-bromo-3-methylpentane",
-                                          "D":  "1-bromopentane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  3
-                      },
-                      {
-                          "id":  4,
-                          "question":  "The IUPAC name for the element with atomic number 104 is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Unnilseptium",
-                                          "B":  "Unnilquadium",
-                                          "C":  "Unnilpentium",
-                                          "D":  "Unnilhexium"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 65°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "3-bromo-3-methylpentane",
-                                          "B":  "2-bromopentane",
-                                          "C":  "1-bromo-3-methylpentane",
-                                          "D":  "1-bromopentane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  5
-                      },
-                      {
-                          "id":  6,
-                          "question":  "Electron gain enthalpy of halogens is highly ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Positive",
-                                          "B":  "Negative",
-                                          "C":  "Zero",
-                                          "D":  "Inert"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "17 g of a non-volatile solute (molar mass = 342 g/mol) is dissolved in 1000 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.00089",
-                                          "B":  "0.00178",
-                                          "C":  "0.00044",
-                                          "D":  "0.00133"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 17/342 = 0.05. Moles water = 1000/18 = 55.56. Mole fraction = 0.00089.",
-                          "id":  7
-                      },
-                      {
-                          "id":  8,
-                          "question":  "Noble gases have zero or positive electron gain enthalpy because of ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Small size",
-                                          "B":  "Stable Octet (fully filled subshells)",
-                                          "C":  "High mass",
-                                          "D":  "Metallic nature"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  9,
-                          "question":  "Elements with atomic numbers 58 to 71 are called ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Actinoids",
-                                          "B":  "Lanthanoids",
-                                          "C":  "Halogens",
-                                          "D":  "Alkali metals"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 1.6 x 10^-3 s^-1 at 301 K and 5.92 x 10^-3 s^-1 at 314 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "79.08",
-                                          "B":  "94.9",
-                                          "C":  "63.26",
-                                          "D":  "89.08"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(5.92/1.6) = (Ea/8.314) * (1/301 - 1/314). Solving gives 79.08 kJ/mol.",
-                          "id":  10
-                      },
-                      {
-                          "id":  11,
-                          "question":  "Which of these is an amphoteric oxide?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Na2O",
-                                          "B":  "Al2O3",
-                                          "C":  "Cl2O7",
-                                          "D":  "MgO"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  12,
-                          "question":  "The second ionization enthalpy is always ______ than the first ionization enthalpy.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Lower",
-                                          "B":  "Higher",
-                                          "C":  "Equal",
-                                          "D":  "Half"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 2.37 x 10^-3 s^-1 at 309 K and 7.16 x 10^-3 s^-1 at 324 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "61.35",
-                                          "B":  "73.62",
-                                          "C":  "49.08",
-                                          "D":  "71.35"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(7.16/2.37) = (Ea/8.314) * (1/309 - 1/324). Solving gives 61.35 kJ/mol.",
-                          "id":  13
-                      },
-                      {
-                          "id":  14,
-                          "question":  "Transuranium elements start after atomic number ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "57",
-                                          "B":  "92 (Uranium)",
-                                          "C":  "89",
-                                          "D":  "100"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  15,
-                          "question":  "Representative elements belong to ______ blocks.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "d and f",
-                                          "B":  "s and p",
-                                          "C":  "p and d",
-                                          "D":  "s and f"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 24°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "3-bromo-3-methylpentane",
-                                          "B":  "2-bromopentane",
-                                          "C":  "1-bromo-3-methylpentane",
-                                          "D":  "1-bromopentane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  16
-                      },
-                      {
-                          "id":  17,
-                          "question":  "Which has smallest ionic radius?",
-                          "options":  {
-                                          "A":  "Na+",
-                                          "B":  "Mg2+",
-                                          "C":  "Al3+",
-                                          "D":  "Si4+"
-                                      },
-                          "answer":  "D",
-                          "difficulty":  "hard"
-                      },
-                      {
-                          "id":  18,
-                          "question":  "Anomalous properties of Li are similar to which element?",
-                          "options":  {
-                                          "A":  "Na",
-                                          "B":  "Mg",
-                                          "C":  "Be",
-                                          "D":  "Ca"
-                                      },
-                          "answer":  "B",
-                          "difficulty":  "medium"
-                      },
-                      {
-                          "id":  19,
-                          "question":  "Which block elements are called inner transition elements?",
-                          "options":  {
-                                          "A":  "s-block",
-                                          "B":  "p-block",
-                                          "C":  "f-block",
-                                          "D":  "d-block"
-                                      },
-                          "answer":  "C",
-                          "difficulty":  "medium"
-                      },
-                      {
-                          "question":  "Which of the following elements belongs to p-block?",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "Na",
-                                          "B":  "Mg",
-                                          "C":  "Al",
-                                          "D":  "Ca"
-                                      },
-                          "answer":  "C",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  20,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "Which of the following is the correct order of electron gain enthalpy (most negative)?",
-                          "difficulty":  "hard",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "F \u003e Cl \u003e Br",
-                                          "B":  "Cl \u003e F \u003e Br",
-                                          "C":  "Cl \u003e Br \u003e F",
-                                          "D":  "F \u003e Br \u003e Cl"
-                                      },
-                          "answer":  "B",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  21,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  22,
-                          "question":  "Anion is ______ than its parent atom.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Smaller",
-                                          "B":  "Larger",
-                                          "C":  "Equal",
-                                          "D":  "Tiny"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  23,
-                          "question":  "The set of elements with only radioactive members is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Halogens",
-                                          "B":  "Actinoids",
-                                          "C":  "Lanthanoids",
-                                          "D":  "Alkaline earth metals"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 27°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "3-bromo-3-methylpentane",
-                                          "B":  "2-bromopentane",
-                                          "C":  "1-bromo-3-methylpentane",
-                                          "D":  "1-bromopentane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  24
-                      },
-                      {
-                          "id":  25,
-                          "question":  "Oxidizing power of elements ______ from left to right in a period.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Decreases",
-                                          "B":  "Increases",
-                                          "C":  "Zeros",
-                                          "D":  "Stays same"
-                                      },
-                          "answer":  "B"
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "Which of the following has the smallest atomic radius?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "Li",
+                "B": "Na",
+                "C": "K",
+                "D": "Rb"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 1,
+            "tag": "pyq"
+        },
+        {
+            "id": 5,
+            "question": "Elements with atomic numbers 58 to 71 are called ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Actinoids",
+                "B": "Lanthanoids",
+                "C": "Halogens",
+                "D": "Alkali metals"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 9,
+            "question": "Which has smallest ionic radius?",
+            "options": {
+                "A": "Na+",
+                "B": "Mg2+",
+                "C": "Al3+",
+                "D": "Si4+"
+            },
+            "answer": "D",
+            "difficulty": "hard"
+        },
+        {
+            "id": 13,
+            "question": "The set of elements with only radioactive members is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Halogens",
+                "B": "Actinoids",
+                "C": "Lanthanoids",
+                "D": "Alkaline earth metals"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 17,
+            "question": "Screening constant (σ) for valence electron increases down the group. (True/False)",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "Only in s-block",
+                "D": "None"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 21,
+            "question": "Van der Waals radius is always ______ than Covalent radius for the same element.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Smaller",
+                "B": "Larger",
+                "C": "Equal",
+                "D": "Zero"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "Which block of elements contains only metals?",
+            "difficulty": "hard",
+            "options": {
+                "A": "s, d, f blocks",
+                "B": "p block",
+                "C": "d block only",
+                "D": "f block only"
+            },
+            "answer": "A",
+            "id": 25,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "Screening effect (shielding effect) is maximum for which type of electrons?",
+            "difficulty": "hard",
+            "pyq": true,
+            "options": {
+                "A": "s electrons shield s electrons",
+                "B": "p electrons",
+                "C": "d electrons shield s electrons better",
+                "D": "s and p electrons shield d electrons less effectively"
+            },
+            "answer": "D",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 29,
+            "tag": "pyq"
+        },
+        {
+            "question": "Which element has highest second ionization enthalpy?",
+            "difficulty": "hard",
+            "options": {
+                "A": "Lithium",
+                "B": "Beryllium",
+                "C": "Sodium",
+                "D": "Magnesium"
+            },
+            "answer": "A",
+            "id": 33,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        },
+        {
+            "question": "Which alkali metal shows unusual properties compared to others in its group?",
+            "difficulty": "hard",
+            "options": {
+                "A": "Lithium",
+                "B": "Sodium",
+                "C": "Potassium",
+                "D": "Cesium"
+            },
+            "answer": "A",
+            "id": 37,
+            "pyq": false,
+            "hasDiagram": false,
+            "diagram_description": ""
+        }
+    ]
 }

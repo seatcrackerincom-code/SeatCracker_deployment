@@ -1,362 +1,300 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "Which of the following undergoes SN1 reaction most readily?",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "CH3Cl",
-                                          "B":  "C2H5Cl",
-                                          "C":  "(CH3)3CCl",
-                                          "D":  "(CH3)2CHCl"
-                                      },
-                          "answer":  "C",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  1,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 41°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "1-chloro-1-methylcyclohexane",
-                                          "B":  "Chlorocyclohexane",
-                                          "C":  "1-chlorohexane",
-                                          "D":  "2-chlorohexane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  2
-                      },
-                      {
-                          "id":  3,
-                          "question":  "Which of the following is a gem-dihalide?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "CH2Cl-CH2Cl",
-                                          "B":  "CH3-CHCl2",
-                                          "C":  "CH3-CH2Cl",
-                                          "D":  "CH2Cl2"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  4,
-                          "question":  "SN1 reaction is a ______ step process.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Single",
-                                          "B":  "Two",
-                                          "C":  "Three",
-                                          "D":  "Instant"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  5,
-                          "question":  "The intermediate formed in SN1 reaction is a ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Carbanion",
-                                          "B":  "Carbocation",
-                                          "C":  "Free radical",
-                                          "D":  "Carbene"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 2.99 x 10^-3 s^-1 at 299 K and 7.81 x 10^-3 s^-1 at 309 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "73.75",
-                                          "B":  "88.5",
-                                          "C":  "59.0",
-                                          "D":  "83.75"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(7.81/2.99) = (Ea/8.314) * (1/299 - 1/309). Solving gives 73.75 kJ/mol.",
-                          "id":  6
-                      },
-                      {
-                          "id":  7,
-                          "question":  "Reactivity of alkyl halides towards SN2 reaction follows the order: ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "3° \u003e 2° \u003e 1° \u003e Methyl",
-                                          "B":  "Methyl \u003e 1° \u003e 2° \u003e 3°",
-                                          "C":  "2° \u003e 1° \u003e 3°",
-                                          "D":  "All same"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  8,
-                          "question":  "SN1 reactions are favored by ______ solvents.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Non-polar",
-                                          "B":  "Polar protic",
-                                          "C":  "Polar aprotic",
-                                          "D":  "Gaseous"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "question":  "29 g of a non-volatile solute (molar mass = 342 g/mol) is dissolved in 750 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.00203",
-                                          "B":  "0.00406",
-                                          "C":  "0.00102",
-                                          "D":  "0.00304"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 29/342 = 0.085. Moles water = 750/18 = 41.67. Mole fraction = 0.00203.",
-                          "id":  9
-                      },
-                      {
-                          "id":  10,
-                          "question":  "SN1 reaction of an optically active halide results in ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Retention",
-                                          "B":  "Racemization",
-                                          "C":  "Inversion",
-                                          "D":  "No change"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  11,
-                          "question":  "In SN2 reaction, the nucleophile attacks from the ______ side of the leaving group.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Same",
-                                          "B":  "Opposite (Back-side)",
-                                          "C":  "Adjacent",
-                                          "D":  "Bottom"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  12,
-                          "question":  "Alkyl halides react with metallic sodium in dry ether to form alkanes. This is ______ reaction.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Fittig",
-                                          "B":  "Wurtz",
-                                          "C":  "Sandmeyer",
-                                          "D":  "Gattermann"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  13,
-                          "question":  "Chlorination of Benzene in presence of FeCl3 gives ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Benzyl chloride",
-                                          "B":  "Chlorobenzene",
-                                          "C":  "Hexachlorocyclohexane",
-                                          "D":  "Phenol"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  14,
-                          "question":  "Haloarenes are less reactive towards nucleophilic substitution than haloalkanes because of ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Resonance effect",
-                                          "B":  "Sp2 hybridization of C",
-                                          "C":  "Instability of phenyl cation",
-                                          "D":  "All of the above"
-                                      },
-                          "answer":  "D"
-                      },
-                      {
-                          "question":  "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 53°C)",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "3-chloro-3-ethylpentane",
-                                          "B":  "3-chloropentane",
-                                          "C":  "2-chloropentane",
-                                          "D":  "1-chloropentane"
-                                      },
-                          "answer":  "A",
-                          "hint":  "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
-                          "solution":  "SN1 rate depends on carbocation stability (3° \u003e 2° \u003e 1°). Option A forms a highly stable tertiary carbocation.",
-                          "id":  15
-                      },
-                      {
-                          "id":  16,
-                          "question":  "Chloroform (CHCl3) on oxidation in presence of light forms a poisonous gas called ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Methane",
-                                          "B":  "Phosgene (COCl2)",
-                                          "C":  "Mustard gas",
-                                          "D":  "Tear gas"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  17,
-                          "question":  "Which undergoes nucleophilic substitution most readily?",
-                          "options":  {
-                                          "A":  "C6H5Cl",
-                                          "B":  "CH3Cl",
-                                          "C":  "(CH3)3CCl",
-                                          "D":  "CH2=CHCl"
-                                      },
-                          "answer":  "C",
-                          "difficulty":  "hard"
-                      },
-                      {
-                          "question":  "The rate constant of a reaction is 2.59 x 10^-3 s^-1 at 298 K and 10.33 x 10^-3 s^-1 at 316 K. Calculate the activation energy (in kJ/mol). (R = 8.314 J/K mol).",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "60.17",
-                                          "B":  "72.2",
-                                          "C":  "48.14",
-                                          "D":  "70.17"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use the Arrhenius equation: ln(k2/k1) = (Ea/R) * (1/T1 - 1/T2)",
-                          "solution":  "ln(10.33/2.59) = (Ea/8.314) * (1/298 - 1/316). Solving gives 60.17 kJ/mol.",
-                          "id":  18
-                      },
-                      {
-                          "question":  "Which compound undergoes Finkelstein reaction?",
-                          "difficulty":  "medium",
-                          "pyq":  true,
-                          "options":  {
-                                          "A":  "Alkyl chloride treated with NaI in acetone",
-                                          "B":  "Alkyl iodide treated with NaCl in acetone",
-                                          "C":  "Aryl chloride treated with NaI",
-                                          "D":  "Alkyl bromide treated with NaF"
-                                      },
-                          "answer":  "A",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "id":  19,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "question":  "14 g of a non-volatile solute (molar mass = 60 g/mol) is dissolved in 500 mL of water. Assuming ideal behaviour and solvent density of 1 g/mL, calculate the relative lowering of vapour pressure.",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.00833",
-                                          "B":  "0.01666",
-                                          "C":  "0.00417",
-                                          "D":  "0.0125"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use Raoult\u0027s law: (P° - P)/P° = X_solute",
-                          "solution":  "Moles solute = 14/60 = 0.233. Moles water = 500/18 = 27.78. Mole fraction = 0.00833.",
-                          "id":  20
-                      },
-                      {
-                          "id":  21,
-                          "question":  "Iodoform test is used to detect the presence of ______ group.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Carboxyl",
-                                          "B":  "Methyl ketone (CH3CO-)",
-                                          "C":  "Ether",
-                                          "D":  "Amine"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  22,
-                          "question":  "Finkelstein reaction is used to prepare alkyl ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Fluorides",
-                                          "B":  "Iodides",
-                                          "C":  "Chlorides",
-                                          "D":  "Bromides"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  23,
-                          "question":  "Swarts reaction is used to prepare alkyl ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Iodides",
-                                          "B":  "Fluorides",
-                                          "C":  "Chlorides",
-                                          "D":  "Alcohols"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  24,
-                          "question":  "Which of these has the highest boiling point?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "CH3Cl",
-                                          "B":  "CH3I",
-                                          "C":  "CH3Br",
-                                          "D":  "CH3F"
-                                      },
-                          "answer":  "B"
-                      },
-                      {
-                          "id":  25,
-                          "question":  "Carbon tetrachloride (CCl4) is used as a ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Fire extinguisher (Pyrene)",
-                                          "B":  "Fuel",
-                                          "C":  "Sweetener",
-                                          "D":  "Fertilizer"
-                                      },
-                          "answer":  "A"
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 48°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2-bromo-2-methylbutane",
+                "B": "2-bromobutane",
+                "C": "1-bromo-2-methylbutane",
+                "D": "1-bromobutane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 1
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 66°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1-chloro-1-methylcyclohexane",
+                "B": "Chlorocyclohexane",
+                "C": "1-chlorohexane",
+                "D": "2-chlorohexane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 5
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 67°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2-bromo-2-methylbutane",
+                "B": "2-bromobutane",
+                "C": "1-bromo-2-methylbutane",
+                "D": "1-bromobutane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 9
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 54°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-chloro-3-ethylpentane",
+                "B": "3-chloropentane",
+                "C": "2-chloropentane",
+                "D": "1-chloropentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 13
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 61°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-bromo-3-methylpentane",
+                "B": "2-bromopentane",
+                "C": "1-bromo-3-methylpentane",
+                "D": "1-bromopentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 17
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 41°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1-chloro-1-methylcyclohexane",
+                "B": "Chlorocyclohexane",
+                "C": "1-chlorohexane",
+                "D": "2-chlorohexane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 21
+        },
+        {
+            "id": 25,
+            "question": "Reactivity of alkyl halides towards SN2 reaction follows the order: ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3° > 2° > 1° > Methyl",
+                "B": "Methyl > 1° > 2° > 3°",
+                "C": "2° > 1° > 3°",
+                "D": "All same"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 29,
+            "question": "Chloroform (CHCl3) on oxidation in presence of light forms a poisonous gas called ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Methane",
+                "B": "Phosgene (COCl2)",
+                "C": "Mustard gas",
+                "D": "Tear gas"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 33,
+            "question": "Swarts reaction is used to prepare alkyl ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Iodides",
+                "B": "Fluorides",
+                "C": "Chlorides",
+                "D": "Alcohols"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 37,
+            "question": "Reaction of alkyl halide with silver cyanide (AgCN) gives alkyl ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Cyanides",
+                "B": "Isocyanides",
+                "C": "Nitriles",
+                "D": "Amines"
+            },
+            "answer": "B"
+        },
+        {
+            "id": 41,
+            "question": "SN1 mechanism involves formation of a planar ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Carbanion",
+                "B": "Carbocation",
+                "C": "Neutral atom",
+                "D": "Cube"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "Which of the following alkyl halides will undergo racemization when reacted with aqueous KOH?",
+            "difficulty": "hard",
+            "pyq": false,
+            "options": {
+                "A": "1-Bromobutane",
+                "B": "2-Bromobutane",
+                "C": "2-Bromo-2-methylpropane",
+                "D": "Bromomethane"
+            },
+            "answer": "B",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 45
+        },
+        {
+            "question": "Which of the following is an optically active compound?",
+            "difficulty": "hard",
+            "pyq": true,
+            "options": {
+                "A": "CH2ClBr",
+                "B": "CHCl3",
+                "C": "CHClBrF (with 4 different groups)",
+                "D": "CH2Cl2"
+            },
+            "answer": "C",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 49,
+            "tag": "pyq"
+        },
+        {
+            "question": "Which of the following is most reactive towards SN2 reaction?",
+            "difficulty": "hard",
+            "pyq": false,
+            "options": {
+                "A": "CH3CH2CH2Br",
+                "B": "CH2=CH-CH2Br (Allylic bromide)",
+                "C": "C6H5Br (Bromobenzene)",
+                "D": "CH3-CHBr-CH3"
+            },
+            "answer": "B",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "id": 53
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 52°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-chloro-3-ethylpentane",
+                "B": "3-chloropentane",
+                "C": "2-chloropentane",
+                "D": "1-chloropentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 57
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 44°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1-chloro-1-methylcyclohexane",
+                "B": "Chlorocyclohexane",
+                "C": "1-chlorohexane",
+                "D": "2-chlorohexane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 61
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 65°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3-bromo-3-methylpentane",
+                "B": "2-bromopentane",
+                "C": "1-bromo-3-methylpentane",
+                "D": "1-bromopentane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 65
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 39°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1-chloro-1-methylcyclohexane",
+                "B": "Chlorocyclohexane",
+                "C": "1-chlorohexane",
+                "D": "2-chlorohexane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 69
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 57°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2-bromo-2-methylbutane",
+                "B": "2-bromobutane",
+                "C": "1-bromo-2-methylbutane",
+                "D": "1-bromobutane"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 73
+        },
+        {
+            "question": "Which of the following alkyl halides undergoes SN1 reaction most rapidly under identical conditions? (Solvent: aqueous ethanol, 32°C)",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "tert-butyl bromide",
+                "B": "isopropyl bromide",
+                "C": "ethyl bromide",
+                "D": "methyl bromide"
+            },
+            "answer": "A",
+            "hint": "SN1 mechanisms proceed via carbocation intermediates. The more stable the carbocation, the faster the reaction.",
+            "solution": "SN1 rate depends on carbocation stability (3° > 2° > 1°). Option A forms a highly stable tertiary carbocation.",
+            "id": 77
+        }
+    ]
 }

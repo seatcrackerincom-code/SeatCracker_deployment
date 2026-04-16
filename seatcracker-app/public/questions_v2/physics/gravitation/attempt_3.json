@@ -1,49 +1,3638 @@
-﻿{
-    "questions":  [
-                      {
-                          "question":  "The escape velocity on a planet with mass 1M and radius 5R is how many times the Earth\u0027s escape velocity?",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "0.45",
-                                          "B":  "10",
-                                          "C":  "5",
-                                          "D":  "20"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use standard physics formulas.",
-                          "solution":  "Ve = sqrt(2GM/R). So ratio is sqrt(1/5).",
-                          "id":  51
-                      },
-                      {
-                          "question":  "The escape velocity on a planet with mass 10M and radius 4R is how many times the Earth\u0027s escape velocity?",
-                          "difficulty":  "hard",
-                          "hasDiagram":  false,
-                          "options":  {
-                                          "A":  "1.58",
-                                          "B":  "10",
-                                          "C":  "5",
-                                          "D":  "20"
-                                      },
-                          "answer":  "A",
-                          "hint":  "Use standard physics formulas.",
-                          "solution":  "Ve = sqrt(2GM/R). So ratio is sqrt(10/4).",
-                          "id":  52
-                      },
-                      {
-                          "id":  53,
-                          "question":  "A body of mass M is raised to height h. Work done by gravitational force is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "-Mgh",
-                                          "B":  "Mgh",
-                                          "C":  "Zero",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "question": "In a RC circuit, the current ______ the voltage by a phase angle φ.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Leads",
+                "B": "Lags",
+                "C": "Is in phase with",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 3
+        },
+        {
+            "question": "The escape velocity on a planet with mass 10M and radius 2R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.24",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(10/2).",
+            "id": 7
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 1 m with speed 82 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "53792.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 6724 / 1.",
+            "id": 11
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 5 m with speed 25 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1250.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 625 / 5.",
+            "id": 15
+        },
+        {
+            "question": "The escape velocity on a planet with mass 1M and radius 1R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.0",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(1/1).",
+            "id": 19
+        },
+        {
+            "question": "The escape velocity on a planet with mass 4M and radius 4R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.0",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(4/4).",
+            "id": 23
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 4 m with speed 29 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "841.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 841 / 4.",
+            "id": 27
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 2 m with speed 28 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "784.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 784 / 2.",
+            "id": 31
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 3 m with speed 18 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "432.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 324 / 3.",
+            "id": 35
+        },
+        {
+            "id": 39,
+            "question": "Wavelength of K-alpha line? yes. shorter than L-alpha.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Lyman series lies in the ______ region.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Ultraviolet",
+                "B": "Infrared",
+                "C": "Visible",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 43
+        },
+        {
+            "question": "An object of mass 6 kg is rotating in a circle of radius 3 m with speed 23 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1058.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 6 * 529 / 3.",
+            "id": 47
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 4 m with speed 99 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2450.25 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 9801 / 4.",
+            "id": 51
+        },
+        {
+            "question": "The escape velocity on a planet with mass 5M and radius 2R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.58",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(5/2).",
+            "id": 55
+        },
+        {
+            "question": "The escape velocity on a planet with mass 6M and radius 1R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.45",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(6/1).",
+            "id": 59
+        },
+        {
+            "question": "The escape velocity on a planet with mass 1M and radius 2R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.71",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(1/2).",
+            "id": 63
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 1 m with speed 88 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "54208.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 7744 / 1.",
+            "id": 67
+        },
+        {
+            "question": "The escape velocity on a planet with mass 9M and radius 2R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.12",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(9/2).",
+            "id": 71
+        },
+        {
+            "question": "The escape velocity on a planet with mass 7M and radius 1R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.65",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(7/1).",
+            "id": 75
+        },
+        {
+            "question": "The escape velocity on a planet with mass 4M and radius 2R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.41",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(4/2).",
+            "id": 79
+        },
+        {
+            "question": "The escape velocity on a planet with mass 8M and radius 1R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2.83",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(8/1).",
+            "id": 83
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 2 m with speed 12 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "648.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 144 / 2.",
+            "id": 87
+        },
+        {
+            "id": 91,
+            "question": "Resistivity of Alloy Manganin is almost independent of temperature.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 4 m with speed 84 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "15876.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 7056 / 4.",
+            "id": 95
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 2 m with speed 65 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "21125.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 4225 / 2.",
+            "id": 99
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 5 m with speed 23 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "211.6 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 529 / 5.",
+            "id": 103
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 4 m with speed 68 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2312.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 4624 / 4.",
+            "id": 107
+        },
+        {
+            "question": "The escape velocity on a planet with mass 3M and radius 2R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.22",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(3/2).",
+            "id": 111
+        },
+        {
+            "id": 115,
+            "question": "Thermistor? yes. resistance changes sharply with temperature.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 6 kg is rotating in a circle of radius 3 m with speed 29 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1682.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 6 * 841 / 3.",
+            "id": 119
+        },
+        {
+            "question": "The wavelength of light in a medium is λ_m = λ_v / n. De Broglie wavelength λ = h/p applies to ______ too.",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "All particles",
+                "B": "Only light",
+                "C": "Charged particles only",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 123
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 1 m with speed 38 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "10108.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 1444 / 1.",
+            "id": 127
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 4 m with speed 22 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "363.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 484 / 4.",
+            "id": 131
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 5 m with speed 10 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "140.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 100 / 5.",
+            "id": 135
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 3 m with speed 47 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2209.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 2209 / 3.",
+            "id": 139
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 4 m with speed 49 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "600.25 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 2401 / 4.",
+            "id": 143
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 3 m with speed 91 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "22082.67 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 8281 / 3.",
+            "id": 147
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 4 m with speed 33 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1361.25 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 1089 / 4.",
+            "id": 151
+        },
+        {
+            "question": "The escape velocity on a planet with mass 8M and radius 4R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1.41",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(8/4).",
+            "id": 155
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 1 m with speed 46 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8464.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 2116 / 1.",
+            "id": 159
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 5 m with speed 48 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3686.4 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 2304 / 5.",
+            "id": 163
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 4 m with speed 48 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4032.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 2304 / 4.",
+            "id": 167
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 2 m with speed 37 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1369.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 1369 / 2.",
+            "id": 171
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 4 m with speed 20 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "300.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 400 / 4.",
+            "id": 175
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 3 m with speed 15 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "225.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 225 / 3.",
+            "id": 179
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 3 m with speed 85 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4816.67 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 7225 / 3.",
+            "id": 183
+        },
+        {
+            "question": "Which of the following is polar molecule?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "H2O",
+                "B": "O2",
+                "C": "N2",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 187
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 4 m with speed 72 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3888.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 5184 / 4.",
+            "id": 191
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 3 m with speed 11 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "80.67 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 121 / 3.",
+            "id": 195
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 5 m with speed 18 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "583.2 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 324 / 5.",
+            "id": 199
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 4 m with speed 73 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "13322.5 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 5329 / 4.",
+            "id": 203
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 3 m with speed 68 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "12330.67 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 4624 / 3.",
+            "id": 207
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 4 m with speed 92 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "21160.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 8464 / 4.",
+            "id": 211
+        },
+        {
+            "id": 215,
+            "question": "Fingerprints? yes. can be seen using UV rays.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 4 m with speed 52 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6084.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 2704 / 4.",
+            "id": 219
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 4 m with speed 14 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "490.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 196 / 4.",
+            "id": 223
+        },
+        {
+            "id": 227,
+            "question": "Order of increasing wavelength: Gamma, X, UV, Visible, IR, Micro, Radio.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Microwaves wavelength range 10⁻³m to 0.1m. Which EM wave is this?",
+            "difficulty": "medium",
+            "pyq": true,
+            "options": {
+                "A": "Microwaves",
+                "B": "Radio waves",
+                "C": "Infrared",
+                "D": "X-rays"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "id": 231
+        },
+        {
+            "id": 235,
+            "question": "If B = (0, 0, 10^-8), then E along y-axis is approx 3 V/m. yes.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 4 m with speed 18 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "567.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 324 / 4.",
+            "id": 239
+        },
+        {
+            "id": 243,
+            "question": "Pulley? yes. for massless pulley, tension on both sides of string is same.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 2 m with speed 75 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "22500.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 5625 / 2.",
+            "id": 247
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 2 m with speed 20 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "400.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 400 / 2.",
+            "id": 251
+        },
+        {
+            "id": 255,
+            "question": "Maximum angle of a car turning on level road without skidding is θ = tan^-1 (μ).",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 5 m with speed 100 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4000.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 10000 / 5.",
+            "id": 259
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 2 m with speed 51 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "11704.5 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 2601 / 2.",
+            "id": 263
+        },
+        {
+            "id": 267,
+            "question": "Inertia of direction? yes. Example: mudd from car tires flies tangent.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Escape velocity does not depend on ______ of the object.",
+            "options": {
+                "A": "Mass",
+                "B": "Planet mass",
+                "C": "Radius",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 271
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 4 m with speed 87 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "18922.5 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 7569 / 4.",
+            "id": 275
+        },
+        {
+            "id": 279,
+            "question": "Dimensional formula of g? yes. [L T-2].",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 5 m with speed 57 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2599.2 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 3249 / 5.",
+            "id": 283
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 5 m with speed 32 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "409.6 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 1024 / 5.",
+            "id": 287
+        },
+        {
+            "id": 291,
+            "question": "Weight measured by spring balance? yes. measures weight (force).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Geostationary satellite orbits in the ______ plane.",
+            "options": {
+                "A": "Equatorial",
+                "B": "Polar",
+                "C": "Inclined",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 295
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 2 m with speed 18 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1296.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 324 / 2.",
+            "id": 299
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 4 m with speed 68 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "10404.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 4624 / 4.",
+            "id": 303
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 4 m with speed 60 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6300.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 3600 / 4.",
+            "id": 307
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 4 m with speed 67 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2244.5 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 4489 / 4.",
+            "id": 311
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 5 m with speed 81 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "11809.8 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 6561 / 5.",
+            "id": 315
+        },
+        {
+            "question": "Avogadro number is number of molecules in ______ of gas at STP.",
+            "options": {
+                "A": "22.4 Liters",
+                "B": "1 Liter",
+                "C": "1 mole",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 319
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 1 m with speed 64 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "16384.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 4096 / 1.",
+            "id": 323
+        },
+        {
+            "id": 327,
+            "question": "Avogadro? yes. equal volumes of gases at same P, T have same N molecules.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 1 m with speed 31 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1922.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 961 / 1.",
+            "id": 331
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 1 m with speed 90 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "32400.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 8100 / 1.",
+            "id": 335
+        },
+        {
+            "id": 339,
+            "question": "Magnetic susceptibility of superconductors is -1. yes.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 6 kg is rotating in a circle of radius 2 m with speed 96 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "27648.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 6 * 9216 / 2.",
+            "id": 343
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 3 m with speed 28 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "784.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 784 / 3.",
+            "id": 347
+        },
+        {
+            "question": "Neutral points occur where Earth's field is ______ by magnet's field.",
+            "options": {
+                "A": "Cancelled",
+                "B": "Doubled",
+                "C": "None",
+                "D": "Inclined"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 351
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 5 m with speed 75 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2250.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 5625 / 5.",
+            "id": 355
+        },
+        {
+            "question": "Magnetic field lines form ______ loops.",
+            "options": {
+                "A": "Closed",
+                "B": "Open",
+                "C": "Spiral",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 359
+        },
+        {
+            "id": 363,
+            "question": "Isogonic lines join points of same declination. yes.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 367,
+            "question": "Sphygmomanometer is used for BP measurement. yes.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Torricelli's law gives speed of efflux v = ______.",
+            "options": {
+                "A": "√(2gh)",
+                "B": "2gh",
+                "C": "gh",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 371
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 3 m with speed 55 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2016.67 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 3025 / 3.",
+            "id": 375
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 3 m with speed 89 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "13201.67 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 7921 / 3.",
+            "id": 379
+        },
+        {
+            "question": "Viscosity of gases ______ with temperature.",
+            "options": {
+                "A": "Increases",
+                "B": "Decreases",
+                "C": "Stays same",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 383
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 2 m with speed 40 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7200.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 1600 / 2.",
+            "id": 387
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 5 m with speed 59 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3481.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 3481 / 5.",
+            "id": 391
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 5 m with speed 14 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "392.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 196 / 5.",
+            "id": 395
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 5 m with speed 17 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "462.4 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 289 / 5.",
+            "id": 399
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 2 m with speed 93 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "34596.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 8649 / 2.",
+            "id": 403
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 2 m with speed 27 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2916.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 729 / 2.",
+            "id": 407
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 2 m with speed 57 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "16245.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 3249 / 2.",
+            "id": 411
+        },
+        {
+            "id": 415,
+            "question": "A bridge is declared unsafe after many years because it loses elasticity (fatigue).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 4 m with speed 11 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "30.25 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 121 / 4.",
+            "id": 419
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 5 m with speed 83 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "13778.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 6889 / 5.",
+            "id": 423
+        },
+        {
+            "id": 427,
+            "question": "I-section beams are used to prevent buckling and reduce weight. yes.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 4 m with speed 77 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7411.25 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 5929 / 4.",
+            "id": 431
+        },
+        {
+            "id": 435,
+            "question": "Path from ground? yes. parabola.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 4 m with speed 66 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7623.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 4356 / 4.",
+            "id": 439
+        },
+        {
+            "question": "Crossing a river in shortest time requires swimming ______ to flow.",
+            "options": {
+                "A": "Perpendicular",
+                "B": "Upstream at θ",
+                "C": "Downstream",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 443
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 1 m with speed 15 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1125.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 225 / 1.",
+            "id": 447
+        },
+        {
+            "id": 451,
+            "question": "A body is rotating in a vertical circle. tension is maximum at bottom.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 1 m with speed 34 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "9248.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 1156 / 1.",
+            "id": 455
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 3 m with speed 59 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2320.67 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 3481 / 3.",
+            "id": 459
+        },
+        {
+            "id": 463,
+            "question": "A particle moves with uniform speed v in a circle of radius r. change in velocity after half cycle? yes. 2v.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 3 m with speed 11 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "322.67 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 121 / 3.",
+            "id": 467
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 1 m with speed 65 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "33800.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 4225 / 1.",
+            "id": 471
+        },
+        {
+            "id": 475,
+            "question": "Average speed >= |Average velocity|.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 2 m with speed 77 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "20751.5 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 5929 / 2.",
+            "id": 479
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 2 m with speed 32 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "512.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 1024 / 2.",
+            "id": 483
+        },
+        {
+            "question": "Velocity of a body thrown upward is ______ at maximum height.",
+            "options": {
+                "A": "Zero",
+                "B": "Maximum",
+                "C": "u/2",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 487
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 5 m with speed 65 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3380.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 4225 / 5.",
+            "id": 491
+        },
+        {
+            "id": 495,
+            "question": "If s ∝ t², then velocity vs t graph is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Straight line through origin",
+                "B": "Curve",
+                "C": "Horizontal line",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 499,
+            "question": "Distance vs time graph cannot have negative slope.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 503,
+            "question": "Torque is zero when loop plane is ______ to magnetic field lines.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Perpendicular",
+                "B": "Parallel",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 507,
+            "question": "Torque is maximum when loop plane is ______ to magnetic field lines.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Parallel",
+                "B": "Perpendicular",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 3 m with speed 35 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2041.67 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 1225 / 3.",
+            "id": 511
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 4 m with speed 81 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "14762.25 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 6561 / 4.",
+            "id": 515
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 4 m with speed 53 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4915.75 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 2809 / 4.",
+            "id": 519
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 2 m with speed 31 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1441.5 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 961 / 2.",
+            "id": 523
+        },
+        {
+            "question": "A galvanometer is converted into a voltmeter by adding ______ series resistance.",
+            "options": {
+                "A": "High",
+                "B": "Low",
+                "C": "None",
+                "D": "Parallel"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 527
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 5 m with speed 89 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6336.8 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 7921 / 5.",
+            "id": 531
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 4 m with speed 14 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "343.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 196 / 4.",
+            "id": 535
+        },
+        {
+            "id": 539,
+            "question": "Biot-Savart law is analogous to ______ law in electrostatics.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Coulomb's Law",
+                "B": "Gauss Law",
+                "C": "Ohm's Law",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 2 m with speed 87 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "18922.5 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 7569 / 2.",
+            "id": 543
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 2 m with speed 23 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1851.5 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 529 / 2.",
+            "id": 547
+        },
+        {
+            "id": 551,
+            "question": "Enrichment? yes. increasing percentage of U-235 in fuel to make it fissile.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 1 m with speed 83 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6889.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 6889 / 1.",
+            "id": 555
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 4 m with speed 75 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7031.25 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 5625 / 4.",
+            "id": 559
+        },
+        {
+            "question": "An object of mass 6 kg is rotating in a circle of radius 4 m with speed 57 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4873.5 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 6 * 3249 / 4.",
+            "id": 563
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 4 m with speed 65 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "10562.5 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 4225 / 4.",
+            "id": 567
+        },
+        {
+            "id": 571,
+            "question": "Average kinetic energy in SHM over one cycle is E/2.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 3 m with speed 69 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "14283.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 4761 / 3.",
+            "id": 575
+        },
+        {
+            "id": 579,
+            "question": "Oscillations in a tunnel through Earth are SHM? yes.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 1 m with speed 21 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "882.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 441 / 1.",
+            "id": 583
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 5 m with speed 71 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7057.4 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 5041 / 5.",
+            "id": 587
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 3 m with speed 15 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "75.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 225 / 3.",
+            "id": 591
+        },
+        {
+            "id": 595,
+            "question": "Angular SHM? yes. restoring torque τ = -Cθ.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 1 m with speed 82 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "26896.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 6724 / 1.",
+            "id": 599
+        },
+        {
+            "question": "Scattering of light is proportional to ______.",
+            "options": {
+                "A": "1 / λ⁴",
+                "B": "λ²",
+                "C": "1/λ",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 603
+        },
+        {
+            "question": "An object of mass 6 kg is rotating in a circle of radius 2 m with speed 13 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "507.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 6 * 169 / 2.",
+            "id": 607
+        },
+        {
+            "question": "Condition for TIR is light must travel from ______ to ______ medium.",
+            "options": {
+                "A": "Denser to Rarer",
+                "B": "Rarer to Denser",
+                "C": "None",
+                "D": "Same to Same"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 611
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 5 m with speed 94 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "17672.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 8836 / 5.",
+            "id": 615
+        },
+        {
+            "id": 619,
+            "question": "Magnification of telescope in normal adjustment is fo/fe.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 623,
+            "question": "Critical angle for glass (n=1.5) is approx 42 degrees.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 627,
+            "question": "If object is at center of curvature of concave mirror, image is at ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Center of curvature",
+                "B": "Focus",
+                "C": "Pole",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 631,
+            "question": "Rainbow formation: primary rainbow undergoes one TIR.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 3 m with speed 46 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "705.33 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 2116 / 3.",
+            "id": 635
+        },
+        {
+            "id": 639,
+            "question": "Inductor opposes sudden changes in current.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 4 m with speed 29 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1892.25 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 841 / 4.",
+            "id": 643
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 3 m with speed 93 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2883.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 8649 / 3.",
+            "id": 647
+        },
+        {
+            "question": "Common base current gain α is always ______ than 1.",
+            "options": {
+                "A": "Less",
+                "B": "Greater",
+                "C": "Equal",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 651
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 2 m with speed 70 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4900.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 4900 / 2.",
+            "id": 655
+        },
+        {
+            "id": 659,
+            "question": "If flux increases, emf is negative. if flux decreases, emf is positive. True?",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 663,
+            "question": "Magnetic flux is zero when θ = 90 (tangential area).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 4 m with speed 62 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3844.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 3844 / 4.",
+            "id": 667
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 1 m with speed 81 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "65610.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 6561 / 1.",
+            "id": 671
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 4 m with speed 92 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "10580.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 8464 / 4.",
+            "id": 675
+        },
+        {
+            "question": "Rotational kinetic energy K_rot = ______.",
+            "options": {
+                "A": "0.5 I ω²",
+                "B": "0.5 m v²",
+                "C": "None",
+                "D": "I ω"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 679
+        },
+        {
+            "question": "An object of mass 6 kg is rotating in a circle of radius 5 m with speed 95 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "10830.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 6 * 9025 / 5.",
+            "id": 683
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 3 m with speed 15 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "600.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 225 / 3.",
+            "id": 687
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 5 m with speed 70 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "3920.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 4900 / 5.",
+            "id": 691
+        },
+        {
+            "question": "Body MI=3 kg·m², ω=2 rad/s has same KE as 12kg mass at velocity v. v=",
+            "difficulty": "hard",
+            "pyq": true,
+            "options": {
+                "A": "1 m/s",
+                "B": "2 m/s",
+                "C": "0.5 m/s",
+                "D": "4 m/s"
+            },
+            "answer": "A",
+            "tag": "pyq",
+            "id": 695
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 1 m with speed 78 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "48672.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 6084 / 1.",
+            "id": 699
+        },
+        {
+            "id": 703,
+            "question": "If MI decreases, angular velocity must increase for constant L.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 1 m with speed 88 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "69696.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 7744 / 1.",
+            "id": 707
+        },
+        {
+            "question": "CM of a uniform solid cone of height h is at distance ______ from base.",
+            "options": {
+                "A": "h / 4",
+                "B": "h / 3",
+                "C": "2h / 5",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 711
+        },
+        {
+            "question": "Center of mass and center of gravity are same if ______ is uniform.",
+            "options": {
+                "A": "Gravitational field g",
+                "B": "Magnetic field",
+                "C": "Density",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 715
+        },
+        {
+            "id": 719,
+            "question": "If net external torque is zero, angular velocity is always constant? no. I can change.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "B",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 3 m with speed 74 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5476.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 5476 / 3.",
+            "id": 723
+        },
+        {
+            "id": 727,
+            "question": "Sublimation? yes. phase change from solid to gas directly.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "Heat required to change phase is Q = ______.",
+            "options": {
+                "A": "m L",
+                "B": "m s ΔT",
+                "C": "None",
+                "D": "P t"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 731
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 5 m with speed 67 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6284.6 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 4489 / 5.",
+            "id": 735
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 2 m with speed 80 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6400.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 6400 / 2.",
+            "id": 739
+        },
+        {
+            "id": 743,
+            "question": "Calorimetry is based on law of conservation of energy (Heat lost = Heat gained).",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 3 m with speed 75 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "13125.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 5625 / 3.",
+            "id": 747
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 1 m with speed 54 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "23328.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 2916 / 1.",
+            "id": 751
+        },
+        {
+            "id": 755,
+            "question": "Thermodynamics vs Thermal properties? yes. former deals with energy laws, latter with material response.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "A Carnot engine works between two reservoirs at temperatures T1 = 900 K and T2 = 300 K. If the engine takes 1200 J of heat from the high-temperature reservoir, the work done by the engine is ______.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "800 J",
+                "B": "400 J",
+                "C": "600 J",
+                "D": "900 J"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": true,
+            "tag": "pyq",
+            "id": 759
+        },
+        {
+            "question": "A reversible engine converts one-sixth of the heat input into work. When the temperature of the sink is reduced by 62°C, the efficiency of the engine is doubled. The original temperature of the source and sink are ______.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "372 K, 310 K",
+                "B": "472 K, 410 K",
+                "C": "310 K, 372 K",
+                "D": "410 K, 472 K"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "pyq",
+            "id": 763
+        },
+        {
+            "question": "In an adiabatic expansion of an ideal gas, the product PV^γ is constant. The work done by the gas in expanding from (P1, V1) to (P2, V2) is ______.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "(P1V1 - P2V2)/(γ - 1)",
+                "B": "(P2V2 - P1V1)/(γ - 1)",
+                "C": "(P1V1 + P2V2)/(γ - 1)",
+                "D": "P1V1 log(V2/V1)"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "pyq",
+            "id": 767
+        },
+        {
+            "question": "If 110 J of heat is added to a gaseous system and its internal energy increases by 40 J, the amount of work done by the system is ______.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "70 J",
+                "B": "150 J",
+                "C": "110 J",
+                "D": "40 J"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "pyq",
+            "id": 771
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 2 m with speed 31 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2402.5 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 961 / 2.",
+            "id": 775
+        },
+        {
+            "question": "An ideal gas is compressed to half its initial volume by means of several processes. Which of the following processes results in the maximum work done on the gas?",
+            "difficulty": "Hard",
+            "options": {
+                "A": "Adiabatic",
+                "B": "Isothermal",
+                "C": "Isobaric",
+                "D": "Isochoric"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 779
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 5 m with speed 70 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2940.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 4900 / 5.",
+            "id": 783
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 2 m with speed 45 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "9112.5 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 2025 / 2.",
+            "id": 787
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 5 m with speed 36 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1296.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 1296 / 5.",
+            "id": 791
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 5 m with speed 41 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "336.2 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 1681 / 5.",
+            "id": 795
+        },
+        {
+            "id": 799,
+            "question": "Refrigerator is a heat engine working in reverse.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 1 m with speed 75 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "56250.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 5625 / 1.",
+            "id": 803
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 1 m with speed 41 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "16810.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 1681 / 1.",
+            "id": 807
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 1 m with speed 58 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "6728.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 3364 / 1.",
+            "id": 811
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 1 m with speed 79 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "31205.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 6241 / 1.",
+            "id": 815
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 3 m with speed 61 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2480.67 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 3721 / 3.",
+            "id": 819
+        },
+        {
+            "question": "Random errors can be minimized by taking ______ of observations.",
+            "options": {
+                "A": "Mean",
+                "B": "Sum",
+                "C": "Difference",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 823
+        },
+        {
+            "question": "An object of mass 10 kg is rotating in a circle of radius 1 m with speed 33 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "10890.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 10 * 1089 / 1.",
+            "id": 827
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 3 m with speed 22 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "484.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 484 / 3.",
+            "id": 831
+        },
+        {
+            "question": "An object of mass 6 kg is rotating in a circle of radius 4 m with speed 63 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "5953.5 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 6 * 3969 / 4.",
+            "id": 835
+        },
+        {
+            "question": "One Parsec is ______ light years.",
+            "options": {
+                "A": "3.26",
+                "B": "1",
+                "C": "9.46",
+                "D": "None"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "pyq": false,
+            "tag": "hard",
+            "difficulty": "hard",
+            "id": 839
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 1 m with speed 24 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2304.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 576 / 1.",
+            "id": 843
+        },
+        {
+            "question": "The escape velocity on a planet with mass 1M and radius 5R is how many times the Earth's escape velocity?",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "0.45",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "Ve = sqrt(2GM/R). So ratio is sqrt(1/5).",
+            "id": 847
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 4 m with speed 24 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "576.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 576 / 4.",
+            "id": 851
+        },
+        {
+            "question": "An object of mass 3 kg is rotating in a circle of radius 2 m with speed 86 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "11094.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 3 * 7396 / 2.",
+            "id": 855
+        },
+        {
+            "id": 859,
+            "question": "Minimum 2 vectors are needed for zero resultant if magnitudes are equal.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 2 kg is rotating in a circle of radius 3 m with speed 17 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "192.67 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 2 * 289 / 3.",
+            "id": 863
+        },
+        {
+            "question": "An object of mass 6 kg is rotating in a circle of radius 5 m with speed 59 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "4177.2 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 6 * 3481 / 5.",
+            "id": 867
+        },
+        {
+            "question": "An object of mass 6 kg is rotating in a circle of radius 1 m with speed 81 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "39366.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 6 * 6561 / 1.",
+            "id": 871
+        },
+        {
+            "question": "An object of mass 9 kg is rotating in a circle of radius 5 m with speed 99 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "17641.8 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 9 * 9801 / 5.",
+            "id": 875
+        },
+        {
+            "question": "An object of mass 6 kg is rotating in a circle of radius 2 m with speed 54 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "8748.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 6 * 2916 / 2.",
+            "id": 879
+        },
+        {
+            "question": "An object of mass 4 kg is rotating in a circle of radius 1 m with speed 42 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "7056.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 4 * 1764 / 1.",
+            "id": 883
+        },
+        {
+            "question": "The speed of a transverse wave in a string is v. If the tension in the string is doubled and its radius is also doubled, the new speed of the wave is ______.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "v / √2",
+                "B": "v",
+                "C": "v√2",
+                "D": "2v"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 887
+        },
+        {
+            "question": "An object of mass 1 kg is rotating in a circle of radius 1 m with speed 40 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "1600.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 1 * 1600 / 1.",
+            "id": 891
+        },
+        {
+            "question": "The diameter of the objective of a telescope is 0.1 m and the wavelength of light is 5000 Å. The resolving power of the telescope is ______.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "1.64 x 10^5",
+                "B": "2 x 10^5",
+                "C": "1 x 10^5",
+                "D": "5 x 10^4"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 895
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 5 m with speed 15 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "225.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 225 / 5.",
+            "id": 899
+        },
+        {
+            "id": 903,
+            "question": "Circularly polarised light? yes. made of two perpendicular components with π/2 phase shift.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "The Fresnel distance for an aperture of size 3 mm and wavelength 600 nm is ______.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "15 m",
+                "B": "5 m",
+                "C": "30 m",
+                "D": "10 m"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 907
+        },
+        {
+            "question": "An object of mass 8 kg is rotating in a circle of radius 5 m with speed 93 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "13838.4 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 8 * 8649 / 5.",
+            "id": 911
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 5 m with speed 15 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "315.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 225 / 5.",
+            "id": 915
+        },
+        {
+            "id": 919,
+            "question": "Contrast of fringes is best when I1 = I2.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "In a Fresnel biprism experiment, the distance between the source and the screen is 1 m and the distance between the two virtual sources is 2 mm. The fringe width for light of wavelength 6000 Å is ______.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "0.3 mm",
+                "B": "3 mm",
+                "C": "0.03 mm",
+                "D": "30 mm"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 923
+        },
+        {
+            "id": 927,
+            "question": "Lloyd's Mirror experiment? yes. similar to YDSE but with a single source and reflection.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "A car of mass 1000 kg moving with a speed of 18 km/h is stopped by applying brakes after travelling a distance of 5 m. If the speed of the car is doubled, the stopping distance will be ______ (assuming same braking force).",
+            "difficulty": "Medium",
+            "options": {
+                "A": "20 m",
+                "B": "10 m",
+                "C": "40 m",
+                "D": "5 m"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 931
+        },
+        {
+            "id": 935,
+            "question": "Work done by variable force? yes. calculated by integration.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 7 kg is rotating in a circle of radius 2 m with speed 52 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "9464.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 7 * 2704 / 2.",
+            "id": 939
+        },
+        {
+            "question": "A block of mass 2 kg is dropped from a height of 40 cm onto a spring of force constant 1960 N/m. The maximum compression of the spring is ______.",
+            "difficulty": "Hard",
+            "options": {
+                "A": "10 cm",
+                "B": "20 cm",
+                "C": "5 cm",
+                "D": "15 cm"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 943
+        },
+        {
+            "question": "A pump is required to lift 1000 kg of water per minute from a well 20 m deep and eject it with a speed of 20 m/s. The horse power of the engine is ______ (1 HP = 746 W).",
+            "difficulty": "Hard",
+            "options": {
+                "A": "8.9 HP",
+                "B": "6.6 HP",
+                "C": "4.4 HP",
+                "D": "12 HP"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 947
+        },
+        {
+            "question": "A billiard ball moving with a speed of 5 m/s hits an identical ball at rest. If the first ball stops after collision, the coefficient of restitution is ______.",
+            "difficulty": "Medium",
+            "options": {
+                "A": "1",
+                "B": "0.5",
+                "C": "0.1",
+                "D": "Zero"
+            },
+            "answer": "A",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "pyq": true,
+            "tag": "hard",
+            "id": 951
+        },
+        {
+            "id": 955,
+            "question": "Two springs of constants k1 and k2 in series have equivalent constant ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "k1 k2 / (k1+k2)",
+                "B": "k1 + k2",
+                "C": "√(k1 k2)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "question": "An object of mass 5 kg is rotating in a circle of radius 5 m with speed 45 m/s. The centripetal force is:",
+            "difficulty": "hard",
+            "hasDiagram": false,
+            "options": {
+                "A": "2025.0 N",
+                "B": "10",
+                "C": "5",
+                "D": "20"
+            },
+            "answer": "A",
+            "hint": "Use standard physics formulas.",
+            "solution": "F = mv^2/r = 5 * 2025 / 5.",
+            "id": 959
+        }
+    ]
 }

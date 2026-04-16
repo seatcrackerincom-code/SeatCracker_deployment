@@ -1,385 +1,429 @@
-﻿{
-    "questions":  [
-                      {
-                          "id":  26,
-                          "question":  "The value of ⁿC₀ + 2 ⁿC₁ + 3 ⁿC₂ + ... + (n+1) ⁿCₙ is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "(n + 2) 2ⁿ⁻¹",
-                                          "B":  "(n + 1) 2ⁿ",
-                                          "C":  "n 2ⁿ",
-                                          "D":  "2ⁿ"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  27,
-                          "question":  "What is the 5th term in (x + 2y)¹⁰?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "¹⁰C₄ x⁶ (2y)⁴",
-                                          "B":  "¹⁰C₅ x⁵ (2y)⁵",
-                                          "C":  "¹⁰C₄ x⁴ (2y)⁶",
-                                          "D":  "210 x⁶ y⁴"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  28,
-                          "question":  "Sum of coefficients of (2x − 3y)¹⁰ putting x=y=1 is?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "−1",
-                                          "B":  "1",
-                                          "C":  "0",
-                                          "D":  "2¹⁰"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  29,
-                          "question":  "The coefficient of xⁿ in (1 - x + x² - x³ ... )⁻¹ is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "1",
-                                          "B":  "n",
-                                          "C":  "(-1)ⁿ",
-                                          "D":  "n+1"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  30,
-                          "question":  "Find term independent of x in (x² + 1/x)¹².",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "¹²C₈",
-                                          "B":  "¹²C₆",
-                                          "C":  "¹²C₄",
-                                          "D":  "1"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  31,
-                          "question":  "Find the middle term in (x + 1/x)¹⁰.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "¹⁰C₅",
-                                          "B":  "¹⁰C₆",
-                                          "C":  "¹⁰C₄",
-                                          "D":  "1"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  32,
-                          "question":  "What is the sum of terms in expansion of (a+b)ⁿ and (a-b)ⁿ?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "2(T₁ + T₃ + T₅ ...)",
-                                          "B":  "2(T₂ + T₄ + T₆ ...)",
-                                          "C":  "2ⁿ",
-                                          "D":  "0"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  33,
-                          "question":  "If n is a negative integer or fraction, the binomial expansion of (1+x)ⁿ has ______ terms.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Infinite",
-                                          "B":  "n+1",
-                                          "C":  "Finite",
-                                          "D":  "Zero"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  34,
-                          "question":  "The coefficient of x³ in (1-2x)⁻² is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "32",
-                                          "B":  "8",
-                                          "C":  "-32",
-                                          "D":  "16"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  35,
-                          "question":  "If coefficients of rth and (r+4)th terms in (1+x)¹⁸ are equal, then r = ?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "7",
-                                          "B":  "8",
-                                          "C":  "9",
-                                          "D":  "6"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  36,
-                          "question":  "The coefficient of xÂ² in the expansion of âˆš(1+x) is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "-1/8",
-                                          "B":  "1/8",
-                                          "C":  "-1/4",
-                                          "D":  "1/2"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  37,
-                          "question":  "Value of â¿Câ‚€ âˆ’ â¿Câ‚ + â¿Câ‚‚ âˆ’ ... + (âˆ’1)â¿Â·â¿Câ‚™ = ?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "0",
-                                          "B":  "2â¿",
-                                          "C":  "1",
-                                          "D":  "âˆ’1"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  38,
-                          "question":  "The value of Â¹â°Câ‚€Â² + Â¹â°Câ‚Â² + ... + Â¹â°Câ‚â‚€Â² is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Â²â°Câ‚â‚€",
-                                          "B":  "Â²â°Câ‚€",
-                                          "C":  "100",
-                                          "D":  "2Â¹â°"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  39,
-                          "question":  "If n = 5, the middle terms of (2x + 3y)â¿ are ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "3rd and 4th",
-                                          "B":  "2nd and 3rd",
-                                          "C":  "4th and 5th",
-                                          "D":  "Only 3rd"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  40,
-                          "question":  "In the expansion of (x + a)â¿, the rth term from the end is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "(n - r + 2)th term from the beginning",
-                                          "B":  "(n - r + 1)th term",
-                                          "C":  "(n - r)th term",
-                                          "D":  "rth term"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  41,
-                          "question":  "Find the smallest integer greater than (3 + âˆš5)â¿.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "It is always odd",
-                                          "B":  "It is always even",
-                                          "C":  "Depends on n",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  42,
-                          "question":  "Find the coefficient of xâ»Â³ in (x - 1/x)Â¹Â¹.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "-330",
-                                          "B":  "330",
-                                          "C":  "-165",
-                                          "D":  "165"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  43,
-                          "question":  "Coefficient of xâ´ in expansion of (x/2 - 3/xÂ²)Â¹â° is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "405/256",
-                                          "B":  "405/512",
-                                          "C":  "135/256",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  44,
-                          "question":  "If (1+x)Â¹âµ = Câ‚€ + Câ‚x + ... + Câ‚â‚…xÂ¹âµ, then Î£ áµ£â‚Œâ‚€Â¹âµ rÂ² Cáµ£ is ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "15 * 16 * 2Â¹Â³",
-                                          "B":  "15 * 2Â¹â´",
-                                          "C":  "15 * 16 * 2Â¹â´",
-                                          "D":  "2Â¹âµ"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  45,
-                          "question":  "Sum of odd-positioned coefficients of (1+x)Â²â¿ = ?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "2Â²â¿â»Â¹",
-                                          "B":  "2â¿",
-                                          "C":  "2Â²â¿",
-                                          "D":  "nÂ·2â¿"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  46,
-                          "question":  "The expansion (1+x)â¿ where n is negative is valid only if ______.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "|x| \u003c 1",
-                                          "B":  "|x| â‰¤ 1",
-                                          "C":  "x \u003e 0",
-                                          "D":  "x R"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  47,
-                          "question":  "Find the coefficient of xâµ in (1+x)Â²Â¹ + (1+x)Â²Â² + ... + (1+x)Â³â°.",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "Â³Â¹Câ‚† - Â²Â¹Câ‚†",
-                                          "B":  "Â³â°Câ‚† - Â²â°Câ‚†",
-                                          "C":  "Â³Â¹Câ‚… - Â²Â¹Câ‚…",
-                                          "D":  "None"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      },
-                      {
-                          "id":  48,
-                          "question":  "Coefficient of xâ»â· in (2x âˆ’ 1/(3xÂ²))Â¹Â¹ is?",
-                          "difficulty":  "Hard",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "âˆ’(11C6)Â·2âµ/3â¶",
-                                          "B":  "(11C5)Â·2â¶/3âµ",
-                                          "C":  "âˆ’11C5Â·2âµ/3â¶",
-                                          "D":  "11C6Â·2â¶/3âµ"
-                                      },
-                          "answer":  "C",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  49,
-                          "question":  "In the expansion of (x+y)â¿, the sum of all binomial coefficients equals?",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "2â¿",
-                                          "B":  "n",
-                                          "C":  "n+1",
-                                          "D":  "2â¿â»Â¹"
-                                      },
-                          "answer":  "A",
-                          "pyq":  true,
-                          "tag":  "pyq"
-                      },
-                      {
-                          "id":  50,
-                          "question":  "The sum of coefficients of all odd powers of x in (1+x)â¿ is ______.",
-                          "difficulty":  "Medium",
-                          "hasDiagram":  false,
-                          "diagram_description":  "",
-                          "options":  {
-                                          "A":  "2â¿â»Â¹",
-                                          "B":  "2â¿",
-                                          "C":  "0",
-                                          "D":  "n"
-                                      },
-                          "answer":  "A",
-                          "pyq":  false
-                      }
-                  ]
+{
+    "questions": [
+        {
+            "id": 2,
+            "question": "Number of terms in the expansion of (x + y + z)ⁿ is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(n+1)(n+2) / 2",
+                "B": "n + 3",
+                "C": "3ⁿ",
+                "D": "n²"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 6,
+            "question": "Coefficient of x⁴ in expansion of (1 + x + x²)³ is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "6",
+                "B": "3",
+                "C": "10",
+                "D": "0"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 10,
+            "question": "If n is even, the number of middle terms in (a + b)ⁿ is ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "2",
+                "C": "0",
+                "D": "n/2"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 14,
+            "question": "Expansion of (1 - x)⁻¹ for |x| < 1 is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1 + x + x² + x³ + ...",
+                "B": "1 - x + x² - x³ + ...",
+                "C": "1 + x - x² + x³ - ...",
+                "D": "Infinite series"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 18,
+            "question": "The binomial expansion of (x + a)ⁿ + (x - a)ⁿ has ______ terms if n is even.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "n/2 + 1",
+                "B": "n/2",
+                "C": "n + 1",
+                "D": "2n"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 22,
+            "question": "Coefficient of x in (1 − 2x)^(−1/2) using binomial expansion is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1",
+                "B": "2",
+                "C": "−1",
+                "D": "1/2"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 26,
+            "question": "What is the 5th term in (x + 2y)¹⁰?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "¹⁰C₄ x⁶ (2y)⁴",
+                "B": "¹⁰C₅ x⁵ (2y)⁵",
+                "C": "¹⁰C₄ x⁴ (2y)⁶",
+                "D": "210 x⁶ y⁴"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 30,
+            "question": "Find the middle term in (x + 1/x)¹⁰.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "¹⁰C₅",
+                "B": "¹⁰C₆",
+                "C": "¹⁰C₄",
+                "D": "1"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 34,
+            "question": "If coefficients of rth and (r+4)th terms in (1+x)¹⁸ are equal, then r = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "7",
+                "B": "8",
+                "C": "9",
+                "D": "6"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 38,
+            "question": "If n = 5, the middle terms of (2x + 3y)ⁿ are ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "3rd and 4th",
+                "B": "2nd and 3rd",
+                "C": "4th and 5th",
+                "D": "Only 3rd"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 42,
+            "question": "Coefficient of x⁴ in expansion of (x/2 - 3/x²)¹⁰ is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "405/256",
+                "B": "405/512",
+                "C": "135/256",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 46,
+            "question": "Find the coefficient of x⁵ in (1+x)²¹ + (1+x)²² + ... + (1+x)³⁰.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "³¹C₆ - ²¹C₆",
+                "B": "³⁰C₆ - ²⁰C₆",
+                "C": "³¹C₅ - ²¹C₅",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 50,
+            "question": "The expansion (1+x)ⁿ = C₀ + C₁x + ... + Cₙxⁿ. Value of Σ Cᵣ/(r+1) is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(2ⁿ⁺¹ - 1) / (n + 1)",
+                "B": "(2ⁿ - 1) / n",
+                "C": "2ⁿ / (n + 1)",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 54,
+            "question": "The coefficient of x⁵ in (1 + x² + x³)(1+x)¹⁰ is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "¹⁰C₅ + ¹⁰C₃ + ¹⁰C₂",
+                "B": "¹⁰C₅",
+                "C": "¹⁰C₅ + ¹⁰C₄",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 58,
+            "question": "If n is a positive integer, the fractional part of (3 + √5)ⁿ is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "1 - (3 - √5)ⁿ",
+                "B": "(3 - √5)ⁿ",
+                "C": "0.5",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 62,
+            "question": "The number of terms in expansion of (1 + 5√2·x)⁹ + (1 − 5√2·x)⁹ is?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "5",
+                "B": "9",
+                "C": "10",
+                "D": "6"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "id": 66,
+            "question": "If (1 + ax)ⁿ = 1 + 8x + 24x² + ..., then the values of a and n are ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "a = 2, n = 4",
+                "B": "a = 4, n = 2",
+                "C": "a = 1, n = 8",
+                "D": "a = 8, n = 1"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 70,
+            "question": "The sum of coefficients in the expansion of (1 + x - 3x²)²⁰²⁴ is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "(-1)²⁰²⁴",
+                "B": "1",
+                "C": "0",
+                "D": "3²⁰²⁴"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard"
+        },
+        {
+            "id": 74,
+            "question": "The Maclaurin series expansion of sinh(x) contains only ______ powers of x.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Odd",
+                "B": "Even",
+                "C": "Prime",
+                "D": "Negative"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 78,
+            "question": "The identity A_i = P(α_i) / Q'(α_i) is known as the expansion theorem for partial fractions or ______ rule.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Heaviside's",
+                "B": "L'Hopital's",
+                "C": "Taylor's",
+                "D": "Cramer's"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 82,
+            "question": "If (x² + 1) / ((x+1)(x²+1)) is resolved, the coefficients are ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "A=1, B=0, C=0",
+                "B": "A=1/2, B=1/2, C=0",
+                "C": "A=1, B=1, C=1",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 86,
+            "question": "The coefficient of x^r in (1+x)^n is ______.",
+            "difficulty": "medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "ⁿCᵣ",
+                "B": "ⁿPᵣ",
+                "C": "n!",
+                "D": "r!"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 90,
+            "question": "Poisson distribution is a limiting case of Binomial distribution when n is ______ and p is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Large, Small",
+                "B": "Small, Large",
+                "C": "Large, Large",
+                "D": "Small, Small"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 94,
+            "question": "Maximum value for p in Binomial distribution for maximum variance is ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "0.5",
+                "B": "1",
+                "C": "0",
+                "D": "0.25"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 98,
+            "question": "Coefficient of variation is (SD / Mean) * 100. It measures ______.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "Relative dispersion",
+                "B": "Absolute error",
+                "C": "Mean height",
+                "D": "Probability"
+            },
+            "answer": "A"
+        },
+        {
+            "id": 102,
+            "question": "Coefficient of Variation (C.V.) = (σ / x̄) * 100.",
+            "difficulty": "Medium",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false
+        },
+        {
+            "id": 106,
+            "question": "If byx and bxy are regression coefficients, then r² = ?",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "",
+            "options": {
+                "A": "byx · bxy",
+                "B": "(byx + bxy)/2",
+                "C": "byx/bxy",
+                "D": "1/(byx·bxy)"
+            },
+            "answer": "A",
+            "pyq": true,
+            "tag": "pyq"
+        },
+        {
+            "question": "If an equation has integer coefficients, its rational roots must be ______.",
+            "difficulty": "Hard",
+            "hasDiagram": false,
+            "diagram_description": "None",
+            "options": {
+                "A": "Integers if leading coeff is 1",
+                "B": "Always integers",
+                "C": "Never integers",
+                "D": "None"
+            },
+            "answer": "A",
+            "pyq": false,
+            "tag": "hard",
+            "id": 110
+        }
+    ]
 }
