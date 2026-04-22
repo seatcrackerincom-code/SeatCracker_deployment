@@ -680,10 +680,10 @@ export default function RealBattleMode({ userId, exam, course, onBack, authUser 
         console.warn("Fullscreen request failed:", err);
       });
     }
-    // Attempt landscape lock
+    // Attempt portrait lock for mobile
     if (screen.orientation && (screen.orientation as any).lock) {
       try {
-        (screen.orientation as any).lock("landscape").catch(() => { });
+        (screen.orientation as any).lock("portrait").catch(() => { });
       } catch (e) { }
     }
     // Always reset timer to full 180 minutes on every exam start
