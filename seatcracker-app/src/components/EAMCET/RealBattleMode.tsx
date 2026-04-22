@@ -1839,10 +1839,15 @@ export default function RealBattleMode({ userId, exam, course, onBack, authUser 
                 The exam doesn't know whether to load Engineering or Agriculture questions. This usually happens if your browser cache was cleared.
               </div>
               <button 
-                onClick={() => window.location.href = "/"}
-                style={{ background: "#3b82f6", color: "#fff", border: "none", padding: "10px 24px", borderRadius: "8px", fontWeight: "bold", cursor: "pointer" }}
+                onClick={() => {
+                  if (document.fullscreenElement) {
+                    document.exitFullscreen().catch(() => {});
+                  }
+                  onBack();
+                }}
+                style={{ background: "#3b82f6", color: "#fff", border: "none", padding: "12px 28px", borderRadius: "8px", fontWeight: "bold", cursor: "pointer", fontSize: "15px" }}
               >
-                Return to Home Screen
+                Go Back to Selection
               </button>
             </>
           )}
