@@ -2067,12 +2067,95 @@
     inset: 0;
     z-index: 4000;
     width: 100% !important;
-    background: #fff;
+    background: #ebf5ff;
     overflow-y: auto;
+  }
+
+  .sidebarOpen {
+    display: flex !important;
   }
 
   .paletteToggle {
     display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .examHeader {
+    height: 40px;
+    padding-left: 10px;
+  }
+  
+  .examTitle {
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 140px;
+  }
+
+  .hBtnGroup {
+    width: auto;
+    border-left: none;
+  }
+  
+  .hBtn {
+    padding: 0 8px;
+  }
+  
+  .hBtn span:not(.hBtnIcon) {
+    display: none; /* Hide text, keep icons */
+  }
+
+  .courseRow {
+    height: 36px;
+    padding: 0 6px;
+  }
+  
+  .courseBtn {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+
+  .sectionsBar {
+    height: 32px;
+    padding: 0 4px;
+  }
+  
+  .tab {
+    padding: 5px 12px;
+    font-size: 11px;
+  }
+
+  .qScroll {
+    padding: 15px;
+  }
+
+  .qContent {
+    font-size: 15px;
+  }
+  
+  .optLabel {
+    font-size: 15px;
+  }
+
+  .qFooter {
+    padding: 8px 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .fBtnWhite, .fBtnBlue, .fBtnRed {
+    padding: 8px 12px;
+    font-size: 12px;
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .qFooterLeft, .qFooterRight {
+    width: 100%;
+    justify-content: space-between;
   }
 }
 
