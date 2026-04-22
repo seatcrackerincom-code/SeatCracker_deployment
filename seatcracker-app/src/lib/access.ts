@@ -69,45 +69,16 @@ async function loadFromSupabase(userId: string): Promise<Record<string, unknown>
 }
 
 // ─── Core: compute access state ──────────────────────────
+// --- SEATCRACKER IS NOW 100% FREE FOR ALL USERS ---
 export function computeAccessState(raw: Partial<AccessState>): AccessState {
-  const now = Date.now();
-
-  if (raw.isPremium) {
-    return {
-      status: "premium",
-      trialStartDate: raw.trialStartDate ?? null,
-      trialEndDate: raw.trialEndDate ?? null,
-      daysLeft: 0,
-      isPremium: true,
-      purchaseDate: raw.purchaseDate ?? null,
-      discountPercentage: raw.discountPercentage ?? 0,
-    };
-  }
-
-  if (raw.trialEndDate) {
-    const end = new Date(raw.trialEndDate).getTime();
-    const msLeft = end - now;
-    const daysLeft = Math.max(0, Math.ceil(msLeft / (1000 * 60 * 60 * 24)));
-
-    return {
-      status: msLeft > 0 ? "trial" : "expired",
-      trialStartDate: raw.trialStartDate ?? null,
-      trialEndDate: raw.trialEndDate,
-      daysLeft,
-      isPremium: false,
-      purchaseDate: null,
-      discountPercentage: raw.discountPercentage ?? 0,
-    };
-  }
-
   return {
-    status: "none",
-    trialStartDate: null,
-    trialEndDate: null,
-    daysLeft: 0,
-    isPremium: false,
-    purchaseDate: null,
-    discountPercentage: raw.discountPercentage ?? 0,
+    status: "premium",
+    trialStartDate: raw.trialStartDate ?? null,
+    trialEndDate: raw.trialEndDate ?? null,
+    daysLeft: 1000, // Effectively infinite
+    isPremium: true,
+    purchaseDate: raw.purchaseDate ?? new Date().toISOString(),
+    discountPercentage: 0,
   };
 }
 

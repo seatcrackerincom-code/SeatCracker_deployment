@@ -3,14 +3,14 @@
 import { useState, useEffect, useRef } from "react";
 import MotivationScreen from "../components/MotivationScreen";
 import EntranceTestSelect from "../components/EntranceTestSelect";
-import ExamSelect from "../components/ExamSelect"; // This is now 'State Select'
-import CourseSelect from "../components/CourseSelect";
-import SyllabusPage from "../components/SyllabusPage";
-import RoadmapPage from "../components/RoadmapPage";
+import ExamSelect from "../components/EAMCET/ExamSelect"; // This is now 'State Select'
+import CourseSelect from "../components/EAMCET/CourseSelect";
+import SyllabusPage from "../components/EAMCET/SyllabusPage";
+import RoadmapPage from "../components/EAMCET/RoadmapPage";
 import ModeSelect from "../components/ModeSelect";
-import PracticeArena from "../components/PracticeArena";
-import RoadmapMode from "../components/RoadmapMode";
-import RealBattleMode from "../components/RealBattleMode";
+import PracticeArena from "../components/EAMCET/PracticeArena";
+import RoadmapMode from "../components/EAMCET/RoadmapMode";
+import RealBattleMode from "../components/EAMCET/RealBattleMode";
 
 import LoginScreen from "../components/LoginScreen";
 import AccessGate from "../components/AccessGate";
@@ -43,7 +43,7 @@ import {
 type Step = -1 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11;
 
 export default function Home() {
-  const [step, setStep] = useState<Step>(-1);
+  const [step, setStep] = useState<Step>(0); // Default to Home (Login). Only move to -1 if confirmed new user.
   const [testCategory, setTestCategory] = useState(""); // e.g., "EAMCET"
   const [exam, setExam] = useState("");                  // e.g., "AP" or "TS"
   const [course, setCourse] = useState("");              // e.g., "Engineering"
@@ -56,6 +56,7 @@ export default function Home() {
   // Auth state
   const [authUser, setAuthUser] = useState<User | null>(null);
   const [authChecked, setAuthChecked] = useState(false);
+  const [initialLoad, setInitialLoad] = useState(true);
 
   // Helper for keyed storage
   const getPK = (key: string) => authUser?.uid ? `${key}_${authUser.uid}` : key;
@@ -71,16 +72,28 @@ export default function Home() {
     trackAppOpen(); // Firebase: app_open
 
     // Seed history with current state
-    history.replaceState({ step: -1 }, "");
+    history.replaceState({ step: 0 }, "");
 
-    // Handle Android/iOS swipe-back & browser back button
+    // 1. Immediate persistence check
+    const savedStep = localStorage.getItem("sc_step");
+    const hasAnyData = Object.keys(localStorage).some(key => key.startsWith("sc_"));
+
+    if (savedStep) {
+      setStep(parseInt(savedStep) as Step);
+      setInitialLoad(false);
+    } else if (!hasAnyData) {
+      // BRAND NEW USER
+      setStep(-1);
+      setInitialLoad(false);
+    }
+
+    // Handle back button
     const handlePopState = (e: PopStateEvent) => {
       const prevStep = (e.state?.step ?? -1) as Step;
       isHandlingPopState.current = true;
       if (prevStep >= 0) {
         setStep(prevStep);
       } else {
-        // At step 0 already — re-push so they stay in app
         history.pushState({ step: 0 }, "");
         setStep(0);
       }
@@ -92,14 +105,19 @@ export default function Home() {
 
   // ── Push history on every step change ──────────────────────
   useEffect(() => {
-    if (step === -1) return; // skip initial uninitialised state
+    if (step === -1) return; 
     if (isHandlingPopState.current) {
-      // This change came FROM popstate — don't push again
       isHandlingPopState.current = false;
       return;
     }
     history.pushState({ step }, "");
-  }, [step]);
+    
+    // Universal persistence
+    localStorage.setItem("sc_step", step.toString());
+    if (authUser?.uid) {
+      localStorage.setItem(getPK("sc_step"), step.toString());
+    }
+  }, [step, authUser?.uid]);
 
   // ── Auth Listener (Once) ──────────────────────────────────
   useEffect(() => {
@@ -133,23 +151,15 @@ export default function Home() {
         }
       }
 
-      // Only attempt to restore step ONCE during initial boot
-      if (user && step === -1) {
-        if (state.status === "premium" || state.status === "trial") {
-          const sStep = localStorage.getItem(pk("sc_step"));
-          const sExam = localStorage.getItem(pk("sc_exam"));
-          const sCourse = localStorage.getItem(pk("sc_course"));
-          const savedStep = sStep ? (parseInt(sStep) as Step) : 1;
-          
-          // Only resume if it looks like a finished setup
-          const resumable = savedStep >= 1 && savedStep <= 10 && !!sExam && !!sCourse;
-          setStep(resumable ? savedStep : 1);
-        } else if (state.status === "expired") {
-          setStep(5);
-        } else {
-          setStep(1);
-        }
+      // ── Persistent Resume Logic (Immediate) ──
+      const sStep = localStorage.getItem(pk("sc_step")) || localStorage.getItem("sc_step");
+      if (sStep) {
+        setStep(parseInt(sStep) as Step);
+      } else if (user) {
+        // Logged in but no saved step -> Start at Dashboard
+        setStep(6);
       }
+      setInitialLoad(false);
     });
 
     return () => unsub();
@@ -317,12 +327,19 @@ export default function Home() {
 
   const effectiveUserId = authUser?.uid || "sc_user";
 
-  if (!mounted || !authChecked) return null;
+  if (!mounted || initialLoad) {
+    return (
+      <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#000' }}>
+        <div className="loader" style={{ width: '40px', height: '40px', border: '3px solid #333', borderTopColor: '#4facfe', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
+        <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+      </div>
+    );
+  }
 
 
 
   return (
-    <main style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+    <>
       {/* SEO Optimized Hidden Headings for Crawlers */}
       <div style={{ position: "absolute", width: "1px", height: "1px", padding: 0, margin: "-1px", overflow: "hidden", clip: "rect(0,0,0,0)", border: 0 }}>
         <h1>SeatCracker - Competitive Exam Practice Platform</h1>
@@ -333,7 +350,14 @@ export default function Home() {
 
 
       {/* Step -1: Intro Page */}
-      {step === -1 && <IntroPage onStart={() => go(0)} />}
+      {step === -1 && (
+        <IntroPage 
+          onStart={() => {
+            localStorage.setItem("sc_visited", "true");
+            go(0);
+          }} 
+        />
+      )}
 
       {/* Step 0: Login */}
       {step === 0 && <LoginScreen onSuccess={handleLoginSuccess} />}
@@ -372,7 +396,6 @@ export default function Home() {
       {step === 5 && (
         <AccessGate
           userId={effectiveUserId}
-          isExpired={access?.status === "expired"}
           onAccessGranted={handleAccessGranted}
           onBack={() => go(4)}
         />
@@ -428,15 +451,15 @@ export default function Home() {
         />
       )}
 
-      {/* Step 11: Real Battle Mode */}
       {step === 11 && (
         <RealBattleMode
           userId={effectiveUserId}
           exam={exam}
           course={course}
           onBack={() => go(6)}
+          authUser={authUser}
         />
       )}
-    </main>
+    </>
   );
 }

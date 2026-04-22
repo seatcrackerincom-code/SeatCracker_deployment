@@ -57,23 +57,23 @@ export async function signInWithGoogle(): Promise<User | null> {
   }
 }
 
-export async function signInEmail(email: string, pass: string): Promise<User | null> {
+export async function signInEmail(email: string, pass: string): Promise<{ user: User | null; error?: string }> {
   try {
     const res = await signInWithEmailAndPassword(auth, email, pass);
-    return res.user;
-  } catch (err) {
+    return { user: res.user };
+  } catch (err: any) {
     console.error("Email sign-in error:", err);
-    throw err;
+    return { user: null, error: err.code };
   }
 }
 
-export async function signUpEmail(email: string, pass: string): Promise<User | null> {
+export async function signUpEmail(email: string, pass: string): Promise<{ user: User | null; error?: string }> {
   try {
     const res = await createUserWithEmailAndPassword(auth, email, pass);
-    return res.user;
-  } catch (err) {
+    return { user: res.user };
+  } catch (err: any) {
     console.error("Email sign-up error:", err);
-    throw err;
+    return { user: null, error: err.code };
   }
 }
 

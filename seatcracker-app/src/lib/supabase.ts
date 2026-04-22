@@ -57,6 +57,16 @@ export interface DbUser {
   purchase_date: string | null;
   plan: string | null;
   policies_accepted: boolean;
+  name?: string;
+  xp?: number;
+  target_rank?: number;
+  applied_codes?: string[];
+  unlocked_features?: string[];
+  cinema_seen?: boolean;
+  rules_seen?: boolean;
+  theme?: string;
+  last_submit_time?: string;
+  daily_submits?: number[];
 }
 
 /** Upsert a user record (safe to call on every login). */
@@ -77,8 +87,49 @@ export async function fetchUser(uid: string): Promise<DbUser | null> {
 /** Explicitly update policy acceptance. */
 export async function updatePolicyStatus(uid: string, accepted: boolean) {
   if (!supabase) return;
-  const { error } = await supabase.from("users").update({ policies_accepted: accepted }).eq("id", uid);
+  const { error } = await supabase.from("users").upsert({ id: uid, policies_accepted: accepted }, { onConflict: "id" });
   if (error) console.error("[supabase] updatePolicyStatus error:", error.message);
+}
+
+/** Upate User Profile fully */
+export async function updateUserProfile(uid: string, updates: Partial<DbUser>) {
+  if (!supabase) return;
+  const { error } = await supabase.from("users").upsert({ id: uid, ...updates }, { onConflict: "id" });
+  if (error) console.error("[supabase] updateUserProfile error:", error.message);
+}
+
+// ─── Mock Attempts ────────────────────────────────────────
+
+export interface MockAttempt {
+  id?: string;
+  user_id: string;
+  mock_id: string;
+  responses: any;
+  questions_snapshot?: any;
+  score: number;
+  total: number;
+  accuracy: number;
+  submitted_at: string;
+}
+
+/** Save a mock exam completion. */
+export async function saveMockAttempt(data: MockAttempt) {
+  if (!supabase) return null;
+  const { data: result, error } = await supabase.from("mock_attempts").insert(data);
+  if (error) console.error("[supabase] saveMockAttempt error:", error.message);
+  return result;
+}
+
+/** Fetch mock history for the current user. */
+export async function fetchMockAttempts(userId: string): Promise<MockAttempt[]> {
+  if (!supabase) return [];
+  const { data, error } = await supabase
+    .from("mock_attempts")
+    .select("*")
+    .eq("user_id", userId)
+    .order("submitted_at", { ascending: false });
+  if (error) console.error("[supabase] fetchMockAttempts error:", error.message);
+  return data || [];
 }
 
 // ─── Payments table ───────────────────────────────────────

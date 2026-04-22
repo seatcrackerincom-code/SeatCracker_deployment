@@ -44,12 +44,12 @@ export default function GlobalHeader() {
       <header
         id="sc-global-header"
         style={{
-          position: "fixed", top: "0", left: "0", right: "0", zIndex: 1000,
+          position: "fixed", top: "0", left: "0", right: "0", zIndex: 20000,
           display: "flex", justifyContent: "space-between", alignItems: "center",
           padding: "16px 24px",
-          background: "rgba(2, 6, 23, 0.6)",
-          backdropFilter: "blur(12px)",
-          borderBottom: "1px solid rgba(255, 255, 255, 0.05)",
+          background: "var(--glass-bg)",
+          backdropFilter: "var(--glass-blur)",
+          borderBottom: "1px solid var(--glass-border)",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
@@ -57,34 +57,45 @@ export default function GlobalHeader() {
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             style={{
-              background: "none", border: "none", color: "#fff", cursor: "pointer",
+              background: "none", border: "none", color: "var(--text)", cursor: "pointer",
               padding: "8px", display: "flex", flexDirection: "column", gap: "4px",
               marginRight: "8px"
             }}
             aria-label="Toggle Menu"
           >
-            <div style={{ width: "24px", height: "2px", background: "#fff", borderRadius: "2px" }} />
-            <div style={{ width: "24px", height: "2px", background: "#fff", borderRadius: "2px" }} />
-            <div style={{ width: "24px", height: "2px", background: "#fff", borderRadius: "2px" }} />
+            <div style={{ width: "24px", height: "2px", background: "var(--text)", borderRadius: "2px" }} />
+            <div style={{ width: "24px", height: "2px", background: "var(--text)", borderRadius: "2px" }} />
+            <div style={{ width: "24px", height: "2px", background: "var(--text)", borderRadius: "2px" }} />
           </button>
 
-          {/* Glassmorphic Logo Ring */}
-          <div style={{
-            width: "36px", height: "36px", borderRadius: "50%",
-            background: "rgba(255, 255, 255, 0.03)",
-            display: "flex", alignItems: "center", justifyContent: "center",
-            border: "1px solid rgba(255, 255, 255, 0.12)",
-            backdropFilter: "blur(4px)", overflow: "hidden", padding: "4px",
-            boxShadow: "inset 0 0 10px rgba(255, 255, 255, 0.05), 0 4px 12px rgba(0, 0, 0, 0.2)",
-          }}>
-            <img src="/logo.png" style={{ width: "100%", height: "100%", objectFit: "contain" }} alt="Logo" />
+          <div 
+            onClick={() => {
+              if (window.location.pathname === "/") {
+                window.dispatchEvent(new CustomEvent("sc_navigate", { detail: { step: 6 } }));
+              } else {
+                window.location.href = "/";
+              }
+            }}
+            style={{ display: "flex", alignItems: "center", gap: "12px", cursor: "pointer" }}
+          >
+            {/* Glassmorphic Logo Ring */}
+            <div style={{
+              width: "36px", height: "36px", borderRadius: "50%",
+              background: "rgba(255, 255, 255, 0.03)",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              border: "1px solid rgba(255, 255, 255, 0.12)",
+              backdropFilter: "blur(4px)", overflow: "hidden", padding: "4px",
+              boxShadow: "inset 0 0 10px rgba(255, 255, 255, 0.05), 0 4px 12px rgba(0, 0, 0, 0.2)",
+            }}>
+              <img src="/logo.png" style={{ width: "100%", height: "100%", objectFit: "contain" }} alt="Logo" />
+            </div>
+            <span style={{
+              fontSize: "16px", fontWeight: "700", letterSpacing: "0.05em",
+              color: "var(--text)", textTransform: "lowercase", opacity: 0.9,
+            }}>
+              seatcracker.com
+            </span>
           </div>
-          <span style={{
-            fontSize: "16px", fontWeight: "700", letterSpacing: "0.05em",
-            color: "#fff", textTransform: "lowercase", opacity: 0.9,
-          }}>
-            seatcracker.com
-          </span>
 
           {/* Live CCU Social Proof (Temporarily disabled until launch)
           <div style={{
@@ -219,25 +230,40 @@ export default function GlobalHeader() {
                 textAlign: "left", marginTop: "8px"
               }}
             >
-              <span>🎁</span> Redeem Promo Code
+              <span>🎁</span> Redeem Reward Code
             </button>
+
+            {/* New Updates Section */}
+            <div style={{ marginTop: "16px", padding: "16px", borderRadius: "12px", background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.05)" }}>
+              <span style={{ display: "block", fontSize: "11px", color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", marginBottom: "12px" }}>
+                Stay Connected
+              </span>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <a href="https://seatcracker.com.in" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px", color: "#a5b4fc", textDecoration: "none", fontWeight: 600 }}>
+                  🌐 seatcracker.com.in
+                </a>
+                <a href="https://instagram.com/seat_cracker" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px", color: "#f9a8d4", textDecoration: "none", fontWeight: 600 }}>
+                  📸 Instagram ID
+                </a>
+              </div>
+            </div>
 
             {/* User Membership & Status */}
             <div style={{ 
-              marginTop: "auto", paddingTop: "24px", borderTop: "1px solid rgba(255,255,255,0.05)",
+              marginTop: "auto", paddingTop: "24px",
               display: "flex", flexDirection: "column", gap: "12px" 
             }}>
               <div style={{
                 padding: "16px", borderRadius: "12px",
-                background: isPremium ? "rgba(245, 158, 11, 0.1)" : "rgba(148, 163, 184, 0.05)",
-                border: isPremium ? "1px solid rgba(245, 158, 11, 0.2)" : "1px solid rgba(255,255,255,0.05)",
+                background: "rgba(56, 189, 248, 0.05)",
+                border: "1px solid rgba(56, 189, 248, 0.15)",
                 textAlign: "center"
               }}>
-                <span style={{ display: "block", fontSize: "11px", color: "var(--text-muted, #64748b)", fontWeight: 700, textTransform: "uppercase", marginBottom: "4px" }}>
+                <span style={{ display: "block", fontSize: "11px", color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", marginBottom: "4px" }}>
                   Membership Status
                 </span>
-                <span style={{ fontSize: "15px", fontWeight: 800, color: isPremium ? "#f59e0b" : "#94a3b8" }}>
-                  {isPremium ? "Premium Gold 🏆" : access?.status === "trial" ? "Standard Trial ⏳" : "Guest Access 👤"}
+                <span style={{ fontSize: "15px", fontWeight: 800, color: "#38bdf8" }}>
+                  Free Access 🚀
                 </span>
               </div>
 

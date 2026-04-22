@@ -5,19 +5,12 @@ import { motion } from "framer-motion";
 import styles from "./AccessGate.module.css";
 import {
   activateTrial,
-  activatePremium,
-  calcFinalPrice,
-  BASE_COURSE_PRICE,
   type AccessState,
 } from "../lib/access";
-import { validatePromoCode } from "../lib/promoCodes";
-import { applyDiscountLocally } from "../lib/access";
-import { trackUpgradeClicked, trackPremiumPurchase, trackPromoApplied } from "../lib/analytics";
 
 interface Props {
   userId?: string;
-  isExpired: boolean;           // true = trial over, show upgrade; false = first time
-  onAccessGranted: () => void;  // called when trial or payment succeeds
+  onAccessGranted: () => void;
   onBack: () => void;
 }
 
@@ -29,115 +22,18 @@ const PERKS = [
   "All AP & TS State Syllabi",
 ];
 
-declare global {
-  interface Window {
-    Razorpay: new (opts: Record<string, unknown>) => { open: () => void };
-  }
-}
-
-export default function AccessGate({ userId, isExpired, onAccessGranted, onBack }: Props) {
-  const [promoCode, setPromoCode] = useState("");
-  const [discount, setDiscount] = useState(0);
-  const [promoFeedback, setPromoFeedback] = useState<{ msg: string; ok: boolean } | null>(null);
-  const [payLoading, setPayLoading] = useState(false);
-  const [trialLoading, setTrialLoading] = useState(false);
+export default function AccessGate({ userId, onAccessGranted, onBack }: Props) {
+  const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const finalPrice = calcFinalPrice(discount);
-
-  // ── Promo Code ─────────────────────────────────────────
-  const handlePromo = async () => {
-    const { valid, data, error } = validatePromoCode(promoCode);
-    if (!valid || !data) {
-      setPromoFeedback({ msg: error ?? "Invalid code.", ok: false });
-      return;
-    }
-    if (data.type === "discount" && data.value) {
-      setDiscount(data.value);
-      applyDiscountLocally(data.value);
-      setPromoFeedback({ msg: `${data.value}% discount applied! 🎉`, ok: true });
-      trackPromoApplied(promoCode, data.value); // Firebase: promo_applied
-    } else if (data.type === "lifetime") {
-      setPromoFeedback({ msg: "LIFETIME ACTIVATION IN PROGRESS...", ok: true });
-      await activatePremium(userId);
-      trackPremiumPurchase(0); // Firebase: premium_purchase (promo)
-      setSuccess(true);
-      setTimeout(() => onAccessGranted(), 2000);
-    } else {
-      setPromoFeedback({ msg: "This code doesn't give a price discount.", ok: false });
-    }
-    setTimeout(() => setPromoFeedback(null), 5000);
-  };
-
-  // ── Trial ───────────────────────────────────────────────
-  const handleTrial = async () => {
-    setTrialLoading(true);
-    await activateTrial(userId);
-    setTrialLoading(false);
+  // ── Activate Free Access ───────────────────────────────
+  const handleActivate = async () => {
+    setLoading(true);
+    await activateTrial(userId); // Still uses the same helper to seed the DB record
+    setLoading(false);
     setSuccess(true);
     setTimeout(() => onAccessGranted(), 1600);
   };
-
-  // ── Razorpay Payment ────────────────────────────────────
-  const handlePayment = async () => {
-    trackUpgradeClicked("access_gate"); // Firebase: upgrade_clicked
-    setPayLoading(true);
-    try {
-      // 1. Create order on server
-      const res = await fetch("/api/create-order", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ amount: finalPrice, userId }),
-      });
-
-      if (!res.ok) {
-        const errorData = await res.json();
-        throw new Error(errorData.error || "Failed to create order");
-      }
-
-      const { orderId, key, amount, currency } = await res.json();
-
-      // 2. Open Razorpay modal
-      const rzp = new window.Razorpay({
-        key,
-        amount,
-        currency,
-        name: "SeatCracker",
-        description: "EAMCET Full Access",
-        order_id: orderId,
-        handler: async (response: Record<string, string>) => {
-          // 3. Verify on server
-          const verifyRes = await fetch("/api/payment/verify", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ ...response, userId, amount: finalPrice }),
-          });
-          const verifyResult = await verifyRes.json();
-          if (verifyResult.success) {
-            trackPremiumPurchase(finalPrice); // Firebase: premium_purchase
-            setSuccess(true);
-            setTimeout(() => onAccessGranted(), 1600);
-          }
-        },
-        prefill: { name: "SeatCracker User" },
-        theme: { color: "#6366f1" },
-      });
-      rzp.open();
-    } catch (err: any) {
-      console.error("Payment error:", err);
-      alert(err.message || "Payment setup failed. Please try again.");
-    }
-    setPayLoading(false);
-  };
-
-  // Load Razorpay script
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://checkout.razorpay.com/v1/checkout.js";
-    script.async = true;
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
-  }, []);
 
   return (
     <div className={styles.screen}>
@@ -161,58 +57,25 @@ export default function AccessGate({ userId, isExpired, onAccessGranted, onBack 
 
         {/* Header */}
         <div className={styles.header}>
-          <div className={styles.emoji}>{isExpired ? "⏰" : "🚀"}</div>
+          <div className={styles.emoji}>🚀</div>
           <div className={styles.title}>
-            {isExpired ? "Trial Ended" : "Unlock EAMCET Access"}
+            SeatCracker is now 100% FREE
           </div>
-          <div className={styles.subtitle}>
-            {isExpired
-              ? "Your 3-day free trial has expired. Upgrade to continue."
-              : "Start free — upgrade anytime"}
-          </div>
+          <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "14px", marginTop: "8px" }}>
+            Get started instantly with full access to all features.
+          </p>
         </div>
 
-        {/* Expired banner */}
-        {isExpired && (
-          <div className={styles.expiredBanner}>
-            <span>🔒</span>
-            <div className={styles.expiredText}>
-              Your trial has ended. Purchase full access to continue preparing.
-            </div>
-          </div>
-        )}
-
-        {/* Price */}
+        {/* Price Section — Changed to Free */}
         <div className={styles.priceSection}>
           <div className={styles.priceRow}>
-            {/* Market Price — always struck out */}
-            <div className={styles.originalPrice}>₹299</div>
-            {discount > 0 ? (
-              <>
-                {/* Student offer also struck out when promo applied */}
-                <div className={styles.originalPrice} style={{ fontSize: "18px" }}>₹{BASE_COURSE_PRICE}</div>
-                <div className={styles.finalPrice}>
-                  <span className={styles.rupee}>₹</span>
-                  {finalPrice}
-                </div>
-              </>
-            ) : (
-              <div className={styles.finalPrice}>
-                <span className={styles.rupee}>₹</span>
-                {BASE_COURSE_PRICE}
-              </div>
-            )}
+            <div className={styles.finalPrice} style={{ color: "#38bdf8" }}>
+              FREE
+            </div>
           </div>
           <div className={styles.perLabel}>
-            {discount > 0
-              ? `🎓 Student Special Offer + Promo — Save ₹${299 - finalPrice}`
-              : "🎓 Student Special Offer · One-time · Lifetime Access"}
+            {"Educational Access Unlocked · Forever"}
           </div>
-          {discount > 0 && (
-            <div className={styles.discountBadge}>
-              ✅ {discount}% promo discount applied — Save ₹{BASE_COURSE_PRICE - finalPrice}
-            </div>
-          )}
         </div>
 
         {/* Perks */}
@@ -225,49 +88,21 @@ export default function AccessGate({ userId, isExpired, onAccessGranted, onBack 
           ))}
         </div>
 
-        {/* Promo code */}
-        <div className={styles.promoSection}>
-          <div className={styles.promoLabel}>🎁 Have a promo code?</div>
-          <div className={styles.promoRow}>
-            <input
-              className={styles.promoInput}
-              type="text"
-              placeholder="e.g. SAVE10"
-              value={promoCode}
-              onChange={(e) => setPromoCode(e.target.value.toUpperCase())}
-              onKeyDown={(e) => e.key === "Enter" && handlePromo()}
-            />
-            <button className={styles.promoApply} onClick={handlePromo}>
-              Apply
-            </button>
-          </div>
-          {promoFeedback && (
-            <div className={`${styles.promoFeedback} ${promoFeedback.ok ? styles.ok : styles.err}`}>
-              {promoFeedback.msg}
-            </div>
-          )}
-        </div>
-
         {/* Actions */}
         <div className={styles.actions}>
-          {!isExpired && (
-            <button
-              className={styles.trialBtn}
-              onClick={handleTrial}
-              disabled={trialLoading}
-            >
-              {trialLoading ? "Activating…" : "🔥 Start 3-Day Free Trial"}
-            </button>
-          )}
-
           <button
-            className={styles.payBtn}
-            onClick={handlePayment}
-            disabled={payLoading}
+            className={styles.trialBtn}
+            onClick={handleActivate}
+            disabled={loading}
+            style={{ 
+              background: "linear-gradient(135deg, #38bdf8, #2563eb)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "8px"
+            }}
           >
-            {payLoading
-              ? "Setting up payment…"
-              : `🔓 Unlock Full Access — ₹${finalPrice}`}
+            {loading ? "Activating…" : "🚀 Start Practice Now"}
           </button>
 
           <button className={styles.backBtn} onClick={onBack}>

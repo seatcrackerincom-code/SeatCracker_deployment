@@ -132,8 +132,8 @@ export default function PolicyConsentModal({ uid, onAccept }: Props) {
             <p>You are responsible for maintaining the confidentiality of your account credentials. You agree to use the Platform only for lawful purposes and in a way that does not infringe the rights of others or restrict their use of the Platform.</p>
             <p>Redistribution of our curated question banks, mock tests, or proprietary training methodology is strictly prohibited and may result in immediate account termination without refund.</p>
             
-            <h3 style={{ color: "#fff" }}>4. Subscription & Payments</h3>
-            <p>Access to certain features, including "Mock Tests," "Performance Analytics," and "Premium Roadmap," requires a paid subscription. All payments are processed securely via Razorpay. Subscriptions are non-transferable and non-refundable unless otherwise required by law.</p>
+            <h3 style={{ color: "#fff" }}>4. Free Education Access</h3>
+            <p>All features on SeatCracker, including "Mock Tests," "Performance Analytics," and "AI Roadmaps," are currently provided for free as part of our mission to democratize quality education. No subscription fees or hidden charges are required for full access.</p>
             
             <h3 style={{ color: "#fff" }}>5. Intellectual Property</h3>
             <p>All content on SeatCracker, including questions, explanations, graphics, and code, is the property of SeatCracker or its licensors and is protected by intellectual property laws. You are granted a limited, non-exclusive license to use the content for personal, non-commercial exam preparation only.</p>

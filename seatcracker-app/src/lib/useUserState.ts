@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import { validatePromoCode } from "../lib/promoCodes";
 import { getAccessStateSync } from "./access";
 import { onAuthChange } from "./firebase";
+import { fetchUser, updateUserProfile, DbUser } from "./supabase";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 export interface UserState {
@@ -54,22 +55,40 @@ export function useUserState() {
     return () => unsub();
   }, []);
 
-  // 2. Load from localStorage whenever UID changes
+  // 2. Load from localStorage + Sync from Supabase whenever UID changes
   useEffect(() => {
     const key = getLSKey(currentUid);
-    try {
-      const saved = localStorage.getItem(key);
-      if (saved) {
-        const parsed = JSON.parse(saved) as Partial<UserState>;
-        setUser((prev) => ({ ...prev, ...parsed, uid: currentUid }));
-      } else {
-        // No saved state for this user — reset to default
-        setUser({ ...DEFAULT_STATE, uid: currentUid });
+    async function sync() {
+      let local: Partial<UserState> = {};
+      try {
+        const saved = localStorage.getItem(key);
+        if (saved) local = JSON.parse(saved);
+      } catch {}
+
+      if (currentUid) {
+        const remote = await fetchUser(currentUid);
+        if (remote) {
+          const merged: UserState = {
+            ...DEFAULT_STATE,
+            ...local,
+            uid: currentUid,
+            name: remote.name || local.name || DEFAULT_STATE.name,
+            xp: Math.max(remote.xp || 0, local.xp || 0),
+            targetRank: remote.target_rank || local.targetRank || DEFAULT_STATE.targetRank,
+            applied_codes: remote.applied_codes || local.applied_codes || DEFAULT_STATE.applied_codes,
+            unlocked_features: remote.unlocked_features || local.unlocked_features || DEFAULT_STATE.unlocked_features,
+            policies_accepted: remote.policies_accepted || local.policies_accepted || DEFAULT_STATE.policies_accepted,
+          };
+          setUser(merged);
+          localStorage.setItem(key, JSON.stringify(merged));
+          setIsLoaded(true);
+          return;
+        }
       }
-    } catch {
-      setUser({ ...DEFAULT_STATE, uid: currentUid });
+      setUser(prev => ({ ...prev, ...local, uid: currentUid }));
+      setIsLoaded(true);
     }
-    setIsLoaded(true);
+    sync();
   }, [currentUid]);
 
   // Persist any state change
@@ -79,8 +98,20 @@ export function useUserState() {
     try {
       const key = getLSKey(currentUid);
       localStorage.setItem(key, JSON.stringify(updated));
+
+      if (currentUid) {
+        // Sync to cloud
+        updateUserProfile(currentUid, {
+          name: updated.name,
+          xp: updated.xp,
+          target_rank: updated.targetRank,
+          applied_codes: updated.applied_codes,
+          unlocked_features: updated.unlocked_features,
+          policies_accepted: updated.policies_accepted,
+        });
+      }
     } catch {
-      // Storage full — ignore
+      // Storage full
     }
   }, [currentUid]);
 

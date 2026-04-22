@@ -7,51 +7,51 @@
 }
 
 :root {
-  --bg: #f4f4f9;
-  --bg-card: rgba(255, 255, 255, 0.75);
-  --bg-card2: rgba(243, 244, 246, 0.85);
-  --glass-bg: rgba(255, 255, 255, 0.65);
-  --glass-border: rgba(108, 99, 255, 0.15);
-  --glass-blur: blur(14px);
-  --accent: #6c63ff;
+  --bg: #ffffff;
+  --bg-card: rgba(248, 250, 252, 0.8);
+  --bg-card2: rgba(241, 245, 249, 0.9);
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(15, 23, 42, 0.08);
+  --glass-blur: blur(16px);
+  --accent: #6366f1;
   --accent2: #8b5cf6;
-  --accent-glow: rgba(108, 99, 255, 0.12);
-  --text: #1a1a1f;
+  --accent-glow: rgba(99, 102, 241, 0.15);
+  --text: #0f172a;
   --text-muted: #64748b;
-  --border: rgba(108, 99, 255, 0.18);
-  --border-hover: rgba(108, 99, 255, 0.5);
+  --border: rgba(15, 23, 42, 0.1);
+  --border-hover: rgba(99, 102, 241, 0.4);
   --success: #10b981;
   --high: #ef4444;       
   --medium: #f59e0b;     
   --low: #10b981;        
-  --radius: 18px;
+  --radius: 20px;
   --radius-sm: 12px;
-  --shadow: 0 8px 32px rgba(0,0,0,0.06);
-  --shadow-accent: 0 12px 36px rgba(108,99,255,0.12);
+  --shadow: 0 10px 30px rgba(0,0,0,0.04);
+  --shadow-accent: 0 15px 40px rgba(99,102,241,0.1);
 }
 
 .dark {
-  --bg: #08080c;
-  --bg-card: rgba(18, 18, 26, 0.7);
-  --bg-card2: rgba(26, 26, 38, 0.8);
-  --glass-bg: rgba(18, 18, 26, 0.6);
+  --bg: #030305;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --bg-card2: rgba(255, 255, 255, 0.05);
+  --glass-bg: rgba(10, 10, 15, 0.8);
   --glass-border: rgba(255, 255, 255, 0.08);
-  --glass-blur: blur(14px);
-  --accent: #6366f1;
-  --accent2: #a78bfa;
-  --accent-glow: rgba(99, 102, 241, 0.2);
+  --glass-blur: blur(24px);
+  --accent: #818cf8;
+  --accent2: #c4b5fd;
+  --accent-glow: rgba(129, 140, 248, 0.2);
   --text: #f8fafc;
   --text-muted: #94a3b8;
-  --border: rgba(99, 102, 241, 0.25);
-  --border-hover: rgba(99, 102, 241, 0.5);
-  --success: #10b981;
+  --border: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(129, 140, 248, 0.5);
+  --success: #34d399;
   --high: #f87171;
   --medium: #fbbf24;
   --low: #34d399;
-  --radius: 18px;
+  --radius: 20px;
   --radius-sm: 12px;
-  --shadow: 0 8px 32px rgba(0,0,0,0.4);
-  --shadow-accent: 0 12px 36px rgba(99, 102, 241, 0.2);
+  --shadow: 0 20px 50px rgba(0,0,0,0.6);
+  --shadow-accent: 0 15px 40px rgba(129, 140, 248, 0.15);
 }
 
 html {
@@ -95,11 +95,13 @@ body {
 }
 
 /* Exam Mode UI Overrides */
-body.exam-writing #sc-global-header {
+body.exam-writing #sc-global-header,
+body.roadmap-active #sc-global-header {
   display: none !important;
 }
 
-body.exam-writing main {
+body.exam-writing main,
+body.roadmap-active main {
   padding-top: 0 !important;
 }
 

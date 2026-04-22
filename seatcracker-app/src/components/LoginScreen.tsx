@@ -53,20 +53,19 @@ export default function LoginScreen({ onSuccess }: Props) {
     }
     setLoading(true);
     setError("");
-    try {
-      let user;
-      if (isSignUp) {
-        user = await signUpEmail(email, password);
-      } else {
-        user = await signInEmail(email, password);
-      }
-      if (user) onSuccess(user);
-    } catch (err: any) {
-      if (err.code === "auth/user-not-found" || err.code === "auth/wrong-password" || err.code === "auth/invalid-credential") {
+    const res = isSignUp 
+      ? await signUpEmail(email, password)
+      : await signInEmail(email, password);
+
+    if (res.user) {
+      onSuccess(res.user);
+    } else if (res.error) {
+      const code = res.error;
+      if (code === "auth/user-not-found" || code === "auth/wrong-password" || code === "auth/invalid-credential") {
         setError("Invalid email or password.");
-      } else if (err.code === "auth/email-already-in-use") {
+      } else if (code === "auth/email-already-in-use") {
         setError("This email is already registered. Try logging in.");
-      } else if (err.code === "auth/weak-password") {
+      } else if (code === "auth/weak-password") {
         setError("Password should be at least 6 characters.");
       } else {
         setError("Authentication failed. Please try again.");
@@ -153,6 +152,8 @@ export default function LoginScreen({ onSuccess }: Props) {
                 >
                   📧 Continue with Email
                 </button>
+
+
               </div>
 
               {error && <div className={styles.error}>{error}</div>}

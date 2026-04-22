@@ -14,10 +14,10 @@
   position: fixed;
   inset: 0;
   z-index: 0;
-  background-image: url('/intro_bg.png');
+  background: 
+    linear-gradient(rgba(2, 6, 23, 0.6), rgba(2, 6, 23, 0.7)),
+    url('/assets/images/path_background.png') no-repeat center center;
   background-size: cover;
-  background-position: center;
-  filter: brightness(0.6);
 }
 
 .header {

@@ -7,7 +7,6 @@ import { useUserState } from "../lib/useUserState";
 import { GLOBAL_PROMO_CODES } from "../lib/promoCodes";
 import type { User } from "../lib/firebase";
 import type { AccessState } from "../lib/access";
-import PurchaseModal from "./PurchaseModal";
 
 const AVATAR_LS_KEY = "sc_profile_avatar";
 
@@ -39,7 +38,6 @@ export default function ProfileModal({ isOpen, onClose, authUser, access, onSign
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const [mounted, setMounted] = useState(false);
-  const [showPurchase, setShowPurchase] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -267,18 +265,6 @@ export default function ProfileModal({ isOpen, onClose, authUser, access, onSign
               </div>
             </div>
 
-            {/* ── Discount badge (if any) ── */}
-            {user.discount_percentage > 0 && (
-              <div style={{
-                background: "rgba(245,158,11,0.08)", border: "1px solid rgba(245,158,11,0.2)",
-                borderRadius: "12px", padding: "10px 14px", textAlign: "center", marginBottom: "16px"
-              }}>
-                <span style={{ fontSize: "14px", fontWeight: 800, color: "#fbbf24" }}>
-                  🏷️ {user.discount_percentage}% Discount Active
-                </span>
-              </div>
-            )}
-
             {/* ── Overall Progress ── */}
             <div style={{ background: "rgba(255,255,255,0.03)", borderRadius: "14px", padding: "14px", border: "1px solid rgba(255,255,255,0.06)", marginBottom: "16px" }}>
               <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "8px", fontSize: "12px" }}>
@@ -394,37 +380,9 @@ export default function ProfileModal({ isOpen, onClose, authUser, access, onSign
             {access && (
               <div style={{ marginTop: "16px" }}>
                 {access.status === "premium" && (
-                  <div style={{ display: "flex", alignItems: "center", gap: "8px", padding: "10px 14px", background: "rgba(245,158,11,0.1)", border: "1px solid rgba(245,158,11,0.25)", borderRadius: "12px", fontSize: "12px", fontWeight: "700", color: "#fbbf24" }}>
-                    Premium Member — Lifetime Access
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", padding: "10px 14px", background: "rgba(56, 189, 248, 0.1)", border: "1px solid rgba(56, 189, 248, 0.25)", borderRadius: "12px", fontSize: "12px", fontWeight: "700", color: "#38bdf8" }}>
+                    Full Access — Free 🚀
                   </div>
-                )}
-                {access.status === "trial" && (
-                  <div style={{ display: "flex", alignItems: "center", gap: "8px", padding: "10px 14px", background: "rgba(99,102,241,0.1)", border: "1px solid rgba(99,102,241,0.25)", borderRadius: "12px", fontSize: "12px", fontWeight: "700", color: "#a5b4fc" }}>
-                    Free Trial — {access.daysLeft} day{access.daysLeft !== 1 ? "s" : ""} left
-                  </div>
-                )}
-                {access.status === "expired" && (
-                  <div style={{ display: "flex", alignItems: "center", gap: "8px", padding: "10px 14px", background: "rgba(239,68,68,0.1)", border: "1px solid rgba(239,68,68,0.25)", borderRadius: "12px", fontSize: "12px", fontWeight: "700", color: "#f87171" }}>
-                    ⏰ Trial Expired — Upgrade to continue
-                  </div>
-                )}
-                
-                {access.status !== "premium" && (
-                  <button
-                    onClick={() => setShowPurchase(true)}
-                    style={{
-                      width: "100%", marginTop: "12px", padding: "12px",
-                      background: "linear-gradient(135deg, #f59e0b, #f97316)",
-                      border: "none", borderRadius: "12px", color: "#fff",
-                      fontSize: "14px", fontWeight: "800", cursor: "pointer",
-                      boxShadow: "0 4px 12px rgba(245,158,11,0.3)",
-                      transition: "transform 0.1s",
-                    }}
-                    onMouseEnter={e => e.currentTarget.style.transform = "scale(0.98)"}
-                    onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
-                  >
-                    Purchase Course
-                  </button>
                 )}
               </div>
             )}
@@ -438,12 +396,6 @@ export default function ProfileModal({ isOpen, onClose, authUser, access, onSign
   return (
     <>
       {createPortal(modalContent, document.body)}
-      <PurchaseModal 
-        isOpen={showPurchase} 
-        onClose={() => setShowPurchase(false)} 
-        userId={authUser?.uid} 
-        discountPercentage={user.discount_percentage} 
-      />
     </>
   );
 }
