@@ -239,7 +239,10 @@ export default function RealBattleMode({ userId, exam, course, onBack, authUser 
     if (savedTheme) setTheme(savedTheme as any);
 
     const savedPhase = localStorage.getItem("sc_battle_phase");
-    if (savedPhase) setPhase(savedPhase as any);
+    // Only restore phase if the user was actively taking the exam
+    if (savedPhase === "exam") {
+      setPhase(savedPhase as any);
+    }
 
     // Timer always starts fresh — never restore from storage
     // const savedSecs = localStorage.getItem("sc_battle_secs");
@@ -279,10 +282,22 @@ export default function RealBattleMode({ userId, exam, course, onBack, authUser 
       hasInitialized.current = true;
       return;
     }
-    localStorage.setItem("sc_battle_phase", phase);
-    localStorage.setItem("sc_battle_secs", secs.toString());
+    
+    // Only persist the phase if the exam has officially started
+    if (phase === "exam") {
+      localStorage.setItem("sc_battle_phase", phase);
+      localStorage.setItem("sc_battle_secs", secs.toString());
+      if (selectedMock) localStorage.setItem("sc_battle_mock", selectedMock);
+    } else {
+      // Clear them if we leave the exam unexpectedly (excluding submit)
+      if (phase === "selection" || phase === "submodeSelection") {
+        localStorage.removeItem("sc_battle_phase");
+        localStorage.removeItem("sc_battle_secs");
+        localStorage.removeItem("sc_battle_mock");
+      }
+    }
+    
     localStorage.setItem("sc_battle_theme", theme);
-    if (selectedMock) localStorage.setItem("sc_battle_mock", selectedMock);
   }, [phase, secs, theme, selectedMock]);
 
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -1858,18 +1873,15 @@ export default function RealBattleMode({ userId, exam, course, onBack, authUser 
             <div style={{ fontSize: "40px", marginBottom: "16px" }}>⚠️</div>
             <p style={{ fontSize: "18px", fontWeight: "bold", color: "#333", marginBottom: "12px" }}>Cancel Mock Test?</p>
             <p style={{ fontSize: "14px", color: "#666", lineHeight: "1.5", marginBottom: "24px" }}>
-              Are you sure you want to cancel? All your current progress and history will be permanently deleted.
+              Are you sure you want to cancel? Your current exam progress will be lost. You can start this mock test again later.
             </p>
             <div className={styles.submitDialogBtns}>
               <button className={styles.fBtnWhite} onClick={() => setShowCancelConfirm(false)} style={{ flex: 1 }}>Go Back</button>
               <button className={styles.fBtnRed} style={{ flex: 1 }} onClick={() => {
-                // Wipe ALL sc_ localStorage keys
-                const keysToDelete: string[] = [];
-                for (let i = 0; i < localStorage.length; i++) {
-                  const key = localStorage.key(i);
-                  if (key && key.startsWith("sc_")) keysToDelete.push(key);
-                }
-                keysToDelete.forEach(k => localStorage.removeItem(k));
+                // Wipe ONLY the current session keys
+                localStorage.removeItem("sc_battle_phase");
+                localStorage.removeItem("sc_battle_secs");
+                localStorage.removeItem("sc_battle_mock");
 
                 // Reset state
                 setResponses({});
