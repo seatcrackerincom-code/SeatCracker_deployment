@@ -1,4 +1,5 @@
 import GlobalHeader from "../../components/GlobalHeader";
+import Link from "next/link";
 
 export const metadata = {
   title: "Contact SeatCracker - We're Here to Help",
@@ -46,9 +47,9 @@ export default function ContactPage() {
           </div>
 
           <div style={{ marginTop: "32px" }}>
-            <a href="/" style={{ color: "#a78bfa", fontSize: "14px", textDecoration: "none", fontWeight: 600 }}>
+            <Link href="/" style={{ color: "#a78bfa", fontSize: "14px", textDecoration: "none", fontWeight: 600 }}>
               ← Back to Practice
-            </a>
+            </Link>
           </div>
         </div>
       </div>
