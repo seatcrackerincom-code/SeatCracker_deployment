@@ -260,12 +260,13 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
 
 
     // Detect orientation
-    const checkOrientation = () => {
-      setIsPortrait(window.innerHeight > window.innerWidth && window.innerWidth < 1024);
-    };
-    checkOrientation();
-    window.addEventListener("resize", checkOrientation);
-    return () => window.removeEventListener("resize", checkOrientation);
+    // Commented out to remove mandatory landscape mode requirement
+    // const checkOrientation = () => {
+    //   setIsPortrait(window.innerHeight > window.innerWidth && window.innerWidth < 1024);
+    // };
+    // checkOrientation();
+    // window.addEventListener("resize", checkOrientation);
+    // return () => window.removeEventListener("resize", checkOrientation);
   }, []);
 
   // Update nowTime every second to keep countdowns live
@@ -689,12 +690,14 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
         console.warn("Fullscreen request failed:", err);
       });
     }
-    // Attempt portrait lock for mobile
+    /* 
+    // Commented out orientation lock to allow portrait mode
     if (screen.orientation && (screen.orientation as any).lock) {
       try {
         (screen.orientation as any).lock("portrait").catch(() => { });
       } catch (e) { }
     }
+    */
     // Always reset timer to full 180 minutes on every exam start
     setSecs(180 * 60);
     setPhase("exam");
@@ -1867,7 +1870,8 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
         </div>
       )}
 
-      { /* Rotate Device Overlay (Portrait Only) */}
+      {/* Landscape requirement overlay removed per user request */}
+      {/* 
       {isPortrait && (
         <div className={styles.rotateOverlay}>
           <div className={styles.rotateContent}>
@@ -1880,6 +1884,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
           </div>
         </div>
       )}
+      */}
 
       { /* Palette Toggle Button (Mobile Only) */}
       <button
