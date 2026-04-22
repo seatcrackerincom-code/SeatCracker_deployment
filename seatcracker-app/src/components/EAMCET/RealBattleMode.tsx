@@ -588,18 +588,11 @@ export default function RealBattleMode({ userId, exam, course, onBack, authUser 
     const handleViolation = (msg: string) => {
       setWarningCount(prev => {
         const next = prev + 1;
-        if (next >= 3) {
-          if (document.fullscreenElement) {
-            document.exitFullscreen().catch(err => console.warn(err));
-          }
-          setPhase("terminated");
-        } else {
-          setAlertModal({
-            show: true,
-            title: `Security Warning (${next}/3)`,
-            message: `${msg}\n\nPlease continue in full screen or else the exam will terminate.`
-          });
-        }
+        setAlertModal({
+          show: true,
+          title: `Security Information`,
+          message: `${msg}\n\nPlease try to stay focused on the exam window.`
+        });
         return next;
       });
     };
@@ -622,13 +615,13 @@ export default function RealBattleMode({ userId, exam, course, onBack, authUser 
       }
     };
 
-    document.addEventListener("visibilitychange", handleVisibility);
-    window.addEventListener("blur", handleBlur);
+    // document.addEventListener("visibilitychange", handleVisibility);
+    // window.addEventListener("blur", handleBlur);
     document.addEventListener("fullscreenchange", handleFullscreenChange);
 
     return () => {
-      document.removeEventListener("visibilitychange", handleVisibility);
-      window.removeEventListener("blur", handleBlur);
+      // document.removeEventListener("visibilitychange", handleVisibility);
+      // window.removeEventListener("blur", handleBlur);
       document.removeEventListener("fullscreenchange", handleFullscreenChange);
     };
   }, [phase, setAlertModal]);
@@ -1775,17 +1768,27 @@ export default function RealBattleMode({ userId, exam, course, onBack, authUser 
             <div className={styles.securityWarning} style={{ background: "rgba(239,68,68,0.1)", color: "#f87171" }}>
               <strong>Strict Requirement:</strong> This simulation must be taken in fullscreen to ensure exam integrity.
             </div>
-            <button
-              className={styles.resumeBtn}
-              onClick={() => {
-                const elem = document.documentElement;
-                if (elem.requestFullscreen) {
-                  elem.requestFullscreen().catch(err => console.warn(err));
-                }
-              }}
-            >
-              Continue Exam (Fullscreen)
-            </button>
+            <div style={{ display: "flex", gap: "12px", width: "100%" }}>
+              <button
+                className={styles.resumeBtn}
+                style={{ flex: 1 }}
+                onClick={() => {
+                  const elem = document.documentElement;
+                  if (elem.requestFullscreen) {
+                    elem.requestFullscreen().catch(err => console.warn(err));
+                  }
+                }}
+              >
+                Enter Fullscreen
+              </button>
+              <button
+                className={styles.fBtnWhite}
+                style={{ flex: 1, padding: "12px", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.2)", background: "rgba(255,255,255,0.05)", color: "white" }}
+                onClick={() => setIsFullScreenLost(false)}
+              >
+                Continue Anyway
+              </button>
+            </div>
           </div>
         </div>
       )}
