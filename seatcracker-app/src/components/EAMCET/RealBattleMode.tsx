@@ -1812,17 +1812,37 @@ export default function RealBattleMode({ userId, exam, course, onBack, authUser 
           flexDirection: "column", alignItems: "center", justifyContent: "center",
           gap: 16
         }}>
-          <div style={{
-            width: 52, height: 52, border: "4px solid rgba(56,189,248,0.3)",
-            borderTopColor: "#38bdf8", borderRadius: "50%",
-            animation: "spin 0.8s linear infinite"
-          }} />
-          <div style={{ color: "#38bdf8", fontSize: 18, fontWeight: 700, letterSpacing: "0.05em" }}>
-            Loading Questions...
-          </div>
-          <div style={{ color: "rgba(255,255,255,0.5)", fontSize: 13 }}>
-            Fetching real EAMCET questions, please wait.
-          </div>
+          {isLoadingMock ? (
+            <>
+              <div style={{
+                width: 52, height: 52, border: "4px solid rgba(56,189,248,0.3)",
+                borderTopColor: "#38bdf8", borderRadius: "50%",
+                animation: "spin 0.8s linear infinite"
+              }} />
+              <div style={{ color: "#38bdf8", fontSize: 18, fontWeight: 700, letterSpacing: "0.05em" }}>
+                Loading Questions...
+              </div>
+              <div style={{ color: "rgba(255,255,255,0.5)", fontSize: 13 }}>
+                Fetching real EAMCET questions, please wait.
+              </div>
+            </>
+          ) : (
+            <>
+              <div style={{ fontSize: "48px", marginBottom: "8px" }}>⚠️</div>
+              <div style={{ color: "#ef4444", fontSize: 20, fontWeight: 700 }}>
+                Course Data Lost
+              </div>
+              <div style={{ color: "rgba(255,255,255,0.7)", fontSize: 14, maxWidth: "400px", textAlign: "center", marginBottom: "16px" }}>
+                The exam doesn't know whether to load Engineering or Agriculture questions. This usually happens if your browser cache was cleared.
+              </div>
+              <button 
+                onClick={() => window.location.href = "/"}
+                style={{ background: "#3b82f6", color: "#fff", border: "none", padding: "10px 24px", borderRadius: "8px", fontWeight: "bold", cursor: "pointer" }}
+              >
+                Return to Home Screen
+              </button>
+            </>
+          )}
           <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
         </div>
       )}
