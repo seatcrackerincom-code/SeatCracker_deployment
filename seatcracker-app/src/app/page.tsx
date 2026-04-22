@@ -457,6 +457,7 @@ export default function Home() {
           exam={exam}
           course={course}
           onBack={() => go(6)}
+          onRestart={handleRestart}
           authUser={authUser}
         />
       )}

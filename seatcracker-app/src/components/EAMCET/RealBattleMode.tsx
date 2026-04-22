@@ -58,6 +58,7 @@ interface Props {
   exam: string;
   course: string;
   onBack: () => void;
+  onRestart: () => void;
   authUser?: User | null;
 }
 
@@ -1843,11 +1844,22 @@ export default function RealBattleMode({ userId, exam, course, onBack, authUser 
                   if (document.fullscreenElement) {
                     document.exitFullscreen().catch(() => {});
                   }
-                  onBack();
+                  onRestart();
                 }}
                 style={{ background: "#3b82f6", color: "#fff", border: "none", padding: "12px 28px", borderRadius: "8px", fontWeight: "bold", cursor: "pointer", fontSize: "15px" }}
               >
-                Go Back to Selection
+                Reset & Choose Course
+              </button>
+              <button 
+                onClick={() => {
+                  if (document.fullscreenElement) {
+                    document.exitFullscreen().catch(() => {});
+                  }
+                  onBack();
+                }}
+                style={{ background: "transparent", color: "rgba(255,255,255,0.6)", border: "1px solid rgba(255,255,255,0.2)", padding: "10px 24px", borderRadius: "8px", fontWeight: "600", cursor: "pointer", fontSize: "13px" }}
+              >
+                Back to Dashboard
               </button>
             </>
           )}
