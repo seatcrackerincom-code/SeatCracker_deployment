@@ -1898,12 +1898,21 @@ export default function RealBattleMode({ userId, exam, course, onBack, authUser 
             <div className={styles.submitDialogBtns}>
               <button className={styles.fBtnWhite} onClick={() => setShowCancelConfirm(false)} style={{ flex: 1 }}>Go Back</button>
               <button className={styles.fBtnRed} style={{ flex: 1 }} onClick={() => {
-                // Wipe ONLY the current session keys
+                // Determine current mockId to clear its responses specifically
+                let currentMockId = "";
+                if (selectedMock) {
+                  currentMockId = selectedMock.toLowerCase().replace(/\s+/g, "_");
+                }
+
+                // Wipe session-related localStorage keys
                 localStorage.removeItem("sc_battle_phase");
                 localStorage.removeItem("sc_battle_secs");
                 localStorage.removeItem("sc_battle_mock");
+                if (currentMockId) {
+                  localStorage.removeItem(`sc_responses_${currentMockId}`);
+                }
 
-                // Reset state
+                // Reset all React state to fresh defaults
                 setResponses({});
                 setAllQ([]);
                 setSelectedMock(null);
@@ -1913,9 +1922,12 @@ export default function RealBattleMode({ userId, exam, course, onBack, authUser 
                 setShowSubmitConfirm(false);
                 setShowCancelConfirm(false);
 
+                // Exit fullscreen if active
                 if (document.fullscreenElement) {
                   document.exitFullscreen().catch(() => { });
                 }
+
+                // Return to mock selection screen
                 setPhase("selection");
               }}>Yes, Cancel</button>
             </div>
