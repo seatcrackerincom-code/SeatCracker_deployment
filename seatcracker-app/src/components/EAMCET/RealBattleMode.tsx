@@ -178,7 +178,7 @@ const QBadge = ({ status, label, active, onClick }: { status: QStatus, label: st
 };
 
 // ── Component ──────────────────────────────────────────────────────────────
-export default function RealBattleMode({ userId, exam, course, onBack, authUser }: Props) {
+export default function RealBattleMode({ userId, exam, course, onBack, onRestart, authUser }: Props) {
   // Real Battle Mode - High Fidelity Exam Simulation
   const sections = COURSE_SECTIONS[course] || COURSE_SECTIONS.Engineering;
 
