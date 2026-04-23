@@ -39,6 +39,13 @@ export default function ContactPage() {
             </div>
 
             <div style={{ padding: "20px", background: "rgba(255,255,255,0.05)", borderRadius: "16px", border: "1px solid rgba(255,255,255,0.08)" }}>
+              <div style={{ fontSize: "12px", color: "#6366f1", fontWeight: 700, textTransform: "uppercase", marginBottom: "4px" }}>Email Support</div>
+              <a href="mailto:seatcracker.in.com@gmail.com" style={{ fontSize: "18px", color: "#fff", textDecoration: "none", fontWeight: 600 }}>
+                seatcracker.in.com@gmail.com ↗
+              </a>
+            </div>
+
+            <div style={{ padding: "20px", background: "rgba(255,255,255,0.05)", borderRadius: "16px", border: "1px solid rgba(255,255,255,0.08)" }}>
               <div style={{ fontSize: "12px", color: "#ec4899", fontWeight: 700, textTransform: "uppercase", marginBottom: "4px" }}>Follow Us</div>
               <a href="https://instagram.com/seatcracker.com.in" target="_blank" rel="noopener noreferrer" style={{ fontSize: "18px", color: "#fff", textDecoration: "none", fontWeight: 600 }}>
                 Instagram @seatcracker.com.in ↗
