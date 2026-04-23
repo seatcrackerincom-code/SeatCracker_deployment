@@ -47,8 +47,8 @@ export default function ContactPage() {
 
             <div style={{ padding: "20px", background: "rgba(255,255,255,0.05)", borderRadius: "16px", border: "1px solid rgba(255,255,255,0.08)" }}>
               <div style={{ fontSize: "12px", color: "#ec4899", fontWeight: 700, textTransform: "uppercase", marginBottom: "4px" }}>Follow Us</div>
-              <a href="https://instagram.com/seatcracker.com.in" target="_blank" rel="noopener noreferrer" style={{ fontSize: "18px", color: "#fff", textDecoration: "none", fontWeight: 600 }}>
-                Instagram @seatcracker.com.in ↗
+              <a href="https://instagram.com/seatcracker.com.in" target="_blank" rel="noopener noreferrer" style={{ fontSize: "16px", color: "#fff", textDecoration: "none", fontWeight: 600, display: "block", lineHeight: 1.4 }}>
+                For updates please visit our Instagram page seatcracker.com.in ↗
               </a>
             </div>
           </div>

@@ -233,20 +233,7 @@ export default function GlobalHeader() {
               <span>🎁</span> Redeem Reward Code
             </button>
 
-            {/* New Updates Section */}
-            <div style={{ marginTop: "16px", padding: "16px", borderRadius: "12px", background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.05)" }}>
-              <span style={{ display: "block", fontSize: "11px", color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", marginBottom: "12px" }}>
-                Stay Connected
-              </span>
-              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                <a href="https://seatcracker.com.in" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px", color: "#a5b4fc", textDecoration: "none", fontWeight: 600 }}>
-                  🌐 seatcracker.com.in
-                </a>
-                <a href="https://instagram.com/seatcracker.com.in" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px", color: "#f9a8d4", textDecoration: "none", fontWeight: 600 }}>
-                  📸 Instagram ID
-                </a>
-              </div>
-            </div>
+
 
             {/* User Membership & Status */}
             <div style={{ 
