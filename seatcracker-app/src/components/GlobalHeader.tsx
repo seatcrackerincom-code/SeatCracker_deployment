@@ -242,7 +242,7 @@ export default function GlobalHeader() {
                 <a href="https://seatcracker.com.in" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px", color: "#a5b4fc", textDecoration: "none", fontWeight: 600 }}>
                   🌐 seatcracker.com.in
                 </a>
-                <a href="https://instagram.com/seat_cracker" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px", color: "#f9a8d4", textDecoration: "none", fontWeight: 600 }}>
+                <a href="https://instagram.com/seatcracker.com.in" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px", color: "#f9a8d4", textDecoration: "none", fontWeight: 600 }}>
                   📸 Instagram ID
                 </a>
               </div>
