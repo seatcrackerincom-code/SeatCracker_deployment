@@ -1329,12 +1329,15 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 0 0 8px 0;
+  margin: 0 0 16px 0;
+  padding: 0 90px;
 }
 
 .backBtnSmall {
   position: absolute;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -1357,7 +1360,7 @@
   background: rgba(255, 255, 255, 0.15);
   border-color: rgba(255, 255, 255, 0.4);
   color: #fff;
-  transform: translateX(-2px);
+  transform: translateY(-50%) translateX(-2px);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
@@ -1509,8 +1512,7 @@
   }
 
   .backBtnSmall {
-    top: 20px;
-    left: 20px;
+    left: 0;
   }
 
   .submodeList {

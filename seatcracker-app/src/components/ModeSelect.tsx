@@ -92,7 +92,7 @@ export default function ModeSelect({ onNext, onBack }: Props) {
                 CheatCode Mode &nbsp;<span style={{ fontSize: "0.65rem", background: "rgba(6, 182, 212, 0.2)", color: "#67e8f9", padding: "1px 7px", borderRadius: "999px", fontWeight: 700, letterSpacing: "0.08em", verticalAlign: "middle" }}>10 DAYS</span>
               </span>
               <span className={styles.optionDesc}>
-                Here you can complete or learn the previous topics repeated questions and if you don't know any question so you can able to answer the question very perfectly every repeated topic is perfectly mentioned and the repeated questions as well the main important questions as well.
+                Focus on repeated concepts & must-know questions. Train your mind to recognize patterns instantly. Turn weak topics into strengths.
               </span>
             </div>
             <div className={styles.optionCheck}>
