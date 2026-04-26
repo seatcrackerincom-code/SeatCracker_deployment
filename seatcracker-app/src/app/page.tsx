@@ -11,6 +11,7 @@ import ModeSelect from "../components/ModeSelect";
 import PracticeArena from "../components/EAMCET/PracticeArena";
 import RoadmapMode from "../components/EAMCET/RoadmapMode";
 import RealBattleMode from "../components/EAMCET/RealBattleMode";
+import CheatCodeMode from "../components/EAMCET/CheatCodeMode"; // Force TS update
 
 import LoginScreen from "../components/LoginScreen";
 import AccessGate from "../components/AccessGate";
@@ -39,15 +40,17 @@ import {
  * 8: RoadmapPage (Roadmap Config Branch)
  * 9: PracticeArena (Practice Test Flow)
  * 10: RoadmapMode (Roadmap Execution Flow)
+ * 11: RealBattleMode (Mock Exam Engine)
+ * 12: CheatCodeMode (Last 10 Days Preparation)
  */
-type Step = -1 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11;
+type Step = -1 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
 export default function Home() {
   const [step, setStep] = useState<Step>(0); // Default to Home (Login). Only move to -1 if confirmed new user.
   const [testCategory, setTestCategory] = useState(""); // e.g., "EAMCET"
   const [exam, setExam] = useState("");                  // e.g., "AP" or "TS"
   const [course, setCourse] = useState("");              // e.g., "Engineering"
-  const [mode, setMode] = useState<"practice" | "roadmap" | "battle" | "">("");
+  const [mode, setMode] = useState<"practice" | "roadmap" | "battle" | "cheatcode" | "">("");
   const [mounted, setMounted] = useState(false);
   const [roadmapData, setRoadmapData] = useState<
     { day: number; tasks: { subject: string; topic: string; priority: string; time: string }[] }[]
@@ -134,7 +137,7 @@ export default function Home() {
       const savedTest = localStorage.getItem(pk("sc_test_category")) || "EAMCET";
       const savedExam = localStorage.getItem(pk("sc_exam")) || "";
       const savedCourse = localStorage.getItem(pk("sc_course")) || "";
-      const savedMode = localStorage.getItem(pk("sc_mode")) as "practice" | "roadmap" | null;
+      const savedMode = localStorage.getItem(pk("sc_mode")) as "practice" | "roadmap" | "battle" | "cheatcode" | null;
       const savedRoadmap = localStorage.getItem(pk("sc_roadmap"));
 
       setTestCategory(savedTest);
@@ -254,7 +257,7 @@ export default function Home() {
     };
     window.addEventListener("sc_navigate", handleForceNav);
     return () => window.removeEventListener("sc_navigate", handleForceNav);
-  });
+  }, []);
 
 
   const handleTestCategoryNext = (selected: string) => {
@@ -312,11 +315,12 @@ export default function Home() {
     go(1);
   };
 
-  const handleModeNext = (selectedMode: "practice" | "roadmap" | "battle") => {
+  const handleModeNext = (selectedMode: "practice" | "roadmap" | "battle" | "cheatcode") => {
     setMode(selectedMode);
     localStorage.setItem(getPK("sc_mode"), selectedMode);
     if (selectedMode === "roadmap") go(8);
     else if (selectedMode === "battle") go(11);
+    else if (selectedMode === "cheatcode") go(12);
     else go(7);
   };
 
@@ -327,11 +331,15 @@ export default function Home() {
 
   const effectiveUserId = authUser?.uid || "sc_user";
 
-  if (!mounted || initialLoad) {
+  if (!mounted || (initialLoad && step === 0)) {
     return (
-      <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#000' }}>
-        <div className="loader" style={{ width: '40px', height: '40px', border: '3px solid #333', borderTopColor: '#4facfe', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
-        <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+      <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: '#000', gap: '20px' }}>
+        <img src="/logo.png" alt="Logo" style={{ width: '60px', height: '60px', opacity: 0.8, animation: 'pulse 2s infinite ease-in-out' }} />
+        <div className="loader" style={{ width: '30px', height: '30px', border: '2px solid rgba(255,255,255,0.1)', borderTopColor: '#38bdf8', borderRadius: '50%', animation: 'spin 0.6s linear infinite' }} />
+        <style>{`
+          @keyframes spin { to { transform: rotate(360deg); } }
+          @keyframes pulse { 0%, 100% { opacity: 0.5; transform: scale(0.95); } 50% { opacity: 0.9; transform: scale(1.05); } }
+        `}</style>
       </div>
     );
   }
@@ -459,6 +467,16 @@ export default function Home() {
           onBack={() => go(6)}
           onRestart={handleRestart}
           authUser={authUser}
+        />
+      )}
+
+      {/* Step 12: CheatCode Mode */}
+      {step === 12 && (
+        <CheatCodeMode
+          userId={effectiveUserId}
+          exam={exam}
+          course={course}
+          onBack={() => go(6)}
         />
       )}
     </>

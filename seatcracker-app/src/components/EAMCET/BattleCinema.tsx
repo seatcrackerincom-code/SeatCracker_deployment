@@ -10,11 +10,11 @@ type Scene = "study_end" | "walk" | "robo" | "battle_decl" | "glitch";
 const SCENES: Scene[] = ["study_end", "walk", "robo", "battle_decl", "glitch"];
 
 const DURATIONS: Record<Scene, number> = {
-  study_end: 3800,
-  walk: 4200,
-  robo: 3600,
-  battle_decl: 3500,
-  glitch: 1800,
+  study_end: 1800,
+  walk: 2200,
+  robo: 1800,
+  battle_decl: 1500,
+  glitch: 900,
 };
 
 interface Props {

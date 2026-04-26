@@ -3,7 +3,7 @@
 import styles from "./SelectScreen.module.css";
 
 interface Props {
-  onNext: (mode: "practice" | "roadmap" | "battle") => void;
+  onNext: (mode: "practice" | "roadmap" | "battle" | "cheatcode") => void;
   onBack: () => void;
 }
 
@@ -68,6 +68,31 @@ export default function ModeSelect({ onNext, onBack }: Props) {
               </span>
               <span className={styles.optionDesc}>
                 Full EAMCET simulation — 160 questions, 3 hours. 10 curated Hard &amp; Medium mocks. 2-hour cooldown between mocks to rest and revise. (Launching soon)
+              </span>
+            </div>
+            <div className={styles.optionCheck}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+          </button>
+          {/* ── CheatCode Mode ── */}
+          <button
+            id="mode-cheatcode"
+            className={styles.optionCard}
+            onClick={() => onNext("cheatcode")}
+            style={{
+              borderColor: "rgba(6, 182, 212, 0.35)",
+              background: "linear-gradient(135deg, rgba(6, 182, 212, 0.06) 0%, rgba(8, 145, 178, 0.04) 100%)"
+            }}
+          >
+            <span className={styles.optionIcon}>⚡</span>
+            <div className={styles.optionText}>
+              <span className={styles.optionLabel} style={{ color: "#22d3ee" }}>
+                CheatCode Mode &nbsp;<span style={{ fontSize: "0.65rem", background: "rgba(6, 182, 212, 0.2)", color: "#67e8f9", padding: "1px 7px", borderRadius: "999px", fontWeight: 700, letterSpacing: "0.08em", verticalAlign: "middle" }}>10 DAYS</span>
+              </span>
+              <span className={styles.optionDesc}>
+                Here you can complete or learn the previous topics repeated questions and if you don't know any question so you can able to answer the question very perfectly every repeated topic is perfectly mentioned and the repeated questions as well the main important questions as well.
               </span>
             </div>
             <div className={styles.optionCheck}>

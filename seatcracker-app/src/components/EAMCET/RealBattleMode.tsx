@@ -227,7 +227,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
   const [showSubmitConfirm, setShowSubmitConfirm] = useState(false);
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
   const [alertModal, setAlertModal] = useState<{ show: boolean, title: string, message: string } | null>(null);
-  const [theme, setTheme] = useState<"video" | "image" | "plain">("video");
+  const [theme, setTheme] = useState<"video" | "image" | "plain">("image");
   const [showSettings, setShowSettings] = useState(false);
   // ── Mobile / Orientation States ──
   const [isPortrait, setIsPortrait] = useState(false);
@@ -306,7 +306,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.25; // SLOW MOTION (quarter speed)
+      videoRef.current.playbackRate = 0.5; // Optimized speed (formerly 0.25)
     }
   }, [theme, phase]);
 
