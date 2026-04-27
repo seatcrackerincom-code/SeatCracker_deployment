@@ -70,7 +70,6 @@ def extract_question_images(doc, page_num, q_num):
         return []
 
     images = []
-    option_count = 0
 
     for p in range(page_num, min(page_num + 3, len(doc))):
         page = doc[p]
@@ -78,43 +77,72 @@ def extract_question_images(doc, page_num, q_num):
 
         y_top = q_start_y if p == page_num else 0
         y_bottom = page.rect.height
+        stop_found = False
 
         for span in spans:
             txt = span["text"].strip()
 
-            if p == page_num and span["bbox"][1] < q_start_y:
+            # Skip text before our question starts on the first page
+            if p == page_num and span["bbox"][1] < q_start_y - 2:
                 continue
 
-            # detect options
-            if re.match(r'^\(\d\)', txt):
-                option_count += 1
+            # STOP CONDITION 1: Stop immediately before the "Correct Answer" section
+            if re.match(r'^Correct\s+Answer', txt, re.IGNORECASE):
+                y_bottom = span["bbox"][1] - 5  # Cut 5 pixels above "Correct Answer"
+                stop_found = True
+                break
+            
+            # STOP CONDITION 2: Stop if we hit the NEXT question number
+            if re.match(rf'^{q_num + 1}\.', txt) and span["bbox"][0] < 80:
+                y_bottom = span["bbox"][1] - 5
+                stop_found = True
+                break
 
-                if option_count == 4:
-                    y_bottom = span["bbox"][3] + 10
-                    break
+        # Prevent negative height clips
+        if y_bottom > y_top:
+            clip = fitz.Rect(30, max(0, y_top - PADDING_TOP),
+                             page.rect.width - 30, y_bottom)
 
-        clip = fitz.Rect(30, max(0, y_top - PADDING_TOP),
-                         page.rect.width - 30, y_bottom)
+            pix = page.get_pixmap(matrix=fitz.Matrix(ZOOM, ZOOM), clip=clip)
+            images.append(pix)
 
-        pix = page.get_pixmap(matrix=fitz.Matrix(ZOOM, ZOOM), clip=clip)
-        images.append(pix)
-
-        if option_count >= 4:
+        if stop_found:
             break
 
     return images
 
 
 # ===== ANSWER EXTRACTION =====
-def extract_answer(doc, start_page):
-    for p in range(start_page, min(start_page + 3, len(doc))):
-        for span in get_spans(doc[p]):
-            if "Correct Answer" in span["text"]:
-                return span["text"].replace("Correct Answer:", "").strip()
+def extract_answer(doc, page_num, q_num):
+    q_start_y = get_q_start_y(doc, page_num, q_num)
+    if q_start_y is None:
+        return ""
+
+    for p in range(page_num, min(page_num + 3, len(doc))):
+        page = doc[p]
+        spans = get_spans(page)
+
+        for i, span in enumerate(spans):
+            # Skip past anything before the question starts
+            if p == page_num and span["bbox"][1] < q_start_y - 5:
+                continue
+            
+            txt = span["text"].strip()
+            
+            # Find the span that says "Correct Answer"
+            if re.match(r'^Correct\s+Answer', txt, re.IGNORECASE):
+                # Grab this span and the next few to handle text splitting safely
+                context_text = " ".join([s["text"].strip() for s in spans[i:i+6]])
+                
+                # Regex isolates the option number (1-4) or letter (A-D)
+                match = re.search(r'Correct\s+Answer\s*[:\-]?\s*[\(\[]?([1-4A-D])', context_text, re.IGNORECASE)
+                if match:
+                    return match.group(1)
+                    
     return ""
 
 
-# ===== MERGE IMAGES (FIXED) =====
+# ===== MERGE IMAGES =====
 def merge_images(pixmaps):
     pil_images = []
 
@@ -161,8 +189,8 @@ def run(pdf_path, output_folder):
             final_img = merge_images(pixmaps)
             final_img.save(os.path.join(images_dir, f"q_{q}.png"))
 
-        # 🧠 Extract answer
-        answers[q] = extract_answer(doc, page_num)
+        # 🧠 Extract answer (Updated to pass the question number)
+        answers[q] = extract_answer(doc, page_num, q)
 
         print(f"✅ Q{q} done")
 
