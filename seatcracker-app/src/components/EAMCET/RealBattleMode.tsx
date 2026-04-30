@@ -1277,7 +1277,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
     };
 
     const maxMocks = course === "Engineering" ? 5 : 3;
-    const mockOptions = Array.from({ length: 5 }, (_, idx) => idx + 1).map(i => {
+    const mockOptions = Array.from({ length: 1 }, (_, idx) => idx + 1).map(i => {
       const id = `${prefix.toLowerCase().replace(/\s+/g, "_")}_mock_test_${i}`;
       const submitTime = parseInt(localStorage.getItem(`sc_submit_time_${id}`) || "0");
       const isCompleted = !!submitTime;
@@ -1289,10 +1289,8 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
       return {
         num: i,
         id,
-        title: `${prefix} Mock Test ${i}`,
-        desc: i === 1
-          ? "Full EAMCET simulation — 160 real questions (Maths 80, Physics 40, Chemistry 40)."
-          : "Full length simulation following the latest pattern (160 Questions).",
+        title: `Mock Test ${i}`,
+        desc: "",
         icon: i === 1 ? "⚔️" : "🏆",
         isCompleted,
         resultsAvailable,
@@ -1416,7 +1414,6 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
             </button>
             <h1 className={styles.selectionTitle}>Select Your Mock Test</h1>
           </div>
-          <p className={styles.selectionSubTitle}>Choose a challenge to unlock the Real Battle Mode simulation</p>
 
           {/* Daily limit banner */}
           {dailyLimitReached && (
@@ -1468,45 +1465,14 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
                   <div className={styles.submodeText}>
                     <div className={styles.submodeLabel} style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
                       {mock.title}
-                      {mock.num === 1 && <span style={{ fontSize: 10, background: "rgba(56,189,248,0.2)", color: "#38bdf8", padding: "1px 7px", borderRadius: 99, fontWeight: 700, letterSpacing: "0.05em" }}>REAL QUESTIONS</span>}
                     </div>
-                    <div className={styles.submodeDesc}>{mock.desc}</div>
                     
-                    {isClickable && !mock.isCompleted && (
-                      <button className={styles.startBattleBtn}>
-                        Start Battle
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                          <polyline points="9 18 15 12 9 6"></polyline>
-                        </svg>
-                      </button>
-                    )}
-
-                    {mock.isCompleted && mock.resultsAvailable && (
-                      <button className={styles.viewResultsBtn}>
-                        View Results
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                          <polyline points="9 18 15 12 9 6"></polyline>
-                        </svg>
-                      </button>
-                    )}
-
-                    {statusChip && <div style={{ marginTop: 6 }}>{statusChip}</div>}
                     {isCooldownLocked && (
                       <div style={{ marginTop: 10, background: "rgba(251,191,36,0.1)", border: "1px solid rgba(251,191,36,0.2)", borderRadius: 8, padding: "8px 12px" }}>
                         <div style={{ color: "#fde68a", fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 2 }}>Unlock Countdown</div>
                         <div style={{ color: "#fbbf24", fontSize: 20, fontWeight: 800, fontFamily: "monospace" }}>
                           {fmtMs(globalCooldownRemaining)}
                         </div>
-                      </div>
-                    )}
-                    {mock.isCompleted && mock.resultsAvailable && (
-                      <div style={{ marginTop: 6, fontSize: 12, color: "rgba(255,255,255,0.6)" }}>
-                        💡 Review results · Analyse weak topics · Re-attempt when ready
-                      </div>
-                    )}
-                    {mock.isCompleted && mock.resultsCountdown > 0 && (
-                      <div style={{ marginTop: 6, fontSize: 12, color: "rgba(255,255,255,0.5)" }}>
-                        🛏️ Take rest · Results coming soon · Plan your revision
                       </div>
                     )}
                   </div>
