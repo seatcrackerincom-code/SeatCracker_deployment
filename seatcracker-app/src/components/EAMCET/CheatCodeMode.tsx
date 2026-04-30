@@ -231,6 +231,9 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
                           <div className={styles.formulaMath}>
                             <BlockMath math={form.latex} />
                           </div>
+                          <div className={styles.formulaHint}>
+                            <span className={styles.hintIcon}>💡</span> {form.hint}
+                          </div>
                         </div>
                       ))}
                     </div>

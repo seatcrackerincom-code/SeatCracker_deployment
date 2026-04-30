@@ -471,4 +471,22 @@
   padding-bottom: 4px;
 }
 
+.formulaHint {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+  font-size: 13px;
+  color: #a7f3d0;
+  line-height: 1.5;
+  font-style: italic;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.hintIcon {
+  font-style: normal;
+  flex-shrink: 0;
+}
+
 .easy { background: rgba(16, 185, 129, 0.1); color: #34d399; }
