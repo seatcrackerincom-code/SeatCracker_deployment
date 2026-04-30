@@ -235,8 +235,9 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
               )}
             </AnimatePresence>
           </React.Fragment>
-        )
-      )}
+          ))
+        )}
+
       </div>
     </motion.div>
   );
