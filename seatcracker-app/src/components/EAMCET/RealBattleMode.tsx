@@ -1277,7 +1277,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
     };
 
     const maxMocks = course === "Engineering" ? 5 : 3;
-    const mockOptions = Array.from({ length: 1 }, (_, idx) => idx + 1).map(i => {
+    const mockOptions = Array.from({ length: 5 }, (_, idx) => idx + 1).map(i => {
       const id = `${prefix.toLowerCase().replace(/\s+/g, "_")}_mock_test_${i}`;
       const submitTime = parseInt(localStorage.getItem(`sc_submit_time_${id}`) || "0");
       const isCompleted = !!submitTime;
