@@ -109,10 +109,10 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
       exit={{ opacity: 0, y: -20 }}
     >
       <div 
-        className={`${styles.card} ${isLocked ? styles.lockedCard : ''}`} 
+        className={`${styles.card} ${styles.cardCyan} ${isLocked ? styles.lockedCard : ''}`} 
         onClick={() => handleCardClick('topics')}
       >
-        <div className={styles.cardIcon}>📊</div>
+        <div className={`${styles.cardIcon} ${styles.iconCyan}`}>📊</div>
         <h2 className={styles.cardTitle}>Topics & Formulas</h2>
         <p className={styles.cardDesc}>
           Focus on high-yield topics and master essential formulas appearing every year.
@@ -124,10 +124,10 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
       </div>
 
       <div 
-        className={`${styles.card} ${isLocked ? styles.lockedCard : ''}`} 
+        className={`${styles.card} ${styles.cardEmerald} ${isLocked ? styles.lockedCard : ''}`} 
         onClick={() => handleCardClick('questions')}
       >
-        <div className={styles.cardIcon}>🔄</div>
+        <div className={`${styles.cardIcon} ${styles.iconEmerald}`}>🔄</div>
         <h2 className={styles.cardTitle}>Repeated Questions</h2>
         <p className={styles.cardDesc}>
           Master the exact questions that have recurred over the last 10 years.
@@ -139,10 +139,10 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
       </div>
 
       <div 
-        className={`${styles.card} ${isLocked ? styles.lockedCard : ''}`} 
+        className={`${styles.card} ${styles.cardAmber} ${isLocked ? styles.lockedCard : ''}`} 
         onClick={() => handleCardClick('strategies')}
       >
-        <div className={styles.cardIcon}>📺</div>
+        <div className={`${styles.cardIcon} ${styles.iconAmber}`}>📺</div>
         <h2 className={styles.cardTitle}>Cheat Strategies</h2>
         <p className={styles.cardDesc}>
           Watch expert videos on blind guessing and column patterns.

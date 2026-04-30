@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #000;
+  background: radial-gradient(circle at 50% 0%, #111827 0%, #000000 100%);
   color: #fff;
   font-family: inherit;
   position: relative;
@@ -52,25 +52,42 @@
 }
 
 .card {
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px solid rgba(34, 211, 238, 0.15);
-  border-radius: 20px;
-  padding: 28px;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 32px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   display: flex;
   flex-direction: column;
   gap: 16px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(34, 211, 238, 0.4);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(34, 211, 238, 0.15);
+.cardCyan { border-color: rgba(34, 211, 238, 0.2); }
+.cardEmerald { border-color: rgba(16, 185, 129, 0.2); }
+.cardAmber { border-color: rgba(245, 158, 11, 0.2); }
+
+.cardCyan:hover {
+  border-color: rgba(34, 211, 238, 0.5);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(34, 211, 238, 0.2);
+  transform: translateY(-8px);
+}
+
+.cardEmerald:hover {
+  border-color: rgba(16, 185, 129, 0.5);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(16, 185, 129, 0.2);
+  transform: translateY(-8px);
+}
+
+.cardAmber:hover {
+  border-color: rgba(245, 158, 11, 0.5);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(245, 158, 11, 0.2);
+  transform: translateY(-8px);
 }
 
 .lockedCard {
@@ -87,16 +104,19 @@
 
 .cardIcon {
   font-size: 32px;
-  background: rgba(34, 211, 238, 0.1);
-  width: 60px;
-  height: 60px;
-  border-radius: 16px;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(34, 211, 238, 0.2);
-  color: #22d3ee;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
 }
+
+.iconCyan { background: rgba(34, 211, 238, 0.1); color: #22d3ee; border-color: rgba(34, 211, 238, 0.2); }
+.iconEmerald { background: rgba(16, 185, 129, 0.1); color: #10b981; border-color: rgba(16, 185, 129, 0.2); }
+.iconAmber { background: rgba(245, 158, 11, 0.1); color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); }
 
 .cardTitle {
   font-size: 22px;
