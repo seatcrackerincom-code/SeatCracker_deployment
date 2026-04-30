@@ -640,7 +640,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
   }, [phase, setAlertModal]);
   // ── UI Control: Hide Global Header during exam flow ──
   useEffect(() => {
-    const hiddenPhases = ["login", "instr1", "instr2", "instr3", "exam", "terminated", "failure_cinema", "ego_mode", "submodeSelection", "selection"];
+    const hiddenPhases = ["login", "instr1", "instr2", "instr3", "exam", "terminated", "failure_cinema", "ego_mode", "submodeSelection", "selection", "results", "review", "submit_summary"];
     if (hiddenPhases.includes(phase)) {
       document.body.classList.add("exam-writing");
     } else {
