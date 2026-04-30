@@ -60,6 +60,33 @@ const STRATEGIES = [
 export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
   const [view, setView] = useState<ViewState>('dashboard');
   const [selectedSubject, setSelectedSubject] = useState<string>(SUBJECTS[0]);
+  const [timeLeft, setTimeLeft] = useState<number>(0);
+
+  // Initialize countdown (4 hours from first visit)
+  React.useEffect(() => {
+    let target = parseInt(localStorage.getItem("sc_cheat_unlock_time") || "0");
+    if (!target) {
+      target = Date.now() + 4 * 60 * 60 * 1000;
+      localStorage.setItem("sc_cheat_unlock_time", target.toString());
+    }
+
+    const timer = setInterval(() => {
+      const remaining = Math.max(0, target - Date.now());
+      setTimeLeft(remaining);
+      if (remaining === 0) clearInterval(timer);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const formatTime = (ms: number) => {
+    const h = Math.floor(ms / 3600000);
+    const m = Math.floor((ms % 3600000) / 60000);
+    const s = Math.floor((ms % 60000) / 1000);
+    return `${h}h ${m}m ${s}s`;
+  };
+
+  const isLocked = timeLeft > 0;
 
   const handleBack = () => {
     if (view === 'dashboard') {
@@ -69,6 +96,11 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
     }
   };
 
+  const handleCardClick = (targetView: ViewState) => {
+    if (isLocked) return;
+    setView(targetView);
+  };
+
   const renderDashboard = () => (
     <motion.div 
       className={styles.grid}
@@ -76,22 +108,49 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
     >
-      <div className={styles.card} onClick={() => setView('topics')}>
+      <div 
+        className={`${styles.card} ${isLocked ? styles.lockedCard : ''}`} 
+        onClick={() => handleCardClick('topics')}
+      >
         <div className={styles.cardIcon}>📊</div>
         <h2 className={styles.cardTitle}>Repeated Topics</h2>
-        <p className={styles.cardDesc}>Focus on high-yield topics that appear consistently every year. <br /><strong>Coming almost done... be ready!</strong></p>
+        <p className={styles.cardDesc}>
+          Focus on high-yield topics that appear consistently every year.
+          <br />
+          <strong style={{ color: isLocked ? '#fbbf24' : '#34d399' }}>
+            {isLocked ? `🚀 Unlocking in ${formatTime(timeLeft)}` : '✅ Unlocked! Go Practice'}
+          </strong>
+        </p>
       </div>
 
-      <div className={styles.card} onClick={() => setView('questions')}>
+      <div 
+        className={`${styles.card} ${isLocked ? styles.lockedCard : ''}`} 
+        onClick={() => handleCardClick('questions')}
+      >
         <div className={styles.cardIcon}>🔄</div>
         <h2 className={styles.cardTitle}>Repeated Questions</h2>
-        <p className={styles.cardDesc}>Master the exact questions that have recurred over the last 10 years. <br /><strong>Coming almost done... be ready!</strong></p>
+        <p className={styles.cardDesc}>
+          Master the exact questions that have recurred over the last 10 years.
+          <br />
+          <strong style={{ color: isLocked ? '#fbbf24' : '#34d399' }}>
+            {isLocked ? `⏳ Unlocking in ${formatTime(timeLeft)}` : '✅ Unlocked! Go Practice'}
+          </strong>
+        </p>
       </div>
 
-      <div className={styles.card} onClick={() => setView('strategies')}>
+      <div 
+        className={`${styles.card} ${isLocked ? styles.lockedCard : ''}`} 
+        onClick={() => handleCardClick('strategies')}
+      >
         <div className={styles.cardIcon}>📺</div>
         <h2 className={styles.cardTitle}>Cheat Strategies</h2>
-        <p className={styles.cardDesc}>Watch expert videos on blind guessing and column patterns. <br /><strong>Coming almost done... be ready!</strong></p>
+        <p className={styles.cardDesc}>
+          Watch expert videos on blind guessing and column patterns.
+          <br />
+          <strong style={{ color: isLocked ? '#fbbf24' : '#34d399' }}>
+            {isLocked ? `✨ Unlocking in ${formatTime(timeLeft)}` : '✅ Unlocked! Watch Now'}
+          </strong>
+        </p>
       </div>
     </motion.div>
   );
