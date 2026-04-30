@@ -231,7 +231,11 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.ambientGlow} />
+      {/* Aurora Orbs */}
+      <div className={`${styles.orb} ${styles.orb1}`} />
+      <div className={`${styles.orb} ${styles.orb2}`} />
+      <div className={`${styles.orb} ${styles.orb3}`} />
+      <div className={`${styles.orb} ${styles.orb4}`} />
       
       <div className={styles.container}>
         <button className={styles.backBtn} onClick={handleBack}>
