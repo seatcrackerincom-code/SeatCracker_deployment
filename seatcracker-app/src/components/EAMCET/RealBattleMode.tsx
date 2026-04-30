@@ -880,7 +880,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
           </div>
 
           <div style={{ background: "rgba(59,130,246,0.1)", border: "1px solid rgba(59,130,246,0.3)", borderRadius: 8, padding: 16, color: "#93c5fd", fontSize: 14, marginBottom: 24 }}>
-            ⏳ Results and detailed analysis will be released in exactly <strong>1 Hour</strong>.
+            ⚡ Results and detailed analysis are being generated. Ready in <strong>10 Seconds</strong>.
           </div>
 
           <button
@@ -1123,8 +1123,8 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
               <h2 style={{ color: "#fff", fontSize: 24, marginBottom: 16, borderBottom: "1px solid #334155", paddingBottom: 16 }}>Real Battle Mode Rules</h2>
               <ul style={{ color: "#cbd5e1", fontSize: 15, lineHeight: 1.6, paddingLeft: 20, marginBottom: 32 }}>
                 <li style={{ marginBottom: 12 }}><strong>Daily Limit:</strong> You can attempt a maximum of <strong>2 mock tests</strong> per day.</li>
-                <li style={{ marginBottom: 12 }}><strong>Global Cooldown:</strong> After submitting an exam, there is a strict <strong>3-hour cooldown</strong> before you can unlock the next mock.</li>
-                <li style={{ marginBottom: 12 }}><strong>Results Processing:</strong> Results and analysis will be released exactly <strong>1 hour</strong> after you submit.</li>
+                <li style={{ marginBottom: 12 }}><strong>Global Cooldown:</strong> After submitting an exam, there is a <strong>1-hour cooldown</strong> before you can unlock the next mock.</li>
+                <li style={{ marginBottom: 12 }}><strong>Results Processing:</strong> Results and analysis will be released in <strong>10 seconds</strong> after you submit.</li>
                 <li style={{ marginBottom: 12 }}><strong>Mobile Users:</strong> Landscape mode is <strong>strictly required</strong> for the best experience.</li>
               </ul>
               <button
@@ -1204,8 +1204,8 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
               <h2 style={{ color: "#fff", fontSize: 24, marginBottom: 16, borderBottom: "1px solid #334155", paddingBottom: 16 }}>Real Battle Mode Rules</h2>
               <ul style={{ color: "#cbd5e1", fontSize: 15, lineHeight: 1.6, paddingLeft: 20, marginBottom: 32 }}>
                 <li style={{ marginBottom: 12 }}><strong>Daily Limit:</strong> You can attempt a maximum of <strong>2 mock tests</strong> per day.</li>
-                <li style={{ marginBottom: 12 }}><strong>Global Cooldown:</strong> After submitting an exam, there is a strict <strong>3-hour cooldown</strong> before you can unlock the next mock.</li>
-                <li style={{ marginBottom: 12 }}><strong>Results Processing:</strong> Just like the real exam, results are not immediate. Results and analysis will be released exactly <strong>1 hour</strong> after you submit.</li>
+                <li style={{ marginBottom: 12 }}><strong>Global Cooldown:</strong> After submitting an exam, there is a <strong>1-hour cooldown</strong> before you can unlock the next mock.</li>
+                <li style={{ marginBottom: 12 }}><strong>Results Processing:</strong> Just like the real exam, results are near-immediate. Results and analysis will be released in <strong>10 seconds</strong> after you submit.</li>
                 <li style={{ marginBottom: 12 }}><strong>Daily Updates:</strong> Question papers will be added daily. Don't panic, we add daily!</li>
               </ul>
               <button
@@ -1251,8 +1251,8 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
     const prefix = `${statePrefix}${course}`;
 
     const now = nowTime;
-    const COOLDOWN_MS = 3 * 60 * 60 * 1000;   // 3 hours
-    const RESULTS_MS = 1 * 60 * 60 * 1000;   // 1 hour
+    const COOLDOWN_MS = 1 * 60 * 60 * 1000;   // 1 hour
+    const RESULTS_MS = 10 * 1000;            // 10 seconds
     const MAX_PER_DAY = 2;
 
     // Daily submit count
@@ -1312,7 +1312,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
           setAlertModal({
             show: true,
             title: "Results Pending",
-            message: `Results for ${mock.title} are being processed. Please wait for the 1-hour timer to complete.`
+            message: `Results for ${mock.title} are being processed. Please wait for the 10-second timer to complete.`
           });
         }
         return;
@@ -1353,7 +1353,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
         setAlertModal({
           show: true,
           title: "Cooldown Active",
-          message: `⏳ 3-hour cooldown is active! You must wait until the timer completes before starting your next battle.\n\nNext unlock in: ${fmtMs(globalCooldownRemaining)}`
+          message: `⏳ 1-hour cooldown is active! You must wait until the timer completes before starting your next battle.\n\nNext unlock in: ${fmtMs(globalCooldownRemaining)}`
         });
         return;
       }
@@ -1390,8 +1390,8 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
               <h2 style={{ color: "#fff", fontSize: 24, marginBottom: 16, borderBottom: "1px solid #334155", paddingBottom: 16 }}>Real Battle Mode Rules</h2>
               <ul style={{ color: "#cbd5e1", fontSize: 15, lineHeight: 1.6, paddingLeft: 20, marginBottom: 32 }}>
                 <li style={{ marginBottom: 12 }}><strong>Daily Limit:</strong> You can attempt a maximum of <strong>2 mock tests</strong> per day.</li>
-                <li style={{ marginBottom: 12 }}><strong>Global Cooldown:</strong> After submitting an exam, there is a strict <strong>3-hour cooldown</strong> before you can unlock the next mock.</li>
-                <li style={{ marginBottom: 12 }}><strong>Results Processing:</strong> Results and analysis will be released exactly <strong>1 hour</strong> after you submit.</li>
+                <li style={{ marginBottom: 12 }}><strong>Global Cooldown:</strong> After submitting an exam, there is a <strong>1-hour cooldown</strong> before you can unlock the next mock.</li>
+                <li style={{ marginBottom: 12 }}><strong>Results Processing:</strong> Results and analysis will be released in <strong>10 seconds</strong> after you submit.</li>
                 <li style={{ marginBottom: 12 }}><strong>Mobile Users:</strong> Landscape mode is <strong>strictly required</strong> for the best experience.</li>
               </ul>
               <button
@@ -1426,7 +1426,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
           )}
           {inGlobalCooldown && !dailyLimitReached && (
             <div style={{ width: "100%", maxWidth: 520, background: "rgba(251,191,36,0.12)", border: "1px solid rgba(251,191,36,0.3)", borderRadius: 12, padding: "12px 18px", marginBottom: 16, color: "#fde68a", fontSize: 13, textAlign: "center" }}>
-              ⏳ 3-hour cooldown active — next mock unlocks in <strong>{fmtMs(globalCooldownRemaining)}</strong>.<br />
+              ⏳ 1-hour cooldown active — next mock unlocks in <strong>{fmtMs(globalCooldownRemaining)}</strong>.<br />
               <span style={{ opacity: 0.8, fontSize: 12 }}>Use this time to rest, check your results, and analyse missing topics.</span>
             </div>
           )}
@@ -1471,6 +1471,25 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
                       {mock.num === 1 && <span style={{ fontSize: 10, background: "rgba(56,189,248,0.2)", color: "#38bdf8", padding: "1px 7px", borderRadius: 99, fontWeight: 700, letterSpacing: "0.05em" }}>REAL QUESTIONS</span>}
                     </div>
                     <div className={styles.submodeDesc}>{mock.desc}</div>
+                    
+                    {isClickable && !mock.isCompleted && (
+                      <button className={styles.startBattleBtn}>
+                        Start Battle
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                          <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                      </button>
+                    )}
+
+                    {mock.isCompleted && mock.resultsAvailable && (
+                      <button className={styles.viewResultsBtn}>
+                        View Results
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                          <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                      </button>
+                    )}
+
                     {statusChip && <div style={{ marginTop: 6 }}>{statusChip}</div>}
                     {isCooldownLocked && (
                       <div style={{ marginTop: 10, background: "rgba(251,191,36,0.1)", border: "1px solid rgba(251,191,36,0.2)", borderRadius: 8, padding: "8px 12px" }}>
