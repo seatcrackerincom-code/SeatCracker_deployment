@@ -269,10 +269,14 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
     // return () => window.removeEventListener("resize", checkOrientation);
   }, []);
 
-  // Update nowTime every second to keep countdowns live
+  // Update nowTime only when countdowns are actually visible (Performance Optimization)
   useEffect(() => {
-    if (phase !== "selection") return;
-    const t = setInterval(() => setNowTime(Date.now()), 1000);
+    if (phase !== "selection" && phase !== "submit_summary") return;
+    
+    // Check if we actually need a timer (cooldowns or result timers active)
+    const t = setInterval(() => {
+      setNowTime(Date.now());
+    }, 1000);
     return () => clearInterval(t);
   }, [phase]);
 
@@ -315,6 +319,10 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
     if (theme === "plain") return <div className={styles.bgImageGoal} />;
     if (theme === "image") return <div className={styles.bgImageBattle} />;
     if (theme === "video") {
+      // Auto-fallback to image on small screens to prevent flickering/brightness issues
+      if (typeof window !== 'undefined' && window.innerWidth < 1024) {
+        return <div className={styles.bgImageBattle} />;
+      }
       return (
         <video
           ref={videoRef}

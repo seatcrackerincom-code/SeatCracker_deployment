@@ -270,17 +270,27 @@ function GlitchScene() {
       <motion.div
         className={styles.glitchContainer}
         animate={{
-          filter: [
-            "hue-rotate(0deg)   brightness(1)",
-            "hue-rotate(88deg)  brightness(1.6)",
-            "hue-rotate(0deg)   brightness(0.3)",
-            "hue-rotate(200deg) brightness(2.2)",
-            "hue-rotate(0deg)   brightness(0.1)",
-            "hue-rotate(300deg) brightness(1.9)",
-            "hue-rotate(0deg)   brightness(0)",
-          ],
+          filter: typeof window !== 'undefined' && window.innerWidth < 1024 
+            ? [
+                "hue-rotate(0deg) brightness(1)",
+                "hue-rotate(45deg) brightness(1.3)",
+                "hue-rotate(0deg) brightness(0.5)",
+                "hue-rotate(0deg) brightness(0)",
+              ]
+            : [
+                "hue-rotate(0deg)   brightness(1)",
+                "hue-rotate(88deg)  brightness(1.6)",
+                "hue-rotate(0deg)   brightness(0.3)",
+                "hue-rotate(200deg) brightness(2.2)",
+                "hue-rotate(0deg)   brightness(0.1)",
+                "hue-rotate(300deg) brightness(1.9)",
+                "hue-rotate(0deg)   brightness(0)",
+              ],
         }}
-        transition={{ duration: 1.8, times: [0, 0.14, 0.3, 0.5, 0.65, 0.82, 1] }}
+        transition={{ 
+          duration: typeof window !== 'undefined' && window.innerWidth < 1024 ? 1.2 : 1.8, 
+          times: typeof window !== 'undefined' && window.innerWidth < 1024 ? [0, 0.4, 0.7, 1] : [0, 0.14, 0.3, 0.5, 0.65, 0.82, 1] 
+        }}
       >
         <div className={styles.glitchBg} />
       </motion.div>
