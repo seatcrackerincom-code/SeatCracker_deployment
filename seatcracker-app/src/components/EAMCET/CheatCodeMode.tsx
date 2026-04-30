@@ -178,9 +178,6 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
                 <h3>{topic.name}</h3>
                 <div className={styles.itemMeta}>
                   <span>~{topic.questions} Questions Expected</span>
-                  <span className={`${styles.badge} ${topic.level === 'Hard' ? styles.hard : (topic.level === 'Intermediate' ? styles.medium : styles.easy)}`}>
-                    {topic.level}
-                  </span>
                 </div>
               </div>
               <svg 
