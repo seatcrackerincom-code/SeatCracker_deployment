@@ -47,7 +47,7 @@ const STRATEGIES = [
 export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
   const [view, setView] = useState<ViewState>('dashboard');
   const [selectedSubject, setSelectedSubject] = useState<string>(SUBJECTS[0]);
-  const [selectedRegion, setSelectedRegion] = useState<StateRegion>(exam as StateRegion || 'AP');
+  const selectedRegion: StateRegion = exam?.includes('TS') ? 'TS' : 'AP';
   const [expandedTopic, setExpandedTopic] = useState<Topic | null>(null);
   const [timeLeft, setTimeLeft] = useState<number>(0);
 
@@ -154,20 +154,6 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -20 }}
     >
-      <div className={styles.regionToggle}>
-        <button 
-          className={`${styles.regionBtn} ${selectedRegion === 'AP' ? styles.regionActive : ''}`}
-          onClick={() => { setSelectedRegion('AP'); setExpandedTopic(null); }}
-        >
-          AP EAPCET
-        </button>
-        <button 
-          className={`${styles.regionBtn} ${selectedRegion === 'TS' ? styles.regionActive : ''}`}
-          onClick={() => { setSelectedRegion('TS'); setExpandedTopic(null); }}
-        >
-          TS EAPCET
-        </button>
-      </div>
 
       <div className={styles.tabs}>
         {SUBJECTS.map(sub => (
