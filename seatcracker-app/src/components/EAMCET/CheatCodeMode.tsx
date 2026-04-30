@@ -64,10 +64,10 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
 
   // Initialize countdown (4 hours from first visit)
   React.useEffect(() => {
-    let target = parseInt(localStorage.getItem("sc_cheat_unlock_time") || "0");
+    let target = parseInt(localStorage.getItem("sc_cheat_unlock_time_v2") || "0");
     if (!target) {
-      target = Date.now() + 4 * 60 * 60 * 1000;
-      localStorage.setItem("sc_cheat_unlock_time", target.toString());
+      target = Date.now() + 30 * 60 * 1000; // 30 Minutes
+      localStorage.setItem("sc_cheat_unlock_time_v2", target.toString());
     }
 
     const timer = setInterval(() => {
