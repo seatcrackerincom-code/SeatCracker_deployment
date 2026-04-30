@@ -213,6 +213,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
     | "comingSoon"
     | "submit_summary"
     | "results"
+    | "review"
   >("submodeSelection");
   const [hasSeenRules, setHasSeenRules] = useState(false);
   const [nowTime, setNowTime] = useState(Date.now());
@@ -229,6 +230,8 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
   const [alertModal, setAlertModal] = useState<{ show: boolean, title: string, message: string } | null>(null);
   const [theme, setTheme] = useState<"video" | "image" | "plain">("image");
   const [showSettings, setShowSettings] = useState(false);
+  const [reviewIdx, setReviewIdx] = useState(0);
+  const [reviewTab, setReviewTab] = useState<Subject>(sections[0].subject);
   // ── Mobile / Orientation States ──
   const [isPortrait, setIsPortrait] = useState(false);
   const [showMobilePalette, setShowMobilePalette] = useState(false);
@@ -914,6 +917,17 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
           <h1 className={styles.resultsTitle}>Results Not Found</h1>
           <p className={styles.resultsSub}>Could not load the saved data for this attempt.</p>
           <button className={styles.returnBtn} onClick={() => setPhase("selection")}>Back to Selection</button>
+          <button 
+            className={styles.fBtnBlue} 
+            style={{ marginTop: "12px", width: "100%" }} 
+            onClick={() => {
+              setReviewIdx(0);
+              setReviewTab(savedQuestions[0]?.subject || sections[0].subject);
+              setPhase("review");
+            }}
+          >
+            Review Detailed Analysis
+          </button>
         </div>
       </div>
     );
@@ -1020,6 +1034,24 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
               <span className={styles.statValue} style={{ color: "#94a3b8" }}>{skipped}</span>
               <span className={styles.statLabel}>Skipped</span>
             </div>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginBottom: "32px" }}>
+            <button className={styles.returnBtn} onClick={() => setPhase("selection")} style={{ margin: 0 }}>
+              Return to Selection
+            </button>
+            <button 
+              className={styles.fBtnBlue} 
+              onClick={() => {
+                setReviewIdx(0);
+                const firstSub = savedQuestions[0]?.subject || sections[0].subject;
+                setReviewTab(firstSub);
+                setPhase("review");
+              }}
+              style={{ padding: "14px", borderRadius: "12px", background: "linear-gradient(90deg, #3b82f6, #2563eb)", border: "none", color: "white", fontWeight: "bold", cursor: "pointer" }}
+            >
+              Review Detailed Analysis
+            </button>
           </div>
 
           <div className={styles.analysisSection}>
@@ -1739,6 +1771,165 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
   }
 
   // ── EXAM CONSOLE ─────────────────────────────────────────────────────────
+  const renderReview = () => {
+    if (!selectedMock) return null;
+    const mockId = selectedMock.toLowerCase().replace(/\s+/g, "_");
+    const savedResponses: Record<number, Response> = JSON.parse(localStorage.getItem(`sc_responses_${mockId}`) || "{}");
+    const savedQuestions: Question[] = JSON.parse(localStorage.getItem(`sc_questions_${mockId}`) || "[]");
+
+    if (!savedQuestions.length) return null;
+
+    const filteredQ = savedQuestions.filter(q => q.subject === reviewTab);
+    const curQ = filteredQ[reviewIdx];
+    const userResp = savedResponses[curQ?.id];
+    const isCorrect = userResp?.option === curQ?.answer;
+    const isSkipped = !userResp?.option;
+
+    return (
+      <div className={styles.resultsOverlay} style={{ padding: "20px" }}>
+        {renderBackground()}
+        <div className={styles.resultsCard} style={{ maxWidth: "1100px", padding: 0, overflow: "hidden", display: "flex", flexDirection: "column", height: "90vh" }}>
+          <div className={styles.resultsHeader} style={{ padding: "20px 32px", borderBottom: "1px solid rgba(255,255,255,0.1)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div>
+              <h1 className={styles.resultsTitle} style={{ fontSize: "20px" }}>Review Mode</h1>
+              <p className={styles.resultsSub}>{selectedMock} Analysis</p>
+            </div>
+            <button className={styles.returnBtn} onClick={() => setPhase("results")} style={{ margin: 0, padding: "8px 16px" }}>
+              Back to Scorecard
+            </button>
+          </div>
+
+          <div style={{ display: "flex", flex: 1, overflow: "hidden" }}>
+            {/* Left Sidebar: Palette */}
+            <div style={{ width: "300px", borderRight: "1px solid rgba(255,255,255,0.1)", background: "rgba(0,0,0,0.2)", display: "flex", flexDirection: "column" }}>
+              <div style={{ padding: "16px", display: "flex", gap: "8px", overflowX: "auto" }}>
+                {sections.map(s => (
+                  <button 
+                    key={s.subject}
+                    onClick={() => { setReviewTab(s.subject); setReviewIdx(0); }}
+                    style={{ 
+                      padding: "6px 12px", borderRadius: "20px", fontSize: "11px", whiteSpace: "nowrap",
+                      background: reviewTab === s.subject ? "#3b82f6" : "rgba(255,255,255,0.05)",
+                      color: "#fff", border: "none", cursor: "pointer"
+                    }}
+                  >
+                    {s.subject}
+                  </button>
+                ))}
+              </div>
+              <div style={{ flex: 1, overflowY: "auto", padding: "16px", display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: "8px", alignContent: "start" }}>
+                {filteredQ.map((q, i) => {
+                  const r = savedResponses[q.id];
+                  const corr = r?.option === q.answer;
+                  const skip = !r?.option;
+                  return (
+                    <div 
+                      key={q.id}
+                      onClick={() => setReviewIdx(i)}
+                      style={{
+                        width: "40px", height: "40px", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center",
+                        fontSize: "12px", fontWeight: "bold", cursor: "pointer",
+                        background: i === reviewIdx ? "#fff" : (skip ? "rgba(255,255,255,0.05)" : (corr ? "rgba(16, 185, 129, 0.2)" : "rgba(239, 68, 68, 0.2)")),
+                        color: i === reviewIdx ? "#000" : (skip ? "#94a3b8" : (corr ? "#10b981" : "#ef4444")),
+                        border: `1px solid ${i === reviewIdx ? "#fff" : (skip ? "rgba(255,255,255,0.1)" : (corr ? "#10b981" : "#ef4444"))}`
+                      }}
+                    >
+                      {i + 1}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Right Side: Question Content */}
+            <div style={{ flex: 1, overflowY: "auto", padding: "32px", position: "relative" }}>
+              {curQ && (
+                <>
+                  <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "24px" }}>
+                    <span style={{ color: "#38bdf8", fontWeight: "bold" }}>Question {reviewIdx + 1}</span>
+                    <span style={{ 
+                      padding: "4px 12px", borderRadius: "20px", fontSize: "12px", fontWeight: "bold",
+                      background: isSkipped ? "rgba(255,255,255,0.1)" : (isCorrect ? "rgba(16, 185, 129, 0.2)" : "rgba(239, 68, 68, 0.2)"),
+                      color: isSkipped ? "#94a3b8" : (isCorrect ? "#10b981" : "#ef4444")
+                    }}>
+                      {isSkipped ? "SKIPPED" : (isCorrect ? "CORRECT" : "INCORRECT")}
+                    </span>
+                  </div>
+
+                  <div className={styles.qText} style={{ fontSize: "20px", marginBottom: "32px", color: "#fff" }}>
+                    <MathText text={curQ.question} />
+                    {curQ.questionTe && <div style={{ fontSize: "16px", color: "#94a3b8", marginTop: "12px" }}>{curQ.questionTe}</div>}
+                  </div>
+
+                  {curQ.images.map((img, i) => (
+                    <img key={i} src={`/EAMCET${img}`} alt="question" style={{ maxWidth: "100%", borderRadius: "8px", marginBottom: "24px", border: "1px solid rgba(255,255,255,0.1)" }} />
+                  ))}
+
+                  <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                    {curQ.options.map((opt, i) => {
+                      const optVal = String(i + 1);
+                      const isUserChoice = userResp?.option === optVal;
+                      const isCorrectChoice = curQ.answer === optVal;
+                      
+                      let borderColor = "rgba(255,255,255,0.1)";
+                      let bgColor = "rgba(255,255,255,0.03)";
+                      
+                      if (isCorrectChoice) {
+                        borderColor = "#10b981";
+                        bgColor = "rgba(16, 185, 129, 0.1)";
+                      } else if (isUserChoice && !isCorrect) {
+                        borderColor = "#ef4444";
+                        bgColor = "rgba(239, 68, 68, 0.1)";
+                      }
+
+                      return (
+                        <div key={i} style={{ 
+                          padding: "16px", borderRadius: "12px", border: `1px solid ${borderColor}`, background: bgColor,
+                          display: "flex", alignItems: "center", gap: "12px", position: "relative"
+                        }}>
+                          <div style={{ 
+                            width: "24px", height: "24px", borderRadius: "50%", border: "2px solid currentColor", 
+                            display: "flex", alignItems: "center", justifyContent: "center", fontSize: "12px", fontWeight: "bold",
+                            color: isCorrectChoice ? "#10b981" : (isUserChoice ? "#ef4444" : "#94a3b8")
+                          }}>
+                            {i + 1}
+                          </div>
+                          <div style={{ color: isCorrectChoice ? "#fff" : "#94a3b8" }}>
+                            <MathText text={opt} />
+                          </div>
+                          {isCorrectChoice && <div style={{ marginLeft: "auto", color: "#10b981", fontWeight: "bold", fontSize: "12px" }}>CORRECT ANSWER</div>}
+                          {isUserChoice && !isCorrect && <div style={{ marginLeft: "auto", color: "#ef4444", fontWeight: "bold", fontSize: "12px" }}>YOUR CHOICE</div>}
+                          {isUserChoice && isCorrect && <div style={{ marginLeft: "auto", color: "#10b981", fontWeight: "bold", fontSize: "12px" }}>YOUR CHOICE (CORRECT)</div>}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
+          
+          <div style={{ padding: "16px 32px", borderTop: "1px solid rgba(255,255,255,0.1)", background: "rgba(0,0,0,0.2)", display: "flex", justifyContent: "space-between" }}>
+            <button 
+              disabled={reviewIdx === 0}
+              onClick={() => setReviewIdx(prev => prev - 1)}
+              style={{ padding: "10px 24px", borderRadius: "8px", background: "rgba(255,255,255,0.05)", color: "#fff", border: "1px solid rgba(255,255,255,0.1)", cursor: reviewIdx === 0 ? "not-allowed" : "pointer" }}
+            >
+              ← Previous
+            </button>
+            <button 
+              disabled={reviewIdx === filteredQ.length - 1}
+              onClick={() => setReviewIdx(prev => prev + 1)}
+              style={{ padding: "10px 24px", borderRadius: "8px", background: "rgba(255,255,255,0.05)", color: "#fff", border: "1px solid rgba(255,255,255,0.1)", cursor: reviewIdx === filteredQ.length - 1 ? "not-allowed" : "pointer" }}
+            >
+              Next →
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   const allStats = getAllStats();
 
   if (phase === "cinema") {
@@ -1754,6 +1945,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
 
   if (phase === "submit_summary") return renderSubmitSummary();
   if (phase === "results") return renderResults();
+  if (phase === "review") return renderReview();
 
 
   return (
