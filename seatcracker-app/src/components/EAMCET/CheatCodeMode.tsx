@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { BlockMath, InlineMath } from "react-katex";
 import "katex/dist/katex.min.css";
 import { AP_DATA, TS_DATA, Topic } from "./CheatCodeData";
+import { REPEATED_QUESTIONS } from "./RepeatedQuestionsData";
 
 interface Props {
   userId: string;
@@ -242,6 +243,66 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
     </motion.div>
   );
 
+  const renderQuestions = () => {
+    const subQuestions = REPEATED_QUESTIONS[selectedSubject]?.[selectedRegion] || [];
+
+    return (
+      <motion.div 
+        className={styles.detailView}
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -20 }}
+      >
+        <div className={styles.tabs}>
+          {SUBJECTS.map(sub => (
+            <button 
+              key={sub}
+              className={`${styles.tab} ${selectedSubject === sub ? styles.active : ''}`}
+              onClick={() => setSelectedSubject(sub)}
+            >
+              {sub}
+            </button>
+          ))}
+        </div>
+
+        <div className={styles.contentList}>
+          {subQuestions.length === 0 ? (
+            <div style={{ textAlign: 'center', padding: '60px 20px', color: '#94a3b8', background: 'rgba(255,255,255,0.03)', borderRadius: '24px', border: '1px dashed rgba(255,255,255,0.1)' }}>
+              <div style={{ fontSize: '48px', marginBottom: '20px' }}>🔍</div>
+              <h3 style={{ color: '#fff', fontSize: '20px', marginBottom: '12px' }}>Analyzing {selectedSubject} Trends...</h3>
+              <p style={{ maxWidth: '400px', margin: '0 auto', lineHeight: '1.6' }}>
+                We are currently processing the last 10 years of {selectedSubject} repeated questions. Stand by for the immediate update!
+              </p>
+            </div>
+          ) : subQuestions.map((topicBlock, idx) => (
+            <div key={idx} className={styles.questionTopicBlock}>
+              <h3 className={styles.topicHeader}>{topicBlock.topic}</h3>
+              <div className={styles.questionsGrid}>
+                {topicBlock.questions.map((q, qIdx) => (
+                  <div key={qIdx} className={styles.recurringQuestionCard}>
+                    <p className={styles.questionText}><strong>Q{qIdx + 1}.</strong> {q.question}</p>
+                    <div className={styles.optionsGrid}>
+                      {q.options.map((opt, oIdx) => (
+                        <div key={oIdx} className={styles.optionItemMini}>{opt}</div>
+                      ))}
+                    </div>
+                    <div className={styles.questionFooter}>
+                      <div className={styles.answerBadge}>Correct Answer: {q.answer}</div>
+                      <div className={styles.recurringHint}>
+                        <span className={styles.hintIcon}>💡</span>
+                        <span className={styles.hintText}>{q.hint}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+    );
+  };
+
   const renderStrategies = () => (
     <motion.div 
       className={styles.strategyGrid}
@@ -310,7 +371,7 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
         <AnimatePresence mode="wait">
           {view === 'dashboard' && renderDashboard()}
           {view === 'topics' && renderTopics()}
-          {view === 'questions' && renderTopics()} {/* Reusing topic view for now as they share structure */}
+          {view === 'questions' && renderQuestions()}
           {view === 'strategies' && renderStrategies()}
         </AnimatePresence>
       </div>

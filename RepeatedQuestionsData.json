@@ -1,0 +1,3048 @@
+{
+  "Mathematics": [
+    {
+      "topic": "SETS, RELATIONS & FUNCTIONS",
+      "questions": [
+        {
+          "question": "If A = {1,2,3,4} and B = {3,4,5,6}, then A \u25a0 B (symmetric difference) is:",
+          "options": [
+            "A) {1,2,5,6}",
+            "B) {3,4}",
+            "C) {1,2,3,4,5,6}",
+            "D) {}"
+          ],
+          "answer": "A",
+          "explanation": "{1,2,5,6}",
+          "hint": "A \u25a0 B = (A\u222aB) \u2013 (A\u2229B) = {1,2,3,4,5,6} \u2013 {3,4} = {1,2,5,6}"
+        },
+        {
+          "question": "The number of subsets of a set with n elements is:",
+          "options": [
+            "A) n\u00b2",
+            "B) 2n",
+            "C) 2\u25a0",
+            "D) n!"
+          ],
+          "answer": "C",
+          "explanation": "2\u25a0",
+          "hint": "Every element has 2 choices (in or out). Total subsets = 2\u25a0. For n=3: 2\u00b3=8 subsets."
+        },
+        {
+          "question": "If n(A)=3, n(B)=4 and n(A\u2229B)=2, then n(A\u222aB) is:",
+          "options": [
+            "A) 5",
+            "B) 7",
+            "C) 9",
+            "D) 3"
+          ],
+          "answer": "A",
+          "explanation": "5",
+          "hint": "n(A\u222aB) = n(A)+n(B)\u2013n(A\u2229B) = 3+4\u20132 = 5"
+        },
+        {
+          "question": "A relation R on set A is called an equivalence relation if it is:",
+          "options": [
+            "A) Reflexive and symmetric only",
+            "B) Symmetric and transitive only",
+            "C) Reflexive, symmetric and transitive",
+            "D) Anti-symmetric and transitive"
+          ],
+          "answer": "C",
+          "explanation": "Reflexive, symmetric and\ntransitive",
+          "hint": "Equivalence relation must satisfy all three: reflexive, symmetric AND transitive."
+        },
+        {
+          "question": "Which of the following functions is one-one (injective)?",
+          "options": [
+            "A) f(x)=x\u00b2",
+            "B) f(x)=sinx",
+            "C) f(x)=2x+3",
+            "D) f(x)=|x|"
+          ],
+          "answer": "C",
+          "explanation": "f(x)=2x+3",
+          "hint": "f(x)=2x+3 is strictly increasing \u2192 one-one. Others fail: f(x)=f(-x) for x\u00b2 and |x|."
+        },
+        {
+          "question": "The domain of f(x) = \u221a(4\u2013x\u00b2) is:",
+          "options": [
+            "A) (\u20132, 2)",
+            "B) [\u20132, 2]",
+            "C) (0, 2)",
+            "D) [0, 4]"
+          ],
+          "answer": "B",
+          "explanation": "[\u20132, 2]",
+          "hint": "Need 4\u2013x\u00b2 \u2265 0 \u2192 x\u00b2 \u2264 4 \u2192 \u20132 \u2264 x \u2264 2. Endpoints included (square root of 0 is 0)."
+        },
+        {
+          "question": "If f(x) = x\u00b2 and g(x) = \u221ax, then fog(x) is:",
+          "options": [
+            "A) x",
+            "B) x\u00b2",
+            "C) \u221ax",
+            "D) x\u25a0"
+          ],
+          "answer": "A",
+          "explanation": "x",
+          "hint": "fog(x) = f(g(x)) = f(\u221ax) = (\u221ax)\u00b2 = x, for x \u2265 0."
+        },
+        {
+          "question": "The inverse function of f(x) = (x\u20131)/(x+1) is:",
+          "options": [
+            "A) (x+1)/(x\u20131)",
+            "B) (1+x)/(1\u2013x)",
+            "C) (x\u20131)/(x+1)",
+            "D) 1/f(x)"
+          ],
+          "answer": "B",
+          "explanation": "(1+x)/(1\u2013x)",
+          "hint": "Let y=(x\u20131)/(x+1). Swap x,y and solve: x(y+1)=y\u20131 \u2192 y=(1+x)/(1\u2013x)."
+        }
+      ]
+    },
+    {
+      "topic": "MATRICES & DETERMINANTS",
+      "questions": [
+        {
+          "question": "If A is a 3\u00d73 matrix and |A| = 5, then |3A| is:",
+          "options": [
+            "A) 15",
+            "B) 45",
+            "C) 135",
+            "D) 375"
+          ],
+          "answer": "C",
+          "explanation": "135",
+          "hint": "|kA| = k\u25a0|A| for an n\u00d7n matrix. |3A| = 3\u00b3\u00d75 = 27\u00d75 = 135."
+        },
+        {
+          "question": "A square matrix A is singular if:",
+          "options": [
+            "A) |A| \u2260 0",
+            "B) |A| = 0",
+            "C) A = I",
+            "D) A = A\u25a0"
+          ],
+          "answer": "B",
+          "explanation": "|A| = 0",
+          "hint": "Singular matrix: |A|=0, no inverse exists. Non-singular: |A|\u22600, inverse exists."
+        },
+        {
+          "question": "If A = [[2,1],[5,3]], then A\u25a0\u00b9 is:",
+          "options": [
+            "A) [[3,\u20131],[\u20135,2]]",
+            "B) [[3,1],[5,2]]",
+            "C) [[\u20133,1],[5,\u20132]]",
+            "D) [[2,\u20131],[\u20135,3]]"
+          ],
+          "answer": "A",
+          "explanation": "[[3,\u20131],[\u20135,2]]",
+          "hint": "|A|=6\u20135=1. A\u25a0\u00b9=(1/|A|)\u00d7adj(A). adj(A)=[[3,\u20131],[\u20135,2]]. Since |A|=1, A\u25a0\u00b9=adj(A)."
+        },
+        {
+          "question": "The value of the determinant |1 2 3 / 4 5 6 / 7 8 9| is:",
+          "options": [
+            "A) 0",
+            "B) 6",
+            "C) \u20136",
+            "D) 45"
+          ],
+          "answer": "A",
+          "explanation": "0",
+          "hint": "R3 = R1+R2 (7=1+4? No). Actually R3\u2013R2=R2\u2013R1 (AP rows). Rows in AP \u2192 det=0."
+        },
+        {
+          "question": "If A is symmetric, then A\u25a0 equals:",
+          "options": [
+            "A) \u2013A",
+            "B) A",
+            "C) A\u25a0\u00b9",
+            "D) 0"
+          ],
+          "answer": "B",
+          "explanation": "A",
+          "hint": "Symmetric matrix: A\u25a0 = A. Skew-symmetric: A\u25a0 = \u2013A."
+        },
+        {
+          "question": "The rank of the zero matrix (all entries = 0) is:",
+          "options": [
+            "A) 1",
+            "B) n",
+            "C) 0",
+            "D) Undefined"
+          ],
+          "answer": "C",
+          "explanation": "0",
+          "hint": "Rank = number of non-zero rows in row echelon form. Zero matrix has no non-zero\nrows \u2192 rank 0."
+        },
+        {
+          "question": "If AB = BA, then matrices A and B are said to be:",
+          "options": [
+            "A) Orthogonal",
+            "B) Commutative",
+            "C) Idempotent",
+            "D) Involutory"
+          ],
+          "answer": "B",
+          "explanation": "Commutative",
+          "hint": "Commutative property of multiplication. Generally AB \u2260 BA for matrices."
+        },
+        {
+          "question": "For any square matrix A, A + A\u25a0 is always:",
+          "options": [
+            "A) Skew-symmetric",
+            "B) Symmetric",
+            "C) Zero matrix",
+            "D) Identity matrix"
+          ],
+          "answer": "B",
+          "explanation": "Symmetric",
+          "hint": "(A+A\u25a0)\u25a0 = A\u25a0+A = A+A\u25a0. So it equals its own transpose \u2192 symmetric."
+        },
+        {
+          "question": "The cofactor C\u25a0\u25a0 of matrix A = [[1,2],[3,4]] is:",
+          "options": [
+            "A) 3",
+            "B) \u20133",
+            "C) 4",
+            "D) \u20134"
+          ],
+          "answer": "B",
+          "explanation": "\u20133",
+          "hint": "C\u25a0\u25a0 = (\u20131)^(1+2) \u00d7 M\u25a0\u25a0 = (\u20131)\u00b3 \u00d7 3 = \u20133 (minor M\u25a0\u25a0 is the element 3)."
+        },
+        {
+          "question": "If A\u00b2 = A, the matrix A is called:",
+          "options": [
+            "A) Involutory",
+            "B) Nilpotent",
+            "C) Idempotent",
+            "D) Orthogonal"
+          ],
+          "answer": "C",
+          "explanation": "Idempotent",
+          "hint": "A\u00b2 = A \u2192 idempotent. A\u00b2 = I \u2192 involutory. A\u25a0 = 0 \u2192 nilpotent. AA\u25a0 = I \u2192 orthogonal."
+        }
+      ]
+    },
+    {
+      "topic": "COMPLEX NUMBERS",
+      "questions": [
+        {
+          "question": "The modulus of z = 3 + 4i is:",
+          "options": [
+            "A) 3",
+            "B) 4",
+            "C) 5",
+            "D) 7"
+          ],
+          "answer": "C",
+          "explanation": "5",
+          "hint": "|z| = \u221a(3\u00b2+4\u00b2) = \u221a(9+16) = \u221a25 = 5. (3,4,5 Pythagorean triple)"
+        },
+        {
+          "question": "The argument of z = \u20131 + i\u221a3 is:",
+          "options": [
+            "A) \u03c0/3",
+            "B) \u03c0/6",
+            "C) 2\u03c0/3",
+            "D) 5\u03c0/6"
+          ],
+          "answer": "C",
+          "explanation": "2\u03c0/3",
+          "hint": "z is in 2nd quadrant. tan\u25a0\u00b9(\u221a3/1)=\u03c0/3. arg = \u03c0\u2013\u03c0/3 = 2\u03c0/3."
+        },
+        {
+          "question": "i\u25a0\u25a0 equals:",
+          "options": [
+            "A) 1",
+            "B) \u20131",
+            "C) i",
+            "D) \u2013i"
+          ],
+          "answer": "D",
+          "explanation": "\u2013i",
+          "hint": "Powers of i cycle with period 4. 47 = 4\u00d711+3. i\u25a0\u25a0 = i\u00b3 = \u2013i."
+        },
+        {
+          "question": "The conjugate of z = (2+3i)/(1\u2013i) is:",
+          "options": [
+            "A) (\u20131+5i)/2",
+            "B) (\u20131\u20135i)/2",
+            "C) (1\u20135i)/2",
+            "D) (1+5i)/2"
+          ],
+          "answer": "B",
+          "explanation": "(\u20131\u20135i)/2",
+          "hint": "Multiply num & denom by (1+i): (2+3i)(1+i)/2 = (2+2i+3i\u20133)/2 = (\u20131+5i)/2. Conjugate:\n(\u20131\u20135i)/2."
+        },
+        {
+          "question": "De Moivre's theorem: (cos\u03b8 + i sin\u03b8)\u25a0 equals:",
+          "options": [
+            "A) cos(n\u03b8) + i sin(n\u03b8)",
+            "B) n cos\u03b8 + n i sin\u03b8",
+            "C) cos(\u03b8/n)+i sin(\u03b8/n)",
+            "D) cos\u25a0\u03b8 + i sin\u25a0\u03b8"
+          ],
+          "answer": "A",
+          "explanation": "cos(n\u03b8) + i sin(n\u03b8)",
+          "hint": "De Moivre's: (cis\u03b8)\u25a0 = cis(n\u03b8) = cos(n\u03b8)+i sin(n\u03b8). Fundamental to complex number\ntheory."
+        },
+        {
+          "question": "The cube roots of unity are 1, \u03c9, \u03c9\u00b2. Then 1 + \u03c9 + \u03c9\u00b2 equals:",
+          "options": [
+            "A) 1",
+            "B) 3",
+            "C) 0",
+            "D) \u20131"
+          ],
+          "answer": "C",
+          "explanation": "0",
+          "hint": "Sum of nth roots of unity = 0. So 1+\u03c9+\u03c9\u00b2=0. Also \u03c9\u00b3=1 and \u03c9\u22601."
+        },
+        {
+          "question": "If z = r(cos\u03b8 + i sin\u03b8), then z\u25a0 (conjugate) in polar form is:",
+          "options": [
+            "A) r(cos\u03b8 \u2013 i sin\u03b8)",
+            "B) r(\u2013cos\u03b8 + i sin\u03b8)",
+            "C) \u2013r(cos\u03b8+i sin\u03b8)",
+            "D) r(cos(\u2013\u03b8)+i sin\u03b8)"
+          ],
+          "answer": "A",
+          "explanation": "r(cos\u03b8 \u2013 i sin\u03b8)",
+          "hint": "Conjugate negates imaginary part: z\u25a0 = r(cos\u03b8 \u2013 i sin\u03b8) = r\u00b7cis(\u2013\u03b8)."
+        },
+        {
+          "question": "The number of solutions of z\u00b2 + |z| = 0 (z complex) is:",
+          "options": [
+            "A) 1",
+            "B) 2",
+            "C) 3",
+            "D) Infinite"
+          ],
+          "answer": "C",
+          "explanation": "3",
+          "hint": "z=0 is one solution. For z\u22600 write z=re^(i\u03b8): r\u00b2e^(2i\u03b8)+r=0 \u2192 r=1 (\u2192 e^(2i\u03b8)=\u20131 \u2192\n\u03b8=\u03c0/2,3\u03c0/2). Total: 3."
+        }
+      ]
+    },
+    {
+      "topic": "QUADRATIC EQUATIONS",
+      "questions": [
+        {
+          "question": "If \u03b1, \u03b2 are roots of 2x\u00b2\u20135x+3=0, then \u03b1+\u03b2 and \u03b1\u03b2 are:",
+          "options": [
+            "A) 5/2 and 3/2",
+            "B) \u20135/2 and 3/2",
+            "C) 5/2 and \u20133/2",
+            "D) 5 and 3"
+          ],
+          "answer": "A",
+          "explanation": "5/2 and 3/2",
+          "hint": "By Vieta: \u03b1+\u03b2 = \u2013b/a = 5/2; \u03b1\u03b2 = c/a = 3/2."
+        },
+        {
+          "question": "The discriminant of ax\u00b2+bx+c=0 for real and distinct roots must be:",
+          "options": [
+            "A) \u0394 = 0",
+            "B) \u0394 < 0",
+            "C) \u0394 > 0",
+            "D) \u0394 \u2265 0"
+          ],
+          "answer": "C",
+          "explanation": "\u0394 > 0",
+          "hint": "\u0394=b\u00b2\u20134ac. \u0394>0: 2 real distinct roots; \u0394=0: equal roots; \u0394<0: complex roots."
+        },
+        {
+          "question": "The equation whose roots are 2\u03b1 and 2\u03b2 (where \u03b1,\u03b2 are roots of x\u00b2\u20135x+6=0) is:",
+          "options": [
+            "A) x\u00b2\u201310x+24=0",
+            "B) x\u00b2\u20135x+12=0",
+            "C) x\u00b2\u201310x+12=0",
+            "D) x\u00b2+10x+24=0"
+          ],
+          "answer": "A",
+          "explanation": "x\u00b2\u201310x+24=0",
+          "hint": "\u03b1+\u03b2=5, \u03b1\u03b2=6. New roots: 2\u03b1+2\u03b2=10, 2\u03b1\u00b72\u03b2=4\u00b76=24. Equation: x\u00b2\u201310x+24=0."
+        },
+        {
+          "question": "If one root of x\u00b2\u2013px+q=0 is twice the other, then:",
+          "options": [
+            "A) 2p\u00b2=9q",
+            "B) p\u00b2=2q",
+            "C) p\u00b2=9q",
+            "D) 2p\u00b2=q"
+          ],
+          "answer": "A",
+          "explanation": "2p\u00b2=9q",
+          "hint": "Roots \u03b1,2\u03b1. \u03b1+2\u03b1=3\u03b1=p\u2192\u03b1=p/3. \u03b1\u00b72\u03b1=2\u03b1\u00b2=q\u21922(p/3)\u00b2=q\u21922p\u00b2/9=q\u21922p\u00b2=9q."
+        },
+        {
+          "question": "The maximum value of f(x) = \u2013x\u00b2 + 4x \u2013 3 is:",
+          "options": [
+            "A) 1",
+            "B) 3",
+            "C) 4",
+            "D) \u20133"
+          ],
+          "answer": "A",
+          "explanation": "1",
+          "hint": "Vertex at x=\u2013b/2a=\u20134/(\u20132)=2. f(2)=\u20134+8\u20133=1. For a<0, vertex gives maximum."
+        },
+        {
+          "question": "The number of real roots of x\u00b2 + x + 1 = 0 is:",
+          "options": [
+            "A) 0",
+            "B) 1",
+            "C) 2",
+            "D) Infinite"
+          ],
+          "answer": "A",
+          "explanation": "0",
+          "hint": "\u0394 = 1\u20134 = \u20133 < 0. No real roots. Both roots are complex conjugates."
+        },
+        {
+          "question": "If \u03b1+\u03b2=\u20132 and \u03b1\u03b2=\u20133, the quadratic equation is:",
+          "options": [
+            "A) x\u00b2\u20132x\u20133=0",
+            "B) x\u00b2+2x\u20133=0",
+            "C) x\u00b2+2x+3=0",
+            "D) x\u00b2\u20132x+3=0"
+          ],
+          "answer": "B",
+          "explanation": "x\u00b2+2x\u20133=0",
+          "hint": "x\u00b2\u2013(\u03b1+\u03b2)x+\u03b1\u03b2=0 \u2192 x\u00b2\u2013(\u20132)x+(\u20133)=0 \u2192 x\u00b2+2x\u20133=0."
+        },
+        {
+          "question": "The equation x\u25a0\u20135x\u00b2+4=0 has how many real solutions?",
+          "options": [
+            "A) 0",
+            "B) 2",
+            "C) 4",
+            "D) 1"
+          ],
+          "answer": "C",
+          "explanation": "4",
+          "hint": "Let y=x\u00b2: y\u00b2\u20135y+4=0\u2192(y\u20131)(y\u20134)=0\u2192y=1,4\u2192x=\u00b11,\u00b12. Four real solutions."
+        }
+      ]
+    },
+    {
+      "topic": "PERMUTATIONS & COMBINATIONS",
+      "questions": [
+        {
+          "question": "The value of \u00b9\u25a0C\u25a0 is:",
+          "options": [
+            "A) 120",
+            "B) 720",
+            "C) 30",
+            "D) 240"
+          ],
+          "answer": "A",
+          "explanation": "120",
+          "hint": "\u00b9\u25a0C\u25a0 = 10!/(3!\u00d77!) = (10\u00d79\u00d78)/(3\u00d72\u00d71) = 720/6 = 120."
+        },
+        {
+          "question": "The number of ways to arrange the letters of the word MISSISSIPPI is:",
+          "options": [
+            "A) 34650",
+            "B) 11!",
+            "C) 4320",
+            "D) 1260"
+          ],
+          "answer": "A",
+          "explanation": "34650",
+          "hint": "11 letters: M(1), I(4), S(4), P(2). Ways = 11!/(1!4!4!2!) = 39916800/1152 = 34650."
+        },
+        {
+          "question": "In how many ways can 5 boys and 3 girls be seated in a row so that no two girls are adjacent?",
+          "options": [
+            "A) 14400",
+            "B) 720",
+            "C) 4320",
+            "D) 2880"
+          ],
+          "answer": "A",
+          "explanation": "14400",
+          "hint": "First arrange 5 boys: 5! = 120 ways. 6 gaps (including ends). Choose 3 of 6 for girls:\n6P3=120. Total=120\u00d7120=14400."
+        }
+      ]
+    },
+    {
+      "topic": "D)",
+      "questions": [
+        {
+          "question": "The number of diagonals in a polygon of n sides is:",
+          "options": [
+            "A) n(n\u20131)/2",
+            "B) n(n\u20133)/2",
+            "C) n(n\u20131)",
+            "D) nC\u25a0"
+          ],
+          "answer": "B",
+          "explanation": "n(n\u20133)/2",
+          "hint": "Total diagonals = \u25a0C\u25a0 \u2013 n = n(n\u20131)/2 \u2013 n = n(n\u20133)/2. (Subtract n sides from all\nconnections)"
+        },
+        {
+          "question": "How many 4-digit numbers can be formed using digits 1\u20139 without repetition?",
+          "options": [
+            "A) 3024",
+            "B) 6561",
+            "C) 9\u25a0",
+            "D) 9!"
+          ],
+          "answer": "A",
+          "explanation": "3024",
+          "hint": "9P4 = 9\u00d78\u00d77\u00d76 = 3024. (Permutation: order matters, no repetition)"
+        },
+        {
+          "question": "The number of ways to select a committee of 3 from 10 people is:",
+          "options": [
+            "A) 720",
+            "B) 120",
+            "C) 30",
+            "D) 360"
+          ],
+          "answer": "B",
+          "explanation": "120",
+          "hint": "\u00b9\u25a0C\u25a0 = 120 (combination, order doesn't matter in committee selection)."
+        },
+        {
+          "question": "The number of circular arrangements of 6 distinct objects is:",
+          "options": [
+            "A) 6!",
+            "B) 5!",
+            "C) 6!/6",
+            "D) Both B and C"
+          ],
+          "answer": "D",
+          "explanation": "Both B and C",
+          "hint": "Circular permutations = (n\u20131)! = 5! = 120. Also 6!/6 = 720/6 = 120."
+        }
+      ]
+    },
+    {
+      "topic": "B)",
+      "questions": [
+        {
+          "question": "The middle term in the expansion of (x+y)\u25a0 is:",
+          "options": [
+            "A) T\u25a0",
+            "B) T\u25a0",
+            "C) T\u25a0",
+            "D) T\u25a0"
+          ],
+          "answer": "C",
+          "explanation": "T\u25a0",
+          "hint": "For even n, middle term is T_(n/2+1) = T_(8/2+1) = T\u25a0 (the 5th term, r=4)."
+        },
+        {
+          "question": "The coefficient of x\u00b3 in the expansion of (1+x)\u25a0 is:",
+          "options": [
+            "A) 5",
+            "B) 10",
+            "C) 15",
+            "D) 20"
+          ],
+          "answer": "B",
+          "explanation": "10",
+          "hint": "Coefficient of x\u00b3 = \u25a0C\u25a0 = 5!/(3!2!) = 10."
+        },
+        {
+          "question": "The sum of coefficients in (1+x)\u25a0 is obtained by putting x=1 and equals:",
+          "options": [
+            "A) n",
+            "B) 2n",
+            "C) 2\u25a0",
+            "D) n\u00b2"
+          ],
+          "answer": "C",
+          "explanation": "2\u25a0",
+          "hint": "Sum of all coefficients: put x=1 in (1+x)\u25a0 = 2\u25a0. (Sum of \u25a0C\u25a0+\u25a0C\u25a0+...+\u25a0C\u25a0 = 2\u25a0)"
+        },
+        {
+          "question": "In the expansion of (2x \u2013 1/x)\u00b9\u00b2, the term independent of x is the:",
+          "options": [
+            "A) 7th term",
+            "B) 9th term",
+            "C) 5th term",
+            "D) 11th term"
+          ],
+          "answer": "B",
+          "explanation": "9th term",
+          "hint": "T\u25a0\u25a0\u25a0 = \u00b9\u00b2C\u25a0(2x)^(12\u2013r)(\u20131/x)\u25a0. Power of x: (12\u2013r)\u2013r=12\u20132r=0\u2192r=6\u2192T\u25a0... recheck:\nT\u25a0 (r=8)."
+        },
+        {
+          "question": "The number of terms in the expansion of (a+b+c)\u25a0 is:",
+          "options": [
+            "A) n+1",
+            "B) n+2",
+            "C) (n+1)(n+2)/2",
+            "D) 3\u25a0"
+          ],
+          "answer": "C",
+          "explanation": "(n+1)(n+2)/2",
+          "hint": "Number of terms in (a+b+c)\u25a0 = \u25a0\u25a0\u00b2C\u25a0 = (n+1)(n+2)/2."
+        }
+      ]
+    },
+    {
+      "topic": "SEQUENCES & SERIES",
+      "questions": [
+        {
+          "question": "The 10th term of AP: 3, 7, 11, 15, \u2026 is:",
+          "options": [
+            "A) 39",
+            "B) 41",
+            "C) 43",
+            "D) 45"
+          ],
+          "answer": "A",
+          "explanation": "39",
+          "hint": "a=3, d=4. a\u25a0=a+(n\u20131)d. a\u25a0\u25a0=3+9\u00d74=3+36=39."
+        },
+        {
+          "question": "Sum of first n terms of AP is S_n = n/2 \u00d7 (2a + (n\u20131)d). Sum of 1+3+5+\u2026to 20 terms is:",
+          "options": [
+            "A) 200",
+            "B) 300",
+            "C) 400",
+            "D) 100"
+          ],
+          "answer": "C",
+          "explanation": "400",
+          "hint": "a=1, d=2, n=20. S\u25a0\u25a0=20/2\u00d7(2+19\u00d72)=10\u00d740=400. (Also sum of first n odd numbers =\nn\u00b2=20\u00b2=400)"
+        },
+        {
+          "question": "The 5th term of GP: 2, 6, 18, 54, \u2026 is:",
+          "options": [
+            "A) 108",
+            "B) 162",
+            "C) 324",
+            "D) 486"
+          ],
+          "answer": "B",
+          "explanation": "162",
+          "hint": "a=2, r=3. a\u25a0=ar\u25a0\u25a0\u00b9. a\u25a0=2\u00d73\u25a0=2\u00d781=162."
+        },
+        {
+          "question": "Sum of infinite GP with a=5, r=1/2 is:",
+          "options": [
+            "A) 5",
+            "B) 8",
+            "C) 10",
+            "D) 15"
+          ],
+          "answer": "C",
+          "explanation": "10",
+          "hint": "S\u221e = a/(1\u2013r) = 5/(1\u20131/2) = 5/(1/2) = 10. Valid only when |r| < 1."
+        },
+        {
+          "question": "AM of two numbers is 5 and GM is 4. The two numbers are:",
+          "options": [
+            "A) 2 and 8",
+            "B) 1 and 9",
+            "C) 3 and 7",
+            "D) 4 and 6"
+          ],
+          "answer": "A",
+          "explanation": "2 and 8",
+          "hint": "a+b=10, ab=16. x\u00b2\u201310x+16=0\u2192x=2,8. Check: AM=(2+8)/2=5, GM=\u221a16=4. \u2713"
+        },
+        {
+          "question": "If a, b, c are in HP, then b is the HM of a and c. The relation is:",
+          "options": [
+            "A) b = (a+c)/2",
+            "B) 2/b = 1/a + 1/c",
+            "C) b = \u221a(ac)",
+            "D) b = 2ac/(a+c)"
+          ],
+          "answer": "B",
+          "explanation": "2/b = 1/a + 1/c",
+          "hint": "HP: 1/a, 1/b, 1/c in AP \u2192 1/b \u2013 1/a = 1/c \u2013 1/b \u2192 2/b = 1/a + 1/c. Also b=2ac/(a+c)."
+        },
+        {
+          "question": "Sum of squares of first n natural numbers: 1\u00b2+2\u00b2+\u2026+n\u00b2 equals:",
+          "options": [
+            "A) n(n+1)/2",
+            "B) n(n+1)(2n+1)/6",
+            "C) n\u00b2(n+1)\u00b2/4",
+            "D) n(n+1)(n+2)/6"
+          ],
+          "answer": "B",
+          "explanation": "n(n+1)(2n+1)/6",
+          "hint": "\u03a3k\u00b2 = n(n+1)(2n+1)/6. For n=3: 1+4+9=14; formula: 3\u00d74\u00d77/6=84/6=14. \u2713"
+        },
+        {
+          "question": "The series 1 + 1/2! + 1/3! + 1/4! + \u2026 converges to:",
+          "options": [
+            "A) \u03c0",
+            "B) e",
+            "C) e\u20131",
+            "D) ln2"
+          ],
+          "answer": "C",
+          "explanation": "e\u20131",
+          "hint": "e\u25a0 = 1+x+x\u00b2/2!+x\u00b3/3!+\u2026 Putting x=1: e=1+1+1/2!+1/3!+\u2026 \u2192 1+1/2!+1/3!+\u2026=e\u20131."
+        }
+      ]
+    },
+    {
+      "topic": "TRIGONOMETRIC RATIOS & IDENTITIES",
+      "questions": [
+        {
+          "question": "The value of sin 75\u00b0 is:",
+          "options": [
+            "A) (\u221a6+\u221a2)/4",
+            "B) (\u221a6\u2013\u221a2)/4",
+            "C) (\u221a3+1)/2",
+            "D) (\u221a3\u20131)/2"
+          ],
+          "answer": "A",
+          "explanation": "(\u221a6+\u221a2)/4",
+          "hint": "sin75\u00b0=sin(45\u00b0+30\u00b0)=sin45\u00b0cos30\u00b0+cos45\u00b0sin30\u00b0=(\u221a2/2)(\u221a3/2)+(\u221a2/2)(1/2)=(\u221a6+\u221a2)/4."
+        },
+        {
+          "question": "The general solution of sin\u03b8 = sin\u03b1 is:",
+          "options": [
+            "A) \u03b8 = n\u03c0 \u00b1 \u03b1",
+            "B) \u03b8 = 2n\u03c0 \u00b1 \u03b1",
+            "C) \u03b8 = n\u03c0 + (\u20131)\u25a0\u03b1",
+            "D) \u03b8 = n\u03c0/2 + \u03b1"
+          ],
+          "answer": "C",
+          "explanation": "\u03b8 = n\u03c0 + (\u20131)\u25a0\u03b1",
+          "hint": "sin\u03b8=sin\u03b1 \u2192 \u03b8=n\u03c0+(\u20131)\u25a0\u03b1. For cos\u03b8=cos\u03b1: \u03b8=2n\u03c0\u00b1\u03b1. For tan\u03b8=tan\u03b1: \u03b8=n\u03c0+\u03b1."
+        },
+        {
+          "question": "sin(A+B)\u00b7sin(A\u2013B) equals:",
+          "options": [
+            "A) sin\u00b2A \u2013 sin\u00b2B",
+            "B) cos\u00b2B \u2013 cos\u00b2A",
+            "C) sin\u00b2A \u2013 cos\u00b2B",
+            "D) Both A and B"
+          ],
+          "answer": "D",
+          "explanation": "Both A and B",
+          "hint": "sin(A+B)sin(A\u2013B)=(sinAcosB+cosAsinB)(sinAcosB\u2013cosAsinB)=sin\u00b2Acos\u00b2B\u2013cos\u00b2Asin\u00b2B\n=sin\u00b2A\u2013sin\u00b2B=cos\u00b2B\u2013cos\u00b2A."
+        },
+        {
+          "question": "The value of cos 20\u00b0 + cos 100\u00b0 + cos 140\u00b0 is:",
+          "options": [
+            "A) 0",
+            "B) 1",
+            "C) \u20131",
+            "D) 1/2"
+          ],
+          "answer": "A",
+          "explanation": "0",
+          "hint": "These are three cos values equally spaced by 60\u00b0. Sum of cos of angles in AP with\nsum 360\u00b0 \u2192 sum = 0."
+        },
+        {
+          "question": "tan(A+B) = (tanA + tanB)/(1 \u2013 tanA\u00b7tanB). If tanA = 1/3 and tanB = 1/4, then tan(A+B) is:",
+          "options": [
+            "A) 7/11",
+            "B) 7/12",
+            "C) 1",
+            "D) 11/12"
+          ],
+          "answer": "A",
+          "explanation": "7/11",
+          "hint": "tan(A+B)=(1/3+1/4)/(1\u20131/12)=(7/12)/(11/12)=7/11."
+        },
+        {
+          "question": "2sin A cos B = ?",
+          "options": [
+            "A) sin(A+B) + sin(A\u2013B)",
+            "B) cos(A\u2013B) \u2013 cos(A+B)",
+            "C) sin(A+B) \u2013 sin(A\u2013B)",
+            "D) cos(A+B) \u2013 cos(A\u2013B)"
+          ],
+          "answer": "A",
+          "explanation": "sin(A+B) + sin(A\u2013B)",
+          "hint": "Product to sum: 2sinAcosB = sin(A+B)+sin(A\u2013B). (Important identity for EAPCET!)"
+        },
+        {
+          "question": "The period of f(x) = tan(3x) is:",
+          "options": [
+            "A) \u03c0",
+            "B) 2\u03c0",
+            "C) \u03c0/3",
+            "D) 3\u03c0"
+          ],
+          "answer": "C",
+          "explanation": "\u03c0/3",
+          "hint": "Period of tan(nx) = \u03c0/n. Period of tan(3x) = \u03c0/3."
+        },
+        {
+          "question": "If sin A = 3/5 and A is in 1st quadrant, then cos 2A is:",
+          "options": [
+            "A) 7/25",
+            "B) \u20137/25",
+            "C) 24/25",
+            "D) \u201324/25"
+          ],
+          "answer": "A",
+          "explanation": "7/25",
+          "hint": "cos2A = 1\u20132sin\u00b2A = 1\u20132(9/25) = 1\u201318/25 = 7/25. (cosA=4/5,\ncos2A=cos\u00b2A\u2013sin\u00b2A=16/25\u20139/25=7/25)"
+        },
+        {
+          "question": "The maximum value of 3sinx + 4cosx is:",
+          "options": [
+            "A) 3",
+            "B) 4",
+            "C) 5",
+            "D) 7"
+          ],
+          "answer": "C",
+          "explanation": "5",
+          "hint": "Max of asinx+bcosx = \u221a(a\u00b2+b\u00b2) = \u221a(9+16) = \u221a25 = 5."
+        },
+        {
+          "question": "sin 3A in terms of sin A is:",
+          "options": [
+            "A) 3sinA \u2013 4sin\u00b3A",
+            "B) 4sinA \u2013 3sin\u00b3A",
+            "C) 3sinA + 4sin\u00b3A",
+            "D) sinA(3\u20134sin\u00b2A)"
+          ],
+          "answer": "A",
+          "explanation": "3sinA \u2013 4sin\u00b3A",
+          "hint": "sin3A=3sinA\u20134sin\u00b3A. Similarly cos3A=4cos\u00b3A\u20133cosA. These are standard cubic\nidentities."
+        }
+      ]
+    },
+    {
+      "topic": "INVERSE TRIGONOMETRIC FUNCTIONS",
+      "questions": [
+        {
+          "question": "The principal value of sin\u25a0\u00b9(1/2) is:",
+          "options": [
+            "A) \u03c0/6",
+            "B) \u03c0/3",
+            "C) 5\u03c0/6",
+            "D) \u03c0/4"
+          ],
+          "answer": "A",
+          "explanation": "\u03c0/6",
+          "hint": "sin(\u03c0/6)=1/2 and \u03c0/6 \u2208 [\u2013\u03c0/2, \u03c0/2] (principal range of sin\u25a0\u00b9). So sin\u25a0\u00b9(1/2)=\u03c0/6."
+        },
+        {
+          "question": "tan\u25a0\u00b9(1) + tan\u25a0\u00b9(2) + tan\u25a0\u00b9(3) equals:",
+          "options": [
+            "A) \u03c0",
+            "B) \u03c0/2",
+            "C) 2\u03c0",
+            "D) 3\u03c0/4"
+          ],
+          "answer": "A",
+          "explanation": "\u03c0",
+          "hint": "tan\u25a0\u00b91=\u03c0/4. tan\u25a0\u00b92+tan\u25a0\u00b93=\u03c0+tan\u25a0\u00b9[(2+3)/(1\u20136)]=\u03c0+tan\u25a0\u00b9(\u20131)=\u03c0\u2013\u03c0/4=3\u03c0/4.\nTotal=\u03c0/4+3\u03c0/4=\u03c0."
+        },
+        {
+          "question": "sin\u25a0\u00b9x + cos\u25a0\u00b9x equals (for x\u2208[\u20131,1]):",
+          "options": [
+            "A) 0",
+            "B) \u03c0/4",
+            "C) \u03c0/2",
+            "D) \u03c0"
+          ],
+          "answer": "C",
+          "explanation": "\u03c0/2",
+          "hint": "sin\u25a0\u00b9x + cos\u25a0\u00b9x = \u03c0/2 for all x \u2208 [\u20131,1]. (Standard identity to remember!)"
+        },
+        {
+          "question": "The domain of cos\u25a0\u00b9(2x\u20131) is:",
+          "options": [
+            "A) [0,1]",
+            "B) [\u20131,1]",
+            "C) [0,2]",
+            "D) [\u20131/2, 3/2]"
+          ],
+          "answer": "A",
+          "explanation": "[0,1]",
+          "hint": "Need \u20131\u22642x\u20131\u22641 \u2192 0\u22642x\u22642 \u2192 0\u2264x\u22641. Domain is [0,1]."
+        },
+        {
+          "question": "2tan\u25a0\u00b9(1/3) + tan\u25a0\u00b9(1/7) equals:",
+          "options": [
+            "A) \u03c0/4",
+            "B) \u03c0/2",
+            "C) \u03c0/6",
+            "D) \u03c0/3"
+          ],
+          "answer": "A",
+          "explanation": "\u03c0/4",
+          "hint": "tan\u25a0\u00b9(1/3)+tan\u25a0\u00b9(1/3)=tan\u25a0\u00b9(3/4) (using formula).\ntan\u25a0\u00b9(3/4)+tan\u25a0\u00b9(1/7)=tan\u25a0\u00b9(1)=\u03c0/4."
+        },
+        {
+          "question": "The value of tan(sin\u25a0\u00b9(3/5)) is:",
+          "options": [
+            "A) 3/4",
+            "B) 4/3",
+            "C) 3/5",
+            "D) 4/5"
+          ],
+          "answer": "A",
+          "explanation": "3/4",
+          "hint": "sin\u25a0\u00b9(3/5)=\u03b8 means sin\u03b8=3/5. Then cos\u03b8=4/5 (Pythagorean). tan\u03b8=sin\u03b8/cos\u03b8=3/4."
+        }
+      ]
+    },
+    {
+      "topic": "PROPERTIES OF TRIANGLES",
+      "questions": [
+        {
+          "question": "In triangle ABC, by the sine rule, a/sinA = b/sinB = c/sinC equals:",
+          "options": [
+            "A) R",
+            "B) 2R",
+            "C) R/2",
+            "D) 4R"
+          ],
+          "answer": "B",
+          "explanation": "2R",
+          "hint": "Sine rule: a/sinA = b/sinB = c/sinC = 2R, where R is circumradius."
+        },
+        {
+          "question": "By cosine rule in \u0394ABC: cos A equals:",
+          "options": [
+            "A) (b\u00b2+c\u00b2\u2013a\u00b2)/bc",
+            "B) (b\u00b2+c\u00b2\u2013a\u00b2)/2bc",
+            "C) (a\u00b2+b\u00b2\u2013c\u00b2)/2ab",
+            "D) (a+b\u2013c)/2"
+          ],
+          "answer": "B",
+          "explanation": "(b\u00b2+c\u00b2\u2013a\u00b2)/2bc",
+          "hint": "Cosine rule: a\u00b2=b\u00b2+c\u00b2\u20132bc cosA \u2192 cosA=(b\u00b2+c\u00b2\u2013a\u00b2)/2bc."
+        },
+        {
+          "question": "Area of triangle ABC = \u00bd ab sinC. If a=5, b=6, C=30\u00b0, the area is:",
+          "options": [
+            "A) 7.5",
+            "B) 15",
+            "C) 30",
+            "D) 5"
+          ],
+          "answer": "A",
+          "explanation": "7.5",
+          "hint": "Area = \u00bd\u00d75\u00d76\u00d7sin30\u00b0 = \u00bd\u00d730\u00d7(1/2) = 7.5 sq units."
+        },
+        {
+          "question": "The inradius r of a triangle with area \u0394 and semi-perimeter s is:",
+          "options": [
+            "A) r = \u0394/s",
+            "B) r = s/\u0394",
+            "C) r = 2\u0394/s",
+            "D) r = \u0394/2s"
+          ],
+          "answer": "A",
+          "explanation": "r = \u0394/s",
+          "hint": "Inradius r = Area/semi-perimeter = \u0394/s. (Circumradius R = abc/4\u0394)"
+        },
+        {
+          "question": "In \u0394ABC, if A=60\u00b0, B=75\u00b0, then C equals:",
+          "options": [
+            "A) 45\u00b0",
+            "B) 55\u00b0",
+            "C) 60\u00b0",
+            "D) 65\u00b0"
+          ],
+          "answer": "A",
+          "explanation": "45\u00b0",
+          "hint": "A+B+C=180\u00b0. C=180\u00b0\u201360\u00b0\u201375\u00b0=45\u00b0."
+        },
+        {
+          "question": "In triangle with sides 3, 4, 5; the triangle is:",
+          "options": [
+            "A) Acute",
+            "B) Obtuse",
+            "C) Right angled",
+            "D) Equilateral"
+          ],
+          "answer": "C",
+          "explanation": "Right angled",
+          "hint": "3\u00b2+4\u00b2=9+16=25=5\u00b2. Satisfies Pythagoras theorem \u2192 right-angled triangle."
+        },
+        {
+          "question": "The formula for tan(A/2) in terms of sides is:",
+          "options": [
+            "A) \u221a(s(s\u2013a)/(s\u2013b)(s\u2013c))",
+            "B) \u221a((s\u2013b)(s\u2013c)/s(s\u2013a))",
+            "C) \u221a(s(s\u2013b)/(s\u2013a)(s\u2013c))",
+            "D) (s\u2013a)/s"
+          ],
+          "answer": "B",
+          "explanation": "\u221a((s\u2013b)(s\u2013c)/s(s\u2013a))",
+          "hint": "tan(A/2)=\u221a[(s\u2013b)(s\u2013c)/{s(s\u2013a)}]. Also r=(s\u2013a)tan(A/2)."
+        },
+        {
+          "question": "In equilateral triangle of side a, the circumradius R is:",
+          "options": [
+            "A) a/\u221a3",
+            "B) a/2",
+            "C) a/\u221a2",
+            "D) a\u221a3/3"
+          ],
+          "answer": "A",
+          "explanation": "a/\u221a3",
+          "hint": "For equilateral: R = a/\u221a3. (Using R=abc/4\u0394: a\u00b3/(4\u00d7\u221a3a\u00b2/4)=a\u00b3/(\u221a3a\u00b2)=a/\u221a3)"
+        }
+      ]
+    },
+    {
+      "topic": "STRAIGHT LINES & PAIR OF LINES",
+      "questions": [
+        {
+          "question": "The slope of a line passing through (2,3) and (5,7) is:",
+          "options": [
+            "A) 4/3",
+            "B) 3/4",
+            "C) 7/5",
+            "D) 5/7"
+          ],
+          "answer": "A",
+          "explanation": "4/3",
+          "hint": "m = (y\u25a0\u2013y\u25a0)/(x\u25a0\u2013x\u25a0) = (7\u20133)/(5\u20132) = 4/3."
+        },
+        {
+          "question": "The equation of line with slope 2 passing through (1,3) is:",
+          "options": [
+            "A) y=2x+1",
+            "B) y=2x\u20131",
+            "C) 2y=x+1",
+            "D) y=2x+3"
+          ],
+          "answer": "A",
+          "explanation": "y=2x+1",
+          "hint": "y\u2013y\u25a0=m(x\u2013x\u25a0) \u2192 y\u20133=2(x\u20131) \u2192 y=2x\u20132+3=2x+1."
+        },
+        {
+          "question": "Distance from point (3,4) to line 4x\u20133y+5=0 is:",
+          "options": [
+            "A) 5",
+            "B) 4",
+            "C) 3",
+            "D) 1"
+          ],
+          "answer": "D",
+          "explanation": "1",
+          "hint": "d=|ax\u25a0+by\u25a0+c|/\u221a(a\u00b2+b\u00b2)=|4(3)\u20133(4)+5|/\u221a(16+9)=|12\u201312+5|/5=5/5=1."
+        },
+        {
+          "question": "Two lines a\u25a0x+b\u25a0y+c\u25a0=0 and a\u25a0x+b\u25a0y+c\u25a0=0 are parallel if:",
+          "options": [
+            "A) a\u25a0/a\u25a0=b\u25a0/b\u25a0=c\u25a0/c\u25a0",
+            "B) a\u25a0b\u25a0=a\u25a0b\u25a0",
+            "C) a\u25a0a\u25a0+b\u25a0b\u25a0=0",
+            "D) a\u25a0/b\u25a0=b\u25a0/a\u25a0"
+          ],
+          "answer": "B",
+          "explanation": "a\u25a0b\u25a0=a\u25a0b\u25a0",
+          "hint": "Parallel: a\u25a0/a\u25a0=b\u25a0/b\u25a0\u2260c\u25a0/c\u25a0 \u2192 a\u25a0b\u25a0=a\u25a0b\u25a0. Perpendicular: a\u25a0a\u25a0+b\u25a0b\u25a0=0."
+        },
+        {
+          "question": "The angle between lines y = m\u25a0x+c\u25a0 and y = m\u25a0x+c\u25a0 is given by tan \u03b8 =:",
+          "options": [
+            "A) (m\u25a0+m\u25a0)/(1\u2013m\u25a0m\u25a0)",
+            "B) (m\u25a0\u2013m\u25a0)/(1+m\u25a0m\u25a0)",
+            "C) m\u25a0\u2013m\u25a0",
+            "D) m\u25a0+m\u25a0"
+          ],
+          "answer": "B",
+          "explanation": "(m\u25a0\u2013m\u25a0)/(1+m\u25a0m\u25a0)",
+          "hint": "tan \u03b8 = |(m\u25a0\u2013m\u25a0)/(1+m\u25a0m\u25a0)|. Lines are perpendicular if m\u25a0m\u25a0=\u20131."
+        },
+        {
+          "question": "The x-intercept of line 3x+4y\u201312=0 is:",
+          "options": [
+            "A) 3",
+            "B) 4",
+            "C) 12",
+            "D) \u20133"
+          ],
+          "answer": "B",
+          "explanation": "4",
+          "hint": "Put y=0: 3x=12\u2192x=4. x-intercept=4. Put x=0: 4y=12\u2192y=3. y-intercept=3."
+        },
+        {
+          "question": "The equation of the pair of lines ax\u00b2+2hxy+by\u00b2=0 represents two perpendicular lines if:",
+          "options": [
+            "A) h\u00b2=ab",
+            "B) a=b",
+            "C) a+b=0",
+            "D) h=0"
+          ],
+          "answer": "C",
+          "explanation": "a+b=0",
+          "hint": "Pair of lines ax\u00b2+2hxy+by\u00b2=0 is perpendicular if coefficient of x\u00b2 + coefficient of y\u00b2 = 0,\ni.e., a+b=0."
+        },
+        {
+          "question": "The angle bisectors of ax\u00b2+2hxy+by\u00b2=0 are given by:",
+          "options": [
+            "A) x\u00b2\u2013y\u00b2=h(a\u2013b)",
+            "B) (x\u00b2\u2013y\u00b2)/(a\u2013b)=xy/h",
+            "C) hx\u00b2\u2013(a\u2013b)xy\u2013hy\u00b2=0",
+            "D) Both B and C"
+          ],
+          "answer": "D",
+          "explanation": "Both B and C",
+          "hint": "Angle bisectors: (x\u00b2\u2013y\u00b2)/(a\u2013b)=xy/h, equivalent to hx\u00b2\u2013(a\u2013b)xy\u2013hy\u00b2=0."
+        },
+        {
+          "question": "The area of the triangle formed by the axes and line x/a + y/b = 1 is:",
+          "options": [
+            "A) ab/2",
+            "B) ab",
+            "C) |ab|/2",
+            "D) 2ab"
+          ],
+          "answer": "C",
+          "explanation": "|ab|/2",
+          "hint": "Intercept form: x-intercept=a, y-intercept=b. Area=\u00bd|base\u00d7height|=\u00bd|a||b|=|ab|/2."
+        },
+        {
+          "question": "The image of point (1,2) with respect to line y=x is:",
+          "options": [
+            "A) (2,1)",
+            "B) (\u20131,\u20132)",
+            "C) (1,\u20132)",
+            "D) (\u20132,1)"
+          ],
+          "answer": "A",
+          "explanation": "(2,1)",
+          "hint": "Reflection in y=x: (x,y)\u2192(y,x). Image of (1,2) is (2,1)."
+        }
+      ]
+    },
+    {
+      "topic": "CIRCLES",
+      "questions": [
+        {
+          "question": "The general equation of a circle is x\u00b2+y\u00b2+2gx+2fy+c=0. Its centre and radius are:",
+          "options": [
+            "A) (g,f) and \u221a(g\u00b2+f\u00b2\u2013c)",
+            "B) (\u2013g,\u2013f) and \u221a(g\u00b2+f\u00b2\u2013c)",
+            "C) (\u2013g,\u2013f) and \u221a(g\u00b2+f\u00b2+c)",
+            "D) (g,f) and g\u00b2+f\u00b2\u2013c"
+          ],
+          "answer": "B",
+          "explanation": "(\u2013g,\u2013f) and \u221a(g\u00b2+f\u00b2\u2013c)",
+          "hint": "Centre=(\u2013g,\u2013f), radius=\u221a(g\u00b2+f\u00b2\u2013c). For real circle: g\u00b2+f\u00b2\u2013c>0."
+        },
+        {
+          "question": "The length of tangent from external point (x\u25a0,y\u25a0) to circle x\u00b2+y\u00b2+2gx+2fy+c=0 is:",
+          "options": [
+            "A) \u221a(x\u25a0\u00b2+y\u25a0\u00b2+c)",
+            "B) \u221a(x\u25a0\u00b2+y\u25a0\u00b2+2gx\u25a0+2fy\u25a0+c)",
+            "C) x\u25a0\u00b2+y\u25a0\u00b2+2gx\u25a0+2fy\u25a0+c",
+            "D) \u221a(x\u25a0+y\u25a0+c)"
+          ],
+          "answer": "B",
+          "explanation": "\u221a(x\u25a0\u00b2+y\u25a0\u00b2+2gx\u25a0+2fy\u25a0+c)",
+          "hint": "Length of tangent = \u221a(S\u25a0) where S\u25a0=x\u25a0\u00b2+y\u25a0\u00b2+2gx\u25a0+2fy\u25a0+c."
+        },
+        {
+          "question": "The equation of circle with centre (2,\u20133) and radius 5 is:",
+          "options": [
+            "A) (x\u20132)\u00b2+(y+3)\u00b2=25",
+            "B) (x+2)\u00b2+(y\u20133)\u00b2=25",
+            "C) (x\u20132)\u00b2+(y\u20133)\u00b2=5",
+            "D) x\u00b2+y\u00b2=25"
+          ],
+          "answer": "A",
+          "explanation": "(x\u20132)\u00b2+(y+3)\u00b2=25",
+          "hint": "(x\u2013h)\u00b2+(y\u2013k)\u00b2=r\u00b2. With h=2,k=\u20133,r=5: (x\u20132)\u00b2+(y+3)\u00b2=25."
+        },
+        {
+          "question": "Two circles intersect orthogonally if:",
+          "options": [
+            "A) r\u25a0\u00b2+r\u25a0\u00b2=d\u00b2",
+            "B) 2g\u25a0g\u25a0+2f\u25a0f\u25a0=c\u25a0+c\u25a0",
+            "C) d=r\u25a0+r\u25a0",
+            "D) d=|r\u25a0\u2013r\u25a0|"
+          ],
+          "answer": "B",
+          "explanation": "2g\u25a0g\u25a0+2f\u25a0f\u25a0=c\u25a0+c\u25a0",
+          "hint": "Orthogonal circles: angle between tangents at intersection=90\u00b0. Condition:\n2g\u25a0g\u25a0+2f\u25a0f\u25a0=c\u25a0+c\u25a0."
+        },
+        {
+          "question": "The equation of the tangent to circle x\u00b2+y\u00b2=r\u00b2 at point (x\u25a0,y\u25a0) is:",
+          "options": [
+            "A) xx\u25a0+yy\u25a0=r\u00b2",
+            "B) x\u25a0y+y\u25a0x=r",
+            "C) xx\u25a0+yy\u25a0=r",
+            "D) (x\u2013x\u25a0)\u00b2+(y\u2013y\u25a0)\u00b2=r\u00b2"
+          ],
+          "answer": "A",
+          "explanation": "xx\u25a0+yy\u25a0=r\u00b2",
+          "hint": "Equation of tangent at (x\u25a0,y\u25a0): T=0 \u2192 xx\u25a0+yy\u25a0=r\u00b2."
+        },
+        {
+          "question": "The common chord of circles x\u00b2+y\u00b2=16 and (x\u20132)\u00b2+y\u00b2=16 lies on the line:",
+          "options": [
+            "A) x=1",
+            "B) x=2",
+            "C) x=4",
+            "D) 2x=y"
+          ],
+          "answer": "A",
+          "explanation": "x=1",
+          "hint": "Subtract equations: x\u00b2+y\u00b2\u201316 \u2013 [(x\u20132)\u00b2+y\u00b2\u201316]=0 \u2192 x\u00b2\u2013(x\u00b2\u20134x+4)=0 \u2192 4x\u20134=0 \u2192 x=1."
+        },
+        {
+          "question": "The number of tangents that can be drawn from an external point to a circle is:",
+          "options": [
+            "A) 1",
+            "B) 2",
+            "C) 3",
+            "D) Infinite"
+          ],
+          "answer": "B",
+          "explanation": "2",
+          "hint": "From external point: exactly 2 tangents. From point on circle: 1. From interior: 0."
+        },
+        {
+          "question": "The radical axis of two circles is:",
+          "options": [
+            "A) A point",
+            "B) A straight line perpendicular to the line of centres",
+            "C) A circle",
+            "D) A tangent"
+          ],
+          "answer": "B",
+          "explanation": "A straight line perpendicular\nto the line of centres",
+          "hint": "Radical axis (locus of equal tangent lengths) \u22a5 to line joining centres. Obtained by\nsubtracting circle equations."
+        }
+      ]
+    },
+    {
+      "topic": "CONIC SECTIONS (PARABOLA, ELLIPSE, HYPERBOLA)",
+      "questions": [
+        {
+          "question": "The focus of parabola y\u00b2 = 4ax is:",
+          "options": [
+            "A) (a,0)",
+            "B) (\u2013a,0)",
+            "C) (0,a)",
+            "D) (0,\u2013a)"
+          ],
+          "answer": "A",
+          "explanation": "(a,0)",
+          "hint": "y\u00b2=4ax: focus=(a,0), directrix x=\u2013a, vertex=(0,0), axis=x-axis, latus rectum=4a."
+        },
+        {
+          "question": "The eccentricity of an ellipse x\u00b2/a\u00b2+y\u00b2/b\u00b2=1 (a>b) is:",
+          "options": [
+            "A) e = c/a where c\u00b2=a\u00b2+b\u00b2",
+            "B) e = c/a where c\u00b2=a\u00b2\u2013b\u00b2",
+            "C) e = a/c",
+            "D) e = b/a"
+          ],
+          "answer": "B",
+          "explanation": "e = c/a where c\u00b2=a\u00b2\u2013b\u00b2",
+          "hint": "For ellipse: c\u00b2=a\u00b2\u2013b\u00b2, e=c/a < 1. For hyperbola: c\u00b2=a\u00b2+b\u00b2, e=c/a > 1."
+        },
+        {
+          "question": "The equation of directrix of parabola y\u00b2 = 12x is:",
+          "options": [
+            "A) x = 3",
+            "B) x = \u20133",
+            "C) y = 3",
+            "D) y = \u20133"
+          ],
+          "answer": "B",
+          "explanation": "x = \u20133",
+          "hint": "y\u00b2=12x \u2192 4a=12 \u2192 a=3. Directrix: x=\u2013a=\u20133."
+        },
+        {
+          "question": "The sum of the focal distances of any point on the ellipse x\u00b2/a\u00b2+y\u00b2/b\u00b2=1 is:",
+          "options": [
+            "A) 2b",
+            "B) 2a",
+            "C) a+b",
+            "D) 2c"
+          ],
+          "answer": "B",
+          "explanation": "2a",
+          "hint": "Sum of focal distances = 2a (constant). This is the definition of ellipse. For any point P:\nPF\u25a0+PF\u25a0=2a."
+        },
+        {
+          "question": "The foci of ellipse x\u00b2/25 + y\u00b2/16 = 1 are:",
+          "options": [
+            "A) (\u00b13, 0)",
+            "B) (\u00b14, 0)",
+            "C) (\u00b15, 0)",
+            "D) (0, \u00b13)"
+          ],
+          "answer": "A",
+          "explanation": "(\u00b13, 0)",
+          "hint": "a\u00b2=25, b\u00b2=16. c\u00b2=a\u00b2\u2013b\u00b2=9 \u2192 c=3. Foci: (\u00b13,0) on major axis (x-axis)."
+        },
+        {
+          "question": "The asymptotes of hyperbola x\u00b2/a\u00b2\u2013y\u00b2/b\u00b2=1 are:",
+          "options": [
+            "A) y=\u00b1b",
+            "B) y=\u00b1(b/a)x",
+            "C) y=\u00b1(a/b)x",
+            "D) x\u00b2/a\u00b2=y\u00b2/b\u00b2"
+          ],
+          "answer": "B",
+          "explanation": "y=\u00b1(b/a)x",
+          "hint": "Asymptotes of x\u00b2/a\u00b2\u2013y\u00b2/b\u00b2=1 are y=(b/a)x and y=\u2013(b/a)x. They pass through centre."
+        },
+        {
+          "question": "The length of latus rectum of ellipse x\u00b2/a\u00b2+y\u00b2/b\u00b2=1 (a>b) is:",
+          "options": [
+            "A) 2b/a",
+            "B) 2b\u00b2/a",
+            "C) 2a\u00b2/b",
+            "D) 2a/b"
+          ],
+          "answer": "B",
+          "explanation": "2b\u00b2/a",
+          "hint": "LR of ellipse = 2b\u00b2/a. LR of parabola y\u00b2=4ax is 4a. LR of hyperbola x\u00b2/a\u00b2\u2013y\u00b2/b\u00b2=1 is\n2b\u00b2/a."
+        },
+        {
+          "question": "The rectangular hyperbola xy = c\u00b2 has eccentricity:",
+          "options": [
+            "A) 1",
+            "B) \u221a2",
+            "C) 2",
+            "D) \u221a3"
+          ],
+          "answer": "B",
+          "explanation": "\u221a2",
+          "hint": "Rectangular hyperbola has asymptotes perpendicular to each other. Its eccentricity =\n\u221a2."
+        },
+        {
+          "question": "The parametric equations of parabola y\u00b2=4ax are:",
+          "options": [
+            "A) x=at\u00b2, y=2at",
+            "B) x=2at, y=at\u00b2",
+            "C) x=acos\u03b8, y=bsin\u03b8",
+            "D) x=asec\u03b8, y=btan\u03b8"
+          ],
+          "answer": "A",
+          "explanation": "x=at\u00b2, y=2at",
+          "hint": "Para: (at\u00b2,2at). Ellipse: (acos\u03b8,bsin\u03b8). Hyperbola: (asec\u03b8,btan\u03b8). These are standard\nparametric forms."
+        },
+        {
+          "question": "The equation x\u00b2 \u2013 y\u00b2 = a\u00b2 represents:",
+          "options": [
+            "A) Circle",
+            "B) Parabola",
+            "C) Ellipse",
+            "D) Rectangular hyperbola"
+          ],
+          "answer": "D",
+          "explanation": "Rectangular hyperbola",
+          "hint": "x\u00b2/a\u00b2\u2013y\u00b2/a\u00b2=1 is hyperbola with a=b\u2192rectangular hyperbola. Asymptotes: y=\u00b1x\n(perpendicular)."
+        },
+        {
+          "question": "The distance between points A(1,2,3) and B(4,6,3) is:",
+          "options": [
+            "A) 5",
+            "B) 7",
+            "C) 25",
+            "D) \u221a50"
+          ],
+          "answer": "A",
+          "explanation": "5",
+          "hint": "d=\u221a[(4\u20131)\u00b2+(6\u20132)\u00b2+(3\u20133)\u00b2]=\u221a[9+16+0]=\u221a25=5."
+        },
+        {
+          "question": "Direction cosines of vector 2\u00ee+3\u25a0+6k\u25a0 are:",
+          "options": [
+            "A) 2/7, 3/7, 6/7",
+            "B) 2, 3, 6",
+            "C) 2/49, 3/49, 6/49",
+            "D) 1/7, 1/7, 1/7"
+          ],
+          "answer": "A",
+          "explanation": "2/7, 3/7, 6/7",
+          "hint": "|v|=\u221a(4+9+36)=\u221a49=7. DCs: l=2/7, m=3/7, n=6/7. Note: l\u00b2+m\u00b2+n\u00b2=1."
+        },
+        {
+          "question": "The equation of a plane passing through point (1,2,3) with normal vector (2,3,4) is:",
+          "options": [
+            "A) 2x+3y+4z=20",
+            "B) 2x+3y+4z=0",
+            "C) x+y+z=6",
+            "D) 2x\u20133y+4z=8"
+          ],
+          "answer": "A",
+          "explanation": "2x+3y+4z=20",
+          "hint": "2(x\u20131)+3(y\u20132)+4(z\u20133)=0 \u2192 2x+3y+4z=2+6+12=20."
+        },
+        {
+          "question": "The dot product a\u25a0\u00b7b\u25a0 = |a||b|cos\u03b8. For perpendicular vectors, a\u25a0\u00b7b\u25a0 equals:",
+          "options": [
+            "A) |a||b|",
+            "B) \u2013|a||b|",
+            "C) 0",
+            "D) 1"
+          ],
+          "answer": "C",
+          "explanation": "0",
+          "hint": "Perpendicular (\u03b8=90\u00b0): cos\u03b8=0 \u2192 a\u25a0\u00b7b\u25a0=0. This is the condition for orthogonality."
+        },
+        {
+          "question": "The cross product |a\u25a0\u00d7b\u25a0| = |a||b|sin\u03b8. For parallel vectors, |a\u25a0\u00d7b\u25a0| equals:",
+          "options": [
+            "A) |a||b|",
+            "B) 1",
+            "C) 0",
+            "D) 2|a||b|"
+          ],
+          "answer": "C",
+          "explanation": "0",
+          "hint": "Parallel (\u03b8=0\u00b0 or 180\u00b0): sin\u03b8=0 \u2192 |a\u25a0\u00d7b\u25a0|=0. (Cross product of parallel vectors is zero\nvector)"
+        },
+        {
+          "question": "The volume of parallelepiped with vectors a\u25a0, b\u25a0, c\u25a0 is:",
+          "options": [
+            "A) a\u25a0\u00b7(b\u25a0\u00d7c\u25a0)",
+            "B) a\u25a0\u00d7(b\u25a0\u00b7c\u25a0)",
+            "C) (a\u25a0\u00d7b\u25a0)\u00b7(b\u25a0\u00d7c\u25a0)",
+            "D) a\u25a0+b\u25a0+c\u25a0"
+          ],
+          "answer": "A",
+          "explanation": "a\u25a0\u00b7(b\u25a0\u00d7c\u25a0)",
+          "hint": "Volume = |[a\u25a0 b\u25a0 c\u25a0]| = |a\u25a0\u00b7(b\u25a0\u00d7c\u25a0)| = scalar triple product."
+        },
+        {
+          "question": "The angle between planes 2x+y\u20132z=5 and 3x\u20136y\u20132z=7 is:",
+          "options": [
+            "A) cos\u25a0\u00b9(4/21)",
+            "B) cos\u25a0\u00b9(2/3)",
+            "C) 90\u00b0",
+            "D) cos\u25a0\u00b9(4/7)"
+          ],
+          "answer": "A",
+          "explanation": "cos\u25a0\u00b9(4/21)",
+          "hint": "n\u25a0=(2,1,\u20132), n\u25a0=(3,\u20136,\u20132). cos\u03b8=|n\u25a0\u00b7n\u25a0|/(|n\u25a0||n\u25a0|)=|6\u20136+4|/(3\u00d77)=4/21."
+        },
+        {
+          "question": "If |a\u25a0|=3, |b\u25a0|=4 and angle between them is 60\u00b0, then |a\u25a0+b\u25a0| is:",
+          "options": [
+            "A) \u221a31",
+            "B) \u221a37",
+            "C) \u221a43",
+            "D) 7"
+          ],
+          "answer": "B",
+          "explanation": "\u221a37",
+          "hint": "|a+b|\u00b2=|a|\u00b2+2a\u00b7b+|b|\u00b2=9+2(3)(4)(1/2)+16=9+12+16=37 \u2192 |a+b|=\u221a37."
+        },
+        {
+          "question": "The vector projection of a\u25a0 on b\u25a0 is:",
+          "options": [
+            "A) (a\u25a0\u00b7b\u25a0)/|b\u25a0|",
+            "B) (a\u25a0\u00b7b\u25a0)/|a\u25a0|",
+            "C) (a\u25a0\u00d7b\u25a0)/|b\u25a0|",
+            "D) a\u25a0\u00b7b\u25a0"
+          ],
+          "answer": "A",
+          "explanation": "(a\u25a0\u00b7b\u25a0)/|b\u25a0|",
+          "hint": "Scalar projection of a\u25a0 on b\u25a0 = a\u25a0\u00b7b\u25a0 = (a\u25a0\u00b7b\u25a0)/|b\u25a0|. Vector projection =\n[(a\u25a0\u00b7b\u25a0)/|b\u25a0|\u00b2]b\u25a0."
+        },
+        {
+          "question": "The foot of perpendicular from point A(1,0,0) to the line x/1=y/0=z/0 is:",
+          "options": [
+            "A) (1,0,0)",
+            "B) (0,0,0)",
+            "C) (1,1,0)",
+            "D) (0,1,0)"
+          ],
+          "answer": "A",
+          "explanation": "(1,0,0)",
+          "hint": "The line is x-axis (y=0,z=0). Foot of perpendicular from (1,0,0) to x-axis is (1,0,0) itself."
+        },
+        {
+          "question": "The shortest distance between skew lines r\u25a0=a\u25a0+\u03bbb\u25a0 and r\u25a0=c\u25a0+\u00b5d\u25a0 is:",
+          "options": [
+            "A) |(c\u25a0\u2013a\u25a0)\u00b7(b\u25a0\u00d7d\u25a0)|/|b\u25a0\u00d7d\u25a0|",
+            "B) |(c\u25a0+a\u25a0)\u00b7(b\u25a0\u00d7d\u25a0)|",
+            "C) |b\u25a0\u00d7d\u25a0|",
+            "D) |c\u25a0\u2013a\u25a0|/|b\u25a0|"
+          ],
+          "answer": "A",
+          "explanation": "|(c\u25a0\u2013a\u25a0)\u00b7(b\u25a0\u00d7d\u25a0)|/|b\u25a0\u00d7d\u25a0|",
+          "hint": "SD = |(c\u25a0\u2013a\u25a0)\u00b7(b\u25a0\u00d7d\u25a0)|/|b\u25a0\u00d7d\u25a0|. For intersecting lines SD=0; for parallel lines use\ndifferent formula."
+        },
+        {
+          "question": "The vectors a\u25a0 = 2\u00ee+3\u25a0\u2013k\u25a0 and b\u25a0 = 4\u00ee+6\u25a0\u20132k\u25a0 are:",
+          "options": [
+            "A) Perpendicular",
+            "B) Parallel",
+            "C) Anti-parallel",
+            "D) Unit vectors"
+          ],
+          "answer": "B",
+          "explanation": "Parallel",
+          "hint": "b\u25a0=2a\u25a0 (each component of b is twice that of a). Parallel means one is scalar multiple\nof other."
+        }
+      ]
+    },
+    {
+      "topic": "LIMITS & CONTINUITY",
+      "questions": [
+        {
+          "question": "lim(x\u21920) sinx/x equals:",
+          "options": [
+            "A) 0",
+            "B) \u221e",
+            "C) 1",
+            "D) \u03c0/180"
+          ],
+          "answer": "C",
+          "explanation": "1",
+          "hint": "Standard limit: lim(x\u21920) sinx/x = 1 (x in radians). For degrees: limit = \u03c0/180."
+        },
+        {
+          "question": "lim(x\u21920) (e\u25a0 \u2013 1)/x equals:",
+          "options": [
+            "A) 0",
+            "B) e",
+            "C) 1",
+            "D) \u221e"
+          ],
+          "answer": "C",
+          "explanation": "1",
+          "hint": "lim(x\u21920)(e\u25a0\u20131)/x=1. Similarly lim(x\u21920)(a\u25a0\u20131)/x=lna. Standard exponential limits."
+        },
+        {
+          "question": "lim(x\u2192\u221e) (1+1/x)\u25a0 equals:",
+          "options": [
+            "A) 1",
+            "B) 2",
+            "C) e",
+            "D) \u221e"
+          ],
+          "answer": "C",
+          "explanation": "e",
+          "hint": "lim(x\u2192\u221e)(1+1/x)\u25a0 = e \u2248 2.718... This is the definition of Euler's number e."
+        },
+        {
+          "question": "lim(x\u21922) (x\u00b2\u20134)/(x\u20132) equals:",
+          "options": [
+            "A) 0",
+            "B) 2",
+            "C) 4",
+            "D) \u221e"
+          ],
+          "answer": "C",
+          "explanation": "4",
+          "hint": "(x\u00b2\u20134)/(x\u20132)=(x+2)(x\u20132)/(x\u20132)=x+2. As x\u21922: limit=2+2=4."
+        },
+        {
+          "question": "A function f(x) is continuous at x=a if:",
+          "options": [
+            "A) f(a) exists",
+            "B) lim(x\u2192a)f(x) exists",
+            "C) lim(x\u2192a)f(x)=f(a)",
+            "D) f'(a) exists"
+          ],
+          "answer": "C",
+          "explanation": "lim(x\u2192a)f(x)=f(a)",
+          "hint": "Continuity requires: (1) f(a) defined, (2) limit exists, (3) limit equals f(a)."
+        },
+        {
+          "question": "lim(x\u21920) (log(1+x))/x equals:",
+          "options": [
+            "A) 0",
+            "B) e",
+            "C) 1",
+            "D) log e"
+          ],
+          "answer": "C",
+          "explanation": "1",
+          "hint": "lim(x\u21920) ln(1+x)/x = 1. (Using L'Hopital: d/dx[ln(1+x)] at x=0 = 1/(1+0)=1; d/dx[x]=1)"
+        },
+        {
+          "question": "The function f(x) = 1/x is discontinuous at x =",
+          "options": [
+            "A) x=1",
+            "B) x=\u20131",
+            "C) x=0",
+            "D) All real x"
+          ],
+          "answer": "C",
+          "explanation": "x=0",
+          "hint": "f(x)=1/x is not defined at x=0. Both one-sided limits are \u00b1\u221e. Not removable."
+        },
+        {
+          "question": "lim(x\u21920) (tanx \u2013 sinx)/x\u00b3 equals:",
+          "options": [
+            "A) 0",
+            "B) 1/2",
+            "C) 1",
+            "D) \u221e"
+          ],
+          "answer": "B",
+          "explanation": "1/2",
+          "hint": "tanx\u2013sinx = sinx(1/cosx\u20131)=sinx(1\u2013cosx)/cosx. Near 0: sinx\u2248x, 1\u2013cosx\u2248x\u00b2/2, cosx\u22481.\nLimit\u2192(x\u00b7x\u00b2/2)/x\u00b3=1/2."
+        }
+      ]
+    },
+    {
+      "topic": "DIFFERENTIATION",
+      "questions": [
+        {
+          "question": "d/dx(x\u25a0) equals:",
+          "options": [
+            "A) nx\u25a0",
+            "B) nx\u25a0\u25a0\u00b9",
+            "C) (n\u20131)x\u25a0",
+            "D) x\u25a0/n"
+          ],
+          "answer": "B",
+          "explanation": "nx\u25a0\u25a0\u00b9",
+          "hint": "Power rule: d/dx(x\u25a0) = nx\u25a0\u25a0\u00b9. Fundamental rule of differentiation."
+        },
+        {
+          "question": "d/dx(sin x) = cosx. Using chain rule, d/dx(sin(x\u00b2)) equals:",
+          "options": [
+            "A) cos(x\u00b2)",
+            "B) 2x cos(x\u00b2)",
+            "C) cos(2x)",
+            "D) 2cosx"
+          ],
+          "answer": "B",
+          "explanation": "2x cos(x\u00b2)",
+          "hint": "d/dx[sin(x\u00b2)] = cos(x\u00b2)\u00b7d/dx(x\u00b2) = cos(x\u00b2)\u00b72x = 2x cos(x\u00b2)."
+        },
+        {
+          "question": "The derivative of log\u25a0x is:",
+          "options": [
+            "A) 1",
+            "B) 1/x",
+            "C) x",
+            "D) log\u25a0x"
+          ],
+          "answer": "B",
+          "explanation": "1/x",
+          "hint": "d/dx(ln x) = 1/x. For d/dx(log_a x) = 1/(x lna)."
+        },
+        {
+          "question": "The derivative of e\u25a0 is:",
+          "options": [
+            "A) xe\u25a0\u25a0\u00b9",
+            "B) e\u25a0/x",
+            "C) e\u25a0",
+            "D) e\u25a0\u00b7x"
+          ],
+          "answer": "C",
+          "explanation": "e\u25a0",
+          "hint": "d/dx(e\u25a0) = e\u25a0. The exponential function is its own derivative."
+        },
+        {
+          "question": "If y = x\u00b2 sin x, then dy/dx is (product rule):",
+          "options": [
+            "A) 2x sinx + x\u00b2 cosx",
+            "B) 2x cosx",
+            "C) x\u00b2 cosx",
+            "D) 2x sinx"
+          ],
+          "answer": "A",
+          "explanation": "2x sinx + x\u00b2 cosx",
+          "hint": "Product rule: (uv)' = u'v+uv'. d/dx(x\u00b2\u00b7sinx)=2x\u00b7sinx+x\u00b2\u00b7cosx."
+        },
+        {
+          "question": "If y=f(x)/g(x), then dy/dx by quotient rule is:",
+          "options": [
+            "A) f'g\u2013fg'/g\u00b2",
+            "B) f'g+fg'/g\u00b2",
+            "C) f'g\u2013fg'/g",
+            "D) (f'\u2013g')/g"
+          ],
+          "answer": "A",
+          "explanation": "f'g\u2013fg'/g\u00b2",
+          "hint": "Quotient rule: d/dx(f/g)=(f'g\u2013fg')/g\u00b2. Numerator: derivative of top \u00d7 bottom \u2013 top \u00d7\nderivative of bottom."
+        },
+        {
+          "question": "The derivative of tan\u25a0\u00b9x is:",
+          "options": [
+            "A) 1/(1\u2013x\u00b2)",
+            "B) 1/\u221a(1\u2013x\u00b2)",
+            "C) 1/(1+x\u00b2)",
+            "D) \u20131/(1+x\u00b2)"
+          ],
+          "answer": "C",
+          "explanation": "1/(1+x\u00b2)",
+          "hint": "d/dx(tan\u25a0\u00b9x)=1/(1+x\u00b2). d/dx(sin\u25a0\u00b9x)=1/\u221a(1\u2013x\u00b2). d/dx(cos\u25a0\u00b9x)=\u20131/\u221a(1\u2013x\u00b2)."
+        },
+        {
+          "question": "Second derivative of y=sin x is:",
+          "options": [
+            "A) cosx",
+            "B) sinx",
+            "C) \u2013sinx",
+            "D) \u2013cosx"
+          ],
+          "answer": "C",
+          "explanation": "\u2013sinx",
+          "hint": "y'=cosx, y''=d/dx(cosx)=\u2013sinx. Note: y''''=y (4th derivative of sinx = sinx)."
+        },
+        {
+          "question": "If x=at\u00b2, y=2at (parametric), then dy/dx is:",
+          "options": [
+            "A) t",
+            "B) 1/t",
+            "C) 2a",
+            "D) a/t"
+          ],
+          "answer": "B",
+          "explanation": "1/t",
+          "hint": "dy/dx = (dy/dt)/(dx/dt) = 2a/(2at) = 1/t."
+        },
+        {
+          "question": "Rolle's theorem requires: f continuous on [a,b], differentiable on (a,b) and:",
+          "options": [
+            "A) f(a)=f(b)=0",
+            "B) f(a)=f(b)",
+            "C) f'(a)=f'(b)",
+            "D) f(a)>0"
+          ],
+          "answer": "B",
+          "explanation": "f(a)=f(b)",
+          "hint": "Rolle's theorem: if f(a)=f(b), then \u2203c\u2208(a,b) s.t. f'(c)=0. (Special case of MVT)"
+        }
+      ]
+    },
+    {
+      "topic": "APPLICATIONS OF DERIVATIVES",
+      "questions": [
+        {
+          "question": "The condition for f(x) to have a local minimum at x=c is:",
+          "options": [
+            "A) f'(c)=0 and f''(c)<0",
+            "B) f'(c)=0 and f''(c)>0",
+            "C) f'(c)>0",
+            "D) f''(c)=0"
+          ],
+          "answer": "B",
+          "explanation": "f'(c)=0 and f''(c)>0",
+          "hint": "f'(c)=0 (critical point). f''(c)>0 \u2192 concave up \u2192 local min. f''(c)<0 \u2192 concave down \u2192\nlocal max."
+        },
+        {
+          "question": "The equation of tangent to y=x\u00b2 at point (2,4) is:",
+          "options": [
+            "A) y=4x\u20134",
+            "B) y=4x+4",
+            "C) y=2x",
+            "D) y=2x+4"
+          ],
+          "answer": "A",
+          "explanation": "y=4x\u20134",
+          "hint": "f'(x)=2x. Slope at (2,4)=4. Tangent: y\u20134=4(x\u20132) \u2192 y=4x\u20134."
+        },
+        {
+          "question": "The slope of normal to curve y=x\u00b2 at (1,1) is:",
+          "options": [
+            "A) 2",
+            "B) \u20132",
+            "C) 1/2",
+            "D) \u20131/2"
+          ],
+          "answer": "D",
+          "explanation": "\u20131/2",
+          "hint": "f'(1)=2 (slope of tangent). Normal slope = \u20131/f'(1) = \u20131/2."
+        },
+        {
+          "question": "A spherical balloon is inflated at 100 cm\u00b3/s. Rate of increase of radius when r=5 cm is:",
+          "options": [
+            "A) 1/\u03c0 cm/s",
+            "B) \u03c0 cm/s",
+            "C) 1/5\u03c0 cm/s",
+            "D) 5/\u03c0 cm/s"
+          ],
+          "answer": "A",
+          "explanation": "1/\u03c0 cm/s",
+          "hint": "V=4\u03c0r\u00b3/3. dV/dt=4\u03c0r\u00b2(dr/dt). 100=4\u03c0(25)(dr/dt) \u2192 dr/dt=100/100\u03c0=1/\u03c0 cm/s."
+        },
+        {
+          "question": "The function f(x)=2x\u00b3\u20133x\u00b2\u201312x+4 is increasing in:",
+          "options": [
+            "A) (\u20131,2)",
+            "B) (\u2013\u221e,\u20131)\u222a(2,\u221e)",
+            "C) (0,\u221e)",
+            "D) (\u2013\u221e,\u221e)"
+          ],
+          "answer": "B",
+          "explanation": "(\u2013\u221e,\u20131)\u222a(2,\u221e)",
+          "hint": "f'(x)=6x\u00b2\u20136x\u201312=6(x\u00b2\u2013x\u20132)=6(x\u20132)(x+1). f'>0 when x<\u20131 or x>2."
+        },
+        {
+          "question": "The maximum area of rectangle inscribed in a circle of radius r is:",
+          "options": [
+            "A) r\u00b2",
+            "B) 2r\u00b2",
+            "C) \u03c0r\u00b2",
+            "D) 4r\u00b2"
+          ],
+          "answer": "B",
+          "explanation": "2r\u00b2",
+          "hint": "For rectangle in circle of radius r, if diagonal=2r, max area occurs at square: side=r\u221a2.\nArea=2r\u00b2."
+        },
+        {
+          "question": "By LMVT, if f(x)=x\u00b2 on [1,3], the value of c is:",
+          "options": [
+            "A) 1",
+            "B) 2",
+            "C) 3",
+            "D) \u221a3"
+          ],
+          "answer": "B",
+          "explanation": "2",
+          "hint": "f'(c)=[f(3)\u2013f(1)]/(3\u20131)=(9\u20131)/2=4. f'(c)=2c=4 \u2192 c=2 \u2208 (1,3). \u2713"
+        },
+        {
+          "question": "The approximate value of \u221a26 using differentiation (near \u221a25=5) is:",
+          "options": [
+            "A) 5.1",
+            "B) 5.2",
+            "C) 5.05",
+            "D) 5.01"
+          ],
+          "answer": "A",
+          "explanation": "5.1",
+          "hint": "dy=f'(x)dx. f(x)=\u221ax, f'(x)=1/(2\u221ax). At x=25: f'=1/10. \u0394y=(1/10)(1)=0.1. \u221a26\u22485+0.1=5.1."
+        }
+      ]
+    },
+    {
+      "topic": "INTEGRATION",
+      "questions": [
+        {
+          "question": "\u222bx\u25a0 dx equals (n \u2260 \u20131):",
+          "options": [
+            "A) x\u25a0\u25a0\u00b9+C",
+            "B) x\u25a0\u25a0\u00b9/(n+1)+C",
+            "C) nx\u25a0\u25a0\u00b9+C",
+            "D) x\u25a0/n+C"
+          ],
+          "answer": "B",
+          "explanation": "x\u25a0\u25a0\u00b9/(n+1)+C",
+          "hint": "Power rule for integration: \u222bx\u25a0dx = x\u25a0\u25a0\u00b9/(n+1)+C (add 1 to power, divide by new\npower)."
+        },
+        {
+          "question": "\u222b(1/x)dx equals:",
+          "options": [
+            "A) x\u00b2/2+C",
+            "B) 0",
+            "C) ln|x|+C",
+            "D) e\u25a0+C"
+          ],
+          "answer": "C",
+          "explanation": "ln|x|+C",
+          "hint": "\u222b(1/x)dx = ln|x|+C. This is the case n=\u20131 excluded from power rule."
+        },
+        {
+          "question": "\u222be\u25a0dx equals:",
+          "options": [
+            "A) xe\u25a0+C",
+            "B) e\u25a0/x+C",
+            "C) e\u25a0+C",
+            "D) e\u25a0\u00b7x+C"
+          ],
+          "answer": "C",
+          "explanation": "e\u25a0+C",
+          "hint": "\u222be\u25a0dx = e\u25a0+C. \u222ba\u25a0dx = a\u25a0/lna+C. \u222be^(ax)dx=e^(ax)/a+C."
+        },
+        {
+          "question": "\u222bsin x dx equals:",
+          "options": [
+            "A) cosx+C",
+            "B) \u2013cosx+C",
+            "C) sinx+C",
+            "D) \u2013sinx+C"
+          ],
+          "answer": "B",
+          "explanation": "\u2013cosx+C",
+          "hint": "\u222bsinx dx = \u2013cosx+C. \u222bcosx dx = sinx+C. (Opposite of differentiating)"
+        },
+        {
+          "question": "The value of \u222b\u25a0^\u03c0 sin x dx is:",
+          "options": [
+            "A) 0",
+            "B) 1",
+            "C) 2",
+            "D) \u03c0"
+          ],
+          "answer": "C",
+          "explanation": "2",
+          "hint": "[\u2013cosx]\u25a0^\u03c0 = \u2013cos\u03c0\u2013(\u2013cos0) = \u2013(\u20131)\u2013(\u20131) = 1+1 = 2."
+        },
+        {
+          "question": "\u222bx e\u25a0 dx (by integration by parts) equals:",
+          "options": [
+            "A) xe\u25a0+C",
+            "B) e\u25a0(x\u20131)+C",
+            "C) e\u25a0(x+1)+C",
+            "D) x\u00b2e\u25a0/2+C"
+          ],
+          "answer": "B",
+          "explanation": "e\u25a0(x\u20131)+C",
+          "hint": "\u222bxe\u25a0dx: u=x, dv=e\u25a0dx. =[xe\u25a0\u2013\u222be\u25a0dx]=xe\u25a0\u2013e\u25a0+C=e\u25a0(x\u20131)+C."
+        },
+        {
+          "question": "The area under curve y=x\u00b2 from x=0 to x=3 is:",
+          "options": [
+            "A) 3",
+            "B) 6",
+            "C) 9",
+            "D) 27/3"
+          ],
+          "answer": "C",
+          "explanation": "9",
+          "hint": "\u222b\u25a0\u00b3x\u00b2dx=[x\u00b3/3]\u25a0\u00b3=27/3\u20130=9 sq units."
+        },
+        {
+          "question": "\u222b\u25a0\u25a0\u00b9 x\u00b3 dx equals:",
+          "options": [
+            "A) 2",
+            "B) 1/2",
+            "C) 0",
+            "D) \u20132"
+          ],
+          "answer": "C",
+          "explanation": "0",
+          "hint": "x\u00b3 is an odd function. \u222b\u25a0\u25a0\u25a0 f(x)dx=0 for odd f. (Directly: [x\u25a0/4]\u25a0\u25a0\u00b9=1/4\u20131/4=0.)"
+        }
+      ]
+    },
+    {
+      "topic": "DIFFERENTIAL EQUATIONS",
+      "questions": [
+        {
+          "question": "Order of differential equation d\u00b2y/dx\u00b2 + 3(dy/dx)\u00b3 + y = 0 is:",
+          "options": [
+            "A) 1",
+            "B) 2",
+            "C) 3",
+            "D) 4"
+          ],
+          "answer": "B",
+          "explanation": "2",
+          "hint": "Order = order of highest derivative = 2 (d\u00b2y/dx\u00b2). Degree = power of highest order\nderivative = 1."
+        },
+        {
+          "question": "Solution of dy/dx = y gives:",
+          "options": [
+            "A) y = x+C",
+            "B) y = Ce^x",
+            "C) y = Cx",
+            "D) y = e^x + C"
+          ],
+          "answer": "B",
+          "explanation": "y = Ce^x",
+          "hint": "Separate variables: dy/y = dx. Integrate: lny=x+k \u2192 y=e^(x+k)=Ce\u25a0."
+        },
+        {
+          "question": "The integrating factor of dy/dx + Py = Q is:",
+          "options": [
+            "A) e^(\u222bQdx)",
+            "B) e^(\u222bPdx)",
+            "C) e^(Px)",
+            "D) P"
+          ],
+          "answer": "B",
+          "explanation": "e^(\u222bPdx)",
+          "hint": "For linear ODE dy/dx+Py=Q: IF = e^(\u222bPdx). Solution: y\u00d7IF = \u222bQ\u00d7IF dx + C."
+        },
+        {
+          "question": "The degree of (dy/dx)\u00b2 + y = x is:",
+          "options": [
+            "A) 1",
+            "B) 2",
+            "C) 3",
+            "D) 0"
+          ],
+          "answer": "B",
+          "explanation": "2",
+          "hint": "Degree = power of highest order derivative when equation is polynomial in derivatives.\nHere degree=2."
+        }
+      ]
+    },
+    {
+      "topic": "PROBABILITY",
+      "questions": [
+        {
+          "question": "Two dice are thrown. Probability that sum is 7 is:",
+          "options": [
+            "A) 1/6",
+            "B) 7/36",
+            "C) 5/36",
+            "D) 1/4"
+          ],
+          "answer": "A",
+          "explanation": "1/6",
+          "hint": "Pairs summing to 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) \u2192 6 pairs. P=6/36=1/6."
+        },
+        {
+          "question": "Bayes' theorem: P(A|B) = P(B|A)\u00b7P(A)/P(B). This relates to:",
+          "options": [
+            "A) Classical probability",
+            "B) Conditional probability",
+            "C) Geometric probability",
+            "D) Frequency probability"
+          ],
+          "answer": "B",
+          "explanation": "Conditional probability",
+          "hint": "Bayes' theorem is used for conditional probability: updating probability given new\nevidence.\n\n\u25a0 CONGRATULATIONS \u2014 ALL 160 MATHS QUESTIONS DONE!\n\u25a0 Topic\nQuestions\nMy Score\nSets, Relations & Functions\nQ 1\u20138\n__ / 8\nMatrices & Determinants\nQ 9\u201318\n__ / 10\nComplex Numbers\nQ 19\u201326\n__ / 8\nQuadratic Equations\nQ 27\u201334\n__ / 8\nPermutations & Combinations\nQ 35\u201342\n__ / 8\nBinomial Theorem\nQ 43\u201348\n__ / 6\nSequences & Series (AP, GP, HP)\nQ 49\u201356\n__ / 8\nTrigonometric Ratios & Identities\nQ 57\u201366\n__ / 10\nInverse Trigonometric Functions\nQ 67\u201372\n__ / 6\nProperties of Triangles\nQ 73\u201380\n__ / 8\nStraight Lines & Pair of Lines\nQ 81\u201390\n__ / 10\nCircles\nQ 91\u201398\n__ / 8\nConic Sections\nQ 99\u2013108\n__ / 10\n3D Geometry & Vectors\nQ 109\u2013120\n__ / 12\nLimits & Continuity\nQ 121\u2013128\n__ / 8\nDifferentiation\nQ 129\u2013138\n__ / 10\nApplications of Derivatives\nQ 139\u2013146\n__ / 8\nIntegration\nQ 147\u2013154\n__ / 8\nDifferential Equations\nQ 155\u2013158\n__ / 4\nProbability\nQ 159\u2013160\n__ / 2\n PAVAN SPEAKS\nYour Success is Our Mission\n \n \u25a0 Subscribe to Pavan Speaks on YouTube for FREE video solutions,\nshortcuts, live doubt sessions & EAPCET 2026 last-minute classes!\n \n Best of luck for EAPCET 2026 \u2014 You are going to ace it! \u25a0"
+        }
+      ]
+    }
+  ],
+  "Physics": [
+    {
+      "topic": "UNITS & MEASUREMENTS",
+      "questions": [
+        {
+          "question": "The dimensional formula of angular momentum is:",
+          "options": [
+            "A) [ML\u00b2T\u25a0\u00b9]",
+            "B) [MLT\u25a0\u00b9]",
+            "C) [ML\u00b2T\u25a0\u00b2]",
+            "D) [ML\u00b3T\u25a0\u00b9]"
+          ],
+          "answer": "A",
+          "explanation": "[ML\u00b2T\u25a0\u00b9]",
+          "hint": "L = mvr = [M][LT\u25a0\u00b9][L] = [ML\u00b2T\u25a0\u00b9]. Also L = I\u03c9 = [ML\u00b2][T\u25a0\u00b9] = [ML\u00b2T\u25a0\u00b9]"
+        },
+        {
+          "question": "The percentage error in measurement of radius is 2%. The percentage error in volume of sphere is:",
+          "options": [
+            "A) 2%",
+            "B) 4%",
+            "C) 6%",
+            "D) 8%"
+          ],
+          "answer": "C",
+          "explanation": "6%",
+          "hint": "V = (4/3)\u03c0r\u00b3. % error in V = 3 \u00d7 (% error in r) = 3 \u00d7 2% = 6%"
+        },
+        {
+          "question": "Which of the following pairs has the same dimensional formula?",
+          "options": [
+            "A) Work and Power",
+            "B) Torque and Work",
+            "C) Linear momentum and Force",
+            "D) Stress and Velocity"
+          ],
+          "answer": "B",
+          "explanation": "Torque and Work",
+          "hint": "Torque \u03c4 = F\u00d7r = [ML\u00b2T\u25a0\u00b2]; Work W = F\u00b7d = [ML\u00b2T\u25a0\u00b2]. Same dimensions!"
+        },
+        {
+          "question": "Light year is a unit of:",
+          "options": [
+            "A) Time",
+            "B) Speed",
+            "C) Distance",
+            "D) Intensity"
+          ],
+          "answer": "C",
+          "explanation": "Distance",
+          "hint": "1 light year = distance light travels in one year \u2248 9.46 \u00d7 10\u00b9\u25a0 m."
+        }
+      ]
+    },
+    {
+      "topic": "KINEMATICS",
+      "questions": [
+        {
+          "question": "A body is thrown vertically upward with velocity u. Time to reach maximum height is:",
+          "options": [
+            "A) u/g",
+            "B) 2u/g",
+            "C) u/2g",
+            "D) g/u"
+          ],
+          "answer": "A",
+          "explanation": "u/g",
+          "hint": "At max height, v = 0. Using v = u - gt \u2192 0 = u - gt \u2192 t = u/g"
+        },
+        {
+          "question": "A projectile is fired at angle \u03b8 with horizontal. The horizontal range is maximum when \u03b8 equals:",
+          "options": [
+            "A) 30\u00b0",
+            "B) 45\u00b0",
+            "C) 60\u00b0",
+            "D) 90\u00b0"
+          ],
+          "answer": "B",
+          "explanation": "45\u00b0",
+          "hint": "R = u\u00b2sin2\u03b8/g. R is maximum when sin2\u03b8 = 1 \u2192 2\u03b8 = 90\u00b0 \u2192 \u03b8 = 45\u00b0"
+        },
+        {
+          "question": "Velocity-time graph of uniform acceleration is a:",
+          "options": [
+            "A) Parabola",
+            "B) Hyperbola",
+            "C) Straight line",
+            "D) Circle"
+          ],
+          "answer": "C",
+          "explanation": "Straight line",
+          "hint": "v = u + at. This is linear in t \u2192 v-t graph is a straight line with slope = a."
+        },
+        {
+          "question": "A ball is dropped from height h. Time to reach ground is:",
+          "options": [
+            "A) \u221a(h/g)",
+            "B) \u221a(2h/g)",
+            "C) 2\u221a(h/g)",
+            "D) \u221a(h/2g)"
+          ],
+          "answer": "B",
+          "explanation": "\u221a(2h/g)",
+          "hint": "h = \u00bdgt\u00b2 \u2192 t = \u221a(2h/g). Initial velocity u = 0 for a dropped body."
+        },
+        {
+          "question": "For a particle moving in a circle of radius r with uniform speed v, centripetal acceleration is:",
+          "options": [
+            "A) v\u00b2r",
+            "B) v/r\u00b2",
+            "C) v\u00b2/r",
+            "D) vr\u00b2"
+          ],
+          "answer": "C",
+          "explanation": "v\u00b2/r",
+          "hint": "Centripetal acceleration a = v\u00b2/r = \u03c9\u00b2r. Directed towards centre."
+        }
+      ]
+    },
+    {
+      "topic": "LAWS OF MOTION",
+      "questions": [
+        {
+          "question": "A body of mass 5 kg is acted upon by a net force of 20 N. Its acceleration is:",
+          "options": [
+            "A) 2 m/s\u00b2",
+            "B) 4 m/s\u00b2",
+            "C) 10 m/s\u00b2",
+            "D) 100 m/s\u00b2"
+          ],
+          "answer": "B",
+          "explanation": "4 m/s\u00b2",
+          "hint": "Newton's 2nd law: F = ma \u2192 a = F/m = 20/5 = 4 m/s\u00b2"
+        },
+        {
+          "question": "A body of mass 2 kg moving at 10 m/s collides and sticks to a body of mass 3 kg at rest. Their\ncombined velocity is:",
+          "options": [
+            "A) 2 m/s",
+            "B) 4 m/s",
+            "C) 5 m/s",
+            "D) 6 m/s"
+          ],
+          "answer": "B",
+          "explanation": "4 m/s",
+          "hint": "Conservation of momentum: m\u25a0u\u25a0 = (m\u25a0+m\u25a0)v \u2192 2\u00d710 = 5\u00d7v \u2192 v = 4 m/s"
+        },
+        {
+          "question": "The coefficient of static friction between a block and surface is 0.4 (g=10 m/s\u00b2). Maximum static friction\non a 5 kg block is:",
+          "options": [
+            "A) 10 N",
+            "B) 15 N",
+            "C) 20 N",
+            "D) 25 N"
+          ],
+          "answer": "C",
+          "explanation": "20 N",
+          "hint": "f_s(max) = \u00b5\u25a0 \u00d7 N = \u00b5\u25a0 \u00d7 mg = 0.4 \u00d7 5 \u00d7 10 = 20 N"
+        },
+        {
+          "question": "Which of the following is a consequence of Newton's Third Law?",
+          "options": [
+            "A) Conservation of energy",
+            "B) Conservation of momentum",
+            "C) Conservation of charge",
+            "D) Conservation of angular momentum"
+          ],
+          "answer": "B",
+          "explanation": "Conservation of\nmomentum",
+          "hint": "Newton's 3rd law (action-reaction) leads directly to conservation of linear\nmomentum."
+        },
+        {
+          "question": "A 60 kg person stands in a lift accelerating upward at 2 m/s\u00b2. Apparent weight (g=10 m/s\u00b2) is:",
+          "options": [
+            "A) 480 N",
+            "B) 600 N",
+            "C) 720 N",
+            "D) 840 N"
+          ],
+          "answer": "C",
+          "explanation": "720 N",
+          "hint": "Apparent weight = m(g+a) = 60(10+2) = 60\u00d712 = 720 N"
+        }
+      ]
+    },
+    {
+      "topic": "WORK, ENERGY & POWER",
+      "questions": [
+        {
+          "question": "The work done by a force F = 5 N on a body through displacement d = 4 m at 60\u00b0 is:",
+          "options": [
+            "A) 5 J",
+            "B) 10 J",
+            "C) 15 J",
+            "D) 20 J"
+          ],
+          "answer": "B",
+          "explanation": "10 J",
+          "hint": "W = F\u00b7d\u00b7cos\u03b8 = 5 \u00d7 4 \u00d7 cos60\u00b0 = 5 \u00d7 4 \u00d7 0.5 = 10 J"
+        },
+        {
+          "question": "The kinetic energy of a body of mass 2 kg moving at 6 m/s is:",
+          "options": [
+            "A) 12 J",
+            "B) 18 J",
+            "C) 36 J",
+            "D) 72 J"
+          ],
+          "answer": "C",
+          "explanation": "36 J",
+          "hint": "KE = \u00bdmv\u00b2 = \u00bd \u00d7 2 \u00d7 6\u00b2 = \u00bd \u00d7 2 \u00d7 36 = 36 J"
+        },
+        {
+          "question": "A spring of force constant k is compressed by x. The elastic potential energy stored is:",
+          "options": [
+            "A) kx",
+            "B) kx\u00b2",
+            "C) \u00bdkx\u00b2",
+            "D) 2kx\u00b2"
+          ],
+          "answer": "C",
+          "explanation": "\u00bdkx\u00b2",
+          "hint": "Elastic PE = \u00bdkx\u00b2. This energy is released when spring returns to natural\nlength."
+        },
+        {
+          "question": "A machine does 1000 J of work in 10 s. Its power output is:",
+          "options": [
+            "A) 10 W",
+            "B) 100 W",
+            "C) 1000 W",
+            "D) 10000 W"
+          ],
+          "answer": "B",
+          "explanation": "100 W",
+          "hint": "Power P = W/t = 1000/10 = 100 W"
+        },
+        {
+          "question": "In an elastic collision:",
+          "options": [
+            "A) Only momentum is conserved",
+            "B) Only KE is conserved",
+            "C) Both momentum and KE are conserved",
+            "D) Neither is conserved"
+          ],
+          "answer": "C",
+          "explanation": "Both momentum\nand KE are conserved",
+          "hint": "Elastic collision: both linear momentum AND kinetic energy are conserved.\nCoefficient of restitution = 1."
+        }
+      ]
+    },
+    {
+      "topic": "ROTATIONAL MOTION",
+      "questions": [
+        {
+          "question": "The moment of inertia of a solid disc of mass M and radius R about its central axis is:",
+          "options": [
+            "A) MR\u00b2",
+            "B) \u00bdMR\u00b2",
+            "C) \u25a0MR\u00b2",
+            "D) \u00bcMR\u00b2"
+          ],
+          "answer": "B",
+          "explanation": "\u00bdMR\u00b2",
+          "hint": "I(disc) = \u00bdMR\u00b2. For ring I = MR\u00b2, for solid sphere I = 2/5 MR\u00b2."
+        },
+        {
+          "question": "Angular momentum L = I\u03c9. If I is halved and angular momentum is conserved, \u03c9 becomes:",
+          "options": [
+            "A) \u03c9/2",
+            "B) \u03c9",
+            "C) 2\u03c9",
+            "D) 4\u03c9"
+          ],
+          "answer": "C",
+          "explanation": "2\u03c9",
+          "hint": "L = I\u03c9 = constant. If I \u2192 I/2, then \u03c9 \u2192 2\u03c9 (like ice skater pulling in arms)."
+        },
+        {
+          "question": "Torque \u03c4 = r \u00d7 F. The SI unit of torque is:",
+          "options": [
+            "A) Joule",
+            "B) Newton",
+            "C) Newton-metre",
+            "D) Watt"
+          ],
+          "answer": "C",
+          "explanation": "Newton-metre",
+          "hint": "\u03c4 = r \u00d7 F \u2192 unit = m \u00d7 N = N\u00b7m. Although dimensions equal Joule, torque is\nexpressed in N\u00b7m."
+        },
+        {
+          "question": "A body rolls without slipping. The ratio of rotational KE to total KE for a solid sphere is:",
+          "options": [
+            "A) 2/7",
+            "B) 5/7",
+            "C) 1/2",
+            "D) 2/5"
+          ],
+          "answer": "A",
+          "explanation": "2/7",
+          "hint": "KE_rot/KE_total = (I/MR\u00b2)/(1 + I/MR\u00b2) = (2/5)/(1+2/5) = (2/5)/(7/5) = 2/7"
+        },
+        {
+          "question": "The theorem of parallel axes states that I = Icm + Md\u00b2. Here d is:",
+          "options": [
+            "A) Radius of body",
+            "B) Distance between the two parallel axes",
+            "C) Distance from centre of mass to surface",
+            "D) Diameter of the body"
+          ],
+          "answer": "B",
+          "explanation": "Distance between\nthe two parallel axes",
+          "hint": "Parallel axis theorem: I = Icm + Md\u00b2 where d = distance between parallel axis\nand CM axis."
+        }
+      ]
+    },
+    {
+      "topic": "GRAVITATION",
+      "questions": [
+        {
+          "question": "The orbital velocity of a satellite close to Earth's surface (R = 6400 km, g = 9.8 m/s\u00b2) is approximately:",
+          "options": [
+            "A) 5.9 km/s",
+            "B) 7.9 km/s",
+            "C) 11.2 km/s",
+            "D) 3.0 km/s"
+          ],
+          "answer": "B",
+          "explanation": "7.9 km/s",
+          "hint": "v\u25a0 = \u221a(gR) = \u221a(9.8 \u00d7 6.4\u00d710\u25a0) \u2248 7.9 km/s"
+        },
+        {
+          "question": "Kepler's third law states that T\u00b2 \u221d r\u00b3. If the orbital radius is doubled, the time period becomes:",
+          "options": [
+            "A) 2T",
+            "B) 4T",
+            "C) 2\u221a2 T",
+            "D) \u221a2 T"
+          ],
+          "answer": "C",
+          "explanation": "2\u221a2 T",
+          "hint": "T\u00b2 \u221d r\u00b3 \u2192 (T'/T)\u00b2 = (2r/r)\u00b3 = 8 \u2192 T' = T\u221a8 = 2\u221a2 T"
+        },
+        {
+          "question": "Escape velocity from Earth's surface is:",
+          "options": [
+            "A) \u221a(gR)",
+            "B) \u221a(2gR)",
+            "C) 2\u221a(gR)",
+            "D) gR"
+          ],
+          "answer": "B",
+          "explanation": "\u221a(2gR)",
+          "hint": "v_esc = \u221a(2GM/R) = \u221a(2gR) \u2248 11.2 km/s for Earth."
+        },
+        {
+          "question": "The gravitational potential energy of a body of mass m at height h above Earth (radius R) is:",
+          "options": [
+            "A) -GMm/R",
+            "B) -GMm/(R+h)",
+            "C) GMm/(R+h)",
+            "D) mgh"
+          ],
+          "answer": "B",
+          "explanation": "-GMm/(R+h)",
+          "hint": "U = -GMm/r where r = R+h from Earth's centre. Negative sign: bound system."
+        }
+      ]
+    },
+    {
+      "topic": "PROPERTIES OF MATTER",
+      "questions": [
+        {
+          "question": "Young's modulus is defined as:",
+          "options": [
+            "A) Shear stress / Shear strain",
+            "B) Volumetric stress / Volumetric strain",
+            "C) Longitudinal stress / Longitudinal strain",
+            "D) Stress \u00d7 Strain"
+          ],
+          "answer": "C",
+          "explanation": "Longitudinal stress /\nLongitudinal strain",
+          "hint": "Young's modulus Y = (F/A)/(\u0394L/L) = Longitudinal stress / Longitudinal strain."
+        },
+        {
+          "question": "Surface tension has dimensions:",
+          "options": [
+            "A) [MT\u25a0\u00b2]",
+            "B) [ML\u25a0\u00b9T\u25a0\u00b2]",
+            "C) [MLT\u25a0\u00b2]",
+            "D) [ML\u00b2T\u25a0\u00b2]"
+          ],
+          "answer": "A",
+          "explanation": "[MT\u25a0\u00b2]",
+          "hint": "T = F/L = [MLT\u25a0\u00b2]/[L] = [MT\u25a0\u00b2]. Unit = N/m."
+        },
+        {
+          "question": "Bernoulli's theorem is based on conservation of:",
+          "options": [
+            "A) Mass",
+            "B) Momentum",
+            "C) Energy",
+            "D) Charge"
+          ],
+          "answer": "C",
+          "explanation": "Energy",
+          "hint": "Bernoulli's equation: P + \u00bd\u03c1v\u00b2 + \u03c1gh = constant \u2192 conservation of energy per\nunit volume."
+        },
+        {
+          "question": "The excess pressure inside a soap bubble of radius R and surface tension T is:",
+          "options": [
+            "A) T/R",
+            "B) 2T/R",
+            "C) 4T/R",
+            "D) T/2R"
+          ],
+          "answer": "C",
+          "explanation": "4T/R",
+          "hint": "Soap bubble has 2 surfaces. Excess pressure = 4T/R. For liquid drop: 2T/R (1\nsurface)."
+        }
+      ]
+    },
+    {
+      "topic": "THERMAL PHYSICS",
+      "questions": [
+        {
+          "question": "For an ideal gas at temperature T, the rms speed of molecules is proportional to:",
+          "options": [
+            "A) T",
+            "B) T\u00b2",
+            "C) \u221aT",
+            "D) 1/\u221aT"
+          ],
+          "answer": "C",
+          "explanation": "\u221aT",
+          "hint": "v_rms = \u221a(3RT/M) \u221d \u221aT. Doubling T increases v_rms by factor \u221a2."
+        },
+        {
+          "question": "For a monoatomic ideal gas, the ratio \u03b3 = Cp/Cv is:",
+          "options": [
+            "A) 1.4",
+            "B) 1.67",
+            "C) 1.33",
+            "D) 1.0"
+          ],
+          "answer": "B",
+          "explanation": "1.67",
+          "hint": "Monoatomic gas: f=3. Cv = 3R/2, Cp = 5R/2. \u03b3 = Cp/Cv = 5/3 \u2248 1.67"
+        },
+        {
+          "question": "Newton's law of cooling states that the rate of cooling is proportional to:",
+          "options": [
+            "A) Temperature of the body",
+            "B) Temperature of surroundings",
+            "C) Difference in temperatures of body and surroundings",
+            "D) Square of temperature difference"
+          ],
+          "answer": "C",
+          "explanation": "Difference in\ntemperatures of body and\nsurroundings",
+          "hint": "dQ/dt \u221d (T - T\u25a0). Rate of cooling depends on temperature excess over\nsurroundings."
+        },
+        {
+          "question": "The efficiency of a Carnot engine operating between 300 K and 500 K is:",
+          "options": [
+            "A) 30%",
+            "B) 40%",
+            "C) 60%",
+            "D) 50%"
+          ],
+          "answer": "B",
+          "explanation": "40%",
+          "hint": "\u03b7 = 1 - T\u25a0/T\u25a0 = 1 - 300/500 = 1 - 0.6 = 0.4 = 40%"
+        },
+        {
+          "question": "Wien's displacement law states that \u03bb_max \u00d7 T = constant. If T is doubled, \u03bb_max:",
+          "options": [
+            "A) Doubles",
+            "B) Halves",
+            "C) Quadruples",
+            "D) Remains same"
+          ],
+          "answer": "B",
+          "explanation": "Halves",
+          "hint": "\u03bb_max \u221d 1/T. If T \u2192 2T, then \u03bb_max \u2192 \u03bb_max/2."
+        }
+      ]
+    },
+    {
+      "topic": "OSCILLATIONS (SHM)",
+      "questions": [
+        {
+          "question": "The time period of a simple pendulum of length L is:",
+          "options": [
+            "A) T = 2\u03c0\u221a(g/L)",
+            "B) T = 2\u03c0\u221a(L/g)",
+            "C) T = \u03c0\u221a(L/g)",
+            "D) T = \u221a(2\u03c0L/g)"
+          ],
+          "answer": "B",
+          "explanation": "T = 2\u03c0\u221a(L/g)",
+          "hint": "T = 2\u03c0\u221a(L/g). Time period is independent of mass and amplitude (for small\noscillations)."
+        },
+        {
+          "question": "For SHM x = A sin\u03c9t, the maximum velocity is:",
+          "options": [
+            "A) A\u03c9\u00b2",
+            "B) A/\u03c9",
+            "C) A\u03c9",
+            "D) A\u00b2\u03c9"
+          ],
+          "answer": "C",
+          "explanation": "A\u03c9",
+          "hint": "v = dx/dt = A\u03c9 cos\u03c9t. Maximum when cos\u03c9t = 1 \u2192 v_max = A\u03c9 (at mean\nposition)."
+        },
+        {
+          "question": "In SHM, at mean position the restoring force is:",
+          "options": [
+            "A) Maximum",
+            "B) Minimum",
+            "C) Zero",
+            "D) Constant"
+          ],
+          "answer": "C",
+          "explanation": "Zero",
+          "hint": "F = -kx. At mean position x = 0 \u2192 F = 0. Velocity is maximum here."
+        },
+        {
+          "question": "The time period of a spring-mass system (mass m, spring constant k) is:",
+          "options": [
+            "A) 2\u03c0\u221a(k/m)",
+            "B) 2\u03c0\u221a(m/k)",
+            "C) \u03c0\u221a(m/k)",
+            "D) \u221a(m/k)"
+          ],
+          "answer": "B",
+          "explanation": "2\u03c0\u221a(m/k)",
+          "hint": "T = 2\u03c0\u221a(m/k). Unlike pendulum, it depends on mass but is independent of g and\namplitude."
+        }
+      ]
+    },
+    {
+      "topic": "WAVES & SOUND",
+      "questions": [
+        {
+          "question": "The speed of sound in air at 0\u00b0C is 332 m/s. At 4\u00b0C it is approximately:",
+          "options": [
+            "A) 328 m/s",
+            "B) 332 m/s",
+            "C) 333.2 m/s",
+            "D) 340 m/s"
+          ],
+          "answer": "C",
+          "explanation": "333.2 m/s",
+          "hint": "v \u221d \u221aT. v = 332\u221a(277/273) \u2248 333.2 m/s. Speed of sound increases with\ntemperature."
+        },
+        {
+          "question": "Doppler effect: A source moves towards a stationary observer. The observed frequency:",
+          "options": [
+            "A) Decreases",
+            "B) Increases",
+            "C) Remains same",
+            "D) Becomes zero"
+          ],
+          "answer": "B",
+          "explanation": "Increases",
+          "hint": "When source approaches observer, wavefronts are compressed \u2192 shorter\nwavelength \u2192 higher frequency."
+        },
+        {
+          "question": "Beats are produced due to:",
+          "options": [
+            "A) Interference of two waves of same frequency",
+            "B) Superposition of two waves of slightly different\nfrequencies",
+            "C) Diffraction of waves",
+            "D) Resonance"
+          ],
+          "answer": "B",
+          "explanation": "Superposition of\ntwo waves of slightly different\nfrequencies",
+          "hint": "Beat frequency = |f\u25a0 - f\u25a0|. Beats are periodic variations in loudness due to\ninterference."
+        },
+        {
+          "question": "For a standing wave, nodes are points of:",
+          "options": [
+            "A) Maximum displacement",
+            "B) Zero displacement",
+            "C) Maximum velocity",
+            "D) Maximum pressure"
+          ],
+          "answer": "B",
+          "explanation": "Zero displacement",
+          "hint": "Nodes: zero displacement (max pressure variation). Antinodes: max\ndisplacement (min pressure variation)."
+        },
+        {
+          "question": "The frequency of the fundamental mode of vibration of an open pipe of length L is:",
+          "options": [
+            "A) v/4L",
+            "B) v/2L",
+            "C) v/L",
+            "D) 2v/L"
+          ],
+          "answer": "B",
+          "explanation": "v/2L",
+          "hint": "Open pipe: both ends antinodes. Fundamental: L = \u03bb/2 \u2192 f = v/2L (closed:\nv/4L)."
+        }
+      ]
+    },
+    {
+      "topic": "ELECTROSTATICS",
+      "questions": [
+        {
+          "question": "Coulomb's law: Force between charges q\u25a0 and q\u25a0 at distance r is F = kq\u25a0q\u25a0/r\u00b2. If distance is tripled,\nforce becomes:",
+          "options": [
+            "A) 3F",
+            "B) F/3",
+            "C) 9F",
+            "D) F/9"
+          ],
+          "answer": "D",
+          "explanation": "F/9",
+          "hint": "F \u221d 1/r\u00b2. If r \u2192 3r, F \u2192 F/9. Force decreases by factor 9."
+        },
+        {
+          "question": "Electric potential at distance r from charge q is:",
+          "options": [
+            "A) kq/r\u00b2",
+            "B) kq/r",
+            "C) kq\u00b7r",
+            "D) kq\u00b2/r"
+          ],
+          "answer": "B",
+          "explanation": "kq/r",
+          "hint": "V = kq/r. Electric field E = kq/r\u00b2 (note: E \u221d 1/r\u00b2, V \u221d 1/r)."
+        },
+        {
+          "question": "The capacitance of a parallel plate capacitor with area A, plate separation d and dielectric constant K is:",
+          "options": [
+            "A) \u03b5\u25a0A/d",
+            "B) K\u03b5\u25a0A/d",
+            "C) \u03b5\u25a0A/Kd",
+            "D) KAd/\u03b5\u25a0"
+          ],
+          "answer": "B",
+          "explanation": "K\u03b5\u25a0A/d",
+          "hint": "C = K\u03b5\u25a0A/d. Dielectric constant K increases capacitance by factor K."
+        },
+        {
+          "question": "Energy stored in a capacitor of capacitance C charged to voltage V is:",
+          "options": [
+            "A) CV",
+            "B) \u00bdCV\u00b2",
+            "C) CV\u00b2",
+            "D) C\u00b2V"
+          ],
+          "answer": "B",
+          "explanation": "\u00bdCV\u00b2",
+          "hint": "U = \u00bdCV\u00b2 = \u00bdQV = Q\u00b2/2C. All three expressions are equivalent."
+        },
+        {
+          "question": "Gauss's law: For a spherical shell of charge Q, electric field inside is:",
+          "options": [
+            "A) kQ/R\u00b2",
+            "B) kQ/r\u00b2",
+            "C) Zero",
+            "D) kQ/2R\u00b2"
+          ],
+          "answer": "C",
+          "explanation": "Zero",
+          "hint": "By Gauss's law, E inside a uniformly charged shell = 0 (no enclosed charge for r\n< R)."
+        }
+      ]
+    },
+    {
+      "topic": "CURRENT ELECTRICITY",
+      "questions": [
+        {
+          "question": "Ohm's law V = IR is valid when:",
+          "options": [
+            "A) Temperature is very high",
+            "B) Temperature is constant",
+            "C) Current is very large",
+            "D) Voltage is very small"
+          ],
+          "answer": "B",
+          "explanation": "Temperature is\nconstant",
+          "hint": "Ohm's law holds when temperature (and hence resistance) is constant. R\nchanges with T."
+        },
+        {
+          "question": "Three resistors of 2\u03a9, 3\u03a9, 6\u03a9 are connected in parallel. Equivalent resistance is:",
+          "options": [
+            "A) 11\u03a9",
+            "B) 1\u03a9",
+            "C) 3\u03a9",
+            "D) 0.5\u03a9"
+          ],
+          "answer": "B",
+          "explanation": "1\u03a9",
+          "hint": "1/R = 1/2 + 1/3 + 1/6 = 3/6 + 2/6 + 1/6 = 6/6 = 1 \u2192 R = 1\u03a9"
+        },
+        {
+          "question": "Kirchhoff's current law (KCL) is based on:",
+          "options": [
+            "A) Conservation of energy",
+            "B) Conservation of momentum",
+            "C) Conservation of charge",
+            "D) Conservation of mass"
+          ],
+          "answer": "C",
+          "explanation": "Conservation of\ncharge",
+          "hint": "KCL: \u03a3I at junction = 0. Charge cannot accumulate at a junction \u2192 conservation\nof charge."
+        },
+        {
+          "question": "The Wheatstone bridge is balanced when:",
+          "options": [
+            "A) P/Q = R/S",
+            "B) P+Q = R+S",
+            "C) P\u00d7Q = R\u00d7S",
+            "D) P-Q = R-S"
+          ],
+          "answer": "A",
+          "explanation": "P/Q = R/S",
+          "hint": "Balance condition: P/Q = R/S. Galvanometer shows zero deflection. No current\nthrough galvanometer."
+        },
+        {
+          "question": "The power dissipated in a resistor R carrying current I is:",
+          "options": [
+            "A) I\u00b2R",
+            "B) IR\u00b2",
+            "C) I/R",
+            "D) R/I\u00b2"
+          ],
+          "answer": "A",
+          "explanation": "I\u00b2R",
+          "hint": "P = I\u00b2R = V\u00b2/R = VI. All are equivalent using Ohm's law V = IR."
+        }
+      ]
+    },
+    {
+      "topic": "MAGNETIC EFFECTS OF CURRENT",
+      "questions": [
+        {
+          "question": "The force on a charge q moving with velocity v in magnetic field B is:",
+          "options": [
+            "A) F = qvB sin\u03b8",
+            "B) F = qvB cos\u03b8",
+            "C) F = qvB tan\u03b8",
+            "D) F = q/vB"
+          ],
+          "answer": "A",
+          "explanation": "F = qvB sin\u03b8",
+          "hint": "Lorentz force: F = q(v \u00d7 B) = qvB sin\u03b8. Force is perpendicular to both v and B."
+        },
+        {
+          "question": "The magnetic field at the centre of a circular loop of radius R carrying current I is:",
+          "options": [
+            "A) \u00b5\u25a0I/4\u03c0R",
+            "B) \u00b5\u25a0I/2R",
+            "C) \u00b5\u25a0I/R",
+            "D) 2\u00b5\u25a0I/R"
+          ],
+          "answer": "B",
+          "explanation": "\u00b5\u25a0I/2R",
+          "hint": "B = \u00b5\u25a0I/2R at centre of circular loop. For solenoid: B = \u00b5\u25a0nI."
+        },
+        {
+          "question": "Moving coil galvanometer works on the principle of:",
+          "options": [
+            "A) Electromagnetic induction",
+            "B) Torque on current loop in magnetic field",
+            "C) Photoelectric effect",
+            "D) Seebeck effect"
+          ],
+          "answer": "B",
+          "explanation": "Torque on current\nloop in magnetic field",
+          "hint": "\u03c4 = NIAB sin\u03b8. Current-carrying coil in B-field experiences torque \u2192 deflection\nproportional to I."
+        },
+        {
+          "question": "The SI unit of magnetic flux is:",
+          "options": [
+            "A) Tesla",
+            "B) Weber",
+            "C) Henry",
+            "D) Gauss"
+          ],
+          "answer": "B",
+          "explanation": "Weber",
+          "hint": "Magnetic flux \u03a6 = B\u00b7A. Unit = T\u00b7m\u00b2 = Weber (Wb). 1 Wb = 10\u25a0 Maxwell (CGS)."
+        },
+        {
+          "question": "Ampere's circuital law: \u25a0B\u00b7dl = \u00b5\u25a0Ienc. This is analogous to Gauss's law for:",
+          "options": [
+            "A) Gravitation",
+            "B) Electrostatics",
+            "C) Magnetism",
+            "D) Thermodynamics"
+          ],
+          "answer": "B",
+          "explanation": "Electrostatics",
+          "hint": "Gauss's law: \u25a0E\u00b7dA = q/\u03b5\u25a0. Ampere's law: \u25a0B\u00b7dl = \u00b5\u25a0I. Both relate field to\nsource quantity."
+        }
+      ]
+    },
+    {
+      "topic": "EMI & ALTERNATING CURRENT",
+      "questions": [
+        {
+          "question": "Faraday's law of EMI: The induced EMF is equal to:",
+          "options": [
+            "A) Rate of change of current",
+            "B) Rate of change of magnetic flux",
+            "C) Rate of change of resistance",
+            "D) Product of B and A"
+          ],
+          "answer": "B",
+          "explanation": "Rate of change of\nmagnetic flux",
+          "hint": "e = -d\u03a6/dt (Faraday's law). Negative sign is Lenz's law (opposing cause)."
+        },
+        {
+          "question": "The rms value of AC voltage V = V\u25a0 sin\u03c9t is:",
+          "options": [
+            "A) V\u25a0",
+            "B) V\u25a0/\u221a2",
+            "C) V\u25a0/2",
+            "D) V\u25a0\u221a2"
+          ],
+          "answer": "B",
+          "explanation": "V\u25a0/\u221a2",
+          "hint": "V_rms = V\u25a0/\u221a2 \u2248 0.707 V\u25a0. For I_rms = I\u25a0/\u221a2. Mains supply: V\u25a0 = 325V,\nV_rms \u2248 230V."
+        },
+        {
+          "question": "At resonance in a series LCR circuit:",
+          "options": [
+            "A) XL > XC",
+            "B) XL < XC",
+            "C) XL = XC",
+            "D) Z is maximum"
+          ],
+          "answer": "C",
+          "explanation": "XL = XC",
+          "hint": "Resonance: XL = XC \u2192 \u03c9L = 1/\u03c9C \u2192 \u03c9\u25a0 = 1/\u221a(LC). Impedance Z = R\n(minimum), current is maximum."
+        },
+        {
+          "question": "Power factor of a purely inductive circuit is:",
+          "options": [
+            "A) 1",
+            "B) 0.5",
+            "C) Zero",
+            "D) Infinity"
+          ],
+          "answer": "C",
+          "explanation": "Zero",
+          "hint": "PF = cos\u03c6. For pure inductor, \u03c6 = 90\u00b0 (current lags voltage). PF = cos90\u00b0 = 0.\nNo real power."
+        },
+        {
+          "question": "A transformer steps voltage from 220 V to 11000 V. If primary turns = 200, secondary turns are:",
+          "options": [
+            "A) 1000",
+            "B) 4000",
+            "C) 10000",
+            "D) 40000"
+          ],
+          "answer": "C",
+          "explanation": "10000",
+          "hint": "Vs/Vp = Ns/Np \u2192 11000/220 = Ns/200 \u2192 Ns = 50 \u00d7 200 = 10000"
+        }
+      ]
+    },
+    {
+      "topic": "RAY & WAVE OPTICS",
+      "questions": [
+        {
+          "question": "The critical angle for total internal reflection for a medium of refractive index \u00b5 = \u221a2 is:",
+          "options": [
+            "A) 30\u00b0",
+            "B) 45\u00b0",
+            "C) 60\u00b0",
+            "D) 90\u00b0"
+          ],
+          "answer": "B",
+          "explanation": "45\u00b0",
+          "hint": "sin(C) = 1/\u00b5 = 1/\u221a2 \u2192 C = 45\u00b0. TIR occurs when angle of incidence > C."
+        },
+        {
+          "question": "Mirror formula: 1/v + 1/u = 1/f. For a concave mirror of focal length 10 cm with object at 30 cm, image\ndistance is:",
+          "options": [
+            "A) 10 cm",
+            "B) 15 cm",
+            "C) 20 cm",
+            "D) 30 cm"
+          ],
+          "answer": "B",
+          "explanation": "15 cm",
+          "hint": "1/v = 1/f - 1/u = 1/(-10) - 1/(-30) = -1/10 + 1/30 = -2/30 \u2192 v = -15 cm (real\nimage)"
+        },
+        {
+          "question": "In Young's double slit experiment, fringe width \u03b2 = \u03bbD/d. If d is doubled (other things same), \u03b2:",
+          "options": [
+            "A) Doubles",
+            "B) Halves",
+            "C) Quadruples",
+            "D) Remains same"
+          ],
+          "answer": "B",
+          "explanation": "Halves",
+          "hint": "\u03b2 \u221d 1/d. If d \u2192 2d, then \u03b2 \u2192 \u03b2/2. Fringes become narrower."
+        },
+        {
+          "question": "Polarization is a property of:",
+          "options": [
+            "A) Longitudinal waves",
+            "B) Transverse waves",
+            "C) Both longitudinal and transverse",
+            "D) Sound waves"
+          ],
+          "answer": "B",
+          "explanation": "Transverse waves",
+          "hint": "Only transverse waves can be polarized. Light (transverse EM wave) can be\npolarized; sound cannot."
+        },
+        {
+          "question": "Resolving power of a microscope increases when:",
+          "options": [
+            "A) Wavelength of light used increases",
+            "B) Wavelength of light used decreases",
+            "C) Aperture decreases",
+            "D) Magnification decreases"
+          ],
+          "answer": "B",
+          "explanation": "Wavelength of light\nused decreases",
+          "hint": "RP = 2\u00b5sin\u03b8/\u03bb \u221d 1/\u03bb. Smaller \u03bb \u2192 better resolution. Electron microscopes use\nvery small \u03bb."
+        },
+        {
+          "question": "In a single slit diffraction pattern, the central maximum is how many times wider than secondary\nmaxima?",
+          "options": [
+            "A) Same width",
+            "B) 2 times",
+            "C) 4 times",
+            "D) Half"
+          ],
+          "answer": "B",
+          "explanation": "2 times",
+          "hint": "Central maximum width = 2\u03bbD/a; secondary maxima width = \u03bbD/a. Central is\ntwice as wide."
+        }
+      ]
+    },
+    {
+      "topic": "MODERN PHYSICS",
+      "questions": [
+        {
+          "question": "In photoelectric effect, the stopping potential V\u25a0 is related to max KE of photoelectrons by:",
+          "options": [
+            "A) KE_max = eV\u25a0",
+            "B) KE_max = eV\u25a0/2",
+            "C) KE_max = 2eV\u25a0",
+            "D) KE_max = e/V\u25a0"
+          ],
+          "answer": "A",
+          "explanation": "KE_max = eV\u25a0",
+          "hint": "Stopping potential V\u25a0 just stops fastest electrons. KE_max = eV\u25a0 (energy of\nelectron retarded by V\u25a0)."
+        },
+        {
+          "question": "Bohr's model: Radius of nth orbit of hydrogen is:",
+          "options": [
+            "A) r = n\u00b2a\u25a0",
+            "B) r = na\u25a0",
+            "C) r = a\u25a0/n\u00b2",
+            "D) r = a\u25a0/n"
+          ],
+          "answer": "A",
+          "explanation": "r = n\u00b2a\u25a0",
+          "hint": "r\u25a0 = n\u00b2a\u25a0 where a\u25a0 = 0.529 \u00c5 (Bohr radius). r\u25a0 = 0.529 \u00c5, r\u25a0 = 4 \u00d7 0.529 \u00c5."
+        },
+        {
+          "question": "In radioactive decay, the half-life T\u00bd and decay constant \u03bb are related by:",
+          "options": [
+            "A) T\u00bd = \u03bb",
+            "B) T\u00bd = 1/\u03bb",
+            "C) T\u00bd = 0.693/\u03bb",
+            "D) T\u00bd = \u03bb/0.693"
+          ],
+          "answer": "C",
+          "explanation": "T\u00bd = 0.693/\u03bb",
+          "hint": "N = N\u25a0e^(-\u03bbt). At t = T\u00bd: N = N\u25a0/2 \u2192 e^(-\u03bbT\u00bd) = 1/2 \u2192 T\u00bd = ln2/\u03bb = 0.693/\u03bb"
+        },
+        {
+          "question": "In nuclear fission, the energy released is due to:",
+          "options": [
+            "A) Increase in binding energy per nucleon",
+            "B) Decrease in binding energy per nucleon",
+            "C) Conversion of electron to positron",
+            "D) \u03b1-decay"
+          ],
+          "answer": "A",
+          "explanation": "Increase in binding\nenergy per nucleon",
+          "hint": "Heavy nuclei (low BE/nucleon) split into medium nuclei (high BE/nucleon).\nDifference \u2192 energy (E = \u0394mc\u00b2)."
+        },
+        {
+          "question": "In \u03b1-decay, the mass number A and atomic number Z change as:",
+          "options": [
+            "A) A-2, Z-1",
+            "B) A-4, Z-2",
+            "C) A, Z+1",
+            "D) A-4, Z+2"
+          ],
+          "answer": "B",
+          "explanation": "A-4, Z-2",
+          "hint": "\u03b1 particle = \u25a0\u25a0He. In \u03b1-decay: A \u2192 A-4, Z \u2192 Z-2. E.g., \u00b2\u00b3\u25a0U \u2192 \u00b2\u00b3\u25a0Th + \u25a0He"
+        }
+      ]
+    },
+    {
+      "topic": "SEMICONDUCTOR DEVICES",
+      "questions": [
+        {
+          "question": "In a p-n junction diode under forward bias:",
+          "options": [
+            "A) Width of depletion layer increases",
+            "B) Width of depletion layer decreases",
+            "C) Depletion layer remains same",
+            "D) Reverse current flows"
+          ],
+          "answer": "B",
+          "explanation": "Width of depletion\nlayer decreases",
+          "hint": "Forward bias opposes built-in potential \u2192 depletion layer narrows \u2192 current\nflows easily."
+        },
+        {
+          "question": "A Zener diode is used as:",
+          "options": [
+            "A) Amplifier",
+            "B) Rectifier",
+            "C) Voltage regulator",
+            "D) Oscillator"
+          ],
+          "answer": "C",
+          "explanation": "Voltage regulator",
+          "hint": "Zener diode maintains constant voltage across load despite variations in input\nvoltage or load current."
+        },
+        {
+          "question": "In a common emitter (CE) transistor amplifier, the voltage gain depends on:",
+          "options": [
+            "A) Input resistance only",
+            "B) \u03b2 and ratio of collector to base resistance",
+            "C) Emitter resistance only",
+            "D) Supply voltage only"
+          ],
+          "answer": "B",
+          "explanation": "\u03b2 and ratio of\ncollector to base resistance",
+          "hint": "Voltage gain Av = \u03b2 \u00d7 (Rc/Rb) in CE configuration. \u03b2 = Ic/Ib (current gain).\n\n\u25a0 YOU'VE COMPLETED ALL 80 PHYSICS QUESTIONS!\n \n\u25a0 Topic\nQuestions\nScore Your Practice\nUnits & Measurements\nQ 1\u20134\n__ / 4\nKinematics\nQ 5\u20139\n__ / 5\nLaws of Motion\nQ 10\u201314\n__ / 5\nWork, Energy & Power\nQ 15\u201319\n__ / 5\nRotational Motion\nQ 20\u201324\n__ / 5\nGravitation\nQ 25\u201328\n__ / 4\nProperties of Matter & Fluids\nQ 29\u201332\n__ / 4\nThermal Physics & Thermodynamics\nQ 33\u201337\n__ / 5\nOscillations (SHM)\nQ 38\u201341\n__ / 4\nWaves & Sound\nQ 42\u201346\n__ / 5\nElectrostatics\nQ 47\u201351\n__ / 5\nCurrent Electricity\nQ 52\u201356\n__ / 5\nMagnetic Effects & Magnetism\nQ 57\u201361\n__ / 5\nEMI & Alternating Current\nQ 62\u201366\n__ / 5\nRay & Wave Optics\nQ 67\u201372\n__ / 6\nModern Physics\nQ 73\u201377\n__ / 5\nSemiconductor Devices\nQ 78\u201380\n__ / 3\n PAVAN SPEAKS\nYour Success is Our Mission\n \n \u25a0 Subscribe to Pavan Speaks on YouTube for FREE video solutions,\nlive doubt sessions, and EAPCET 2026 last-minute revision classes!\n \n Best of luck for EAPCET 2026 \u2014 You got this! \u25a0"
+        }
+      ]
+    }
+  ],
+  "Chemistry": []
+}
