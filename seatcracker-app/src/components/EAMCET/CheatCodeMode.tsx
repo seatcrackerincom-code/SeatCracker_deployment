@@ -4,6 +4,10 @@ import React, { useState } from "react";
 import styles from "./CheatCodeMode.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 
+import { BlockMath, InlineMath } from "react-katex";
+import "katex/dist/katex.min.css";
+import { AP_DATA, TS_DATA, Topic } from "./CheatCodeData";
+
 interface Props {
   userId: string;
   exam: string;
@@ -12,26 +16,9 @@ interface Props {
 }
 
 type ViewState = 'dashboard' | 'topics' | 'questions' | 'strategies';
+type StateRegion = 'AP' | 'TS';
 
 const SUBJECTS = ['Mathematics', 'Physics', 'Chemistry'];
-
-const PLACEHOLDER_TOPICS = {
-  Mathematics: [
-    { id: 'm1', name: 'Coordinate Geometry', questions: 30, level: 'Hard' },
-    { id: 'm2', name: 'Calculus & Integration', questions: 25, level: 'Hard' },
-    { id: 'm3', name: 'Probability & Statistics', questions: 20, level: 'Intermediate' },
-  ],
-  Physics: [
-    { id: 'p1', name: 'Thermodynamics', questions: 15, level: 'Intermediate' },
-    { id: 'p2', name: 'Optics & Waves', questions: 22, level: 'Hard' },
-    { id: 'p3', name: 'Electromagnetism', questions: 30, level: 'Hard' },
-  ],
-  Chemistry: [
-    { id: 'c1', name: 'Organic Chemistry Basics', questions: 40, level: 'Hard' },
-    { id: 'c2', name: 'Chemical Bonding', questions: 18, level: 'Intermediate' },
-    { id: 'c3', name: 'Atomic Structure', questions: 20, level: 'Intermediate' },
-  ]
-};
 
 const STRATEGIES = [
   { 
@@ -60,6 +47,8 @@ const STRATEGIES = [
 export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
   const [view, setView] = useState<ViewState>('dashboard');
   const [selectedSubject, setSelectedSubject] = useState<string>(SUBJECTS[0]);
+  const [selectedRegion, setSelectedRegion] = useState<StateRegion>(exam as StateRegion || 'AP');
+  const [expandedTopic, setExpandedTopic] = useState<Topic | null>(null);
   const [timeLeft, setTimeLeft] = useState<number>(0);
 
   // Initialize countdown (4 hours from first visit)
@@ -155,6 +144,9 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
     </motion.div>
   );
 
+  const activeData = selectedRegion === 'AP' ? AP_DATA : TS_DATA;
+  const activeTopics = activeData[selectedSubject] || [];
+
   const renderTopics = () => (
     <motion.div 
       className={styles.detailView}
@@ -162,12 +154,27 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -20 }}
     >
+      <div className={styles.regionToggle}>
+        <button 
+          className={`${styles.regionBtn} ${selectedRegion === 'AP' ? styles.regionActive : ''}`}
+          onClick={() => { setSelectedRegion('AP'); setExpandedTopic(null); }}
+        >
+          AP EAPCET
+        </button>
+        <button 
+          className={`${styles.regionBtn} ${selectedRegion === 'TS' ? styles.regionActive : ''}`}
+          onClick={() => { setSelectedRegion('TS'); setExpandedTopic(null); }}
+        >
+          TS EAPCET
+        </button>
+      </div>
+
       <div className={styles.tabs}>
         {SUBJECTS.map(sub => (
           <button 
             key={sub}
             className={`${styles.tab} ${selectedSubject === sub ? styles.active : ''}`}
-            onClick={() => setSelectedSubject(sub)}
+            onClick={() => { setSelectedSubject(sub); setExpandedTopic(null); }}
           >
             {sub}
           </button>
@@ -175,21 +182,63 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
       </div>
 
       <div className={styles.contentList}>
-        {(PLACEHOLDER_TOPICS as any)[selectedSubject].map((topic: any) => (
-          <div key={topic.id} className={styles.listItem}>
-            <div className={styles.itemInfo}>
-              <h3>{topic.name}</h3>
-              <div className={styles.itemMeta}>
-                <span>{topic.questions} Questions</span>
-                <span className={`${styles.badge} ${topic.level === 'Hard' ? styles.hard : styles.medium}`}>
-                  {topic.level}
-                </span>
+        {activeTopics.map((topic: Topic) => (
+          <React.Fragment key={topic.id}>
+            <div 
+              className={`${styles.listItem} ${expandedTopic?.id === topic.id ? styles.expandedItem : ''}`}
+              onClick={() => setExpandedTopic(expandedTopic?.id === topic.id ? null : topic)}
+            >
+              <div className={styles.itemInfo}>
+                <h3>{topic.name}</h3>
+                <div className={styles.itemMeta}>
+                  <span>~{topic.questions} Questions Expected</span>
+                  <span className={`${styles.badge} ${topic.level === 'Hard' ? styles.hard : (topic.level === 'Intermediate' ? styles.medium : styles.easy)}`}>
+                    {topic.level}
+                  </span>
+                </div>
               </div>
+              <svg 
+                width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                style={{ transform: expandedTopic?.id === topic.id ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
             </div>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </div>
+            
+            <AnimatePresence>
+              {expandedTopic?.id === topic.id && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                  className={styles.expandedContent}
+                >
+                  <div className={styles.subtopicsContainer}>
+                    <h4>Key Subtopics</h4>
+                    <div className={styles.subtopicsTags}>
+                      {topic.subtopics.map((sub, i) => (
+                        <span key={i} className={styles.subtopicTag}>{sub}</span>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  <div className={styles.formulasContainer}>
+                    <h4>Cheat Code Formulas</h4>
+                    <div className={styles.formulasGrid}>
+                      {topic.formulas.map((form, i) => (
+                        <div key={i} className={styles.formulaCard}>
+                          <div className={styles.formulaName}>{form.name}</div>
+                          <div className={styles.formulaMath}>
+                            <BlockMath math={form.latex} />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </React.Fragment>
         ))}
       </div>
     </motion.div>
