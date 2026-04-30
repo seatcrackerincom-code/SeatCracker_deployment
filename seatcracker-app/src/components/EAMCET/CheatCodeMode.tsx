@@ -176,9 +176,6 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
             >
               <div className={styles.itemInfo}>
                 <h3>{topic.name}</h3>
-                <div className={styles.itemMeta}>
-                  <span>~{topic.questions} Questions Expected</span>
-                </div>
               </div>
               <svg 
                 width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
