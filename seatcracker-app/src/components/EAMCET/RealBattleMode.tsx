@@ -1077,10 +1077,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
             })}
           </div>
 
-          <div className={styles.resultsFooter}>
-            <button className={styles.returnBtn} onClick={() => setPhase("selection")}>Back to Mock Dashboard</button>
-            <button className={styles.reviewBtn} onClick={() => alert("Detailed response review is coming in the next update!")}>Review Detailed Responses</button>
-          </div>
+
         </div>
       </div>
     );
