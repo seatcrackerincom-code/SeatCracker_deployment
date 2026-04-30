@@ -1309,11 +1309,22 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
     });
 
     const handleMockClick = (mock: typeof mockOptions[0]) => {
+      const mockKeyMap: Record<number, string> = {
+        1: `${prefix} Mock Test 1`,
+        2: `${prefix} Mock Test 2`,
+        3: `${prefix} Mock Test 3`,
+        4: `${prefix} Mock Test 4`,
+        5: `${prefix} Mock Test 5`,
+      };
+
       // Already submitted — show results or waiting screen
       if (mock.isCompleted) {
         if (mock.resultsAvailable) {
-          setSelectedMock(mock.title);
-          setPhase("results" as any);
+          const selected = mockKeyMap[mock.num];
+          if (selected) {
+            setSelectedMock(selected);
+            setPhase("results" as any);
+          }
         } else {
           setAlertModal({
             show: true,
@@ -1365,14 +1376,6 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
       }
 
       // Start the mock (Restrictions ENFORCED)
-      const mockKeyMap: Record<number, string> = {
-        1: `${prefix} Mock Test 1`,
-        2: `${prefix} Mock Test 2`,
-        3: `${prefix} Mock Test 3`,
-        4: `${prefix} Mock Test 4`,
-        5: `${prefix} Mock Test 5`,
-      };
-      
       const selected = mockKeyMap[mock.num];
       if (selected) {
         setSelectedMock(selected);
