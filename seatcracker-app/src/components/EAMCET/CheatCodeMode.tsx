@@ -18,7 +18,7 @@ interface Props {
 type ViewState = 'dashboard' | 'topics' | 'questions' | 'strategies';
 type StateRegion = 'AP' | 'TS';
 
-const SUBJECTS = ['Mathematics', 'Physics', 'Chemistry'];
+// Removed static SUBJECTS, moved inside component to be course-aware
 
 const STRATEGIES = [
   { 
@@ -45,6 +45,9 @@ const STRATEGIES = [
 ];
 
 export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
+  const isAgri = course?.includes("Agriculture");
+  const SUBJECTS = isAgri ? ['Botany', 'Zoology', 'Physics', 'Chemistry'] : ['Mathematics', 'Physics', 'Chemistry'];
+
   const [view, setView] = useState<ViewState>('dashboard');
   const [selectedSubject, setSelectedSubject] = useState<string>(SUBJECTS[0]);
   const selectedRegion: StateRegion = exam?.includes('TS') ? 'TS' : 'AP';
@@ -168,8 +171,18 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
       </div>
 
       <div className={styles.contentList}>
-        {activeTopics.map((topic: Topic) => (
-          <React.Fragment key={topic.id}>
+        {(selectedSubject === 'Botany' || selectedSubject === 'Zoology') ? (
+          <div style={{ textAlign: 'center', padding: '60px 20px', color: '#94a3b8', background: 'rgba(255,255,255,0.03)', borderRadius: '24px', border: '1px dashed rgba(255,255,255,0.1)' }}>
+            <div style={{ fontSize: '48px', marginBottom: '20px' }}>🔍</div>
+            <h3 style={{ color: '#fff', fontSize: '20px', marginBottom: '12px' }}>Analyzing {selectedSubject} Trends...</h3>
+            <p style={{ maxWidth: '400px', margin: '0 auto', lineHeight: '1.6' }}>
+              Please be patient! We are currently analyzing the last 10 years of {selectedSubject} papers to extract the most repeated concepts. Stand by for the update!
+            </p>
+          </div>
+        ) : (
+          activeTopics.map((topic: Topic) => (
+            <React.Fragment key={topic.id}>
+
             <div 
               className={`${styles.listItem} ${expandedTopic?.id === topic.id ? styles.expandedItem : ''}`}
               onClick={() => setExpandedTopic(expandedTopic?.id === topic.id ? null : topic)}
@@ -222,7 +235,8 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
               )}
             </AnimatePresence>
           </React.Fragment>
-        ))}
+        )
+      )}
       </div>
     </motion.div>
   );
