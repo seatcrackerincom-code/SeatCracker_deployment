@@ -113,9 +113,9 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
         onClick={() => handleCardClick('topics')}
       >
         <div className={styles.cardIcon}>📊</div>
-        <h2 className={styles.cardTitle}>Repeated Topics</h2>
+        <h2 className={styles.cardTitle}>Topics & Formulas</h2>
         <p className={styles.cardDesc}>
-          Focus on high-yield topics that appear consistently every year.
+          Focus on high-yield topics and master essential formulas appearing every year.
           <br />
           <strong style={{ color: isLocked ? '#fbbf24' : '#34d399' }}>
             {isLocked ? `🚀 Unlocking in ${formatTime(timeLeft)}` : '✅ Unlocked! Go Practice'}
