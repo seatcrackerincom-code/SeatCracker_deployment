@@ -1,96 +1,307 @@
 {
-    "questions": [
-        {
-            "id": 4,
-            "question": "The angle between asymptotes of rectangular hyperbola is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "90°",
-                "B": "45°",
-                "C": "60°",
-                "D": "30°"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 8,
-            "question": "Foci of hyperbola x²/25 − y²/144 = 1 are at (±c, 0) where c = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "13",
-                "B": "√169 = 13",
-                "C": "12",
-                "D": "5"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 12,
-            "question": "The polar of (x₁,y₁) w.r.t. x²/a² - y²/b² = 1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "xx₁/a² - yy₁/b² = 1",
-                "B": "xx₁/a² + yy₁/b² = 0",
-                "C": "x/x₁ + y/y₁ = 1",
-                "D": "xx₁ - yy₁ = a²"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 16,
-            "question": "For hyperbola, between any two points, the curve is always ______ the chord joining them.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Away from (convex)",
-                "B": "Closer to",
-                "C": "Coincident with",
-                "D": "Inside"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "The chord of contact from (h,k) to hyperbola x²/a²−y²/b²=1 is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "hx/a² − ky/b² = 1",
-                "B": "hx/a² + ky/b² = 1",
-                "C": "hx − ky = 1",
-                "D": "x/h − y/k = 1"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 24,
-            "question": "Property: Slope of Chord joining P(θ₁) and Q(θ₂) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(b/a) [sin((θ₁+θ₂)/2) / cos((θ₁-θ₂)/2)]",
-                "B": "tan((θ₁+θ₂)/2)",
-                "C": "None",
-                "D": "b/a"
-            },
-            "answer": "A",
-            "pyq": false
-        }
-    ]
+  "questions": [
+    {
+      "id": 61,
+      "question": "The area of rectangle formed by asymptotes and lines x=±a, y=±b is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4ab",
+        "B": "2ab",
+        "C": "None",
+        "D": "ab"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "For rectangular hyperbola xy = c², if P is (ct, c/t), normal at P meets curve again at ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(-c/t³, -ct³)",
+        "B": "(ct³, c/t³)",
+        "C": "(-ct, -c/t)",
+        "D": "(c/t, ct)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "The angle between asymptotes of rectangular hyperbola is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "90°",
+        "B": "45°",
+        "C": "60°",
+        "D": "30°"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge hyperbola #2",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 64
+    },
+    {
+      "question": "Advanced Hyperbola question 9 regarding asymptotes and conjugate hyperbola.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 65
+    },
+    {
+      "id": 66,
+      "question": "Length of latus rectum of x²/a² - y²/b² = 1 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2b²/a",
+        "B": "2a²/b",
+        "C": "b²/a",
+        "D": "a²/b"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 67,
+      "question": "The pair of tangents from (x₁,y₁) to hyperbola is given by SS₁ = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "T²",
+        "B": "T",
+        "C": "S₁",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "Condition for lx + my + n = 0 to be tangent is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a²l² - b²m² = n²",
+        "B": "a²l² + b²m² = n²",
+        "C": "al² - bm² = n²",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 69,
+      "question": "Tangent to x²/a² - y²/b² = 1 at (x₁,y₁) is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "xx₁/a² - yy₁/b² = 1",
+        "B": "xx₁/a² + yy₁/b² = 1",
+        "C": "xx₁ - yy₁ = a²",
+        "D": "x/x₁ - y/y₁ = 1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "A circle described on Transverse axis as diameter is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Auxiliary Circle",
+        "B": "Director Circle",
+        "C": "None",
+        "D": "Unit Circle"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 71,
+      "question": "The eccentricity of 9x² - 16y² = 144 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "5/4",
+        "B": "4/5",
+        "C": "√7/4",
+        "D": "3/4"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 72,
+      "question": "Asymptotes are perpendicular for ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Rectangular hyperbola",
+        "B": "Standard hyperbola",
+        "C": "Ellipse",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 73,
+      "question": "Number of tangents from point (1,1) to x²−y²=1 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "∞"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Advanced Hyperbola question 7 regarding asymptotes and conjugate hyperbola.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 74
+    },
+    {
+      "id": 75,
+      "question": "Area of triangle formed by asymptotes of x²/a² - y²/b² = 1 with any tangent equals ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ab",
+        "B": "2ab",
+        "C": "a²b²",
+        "D": "ab/2"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 76,
+      "question": "Radius of director circle of x²/9 - y²/4 = 1 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√5",
+        "B": "√13",
+        "C": "3",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 77,
+      "question": "The product of perpendiculars from any point on hyperbola to asymptotes is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a²b²/(a²+b²)",
+        "B": "ab",
+        "C": "a²b²",
+        "D": "(a²−b²)/(a²+b²)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 78,
+      "question": "For hyperbola x²/4 − y²/9 = 1, the directrix is x = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4/√13",
+        "B": "√13/2",
+        "C": "2√13/13",
+        "D": "13/4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 79,
+      "question": "The locus of midpoints of chords of x²/a² - y²/b² = 1 parallel to y=mx is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y = (b²/a²m)x",
+        "B": "y = (a²/b²m)x",
+        "C": "y = mx",
+        "D": "y = (m/a²)x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Advanced Hyperbola question 11 regarding asymptotes and conjugate hyperbola.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 80
+    }
+  ]
 }

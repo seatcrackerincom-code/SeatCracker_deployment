@@ -1,684 +1,307 @@
 {
-    "questions": [
-        {
-            "id": 3,
-            "question": "Area of a polygon with vertices (x₁,y₁), (x₂,y₂)... is obtained by Shoelace Formula. Integrating piecewise linear functions is equivalent to it. Area = 0.5 * |Σ(x_i*y_{i+1} - x_{i+1}*y_i)|. This is an application of ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Green's Theorem",
-                "B": "Stokes' Theorem",
-                "C": "Mean Value Theorem",
-                "D": "Fundamental Theorem of Algebra"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 3 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": 7
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 17 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": 11
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 19 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": 15
-        },
-        {
-            "question": "|a x b|² + (a.b)² = ______ (Lagrange's Identity).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "|a|² |b|²",
-                "B": "|a+b|²",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 19
-        },
-        {
-            "id": 23,
-            "question": "Mean value of function f(x) on [a,b] is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(1/(b-a)) ∫_a^b f(x) dx",
-                "B": "∫_a^b f(x) dx",
-                "C": "f((a+b)/2)",
-                "D": "(f(a)+f(b))/2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 9 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": 27
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 16 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": 31
-        },
-        {
-            "id": 35,
-            "question": "Range of f(x) = sin x + cos x is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "[−√2, √2]",
-                "B": "[−1,1]",
-                "C": "[0, √2]",
-                "D": "[−2,2]"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 39,
-            "question": "The domain of f(x) = sec x is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "R - {(2n+1)π/2}",
-                "B": "R",
-                "C": "[-1, 1]",
-                "D": "(-π/2, π/2)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 43,
-            "question": "Domain of f(x) = 1/log(1-x) + √(x+2).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "[-2, 1) - {0}",
-                "B": "[-2, 1]",
-                "C": "(-∞, 1)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 47,
-            "question": "The horizontal line test is used to check if a function is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "One-one (Injective)",
-                "B": "Onto (Surjective)",
-                "C": "Continuous",
-                "D": "Periodic"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 51,
-            "question": "Period of f(x) = e^{sin x} is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2π",
-                "B": "π",
-                "C": "Non-periodic",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 55,
-            "question": "Inverse of f(x) = (ax+b)/(cx-a) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "f(x) itself",
-                "B": "1/f(x)",
-                "C": "x",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 59,
-            "question": "The function f(x) = |x| is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "not differentiable at x = 0",
-                "B": "differentiable everywhere",
-                "C": "discontinuous at 0",
-                "D": "not continuous"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 63,
-            "question": "Number of solutions of sin x = x is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1",
-                "B": "3",
-                "C": "Infinite",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If f(x) = x / (x-1) and g(x) = 1 / (x-2), the domain of (f+g)(x) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "R - {1, 2}",
-                "B": "R",
-                "C": "R - {1}",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 67
-        },
-        {
-            "question": "If f(x) = (a^x + a^-x) / 2, then f(x+y) + f(x-y) = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "2 f(x) f(y)",
-                "B": "f(x) f(y)",
-                "C": "2 f(x+y)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 71
-        },
-        {
-            "question": "The inverse of f(x) = 3x - 5 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "(x+5) / 3",
-                "B": "3x + 5",
-                "C": "x / 3 + 5",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 75
-        },
-        {
-            "question": "The range of f(x) = 1 / (2 - cos 3x) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "[1/3, 1]",
-                "B": "(-∞, ∞)",
-                "C": "[0, 1]",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 79
-        },
-        {
-            "id": 83,
-            "question": "f(x) = x/(1+|x|). This function is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "bijective from R to (−1,1)",
-                "B": "not injective",
-                "C": "surjective onto R",
-                "D": "constant"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 87,
-            "question": "f(x) = [x] (greatest integer function). f(2.7) = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "3",
-                "C": "2.7",
-                "D": "−3"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 91,
-            "question": "The range of f(x) = x²/(1+x²) is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "[0,1)",
-                "B": "(0,1)",
-                "C": "[0,1]",
-                "D": "(0,∞)"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 95,
-            "question": "If f(x) = 2x + 3 and g(x) = x², then g(f(1)) = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "25",
-                "B": "7",
-                "C": "5",
-                "D": "49"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 99,
-            "question": "The period of complex function sinh(z) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2πi",
-                "B": "πi",
-                "C": "2π",
-                "D": "π"
-            },
-            "answer": "A"
-        },
-        {
-            "id": 103,
-            "question": "The domain of cosh⁻¹x is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "[1, ∞)",
-                "B": "(−∞, ∞)",
-                "C": "[−1, 1]",
-                "D": "(0, ∞)"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 107,
-            "question": "∫ x^m (1-x)^n dx refers to Beta function, but indefinite integration form relies on ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Successive parts/reduction",
-                "B": "ILATE strictly",
-                "C": "Trig substitution directly",
-                "D": "Logarithmic diff"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 111,
-            "question": "Inverse of a non-singular symmetric matrix is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Symmetric",
-                "B": "Skew-symmetric",
-                "C": "Diagonal",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Lagrange's Mean Value Theorem states there exists c such that f'(c) = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "[f(b) - f(a)] / (b - a)",
-                "B": "0",
-                "C": "[f(b) + f(a)] / 2",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 115
-        },
-        {
-            "question": "Find the range of f(x) = x² - 4x + 7.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "[3, ∞)",
-                "B": "[7, ∞)",
-                "C": "R",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 119
-        },
-        {
-            "id": 123,
-            "question": "For the function f(x) = sin x in [0, 2π], number of points of local maxima = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1",
-                "B": "2",
-                "C": "3",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 127,
-            "question": "To integrate ∫ P(x)/Q(x) dx efficiently using elementary functions, the rational function MUST be ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Expressed as partial fractions after polynomial division if improper",
-                "B": "Expanded via Taylor series",
-                "C": "Substituted with trigonometric terms directly",
-                "D": "Integrated by parts repeatedly"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 131,
-            "question": "If P(x)/Q(x) is an odd continuous rational function, its partial fraction components will exhibit symmetry such that A_i and -A_i pair with roots ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "c and -c",
-                "B": "c and 1/c",
-                "C": "Conjugate",
-                "D": "Positive"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 135,
-            "question": "In how many ways can letters of 'SUCCESS' be arranged s.t. the 3 S's together?",
-            "difficulty": "medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "60",
-                "B": "120",
-                "C": "24",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "The number of strictly increasing functions from {1,2,3} to {1,2,3,4,5} is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "10",
-                "B": "20",
-                "C": "30",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 139
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 4 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": 143
-        },
-        {
-            "id": 147,
-            "question": "Moment generating function helps find ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Moments (Mean, Variance etc.)",
-                "B": "Roots",
-                "C": "Integrals",
-                "D": "Limits"
-            },
-            "answer": "A"
-        },
-        {
-            "question": "Advanced RV question 3 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 151
-        },
-        {
-            "id": 155,
-            "question": "The moment generating function of X is M(t) = E(e^tX). M'(0) = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "E(X)",
-                "B": "E(X²)",
-                "C": "Var(X)",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Advanced RV question 23 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 159
-        },
-        {
-            "question": "Advanced RV question 13 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 163
-        },
-        {
-            "question": "Advanced RV question 24 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 167
-        },
-        {
-            "question": "Advanced RV question 11 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 171
-        },
-        {
-            "id": 175,
-            "question": "Inter-quartile range = Q3 - Q1.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        }
-    ]
+  "questions": [
+    {
+      "id": 41,
+      "question": "Number of functions from set A(3 elements) to set B(2 elements) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "8",
+        "B": "6",
+        "C": "9",
+        "D": "4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "A function f: A -> B is onto if ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Range of f = B",
+        "B": "f(x) = f(y) => x = y",
+        "C": "Every x has a unique y",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 42
+    },
+    {
+      "id": 43,
+      "question": "Which of the following is an even function?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos x",
+        "B": "sin x",
+        "C": "tan x",
+        "D": "x³"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge functions #1",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 44
+    },
+    {
+      "question": "If f(x) = |x| and g(x) = [x], then f(g(-1/2)) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "0.5",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 45
+    },
+    {
+      "id": 46,
+      "question": "Period of f(x) = e^{sin x} is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2π",
+        "B": "π",
+        "C": "Non-periodic",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 47,
+      "question": "The period of f(x) = |sin x| is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π",
+        "B": "2π",
+        "C": "π/2",
+        "D": "4π"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 48,
+      "question": "If f(x) = 2x + 3 and g(x) = x², then g(f(1)) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "25",
+        "B": "7",
+        "C": "5",
+        "D": "49"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 49,
+      "question": "If f(x) = x² and g(x) = √x, then fog(x) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x",
+        "B": "x²",
+        "C": "√x",
+        "D": "x^(1/4)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge functions #7",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 50
+    },
+    {
+      "question": "If A = {1, 2, 3} and B = {4, 5}, the number of functions from A to B is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "8",
+        "B": "9",
+        "C": "6",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 51
+    },
+    {
+      "id": 52,
+      "question": "Domain of f(x) = log(log(log x)) is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(10, ∞)",
+        "B": "(1, ∞)",
+        "C": "(0, ∞)",
+        "D": "(e, ∞)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 53,
+      "question": "f: R → R defined by f(x) = 2x is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "bijective",
+        "B": "injective only",
+        "C": "surjective only",
+        "D": "neither"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 54,
+      "question": "Number of solutions of log x = x - 2 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The inverse of f(x) = 3x - 5 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(x+5) / 3",
+        "B": "3x + 5",
+        "C": "x / 3 + 5",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 55
+    },
+    {
+      "id": 56,
+      "question": "Which of the following is an odd function?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sin x",
+        "B": "cos x",
+        "C": "x²",
+        "D": "e^x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "If f(x) = (ax+b)/(cx+d), f(f(x)) = x. Then which condition holds?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a + d = 0",
+        "B": "a = d",
+        "C": "bc = ad",
+        "D": "a² = d²"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge functions #2",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 58
+    },
+    {
+      "id": 59,
+      "question": "Function f(x) = x/[eˣ - 1] + x/2 + 1 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Even",
+        "B": "Odd",
+        "C": "Neither",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If f(x) = (a^x + a^-x) / 2, then f(x+y) + f(x-y) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2 f(x) f(y)",
+        "B": "f(x) f(y)",
+        "C": "2 f(x+y)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 60
+    }
+  ]
 }

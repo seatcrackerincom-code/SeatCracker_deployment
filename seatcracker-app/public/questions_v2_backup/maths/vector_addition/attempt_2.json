@@ -1,68 +1,36 @@
 {
   "questions": [
     {
-      "question": "If a and b are adjacent sides of a parallelogram, its diagonal is ______.",
+      "question": "Position vector of centroid of triangle with vertices a, b, c is ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "None",
       "options": {
-        "A": "a + b",
-        "B": "a - b",
-        "C": "a x b",
+        "A": "(a+b+c)/3",
+        "B": "a+b+c",
+        "C": "(a+b)/2",
         "D": "None"
       },
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 1
+      "id": 21
     },
     {
-      "question": "Section formula for internal division in ratio m:n is ______.",
+      "question": "Scalar product of a vector with itself is ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "None",
       "options": {
-        "A": "(mb + na) / (m+n)",
-        "B": "(ma + nb) / (m+n)",
-        "C": "None",
+        "A": "|a|²",
+        "B": "0",
+        "C": "|a|",
         "D": "None"
       },
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 2
-    },
-    {
-      "question": "Projection of a vector on an axis is a ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Scalar",
-        "B": "Vector",
-        "C": "Matrix",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 3
-    },
-    {
-      "id": 4,
-      "question": "The magnitude of î+ĵ+k̂ is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "√3",
-        "B": "3",
-        "C": "1",
-        "D": "√2"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
+      "id": 22
     },
     {
       "question": "The sum of the vectors forming a closed polygon is ______.",
@@ -78,7 +46,103 @@
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 5
+      "id": 23
+    },
+    {
+      "question": "A vector with magnitude 1 is called a ______ vector.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Unit",
+        "B": "Zero",
+        "C": "Free",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 24
+    },
+    {
+      "question": "In a regular hexagon ABCDEF, AB + AC + AD + AE + AF = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "3 AD",
+        "B": "6 AB",
+        "C": "2 AD",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 25
+    },
+    {
+      "question": "Direction cosines of a = (1,1,1) are ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(1/√3, 1/√3, 1/√3)",
+        "B": "(1,1,1)",
+        "C": "(1/3, 1/3, 1/3)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 26
+    },
+    {
+      "id": 27,
+      "question": "The value of [î,ĵ,k̂] (scalar triple product) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "−1",
+        "D": "√3"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 28,
+      "question": "If a⃗ = î−ĵ+2k̂ and b⃗ = 2î+ĵ−k̂, then a⃗+2b⃗ = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "5î+ĵ+0k̂",
+        "B": "5î+ĵ",
+        "C": "3î+2ĵ+k̂",
+        "D": "5î+k̂"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 29,
+      "question": "If ABCD is parallelogram with AB⃗ = a⃗ and AD⃗ = b⃗, then AC⃗ = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a⃗+b⃗",
+        "B": "a⃗−b⃗",
+        "C": "b⃗−a⃗",
+        "D": "2a⃗+b⃗"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
     },
     {
       "question": "Vector addition is ______ (a+(b+c) = (a+b)+c).",
@@ -94,231 +158,163 @@
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 6
+      "id": 30
     },
     {
-      "id": 7,
-      "question": "Three vectors (1,2,3),(2,1,−1),(3,k,2) are coplanar when k = ?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "−4",
-        "B": "4",
-        "C": "2",
-        "D": "−2"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 8,
-      "question": "The position vector of centroid of triangle with vertices A(a⃗), B(b⃗), C(c⃗) is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(a⃗+b⃗+c⃗)/3",
-        "B": "(a⃗+b⃗+c⃗)/2",
-        "C": "a⃗+b⃗+c⃗",
-        "D": "(a⃗×b⃗+c⃗)/3"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "question": "A vector whose start and end points coincide is a ______ vector.",
+      "question": "Section formula for external division in ratio m:n is ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "None",
       "options": {
-        "A": "Zero",
-        "B": "Unit",
-        "C": "Proper",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 9
-    },
-    {
-      "question": "Adding a vector to its negative results in ______ vector.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Zero",
-        "B": "Unit",
-        "C": "Same",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 10
-    },
-    {
-      "question": "The direction of a zero vector is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Indeterminate",
-        "B": "Upward",
-        "C": "Downward",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 11
-    },
-    {
-      "question": "Vector addition is ______ (a+b = b+a).",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Commutative",
-        "B": "Associative",
-        "C": "Distributive",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 12
-    },
-    {
-      "question": "Triangle law and Parallelogram law of vector addition are ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Equivalent",
-        "B": "Different",
-        "C": "Opposite",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 13
-    },
-    {
-      "question": "Multiplication of a vector by a negative scalar ______ its direction.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Reverses",
-        "B": "Keeps same",
-        "C": "Makes 90 degrees",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 14
-    },
-    {
-      "id": 15,
-      "question": "If |a⃗+b⃗| = |a⃗−b⃗|, then a⃗ and b⃗ are?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "perpendicular",
-        "B": "parallel",
-        "C": "equal",
-        "D": "anti-parallel"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "question": "If vectors are parallel to the same line, they are ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Collinear",
-        "B": "Coplanar",
-        "C": "Orthogonal",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 16
-    },
-    {
-      "question": "If |a|=|b| and a, b are not equal, they are called ______ vectors.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Equal magnitude",
-        "B": "Equal",
-        "C": "Opposite",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 17
-    },
-    {
-      "question": "Position vector of origin is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "(0,0,0)",
-        "B": "(1,1,1)",
+        "A": "(mb - na) / (m-n)",
+        "B": "(na - mb) / (m-n)",
         "C": "None",
         "D": "None"
       },
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 18
+      "id": 31
     },
     {
-      "question": "Angle between i + j and j + k is ______.",
+      "question": "If a and b are collinear, then ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "None",
       "options": {
-        "A": "60°",
-        "B": "90°",
-        "C": "45°",
+        "A": "a = kb",
+        "B": "a.b = 0",
+        "C": "a x b = I",
         "D": "None"
       },
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 19
+      "id": 32
     },
     {
-      "id": 20,
-      "question": "If a⃗+b⃗+c⃗ = 0⃗, |a⃗|=|b⃗|=|c⃗|=1, then a⃗·b⃗+b⃗·c⃗+c⃗·a⃗ = ?",
+      "question": "The vector a + b where a = (1,2,3) and b = (4,5,6) is ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "−3/2",
-        "B": "3/2",
-        "C": "0",
-        "D": "−1/2"
+        "A": "(5,7,9)",
+        "B": "(3,3,3)",
+        "C": "(1,1,1)",
+        "D": "None"
       },
       "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
+      "pyq": false,
+      "tag": "hard",
+      "id": 33
+    },
+    {
+      "question": "The displacement vector from (x1,y1,z1) to (x2,y2,z2) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(x2-x1)i + (y2-y1)j + (z2-z1)k",
+        "B": "(x1+x2)i",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 34
+    },
+    {
+      "question": "If |a - b| = |a + b|, then the angle between a and b is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "90°",
+        "B": "0°",
+        "C": "180°",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 35
+    },
+    {
+      "question": "The vectors a and -a are ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Collinear",
+        "B": "Orthogonal",
+        "C": "Equal",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 36
+    },
+    {
+      "question": "Sum of two unit vectors can be a unit vector if angle is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "120°",
+        "B": "60°",
+        "C": "0°",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 37
+    },
+    {
+      "question": "If a and b are adjacent sides of a parallelogram, its diagonal is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "a + b",
+        "B": "a - b",
+        "C": "a x b",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 38
+    },
+    {
+      "question": "Topic Specific Challenge vector_addition #2",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 39
+    },
+    {
+      "question": "The unit vector in the direction of a = (3,4) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(0.6, 0.8)",
+        "B": "(3, 4)",
+        "C": "(1, 1)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 40
     }
   ]
 }

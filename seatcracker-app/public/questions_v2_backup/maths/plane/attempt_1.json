@@ -1,459 +1,307 @@
 {
-    "questions": [
-        {
-            "id": 1,
-            "question": "Angle between planes 2x+y\u22122z=5 and 3x\u22126y\u22122z=7 is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "cos\u207b\u00b9(4/21)",
-                "B": "cos\u207b\u00b9(1/3)",
-                "C": "cos\u207b\u00b9(2/7)",
-                "D": "45\u00b0"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 2,
-            "question": "Distance from origin to plane 3x+4y+12z=26 is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "26/13",
-                "C": "13/2",
-                "D": "26"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 3,
-            "question": "Centroid of triangle with plane intercepts (a,0,0),(0,b,0),(0,0,c) is (a/3, b/3, c/3).",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 4,
-            "question": "The equation of plane passing through three points (1,0,0),(0,1,0),(0,0,1) is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x+y+z=1",
-                "B": "x+y+z=3",
-                "C": "x+y+z=0",
-                "D": "xyz=1"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 5,
-            "question": "Angle between line and plane is sin \u03b8 = |al+bm+cn| / (\u221a(a\u00b2+b\u00b2+c\u00b2)\u221a(l\u00b2+m\u00b2+n\u00b2)).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "If n is unit vector in r.n = p, then p is distance from origin.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the matrix A is [[11, 11], [0, 4]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "137",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[121, 165], [0, 16]]. Trace is sum of diagonal elements: 121 + 16.",
-            "id": 7
-        },
-        {
-            "id": 8,
-            "question": "The vector plane r.n = d is equivalent to ax+by+cz=d.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 9,
-            "question": "Image of point P in plane is Q such that plane is perpendicular bisector of PQ.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 10,
-            "question": "Points A and B lie on same side of plane if ax1+by1+cz1+d and ax2+by2+cz2+d have same sign.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 11,
-            "question": "The foot of the perpendicular logic uses parameters t on the normal line.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 12,
-            "question": "Equation of family of planes through intersection of P1=0 and P2=0 is P1 + \u03bbP2 = 0.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 13,
-            "question": "A line is parallel to a plane if its direction is perpendicular to the plane's normal.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 14,
-            "question": "If line is in plane, then al+bm+cn=0 and point on line satisfies plane.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 15,
-            "question": "Distance from point (x1,y1,z1) to plane ax+by+cz+d=0 is |ax1+by1+cz1+d| / \u221a(a\u00b2+b\u00b2+c\u00b2).",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 16,
-            "question": "Two planes are parallel when their normal vectors are?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "parallel",
-                "B": "perpendicular",
-                "C": "equal in magnitude",
-                "D": "at 45\u00b0"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 17,
-            "question": "Equation of plane through (1,2,3) perpendicular to vector (2,\u22121,3) is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2x\u2212y+3z=9",
-                "B": "2x+y+3z=9",
-                "C": "x\u2212y+z=2",
-                "D": "2x\u2212y+3z+9=0"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 18,
-            "question": "Distance between parallel planes ax+by+cz+d1=0 and ax+by+cz+d2=0 is |d1-d2| / \u221a(a\u00b2+b\u00b2+c\u00b2).",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 19,
-            "question": "Equation of plane passing through x-axis is of form by+cz=0.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "Plane parallel to z-axis has equation ax+by+d=0.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(14x) / tan(17x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "14/17",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 14/17.",
-            "id": "plane_21"
-        },
-        {
-            "question": "If the matrix A is [[4, 14], [0, 8]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "80",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[16, 168], [0, 64]]. Trace is sum of diagonal elements: 16 + 64.",
-            "id": "plane_22"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^10 * (1-x)^16 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "28",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "plane_23"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(11x) / tan(17x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "11/17",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 11/17.",
-            "id": "plane_24"
-        },
-        {
-            "question": "If the matrix A is [[19, 15], [0, 7]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "410",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[361, 390], [0, 49]]. Trace is sum of diagonal elements: 361 + 49.",
-            "id": "plane_25"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(11x) / tan(15x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "11/15",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 11/15.",
-            "id": "plane_26"
-        },
-        {
-            "question": "If the vectors a = 10i + 11j and b = 2i - j are perpendicular, find the value of 10*2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "11",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "plane_27"
-        },
-        {
-            "question": "If the vectors a = 4i + 3j and b = 3i - j are perpendicular, find the value of 4*3.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "3",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "plane_28"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^2 * (1-x)^15 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "19",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "plane_29"
-        },
-        {
-            "question": "If the vectors a = 16i + 14j and b = 6i - j are perpendicular, find the value of 16*6.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "14",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "plane_30"
-        }
-    ]
+  "questions": [
+    {
+      "id": 1,
+      "question": "Distance between parallel planes ax+by+cz+d1=0 and ax+by+cz+d2=0 is |d1-d2| / √(a²+b²+c²).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "The condition for points (0,0,0),(1,1,0),(0,1,1),(1,0,1) to be coplanar is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "they are coplanar — check: scalar triple product = 0",
+        "B": "not coplanar",
+        "C": "need more info",
+        "D": "they form a tetrahedron"
+      },
+      "answer": "B",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge plane #1",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "question": "Angle between line and plane is sin θ = |al+bm+cn| / (√(a²+b²+c²)√(l²+m²+n²)).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The equation of the plane passing through the intersection of the planes x + y + z = 6 and 2x + 3y + 4z + 5 = 0 and the point (1,1,1) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "20x + 23y + 26z - 69 = 0",
+        "B": "x + y + z = 3",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 5
+    },
+    {
+      "question": "Topic Specific Challenge plane #2",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 6
+    },
+    {
+      "question": "The image of the point (1,3,4) in the plane 2x - y + z + 3 = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(-3, 5, 2)",
+        "B": "(3, -5, -2)",
+        "C": "(-1, 0, 0)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 7
+    },
+    {
+      "question": "The foot of the perpendicular from the origin to the plane 2x + 3y - z + 14 = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(-2, -3, 1)",
+        "B": "(2, 3, -1)",
+        "C": "(0, 0, 0)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 8
+    },
+    {
+      "question": "Topic Specific Challenge plane #0",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "question": "Three planes x=1, y=1, z=1 have common?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "one point (1,1,1)",
+        "B": "no intersection",
+        "C": "a line",
+        "D": "infinite points"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Equation of the plane passing through (1,2,3) and parallel to the plane 3x + 4y - 5z = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3x + 4y - 5z + 4 = 0",
+        "B": "3x + 4y - 5z - 4 = 0",
+        "C": "x + y + z = 6",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 11
+    },
+    {
+      "question": "Equation of the plane passing through (a,0,0), (0,b,0), (0,0,c) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x/a + y/b + z/c = 1",
+        "B": "ax + by + cz = 1",
+        "C": "x+y+z = a+b+c",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 12
+    },
+    {
+      "id": 13,
+      "question": "If line is in plane, then al+bm+cn=0 and point on line satisfies plane.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 14,
+      "question": "Foot of perpendicular from (1,2,3) to plane x+y+z=9 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(3,4,5) — since (1+2λ=3 means λ=2, so (1+2,2+2,3+2)=(3,4,5))",
+        "B": "(2,3,4)",
+        "C": "(1,2,6)",
+        "D": "(2,3,4)"
+      },
+      "answer": "D",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 15,
+      "question": "Two parallel planes x+2y+2z+3=0 and x+2y+2z+k=0 are at distance 2. find k.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "9 or -3",
+        "B": "5",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If the planes 2x + 3y + kz = 0 and x + 2y + 3z = 0 are perpendicular, then k = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-8/3",
+        "B": "8/3",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 16
+    },
+    {
+      "question": "The projection of the line segment joining (1,2,3) and (4,5,6) on the plane x + y + z = 1 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√6",
+        "B": "3√2",
+        "C": "6",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false,
+      "tag": "hard",
+      "id": 17
+    },
+    {
+      "id": 18,
+      "question": "The angle between line (x−1)/2=(y+1)/3=(z−2)/6 and plane x+y+z=5 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sin⁻¹(11/(7√3))",
+        "B": "cos⁻¹(11/7√3)",
+        "C": "sin⁻¹(11/21)",
+        "D": "30°"
+      },
+      "answer": "C",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 19,
+      "question": "Image of (0,0,0) in plane x+y+z=1 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(2/3, 2/3, 2/3)",
+        "B": "(1, 1, 1)",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The points (1,1,1) and (-3,0,1) are on the ______ side of the plane 3x + 4y - 12z + 13 = 0.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Same",
+        "B": "Opposite",
+        "C": "On the plane",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 20
+    }
+  ]
 }

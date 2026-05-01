@@ -1,3 +1,305 @@
 {
-    "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "question": "The equation of tangent to y = x² at (1,1) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y = 2x − 1",
+        "B": "y = x + 1",
+        "C": "y = 2x + 1",
+        "D": "y = x − 1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 2,
+      "question": "Slope of normal to y=cos(x) at x=π/2 is -1? No, derivative is -sin(π/2)=-1, so slope of normal is 1.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 3,
+      "question": "If curves y=ax and y=bx intersect at angle θ, then tan θ = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|(log a - log b) / (1 + log a log b)|",
+        "B": "log(a-b)",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 4,
+      "question": "Point on y = x² where tangent is parallel to y = 4x+5 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(2, 4)",
+        "B": "(1, 1)",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The angle between two curves at a point of intersection is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "arctan(|(m1 - m2) / (1 + m1 m2)|)",
+        "B": "arctan(m1 - m2)",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 5
+    },
+    {
+      "question": "Topic Specific Challenge tangents_and_normals #3",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "question": "Find point on y²=4x where tangent is parallel to line y=x.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1, 2)",
+        "B": "(4, 4)",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The intercept of tangent on x-axis is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "x1 - y1/m",
+        "B": "y1 - x1 m",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "question": "Two curves r1=f(theta) and r2=g(theta) intersect orthogonally if dr1/dtheta * dr2/dtheta product condition? (In complex polar).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Logarithmic condition",
+        "B": "m1m2=-1",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 10,
+      "question": "Angle between two curves with slopes m1, m2 is tan θ = |(m1-m2)/(1+m1m2)|.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 11,
+      "question": "Slope of normal in parametric x=at², y=2at is -t.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 12,
+      "question": "Length of normal is |y√(1+m²)|.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 13,
+      "question": "For the curve y = xⁿ, ratio of length of subtangent to length of subnormal at (x,y) = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x²/n",
+        "B": "n/x²",
+        "C": "y²/n²",
+        "D": "1/n"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 14,
+      "question": "Slope of tangent to x=a(t+sin t), y=a(1-cos t) at t=π/2 is 1.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 15,
+      "question": "If the tangent at point P on curve y = x³ − x meets the curve again at Q, and P=(1,0), then Q is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(−2, −6)",
+        "B": "(2, 6)",
+        "C": "(0,0)",
+        "D": "(−1, 0)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 16,
+      "question": "Condition for x^m y^n = k to have constant sub-tangent? (No, sub-tangent is -nx/m).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "False",
+        "B": "True",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 17,
+      "question": "The angle of intersection of y = x² and y = x³ at origin is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0°",
+        "B": "45°",
+        "C": "90°",
+        "D": "30°"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge tangents_and_normals #2",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 18
+    },
+    {
+      "question": "The equation of tangent at (x1, y1) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "y - y1 = m(x - x1)",
+        "B": "y = mx + c",
+        "C": "y - y1 = -1/m(x - x1)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 19
+    },
+    {
+      "id": 20,
+      "question": "If tangent to √x + √y = √a at (x1, y1) makes intercepts p, q, then p+q = a.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
 }

@@ -1,281 +1,308 @@
 {
-    "questions": [
-        {
-            "id": 2,
-            "question": "Derivative of ∫_0^x e^{t^2} dt with respect to x is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "e^{x^2}",
-                "B": "2x e^{x^2}",
-                "C": "e^x",
-                "D": "e^{2x}"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "If f(x) = x^3 - 2x^2 + x - 1, then f'(x) at x = 1 is",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "-2",
-                "B": "-1",
-                "C": "0",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "medium"
-        },
-        {
-            "id": 10,
-            "question": "If f(x) = log_x (log x), then f'(e) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/e",
-                "B": "1",
-                "C": "0",
-                "D": "e"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 14,
-            "question": "Derivative of sec⁻¹ x is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1 / (|x|√(x² - 1))",
-                "B": "1 / √(1-x²)",
-                "C": "1 / (1+x²)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 18,
-            "question": "Derivative of cot⁻¹ x is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-1 / (1 + x²)",
-                "B": "1 / (1 + x²)",
-                "C": "-1 / √(1 - x²)",
-                "D": "-cosec² x"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 22,
-            "question": "The derivative of tan⁻¹( (√(1 + x²) - 1) / x ) with respect to tan⁻¹ x is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/2",
-                "B": "1",
-                "C": "2",
-                "D": "1/4"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 26,
-            "question": "The derivative of aˣ log_a x is ______ (product rule).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(aˣ log a) log_a x + aˣ / (x log a)",
-                "B": "aˣ / x",
-                "C": "aˣ log a",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 30,
-            "question": "If f(x) = |cos x|, then f'(π/2) = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "−1",
-                "B": "1",
-                "C": "0",
-                "D": "does not exist"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 34,
-            "question": "The derivative d/dx [cot⁻¹(√(1 + x²) + x)] is equal to ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-1 / (2(1 + x²))",
-                "B": "1 / (2(1 + x²))",
-                "C": "-1 / (1 + x²)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "The derivative of f(g(x)) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "f'(g(x)) g'(x)",
-                "B": "f'(g(x))",
-                "C": "f'(x) g'(x)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 38
-        },
-        {
-            "id": 42,
-            "question": "Rolle's theorem condition not satisfied by f(x) = |x| on [−1,1] because?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "not differentiable at x=0",
-                "B": "not continuous",
-                "C": "f(−1)≠f(1)",
-                "D": "f'(c)≠0"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Derivative of tan⁻¹ x is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1 / (1 + x²)",
-                "B": "1 / (1 - x²)",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 46
-        },
-        {
-            "id": 50,
-            "question": "The derivative of cos⁻¹(4x³ - 3x) with respect to x is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-3 / √(1 - x²)",
-                "B": "3 / √(1 - x²)",
-                "C": "-1 / √(1 - x²)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": true
-        },
-        {
-            "id": 54,
-            "question": "The derivative of tanh⁻¹(x) for |x| < 1 is d/dx[tanh⁻¹(x)] = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1 / (1 - x²)",
-                "B": "1 / (x² - 1)",
-                "C": "1 / (1 + x²)",
-                "D": "1 / √(1 - x²)"
-            },
-            "answer": "A"
-        },
-        {
-            "question": "A function is concave upward if its second derivative is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Positive",
-                "B": "Negative",
-                "C": "Zero",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 58
-        },
-        {
-            "question": "The derivative of an increasing function is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Non-negative",
-                "B": "Non-positive",
-                "C": "Zero",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 62
-        },
-        {
-            "question": "The second derivative represents the ______ of the curve.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Concavity",
-                "B": "Slope",
-                "C": "Intercept",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 66
-        },
-        {
-            "id": 70,
-            "question": "Derivative of implicit f(x,y)=0 is - (∂f/∂x) / (∂f/∂y).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        }
-    ]
+  "questions": [
+    {
+      "id": 21,
+      "question": "Rolle's theorem condition not satisfied by f(x) = |x| on [−1,1] because?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "not differentiable at x=0",
+        "B": "not continuous",
+        "C": "f(−1)≠f(1)",
+        "D": "f'(c)≠0"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 22,
+      "question": "If y = tan⁻¹((√(1 + x²) + √(1 - x²)) / (√(1 + x²) - √(1 - x²))), then dy/dx is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-x / √(1 - x⁴)",
+        "B": "x / √(1 - x⁴)",
+        "C": "1 / √(1 - x⁴)",
+        "D": "-1 / (1 + x⁴)"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 23,
+      "question": "If y = tan⁻¹(sin x / (1+cos x)), then dy/dx is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/2",
+        "B": "1",
+        "C": "cos x",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 24,
+      "question": "Derivative of log x base 10 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / (x log 10)",
+        "B": "1/x",
+        "C": "(log 10) / x",
+        "D": "10/x"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 25,
+      "question": "If y = log_a x, then dy/dx is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / (x log a)",
+        "B": "1/x",
+        "C": "log a / x",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 26,
+      "question": "If xy = eˣ⁻ʸ, then dy/dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(y(x−1))/(x(1+y))",
+        "B": "(y/x)·(x+1)/(y−1)",
+        "C": "log(xy)",
+        "D": "(1+log y)²/log y"
+      },
+      "answer": "D",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 27,
+      "question": "The derivative of cos⁻¹(4x³ - 3x) with respect to x is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-3 / √(1 - x²)",
+        "B": "3 / √(1 - x²)",
+        "C": "-1 / √(1 - x²)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": true
+    },
+    {
+      "id": 28,
+      "question": "If y = tan x + sec x, then dy/dx is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sec x (sec x + tan x)",
+        "B": "sec²x",
+        "C": "tan²x",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 29,
+      "question": "If f(x) = |cos x|, then the derivative f'(3π/4) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / √2",
+        "B": "-1 / √2",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "If f(x) = (x³ + 2x² + 3x + 4)¹⁰, then the value of f'(0) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "30 · 4⁹",
+        "B": "10 · 4⁹",
+        "C": "3 · 4⁹",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 31,
+      "question": "Derivative of log₁₀(x) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/(x·ln 10)",
+        "B": "ln x/x",
+        "C": "1/x",
+        "D": "log₁₀e/x"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The derivative of log |x| is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1/x",
+        "B": "-1/x",
+        "C": "1/|x|",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 32
+    },
+    {
+      "id": 33,
+      "question": "If y = sin⁻¹(2x√(1−x²)), then dy/dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2/√(1−x²)",
+        "B": "1/√(1−x²)",
+        "C": "4x/√(1−x²)",
+        "D": "2x"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 34,
+      "question": "If y = (x + 1) / (x - 1), then dy/dx at x = 0 is",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "-1/2",
+        "D": "1/2"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "medium"
+    },
+    {
+      "id": 35,
+      "question": "The derivative d/dx [cot⁻¹(√(1 + x²) + x)] is equal to ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1 / (2(1 + x²))",
+        "B": "1 / (2(1 + x²))",
+        "C": "-1 / (1 + x²)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge differentiation #0",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 36
+    },
+    {
+      "id": 37,
+      "question": "The derivative of tan⁻¹( (1+x)/(1-x) ) is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / (1 + x²)",
+        "B": "2 / (1 + x²)",
+        "C": "1 / (1 - x²)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "Derivative of f(x) = x|x| at x = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "Undefined",
+        "C": "1",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If y = log(sec x + tan x), then dy/dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "sec x",
+        "B": "tan x",
+        "C": "sec x + tan x",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 39
+    },
+    {
+      "id": 40,
+      "question": "If y = cos(m cos⁻¹x), then (1-x²)y'' - xy' + m²y is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "m²",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
 }

@@ -1,174 +1,164 @@
 {
   "questions": [
     {
-      "id": 1,
-      "question": "If p + iq is a root of x² + ax + b = 0, then q = ______.",
+      "id": 21,
+      "question": "The maximum value of the expression -ax² + bx + c (a > 0) occurs at x = ______.",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "√(4b - a²) / 2",
-        "B": "√(a² - 4b) / 2",
-        "C": "b/a",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 2,
-      "question": "The minimum value of ax² + bx + c (a > 0) is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "-D / 4a",
+        "A": "b / 2a",
         "B": "-b / 2a",
+        "C": "D / 4a",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If α, β are roots of ax² + bx + c = 0, then the sum of roots of ax² + bpx + cp² = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "p(α+β)",
+        "B": "α+β",
+        "C": "p²(α+β)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 22
+    },
+    {
+      "question": "If the equations x² + ax + b = 0 and x² + bx + a = 0 have a common root, then a + b = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "-1",
+        "B": "1",
         "C": "0",
-        "D": "c"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 3,
-      "question": "If α, β are roots of x² - 3x + 1 = 0, find α⁴ + β⁴.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "47",
-        "B": "81",
-        "C": "79",
         "D": "None"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard",
+      "id": 23
     },
     {
-      "id": 4,
-      "question": "If α,β are roots of x²−px+q=0, then α/β + β/α = ?",
+      "question": "If α+β=5 and αβ=6, then α²-β² (where α>β) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "5",
+        "B": "1",
+        "C": "25",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 24
+    },
+    {
+      "question": "If α and β are roots of ax² + bx + c = 0, then the equation whose roots are 1/α and 1/β is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "cx² + bx + a = 0",
+        "B": "ax² - bx + c = 0",
+        "C": "cx² - bx + a = 0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 25
+    },
+    {
+      "id": 26,
+      "question": "The roots of ax² + bx + c = 0 are rational if a,b,c are rational and D is a ______.",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "(p²−2q)/q",
-        "B": "p²/q − 2",
-        "C": "Both A and B",
-        "D": "(p²+2q)/q"
+        "A": "Perfect Square",
+        "B": "Positive number",
+        "C": "Negative number",
+        "D": "Prime number"
       },
-      "answer": "C",
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 27,
+      "question": "If the roots of ax² + bx + c = 0 are in ratio m:n, then ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "mn b² = (m+n)² ac",
+        "B": "b² = ac",
+        "C": "m/n = b/a",
+        "D": "m+n = -b"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The condition that one root of ax² + bx + c = 0 is square of the other is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "b³ + a²c + ac² = 3abc",
+        "B": "b³ + a²c + ac² = 0",
+        "C": "a + c + b = 0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 28
+    },
+    {
+      "question": "Difference of the roots of x² - px + q = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "√(p² - 4q)",
+        "B": "p² - 4q",
+        "C": "p - q",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 29
+    },
+    {
+      "id": 30,
+      "question": "The discriminant of 3x²−7x+2=0 is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "25",
+        "B": "49",
+        "C": "73",
+        "D": "5"
+      },
+      "answer": "A",
       "pyq": true,
       "tag": "pyq"
     },
     {
-      "id": 5,
-      "question": "The values of x satisfying x⁴−6x²+9=0 are?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "±√3",
-        "B": "±3",
-        "C": "±1,±3",
-        "D": "0,±√3"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 6,
-      "question": "For what values of a, x² - (a+3)x + (a+2) = 0 has both roots positive?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "a > -2",
-        "B": "a < -3",
-        "C": "a = 0",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 7,
-      "question": "Intersection of y = x² and y = x + 2 is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "x = 2, -1",
-        "B": "x = 1, -2",
-        "C": "x = 0",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 8,
-      "question": "If α, β are roots of x² - px + q = 0, find equation with roots 1/α, 1/β.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "qx² - px + 1 = 0",
-        "B": "qx² + px + 1 = 0",
-        "C": "x² - qx + p = 0",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 9,
-      "question": "Condition for roots of x² + ax + b = 0 to be rational if a, b are integers?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "a² - 4b is a perfect square",
-        "B": "a² - 4b > 0",
-        "C": "none",
-        "D": "perfect cube"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 10,
-      "question": "Location of roots: x² - (m-3)x + m = 0 has both roots greater than 2 if ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "m belongs to (9, 10]",
-        "B": "m > 9",
-        "C": "m < 1",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 11,
-      "question": "If α, β are roots of ax² + bx + c = 0, equation with roots kα, kβ is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "ax² + kbx + k²c = 0",
-        "B": "k²ax² + kbx + c = 0",
-        "C": "ax² + bx/k + c/k² = 0",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 12,
+      "id": 31,
       "question": "Sum of roots of x⁴−3x³+2x²+4x−8=0 is?",
       "difficulty": "Medium",
       "hasDiagram": false,
@@ -184,53 +174,7 @@
       "tag": "pyq"
     },
     {
-      "id": 13,
-      "question": "If the roots of ax² + bx + c = 0 are in ratio m:n, then ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "mn b² = (m+n)² ac",
-        "B": "b² = ac",
-        "C": "m/n = b/a",
-        "D": "m+n = -b"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 14,
-      "question": "If α and β are roots of x²−x−1=0, then α⁴+β⁴ = ?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "7",
-        "B": "5",
-        "C": "3",
-        "D": "9"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 15,
-      "question": "Number of real roots of |x|² + 5|x| + 6 = 0 is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "0",
-        "B": "2",
-        "C": "4",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 16,
+      "id": 32,
       "question": "If roots of x² - px + q = 0 are tan 30 and tan 15, find p+q.",
       "difficulty": "Hard",
       "hasDiagram": false,
@@ -245,52 +189,102 @@
       "pyq": false
     },
     {
-      "id": 17,
-      "question": "In ax² + bx + c = 0, if a and c have opposite signs, then roots are ______.",
+      "id": 33,
+      "question": "If α, β are roots of x² - px + q = 0, find equation with roots 1/α, 1/β.",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "Real and of opposite signs",
-        "B": "Imaginary",
-        "C": "Equal",
-        "D": "Positive"
+        "A": "qx² - px + 1 = 0",
+        "B": "qx² + px + 1 = 0",
+        "C": "x² - qx + p = 0",
+        "D": "None"
       },
       "answer": "A",
       "pyq": false
     },
     {
-      "id": 18,
-      "question": "Number of real roots of x² + |x| - 6 = 0 is ______.",
+      "id": 34,
+      "question": "If x² − bx + c = 0 has two consecutive integer roots, then b² − 4c = ?",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "2",
+        "A": "1",
         "B": "4",
         "C": "0",
-        "D": "1"
+        "D": "b"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": true,
+      "tag": "pyq"
     },
     {
-      "id": 19,
-      "question": "The sum of coefficients of the equation (a-b)x² + (b-c)x + (c-a) = 0 is zero. Therefore one root is ______.",
+      "id": 35,
+      "question": "If α,β are roots of x²−px+q=0, then α/β + β/α = ?",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "1",
-        "B": "0",
-        "C": "-1",
-        "D": "c-a"
+        "A": "(p²−2q)/q",
+        "B": "p²/q − 2",
+        "C": "Both A and B",
+        "D": "(p²+2q)/q"
       },
-      "answer": "A",
-      "pyq": false
+      "answer": "C",
+      "pyq": true,
+      "tag": "pyq"
     },
     {
-      "id": 20,
+      "id": 36,
+      "question": "The roots of equation 2x² − 7x + 3 = 0 are?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3 and 1/2",
+        "B": "2 and 3/2",
+        "C": "1 and 3/2",
+        "D": "3/2 and 2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 37,
+      "question": "If equation x²+2(k+2)x+9k=0 has equal roots, then k = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 or 4",
+        "B": "2 or 3",
+        "C": "1 or −4",
+        "D": "4 or −4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "If the roots of ax² + bx + c = 0 are in the ratio m:n, then ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "mnb² = ac(m+n)²",
+        "B": "mna² = bc(m+n)²",
+        "C": "mnc² = ab(m+n)²",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 38
+    },
+    {
+      "id": 39,
       "question": "The number of real roots of x²+|x|+1=0 is?",
       "difficulty": "Medium",
       "hasDiagram": false,
@@ -304,6 +298,22 @@
       "answer": "A",
       "pyq": true,
       "tag": "pyq"
+    },
+    {
+      "question": "If the roots of (b-c)x² + (c-a)x + (a-b) = 0 are equal, then a, b, c are in ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "AP",
+        "B": "GP",
+        "C": "HP",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 40
     }
   ]
 }

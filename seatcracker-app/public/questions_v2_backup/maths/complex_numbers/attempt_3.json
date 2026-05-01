@@ -1,310 +1,316 @@
 {
-    "questions": [
-        {
-            "id": 1,
-            "question": "If z\u2081 = 1+2i and z\u2082 = 3+5i, then Re(z\u2081z\u2082) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-7",
-                "B": "13",
-                "C": "11",
-                "D": "3"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the vectors a = 19i + 6j and b = 6i - j are perpendicular, find the value of 19*6.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "6",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": 2
-        },
-        {
-            "id": 3,
-            "question": "If 1, \u03c9, \u03c9\u00b2 are cube roots of unity, then 1/(2+\u03c9) + 1/(1+2\u03c9) = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u22121",
-                "B": "0",
-                "C": "1",
-                "D": "\u03c9"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 4,
-            "question": "Real part of 1/(1 \u2212 cos \u03b8 + i sin \u03b8) is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/2",
-                "B": "0",
-                "C": "cos \u03b8",
-                "D": "1/(2 sin \u03b8)"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 5,
-            "question": "If z\u2081=2+3i and z\u2082=3\u22122i, then |z\u2081\u00b7z\u2082| = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u221a169 = 13",
-                "B": "\u221a13",
-                "C": "5",
-                "D": "12"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 6,
-            "question": "The square root of i is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u00b1(1+i)/\u221a2",
-                "B": "\u00b1(1-i)/\u221a2",
-                "C": "i",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 7,
-            "question": "Find the largest value of |z| if |z - 4/z| = 2.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u221a5 + 1",
-                "B": "\u221a5 - 1",
-                "C": "\u221a3 + 1",
-                "D": "2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 8,
-            "question": "The locus of points z satisfying arg(z) = \u03c0/4 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Ray y = x, x > 0",
-                "B": "Line y = x",
-                "C": "Circle",
-                "D": "Parabola"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 9,
-            "question": "If |z-3+2i| = 4, the locus of z is a circle with center ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(3, -2)",
-                "B": "(-3, 2)",
-                "C": "(3, 2)",
-                "D": "(4, 0)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 10,
-            "question": "If arg(z) = \u03c0/4 and |z| = \u221a2, then z = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1+i",
-                "B": "1\u2212i",
-                "C": "i+1/\u221a2",
-                "D": "\u221a2 + i"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "If the matrix A is [[15, 15], [0, 4]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "241",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[225, 285], [0, 16]]. Trace is sum of diagonal elements: 225 + 16.",
-            "id": 11
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^3 * (1-x)^3 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "8",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 12
-        },
-        {
-            "id": 13,
-            "question": "The amplitude of -1 - i\u221a3 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-2\u03c0/3",
-                "B": "2\u03c0/3",
-                "C": "\u03c0/3",
-                "D": "-\u03c0/3"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 14,
-            "question": "If the area of the triangle on the Argand plane formed by the points z, iz, and z+iz is 50, then |z| is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "10",
-                "B": "5",
-                "C": "\u221a50",
-                "D": "20"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 15,
-            "question": "The conjugate of (2+3i)/(3\u22124i) is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(6\u221217i)/25",
-                "B": "(6+17i)/25",
-                "C": "(\u22126+17i)/25",
-                "D": "(\u22126\u221217i)/25"
-            },
-            "answer": "B",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 16,
-            "question": "The locus of z satisfying Re(z\u00b2) = 0 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Line y = \u00b1x",
-                "B": "Circle",
-                "C": "Parabola",
-                "D": "Hyperbola"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 17,
-            "question": "Coefficient of x\u207f in (1+x+x\u00b2+... ) is always associated with binomial expansion of ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(1-x)\u207b\u00b9",
-                "B": "(1+x)\u207b\u00b9",
-                "C": "(1-x)\u207b\u00b2",
-                "D": "(1+x)\u207b\u00b2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 18,
-            "question": "If |z-2i| = |z+2i|, the locus of z is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Real axis",
-                "B": "Imaginary axis",
-                "C": "Line y = 2",
-                "D": "Circle"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 19,
-            "question": "The value of arg(i) + arg(-i) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0",
-                "B": "\u03c0",
-                "C": "\u03c0/2",
-                "D": "2\u03c0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "Simplified value of \u03c9\u00b9\u2070 + \u03c9\u00b2\u2070 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-1",
-                "B": "1",
-                "C": "0",
-                "D": "\u03c9"
-            },
-            "answer": "A",
-            "pyq": false
-        }
-    ]
+  "questions": [
+    {
+      "id": 41,
+      "question": "If z₁, z₂, z₃ are vertices of an equilateral triangle inscribed in the circle |z| = 2, and z₁ = 1 + i√3, then z₂ is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-2",
+        "B": "1 - i√3",
+        "C": "2",
+        "D": "i"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 42,
+      "question": "What is the multiplicative inverse of 3 + 4i?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3/25 - 4/25 i",
+        "B": "3/25 + 4/25 i",
+        "C": "3 - 4i",
+        "D": "1/3 + 1/4 i"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "Finding the maximum value of |z| given |z - 3/z| = 2 leads to |z| = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√3 + 1",
+        "B": "√3 - 1",
+        "C": "2",
+        "D": "√5 + 1"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 44,
+      "question": "The principal argument of (−1 − i) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "−3π/4",
+        "B": "3π/4",
+        "C": "−π/4",
+        "D": "5π/4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 45,
+      "question": "Triangle Inequality states that |z₁ + z₂| is ______ |z₁| + |z₂|.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "≤",
+        "B": "≥",
+        "C": "=",
+        "D": "<"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "If ω is a complex cube root of unity, then the value of (1+ω)(1+ω²)(1+ω⁴)(1+ω⁸) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "ω",
+        "D": "9"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 47,
+      "question": "The locus of z satisfying |z-i| + |z+i| = 4 is represented by the equation ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x²/3 + y²/4 = 1",
+        "B": "x²/4 + y²/3 = 1",
+        "C": "x²/16 + y²/15 = 1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 48,
+      "question": "For nth roots of unity, the roots lie on a ______ of radius 1.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Circle",
+        "B": "Parabola",
+        "C": "Straight Line",
+        "D": "Hyperbola"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "Coefficient of xⁿ in (1+x+x²+... ) is always associated with binomial expansion of ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1-x)⁻¹",
+        "B": "(1+x)⁻¹",
+        "C": "(1-x)⁻²",
+        "D": "(1+x)⁻²"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Number of complex numbers z with |z|=1 and z² is real is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4",
+        "B": "2",
+        "C": "6",
+        "D": "8"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 51,
+      "question": "The sum of the roots of (z+1)ⁿ = (z-1)ⁿ is always ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "n",
+        "C": "n-1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 52,
+      "question": "Real part of 1/(1 − cos θ + i sin θ) is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/2",
+        "B": "0",
+        "C": "cos θ",
+        "D": "1/(2 sin θ)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 53,
+      "question": "The square roots of (−7 + 24i) are?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "±(3 + 4i)",
+        "B": "±(4 + 3i)",
+        "C": "±(3 − 4i)",
+        "D": "±(4 − 3i)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 54,
+      "question": "The value of the sum Σ_{k=1}^{10} (sin(2kπ/11) + i cos(2kπ/11)) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-i",
+        "B": "i",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "question": "The area bounded by y² = 9ax and its latus rectum is ______.",
+      "options": {
+        "A": "8/3 a²",
+        "B": "4/3 a²",
+        "C": "2/3 a²",
+        "D": "None"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "id": 55
+    },
+    {
+      "id": 56,
+      "question": "Argument of (1 + i√3) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/3",
+        "B": "2π/3",
+        "C": "π/6",
+        "D": "5π/6"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Evaluate the integral of sinh(5x) cosh(9x) dx.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "options": {
+        "A": "Calculated term",
+        "B": "Calculated term",
+        "C": "Calculated term",
+        "D": "Calculated term"
+      },
+      "answer": "A",
+      "hint": "Use the product to sum identities for hyperbolic functions.",
+      "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
+      "id": 57
+    },
+    {
+      "id": 58,
+      "question": "The number of real solutions of the equation |z|² - 2iz + (2i-1) = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "2",
+        "D": "Infinite"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 59,
+      "question": "If z₁, z₂, z₃ are roots of z³ - 3z² + 3z + 7 = 0, then the centroid of the triangle formed by them is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "i",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 60,
+      "question": "If z = (1+i)/(1−i), then z⁴ = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "−1",
+        "C": "i",
+        "D": "−i"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    }
+  ]
 }

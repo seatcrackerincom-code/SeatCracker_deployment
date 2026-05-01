@@ -1,244 +1,51 @@
 {
   "questions": [
     {
-      "id": 1,
-      "question": "The area of the triangle formed by the tangent to the curve xy = a² at the point (x₁, y₁) and the coordinate axes is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2a²",
-        "B": "a²",
-        "C": "a² / 2",
-        "D": "4a²"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 2,
-      "question": "The area enclosed between the curve y = log(x + e) and the coordinate axes is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1",
-        "B": "e",
-        "C": "e - 1",
-        "D": "log e"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 3,
-      "question": "Monte Carlo method evaluates complex integrals by ______ within the bounding box to estimate area.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Random sampling points",
-        "B": "Dividing exactly into trapezoids",
-        "C": "Polynomial fitting",
-        "D": "Differentiation"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 4,
-      "question": "The area of the loop of the curve ay² = x²(a - x) is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "8a² / 15",
-        "B": "4a² / 15",
-        "C": "16a² / 15",
-        "D": "a² / 15"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 5,
-      "question": "If f(x) is periodic with period T, then ∫ from a to a+nT f(x)dx = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "n * ∫ from 0 to T f(x)dx",
-        "B": "∫ from 0 to T f(x)dx",
-        "C": "n * f(T)",
-        "D": "0"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Area of the region bounded by x²+y²≤4, x+y≥0 is?",
-      "difficulty": "hard",
-      "options": {
-        "A": "2π",
-        "B": "π",
-        "C": "4π",
-        "D": "π/2"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "pyq": true,
-      "id": 6
-    },
-    {
-      "id": 7,
-      "question": "The area of the region bounded by y = x|x|, x-axis and the ordinates x = -1 and x = 1 is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2/3",
-        "B": "1/3",
-        "C": "0",
-        "D": "1"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 8,
-      "question": "The 'Theorem of Pappus' links the area of a generating curve A to the volume of revolution it traces, V = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2π * d * A (where d is centroid distance)",
-        "B": "π * d² * A",
-        "C": "A²",
-        "D": "d * A"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 9,
-      "question": "Area bounded by the exponential y = e^{-|x|}, forming a peak at x=0, across all R.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2",
-        "B": "1",
-        "C": "e",
-        "D": "∞"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Area bounded by y = cos x, x-axis, x=0 and x=2π is?",
+      "question": "Area between curves y = x² and y = x³ from 0 to 1 is?",
       "difficulty": "medium",
       "options": {
-        "A": "4",
-        "B": "2",
-        "C": "0",
-        "D": "π"
+        "A": "1/12",
+        "B": "1/6",
+        "C": "1/4",
+        "D": "1/3"
       },
       "answer": "A",
       "tag": "pyq",
       "pyq": true,
-      "id": 10
+      "id": 41
     },
     {
-      "id": 11,
-      "question": "If area bounded by y = ax² and x = ay² is 1 (a > 0), then a = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1 / √3",
-        "B": "1/3",
-        "C": "1/√(1/3)",
-        "D": "1"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 12,
-      "question": "The area of the region bounded by y = x² + 2, y = x, x = 0 and x = 3 is ______.",
+      "id": 42,
+      "question": "If limits of integration are specified implicitly by absolute value functions like |x| + |y| = 1, the curve encloses a shape of a ______.",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "21/2",
-        "B": "15/2",
-        "C": "27/2",
-        "D": "9"
+        "A": "Square (diamond)",
+        "B": "Circle",
+        "C": "Ellipse",
+        "D": "Hyperbola"
       },
       "answer": "A",
       "pyq": false
     },
     {
-      "id": 13,
-      "question": "The area calculated by an integral maps exactly to physical concepts like ______ if the curve is specific heat capacity vs temperature.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Total Heat Energy (Enthalpy)",
-        "B": "Entropy",
-        "C": "Work Done",
-        "D": "Force"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "question": "Area of region bounded by y = ln x, y = 0, x = 1, x = e is?",
-      "difficulty": "hard",
-      "options": {
-        "A": "1",
-        "B": "e−1",
-        "C": "e",
-        "D": "2"
-      },
-      "answer": "A",
-      "tag": "pyq",
-      "pyq": true,
-      "id": 14
-    },
-    {
-      "id": 15,
-      "question": "Given a differentiable function f(x) such that its inverse f⁻¹(x) exists, the area ∫ f(x) dx from a to b plus ∫ f⁻¹(y) dy from f(a) to f(b) is equal to ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "b*f(b) - a*f(a)",
-        "B": "f(b) - f(a)",
-        "C": "b - a",
-        "D": "0"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 16,
-      "question": "Area bounded by y = sin |x| and x-axis for x in [-π, π] is ______.",
+      "id": 43,
+      "question": "If f(x) ≤ 0 for all x in [a, b], then the definite integral ∫ f(x) dx from a to b yields a negative value. The actual geometric area is obtained by ______.",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "4",
-        "B": "2",
-        "C": "0",
-        "D": "π"
+        "A": "|∫ f(x) dx| or -∫ f(x) dx",
+        "B": "∫ f(x) dx directly",
+        "C": "Zero",
+        "D": "∫ |x| f(x) dx"
       },
       "answer": "A",
       "pyq": false
     },
     {
-      "id": 17,
+      "id": 44,
       "question": "The ratio of the area of an ellipse x²/a² + y²/b² = 1 to the area of its auxiliary circle is ______.",
       "difficulty": "Medium",
       "hasDiagram": false,
@@ -253,47 +60,244 @@
       "pyq": false
     },
     {
-      "id": 18,
-      "question": "The Gabriel's Horn (y=1/x rotated about x from 1 to ∞) has finite ______ but infinite ______.",
-      "difficulty": "Hard",
+      "id": 45,
+      "question": "Area of the ellipse x²/a² + y²/b² = 1 using the parametric substitution x = a cos θ is ______.",
+      "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "Volume, Surface Area",
-        "B": "Area, Volume",
-        "C": "Surface Area, Volume",
-        "D": "Length, Width"
+        "A": "πab",
+        "B": "2πab",
+        "C": "πa²",
+        "D": "ab"
       },
       "answer": "A",
       "pyq": false
     },
     {
-      "question": "Area bounded by y = x², y = 2x+3 is?",
-      "difficulty": "hard",
+      "id": 46,
+      "question": "Area of curve (x/a)^(2/3) + (y/b)^(2/3) = 1 is an affine transformation of the astroid, and equals ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
       "options": {
-        "A": "32/3",
-        "B": "16/3",
-        "C": "8",
-        "D": "64/3"
+        "A": "3πab / 8",
+        "B": "3πa² / 8",
+        "C": "πab",
+        "D": "8ab / 3"
       },
       "answer": "A",
-      "tag": "pyq",
-      "pyq": true,
-      "id": 19
+      "pyq": false
     },
     {
-      "question": "Using integration, area of triangle with vertices (0,0),(2,0),(0,3) is?",
-      "difficulty": "medium",
+      "id": 47,
+      "question": "The area bounded by y = x² and the line y = mx is calculated by ∫ (mx - x²) dx from x=0 to x=m. The result is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
       "options": {
-        "A": "3",
-        "B": "6",
-        "C": "9/2",
-        "D": "12"
+        "A": "m³ / 6",
+        "B": "m² / 2",
+        "C": "m³ / 3",
+        "D": "m² / 6"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Area of region {(x,y): x²≤y≤|x|} is?",
+      "difficulty": "hard",
+      "options": {
+        "A": "1/3",
+        "B": "2/3",
+        "C": "1/6",
+        "D": "1"
       },
       "answer": "A",
       "tag": "pyq",
       "pyq": true,
-      "id": 20
+      "id": 48
+    },
+    {
+      "id": 49,
+      "question": "Monte Carlo method evaluates complex integrals by ______ within the bounding box to estimate area.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Random sampling points",
+        "B": "Dividing exactly into trapezoids",
+        "C": "Polynomial fitting",
+        "D": "Differentiation"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "The integral ∫ from 0 to a of (b/a)√(a² - x²) dx geometrically represents ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Area of one quadrant of an ellipse (πab/4)",
+        "B": "Area of a triangle",
+        "C": "Area of a parabola sector",
+        "D": "Area of full ellipse"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "Area bounded by y = sin |x| and x-axis for x in [-π, π] is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4",
+        "B": "2",
+        "C": "0",
+        "D": "π"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "The area enclosed between parabolas y² = 4ax and x² = 4by is mathematically calculated as ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "16ab / 3",
+        "B": "8ab / 3",
+        "C": "4ab / 3",
+        "D": "ab"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "If f(x) is periodic with period T, then ∫ from a to a+nT f(x)dx = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "n * ∫ from 0 to T f(x)dx",
+        "B": "∫ from 0 to T f(x)dx",
+        "C": "n * f(T)",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "The area of the region bounded by y = x sin (x²) and the x-axis from x = 0 to x = √π is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "1/2",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "The area enclosed by one arch of the cycloid x = a(θ - sin θ), y = a(1 - cos θ) and the x-axis is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3πa²",
+        "B": "2πa²",
+        "C": "πa²",
+        "D": "4πa²"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Area of one loop of the lemniscate r² = a² cos 2θ is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a² / 2",
+        "B": "a²",
+        "C": "πa² / 4",
+        "D": "a² / 4"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The area bounded by the curves y = x², y = (1-x)², and y = 2x(1-x) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/3",
+        "B": "1/2",
+        "C": "1/6",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 57
+    },
+    {
+      "id": 58,
+      "question": "If area bounded by y = ax² and x = ay² is 1 (a > 0), then a = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / √3",
+        "B": "1/3",
+        "C": "1/√(1/3)",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "The area enclosed by the curve xy = c² (rectangular hyperbola) and x=a, x=b is c²(ln b - ln a). This implies the area of hyperbola grows ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Logarithmically",
+        "B": "Exponentially",
+        "C": "Linearly",
+        "D": "Quadratically"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Area of a polygon with vertices (x₁,y₁), (x₂,y₂)... is obtained by Shoelace Formula. Integrating piecewise linear functions is equivalent to it. Area = 0.5 * |Σ(x_i*y_{i+1} - x_{i+1}*y_i)|. This is an application of ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Green's Theorem",
+        "B": "Stokes' Theorem",
+        "C": "Mean Value Theorem",
+        "D": "Fundamental Theorem of Algebra"
+      },
+      "answer": "A",
+      "pyq": false
     }
   ]
 }

@@ -1,285 +1,293 @@
 {
-    "questions": [
-        {
-            "id": 1,
-            "question": "If |z| = 1, then (z − 1)/(z + 1) is (z ≠ −1)?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "purely imaginary",
-                "B": "purely real",
-                "C": "has unit modulus",
-                "D": "zero"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 5,
-            "question": "Triangle Inequality states that |z₁ + z₂| is ______ |z₁| + |z₂|.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "≤",
-                "B": "≥",
-                "C": "=",
-                "D": "<"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 9,
-            "question": "Number of complex numbers z with |z|=1 and z² is real is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "4",
-                "B": "2",
-                "C": "6",
-                "D": "8"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 13,
-            "question": "If z₁=2+3i and z₂=3−2i, then |z₁·z₂| = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "√169 = 13",
-                "B": "√13",
-                "C": "5",
-                "D": "12"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 17,
-            "question": "The amplitude of -1 - i√3 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-2π/3",
-                "B": "2π/3",
-                "C": "π/3",
-                "D": "-π/3"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 21,
-            "question": "Simplified value of ω¹⁰ + ω²⁰ is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-1",
-                "B": "1",
-                "C": "0",
-                "D": "ω"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 25,
-            "question": "The number of complex numbers z satisfying |z| = 1 and Re((1-iz)/(1+iz)) = 0 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "1",
-                "C": "0",
-                "D": "Infinite"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 29,
-            "question": "Finding the maximum value of |z| given |z - 3/z| = 2 leads to |z| = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "√3 + 1",
-                "B": "√3 - 1",
-                "C": "2",
-                "D": "√5 + 1"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 33,
-            "question": "If z = (1+i) / (1-i), then the smallest positive integer n for which zⁿ = 1 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "4",
-                "B": "2",
-                "C": "8",
-                "D": "12"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 37,
-            "question": "The argument of (1 - i)^7 is",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "-7π/4",
-                "B": "-3π/4",
-                "C": "-5π/4",
-                "D": "-π/4"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 41,
-            "question": "Product of p-th roots of a complex number is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "a * (-1)^(p-1)",
-                "B": "a",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 45,
-            "question": "The conjugate hyperbola of x²/a² - y²/b² = 1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "y²/b² - x²/a² = 1",
-                "B": "x²/a² + y²/b² = 1",
-                "C": "x²/b² - y²/a² = 1",
-                "D": "y²/a² + x²/b² = 1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 49,
-            "question": "For conjugate hyperbola, if original has e₁ and conjugate has e₂, then ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/e₁² + 1/e₂² = 1",
-                "B": "e₁ + e₂ = 1",
-                "C": "e₁e₂ = 1",
-                "D": "e₁ = e₂"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 53,
-            "question": "If e₁, e₂ are eccentricities of hyperbola and its conjugate, then 1/e₁² + 1/e₂² = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1",
-                "B": "2",
-                "C": "e₁e₂",
-                "D": "e₁²+e₂²"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Advanced Hyperbola question 12 regarding asymptotes and conjugate hyperbola.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 57
-        },
-        {
-            "question": "Advanced Hyperbola question 10 regarding asymptotes and conjugate hyperbola.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 61
-        },
-        {
-            "question": "Advanced Hyperbola question 2 regarding asymptotes and conjugate hyperbola.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 65
-        },
-        {
-            "id": 69,
-            "question": "Because complex roots appear in conjugate pairs, the linear partial fractions C/(x-z_1) + C*/(x-z_1*) combine to form a real partial fraction with a ______ denominator.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Quadratic",
-                "B": "Linear",
-                "C": "Cubic",
-                "D": "Constant"
-            },
-            "answer": "A",
-            "pyq": false
-        }
-    ]
+  "questions": [
+    {
+      "id": 1,
+      "question": "The conjugate of (2+3i)/(3−4i) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(6−17i)/25",
+        "B": "(6+17i)/25",
+        "C": "(−6+17i)/25",
+        "D": "(−6−17i)/25"
+      },
+      "answer": "B",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The eccentricity of the hyperbola x² - y² = 10² is ______.",
+      "options": {
+        "A": "√2",
+        "B": "2",
+        "C": "√3",
+        "D": "1"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "id": 2
+    },
+    {
+      "question": "Topic Specific Challenge complex_numbers #13",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "question": "Simplified value of ω¹⁰ + ω²⁰ is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "0",
+        "D": "ω"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 5,
+      "question": "The value of arg(i) + arg(-i) is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "π",
+        "C": "π/2",
+        "D": "2π"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 6,
+      "question": "If z = r·e^(iθ), then |e^(iz)| = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^(−r sin θ)",
+        "B": "e^(r cos θ)",
+        "C": "1",
+        "D": "e^r"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "If A is a 3x3 matrix and |adj A| = 64, then |A| = ______.",
+      "options": {
+        "A": "±8",
+        "B": "8",
+        "C": "4",
+        "D": "16"
+      },
+      "answer": "A",
+      "id": 7,
+      "hasDiagram": false
+    },
+    {
+      "question": "If α, β are roots of x² + 4x + 1 = 0, then α¹⁹ + β⁷ = ______.",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "0",
+        "D": "4"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "id": 8
+    },
+    {
+      "id": 9,
+      "question": "If |z-3+2i| = 4, the locus of z is a circle with center ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(3, -2)",
+        "B": "(-3, 2)",
+        "C": "(3, 2)",
+        "D": "(4, 0)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 10,
+      "question": "If arg(z) < 0, then the value of arg(-z) - arg(z) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π",
+        "B": "-π",
+        "C": "π/2",
+        "D": "2π"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "question": "The area bounded by y² = 5ax and its latus rectum is ______.",
+      "options": {
+        "A": "8/3 a²",
+        "B": "4/3 a²",
+        "C": "2/3 a²",
+        "D": "None"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "id": 11
+    },
+    {
+      "id": 12,
+      "question": "De Moivre's theorem holds for n being a ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Rational number",
+        "B": "Integer only",
+        "C": "Positive integer only",
+        "D": "Complex number only"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 13,
+      "question": "If z = cos θ + i sin θ, then (1+z)/(1-z) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "i cot(θ/2)",
+        "B": "i tan(θ/2)",
+        "C": "cot(θ/2)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The constant term in (x² + 1/x)^2 is ______.",
+      "options": {
+        "A": "Found via TR+1",
+        "B": "0",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "id": 14
+    },
+    {
+      "id": 15,
+      "question": "Any complex number analytic function f(z) = u + iv satisfies the ______ equations.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Cauchy-Riemann",
+        "B": "Laplace",
+        "C": "Navier-Stokes",
+        "D": "Euler-Lagrange"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 16,
+      "question": "If 1, ω, ω² are cube roots of unity, then 1/(2+ω) + 1/(1+2ω) = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "−1",
+        "B": "0",
+        "C": "1",
+        "D": "ω"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge complex_numbers #18",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 17
+    },
+    {
+      "id": 18,
+      "question": "If z = (1+i) / (1-i), then the smallest positive integer n for which zⁿ = 1 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4",
+        "B": "2",
+        "C": "8",
+        "D": "12"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 19,
+      "question": "The square root of i is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "±(1+i)/√2",
+        "B": "±(1-i)/√2",
+        "C": "i",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 20,
+      "question": "The modulus of (3+4i)/(4−3i) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "5",
+        "C": "7/5",
+        "D": "√2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    }
+  ]
 }

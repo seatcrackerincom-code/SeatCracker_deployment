@@ -1,3 +1,283 @@
 {
-    "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "question": "The relationship tan(ix) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "i tanh(x)",
+        "B": "-i tanh(x)",
+        "C": "tanh(ix)",
+        "D": "i coth(x)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "question": "If x = ln(sec θ + tan θ), cosh(x) is equal to ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sec θ",
+        "B": "tan θ",
+        "C": "csc θ",
+        "D": "cot θ"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Topic Specific Challenge hyperbolic_functions #6",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 3
+    },
+    {
+      "question": "tanh x in terms of e is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(e^x - e^-x) / (e^x + e^-x)",
+        "B": "e^x + e^-x",
+        "C": "e^x - e^-x",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "question": "The derivative of tanh⁻¹(x) for |x| < 1 is d/dx[tanh⁻¹(x)] = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / (1 - x²)",
+        "B": "1 / (x² - 1)",
+        "C": "1 / (1 + x²)",
+        "D": "1 / √(1 - x²)"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Topic Specific Challenge hyperbolic_functions #14",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 6
+    },
+    {
+      "question": "The value of cosh 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "-1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 7
+    },
+    {
+      "question": "Topic Specific Challenge hyperbolic_functions #5",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 8
+    },
+    {
+      "question": "Topic Specific Challenge hyperbolic_functions #1",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "question": "The Maclaurin series expansion of sinh(x) contains only ______ powers of x.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Odd",
+        "B": "Even",
+        "C": "Prime",
+        "D": "Negative"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "The derivative of cosh x is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "sinh x",
+        "B": "-sinh x",
+        "C": "cosech² x",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 11
+    },
+    {
+      "id": 12,
+      "question": "Similarly, cosh⁻¹(x) for x ≥ 1 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ln(x + √(x² - 1))",
+        "B": "ln(x - √(x² - 1))",
+        "C": "ln(x + √(x² + 1))",
+        "D": "ln(√(x² - 1) - x)"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Topic Specific Challenge hyperbolic_functions #20",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "question": "The value of sinh(x) when x = 0 is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "−1",
+        "D": "∞"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Evaluate the integral of sinh(5x) cosh(7x) dx.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "options": {
+        "A": "Calculated term",
+        "B": "Calculated term",
+        "C": "Calculated term",
+        "D": "Calculated term"
+      },
+      "answer": "A",
+      "hint": "Use the product to sum identities for hyperbolic functions.",
+      "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
+      "id": 15
+    },
+    {
+      "question": "The value of sinh 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 16
+    },
+    {
+      "id": 17,
+      "question": "cosh(x) - sinh(x) simplifies to ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^{-x}",
+        "B": "e^x",
+        "C": "-e^{-x}",
+        "D": "-e^x"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Topic Specific Challenge hyperbolic_functions #16",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 18
+    },
+    {
+      "id": 19,
+      "question": "The derivative of sinh x is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cosh x",
+        "B": "−cosh x",
+        "C": "sech²x",
+        "D": "sinh x"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge hyperbolic_functions #0",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 20
+    }
+  ]
 }

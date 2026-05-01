@@ -1,285 +1,301 @@
 {
-    "questions": [
-        {
-            "id": 2,
-            "question": "[a b c] = [b c a] = [c a b]. Cyclic permutation ______ the value.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Does not change",
-                "B": "Changes the sign of",
-                "C": "Squares",
-                "D": "Makes zero"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "A fair coin is tossed 6 times. What is the probability of getting exactly 4 heads?",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "15.0/2^6",
-                "B": "6/2^6",
-                "C": "1/2^6",
-                "D": "30/2^6"
-            },
-            "answer": "A",
-            "hint": "Use Binomial distribution: nCr * (1/2)^r * (1/2)^(n-r)",
-            "solution": "P(X=4) = 6C4 * (1/2)^n = 15.0/2^6.",
-            "id": 6
-        },
-        {
-            "id": 10,
-            "question": "A fair die is thrown twice. P(sum=7 | first die shows 3) = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/6",
-                "B": "1/3",
-                "C": "1/2",
-                "D": "1/4"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 14,
-            "question": "If P(A∩B)=1/6, P(A∪B)=1/3, P(B')=1/2, then P(A)=?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/6",
-                "B": "1/3",
-                "C": "1/2",
-                "D": "2/3"
-            },
-            "answer": "B",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 18,
-            "question": "If P(A|B) = P(A), then events A and B are ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Independent",
-                "B": "Mutually Exclusive",
-                "C": "Dependent",
-                "D": "Exhaustive"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 22,
-            "question": "A speaks truth 4/5 times, B speaks truth 3/4 times. P(they contradict each other) = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "7/20",
-                "B": "1/5",
-                "C": "3/20",
-                "D": "4/20"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 26,
-            "question": "Two independent events A and B. P(A) = 0.3, P(B) = 0.6. Find P(A' ∩ B).",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0.42",
-                "B": "0.18",
-                "C": "0.28",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 30,
-            "question": "In a class 30% are girls. A student is selected at random and found to be wearing glasses. 40% girls and 25% boys wear glasses. P(student is girl) = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "12/29.5",
-                "B": "12/17.5",
-                "C": "12/29",
-                "D": "24/41.5"
-            },
-            "answer": "C",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 34,
-            "question": "P(A)=1/3, P(B)=1/4, P(A/B)=1/6. Then P(A∪B)=?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "11/24",
-                "B": "7/12",
-                "C": "5/12",
-                "D": "3/8"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 38,
-            "question": "If a fair die is rolled twice, what is the probability that the first roll is even and second is odd?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/4",
-                "B": "1/2",
-                "C": "1/6",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 42,
-            "question": "If X and Y are independent random variables, Var(X - Y) = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Var(X) + Var(Y)",
-                "B": "Var(X) - Var(Y)",
-                "C": "Var(X)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 46,
-            "question": "If A and B are mutually exclusive, P(A)=0.35, P(B)=0.45, then P(A'∩B') = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0.20",
-                "B": "0.55",
-                "C": "0.65",
-                "D": "0.80"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Advanced Probability question 2 involving independent events or deck of cards.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 50
-        },
-        {
-            "id": 54,
-            "question": "A fair coin tossed 3 times. P(at least 1 head) = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "7/8",
-                "B": "3/4",
-                "C": "1/2",
-                "D": "1/8"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Advanced Probability question 6 involving independent events or deck of cards.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 58
-        },
-        {
-            "question": "Advanced Probability question 11 involving independent events or deck of cards.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 62
-        },
-        {
-            "question": "A fair coin is tossed 5 times. What is the probability of getting exactly 3 heads?",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "10.0/2^5",
-                "B": "5/2^5",
-                "C": "1/2^5",
-                "D": "20/2^5"
-            },
-            "answer": "A",
-            "hint": "Use Binomial distribution: nCr * (1/2)^r * (1/2)^(n-r)",
-            "solution": "P(X=3) = 5C3 * (1/2)^n = 10.0/2^5.",
-            "id": 66
-        },
-        {
-            "question": "If Σ P(X=x) = 1, this represents a ______ probability distribution.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Valid",
-                "B": "Invalid",
-                "C": "Random",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 70
-        }
-    ]
+  "questions": [
+    {
+      "id": 21,
+      "question": "An unbiased coin is tossed until a head appears. Expected number of tosses is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "4",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge probability #7",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 22
+    },
+    {
+      "question": "Topic Specific Challenge probability #13",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 23
+    },
+    {
+      "id": 24,
+      "question": "If E and F are events such that P(E) ≤ P(F) and P(E ∩ F) > 0, then ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Occurrence of F implies occurrence of E",
+        "B": "Occurrence of E implies occurrence of F",
+        "C": "E and F are independent",
+        "D": "None"
+      },
+      "answer": "D",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge probability #16",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 25
+    },
+    {
+      "question": "Conditional probability P(A|B) is defined as ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "P(A ∩ B) / P(B)",
+        "B": "P(A) P(B)",
+        "C": "P(A) + P(B)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 26
+    },
+    {
+      "question": "Advanced Probability question 13 involving independent events or deck of cards.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 27
+    },
+    {
+      "question": "Advanced Probability question 8 involving independent events or deck of cards.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 28
+    },
+    {
+      "id": 29,
+      "question": "For any three events A, B, C, P(A ∪ B ∪ C) = P(A) + P(B) + P(C) if events are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Mutually Exclusive",
+        "B": "Independent",
+        "C": "Exhaustive",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "Two dice are thrown. P(sum is prime) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "5/12",
+        "B": "1/2",
+        "C": "7/12",
+        "D": "1/3"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 31,
+      "question": "Probability that a randomly selected 2-digit number is divisible by 3 is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/3",
+        "B": "30/90",
+        "C": "1/4",
+        "D": "7/30"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 32,
+      "question": "Cards drawn from 52-card deck one by one without replacement. P(4th card is ace) = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/13",
+        "B": "4/52",
+        "C": "1/52",
+        "D": "4/49"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 33,
+      "question": "Two independent events A and B. P(A) = 0.3, P(B) = 0.6. Find P(A' ∩ B).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0.42",
+        "B": "0.18",
+        "C": "0.28",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge probability #3",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 34
+    },
+    {
+      "question": "Advanced Probability question 6 involving independent events or deck of cards.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 35
+    },
+    {
+      "id": 36,
+      "question": "4 boys and 3 girls sit in a row. P(girls never sit together) = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/7",
+        "B": "4/35",
+        "C": "2/7",
+        "D": "1/35"
+      },
+      "answer": "C",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 37,
+      "question": "Random variable X follows B(10, 0.5). Prob(X=5) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "¹⁰C₅ (0.5)¹⁰",
+        "B": "¹⁰C₅ (0.5)⁵",
+        "C": "0.5",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "In a deck of 52 cards, probability of picking a queen given it is a face card is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/3",
+        "B": "4/52",
+        "C": "1/13",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Advanced Probability question 10 involving independent events or deck of cards.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 39
+    },
+    {
+      "id": 40,
+      "question": "If X and Y are independent random variables, Var(X - Y) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Var(X) + Var(Y)",
+        "B": "Var(X) - Var(Y)",
+        "C": "Var(X)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
 }

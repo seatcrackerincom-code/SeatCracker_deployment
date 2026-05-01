@@ -1,3 +1,306 @@
 {
-    "questions": []
+  "questions": [
+    {
+      "id": 41,
+      "question": "If a=5, b=7, sin A=3/4 then sin B = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "21/20",
+        "B": "15/28",
+        "C": "21/28",
+        "D": "7/5"
+      },
+      "answer": "C",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 42,
+      "question": "The distance from vertex A to orthocenter H is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2R cos A",
+        "B": "R cos A",
+        "C": "a·cos A",
+        "D": "2a cos A"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 43,
+      "question": "Nine-point circle radius is R/2.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "The Cosine Rule rewritten for cos A is (b² + c² - a²) / 2bc.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 45,
+      "question": "In △ABC, (a+b+c)(b+c−a)=3bc. Then cos A = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/2",
+        "B": "−1/2",
+        "C": "0",
+        "D": "√3/2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 46,
+      "question": "R/r = ? (where R = circumradius, r = inradius)",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "abc/4K",
+        "B": "4R·sin(A/2)·sin(B/2)·sin(C/2)",
+        "C": "1/(4·sin(A/2)·sin(B/2)·sin(C/2))",
+        "D": "s/r"
+      },
+      "answer": "C",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 47,
+      "question": "sin((A+B)/2) = cos(C/2) in a triangle.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge properties_of_triangles #1",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 48
+    },
+    {
+      "id": 49,
+      "question": "The inradius r of △ABC with sides 13,14,15 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "5",
+        "D": "6"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 50,
+      "question": "If a=7, b=5, c=3, find angle A.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "120°",
+        "B": "60°",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "The orthocentre of right angled triangle is at?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "the right angle vertex",
+        "B": "midpoint of hypotenuse",
+        "C": "centroid",
+        "D": "circumcenter"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 52,
+      "question": "If 2s = a+b+c, then sin(A/2) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(s(s−a)/bc)",
+        "B": "√((s−b)(s−c)/bc)",
+        "C": "√(s(s−b)/ac)",
+        "D": "√((s−a)(s−b)/ab)"
+      },
+      "answer": "B",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "A fair coin is tossed 5 times. What is the probability of getting exactly 3 heads?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "options": {
+        "A": "10.0/2^5",
+        "B": "5/2^5",
+        "C": "1/2^5",
+        "D": "20/2^5"
+      },
+      "answer": "A",
+      "hint": "Use Binomial distribution: nCr * (1/2)^r * (1/2)^(n-r)",
+      "solution": "P(X=3) = 5C3 * (1/2)^n = 10.0/2^5.",
+      "id": 53
+    },
+    {
+      "id": 54,
+      "question": "The Projection Rule states that side 'a' is b cos C + c cos B.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "Napier's Analogy states that tan((B-C)/2) = ((b-c)/(b+c)) cot(A/2).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "According to the Cosine Rule, cos A = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(b² + c² - a²) / 2bc",
+        "B": "(a² + b² - c²) / 2ab",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 56
+    },
+    {
+      "question": "Topic Specific Challenge properties_of_triangles #4",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 57
+    },
+    {
+      "id": 58,
+      "question": "Find area of triangle with a=b=2, C=30°.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "√3",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "For equilateral triangle, R = a / √3.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Area Δ = (1/2) ab sin C = (1/2) bc sin A = (1/2) ac sin B.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
 }

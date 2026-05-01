@@ -1,285 +1,304 @@
 {
-    "questions": [
-        {
-            "question": "A fair coin is tossed 8 times. What is the probability of getting exactly 6 heads?",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "28.0/2^8",
-                "B": "8/2^8",
-                "C": "1/2^8",
-                "D": "56/2^8"
-            },
-            "answer": "A",
-            "hint": "Use Binomial distribution: nCr * (1/2)^r * (1/2)^(n-r)",
-            "solution": "P(X=6) = 8C6 * (1/2)^n = 28.0/2^8.",
-            "id": 1
-        },
-        {
-            "question": "A fair coin is tossed 10 times. What is the probability of getting exactly 8 heads?",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "45.0/2^10",
-                "B": "10/2^10",
-                "C": "1/2^10",
-                "D": "90/2^10"
-            },
-            "answer": "A",
-            "hint": "Use Binomial distribution: nCr * (1/2)^r * (1/2)^(n-r)",
-            "solution": "P(X=8) = 10C8 * (1/2)^n = 45.0/2^10.",
-            "id": 5
-        },
-        {
-            "id": 9,
-            "question": "Number of ways to choose 3 cards from 52 such that all are from different suits = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "8788",
-                "B": "2197",
-                "C": "6500",
-                "D": "13³"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 13,
-            "question": "Bayes' Theorem relates P(A|B) to P(B|A) and is used to update ______ probabilities.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Prior",
-                "B": "Posterior",
-                "C": "Joint",
-                "D": "Marginal"
-            },
-            "answer": "B",
-            "pyq": false
-        },
-        {
-            "id": 17,
-            "question": "The expectation E(X) of a random variable X is also known as its ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Mean",
-                "B": "Variance",
-                "C": "Standard Deviation",
-                "D": "Median"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 21,
-            "question": "4 boys and 3 girls sit in a row. P(girls never sit together) = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/7",
-                "B": "4/35",
-                "C": "2/7",
-                "D": "1/35"
-            },
-            "answer": "C",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 25,
-            "question": "Probability that a randomly selected 2-digit number is divisible by 3 is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/3",
-                "B": "30/90",
-                "C": "1/4",
-                "D": "7/30"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 29,
-            "question": "If P(A|B) > P(A), then P(B|A) ______ P(B).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": ">",
-                "B": "<",
-                "C": "=",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 33,
-            "question": "Number of subsets of a sample space with n outcomes is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2ⁿ",
-                "B": "n²",
-                "C": "n",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 37,
-            "question": "P(A∪B)=0.6, P(A∩B)=0.2. P(A)+P(B)=?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0.8",
-                "B": "1.0",
-                "C": "0.6",
-                "D": "1.2"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 41,
-            "question": "If P(A) = 0.5 and P(B) = 0.5, are A and B necessarily independent?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "No",
-                "B": "Yes",
-                "C": "Only if P(A∩B)=0.25",
-                "D": "Both A and C"
-            },
-            "answer": "D",
-            "pyq": false
-        },
-        {
-            "id": 45,
-            "question": "The probability of getting exactly 2 heads when 6 fair coins are tossed is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "15/64",
-                "B": "1/4",
-                "C": "6/64",
-                "D": "5/16"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Advanced Probability question 8 involving independent events or deck of cards.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 49
-        },
-        {
-            "id": 53,
-            "question": "Odds in favour of event A are 3:5. Odds against B are 7:5. P(exactly one occurs) = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "53/96",
-                "B": "43/96",
-                "C": "47/96",
-                "D": "50/96"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Advanced Probability question 5 involving independent events or deck of cards.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 57
-        },
-        {
-            "question": "Conditional probability P(A|B) is defined as ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "P(A ∩ B) / P(B)",
-                "B": "P(A) P(B)",
-                "C": "P(A) + P(B)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 61
-        },
-        {
-            "question": "Advanced Probability question 3 involving independent events or deck of cards.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 65
-        },
-        {
-            "id": 69,
-            "question": "If X takes values 1,2,3 with equal probability, E(X) = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "6",
-                "C": "1/3",
-                "D": "3/2"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        }
-    ]
+  "questions": [
+    {
+      "id": 1,
+      "question": "If P(A) = 1/3, P(B) = 1/4 and P(A ∪ B) = 1/2, then A and B are ______ events.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Independent",
+        "B": "Mutually Exclusive",
+        "C": "Dependent",
+        "D": "None"
+      },
+      "answer": "C",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "Number of subsets of a sample space with n outcomes is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2ⁿ",
+        "B": "n²",
+        "C": "n",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Advanced Probability question 7 involving independent events or deck of cards.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "question": "If A and B are independent events with P(A)=0.3 and P(B)=0.4, then P(A∪B)=?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0.58",
+        "B": "0.7",
+        "C": "0.12",
+        "D": "0.70"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 5,
+      "question": "The coefficient of variation is defined as (Standard Deviation / Mean) × 100. It measures ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Relative variability",
+        "B": "Absolute variability",
+        "C": "Skewness",
+        "D": "Kurtosis"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 6,
+      "question": "A bag has 3 red, 4 white, 5 blue balls. 3 balls drawn at random. P(1R,1W,1B) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3/11",
+        "B": "4/11",
+        "C": "6/11",
+        "D": "2/11"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 7,
+      "question": "Odds in favour of event A are 3:5. Odds against B are 7:5. P(exactly one occurs) = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "53/96",
+        "B": "43/96",
+        "C": "47/96",
+        "D": "50/96"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge probability #0",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "question": "If P(A ∩ B) = P(A)P(B), then A and B are independent. Does this imply A and B are mutually exclusive?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "No",
+        "B": "Yes",
+        "C": "Only if P(A)=0",
+        "D": "Only if P(B)=1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 10,
+      "question": "The mean of Poisson distribution is 2. Prob(X=0) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e⁻²",
+        "B": "2e⁻²",
+        "C": "1/2",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 11,
+      "question": "Bayes' Theorem relates P(A|B) to P(B|A) and is used to update ______ probabilities.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Prior",
+        "B": "Posterior",
+        "C": "Joint",
+        "D": "Marginal"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 12,
+      "question": "Poisson distribution is a limiting case of Binomial distribution when n is ______ and p is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Large, Small",
+        "B": "Small, Large",
+        "C": "Large, Large",
+        "D": "Small, Small"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 13,
+      "question": "The parameter λ of a Poisson distribution represents both the ______ and the ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Mean, Variance",
+        "B": "Mean, Mode",
+        "C": "Variance, SD",
+        "D": "Sum, Product"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Advanced Probability question 5 involving independent events or deck of cards.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 14
+    },
+    {
+      "question": "Topic Specific Challenge probability #11",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 15
+    },
+    {
+      "id": 16,
+      "question": "3 persons target practice, probabilities 1/2, 1/3, 1/4. P(exactly one hits) = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "11/24",
+        "B": "1/4",
+        "C": "3/4",
+        "D": "13/24"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 17,
+      "question": "A fair die is thrown twice. P(sum=7 | first die shows 3) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/6",
+        "B": "1/3",
+        "C": "1/2",
+        "D": "1/4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge probability #9",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 18
+    },
+    {
+      "id": 19,
+      "question": "A box has 5 defective, 15 non-defective items. 4 items drawn. P(at least 2 defective) = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "95/323",
+        "B": "190/323",
+        "C": "57/323",
+        "D": "133/323"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 20,
+      "question": "A speaks truth 4/5 times, B speaks truth 3/4 times. P(they contradict each other) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "7/20",
+        "B": "1/5",
+        "C": "3/20",
+        "D": "4/20"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    }
+  ]
 }

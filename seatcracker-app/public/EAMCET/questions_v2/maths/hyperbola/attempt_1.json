@@ -1,111 +1,316 @@
 {
-    "questions": [
-        {
-            "id": 1,
-            "question": "The area enclosed by the curve xy = c² (rectangular hyperbola) and x=a, x=b is c²(ln b - ln a). This implies the area of hyperbola grows ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Logarithmically",
-                "B": "Exponentially",
-                "C": "Linearly",
-                "D": "Quadratically"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 5,
-            "question": "For rectangular hyperbola, a = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "b",
-                "B": "2b",
-                "C": "b/2",
-                "D": "b²"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 9,
-            "question": "Equations of asymptotes of x²/a² - y²/b² = 1 are ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "y = ±(b/a)x",
-                "B": "y = ±(a/b)x",
-                "C": "x = ±a",
-                "D": "y = ±b"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 13,
-            "question": "The product of perpendiculars from any point on hyperbola to asymptotes is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "a²b²/(a²+b²)",
-                "B": "ab",
-                "C": "a²b²",
-                "D": "(a²−b²)/(a²+b²)"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 17,
-            "question": "Equation of hyperbola with foci (0, ±5) and vertices (0, ±4) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "y²/16 - x²/9 = 1",
-                "B": "x²/16 - y²/9 = 1",
-                "C": "y²/25 - x²/9 = 1",
-                "D": "x²/9 - y²/16 = 1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 21,
-            "question": "The combined equation of asymptotes of x²/a² - y²/b² = 1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x²/a² - y²/b² = 0",
-                "B": "x²/a² + y²/b² = 0",
-                "C": "None",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 25,
-            "question": "The angle between asymptotes of x² − y² = a² is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "90°",
-                "B": "45°",
-                "C": "60°",
-                "D": "120°"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        }
-    ]
+  "questions": [
+    {
+      "id": 1,
+      "question": "The combined equation of asymptotes of x²/a² - y²/b² = 1 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x²/a² - y²/b² = 0",
+        "B": "x²/a² + y²/b² = 0",
+        "C": "None",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "If (5, b) is on hyperbola x²/9 − y²/16 = 1, then b = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "±16/3",
+        "B": "±4",
+        "C": "±8",
+        "D": "±4√(7/9)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 3,
+      "question": "For rectangular hyperbola, a = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "b",
+        "B": "2b",
+        "C": "b/2",
+        "D": "b²"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 4,
+      "question": "Equations of asymptotes of x²/a² - y²/b² = 1 are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y = ±(b/a)x",
+        "B": "y = ±(a/b)x",
+        "C": "x = ±a",
+        "D": "y = ±b"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Advanced Hyperbola question 8 regarding asymptotes and conjugate hyperbola.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "question": "The length of latus rectum of x²/a² − y²/b² = 1 is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2b²/a",
+        "B": "2a²/b",
+        "C": "b²/a",
+        "D": "a²/b"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 7,
+      "question": "The chord of contact from (h,k) to hyperbola x²/a²−y²/b²=1 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "hx/a² − ky/b² = 1",
+        "B": "hx/a² + ky/b² = 1",
+        "C": "hx − ky = 1",
+        "D": "x/h − y/k = 1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 8,
+      "question": "Rectangular hyperbola xy = c² has eccentricity?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√2",
+        "B": "1",
+        "C": "2",
+        "D": "√3"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 9,
+      "question": "Eccentricity of rectangular hyperbola is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√2",
+        "B": "1",
+        "C": "2",
+        "D": "√3"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 10,
+      "question": "The angle between asymptotes of x² − y² = a² is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "90°",
+        "B": "45°",
+        "C": "60°",
+        "D": "120°"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 11,
+      "question": "If tangent at P on hyperbola meets asymptotes at Q and R, then P is ______ of QR.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Midpoint",
+        "B": "Trisection point",
+        "C": "Endpoint",
+        "D": "Foot of perpendicular"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 12,
+      "question": "The condition for y = mx + c to be tangent to x²/a² − y²/b² = 1 is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "c² = a²m² − b²",
+        "B": "c² = b²m² − a²",
+        "C": "c² = a²m² + b²",
+        "D": "c = a²m"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Advanced Hyperbola question 2 regarding asymptotes and conjugate hyperbola.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "question": "For conjugate hyperbola, if original has e₁ and conjugate has e₂, then ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/e₁² + 1/e₂² = 1",
+        "B": "e₁ + e₂ = 1",
+        "C": "e₁e₂ = 1",
+        "D": "e₁ = e₂"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 15,
+      "question": "Number of tangents that can be drawn from (0,0) to standard hyperbola is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "2",
+        "C": "Infinite",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Advanced Hyperbola question 1 regarding asymptotes and conjugate hyperbola.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 16
+    },
+    {
+      "question": "Advanced Hyperbola question 10 regarding asymptotes and conjugate hyperbola.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 17
+    },
+    {
+      "id": 18,
+      "question": "Normal to x²/a² - y²/b² = 1 at (x₁,y₁): the slope of normal = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-a²y₁ / (b²x₁)",
+        "B": "b²x₁ / (a²y₁)",
+        "C": "a²y₁ / (b²x₁)",
+        "D": "-b²x₁ / (a²y₁)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 19,
+      "question": "If the transverse and conjugate axes of a hyperbola are equal, its eccentricity is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√2",
+        "B": "√3",
+        "C": "2",
+        "D": "√5/2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 20,
+      "question": "The asymptotes of x²/a² − y²/b² = 1 are?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y = ±(b/a)x",
+        "B": "y = ±(a/b)x",
+        "C": "x ± y = 0",
+        "D": "bx ± ay = ab"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    }
+  ]
 }

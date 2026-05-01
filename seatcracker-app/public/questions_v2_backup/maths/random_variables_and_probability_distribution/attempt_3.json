@@ -1,323 +1,300 @@
 {
-    "questions": [
-        {
-            "question": "If \u03a3 P(X=x) = 1, this represents a ______ probability distribution.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Valid",
-                "B": "Invalid",
-                "C": "Random",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 1
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^3 * (1-x)^12 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "17",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 2
-        },
-        {
-            "question": "Advanced RV question 1 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 3
-        },
-        {
-            "question": "For a Poisson distribution with parameter \u03bb, the mean and variance are ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Equal to \u03bb",
-                "B": "\u03bb and \u03bb\u00b2",
-                "C": "\u03bb and \u221a\u03bb",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 4
-        },
-        {
-            "id": 5,
-            "question": "If E(X)=4 and E(X\u00b2)=20, then Var(X) = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "4",
-                "B": "16",
-                "C": "20",
-                "D": "2"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "The variance of a Binomial distribution B(n, p) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "npq",
-                "B": "np",
-                "C": "p/q",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 6
-        },
-        {
-            "question": "Advanced RV question 4 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 7
-        },
-        {
-            "question": "The Binomial distribution tends to Poisson distribution as n -> \u221e and p -> ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "0",
-                "B": "1",
-                "C": "0.5",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 8
-        },
-        {
-            "id": 9,
-            "question": "For geometric distribution P(X=k)=(1\u2212p)^(k\u22121)\u00b7p, E(X) = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/p",
-                "B": "p",
-                "C": "1/(1\u2212p)",
-                "D": "(1\u2212p)/p"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Advanced RV question 2 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 10
-        },
-        {
-            "question": "Advanced RV question 3 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 11
-        },
-        {
-            "question": "Advanced RV question 6 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 12
-        },
-        {
-            "question": "Advanced RV question 7 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 13
-        },
-        {
-            "id": 14,
-            "question": "If X and Y are independent, Var(X+Y) = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Var(X) + Var(Y)",
-                "B": "Var(X)\u00b7Var(Y)",
-                "C": "E(X\u00b2)+E(Y\u00b2)",
-                "D": "Var(X)\u2212Var(Y)"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Advanced RV question 8 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 15
-        },
-        {
-            "id": 16,
-            "question": "The moment generating function of X is M(t) = E(e^tX). M'(0) = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "E(X)",
-                "B": "E(X\u00b2)",
-                "C": "Var(X)",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Advanced RV question 10 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 17
-        },
-        {
-            "id": 18,
-            "question": "Chebyshev's inequality states P(|X\u2212\u03bc|\u2265k\u03c3) \u2264 ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/k\u00b2",
-                "B": "1/k",
-                "C": "k/\u03c3",
-                "D": "\u03c3/k"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Advanced RV question 5 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 19
-        },
-        {
-            "question": "Advanced RV question 9 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 20
-        }
-    ]
+  "questions": [
+    {
+      "question": "Topic Specific Challenge random_variables_and_probability_distribution #0",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 41
+    },
+    {
+      "question": "Advanced RV question 20 regarding expectation E(X) or cumulative distribution function.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 42
+    },
+    {
+      "question": "Advanced RV question 15 regarding expectation E(X) or cumulative distribution function.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 43
+    },
+    {
+      "id": 44,
+      "question": "The probability P(X > 0) for a Poisson variable with λ=1 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 - e⁻¹",
+        "B": "e⁻¹",
+        "C": "1",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Advanced RV question 17 regarding expectation E(X) or cumulative distribution function.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 45
+    },
+    {
+      "question": "Advanced RV question 9 regarding expectation E(X) or cumulative distribution function.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 46
+    },
+    {
+      "question": "Topic Specific Challenge random_variables_and_probability_distribution #7",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 47
+    },
+    {
+      "id": 48,
+      "question": "Find the Mean of a random variable with P(x) = {1/6, 2/6, 3/6} for x={1, 2, 3}.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2.33",
+        "B": "2",
+        "C": "1.5",
+        "D": "3"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "question": "The mode of a Poisson distribution with parameter λ (where λ is not integer) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[λ]",
+        "B": "λ",
+        "C": "[λ] + 1",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "For B(n,p) with np=4 and npq=3, then n = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "16",
+        "B": "12",
+        "C": "8",
+        "D": "4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 51,
+      "question": "If Mean = 4 and Variance = 3 in Binomial distribution, find n.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "16",
+        "B": "12",
+        "C": "20",
+        "D": "8"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Advanced RV question 18 regarding expectation E(X) or cumulative distribution function.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 52
+    },
+    {
+      "question": "Advanced RV question 1 regarding expectation E(X) or cumulative distribution function.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 53
+    },
+    {
+      "id": 54,
+      "question": "Standard deviation of B(n,p) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(npq)",
+        "B": "npq",
+        "C": "np",
+        "D": "√(np)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 55,
+      "question": "If X ~ B(n,p), E(X) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "np",
+        "B": "np(1−p)",
+        "C": "n/p",
+        "D": "p/n"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 56,
+      "question": "In Poisson distribution with parameter λ, the Mean and Variance are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Both equal to λ",
+        "B": "λ and λ²",
+        "C": "λ and √λ",
+        "D": "1 and λ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 57,
+      "question": "Variance of Binomial distribution B(n,p) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "npq",
+        "B": "np",
+        "C": "np²",
+        "D": "nq"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 58,
+      "question": "The probability that a Poisson variable X with λ=2 takes value 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e⁻²",
+        "B": "2 e⁻²",
+        "C": "1/2",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 59,
+      "question": "For Poisson distribution, variance = mean = λ. If P(X=1)=P(X=2), then λ = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "e",
+        "D": "1/2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge random_variables_and_probability_distribution #5",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 60
+    }
+  ]
 }

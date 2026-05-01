@@ -1,110 +1,308 @@
 {
-    "questions": [
-        {
-            "id": 2,
-            "question": "Orthogonal trajectories of hyperbola xy = c is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x² - y² = C",
-                "B": "x² + y² = C",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "For hyperbola x²/4 − y²/9 = 1, the directrix is x = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "4/√13",
-                "B": "√13/2",
-                "C": "2√13/13",
-                "D": "13/4"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 10,
-            "question": "Parametric equations of rectangular hyperbola xy = c² are ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x = ct, y = c/t",
-                "B": "x = c/t, y = ct",
-                "C": "x = c cosθ, y = c sinθ",
-                "D": "x = ct², y = 2ct"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 14,
-            "question": "The directrices of x²/a² - y²/b² = 1 are at ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x = ±a/e",
-                "B": "x = ±ae",
-                "C": "y = ±a/e",
-                "D": "x = ±b"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 18,
-            "question": "Property: Product of segments of focal chord divided by 2ae is constant? ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "No",
-                "B": "Yes",
-                "C": "None",
-                "D": "Only for parabola"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 22,
-            "question": "Asymptotes are perpendicular for ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Rectangular hyperbola",
-                "B": "Standard hyperbola",
-                "C": "Ellipse",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 26,
-            "question": "Rotation by 45° transforms the standard rectangular hyperbola xy = c² into standard form. The axes become the ______ of the hyperbola.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Principal axes (Transverse & Conjugate)",
-                "B": "Asymptotes",
-                "C": "Directrices",
-                "D": "Latus recta"
-            },
-            "answer": "A",
-            "pyq": false
-        }
-    ]
+  "questions": [
+    {
+      "id": 21,
+      "question": "For hyperbola, between any two points, the curve is always ______ the chord joining them.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Away from (convex)",
+        "B": "Closer to",
+        "C": "Coincident with",
+        "D": "Inside"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 22,
+      "question": "The conjugate hyperbola of x²/a² - y²/b² = 1 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y²/b² - x²/a² = 1",
+        "B": "x²/a² + y²/b² = 1",
+        "C": "x²/b² - y²/a² = 1",
+        "D": "y²/a² + x²/b² = 1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 23,
+      "question": "A hyperbola with same asymptotes as x²/9 - y²/16 = 1 but passing through (3,0) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x²/9 - y²/16 = 1",
+        "B": "y²/16 - x²/9 = 1",
+        "C": "x²/9 + y²/16 = 0",
+        "D": "xy = 9"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 24,
+      "question": "Equation of normal at P(x₁,y₁) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a²x/x₁ + b²y/y₁ = a² + b²",
+        "B": "ax/x₁ + by/y₁ = 1",
+        "C": "None",
+        "D": "Line"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 25,
+      "question": "Chord of contact from (x₁,y₁) to x²/a² - y²/b² = 1 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "xx₁/a² - yy₁/b² = 1",
+        "B": "xx₁/a² + yy₁/b² = 1",
+        "C": "x/x₁ - y/y₁ = 0",
+        "D": "x/x₁ = y/y₁"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Advanced Hyperbola question 4 regarding asymptotes and conjugate hyperbola.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 26
+    },
+    {
+      "question": "Advanced Hyperbola question 5 regarding asymptotes and conjugate hyperbola.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 27
+    },
+    {
+      "id": 28,
+      "question": "Normal to xy = c² at (ct, c/t) meets the curve again at point with parameter ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1/t³",
+        "B": "1/t³",
+        "C": "-t³",
+        "D": "t³"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 29,
+      "question": "Property: Slope of Chord joining P(θ₁) and Q(θ₂) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(b/a) [sin((θ₁+θ₂)/2) / cos((θ₁-θ₂)/2)]",
+        "B": "tan((θ₁+θ₂)/2)",
+        "C": "None",
+        "D": "b/a"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "Tangent to x²/4 − y²/3 = 1 at (4, 3) is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2x − y = 5",
+        "B": "x − y = 1",
+        "C": "4x − 3y = 7",
+        "D": "2x − y − 5 = 0"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 31,
+      "question": "Equation of hyperbola with foci (0, ±5) and vertices (0, ±4) is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y²/16 - x²/9 = 1",
+        "B": "x²/16 - y²/9 = 1",
+        "C": "y²/25 - x²/9 = 1",
+        "D": "x²/9 - y²/16 = 1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Hyperbola and its conjugate have the ______ asymptotes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Same",
+        "B": "Opposite",
+        "C": "Perpendicular",
+        "D": "No"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "The hyperbola and its conjugate together form ______ with common asymptotes.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Conjugate pair",
+        "B": "Circle",
+        "C": "Ellipse",
+        "D": "Parabola"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Advanced Hyperbola question 12 regarding asymptotes and conjugate hyperbola.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 34
+    },
+    {
+      "id": 35,
+      "question": "Foci of hyperbola x²/25 − y²/144 = 1 are at (±c, 0) where c = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "13",
+        "B": "√169 = 13",
+        "C": "12",
+        "D": "5"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Advanced Hyperbola question 6 regarding asymptotes and conjugate hyperbola.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 36
+    },
+    {
+      "id": 37,
+      "question": "If normals at four points on hyperbola are concurrent, they are called ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Co-normal points",
+        "B": "Focal points",
+        "C": "Conjugate points",
+        "D": "Concyclic points"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge hyperbola #0",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 38
+    },
+    {
+      "id": 39,
+      "question": "Distance between vertices of conjugate hyperbola is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2b",
+        "B": "2a",
+        "C": "2ae",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The condition for y = mx + c to be a tangent to x²/a² - y²/b² = 1 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "c² = a²m² - b²",
+        "B": "c² = a²m² + b²",
+        "C": "c = a/m",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 40
+    }
+  ]
 }

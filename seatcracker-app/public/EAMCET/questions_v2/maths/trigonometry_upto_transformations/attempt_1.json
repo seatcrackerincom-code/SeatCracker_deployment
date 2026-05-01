@@ -1,435 +1,272 @@
 {
-    "questions": [
-        {
-            "id": 1,
-            "question": "The value of the sum Σ_{k=1}^{10} (sin(2kπ/11) + i cos(2kπ/11)) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-i",
-                "B": "i",
-                "C": "1",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 5,
-            "question": "Consider f(x) = ∫₀ˣ cos(t²) dt. Then f'(√π/2) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/√2",
-                "B": "1/2",
-                "C": "0",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 9,
-            "question": "If y = cos(m cos⁻¹x), then (1-x²)y'' - xy' + m²y is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0",
-                "B": "1",
-                "C": "m²",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "The period of f(x) = cos(x/3) + sin(x/2) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "12π",
-                "B": "6π",
-                "C": "2π",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 13
-        },
-        {
-            "id": 17,
-            "question": "The relationship tan(ix) = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "i tanh(x)",
-                "B": "-i tanh(x)",
-                "C": "tanh(ix)",
-                "D": "i coth(x)"
-            },
-            "answer": "A"
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(13x) - sin(9x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "4",
-                "B": "22",
-                "C": "-4",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(13x)/x - lim_{x->0} sin(9x)/x = 13 - 9 = 4.",
-            "id": 21
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(9x) - sin(1x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "8",
-                "B": "10",
-                "C": "-8",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(9x)/x - lim_{x->0} sin(1x)/x = 9 - 1 = 8.",
-            "id": 25
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(9x) - sin(2x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "7",
-                "B": "11",
-                "C": "-7",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(9x)/x - lim_{x->0} sin(2x)/x = 9 - 2 = 7.",
-            "id": 29
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(6x) - sin(4x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2",
-                "B": "10",
-                "C": "-2",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(6x)/x - lim_{x->0} sin(4x)/x = 6 - 4 = 2.",
-            "id": 33
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(9x) - sin(7x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2",
-                "B": "16",
-                "C": "-2",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(9x)/x - lim_{x->0} sin(7x)/x = 9 - 7 = 2.",
-            "id": 37
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(12x) - sin(8x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "4",
-                "B": "20",
-                "C": "-4",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(12x)/x - lim_{x->0} sin(8x)/x = 12 - 8 = 4.",
-            "id": 41
-        },
-        {
-            "id": 45,
-            "question": "The value of cos(3A) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "4 cos³A - 3 cosA",
-                "B": "3 cosA - 4 cos³A",
-                "C": "4 cos³A + 3 cosA",
-                "D": "cos³A - sin³A"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 49,
-            "question": "In terms of tanA, the formula for cos(2A) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(1 - tan²A) / (1 + tan²A)",
-                "B": "(1 + tan²A) / (1 - tan²A)",
-                "C": "(2 tanA) / (1 + tan²A)",
-                "D": "1 - tan²A"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 53,
-            "question": "cos² A - sin² B = cos(A+B) cos(A-B).",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 57,
-            "question": "If sin A + sin B = x and cos A + cos B = y, find tan((A+B)/2).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x/y",
-                "B": "y/x",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 61,
-            "question": "sin((A+B)/2) = cos(C/2) in a triangle.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 65,
-            "question": "The Cosine Rule for side 'a' in triangle ABC is a² = b² + c² - 2bc cos A.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 69,
-            "question": "If 2s = a+b+c, then sin(A/2) = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "√(s(s−a)/bc)",
-                "B": "√((s−b)(s−c)/bc)",
-                "C": "√(s(s−b)/ac)",
-                "D": "√((s−a)(s−b)/ab)"
-            },
-            "answer": "B",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 73,
-            "question": "Two curves r1=f(theta) and r2=g(theta) intersect orthogonally if dr1/dtheta * dr2/dtheta product condition? (In complex polar).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Logarithmic condition",
-                "B": "m1m2=-1",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 77,
-            "question": "If cos(A − B) = 3/5 and tan A · tan B = 2, then cos A · cos B = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/5",
-                "B": "2/5",
-                "C": "-1/5",
-                "D": "3/5"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 81,
-            "question": "The number of solutions of tan x + sec x = 2 cos x in [0, 2π] is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "3",
-                "C": "0",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "The value of cos 20° cos 40° cos 60° cos 80° is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1/16",
-                "B": "1/8",
-                "C": "1/32",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 85
-        },
-        {
-            "question": "If tan A + tan B + tan C = tan A tan B tan C, then A + B + C = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "nπ",
-                "B": "π/2",
-                "C": "2nπ",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 89
-        },
-        {
-            "question": "The value of tan 75° + cot 75° is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "4",
-                "B": "2",
-                "C": "2√3",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 93
-        },
-        {
-            "question": "The transformation of sin A + sin B into product form is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "2 sin((A+B)/2) cos((A-B)/2)",
-                "B": "2 cos((A+B)/2) sin((A-B)/2)",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 97
-        },
-        {
-            "id": 101,
-            "question": "If sin⁻¹(x) + sin⁻¹(y) = π/2, then x² + y² = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0",
-                "B": "2",
-                "C": "1",
-                "D": "1/2"
-            },
-            "answer": "C",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "The value of cos 12° + cos 84° + cos 132° + cos 156° is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "-1/2",
-                "B": "1/2",
-                "C": "0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 105
-        },
-        {
-            "question": "If sin A/a = sin B/b = sin C/c, this is known as ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Sine Rule",
-                "B": "Cosine Rule",
-                "C": "Tangent Rule",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 109
-        }
-    ]
+  "questions": [
+    {
+      "id": 1,
+      "question": "sin 20° · sin 40° · sin 80° = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√3/4",
+        "B": "√3/8",
+        "C": "1/8",
+        "D": "3/8"
+      },
+      "answer": "B",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 2,
+      "question": "The number of solutions of tan x + sec x = 2 cos x in [0, 2π] is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "0",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 3,
+      "question": "If sin θ + cos θ = √2 cos θ, then tan θ = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√2 − 1",
+        "B": "√2 + 1",
+        "C": "1",
+        "D": "√2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The value of cot A cot B + cot B cot C + cot C cot A when A+B+C=90° is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "-1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 4
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #26",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 5
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #35",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 6
+    },
+    {
+      "question": "If sin x + sin y + sin z = 3, then cos x + cos y + cos z = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "0",
+        "B": "3",
+        "C": "-3",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "question": "The general solution of sin x + sin 5x = sin 3x is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "nπ or nπ ± π/3",
+        "B": "nπ/2",
+        "C": "nπ ± π/6",
+        "D": "2nπ ± π/3"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #29",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 9
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #15",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 10
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #27",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 11
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #38",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 12
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #0",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 13
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #16",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 14
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #4",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 15
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #13",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 16
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #42",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 17
+    },
+    {
+      "id": 18,
+      "question": "The value of cos²15° − cos²30° + cos²45° − cos²60° + cos²75° = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/2",
+        "B": "1",
+        "C": "0",
+        "D": "3/2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #39",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 19
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #34",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 20
+    }
+  ]
 }

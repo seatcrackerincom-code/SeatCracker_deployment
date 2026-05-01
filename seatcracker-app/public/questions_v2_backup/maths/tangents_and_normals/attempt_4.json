@@ -1,36 +1,50 @@
 {
   "questions": [
     {
-      "id": 1,
-      "question": "Angle between curves y = x² and x = y² at (1,1) is?",
+      "id": 61,
+      "question": "Intercept made by tangent to (x/a)^n + (y/b)^n = 2 at (a,b) on axes? (x/a + y/b = 2).",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "tan⁻¹(3/4)",
-        "B": "45°",
-        "C": "tan⁻¹(4/3)",
-        "D": "90°"
+        "A": "True (sum of intercepts is 2a, 2b)",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "The tangent to x² + y² = 25 at (3,4) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3x + 4y = 25",
+        "B": "4x + 3y = 25",
+        "C": "3x − 4y = 25",
+        "D": "x + y = 7"
       },
       "answer": "A",
       "pyq": true,
       "tag": "pyq"
     },
     {
-      "question": "Length of the tangent is given by ______.",
-      "difficulty": "Hard",
+      "id": 63,
+      "question": "Normal to y = x ln x parallel to x + y = 5. (ln x + 1 = 1, x=1). Point is (1,0).",
+      "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "None",
+      "diagram_description": "",
       "options": {
-        "A": "|y1| √ (1 + (1/m)²) ",
-        "B": "|y1| √ (1 + m²)",
+        "A": "True",
+        "B": "False",
         "C": "None",
         "D": "None"
       },
       "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 2
+      "pyq": false
     },
     {
       "question": "The slope of the tangent to the curve y = f(x) at point (x1, y1) is ______.",
@@ -46,17 +60,17 @@
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 3
+      "id": 64
     },
     {
-      "id": 4,
-      "question": "If curves touch, discriminant of combined equation is zero (if quadratic results).",
+      "id": 65,
+      "question": "Equation of normal to y²=x³ at (1,1).",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "True",
-        "B": "False",
+        "A": "2x + 3y = 5",
+        "B": "3x - 2y = 1",
         "C": "None",
         "D": "None"
       },
@@ -64,14 +78,26 @@
       "pyq": false
     },
     {
-      "id": 5,
-      "question": "If sub-normal is Proportional to distance from origin? (Not parabola). Sub-normal is constant for Parabola.",
+      "question": "Topic Specific Challenge tangents_and_normals #1",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 66
+    },
+    {
+      "id": 67,
+      "question": "Find slope of normal to y = log(sec x) at x = π/4.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "True",
-        "B": "False",
+        "A": "-1",
+        "B": "1",
         "C": "None",
         "D": "None"
       },
@@ -79,36 +105,35 @@
       "pyq": false
     },
     {
-      "question": "The intercept of tangent on x-axis is ______.",
-      "difficulty": "Hard",
+      "id": 68,
+      "question": "Find length of sub-normal to y²=4ax at any point.",
+      "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "None",
+      "diagram_description": "",
       "options": {
-        "A": "x1 - y1/m",
-        "B": "y1 - x1 m",
+        "A": "2a",
+        "B": "a",
         "C": "None",
         "D": "None"
       },
       "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 6
+      "pyq": false
     },
     {
-      "question": "The angle between two curves at a point of intersection is ______.",
+      "id": 69,
+      "question": "Condition for y = mx + c to be tangent to y² = 4ax is c = a/m. Then point of tangency is?",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "None",
+      "diagram_description": "",
       "options": {
-        "A": "arctan(|(m1 - m2) / (1 + m1 m2)|)",
-        "B": "arctan(m1 - m2)",
-        "C": "None",
-        "D": "None"
+        "A": "(a/m², 2a/m)",
+        "B": "(a/m, 2a)",
+        "C": "(am², 2am)",
+        "D": "(a, am)"
       },
       "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 7
+      "pyq": true,
+      "tag": "pyq"
     },
     {
       "question": "The slope of the normal to the curve y = f(x) at point (x1, y1) is ______ (if f'(x1) ≠ 0).",
@@ -124,71 +149,68 @@
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 8
+      "id": 70
     },
     {
-      "question": "If the tangent is perpendicular to the x-axis, then m = ______.",
+      "id": 71,
+      "question": "The number of tangents from (0,0) to y = x² − 4x + 3 is?",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "None",
+      "diagram_description": "",
       "options": {
-        "A": "∞",
-        "B": "0",
-        "C": "1",
-        "D": "None"
+        "A": "2",
+        "B": "1",
+        "C": "0",
+        "D": "3"
       },
       "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 9
+      "pyq": true,
+      "tag": "pyq"
     },
     {
-      "question": "Length of subtangent is ______.",
+      "id": 72,
+      "question": "Find point on y = x² - x + 1 where normal is parallel to y + 3x = 5.",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "None",
+      "diagram_description": "",
       "options": {
-        "A": "|y1 / m|",
-        "B": "|y1 m|",
+        "A": "(2/3, 7/9)",
+        "B": "(1, 1)",
         "C": "None",
         "D": "None"
       },
       "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 10
+      "pyq": false
     },
     {
-      "id": 11,
-      "question": "The subtangent and subnormal to y = eˣ at (0,1) have lengths?",
+      "id": 73,
+      "question": "If curves touch, discriminant of combined equation is zero (if quadratic results).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "If sub-normal is constant, the curve is a parabola.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "1 and 1",
-        "B": "e and 1/e",
-        "C": "0 and 1",
-        "D": "1 and e"
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
       },
       "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 12,
-      "question": "For the curve y = xⁿ, ratio of length of subtangent to length of subnormal at (x,y) = ?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "x²/n",
-        "B": "n/x²",
-        "C": "y²/n²",
-        "D": "1/n"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
+      "pyq": false
     },
     {
       "question": "If two curves intersect orthogonally, the product of their slopes at intersection is ______.",
@@ -204,119 +226,80 @@
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 13
+      "id": 75
     },
     {
-      "question": "Length of the normal is given by ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
+      "question": "Topic Specific Challenge tangents_and_normals #4",
       "options": {
-        "A": "|y1| √ (1 + m²)",
-        "B": "|y1| √ (1 + (1/m)²) ",
-        "C": "None",
-        "D": "None"
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
       },
       "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 14
-    },
-    {
-      "question": "If the tangent is parallel to the x-axis, then m = ______.",
       "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "0",
-        "B": "1",
-        "C": "∞",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 15
+      "id": 76
     },
     {
-      "id": 16,
-      "question": "The normal at (a cosθ, b sinθ) on ellipse x²/a²+y²/b²=1 is?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "ax secθ − by cosecθ = a²−b²",
-        "B": "ax/cosθ − by/sinθ = a²−b²",
-        "C": "ax cosθ − by sinθ = a²−b²",
-        "D": "a²x − b²y = (a²−b²)cosθ"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 17,
-      "question": "Tangent to y = x³ − 6x² + 13x − 10 at x=1 is parallel to?",
+      "id": 77,
+      "question": "If n=1 in x/a + y/b = 2 (id 22), the curve is a straight line. Sub-tangent exists? No, m is constant.",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "y = x",
-        "B": "x-axis",
-        "C": "y = 2x",
-        "D": "y-axis"
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
       },
-      "answer": "B",
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 78,
+      "question": "If sub-normal is Proportional to distance from origin? (Not parabola). Sub-normal is constant for Parabola.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 79,
+      "question": "Sub-normal to y=x³ at x=1 is 3.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 80,
+      "question": "The length of normal to curve y = x²/2 at point (1, 1/2) is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√5/2",
+        "B": "√2/2",
+        "C": "1",
+        "D": "√10/4"
+      },
+      "answer": "A",
       "pyq": true,
       "tag": "pyq"
-    },
-    {
-      "question": "Length of subnormal is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "|y1 m|",
-        "B": "|y1 / m|",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 18
-    },
-    {
-      "question": "The equation of tangent at (x1, y1) is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "y - y1 = m(x - x1)",
-        "B": "y = mx + c",
-        "C": "y - y1 = -1/m(x - x1)",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 19
-    },
-    {
-      "question": "Common tangent to two curves exists if ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Slopes and points match",
-        "B": "They intersect",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 20
     }
   ]
 }

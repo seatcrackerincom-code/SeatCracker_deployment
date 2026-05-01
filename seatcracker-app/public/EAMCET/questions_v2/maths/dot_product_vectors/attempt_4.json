@@ -1,189 +1,294 @@
 {
-    "questions": [
-        {
-            "id": 4,
-            "question": "cos θ between (1,2,2) and (2,−1,2) = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "4/9",
-                "B": "2/9",
-                "C": "1/3",
-                "D": "8/9"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 8,
-            "question": "If |a + b| = |a - b|, then a and b must be ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Orthogonal (Perpendicular)",
-                "B": "Collinear",
-                "C": "Equal vectors",
-                "D": "Unit vectors"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 12,
-            "question": "Cauchy-Schwartz inequality states that |a . b| is ______ |a||b|.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "≤",
-                "B": "≥",
-                "C": "=",
-                "D": "<"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 16,
-            "question": "If a = 2i+3j+4k and b = 3i+2j-k, find a.b.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "8",
-                "B": "12",
-                "C": "0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "If a⃗·b⃗ = |a⃗||b⃗|, then the angle is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0°",
-                "B": "90°",
-                "C": "180°",
-                "D": "60°"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 24,
-            "question": "Standard metric of 3D Euclidean space is defined via ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Dot product",
-                "B": "Cross product",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 28,
-            "question": "Gram-Schmidt process performs ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Orthogonalization",
-                "B": "Scaling only",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 32,
-            "question": "In a rhombus, diagonals are perpendicular.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 36,
-            "question": "Find angle if |a|=√3, |b|=2, a.b=√6.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "45°",
-                "B": "30°",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 40,
-            "question": "The projection of î on 2î+ĵ−2k̂ is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2/3",
-                "B": "1/3",
-                "C": "2",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Projection of a = i + j on b = j + k is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1/√2",
-                "B": "1",
-                "C": "√2",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 44
-        },
-        {
-            "question": "If |a|=2, |b|=3 and a.b=4, the length of a-b is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "√5",
-                "B": "5",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 48
-        }
-    ]
+  "questions": [
+    {
+      "id": 61,
+      "question": "Distance from origin to plane r.n = d is |d|/|n|.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 62,
+      "question": "Work W = F . d. This implies only the force component ______ the displacement does work.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Along",
+        "B": "Perpendicular to",
+        "C": "Opposite to",
+        "D": "Normal to"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 63,
+      "question": "If sum of two unit vectors is a unit vector, angle is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "120°",
+        "B": "60°",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "If the angle between a⃗ and b⃗ is π/3, |a⃗|=2, |b⃗|=4, then |a⃗+b⃗|²=?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "28",
+        "B": "20",
+        "C": "12",
+        "D": "36"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge dot_product_vectors #0",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 65
+    },
+    {
+      "question": "Topic Specific Challenge dot_product_vectors #7",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 66
+    },
+    {
+      "id": 67,
+      "question": "If a, b, c are mutually perpendicular unit vectors, find |a+b+c|.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√3",
+        "B": "3",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 68,
+      "question": "If (a⃗+b⃗)·(a⃗−b⃗) = 0, then?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|a⃗|=|b⃗|",
+        "B": "a⃗⊥b⃗",
+        "C": "a⃗||b⃗|",
+        "D": "a⃗+b⃗=0"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 69,
+      "question": "If difference of two unit vectors is a unit vector, angle is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "60°",
+        "B": "120°",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 70,
+      "question": "In a rhombus, diagonals are perpendicular.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge dot_product_vectors #3",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 71
+    },
+    {
+      "id": 72,
+      "question": "If a⃗·b⃗ = 0, a⃗ ≠ 0⃗, b⃗ ≠ 0⃗, then they are?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "perpendicular",
+        "B": "parallel",
+        "C": "equal",
+        "D": "anti-parallel"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Scalar product is ______ (a.b = b.a).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Commutative",
+        "B": "Distributive",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 73
+    },
+    {
+      "id": 74,
+      "question": "Sum of a Closed loop of vectors is zero. Dotting a1 with others gives ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-|a1|²",
+        "B": "0",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge dot_product_vectors #2",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 75
+    },
+    {
+      "id": 76,
+      "question": "If a is unit vector, a.x = p represents a plane.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 77,
+      "question": "If angle α is with x-axis, cos α = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a . i / |a|",
+        "B": "a . i",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge dot_product_vectors #4",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 78
+    },
+    {
+      "question": "Condition for the dot product of two vectors to be zero is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "a is perpendicular to b",
+        "B": "a is parallel to b",
+        "C": "a=b",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 79
+    },
+    {
+      "id": 80,
+      "question": "Gram-Schmidt process performs ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Orthogonalization",
+        "B": "Scaling only",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
 }

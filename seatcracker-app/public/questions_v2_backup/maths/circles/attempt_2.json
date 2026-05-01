@@ -1,21 +1,111 @@
 {
   "questions": [
     {
-      "id": 1,
-      "question": "Polar of the origin with respect to x² + y² + 2gx + 2fy + c = 0 is ______.",
+      "id": 21,
+      "question": "Equation of director circle for x² + y² = a² is ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "gx + fy + c = 0",
-        "B": "gx + fy = 0",
-        "C": "x + y + c = 0",
-        "D": "None"
+        "A": "x² + y² = 2a²",
+        "B": "x² + y² = a² / 2",
+        "C": "x² + y² = 4a²",
+        "D": "x + y = a"
       },
       "answer": "A"
     },
     {
-      "id": 2,
+      "id": 22,
+      "question": "The equation of the radical axis of the circles x² + y² + x + y = 1 and 2x² + 2y² + x + y = 1 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x + y = 1",
+        "B": "x + y + 1 = 0",
+        "C": "x - y = 0",
+        "D": "x = y"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "The angle in a semicircle is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "90°",
+        "B": "45°",
+        "C": "60°",
+        "D": "180°"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 24,
+      "question": "If circles x²+y²+2gx+c=0 and x²+y²+2fy+c=0 touch each other, then?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/g² + 1/f² = 1/c",
+        "B": "g² + f² = c",
+        "C": "1/g + 1/f = 1/√c",
+        "D": "g²f² = c"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 25,
+      "question": "Condition for two circles S=0 and S'=0 to be orthogonal is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2gg' + 2ff' = c + c'",
+        "B": "gg' + ff' = c + c'",
+        "C": "2gg' - 2ff' = c + c'",
+        "D": "g² + f² = g'² + f'²"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "question": "The line y = x intersects the circle x²+y²−2x=0 at two points. The chord length is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√2",
+        "B": "2",
+        "C": "1",
+        "D": "2√2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 27,
+      "question": "The equation of the circle passing through (1, 2) and (3, 4) and touching the line 3x + y - 3 = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(x - 4)² + (y - 7)² = 25",
+        "B": "(x - 1)² + (y - 1)² = 10",
+        "C": "(x - 3)² + (y - 4)² = 4",
+        "D": "x² + y² = 5"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
       "question": "The equation of the circle passing through (1, 0) and (0, 1) and having the smallest possible radius is ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
@@ -29,37 +119,35 @@
       "answer": "A"
     },
     {
-      "id": 3,
-      "question": "The length of the tangent from (1, 1) to the circle x² + y² + 4x + 4y - 1 = 0 is ______.",
+      "id": 29,
+      "question": "If the circle x² + y² + 4x + 22y + c = 0 bisects the circumference of the circle x² + y² - 2x + 8y + 13 = 0, then c is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "40",
+        "B": "50",
+        "C": "30",
+        "D": "20"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 30,
+      "question": "Equation of the tangent at (x₁, y₁) to the circle x² + y² = a² is ______.",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "3",
-        "B": "√7",
-        "C": "4",
-        "D": "√11"
+        "A": "xx₁ + yy₁ = a²",
+        "B": "xx₁ + yy₁ + a² = 0",
+        "C": "x/x₁ + y/y₁ = 1",
+        "D": "xx₁ - yy₁ = a²"
       },
       "answer": "A"
     },
     {
-      "id": 4,
-      "question": "If the line y = mx + c is tangent to x²+y²=a², then c² = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "a²(1+m²)",
-        "B": "a²(1−m²)",
-        "C": "a²m²",
-        "D": "a²/m²"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 5,
+      "id": 31,
       "question": "The equation of director circle of x²+y²=a² is?",
       "difficulty": "Medium",
       "hasDiagram": false,
@@ -75,53 +163,7 @@
       "tag": "pyq"
     },
     {
-      "id": 6,
-      "question": "The length of tangent from (5,1) to circle x²+y²+6x−4y−3=0 is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "7",
-        "B": "√37",
-        "C": "5",
-        "D": "√47"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 7,
-      "question": "If (1, 2) is one end of a diameter of the circle x² + y² + 2x - 4y = 0, the other end is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(-3, 2)",
-        "B": "(3, -2)",
-        "C": "(-1, 0)",
-        "D": "(0, 1)"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 8,
-      "question": "If the circles x²+y²+2x+2ky+6=0 and x²+y²+2ky+k=0 cut orthogonally then k=?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2 or −3/2",
-        "B": "−2 or 3/2",
-        "C": "1 or −3",
-        "D": "3 or −1"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 9,
+      "id": 32,
       "question": "The area of a circle whose radius is half of another's is ______ the original area.",
       "difficulty": "Medium",
       "hasDiagram": false,
@@ -135,160 +177,120 @@
       "answer": "A"
     },
     {
-      "id": 10,
-      "question": "The circles x² + y² + 2ax + c = 0 and x² + y² + 2by + c = 0 touch each other if ______.",
+      "id": 33,
+      "question": "The area of the square inscribed in the circle x² + y² - 4x - 6y - 12 = 0 is ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "1/a² + 1/b² = 1/c",
-        "B": "1/a + 1/b = 1/c",
-        "C": "a + b = c",
-        "D": "a² + b² = c²"
+        "A": "50",
+        "B": "25",
+        "C": "100",
+        "D": "75"
       },
       "answer": "A"
     },
     {
-      "id": 11,
-      "question": "Equation of director circle for x² + y² = a² is ______.",
+      "id": 34,
+      "question": "The condition that the chord y = mx + c of x² + y² = a² subtends a right angle at origin is ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "x² + y² = 2a²",
-        "B": "x² + y² = a² / 2",
-        "C": "x² + y² = 4a²",
-        "D": "x + y = a"
+        "A": "c² = a²(1 + m²)",
+        "B": "2c² = a²(1 + m²)",
+        "C": "c² = 2a²(1 + m²)",
+        "D": "None"
       },
       "answer": "A"
     },
     {
-      "id": 12,
-      "question": "The value of k for which the line 3x + 4y + k = 0 touches the circle x² + y² = 10y is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "5 or -45",
-        "B": "10 or -20",
-        "C": "0 or 30",
-        "D": "20 or -20"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 13,
-      "question": "Minimum distance from a point P to a circle with center C and radius r is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "|CP - r|",
-        "B": "CP + r",
-        "C": "CP",
-        "D": "r"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 14,
-      "question": "Inverse of a point (x₁, y₁) with respect to x² + y² = a² is ______.",
+      "id": 35,
+      "question": "Tangents drawn from origin to x²+y²−4x−4y+7=0 touch the circle at A,B. Area of △OAB = ?",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "(a²x₁ / S₁₁, a²y₁ / S₁₁)",
-        "B": "(x₁/a², y₁/a²)",
-        "C": "(-x₁, -y₁)",
-        "D": "(y₁, x₁)"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 15,
-      "question": "Equation of the circle with (x₁, y₁) and (x₂, y₂) as ends of diameter is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(x-x₁)(x-x₂) + (y-y₁)(y-y₂) = 0",
-        "B": "(x-x₁)² + (y-y₁)² = (x₂-x₁)² + (y₂-y₁)²",
-        "C": "(x+x₁)(x+x₂) + (y+y₁)(y+y₂) = 0",
-        "D": "x² + y² = x₁x₂ + y₁y₂"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 16,
-      "question": "If two circles are orthogonal, the square of distance between centers is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "r₁² + r₂²",
-        "B": "r₁² - r₂²",
-        "C": "(r₁ + r₂)²",
-        "D": "r₁ * r₂"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 17,
-      "question": "Number of common tangents to two circles which are disjoint (far apart) is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "4",
-        "B": "2",
-        "C": "3",
-        "D": "0"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 18,
-      "question": "Length of the intercept on y-axis by x² + y² + 2gx + 2fy + c = 0 is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2√(f² - c)",
-        "B": "2√(g² - c)",
-        "C": "√(f² - c)",
-        "D": "f² + g² - c"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 19,
-      "question": "The center of the circle passing through (0,0), (a,0) and (0,b) is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(a/2, b/2)",
-        "B": "(a, b)",
-        "C": "(b/2, a/2)",
-        "D": "(0, 0)"
-      },
-      "answer": "A"
-    },
-    {
-      "id": 20,
-      "question": "The pole of the line 3x+4y=45 with respect to circle x²+y²=25 is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(5/3, 5/4)",
-        "B": "(5/3, 4/5)",
-        "C": "(5,5)",
-        "D": "(3/5, 4/5)"
+        "A": "√7/2",
+        "B": "7/4",
+        "C": "7√2/4",
+        "D": "√7"
       },
       "answer": "A",
       "pyq": true,
       "tag": "pyq"
+    },
+    {
+      "question": "If the line y = mx + c touches the circle x² + y² = a², the condition is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "c² = a²(1+m²)",
+        "B": "c² = a²(1-m²)",
+        "C": "c = a/m",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 36
+    },
+    {
+      "question": "The eccentricity of the hyperbola x² - y² = 6² is ______.",
+      "options": {
+        "A": "√2",
+        "B": "2",
+        "C": "√3",
+        "D": "1"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "id": 37
+    },
+    {
+      "id": 38,
+      "question": "Radical axis of two circles is always ______ to the line joining their centers.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Perpendicular",
+        "B": "Parallel",
+        "C": "Inclined at 45°",
+        "D": "Identical"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "question": "The length of chord intercepted by the circle x²+y²=r² on the line x/a + y/b = 1 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2√(r² − a²b²/(a²+b²))",
+        "B": "2r",
+        "C": "2√(r² − a²b²)",
+        "D": "ab/√(a²+b²)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The area bounded by y² = 2ax and its latus rectum is ______.",
+      "options": {
+        "A": "8/3 a²",
+        "B": "4/3 a²",
+        "C": "2/3 a²",
+        "D": "None"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "id": 40
     }
   ]
 }

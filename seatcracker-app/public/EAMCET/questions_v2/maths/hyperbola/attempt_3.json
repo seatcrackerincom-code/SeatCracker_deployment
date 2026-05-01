@@ -1,97 +1,310 @@
 {
-    "questions": [
-        {
-            "id": 3,
-            "question": "If (5, b) is on hyperbola x²/9 − y²/16 = 1, then b = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "±16/3",
-                "B": "±4",
-                "C": "±8",
-                "D": "±4√(7/9)"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 7,
-            "question": "Chord of contact from (x₁,y₁) to x²/a² - y²/b² = 1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "xx₁/a² - yy₁/b² = 1",
-                "B": "xx₁/a² + yy₁/b² = 1",
-                "C": "x/x₁ - y/y₁ = 0",
-                "D": "x/x₁ = y/y₁"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 11,
-            "question": "The asymptotes of x²/a² − y²/b² = 1 are?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "y = ±(b/a)x",
-                "B": "y = ±(a/b)x",
-                "C": "x ± y = 0",
-                "D": "bx ± ay = ab"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 15,
-            "question": "A hyperbola with same asymptotes as x²/9 - y²/16 = 1 but passing through (3,0) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x²/9 - y²/16 = 1",
-                "B": "y²/16 - x²/9 = 1",
-                "C": "x²/9 + y²/16 = 0",
-                "D": "xy = 9"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 19,
-            "question": "The area of rectangle formed by asymptotes and lines x=±a, y=±b is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "4ab",
-                "B": "2ab",
-                "C": "None",
-                "D": "ab"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 23,
-            "question": "If P is any point on hyperbola, S,S' are foci then |PS − PS'| = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2a",
-                "B": "a",
-                "C": "2b",
-                "D": "b"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        }
-    ]
+  "questions": [
+    {
+      "id": 41,
+      "question": "Tangent to rectangular hyperbola xy = c² at (ct, c/t) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x/t + yt = 2c",
+        "B": "xt + y/t = 2c",
+        "C": "x + yt² = 2ct",
+        "D": "x/ct + yt/c = 2"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Advanced Hyperbola question 3 regarding asymptotes and conjugate hyperbola.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 42
+    },
+    {
+      "id": 43,
+      "question": "The directrices of x²/a² - y²/b² = 1 are at ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x = ±a/e",
+        "B": "x = ±ae",
+        "C": "y = ±a/e",
+        "D": "x = ±b"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 44,
+      "question": "Equation of hyperbola with foci at (±5,0) and length of conjugate axis=6 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x²/16 − y²/9 = 1",
+        "B": "x²/9 − y²/16 = 1",
+        "C": "x²/25 − y²/9 = 1",
+        "D": "x²/16 − y²/25 = 1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 45,
+      "question": "Tangent at (sec θ, tan θ) to x² - y² = 1 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x secθ - y tanθ = 1",
+        "B": "x tanθ - y secθ = 1",
+        "C": "x cosθ + y sinθ = 1",
+        "D": "x cosθ - y sinθ = 1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "If P is any point on hyperbola, S,S' are foci then |PS − PS'| = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2a",
+        "B": "a",
+        "C": "2b",
+        "D": "b"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 47,
+      "question": "The locus of point of intersection of tangents at right angles is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Director circle",
+        "B": "Auxiliary circle",
+        "C": "None",
+        "D": "Directrix"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
+      "question": "Distance between directrices of conjugate hyperbola is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2b/e'",
+        "B": "2ae",
+        "C": "None",
+        "D": "2b"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "If e₁, e₂ are eccentricities of hyperbola and its conjugate, then 1/e₁² + 1/e₂² = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "e₁e₂",
+        "D": "e₁²+e₂²"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 50,
+      "question": "Eccentricity of x²/9 − y²/16 = 1 is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "5/3",
+        "B": "3/5",
+        "C": "4/3",
+        "D": "5/4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 51,
+      "question": "Locus of foot of perpendicular from focus to asymptote is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Point (a,0) on auxiliary circle",
+        "B": "Focus",
+        "C": "None",
+        "D": "Tangent at vertex"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "The auxiliary circle of x²/a²−y²/b²=1 has equation?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x²+y²=a²",
+        "B": "x²+y²=b²",
+        "C": "x²+y²=a²+b²",
+        "D": "x²+y²=a²−b²"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 53,
+      "question": "The polar of (x₁,y₁) w.r.t. x²/a² - y²/b² = 1 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "xx₁/a² - yy₁/b² = 1",
+        "B": "xx₁/a² + yy₁/b² = 0",
+        "C": "x/x₁ + y/y₁ = 1",
+        "D": "xx₁ - yy₁ = a²"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Parametric equations of rectangular hyperbola xy = c² are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x = ct, y = c/t",
+        "B": "x = c/t, y = ct",
+        "C": "x = c cosθ, y = c sinθ",
+        "D": "x = ct², y = 2ct"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 55,
+      "question": "The director circle of hyperbola x²/a² - y²/b² = 1 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x² + y² = a² - b²",
+        "B": "x² + y² = a² + b²",
+        "C": "x² - y² = a²",
+        "D": "x² + y² = 0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 56,
+      "question": "Point of contact of tangent y = mx + c with x²/a² − y²/b² = 1 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(a²m/c, −b²/c)",
+        "B": "(a²/c, b²m/c)",
+        "C": "(a²m/c, b²/c)",
+        "D": "(−a²m/c, b²/c)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 57,
+      "question": "Property: Product of segments of focal chord divided by 2ae is constant? ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "No",
+        "B": "Yes",
+        "C": "None",
+        "D": "Only for parabola"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "For the hyperbola 9x²−16y²=144, the eccentricity is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "5/4",
+        "B": "4/3",
+        "C": "√7/4",
+        "D": "3/4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The eccentricity of a rectangular hyperbola is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "√2",
+        "B": "2",
+        "C": "1.5",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 59
+    },
+    {
+      "question": "Topic Specific Challenge hyperbola #1",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 60
+    }
+  ]
 }

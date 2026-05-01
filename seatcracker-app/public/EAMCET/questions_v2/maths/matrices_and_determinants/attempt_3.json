@@ -1,943 +1,304 @@
 {
-    "questions": [
-        {
-            "id": 3,
-            "question": "The 'Theorem of Pappus' links the area of a generating curve A to the volume of revolution it traces, V = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2π * d * A (where d is centroid distance)",
-                "B": "π * d² * A",
-                "C": "A²",
-                "D": "d * A"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the matrix A is [[18, 19], [0, 7]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "373",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[324, 475], [0, 49]]. Trace is sum of diagonal elements: 324 + 49.",
-            "id": 7
-        },
-        {
-            "question": "If the matrix A is [[14, 13], [0, 4]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "212",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[196, 234], [0, 16]]. Trace is sum of diagonal elements: 196 + 16.",
-            "id": 11
-        },
-        {
-            "question": "If the matrix A is [[10, 12], [0, 2]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "104",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[100, 144], [0, 4]]. Trace is sum of diagonal elements: 100 + 4.",
-            "id": 15
-        },
-        {
-            "question": "If the matrix A is [[13, 7], [0, 4]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "185",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[169, 119], [0, 16]]. Trace is sum of diagonal elements: 169 + 16.",
-            "id": 19
-        },
-        {
-            "question": "If the matrix A is [[20, 5], [0, 9]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "481",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[400, 145], [0, 81]]. Trace is sum of diagonal elements: 400 + 81.",
-            "id": 23
-        },
-        {
-            "question": "If the matrix A is [[2, 17], [0, 3]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "13",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[4, 85], [0, 9]]. Trace is sum of diagonal elements: 4 + 9.",
-            "id": 27
-        },
-        {
-            "question": "If the matrix A is [[12, 6], [0, 1]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "145",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[144, 78], [0, 1]]. Trace is sum of diagonal elements: 144 + 1.",
-            "id": 31
-        },
-        {
-            "question": "If the matrix A is [[12, 7], [0, 1]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "145",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[144, 91], [0, 1]]. Trace is sum of diagonal elements: 144 + 1.",
-            "id": 35
-        },
-        {
-            "question": "If the matrix A is [[6, 10], [0, 2]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "40",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[36, 80], [0, 4]]. Trace is sum of diagonal elements: 36 + 4.",
-            "id": 39
-        },
-        {
-            "question": "If the matrix A is [[15, 15], [0, 3]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "234",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[225, 270], [0, 9]]. Trace is sum of diagonal elements: 225 + 9.",
-            "id": 43
-        },
-        {
-            "question": "If the matrix A is [[11, 3], [0, 7]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "170",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[121, 54], [0, 49]]. Trace is sum of diagonal elements: 121 + 49.",
-            "id": 47
-        },
-        {
-            "question": "If the matrix A is [[17, 8], [0, 2]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "293",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[289, 152], [0, 4]]. Trace is sum of diagonal elements: 289 + 4.",
-            "id": 51
-        },
-        {
-            "question": "If the matrix A is [[4, 8], [0, 10]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "116",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[16, 112], [0, 100]]. Trace is sum of diagonal elements: 16 + 100.",
-            "id": 55
-        },
-        {
-            "question": "If the matrix A is [[16, 19], [0, 6]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "292",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[256, 418], [0, 36]]. Trace is sum of diagonal elements: 256 + 36.",
-            "id": 59
-        },
-        {
-            "question": "If the matrix A is [[16, 2], [0, 6]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "292",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[256, 44], [0, 36]]. Trace is sum of diagonal elements: 256 + 36.",
-            "id": 63
-        },
-        {
-            "question": "If the matrix A is [[9, 14], [0, 7]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "130",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[81, 224], [0, 49]]. Trace is sum of diagonal elements: 81 + 49.",
-            "id": 67
-        },
-        {
-            "question": "If the matrix A is [[19, 5], [0, 2]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "365",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[361, 105], [0, 4]]. Trace is sum of diagonal elements: 361 + 4.",
-            "id": 71
-        },
-        {
-            "question": "If the matrix A is [[7, 19], [0, 9]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "130",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[49, 304], [0, 81]]. Trace is sum of diagonal elements: 49 + 81.",
-            "id": 75
-        },
-        {
-            "question": "If the matrix A is [[9, 6], [0, 8]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "145",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[81, 102], [0, 64]]. Trace is sum of diagonal elements: 81 + 64.",
-            "id": 79
-        },
-        {
-            "question": "If the matrix A is [[12, 20], [0, 3]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "153",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[144, 300], [0, 9]]. Trace is sum of diagonal elements: 144 + 9.",
-            "id": 83
-        },
-        {
-            "question": "If the matrix A is [[17, 16], [0, 7]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "338",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[289, 384], [0, 49]]. Trace is sum of diagonal elements: 289 + 49.",
-            "id": 87
-        },
-        {
-            "id": 91,
-            "question": "Rank of matrix [[1,2,3],[2,4,6],[3,6,9]] is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1",
-                "B": "2",
-                "C": "3",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 95,
-            "question": "|A + B| = |A| + |B| is true for?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Never in general",
-                "B": "Always",
-                "C": "Only diagonal matrices",
-                "D": "Only when AB=0"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 99,
-            "question": "Cramer's Rule is used to solve a system of linear equations using ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Determinants",
-                "B": "Inverses",
-                "C": "Transposes",
-                "D": "Adjoints"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the matrix A is [[6, 6], [0, 2]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "40",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[36, 48], [0, 4]]. Trace is sum of diagonal elements: 36 + 4.",
-            "id": 103
-        },
-        {
-            "id": 107,
-            "question": "If we interchange two rows of a determinant, its sign ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Changes",
-                "B": "Stays same",
-                "C": "Becomes zero",
-                "D": "Doubles"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 111,
-            "question": "A matrix A is idempotent if A² = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "A",
-                "B": "I",
-                "C": "0",
-                "D": "-A"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 115,
-            "question": "If A and B are commuting matrices, then (A+B)² = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "A² + 2AB + B²",
-                "B": "A² + B²",
-                "C": "A² + AB + B²",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 119,
-            "question": "The system AX = B has unique solution when?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "|A| ≠ 0",
-                "B": "|A| = 0",
-                "C": "rank(A) < rank(A|B)",
-                "D": "B = 0"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 123,
-            "question": "If A² − 5A + 6I = 0, then A⁻¹ = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(A − 5I)/6",
-                "B": "(5I − A)/6",
-                "C": "(A + 5I)/6",
-                "D": "A/6"
-            },
-            "answer": "B",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "If the matrix A is [[14, 12], [0, 1]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "197",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[196, 180], [0, 1]]. Trace is sum of diagonal elements: 196 + 1.",
-            "id": 127
-        },
-        {
-            "id": 131,
-            "question": "The value of determinant | [ [1, a, b+c], [1, b, c+a], [1, c, a+b] ] | is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0",
-                "B": "abc",
-                "C": "a+b+c",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 135,
-            "question": "For what value of k does x+2y=3, 5x+ky=15 have infinite solutions?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "10",
-                "B": "2",
-                "C": "5",
-                "D": "6"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "The product of eigenvalues of a matrix is equal to ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Determinant",
-                "B": "Trace",
-                "C": "Rank",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 139
-        },
-        {
-            "question": "If A = [[cosθ, sinθ], [-sinθ, cosθ]], then Aⁿ = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "[[cos nθ, sin nθ], [-sin nθ, cos nθ]]",
-                "B": "[[cosⁿθ, sinⁿθ], [-sinⁿθ, cosⁿθ]]",
-                "C": "I",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 143
-        },
-        {
-            "question": "If A is involuntary, then A² = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "I",
-                "B": "O",
-                "C": "A",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 147
-        },
-        {
-            "id": 151,
-            "question": "If |A| = 3 for 3×3 matrix A, then |2A| = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "24",
-                "B": "6",
-                "C": "12",
-                "D": "9"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "If the matrix A is [[6, 4], [0, 4]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "52",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[36, 40], [0, 16]]. Trace is sum of diagonal elements: 36 + 16.",
-            "id": 155
-        },
-        {
-            "question": "If the matrix A is [[20, 12], [0, 8]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "464",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[400, 336], [0, 64]]. Trace is sum of diagonal elements: 400 + 64.",
-            "id": 159
-        },
-        {
-            "question": "If the matrix A is [[12, 4], [0, 9]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "225",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[144, 84], [0, 81]]. Trace is sum of diagonal elements: 144 + 81.",
-            "id": 163
-        },
-        {
-            "question": "If the matrix A is [[19, 9], [0, 1]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "362",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[361, 180], [0, 1]]. Trace is sum of diagonal elements: 361 + 1.",
-            "id": 167
-        },
-        {
-            "question": "If the matrix A is [[17, 7], [0, 3]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "298",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[289, 140], [0, 9]]. Trace is sum of diagonal elements: 289 + 9.",
-            "id": 171
-        },
-        {
-            "question": "If the matrix A is [[16, 11], [0, 9]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "337",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[256, 275], [0, 81]]. Trace is sum of diagonal elements: 256 + 81.",
-            "id": 175
-        },
-        {
-            "question": "If the matrix A is [[20, 3], [0, 4]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "416",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[400, 72], [0, 16]]. Trace is sum of diagonal elements: 400 + 16.",
-            "id": 179
-        },
-        {
-            "question": "If the matrix A is [[2, 17], [0, 5]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "29",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[4, 119], [0, 25]]. Trace is sum of diagonal elements: 4 + 25.",
-            "id": 183
-        },
-        {
-            "question": "If the matrix A is [[4, 14], [0, 8]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "80",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[16, 168], [0, 64]]. Trace is sum of diagonal elements: 16 + 64.",
-            "id": 187
-        },
-        {
-            "question": "If the matrix A is [[14, 9], [0, 1]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "197",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[196, 135], [0, 1]]. Trace is sum of diagonal elements: 196 + 1.",
-            "id": 191
-        },
-        {
-            "question": "If the matrix A is [[13, 10], [0, 4]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "185",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[169, 170], [0, 16]]. Trace is sum of diagonal elements: 169 + 16.",
-            "id": 195
-        },
-        {
-            "question": "If the matrix A is [[3, 10], [0, 5]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "34",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[9, 80], [0, 25]]. Trace is sum of diagonal elements: 9 + 25.",
-            "id": 199
-        },
-        {
-            "question": "If the matrix A is [[16, 2], [0, 3]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "265",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[256, 38], [0, 9]]. Trace is sum of diagonal elements: 256 + 9.",
-            "id": 203
-        },
-        {
-            "question": "If the matrix A is [[6, 15], [0, 3]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "45",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[36, 135], [0, 9]]. Trace is sum of diagonal elements: 36 + 9.",
-            "id": 207
-        },
-        {
-            "question": "If the matrix A is [[15, 11], [0, 1]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "226",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[225, 176], [0, 1]]. Trace is sum of diagonal elements: 225 + 1.",
-            "id": 211
-        },
-        {
-            "question": "If the matrix A is [[5, 11], [0, 5]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "50",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[25, 110], [0, 25]]. Trace is sum of diagonal elements: 25 + 25.",
-            "id": 215
-        },
-        {
-            "question": "If the matrix A is [[18, 17], [0, 4]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "340",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[324, 374], [0, 16]]. Trace is sum of diagonal elements: 324 + 16.",
-            "id": 219
-        },
-        {
-            "question": "If the matrix A is [[11, 18], [0, 3]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "130",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[121, 252], [0, 9]]. Trace is sum of diagonal elements: 121 + 9.",
-            "id": 223
-        },
-        {
-            "question": "If the matrix A is [[4, 17], [0, 3]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "25",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[16, 119], [0, 9]]. Trace is sum of diagonal elements: 16 + 9.",
-            "id": 227
-        },
-        {
-            "question": "If the matrix A is [[9, 18], [0, 2]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "85",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[81, 198], [0, 4]]. Trace is sum of diagonal elements: 81 + 4.",
-            "id": 231
-        },
-        {
-            "question": "If the matrix A is [[10, 18], [0, 7]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "149",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[100, 306], [0, 49]]. Trace is sum of diagonal elements: 100 + 49.",
-            "id": 235
-        },
-        {
-            "question": "If the matrix A is [[2, 9], [0, 10]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "104",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[4, 108], [0, 100]]. Trace is sum of diagonal elements: 4 + 100.",
-            "id": 239
-        },
-        {
-            "question": "If the matrix A is [[16, 20], [0, 9]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "337",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[256, 500], [0, 81]]. Trace is sum of diagonal elements: 256 + 81.",
-            "id": 243
-        },
-        {
-            "question": "If the matrix A is [[17, 15], [0, 9]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "370",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[289, 390], [0, 81]]. Trace is sum of diagonal elements: 289 + 81.",
-            "id": 247
-        }
-    ]
+  "questions": [
+    {
+      "id": 41,
+      "question": "The adjoint of a matrix is the transpose of the matrix of its ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Cofactors",
+        "B": "Minors",
+        "C": "Elements",
+        "D": "Inverses"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "A matrix A is idempotent if A² = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "A",
+        "B": "I",
+        "C": "0",
+        "D": "-A"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If A² - A + I = O, then the inverse of A is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "I - A",
+        "B": "A - I",
+        "C": "A",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 43
+    },
+    {
+      "id": 44,
+      "question": "If A is 3×3 matrix and |A| = 5, then |adj A| = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "25",
+        "B": "125",
+        "C": "5",
+        "D": "625"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 45,
+      "question": "If |A| = k and n is order, then |adj A| = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "kⁿ⁻¹",
+        "B": "kⁿ",
+        "C": "k",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If A and B are square matrices of order n such that AB = O and B is non-singular, then A = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "O",
+        "B": "I",
+        "C": "B⁻¹",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 46
+    },
+    {
+      "question": "Topic Specific Challenge matrices_and_determinants #4",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 47
+    },
+    {
+      "id": 48,
+      "question": "Every square matrix can be uniquely expressed as the sum of a symmetric and a ______ matrix.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Skew-symmetric",
+        "B": "Identity",
+        "C": "Diagonal",
+        "D": "Orthogonal"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The rank of the matrix [[1,2,3],[2,3,4],[3,4,5]] is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 49
+    },
+    {
+      "id": 50,
+      "question": "If A = [[cos θ, sin θ],[-sin θ, cos θ]], then A^n = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[[cos nθ, sin nθ],[-sin nθ, cos nθ]]",
+        "B": "[[cos nθ, -sin nθ],[sin nθ, cos nθ]]",
+        "C": "n·A",
+        "D": "A"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 51,
+      "question": "If we interchange two rows of a determinant, its sign ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Changes",
+        "B": "Stays same",
+        "C": "Becomes zero",
+        "D": "Doubles"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If Trace(A) = 5 and Trace(B) = 3, then Trace(2A + 3B) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "19",
+        "B": "8",
+        "C": "15",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 52
+    },
+    {
+      "id": 53,
+      "question": "A system of homogeneous linear equations AX = 0 always has a ______ solution.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Trivial (X=0)",
+        "B": "Non-trivial",
+        "C": "Unique non-zero",
+        "D": "No"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "If A and B are n×n matrices, then (AB)ᵀ = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "BᵀAᵀ",
+        "B": "AᵀBᵀ",
+        "C": "ABᵀ",
+        "D": "AᵀB"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 55,
+      "question": "A square matrix A is nilpotent if Aᵏ = ______ for some k.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "I",
+        "C": "A",
+        "D": "-A"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge matrices_and_determinants #7",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 56
+    },
+    {
+      "question": "If A = [[cosθ, sinθ], [-sinθ, cosθ]], then Aⁿ = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "[[cos nθ, sin nθ], [-sin nθ, cos nθ]]",
+        "B": "[[cosⁿθ, sinⁿθ], [-sinⁿθ, cosⁿθ]]",
+        "C": "I",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 57
+    },
+    {
+      "id": 58,
+      "question": "Value of |a,b,c; b,c,a; c,a,b| = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "−(a³+b³+c³−3abc)",
+        "B": "a³+b³+c³+3abc",
+        "C": "3abc",
+        "D": "a³+b³+c³"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 59,
+      "question": "The value of determinant | [ [1, a, b+c], [1, b, c+a], [1, c, a+b] ] | is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "abc",
+        "C": "a+b+c",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge matrices_and_determinants #0",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 60
+    }
+  ]
 }

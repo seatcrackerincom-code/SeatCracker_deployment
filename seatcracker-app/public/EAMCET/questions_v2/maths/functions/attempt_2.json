@@ -1,684 +1,311 @@
 {
-    "questions": [
-        {
-            "id": 2,
-            "question": "Leibniz's rule for differentiating an integral where the bounds are functions of a parameter is useful for generating ______ formulas.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Envelope and locus area",
-                "B": "Simpson's rule",
-                "C": "Trapezoidal interpolation",
-                "D": "Discrete algebraic sum"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 11 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": 6
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 13 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": 10
-        },
-        {
-            "id": 14,
-            "question": "Inverse of a point (x₁, y₁) with respect to x² + y² = a² is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(a²x₁ / S₁₁, a²y₁ / S₁₁)",
-                "B": "(x₁/a², y₁/a²)",
-                "C": "(-x₁, -y₁)",
-                "D": "(y₁, x₁)"
-            },
-            "answer": "A"
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 14 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": 18
-        },
-        {
-            "id": 22,
-            "question": "For periodic function f(x) with period T, ∫_0^{nT} f(x) dx = ______ (n is integer).",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "n ∫_0^T f(x) dx",
-                "B": "∫_0^T f(x) dx",
-                "C": "0",
-                "D": "nT ∫_0^1 f(x) dx"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 20 S's are always together.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "60",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
-            "id": 26
-        },
-        {
-            "id": 30,
-            "question": "Logarithmic differentiation is useful when the function is of the form ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "[f(x)]^g(x)",
-                "B": "f(x) + g(x)",
-                "C": "f(x) * g(x)",
-                "D": "Constant"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 34,
-            "question": "Which of the following is an odd function?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "sin x",
-                "B": "cos x",
-                "C": "x²",
-                "D": "e^x"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 38,
-            "question": "Domain of f(x) = √(x−2) + √(4−x) is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "[2,4]",
-                "B": "(2,4)",
-                "C": "[2,∞)",
-                "D": "(−∞,4]"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 42,
-            "question": "f(x) = (x+1)/(x−1). Then f(f(x)) = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x",
-                "B": "1/x",
-                "C": "(x+2)/(x−2)",
-                "D": "x²"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 46,
-            "question": "If f(x) = x² and g(x) = x + 1, then (f o g)(x) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(x + 1)²",
-                "B": "x² + 1",
-                "C": "x² + x + 1",
-                "D": "2x + 1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 50,
-            "question": "Domain of f(x) = log(log(log x)) is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(10, ∞)",
-                "B": "(1, ∞)",
-                "C": "(0, ∞)",
-                "D": "(e, ∞)"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 54,
-            "question": "Value of f(x) = x - [x] at x = -1.2 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0.8",
-                "B": "-0.2",
-                "C": "0.2",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 58,
-            "question": "Domain of log(log x) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(1, ∞)",
-                "B": "(0, ∞)",
-                "C": "(e, ∞)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 62,
-            "question": "The period of f(x) = |sin x| is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "π",
-                "B": "2π",
-                "C": "π/2",
-                "D": "4π"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 66,
-            "question": "f(x) = x² is not injective on R because?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "f(1) = f(−1) = 1",
-                "B": "range is not R",
-                "C": "f(0)=0",
-                "D": "it is injective"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "If f(x+y) = f(x) + f(y) for all x, y in R and f(1) = 7, then Σ f(r) from r=1 to n is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "7n(n+1) / 2",
-                "B": "7n",
-                "C": "7n²",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 70
-        },
-        {
-            "question": "If f(x) = |x| and g(x) = [x], then f(g(-1/2)) = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "0.5",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 74
-        },
-        {
-            "id": 78,
-            "question": "Even function among the following is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "cos x",
-                "B": "sin x",
-                "C": "x³",
-                "D": "x·eˣ"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "If f: R -> R is defined by f(x) = x², then it is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Neither one-one nor onto",
-                "B": "One-one and onto",
-                "C": "One-one but not onto",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 82
-        },
-        {
-            "question": "The identity function I on A is defined as ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "I(x) = x",
-                "B": "I(x) = 1",
-                "C": "I(x) = 0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 86
-        },
-        {
-            "question": "Domain of f(x) = log(x-1) + log(4-x) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "(1, 4)",
-                "B": "[1, 4]",
-                "C": "(-∞, 4)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 90
-        },
-        {
-            "id": 94,
-            "question": "If f: A→B is onto (surjective) and n(A)=4, n(B)=2, number of such functions = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "14",
-                "B": "16",
-                "C": "8",
-                "D": "12"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 98,
-            "question": "Inverse hyperbolic sine function, sinh⁻¹(x), can be written using natural logarithms as ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "ln(x + √(x² + 1))",
-                "B": "ln(x - √(x² + 1))",
-                "C": "ln(x + √(x² - 1))",
-                "D": "ln(√(x² + 1) - x)"
-            },
-            "answer": "A"
-        },
-        {
-            "id": 102,
-            "question": "The period of complex function tanh(z) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "πi",
-                "B": "2πi",
-                "C": "π",
-                "D": "2π"
-            },
-            "answer": "A"
-        },
-        {
-            "question": "The range of cosh x is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "[1, ∞)",
-                "B": "(-∞, ∞)",
-                "C": "(0, 1)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 106
-        },
-        {
-            "id": 110,
-            "question": "What is the inverse of [ [a, b], [c, d] ] if ad-bc = 1?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "[ [d, -b], [-c, a] ]",
-                "B": "[ [a, c], [b, d] ]",
-                "C": "[ [-d, b], [c, -a] ]",
-                "D": "[ [0, 1], [1, 0] ]"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If A² - A + I = O, then the inverse of A is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "I - A",
-                "B": "A - I",
-                "C": "A",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 114
-        },
-        {
-            "id": 118,
-            "question": "The function f(x) = x³ − 3x has local minimum at x = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1",
-                "B": "−1",
-                "C": "0",
-                "D": "3"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "If a function is differentiable, it is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Continuous",
-                "B": "Infinite",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 122
-        },
-        {
-            "id": 126,
-            "question": "For a rational function like (x² + 1) / (x³ + 1), the first step is to factorize the denominator logic entirely into ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Linear and irreducible quadratic factors over real numbers",
-                "B": "Only linear factors",
-                "C": "Taylor series parts",
-                "D": "Monomials"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 130,
-            "question": "Laplace Transforms also use Partial Fractions when converting the frequency domain function F(s) back to the ______ domain f(t).",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Time",
-                "B": "Spatial",
-                "C": "Complex",
-                "D": "Quantum"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 134,
-            "question": "3 books on maths, 4 on physics, 5 on chemistry. Ways to arrange on shelf keeping subjects together?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "3! × 4! × 5! × 3!",
-                "B": "12!",
-                "C": "3! × 4! × 5!",
-                "D": "(3! × 4! × 5!)²"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Number of ways 5 keys can be arranged in a circular key ring is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "12",
-                "B": "24",
-                "C": "48",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 138
-        },
-        {
-            "id": 142,
-            "question": "The Moment Generating Function (MGF) M_X(t) is defined as E(e^{tX}). It is used to find ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Moments of the distribution",
-                "B": "Mean only",
-                "C": "Variance only",
-                "D": "Skewness only"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 146,
-            "question": "Cumulative Distribution Function F(x) is defined as P(X ______ x).",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "≤",
-                "B": ">",
-                "C": "=",
-                "D": "≠"
-            },
-            "answer": "A"
-        },
-        {
-            "question": "Advanced RV question 2 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 150
-        },
-        {
-            "question": "Advanced RV question 8 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 154
-        },
-        {
-            "question": "Advanced RV question 9 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 158
-        },
-        {
-            "question": "Advanced RV question 16 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 162
-        },
-        {
-            "question": "Advanced RV question 17 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 166
-        },
-        {
-            "question": "Advanced RV question 21 regarding expectation E(X) or cumulative distribution function.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 170
-        },
-        {
-            "id": 174,
-            "question": "Range of first 10 prime numbers? (2 to 29). Range is 27.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        }
-    ]
+  "questions": [
+    {
+      "id": 21,
+      "question": "The function f(x) = |x| is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "not differentiable at x = 0",
+        "B": "differentiable everywhere",
+        "C": "discontinuous at 0",
+        "D": "not continuous"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 22,
+      "question": "The horizontal line test is used to check if a function is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "One-one (Injective)",
+        "B": "Onto (Surjective)",
+        "C": "Continuous",
+        "D": "Periodic"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge functions #3",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 23
+    },
+    {
+      "id": 24,
+      "question": "The domain of the function f(x) = 1/√(x-1) is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1, ∞)",
+        "B": "[1, ∞)",
+        "C": "R",
+        "D": "(-∞, 1)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If f is even and g is odd, then fog is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Even",
+        "B": "Odd",
+        "C": "Neither",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 25
+    },
+    {
+      "id": 26,
+      "question": "The domain of sin⁻¹(x²−1) is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[−√2, −1]∪[1, √2]∪{0}",
+        "B": "[−1,1]",
+        "C": "[0, √2]",
+        "D": "[−√2, √2]"
+      },
+      "answer": "D",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 27,
+      "question": "f(x) = x/(1+|x|). This function is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "bijective from R to (−1,1)",
+        "B": "not injective",
+        "C": "surjective onto R",
+        "D": "constant"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 28,
+      "question": "Period of f(x) = sin(2x) is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π",
+        "B": "2π",
+        "C": "4π",
+        "D": "π/2"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If f: R -> R, f(x) = cos x, then f is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Many-one",
+        "B": "One-one",
+        "C": "Onto",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 29
+    },
+    {
+      "id": 30,
+      "question": "f(x) = [x] (greatest integer function). f(2.7) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "2.7",
+        "D": "−3"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 31,
+      "question": "If f(x) = x/(x-1), its domain is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "R - {1}",
+        "B": "R",
+        "C": "(1, ∞)",
+        "D": "{1}"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge functions #5",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 32
+    },
+    {
+      "id": 33,
+      "question": "Number of solutions of sin x = x is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "3",
+        "C": "Infinite",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Which of the following is not a function from A to B?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "One element in A has two images",
+        "B": "One element in B has two preimages",
+        "C": "Some element in B has no preimage",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 34
+    },
+    {
+      "question": "Range of f(x) = sin x / x is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(-1, 1)",
+        "B": "[-1, 1]",
+        "C": "(0, 1]",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 35
+    },
+    {
+      "question": "Number of onto functions from A to A if n(A) = n is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "n!",
+        "B": "n^n",
+        "C": "2^n",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 36
+    },
+    {
+      "question": "The domain of f(x) = √(3 - x) + sinh⁻¹ x is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(-∞, 3]",
+        "B": "[3, ∞)",
+        "C": "(-∞, ∞)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 37
+    },
+    {
+      "id": 38,
+      "question": "Even function among the following is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos x",
+        "B": "sin x",
+        "C": "x³",
+        "D": "x·eˣ"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 39,
+      "question": "Domain of f(x) = √(x−2) + √(4−x) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[2,4]",
+        "B": "(2,4)",
+        "C": "[2,∞)",
+        "D": "(−∞,4]"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The range of f(x) = 1 / (2 - cos 3x) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "[1/3, 1]",
+        "B": "(-∞, ∞)",
+        "C": "[0, 1]",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 40
+    }
+  ]
 }

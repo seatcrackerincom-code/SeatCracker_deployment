@@ -1,3 +1,304 @@
 {
-    "questions": []
+  "questions": [
+    {
+      "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 4 S's are always together.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "options": {
+        "A": "60",
+        "B": "0",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "hint": "Think step by step.",
+      "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+      "id": 1
+    },
+    {
+      "question": "The distance between the circumcenter and orthocenter of a triangle is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "R√(1 - 8 cos A cos B cos C)",
+        "B": "R",
+        "C": "3R",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "question": "If angles are in A.P., middle angle is 60°.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 4,
+      "question": "Sum a² cot A + b² cot B + c² cot C = 4Δ.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 5,
+      "question": "Distance of incenter from vertex A is r / sin(A/2).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 6,
+      "question": "If cot A, cot B, cot C are in A.P., then a², b², c² are in ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "A.P.",
+        "B": "G.P.",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge properties_of_triangles #5",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "question": "In △ABC, a·cos A + b·cos B + c·cos C = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4R·sin A·sin B·sin C",
+        "B": "abc/2R",
+        "C": "2R(sin2A+sin2B+sin2C)",
+        "D": "R"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Angle A of a triangle with sides 3, 5, 7 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "60°",
+        "B": "120°",
+        "C": "45°",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 9
+    },
+    {
+      "question": "In ΔABC, r₁ (ex-radius opposite to vertex A) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Δ / (s-a)",
+        "B": "Δ / s",
+        "C": "s-a",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 10
+    },
+    {
+      "id": 11,
+      "question": "Distance of orthocenter from vertex A is 2R cos A.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 12,
+      "question": "In equilateral triangle, r:R:r1 = 1:2:3.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 13,
+      "question": "If cos A/2 = √((s(s−a))/bc), then area of △ABC = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(s(s−a)(s−b)(s−c))",
+        "B": "(1/2)ab sin C",
+        "C": "Both A and B",
+        "D": "Neither"
+      },
+      "answer": "C",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The area of a triangle with vertices (x₁,y₁), (x₂,y₂), (x₃,y₃) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "0.5 |x₁(y₂-y₃) + x₂(y₃-y₁) + x₃(y₁-y₂)|",
+        "B": "x₁y₂ + x₂y₃ + x₃y₁",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 14
+    },
+    {
+      "id": 15,
+      "question": "In right-angled triangle at C, inradius r = (a+b-c)/2.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 16,
+      "question": "Centroid divides OH in ratio 1:2? No, 2:1 from H.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True (HG:GO = 2:1)",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge properties_of_triangles #2",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 17
+    },
+    {
+      "id": 18,
+      "question": "If triangle is equilateral, find sum of exradii in terms of r.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "9r",
+        "B": "3r",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 19,
+      "question": "Area of pedal triangle of ABC is 2Δ cosA cosB cosC.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 20,
+      "question": "Relation h_a = b sin C = c sin B is correct.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
 }

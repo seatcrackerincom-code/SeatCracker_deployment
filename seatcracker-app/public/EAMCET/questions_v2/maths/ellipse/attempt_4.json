@@ -1,220 +1,316 @@
 {
-    "questions": [
-        {
-            "id": 4,
-            "question": "Area of the ellipse x²/a² + y²/b² = 1 using the parametric substitution x = a cos θ is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "πab",
-                "B": "2πab",
-                "C": "πa²",
-                "D": "ab"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 8,
-            "question": "Sum of focal distances from any point on ellipse x²/a²+y²/b²=1 (a>b) equals?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2a",
-                "B": "2b",
-                "C": "a+b",
-                "D": "2c"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 12,
-            "question": "Parametric equations of ellipse x²/a² + y²/b² = 1 are ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x = a cosθ, y = b sinθ",
-                "B": "x = a sinθ, y = b cosθ",
-                "C": "x = a secθ, y = b tanθ",
-                "D": "x = aθ, y = bθ"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 16,
-            "question": "Polar of point (x₁,y₁) w.r.t. ellipse x²/a² + y²/b² = 1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "xx₁/a² + yy₁/b² = 1",
-                "B": "xx₁/a + yy₁/b = 1",
-                "C": "x/x₁ + y/y₁ = 1",
-                "D": "xx₁ + yy₁ = ab"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "For a focal chord of ellipse with semi-latus rectum l, the harmonic mean of segments is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "l",
-                "B": "2l",
-                "C": "b²/a",
-                "D": "a"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 24,
-            "question": "The distance between foci of ellipse x²/25 + y²/16 = 1 is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "6",
-                "B": "5",
-                "C": "8",
-                "D": "10"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 28,
-            "question": "For ellipse 16x²+25y²=400, the length of semi-latus rectum is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "16/5",
-                "B": "32/5",
-                "C": "5/16",
-                "D": "8/5"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 32,
-            "question": "Eccentric angle of end of latus rectum in 1st quadrant is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "tan⁻¹(b/ae)",
-                "B": "tan⁻¹(a/be)",
-                "C": "45°",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 36,
-            "question": "If tangency point is (x₁,y₁), then slope m is ______ w.r.t. y = mx + c.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-b²x₁ / a²y₁",
-                "B": "-a²x₁ / b²y₁",
-                "C": "y₁/x₁",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 40,
-            "question": "If e₁ and e₂ are eccentricities of x²/16+y²/25=1 and x²/a²−y²/b²=1 with same foci, then e₁²+e₂² = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "14/5",
-                "B": "2",
-                "C": "41/25",
-                "D": "cannot determine"
-            },
-            "answer": "C",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 44,
-            "question": "The chord joining points θ₁ and θ₂ on ellipse is a focal chord when?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "tan(θ₁/2)·tan(θ₂/2) = (e−1)/(e+1)",
-                "B": "θ₁+θ₂ = π",
-                "C": "θ₁θ₂ = π",
-                "D": "θ₁−θ₂ = π/2"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 48,
-            "question": "Eccentricity of x²/9 − y²/16 = 1 is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "5/3",
-                "B": "3/5",
-                "C": "4/3",
-                "D": "5/4"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 52,
-            "question": "Rectangular hyperbola xy = c² has eccentricity?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "√2",
-                "B": "1",
-                "C": "2",
-                "D": "√3"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 56,
-            "question": "For the parabola y² = 4ax, the chord PQ where P = (at¹², 2at₁) and Q = (at²², 2at₂) passes through the focus if ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "t₁t₂ = -1",
-                "B": "t₁t₂ = 1",
-                "C": "t₁ + t₂ = 0",
-                "D": "t₁ = t₂"
-            },
-            "answer": "A",
-            "pyq": false
-        }
-    ]
+  "questions": [
+    {
+      "question": "Advanced Ellipse property question 2 involving tangent properties and focal distances.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 61
+    },
+    {
+      "question": "Advanced Ellipse property question 5 involving tangent properties and focal distances.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 62
+    },
+    {
+      "id": 63,
+      "question": "The locus of the foot of perpendicular from focus to tangent of ellipse is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Auxiliary circle",
+        "B": "Director circle",
+        "C": "Major axis",
+        "D": "Minor axis"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 64,
+      "question": "The directrices of the ellipse x²/a² + y²/b² = 1 are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x = ±a/e",
+        "B": "x = ±ae",
+        "C": "y = ±a/e",
+        "D": "x = ±a"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 65,
+      "question": "For a focal chord of ellipse with semi-latus rectum l, the harmonic mean of segments is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "l",
+        "B": "2l",
+        "C": "b²/a",
+        "D": "a"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 66,
+      "question": "Foci of ellipse x²/25 + y²/16 = 1 are at?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(±3, 0)",
+        "B": "(±4, 0)",
+        "C": "(±5, 0)",
+        "D": "(0, ±3)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Advanced Ellipse property question 8 involving tangent properties and focal distances.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 67
+    },
+    {
+      "id": 68,
+      "question": "For ellipse b²=a²(1−e²), if e=1/2, a=4, area of ellipse = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "8π√3",
+        "B": "4π√3",
+        "C": "16π/√3",
+        "D": "12π"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 16 S's are always together.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "options": {
+        "A": "60",
+        "B": "0",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "hint": "Think step by step.",
+      "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+      "id": 69
+    },
+    {
+      "id": 70,
+      "question": "Sum of focal distances from any point on ellipse x²/a²+y²/b²=1 (a>b) equals?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2a",
+        "B": "2b",
+        "C": "a+b",
+        "D": "2c"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 71,
+      "question": "Equation of director circle of x²/25 + y²/9 = 1 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x² + y² = 34",
+        "B": "x² + y² = 16",
+        "C": "x² + y² = 25",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The coordinates of foci of x²/a² + y²/b² = 1 are ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(±ae, 0)",
+        "B": "(0, ±be)",
+        "C": "(±a/e, 0)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 72
+    },
+    {
+      "id": 73,
+      "question": "The eccentric angle θ is related to the point on ellipse as x = a cosθ. The point is called ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Eccentric point",
+        "B": "Focus",
+        "C": "Vertex",
+        "D": "Centre"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "If Major axis is 2b, then e = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(1 - a²/b²)",
+        "B": "√(1 - b²/a²)",
+        "C": "a/b",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Advanced Ellipse property question 10 involving tangent properties and focal distances.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 75
+    },
+    {
+      "question": "Advanced Ellipse property question 1 involving tangent properties and focal distances.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 76
+    },
+    {
+      "question": "Advanced Ellipse property question 6 involving tangent properties and focal distances.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 77
+    },
+    {
+      "id": 78,
+      "question": "The product of perpendiculars from foci to any tangent of ellipse = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "b²",
+        "B": "a²",
+        "C": "ab",
+        "D": "b²/a²"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 79,
+      "question": "Eccentric angle of end of latus rectum in 1st quadrant is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "tan⁻¹(b/ae)",
+        "B": "tan⁻¹(a/be)",
+        "C": "45°",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Advanced Ellipse property question 9 involving tangent properties and focal distances.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 80
+    }
+  ]
 }

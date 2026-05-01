@@ -1,317 +1,308 @@
 {
-    "questions": [
-        {
-            "id": 1,
-            "question": "Condition for one root of ax\u00b2 + bx + c = 0 to be three times the other is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "3b\u00b2 = 16ac",
-                "B": "b\u00b2 = 4ac",
-                "C": "None",
-                "D": "b=3a"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "The condition that one root of ax\u00b2 + bx + c = 0 is square of the other is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "b\u00b3 + a\u00b2c + ac\u00b2 = 3abc",
-                "B": "b\u00b3 + a\u00b2c + ac\u00b2 = 0",
-                "C": "a + c + b = 0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 2
-        },
-        {
-            "question": "If \u03b1, \u03b2 are roots of x\u00b2 - 6x + 2 = 0, then \u03b1\u00b9\u2070 - 2\u03b1\u2078 / 2\u03b1\u2079 = ______ (approx Newton's Sums application).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "3",
-                "B": "6",
-                "C": "12",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 3
-        },
-        {
-            "question": "Maximum value of -3x\u00b2 + 4x + 7 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "25 / 3",
-                "B": "7",
-                "C": "0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 4
-        },
-        {
-            "id": 5,
-            "question": "If equation x\u00b2+2(k+2)x+9k=0 has equal roots, then k = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1 or 4",
-                "B": "2 or 3",
-                "C": "1 or \u22124",
-                "D": "4 or \u22124"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 6,
-            "question": "For real and distinct roots of 2x\u00b2+kx+2=0, k lies in?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "k < \u22124 or k > 4",
-                "B": "\u22124 < k < 4",
-                "C": "k = \u00b14",
-                "D": "k < \u22122 or k > 2"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Number of real roots of |x|\u00b2 - 3|x| + 2 = 0 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "4",
-                "B": "2",
-                "C": "0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 7
-        },
-        {
-            "id": 8,
-            "question": "If discriminant is zero, the vertex of parabola touches ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x-axis",
-                "B": "y-axis",
-                "C": "Origin",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 9,
-            "question": "The symmetry of parabola y = ax\u00b2 + bx + c is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Parallel to y-axis",
-                "B": "Parallel to x-axis",
-                "C": "None",
-                "D": "Origin"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 10,
-            "question": "The equation whose roots are reciprocals of roots of 3x\u00b2\u22125x+2=0 is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2x\u00b2\u22125x+3=0",
-                "B": "3x\u00b2+5x+2=0",
-                "C": "2x\u00b2+5x\u22123=0",
-                "D": "x\u00b2\u22125x+6=0"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^11 * (1-x)^8 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "21",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 11
-        },
-        {
-            "id": 12,
-            "question": "Location of roots: both roots of x\u00b2 - 4x + 1 = 0 lies in ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(0, 4)",
-                "B": "(1, 3)",
-                "C": "(-1, 1)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 13,
-            "question": "Transformation: roots \u03b1+2, \u03b2+2 for x\u00b2 - 3x + 2 = 0 leads to ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x\u00b2 - 7x + 12 = 0",
-                "B": "x\u00b2 - 6x + 9 = 0",
-                "C": "None",
-                "D": "x\u00b2 + x + 1 = 0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the roots of ax\u00b2 + bx + c = 0 are in the ratio m:n, then ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "mnb\u00b2 = ac(m+n)\u00b2",
-                "B": "mna\u00b2 = bc(m+n)\u00b2",
-                "C": "mnc\u00b2 = ab(m+n)\u00b2",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 14
-        },
-        {
-            "question": "If the matrix A is [[18, 6], [0, 6]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "360",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[324, 144], [0, 36]]. Trace is sum of diagonal elements: 324 + 36.",
-            "id": 15
-        },
-        {
-            "question": "If \u03b1 and \u03b2 are roots of ax\u00b2 + bx + c = 0, then the equation whose roots are 1/\u03b1 and 1/\u03b2 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "cx\u00b2 + bx + a = 0",
-                "B": "ax\u00b2 - bx + c = 0",
-                "C": "cx\u00b2 - bx + a = 0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 16
-        },
-        {
-            "question": "If the equations x\u00b2 + ax + b = 0 and x\u00b2 + bx + a = 0 have a common root, then a + b = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "-1",
-                "B": "1",
-                "C": "0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 17
-        },
-        {
-            "id": 18,
-            "question": "If one root of 5x\u00b2 + 13x + k = 0 is reciprocal of other, then k = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "5",
-                "B": "13",
-                "C": "1",
-                "D": "\u22125"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 19,
-            "question": "For ax\u00b2+bx+c=0 with a>0, both roots are negative when?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "b>0, c>0, b\u00b2>4ac",
-                "B": "b<0, c>0, b\u00b2>4ac",
-                "C": "b>0, c<0",
-                "D": "b<0, c<0"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "The minimum value of f(x) = ax\u00b2 + bx + c for a > 0 occurs at x = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "-b / 2a",
-                "B": "b / 2a",
-                "C": "4ac-b\u00b2 / 4a",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 20
-        }
-    ]
+  "questions": [
+    {
+      "id": 41,
+      "question": "The quadratic expression ax² + bx + c has same sign as 'a' if D is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Negative",
+        "B": "Positive",
+        "C": "Zero",
+        "D": "Infinity"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "If one root of ax² + bx + c = 0 is reciprocal of the other, then ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a = c",
+        "B": "a = b",
+        "C": "b = c",
+        "D": "a + c = 0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 43,
+      "question": "If α, β are roots of x² - (p+1)x + q = 0, then (α+1)(β+1) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "q + p + 2",
+        "B": "q - p",
+        "C": "p + q",
+        "D": "1 - q"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The minimum value of f(x) = ax² + bx + c for a > 0 occurs at x = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "-b / 2a",
+        "B": "b / 2a",
+        "C": "4ac-b² / 4a",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 44
+    },
+    {
+      "id": 45,
+      "question": "If α,β are roots of x²−5x+6=0, then α²+β² = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "13",
+        "B": "17",
+        "C": "25",
+        "D": "11"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 46,
+      "question": "Transformation: roots α+2, β+2 for x² - 3x + 2 = 0 leads to ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x² - 7x + 12 = 0",
+        "B": "x² - 6x + 9 = 0",
+        "C": "None",
+        "D": "x² + x + 1 = 0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The roots of (x-a)(x-b) = k² are always ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Real",
+        "B": "Imaginary",
+        "C": "Equal",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 47
+    },
+    {
+      "id": 48,
+      "question": "Location of roots: both roots of x² - 4x + 1 = 0 lies in ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(0, 4)",
+        "B": "(1, 3)",
+        "C": "(-1, 1)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "If α, β are roots of x² - 3x + 1 = 0, find α⁴ + β⁴.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "47",
+        "B": "81",
+        "C": "79",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Location of roots: x² - (m-3)x + m = 0 has both roots greater than 2 if ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "m belongs to (9, 10]",
+        "B": "m > 9",
+        "C": "m < 1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "If the roots of ax² + bx + c = 0 are equal in magnitude but opposite in sign, then ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "b = 0",
+        "B": "a = 0",
+        "C": "c = 0",
+        "D": "a = c"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "If p + iq is a root of x² + ax + b = 0, then q = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(4b - a²) / 2",
+        "B": "√(a² - 4b) / 2",
+        "C": "b/a",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "Intersection of y = x² and y = x + 2 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x = 2, -1",
+        "B": "x = 1, -2",
+        "C": "x = 0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "The sum of coefficients of the equation (a-b)x² + (b-c)x + (c-a) = 0 is zero. Therefore one root is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "-1",
+        "D": "c-a"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If roots of x² - bx + c = 0 are two consecutive integers, then b² - 4c = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "2",
+        "D": "4"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 55
+    },
+    {
+      "id": 56,
+      "question": "Condition for one root of ax² + bx + c = 0 to be three times the other is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3b² = 16ac",
+        "B": "b² = 4ac",
+        "C": "None",
+        "D": "b=3a"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "If α, β are roots of ax² + bx + c = 0, equation with roots kα, kβ is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ax² + kbx + k²c = 0",
+        "B": "k²ax² + kbx + c = 0",
+        "C": "ax² + bx/k + c/k² = 0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 58,
+      "question": "The minimum value of ax² + bx + c (a > 0) is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-D / 4a",
+        "B": "-b / 2a",
+        "C": "0",
+        "D": "c"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "For the quadratic expression ax² + bx + c, the y-coordinate of the vertex is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-D / 4a",
+        "B": "-b / 2a",
+        "C": "D / 4a",
+        "D": "b / 2a"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "If roots of x² - px + q = 0 differ by unity, then ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "p² = 4q + 1",
+        "B": "p² = 4q - 1",
+        "C": "q² = 4p + 1",
+        "D": "p = q + 1"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
 }

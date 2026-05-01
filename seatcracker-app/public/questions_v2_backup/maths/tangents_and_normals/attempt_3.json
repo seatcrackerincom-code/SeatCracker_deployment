@@ -1,181 +1,13 @@
 {
   "questions": [
     {
-      "id": 1,
-      "question": "Normal to y = x ln x parallel to x + y = 5. (ln x + 1 = 1, x=1). Point is (1,0).",
+      "id": 41,
+      "question": "At what point on y = x - e^x is tangent parallel to x-axis? (1-e^x=0, x=0).",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 2,
-      "question": "The slope of tangent to y = x|x| at x=0 is 0.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 3,
-      "question": "Condition for x^m y^n = k to have constant sub-tangent? (No, sub-tangent is -nx/m).",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "False",
-        "B": "True",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 4,
-      "question": "Sum of intercepts of tangent to x^½ + y^½ = a^½ is a.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 5,
-      "question": "Angle between x² + y² = 2 and y = x² at (1,1).",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "tan⁻¹(3)",
-        "B": "tan⁻¹(0.5)",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 6,
-      "question": "Two curves r1=f(theta) and r2=g(theta) intersect orthogonally if dr1/dtheta * dr2/dtheta product condition? (In complex polar).",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Logarithmic condition",
-        "B": "m1m2=-1",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 7,
-      "question": "The number of tangents from (0,0) to y = x² − 4x + 3 is?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2",
-        "B": "1",
-        "C": "0",
-        "D": "3"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 8,
-      "question": "The equation of tangent to ellipse x²/4 + y²/3 = 1 at (1, 3/2) is?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "x/4 + y/2 = 1",
-        "B": "x + y = 5/2",
-        "C": "x/4 + y·(3/2)/3 = 1 → x/4 + y/2 = 1",
-        "D": "Both A and C"
-      },
-      "answer": "D",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 9,
-      "question": "Normal to x²=4ay is y-y1 = -(2a/x1)(x-x1).",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 10,
-      "question": "Find slope of normal to y = log(sec x) at x = π/4.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "-1",
-        "B": "1",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 11,
-      "question": "The length of normal to curve y = x²/2 at point (1, 1/2) is?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "√5/2",
-        "B": "√2/2",
-        "C": "1",
-        "D": "√10/4"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 12,
-      "question": "Find point on y = x² - x + 1 where normal is parallel to y + 3x = 5.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(2/3, 7/9)",
+        "A": "(0, -1)",
         "B": "(1, 1)",
         "C": "None",
         "D": "None"
@@ -184,7 +16,98 @@
       "pyq": false
     },
     {
-      "id": 13,
+      "id": 42,
+      "question": "The normal to y = x² at (2,4) has slope?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "−1/4",
+        "B": "4",
+        "C": "1/4",
+        "D": "−4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge tangents_and_normals #0",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 43
+    },
+    {
+      "question": "If the tangent is perpendicular to the x-axis, then m = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "∞",
+        "B": "0",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 44
+    },
+    {
+      "question": "Length of the normal is given by ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "|y1| √ (1 + m²)",
+        "B": "|y1| √ (1 + (1/m)²) ",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 45
+    },
+    {
+      "id": 46,
+      "question": "The normal at (a cosθ, b sinθ) on ellipse x²/a²+y²/b²=1 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ax secθ − by cosecθ = a²−b²",
+        "B": "ax/cosθ − by/sinθ = a²−b²",
+        "C": "ax cosθ − by sinθ = a²−b²",
+        "D": "a²x − b²y = (a²−b²)cosθ"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 47,
+      "question": "If curves x²=4ay and y²=4ax intersect at origin, angle is 90°.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 48,
       "question": "Derivative of implicit f(x,y)=0 is - (∂f/∂x) / (∂f/∂y).",
       "difficulty": "Hard",
       "hasDiagram": false,
@@ -199,22 +122,39 @@
       "pyq": false
     },
     {
-      "id": 14,
-      "question": "Intercept of tangent on x-axis is x - y / (dy/dx).",
-      "difficulty": "Medium",
+      "question": "Length of subnormal is ______.",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "True",
-        "B": "False",
+        "A": "|y1 m|",
+        "B": "|y1 / m|",
         "C": "None",
         "D": "None"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard",
+      "id": 49
     },
     {
-      "id": 15,
+      "id": 50,
+      "question": "The tangent to y = √x at x = 4 makes angle with x-axis?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "tan⁻¹(1/4)",
+        "B": "45°",
+        "C": "tan⁻¹(1/2)",
+        "D": "30°"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 51,
       "question": "Tangent to y = x ln x at x = e is y = 2x - e.",
       "difficulty": "Medium",
       "hasDiagram": false,
@@ -229,8 +169,87 @@
       "pyq": false
     },
     {
-      "id": 16,
-      "question": "If n=1 in x/a + y/b = 2 (id 22), the curve is a straight line. Sub-tangent exists? No, m is constant.",
+      "id": 52,
+      "question": "The slope of tangent to y = x³ − 3x at x = 2 is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "9",
+        "B": "6",
+        "C": "3",
+        "D": "12"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 53,
+      "question": "If kx + ly + m = 0 is normal to y²=4ax, then m? (Locus relation).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "m = -al(2k²-l²)/k² (Wait, complex)",
+        "B": "m = 0",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "At what point on y = x³ is the tangent parallel to y = 3x + 5?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1,1) and (−1,−1)",
+        "B": "(1,1) only",
+        "C": "(3,27)",
+        "D": "(0,0)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Length of the tangent is given by ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "|y1| √ (1 + (1/m)²) ",
+        "B": "|y1| √ (1 + m²)",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 55
+    },
+    {
+      "id": 56,
+      "question": "Angle between curves y = x² and x = y² at (1,1) is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "tan⁻¹(3/4)",
+        "B": "45°",
+        "C": "tan⁻¹(4/3)",
+        "D": "90°"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 57,
+      "question": "If normal to y=f(x) makes angle θ with x-axis, then tan θ = -1 / (dy/dx).",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
@@ -244,14 +263,14 @@
       "pyq": false
     },
     {
-      "id": 17,
-      "question": "Intercept of tangent to y = f(x) on y-axis is y - x(dy/dx).",
+      "id": 58,
+      "question": "Angle between y²=x and x²=y at (0,0).",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "True",
-        "B": "False",
+        "A": "90°",
+        "B": "0°",
         "C": "None",
         "D": "None"
       },
@@ -259,7 +278,23 @@
       "pyq": false
     },
     {
-      "id": 18,
+      "question": "Common tangent to two curves exists if ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Slopes and points match",
+        "B": "They intersect",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 59
+    },
+    {
+      "id": 60,
       "question": "Equation of normal at (x1, y1) to y²=4ax is (y-y1) = -(y1/2a)(x-x1).",
       "difficulty": "Medium",
       "hasDiagram": false,
@@ -272,38 +307,6 @@
       },
       "answer": "A",
       "pyq": false
-    },
-    {
-      "id": 19,
-      "question": "If the tangent at point P on curve y = x³ − x meets the curve again at Q, and P=(1,0), then Q is?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(−2, −6)",
-        "B": "(2, 6)",
-        "C": "(0,0)",
-        "D": "(−1, 0)"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 20,
-      "question": "Tangent and normal at P(at², 2at) on y²=4ax meet x-axis at T and G. TG = ?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "2a(1+t²)",
-        "B": "4a",
-        "C": "2at²",
-        "D": "a(1+t²)"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
     }
   ]
 }

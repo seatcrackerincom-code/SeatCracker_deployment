@@ -1,456 +1,300 @@
 {
-    "questions": [
-        {
-            "id": 1,
-            "question": "The function f(x) = x\u00b3 - x is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Odd",
-                "B": "Even",
-                "C": "Constant",
-                "D": "Neither"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 2,
-            "question": "If f(x) = x\u00b2 and g(x) = \u221ax, then fog(x) = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x",
-                "B": "x\u00b2",
-                "C": "\u221ax",
-                "D": "x^(1/4)"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 3,
-            "question": "Which of the following is an odd function?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "sin x",
-                "B": "cos x",
-                "C": "x\u00b2",
-                "D": "e^x"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 4,
-            "question": "Range of f(x) = sin x + cos x is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "[\u2212\u221a2, \u221a2]",
-                "B": "[\u22121,1]",
-                "C": "[0, \u221a2]",
-                "D": "[\u22122,2]"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 5,
-            "question": "Find (g o f)(x) if f(x) = log x and g(x) = e^x.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x",
-                "B": "log(e^x)",
-                "C": "e^(log x)",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "Find domain of f(x) = \u221a(25 - x\u00b2).",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "[-5, 5]",
-                "B": "(-5, 5)",
-                "C": "R",
-                "D": "[0, 5]"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 7,
-            "question": "Domain of f(x) = \u221a(x\u22122) + \u221a(4\u2212x) is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "[2,4]",
-                "B": "(2,4)",
-                "C": "[2,\u221e)",
-                "D": "(\u2212\u221e,4]"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "If the vectors a = 12i + 5j and b = 2i - j are perpendicular, find the value of 12*2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "5",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": 8
-        },
-        {
-            "id": 9,
-            "question": "The domain of f(x) = sec x is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "R - {(2n+1)\u03c0/2}",
-                "B": "R",
-                "C": "[-1, 1]",
-                "D": "(-\u03c0/2, \u03c0/2)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 10,
-            "question": "If f(x) = x/(x-1), its domain is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "R - {1}",
-                "B": "R",
-                "C": "(1, \u221e)",
-                "D": "{1}"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the matrix A is [[16, 14], [0, 9]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "337",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[256, 350], [0, 81]]. Trace is sum of diagonal elements: 256 + 81.",
-            "id": 11
-        },
-        {
-            "id": 12,
-            "question": "The inverse of a function exists if and only if the function is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Bijective",
-                "B": "Injective",
-                "C": "Surjective",
-                "D": "Continuous"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 13,
-            "question": "f(x) = (x+1)/(x\u22121). Then f(f(x)) = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x",
-                "B": "1/x",
-                "C": "(x+2)/(x\u22122)",
-                "D": "x\u00b2"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 14,
-            "question": "Domain of f(x) = 1/log(1-x) + \u221a(x+2).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "[-2, 1) - {0}",
-                "B": "[-2, 1]",
-                "C": "(-\u221e, 1)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 15,
-            "question": "Which of the following is an even function?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "cos x",
-                "B": "sin x",
-                "C": "tan x",
-                "D": "x\u00b3"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 16,
-            "question": "f: R \u2192 R defined by f(x) = 2x is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "bijective",
-                "B": "injective only",
-                "C": "surjective only",
-                "D": "neither"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 17,
-            "question": "Period of f(x) = sin(2x) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u03c0",
-                "B": "2\u03c0",
-                "C": "4\u03c0",
-                "D": "\u03c0/2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 18,
-            "question": "If f(x) = x\u00b2 and g(x) = x + 1, then (f o g)(x) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(x + 1)\u00b2",
-                "B": "x\u00b2 + 1",
-                "C": "x\u00b2 + x + 1",
-                "D": "2x + 1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 19,
-            "question": "The horizontal line test is used to check if a function is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "One-one (Injective)",
-                "B": "Onto (Surjective)",
-                "C": "Continuous",
-                "D": "Periodic"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "The domain of the function f(x) = 1/\u221a(x-1) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(1, \u221e)",
-                "B": "[1, \u221e)",
-                "C": "R",
-                "D": "(-\u221e, 1)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the vectors a = 11i + 7j and b = 9i - j are perpendicular, find the value of 11*9.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "7",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "functions_21"
-        },
-        {
-            "id": "functions_22",
-            "question": "Which is an even function?",
-            "options": {
-                "A": "sin x",
-                "B": "cos x",
-                "C": "x\u00b3",
-                "D": "tan x"
-            },
-            "answer": "B",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^3 * (1-x)^20 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "25",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "functions_23"
-        },
-        {
-            "question": "If the matrix A is [[9, 14], [0, 7]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "130",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[81, 224], [0, 49]]. Trace is sum of diagonal elements: 81 + 49.",
-            "id": "functions_24"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^16 * (1-x)^2 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "20",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "functions_25"
-        },
-        {
-            "question": "If the vectors a = 16i + 5j and b = 2i - j are perpendicular, find the value of 16*2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "5",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "functions_26"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^7 * (1-x)^14 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "23",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "functions_27"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^18 * (1-x)^9 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "29",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "functions_28"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(6x) / tan(9x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "6/9",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 6/9.",
-            "id": "functions_29"
-        },
-        {
-            "question": "If the vectors a = 20i + 6j and b = 6i - j are perpendicular, find the value of 20*6.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "6",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "functions_30"
-        }
-    ]
+  "questions": [
+    {
+      "id": 1,
+      "question": "Inverse of f(x) = (ax+b)/(cx-a) is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "f(x) itself",
+        "B": "1/f(x)",
+        "C": "x",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "Finding rank: word 'MOTHER'. Rank is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "309",
+        "B": "720",
+        "C": "120",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If n(A) = p, then number of subsets of A is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2^p",
+        "B": "p²",
+        "C": "2p",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "question": "The range of f(x) = x²/(1+x²) is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[0,1)",
+        "B": "(0,1)",
+        "C": "[0,1]",
+        "D": "(0,∞)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 5,
+      "question": "Domain of log(log x) is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1, ∞)",
+        "B": "(0, ∞)",
+        "C": "(e, ∞)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The function f(x) = log(x + √(x² + 1)) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Odd function",
+        "B": "Even function",
+        "C": "Neither",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "question": "Value of f(x) = x - [x] at x = -1.2 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0.8",
+        "B": "-0.2",
+        "C": "0.2",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 8,
+      "question": "The domain of f(x) = sec x is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "R - {(2n+1)π/2}",
+        "B": "R",
+        "C": "[-1, 1]",
+        "D": "(-π/2, π/2)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge functions #6",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "question": "The inverse of f(x) = (x−1)/(x+1) is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1+x)/(1−x)",
+        "B": "(x+1)/(x−1)",
+        "C": "1/f(x)",
+        "D": "(x−1)/(x+1)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge functions #9",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 11
+    },
+    {
+      "question": "The domain of f(x) = √(x² - 5x + 6) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "(-∞, 2] U [3, ∞)",
+        "B": "[2, 3]",
+        "C": "R",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 12
+    },
+    {
+      "question": "If f(x+y) = f(x) + f(y) for all x, y in R and f(1) = 7, then Σ f(r) from r=1 to n is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "7n(n+1) / 2",
+        "B": "7n",
+        "C": "7n²",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "question": "Locus of foot of perpendicular from focus of parabola to any tangent is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Tangent at vertex",
+        "B": "Directrix",
+        "C": "Axis",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 15,
+      "question": "If f(x) = x², then f is one-one if domain is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "[0, ∞)",
+        "B": "R",
+        "C": "[-1, 1]",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 16,
+      "question": "Which is an even function?",
+      "options": {
+        "A": "sin x",
+        "B": "cos x",
+        "C": "x³",
+        "D": "tan x"
+      },
+      "answer": "B",
+      "difficulty": "medium"
+    },
+    {
+      "question": "If f(x) = x + 1/x, then f(x) = f(1/x) for ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "All x ≠ 0",
+        "B": "Only x = 1",
+        "C": "Only x = -1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 17
+    },
+    {
+      "id": 18,
+      "question": "If f(x) = x² and g(x) = x + 1, then (f o g)(x) is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(x + 1)²",
+        "B": "x² + 1",
+        "C": "x² + x + 1",
+        "D": "2x + 1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The period of f(x) = cos(x/3) + sin(x/2) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "12π",
+        "B": "6π",
+        "C": "2π",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 19
+    },
+    {
+      "question": "Topic Specific Challenge functions #4",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 20
+    }
+  ]
 }

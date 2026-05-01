@@ -1,3 +1,299 @@
 {
-    "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "question": "Substitution x² = y can be used to resolve (x²) / (x² + 1)(x² + 2) ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Temporarily for finding coefficients",
+        "B": "Permanently",
+        "C": "Only for improper fractions",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "If P(x)/Q(x) is an odd continuous rational function, its partial fraction components will exhibit symmetry such that A_i and -A_i pair with roots ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "c and -c",
+        "B": "c and 1/c",
+        "C": "Conjugate",
+        "D": "Positive"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 3,
+      "question": "If the denominator contains a repeated irreducible quadratic factor (ax²+bx+c)², the decomposition includes (Ax+B)/(ax²+bx+c) + ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(Cx+D)/(ax²+bx+c)²",
+        "B": "C/(ax²+bx+c)²",
+        "C": "(Cx²+Dx+E)/(ax²+bx+c)²",
+        "D": "C/(ax²+bx+c)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 4,
+      "question": "Fractions like 1/(x(x+1)(x+2)) often form telescoping series sums in problems. Summing them up algebraically depends completely on the ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Partial fraction decomposition",
+        "B": "Arithmetic Progression formulas",
+        "C": "Geometric Progression limits",
+        "D": "Binomial expansion"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 5,
+      "question": "Resolve (x² + 1) / (x⁴ - 1) into partial fractions.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / (x² - 1)",
+        "B": "1 / (x-1)(x+1)",
+        "C": "1/2 [1/(x-1) - 1/(x+1)]",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 6,
+      "question": "Resolve 1 / (x(x² + 1)) into partial fractions.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/x - x/(x² + 1)",
+        "B": "1/x + 1/(x² + 1)",
+        "C": "x/(x² + 1)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 7,
+      "question": "For (x³+x²)/(x³-x²), polynomial division gives 1 + ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(2x²) / (x³-x²)",
+        "B": "x² / (x³-x²)",
+        "C": "2x² / (x³+x²)",
+        "D": "1 / (x-1)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 8,
+      "question": "The partial fraction of 1/(x(x+1)) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/x − 1/(x+1)",
+        "B": "1/x + 1/(x+1)",
+        "C": "−1/x + 1/(x+1)",
+        "D": "1/(x(x+1))"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 9,
+      "question": "Resolving 1/(x³−1) into partial fractions. Factors of denominator?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(x−1)(x²+x+1)",
+        "B": "(x−1)³",
+        "C": "(x−1)(x+1)²",
+        "D": "(x−1)(x+1)(x+i)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 10,
+      "question": "For a binomial expansion (1+x)ⁿ where n is a negative integer or fraction, we often use partial fractions if the expression is given as a ______ before expansion.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Rational function",
+        "B": "Polynomial",
+        "C": "Transcendental function",
+        "D": "Differential equation"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 11,
+      "question": "If the roots of the denominator are α₁, α₂, ..., α_n, and P(α_i) ≠ 0, and Q(x) = (x-α₁)(x-α₂)...(x-α_n), then the term A_i/(x-α_i) has A_i = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "P(α_i) / Q'(α_i)",
+        "B": "Q(α_i) / P'(α_i)",
+        "C": "P'(α_i) / Q(α_i)",
+        "D": "P(α_i) Q'(α_i)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge partial_fractions #5",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 12
+    },
+    {
+      "id": 13,
+      "question": "The decomposition of 1 / (x² - a²) is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/2a) [1/(x-a) - 1/(x+a)]",
+        "B": "(1/a) [1/(x-a) + 1/(x+a)]",
+        "C": "1/(x-a) - 1/(x+a)",
+        "D": "(1/2a) [1/(x+a) - 1/(x-a)]"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "In the partial fraction of P(x)/Q(x), if deg(P) ≥ deg(Q), we must first ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Divide P(x) by Q(x)",
+        "B": "Multiply P(x) by Q(x)",
+        "C": "Factorize Q(x)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 14
+    },
+    {
+      "id": 15,
+      "question": "Resolving f(x) = (x-1)/((x-2)(x-3)) yields A/(x-2) + B/(x-3). The value of A by cover-up method is (2-1)/(2-3) = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "2",
+        "D": "1/2"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge partial_fractions #1",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 16
+    },
+    {
+      "id": 17,
+      "question": "To resolve (x³ + 1) / (x² - 1) into partial fractions, the very first step is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Perform long division because it is an improper fraction",
+        "B": "Factor the denominator",
+        "C": "Set it equal to A/(x-1) + B/(x+1)",
+        "D": "Substitute x = 1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge partial_fractions #3",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 18
+    },
+    {
+      "id": 19,
+      "question": "Partial fraction decomposition of (x²−1)/((x+1)(x²+1)) simplifies to?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 − 2/(x²+1)... after cancelling (x+1): (x−1)/(x²+1)",
+        "B": "(x−1)/(x²+1)",
+        "C": "1/(x+1) − x/(x²+1)",
+        "D": "(x−1)/(x²+1)"
+      },
+      "answer": "B",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 20,
+      "question": "Laplace Transforms also use Partial Fractions when converting the frequency domain function F(s) back to the ______ domain f(t).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Time",
+        "B": "Spatial",
+        "C": "Complex",
+        "D": "Quantum"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
 }

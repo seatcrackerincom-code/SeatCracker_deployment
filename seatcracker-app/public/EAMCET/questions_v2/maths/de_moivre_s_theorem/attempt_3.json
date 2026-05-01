@@ -1,204 +1,305 @@
 {
-    "questions": [
-        {
-            "id": 3,
-            "question": "If ω is a complex cube root of unity, then the value of (1+ω)(1+ω²)(1+ω⁴)(1+ω⁸) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "ω",
-                "D": "9"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 7,
-            "question": "If z = cosθ + isinθ, then the value of z^4 + z^(-4) is",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "2cos4θ",
-                "B": "2sin4θ",
-                "C": "2cos2θ",
-                "D": "2sin2θ"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "medium"
-        },
-        {
-            "id": 11,
-            "question": "The value of (cosπ/6 + isinπ/6)^12 is",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "-1",
-                "C": "i",
-                "D": "-i"
-            },
-            "answer": "B",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 15,
-            "question": "If z = cosθ + isinθ, then the value of z^7 + z^(-7) is",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "2cos7θ",
-                "B": "2sin7θ",
-                "C": "2cos3θ",
-                "D": "2sin3θ"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "medium"
-        },
-        {
-            "id": 19,
-            "question": "Similarly, xⁿ + 1/xⁿ is equal to ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2 cos(nθ)",
-                "B": "2i sin(nθ)",
-                "C": "2 cosⁿθ",
-                "D": "2i sinⁿθ"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 23,
-            "question": "These identities are useful in expressing powers like cosⁿθ as a series of multiple angles like ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "cos(nθ), cos((n-2)θ)...",
-                "B": "sin(nθ), sin((n-2)θ)...",
-                "C": "sec(nθ)",
-                "D": "tan(nθ)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 27,
-            "question": "If x = cos θ + i sin θ, then x - 1/x is equal to ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2i sin θ",
-                "B": "2 cos θ",
-                "C": "2i",
-                "D": "-2 cos θ"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 31,
-            "question": "Summing C + iS method uses series of ______ progression.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Geometric",
-                "B": "Arithmetic",
-                "C": "Harmonic",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 35,
-            "question": "Bridge between exponentials and trigonometry is ______ formula.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "De Moivre's",
-                "B": "Taylor's",
-                "C": "Logarithmic",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 39,
-            "question": "If α is root of DM equation, is 1/α also a root? ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Yes (reciprocal property)",
-                "B": "No",
-                "C": "Only for unity",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 43,
-            "question": "cos 3θ using De Moivre = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "4cos³θ − 3cosθ",
-                "B": "3cosθ − 4cos³θ",
-                "C": "cos³θ − 3cosθsin²θ",
-                "D": "Both A and C"
-            },
-            "answer": "D",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Advanced De Moivre question 1 involving simplification of complex powers.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Option A",
-                "B": "Option B",
-                "C": "Option C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 47
-        },
-        {
-            "id": 51,
-            "question": "(cosh x + sinh x)ⁿ by De Moivre's analog is equal to ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "cosh(nx) + sinh(nx)",
-                "B": "cosh(nx) - sinh(nx)",
-                "C": "cosh(n/x) + sinh(n/x)",
-                "D": "e^{nx/2}"
-            },
-            "answer": "A"
-        }
-    ]
+  "questions": [
+    {
+      "id": 41,
+      "question": "These identities are useful in expressing powers like cosⁿθ as a series of multiple angles like ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos(nθ), cos((n-2)θ)...",
+        "B": "sin(nθ), sin((n-2)θ)...",
+        "C": "sec(nθ)",
+        "D": "tan(nθ)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
+      "question": "If z = cosθ + isinθ, then the value of z^2 + z^(-2) is",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2cos2θ",
+        "B": "2sin2θ",
+        "C": "2cosθ",
+        "D": "2sinθ"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "medium"
+    },
+    {
+      "id": 43,
+      "question": "Product of nth roots of unity = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(−1)^(n+1)",
+        "B": "1",
+        "C": "0",
+        "D": "n"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Advanced De Moivre question 1 involving simplification of complex powers.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 44
+    },
+    {
+      "id": 45,
+      "question": "Value of (1 + cos θ + i sin θ)ⁿ / (1 + cos θ - i sin θ)ⁿ is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cos nθ + i sin nθ",
+        "B": "1",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 46,
+      "question": "The value of (cos2π/3 + isin2π/3)^6 is",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "i",
+        "D": "-i"
+      },
+      "answer": "B",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 47,
+      "question": "If z = cosθ + isinθ, then the value of z^6 + z^(-6) is",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2cos6θ",
+        "B": "2sin6θ",
+        "C": "2cos3θ",
+        "D": "2sin3θ"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "medium"
+    },
+    {
+      "question": "(cos θ + i sin θ)ⁿ = cos nθ + i sin nθ is known as ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "De Moivre's Theorem",
+        "B": "Euler's Formula",
+        "C": "Taylor's Theorem",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 48
+    },
+    {
+      "id": 49,
+      "question": "If x = cos θ + i sin θ, then x - 1/x is equal to ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2i sin θ",
+        "B": "2 cos θ",
+        "C": "2i",
+        "D": "-2 cos θ"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 50,
+      "question": "Similarly, xⁿ + 1/xⁿ is equal to ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2 cos(nθ)",
+        "B": "2i sin(nθ)",
+        "C": "2 cosⁿθ",
+        "D": "2i sinⁿθ"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
+      "question": "For example, 2² cos³θ = 2(cos θ)³ = (x + 1/x)³. Expanding it yields cos 3θ + ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3 cos θ",
+        "B": "3 sin θ",
+        "C": "cos θ",
+        "D": "-cos 3θ"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 52,
+      "question": "Sum of p-th powers of nth roots of unity (p not divisible by n) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "n",
+        "C": "1",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "If z = cosθ + isinθ and z^n = cosnθ + isinnθ, then the value of z^3 + z^(-3) is",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2cos3θ",
+        "B": "2sin3θ",
+        "C": "2cosθ",
+        "D": "2sinθ"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "medium"
+    },
+    {
+      "question": "Topic Specific Challenge de_moivre_s_theorem #0",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 54
+    },
+    {
+      "question": "Topic Specific Challenge de_moivre_s_theorem #4",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 55
+    },
+    {
+      "question": "Advanced De Moivre question 2 involving simplification of complex powers.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 56
+    },
+    {
+      "question": "Advanced De Moivre question 8 involving simplification of complex powers.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 57
+    },
+    {
+      "question": "The constant term in (x² + 1/x)^8 is ______.",
+      "options": {
+        "A": "Found via TR+1",
+        "B": "0",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "id": 58
+    },
+    {
+      "id": 59,
+      "question": "Summing C + iS method uses series of ______ progression.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Geometric",
+        "B": "Arithmetic",
+        "C": "Harmonic",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "Solve z³ + i = 0 center logic? ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "z = cis(-π/6 + 2kπ/3)",
+        "B": "z = cis(kπ/3)",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    }
+  ]
 }

@@ -1,250 +1,55 @@
 {
   "questions": [
     {
-      "id": 1,
-      "question": "For a binomial expansion (1+x)ⁿ where n is a negative integer or fraction, we often use partial fractions if the expression is given as a ______ before expansion.",
-      "difficulty": "Medium",
+      "question": "The partial fraction of (2x+3) / ((x+1)²) is ______.",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "Rational function",
-        "B": "Polynomial",
-        "C": "Transcendental function",
-        "D": "Differential equation"
+        "A": "2/(x+1) + 1/(x+1)²",
+        "B": "2/(x+1) - 1/(x+1)²",
+        "C": "1/(x+1) + 2/(x+1)²",
+        "D": "None"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard",
+      "id": 21
     },
     {
-      "id": 2,
-      "question": "When resolving into partial fractions for finding an integral, (Ax + B) / (ax² + bx + c) is usually further split because the Ax term requires ______, and the B term requires ______.",
+      "id": 22,
+      "question": "Partial fraction of x²/((x−1)(x+1)²) has form?",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "Logarithmic substitution, completing the square (arctan)",
-        "B": "Partial fractions again, differentiation",
-        "C": "Sine, Cosine",
-        "D": "Binomial theorem, Taylor series"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 3,
-      "question": "Let x² / ((x²+1)(x²+4)). We can substitute y = x² to turn the fraction into ______, making it easier to resolve.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "y / ((y+1)(y+4))",
-        "B": "y² / ((y+1)(y+4))",
-        "C": "1 / ((y+1)(y+4))",
-        "D": "y / (y²+5y+4)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 4,
-      "question": "For (x³+x²)/(x³-x²), polynomial division gives 1 + ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(2x²) / (x³-x²)",
-        "B": "x² / (x³-x²)",
-        "C": "2x² / (x³+x²)",
-        "D": "1 / (x-1)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 5,
-      "question": "If denominator has a factor (x - 1)ⁿ, the partial fractions will be sum from k=1 to n of A_k / (x - 1)^k. Only A_n can be simply found by ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Cover-up rule directly (multiply (x-1)ⁿ and put x=1)",
-        "B": "Setting x=0",
-        "C": "Comparing coefficients of highest power",
-        "D": "Integration"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 6,
-      "question": "The partial fraction of 1/(x(x+1)) is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "1/x − 1/(x+1)",
-        "B": "1/x + 1/(x+1)",
-        "C": "−1/x + 1/(x+1)",
-        "D": "1/(x(x+1))"
+        "A": "A/(x−1) + B/(x+1) + C/(x+1)²",
+        "B": "(Ax+B)/(x+1)² + C/(x−1)",
+        "C": "A/(x−1) + B/(x+1)²",
+        "D": "A/(x²−1) + B/(x+1)"
       },
       "answer": "A",
       "pyq": true,
       "tag": "pyq"
     },
     {
-      "id": 7,
-      "question": "If the roots of the denominator are α₁, α₂, ..., α_n, and P(α_i) ≠ 0, and Q(x) = (x-α₁)(x-α₂)...(x-α_n), then the term A_i/(x-α_i) has A_i = ______.",
+      "id": 23,
+      "question": "For (ax²+bx+c)/((x−α)(x−β)(x−γ)), the partial fraction A at x=α is?",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "P(α_i) / Q'(α_i)",
-        "B": "Q(α_i) / P'(α_i)",
-        "C": "P'(α_i) / Q(α_i)",
-        "D": "P(α_i) Q'(α_i)"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 8,
-      "question": "Partial fractions of (3x+1)/((x+1)²) = A/(x+1) + B/(x+1)². B = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "−2",
-        "B": "2",
-        "C": "3",
-        "D": "1"
+        "A": "(aα²+bα+c)/((α−β)(α−γ))",
+        "B": "(aα²+bα+c)/(α−β)",
+        "C": "a/(α−β)(α−γ)",
+        "D": "1/(α−β)(α−γ)"
       },
       "answer": "A",
       "pyq": true,
       "tag": "pyq"
     },
     {
-      "id": 9,
-      "question": "Fractions like 1/(x(x+1)(x+2)) often form telescoping series sums in problems. Summing them up algebraically depends completely on the ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Partial fraction decomposition",
-        "B": "Arithmetic Progression formulas",
-        "C": "Geometric Progression limits",
-        "D": "Binomial expansion"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 10,
-      "question": "Because complex roots appear in conjugate pairs, the linear partial fractions C/(x-z_1) + C*/(x-z_1*) combine to form a real partial fraction with a ______ denominator.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Quadratic",
-        "B": "Linear",
-        "C": "Cubic",
-        "D": "Constant"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 11,
-      "question": "To integrate ∫ P(x)/Q(x) dx efficiently using elementary functions, the rational function MUST be ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Expressed as partial fractions after polynomial division if improper",
-        "B": "Expanded via Taylor series",
-        "C": "Substituted with trigonometric terms directly",
-        "D": "Integrated by parts repeatedly"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 12,
-      "question": "Consider 1/((x-1)(x-2)...(x-n)). The coefficient of 1/(x-r) is 1 / [(-1)^(n-r) * ______].",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(r-1)! (n-r)!",
-        "B": "r! n!",
-        "C": "(n-1)!",
-        "D": "(n-r)!"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 13,
-      "question": "If degree of P(x) is exactly equal to Q(x), the polynomial division yields a ______ plus a proper fraction.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Constant",
-        "B": "Linear polynomial x",
-        "C": "Zero",
-        "D": "Rational function"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 14,
-      "question": "For 1/(x⁴-1), the factorization of the denominator is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(x-1)(x+1)(x²+1)",
-        "B": "(x²-1)(x²+1)²",
-        "C": "(x-1)⁴",
-        "D": "(x-1)²(x+1)²"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 15,
-      "question": "The identity A_i = P(α_i) / Q'(α_i) is known as the expansion theorem for partial fractions or ______ rule.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Heaviside's",
-        "B": "L'Hopital's",
-        "C": "Taylor's",
-        "D": "Cramer's"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 16,
-      "question": "If degree of numerator ≥ degree of denominator, first step is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "polynomial long division",
-        "B": "direct partial fraction",
-        "C": "multiply numerator and denominator",
-        "D": "factor numerator"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 17,
+      "id": 24,
       "question": "For an expression f(x)/Q(x), if Q(x) is expanded as xⁿ + ..., the number of unknown partial fraction constants exactly equals the ______ of Q(x).",
       "difficulty": "Medium",
       "hasDiagram": false,
@@ -259,51 +64,255 @@
       "pyq": false
     },
     {
-      "id": 18,
-      "question": "(x²+1)/((x+1)(x²+x+1)) = A/(x+1) + (Bx+C)/(x²+x+1). Find A.",
+      "question": "The number of partial fractions for 1 / ((x²+1)(x²+2)) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 25
+    },
+    {
+      "question": "Partial fraction of (x²) / (x²-1) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1 + 1/2(x-1) - 1/2(x+1)",
+        "B": "1/(x-1) - 1/(x+1)",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 26
+    },
+    {
+      "id": 27,
+      "question": "When (1/y² + 2/y³) is put back in terms of x, you immediately get the partial fractions without undetermined coefficients. This is substitution method. y = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x - 1",
+        "B": "x + 1",
+        "C": "x",
+        "D": "x²"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If 1 / (x(x+1)...(x+n)) = Σ A_r / (x+r), then A_0 = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1/n!",
+        "B": "n!",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 28
+    },
+    {
+      "id": 29,
+      "question": "Let x² / ((x²+1)(x²+4)). We can substitute y = x² to turn the fraction into ______, making it easier to resolve.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y / ((y+1)(y+4))",
+        "B": "y² / ((y+1)(y+4))",
+        "C": "1 / ((y+1)(y+4))",
+        "D": "y / (y²+5y+4)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "In discrete math, the method of generating functions uses partial fractions extensively to find ______ sequences.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Closed-form formulas for",
+        "B": "Randomly generated",
+        "C": "Roots of",
+        "D": "Derivatives of"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 31,
+      "question": "x/((x+1)(x+2)(x+3)) partial fractions: sum of constants A+B+C = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "−1",
+        "D": "3"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "If (x+1) / ((x-1)²(x-2)) = A/(x-1) + B/(x-1)² + C/(x-2), then C = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "3",
+        "B": "1",
+        "C": "-2",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 32
+    },
+    {
+      "id": 33,
+      "question": "∫ [A/(x−1) + B/(x+1)] dx if A=2, B=−2 = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2 ln|(x−1)/(x+1)| + C",
+        "B": "2 ln|x²−1| + C",
+        "C": "ln|(x−1)²/(x+1)²| + C",
+        "D": "Both A and C"
+      },
+      "answer": "D",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 34,
+      "question": "Partial fraction form of (x²+1)/((x+1)²(x+2)) includes?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "A/(x+1) + B/(x+1)² + C/(x+2)",
+        "B": "(Ax+B)/(x+1)² + C/(x+2)",
+        "C": "A/(x+1)² + B/(x+2)",
+        "D": "A/(x+1) + B/(x+2)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 35,
+      "question": "Heaviside's cover-up method applies when all factors in denominator are?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "linear and distinct",
+        "B": "quadratic",
+        "C": "repeated",
+        "D": "any type"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 36,
+      "question": "If (x+1)² / (x-1)² is resolved, the constant term in decomposition is ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
         "A": "1",
         "B": "2",
-        "C": "−1",
-        "D": "1/3"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 19,
-      "question": "When Q(x) has complex roots, they occur in ______ pairs if the polynomial has real coefficients.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Conjugate",
-        "B": "Reciprocal",
-        "C": "Negative",
-        "D": "Orthogonal"
+        "C": "4",
+        "D": "None"
       },
       "answer": "A",
       "pyq": false
     },
     {
-      "id": 20,
-      "question": "Partial fraction of x²/((x−1)(x+1)²) has form?",
+      "id": 37,
+      "question": "If (3x + 4) / ((x+1)²(x-1)) = A/(x+1) + B/(x+1)² + C/(x-1), then B is ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "A/(x−1) + B/(x+1) + C/(x+1)²",
-        "B": "(Ax+B)/(x+1)² + C/(x−1)",
-        "C": "A/(x−1) + B/(x+1)²",
-        "D": "A/(x²−1) + B/(x+1)"
+        "A": "-1/2",
+        "B": "1/2",
+        "C": "7/4",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 38,
+      "question": "For irreducible quadratic in denominator (x²+1), partial fraction form is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(Ax+B)/(x²+1)",
+        "B": "A/(x²+1)",
+        "C": "A/x + B/x²",
+        "D": "Ax/(x²+1)"
       },
       "answer": "A",
       "pyq": true,
       "tag": "pyq"
+    },
+    {
+      "question": "If (x²+3x+1) / (x²-5x+6) = 1 + A/(x-2) + B/(x-3), then A = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "-11",
+        "B": "19",
+        "C": "8",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 39
+    },
+    {
+      "question": "Partial fraction decomposition of 1 / (x³ + 1) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1/3(x+1) - (x-2)/3(x²-x+1)",
+        "B": "1/(x+1) + (x+1)/(x²-x+1)",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 40
     }
   ]
 }

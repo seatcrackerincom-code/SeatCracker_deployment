@@ -1,891 +1,303 @@
 {
-    "questions": [
-        {
-            "id": 1,
-            "question": "The integral ∫ from 0 to a of √(a² - x²) dx geometrically represents ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Area of a quarter circle of radius a (πa²/4)",
-                "B": "Area of a semicircle",
-                "C": "Area of a full circle",
-                "D": "Volume of a sphere"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^13 * (1-x)^19 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "34",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 5
-        },
-        {
-            "id": 9,
-            "question": "If f(x) is periodic with period T, then ∫ from a to a+nT f(x)dx = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "n * ∫ from 0 to T f(x)dx",
-                "B": "∫ from 0 to T f(x)dx",
-                "C": "n * f(T)",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^18 * (1-x)^15 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "35",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 13
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^3 * (1-x)^8 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "13",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 17
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^14 * (1-x)^18 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "34",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 21
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^12 * (1-x)^4 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "18",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 25
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^19 * (1-x)^14 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "35",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 29
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^3 * (1-x)^16 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "21",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 33
-        },
-        {
-            "id": 37,
-            "question": "Definite integral as limit of a sum: lim(n→∞) 1/n ∑_{r=1}^n f(r/n) = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "∫_0^1 f(x) dx",
-                "B": "∫_1^n f(x) dx",
-                "C": "∫_0^∞ f(x) dx",
-                "D": "f(1) - f(0)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^19 * (1-x)^2 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "23",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 41
-        },
-        {
-            "id": 45,
-            "question": "lim(n→∞) [1/(n+1) + 1/(n+2) + ... + 1/2n] = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "ln 2",
-                "B": "ln(1/2)",
-                "C": "1",
-                "D": "∞"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "∫₀ᶿ (f(x) / (f(x) + f(a-x))) dx from 0 to a is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "a / 2",
-                "B": "a",
-                "C": "0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 49
-        },
-        {
-            "question": "Definite integral represents ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Area under curve",
-                "B": "Slope of tangent",
-                "C": "Length of arc",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 53
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^4 * (1-x)^17 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "23",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 57
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^20 * (1-x)^15 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "37",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 61
-        },
-        {
-            "question": "Evaluate the integral from 0 to pi/2 of (sin^3 x) / (sin^3 x + cos^3 x) dx.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "pi/4",
-                "B": "pi/2",
-                "C": "pi/8",
-                "D": "0"
-            },
-            "answer": "A",
-            "hint": "Use the property: Int(0 to a) f(x) dx = Int(0 to a) f(a-x) dx",
-            "solution": "Let I = Integral. Both numerator become sin^a and cos^a. 2I = Int(1) dx from 0 to pi/2 = pi/2 -> I = pi/4.",
-            "id": 65
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^8 * (1-x)^7 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "17",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 69
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^18 * (1-x)^9 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "29",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 73
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^20 * (1-x)^19 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "41",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 77
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^2 * (1-x)^4 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "8",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 81
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^9 * (1-x)^6 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "17",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 85
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^17 * (1-x)^15 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "34",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 89
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^2 * (1-x)^12 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "16",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 93
-        },
-        {
-            "id": 97,
-            "question": "Strictly calculate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-2]",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "π/4",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 101,
-            "question": "Strictly differentiate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-6]",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "π/4",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "hard"
-        },
-        {
-            "id": 105,
-            "question": "Strictly identify the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-10]",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "π/4",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 109,
-            "question": "Strictly predict the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-14]",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "π/4",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 113,
-            "question": "Strictly summarize the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-18]",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "π/4",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "hard"
-        },
-        {
-            "id": 117,
-            "question": "Strictly evaluate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 2-2]",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "π/4",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 121,
-            "question": "Strictly contrast the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 2-6]",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "π/4",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "hard"
-        },
-        {
-            "id": 125,
-            "question": "Strictly determine the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 2-10]",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "π/4",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 129,
-            "question": "Strictly synthesize the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 2-14]",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "π/4",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 133,
-            "question": "Strictly analyze the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 2-18]",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "π/4",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "hard"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^10 * (1-x)^17 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "29",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 137
-        },
-        {
-            "id": 141,
-            "question": "Strictly differentiate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 4-3]",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "π/4",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "hard"
-        },
-        {
-            "id": 145,
-            "question": "Strictly identify the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 4-7]",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "π/4",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 149,
-            "question": "Strictly predict the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 4-11]",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "π/4",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 153,
-            "question": "Strictly summarize the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 4-15]",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "π/4",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "hard"
-        },
-        {
-            "id": 157,
-            "question": "Strictly calculate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 4-19]",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "π/4",
-                "D": "-1"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^16 * (1-x)^5 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "23",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 161
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^3 * (1-x)^10 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "15",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 165
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^11 * (1-x)^4 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "17",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 169
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^14 * (1-x)^3 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "19",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 173
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^10 * (1-x)^16 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "28",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 177
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^17 * (1-x)^2 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "21",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 181
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^16 * (1-x)^20 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "38",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 185
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^11 * (1-x)^7 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "20",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 189
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^4 * (1-x)^5 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "11",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 193
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^3 * (1-x)^12 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "17",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 197
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^14 * (1-x)^6 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "22",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 201
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^7 * (1-x)^10 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "19",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 205
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^4 * (1-x)^20 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "26",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 209
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^11 * (1-x)^2 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "15",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 213
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^20 * (1-x)^3 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "25",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 217
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^18 * (1-x)^17 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "37",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 221
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^7 * (1-x)^6 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "15",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 225
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^12 * (1-x)^18 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "32",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 229
-        }
-    ]
+  "questions": [
+    {
+      "id": 1,
+      "question": "∫_0^1 {x} dx, where {.} is fractional part, is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1/2",
+        "B": "1",
+        "C": "0",
+        "D": "1/3"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The value of ∫₋₁¹ |x| dx is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "2",
+        "D": "0.5"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "question": "∫_0^a f(x) dx = ∫_0^a f(a-x) dx. This is applicable to sin x over [0, π/2] to get ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∫_0^π/2 cos x dx",
+        "B": "∫_0^π/2 sin x dx",
+        "C": "0",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 4,
+      "question": "The limit lim_{n→∞} ∑_{r=1}ⁿ [ r³ / (r⁴ + n⁴) ] is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/4) ln 2",
+        "B": "ln 2",
+        "C": "1/2",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 5,
+      "question": "The property ∫₀^{2a} f(x) dx = 0 if f(2a-x) = -f(x) is primarily for ______ symmetry.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Rotational",
+        "B": "Reflection",
+        "C": "Translational",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 6,
+      "question": "If ∫₀^a dx/(4+x²) = π/8, then a = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "1",
+        "D": "π/4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 7,
+      "question": "∫₀^(π/2) (sin x)/(sin x + cos x) dx = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "π/8",
+        "D": "1/2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Definite integral represents ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Area under curve",
+        "B": "Slope of tangent",
+        "C": "Length of arc",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 8
+    },
+    {
+      "question": "If f(2a-x) = f(x), then ∫₀²ᵃ f(x) dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2 ∫₀ᵃ f(x) dx",
+        "B": "0",
+        "C": "f(a)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "question": "Wallis' Formula: If n is even, the final multiplier in the product is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "π/2",
+        "B": "1",
+        "C": "0",
+        "D": "π/4"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The area bounded by y = x², x-axis and x = 2 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "8 / 3",
+        "B": "4 / 3",
+        "C": "2",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 11
+    },
+    {
+      "id": 12,
+      "question": "∫₋π^π sin³x cos²x dx = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "2π",
+        "C": "π",
+        "D": "4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge definite_integrals #14",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "question": "lim(n→∞) [1/(n+1) + 1/(n+2) + ... + 1/2n] = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ln 2",
+        "B": "ln(1/2)",
+        "C": "1",
+        "D": "∞"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 15,
+      "question": "Mean value of function f(x) on [a,b] is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/(b-a)) ∫_a^b f(x) dx",
+        "B": "∫_a^b f(x) dx",
+        "C": "f((a+b)/2)",
+        "D": "(f(a)+f(b))/2"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "A fair coin is tossed 9 times. What is the probability of getting exactly 7 heads?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "options": {
+        "A": "36.0/2^9",
+        "B": "9/2^9",
+        "C": "1/2^9",
+        "D": "72/2^9"
+      },
+      "answer": "A",
+      "hint": "Use Binomial distribution: nCr * (1/2)^r * (1/2)^(n-r)",
+      "solution": "P(X=7) = 9C7 * (1/2)^n = 36.0/2^9.",
+      "id": 16
+    },
+    {
+      "id": 17,
+      "question": "∫_a^b f(x) dx = ∫_a^c f(x) dx + ∫_c^b f(x) dx is valid for ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Any real c",
+        "B": "Only c between a and b",
+        "C": "Only positive c",
+        "D": "c = 0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The limit of (1 + x)^(1/x) as x approaches 0 is ______.",
+      "options": {
+        "A": "e",
+        "B": "1",
+        "C": "0",
+        "D": "1/e"
+      },
+      "answer": "A",
+      "id": 18,
+      "hasDiagram": false
+    },
+    {
+      "id": 19,
+      "question": "If f(x) is periodic with period T, then ∫_a^{a+T} f(x) dx = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "∫_0^T f(x) dx",
+        "B": "T ∫_0^a f(x) dx",
+        "C": "0",
+        "D": "aT"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The eccentricity of the hyperbola x² - y² = 4² is ______.",
+      "options": {
+        "A": "√2",
+        "B": "2",
+        "C": "√3",
+        "D": "1"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "id": 20
+    }
+  ]
 }

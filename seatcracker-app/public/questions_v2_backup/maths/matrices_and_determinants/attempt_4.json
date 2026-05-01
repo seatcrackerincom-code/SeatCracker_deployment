@@ -1,196 +1,95 @@
 {
   "questions": [
     {
-      "question": "The product of eigenvalues of a matrix is equal to ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Determinant",
-        "B": "Trace",
-        "C": "Rank",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 1
-    },
-    {
-      "question": "The number of symmetric matrices of order 3 with entries from {0, 1} is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "64",
-        "B": "512",
-        "C": "2⁷",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 2
-    },
-    {
-      "question": "If A is a 3x3 matrix and |adj A| = 64, then |A| = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "±8",
-        "B": "64",
-        "C": "4",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 3
-    },
-    {
-      "question": "Sum of eigenvalues of a matrix is equal to ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Trace",
-        "B": "Determinant",
-        "C": "Rank",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 4
-    },
-    {
-      "id": 5,
-      "question": "If A is idempotent (A²=A), eigenvalues of A can only be?",
-      "difficulty": "Hard",
+      "id": 61,
+      "question": "If A is orthogonal matrix, then |A| = ?",
+      "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "0 or 1",
-        "B": "0 or −1",
-        "C": "1 or −1",
-        "D": "any real"
+        "A": "±1",
+        "B": "0",
+        "C": "1",
+        "D": "−1"
       },
       "answer": "A",
       "pyq": true,
       "tag": "pyq"
     },
     {
-      "question": "The inverse of a symmetric matrix is ______.",
-      "difficulty": "Hard",
+      "id": 62,
+      "question": "Inverse of diagonal matrix diag(a, b, c) is ______.",
+      "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "None",
+      "diagram_description": "",
       "options": {
-        "A": "Symmetric",
-        "B": "Skew-symmetric",
-        "C": "Diagonal",
+        "A": "diag(1/a, 1/b, 1/c)",
+        "B": "diag(a, b, c)",
+        "C": "diag(-a, -b, -c)",
         "D": "None"
       },
       "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 6
+      "pyq": false
     },
     {
-      "question": "If A = [[cosθ, sinθ], [-sinθ, cosθ]], then Aⁿ = ______.",
-      "difficulty": "Hard",
+      "id": 63,
+      "question": "Cramer's Rule is used to solve a system of linear equations using ______.",
+      "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "None",
+      "diagram_description": "",
       "options": {
-        "A": "[[cos nθ, sin nθ], [-sin nθ, cos nθ]]",
-        "B": "[[cosⁿθ, sinⁿθ], [-sinⁿθ, cosⁿθ]]",
-        "C": "I",
-        "D": "None"
+        "A": "Determinants",
+        "B": "Inverses",
+        "C": "Transposes",
+        "D": "Adjoints"
       },
       "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 7
+      "pyq": false
     },
     {
-      "question": "If A is an orthogonal matrix, then |A| = ______.",
+      "id": 64,
+      "question": "In Cramer's Rule, the value of x is given by Δx/Δ. If Δ = 0 and at least one of Δx, Δy, Δz is non-zero, the system has ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "None",
+      "diagram_description": "",
       "options": {
-        "A": "±1",
-        "B": "0",
-        "C": "I",
-        "D": "None"
+        "A": "No solution",
+        "B": "Infinite solutions",
+        "C": "Unique solution",
+        "D": "Zero solution"
       },
       "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 8
+      "pyq": false
     },
     {
-      "question": "If A is a skew-symmetric matrix of odd order, then |A| = ______.",
+      "id": 65,
+      "question": "For AX=0 to have a non-trivial solution, |A| must be ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "None",
+      "diagram_description": "",
       "options": {
         "A": "0",
-        "B": "1",
-        "C": "-1",
-        "D": "None"
+        "B": "Non-zero",
+        "C": "1",
+        "D": "Positive"
       },
       "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 9
+      "pyq": false
     },
     {
-      "question": "The matrix A such that A * [[1, 2], [3, 4]] = [[1, 0], [0, 1]] is ______.",
-      "difficulty": "Hard",
+      "id": 66,
+      "question": "What is the inverse of [ [a, b], [c, d] ] if ad-bc = 1?",
+      "difficulty": "Medium",
       "hasDiagram": false,
-      "diagram_description": "None",
+      "diagram_description": "",
       "options": {
-        "A": "[[-2, 1], [1.5, -0.5]]",
-        "B": "[[4, -2], [-3, 1]]",
-        "C": "None",
-        "D": "None"
+        "A": "[ [d, -b], [-c, a] ]",
+        "B": "[ [a, c], [b, d] ]",
+        "C": "[ [-d, b], [c, -a] ]",
+        "D": "[ [0, 1], [1, 0] ]"
       },
       "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 10
-    },
-    {
-      "question": "A square matrix A is called singular if ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "|A| = 0",
-        "B": "|A| ≠ 0",
-        "C": "A² = I",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 11
-    },
-    {
-      "question": "If A is involuntary, then A² = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "I",
-        "B": "O",
-        "C": "A",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 12
+      "pyq": false
     },
     {
       "question": "If a, b, c are in AP, then the determinant [[x+1, x+2, x+a], [x+2, x+3, x+b], [x+3, x+4, x+c]] is ______.",
@@ -206,90 +105,40 @@
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 13
+      "id": 67
     },
     {
-      "id": 14,
-      "question": "Minor of element 4 in [[1,2,3],[0,4,5],[1,0,6]] is?",
+      "id": 68,
+      "question": "Multiplying a row of a determinant by a constant 'k' results in the determinant being ______.",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "1",
-        "B": "3",
-        "C": "−3",
-        "D": "6"
-      },
-      "answer": "B",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "question": "The rank of the matrix [[1,2,3],[2,3,4],[3,4,5]] is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "2",
-        "B": "3",
-        "C": "1",
-        "D": "None"
+        "A": "Multiplied by k",
+        "B": "Multiplied by kⁿ",
+        "C": "Unchanged",
+        "D": "Zero"
       },
       "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 15
+      "pyq": false
     },
     {
-      "id": 16,
-      "question": "If |A| = 3 for 3×3 matrix A, then |2A| = ?",
+      "id": 69,
+      "question": "The cofactor of an element a_ij is (-1)^(i+j) times its ______.",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "24",
-        "B": "6",
-        "C": "12",
-        "D": "9"
+        "A": "Minor",
+        "B": "Transpose",
+        "C": "Inverse",
+        "D": "Adjoint"
       },
       "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
+      "pyq": false
     },
     {
-      "question": "If A² - A + I = O, then the inverse of A is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "I - A",
-        "B": "A - I",
-        "C": "A",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 17
-    },
-    {
-      "question": "If Trace(A) = 5 and Trace(B) = 3, then Trace(2A + 3B) = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "19",
-        "B": "8",
-        "C": "15",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 18
-    },
-    {
-      "id": 19,
+      "id": 70,
       "question": "A symmetric matrix satisfies Aᵀ = A. If A = [[a,2],[3,b]], then a,b relate as?",
       "difficulty": "Medium",
       "hasDiagram": false,
@@ -305,20 +154,153 @@
       "tag": "pyq"
     },
     {
-      "id": 20,
-      "question": "Trace of A = [[1,2,3],[0,4,5],[0,0,6]] is?",
-      "difficulty": "Medium",
+      "id": 71,
+      "question": "If A is idempotent (A²=A), eigenvalues of A can only be?",
+      "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "11",
-        "B": "10",
-        "C": "12",
-        "D": "9"
+        "A": "0 or 1",
+        "B": "0 or −1",
+        "C": "1 or −1",
+        "D": "any real"
       },
       "answer": "A",
       "pyq": true,
       "tag": "pyq"
+    },
+    {
+      "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 7 S's are always together.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "options": {
+        "A": "60",
+        "B": "0",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "hint": "Think step by step.",
+      "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+      "id": 72
+    },
+    {
+      "id": 73,
+      "question": "A matrix A is involutory if A² = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "I",
+        "B": "A",
+        "C": "0",
+        "D": "A⁻¹"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 74,
+      "question": "If A is a 3x3 matrix with rows R1, R2, R3 and R1 = R2 + R3, then |A| is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Non-zero",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If A is a 3x3 non-singular matrix such that |A| = 5, then |adj(adj A)| is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "5⁴",
+        "B": "5⁹",
+        "C": "5²",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 75
+    },
+    {
+      "question": "Topic Specific Challenge matrices_and_determinants #2",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 76
+    },
+    {
+      "id": 77,
+      "question": "If the rank of a 3x3 matrix is 2, then its determinant is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Non-zero",
+        "D": "3"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 78,
+      "question": "For a square matrix A, A + Aᵀ is always ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Symmetric",
+        "B": "Skew-symmetric",
+        "C": "Identity",
+        "D": "Singular"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 79,
+      "question": "If A is an orthogonal matrix, then AAᵀ = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "I",
+        "B": "0",
+        "C": "A",
+        "D": "A²"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 80,
+      "question": "For a non-singular matrix A, the inverse A⁻¹ is given by ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/|A|) * adj(A)",
+        "B": "|A| * adj(A)",
+        "C": "adj(A) / |A|ᵀ",
+        "D": "Aᵀ / |A|"
+      },
+      "answer": "A",
+      "pyq": false
     }
   ]
 }

@@ -1,23 +1,35 @@
 {
   "questions": [
     {
-      "question": "If a, b, c are position vectors of A, B, C, then AB = ______.",
+      "question": "Topic Specific Challenge vector_addition #1",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 61
+    },
+    {
+      "question": "Two vectors are equal if they have the same ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "None",
       "options": {
-        "A": "b - a",
-        "B": "a - b",
-        "C": "a + b",
+        "A": "Magnitude and Direction",
+        "B": "Starting point",
+        "C": "Ending point",
         "D": "None"
       },
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 1
+      "id": 62
     },
     {
-      "question": "Resultant of two equal and opposite vectors is ______ vector.",
+      "question": "Adding a vector to its negative results in ______ vector.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "None",
@@ -30,183 +42,39 @@
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 2
+      "id": 63
     },
     {
-      "id": 3,
-      "question": "For vectors a⃗,b⃗,c⃗ with a⃗+b⃗+c⃗=0, if |a⃗|=3,|b⃗|=5,|c⃗|=7, then angle between a⃗ and b⃗ is?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "60°",
-        "B": "90°",
-        "C": "120°",
-        "D": "45°"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 4,
-      "question": "If |a⃗| = 5, |b⃗| = 13, |a⃗−b⃗| = 12, then |a⃗+b⃗| = ?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "13",
-        "B": "5",
-        "C": "12",
-        "D": "√194"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "question": "Centroid of a tetrahedron with vertices a, b, c, d is ______.",
+      "question": "Projection of a vector on an axis is a ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "None",
       "options": {
-        "A": "(a+b+c+d)/4",
-        "B": "(a+b+c)/3",
-        "C": "None",
+        "A": "Scalar",
+        "B": "Vector",
+        "C": "Matrix",
         "D": "None"
       },
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 5
+      "id": 64
     },
     {
-      "question": "The angle between a and -2a is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "180°",
-        "B": "0°",
-        "C": "90°",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 6
-    },
-    {
-      "question": "Direction of i x j is along ______ axis.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "z",
-        "B": "x",
-        "C": "y",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 7
-    },
-    {
-      "id": 8,
-      "question": "The section formula: point dividing PQ (P=p⃗, Q=q⃗) in ratio m:n internally is?",
+      "id": 65,
+      "question": "If a⃗ = î+2ĵ+3k̂ and b⃗ = 3î−2ĵ+k̂, what is angle between them?",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "(mp⃗+nq⃗)/(m+n)",
-        "B": "(mq⃗+np⃗)/(m+n)",
-        "C": "(p⃗+q⃗)/2",
-        "D": "(mp⃗−nq⃗)/(m−n)"
-      },
-      "answer": "B",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 9,
-      "question": "If a⃗×b⃗ = 0⃗ and a⃗·b⃗ = 0, then?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "at least one is zero vector",
-        "B": "both are unit vectors",
-        "C": "they are perpendicular",
-        "D": "they are parallel"
+        "A": "cos⁻¹(5/14)",
+        "B": "cos⁻¹(4/14)",
+        "C": "cos⁻¹(2/7)",
+        "D": "60°"
       },
       "answer": "A",
       "pyq": true,
       "tag": "pyq"
-    },
-    {
-      "question": "Vectors with same magnitude but different directions are ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Not equal",
-        "B": "Equal",
-        "C": "Unit",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 10
-    },
-    {
-      "question": "A vector that can be shifted anywhere without change is a ______ vector.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Free",
-        "B": "Localized",
-        "C": "Unit",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 11
-    },
-    {
-      "question": "Unit vector perpendicular to i and j is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "k",
-        "B": "i+j",
-        "C": "0",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 12
-    },
-    {
-      "question": "If a is a vector and |a| is its magnitude, then a/|a| is a ______ vector.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Unit",
-        "B": "Zero",
-        "C": "Standard",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 13
     },
     {
       "question": "The vector sum of sides of a triangle taken in order is ______.",
@@ -222,71 +90,87 @@
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 14
+      "id": 66
     },
     {
-      "question": "Scalar product of a vector with itself is ______.",
+      "question": "Vector subtraction a - b is defined as ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "None",
       "options": {
-        "A": "|a|²",
-        "B": "0",
-        "C": "|a|",
+        "A": "a + (-b)",
+        "B": "b - a",
+        "C": "-(a+b)",
         "D": "None"
       },
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 15
+      "id": 67
     },
     {
-      "question": "A vector representing the difference of two points is a ______ vector.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "None",
-      "options": {
-        "A": "Displacement",
-        "B": "Position",
-        "C": "Standard",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false,
-      "tag": "hard",
-      "id": 16
-    },
-    {
-      "id": 17,
-      "question": "Component of a⃗ = 2î+3ĵ+k̂ along b⃗ = î+ĵ+k̂ is?",
-      "difficulty": "Hard",
+      "id": 68,
+      "question": "If |a⃗+b⃗| = |a⃗−b⃗|, then a⃗ and b⃗ are?",
+      "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "2",
-        "B": "6/√3",
-        "C": "√(4+9+1)",
-        "D": "2√3"
+        "A": "perpendicular",
+        "B": "parallel",
+        "C": "equal",
+        "D": "anti-parallel"
       },
-      "answer": "D",
+      "answer": "A",
       "pyq": true,
       "tag": "pyq"
     },
     {
-      "question": "Multiplication of a vector by 0 results in ______ vector.",
+      "question": "Multiplication of a vector by a negative scalar ______ its direction.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "None",
       "options": {
-        "A": "Zero",
-        "B": "Unit",
-        "C": "Same",
+        "A": "Reverses",
+        "B": "Keeps same",
+        "C": "Makes 90 degrees",
         "D": "None"
       },
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 18
+      "id": 69
+    },
+    {
+      "question": "Angle between i + j and j + k is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "60°",
+        "B": "90°",
+        "C": "45°",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 70
+    },
+    {
+      "id": 71,
+      "question": "For vectors a⃗,b⃗,c⃗ with a⃗+b⃗+c⃗=0, if |a⃗|=3,|b⃗|=5,|c⃗|=7, then angle between a⃗ and b⃗ is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "60°",
+        "B": "90°",
+        "C": "120°",
+        "D": "45°"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
     },
     {
       "question": "Magnitude of resulting vector when adding orthogonal unit vectors i, j, k is ______.",
@@ -302,23 +186,135 @@
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 19
+      "id": 72
     },
     {
-      "question": "Vector sum of diagonals of a parallelogram is ______.",
+      "question": "If a + b + c = 0 and |a|=3, |b|=5, |c|=7, then the angle between a and b is ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "None",
       "options": {
-        "A": "2a",
-        "B": "a + b",
-        "C": "0",
+        "A": "60°",
+        "B": "120°",
+        "C": "30°",
         "D": "None"
       },
       "answer": "A",
       "pyq": false,
       "tag": "hard",
-      "id": 20
+      "id": 73
+    },
+    {
+      "question": "Multiplication of a vector by 0 results in ______ vector.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Zero",
+        "B": "Unit",
+        "C": "Same",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 74
+    },
+    {
+      "id": 75,
+      "question": "The vector from A(1,2,3) to B(4,6,9) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3î+4ĵ+6k̂",
+        "B": "5î+8ĵ+12k̂",
+        "C": "−3î−4ĵ−6k̂",
+        "D": "4î+6ĵ+9k̂"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Direction ratios of a vector are ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Proportional to its DCs",
+        "B": "Equal to its DCs",
+        "C": "Magnitudes",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 76
+    },
+    {
+      "id": 77,
+      "question": "The position vector of centroid of triangle with vertices A(a⃗), B(b⃗), C(c⃗) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(a⃗+b⃗+c⃗)/3",
+        "B": "(a⃗+b⃗+c⃗)/2",
+        "C": "a⃗+b⃗+c⃗",
+        "D": "(a⃗×b⃗+c⃗)/3"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 78,
+      "question": "If a⃗ = 2î + 3ĵ and b⃗ = î − ĵ, then |2a⃗ − b⃗| = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√74",
+        "B": "√52",
+        "C": "√50",
+        "D": "√58"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 79,
+      "question": "If |a⃗| = 3, |b⃗| = 4 and a⃗·b⃗ = 0, then |a⃗ + b⃗| = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "5",
+        "B": "7",
+        "C": "√7",
+        "D": "1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 80,
+      "question": "The unit vector in direction of (3,4,0) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(3/5, 4/5, 0)",
+        "B": "(3,4,0)/7",
+        "C": "(3,4,0)/5",
+        "D": "(0.6, 0.8, 0)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
     }
   ]
 }

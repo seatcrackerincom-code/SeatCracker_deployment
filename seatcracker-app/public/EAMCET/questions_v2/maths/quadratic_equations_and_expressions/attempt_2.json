@@ -1,602 +1,319 @@
 {
-    "questions": [
-        {
-            "id": 2,
-            "question": "If 1, ω, ω² are cube roots of unity, then 1/(2+ω) + 1/(1+2ω) = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "−1",
-                "B": "0",
-                "C": "1",
-                "D": "ω"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 6,
-            "question": "Let α, β be roots of x² - 2x + 4 = 0. The roots are ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-2ω and -2ω²",
-                "B": "ω and ω²",
-                "C": "1 and -1",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 10,
-            "question": "Primitive roots ω_k satisfy ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "gcd(k, n) = 1",
-                "B": "k/n = integer",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "The sum of nth roots of unity is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "0",
-                "B": "1",
-                "C": "n",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 14
-        },
-        {
-            "id": 18,
-            "question": "If f(x) = (x−1)(x−2)(x−3), then f'(x)=0 has roots in?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(1,2) and (2,3)",
-                "B": "(0,1) and (1,2)",
-                "C": "(1,3) only",
-                "D": "(2,3) only"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 22,
-            "question": "For irreducible quadratic in denominator (x²+1), partial fraction form is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(Ax+B)/(x²+1)",
-                "B": "A/(x²+1)",
-                "C": "A/x + B/x²",
-                "D": "Ax/(x²+1)"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 26,
-            "question": "The roots of equation 2x² − 7x + 3 = 0 are?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "3 and 1/2",
-                "B": "2 and 3/2",
-                "C": "1 and 3/2",
-                "D": "3/2 and 2"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 30,
-            "question": "If roots of x² - px + q = 0 differ by unity, then ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "p² = 4q + 1",
-                "B": "p² = 4q - 1",
-                "C": "q² = 4p + 1",
-                "D": "p = q + 1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 34,
-            "question": "If α, β are roots of ax² + bx + c = 0, find α/β + β/α.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(b² - 2ac) / ac",
-                "B": "(b² + 2ac) / ac",
-                "C": "b² / ac",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 38,
-            "question": "If one root of x²+px+q=0 is twice the other, then 2p² = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "9q",
-                "B": "4q",
-                "C": "2q",
-                "D": "8q"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 42,
-            "question": "If α, β are roots of x² - (p+1)x + q = 0, then (α+1)(β+1) = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "q + p + 2",
-                "B": "q - p",
-                "C": "p + q",
-                "D": "1 - q"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 46,
-            "question": "The minimum value of ax² + bx + c (a > 0) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-D / 4a",
-                "B": "-b / 2a",
-                "C": "0",
-                "D": "c"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 50,
-            "question": "For what values of a, x² - (a+3)x + (a+2) = 0 has both roots positive?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "a > -2",
-                "B": "a < -3",
-                "C": "a = 0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 54,
-            "question": "Location of roots: x² - (m-3)x + m = 0 has both roots greater than 2 if ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "m belongs to (9, 10]",
-                "B": "m > 9",
-                "C": "m < 1",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 58,
-            "question": "If α and β are roots of x²−x−1=0, then α⁴+β⁴ = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "7",
-                "B": "5",
-                "C": "3",
-                "D": "9"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 62,
-            "question": "Number of real roots of x² + |x| - 6 = 0 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "4",
-                "C": "0",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If α, β are roots of x² - 6x + 2 = 0, then α¹⁰ - 2α⁸ / 2α⁹ = ______ (approx Newton's Sums application).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "3",
-                "B": "6",
-                "C": "12",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 66
-        },
-        {
-            "question": "Number of real roots of |x|² - 3|x| + 2 = 0 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "4",
-                "B": "2",
-                "C": "0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 70
-        },
-        {
-            "id": 74,
-            "question": "Location of roots: both roots of x² - 4x + 1 = 0 lies in ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(0, 4)",
-                "B": "(1, 3)",
-                "C": "(-1, 1)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the equations x² + ax + b = 0 and x² + bx + a = 0 have a common root, then a + b = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "-1",
-                "B": "1",
-                "C": "0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 78
-        },
-        {
-            "question": "The number of real solutions of e^x = x is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "0",
-                "B": "1",
-                "C": "2",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 82
-        },
-        {
-            "question": "If the roots of (b-c)x² + (c-a)x + (a-b) = 0 are equal, then a, b, c are in ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "AP",
-                "B": "GP",
-                "C": "HP",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 86
-        },
-        {
-            "question": "If x is real, the maximum value of (x²+14x+9)/(x²+2x+3) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "4",
-                "B": "5",
-                "C": "6",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 90
-        },
-        {
-            "id": 94,
-            "question": "If α, β are roots of x²−2x+3=0, equation with roots α+2 and β+2 is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x²−6x+11=0",
-                "B": "x²+6x+11=0",
-                "C": "x²−6x−11=0",
-                "D": "x²+2x+3=0"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Difference of the roots of x² - px + q = 0 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "√(p² - 4q)",
-                "B": "p² - 4q",
-                "C": "p - q",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 98
-        },
-        {
-            "id": 102,
-            "question": "If roots of x³+px+q=0 are α,β,γ, then α²+β²+γ² = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "−2p",
-                "B": "2p",
-                "C": "p²",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 106,
-            "question": "Product of roots of 2x³−3x²+x−4=0 is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "−2",
-                "C": "3/2",
-                "D": "4"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "If the roots of x³ - 3x² + x + 1 = 0 are a-d, a, a+d, then the value of a is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "2",
-                "C": "3",
-                "D": "0"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 110
-        },
-        {
-            "id": 114,
-            "question": "If α,β,γ are roots of x³−6x²+11x−6=0, then α+β+γ = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "6",
-                "B": "11",
-                "C": "−6",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "If x³ - 3x + 1 = 0 has roots α, β, γ, then Σα³ = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "-3",
-                "B": "3",
-                "C": "0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 118
-        },
-        {
-            "question": "If x³ - 1 = 0, then the product of its roots is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "-1",
-                "C": "0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 122
-        },
-        {
-            "question": "Newton's formula for sum of powers of roots S_k = Σα^k is related to ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "S_k + a₁S_{k-1} + ... = 0",
-                "B": "S_k = a_k",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 126
-        },
-        {
-            "question": "The condition that roots of x³ + px² + qx + r = 0 are in AP is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "2p³ - 9pq + 27r = 0",
-                "B": "p³ = 27r",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 130
-        },
-        {
-            "id": 134,
-            "question": "The equation x³ − 7x + 6 = 0 has roots?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1, 2, −3",
-                "B": "1, −2, 3",
-                "C": "−1, 2, 3",
-                "D": "1, 2, 3"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "Roots of x³ - 1 = 0 are 1, ω, ω². Thus 1 + ω + ω² = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "0",
-                "B": "1",
-                "C": "i",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 138
-        },
-        {
-            "question": "Irrational roots of the form a + √b occur in ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Conjugate pairs",
-                "B": "Single",
-                "C": "Infinite",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 142
-        },
-        {
-            "question": "If discriminant of a cubic is negative, it has ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Two complex roots",
-                "B": "Three real roots",
-                "C": "Repeated roots",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 146
-        },
-        {
-            "question": "The product of roots taken two at a time is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "q/a",
-                "B": "-q/a",
-                "C": "r/a",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 150
-        }
-    ]
+  "questions": [
+    {
+      "id": 21,
+      "question": "The maximum value of the expression -ax² + bx + c (a > 0) occurs at x = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "b / 2a",
+        "B": "-b / 2a",
+        "C": "D / 4a",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If α, β are roots of ax² + bx + c = 0, then the sum of roots of ax² + bpx + cp² = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "p(α+β)",
+        "B": "α+β",
+        "C": "p²(α+β)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 22
+    },
+    {
+      "question": "If the equations x² + ax + b = 0 and x² + bx + a = 0 have a common root, then a + b = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 23
+    },
+    {
+      "question": "If α+β=5 and αβ=6, then α²-β² (where α>β) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "5",
+        "B": "1",
+        "C": "25",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 24
+    },
+    {
+      "question": "If α and β are roots of ax² + bx + c = 0, then the equation whose roots are 1/α and 1/β is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "cx² + bx + a = 0",
+        "B": "ax² - bx + c = 0",
+        "C": "cx² - bx + a = 0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 25
+    },
+    {
+      "id": 26,
+      "question": "The roots of ax² + bx + c = 0 are rational if a,b,c are rational and D is a ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Perfect Square",
+        "B": "Positive number",
+        "C": "Negative number",
+        "D": "Prime number"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 27,
+      "question": "If the roots of ax² + bx + c = 0 are in ratio m:n, then ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "mn b² = (m+n)² ac",
+        "B": "b² = ac",
+        "C": "m/n = b/a",
+        "D": "m+n = -b"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The condition that one root of ax² + bx + c = 0 is square of the other is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "b³ + a²c + ac² = 3abc",
+        "B": "b³ + a²c + ac² = 0",
+        "C": "a + c + b = 0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 28
+    },
+    {
+      "question": "Difference of the roots of x² - px + q = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "√(p² - 4q)",
+        "B": "p² - 4q",
+        "C": "p - q",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 29
+    },
+    {
+      "id": 30,
+      "question": "The discriminant of 3x²−7x+2=0 is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "25",
+        "B": "49",
+        "C": "73",
+        "D": "5"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 31,
+      "question": "Sum of roots of x⁴−3x³+2x²+4x−8=0 is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3",
+        "B": "−3",
+        "C": "0",
+        "D": "2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 32,
+      "question": "If roots of x² - px + q = 0 are tan 30 and tan 15, find p+q.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "√3",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "If α, β are roots of x² - px + q = 0, find equation with roots 1/α, 1/β.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "qx² - px + 1 = 0",
+        "B": "qx² + px + 1 = 0",
+        "C": "x² - qx + p = 0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "If x² − bx + c = 0 has two consecutive integer roots, then b² − 4c = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "4",
+        "C": "0",
+        "D": "b"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 35,
+      "question": "If α,β are roots of x²−px+q=0, then α/β + β/α = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(p²−2q)/q",
+        "B": "p²/q − 2",
+        "C": "Both A and B",
+        "D": "(p²+2q)/q"
+      },
+      "answer": "C",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 36,
+      "question": "The roots of equation 2x² − 7x + 3 = 0 are?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3 and 1/2",
+        "B": "2 and 3/2",
+        "C": "1 and 3/2",
+        "D": "3/2 and 2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 37,
+      "question": "If equation x²+2(k+2)x+9k=0 has equal roots, then k = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 or 4",
+        "B": "2 or 3",
+        "C": "1 or −4",
+        "D": "4 or −4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "If the roots of ax² + bx + c = 0 are in the ratio m:n, then ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "mnb² = ac(m+n)²",
+        "B": "mna² = bc(m+n)²",
+        "C": "mnc² = ab(m+n)²",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 38
+    },
+    {
+      "id": 39,
+      "question": "The number of real roots of x²+|x|+1=0 is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "4"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "If the roots of (b-c)x² + (c-a)x + (a-b) = 0 are equal, then a, b, c are in ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "AP",
+        "B": "GP",
+        "C": "HP",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 40
+    }
+  ]
 }

@@ -1,128 +1,7 @@
 {
   "questions": [
     {
-      "id": 1,
-      "question": "If scalar component of x on i+j+k is √3, and x perp to some vector, find x.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Depends on second condition",
-        "B": "i+j+k",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 2,
-      "question": "For vectors a⃗ and b⃗ with |a⃗|=3, |b⃗|=4, θ=60°, then |a⃗−b⃗|²=?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "13",
-        "B": "25",
-        "C": "37",
-        "D": "7"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 3,
-      "question": "x.a=0, x.b=0, x.c=0 for non-coplanar a,b,c implies x = ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "0",
-        "B": "Unit vector",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 4,
-      "question": "Dot product invariant under axis rotation.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 5,
-      "question": "Gram-Schmidt process performs ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Orthogonalization",
-        "B": "Scaling only",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 6,
-      "question": "Power is dot product of Force and ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Velocity",
-        "B": "Acceleration",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 7,
-      "question": "Vector projection of i on i+j is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(1/2)(i+j)",
-        "B": "i+j",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 8,
-      "question": "If a, b, c are mutually perpendicular unit vectors, find |a+b+c|.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "√3",
-        "B": "3",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 9,
+      "id": 41,
       "question": "If a⃗ = î−2ĵ+3k̂ and b⃗ = 3î+ĵ−k̂, find a⃗·b⃗ = ?",
       "difficulty": "Medium",
       "hasDiagram": false,
@@ -138,53 +17,142 @@
       "tag": "pyq"
     },
     {
-      "id": 10,
-      "question": "If |a|=2, |b|=3, |c|=4 and a+b+c=0, find a.b+b.c+c.a.",
+      "id": 42,
+      "question": "If |a + b| = |a - b|, then a and b must be ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "-29/2",
-        "B": "29/2",
-        "C": "None",
-        "D": "None"
+        "A": "Orthogonal (Perpendicular)",
+        "B": "Collinear",
+        "C": "Equal vectors",
+        "D": "Unit vectors"
       },
       "answer": "A",
       "pyq": false
     },
     {
-      "id": 11,
-      "question": "In a rhombus, diagonals are perpendicular.",
+      "id": 43,
+      "question": "a⃗·b⃗ = b⃗·a⃗. This is the ______ property?",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 12,
-      "question": "Scalar triple product [a⃗, b⃗, c⃗] = a⃗·(b⃗×c⃗). If any two vectors equal, then?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "= 0",
-        "B": "= 1",
-        "C": "doubles",
-        "D": "= |a⃗||b⃗||c⃗|"
+        "A": "commutative",
+        "B": "associative",
+        "C": "distributive",
+        "D": "closure"
       },
       "answer": "A",
       "pyq": true,
       "tag": "pyq"
     },
     {
-      "id": 13,
+      "question": "Topic Specific Challenge dot_product_vectors #6",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 44
+    },
+    {
+      "question": "If a, b, c are unit vectors such that a+b+c=0, then a.b + b.c + c.a = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "-1.5",
+        "B": "1",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 45
+    },
+    {
+      "id": 46,
+      "question": "If a = a₁i + a₂j + a₃k and b = b₁i + b₂j + b₃k, then a . b = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a₁b₁ + a₂b₂ + a₃b₃",
+        "B": "a₁b₂ + a₂b₁ + a₃b₃",
+        "C": "a₁² + a₂² + a₃²",
+        "D": "a₁b₁ - a₂b₂ - a₃b₃"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Evaluate the integral from 0 to pi/2 of (sin^3 x) / (sin^3 x + cos^3 x) dx.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "options": {
+        "A": "pi/4",
+        "B": "pi/2",
+        "C": "pi/8",
+        "D": "0"
+      },
+      "answer": "A",
+      "hint": "Use the property: Int(0 to a) f(x) dx = Int(0 to a) f(a-x) dx",
+      "solution": "Let I = Integral. Both numerator become sin^a and cos^a. 2I = Int(1) dx from 0 to pi/2 = pi/2 -> I = pi/4.",
+      "id": 47
+    },
+    {
+      "question": "Evaluate the integral of sinh(4x) cosh(8x) dx.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "options": {
+        "A": "Calculated term",
+        "B": "Calculated term",
+        "C": "Calculated term",
+        "D": "Calculated term"
+      },
+      "answer": "A",
+      "hint": "Use the product to sum identities for hyperbolic functions.",
+      "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
+      "id": 48
+    },
+    {
+      "question": "The power P in mechanics is the dot product of ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Force and Velocity",
+        "B": "Force and Displacement",
+        "C": "Mass and Acceleration",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 49
+    },
+    {
+      "id": 50,
+      "question": "The expression |a - b|² is equal to ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|a|² + |b|² - 2(a . b)",
+        "B": "|a|² + |b|²",
+        "C": "|a|² - |b|²",
+        "D": "|a|² + |b|² + 2(a . b)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 51,
       "question": "If a⃗=î+ĵ+k̂ and b⃗=2î−ĵ, then component of b⃗ along a⃗ is?",
       "difficulty": "Hard",
       "hasDiagram": false,
@@ -200,14 +168,44 @@
       "tag": "pyq"
     },
     {
-      "id": 14,
-      "question": "Distance from origin to plane r.n = d is |d|/|n|.",
+      "id": 52,
+      "question": "The vector projection of a on b is ______.",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "True",
-        "B": "False",
+        "A": "((a . b) / |b|²) b",
+        "B": "((a . b) / |a|²) a",
+        "C": "(a . b) b",
+        "D": "(a . b) / |b|"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 53,
+      "question": "If a = 2i+3j+4k and b = 3i+2j-k, find a.b.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "8",
+        "B": "12",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 54,
+      "question": "Vector projection of i on i+j is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/2)(i+j)",
+        "B": "i+j",
         "C": "None",
         "D": "None"
       },
@@ -215,14 +213,14 @@
       "pyq": false
     },
     {
-      "id": 15,
-      "question": "r . r = c characterizing a sphere centered at origin.",
+      "id": 55,
+      "question": "Power is dot product of Force and ______.",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "True",
-        "B": "False",
+        "A": "Velocity",
+        "B": "Acceleration",
         "C": "None",
         "D": "None"
       },
@@ -230,22 +228,7 @@
       "pyq": false
     },
     {
-      "id": 16,
-      "question": "Component of i+j along i-j is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "0",
-        "B": "√2",
-        "C": "None",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 17,
+      "id": 56,
       "question": "If a and b are unit vectors and |a+b|=√3, angle is ______.",
       "difficulty": "Medium",
       "hasDiagram": false,
@@ -260,46 +243,63 @@
       "pyq": false
     },
     {
-      "id": 18,
-      "question": "Find angle if |a|=√3, |b|=2, a.b=√6.",
-      "difficulty": "Medium",
+      "question": "Component of a vector a perpendicular to b in the plane of a, b is ______.",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "45°",
-        "B": "30°",
+        "A": "a - ((a.b)/|b|²) b",
+        "B": "a + b",
         "C": "None",
         "D": "None"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard",
+      "id": 57
     },
     {
-      "id": 19,
-      "question": "If a is unit vector, a.x = p represents a plane.",
+      "id": 58,
+      "question": "Equality holds in Cauchy-Schwartz (|a . b| = |a||b|) if and only if a and b are ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "True",
-        "B": "False",
-        "C": "None",
-        "D": "None"
+        "A": "Collinear",
+        "B": "Orthogonal",
+        "C": "Equal magnitudes",
+        "D": "Unit vectors"
       },
       "answer": "A",
       "pyq": false
     },
     {
-      "id": 20,
-      "question": "The angle between two vectors if their dot product is equal to the product of their magnitudes is?",
+      "question": "A vector is perpendicular to itself only if it is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Zero vector",
+        "B": "Unit vector",
+        "C": "Proper vector",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 59
+    },
+    {
+      "id": 60,
+      "question": "If a⃗·b⃗ = |a⃗||b⃗|, then the angle is?",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
         "A": "0°",
-        "B": "45°",
-        "C": "90°",
-        "D": "180°"
+        "B": "90°",
+        "C": "180°",
+        "D": "60°"
       },
       "answer": "A",
       "pyq": true,

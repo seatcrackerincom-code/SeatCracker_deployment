@@ -1,459 +1,307 @@
 {
-    "questions": [
-        {
-            "id": 1,
-            "question": "The lines represented by x\u00b2\u22125xy+6y\u00b2=0 are?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "y = x/2 and y = x/3",
-                "B": "y = 2x and y = 3x",
-                "C": "x = 2y and x = 3y",
-                "D": "x + 2y = 0 and x + 3y = 0"
-            },
-            "answer": "C",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 2,
-            "question": "Distance between parallel lines ax\u00b2 + 2hxy + by\u00b2 + 2gx + 2fy + c = 0 is 2\u221a[ (g\u00b2-ac) / a(a+b) ].",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 3,
-            "question": "The condition for ax\u00b2 + 2hxy + by\u00b2 + 2gx + 2fy + c = 0 to represent a pair of lines is abc + 2fgh - ______ = 0.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "af\u00b2 - bg\u00b2 - ch\u00b2",
-                "B": "af\u00b2 + bg\u00b2 + ch\u00b2",
-                "C": "ag\u00b2 + bf\u00b2 + ch\u00b2",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 4,
-            "question": "Combined equation of lines y = x and y = \u2212x is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x\u00b2 \u2212 y\u00b2 = 0",
-                "B": "x\u00b2 + y\u00b2 = 0",
-                "C": "xy = 0",
-                "D": "y\u00b2 \u2212 x\u00b2 = 0"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 5,
-            "question": "The product of the slopes of the lines ax\u00b2 + 2hxy + by\u00b2 = 0 is m\u2081m\u2082 = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "a / b",
-                "B": "b / a",
-                "C": "-2h / b",
-                "D": "-a / b"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "The lines x\u00b2 - 4xy + y\u00b2 = 0 and x + y = 1 form an equilateral triangle.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 7,
-            "question": "The point of intersection of the lines represented by the general second-degree equation is given by ( (hf-bg)/(ab-h\u00b2), ______ ).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(gh-af)/(ab-h\u00b2)",
-                "B": "(af-gh)/(ab-h\u00b2)",
-                "C": "(g-f)/(a-b)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 8,
-            "question": "Condition for ax\u00b2+2hxy+by\u00b2+2gx+2fy+c=0 to represent pair of lines is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "abc+2fgh\u2212af\u00b2\u2212bg\u00b2\u2212ch\u00b2=0",
-                "B": "abc\u2212fgh=0",
-                "C": "h\u00b2=ab",
-                "D": "g\u00b2=ac and f\u00b2=bc"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 9,
-            "question": "If the lines joining the origin to the intersection of y = mx + c and x\u00b2 + y\u00b2 = a\u00b2 are perpendicular, then c\u00b2 = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "a\u00b2(1 + m\u00b2) / 2",
-                "B": "a\u00b2(1 + m\u00b2)",
-                "C": "2a\u00b2(1 + m\u00b2)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 10,
-            "question": "Area of the triangle formed by ax\u00b2 + 2hxy + by\u00b2 = 0 and lx + my + n = 0 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "n\u00b2 \u221a(h\u00b2 - ab) / |am\u00b2 - 2hlm + bl\u00b2|",
-                "B": "n\u00b2 \u221a(h\u00b2 - ab) / (am\u00b2 + bl\u00b2)",
-                "C": "n\u00b2\u221a(h\u00b2-ab)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 11,
-            "question": "The angle between lines represented by ax\u00b2+2hxy+by\u00b2=0 is given by tan \u03b8 = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2\u221a(h\u00b2\u2212ab)/(a+b)",
-                "B": "2\u221a(ab\u2212h\u00b2)/(a+b)",
-                "C": "(h\u00b2\u2212ab)/(a+b)",
-                "D": "2h/(a+b)"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 12,
-            "question": "For homogeneous equation ax\u00b2+2hxy+by\u00b2=0, lines are perpendicular when?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "a + b = 0",
-                "B": "h = 0",
-                "C": "ab = h\u00b2",
-                "D": "a = b"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 13,
-            "question": "The sum of the slopes of the lines ax\u00b2 + 2hxy + by\u00b2 = 0 is m\u2081 + m\u2082 = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-2h / b",
-                "B": "2h / b",
-                "C": "a / b",
-                "D": "-a / b"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 14,
-            "question": "Equation of lines passing through (x\u2080, y\u2080) and perpendicular to ax\u00b2 + 2hxy + by\u00b2 = 0 is b(x-x\u2080)\u00b2 - 2h(x-x\u2080)(y-y\u2080) + a(y-y\u2080)\u00b2 = 0.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 15,
-            "question": "Product of perpendicular distances from (x\u2081, y\u2081) to ax\u00b2 + 2hxy + by\u00b2 = 0 is |ax\u2081\u00b2 + 2hx\u2081y\u2081 + by\u2081\u00b2| / ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "\u221a[(a-b)\u00b2 + 4h\u00b2]",
-                "B": "\u221a(a\u00b2 + b\u00b2)",
-                "C": "a + b",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 16,
-            "question": "The angle \u03b8 between the lines ax\u00b2 + 2hxy + by\u00b2 = 0 is given by tan \u03b8 = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2\u221a(h\u00b2 - ab) / |a + b|",
-                "B": "\u221a(h\u00b2 - ab) / |a + b|",
-                "C": "2\u221a(h\u00b2 + ab) / |a + b|",
-                "D": "2\u221a(h\u00b2 - ab) / (a - b)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 17,
-            "question": "If the general equation represents parallel lines, then h\u00b2 = ab and ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "af\u00b2 = bg\u00b2",
-                "B": "f\u00b2 = g\u00b2",
-                "C": "h\u00b2 = fg",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 18,
-            "question": "The equation of the pair of angular bisectors of the lines ax\u00b2 + 2hxy + by\u00b2 = 0 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(x\u00b2 - y\u00b2) / (a - b) = xy / h",
-                "B": "(x\u00b2 + y\u00b2) / (a + b) = xy / h",
-                "C": "(x\u00b2 - y\u00b2) / h = xy / (a - b)",
-                "D": "x\u00b2 - y\u00b2 = (a - b) xy"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 19,
-            "question": "If the pair of bisectors is x\u00b2 - y\u00b2 = 0, then a - b is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0 (a = b)",
-                "B": "h",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "Homogenization is used to find the pair of lines joining the origin to the intersection of a curve and a ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Straight line",
-                "B": "Circle",
-                "C": "Parabola",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "If the matrix A is [[17, 7], [0, 3]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "298",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[289, 140], [0, 9]]. Trace is sum of diagonal elements: 289 + 9.",
-            "id": "pair_of_straight_lines_21"
-        },
-        {
-            "question": "If the matrix A is [[20, 20], [0, 10]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "500",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[400, 600], [0, 100]]. Trace is sum of diagonal elements: 400 + 100.",
-            "id": "pair_of_straight_lines_22"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(4x) / tan(4x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "4/4",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 4/4.",
-            "id": "pair_of_straight_lines_23"
-        },
-        {
-            "question": "If the vectors a = 12i + 11j and b = 3i - j are perpendicular, find the value of 12*3.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "11",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "pair_of_straight_lines_24"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^11 * (1-x)^4 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "17",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "pair_of_straight_lines_25"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^6 * (1-x)^12 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "20",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": "pair_of_straight_lines_26"
-        },
-        {
-            "question": "If the matrix A is [[16, 16], [0, 6]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "292",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[256, 352], [0, 36]]. Trace is sum of diagonal elements: 256 + 36.",
-            "id": "pair_of_straight_lines_27"
-        },
-        {
-            "question": "If the vectors a = 4i + 13j and b = 10i - j are perpendicular, find the value of 4*10.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "13",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "pair_of_straight_lines_28"
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(18x) / tan(11x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "18/11",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 18/11.",
-            "id": "pair_of_straight_lines_29"
-        },
-        {
-            "question": "If the vectors a = 7i + 2j and b = 10i - j are perpendicular, find the value of 7*10.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": "pair_of_straight_lines_30"
-        }
-    ]
+  "questions": [
+    {
+      "question": "The product of the perpendiculars from (x₁, y₁) to the lines ax² + 2hxy + by² = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|ax₁² + 2hx₁y₁ + by₁²| / √((a-b)² + 4h²)",
+        "B": "|ax₁ + by₁| / √(a²+b²)",
+        "C": "ab / h",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 1
+    },
+    {
+      "question": "The angle between the pair of lines x² - 7xy + 12y² = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "tan⁻¹(1/7)",
+        "B": "tan⁻¹(7/13)",
+        "C": "tan⁻¹(1)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "question": "The pair of lines x²−y²=0 makes angle with axes of?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "45°",
+        "B": "90°",
+        "C": "30°",
+        "D": "60°"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 4,
+      "question": "The centroid of the triangle formed by ax² + 2hxy + by² = 0 and lx + my = 1 is ( (bl-hm)/3(bl²-2hlm+am²), (am-hl)/3(bl²-2hlm+am²) ).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge pair_of_straight_lines #2",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 5
+    },
+    {
+      "question": "Combined equation of bisectors of angles between ax² + 2hxy + by² = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(x² - y²) / (a - b) = xy / h",
+        "B": "(x² + y²) / (a + b) = xy / h",
+        "C": "h(x² - y²) + (a - b)xy = 0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "question": "Product of perpendicular distances from (x₁, y₁) to ax² + 2hxy + by² = 0 is |ax₁² + 2hx₁y₁ + by₁²| / ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√[(a-b)² + 4h²]",
+        "B": "√(a² + b²)",
+        "C": "a + b",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 8,
+      "question": "Angle between the lines x² - 2xy sec α + y² = 0 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "α",
+        "B": "2α",
+        "C": "α/2",
+        "D": "π - α"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 9,
+      "question": "If the general second degree equation represents parallel lines, then h² = ab and af² = bg².",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 10,
+      "question": "Slope of bisectors of ax² + 2hxy + by² = 0 are independent of magnitude of a, b, h but depend on their ratios.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 11,
+      "question": "If 2x²+7xy+3y²=0 represents a pair of lines, those lines are?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2y+x=0 and y+3x=0",
+        "B": "x+y=0 and 2x+3y=0",
+        "C": "x−2y=0 and 3x−y=0",
+        "D": "x+2y=0 and x+3y=0"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 12,
+      "question": "The angle θ between the lines ax² + 2hxy + by² = 0 is given by tan θ = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2√(h² - ab) / |a + b|",
+        "B": "√(h² - ab) / |a + b|",
+        "C": "2√(h² + ab) / |a + b|",
+        "D": "2√(h² - ab) / (a - b)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge pair_of_straight_lines #4",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 13
+    },
+    {
+      "question": "The combined equation of the lines passing through the origin and perpendicular to the lines represented by ax² + 2hxy + by² = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "bx² - 2hxy + ay² = 0",
+        "B": "bx² + 2hxy + ay² = 0",
+        "C": "ax² - 2hxy + by² = 0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 14
+    },
+    {
+      "id": 15,
+      "question": "The lines represented by 3x²+10xy+3y²=0 are?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x+3y=0 and 3x+y=0",
+        "B": "x−3y=0 and 3x−y=0",
+        "C": "x+y=0 and 9x+y=0",
+        "D": "3x−y=0 and x+3y=0"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 16,
+      "question": "Intersection point of x² + xy - 6y² - x + 8y - 2 = 0.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1, 1)",
+        "B": "(0, 1)",
+        "C": "(2, 0)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 17,
+      "question": "Does x² + y² = 0 represent lines?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Yes (Point-lines at origin - imaginary lines)",
+        "B": "No",
+        "C": "Maybe",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 18,
+      "question": "If the pair of lines bisect the angle between X and Y axes, then h=0 or a=b? No, bisectors x²-y²=0. Equation must be x²-y²=0 or xy=0.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "a+b=0 (if perpendicular) or h=0 and a=-b? Replaced: If lines are y=x and y=-x, equation is x²-y²=0.",
+        "B": "True",
+        "C": "False",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false
+    },
+    {
+      "id": 19,
+      "question": "Homogenizing x²+y²=a² using line lx+my=1 gives the combined equation of?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "pair of lines from origin to intersection points",
+        "B": "the circle itself",
+        "C": "tangent at intersection",
+        "D": "the line lx+my=1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The condition that one of the lines ax² + 2hxy + by² = 0 bisects the angle between the axes is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(a+b)² = 4h²",
+        "B": "a+b = 0",
+        "C": "h² = ab",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 20
+    }
+  ]
 }

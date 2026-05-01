@@ -1,266 +1,308 @@
 {
-    "questions": [
-        {
-            "id": 4,
-            "question": "If a curve is given parametrically x = φ(t), y = ψ(t), the area ∫ y dx is given by ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "∫ ψ(t) * φ'(t) dt",
-                "B": "∫ ψ'(t) * φ(t) dt",
-                "C": "∫ ψ(t) dt",
-                "D": "∫ φ(t) dt"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 8,
-            "question": "If ∫_0^a f(x) dx represents area, a scaling of x-axis by k results in area ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Multiplying by k",
-                "B": "Dividing by k",
-                "C": "Remaining same",
-                "D": "Squaring"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Evaluate the integral of sinh(4x) cosh(6x) dx.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "Calculated term",
-                "B": "Calculated term",
-                "C": "Calculated term",
-                "D": "Calculated term"
-            },
-            "answer": "A",
-            "hint": "Use the product to sum identities for hyperbolic functions.",
-            "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
-            "id": 12
-        },
-        {
-            "id": 16,
-            "question": "∫_0^{2a} f(x) dx = ∫_0^a [f(x) + f(2a-x)] dx. If f(2a-x) = f(x), then integral is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2∫_0^a f(x) dx",
-                "B": "0",
-                "C": "∫_0^a f(x) dx",
-                "D": "a f(a)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "∫₀^(π/2) log(tan x) dx = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0",
-                "B": "π/2",
-                "C": "−π/2",
-                "D": "π"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 24,
-            "question": "If f is even, ∫_a^b f(x)dx + ∫_{-a}^{-b} f(x)dx = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0",
-                "B": "2∫_a^b f(x)dx",
-                "C": "-2∫_a^b f(x)dx",
-                "D": "1"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 28,
-            "question": "∫₀^{π/2} [ sin⁸x ] dx = ______ (using Wallis).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "35π / 256",
-                "B": "7π / 128",
-                "C": "35 / 128",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Evaluate the integral of sinh(3x) cosh(6x) dx.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "Calculated term",
-                "B": "Calculated term",
-                "C": "Calculated term",
-                "D": "Calculated term"
-            },
-            "answer": "A",
-            "hint": "Use the product to sum identities for hyperbolic functions.",
-            "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
-            "id": 32
-        },
-        {
-            "id": 36,
-            "question": "If ∫₀^a dx/(4+x²) = π/8, then a = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2",
-                "B": "4",
-                "C": "1",
-                "D": "π/4"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 40,
-            "question": "An equation Mdx + Ndy = 0 is Exact if ∂M/∂y is equal to ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "∂N/∂x",
-                "B": "-∂N/∂x",
-                "C": "∂M/∂x",
-                "D": "N"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 44,
-            "question": "Solution of x·sin(y/x)·dy = (y·sin(y/x)−x)dx is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "cos(y/x) = ln|x| + c",
-                "B": "sin(y/x) = ln|x| + c",
-                "C": "cos(y/x) + ln|x| = c",
-                "D": "y/x = e^(c−ln x)"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "The general solution of d²y/dx² + y = 0 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "y = A cos x + B sin x",
-                "B": "y = e^x",
-                "C": "y = x",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 48
-        },
-        {
-            "id": 52,
-            "question": "If y = (x + 1) / (x - 1), then d^2y/dx^2 at x = 0 is",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "2",
-                "B": "-2",
-                "C": "0",
-                "D": "1"
-            },
-            "answer": "B",
-            "pyq": false,
-            "tag": "medium"
-        },
-        {
-            "question": "Evaluate the integral of sinh(4x) cosh(8x) dx.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "Calculated term",
-                "B": "Calculated term",
-                "C": "Calculated term",
-                "D": "Calculated term"
-            },
-            "answer": "A",
-            "hint": "Use the product to sum identities for hyperbolic functions.",
-            "solution": "Express as 1/2 [sinh(ax) + sinh(bx)] and integrate natively.",
-            "id": 56
-        },
-        {
-            "question": "The integral of 1 / (1 + cos x) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "tan(x/2) + C",
-                "B": "cot(x/2) + C",
-                "C": "sec(x/2) + C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 60
-        },
-        {
-            "id": 64,
-            "question": "The value of ∫ [ dx / (x² + 2x + 2) ] is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "tan⁻¹(x+1) + C",
-                "B": "tan⁻¹(x) + C",
-                "C": "ln|x² + 2x + 2| + C",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 68,
-            "question": "∫ [A/(x−1) + B/(x+1)] dx if A=2, B=−2 = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2 ln|(x−1)/(x+1)| + C",
-                "B": "2 ln|x²−1| + C",
-                "C": "ln|(x−1)²/(x+1)²| + C",
-                "D": "Both A and C"
-            },
-            "answer": "D",
-            "pyq": true,
-            "tag": "pyq"
-        }
-    ]
+  "questions": [
+    {
+      "id": 61,
+      "question": "Strictly synthesize the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 2-14]",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "question": "Topic Specific Challenge integration #10",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 62
+    },
+    {
+      "id": 63,
+      "question": "Strictly differentiate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 4-3]",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "hard"
+    },
+    {
+      "id": 64,
+      "question": "Strictly calculate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 4-9]",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "hard"
+    },
+    {
+      "id": 65,
+      "question": "Strictly summarize the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 2-7]",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 66,
+      "question": "Strictly analyze the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 2-18]",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "hard"
+    },
+    {
+      "id": 67,
+      "question": "Strictly analyze the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 4-16]",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 68,
+      "question": "Strictly summarize the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-18]",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "hard"
+    },
+    {
+      "id": 69,
+      "question": "Strictly predict the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 4-11]",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 70,
+      "question": "Strictly determine the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-1]",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 71,
+      "question": "Strictly differentiate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-16]",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 72,
+      "question": "Strictly contrast the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 2-16]",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 73,
+      "question": "Strictly differentiate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-6]",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "hard"
+    },
+    {
+      "question": "Topic Specific Challenge integration #6",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 74
+    },
+    {
+      "id": 75,
+      "question": "Strictly calculate the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 1-12]",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "hard"
+    },
+    {
+      "question": "The integral of log x dx is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "x log x - x + C",
+        "B": "log x + C",
+        "C": "x log x + C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 76
+    },
+    {
+      "question": "Topic Specific Challenge integration #1",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 77
+    },
+    {
+      "id": 78,
+      "question": "Strictly predict the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 2-13]",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "id": 79,
+      "question": "Strictly contrast the correct statement regarding Integration: Evaluate the definite integral of (sin x) from 0 to π/2. [Variant 4-4]",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "π/4",
+        "D": "-1"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard"
+    },
+    {
+      "question": "Topic Specific Challenge integration #8",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 80
+    }
+  ]
 }

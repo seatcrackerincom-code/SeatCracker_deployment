@@ -1,3 +1,307 @@
 {
-    "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "question": "Distance between parallel planes ax+by+cz+d1=0 and ax+by+cz+d2=0 is |d1-d2| / √(a²+b²+c²).",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 2,
+      "question": "The condition for points (0,0,0),(1,1,0),(0,1,1),(1,0,1) to be coplanar is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "they are coplanar — check: scalar triple product = 0",
+        "B": "not coplanar",
+        "C": "need more info",
+        "D": "they form a tetrahedron"
+      },
+      "answer": "B",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge plane #1",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "question": "Angle between line and plane is sin θ = |al+bm+cn| / (√(a²+b²+c²)√(l²+m²+n²)).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The equation of the plane passing through the intersection of the planes x + y + z = 6 and 2x + 3y + 4z + 5 = 0 and the point (1,1,1) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "20x + 23y + 26z - 69 = 0",
+        "B": "x + y + z = 3",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 5
+    },
+    {
+      "question": "Topic Specific Challenge plane #2",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 6
+    },
+    {
+      "question": "The image of the point (1,3,4) in the plane 2x - y + z + 3 = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(-3, 5, 2)",
+        "B": "(3, -5, -2)",
+        "C": "(-1, 0, 0)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 7
+    },
+    {
+      "question": "The foot of the perpendicular from the origin to the plane 2x + 3y - z + 14 = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(-2, -3, 1)",
+        "B": "(2, 3, -1)",
+        "C": "(0, 0, 0)",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 8
+    },
+    {
+      "question": "Topic Specific Challenge plane #0",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "question": "Three planes x=1, y=1, z=1 have common?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "one point (1,1,1)",
+        "B": "no intersection",
+        "C": "a line",
+        "D": "infinite points"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Equation of the plane passing through (1,2,3) and parallel to the plane 3x + 4y - 5z = 0 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "3x + 4y - 5z + 4 = 0",
+        "B": "3x + 4y - 5z - 4 = 0",
+        "C": "x + y + z = 6",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 11
+    },
+    {
+      "question": "Equation of the plane passing through (a,0,0), (0,b,0), (0,0,c) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x/a + y/b + z/c = 1",
+        "B": "ax + by + cz = 1",
+        "C": "x+y+z = a+b+c",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 12
+    },
+    {
+      "id": 13,
+      "question": "If line is in plane, then al+bm+cn=0 and point on line satisfies plane.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 14,
+      "question": "Foot of perpendicular from (1,2,3) to plane x+y+z=9 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(3,4,5) — since (1+2λ=3 means λ=2, so (1+2,2+2,3+2)=(3,4,5))",
+        "B": "(2,3,4)",
+        "C": "(1,2,6)",
+        "D": "(2,3,4)"
+      },
+      "answer": "D",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 15,
+      "question": "Two parallel planes x+2y+2z+3=0 and x+2y+2z+k=0 are at distance 2. find k.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "9 or -3",
+        "B": "5",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "If the planes 2x + 3y + kz = 0 and x + 2y + 3z = 0 are perpendicular, then k = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "-8/3",
+        "B": "8/3",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 16
+    },
+    {
+      "question": "The projection of the line segment joining (1,2,3) and (4,5,6) on the plane x + y + z = 1 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√6",
+        "B": "3√2",
+        "C": "6",
+        "D": "None"
+      },
+      "answer": "B",
+      "pyq": false,
+      "tag": "hard",
+      "id": 17
+    },
+    {
+      "id": 18,
+      "question": "The angle between line (x−1)/2=(y+1)/3=(z−2)/6 and plane x+y+z=5 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sin⁻¹(11/(7√3))",
+        "B": "cos⁻¹(11/7√3)",
+        "C": "sin⁻¹(11/21)",
+        "D": "30°"
+      },
+      "answer": "C",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 19,
+      "question": "Image of (0,0,0) in plane x+y+z=1 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(2/3, 2/3, 2/3)",
+        "B": "(1, 1, 1)",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The points (1,1,1) and (-3,0,1) are on the ______ side of the plane 3x + 4y - 12z + 13 = 0.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Same",
+        "B": "Opposite",
+        "C": "On the plane",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 20
+    }
+  ]
 }

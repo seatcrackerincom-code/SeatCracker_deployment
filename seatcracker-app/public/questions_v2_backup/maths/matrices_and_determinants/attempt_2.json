@@ -1,307 +1,304 @@
 {
   "questions": [
     {
-      "id": 1,
-      "question": "Elementary row transformations do not change the ______ of a matrix.",
+      "id": 21,
+      "question": "The rank of a matrix is the ______ order of a non-zero minor.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "Rank",
-        "B": "Determinant value",
-        "C": "Elements",
-        "D": "Order"
+        "A": "Highest",
+        "B": "Lowest",
+        "C": "Average",
+        "D": "First"
       },
       "answer": "A",
       "pyq": false
     },
     {
-      "id": 2,
-      "question": "If we interchange two rows of a determinant, its sign ______.",
-      "difficulty": "Medium",
+      "question": "Sum of eigenvalues of a matrix is equal to ______.",
+      "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "Changes",
-        "B": "Stays same",
-        "C": "Becomes zero",
-        "D": "Doubles"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 3,
-      "question": "A system of homogeneous linear equations AX = 0 always has a ______ solution.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Trivial (X=0)",
-        "B": "Non-trivial",
-        "C": "Unique non-zero",
-        "D": "No"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 4,
-      "question": "If |A| = 0, then rank(A) for order n is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "< n",
-        "B": "n",
-        "C": "0",
+        "A": "Trace",
+        "B": "Determinant",
+        "C": "Rank",
         "D": "None"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard",
+      "id": 22
     },
     {
-      "id": 5,
-      "question": "Eigenvalues of [[5,4],[1,2]] are?",
-      "difficulty": "Hard",
+      "id": 23,
+      "question": "Trace of A = [[1,2,3],[0,4,5],[0,0,6]] is?",
+      "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "6 and 1",
-        "B": "5 and 2",
-        "C": "4 and 3",
-        "D": "7 and 0"
+        "A": "11",
+        "B": "10",
+        "C": "12",
+        "D": "9"
       },
       "answer": "A",
       "pyq": true,
       "tag": "pyq"
     },
     {
-      "id": 6,
-      "question": "A square matrix A is nilpotent if Aᵏ = ______ for some k.",
-      "difficulty": "Medium",
+      "id": 24,
+      "question": "If rank(A) = rank([A|B]) = number of unknowns, the system has ______.",
+      "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "0",
-        "B": "I",
-        "C": "A",
-        "D": "-A"
+        "A": "Unique solution",
+        "B": "Infinite solutions",
+        "C": "No solution",
+        "D": "None"
       },
       "answer": "A",
       "pyq": false
     },
     {
-      "id": 7,
-      "question": "A matrix A is idempotent if A² = ______.",
+      "question": "If the system of equations x + y + z = 6, x + 2y + 3z = 10, x + 2y + λz = μ has infinite solutions, then ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "λ = 3, μ = 10",
+        "B": "λ ≠ 3",
+        "C": "λ = 3, μ ≠ 10",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 25
+    },
+    {
+      "question": "If A is a skew-symmetric matrix of odd order, then |A| = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 26
+    },
+    {
+      "id": 27,
+      "question": "Inverse of a non-singular symmetric matrix is ______.",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
+      "options": {
+        "A": "Symmetric",
+        "B": "Skew-symmetric",
+        "C": "Diagonal",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge matrices_and_determinants #1",
       "options": {
         "A": "A",
-        "B": "I",
-        "C": "0",
-        "D": "-A"
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 28
+    },
+    {
+      "id": 29,
+      "question": "If A and B are square matrices of the same order, then |AB| = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "|A| * |B|",
+        "B": "|A| + |B|",
+        "C": "|A| / |B|",
+        "D": "0"
       },
       "answer": "A",
       "pyq": false
     },
     {
-      "id": 8,
-      "question": "Value of |a,b,c; b,c,a; c,a,b| = ?",
+      "question": "If A is involuntary, then A² = ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "−(a³+b³+c³−3abc)",
-        "B": "a³+b³+c³+3abc",
-        "C": "3abc",
-        "D": "a³+b³+c³"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 9,
-      "question": "For AX=0 to have a non-trivial solution, |A| must be ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "0",
-        "B": "Non-zero",
-        "C": "1",
-        "D": "Positive"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 10,
-      "question": "If A is orthogonal matrix, then |A| = ?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "±1",
-        "B": "0",
-        "C": "1",
-        "D": "−1"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 11,
-      "question": "If A and B are commuting matrices, then (A+B)² = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "A² + 2AB + B²",
-        "B": "A² + B²",
-        "C": "A² + AB + B²",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 12,
-      "question": "If A is a 3x3 matrix with rows R1, R2, R3 and R1 = R2 + R3, then |A| is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "0",
-        "B": "1",
-        "C": "Non-zero",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 13,
-      "question": "If the rank of a 3x3 matrix is 2, then its determinant is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "0",
-        "B": "1",
-        "C": "Non-zero",
-        "D": "3"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 14,
-      "question": "A matrix A is involutory if A² = ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
         "A": "I",
-        "B": "A",
-        "C": "0",
-        "D": "A⁻¹"
+        "B": "O",
+        "C": "A",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 30
+    },
+    {
+      "question": "If A is an idempotent matrix, then (I+A)ⁿ = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "I + (2ⁿ-1)A",
+        "B": "I + nA",
+        "C": "I + A",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 31
+    },
+    {
+      "question": "Topic Specific Challenge matrices_and_determinants #8",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 32
+    },
+    {
+      "id": 33,
+      "question": "Matrix multiplication is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Associative but generally not commutative",
+        "B": "Commutative",
+        "C": "Neither associative nor commutative",
+        "D": "Always commutative for square matrices"
       },
       "answer": "A",
       "pyq": false
     },
     {
-      "id": 15,
-      "question": "What is the inverse of [ [a, b], [c, d] ] if ad-bc = 1?",
+      "id": 34,
+      "question": "If A = diag(2, 3, 5), then det(A) = ?",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "[ [d, -b], [-c, a] ]",
-        "B": "[ [a, c], [b, d] ]",
-        "C": "[ [-d, b], [c, -a] ]",
-        "D": "[ [0, 1], [1, 0] ]"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 16,
-      "question": "The system AX = B has unique solution when?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "|A| ≠ 0",
-        "B": "|A| = 0",
-        "C": "rank(A) < rank(A|B)",
-        "D": "B = 0"
+        "A": "30",
+        "B": "10",
+        "C": "15",
+        "D": "6"
       },
       "answer": "A",
       "pyq": true,
       "tag": "pyq"
     },
     {
-      "id": 17,
-      "question": "The trace of AB is the same as the trace of ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
+      "question": "Topic Specific Challenge matrices_and_determinants #3",
       "options": {
-        "A": "BA",
-        "B": "A+B",
-        "C": "A-B",
-        "D": "AᵀBᵀ"
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
       },
       "answer": "A",
-      "pyq": false
+      "difficulty": "Hard",
+      "id": 35
     },
     {
-      "id": 18,
-      "question": "Multiplying a row of a determinant by a constant 'k' results in the determinant being ______.",
+      "id": 36,
+      "question": "For what value of k does x+2y=3, 5x+ky=15 have infinite solutions?",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "Multiplied by k",
-        "B": "Multiplied by kⁿ",
-        "C": "Unchanged",
-        "D": "Zero"
+        "A": "10",
+        "B": "2",
+        "C": "5",
+        "D": "6"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": true,
+      "tag": "pyq"
     },
     {
-      "id": 19,
-      "question": "Every square matrix can be uniquely expressed as the sum of a symmetric and a ______ matrix.",
+      "question": "The inverse of a symmetric matrix is ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "Skew-symmetric",
-        "B": "Identity",
+        "A": "Symmetric",
+        "B": "Skew-symmetric",
         "C": "Diagonal",
-        "D": "Orthogonal"
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 37
+    },
+    {
+      "id": 38,
+      "question": "The operation R1 -> R1 + kR2 ______ the value of determinant.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Does not change",
+        "B": "Multiplies by k",
+        "C": "Sets to zero",
+        "D": "None"
       },
       "answer": "A",
       "pyq": false
     },
     {
-      "id": 20,
-      "question": "If A² − 5A + 6I = 0, then A⁻¹ = ?",
-      "difficulty": "Hard",
+      "id": 39,
+      "question": "Minor of element 4 in [[1,2,3],[0,4,5],[1,0,6]] is?",
+      "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "(A − 5I)/6",
-        "B": "(5I − A)/6",
-        "C": "(A + 5I)/6",
-        "D": "A/6"
+        "A": "1",
+        "B": "3",
+        "C": "−3",
+        "D": "6"
       },
       "answer": "B",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 40,
+      "question": "Rank of matrix [[1,2,3],[2,4,6],[3,6,9]] is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "0"
+      },
+      "answer": "A",
       "pyq": true,
       "tag": "pyq"
     }

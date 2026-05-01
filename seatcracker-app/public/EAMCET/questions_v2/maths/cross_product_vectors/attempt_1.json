@@ -1,130 +1,313 @@
 {
-    "questions": [
-        {
-            "id": 1,
-            "question": "In scalar triple product, the dot and cross can be interchanged: a.(b×c) = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(a×b).c",
-                "B": "a×(b.c)",
-                "C": "b.(a×c)",
-                "D": "(a.b)×c"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 5,
-            "question": "Equation of line through two points A(a) and B(b) is r = ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "a + λ(b - a)",
-                "B": "b + λ(a + b)",
-                "C": "a + λb",
-                "D": "(a+b)/2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 9,
-            "question": "If |a⃗| = 2, |b⃗| = 3 and angle between them is 30°, then |a⃗×b⃗| = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "3",
-                "B": "√3",
-                "C": "3√3",
-                "D": "6"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "If [a b c] = 2, then [a+b b+c c+a] = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "4",
-                "B": "2",
-                "C": "8",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 13
-        },
-        {
-            "question": "Scale of (a x b) x c is called ______ product.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Vector Triple",
-                "B": "Scalar Triple",
-                "C": "Box",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 17
-        },
-        {
-            "question": "Cross product is ______ anticonmmutative (a x b = -b x a).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "Scalar",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 21
-        },
-        {
-            "question": "If a x b = 0, then a and b are ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "Parallel",
-                "B": "Perpendicular",
-                "C": "Equal",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 25
-        },
-        {
-            "question": "The area of a triangle with adjacent sides a and b is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "0.5 |a x b|",
-                "B": "|a x b|",
-                "C": "a.b",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 29
-        }
-    ]
+  "questions": [
+    {
+      "question": "If |a x b| = |a||b|, the angle between a and b is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "90°",
+        "B": "0°",
+        "C": "180°",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "question": "Distance of point (1,2,3) from plane r.(i+j+k) = 1 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "5 / √3",
+        "B": "6 / √3",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "The box product [a b c] is zero if vectors are ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Coplanar",
+        "B": "Orthogonal",
+        "C": "Collinear",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 3
+    },
+    {
+      "question": "The cross product of unit vectors satisfies j x k = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "i",
+        "B": "-i",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "question": "The magnitude of (2î+3ĵ+k̂)×(î+ĵ+k̂) is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√6",
+        "B": "√14",
+        "C": "3",
+        "D": "√3"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 6,
+      "question": "Area of triangle with vertices having position vectors a, b, c is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1/2) |a×b + b×c + c×a|",
+        "B": "(1/2) |(b-a) × (c-a)|",
+        "C": "Both A and B",
+        "D": "|a.b + b.c + c.a|"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 7,
+      "question": "Area of parallelogram with sides a⃗ = î+2ĵ+3k̂ and b⃗ = 3î−2ĵ+k̂ is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "8√2",
+        "B": "4√7",
+        "C": "6√3",
+        "D": "√(64+64)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The period of sin^1x + cos^1x is ______.",
+      "options": {
+        "A": "π/2",
+        "B": "π",
+        "C": "2π",
+        "D": "None"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "id": 8
+    },
+    {
+      "question": "If i, j, k are unit vectors, k x j = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "-i",
+        "B": "i",
+        "C": "0",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "question": "a × (b × c) + b × (c × a) + c × (a × b) = ______. (Jacobi Identity)",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "3 [a b c]",
+        "D": "a + b + c"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 11,
+      "question": "Unit vector perpendicular to both a and b is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "± (a × b) / |a × b|",
+        "B": "(a . b) / |a × b|",
+        "C": "(a × b) / |a . b|",
+        "D": "± (a + b) / |a + b|"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 12,
+      "question": "If a⃗×b⃗ = b⃗×c⃗, then (a⃗−c⃗) is parallel to?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "b⃗",
+        "B": "a⃗",
+        "C": "c⃗",
+        "D": "a⃗+c⃗"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "A fair coin is tossed 7 times. What is the probability of getting exactly 5 heads?",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "options": {
+        "A": "21.0/2^7",
+        "B": "7/2^7",
+        "C": "1/2^7",
+        "D": "42/2^7"
+      },
+      "answer": "A",
+      "hint": "Use Binomial distribution: nCr * (1/2)^r * (1/2)^(n-r)",
+      "solution": "P(X=5) = 7C5 * (1/2)^n = 21.0/2^7.",
+      "id": 13
+    },
+    {
+      "question": "Cyclic property of box product: [a b c] = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "[b c a]",
+        "B": "[b a c]",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 14
+    },
+    {
+      "id": 15,
+      "question": "The moment (torque) of a force F about a point O is denoted by M = ______. (r is position vector of point of application)",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "r × F",
+        "B": "F × r",
+        "C": "r . F",
+        "D": "|r||F|"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 16,
+      "question": "Condition for three points with position vectors a, b, c to be collinear is that there exist scalars x,y,z not all zero such that xa+yb+zc=0 and ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x + y + z = 0",
+        "B": "xyz = 1",
+        "C": "x = y = z",
+        "D": "x² + y² + z² = 1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 17,
+      "question": "If a⃗ = î+ĵ+k̂ and b⃗ = î, then a⃗×b⃗ = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "−ĵ+k̂",
+        "B": "ĵ−k̂",
+        "C": "ĵ+k̂",
+        "D": "0"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 18,
+      "question": "The direction cosines l, m, n of a vector satisfy ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "l² + m² + n² = 1",
+        "B": "l + m + n = 1",
+        "C": "l² + m² + n² = 0",
+        "D": "l + m + n = 0"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 19,
+      "question": "If a⃗ = 2î+3ĵ, b⃗ = î+4ĵ, then a⃗×b⃗ = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "5k̂",
+        "B": "−5k̂",
+        "C": "11k̂",
+        "D": "2î−3ĵ"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The cross product of a vector with itself is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "|a|²",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 20
+    }
+  ]
 }

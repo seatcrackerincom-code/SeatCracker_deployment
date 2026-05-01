@@ -1,7 +1,22 @@
 {
   "questions": [
     {
-      "id": 1,
+      "id": 41,
+      "question": "The angle between tangents from external point to ellipse depends on ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "The position of the point",
+        "B": "Only on a",
+        "C": "Only on b",
+        "D": "The tangent slope"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 42,
       "question": "For ellipse 16x²+25y²=400, the length of semi-latus rectum is?",
       "difficulty": "Hard",
       "hasDiagram": false,
@@ -17,113 +32,139 @@
       "tag": "pyq"
     },
     {
-      "id": 2,
-      "question": "If Major axis is 2b, then e = ______.",
+      "question": "Topic Specific Challenge ellipse #2",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 43
+    },
+    {
+      "id": 44,
+      "question": "Focus of (x-h)²/a² + (y-k)²/b² = 1 is ______.",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "√(1 - a²/b²)",
-        "B": "√(1 - b²/a²)",
-        "C": "a/b",
+        "A": "(h±ae, k)",
+        "B": "(h, k±ae)",
+        "C": "(±ae, 0)",
         "D": "None"
       },
       "answer": "A",
       "pyq": false
     },
     {
-      "id": 3,
-      "question": "Parametric point P(θ) has coordinates x = a cos θ, y = b sin θ. Slope of SP is ______.",
+      "question": "Topic Specific Challenge ellipse #1",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
       "difficulty": "Hard",
+      "id": 45
+    },
+    {
+      "id": 46,
+      "question": "Equation of ellipse with centre (h,k), major axis 2a along x is ______.",
+      "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "b sin θ / (a cos θ - ae)",
-        "B": "b/a tan θ",
-        "C": "None",
-        "D": "0"
+        "A": "(x-h)²/a² + (y-k)²/b² = 1",
+        "B": "(x+h)²/a² + (y+k)²/b² = 1",
+        "C": "(x-h)²/b² + (y-k)²/a² = 1",
+        "D": "(x-h)² + (y-k)² = a²"
       },
       "answer": "A",
       "pyq": false
     },
     {
-      "id": 4,
-      "question": "The product of perpendiculars from foci to any tangent of ellipse = ?",
+      "question": "Advanced Ellipse property question 7 involving tangent properties and focal distances.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 47
+    },
+    {
+      "id": 48,
+      "question": "Equation of normal to ellipse x²/a² + y²/b² = 1 at (a cosθ, b sinθ) is ______.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "b²",
-        "B": "a²",
-        "C": "ab",
-        "D": "b²/a²"
+        "A": "ax secθ - by cosecθ = a² - b²",
+        "B": "ax cosθ + by sinθ = a² + b²",
+        "C": "ax/cosθ + by/sinθ = 0",
+        "D": "x cosθ/a + y sinθ/b = 1"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 49,
+      "question": "The equation of director circle of ellipse x²/a²+y²/b²=1 is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "x²+y²=a²+b²",
+        "B": "x²+y²=a²−b²",
+        "C": "x²+y²=a²",
+        "D": "x²+y²=b²"
       },
       "answer": "A",
       "pyq": true,
       "tag": "pyq"
     },
     {
-      "id": 5,
-      "question": "If focal chord makes angle 60° with axis, its length is ______.",
+      "id": 50,
+      "question": "If tangency point is (x₁,y₁), then slope m is ______ w.r.t. y = mx + c.",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "2a(1-e²)/(1-e²/4)",
-        "B": "2a",
-        "C": "l",
+        "A": "-b²x₁ / a²y₁",
+        "B": "-a²x₁ / b²y₁",
+        "C": "y₁/x₁",
         "D": "None"
       },
       "answer": "A",
       "pyq": false
     },
     {
-      "id": 6,
-      "question": "If angle between minor axis and focal radius is 30°, then e = ______.",
+      "question": "Advanced Ellipse property question 4 involving tangent properties and focal distances.",
       "difficulty": "Hard",
       "hasDiagram": false,
-      "diagram_description": "",
+      "diagram_description": "None",
       "options": {
-        "A": "1/2",
-        "B": "√3/2",
-        "C": "1/√2",
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
         "D": "None"
       },
       "answer": "A",
-      "pyq": false
+      "pyq": false,
+      "tag": "hard",
+      "id": 51
     },
     {
-      "id": 7,
-      "question": "The angle between two conjugate diameters is 90° only for ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Circle (a=b)",
-        "B": "Standard Ellipse",
-        "C": "None",
-        "D": "Focal chords"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 8,
-      "question": "Tangent at vertex of ellipse is ______ to minor axis.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Parallel",
-        "B": "Perpendicular",
-        "C": "At 45°",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 9,
+      "id": 52,
       "question": "The normal to x²/a²+y²/b²=1 at point (x₁,y₁) is?",
       "difficulty": "Hard",
       "hasDiagram": false,
@@ -139,168 +180,117 @@
       "tag": "pyq"
     },
     {
-      "id": 10,
-      "question": "Eccentric angle of end of latus rectum in 1st quadrant is ______.",
+      "question": "Topic Specific Challenge ellipse #3",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 53
+    },
+    {
+      "question": "Topic Specific Challenge ellipse #0",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 54
+    },
+    {
+      "id": 55,
+      "question": "Eccentricity of ellipse with minor axis = half major axis is?",
       "difficulty": "Hard",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "tan⁻¹(b/ae)",
-        "B": "tan⁻¹(a/be)",
-        "C": "45°",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 11,
-      "question": "Intersection of x²/a² + y²/b² = 1 and x²/b² + y²/a² = 1 is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Points on y = ±x",
-        "B": "Foci",
-        "C": "Origin",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 12,
-      "question": "Area of rectangle formed by ends of major and minor axes is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "4ab",
-        "B": "2ab",
-        "C": "ab",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 13,
-      "question": "Locus of midpoint of focal chords is an ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "Ellipse",
-        "B": "Circle",
-        "C": "Parabola",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 14,
-      "question": "Tangent at P(x₁,y₁) divides auxiliary circle in ratio ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "It depends on theta",
-        "B": "1:1",
-        "C": "a:b",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 15,
-      "question": "Focus of (x-h)²/a² + (y-k)²/b² = 1 is ______.",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "(h±ae, k)",
-        "B": "(h, k±ae)",
-        "C": "(±ae, 0)",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 16,
-      "question": "Tangent at point (a cosθ, b sinθ) on ellipse x²/a²+y²/b²=1 is?",
-      "difficulty": "Medium",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "x cosθ/a + y sinθ/b = 1",
-        "B": "ax cosθ + by sinθ = 1",
-        "C": "x cosθ/a − y sinθ/b = 1",
-        "D": "x/a cosθ = y/b sinθ"
+        "A": "√3/2",
+        "B": "1/2",
+        "C": "√2/2",
+        "D": "1/√3"
       },
       "answer": "A",
       "pyq": true,
       "tag": "pyq"
     },
     {
-      "id": 17,
-      "question": "If tangency point is (x₁,y₁), then slope m is ______ w.r.t. y = mx + c.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "-b²x₁ / a²y₁",
-        "B": "-a²x₁ / b²y₁",
-        "C": "y₁/x₁",
-        "D": "None"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 18,
-      "question": "For ellipse b²=a²(1−e²), if e=1/2, a=4, area of ellipse = ?",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "8π√3",
-        "B": "4π√3",
-        "C": "16π/√3",
-        "D": "12π"
-      },
-      "answer": "A",
-      "pyq": true,
-      "tag": "pyq"
-    },
-    {
-      "id": 19,
-      "question": "Condition for line y = mx + c to touch ellipse (b>a) is ______.",
-      "difficulty": "Hard",
-      "hasDiagram": false,
-      "diagram_description": "",
-      "options": {
-        "A": "c² = b² + a²m²",
-        "B": "c² = a² + b²m²",
-        "C": "none",
-        "D": "c = b/m"
-      },
-      "answer": "A",
-      "pyq": false
-    },
-    {
-      "id": 20,
-      "question": "Sum of distances of a point from (2,0) and (-2,0) is 6, equation is ______.",
+      "id": 56,
+      "question": "If focal distance of P is 4 for x²/16 + y²/7 = 1, then x-coordinate is ______.",
       "difficulty": "Medium",
       "hasDiagram": false,
       "diagram_description": "",
       "options": {
-        "A": "x²/9 + y²/5 = 1",
-        "B": "x²/5 + y²/9 = 1",
-        "C": "x²/9 + y²/4 = 1",
+        "A": "0",
+        "B": "2",
+        "C": "4",
         "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 57,
+      "question": "If e₁ and e₂ are eccentricities of x²/16+y²/25=1 and x²/a²−y²/b²=1 with same foci, then e₁²+e₂² = ?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "14/5",
+        "B": "2",
+        "C": "41/25",
+        "D": "cannot determine"
+      },
+      "answer": "C",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 58,
+      "question": "The eccentricity of the ellipse 4x² + 9y² = 36 is ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√5/3",
+        "B": "√5/9",
+        "C": "2/3",
+        "D": "1/3"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 59,
+      "question": "For tangent to ellipse y = mx + c, slope m and intercept c satisfy ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "c² = a²m² + b²",
+        "B": "c = a²m + b",
+        "C": "c² = b²m² - a²",
+        "D": "c² = (a+b)m²"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 60,
+      "question": "The angle between two conjugate diameters is 90° only for ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Circle (a=b)",
+        "B": "Standard Ellipse",
+        "C": "None",
+        "D": "Focal chords"
       },
       "answer": "A",
       "pyq": false

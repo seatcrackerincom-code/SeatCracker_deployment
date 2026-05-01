@@ -1,313 +1,281 @@
 {
-    "questions": [
-        {
-            "question": "The value of (cosh x + sinh x)\u207f is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "cosh nx + sinh nx",
-                "B": "cosh nx - sinh nx",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 1
-        },
-        {
-            "question": "If the vectors a = 14i + 3j and b = 7i - j are perpendicular, find the value of 14*7.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "3",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "a.b = 0 -> {a}*{c} - {b} = 0 -> {a}*{c} = {b}.",
-            "id": 2
-        },
-        {
-            "question": "If cosh x = 5/4, then sinh x = ______ (x > 0).",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "3/4",
-                "B": "4/5",
-                "C": "3/5",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 3
-        },
-        {
-            "question": "If the matrix A is [[3, 11], [0, 5]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "34",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[9, 88], [0, 25]]. Trace is sum of diagonal elements: 9 + 25.",
-            "id": 4
-        },
-        {
-            "question": "The value of tanh\u207b\u00b9 x is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1/2 ln((1+x)/(1-x))",
-                "B": "ln(1+x)",
-                "C": "1/2 ln(1-x)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 5
-        },
-        {
-            "question": "If the matrix A is [[16, 19], [0, 8]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "320",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[256, 456], [0, 64]]. Trace is sum of diagonal elements: 256 + 64.",
-            "id": 6
-        },
-        {
-            "id": 7,
-            "question": "The relation between circular and hyperbolic functions: sin(ix) = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "i\u00b7sinh x",
-                "B": "sinh(ix)",
-                "C": "i\u00b7sin x",
-                "D": "cosh x"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "If the matrix A is [[5, 3], [0, 8]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "89",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[25, 39], [0, 64]]. Trace is sum of diagonal elements: 25 + 64.",
-            "id": 8
-        },
-        {
-            "question": "The period of hyperbolic functions is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "None (non-periodic)",
-                "B": "2\u03c0",
-                "C": "i 2\u03c0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 9
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^14 * (1-x)^4 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "20",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 10
-        },
-        {
-            "question": "tanh x in terms of e is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "(e^x - e^-x) / (e^x + e^-x)",
-                "B": "e^x + e^-x",
-                "C": "e^x - e^-x",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 11
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^2 * (1-x)^12 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "16",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 12
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^19 * (1-x)^20 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "41",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 13
-        },
-        {
-            "question": "If the matrix A is [[9, 6], [0, 8]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "145",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[81, 102], [0, 64]]. Trace is sum of diagonal elements: 81 + 64.",
-            "id": 14
-        },
-        {
-            "id": 15,
-            "question": "coth\u00b2x \u2212 cosech\u00b2x = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1",
-                "B": "\u22121",
-                "C": "0",
-                "D": "coth x"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 16,
-            "question": "The value of sinh(x) when x = 0 is?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0",
-                "B": "1",
-                "C": "\u22121",
-                "D": "\u221e"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "The value of the integral from 0 to 1 of x^7 * (1-x)^20 dx is given by the Beta function B(m,n). Find m+n.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "29",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Integral is B(a+1, b+1). So m = a+1, n = b+1. m+n = a+b+2.",
-            "id": 17
-        },
-        {
-            "question": "If the matrix A is [[14, 19], [0, 3]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "205",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[196, 323], [0, 9]]. Trace is sum of diagonal elements: 196 + 9.",
-            "id": 18
-        },
-        {
-            "question": "If the matrix A is [[9, 20], [0, 10]], find the trace of A^2.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "181",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "A^2 = [[81, 380], [0, 100]]. Trace is sum of diagonal elements: 81 + 100.",
-            "id": 19
-        },
-        {
-            "question": "The range of cosh x is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "[1, \u221e)",
-                "B": "(-\u221e, \u221e)",
-                "C": "(0, 1)",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 20
-        }
-    ]
+  "questions": [
+    {
+      "id": 61,
+      "question": "The sum of a geometric series involving hyperbolic functions: 1 + x cosh α + x² cosh 2α ... relates naturally to the expansion of ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "(1 - x cosh α) / (1 - 2x cosh α + x²)",
+        "B": "(1 + x cosh α) / (1 + 2x cosh α + x²)",
+        "C": "(cosh α) / (1 - x)",
+        "D": "(sinh α) / (1 + x²)"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 62,
+      "question": "Euler's formula relates trigonometric functions to complex exponentials. For hyperbolic functions, sinh(ix) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "i sin(x)",
+        "B": "-i sin(x)",
+        "C": "cos(x)",
+        "D": "i cos(x)"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Topic Specific Challenge hyperbolic_functions #15",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 63
+    },
+    {
+      "id": 64,
+      "question": "The Gudermannian function gd(x) relates circular and hyperbolic functions without complex numbers. If θ = gd(x), then sinh x = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "tan θ",
+        "B": "cos θ",
+        "C": "sin θ",
+        "D": "sec θ"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 65,
+      "question": "The sum formula for sinh is: sinh(x ± y) = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "sinh(x)cosh(y) ± cosh(x)sinh(y)",
+        "B": "cosh(x)cosh(y) ± sinh(x)sinh(y)",
+        "C": "sinh(x)sinh(y) ± cosh(x)cosh(y)",
+        "D": "sinh(x)cosh(y) ∓ cosh(x)sinh(y)"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Find the number of ways to arrange the letters of the word 'SUCCESS' such that the 5 S's are always together.",
+      "difficulty": "hard",
+      "hasDiagram": false,
+      "options": {
+        "A": "60",
+        "B": "0",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "hint": "Think step by step.",
+      "solution": "Treat 3 S as 1 block. Total items = 5. Permutations = 5! / 2! (for C) = 120/2 = 60.",
+      "id": 66
+    },
+    {
+      "id": 67,
+      "question": "The period of complex function tanh(z) is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "πi",
+        "B": "2πi",
+        "C": "π",
+        "D": "2π"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 68,
+      "question": "The identity coth²(x) - 1 is equal to ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "cosech²(x)",
+        "B": "sech²(x)",
+        "C": "-cosech²(x)",
+        "D": "-sech²(x)"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "The value of (cosh x + sinh x)ⁿ is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "cosh nx + sinh nx",
+        "B": "cosh nx - sinh nx",
+        "C": "1",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 69
+    },
+    {
+      "question": "Topic Specific Challenge hyperbolic_functions #25",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 70
+    },
+    {
+      "question": "sinh 2x in terms of sinh x and cosh x is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2 sinh x cosh x",
+        "B": "sinh x cosh x",
+        "C": "cosh² x + sinh² x",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 71
+    },
+    {
+      "question": "Topic Specific Challenge hyperbolic_functions #26",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 72
+    },
+    {
+      "question": "Topic Specific Challenge hyperbolic_functions #17",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 73
+    },
+    {
+      "question": "Topic Specific Challenge hyperbolic_functions #13",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 74
+    },
+    {
+      "question": "In hyperbolic functions, cosh(x+y) = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "cosh x cosh y + sinh x sinh y",
+        "B": "cosh x cosh y - sinh x sinh y",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 75
+    },
+    {
+      "id": 76,
+      "question": "The value of cosh(0) = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "e",
+        "D": "1/2"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 77,
+      "question": "Let x = ln(sec θ + tan θ), then sinh(x) is equal to ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "tan θ",
+        "B": "sec θ",
+        "C": "sin θ",
+        "D": "cos θ"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Topic Specific Challenge hyperbolic_functions #23",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 78
+    },
+    {
+      "id": 79,
+      "question": "As x approaches infinity, tanh(x) approaches ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "∞",
+        "D": "e"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 80,
+      "question": "The derivative of sinh⁻¹(x) is d/dx[sinh⁻¹(x)] = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1 / √(x² + 1)",
+        "B": "1 / √(x² - 1)",
+        "C": "1 / (1 + x²)",
+        "D": "1 / (x² - 1)"
+      },
+      "answer": "A"
+    }
+  ]
 }

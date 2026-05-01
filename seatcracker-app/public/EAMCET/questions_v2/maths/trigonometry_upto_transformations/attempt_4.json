@@ -1,419 +1,284 @@
 {
-    "questions": [
-        {
-            "id": 4,
-            "question": "Sine of the angle θ between two lines with DCs (l₁,m₁,n₁) and (l₂,m₂,n₂) is given by sin θ = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "√[Σ (m₁n₂ - m₂n₁)²]",
-                "B": "l₁l₂ + m₁m₂ + n₁n₂",
-                "C": "Σ l₁l₂",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 8,
-            "question": "If f(x) = e^x * sin(x), then f'(x) is",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "e^x * (sin(x) + cos(x))",
-                "B": "e^x * (sin(x) - cos(x))",
-                "C": "e^x * sin(x)",
-                "D": "e^x * cos(x)"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard"
-        },
-        {
-            "id": 12,
-            "question": "Period of f(x) = sin(2x) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "π",
-                "B": "2π",
-                "C": "4π",
-                "D": "π/2"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 16,
-            "question": "The identity coth²(x) - 1 is equal to ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "cosech²(x)",
-                "B": "sech²(x)",
-                "C": "-cosech²(x)",
-                "D": "-sech²(x)"
-            },
-            "answer": "A"
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(11x) - sin(7x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "4",
-                "B": "18",
-                "C": "-4",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(11x)/x - lim_{x->0} sin(7x)/x = 11 - 7 = 4.",
-            "id": 20
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(5x) - sin(3x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2",
-                "B": "8",
-                "C": "-2",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(5x)/x - lim_{x->0} sin(3x)/x = 5 - 3 = 2.",
-            "id": 24
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(9x) - sin(5x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "4",
-                "B": "14",
-                "C": "-4",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(9x)/x - lim_{x->0} sin(5x)/x = 9 - 5 = 4.",
-            "id": 28
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(10x) - sin(3x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "7",
-                "B": "13",
-                "C": "-7",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(10x)/x - lim_{x->0} sin(3x)/x = 10 - 3 = 7.",
-            "id": 32
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(12x) - sin(6x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "6",
-                "B": "18",
-                "C": "-6",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(12x)/x - lim_{x->0} sin(6x)/x = 12 - 6 = 6.",
-            "id": 36
-        },
-        {
-            "question": "Determine lim_{x -> 0} (sin(4x) - sin(2x)) / x.",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "2",
-                "B": "6",
-                "C": "-2",
-                "D": "1"
-            },
-            "answer": "A",
-            "hint": "Use lim_{x->0} sin(kx)/x = k.",
-            "solution": "We can split the limit as lim_{x->0} sin(4x)/x - lim_{x->0} sin(2x)/x = 4 - 2 = 2.",
-            "id": 40
-        },
-        {
-            "id": 44,
-            "question": "In terms of tanA, the formula for sin(2A) is ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(2 tanA) / (1 + tan²A)",
-                "B": "(2 tanA) / (1 - tan²A)",
-                "C": "(1 - tan²A) / (1 + tan²A)",
-                "D": "tan(2A)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 48,
-            "question": "The value of tan(A/2) can be expressed as sinA / (1 + cosA).",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 52,
-            "question": "The period of sin(nx) is 2π/n.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 56,
-            "question": "tan(A+B+C) formula involves sum of tan A, tan B, tan C.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(S1 - S3)/(1 - S2)",
-                "B": "S1/S2",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 60,
-            "question": "Identity: cos 3A = cos A (4 cos² A - 3).",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 64,
-            "question": "The half-angle formula cos(A/2) = √[(s(s-a)) / bc].",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 68,
-            "question": "r1 - r = 4R sin²(A/2)? No, relation is r1-r = 4R sin(A/2)cos(B/2)cos(C/2) - r.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Complex relation",
-                "B": "4R sin²(A/2)",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "According to the Cosine Rule, cos A = ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "(b² + c² - a²) / 2bc",
-                "B": "(a² + b² - c²) / 2ab",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 72
-        },
-        {
-            "id": 76,
-            "question": "If tan θ = 1/√5 and θ lies in first quadrant, then cos 2θ = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "2/3",
-                "B": "√5/3",
-                "C": "1/3",
-                "D": "4/6"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 80,
-            "question": "If A + B + C = π, then sin 2A + sin 2B + sin 2C = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "4 cos A cos B cos C",
-                "B": "4 sin A sin B sin C",
-                "C": "4 sin A cos B cos C",
-                "D": "0"
-            },
-            "answer": "B",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 84,
-            "question": "sin 20° · sin 40° · sin 80° = ?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "√3/4",
-                "B": "√3/8",
-                "C": "1/8",
-                "D": "3/8"
-            },
-            "answer": "B",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 88,
-            "question": "If tan A = 1/2 and tan B = 1/3, then tan(2A + B) = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1",
-                "B": "3",
-                "C": "7",
-                "D": "2"
-            },
-            "answer": "B",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "The maximum value of 3 sin x + 4 cos x + 10 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "15",
-                "B": "5",
-                "C": "10",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 92
-        },
-        {
-            "question": "The value of tan 1° tan 2° ... tan 89° is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "1",
-                "B": "0",
-                "C": "∞",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 96
-        },
-        {
-            "id": 100,
-            "question": "sin 10° + sin 20° + sin 40° + sin 50° − sin 70° − sin 80° = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "0",
-                "B": "1",
-                "C": "-1",
-                "D": "√3/2"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "question": "The period of sin(4x+3) is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "None",
-            "options": {
-                "A": "π / 2",
-                "B": "2π",
-                "C": "π / 4",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false,
-            "tag": "hard",
-            "id": 104
-        },
-        {
-            "id": 108,
-            "question": "The value of (1 + cos π/8)(1 + cos 3π/8)(1 + cos 5π/8)(1 + cos 7π/8) = ?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "1/2",
-                "B": "1/8",
-                "C": "√2/8",
-                "D": "1/4"
-            },
-            "answer": "B",
-            "pyq": true,
-            "tag": "pyq"
-        }
-    ]
+  "questions": [
+    {
+      "question": "If A + B + C = 180°, then sin 2A + sin 2B + sin 2C = ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "4 sin A sin B sin C",
+        "B": "4 cos A cos B cos C",
+        "C": "1 + 4 sin A sin B sin C",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 61
+    },
+    {
+      "id": 62,
+      "question": "The value of tan 9° − tan 27° − tan 63° + tan 81° = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "0",
+        "D": "1"
+      },
+      "answer": "B",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The maximum value of 3 sin x + 4 cos x + 10 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "15",
+        "B": "5",
+        "C": "10",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 63
+    },
+    {
+      "id": 64,
+      "question": "The period of f(x) = sin(πx/2) + cos(πx/3) is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "6",
+        "B": "12",
+        "C": "4",
+        "D": "3"
+      },
+      "answer": "B",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 65,
+      "question": "If sin θ = 3/5, the value of sin 3θ = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "117/125",
+        "B": "-117/125",
+        "C": "44/125",
+        "D": "7/125"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 66,
+      "question": "If sin θ + cosec θ = 2, then sin²θ + cosec²θ = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "1",
+        "B": "4",
+        "C": "2",
+        "D": "0"
+      },
+      "answer": "C",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #32",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 67
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #30",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 68
+    },
+    {
+      "question": "The period of sin⁴x + cos⁴x is ______.",
+      "options": {
+        "A": "π/2",
+        "B": "π",
+        "C": "2π",
+        "D": "None"
+      },
+      "answer": "A",
+      "id": 69,
+      "hasDiagram": false
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #6",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 70
+    },
+    {
+      "question": "The minimum value of 2 sin²θ + 3 cos²θ is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "5",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 71
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #18",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 72
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #37",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 73
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #12",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 74
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #41",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 75
+    },
+    {
+      "id": 76,
+      "question": "If A + B + C = π, then sin 2A + sin 2B + sin 2C = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "4 cos A cos B cos C",
+        "B": "4 sin A sin B sin C",
+        "C": "4 sin A cos B cos C",
+        "D": "0"
+      },
+      "answer": "B",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #7",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 77
+    },
+    {
+      "question": "Topic Specific Challenge trigonometry_upto_transformations #31",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 78
+    },
+    {
+      "id": 79,
+      "question": "If tan θ = 1/√5 and θ lies in first quadrant, then cos 2θ = ?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2/3",
+        "B": "√5/3",
+        "C": "1/3",
+        "D": "4/6"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The value of tan 1° tan 2° ... tan 89° is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "∞",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 80
+    }
+  ]
 }

@@ -1,309 +1,307 @@
 {
-    "questions": [
-        {
-            "id": 1,
-            "question": "dy/dx + y\u00b7tan x = sec x has solution?",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "y\u00b7sec x = tan x + c",
-                "B": "y\u00b7cos x = sin x + c",
-                "C": "y = sin x + c\u00b7cos x",
-                "D": "y\u00b7tan x = sec x + c"
-            },
-            "answer": "C",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 2,
-            "question": "Newton's Law of Cooling is a linear first order equation.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 3,
-            "question": "Form dy/dx = f(ax+by+c) uses substitution ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "ax+by+c = v",
-                "B": "y/x = v",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "question": "Evaluate the limit as x approaches 0 of (sin(6x) / tan(5x)).",
-            "difficulty": "hard",
-            "hasDiagram": false,
-            "options": {
-                "A": "6/5",
-                "B": "0",
-                "C": "1",
-                "D": "None"
-            },
-            "answer": "A",
-            "hint": "Think step by step.",
-            "solution": "Using lim x->0 sin(kx)/x = k, we get 6/5.",
-            "id": 4
-        },
-        {
-            "id": 5,
-            "question": "The solution of dy/dx = e^{x+y} involves ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Variable Separable",
-                "B": "Linear form",
-                "C": "Exactness",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 6,
-            "question": "Equation (x\u00b2-yx\u00b2)dy + (y\u00b2+xy\u00b2)dx = 0 is variable separable.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 7,
-            "question": "The general solution of dy/dx = (y/x)\u00b2 is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x/y = -ln|x| + C",
-                "B": "y/x = ln|x| + C",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 8,
-            "question": "The differential equation d\u00b2y/dx\u00b2 = 0 represents ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Straight lines",
-                "B": "Circles",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 9,
-            "question": "Family of curves x\u00b2 + y\u00b2 = 2ax. Differential equation is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "(x\u00b2\u2212y\u00b2)dy/dx = 2xy",
-                "B": "(x\u00b2+y\u00b2)dy/dx = 2xy",
-                "C": "x\u00b7dy/dx = y + \u221a(x\u00b2+y\u00b2)",
-                "D": "y\u00b7dy/dx = x\u00b2+y\u00b2"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 10,
-            "question": "The equation of curve passing through (1,1) with slope = y/x + x\u00b2/y\u00b2 is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "y = x\u00b7e^((x\u00b3\u22121)/3)",
-                "B": "y = e^(x\u22121)",
-                "C": "y = x + ln x",
-                "D": "y\u00b2=x\u00b2+ln x"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 11,
-            "question": "Orthogonal trajectories of concentric circles x\u00b2+y\u00b2=C\u00b2 are ______.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "Straight lines through origin",
-                "B": "Other circles",
-                "C": "Parabolas",
-                "D": "Hyperbolas"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 12,
-            "question": "To find orthogonal trajectories, we replace dy/dx with ______ in the DE.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-dx/dy",
-                "B": "dx/dy",
-                "C": "-dy/dx",
-                "D": "1/(dy/dx)"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 13,
-            "question": "Solution of x\u00b7dy/dx + y = x\u00b7ln x is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "xy = x\u00b2(2 ln x \u2212 1)/4 + c",
-                "B": "y = x ln x + cx",
-                "C": "xy = (x\u00b2 ln x)/2 + c",
-                "D": "y = ln x + c/x"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        },
-        {
-            "id": 14,
-            "question": "The family y = cx corresponds to the orthogonal trajectories of circles center origin.",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "Only if c=0",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 15,
-            "question": "Logistic growth model is non-linear.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 16,
-            "question": "Differential equation of y\u00b2 = 4ax is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "y = 2xy'",
-                "B": "y = xy'",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 17,
-            "question": "Function f(x,y) is homogeneous if f(\u03bbx, \u03bby) = \u03bb\u207f f(x,y).",
-            "difficulty": "Medium",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 18,
-            "question": "The integrating factor of x log x (dy/dx) + y = 2/x is ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "log x",
-                "B": "x",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 19,
-            "question": "In polar coordinates, orthogonal trajectories replace dr/d\u03b8 with ______.",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "-r\u00b2 (d\u03b8/dr)",
-                "B": "-d\u03b8/dr",
-                "C": "None",
-                "D": "None"
-            },
-            "answer": "A",
-            "pyq": false
-        },
-        {
-            "id": 20,
-            "question": "Solution of (x\u00b2\u2212y\u00b2)dx + 2xy\u00b7dy = 0 is?",
-            "difficulty": "Hard",
-            "hasDiagram": false,
-            "diagram_description": "",
-            "options": {
-                "A": "x\u00b2 + y\u00b2 = cx",
-                "B": "x\u00b2 \u2212 y\u00b2 = cx",
-                "C": "y\u00b2 = cx \u2212 x\u00b2",
-                "D": "x(x\u00b2+y\u00b2) = c"
-            },
-            "answer": "A",
-            "pyq": true,
-            "tag": "pyq"
-        }
-    ]
+  "questions": [
+    {
+      "id": 21,
+      "question": "Bernoulli's equation dy/dx + Py = Qyⁿ is solved by substituting ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y^(1-n) = v",
+        "B": "y^n = v",
+        "C": "x = v",
+        "D": "log y = v"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 22,
+      "question": "Form dy/dx = f(ax+by+c) uses substitution ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "ax+by+c = v",
+        "B": "y/x = v",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 23,
+      "question": "dy/dx = e^(x+y), general solution is?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^x + e^(−y) = c",
+        "B": "e^x − e^y = c",
+        "C": "e^(x−y) = c",
+        "D": "e^x + e^y = c"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 24,
+      "question": "If (∂M/∂y - ∂N/∂x)/N = f(x), then integrating factor is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "e^(∫f(x) dx)",
+        "B": "e^(∫f(y) dy)",
+        "C": "f(x)",
+        "D": "∫M dx"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 25,
+      "question": "dy/dx = (x−y)/(x+y) is a ______ equation?",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "homogeneous",
+        "B": "linear",
+        "C": "Bernoulli",
+        "D": "exact"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "question": "The differential equation of all circles passing through the origin and having centers on the x-axis is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "None",
+      "options": {
+        "A": "y² - x² = 2xy dy/dx",
+        "B": "x² + y² = c",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false,
+      "tag": "hard",
+      "id": 26
+    },
+    {
+      "id": 27,
+      "question": "The equation (2xy − y²)dx + (2xy − x²)dy = 0 is exact if?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "always exact",
+        "B": "never exact",
+        "C": "exact only when y = x",
+        "D": "exact with IF = 1/(xy)²"
+      },
+      "answer": "B",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 28,
+      "question": "Integrating factor of (1-x²)dy/dx - xy = 1 is ______.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "√(1-x²)",
+        "B": "1-x²",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 29,
+      "question": "If the tangential slope dy/dx = y/x, the curves satisfy xdy - ydx = 0, which are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Lines through origin",
+        "B": "Circles passing origin",
+        "C": "Parabolas",
+        "D": "Ellipses"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 30,
+      "question": "dy/dx = 1 + x + y + xy is separable.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 31,
+      "question": "The equation y dx - x dy + ln x dx = 0 is exact after divide by x.",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 32,
+      "question": "Orthogonal trajectories of concentric circles x²+y²=C² are ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Straight lines through origin",
+        "B": "Other circles",
+        "C": "Parabolas",
+        "D": "Hyperbolas"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 33,
+      "question": "Expression (x dy - y dx) / x² is d(y/x).",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 34,
+      "question": "The equation of curve passing through (1,1) with slope = y/x + x²/y² is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "y = x·e^((x³−1)/3)",
+        "B": "y = e^(x−1)",
+        "C": "y = x + ln x",
+        "D": "y²=x²+ln x"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    },
+    {
+      "id": 35,
+      "question": "The solution of dy/dx = -x/y implies ydy = -xdx, which integrates to x² + y² = 2C. This family represents ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "Circles centered at origin",
+        "B": "Parabolas",
+        "C": "Straight lines",
+        "D": "Hyperbolas"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 36,
+      "question": "If we substitute y=vx, then dy/dx becomes ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "v + x(dv/dx)",
+        "B": "dv/dx",
+        "C": "x(dv/dx)",
+        "D": "v(dx/dv)"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "question": "Topic Specific Challenge differential_equations #6",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "difficulty": "Hard",
+      "id": 37
+    },
+    {
+      "id": 38,
+      "question": "For a Homogeneous Differential Equation dy/dx = f(y/x), we substitute y = ______.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "vx",
+        "B": "x/v",
+        "C": "u+v",
+        "D": "v²"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 39,
+      "question": "Newton's Law of Cooling is a linear first order equation.",
+      "difficulty": "Medium",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "None"
+      },
+      "answer": "A",
+      "pyq": false
+    },
+    {
+      "id": 40,
+      "question": "The particular solution of dy/dx + 2y = 4x, y(0)=1 is?",
+      "difficulty": "Hard",
+      "hasDiagram": false,
+      "diagram_description": "",
+      "options": {
+        "A": "2x − 1 + 2e^(−2x)",
+        "B": "2x + 1 − 2e^(−2x)",
+        "C": "2x − 1 + e^(−2x)",
+        "D": "2x − 1 + 2e^(2x)"
+      },
+      "answer": "A",
+      "pyq": true,
+      "tag": "pyq"
+    }
+  ]
 }
