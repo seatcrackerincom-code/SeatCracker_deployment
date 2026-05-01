@@ -22,23 +22,23 @@ type StateRegion = 'AP' | 'TS';
 // Removed static SUBJECTS, moved inside component to be course-aware
 
 const STRATEGIES = [
-  { 
-    id: 's1', 
-    title: 'The Column Guessing Strategy', 
+  {
+    id: 's1',
+    title: 'The Column Guessing Strategy',
     desc: 'Master the art of identifying patterns in option columns to narrow down choices.',
     videoId: 'dQw4w9WgXcQ',
     thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
   },
-  { 
-    id: 's2', 
-    title: 'Blind Guessing Masterclass', 
+  {
+    id: 's2',
+    title: 'Blind Guessing Masterclass',
     desc: 'Scientific approach to guessing when you have absolutely no idea about the question.',
     videoId: 'dQw4w9WgXcQ',
     thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
   },
-  { 
-    id: 's3', 
-    title: 'Elimination Techniques', 
+  {
+    id: 's3',
+    title: 'Elimination Techniques',
     desc: 'Learn how to quickly eliminate 2 out of 4 options using logic and dimensional analysis.',
     videoId: 'dQw4w9WgXcQ',
     thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
@@ -95,14 +95,14 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
   };
 
   const renderDashboard = () => (
-    <motion.div 
+    <motion.div
       className={styles.grid}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
     >
-      <div 
-        className={`${styles.card} ${styles.cardCyan} ${isLocked ? styles.lockedCard : ''}`} 
+      <div
+        className={`${styles.card} ${styles.cardCyan} ${isLocked ? styles.lockedCard : ''}`}
         onClick={() => handleCardClick('topics')}
       >
         <div className={`${styles.cardIcon} ${styles.iconCyan}`}>📊</div>
@@ -116,8 +116,8 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
         </p>
       </div>
 
-      <div 
-        className={`${styles.card} ${styles.cardEmerald} ${isLocked ? styles.lockedCard : ''}`} 
+      <div
+        className={`${styles.card} ${styles.cardEmerald} ${isLocked ? styles.lockedCard : ''}`}
         onClick={() => handleCardClick('questions')}
       >
         <div className={`${styles.cardIcon} ${styles.iconEmerald}`}>🔄</div>
@@ -131,8 +131,8 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
         </p>
       </div>
 
-      <div 
-        className={`${styles.card} ${styles.cardAmber} ${isLocked ? styles.lockedCard : ''}`} 
+      <div
+        className={`${styles.card} ${styles.cardAmber} ${isLocked ? styles.lockedCard : ''}`}
         onClick={() => handleCardClick('strategies')}
       >
         <div className={`${styles.cardIcon} ${styles.iconAmber}`}>📺</div>
@@ -152,7 +152,7 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
   const activeTopics = activeData[selectedSubject] || [];
 
   const renderTopics = () => (
-    <motion.div 
+    <motion.div
       className={styles.detailView}
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
@@ -161,7 +161,7 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
 
       <div className={styles.tabs}>
         {SUBJECTS.map(sub => (
-          <button 
+          <button
             key={sub}
             className={`${styles.tab} ${selectedSubject === sub ? styles.active : ''}`}
             onClick={() => { setSelectedSubject(sub); setExpandedTopic(null); }}
@@ -184,58 +184,58 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
           activeTopics.map((topic: Topic) => (
             <React.Fragment key={topic.id}>
 
-            <div 
-              className={`${styles.listItem} ${expandedTopic?.id === topic.id ? styles.expandedItem : ''}`}
-              onClick={() => setExpandedTopic(expandedTopic?.id === topic.id ? null : topic)}
-            >
-              <div className={styles.itemInfo}>
-                <h3>{topic.name}</h3>
-              </div>
-              <svg 
-                width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-                style={{ transform: expandedTopic?.id === topic.id ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}
+              <div
+                className={`${styles.listItem} ${expandedTopic?.id === topic.id ? styles.expandedItem : ''}`}
+                onClick={() => setExpandedTopic(expandedTopic?.id === topic.id ? null : topic)}
               >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </div>
-            
-            <AnimatePresence>
-              {expandedTopic?.id === topic.id && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  exit={{ opacity: 0, height: 0 }}
-                  className={styles.expandedContent}
+                <div className={styles.itemInfo}>
+                  <h3>{topic.name}</h3>
+                </div>
+                <svg
+                  width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                  style={{ transform: expandedTopic?.id === topic.id ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}
                 >
-                  <div className={styles.subtopicsContainer}>
-                    <h4>Key Subtopics</h4>
-                    <div className={styles.subtopicsTags}>
-                      {topic.subtopics.map((sub, i) => (
-                        <span key={i} className={styles.subtopicTag}>{sub}</span>
-                      ))}
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+
+              <AnimatePresence>
+                {expandedTopic?.id === topic.id && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className={styles.expandedContent}
+                  >
+                    <div className={styles.subtopicsContainer}>
+                      <h4>Key Subtopics</h4>
+                      <div className={styles.subtopicsTags}>
+                        {topic.subtopics.map((sub, i) => (
+                          <span key={i} className={styles.subtopicTag}>{sub}</span>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                  
-                  <div className={styles.formulasContainer}>
-                    <h4>Cheat Code Formulas</h4>
-                    <div className={styles.formulasGrid}>
-                      {topic.formulas.map((form, i) => (
-                        <div key={i} className={styles.formulaCard}>
-                          <div className={styles.formulaName}>{form.name}</div>
-                          <div className={styles.formulaMath}>
-                            <BlockMath math={form.latex} />
+
+                    <div className={styles.formulasContainer}>
+                      <h4>Cheat Code Formulas</h4>
+                      <div className={styles.formulasGrid}>
+                        {topic.formulas.map((form, i) => (
+                          <div key={i} className={styles.formulaCard}>
+                            <div className={styles.formulaName}>{form.name}</div>
+                            <div className={styles.formulaMath}>
+                              <BlockMath math={form.latex} />
+                            </div>
+                            <div className={styles.formulaHint}>
+                              <span className={styles.hintIcon}>💡</span> {form.hint}
+                            </div>
                           </div>
-                          <div className={styles.formulaHint}>
-                            <span className={styles.hintIcon}>💡</span> {form.hint}
-                          </div>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </React.Fragment>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </React.Fragment>
           ))
         )}
 
@@ -247,7 +247,7 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
     const subQuestions = REPEATED_QUESTIONS[selectedSubject]?.[selectedRegion] || [];
 
     return (
-      <motion.div 
+      <motion.div
         className={styles.detailView}
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
@@ -255,7 +255,7 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
       >
         <div className={styles.tabs}>
           {SUBJECTS.map(sub => (
-            <button 
+            <button
               key={sub}
               className={`${styles.tab} ${selectedSubject === sub ? styles.active : ''}`}
               onClick={() => setSelectedSubject(sub)}
@@ -304,7 +304,7 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
   };
 
   const renderStrategies = () => (
-    <motion.div 
+    <motion.div
       className={styles.strategyGrid}
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
@@ -344,7 +344,7 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
       <div className={`${styles.orb} ${styles.orb2}`} />
       <div className={`${styles.orb} ${styles.orb3}`} />
       <div className={`${styles.orb} ${styles.orb4}`} />
-      
+
       <div className={styles.container}>
         <button className={styles.backBtn} onClick={handleBack}>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

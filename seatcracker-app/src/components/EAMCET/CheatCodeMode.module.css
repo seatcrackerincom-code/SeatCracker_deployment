@@ -63,9 +63,17 @@
 }
 
 @keyframes float {
-  0% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(5%, 10%) scale(1.1); }
-  100% { transform: translate(-5%, -5%) scale(0.9); }
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(5%, 10%) scale(1.1);
+  }
+
+  100% {
+    transform: translate(-5%, -5%) scale(0.9);
+  }
 }
 
 .container {
@@ -125,9 +133,17 @@
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
-.cardCyan { border-color: rgba(34, 211, 238, 0.2); }
-.cardEmerald { border-color: rgba(16, 185, 129, 0.2); }
-.cardAmber { border-color: rgba(245, 158, 11, 0.2); }
+.cardCyan {
+  border-color: rgba(34, 211, 238, 0.2);
+}
+
+.cardEmerald {
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+.cardAmber {
+  border-color: rgba(245, 158, 11, 0.2);
+}
 
 .cardCyan:hover {
   border-color: rgba(34, 211, 238, 0.5);
@@ -171,9 +187,23 @@
   transition: all 0.3s ease;
 }
 
-.iconCyan { background: rgba(34, 211, 238, 0.1); color: #22d3ee; border-color: rgba(34, 211, 238, 0.2); }
-.iconEmerald { background: rgba(16, 185, 129, 0.1); color: #10b981; border-color: rgba(16, 185, 129, 0.2); }
-.iconAmber { background: rgba(245, 158, 11, 0.1); color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); }
+.iconCyan {
+  background: rgba(34, 211, 238, 0.1);
+  color: #22d3ee;
+  border-color: rgba(34, 211, 238, 0.2);
+}
+
+.iconEmerald {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+.iconAmber {
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.2);
+}
 
 .cardTitle {
   font-size: 22px;
@@ -259,8 +289,15 @@
   font-weight: 700;
 }
 
-.badge.hard { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
-.badge.medium { background: rgba(245, 158, 11, 0.1); color: #f59e0b; }
+.badge.hard {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.badge.medium {
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+}
 
 /* Strategy Cards */
 .strategyGrid {
@@ -416,7 +453,8 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.subtopicsContainer h4, .formulasContainer h4 {
+.subtopicsContainer h4,
+.formulasContainer h4 {
   color: #38bdf8;
   font-size: 16px;
   margin: 0 0 12px 0;
@@ -489,7 +527,10 @@
   flex-shrink: 0;
 }
 
-.easy { background: rgba(16, 185, 129, 0.1); color: #34d399; }
+.easy {
+  background: rgba(16, 185, 129, 0.1);
+  color: #34d399;
+}
 
 /* Recurring Questions View */
 .questionTopicBlock {
@@ -591,4 +632,3 @@
     grid-template-columns: 1fr;
   }
 }
-
