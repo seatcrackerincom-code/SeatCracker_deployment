@@ -21,29 +21,7 @@ type StateRegion = 'AP' | 'TS';
 
 // Removed static SUBJECTS, moved inside component to be course-aware
 
-const STRATEGIES = [
-  {
-    id: 's1',
-    title: 'The Column Guessing Strategy',
-    desc: 'Master the art of identifying patterns in option columns to narrow down choices.',
-    videoId: 'dQw4w9WgXcQ',
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
-  },
-  {
-    id: 's2',
-    title: 'Blind Guessing Masterclass',
-    desc: 'Scientific approach to guessing when you have absolutely no idea about the question.',
-    videoId: 'dQw4w9WgXcQ',
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
-  },
-  {
-    id: 's3',
-    title: 'Elimination Techniques',
-    desc: 'Learn how to quickly eliminate 2 out of 4 options using logic and dimensional analysis.',
-    videoId: 'dQw4w9WgXcQ',
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
-  }
-];
+
 
 export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
   const isAgri = course?.includes("Agriculture");
@@ -138,10 +116,10 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
         <div className={`${styles.cardIcon} ${styles.iconAmber}`}>📺</div>
         <h2 className={styles.cardTitle}>Cheat Strategies</h2>
         <p className={styles.cardDesc}>
-          Watch expert videos on blind guessing and column patterns.
+          Scientific techniques for blind guessing and pattern identification.
           <br />
-          <strong style={{ color: isLocked ? '#fbbf24' : '#34d399' }}>
-            {isLocked ? `✨ Unlocking in ${formatTime(timeLeft)}` : '✅ Unlocked! Watch Now'}
+          <strong style={{ color: '#fbbf24' }}>
+            🛠️ Coming Soon: Still Researching
           </strong>
         </p>
       </div>
@@ -305,35 +283,29 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
 
   const renderStrategies = () => (
     <motion.div
-      className={styles.strategyGrid}
+      className={styles.detailView}
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.95 }}
     >
-      {STRATEGIES.map(strategy => (
-        <div key={strategy.id} className={styles.videoCard}>
-          <div className={styles.thumbnail}>
-            <img src={strategy.thumbnail} alt={strategy.title} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.6 }} />
-            <div className={styles.playIcon}>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-              </svg>
-            </div>
-          </div>
-          <div className={styles.videoInfo}>
-            <h3>{strategy.title}</h3>
-            <p>{strategy.desc}</p>
-            <a href={`https://youtube.com/watch?v=${strategy.videoId}`} target="_blank" rel="noreferrer" className={styles.videoLink}>
-              Watch Video
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-            </a>
-          </div>
-        </div>
-      ))}
+      <div style={{ 
+        textAlign: 'center', 
+        padding: '80px 20px', 
+        color: '#94a3b8', 
+        background: 'rgba(255,255,255,0.03)', 
+        borderRadius: '24px', 
+        border: '1px dashed rgba(255,255,255,0.1)',
+        marginTop: '20px'
+      }}>
+        <div style={{ fontSize: '64px', marginBottom: '24px' }}>🎬</div>
+        <h3 style={{ color: '#fff', fontSize: '24px', marginBottom: '16px' }}>Coming Soon...</h3>
+        <p style={{ maxWidth: '500px', margin: '0 auto', lineHeight: '1.8', fontSize: '16px' }}>
+          We are still researching and recording the most effective strategic guessing techniques. 
+          Our experts are analyzing pattern frequencies to give you the highest probability of success.
+          <br /><br />
+          <strong>Stand by for the update!</strong>
+        </p>
+      </div>
     </motion.div>
   );
 
