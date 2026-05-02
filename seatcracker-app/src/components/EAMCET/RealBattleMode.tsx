@@ -1313,8 +1313,8 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
         : `${String(m).padStart(2, "0")}m ${String(s).padStart(2, "0")}s`;
     };
 
-    const maxMocks = course === "Engineering" ? 5 : 3;
-    const mockOptions = Array.from({ length: 5 }, (_, idx) => idx + 1).map(i => {
+    const maxMocks = 3; // Mocks 1-3 have real data; 4-10 are Coming Soon placeholders
+    const mockOptions = Array.from({ length: 10 }, (_, idx) => idx + 1).map(i => {
       const id = `${prefix.toLowerCase().replace(/\s+/g, "_")}_mock_test_${i}`;
       const submitTime = parseInt(localStorage.getItem(`sc_submit_time_${id}`) || "0");
       const isCompleted = !!submitTime;
@@ -1323,12 +1323,17 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
       const resultsCountdown = isCompleted && !resultsAvailable ? resultsReadyAt - now : 0;
       const isComingSoon = i > maxMocks;
 
+      const mockIcons: Record<number, string> = {
+        1: "⚔️", 2: "🏆", 3: "🎯", 4: "🔥", 5: "💎",
+        6: "⚡", 7: "🛡️", 8: "🌟", 9: "👑", 10: "🏅"
+      };
+
       return {
         num: i,
         id,
         title: `Mock Test ${i}`,
         desc: "",
-        icon: i === 1 ? "⚔️" : "🏆",
+        icon: mockIcons[i] || "🏆",
         isCompleted,
         resultsAvailable,
         resultsCountdown,
@@ -1344,6 +1349,11 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
         3: `${prefix} Mock Test 3`,
         4: `${prefix} Mock Test 4`,
         5: `${prefix} Mock Test 5`,
+        6: `${prefix} Mock Test 6`,
+        7: `${prefix} Mock Test 7`,
+        8: `${prefix} Mock Test 8`,
+        9: `${prefix} Mock Test 9`,
+        10: `${prefix} Mock Test 10`,
       };
 
       // Already submitted — show results or waiting screen
