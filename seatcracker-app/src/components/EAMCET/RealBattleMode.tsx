@@ -891,15 +891,16 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
           </div>
 
           <div style={{ background: "rgba(59,130,246,0.1)", border: "1px solid rgba(59,130,246,0.3)", borderRadius: 8, padding: 16, color: "#93c5fd", fontSize: 14, marginBottom: 24 }}>
-            ⚡ Results and detailed analysis are being generated. Ready in <strong>10 Seconds</strong>.
+            ⚡ Results and detailed analysis are READY.
           </div>
 
           <button
-            style={{ width: "100%", background: "#3b82f6", color: "#fff", border: "none", padding: "14px 24px", borderRadius: 8, fontSize: 16, fontWeight: "bold", cursor: "pointer" }}
-            onClick={() => setPhase("selection")}
+            style={{ width: "100%", background: "#10b981", color: "#fff", border: "none", padding: "14px 24px", borderRadius: 8, fontSize: 16, fontWeight: "bold", cursor: "pointer" }}
+            onClick={() => setPhase("results")}
           >
-            Return to Mock Selection
+            View Detailed Results Now
           </button>
+
         </div>
       </div>
     );
@@ -1288,9 +1289,9 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
     const prefix = `${statePrefix}${course}`;
 
     const now = nowTime;
-    const COOLDOWN_MS = 1 * 60 * 60 * 1000;   // 1 hour
-    const RESULTS_MS = 10 * 1000;            // 10 seconds
-    const MAX_PER_DAY = 2;
+    const COOLDOWN_MS = 0; // Disabled temporarily for testing
+    const RESULTS_MS = 0;   // Disabled temporarily for testing
+    const MAX_PER_DAY = 999; // Increased temporarily for testing
 
     // Daily submit count
     const todayStart = new Date(); todayStart.setHours(0, 0, 0, 0);
@@ -2364,11 +2365,10 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
           <div className={styles.sidebarFooter}>
             <button
               className={styles.sidebarSubmit}
-              disabled={true}
-              style={{ opacity: 0.5, cursor: "not-allowed", filter: "grayscale(1)" }}
-              title="Manual submission is disabled. Exam will auto-submit when timer hits 0."
+              onClick={() => setShowSubmitConfirm(true)}
+              style={{ background: "linear-gradient(90deg, #ef4444, #dc2626)", color: "white", cursor: "pointer" }}
             >
-              Submit Locked
+              Submit Exam
             </button>
           </div>
         </div>
