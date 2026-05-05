@@ -263,6 +263,11 @@ export default function Home() {
   const handleTestCategoryNext = (selected: string) => {
     setTestCategory(selected);
     localStorage.setItem(getPK("sc_test_category"), selected);
+    if (selected === "JEE") {
+      saveCloudProgress({ exam: "JEE", last_step: 2 });
+      window.location.href = "/jee-advanced";
+      return;
+    }
     go(3);
   };
 

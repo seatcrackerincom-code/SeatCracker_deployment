@@ -74,7 +74,7 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
 
   // Exam mode — replaces old dummy test
   const [examMode, setExamMode] = useState(false);
-  const [examCount, setExamCount] = useState<number>(15);
+  const [activeUsersCount, setActiveUsersCount] = useState<number>(0);
   const [showPracticeModal, setShowPracticeModal] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
 
@@ -105,6 +105,13 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
      .catch(() => setLoading(false));
 
     fetchProgress(userId).then(setAllProgress);
+
+    // Fetch active users for this exam
+    fetch(`/api/stats/exam-count?exam=${exam}`)
+      .then(res => res.json())
+      .then(d => setActiveUsersCount(d.count))
+      .catch(() => setActiveUsersCount(0));
+
   }, [exam, course, userId]);
 
   useEffect(() => {
@@ -281,7 +288,10 @@ export default function PracticeArena({ userId, exam, course, onBack, onGoToRoad
             </button>
           </div>
           <h1 className={styles.topTitle}>Today&apos;s Practise</h1>
-
+          <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: "8px", background: "rgba(56, 189, 248, 0.1)", padding: "6px 14px", borderRadius: "20px", color: "#38bdf8", fontSize: "0.85rem", fontWeight: 600, border: "1px solid rgba(56, 189, 248, 0.2)" }}>
+            <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#38bdf8", boxShadow: "0 0 10px #38bdf8" }} />
+            {activeUsersCount > 0 ? activeUsersCount.toLocaleString() : "..."} {exam} Users Preparing
+          </div>
         </header>
 
         <ProfileModal

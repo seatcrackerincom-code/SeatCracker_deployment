@@ -36,6 +36,18 @@ export async function GET(req: Request) {
       .select("*", { count: "exact", head: true })
       .eq("is_premium", true);
 
+    // EAMCET users (AP or TS)
+    const { count: eamcetUsers, error: eEamcet } = await supabase
+      .from("users")
+      .select("*", { count: "exact", head: true })
+      .in("exam", ["AP", "TS"]);
+
+    // JEE users
+    const { count: jeeUsers, error: eJee } = await supabase
+      .from("users")
+      .select("*", { count: "exact", head: true })
+      .eq("exam", "JEE");
+
     // Total revenue — sum of successful payments
     const { data: payments, error: e3 } = await supabase
       .from("payments")
@@ -68,12 +80,14 @@ export async function GET(req: Request) {
       .order("created_at", { ascending: false })
       .limit(20);
 
-    if (e1 || e2 || e3 || e4 || e5 || eToday) {
-      console.error("[admin/stats] errors:", { e1, e2, e3, e4, e5, eToday });
+    if (e1 || e2 || e3 || e4 || e5 || eToday || eEamcet || eJee) {
+      console.error("[admin/stats] errors:", { e1, e2, e3, e4, e5, eToday, eEamcet, eJee });
     }
 
     return NextResponse.json({
       totalUsers:       totalUsers ?? 0,
+      eamcetUsers:      eamcetUsers ?? 0,
+      jeeUsers:         jeeUsers ?? 0,
       premiumUsers:     premiumUsers ?? 0,
       totalRevenue,
       usersJoinedToday: usersJoinedToday ?? 0,

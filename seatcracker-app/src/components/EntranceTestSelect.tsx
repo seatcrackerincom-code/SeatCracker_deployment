@@ -26,10 +26,10 @@ const TESTS = [
   },
   {
     id: "JEE",
-    label: "JEE",
-    desc: "Joint Entrance Examination (Coming Soon)",
+    label: "JEE Advanced",
+    desc: "Joint Entrance Examination - Advanced",
     icon: "📐",
-    active: false,
+    active: true,
   },
 ];
 

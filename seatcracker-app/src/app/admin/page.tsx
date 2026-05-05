@@ -7,6 +7,8 @@ import type { RealtimeChannel } from "@supabase/supabase-js";
 // ─── Types ────────────────────────────────────────────────
 interface Stats {
   totalUsers:       number;
+  eamcetUsers:      number;
+  jeeUsers:         number;
   premiumUsers:     number;
   totalRevenue:     number;
   usersJoinedToday: number;
@@ -126,6 +128,18 @@ export default function AdminDashboard() {
               label="Total Users"
               value={stats.totalUsers}
               color="#6366f1"
+            />
+            <KpiCard
+              icon="🎓"
+              label="EAMCET Users"
+              value={stats.eamcetUsers}
+              color="#38bdf8"
+            />
+            <KpiCard
+              icon="📐"
+              label="JEE Users"
+              value={stats.jeeUsers}
+              color="#a78bfa"
             />
             <KpiCard
               icon="✨"
