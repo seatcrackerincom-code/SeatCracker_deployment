@@ -1314,7 +1314,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
         : `${String(m).padStart(2, "0")}m ${String(s).padStart(2, "0")}s`;
     };
 
-    const maxMocks = 4; // Mocks 1-4 have real data; 5-10 are Coming Soon placeholders
+    const maxMocks = 5; // Mocks 1-5 have real data; 6-10 are Coming Soon placeholders
     const mockOptions = Array.from({ length: 10 }, (_, idx) => idx + 1).map(i => {
       const id = `${prefix.toLowerCase().replace(/\s+/g, "_")}_mock_test_${i}`;
       const submitTime = parseInt(localStorage.getItem(`sc_submit_time_${id}`) || "0");
