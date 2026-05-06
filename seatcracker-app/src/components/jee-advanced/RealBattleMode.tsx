@@ -223,42 +223,41 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
     setIsLoading(true);
     setActivePaperNum(paperNum);
 
-    const isDay2 = selectedDay === 2;
-    const loadedQuestions: Question[] = [];
-    const subjects: Subject[] = ["Math", "Phy", "Chem"];
-    let globalQNum = 1;
+    try {
+      const response = await fetch(`/JEE_Advanced/Day_${selectedDay || 1}/Paper_${paperNum}/paper.json`);
+      if (!response.ok) throw new Error("JSON missing");
+      const data = await response.json();
+      
+      const loadedQuestions = data.questions.map((q: any, index: number) => {
+        const id = index + 1;
+        return {
+          ...q,
+          image: `/JEE_Advanced/Day_${selectedDay || 1}/Paper_${paperNum}/images/q_${id}.png`
+        };
+      });
 
-    subjects.forEach(sub => {
-      for (let sec = 1; sec <= 4; sec++) {
-        // 2025 (Day 2) has 16 questions per subject (4+3+6+3)
-        // Others have 17 (4+3+6+4)
-        let count = 4;
-        if (sec === 2) count = 3;
-        if (sec === 3) count = 6;
-        if (sec === 4) count = isDay2 ? 3 : 4;
+      setExamData(loadedQuestions);
+    } catch (error) {
+      console.error("JSON fetch failed, using fallback:", error);
+      const isDay2 = selectedDay === 2;
+      const fallback: Question[] = Array.from({ length: isDay2 ? 48 : 51 }, (_, i) => {
+        const id = i + 1;
+        let sub = id > (isDay2 ? 32 : 34) ? "Chem" : id > (isDay2 ? 16 : 17) ? "Phy" : "Math";
+        return {
+          id: `fallback-${id}`,
+          subject: sub,
+          section: 1,
+          number: id,
+          type: "MCQ",
+          image: `/JEE_Advanced/Day_${selectedDay || 1}/Paper_${paperNum}/images/q_${id}.png`,
+          options: ["A", "B", "C", "D"],
+          marks: "+3, -1",
+          answer: "1"
+        } as any;
+      });
+      setExamData(fallback);
+    }
 
-        const type = sec === 2 ? "MSQ" : sec === 3 ? "SA" : "MCQ";
-        const marks = sec === 2 ? "+4, -2" : sec === 3 ? "+4, 0" : "+3, -1";
-
-        for (let i = 0; i < count; i++) {
-          const currentImgNum = globalQNum++;
-          loadedQuestions.push({
-            id: `${sub}-${sec}-${i}-${paperNum}`,
-            subject: sub,
-            section: sec,
-            number: i + 1 + (sec === 2 ? 4 : sec === 3 ? 7 : sec === 4 ? 13 : 0),
-            type: type,
-            text: "",
-            image: `/JEE_Advanced/Day_${selectedDay || 1}/Paper_${paperNum}/images/q_${currentImgNum}.png`,
-            options: type !== "SA" ? ["A", "B", "C", "D"] : [],
-            marks: marks,
-            answer: "1",
-          } as Question);
-        }
-      }
-    });
-
-    setExamData(loadedQuestions);
     setResponses({});
     setTimeLeft(10800);
     setActiveSub("Math");
