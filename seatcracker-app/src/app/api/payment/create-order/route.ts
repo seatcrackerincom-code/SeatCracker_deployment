@@ -2,22 +2,30 @@ import { NextResponse } from "next/server";
 import Razorpay from "razorpay";
 export const dynamic = "force-dynamic";
 
+export async function GET() {
+  return NextResponse.json({
+    status: "alive",
+    hasKeyId: !!(process.env.RAZORPAY_KEY_ID || process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID),
+    hasSecret: !!(process.env.RAZORPAY_KEY_SECRET || process.env.NEXT_RAZORPAY_KEY_SECRET),
+  });
+}
+
 export async function POST(req: Request) {
   try {
     const keyId = process.env.RAZORPAY_KEY_ID || process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "";
     const keySecret = process.env.RAZORPAY_KEY_SECRET || process.env.NEXT_RAZORPAY_KEY_SECRET || "";
 
-    console.log("[Razorpay Pulse] Key Check:", { 
-      hasId: !!keyId, 
-      hasSecret: !!keySecret,
-      env: process.env.NODE_ENV 
-    });
-
     if (!keyId || !keySecret) {
-      console.error("[Razorpay] Missing Config:", { keyId: !!keyId, keySecret: !!keySecret });
       return NextResponse.json({ 
-        error: `Razorpay API keys are not configured on the server. (ID: ${!!keyId}, Secret: ${!!keySecret})` 
+        error: `KEYS_MISSING: (ID: ${!!keyId}, Secret: ${!!keySecret})` 
       }, { status: 500 });
+    }
+
+    const body = await req.json().catch(() => ({}));
+    const { amount, currency = "INR", examId, userId } = body;
+
+    if (!amount || !examId || !userId) {
+      return NextResponse.json({ error: "PAYLOAD_MISSING" }, { status: 400 });
     }
 
     const razorpay = new Razorpay({
@@ -25,23 +33,11 @@ export async function POST(req: Request) {
       key_secret: keySecret,
     });
 
-    const { amount, currency = "INR", examId, userId } = await req.json();
-    console.log("[Razorpay] Received Request:", { amount, examId, userId });
-
-    if (!amount || !examId || !userId) {
-      console.error("[Razorpay] Missing Fields");
-      return NextResponse.json({ error: "Missing required fields (amount, examId, or userId)" }, { status: 400 });
-    }
-
-    const options = {
+    const order = await razorpay.orders.create({
       amount: Math.round(Number(amount) * 100),
       currency,
-      receipt: `receipt_${examId}_${userId}_${Date.now()}`,
-    };
-
-    console.log("[Razorpay] Creating Order with options:", options);
-    const order = await razorpay.orders.create(options);
-    console.log("[Razorpay] Order Created Successfully:", order.id);
+      receipt: `rcpt_${Date.now()}`,
+    });
 
     return NextResponse.json({
       orderId: order.id,
@@ -50,10 +46,6 @@ export async function POST(req: Request) {
       key: keyId
     });
   } catch (error: any) {
-    console.error("[Razorpay] Order Creation Crash:", error);
-    return NextResponse.json({ 
-      error: error.message || "Order creation failed",
-      stack: process.env.NODE_ENV === 'development' ? error.stack : undefined 
-    }, { status: 500 });
+    return NextResponse.json({ error: error.message || "CRASH" }, { status: 500 });
   }
 }
