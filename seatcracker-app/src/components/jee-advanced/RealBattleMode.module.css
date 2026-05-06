@@ -1581,10 +1581,48 @@
   }
 
   .subjectTabs {
-    overflow-x: auto;
-    width: 100%;
-    justify-content: flex-start;
-    padding-bottom: 5px;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    padding: 5px 15px !important;
+    gap: 10px !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .subjectTabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .subjectBtn {
+    flex: 0 0 auto !important;
+    min-width: 120px !important;
+    padding: 8px 15px !important;
+    font-size: 13px !important;
+  }
+
+  .sectionBarRow {
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    padding: 5px 15px !important;
+    gap: 8px !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .sectionBarRow::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sectionBtn {
+    flex: 0 0 auto !important;
+    min-width: 90px !important;
+    font-size: 11px !important;
   }
 
   .qMeta {
@@ -1595,9 +1633,6 @@
     padding: 10px 15px;
   }
 
-  .sectionBarRow {
-    overflow-x: auto;
-    width: 100%;
     justify-content: flex-start;
     padding-bottom: 5px;
   }
