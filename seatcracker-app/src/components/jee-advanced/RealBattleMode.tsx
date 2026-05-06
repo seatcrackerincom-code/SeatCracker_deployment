@@ -772,7 +772,9 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
 
             <div className={styles.sectionBarRow}>
               <div className={styles.secLabel}>Sections</div>
-              {[1, 2, 3, 4].map(sNum => (
+              {Array.from(new Set(subjectQuestions.map(q => q.section)))
+                .sort((a, b) => a - b)
+                .map(sNum => (
                 <div
                   key={sNum}
                   className={`${styles.secBtn} ${activeSec === sNum ? styles.secBtnActive : ""}`}
