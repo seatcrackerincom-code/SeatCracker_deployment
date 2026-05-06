@@ -19,9 +19,20 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Missing required fields (amount, examId, or userId)" }, { status: 400 });
     }
 
-    if (!process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || !process.env.RAZORPAY_KEY_SECRET) {
-      console.error("[Razorpay] Missing API Keys in Environment");
-      return NextResponse.json({ error: "Razorpay API keys are not configured on the server." }, { status: 500 });
+    const keyId = process.env.RAZORPAY_KEY_ID || process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "";
+    const keySecret = process.env.RAZORPAY_KEY_SECRET || process.env.NEXT_RAZORPAY_KEY_SECRET || "";
+
+    console.log("[Razorpay Pulse] Key Check:", { 
+      hasId: !!keyId, 
+      hasSecret: !!keySecret,
+      env: process.env.NODE_ENV 
+    });
+
+    if (!keyId || !keySecret) {
+      console.error("[Razorpay] Missing Config:", { keyId: !!keyId, keySecret: !!keySecret });
+      return NextResponse.json({ 
+        error: `Razorpay API keys are not configured on the server. (ID: ${!!keyId}, Secret: ${!!keySecret})` 
+      }, { status: 500 });
     }
 
     const options = {
