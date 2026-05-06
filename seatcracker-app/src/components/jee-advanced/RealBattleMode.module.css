@@ -717,7 +717,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
+  overflow: hidden;
   padding: 0;
   border-right: 1px solid #ddd;
   background: #fff;
@@ -741,10 +741,19 @@
 .qText {
   padding: 20px;
   flex: 1;
-  overflow-y: auto;
+  /* overflow-y: auto removed */
   font-size: 15px;
   line-height: 1.7;
   color: #111;
+}
+
+.questionScrollBody {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #fff;
 }
 
 .numericalContainer {

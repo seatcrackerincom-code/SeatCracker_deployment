@@ -810,7 +810,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
             <div className={styles.qSeparator} />
 
             {currentQ && (
-              <div style={{ flex: 1, position: "relative", padding: "0 0 10px 0" }}>
+              <div className={styles.questionScrollBody}>
                 <div className={styles.qText}>
                   {/* Show passage for SA_DECIMAL questions */}
                   {currentQ.passage && (
