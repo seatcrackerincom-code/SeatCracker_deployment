@@ -22,7 +22,7 @@ export default function AdminLogin() {
     setLoading(true);
     setError("");
 
-    const { success, error: loginError } = await login(email, password);
+    const { success, error: loginError } = await login(password);
     
     if (success) {
       router.push("/admin");
@@ -61,21 +61,12 @@ export default function AdminLogin() {
         <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <div>
             <input
-              type="email"
-              placeholder="Admin Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="admin-input"
-              required
-            />
-          </div>
-          <div>
-            <input
               type="password"
-              placeholder="Password"
+              placeholder="Admin Secret Key"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="admin-input"
+              style={{ textAlign: "center", letterSpacing: "2px" }}
               required
             />
           </div>
@@ -83,7 +74,7 @@ export default function AdminLogin() {
           {error && <p style={{ color: "#ef4444", fontSize: "14px", margin: 0, textAlign: "center" }}>{error}</p>}
           
           <button type="submit" className="admin-btn" disabled={loading}>
-            {loading ? "Authenticating..." : "Sign In"}
+            {loading ? "Authenticating..." : "Unlock Dashboard"}
           </button>
         </form>
       </div>
