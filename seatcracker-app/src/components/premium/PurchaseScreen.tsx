@@ -52,8 +52,15 @@ export default function PurchaseScreen({ config, user, onClose, onSuccess }: Pro
       });
 
       if (!orderRes.ok) {
-        const errText = await orderRes.text();
-        throw new Error(errText || "Order creation failed");
+        const errBody = await orderRes.text();
+        let errMsg = "Order creation failed";
+        try {
+          const parsed = JSON.parse(errBody);
+          errMsg = parsed.error || errMsg;
+        } catch (e) {
+          errMsg = errBody || errMsg;
+        }
+        throw new Error(errMsg);
       }
 
       const orderData = await orderRes.json();

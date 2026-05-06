@@ -9,18 +9,27 @@ export async function POST(req: Request) {
       key_secret: process.env.RAZORPAY_KEY_SECRET || "",
     });
     const { amount, currency = "INR", examId, userId } = await req.json();
+    console.log("[Razorpay] Received Request:", { amount, examId, userId });
 
     if (!amount || !examId || !userId) {
-      return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+      console.error("[Razorpay] Missing Fields");
+      return NextResponse.json({ error: "Missing required fields (amount, examId, or userId)" }, { status: 400 });
+    }
+
+    if (!process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || !process.env.RAZORPAY_KEY_SECRET) {
+      console.error("[Razorpay] Missing API Keys in Environment");
+      return NextResponse.json({ error: "Razorpay API keys are not configured on the server." }, { status: 500 });
     }
 
     const options = {
-      amount: Math.round(amount * 100), // amount in the smallest currency unit (paise)
+      amount: Math.round(Number(amount) * 100),
       currency,
       receipt: `receipt_${examId}_${userId}_${Date.now()}`,
     };
 
+    console.log("[Razorpay] Creating Order with options:", options);
     const order = await razorpay.orders.create(options);
+    console.log("[Razorpay] Order Created Successfully:", order.id);
 
     return NextResponse.json({
       orderId: order.id,
@@ -28,7 +37,10 @@ export async function POST(req: Request) {
       currency: order.currency,
     });
   } catch (error: any) {
-    console.error("[Razorpay] Create Order Error:", error);
-    return NextResponse.json({ error: error.message || "Order creation failed" }, { status: 500 });
+    console.error("[Razorpay] Order Creation Crash:", error);
+    return NextResponse.json({ 
+      error: error.message || "Order creation failed",
+      stack: process.env.NODE_ENV === 'development' ? error.stack : undefined 
+    }, { status: 500 });
   }
 }
