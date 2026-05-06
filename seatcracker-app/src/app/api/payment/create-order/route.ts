@@ -5,21 +5,7 @@ export const dynamic = "force-dynamic";
 export async function POST(req: Request) {
   try {
     const keyId = process.env.RAZORPAY_KEY_ID || process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "";
-    const keySecret = process.env.RAZORPAY_KEY_SECRET || "";
-
-    const razorpay = new Razorpay({
-      key_id: keyId,
-      key_secret: keySecret,
-    });
-    const { amount, currency = "INR", examId, userId } = await req.json();
-    console.log("[Razorpay] Received Request:", { amount, examId, userId });
-
-    if (!amount || !examId || !userId) {
-      console.error("[Razorpay] Missing Fields");
-      return NextResponse.json({ error: "Missing required fields (amount, examId, or userId)" }, { status: 400 });
-    }
-
-    // Diagnostic logging already handled below
+    const keySecret = process.env.RAZORPAY_KEY_SECRET || process.env.NEXT_RAZORPAY_KEY_SECRET || "";
 
     console.log("[Razorpay Pulse] Key Check:", { 
       hasId: !!keyId, 
@@ -32,6 +18,19 @@ export async function POST(req: Request) {
       return NextResponse.json({ 
         error: `Razorpay API keys are not configured on the server. (ID: ${!!keyId}, Secret: ${!!keySecret})` 
       }, { status: 500 });
+    }
+
+    const razorpay = new Razorpay({
+      key_id: keyId,
+      key_secret: keySecret,
+    });
+
+    const { amount, currency = "INR", examId, userId } = await req.json();
+    console.log("[Razorpay] Received Request:", { amount, examId, userId });
+
+    if (!amount || !examId || !userId) {
+      console.error("[Razorpay] Missing Fields");
+      return NextResponse.json({ error: "Missing required fields (amount, examId, or userId)" }, { status: 400 });
     }
 
     const options = {
