@@ -67,7 +67,7 @@ export default function PurchaseScreen({ config, user, onClose, onSuccess }: Pro
 
       // Step 2: Open Checkout
       const options = {
-        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
+        key: orderData.key,
         amount: orderData.amount,
         currency: orderData.currency,
         name: "SeatCracker",

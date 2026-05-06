@@ -4,9 +4,12 @@ export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
   try {
+    const keyId = process.env.RAZORPAY_KEY_ID || process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "";
+    const keySecret = process.env.RAZORPAY_KEY_SECRET || "";
+
     const razorpay = new Razorpay({
-      key_id: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "",
-      key_secret: process.env.RAZORPAY_KEY_SECRET || "",
+      key_id: keyId,
+      key_secret: keySecret,
     });
     const { amount, currency = "INR", examId, userId } = await req.json();
     console.log("[Razorpay] Received Request:", { amount, examId, userId });
@@ -35,6 +38,7 @@ export async function POST(req: Request) {
       orderId: order.id,
       amount: order.amount,
       currency: order.currency,
+      key: keyId
     });
   } catch (error: any) {
     console.error("[Razorpay] Order Creation Crash:", error);
