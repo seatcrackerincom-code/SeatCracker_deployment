@@ -218,14 +218,20 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
     setIsLoading(true);
     setActivePaperNum(paperNum);
 
-    // COMMONSENSE GOD MODE: Hardcode all 51 questions to bypass caching/networking issues
+    const isDay2 = selectedDay === 2;
     const loadedQuestions: Question[] = [];
     const subjects: Subject[] = ["Math", "Phy", "Chem"];
     let globalQNum = 1;
 
     subjects.forEach(sub => {
       for (let sec = 1; sec <= 4; sec++) {
-        const count = sec === 1 ? 4 : sec === 2 ? 3 : sec === 3 ? 6 : 4;
+        // 2025 (Day 2) has 16 questions per subject (4+3+6+3)
+        // Others have 17 (4+3+6+4)
+        let count = 4;
+        if (sec === 2) count = 3;
+        if (sec === 3) count = 6;
+        if (sec === 4) count = isDay2 ? 3 : 4;
+
         const type = sec === 2 ? "MSQ" : sec === 3 ? "SA" : "MCQ";
         const marks = sec === 2 ? "+4, -2" : sec === 3 ? "+4, 0" : "+3, -1";
 
