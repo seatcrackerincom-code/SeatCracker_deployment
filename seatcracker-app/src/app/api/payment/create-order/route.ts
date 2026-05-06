@@ -19,8 +19,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Missing required fields (amount, examId, or userId)" }, { status: 400 });
     }
 
-    const keyId = process.env.RAZORPAY_KEY_ID || process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "";
-    const keySecret = process.env.RAZORPAY_KEY_SECRET || process.env.NEXT_RAZORPAY_KEY_SECRET || "";
+    // Diagnostic logging already handled below
 
     console.log("[Razorpay Pulse] Key Check:", { 
       hasId: !!keyId, 
