@@ -1,0 +1,80 @@
+.keypad {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #f1f5f9;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  width: fit-content;
+}
+
+.inputWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.display {
+  width: 100%;
+  padding: 8px;
+  font-size: 18px;
+  font-family: monospace;
+  border: 1px solid #94a3b8;
+  border-radius: 4px;
+  background: white;
+  color: black;
+  text-align: left;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #94a3b8;
+  border-radius: 4px;
+  background: white;
+  color: #334155;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.btn:hover {
+  background: #e2e8f0;
+}
+
+.btnActive {
+  background: #cbd5e1;
+}
+
+.wideBtn {
+  grid-column: span 3;
+}
+
+.clearBtn {
+  background: #fee2e2;
+  color: #991b1b;
+  border-color: #fecaca;
+}
+
+.clearBtn:hover {
+  background: #fecaca;
+}
+
+.navRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}

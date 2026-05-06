@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useUserState } from "../lib/useUserState";
 import { GLOBAL_PROMO_CODES } from "../lib/promoCodes";
+import { useRouter } from "next/navigation";
 import type { User } from "../lib/firebase";
 import type { AccessState } from "../lib/access";
 
@@ -20,6 +21,7 @@ interface Props {
 
 export default function ProfileModal({ isOpen, onClose, authUser, access, onSignOut }: Props) {
   const { user, isLoaded, saveState, applyCode } = useUserState();
+  const router = useRouter();
 
   // Local edit state
   const [editingName, setEditingName] = useState(false);
@@ -95,24 +97,20 @@ export default function ProfileModal({ isOpen, onClose, authUser, access, onSign
 
   const handleApplyCode = () => {
     if (!codeInput.trim()) return;
+    const code = codeInput.trim().toUpperCase();
     setCodeLoading(true);
     setTimeout(() => {
-      const result = applyCode(codeInput, true); // true = allow even if premium
+      const result = applyCode(code, true); // true = allow even if premium
       setCodeFeedback({ msg: result.message, ok: result.success });
-      if (result.success) setCodeInput("");
+      
+      if (result.success) {
+        setCodeInput("");
+      }
+      
       setCodeLoading(false);
       if (timerRef.current) clearTimeout(timerRef.current);
       timerRef.current = setTimeout(() => setCodeFeedback(null), 5000);
     }, 500);
-  };
-
-  // ── Helpers ───────────────────────────────────────────────
-  const typeColors: Record<string, string> = {
-    discount: "#f59e0b",
-    unlock: "#6366f1",
-    resource: "#10b981",
-    boost: "#ec4899",
-    lifetime: "#8b5cf6",
   };
 
   const avatarSrc = profileImage || authUser?.photoURL || "/character-avatar.png";

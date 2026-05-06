@@ -1,10 +1,20 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
 
 export default function GlobalFooter() {
+  const pathname = usePathname();
   const [accepted, setAccepted] = useState(false);
+
+  // Pages where footer should be hidden
+  const hidePaths = [
+    "/jee-advanced/mock-test",
+    "/real-battle-mode",
+  ];
+
+  if (hidePaths.includes(pathname)) return null;
 
   return (
     <footer style={{

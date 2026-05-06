@@ -27,6 +27,7 @@ export const viewport = {
 
 import { ThemeProvider } from "../components/ThemeProvider";
 import GlobalHeader from "../components/GlobalHeader";
+import GlobalPollBanner from "../components/polls/GlobalPollBanner";
 import CookieBanner from "../components/CookieBanner";
 import GlobalFooter from "../components/GlobalFooter";
 import PolicyGuard from "../components/PolicyGuard";
@@ -44,7 +45,8 @@ export default function RootLayout({
           <PresenceTracker />
           <PolicyGuard />
           <GlobalHeader />
-          <main style={{ paddingTop: "75px", minHeight: "100vh" }}>
+          <GlobalPollBanner />
+          <main style={{ minHeight: "100vh" }}>
             {children}
           </main>
           <CookieBanner />

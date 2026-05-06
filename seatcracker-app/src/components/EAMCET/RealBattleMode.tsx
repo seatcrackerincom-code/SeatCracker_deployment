@@ -183,12 +183,12 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
   const sections = COURSE_SECTIONS[course] || COURSE_SECTIONS.Engineering;
 
   const [profileImage, setProfileImage] = useState<string | null>(null);
-  
+
   useEffect(() => {
     try {
       const saved = localStorage.getItem(AVATAR_LS_KEY);
       if (saved) setProfileImage(saved);
-    } catch {}
+    } catch { }
   }, []);
 
   const avatarSrc = profileImage || authUser?.photoURL || "/avatar.png";
@@ -248,9 +248,8 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
       setPhase(savedPhase as any);
     }
 
-    // Timer always starts fresh — never restore from storage
-    // const savedSecs = localStorage.getItem("sc_battle_secs");
-    // if (savedSecs) setSecs(parseInt(savedSecs));
+    const savedSecs = localStorage.getItem("sc_battle_secs");
+    if (savedSecs && savedPhase === "exam") setSecs(parseInt(savedSecs));
 
     const savedMock = localStorage.getItem("sc_battle_mock");
     if (savedMock) {
@@ -275,7 +274,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
   // Update nowTime only when countdowns are actually visible (Performance Optimization)
   useEffect(() => {
     if (phase !== "selection" && phase !== "submit_summary") return;
-    
+
     // Check if we actually need a timer (cooldowns or result timers active)
     const t = setInterval(() => {
       setNowTime(Date.now());
@@ -291,7 +290,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
       hasInitialized.current = true;
       return;
     }
-    
+
     // Only persist the phase if the exam has officially started
     if (phase === "exam") {
       localStorage.setItem("sc_battle_phase", phase);
@@ -305,7 +304,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
         localStorage.removeItem("sc_battle_mock");
       }
     }
-    
+
     localStorage.setItem("sc_battle_theme", theme);
   }, [phase, secs, theme, selectedMock]);
 
@@ -553,11 +552,11 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
             return;
           }
           console.error("[RealBattleMode] Failed to load mock questions:", err);
-          setAllQ([{ 
-            id: 1, 
-            subject: "Mathematics", 
-            question: "❌ Loading Failed: Could not retrieve mock questions. Please refresh the page.", 
-            options: ["(1) Connection Error", "(2) Server Timeout", "(3) File Not Found", "(4) Check Internet"], 
+          setAllQ([{
+            id: 1,
+            subject: "Mathematics",
+            question: "❌ Loading Failed: Could not retrieve mock questions. Please refresh the page.",
+            options: ["(1) Connection Error", "(2) Server Timeout", "(3) File Not Found", "(4) Check Internet"],
             answer: "1",
             images: []
           }]);
@@ -580,6 +579,14 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
     const t = setInterval(() => setSecs(s => Math.max(0, s - 1)), 1000);
     return () => clearInterval(t);
   }, [phase]);
+
+  useEffect(() => {
+    if (phase === "exam" || phase === "login" || phase === "instr1" || phase === "selection" || phase === "submodeSelection") {
+      localStorage.setItem("sc_battle_phase", phase);
+      localStorage.setItem("sc_battle_secs", secs.toString());
+      window.dispatchEvent(new Event("storage"));
+    }
+  }, [phase, secs]);
 
   // When time hits 0, auto-submit the exam
   useEffect(() => {
@@ -918,9 +925,9 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
           <h1 className={styles.resultsTitle}>Results Not Found</h1>
           <p className={styles.resultsSub}>Could not load the saved data for this attempt.</p>
           <button className={styles.returnBtn} onClick={() => setPhase("selection")}>Back to Selection</button>
-          <button 
-            className={styles.fBtnBlue} 
-            style={{ marginTop: "12px", width: "100%" }} 
+          <button
+            className={styles.fBtnBlue}
+            style={{ marginTop: "12px", width: "100%" }}
             onClick={() => {
               setReviewIdx(0);
               setReviewTab(savedQuestions[0]?.subject || sections[0].subject);
@@ -1041,8 +1048,8 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
             <button className={styles.returnBtn} onClick={() => setPhase("selection")} style={{ margin: 0 }}>
               Return to Selection
             </button>
-            <button 
-              className={styles.fBtnBlue} 
+            <button
+              className={styles.fBtnBlue}
               onClick={() => {
                 setReviewIdx(0);
                 const firstSub = savedQuestions[0]?.subject || sections[0].subject;
@@ -1517,7 +1524,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
                     <div className={styles.submodeLabel} style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
                       {mock.title}
                     </div>
-                    
+
                     {isCooldownLocked && (
                       <div style={{ marginTop: 10, background: "rgba(251,191,36,0.1)", border: "1px solid rgba(251,191,36,0.2)", borderRadius: 8, padding: "8px 12px" }}>
                         <div style={{ color: "#fde68a", fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 2 }}>Unlock Countdown</div>
@@ -1812,10 +1819,10 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
             <div style={{ width: "300px", borderRight: "1px solid rgba(255,255,255,0.1)", background: "rgba(0,0,0,0.2)", display: "flex", flexDirection: "column" }}>
               <div style={{ padding: "16px", display: "flex", gap: "8px", overflowX: "auto" }}>
                 {sections.map(s => (
-                  <button 
+                  <button
                     key={s.subject}
                     onClick={() => { setReviewTab(s.subject); setReviewIdx(0); }}
-                    style={{ 
+                    style={{
                       padding: "6px 12px", borderRadius: "20px", fontSize: "11px", whiteSpace: "nowrap",
                       background: reviewTab === s.subject ? "#3b82f6" : "rgba(255,255,255,0.05)",
                       color: "#fff", border: "none", cursor: "pointer"
@@ -1831,7 +1838,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
                   const corr = r?.option === q.answer;
                   const skip = !r?.option;
                   return (
-                    <div 
+                    <div
                       key={q.id}
                       onClick={() => setReviewIdx(i)}
                       style={{
@@ -1855,7 +1862,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
                 <>
                   <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "24px" }}>
                     <span style={{ color: "#38bdf8", fontWeight: "bold" }}>Question {reviewIdx + 1}</span>
-                    <span style={{ 
+                    <span style={{
                       padding: "4px 12px", borderRadius: "20px", fontSize: "12px", fontWeight: "bold",
                       background: isSkipped ? "rgba(255,255,255,0.1)" : (isCorrect ? "rgba(16, 185, 129, 0.2)" : "rgba(239, 68, 68, 0.2)"),
                       color: isSkipped ? "#94a3b8" : (isCorrect ? "#10b981" : "#ef4444")
@@ -1878,10 +1885,10 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
                       const optVal = String(i + 1);
                       const isUserChoice = userResp?.option === optVal;
                       const isCorrectChoice = curQ.answer === optVal;
-                      
+
                       let borderColor = "rgba(255,255,255,0.1)";
                       let bgColor = "rgba(255,255,255,0.03)";
-                      
+
                       if (isCorrectChoice) {
                         borderColor = "#10b981";
                         bgColor = "rgba(16, 185, 129, 0.1)";
@@ -1891,12 +1898,12 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
                       }
 
                       return (
-                        <div key={i} style={{ 
+                        <div key={i} style={{
                           padding: "16px", borderRadius: "12px", border: `1px solid ${borderColor}`, background: bgColor,
                           display: "flex", alignItems: "center", gap: "12px", position: "relative"
                         }}>
-                          <div style={{ 
-                            width: "24px", height: "24px", borderRadius: "50%", border: "2px solid currentColor", 
+                          <div style={{
+                            width: "24px", height: "24px", borderRadius: "50%", border: "2px solid currentColor",
                             display: "flex", alignItems: "center", justifyContent: "center", fontSize: "12px", fontWeight: "bold",
                             color: isCorrectChoice ? "#10b981" : (isUserChoice ? "#ef4444" : "#94a3b8")
                           }}>
@@ -1916,16 +1923,16 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
               )}
             </div>
           </div>
-          
+
           <div style={{ padding: "16px 32px", borderTop: "1px solid rgba(255,255,255,0.1)", background: "rgba(0,0,0,0.2)", display: "flex", justifyContent: "space-between" }}>
-            <button 
+            <button
               disabled={reviewIdx === 0}
               onClick={() => setReviewIdx(prev => prev - 1)}
               style={{ padding: "10px 24px", borderRadius: "8px", background: "rgba(255,255,255,0.05)", color: "#fff", border: "1px solid rgba(255,255,255,0.1)", cursor: reviewIdx === 0 ? "not-allowed" : "pointer" }}
             >
               ← Previous
             </button>
-            <button 
+            <button
               disabled={reviewIdx === filteredQ.length - 1}
               onClick={() => setReviewIdx(prev => prev + 1)}
               style={{ padding: "10px 24px", borderRadius: "8px", background: "rgba(255,255,255,0.05)", color: "#fff", border: "1px solid rgba(255,255,255,0.1)", cursor: reviewIdx === filteredQ.length - 1 ? "not-allowed" : "pointer" }}
@@ -2038,10 +2045,10 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
               <div style={{ color: "rgba(255,255,255,0.7)", fontSize: 14, maxWidth: "400px", textAlign: "center", marginBottom: "16px" }}>
                 The exam doesn't know whether to load Engineering or Agriculture questions. This usually happens if your browser cache was cleared.
               </div>
-              <button 
+              <button
                 onClick={() => {
                   if (document.fullscreenElement) {
-                    document.exitFullscreen().catch(() => {});
+                    document.exitFullscreen().catch(() => { });
                   }
                   onRestart();
                 }}
@@ -2049,10 +2056,10 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
               >
                 Reset & Choose Course
               </button>
-              <button 
+              <button
                 onClick={() => {
                   if (document.fullscreenElement) {
-                    document.exitFullscreen().catch(() => {});
+                    document.exitFullscreen().catch(() => { });
                   }
                   onBack();
                 }}
@@ -2282,11 +2289,11 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
                                 <MathText text={optContent} />
                               </span>
                             </div>
-                              {curQ.optionsTe?.[idx] && (
-                                <span className={styles.optTeText}>
-                                  <MathText text={curQ.optionsTe[idx]} />
-                                </span>
-                              )}
+                            {curQ.optionsTe?.[idx] && (
+                              <span className={styles.optTeText}>
+                                <MathText text={curQ.optionsTe[idx]} />
+                              </span>
+                            )}
                           </label>
                         );
                       })}
@@ -2361,15 +2368,28 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
             </div>
           </div>
 
-          { /* Submit pinned at bottom — DISABLED as per requirements for Auto-Submit only */}
+          { /* Submit pinned at bottom — ALWAYS PRESENT, DISABLED UNTIL TIME UP */}
           <div className={styles.sidebarFooter}>
             <button
               className={styles.sidebarSubmit}
-              onClick={() => setShowSubmitConfirm(true)}
-              style={{ background: "linear-gradient(90deg, #ef4444, #dc2626)", color: "white", cursor: "pointer" }}
+              onClick={() => {
+                if (secs <= 0) setShowSubmitConfirm(true);
+              }}
+              style={{
+                background: secs <= 0 ? "linear-gradient(90deg, #ef4444, #dc2626)" : "#ccc",
+                color: "white",
+                cursor: secs <= 0 ? "pointer" : "not-allowed",
+                opacity: secs <= 0 ? 1 : 0.6
+              }}
+              title={secs <= 0 ? "" : "Allowed after time left"}
             >
               Submit Exam
             </button>
+            {secs > 0 && (
+              <div style={{ fontSize: "10px", color: "#666", textAlign: "center", marginTop: "4px" }}>
+                Active after 3 hours
+              </div>
+            )}
           </div>
         </div>
       </div>

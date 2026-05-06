@@ -1,9 +1,9 @@
 "use client";
 
-import GlobalHeader from "@/components/GlobalHeader";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import InstructionMode from "@/components/jee-advanced/InstructionMode";
+import styles from "@/components/SelectScreen.module.css";
 
 export default function JeeAdvancedHub() {
   const [activeMode, setActiveMode] = useState<"hub" | "instruction">("hub");
@@ -21,100 +21,75 @@ export default function JeeAdvancedHub() {
   }
 
   return (
-    <main style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--bg, #0a0a0f)" }}>
-      <GlobalHeader />
-      <div style={{ flex: 1, maxWidth: "1000px", margin: "80px auto", padding: "0 20px", textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center" }}>
-        
-        <div style={{ display: "flex", gap: "12px", marginBottom: "16px" }}>
-          <div style={{ padding: "8px 16px", background: "rgba(167, 139, 250, 0.1)", color: "#a78bfa", borderRadius: "20px", fontSize: "0.9rem", fontWeight: 700, border: "1px solid rgba(167, 139, 250, 0.2)" }}>
-            NEW MODULE
-          </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "8px", background: "rgba(52, 211, 153, 0.1)", padding: "8px 16px", borderRadius: "20px", color: "#34d399", fontSize: "0.9rem", fontWeight: 700, border: "1px solid rgba(52, 211, 153, 0.2)" }}>
-            <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#34d399", boxShadow: "0 0 10px #34d399" }} />
-            {jeeCount > 0 ? jeeCount.toLocaleString() : "..."} Students Preparing
-          </div>
-        </div>
+    <main className={styles.wrapper} style={{ padding: "0" }}>
+      {/* No GlobalHeader here, it's in RootLayout */}
+      
+      {/* Background overlay - Brightened for vibrancy */}
+      <div style={{
+        position: "absolute", inset: 0,
+        background: "radial-gradient(circle at center, rgba(10, 10, 15, 0.2) 0%, rgba(10, 10, 15, 0.5) 100%)",
+        zIndex: 0
+      }} />
 
-        <h1 style={{ fontSize: "3.5rem", fontWeight: 800, marginBottom: "20px", color: "#f8fafc", lineHeight: 1.1 }}>
-          JEE Advanced <span style={{ color: "transparent", WebkitBackgroundClip: "text", backgroundImage: "linear-gradient(135deg, #a78bfa 0%, #ec4899 100%)" }}>Preparation</span>
+      <div style={{ 
+        flex: 1, 
+        width: "100%",
+        maxWidth: "600px", 
+        margin: "40px auto", 
+        padding: "0 20px", 
+        textAlign: "center", 
+        display: "flex", 
+        flexDirection: "column", 
+        alignItems: "center",
+        position: "relative",
+        zIndex: 1
+      }}>
+        
+        <h1 className={styles.title} style={{ marginBottom: "12px" }}>
+          JEE Advanced <span className={styles.accent}>Preparation</span>
         </h1>
-        <p style={{ fontSize: "1.2rem", maxWidth: "700px", margin: "0 auto 48px", color: "var(--text-muted, #94a3b8)", lineHeight: 1.6 }}>
-          Master the toughest engineering entrance exam. Learn the strategies in Instruction Mode, or test your mettle in the Real Battle Mode.
+        <p className={styles.sub} style={{ maxWidth: "500px", marginBottom: "40px", fontSize: "16px" }}>
+          Master the toughest engineering entrance exam. View strategies or start a real-time mock test.
         </p>
 
-        <div style={{ 
-          display: "grid", 
-          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", 
-          gap: "24px", 
-          marginBottom: "60px",
-          width: "100%"
-        }}>
+        <div className={styles.options} style={{ width: "100%" }}>
           {/* Instruction Mode Card */}
           <div 
             onClick={() => setActiveMode("instruction")}
-            style={{ 
-              padding: "40px 32px", 
-              background: "linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)", 
-              borderRadius: "24px",
-              border: "1px solid rgba(255,255,255,0.08)",
-              textAlign: "left",
-              cursor: "pointer",
-              transition: "all 0.3s ease",
-              position: "relative",
-              overflow: "hidden"
-            }}
-            onMouseOver={(e) => {
-              e.currentTarget.style.transform = "translateY(-4px)";
-              e.currentTarget.style.borderColor = "rgba(167, 139, 250, 0.4)";
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.borderColor = "rgba(255,255,255,0.08)";
-            }}
+            className={styles.optionCard}
           >
-            <div style={{ fontSize: "2.5rem", marginBottom: "16px" }}>📚</div>
-            <h3 style={{ fontSize: "1.6rem", fontWeight: 700, marginBottom: "12px", color: "#f8fafc" }}>
-              Instruction Mode
-            </h3>
-            <p style={{ color: "#94a3b8", lineHeight: 1.5 }}>
-              Understand the JEE Advanced structure. View historical cutoffs, learn the negative marking rules, and plan your target score.
-            </p>
+            <span className={styles.optionIcon}>📚</span>
+            <div className={styles.optionText}>
+              <span className={styles.optionLabel}>Instruction Mode</span>
+              <span className={styles.optionDesc}>Historical cutoffs, marking rules, and goal planning.</span>
+            </div>
+            <span className={styles.optionCheck}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M9 18l6-6-6-6" /></svg>
+            </span>
           </div>
 
           {/* Real Battle Mode Card */}
-          <Link href="/jee-advanced/mock-test" style={{ textDecoration: "none" }}>
-            <div 
-              style={{ 
-                padding: "40px 32px", 
-                background: "linear-gradient(145deg, rgba(167,139,250,0.1) 0%, rgba(236,72,153,0.05) 100%)", 
-                borderRadius: "24px",
-                border: "1px solid rgba(167, 139, 250, 0.2)",
-                textAlign: "left",
-                cursor: "pointer",
-                transition: "all 0.3s ease",
-                height: "100%"
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.transform = "translateY(-4px)";
-                e.currentTarget.style.borderColor = "rgba(236, 72, 153, 0.4)";
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.borderColor = "rgba(167, 139, 250, 0.2)";
-              }}
-            >
-              <div style={{ fontSize: "2.5rem", marginBottom: "16px" }}>⚔️</div>
-              <h3 style={{ fontSize: "1.6rem", fontWeight: 700, marginBottom: "12px", color: "#f8fafc" }}>
-                Real Battle Mode
-              </h3>
-              <p style={{ color: "#94a3b8", lineHeight: 1.5, marginBottom: "20px" }}>
-                Take full-length JEE Advanced mock tests under strict exam conditions. First test analysis is completely free!
-              </p>
-              <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(236, 72, 153, 0.2)", padding: "6px 12px", borderRadius: "12px", color: "#fbcfe8", fontSize: "0.85rem", fontWeight: 600 }}>
-                <span>Free Trial Available</span>
+          <Link href="/jee-advanced/mock-test" style={{ textDecoration: "none", width: "100%" }}>
+            <div className={styles.optionCard}>
+              <span className={styles.optionIcon}>⚔️</span>
+              <div className={styles.optionText}>
+                <span className={styles.optionLabel}>Real Battle Mode</span>
+                <span className={styles.optionDesc}>Strict mock tests with real-time analysis.</span>
               </div>
+              <span className={styles.optionCheck}>
+                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M9 18l6-6-6-6" /></svg>
+              </span>
             </div>
           </Link>
+
+          {/* Combined Syllabus & Pattern Card */}
+          <div className={styles.optionCard} style={{ opacity: 0.7, cursor: "not-allowed" }}>
+            <span className={styles.optionIcon}>📝</span>
+            <div className={styles.optionText}>
+              <span className={styles.optionLabel}>Syllabus & Pattern</span>
+              <span className={styles.optionDesc}>Exam structure and detailed subject-wise topics.</span>
+            </div>
+          </div>
         </div>
       </div>
     </main>

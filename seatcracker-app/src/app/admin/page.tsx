@@ -1,456 +1,166 @@
 "use client";
+import React, { useEffect, useState } from "react";
+import { UserGrowthChart, DailyRevenueChart } from "../../components/admin/RevenueGraphs";
+import { useLivePresence } from "../../lib/presence";
 
-import { useEffect, useState } from "react";
-import { supabase } from "../../lib/supabase";
-import type { RealtimeChannel } from "@supabase/supabase-js";
-
-// ─── Types ────────────────────────────────────────────────
-interface Stats {
-  totalUsers:       number;
-  eamcetUsers:      number;
-  jeeUsers:         number;
-  premiumUsers:     number;
-  totalRevenue:     number;
-  usersJoinedToday: number;
-  recentPayments: { user_id: string; amount: number; status: string; created_at: string }[];
-  recentUsers:    { id: string; is_premium: boolean; purchase_date: string | null; plan: string | null; created_at: string }[];
+interface DashboardStats {
+  totalUsers: number;
+  activeToday: number;
+  totalRevenue: number;
+  todaysPayments: number;
+  recentPayments: any[];
+  activePoll?: any;
+  revenueData: any[]; // for graph
+  growthData: any[];  // for graph
 }
 
-const ADMIN_SECRET = "sc_admin_2024"; // only used client→server; server validates
-
-// ─── Component ────────────────────────────────────────────
-export default function AdminDashboard() {
-  const [pin,      setPin]      = useState("");
-  const [unlocked, setUnlocked] = useState(false);
-  const [stats,    setStats]    = useState<Stats | null>(null);
-  const [liveCCU,  setLiveCCU]  = useState(0);
-  const [activeUsers, setActiveUsers] = useState<any[]>([]);
-  const [loading,  setLoading]  = useState(false);
-  const [error,    setError]    = useState("");
-
-  const handleUnlock = () => {
-    if (pin === ADMIN_SECRET || pin === "sc_admin_2024") {
-      setUnlocked(true);
-    } else {
-      setError("Wrong password.");
-    }
-  };
+export default function OverviewDashboard() {
+  const [stats, setStats] = useState<DashboardStats | null>(null);
+  const [loading, setLoading] = useState(true);
+  const liveCount = useLivePresence();
 
   useEffect(() => {
-    if (!unlocked) return;
-    setLoading(true);
-    // ── Real-time CCU ─────────────────────────────────────
-    import("../../lib/presence").then(({ subscribeToPresence }) => {
-      const unsub = subscribeToPresence((state) => {
-        const users = Object.entries(state).map(([key, data]: any) => ({
-          uid: key,
-          ...data[0]
-        }));
-        setLiveCCU(users.length);
-        setActiveUsers(users);
+    fetch("/api/admin/stats?range=30", { headers: { "x-admin-secret": "sc_admin_2024" } })
+      .then(res => res.json())
+      .then(data => {
+        setStats(data);
+        setLoading(false);
       });
-      // Admin dashboard doesn't unmount cleanly typically, but we should clean up if it does
-      return unsub;
-    });
+  }, []);
 
-    fetch("/api/admin/stats", {
-      headers: { "x-admin-secret": ADMIN_SECRET },
-    })
-      .then((r) => r.json())
-      .then((d) => { setStats(d); setLoading(false); })
-      .catch(() => { setError("Failed to load stats."); setLoading(false); });
-  }, [unlocked]);
+  if (loading) return <div style={{ color: "#94a3b8", display: "flex", justifyContent: "center", alignItems: "center", minHeight: "60vh" }}>Loading metrics...</div>;
 
-  // ── Lock screen ───────────────────────────────────────
-  if (!unlocked) {
-    return (
-      <div style={styles.lockWrap}>
-        <div style={{ ...styles.lockCard as object, position: "relative" }}>
-          <button 
-            onClick={() => window.location.href = "/"}
-            style={{ position: "absolute", top: "16px", right: "16px", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "#94a3b8", width: "32px", height: "32px", borderRadius: "8px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "20px", transition: "all 0.2s" }}
-            onMouseOver={(e) => { e.currentTarget.style.background = "rgba(239,68,68,0.2)"; e.currentTarget.style.color = "#ef4444"; e.currentTarget.style.borderColor = "rgba(239,68,68,0.3)"; }}
-            onMouseOut={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.05)"; e.currentTarget.style.color = "#94a3b8"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; }}
-            title="Exit Admin"
-          >
-            ×
-          </button>
-          <div style={styles.lockIcon}>🔐</div>
-          <h1 style={styles.lockTitle}>SeatCracker Admin</h1>
-          <p style={styles.lockSub}>Enter admin password to continue</p>
-          <input
-            type="password"
-            placeholder="Password"
-            value={pin}
-            onChange={(e) => setPin(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && handleUnlock()}
-            style={styles.lockInput}
-          />
-          {error && <p style={styles.errText}>{error}</p>}
-          <button onClick={handleUnlock} style={styles.lockBtn}>
-            Unlock Dashboard
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  // ── Dashboard ─────────────────────────────────────────
   return (
-    <div style={styles.wrap}>
-      {/* Header */}
-      <div style={styles.header}>
-        <div>
-          <h1 style={styles.title}>📊 Analytics Dashboard</h1>
-          <p style={styles.subtitle}>SeatCracker — Live Platform Metrics</p>
-        </div>
-        <button onClick={() => setUnlocked(false)} style={styles.logoutBtn}>
-          🔒 Lock
-        </button>
+    <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+      {/* Top Row Cards */}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
+        <StatCard title="Total Revenue" value={`₹${stats?.totalRevenue.toLocaleString() || 0}`} icon="💰" color="#10b981" />
+        <StatCard title="Active Users Now" value={liveCount} icon="🔴" color="#ef4444" isLive />
+        <StatCard title="Total Users" value={stats?.totalUsers || 0} icon="👥" color="#6366f1" />
+        <StatCard title="Today's Payments" value={stats?.todaysPayments || 0} icon="✨" color="#f59e0b" />
       </div>
 
-      {loading && <p style={styles.loading}>Loading metrics…</p>}
-      {error   && <p style={styles.errText}>{error}</p>}
+      {/* Middle Row Graphs */}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: "20px" }}>
+        <div className="admin-card">
+          <h3 style={{ fontSize: "16px", marginBottom: "20px", fontWeight: 600 }}>Revenue — Last 30 Days</h3>
+          <DailyRevenueChart data={stats?.revenueData || []} />
+        </div>
+        <div className="admin-card">
+          <h3 style={{ fontSize: "16px", marginBottom: "20px", fontWeight: 600 }}>User Growth</h3>
+          <UserGrowthChart data={stats?.growthData || []} />
+        </div>
+      </div>
 
-      {stats && (
-        <>
-          {/* KPI Cards */}
-          <div style={styles.cardRow}>
-            <KpiCard
-              icon="🔴"
-              label="Live Now"
-              value={liveCCU}
-              color="#ef4444"
-              isLive
-            />
-            <KpiCard
-              icon="👥"
-              label="Total Users"
-              value={stats.totalUsers}
-              color="#6366f1"
-            />
-            <KpiCard
-              icon="🎓"
-              label="EAMCET Users"
-              value={stats.eamcetUsers}
-              color="#38bdf8"
-            />
-            <KpiCard
-              icon="📐"
-              label="JEE Users"
-              value={stats.jeeUsers}
-              color="#a78bfa"
-            />
-            <KpiCard
-              icon="✨"
-              label="Joined Today"
-              value={stats.usersJoinedToday}
-              color="#34d399"
-            />
-            <KpiCard
-              icon="⭐"
-              label="Premium Users"
-              value={stats.premiumUsers}
-              color="#f59e0b"
-            />
-            <KpiCard
-              icon="💰"
-              label="Total Revenue"
-              value={`₹${stats.totalRevenue.toLocaleString("en-IN")}`}
-              color="#10b981"
-            />
-            <KpiCard
-              icon="📈"
-              label="Conversion Rate"
-              value={
-                stats.totalUsers > 0
-                  ? `${((stats.premiumUsers / stats.totalUsers) * 100).toFixed(1)}%`
-                  : "—"
-              }
-              color="#ec4899"
-            />
+      {/* Bottom Row Panels */}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: "20px" }}>
+        <div className="admin-card">
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>
+            <h3 style={{ fontSize: "16px", fontWeight: 600, margin: 0 }}>Recent Payments</h3>
+            <a href="/admin/revenue" style={{ fontSize: "13px", color: "var(--accent)", textDecoration: "none", fontWeight: 500 }}>View All</a>
           </div>
-
-          {/* Recent Payments */}
-          <Section title="💳 Recent Payments">
-            <table style={styles.table}>
-              <thead>
-                <tr>
-                  {["User ID", "Amount", "Status", "Date"].map((h) => (
-                    <th key={h} style={styles.th}>{h}</th>
-                  ))}
+          <table style={{ width: "100%", borderCollapse: "collapse" }}>
+            <thead>
+              <tr style={{ borderBottom: "1px solid var(--border)", color: "var(--text-muted)", fontSize: "12px", textAlign: "left" }}>
+                <th style={{ paddingBottom: "12px", fontWeight: 600 }}>User ID</th>
+                <th style={{ paddingBottom: "12px", fontWeight: 600 }}>Amount</th>
+                <th style={{ paddingBottom: "12px", fontWeight: 600 }}>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {stats?.recentPayments?.slice(0, 5).map((p, i) => (
+                <tr key={i} style={{ borderBottom: "1px solid rgba(255,255,255,0.03)" }}>
+                  <td style={{ padding: "14px 0", fontSize: "14px", color: "var(--text)" }}>{p.user_id.substring(0,8)}...</td>
+                  <td style={{ padding: "14px 0", fontSize: "14px", color: "#10b981", fontWeight: 600 }}>₹{p.amount || p.amount_paid}</td>
+                  <td style={{ padding: "14px 0" }}>
+                    <span style={{ 
+                      padding: "4px 8px", borderRadius: "12px", fontSize: "11px", fontWeight: 600,
+                      background: p.status === 'success' || p.status === undefined ? 'rgba(16,185,129,0.1)' : 'rgba(239,68,68,0.1)', 
+                      color: p.status === 'success' || p.status === undefined ? '#10b981' : '#ef4444' 
+                    }}>
+                      {p.status || "verified"}
+                    </span>
+                  </td>
                 </tr>
-              </thead>
-              <tbody>
-                {stats.recentPayments.length === 0 ? (
-                  <tr><td colSpan={4} style={styles.empty}>No payments yet</td></tr>
-                ) : (
-                  stats.recentPayments.map((p, i) => (
-                    <tr key={i} style={i % 2 === 0 ? styles.rowEven : styles.rowOdd}>
-                      <td style={styles.td}>{truncate(p.user_id)}</td>
-                      <td style={{ ...styles.td, color: "#10b981", fontWeight: 700 }}>
-                        ₹{p.amount}
-                      </td>
-                      <td style={styles.td}>
-                        <span style={{
-                          ...styles.badge,
-                          background: p.status === "success" ? "#10b98133" : "#ef444433",
-                          color:      p.status === "success" ? "#10b981"   : "#ef4444",
-                        }}>
-                          {p.status}
-                        </span>
-                      </td>
-                      <td style={{ ...styles.td, color: "#94a3b8" }}>
-                        {new Date(p.created_at).toLocaleDateString("en-IN")}
-                      </td>
-                    </tr>
-                  ))
-                )}
-              </tbody>
-            </table>
-          </Section>
-
-          {/* Recent Users */}
-          <Section title="🧑‍🎓 Recent Users">
-            <table style={styles.table}>
-              <thead>
+              ))}
+              {stats?.recentPayments?.length === 0 && (
                 <tr>
-                  {["User ID", "Premium", "Plan", "Purchase Date"].map((h) => (
-                    <th key={h} style={styles.th}>{h}</th>
-                  ))}
+                  <td colSpan={3} style={{ padding: "20px 0", textAlign: "center", color: "var(--text-muted)", fontSize: "14px" }}>
+                    No recent payments
+                  </td>
                 </tr>
-              </thead>
-              <tbody>
-                {stats.recentUsers.length === 0 ? (
-                  <tr><td colSpan={4} style={styles.empty}>No users yet</td></tr>
-                ) : (
-                  stats.recentUsers.map((u, i) => (
-                    <tr key={i} style={i % 2 === 0 ? styles.rowEven : styles.rowOdd}>
-                      <td style={styles.td}>{truncate(u.id)}</td>
-                      <td style={styles.td}>
-                        <span style={{
-                          ...styles.badge,
-                          background: u.is_premium ? "#f59e0b22" : "#64748b22",
-                          color:      u.is_premium ? "#f59e0b"   : "#64748b",
-                        }}>
-                          {u.is_premium ? "⭐ Premium" : "Free"}
-                        </span>
-                      </td>
-                      <td style={{ ...styles.td, color: "#94a3b8" }}>{u.plan ?? "—"}</td>
-                      <td style={{ ...styles.td, color: "#94a3b8" }}>
-                        {u.purchase_date
-                          ? new Date(u.purchase_date).toLocaleDateString("en-IN")
-                          : "—"}
-                      </td>
-                    </tr>
-                  ))
-                )}
-              </tbody>
-            </table>
-          </Section>
-          
-          {/* Live Monitor */}
-          <Section title="🔴 Live Session Monitor">
-            <div style={styles.liveGrid}>
-              {activeUsers.length === 0 ? (
-                <div style={styles.empty}>No users online right now</div>
-              ) : (
-                activeUsers.map((u, i) => (
-                  <div key={i} style={styles.liveCard}>
-                    <div style={styles.livePulse} />
-                    <div>
-                      <div style={{ fontWeight: 700, color: "#fff" }}>{truncate(u.uid, 20)}</div>
-                      <div style={{ fontSize: "11px", color: "#94a3b8", marginTop: "2px" }}>
-                        Online since {new Date(u.online_at).toLocaleTimeString()}
-                      </div>
-                      <div style={{ fontSize: "10px", color: "#6366f1", marginTop: "4px", opacity: 0.8 }}>
-                        {u.user_agent.split(')')[0].split('(')[1] || "Mobile Device"}
-                      </div>
+              )}
+            </tbody>
+          </table>
+        </div>
+
+        <div className="admin-card">
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>
+            <h3 style={{ fontSize: "16px", fontWeight: 600, margin: 0 }}>Active Poll Preview</h3>
+            <a href="/admin/polls" style={{ fontSize: "13px", color: "var(--accent)", textDecoration: "none", fontWeight: 500 }}>Manage</a>
+          </div>
+          {stats?.activePoll ? (
+            <div>
+              <p style={{ fontSize: "15px", marginBottom: "16px", color: "var(--text)" }}>{stats.activePoll.question}</p>
+              {/* Simple progress bars for poll options */}
+              {stats.activePoll.options.map((opt: any, i: number) => {
+                const total = stats.activePoll.totalVotes || 1;
+                const pct = ((opt.votes / total) * 100).toFixed(0);
+                return (
+                  <div key={i} style={{ marginBottom: "12px" }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", fontSize: "13px", marginBottom: "6px" }}>
+                      <span style={{ color: "var(--text)" }}>{opt.text}</span>
+                      <span style={{ color: "var(--text-muted)" }}>{pct}% ({opt.votes || 0})</span>
+                    </div>
+                    <div style={{ width: "100%", height: "8px", background: "rgba(255,255,255,0.05)", borderRadius: "4px", overflow: "hidden" }}>
+                      <div style={{ height: "100%", width: `${pct}%`, background: "var(--accent)", borderRadius: "4px" }} />
                     </div>
                   </div>
-                ))
-              )}
+                );
+              })}
             </div>
-          </Section>
-        </>
-      )}
+          ) : (
+            <div style={{ color: "var(--text-muted)", fontSize: "14px", textAlign: "center", padding: "40px 0" }}>
+              <div style={{ fontSize: "24px", marginBottom: "8px" }}>📊</div>
+              No active polls right now.<br/>
+              <a href="/admin/polls" style={{ color: "var(--accent)", textDecoration: "none", marginTop: "8px", display: "inline-block" }}>Create one</a>
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
 
-// ─── Sub-components ───────────────────────────────────────
-function KpiCard({
-  icon, label, value, color, isLive
-}: {
-  icon: string;
-  label: string;
-  value: string | number;
-  color: string;
-  isLive?: boolean;
-}) {
+function StatCard({ title, value, icon, color, isLive }: { title: string, value: string | number, icon: string, color: string, isLive?: boolean }) {
   return (
-    <div style={{ ...styles.kpiCard, borderTop: `3px solid ${color}` }}>
-      <div style={{ ...styles.kpiIcon, color }}>{icon}</div>
-      <div style={{ ...styles.kpiValue, color }}>
+    <div style={{ 
+      background: "var(--bg-card)", border: "1px solid var(--border)", borderRadius: "var(--radius)",
+      padding: "24px", display: "flex", flexDirection: "column", gap: "16px",
+      borderTop: `3px solid ${color}`, position: "relative", overflow: "hidden"
+    }}>
+      <div style={{ position: "absolute", top: "-10px", right: "-10px", fontSize: "80px", opacity: 0.05, filter: "blur(2px)" }}>
+        {icon}
+      </div>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", position: "relative", zIndex: 1 }}>
+        <span style={{ color: "var(--text-muted)", fontSize: "14px", fontWeight: 600 }}>{title}</span>
+        <div style={{ 
+          width: "36px", height: "36px", borderRadius: "10px", 
+          background: `rgba(${parseInt(color.slice(1,3),16)}, ${parseInt(color.slice(3,5),16)}, ${parseInt(color.slice(5,7),16)}, 0.1)`,
+          color: color, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "18px"
+        }}>
+          {icon}
+        </div>
+      </div>
+      <div style={{ fontSize: "32px", fontWeight: 800, display: "flex", alignItems: "center", gap: "10px", position: "relative", zIndex: 1 }}>
         {value}
         {isLive && (
           <span style={{
-            display: "inline-block", marginLeft: 12, width: 10, height: 10,
-            borderRadius: "50%", background: "#ef4444",
+            width: "12px", height: "12px", borderRadius: "50%", background: "#ef4444",
             boxShadow: "0 0 12px #ef4444", animation: "ping 1.5s infinite"
           }} />
         )}
       </div>
-      <div style={styles.kpiLabel}>{label}</div>
     </div>
   );
-}
-
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div style={styles.section}>
-      <h2 style={styles.sectionTitle}>{title}</h2>
-      {children}
-    </div>
-  );
-}
-
-// ─── Helpers ──────────────────────────────────────────────
-function truncate(s: string, n = 14) {
-  return s.length > n ? `${s.substring(0, n)}…` : s;
-}
-
-// ─── Styles ───────────────────────────────────────────────
-const styles: Record<string, React.CSSProperties> = {
-  // Lock
-  lockWrap: {
-    minHeight: "100vh",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    background: "linear-gradient(135deg,#0f0c29,#302b63,#24243e)",
-  },
-  lockCard: {
-    background: "rgba(255,255,255,0.04)",
-    border: "1px solid rgba(255,255,255,0.1)",
-    borderRadius: 20,
-    padding: "48px 40px",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    gap: 16,
-    minWidth: 340,
-    backdropFilter: "blur(20px)",
-  },
-  lockIcon:  { fontSize: 48 },
-  lockTitle: { color: "#fff", fontSize: 26, fontWeight: 700, margin: 0, fontFamily: "Inter,sans-serif" },
-  lockSub:   { color: "#94a3b8", fontSize: 14, margin: 0 },
-  lockInput: {
-    width: "100%",
-    padding: "12px 16px",
-    borderRadius: 10,
-    border: "1px solid rgba(255,255,255,0.15)",
-    background: "rgba(255,255,255,0.06)",
-    color: "#fff",
-    fontSize: 16,
-    outline: "none",
-    boxSizing: "border-box",
-  },
-  lockBtn: {
-    width: "100%",
-    padding: "13px 0",
-    borderRadius: 10,
-    border: "none",
-    background: "linear-gradient(135deg,#6366f1,#8b5cf6)",
-    color: "#fff",
-    fontSize: 16,
-    fontWeight: 700,
-    cursor: "pointer",
-  },
-  // Dashboard
-  wrap: {
-    minHeight: "100vh",
-    background: "#0b0f1a",
-    color: "#e2e8f0",
-    fontFamily: "Inter,system-ui,sans-serif",
-    padding: "32px 24px",
-    maxWidth: 1100,
-    margin: "0 auto",
-  },
-  header: { display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 36 },
-  title:    { fontSize: 28, fontWeight: 800, color: "#f1f5f9", margin: 0 },
-  subtitle: { color: "#94a3b8", fontSize: 14, marginTop: 4 },
-  logoutBtn: {
-    padding: "8px 18px",
-    borderRadius: 8,
-    border: "1px solid rgba(255,255,255,0.12)",
-    background: "transparent",
-    color: "#94a3b8",
-    cursor: "pointer",
-    fontSize: 13,
-  },
-  loading: { color: "#94a3b8", textAlign: "center", padding: 20 },
-  errText: { color: "#ef4444", textAlign: "center" },
-  // KPI
-  cardRow: { display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(200px,1fr))", gap: 20, marginBottom: 40 },
-  kpiCard: {
-    background: "rgba(255,255,255,0.04)",
-    border: "1px solid rgba(255,255,255,0.08)",
-    borderRadius: 16,
-    padding: "24px 20px",
-    display: "flex",
-    flexDirection: "column",
-    gap: 8,
-  },
-  kpiIcon:  { fontSize: 28 },
-  kpiValue: { fontSize: 32, fontWeight: 800, lineHeight: 1 },
-  kpiLabel: { color: "#64748b", fontSize: 13, fontWeight: 500 },
-  // Table
-  section: { marginBottom: 40 },
-  sectionTitle: { fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e2e8f0" },
-  table: { width: "100%", borderCollapse: "collapse" as const },
-  th: {
-    textAlign: "left" as const,
-    padding: "10px 14px",
-    background: "rgba(255,255,255,0.04)",
-    color: "#64748b",
-    fontSize: 12,
-    fontWeight: 600,
-    textTransform: "uppercase" as const,
-    letterSpacing: 0.5,
-    borderBottom: "1px solid rgba(255,255,255,0.07)",
-  },
-  td:      { padding: "11px 14px", fontSize: 14, borderBottom: "1px solid rgba(255,255,255,0.04)" },
-  rowEven: { background: "transparent" },
-  rowOdd:  { background: "rgba(255,255,255,0.015)" },
-  empty:   { padding: 20, textAlign: "center" as const, color: "#475569", fontSize: 14 },
-  badge: {
-    display: "inline-block",
-    padding: "3px 10px",
-    borderRadius: 99,
-    fontSize: 12,
-    fontWeight: 600,
-  },
-  liveGrid: { display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(260px,1fr))", gap: 16 },
-  liveCard: {
-    padding: "16px", background: "rgba(239,68,68,0.03)", borderRadius: 12,
-    border: "1px solid rgba(239,68,68,0.1)", display: "flex", gap: 12, alignItems: "center"
-  },
-  livePulse: {
-    width: 6, height: 6, borderRadius: "50%", background: "#ef4444",
-    boxShadow: "0 0 8px #ef4444"
-  },
-};
-
-// Global Animation
-if (typeof document !== 'undefined') {
-  const style = document.createElement('style');
-  style.innerHTML = `
-    @keyframes ping {
-      0% { transform: scale(1); opacity: 1; }
-      70% { transform: scale(3.5); opacity: 0; }
-      100% { transform: scale(1); opacity: 0; }
-    }
-  `;
-  document.head.appendChild(style);
 }

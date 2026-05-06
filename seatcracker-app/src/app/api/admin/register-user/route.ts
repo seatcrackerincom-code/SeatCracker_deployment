@@ -53,6 +53,7 @@ export async function POST(req: Request) {
           exam: exam || null,
           course: course || null,
           is_premium: false,
+          last_active: new Date().toISOString(),
         })
         .select()
         .single();
@@ -66,6 +67,7 @@ export async function POST(req: Request) {
       if (last_step !== undefined) updateObj.last_step = last_step;
       if (exam !== undefined)      updateObj.exam = exam;
       if (course !== undefined)    updateObj.course = course;
+      updateObj.last_active = new Date().toISOString();
 
       if (Object.keys(updateObj).length > 0) {
         const { data, error } = await supabase

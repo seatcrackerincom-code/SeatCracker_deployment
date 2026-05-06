@@ -31,33 +31,6 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
   const [selectedSubject, setSelectedSubject] = useState<string>(SUBJECTS[0]);
   const selectedRegion: StateRegion = exam?.includes('TS') ? 'TS' : 'AP';
   const [expandedTopic, setExpandedTopic] = useState<Topic | null>(null);
-  const [timeLeft, setTimeLeft] = useState<number>(0);
-
-  // Initialize countdown (4 hours from first visit)
-  React.useEffect(() => {
-    let target = parseInt(localStorage.getItem("sc_cheat_unlock_time_v2") || "0");
-    if (!target) {
-      target = Date.now() + 30 * 60 * 1000; // 30 Minutes
-      localStorage.setItem("sc_cheat_unlock_time_v2", target.toString());
-    }
-
-    const timer = setInterval(() => {
-      const remaining = Math.max(0, target - Date.now());
-      setTimeLeft(remaining);
-      if (remaining === 0) clearInterval(timer);
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-  const formatTime = (ms: number) => {
-    const h = Math.floor(ms / 3600000);
-    const m = Math.floor((ms % 3600000) / 60000);
-    const s = Math.floor((ms % 60000) / 1000);
-    return `${h}h ${m}m ${s}s`;
-  };
-
-  const isLocked = timeLeft > 0;
 
   const handleBack = () => {
     if (view === 'dashboard') {
@@ -68,7 +41,6 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
   };
 
   const handleCardClick = (targetView: ViewState) => {
-    if (isLocked) return;
     setView(targetView);
   };
 
@@ -80,7 +52,7 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
       exit={{ opacity: 0, y: -20 }}
     >
       <div
-        className={`${styles.card} ${styles.cardCyan} ${isLocked ? styles.lockedCard : ''}`}
+        className={`${styles.card} ${styles.cardCyan}`}
         onClick={() => handleCardClick('topics')}
       >
         <div className={`${styles.cardIcon} ${styles.iconCyan}`}>📊</div>
@@ -88,14 +60,14 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
         <p className={styles.cardDesc}>
           Focus on high-yield topics and master essential formulas appearing every year.
           <br />
-          <strong style={{ color: isLocked ? '#fbbf24' : '#34d399' }}>
-            {isLocked ? `🚀 Unlocking in ${formatTime(timeLeft)}` : '✅ Unlocked! Go Practice'}
+          <strong style={{ color: '#34d399' }}>
+            ✅ Unlocked! Go Practice
           </strong>
         </p>
       </div>
 
       <div
-        className={`${styles.card} ${styles.cardEmerald} ${isLocked ? styles.lockedCard : ''}`}
+        className={`${styles.card} ${styles.cardEmerald}`}
         onClick={() => handleCardClick('questions')}
       >
         <div className={`${styles.cardIcon} ${styles.iconEmerald}`}>🔄</div>
@@ -103,14 +75,14 @@ export default function CheatCodeMode({ userId, exam, course, onBack }: Props) {
         <p className={styles.cardDesc}>
           Master the exact questions that have recurred over the last 10 years.
           <br />
-          <strong style={{ color: isLocked ? '#fbbf24' : '#34d399' }}>
-            {isLocked ? `⏳ Unlocking in ${formatTime(timeLeft)}` : '✅ Unlocked! Go Practice'}
+          <strong style={{ color: '#34d399' }}>
+            ✅ Unlocked! Go Practice
           </strong>
         </p>
       </div>
 
       <div
-        className={`${styles.card} ${styles.cardAmber} ${isLocked ? styles.lockedCard : ''}`}
+        className={`${styles.card} ${styles.cardAmber}`}
         onClick={() => handleCardClick('strategies')}
       >
         <div className={`${styles.cardIcon} ${styles.iconAmber}`}>📺</div>
