@@ -1581,59 +1581,80 @@
     align-items: center;
   }
 
-  .subjectTabs {
-    overflow-x: auto !important;
-    white-space: nowrap !important;
+  .selectionOverlay {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  /* Pricing Cards Slider */
+  .plansGrid {
     display: flex !important;
     flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-    padding: 5px 15px !important;
-    gap: 10px !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    gap: 20px !important;
+    padding: 20px !important;
+    width: 100% !important;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
 
-  .subjectTabs::-webkit-scrollbar {
+  .plansGrid::-webkit-scrollbar {
     display: none;
   }
 
-  .subjectBtn {
-    flex: 0 0 auto !important;
-    min-width: 120px !important;
-    padding: 8px 15px !important;
-    font-size: 13px !important;
+  .planCard {
+    flex: 0 0 85% !important;
+    scroll-snap-align: center !important;
+    margin: 0 auto !important;
   }
 
-  .sectionBarRow {
-    overflow-x: auto !important;
-    white-space: nowrap !important;
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-    padding: 5px 15px !important;
-    gap: 8px !important;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+  /* Compact Header */
+  .assessmentHeader {
+    padding: 5px !important;
+    gap: 5px !important;
   }
 
-  .sectionBarRow::-webkit-scrollbar {
-    display: none;
-  }
-
-  .sectionBtn {
-    flex: 0 0 auto !important;
-    min-width: 90px !important;
+  .topBar {
+    padding: 5px 10px !important;
     font-size: 11px !important;
   }
 
-  .qMeta {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
-    height: auto;
-    padding: 10px 15px;
+  .subjectTabs {
+    height: 40px !important;
+    padding: 0 10px !important;
+    background: #f8fafc !important;
+    border-bottom: 1px solid #e2e8f0 !important;
   }
 
+  .subjectBtn {
+    height: 100% !important;
+    min-width: 100px !important;
+    border-radius: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    color: #64748b !important;
+    font-weight: 500 !important;
+  }
+
+  .subjectBtn.active {
+    background: transparent !important;
+    color: #337ab7 !important;
+    border-bottom: 3px solid #337ab7 !important;
+  }
+
+  .sectionBarRow {
+    height: 35px !important;
+    padding: 0 10px !important;
+    background: #fff !important;
+  }
+
+  .sectionBtn {
+    min-width: 80px !important;
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    font-size: 10px !important;
+  }
 }
 .tcsInstSidebar {
   width: 200px;
