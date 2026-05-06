@@ -204,6 +204,11 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
       return;
     }
 
+    if (dayId > 5) {
+      alert("⏳ Coming in 24 hours! We are calibrating these advanced papers for the ultimate accuracy. Stay tuned!");
+      return;
+    }
+
     // Set day and go to view (Reset button will be available there)
     setSelectedDay(dayId);
     setView("dayView");
