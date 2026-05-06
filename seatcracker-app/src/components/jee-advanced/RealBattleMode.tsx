@@ -87,6 +87,8 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
   const [theme, setTheme] = useState<"video" | "image" | "plain">("image");
   const [showSettings, setShowSettings] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
+  const [showPalette, setShowPalette] = useState(false);
 
   const [activeDay, setActiveDay] = useState<number | null>(null);
   const [p1Done, setP1Done] = useState(false);
@@ -860,8 +862,9 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
             </div>
           </div>
 
-          <aside className={styles.assessmentSidebar}>
+          <aside className={`${styles.assessmentSidebar} ${showPalette ? styles.paletteOpen : ""}`}>
             <div className={styles.sidebarContentArea}>
+              <div className={styles.mobilePaletteClose} onClick={() => setShowPalette(false)}>✕</div>
               <div className={styles.statsBox}>
                 <div className={styles.statRow}>
                   <QBadge status={2} label={answered} /> <span className={styles.statLabel}>Answered</span>
@@ -902,6 +905,11 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
               <button className={styles.btnSubmit} onClick={() => setShowSubmitConfirm(true)}>Submit</button>
             </div>
           </aside>
+
+          {/* Floating Questions Button for Mobile (EAMCET Style) */}
+          <button className={styles.mobilePaletteBtn} onClick={() => setShowPalette(true)}>
+            <span style={{ marginRight: "8px" }}>⠿</span> Questions
+          </button>
         </div>
       </div>
     );
