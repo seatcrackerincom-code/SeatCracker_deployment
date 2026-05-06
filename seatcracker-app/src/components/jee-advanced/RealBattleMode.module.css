@@ -1488,6 +1488,10 @@
   margin-bottom: 15px;
   color: #000 !important;
 }
+.mobilePaletteBtn {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .assessmentSidebar {
     position: fixed;
@@ -1525,7 +1529,7 @@
   }
 
   .mobilePaletteBtn {
-    display: flex;
+    display: flex !important;
     position: fixed;
     bottom: 80px;
     right: 20px;
