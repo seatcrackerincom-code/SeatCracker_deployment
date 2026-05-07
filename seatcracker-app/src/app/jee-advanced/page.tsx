@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import InstructionMode from "@/components/jee-advanced/InstructionMode";
-import SyllabusPatternHub from "@/components/jee-advanced/SyllabusPatternHub";
-import styles from "@/components/SelectScreen.module.css";
+import InstructionMode from "../../components/jee-advanced/InstructionMode";
+import SyllabusPatternHub from "../../components/jee-advanced/SyllabusPatternHub";
+import styles from "../../components/SelectScreen.module.css";
 
 export default function JeeAdvancedHub() {
   const [activeMode, setActiveMode] = useState<"hub" | "instruction" | "syllabusPattern">("hub");
