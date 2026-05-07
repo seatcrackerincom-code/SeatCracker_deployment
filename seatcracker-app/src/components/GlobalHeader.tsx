@@ -403,8 +403,8 @@ export default function GlobalHeader() {
                 <span style={{ display: "block", fontSize: "11px", color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", marginBottom: "4px" }}>
                   Membership Status
                 </span>
-                <span style={{ fontSize: "15px", fontWeight: 800, color: "#38bdf8" }}>
-                  Free Access 🚀
+                <span style={{ fontSize: "15px", fontWeight: 800, color: isPremium ? "#fbbf24" : "#38bdf8" }}>
+                  {isPremium ? "Premium Member ✨" : "Free Access 🚀"}
                 </span>
               </div>
 

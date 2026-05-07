@@ -1112,6 +1112,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
         result={fullResult}
         dayNumber={selectedDay || 1}
         userId={userId || authUser?.uid}
+        isPremium={isPremium}
         onBack={() => {
           setView("daySelection");
           setSelectedDay(null);

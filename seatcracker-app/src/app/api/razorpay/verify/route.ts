@@ -54,6 +54,21 @@ export async function POST(req: Request) {
       .eq("id", userId);
 
     if (userError) console.error("User update error:", userError);
+    
+    // ALSO update user_exam_access table for specific exam access checks
+    const { error: accessError } = await supabase
+      .from("user_exam_access")
+      .upsert({
+        user_id: userId,
+        exam_id: "jee-advanced",
+        is_premium: true,
+        payment_id: razorpay_payment_id,
+        order_id: razorpay_order_id,
+        amount_paid: 39,
+        purchased_at: new Date().toISOString()
+      }, { onConflict: "user_id,exam_id" });
+
+    if (accessError) console.error("Access record error:", accessError);
 
     return NextResponse.json({ success: true });
   } catch (error) {

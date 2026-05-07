@@ -24,6 +24,7 @@ interface JEEResultsPageProps {
   result: FullResult;
   dayNumber: number;
   userId?: string;
+  isPremium?: boolean;
   onBack: () => void;
   onViewDayResult?: (dayNumber: number) => void;
 }
@@ -34,6 +35,7 @@ export default function JEEResultsPage({
   result,
   dayNumber,
   userId,
+  isPremium,
   onBack,
   onViewDayResult,
 }: JEEResultsPageProps) {
@@ -620,7 +622,7 @@ export default function JEEResultsPage({
                     </>
                   ) : (
                     <>
-                      <div className={styles.progressDayLockIcon}>🔒</div>
+                      <div className={styles.progressDayLockIcon}>{isPremium ? "⚔️" : "🔒"}</div>
                       <div
                         className={`${styles.progressDot} ${styles.dotGrey}`}
                       />
