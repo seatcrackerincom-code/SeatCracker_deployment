@@ -12,7 +12,7 @@ export const EXAM_CONFIGS: Record<string, ExamConfig> = {
     examId: "jee-advanced",
     examName: "JEE Advanced",
     isPremium: true,
-    price: 3,
+    price: 39,
     totalDays: 10,
     freeDays: 1,
   },

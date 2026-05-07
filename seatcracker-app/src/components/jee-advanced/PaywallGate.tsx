@@ -114,7 +114,7 @@ export default function PaywallGate({ userId, onSuccess, onClose }: PaywallGateP
 
         <div style={{ background: "rgba(167, 139, 250, 0.1)", padding: "24px", borderRadius: "16px", border: "1px solid rgba(167, 139, 250, 0.2)", marginBottom: "32px" }}>
           <div style={{ fontSize: "2.5rem", fontWeight: 800, color: "#fff", lineHeight: 1 }}>
-            ₹3 <span style={{ fontSize: "1rem", color: "#a78bfa", fontWeight: 600 }}>One-Time (Test)</span>
+            ₹39 <span style={{ fontSize: "1rem", color: "#a78bfa", fontWeight: 600 }}>One-Time Access</span>
           </div>
           <p style={{ color: "#cbd5e1", fontSize: "0.9rem", marginTop: "8px" }}>Full Access to JEE Advanced Mock Analysis</p>
         </div>

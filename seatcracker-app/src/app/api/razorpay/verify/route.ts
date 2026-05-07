@@ -35,7 +35,7 @@ export async function POST(req: Request) {
     // Record payment
     const { error: paymentError } = await supabase.from("payments").insert({
       user_id: userId,
-      amount: 3,
+      amount: 39,
       status: "success",
       transaction_id: razorpay_payment_id,
       created_at: new Date().toISOString()

@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     });
 
     const options = {
-      amount: 300, // ₹3.00 in paise (TEMPORARY TEST PRICE)
+      amount: 3900, // ₹39.00 in paise
       currency: "INR",
       receipt: `receipt_jee_${userId.substring(0, 8)}`,
     };
