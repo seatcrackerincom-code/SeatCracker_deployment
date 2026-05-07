@@ -584,14 +584,14 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
           {showWelcome && (
             <div className={styles.modalOverlay}>
               <div className={styles.welcomeCard}>
-                <h1 style={{ color: "#fff", marginBottom: "12px", textAlign: "center", fontSize: "36px", fontWeight: 900, letterSpacing: "-0.02em" }}>
+                <h1 className={styles.welcomeTitle}>
                   Prepare for the <span className={styles.accent}>Ultimate Battle</span>
                 </h1>
-                <p style={{ color: "#94a3b8", fontSize: "16px", textAlign: "center", marginBottom: "40px", maxWidth: "600px", margin: "0 auto 40px" }}>
+                <p className={styles.welcomeSub}>
                   Choose your access level for the most authentic JEE Advanced simulation experience.
                 </p>
 
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px", marginBottom: "32px" }}>
+                <div className={styles.accessGrid}>
                   {/* Free Card */}
                   <div className={styles.accessCard} onClick={() => setShowWelcome(false)}>
                     <div style={{ fontSize: "40px", marginBottom: "20px" }}>🛡️</div>
