@@ -7,7 +7,7 @@ interface AdminAuthContextType {
   user: User | null;
   isAdmin: boolean;
   isLoading: boolean;
-  login: (secret: string) => Promise<{ success: boolean; error?: string }>;
+  login: (email: string, password: string) => Promise<{ success: boolean; error?: string }>;
   logout: () => Promise<void>;
 }
 

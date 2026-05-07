@@ -48,6 +48,27 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
 
   return (
     <div className="admin-container">
+      {/* Background Effects */}
+      <div className="aurora-wrapper">
+        <div className="aurora-mesh"></div>
+        <div className="starfield">
+          {Array.from({ length: 50 }).map((_, i) => (
+            <div 
+              key={i} 
+              className="star" 
+              style={{
+                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 100}%`,
+                width: `${Math.random() * 3}px`,
+                height: `${Math.random() * 3}px`,
+                animationDelay: `${Math.random() * 5}s`,
+                background: i % 5 === 0 ? 'var(--accent-light)' : i % 8 === 0 ? 'var(--accent2)' : '#fff'
+              }}
+            />
+          ))}
+        </div>
+      </div>
+
       {/* Sidebar */}
       <aside className="admin-sidebar">
         <div className="admin-sidebar-header">

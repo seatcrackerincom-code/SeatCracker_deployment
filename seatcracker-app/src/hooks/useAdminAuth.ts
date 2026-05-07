@@ -39,13 +39,13 @@ export function useAdminAuth() {
     return () => unsub();
   }, []);
 
-  const login = async (secret: string, _pass?: string) => {
+  const login = async (email: string, password: string) => {
     setIsLoading(true);
     try {
       const response = await fetch("/api/admin/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ secret }),
+        body: JSON.stringify({ email, password }),
       });
 
       const data = await response.json();
@@ -57,7 +57,7 @@ export function useAdminAuth() {
       }
       
       setIsLoading(false);
-      return { success: false, error: data.error || "Invalid Secret" };
+      return { success: false, error: data.error || "Invalid Credentials" };
     } catch (err) {
       setIsLoading(false);
       return { success: false, error: "Network Error" };
