@@ -1207,9 +1207,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
                 className={`${styles.submodeCard} ${mode.id === "time" ? styles.glowCard : ""}`}
                 onClick={() => {
                   if (mode.id === "time") {
-                    const seen = localStorage.getItem("sc_battle_cinema_seen");
-                    if (seen) setPhase("selection");
-                    else setPhase("cinema");
+                    setPhase("selection");
                   } else {
                     setPhase("comingSoon");
                   }
