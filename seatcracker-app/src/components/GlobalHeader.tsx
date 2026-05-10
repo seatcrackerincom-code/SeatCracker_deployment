@@ -40,12 +40,12 @@ export default function GlobalHeader() {
       const jeePhase = localStorage.getItem("sc_jee_phase");
       const eamcetPhase = localStorage.getItem("sc_battle_phase");
       
-      const isEamcetActiveExam = pathname === "/" && step >= 13;
+      const isIntroStep = pathname === "/" && (step < 6 || step === -1);
       const isJeeActiveExam = pathname.includes("/jee-advanced/mock-test") && jeePhase === "exam";
 
       const isPathHidden = hidePaths.includes(pathname);
 
-      setHideForStep(isEamcetActiveExam || isJeeActiveExam || isPathHidden);
+      setHideForStep(isIntroStep || isJeeActiveExam || isPathHidden);
     };
     checkStep();
     window.addEventListener("sc_step_change", checkStep);
