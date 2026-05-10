@@ -1,11 +1,8 @@
 import Link from "next/link";
-import GlobalHeader from "../../components/GlobalHeader";
 
 export default function PrivacyPolicyPage() {
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--bg, #0a0a0f)" }}>
-      <GlobalHeader />
-      
       <main style={{ flex: 1, padding: "40px 20px", width: "100%", maxWidth: "800px", margin: "0 auto", color: "var(--text, #f8fafc)" }}>
         <div style={{ marginBottom: "20px" }}>
           <Link href="/" style={{ color: "var(--accent, #a78bfa)", textDecoration: "none", fontWeight: 600, display: "inline-flex", alignItems: "center", gap: "8px" }}>

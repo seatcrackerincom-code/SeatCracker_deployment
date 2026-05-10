@@ -1,4 +1,3 @@
-import GlobalHeader from "../../components/GlobalHeader";
 import Link from "next/link";
 
 export const metadata = {
@@ -9,7 +8,6 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <main style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--bg)", color: "var(--text)" }}>
-      <GlobalHeader />
       <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", padding: "20px" }}>
         <div style={{
           maxWidth: "500px",

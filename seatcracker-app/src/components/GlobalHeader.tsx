@@ -11,6 +11,7 @@ import { useLivePresence } from "../lib/presence";
 import { usePathname } from "next/navigation";
 import PurchaseScreen from "./premium/PurchaseScreen";
 import { getExamConfig } from "@/config/examConfig";
+import LoginScreen from "./LoginScreen";
 
 export default function GlobalHeader() {
   const pathname = usePathname();
@@ -20,10 +21,10 @@ export default function GlobalHeader() {
   const [access, setAccess] = useState<AccessState | null>(null);
   const [liveCount, setLiveCount] = useState<number>(0);
   const [showPurchase, setShowPurchase] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
 
   // Pages where header should be hidden
   const hidePaths = [
-    "/jee-advanced/mock-test",
     "/real-battle-mode", // Assuming EAMCET mock test route
   ];
 
@@ -39,17 +40,12 @@ export default function GlobalHeader() {
       const jeePhase = localStorage.getItem("sc_jee_phase");
       const eamcetPhase = localStorage.getItem("sc_battle_phase");
       
-      // 1. Hide ONLY on the very first intro/setup steps (1-4)
-      const isIntro = pathname === "/" && (step >= 1 && step <= 4);
-
-      // 2. Hide ONLY during the actual exam questions phase
       const isEamcetActiveExam = pathname === "/" && step >= 13;
       const isJeeActiveExam = pathname.includes("/jee-advanced/mock-test") && jeePhase === "exam";
 
-      // 3. Hide on specific paths
       const isPathHidden = hidePaths.includes(pathname);
 
-      setHideForStep(isIntro || isEamcetActiveExam || isJeeActiveExam || isPathHidden);
+      setHideForStep(isEamcetActiveExam || isJeeActiveExam || isPathHidden);
     };
     checkStep();
     window.addEventListener("sc_step_change", checkStep);
@@ -320,6 +316,21 @@ export default function GlobalHeader() {
               <span>👤</span> My Profile
             </button>
 
+            {!authUser && (
+              <button
+                onClick={() => { setShowLogin(true); closeMenu(); }}
+                style={{
+                  display: "flex", alignItems: "center", gap: "12px",
+                  padding: "16px", borderRadius: "12px", color: "var(--text)",
+                  border: "1px solid rgba(56,189,248,0.3)", background: "rgba(56,189,248,0.08)",
+                  fontSize: "16px", fontWeight: 700, cursor: "pointer", transition: "all 0.2s",
+                  textAlign: "left"
+                }}
+              >
+                <span>→</span> Login
+              </button>
+            )}
+
             <Link 
               href="/performance" 
               onClick={closeMenu}
@@ -460,6 +471,15 @@ export default function GlobalHeader() {
             setShowPurchase(false);
             window.location.reload();
           }}
+        />
+      )}
+
+      {showLogin && (
+        <LoginScreen
+          onSuccess={() => {
+            setShowLogin(false);
+          }}
+          onCancel={() => setShowLogin(false)}
         />
       )}
 

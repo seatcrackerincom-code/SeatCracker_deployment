@@ -1,4 +1,3 @@
-import GlobalHeader from "../../components/GlobalHeader";
 import Link from "next/link";
 
 export const metadata = {
@@ -9,7 +8,6 @@ export const metadata = {
 export default function MockTestsPage() {
   return (
     <main style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--bg, #0a0a0f)" }}>
-      <GlobalHeader />
       <div style={{ flex: 1, maxWidth: "1000px", margin: "80px auto", padding: "0 20px", textAlign: "center" }}>
         <h1 style={{ fontSize: "3rem", fontWeight: 800, marginBottom: "20px", color: "var(--accent, #a78bfa)" }}>
           Mock Test Platform

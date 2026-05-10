@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import GlobalHeader from "../../components/GlobalHeader";
 import { useUserState } from "../../lib/useUserState";
 import { fetchProgress, type UserProgress } from "../../lib/supabase";
 import { calculateGlobalStats, type GlobalStats } from "../../lib/stats_helper";
@@ -61,8 +60,6 @@ export default function PerformancePage() {
 
   return (
     <main style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--bg)", color: "var(--text)" }}>
-      <GlobalHeader />
-
       <div style={{ flex: 1, maxWidth: "1100px", width: "100%", margin: "100px auto 60px", padding: "0 24px" }}>
         
         {/* Header Section with Membership Badge */}

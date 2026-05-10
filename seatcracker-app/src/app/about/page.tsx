@@ -1,5 +1,3 @@
-import GlobalHeader from "../../components/GlobalHeader";
-
 export const metadata = {
   title: "About SeatCracker - Dedicated Practice for Your Success",
   description: "Learn more about the mission of SeatCracker to help students prepare for competitive exams."
@@ -8,7 +6,6 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <main style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--bg, #0a0a0f)" }}>
-      <GlobalHeader />
       <div style={{ flex: 1, maxWidth: "800px", margin: "60px auto", padding: "0 20px" }}>
         <h1 style={{ fontSize: "2.5rem", fontWeight: 700, marginBottom: "24px", color: "var(--accent, #a78bfa)" }}>
           About SeatCracker

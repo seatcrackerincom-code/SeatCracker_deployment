@@ -14,6 +14,11 @@ interface Props {
 
 export default function PurchaseScreen({ config, user, onClose, onSuccess }: Props) {
   const [isProcessing, setIsProcessing] = useState(false);
+  const paymentDetails = [
+    "Free preview used",
+    "Account ready",
+    "Secure payment",
+  ];
 
   const loadRazorpay = () => {
     return new Promise((resolve) => {
@@ -131,6 +136,19 @@ export default function PurchaseScreen({ config, user, onClose, onSuccess }: Pro
         <div className={styles.priceContainer}>
           <div className={styles.price}>₹{config.price}</div>
           <span className={styles.priceSub}>One-time payment • 1 Year Access</span>
+        </div>
+
+        <div className={styles.flowSteps}>
+          {paymentDetails.map((detail, index) => (
+            <div
+              className={styles.flowStep}
+              style={{ animationDelay: `${index * 0.12}s` }}
+              key={detail}
+            >
+              <span className={styles.flowDot}>{index + 1}</span>
+              <span>{detail}</span>
+            </div>
+          ))}
         </div>
 
         <button 

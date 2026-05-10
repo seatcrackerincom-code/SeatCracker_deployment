@@ -13,12 +13,10 @@ import RoadmapMode from "../components/EAMCET/RoadmapMode";
 import RealBattleMode from "../components/EAMCET/RealBattleMode";
 import CheatCodeMode from "../components/EAMCET/CheatCodeMode"; // Force TS update
 
-import LoginScreen from "../components/LoginScreen";
 import AccessGate from "../components/AccessGate";
 import IntroPage from "../components/IntroPage";
 import { onAuthChange, signOut, type User } from "../lib/firebase";
 import {
-  getAccessStateSync,
   getAccessState,
   type AccessState,
 } from "../lib/access";
@@ -29,7 +27,7 @@ import {
 
 /**
  * Step Sequence:
- * 0: LoginScreen
+ * 0: Legacy LoginScreen route (redirected to MotivationScreen)
  * 1: MotivationScreen
  * 2: EntranceTestSelect (New: Choose EAMCET, GATE, etc.)
  * 3: StateSelection (was ExamSelect)
@@ -46,7 +44,7 @@ import {
 type Step = -1 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
 export default function Home() {
-  const [step, setStep] = useState<Step>(0); // Default to Home (Login). Only move to -1 if confirmed new user.
+  const [step, setStep] = useState<Step>(1); // Public home flow starts without a login wall.
   const [testCategory, setTestCategory] = useState(""); // e.g., "EAMCET"
   const [exam, setExam] = useState("");                  // e.g., "AP" or "TS"
   const [course, setCourse] = useState("");              // e.g., "Engineering"
@@ -75,14 +73,15 @@ export default function Home() {
     trackAppOpen(); // Firebase: app_open
 
     // Seed history with current state
-    history.replaceState({ step: 0 }, "");
+    history.replaceState({ step: 1 }, "");
 
     // 1. Immediate persistence check
     const savedStep = localStorage.getItem("sc_step");
     const hasAnyData = Object.keys(localStorage).some(key => key.startsWith("sc_"));
 
     if (savedStep) {
-      setStep(parseInt(savedStep) as Step);
+      const parsedStep = parseInt(savedStep) as Step;
+      setStep(parsedStep === 0 ? 1 : parsedStep);
       setInitialLoad(false);
     } else if (!hasAnyData) {
       // BRAND NEW USER
@@ -97,8 +96,8 @@ export default function Home() {
       if (prevStep >= 0) {
         setStep(prevStep);
       } else {
-        history.pushState({ step: 0 }, "");
-        setStep(0);
+        history.pushState({ step: 1 }, "");
+        setStep(1);
       }
     };
 
@@ -157,7 +156,8 @@ export default function Home() {
       // ── Persistent Resume Logic (Immediate) ──
       const sStep = localStorage.getItem(pk("sc_step")) || localStorage.getItem("sc_step");
       if (sStep) {
-        setStep(parseInt(sStep) as Step);
+        const parsedStep = parseInt(sStep) as Step;
+        setStep(parsedStep === 0 ? 1 : parsedStep);
       } else if (user) {
         // Logged in but no saved step -> Start at Dashboard
         setStep(6);
@@ -246,6 +246,7 @@ export default function Home() {
     setStep(s);
     localStorage.setItem(getPK("sc_step"), String(s));
     saveCloudProgress({ last_step: s });
+    window.dispatchEvent(new CustomEvent("sc_step_change", { detail: { step: s } }));
     // Note: history.pushState is handled by the step useEffect above
   };
 
@@ -336,7 +337,7 @@ export default function Home() {
 
   const effectiveUserId = authUser?.uid || "sc_user";
 
-  if (!mounted || (initialLoad && step === 0)) {
+  if (!mounted || (initialLoad && step === 1)) {
     return (
       <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: '#000', gap: '20px' }}>
         <img src="/logo.png" alt="Logo" style={{ width: '60px', height: '60px', opacity: 0.8, animation: 'pulse 2s infinite ease-in-out' }} />
@@ -367,13 +368,13 @@ export default function Home() {
         <IntroPage 
           onStart={() => {
             localStorage.setItem("sc_visited", "true");
-            go(0);
+            go(1);
           }} 
         />
       )}
 
-      {/* Step 0: Login */}
-      {step === 0 && <LoginScreen onSuccess={handleLoginSuccess} />}
+      {/* Step 0: Legacy Login */}
+      {step === 0 && <MotivationScreen onNext={() => go(2)} />}
 
       {/* Step 1: Motivation */}
       {step === 1 && <MotivationScreen onNext={() => go(2)} />}

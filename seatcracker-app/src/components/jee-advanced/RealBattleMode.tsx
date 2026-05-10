@@ -10,7 +10,7 @@ import { InlineMath } from "react-katex";
 import "katex/dist/katex.min.css";
 import { getExamConfig } from "@/config/examConfig";
 import PurchaseScreen from "../premium/PurchaseScreen";
-import { checkUserAccess } from "@/lib/supabase";
+import LoginScreen from "../LoginScreen";
 
 const AVATAR_LS_KEY = "sc_profile_avatar";
 
@@ -115,6 +115,9 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
   // ── Premium States ──
   const [isPremium, setIsPremium] = useState(false);
   const [showPurchase, setShowPurchase] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
+  const [showPurchaseAfterLogin, setShowPurchaseAfterLogin] = useState(false);
+  const [purchaseUser, setPurchaseUser] = useState<User | null>(null);
   const [showWelcome, setShowWelcome] = useState(false);
   const [declChecked, setDeclChecked] = useState(false);
   const currentExamId = exam || "jee-advanced";
@@ -123,6 +126,21 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
   const videoRef = useRef<HTMLVideoElement>(null);
   const avatarSrc = authUser?.photoURL || "/avatar.png";
   const displayName = authUser?.displayName || (authUser?.email ? authUser.email.split('@')[0] : "Candidate");
+
+  const requestPremiumAccess = useCallback(() => {
+    if (!authUser) {
+      setShowPurchaseAfterLogin(true);
+      setShowLogin(true);
+      return;
+    }
+
+    setShowPurchase(true);
+  }, [authUser]);
+
+  useEffect(() => {
+    localStorage.setItem("sc_jee_phase", view);
+    window.dispatchEvent(new CustomEvent("sc_step_change", { detail: { jeePhase: view } }));
+  }, [view]);
 
   // Load Day Progress + Completed Days
   useEffect(() => {
@@ -164,7 +182,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
     const isFreeDay = dayNum <= examConfig.freeDays;
     const isLocked = examConfig.isPremium && !isPremium && !isFreeDay;
     if (isLocked) {
-      setShowPurchase(true);
+      requestPremiumAccess();
       return;
     }
 
@@ -181,7 +199,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
       setSelectedDay(dayNum);
       setView("results");
     } catch { }
-  }, []);
+  }, [examConfig.freeDays, examConfig.isPremium, isPremium, requestPremiumAccess]);
 
   // Timer
   useEffect(() => {
@@ -200,7 +218,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
     const isLocked = examConfig.isPremium && !isPremium && !isFreeDay;
 
     if (isLocked) {
-      setShowPurchase(true);
+      requestPremiumAccess();
       return;
     }
 
@@ -525,7 +543,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
           </header>
 
           {!isPremium && (
-            <div className={styles.premiumPromoCard} onClick={() => setShowPurchase(true)}>
+            <div className={styles.premiumPromoCard} onClick={requestPremiumAccess}>
               <div className={styles.promoIcon}>⭐</div>
               <div style={{ flex: 1 }}>
                 <div style={{ fontWeight: 700, color: "#fff", fontSize: "15px" }}>Unlock Full Access</div>
@@ -572,11 +590,28 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
           {showPurchase && (
             <PurchaseScreen
               config={examConfig}
-              user={authUser}
+              user={purchaseUser || authUser}
               onClose={() => setShowPurchase(false)}
               onSuccess={() => {
                 setIsPremium(true);
                 setShowPurchase(false);
+              }}
+            />
+          )}
+
+          {showLogin && (
+            <LoginScreen
+              onSuccess={(user) => {
+                setPurchaseUser(user);
+                setShowLogin(false);
+                if (showPurchaseAfterLogin) {
+                  setShowPurchaseAfterLogin(false);
+                  setShowPurchase(true);
+                }
+              }}
+              onCancel={() => {
+                setShowLogin(false);
+                setShowPurchaseAfterLogin(false);
               }}
             />
           )}
@@ -606,7 +641,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
                   </div>
 
                   {/* Premium Card */}
-                  <div className={`${styles.accessCard} ${styles.accessCardPremium}`} onClick={() => { setShowWelcome(false); setShowPurchase(true); }}>
+                  <div className={`${styles.accessCard} ${styles.accessCardPremium}`} onClick={() => { setShowWelcome(false); requestPremiumAccess(); }}>
                     <div style={{ fontSize: "40px", marginBottom: "20px" }}>👑</div>
                     <h3 style={{ fontSize: "20px", color: "#fff", marginBottom: "12px", fontWeight: 800 }}>Premium Elite</h3>
                     <ul style={{ padding: 0, listStyle: "none", fontSize: "14px", color: "#e2e8f0", textAlign: "left", display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -621,7 +656,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
 
                 <div style={{ textAlign: "center" }}>
                   <button
-                    onClick={() => { setShowWelcome(false); setShowPurchase(true); }}
+                    onClick={() => { setShowWelcome(false); requestPremiumAccess(); }}
                     style={{ background: "none", border: "none", color: "#818cf8", fontSize: "14px", fontWeight: 600, cursor: "pointer", textDecoration: "underline" }}
                   >
                     Already have a Lifetime Access Code? Activate Now
@@ -1162,4 +1197,3 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
 
   return null;
 }
-

@@ -55,6 +55,27 @@
     0 32px 64px -16px rgba(0,0,0,0.7);
 }
 
+.closeBtn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.closeBtn:hover {
+  background: rgba(255,255,255,0.12);
+  transform: rotate(90deg);
+}
+
 /* Logo / Brand */
 .brand {
   display: flex;
@@ -314,6 +335,5 @@
   flex-shrink: 0;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
-
 
 

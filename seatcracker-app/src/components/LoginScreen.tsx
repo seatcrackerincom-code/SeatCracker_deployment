@@ -13,11 +13,12 @@ import {
 
 interface Props {
   onSuccess: (user: User | null) => void; // null = guest
+  onCancel?: () => void;
 }
 
 type Phase = "choice" | "email";
 
-export default function LoginScreen({ onSuccess }: Props) {
+export default function LoginScreen({ onSuccess, onCancel }: Props) {
   const [phase, setPhase] = useState<Phase>("choice");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -104,6 +105,12 @@ export default function LoginScreen({ onSuccess }: Props) {
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ type: "spring", stiffness: 300, damping: 28 }}
       >
+        {onCancel && (
+          <button className={styles.closeBtn} onClick={onCancel} aria-label="Close login">
+            ×
+          </button>
+        )}
+
         {/* Brand */}
         <div className={styles.brand}>
           <div className={styles.logoRing}>
