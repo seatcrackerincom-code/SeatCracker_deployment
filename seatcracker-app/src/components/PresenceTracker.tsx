@@ -10,13 +10,16 @@ import { onAuthChange } from "../lib/firebase";
  */
 export default function PresenceTracker() {
   useEffect(() => {
-    // 1. Initial anonymous sync
+    // 1. Initial anonymous sync (if no user detected yet)
     initPresence("sc_guest_" + Math.random().toString(36).substring(7));
 
-    // 2. If user logs in, upgrade to their real UID (Supabase Presence handles the key update)
+    // 2. Sync with real UID on auth change
     const unsub = onAuthChange((user) => {
-      if (user) {
+      if (user && user.uid !== "sc_user") {
         initPresence(user.uid);
+      } else {
+        // If logout, revert to guest
+        initPresence("sc_guest_" + Math.random().toString(36).substring(7));
       }
     });
 

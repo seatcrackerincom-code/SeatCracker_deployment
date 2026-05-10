@@ -19,7 +19,7 @@ export default function GlobalHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [authUser, setAuthUser] = useState<User | null>(null);
   const [access, setAccess] = useState<AccessState | null>(null);
-  const [liveCount, setLiveCount] = useState<number>(0);
+  const liveCount = useLivePresence(pathname?.includes("/jee-advanced") ? "JEE" : "EAMCET");
   const [showPurchase, setShowPurchase] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
 
@@ -53,39 +53,20 @@ export default function GlobalHeader() {
     // Listen for phase changes
     window.addEventListener("storage", checkStep);
 
-    // ── Live Count Fetching ────────────────────────────────
-    const fetchLiveCount = async () => {
-      try {
-        const path = window.location.pathname;
-        let exam = "";
-        if (path.includes("/jee-advanced")) exam = "JEE";
-        else exam = "EAMCET";
-
-        // Heartbeat: Register current user as active
-        if (authUser?.uid && authUser.uid !== "sc_user") {
-          fetch("/api/admin/register-user", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ userId: authUser.uid, exam })
-          }).catch(() => {});
-        }
-
-        const res = await fetch(`/api/stats/live-count?exam=${exam}`);
-        const data = await res.json();
-        setLiveCount(data.count || 0);
-      } catch (e) {}
-    };
-
-    fetchLiveCount();
-    const interval = setInterval(fetchLiveCount, 30000); // Update every 30s
-
     return () => {
       window.removeEventListener("sc_step_change", checkStep);
       window.removeEventListener("sc_navigate", checkStep);
       window.removeEventListener("storage", checkStep);
-      clearInterval(interval);
     };
-  }, [pathname, authUser]);
+  }, [pathname]);
+
+  // Update presence data with current exam whenever it changes
+  useEffect(() => {
+    import("../lib/presence").then(({ updatePresence }) => {
+      const exam = pathname?.includes("/jee-advanced") ? "JEE" : "EAMCET";
+      updatePresence({ exam });
+    });
+  }, [pathname]);
 
   useEffect(() => {
     const unsub = onAuthChange((user) => {
@@ -178,8 +159,8 @@ export default function GlobalHeader() {
         </div>
 
         <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-          {/* Live Student Count - Only visible on Admin pages */}
-          {pathname?.startsWith("/admin") && (
+          {/* Live Student Count */}
+          {liveCount > 0 && (
             <div style={{
                 display: "flex", alignItems: "center", gap: "6px",
                 padding: "4px 10px", borderRadius: "100px",

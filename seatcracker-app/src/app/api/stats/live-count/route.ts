@@ -29,7 +29,7 @@ export async function GET(req: Request) {
       if (exam === "JEE") {
         query = query.eq("exam", "JEE");
       } else if (exam === "EAMCET") {
-        query = query.in("exam", ["AP", "TS"]);
+        query = query.in("exam", ["AP", "TS", "EAMCET"]);
       }
     }
 
