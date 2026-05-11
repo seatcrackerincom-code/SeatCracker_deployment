@@ -1320,11 +1320,11 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
     };
 
     const courseMaxMocks: Record<string, number> = {
-      "Engineering": 9,
+      "Engineering": 10,
       "Agriculture": 3,
       "Pharmacy": 3
     };
-    const maxMocks = courseMaxMocks[course] || 5; // Default to 5 if course unknown, but Engineering is now 9
+    const maxMocks = courseMaxMocks[course] || 5; // Default to 5 if course unknown, but Engineering is now 10
     const mockOptions = Array.from({ length: 10 }, (_, idx) => idx + 1).map(i => {
       const id = `${prefix.toLowerCase().replace(/\s+/g, "_")}_mock_test_${i}`;
       const submitTime = parseInt(localStorage.getItem(`sc_submit_time_${id}`) || "0");
