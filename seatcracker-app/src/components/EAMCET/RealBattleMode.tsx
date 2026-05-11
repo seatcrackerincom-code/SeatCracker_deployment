@@ -1325,7 +1325,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
       "Pharmacy": 3
     };
     const maxMocks = courseMaxMocks[course] || 5; // Default to 5 if course unknown, but Engineering is now 11
-    const mockOptions = Array.from({ length: 12 }, (_, idx) => idx + 1).map(i => {
+    const mockOptions = Array.from({ length: 15 }, (_, idx) => idx + 1).map(i => {
       const id = `${prefix.toLowerCase().replace(/\s+/g, "_")}_mock_test_${i}`;
       const submitTime = parseInt(localStorage.getItem(`sc_submit_time_${id}`) || "0");
       const isCompleted = !!submitTime;
@@ -1337,7 +1337,7 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
       const mockIcons: Record<number, string> = {
         1: "⚔️", 2: "🏆", 3: "🎯", 4: "🔥", 5: "💎",
         6: "⚡", 7: "🛡️", 8: "🌟", 9: "👑", 10: "🏅",
-        11: "🌌", 12: "🎆"
+        11: "🌌", 12: "🎆", 13: "🛰️", 14: "🛸", 15: "🌠"
       };
 
       return {
@@ -1368,6 +1368,9 @@ export default function RealBattleMode({ userId, exam, course, onBack, onRestart
         10: `${prefix} Mock Test 10`,
         11: `${prefix} Mock Test 11`,
         12: `${prefix} Mock Test 12`,
+        13: `${prefix} Mock Test 13`,
+        14: `${prefix} Mock Test 14`,
+        15: `${prefix} Mock Test 15`,
       };
 
       // Already submitted — show results or waiting screen
